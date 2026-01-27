@@ -1,11 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.ComponentModel;
 using UnityEngine;
 
 namespace Test
 {
-    public class TestComponent : MonoBehaviour
+    public abstract class TestComponent<C> : MonoBehaviour
     {
+        public C Value;
+
         // Start is called before the first frame update
         void Start()
         {
@@ -18,5 +21,4 @@ namespace Test
 
         }
     }
-
 }
