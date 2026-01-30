@@ -103,6 +103,11 @@ public partial class ResoniteBindingGenerator
         if (File.Exists(path))
             throw new System.Exception($"File for {type.FullTypeName} already exists: {path}");
 
+        var directoryPath = Path.GetDirectoryName(path);
+
+        if (!Directory.Exists(directoryPath))
+            Directory.CreateDirectory(directoryPath);
+
         return path;
     }
 
@@ -113,11 +118,12 @@ public partial class ResoniteBindingGenerator
         if (type.IsNested)
         {
             name = await GenerateRawFileName(await GetTypeDefinition(type.DeclaringType));
+            name += "+";
         }
         else
-            name = type.Namespace;
+            name = type.Namespace + "/";
 
-        name += "." + type.Name;
+        name += type.Name;
 
         if (type.DirectGenericParameterCount > 0)
             name += $"`{type.DirectGenericParameterCount}";
