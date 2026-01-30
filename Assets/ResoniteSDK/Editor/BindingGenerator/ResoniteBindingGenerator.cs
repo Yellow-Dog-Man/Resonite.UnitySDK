@@ -87,7 +87,7 @@ public partial class ResoniteBindingGenerator
         // If there are subcategories, generate bindings for are those!
         if (list.SubCategories != null)
             foreach (var subCategory in list.SubCategories)
-                await GenerateComponentBindingsForCategory(categoryPath + "/" + subCategory);
+                await GenerateComponentBindingsForCategory(categoryPath + Path.DirectorySeparatorChar + subCategory);
     }
 
     async Task<string> GenerateFilePath(string directory, TypeDefinition type)
@@ -120,8 +120,10 @@ public partial class ResoniteBindingGenerator
             name = await GenerateRawFileName(await GetTypeDefinition(type.DeclaringType));
             name += "+";
         }
+        else if (!string.IsNullOrEmpty(type.Namespace))
+            name = type.Namespace + Path.DirectorySeparatorChar;
         else
-            name = type.Namespace + "/";
+            name = "";
 
         name += type.Name;
 
