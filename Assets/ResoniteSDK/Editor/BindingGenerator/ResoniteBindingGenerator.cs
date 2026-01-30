@@ -11,10 +11,8 @@ using Unity.VisualScripting;
 using UnityEditor;
 using UnityEngine;
 
-public class ResoniteBindingGenerator
+public partial class ResoniteBindingGenerator
 {
-
-
     public string BINDINGS_ROOT_PATH => Path.Combine("Assets", "ResoniteSDK", "Bindings", "Generated");
 
     readonly ResoniteLink.LinkInterface link;
@@ -22,7 +20,11 @@ public class ResoniteBindingGenerator
     readonly CancellationToken cancellationToken;
 
     Dictionary<string, ComponentDefinition> _componentDefinitionCache = new Dictionary<string, ComponentDefinition>();
+    Dictionary<string, TypeDefinition> _typeDefinitionCache = new Dictionary<string, TypeDefinition>();
     HashSet<string> _generatedTypes = new HashSet<string>();
+
+    string _resoniteVersion;
+    string _resoniteLinkVersion;
 
     public ResoniteBindingGenerator(ResoniteLink.LinkInterface link, CancellationToken cancellationToken, ProgressSynchronizer progress = null)
     {
@@ -43,6 +45,11 @@ public class ResoniteBindingGenerator
                 progress?.UpdateProgress("Deleting old bindings", 0f);
                 Directory.Delete(BINDINGS_ROOT_PATH, true);
             }
+
+            var sessionInfo = await link.GetSessionData();
+
+            _resoniteVersion = sessionInfo.ResoniteVersion;
+            _resoniteLinkVersion = sessionInfo.ResoniteLinkVersion;
 
             // Start generating bindings from the root category. This will work downwards recursively, covering all the component types
             await GenerateComponentBindingsForCategory("");
@@ -105,12 +112,7 @@ public class ResoniteBindingGenerator
 
         if (type.IsNested)
         {
-            var result = await link.GetTypeDefinition(type.DeclaringType);
-
-            if (!result.Success)
-                throw new System.Exception($"Failed to get declaring type for type {type.FullTypeName}: {result.ErrorInfo}");
-
-            name = await GenerateRawFileName(result.Definition);
+            name = await GenerateRawFileName(await GetTypeDefinition(type.DeclaringType));
         }
         else
             name = type.Namespace;
@@ -185,7 +187,7 @@ public class ResoniteBindingGenerator
         foreach (var entry in enumDefinition.Values)
             body.AppendLine($"{entry.Key} = {entry.Value},");
 
-        var source = await GenerateBindingSource(type, body.ToString(), enumDefinition.IsFlags ? "[Flags]" : "", enumDefinition.BackingType);
+        var source = await GenerateBindingSource(type, body.ToString(), enumDefinition.IsFlags ? "[System.Flags]" : "", enumDefinition.BackingType);
 
         // Figure out the file path for the file
         var directoryPath = Path.Combine(BINDINGS_ROOT_PATH, "Enums", type.AssemblyName);
@@ -243,7 +245,12 @@ public class ResoniteBindingGenerator
             var primitiveType = PrimitiveMapper.MapEnginePrimitive(type);
 
             if (primitiveType != null)
-                return primitiveType.Namespace + "." + primitiveType.Name;
+            {
+                if (string.IsNullOrEmpty(primitiveType.Namespace))
+                    return primitiveType.Name;
+                else
+                    return primitiveType.Namespace + "." + primitiveType.Name;
+            }
         }
 
         // Ensure that we have a binding generated for this type
@@ -261,12 +268,9 @@ public class ResoniteBindingGenerator
 
         if(type.IsNested)
         {
-            var declaringTypeResult = await link.GetTypeDefinition(type.DeclaringType);
+            var declaringTypeDefinition = await GetTypeDefinition(type.DeclaringType);
 
-            if (!declaringTypeResult.Success)
-                throw new System.Exception($"Failed to fetch declaring type {type.DeclaringType}: {declaringTypeResult.ErrorInfo}");
-
-            typeName = await FullyQualifyType(declaringTypeResult.Definition, genericArguments, rootGenericParameters, type.FullTypeName)
+            typeName = await FullyQualifyType(declaringTypeDefinition, genericArguments, rootGenericParameters, type.FullTypeName)
                 + "." + type.Name;
         }
         else
@@ -274,31 +278,33 @@ public class ResoniteBindingGenerator
 
         if (type.IsGenericType && type.DirectGenericParameterCount > 0)
         {
-            // Include all the generic arguments
-            var args = new string[type.DirectGenericParameterCount];
-
-            var argsOffset = genericArguments.Count - type.DirectGenericParameterCount;
-
-            for (int i = 0; i < args.Length; i++)
+            if (genericArguments == null || genericArguments.Count == 0)
+                typeName += $"<{"".PadLeft(type.DirectGenericParameterCount-1)}>";
+            else
             {
-                var arg = genericArguments[argsOffset + i];
+                // Include all the generic arguments
+                var args = new string[type.DirectGenericParameterCount];
 
-                // If it's a generic parameter, just pass it through as is
-                if (rootGenericParameters?.Any(p => p.Name == arg) ?? false)
-                    args[i] = arg;
-                else
+                var argsOffset = genericArguments.Count - type.DirectGenericParameterCount;
+
+                for (int i = 0; i < args.Length; i++)
                 {
-                    // Recursively resolve the type definition
-                    var argDefinition = await link.GetTypeDefinition(arg);
+                    var arg = genericArguments[argsOffset + i];
 
-                    if (!argDefinition.Success)
-                        throw new System.Exception($"Failed to fetch arg definition: {argDefinition.ErrorInfo}");
+                    // If it's a generic parameter, just pass it through as is
+                    if (rootGenericParameters?.Any(p => p.Name == arg) ?? false)
+                        args[i] = arg;
+                    else
+                    {
+                        // Recursively resolve the type definition
+                        var argDefinition = await GetTypeDefinition(arg);
 
-                    args[i] = await FullyQualifyType(argDefinition.Definition, argDefinition.Definition.GenericArguments, rootGenericParameters, dependencyType);
+                        args[i] = await FullyQualifyType(argDefinition, argDefinition.GenericArguments, rootGenericParameters, dependencyType);
+                    }
                 }
-            }
 
-            typeName += $"<{string.Join(",", args)}>";
+                typeName += $"<{string.Join(",", args)}>";
+            }
         }
 
         return typeName;
@@ -346,12 +352,9 @@ public class ResoniteBindingGenerator
         }
         else
         {
-            var baseDefinitionResult = await link.GetTypeDefinition(type.BaseType.Type);
+            var baseDefinition = await GetTypeDefinition(type.BaseType.Type);
 
-            if (!baseDefinitionResult.Success)
-                throw new System.Exception($"Exception getting base type for {type.FullTypeName}: {baseDefinitionResult.ErrorInfo}");
-
-            baseDef = await FullyQualifyType(baseDefinitionResult.Definition, type.BaseType.GenericArguments, type.GenericParameters, type.FullTypeName);
+            baseDef = await FullyQualifyType(baseDefinition, type.BaseType.GenericArguments, type.GenericParameters, type.FullTypeName);
         }
 
         if (!string.IsNullOrEmpty(baseDef))
@@ -383,15 +386,15 @@ public {declarationType} {classDef} {baseDef}
         if (!type.IsNested)
             return declaration;
 
-        var result = await link.GetTypeDefinition(type.DeclaringType);
+        var declaringType = await GetTypeDefinition(type.DeclaringType);
 
-        if (!result.Success)
-            throw new System.Exception($"Failed to fetch declaring type {type.DeclaringType}: {result.ErrorInfo}");
+        var declaringTypeName = declaringType.Name;
 
-        var declaringType = result.Definition;
+        if (declaringType.DirectGenericParameterCount > 0)
+            declaringTypeName += $"<{string.Join(",", declaringType.GenericParameters.Select(p => p.Name))}>";
 
         return await WrapDeclaration(declaringType,
-            @$"public partial class {declaringType.Name}
+            @$"public partial class {declaringTypeName}
             {{
                 {declaration}
             }}");
@@ -408,6 +411,8 @@ public {declarationType} {classDef} {baseDef}
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: {type.FullTypeName}
 // Generated on: {System.DateTime.UtcNow.ToString("U")}
+// Resonite version: {_resoniteVersion}
+// Resonite Link Version: {_resoniteLinkVersion}
 // -----------------------------------------------------------------------------
 
 using UnityEngine;
@@ -434,9 +439,11 @@ namespace {type.Namespace}
             var categoryPath = $"FrooxEngine/{definition.CategoryPath ?? "Uncategorized"}/{categoryName}";
 
             attributes.AppendLine($"[AddComponentMenu(\"{categoryPath}\")]");
-        }        
+        }
 
-        return await GenerateBindingSource(definition.Type, "", attributes.ToString());
+        var body = await GenerateBody(definition.Members, definition.Type);
+
+        return await GenerateBindingSource(definition.Type, body, attributes.ToString());
     }
 
     async ValueTask<ComponentDefinition> GetComponentDefinition(string type)
@@ -457,6 +464,31 @@ namespace {type.Namespace}
 
         // Store it in the cache before returning it
         _componentDefinitionCache.Add(type, definition);
+
+        // We can also store the type definition in case we don't have it!
+        _typeDefinitionCache.TryAdd(definition.Type.FullTypeName, definition.Type);
+
+        return definition;
+    }
+
+    async ValueTask<TypeDefinition> GetTypeDefinition(string type)
+    {
+        CheckCancellation();
+
+        if (_typeDefinitionCache.TryGetValue(type, out var definition))
+            return definition;
+
+        // We specifically fetch un-flattened component definitions.
+        // We will work our way upwards the types to mimic the inheritance hierarchy.
+        var definitionResult = await link.GetTypeDefinition(type);
+
+        if (!definitionResult.Success)
+            throw new System.Exception($"Failed to fetch type definition for type {type}:\n{definitionResult.ErrorInfo}");
+
+        definition = definitionResult.Definition;
+
+        // Store it in the cache before returning it
+        _typeDefinitionCache.Add(type, definition);
 
         return definition;
     }

@@ -1,0 +1,71 @@
+﻿<#@ template debug="false" hostspecific="false" language="C#" #>
+<#@ assembly name="System.Core" #>
+<#@ import namespace="System.Linq" #>
+<#@ import namespace="System.Text" #>
+<#@ import namespace="System.Collections.Generic" #>
+<#@ output extension=".cs" #>
+
+using System;
+using ResoniteLink;
+using UnityEngine;
+
+<#
+var types = new List<string>()
+{
+	"bool",
+
+	"byte",
+	"ushort",
+	"uint",
+	"ulong",
+
+	"sbyte",
+	"short",
+	"int",
+	"long",
+
+	//"Half",
+	"double",
+};
+
+foreach(var type in types)
+{
+	var name = char.ToUpper(type[0]) + type.Substring(1);
+	var resoLinkName = type.ToLower();
+
+	for(int n = 2; n <= 4; n++)
+	{
+		if(type == "int" && n != 4)
+			continue;
+		#>
+
+		[Serializable]
+		public struct Vector<#=n#><#=name#>
+		{
+			<#
+			for(int i = 0; i < n; i++)
+			{
+				#>
+				public <#=type#> <#="xyzw"[i]#>;
+				<#
+			}
+			#>
+
+			public <#=resoLinkName+n#> ToResoniteLink() => new <#=resoLinkName+n#>()
+			{
+				<#
+				for(int i = 0; i < n; i++)
+				{
+					#>
+					<#="xyzw"[i]#> = <#="xyzw"[i]#>,
+					<#
+				}
+				#>	
+			};
+		}
+
+		<#
+	}
+}
+
+#>
