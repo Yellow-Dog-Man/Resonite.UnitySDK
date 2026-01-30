@@ -166,8 +166,13 @@ public partial class ResoniteBindingGenerator
         File.WriteAllText(filePath, source);
 
         // Ensure that all the base types are processed and we have files for those as well
-        if (definition.Type.BaseType != null)
+        if (definition.BaseTypeIsComponent)
+        {
+            if (definition.Type.BaseType == null)
+                throw new System.Exception($"Base type is missing for component {definition.Type.FullTypeName}");
+
             await GenerateComponentBinding(definition.Type.BaseType.Type);
+        }
     }
 
     public async Task GenerateEnumBinding(TypeDefinition type)
