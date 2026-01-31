@@ -384,8 +384,22 @@ public partial class ResoniteBindingGenerator
         else
             declarationType = "partial class";
 
+        // Collect interface implementations
+        if(type.Interfaces != null)
+            foreach(var @interface  in type.Interfaces)
+            {
+                if (string.IsNullOrEmpty(baseDef))
+                    baseDef += ": ";
+                else
+                    baseDef += ", ";
+
+                var interfaceDefinition = await GetTypeDefinition(@interface.Type);
+
+                baseDef += await FullyQualifyType(interfaceDefinition, @interface.GenericArguments, type.GenericParameters, type.FullTypeName);
+            }
+
             // TODO!!! Generic constraints & Interfaces
-            var selfBody = $@"{attributes}
+        var selfBody = $@"{attributes}
 public {declarationType} {classDef} {baseDef}
 {{
     {body}
