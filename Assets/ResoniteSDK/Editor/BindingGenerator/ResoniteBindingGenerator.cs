@@ -70,6 +70,14 @@ public partial class ResoniteBindingGenerator
             throw new TaskCanceledException();
     }
 
+    bool ShouldGenerateBinding(TypeDefinition type)
+    {
+        if (type.AssemblyName.StartsWith("System"))
+            return false;
+
+        return true;
+    }
+
     public async Task GenerateComponentBindingsForCategory(string categoryPath)
     {
         CheckCancellation();
@@ -185,6 +193,9 @@ public partial class ResoniteBindingGenerator
 
     public async Task GenerateEnumBinding(TypeDefinition type)
     {
+        if (!ShouldGenerateBinding(type))
+            return;
+
         if (!_generatedTypes.Add(type.FullTypeName))
             return;
 
@@ -216,7 +227,7 @@ public partial class ResoniteBindingGenerator
         CheckCancellation();
 
         // Do not generate dummy bindings for any of the system types
-        if (type.AssemblyName.StartsWith("System"))
+        if (!ShouldGenerateBinding(type))
             return;
 
         if (!_generatedTypes.Add(type.FullTypeName))
@@ -249,7 +260,7 @@ public partial class ResoniteBindingGenerator
         File.WriteAllText(filePath, code);
     }
 
-    async Task<string> FullyQualifyType(TypeDefinition type, List<string> genericArguments, List<GenericParameter> rootGenericParameters, string dependencyType)
+    async Task<string> FullyQualifyType(TypeDefinition type, List<TypeReference> genericArguments, string dependencyType)
     {
         CheckCancellation();
 
@@ -283,7 +294,7 @@ public partial class ResoniteBindingGenerator
         {
             var declaringTypeDefinition = await GetTypeDefinition(type.DeclaringType);
 
-            typeName = await FullyQualifyType(declaringTypeDefinition, genericArguments, rootGenericParameters, type.FullTypeName)
+            typeName = await FullyQualifyType(declaringTypeDefinition, genericArguments, type.FullTypeName)
                 + "." + type.Name;
         }
         else
@@ -305,14 +316,14 @@ public partial class ResoniteBindingGenerator
                     var arg = genericArguments[argsOffset + i];
 
                     // If it's a generic parameter, just pass it through as is
-                    if (rootGenericParameters?.Any(p => p.Name == arg) ?? false)
-                        args[i] = arg;
+                    if (arg.IsGenericParameter)
+                        args[i] = arg.Type;                    
                     else
                     {
                         // Recursively resolve the type definition
-                        var argDefinition = await GetTypeDefinition(arg);
+                        var argDefinition = await GetTypeDefinition(arg.Type);
 
-                        args[i] = await FullyQualifyType(argDefinition, argDefinition.GenericArguments, rootGenericParameters, dependencyType);
+                        args[i] = await FullyQualifyType(argDefinition, arg.GenericArguments, dependencyType);
                     }
                 }
 
@@ -356,7 +367,9 @@ public partial class ResoniteBindingGenerator
             baseDef = overrideBaseDef;
         else if (type.BaseType == null)
         {
-            if (type.Name == "Worker" && type.AssemblyName == "FrooxEngine")
+            if (type.IsValueType)
+                baseDef = null;
+            else if (type.Name == "Worker" && type.AssemblyName == "FrooxEngine")
                 baseDef = "UnityEngine.MonoBehaviour";
             else if (!type.IsInterface)
                 baseDef = "UnityEngine.Object";
@@ -367,7 +380,7 @@ public partial class ResoniteBindingGenerator
         {
             var baseDefinition = await GetTypeDefinition(type.BaseType.Type);
 
-            baseDef = await FullyQualifyType(baseDefinition, type.BaseType.GenericArguments, type.GenericParameters, type.FullTypeName);
+            baseDef = await FullyQualifyType(baseDefinition, type.BaseType.GenericArguments, type.FullTypeName);
         }
 
         if (!string.IsNullOrEmpty(baseDef))
@@ -379,6 +392,8 @@ public partial class ResoniteBindingGenerator
             declarationType = "interface";
         else if (type.IsEnum)
             declarationType = "enum";
+        else if (type.IsValueType)
+            declarationType = "struct";
         else if (type.IsAbstract)
             declarationType = "abstract partial class";
         else
@@ -395,17 +410,63 @@ public partial class ResoniteBindingGenerator
 
                 var interfaceDefinition = await GetTypeDefinition(@interface.Type);
 
-                baseDef += await FullyQualifyType(interfaceDefinition, @interface.GenericArguments, type.GenericParameters, type.FullTypeName);
+                baseDef += await FullyQualifyType(interfaceDefinition, @interface.GenericArguments, type.FullTypeName);
             }
 
-            // TODO!!! Generic constraints & Interfaces
+        string constraints = "";
+
+        if(type.IsGenericType)
+        {
+            for(int i = 0; i < type.DirectGenericParameterCount; i++)
+            {
+                var parameter = type.GenericParameters[type.DirectGenericParameterCount - i - 1];
+                constraints += "\t" + await GenerateConstraint(parameter) + "\n";
+            }                
+        }
+
+        // TODO!!! Generic constraints & Interfaces
         var selfBody = $@"{attributes}
 public {declarationType} {classDef} {baseDef}
+{constraints}
 {{
     {body}
 }}";
 
         return await WrapDeclaration(type, selfBody);
+    }
+
+    async Task<string> GenerateConstraint(GenericParameter parameter)
+    {
+        var constraints = new List<string>();
+
+        if (parameter.Class)
+            constraints.Add("class");
+
+        if (parameter.Struct)
+            constraints.Add("struct");
+
+        if (parameter.Unmanaged)
+            constraints.Add("unmanaged");
+
+        if (parameter.Enum)
+            constraints.Add("System.Enum");
+
+        if(parameter.Types != null)
+            foreach(var type in parameter.Types)
+            {
+                if (type.IsGenericParameter)
+                    constraints.Add(type.Type);
+                else
+                {
+                    var typeDefinition = await GetTypeDefinition(type.Type);
+                    constraints.Add(await FullyQualifyType(typeDefinition, type.GenericArguments, parameter.Name));
+                }
+            }
+
+        if (constraints.Count > 0)
+            return $"where {parameter.Name} : {string.Join(", ", constraints)}";
+        else
+            return "";
     }
 
     async Task<string> WrapDeclaration(TypeDefinition type, string declaration)
