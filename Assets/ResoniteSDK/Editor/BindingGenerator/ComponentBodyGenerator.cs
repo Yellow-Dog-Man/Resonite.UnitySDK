@@ -25,6 +25,10 @@ public partial class ResoniteBindingGenerator
                     await GenerateField(str, member.Key, field, containerType);
                     break;
 
+                case ReferenceDefinition reference:
+                    await GenerateReference(str, member.Key, reference, containerType);
+                    break;
+
                 default:
                     str.AppendLine($"// {member.Key} - Unsupported member type: {member.Value.GetType().Name}");
                     break;
@@ -36,7 +40,7 @@ public partial class ResoniteBindingGenerator
 
     async Task GenerateField(StringBuilder str, string name, FieldDefinition field, TypeDefinition containerType)
     {
-        var typeDec = await GenerateValueTypeDeclaration(field.ValueType, containerType);
+        var typeDec = await GenerateTypeDeclaration(field.ValueType, containerType);
 
         if(typeDec == null)
             str.AppendLine($"// {name} - Unsupported field value type: {field.ValueType}");
@@ -44,25 +48,31 @@ public partial class ResoniteBindingGenerator
             str.AppendLine($"public {typeDec} {name};");
     }
 
-    async ValueTask<string> GenerateValueTypeDeclaration(string valueType, TypeDefinition containerType)
+    async Task GenerateReference(StringBuilder str, string name, ReferenceDefinition reference, TypeDefinition containerType)
     {
-        // If it's a generic type, just reference it directly
-        if (containerType.IsGenericType && containerType.GenericParameters.Any(p => p.Name == valueType))
-            return valueType;
+        var typeDec = await GenerateTypeDeclaration(reference.TargetType, containerType);
 
-        var typeDefinition = await GetTypeDefinition(valueType);
+        if (typeDec == null)
+            str.AppendLine($"// {name} - Unsupported reference value type: {reference.TargetType}");
+        else
+            str.AppendLine($"public {typeDec} {name};");
+    }
 
-        // Special case, when the type is contained within the container type (typically enum declared within a component)
-        // We can refer to it by the typename directly
-        if (typeDefinition.IsNested && typeDefinition.DeclaringType == containerType.FullTypeName)
+    async ValueTask<string> GenerateTypeDeclaration(TypeReference type, TypeDefinition containerType)
+    {
+        if (type.IsGenericParameter)
+            return type.Type;
+
+        try
         {
-            // Make sure bindings are generated
-            if (typeDefinition.IsEnum)
-                await GenerateEnumBinding(typeDefinition);
+            var typeDefinition = await GetTypeDefinition(type.Type);
 
-            return typeDefinition.Name;
+            return await FullyQualifyType(typeDefinition, type.GenericArguments, containerType.FullTypeName);
         }
-
-        return await FullyQualifyType(typeDefinition, typeDefinition.GenericArguments, typeDefinition.GenericParameters, valueType);
+        catch(System.Exception ex)
+        {
+            throw new System.Exception($"Failed to qualify type declaration: {type}\nOn container: {containerType.FullTypeName}\n" +
+                $"Error: {ex}");
+        }
     }
 }
