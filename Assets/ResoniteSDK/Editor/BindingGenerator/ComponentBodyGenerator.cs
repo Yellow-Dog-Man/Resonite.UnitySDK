@@ -19,57 +19,103 @@ public partial class ResoniteBindingGenerator
 
         foreach(var member in members)
         {
-            switch(member.Value)
-            {
-                case FieldDefinition field:
-                    await GenerateField(str, member.Key, field, containerType);
-                    break;
-
-                case ReferenceDefinition reference:
-                    await GenerateReference(str, member.Key, reference, containerType);
-                    break;
-
-                case SyncObjectMemberDefinition syncObject:
-                    await GenerateSyncObject(str, member.Key, syncObject, containerType);
-                    break;
-
-                default:
-                    str.AppendLine($"// {member.Key} - Unsupported member type: {member.Value.GetType().Name}");
-                    break;
-            }
+            str.Append("public ");
+            await GenerateMemberDeclaration(str, member.Value, containerType);
+            str.AppendLine($" {member.Key};");
         }
 
         return str.ToString();
     }
 
-    async Task GenerateField(StringBuilder str, string name, FieldDefinition field, TypeDefinition containerType)
+    async Task GenerateMemberDeclaration(StringBuilder str, MemberDefinition member, TypeDefinition containerType)
+    {
+        switch (member)
+        {
+            case FieldDefinition field:
+                await GenerateFieldDeclaration(str, field, containerType);
+                break;
+
+            case ReferenceDefinition reference:
+                await GenerateReferenceDeclaration(str, reference, containerType);
+                break;
+
+            case ListDefinition list:
+                await GenerateListDeclaration(str, list, containerType);
+                break;
+
+            case ArrayDefinition array:
+                await GenerateArrayDeclaration(str, array, containerType);
+                break;
+
+            case SyncObjectMemberDefinition syncObject:
+                await GenerateSyncObjectDeclaration(str, syncObject, containerType);
+                break;
+
+            case EmptyMemberDefinition emptyMember:
+                await GenerateEmptyMemberDeclaration(str, emptyMember, containerType);
+                break;
+
+            default:
+                throw new System.NotImplementedException($"Member type not implemented: {member.GetType().FullName}");
+        }
+    }
+
+    async Task GenerateFieldDeclaration(StringBuilder str, FieldDefinition field, TypeDefinition containerType)
     {
         var typeDec = await GenerateTypeDeclaration(field.ValueType, containerType);
 
-        if(typeDec == null)
-            str.AppendLine($"// {name} - Unsupported field value type: {field.ValueType}");
-        else
-            str.AppendLine($"public {typeDec} {name};");
+        if (typeDec == null)
+            throw new System.Exception($"Failed to generate field declaration for type: {field.ValueType}");
+
+        str.Append(typeDec);
     }
 
-    async Task GenerateReference(StringBuilder str, string name, ReferenceDefinition reference, TypeDefinition containerType)
+    async Task GenerateReferenceDeclaration(StringBuilder str, ReferenceDefinition reference, TypeDefinition containerType)
     {
         var typeDec = await GenerateTypeDeclaration(reference.TargetType, containerType);
 
         if (typeDec == null)
-            str.AppendLine($"// {name} - Unsupported reference value type: {reference.TargetType}");
-        else
-            str.AppendLine($"public {typeDec} {name};");
+            throw new System.Exception($"Failed to generate reference declaration for type: {reference.TargetType}");
+
+        str.Append(typeDec);
     }
 
-    async Task GenerateSyncObject(StringBuilder str, string name, SyncObjectMemberDefinition syncObject, TypeDefinition containerType)
+    async Task GenerateSyncObjectDeclaration(StringBuilder str, SyncObjectMemberDefinition syncObject, TypeDefinition containerType)
     {
         var typeDec = await GenerateTypeDeclaration(syncObject.Type, containerType);
 
         if (typeDec == null)
             throw new System.Exception($"Failed to generate type declaration for sync object: {syncObject.Type.Type}");
 
-        str.AppendLine($"public {typeDec} {name};");
+        str.Append(typeDec);
+    }
+
+    async Task GenerateListDeclaration(StringBuilder str, ListDefinition list, TypeDefinition containerType)
+    {
+        str.Append("System.Collections.Generic.List<");
+        await GenerateMemberDeclaration(str, list.ElementDefinition, containerType);
+        str.Append(">");
+    }
+
+    async Task GenerateArrayDeclaration(StringBuilder str, ArrayDefinition array, TypeDefinition containerType)
+    {
+        var typeDec = await GenerateTypeDeclaration(array.ValueType, containerType);
+
+        if (typeDec == null)
+            throw new System.Exception($"Failed to generate array declaration for type: {array.ValueType}");
+
+        str.Append(typeDec);
+        str.Append("[]");
+    }
+
+    async Task GenerateEmptyMemberDeclaration(StringBuilder str, EmptyMemberDefinition empty, TypeDefinition containerType)
+    {
+        var typeDec = await GenerateTypeDeclaration(empty.MemberType, containerType);
+
+        if (typeDec == null)
+            throw new System.Exception($"Failed to generate empty member declaration for type: {empty.MemberType}");
+
+        str.Append(typeDec);
     }
 
     async ValueTask<string> GenerateTypeDeclaration(TypeReference type, TypeDefinition containerType)
