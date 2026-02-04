@@ -15,6 +15,19 @@ public partial class ResoniteBindingGenerator
 {
     public string BINDINGS_ROOT_PATH => Path.Combine("Assets", "ResoniteSDK", "Bindings", "Generated");
 
+    public int GeneratedComponents { get; private set; }
+    public int TotalComponentsToGenerate { get; private set; }
+    public float Progress
+    {
+        get
+        {
+            if (TotalComponentsToGenerate == 0)
+                return 0f;
+
+            return GeneratedComponents / (float)TotalComponentsToGenerate;
+        }
+    }
+
     readonly ResoniteLink.LinkInterface link;
     readonly ProgressSynchronizer progress;
     readonly CancellationToken cancellationToken;
@@ -38,12 +51,12 @@ public partial class ResoniteBindingGenerator
     {
         try
         {
-            progress?.UpdateProgress("Starting generation", 0f);
+            progress?.UpdateProgress("Starting generation", Progress);
 
             // Delete previous bindings, since we'll regenerate everything
             if (Directory.Exists(BINDINGS_ROOT_PATH))
             {
-                progress?.UpdateProgress("Deleting old bindings", 0f);
+                progress?.UpdateProgress("Deleting old bindings", Progress);
                 Directory.Delete(BINDINGS_ROOT_PATH, true);
             }
 
@@ -84,6 +97,9 @@ public partial class ResoniteBindingGenerator
         CheckCancellation();
 
         var list = await link.GetComponentTypes(categoryPath);
+
+        if (TotalComponentsToGenerate == 0)
+            TotalComponentsToGenerate = list.TotalComponentCount;
 
         // This should never fail unless something went really wrong or we messed up
         if (!list.Success)
@@ -196,7 +212,9 @@ public partial class ResoniteBindingGenerator
 
         var definition = await GetComponentDefinition(type);
 
-        if(definition.Type.IsGenericType && !definition.Type.IsGenericTypeDefinition)
+        progress?.UpdateProgress(definition.Type.FullTypeName, Progress);
+
+        if (definition.Type.IsGenericType && !definition.Type.IsGenericTypeDefinition)
         {
             // This is a generic type instance! We must get the generic type definition in order to be able to generate the binding
             var result = await link.GetGenericTypeDefinition(type);
@@ -212,8 +230,6 @@ public partial class ResoniteBindingGenerator
             definition = await GetComponentDefinition(result.Definition.FullTypeName);
         }
 
-        progress?.UpdateProgress(definition.Type.FullTypeName, 0f);
-
         var source = await GenerateBindingSource(definition);
 
         // Figure out the file path for the file
@@ -221,6 +237,8 @@ public partial class ResoniteBindingGenerator
         var filePath = await GenerateFilePath(directoryPath, definition.Type);
 
         File.WriteAllText(filePath, source);
+
+        GeneratedComponents++;
 
         // Ensure that all the base types are processed and we have files for those as well
         if (definition.BaseTypeIsComponent)
@@ -274,7 +292,7 @@ public partial class ResoniteBindingGenerator
         if (!_generatedTypes.Add(type.FullTypeName))
             return;
 
-        progress?.UpdateProgress(type.FullTypeName, 0f);
+        progress?.UpdateProgress(type.FullTypeName, Progress);
 
         if (type.IsGenericType && !type.IsGenericTypeDefinition)
         {
