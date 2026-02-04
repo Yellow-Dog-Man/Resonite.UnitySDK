@@ -29,6 +29,10 @@ public partial class ResoniteBindingGenerator
                     await GenerateReference(str, member.Key, reference, containerType);
                     break;
 
+                case SyncObjectMemberDefinition syncObject:
+                    await GenerateSyncObject(str, member.Key, syncObject, containerType);
+                    break;
+
                 default:
                     str.AppendLine($"// {member.Key} - Unsupported member type: {member.Value.GetType().Name}");
                     break;
@@ -56,6 +60,16 @@ public partial class ResoniteBindingGenerator
             str.AppendLine($"// {name} - Unsupported reference value type: {reference.TargetType}");
         else
             str.AppendLine($"public {typeDec} {name};");
+    }
+
+    async Task GenerateSyncObject(StringBuilder str, string name, SyncObjectMemberDefinition syncObject, TypeDefinition containerType)
+    {
+        var typeDec = await GenerateTypeDeclaration(syncObject.Type, containerType);
+
+        if (typeDec == null)
+            throw new System.Exception($"Failed to generate type declaration for sync object: {syncObject.Type.Type}");
+
+        str.AppendLine($"public {typeDec} {name};");
     }
 
     async ValueTask<string> GenerateTypeDeclaration(TypeReference type, TypeDefinition containerType)

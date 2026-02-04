@@ -20,6 +20,7 @@ public partial class ResoniteBindingGenerator
     readonly CancellationToken cancellationToken;
 
     Dictionary<string, ComponentDefinition> _componentDefinitionCache = new Dictionary<string, ComponentDefinition>();
+    Dictionary<string, SyncObjectDefinition> _syncObjectDefinitionCache = new Dictionary<string, SyncObjectDefinition>();
     Dictionary<string, TypeDefinition> _typeDefinitionCache = new Dictionary<string, TypeDefinition>();
     HashSet<string> _generatedTypes = new HashSet<string>();
 
@@ -141,13 +142,55 @@ public partial class ResoniteBindingGenerator
         return name;
     }
 
+    public async Task GenerateSyncObjectBinding(string type)
+    {
+        CheckCancellation();
+
+        // Only generate bindings once for the same type.
+        if (!_generatedTypes.Add(type))
+            return;
+
+        var definition = await GetSyncObjectDefinition(type);
+
+        if (definition.Type.IsGenericType && !definition.Type.IsGenericTypeDefinition)
+        {
+            // This is a generic type instance! We must get the generic type definition in order to be able to generate the binding
+            var result = await link.GetGenericTypeDefinition(type);
+
+            if (!result.Success)
+                throw new System.Exception($"Failed to get generic type definition for type {type}: {result.ErrorInfo}");
+
+            // Check again - it's possible we generated this component already
+            if (!_generatedTypes.Add(result.Definition.FullTypeName))
+                return;
+
+            // Get the definition for the generic type definition
+            definition = await GetSyncObjectDefinition(result.Definition.FullTypeName);
+        }
+
+        var source = await GenerateBindingSource(definition);
+
+        // Figure out the file path for the file
+        var directoryPath = Path.Combine(BINDINGS_ROOT_PATH, "SyncObjects");
+        var filePath = await GenerateFilePath(directoryPath, definition.Type);
+
+        File.WriteAllText(filePath, source);
+
+        // Ensure that all the base types are processed and we have files for those as well
+        if (definition.BaseTypeIsSyncObject)
+        {
+            if (definition.Type.BaseType == null)
+                throw new System.Exception($"Base type is missing for sync object {definition.Type.FullTypeName}");
+
+            await GenerateComponentBinding(definition.Type.BaseType.Type);
+        }
+    }
+
     public async Task GenerateComponentBinding(string type)
     {
         CheckCancellation();
 
-        // Only generate bindings once for the same type. There are two cases when components can be encountered twice:
-        // - Components can be categorized into multiple categories at the same time
-        // - Base types are shared across multiple components
+        // Only generate bindings once for the same type.
         if (!_generatedTypes.Add(type))
             return;
 
@@ -176,8 +219,6 @@ public partial class ResoniteBindingGenerator
         // Figure out the file path for the file
         var directoryPath = Path.Combine(BINDINGS_ROOT_PATH, definition.CategoryPath ?? "Uncategorized");
         var filePath = await GenerateFilePath(directoryPath, definition.Type);
-
-        Directory.CreateDirectory(directoryPath);
 
         File.WriteAllText(filePath, source);
 
@@ -283,6 +324,8 @@ public partial class ResoniteBindingGenerator
         // If the type isn't a component, we need to generate a dummy file for it so it can be referenced. It'll contain no actual code.
         if (type.IsComponent)
             await GenerateComponentBinding(type.FullTypeName);
+        else if (type.IsSyncObject)
+            await GenerateSyncObjectBinding(type.FullTypeName);
         else if (type.IsEnum)
             await GenerateEnumBinding(type);
         else if (!type.IsComponent)
@@ -532,6 +575,40 @@ namespace {type.Namespace}
         var body = await GenerateBody(definition.Members, definition.Type);
 
         return await GenerateBindingSource(definition.Type, body, attributes.ToString());
+    }
+
+    async Task<string> GenerateBindingSource(SyncObjectDefinition definition)
+    {
+        CheckCancellation();
+
+        var body = await GenerateBody(definition.Members, definition.Type);
+
+        return await GenerateBindingSource(definition.Type, body, "");
+    }
+
+    async ValueTask<SyncObjectDefinition> GetSyncObjectDefinition(string type)
+    {
+        CheckCancellation();
+
+        if (_syncObjectDefinitionCache.TryGetValue(type, out var definition))
+            return definition;
+
+        // We specifically fetch un-flattened definitions.
+        // We will work our way upwards the types to mimic the inheritance hierarchy.
+        var definitionResult = await link.GetSyncObjectDefinition(type, false);
+
+        if (!definitionResult.Success)
+            throw new System.Exception($"Failed to fetch sync object definition for type {type}:\n{definitionResult.ErrorInfo}");
+
+        definition = definitionResult.Definition;
+
+        // Store it in the cache before returning it
+        _syncObjectDefinitionCache.Add(type, definition);
+
+        // We can also store the type definition in case we don't have it!
+        _typeDefinitionCache.TryAdd(definition.Type.FullTypeName, definition.Type);
+
+        return definition;
     }
 
     async ValueTask<ComponentDefinition> GetComponentDefinition(string type)
