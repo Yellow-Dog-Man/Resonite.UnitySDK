@@ -116,6 +116,9 @@ public static class PrimitiveMapper
             case "double4x4": return typeof(Matrix4x4Double);
             #endregion
 
+            // We cannot represent types as actual types, instead they are encoded into a string
+            case "Type": return typeof(string);
+
             default:
                 return null;
         }
