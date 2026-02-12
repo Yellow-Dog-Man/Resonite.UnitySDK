@@ -103,7 +103,12 @@ public class SceneConverter
         data.Scale.Value = transform.localScale.ToResoniteLink();
 
         data.Name.Value = transform.name;
-        data.Tag.Value = transform.tag;
+
+        if (transform.tag == "Untagged")
+            data.Tag.Value = null;
+        else
+            data.Tag.Value = transform.tag;
+
         data.IsActive.Value = transform.gameObject.activeSelf;
     }
 
