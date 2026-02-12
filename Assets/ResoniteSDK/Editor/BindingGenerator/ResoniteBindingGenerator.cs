@@ -431,7 +431,7 @@ public partial class ResoniteBindingGenerator
             if (type.IsValueType)
                 baseDef = null;
             else if (type.Name == "Worker" && type.AssemblyName == "FrooxEngine")
-                baseDef = "UnityEngine.MonoBehaviour";
+                baseDef = "ResoniteObject";
             else if (!type.IsInterface)
                 baseDef = "UnityEngine.Object";
             else

@@ -24,6 +24,18 @@ public partial class ResoniteBindingGenerator
             str.AppendLine($" {member.Key};");
         }
 
+        str.AppendLine();
+
+        str.AppendLine(@$"public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+{{
+    base.CollectMembers(members);");
+
+        // Generate the data conversion for the members
+        foreach (var member in members)
+            await GenerateMemberCollection(str, member.Key, member.Value, containerType);
+
+        str.AppendLine("}");
+
         return str.ToString();
     }
 
@@ -59,6 +71,41 @@ public partial class ResoniteBindingGenerator
                 throw new System.NotImplementedException($"Member type not implemented: {member.GetType().FullName}");
         }
     }
+
+    async Task GenerateMemberCollection(StringBuilder str, string name, MemberDefinition member, TypeDefinition containerType)
+    {
+        switch(member)
+        {
+            case FieldDefinition field:
+                await GenerateFieldCollection(str, name, field, containerType);
+                break;
+
+            case ReferenceDefinition reference:
+                //await GenerateReferenceCollection(str, reference, containerType);
+                break;
+
+            case ListDefinition list:
+                //await GenerateListCollection(str, list, containerType);
+                break;
+
+            case ArrayDefinition array:
+                //await GenerateArrayCollection(str, array, containerType);
+                break;
+
+            case SyncObjectMemberDefinition syncObject:
+                //await GenerateSyncObjectCollection(str, syncObject, containerType);
+                break;
+
+            case EmptyMemberDefinition emptyMember:
+                //await GenerateEmptyMemberCollection(str, emptyMember, containerType);
+                break;
+
+            default:
+                throw new System.NotImplementedException($"Member type not implemented: {member.GetType().FullName}");
+        }
+    }
+
+    #region DECLARATIONS
 
     async Task GenerateFieldDeclaration(StringBuilder str, FieldDefinition field, TypeDefinition containerType)
     {
@@ -135,4 +182,15 @@ public partial class ResoniteBindingGenerator
                 $"Error: {ex}");
         }
     }
+
+    #endregion
+
+    #region COLLECTIONS
+
+    async Task GenerateFieldCollection(StringBuilder str, string name, FieldDefinition field, TypeDefinition containerType)
+    {
+        str.AppendLine($"members.Add({name}, {name}.ToResoniteLinkField());");
+    }
+
+    #endregion
 }
