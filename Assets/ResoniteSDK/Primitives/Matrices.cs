@@ -1,7 +1,9 @@
 ﻿
 using System;
 using ResoniteLink;
-using UnityEngine;
+
+namespace UnityEngine
+{
 
 
 		[Serializable]
@@ -143,3 +145,4 @@ using UnityEngine;
 		}
 
 		
+}

@@ -7,7 +7,9 @@
 
 using System;
 using ResoniteLink;
-using UnityEngine;
+
+namespace UnityEngine
+{
 
 <#
 var types = new List<string>()
@@ -66,3 +68,5 @@ foreach(var type in types)
 }
 
 #>
+
+}
