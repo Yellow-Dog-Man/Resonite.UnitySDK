@@ -10,121 +10,1183 @@ public static class FieldConverter
 {
     public static Field ToResoniteLinkField<T>(this T value)
     {
-        switch(value)
-        {
-            // Unity Primitives (and our extensions)
-                            case UnityEngine.Vector2 Vector2_value: return Vector2_value.ToResoniteLink().ToResoniteLinkField();
-                                case UnityEngine.Vector3 Vector3_value: return Vector3_value.ToResoniteLink().ToResoniteLinkField();
-                                case UnityEngine.Vector4 Vector4_value: return Vector4_value.ToResoniteLink().ToResoniteLinkField();
-                                case UnityEngine.Quaternion Quaternion_value: return Quaternion_value.ToResoniteLink().ToResoniteLinkField();
-                                case UnityEngine.Vector2Int Vector2Int_value: return Vector2Int_value.ToResoniteLink().ToResoniteLinkField();
-                                case UnityEngine.Vector3Int Vector3Int_value: return Vector3Int_value.ToResoniteLink().ToResoniteLinkField();
-                                case UnityEngine.Matrix4x4 Matrix4x4_value: return Matrix4x4_value.ToResoniteLink().ToResoniteLinkField();
-                                case UnityEngine.Color Color_value: return Color_value.ToResoniteLink().ToResoniteLinkField();
-                                case UnityEngine.Color32 Color32_value: return Color32_value.ToResoniteLink().ToResoniteLinkField();
-                                case UnityEngine.Rect Rect_value: return Rect_value.ToResoniteLink().ToResoniteLinkField();
-                                case UnityEngine.RectInt RectInt_value: return RectInt_value.ToResoniteLink().ToResoniteLinkField();
-                                case UnityEngine.QuaternionDouble QuaternionDouble_value: return QuaternionDouble_value.ToResoniteLink().ToResoniteLinkField();
-                                case UnityEngine.ColorX ColorX_value: return ColorX_value.ToResoniteLink().ToResoniteLinkField();
-                                case UnityEngine.Vector2Bool Vector2Bool_value: return Vector2Bool_value.ToResoniteLink().ToResoniteLinkField();
-                                case UnityEngine.Vector3Bool Vector3Bool_value: return Vector3Bool_value.ToResoniteLink().ToResoniteLinkField();
-                                case UnityEngine.Vector4Bool Vector4Bool_value: return Vector4Bool_value.ToResoniteLink().ToResoniteLinkField();
-                                case UnityEngine.Vector2Byte Vector2Byte_value: return Vector2Byte_value.ToResoniteLink().ToResoniteLinkField();
-                                case UnityEngine.Vector3Byte Vector3Byte_value: return Vector3Byte_value.ToResoniteLink().ToResoniteLinkField();
-                                case UnityEngine.Vector4Byte Vector4Byte_value: return Vector4Byte_value.ToResoniteLink().ToResoniteLinkField();
-                                case UnityEngine.Vector2Ushort Vector2Ushort_value: return Vector2Ushort_value.ToResoniteLink().ToResoniteLinkField();
-                                case UnityEngine.Vector3Ushort Vector3Ushort_value: return Vector3Ushort_value.ToResoniteLink().ToResoniteLinkField();
-                                case UnityEngine.Vector4Ushort Vector4Ushort_value: return Vector4Ushort_value.ToResoniteLink().ToResoniteLinkField();
-                                case UnityEngine.Vector2Uint Vector2Uint_value: return Vector2Uint_value.ToResoniteLink().ToResoniteLinkField();
-                                case UnityEngine.Vector3Uint Vector3Uint_value: return Vector3Uint_value.ToResoniteLink().ToResoniteLinkField();
-                                case UnityEngine.Vector4Uint Vector4Uint_value: return Vector4Uint_value.ToResoniteLink().ToResoniteLinkField();
-                                case UnityEngine.Vector2Ulong Vector2Ulong_value: return Vector2Ulong_value.ToResoniteLink().ToResoniteLinkField();
-                                case UnityEngine.Vector3Ulong Vector3Ulong_value: return Vector3Ulong_value.ToResoniteLink().ToResoniteLinkField();
-                                case UnityEngine.Vector4Ulong Vector4Ulong_value: return Vector4Ulong_value.ToResoniteLink().ToResoniteLinkField();
-                                case UnityEngine.Vector2Sbyte Vector2Sbyte_value: return Vector2Sbyte_value.ToResoniteLink().ToResoniteLinkField();
-                                case UnityEngine.Vector3Sbyte Vector3Sbyte_value: return Vector3Sbyte_value.ToResoniteLink().ToResoniteLinkField();
-                                case UnityEngine.Vector4Sbyte Vector4Sbyte_value: return Vector4Sbyte_value.ToResoniteLink().ToResoniteLinkField();
-                                case UnityEngine.Vector2Short Vector2Short_value: return Vector2Short_value.ToResoniteLink().ToResoniteLinkField();
-                                case UnityEngine.Vector3Short Vector3Short_value: return Vector3Short_value.ToResoniteLink().ToResoniteLinkField();
-                                case UnityEngine.Vector4Short Vector4Short_value: return Vector4Short_value.ToResoniteLink().ToResoniteLinkField();
-                                case UnityEngine.Vector2Long Vector2Long_value: return Vector2Long_value.ToResoniteLink().ToResoniteLinkField();
-                                case UnityEngine.Vector3Long Vector3Long_value: return Vector3Long_value.ToResoniteLink().ToResoniteLinkField();
-                                case UnityEngine.Vector4Long Vector4Long_value: return Vector4Long_value.ToResoniteLink().ToResoniteLinkField();
-                                case UnityEngine.Vector2Double Vector2Double_value: return Vector2Double_value.ToResoniteLink().ToResoniteLinkField();
-                                case UnityEngine.Vector3Double Vector3Double_value: return Vector3Double_value.ToResoniteLink().ToResoniteLinkField();
-                                case UnityEngine.Vector4Double Vector4Double_value: return Vector4Double_value.ToResoniteLink().ToResoniteLinkField();
-                                case UnityEngine.Matrix2x2 Matrix2x2_value: return Matrix2x2_value.ToResoniteLink().ToResoniteLinkField();
-                                case UnityEngine.Matrix3x3 Matrix3x3_value: return Matrix3x3_value.ToResoniteLink().ToResoniteLinkField();
-                                case UnityEngine.Matrix2x2Double Matrix2x2Double_value: return Matrix2x2Double_value.ToResoniteLink().ToResoniteLinkField();
-                                case UnityEngine.Matrix3x3Double Matrix3x3Double_value: return Matrix3x3Double_value.ToResoniteLink().ToResoniteLinkField();
-                                case UnityEngine.Matrix4x4Double Matrix4x4Double_value: return Matrix4x4Double_value.ToResoniteLink().ToResoniteLinkField();
-                
-            // All other primitives
-                    case byte byte_value: return new Field_byte() { Value = byte_value };
-                        case ushort ushort_value: return new Field_ushort() { Value = ushort_value };
-                        case uint uint_value: return new Field_uint() { Value = uint_value };
-                        case ulong ulong_value: return new Field_ulong() { Value = ulong_value };
-                        case sbyte sbyte_value: return new Field_sbyte() { Value = sbyte_value };
-                        case short short_value: return new Field_short() { Value = short_value };
-                        case int int_value: return new Field_int() { Value = int_value };
-                        case long long_value: return new Field_long() { Value = long_value };
-                        case float float_value: return new Field_float() { Value = float_value };
-                        case double double_value: return new Field_double() { Value = double_value };
-                        case decimal decimal_value: return new Field_decimal() { Value = decimal_value };
-                        case bool bool_value: return new Field_bool() { Value = bool_value };
-                        case char char_value: return new Field_char() { Value = char_value };
-                        case string string_value: return new Field_string() { Value = string_value };
-                        case Uri Uri_value: return new Field_Uri() { Value = Uri_value };
-                        case DateTime DateTime_value: return new Field_DateTime() { Value = DateTime_value };
-                        case TimeSpan TimeSpan_value: return new Field_TimeSpan() { Value = TimeSpan_value };
-                        case color color_value: return new Field_color() { Value = color_value };
-                        case colorX colorX_value: return new Field_colorX() { Value = colorX_value };
-                        case color32 color32_value: return new Field_color32() { Value = color32_value };
-                        case Rect Rect_value: return new Field_Rect() { Value = Rect_value };
-                        case IntRect IntRect_value: return new Field_IntRect() { Value = IntRect_value };
-                        case float2 float2_value: return new Field_float2() { Value = float2_value };
-                        case double2 double2_value: return new Field_double2() { Value = double2_value };
-                        case byte2 byte2_value: return new Field_byte2() { Value = byte2_value };
-                        case ushort2 ushort2_value: return new Field_ushort2() { Value = ushort2_value };
-                        case uint2 uint2_value: return new Field_uint2() { Value = uint2_value };
-                        case ulong2 ulong2_value: return new Field_ulong2() { Value = ulong2_value };
-                        case sbyte2 sbyte2_value: return new Field_sbyte2() { Value = sbyte2_value };
-                        case short2 short2_value: return new Field_short2() { Value = short2_value };
-                        case int2 int2_value: return new Field_int2() { Value = int2_value };
-                        case long2 long2_value: return new Field_long2() { Value = long2_value };
-                        case bool2 bool2_value: return new Field_bool2() { Value = bool2_value };
-                        case float3 float3_value: return new Field_float3() { Value = float3_value };
-                        case double3 double3_value: return new Field_double3() { Value = double3_value };
-                        case byte3 byte3_value: return new Field_byte3() { Value = byte3_value };
-                        case ushort3 ushort3_value: return new Field_ushort3() { Value = ushort3_value };
-                        case uint3 uint3_value: return new Field_uint3() { Value = uint3_value };
-                        case ulong3 ulong3_value: return new Field_ulong3() { Value = ulong3_value };
-                        case sbyte3 sbyte3_value: return new Field_sbyte3() { Value = sbyte3_value };
-                        case short3 short3_value: return new Field_short3() { Value = short3_value };
-                        case int3 int3_value: return new Field_int3() { Value = int3_value };
-                        case long3 long3_value: return new Field_long3() { Value = long3_value };
-                        case bool3 bool3_value: return new Field_bool3() { Value = bool3_value };
-                        case float4 float4_value: return new Field_float4() { Value = float4_value };
-                        case double4 double4_value: return new Field_double4() { Value = double4_value };
-                        case byte4 byte4_value: return new Field_byte4() { Value = byte4_value };
-                        case ushort4 ushort4_value: return new Field_ushort4() { Value = ushort4_value };
-                        case uint4 uint4_value: return new Field_uint4() { Value = uint4_value };
-                        case ulong4 ulong4_value: return new Field_ulong4() { Value = ulong4_value };
-                        case sbyte4 sbyte4_value: return new Field_sbyte4() { Value = sbyte4_value };
-                        case short4 short4_value: return new Field_short4() { Value = short4_value };
-                        case int4 int4_value: return new Field_int4() { Value = int4_value };
-                        case long4 long4_value: return new Field_long4() { Value = long4_value };
-                        case bool4 bool4_value: return new Field_bool4() { Value = bool4_value };
-                        case floatQ floatQ_value: return new Field_floatQ() { Value = floatQ_value };
-                        case doubleQ doubleQ_value: return new Field_doubleQ() { Value = doubleQ_value };
-                        case float2x2 float2x2_value: return new Field_float2x2() { Value = float2x2_value };
-                        case double2x2 double2x2_value: return new Field_double2x2() { Value = double2x2_value };
-                        case float3x3 float3x3_value: return new Field_float3x3() { Value = float3x3_value };
-                        case double3x3 double3x3_value: return new Field_double3x3() { Value = double3x3_value };
-                        case float4x4 float4x4_value: return new Field_float4x4() { Value = float4x4_value };
-                        case double4x4 double4x4_value: return new Field_double4x4() { Value = double4x4_value };
-                    }
+        var type = typeof(T);
 
+        if(Nullable.GetUnderlyingType(type)?.IsEnum == true)
+        {
+            return new Field_Nullable_Enum() 
+            {
+                Value = value?.ToString()  
+            };
+        }
+        else if(type.IsEnum)
+        {
+            return new Field_Enum() 
+            {
+                Value = value.ToString()  
+            };
+        }
+
+        // Unity Primitives (and our extensions)
+                    if(value is UnityEngine.Vector2 value_Vector2)
+                return value_Vector2.ToResoniteLink().ToResoniteLinkField();
+            if(type == typeof(UnityEngine.Vector2?))
+                return (value as UnityEngine.Vector2?)?.ToResoniteLink().ToResoniteLinkField();
+
+                        if(value is UnityEngine.Vector3 value_Vector3)
+                return value_Vector3.ToResoniteLink().ToResoniteLinkField();
+            if(type == typeof(UnityEngine.Vector3?))
+                return (value as UnityEngine.Vector3?)?.ToResoniteLink().ToResoniteLinkField();
+
+                        if(value is UnityEngine.Vector4 value_Vector4)
+                return value_Vector4.ToResoniteLink().ToResoniteLinkField();
+            if(type == typeof(UnityEngine.Vector4?))
+                return (value as UnityEngine.Vector4?)?.ToResoniteLink().ToResoniteLinkField();
+
+                        if(value is UnityEngine.Quaternion value_Quaternion)
+                return value_Quaternion.ToResoniteLink().ToResoniteLinkField();
+            if(type == typeof(UnityEngine.Quaternion?))
+                return (value as UnityEngine.Quaternion?)?.ToResoniteLink().ToResoniteLinkField();
+
+                        if(value is UnityEngine.Vector2Int value_Vector2Int)
+                return value_Vector2Int.ToResoniteLink().ToResoniteLinkField();
+            if(type == typeof(UnityEngine.Vector2Int?))
+                return (value as UnityEngine.Vector2Int?)?.ToResoniteLink().ToResoniteLinkField();
+
+                        if(value is UnityEngine.Vector3Int value_Vector3Int)
+                return value_Vector3Int.ToResoniteLink().ToResoniteLinkField();
+            if(type == typeof(UnityEngine.Vector3Int?))
+                return (value as UnityEngine.Vector3Int?)?.ToResoniteLink().ToResoniteLinkField();
+
+                        if(value is UnityEngine.Matrix4x4 value_Matrix4x4)
+                return value_Matrix4x4.ToResoniteLink().ToResoniteLinkField();
+            if(type == typeof(UnityEngine.Matrix4x4?))
+                return (value as UnityEngine.Matrix4x4?)?.ToResoniteLink().ToResoniteLinkField();
+
+                        if(value is UnityEngine.Color value_Color)
+                return value_Color.ToResoniteLink().ToResoniteLinkField();
+            if(type == typeof(UnityEngine.Color?))
+                return (value as UnityEngine.Color?)?.ToResoniteLink().ToResoniteLinkField();
+
+                        if(value is UnityEngine.Color32 value_Color32)
+                return value_Color32.ToResoniteLink().ToResoniteLinkField();
+            if(type == typeof(UnityEngine.Color32?))
+                return (value as UnityEngine.Color32?)?.ToResoniteLink().ToResoniteLinkField();
+
+                        if(value is UnityEngine.Rect value_Rect)
+                return value_Rect.ToResoniteLink().ToResoniteLinkField();
+            if(type == typeof(UnityEngine.Rect?))
+                return (value as UnityEngine.Rect?)?.ToResoniteLink().ToResoniteLinkField();
+
+                        if(value is UnityEngine.RectInt value_RectInt)
+                return value_RectInt.ToResoniteLink().ToResoniteLinkField();
+            if(type == typeof(UnityEngine.RectInt?))
+                return (value as UnityEngine.RectInt?)?.ToResoniteLink().ToResoniteLinkField();
+
+                        if(value is UnityEngine.QuaternionDouble value_QuaternionDouble)
+                return value_QuaternionDouble.ToResoniteLink().ToResoniteLinkField();
+            if(type == typeof(UnityEngine.QuaternionDouble?))
+                return (value as UnityEngine.QuaternionDouble?)?.ToResoniteLink().ToResoniteLinkField();
+
+                        if(value is UnityEngine.ColorX value_ColorX)
+                return value_ColorX.ToResoniteLink().ToResoniteLinkField();
+            if(type == typeof(UnityEngine.ColorX?))
+                return (value as UnityEngine.ColorX?)?.ToResoniteLink().ToResoniteLinkField();
+
+                        if(value is UnityEngine.Vector2Bool value_Vector2Bool)
+                return value_Vector2Bool.ToResoniteLink().ToResoniteLinkField();
+            if(type == typeof(UnityEngine.Vector2Bool?))
+                return (value as UnityEngine.Vector2Bool?)?.ToResoniteLink().ToResoniteLinkField();
+
+                        if(value is UnityEngine.Vector3Bool value_Vector3Bool)
+                return value_Vector3Bool.ToResoniteLink().ToResoniteLinkField();
+            if(type == typeof(UnityEngine.Vector3Bool?))
+                return (value as UnityEngine.Vector3Bool?)?.ToResoniteLink().ToResoniteLinkField();
+
+                        if(value is UnityEngine.Vector4Bool value_Vector4Bool)
+                return value_Vector4Bool.ToResoniteLink().ToResoniteLinkField();
+            if(type == typeof(UnityEngine.Vector4Bool?))
+                return (value as UnityEngine.Vector4Bool?)?.ToResoniteLink().ToResoniteLinkField();
+
+                        if(value is UnityEngine.Vector2Byte value_Vector2Byte)
+                return value_Vector2Byte.ToResoniteLink().ToResoniteLinkField();
+            if(type == typeof(UnityEngine.Vector2Byte?))
+                return (value as UnityEngine.Vector2Byte?)?.ToResoniteLink().ToResoniteLinkField();
+
+                        if(value is UnityEngine.Vector3Byte value_Vector3Byte)
+                return value_Vector3Byte.ToResoniteLink().ToResoniteLinkField();
+            if(type == typeof(UnityEngine.Vector3Byte?))
+                return (value as UnityEngine.Vector3Byte?)?.ToResoniteLink().ToResoniteLinkField();
+
+                        if(value is UnityEngine.Vector4Byte value_Vector4Byte)
+                return value_Vector4Byte.ToResoniteLink().ToResoniteLinkField();
+            if(type == typeof(UnityEngine.Vector4Byte?))
+                return (value as UnityEngine.Vector4Byte?)?.ToResoniteLink().ToResoniteLinkField();
+
+                        if(value is UnityEngine.Vector2Ushort value_Vector2Ushort)
+                return value_Vector2Ushort.ToResoniteLink().ToResoniteLinkField();
+            if(type == typeof(UnityEngine.Vector2Ushort?))
+                return (value as UnityEngine.Vector2Ushort?)?.ToResoniteLink().ToResoniteLinkField();
+
+                        if(value is UnityEngine.Vector3Ushort value_Vector3Ushort)
+                return value_Vector3Ushort.ToResoniteLink().ToResoniteLinkField();
+            if(type == typeof(UnityEngine.Vector3Ushort?))
+                return (value as UnityEngine.Vector3Ushort?)?.ToResoniteLink().ToResoniteLinkField();
+
+                        if(value is UnityEngine.Vector4Ushort value_Vector4Ushort)
+                return value_Vector4Ushort.ToResoniteLink().ToResoniteLinkField();
+            if(type == typeof(UnityEngine.Vector4Ushort?))
+                return (value as UnityEngine.Vector4Ushort?)?.ToResoniteLink().ToResoniteLinkField();
+
+                        if(value is UnityEngine.Vector2Uint value_Vector2Uint)
+                return value_Vector2Uint.ToResoniteLink().ToResoniteLinkField();
+            if(type == typeof(UnityEngine.Vector2Uint?))
+                return (value as UnityEngine.Vector2Uint?)?.ToResoniteLink().ToResoniteLinkField();
+
+                        if(value is UnityEngine.Vector3Uint value_Vector3Uint)
+                return value_Vector3Uint.ToResoniteLink().ToResoniteLinkField();
+            if(type == typeof(UnityEngine.Vector3Uint?))
+                return (value as UnityEngine.Vector3Uint?)?.ToResoniteLink().ToResoniteLinkField();
+
+                        if(value is UnityEngine.Vector4Uint value_Vector4Uint)
+                return value_Vector4Uint.ToResoniteLink().ToResoniteLinkField();
+            if(type == typeof(UnityEngine.Vector4Uint?))
+                return (value as UnityEngine.Vector4Uint?)?.ToResoniteLink().ToResoniteLinkField();
+
+                        if(value is UnityEngine.Vector2Ulong value_Vector2Ulong)
+                return value_Vector2Ulong.ToResoniteLink().ToResoniteLinkField();
+            if(type == typeof(UnityEngine.Vector2Ulong?))
+                return (value as UnityEngine.Vector2Ulong?)?.ToResoniteLink().ToResoniteLinkField();
+
+                        if(value is UnityEngine.Vector3Ulong value_Vector3Ulong)
+                return value_Vector3Ulong.ToResoniteLink().ToResoniteLinkField();
+            if(type == typeof(UnityEngine.Vector3Ulong?))
+                return (value as UnityEngine.Vector3Ulong?)?.ToResoniteLink().ToResoniteLinkField();
+
+                        if(value is UnityEngine.Vector4Ulong value_Vector4Ulong)
+                return value_Vector4Ulong.ToResoniteLink().ToResoniteLinkField();
+            if(type == typeof(UnityEngine.Vector4Ulong?))
+                return (value as UnityEngine.Vector4Ulong?)?.ToResoniteLink().ToResoniteLinkField();
+
+                        if(value is UnityEngine.Vector2Sbyte value_Vector2Sbyte)
+                return value_Vector2Sbyte.ToResoniteLink().ToResoniteLinkField();
+            if(type == typeof(UnityEngine.Vector2Sbyte?))
+                return (value as UnityEngine.Vector2Sbyte?)?.ToResoniteLink().ToResoniteLinkField();
+
+                        if(value is UnityEngine.Vector3Sbyte value_Vector3Sbyte)
+                return value_Vector3Sbyte.ToResoniteLink().ToResoniteLinkField();
+            if(type == typeof(UnityEngine.Vector3Sbyte?))
+                return (value as UnityEngine.Vector3Sbyte?)?.ToResoniteLink().ToResoniteLinkField();
+
+                        if(value is UnityEngine.Vector4Sbyte value_Vector4Sbyte)
+                return value_Vector4Sbyte.ToResoniteLink().ToResoniteLinkField();
+            if(type == typeof(UnityEngine.Vector4Sbyte?))
+                return (value as UnityEngine.Vector4Sbyte?)?.ToResoniteLink().ToResoniteLinkField();
+
+                        if(value is UnityEngine.Vector2Short value_Vector2Short)
+                return value_Vector2Short.ToResoniteLink().ToResoniteLinkField();
+            if(type == typeof(UnityEngine.Vector2Short?))
+                return (value as UnityEngine.Vector2Short?)?.ToResoniteLink().ToResoniteLinkField();
+
+                        if(value is UnityEngine.Vector3Short value_Vector3Short)
+                return value_Vector3Short.ToResoniteLink().ToResoniteLinkField();
+            if(type == typeof(UnityEngine.Vector3Short?))
+                return (value as UnityEngine.Vector3Short?)?.ToResoniteLink().ToResoniteLinkField();
+
+                        if(value is UnityEngine.Vector4Short value_Vector4Short)
+                return value_Vector4Short.ToResoniteLink().ToResoniteLinkField();
+            if(type == typeof(UnityEngine.Vector4Short?))
+                return (value as UnityEngine.Vector4Short?)?.ToResoniteLink().ToResoniteLinkField();
+
+                        if(value is UnityEngine.Vector2Long value_Vector2Long)
+                return value_Vector2Long.ToResoniteLink().ToResoniteLinkField();
+            if(type == typeof(UnityEngine.Vector2Long?))
+                return (value as UnityEngine.Vector2Long?)?.ToResoniteLink().ToResoniteLinkField();
+
+                        if(value is UnityEngine.Vector3Long value_Vector3Long)
+                return value_Vector3Long.ToResoniteLink().ToResoniteLinkField();
+            if(type == typeof(UnityEngine.Vector3Long?))
+                return (value as UnityEngine.Vector3Long?)?.ToResoniteLink().ToResoniteLinkField();
+
+                        if(value is UnityEngine.Vector4Long value_Vector4Long)
+                return value_Vector4Long.ToResoniteLink().ToResoniteLinkField();
+            if(type == typeof(UnityEngine.Vector4Long?))
+                return (value as UnityEngine.Vector4Long?)?.ToResoniteLink().ToResoniteLinkField();
+
+                        if(value is UnityEngine.Vector2Double value_Vector2Double)
+                return value_Vector2Double.ToResoniteLink().ToResoniteLinkField();
+            if(type == typeof(UnityEngine.Vector2Double?))
+                return (value as UnityEngine.Vector2Double?)?.ToResoniteLink().ToResoniteLinkField();
+
+                        if(value is UnityEngine.Vector3Double value_Vector3Double)
+                return value_Vector3Double.ToResoniteLink().ToResoniteLinkField();
+            if(type == typeof(UnityEngine.Vector3Double?))
+                return (value as UnityEngine.Vector3Double?)?.ToResoniteLink().ToResoniteLinkField();
+
+                        if(value is UnityEngine.Vector4Double value_Vector4Double)
+                return value_Vector4Double.ToResoniteLink().ToResoniteLinkField();
+            if(type == typeof(UnityEngine.Vector4Double?))
+                return (value as UnityEngine.Vector4Double?)?.ToResoniteLink().ToResoniteLinkField();
+
+                        if(value is UnityEngine.Matrix2x2 value_Matrix2x2)
+                return value_Matrix2x2.ToResoniteLink().ToResoniteLinkField();
+            if(type == typeof(UnityEngine.Matrix2x2?))
+                return (value as UnityEngine.Matrix2x2?)?.ToResoniteLink().ToResoniteLinkField();
+
+                        if(value is UnityEngine.Matrix3x3 value_Matrix3x3)
+                return value_Matrix3x3.ToResoniteLink().ToResoniteLinkField();
+            if(type == typeof(UnityEngine.Matrix3x3?))
+                return (value as UnityEngine.Matrix3x3?)?.ToResoniteLink().ToResoniteLinkField();
+
+                        if(value is UnityEngine.Matrix2x2Double value_Matrix2x2Double)
+                return value_Matrix2x2Double.ToResoniteLink().ToResoniteLinkField();
+            if(type == typeof(UnityEngine.Matrix2x2Double?))
+                return (value as UnityEngine.Matrix2x2Double?)?.ToResoniteLink().ToResoniteLinkField();
+
+                        if(value is UnityEngine.Matrix3x3Double value_Matrix3x3Double)
+                return value_Matrix3x3Double.ToResoniteLink().ToResoniteLinkField();
+            if(type == typeof(UnityEngine.Matrix3x3Double?))
+                return (value as UnityEngine.Matrix3x3Double?)?.ToResoniteLink().ToResoniteLinkField();
+
+                        if(value is UnityEngine.Matrix4x4Double value_Matrix4x4Double)
+                return value_Matrix4x4Double.ToResoniteLink().ToResoniteLinkField();
+            if(type == typeof(UnityEngine.Matrix4x4Double?))
+                return (value as UnityEngine.Matrix4x4Double?)?.ToResoniteLink().ToResoniteLinkField();
+
+            
+            // All other primitives
+                    if(type == typeof(byte))
+            {
+                var field = new Field_byte();
+                field.BoxedValue = value;
+                return field;
+            }
+
+                            
+                if(type == typeof(byte?))
+                {
+                    var field = new Field_Nullable_byte();
+                    field.BoxedValue = value;
+                    return field;
+                }
+                
+                        if(type == typeof(ushort))
+            {
+                var field = new Field_ushort();
+                field.BoxedValue = value;
+                return field;
+            }
+
+                            
+                if(type == typeof(ushort?))
+                {
+                    var field = new Field_Nullable_ushort();
+                    field.BoxedValue = value;
+                    return field;
+                }
+                
+                        if(type == typeof(uint))
+            {
+                var field = new Field_uint();
+                field.BoxedValue = value;
+                return field;
+            }
+
+                            
+                if(type == typeof(uint?))
+                {
+                    var field = new Field_Nullable_uint();
+                    field.BoxedValue = value;
+                    return field;
+                }
+                
+                        if(type == typeof(ulong))
+            {
+                var field = new Field_ulong();
+                field.BoxedValue = value;
+                return field;
+            }
+
+                            
+                if(type == typeof(ulong?))
+                {
+                    var field = new Field_Nullable_ulong();
+                    field.BoxedValue = value;
+                    return field;
+                }
+                
+                        if(type == typeof(sbyte))
+            {
+                var field = new Field_sbyte();
+                field.BoxedValue = value;
+                return field;
+            }
+
+                            
+                if(type == typeof(sbyte?))
+                {
+                    var field = new Field_Nullable_sbyte();
+                    field.BoxedValue = value;
+                    return field;
+                }
+                
+                        if(type == typeof(short))
+            {
+                var field = new Field_short();
+                field.BoxedValue = value;
+                return field;
+            }
+
+                            
+                if(type == typeof(short?))
+                {
+                    var field = new Field_Nullable_short();
+                    field.BoxedValue = value;
+                    return field;
+                }
+                
+                        if(type == typeof(int))
+            {
+                var field = new Field_int();
+                field.BoxedValue = value;
+                return field;
+            }
+
+                            
+                if(type == typeof(int?))
+                {
+                    var field = new Field_Nullable_int();
+                    field.BoxedValue = value;
+                    return field;
+                }
+                
+                        if(type == typeof(long))
+            {
+                var field = new Field_long();
+                field.BoxedValue = value;
+                return field;
+            }
+
+                            
+                if(type == typeof(long?))
+                {
+                    var field = new Field_Nullable_long();
+                    field.BoxedValue = value;
+                    return field;
+                }
+                
+                        if(type == typeof(float))
+            {
+                var field = new Field_float();
+                field.BoxedValue = value;
+                return field;
+            }
+
+                            
+                if(type == typeof(float?))
+                {
+                    var field = new Field_Nullable_float();
+                    field.BoxedValue = value;
+                    return field;
+                }
+                
+                        if(type == typeof(double))
+            {
+                var field = new Field_double();
+                field.BoxedValue = value;
+                return field;
+            }
+
+                            
+                if(type == typeof(double?))
+                {
+                    var field = new Field_Nullable_double();
+                    field.BoxedValue = value;
+                    return field;
+                }
+                
+                        if(type == typeof(decimal))
+            {
+                var field = new Field_decimal();
+                field.BoxedValue = value;
+                return field;
+            }
+
+                            
+                if(type == typeof(decimal?))
+                {
+                    var field = new Field_Nullable_decimal();
+                    field.BoxedValue = value;
+                    return field;
+                }
+                
+                        if(type == typeof(bool))
+            {
+                var field = new Field_bool();
+                field.BoxedValue = value;
+                return field;
+            }
+
+                            
+                if(type == typeof(bool?))
+                {
+                    var field = new Field_Nullable_bool();
+                    field.BoxedValue = value;
+                    return field;
+                }
+                
+                        if(type == typeof(char))
+            {
+                var field = new Field_char();
+                field.BoxedValue = value;
+                return field;
+            }
+
+                            
+                if(type == typeof(char?))
+                {
+                    var field = new Field_Nullable_char();
+                    field.BoxedValue = value;
+                    return field;
+                }
+                
+                        if(type == typeof(string))
+            {
+                var field = new Field_string();
+                field.BoxedValue = value;
+                return field;
+            }
+
+            
+                        if(type == typeof(Uri))
+            {
+                var field = new Field_Uri();
+                field.BoxedValue = value;
+                return field;
+            }
+
+            
+                        if(type == typeof(DateTime))
+            {
+                var field = new Field_DateTime();
+                field.BoxedValue = value;
+                return field;
+            }
+
+                            
+                if(type == typeof(DateTime?))
+                {
+                    var field = new Field_Nullable_DateTime();
+                    field.BoxedValue = value;
+                    return field;
+                }
+                
+                        if(type == typeof(TimeSpan))
+            {
+                var field = new Field_TimeSpan();
+                field.BoxedValue = value;
+                return field;
+            }
+
+                            
+                if(type == typeof(TimeSpan?))
+                {
+                    var field = new Field_Nullable_TimeSpan();
+                    field.BoxedValue = value;
+                    return field;
+                }
+                
+                        if(type == typeof(color))
+            {
+                var field = new Field_color();
+                field.BoxedValue = value;
+                return field;
+            }
+
+                            
+                if(type == typeof(color?))
+                {
+                    var field = new Field_Nullable_color();
+                    field.BoxedValue = value;
+                    return field;
+                }
+                
+                        if(type == typeof(colorX))
+            {
+                var field = new Field_colorX();
+                field.BoxedValue = value;
+                return field;
+            }
+
+                            
+                if(type == typeof(colorX?))
+                {
+                    var field = new Field_Nullable_colorX();
+                    field.BoxedValue = value;
+                    return field;
+                }
+                
+                        if(type == typeof(color32))
+            {
+                var field = new Field_color32();
+                field.BoxedValue = value;
+                return field;
+            }
+
+                            
+                if(type == typeof(color32?))
+                {
+                    var field = new Field_Nullable_color32();
+                    field.BoxedValue = value;
+                    return field;
+                }
+                
+                        if(type == typeof(Rect))
+            {
+                var field = new Field_Rect();
+                field.BoxedValue = value;
+                return field;
+            }
+
+                            
+                if(type == typeof(Rect?))
+                {
+                    var field = new Field_Nullable_Rect();
+                    field.BoxedValue = value;
+                    return field;
+                }
+                
+                        if(type == typeof(IntRect))
+            {
+                var field = new Field_IntRect();
+                field.BoxedValue = value;
+                return field;
+            }
+
+                            
+                if(type == typeof(IntRect?))
+                {
+                    var field = new Field_Nullable_IntRect();
+                    field.BoxedValue = value;
+                    return field;
+                }
+                
+                        if(type == typeof(float2))
+            {
+                var field = new Field_float2();
+                field.BoxedValue = value;
+                return field;
+            }
+
+                            
+                if(type == typeof(float2?))
+                {
+                    var field = new Field_Nullable_float2();
+                    field.BoxedValue = value;
+                    return field;
+                }
+                
+                        if(type == typeof(double2))
+            {
+                var field = new Field_double2();
+                field.BoxedValue = value;
+                return field;
+            }
+
+                            
+                if(type == typeof(double2?))
+                {
+                    var field = new Field_Nullable_double2();
+                    field.BoxedValue = value;
+                    return field;
+                }
+                
+                        if(type == typeof(byte2))
+            {
+                var field = new Field_byte2();
+                field.BoxedValue = value;
+                return field;
+            }
+
+                            
+                if(type == typeof(byte2?))
+                {
+                    var field = new Field_Nullable_byte2();
+                    field.BoxedValue = value;
+                    return field;
+                }
+                
+                        if(type == typeof(ushort2))
+            {
+                var field = new Field_ushort2();
+                field.BoxedValue = value;
+                return field;
+            }
+
+                            
+                if(type == typeof(ushort2?))
+                {
+                    var field = new Field_Nullable_ushort2();
+                    field.BoxedValue = value;
+                    return field;
+                }
+                
+                        if(type == typeof(uint2))
+            {
+                var field = new Field_uint2();
+                field.BoxedValue = value;
+                return field;
+            }
+
+                            
+                if(type == typeof(uint2?))
+                {
+                    var field = new Field_Nullable_uint2();
+                    field.BoxedValue = value;
+                    return field;
+                }
+                
+                        if(type == typeof(ulong2))
+            {
+                var field = new Field_ulong2();
+                field.BoxedValue = value;
+                return field;
+            }
+
+                            
+                if(type == typeof(ulong2?))
+                {
+                    var field = new Field_Nullable_ulong2();
+                    field.BoxedValue = value;
+                    return field;
+                }
+                
+                        if(type == typeof(sbyte2))
+            {
+                var field = new Field_sbyte2();
+                field.BoxedValue = value;
+                return field;
+            }
+
+                            
+                if(type == typeof(sbyte2?))
+                {
+                    var field = new Field_Nullable_sbyte2();
+                    field.BoxedValue = value;
+                    return field;
+                }
+                
+                        if(type == typeof(short2))
+            {
+                var field = new Field_short2();
+                field.BoxedValue = value;
+                return field;
+            }
+
+                            
+                if(type == typeof(short2?))
+                {
+                    var field = new Field_Nullable_short2();
+                    field.BoxedValue = value;
+                    return field;
+                }
+                
+                        if(type == typeof(int2))
+            {
+                var field = new Field_int2();
+                field.BoxedValue = value;
+                return field;
+            }
+
+                            
+                if(type == typeof(int2?))
+                {
+                    var field = new Field_Nullable_int2();
+                    field.BoxedValue = value;
+                    return field;
+                }
+                
+                        if(type == typeof(long2))
+            {
+                var field = new Field_long2();
+                field.BoxedValue = value;
+                return field;
+            }
+
+                            
+                if(type == typeof(long2?))
+                {
+                    var field = new Field_Nullable_long2();
+                    field.BoxedValue = value;
+                    return field;
+                }
+                
+                        if(type == typeof(bool2))
+            {
+                var field = new Field_bool2();
+                field.BoxedValue = value;
+                return field;
+            }
+
+                            
+                if(type == typeof(bool2?))
+                {
+                    var field = new Field_Nullable_bool2();
+                    field.BoxedValue = value;
+                    return field;
+                }
+                
+                        if(type == typeof(float3))
+            {
+                var field = new Field_float3();
+                field.BoxedValue = value;
+                return field;
+            }
+
+                            
+                if(type == typeof(float3?))
+                {
+                    var field = new Field_Nullable_float3();
+                    field.BoxedValue = value;
+                    return field;
+                }
+                
+                        if(type == typeof(double3))
+            {
+                var field = new Field_double3();
+                field.BoxedValue = value;
+                return field;
+            }
+
+                            
+                if(type == typeof(double3?))
+                {
+                    var field = new Field_Nullable_double3();
+                    field.BoxedValue = value;
+                    return field;
+                }
+                
+                        if(type == typeof(byte3))
+            {
+                var field = new Field_byte3();
+                field.BoxedValue = value;
+                return field;
+            }
+
+                            
+                if(type == typeof(byte3?))
+                {
+                    var field = new Field_Nullable_byte3();
+                    field.BoxedValue = value;
+                    return field;
+                }
+                
+                        if(type == typeof(ushort3))
+            {
+                var field = new Field_ushort3();
+                field.BoxedValue = value;
+                return field;
+            }
+
+                            
+                if(type == typeof(ushort3?))
+                {
+                    var field = new Field_Nullable_ushort3();
+                    field.BoxedValue = value;
+                    return field;
+                }
+                
+                        if(type == typeof(uint3))
+            {
+                var field = new Field_uint3();
+                field.BoxedValue = value;
+                return field;
+            }
+
+                            
+                if(type == typeof(uint3?))
+                {
+                    var field = new Field_Nullable_uint3();
+                    field.BoxedValue = value;
+                    return field;
+                }
+                
+                        if(type == typeof(ulong3))
+            {
+                var field = new Field_ulong3();
+                field.BoxedValue = value;
+                return field;
+            }
+
+                            
+                if(type == typeof(ulong3?))
+                {
+                    var field = new Field_Nullable_ulong3();
+                    field.BoxedValue = value;
+                    return field;
+                }
+                
+                        if(type == typeof(sbyte3))
+            {
+                var field = new Field_sbyte3();
+                field.BoxedValue = value;
+                return field;
+            }
+
+                            
+                if(type == typeof(sbyte3?))
+                {
+                    var field = new Field_Nullable_sbyte3();
+                    field.BoxedValue = value;
+                    return field;
+                }
+                
+                        if(type == typeof(short3))
+            {
+                var field = new Field_short3();
+                field.BoxedValue = value;
+                return field;
+            }
+
+                            
+                if(type == typeof(short3?))
+                {
+                    var field = new Field_Nullable_short3();
+                    field.BoxedValue = value;
+                    return field;
+                }
+                
+                        if(type == typeof(int3))
+            {
+                var field = new Field_int3();
+                field.BoxedValue = value;
+                return field;
+            }
+
+                            
+                if(type == typeof(int3?))
+                {
+                    var field = new Field_Nullable_int3();
+                    field.BoxedValue = value;
+                    return field;
+                }
+                
+                        if(type == typeof(long3))
+            {
+                var field = new Field_long3();
+                field.BoxedValue = value;
+                return field;
+            }
+
+                            
+                if(type == typeof(long3?))
+                {
+                    var field = new Field_Nullable_long3();
+                    field.BoxedValue = value;
+                    return field;
+                }
+                
+                        if(type == typeof(bool3))
+            {
+                var field = new Field_bool3();
+                field.BoxedValue = value;
+                return field;
+            }
+
+                            
+                if(type == typeof(bool3?))
+                {
+                    var field = new Field_Nullable_bool3();
+                    field.BoxedValue = value;
+                    return field;
+                }
+                
+                        if(type == typeof(float4))
+            {
+                var field = new Field_float4();
+                field.BoxedValue = value;
+                return field;
+            }
+
+                            
+                if(type == typeof(float4?))
+                {
+                    var field = new Field_Nullable_float4();
+                    field.BoxedValue = value;
+                    return field;
+                }
+                
+                        if(type == typeof(double4))
+            {
+                var field = new Field_double4();
+                field.BoxedValue = value;
+                return field;
+            }
+
+                            
+                if(type == typeof(double4?))
+                {
+                    var field = new Field_Nullable_double4();
+                    field.BoxedValue = value;
+                    return field;
+                }
+                
+                        if(type == typeof(byte4))
+            {
+                var field = new Field_byte4();
+                field.BoxedValue = value;
+                return field;
+            }
+
+                            
+                if(type == typeof(byte4?))
+                {
+                    var field = new Field_Nullable_byte4();
+                    field.BoxedValue = value;
+                    return field;
+                }
+                
+                        if(type == typeof(ushort4))
+            {
+                var field = new Field_ushort4();
+                field.BoxedValue = value;
+                return field;
+            }
+
+                            
+                if(type == typeof(ushort4?))
+                {
+                    var field = new Field_Nullable_ushort4();
+                    field.BoxedValue = value;
+                    return field;
+                }
+                
+                        if(type == typeof(uint4))
+            {
+                var field = new Field_uint4();
+                field.BoxedValue = value;
+                return field;
+            }
+
+                            
+                if(type == typeof(uint4?))
+                {
+                    var field = new Field_Nullable_uint4();
+                    field.BoxedValue = value;
+                    return field;
+                }
+                
+                        if(type == typeof(ulong4))
+            {
+                var field = new Field_ulong4();
+                field.BoxedValue = value;
+                return field;
+            }
+
+                            
+                if(type == typeof(ulong4?))
+                {
+                    var field = new Field_Nullable_ulong4();
+                    field.BoxedValue = value;
+                    return field;
+                }
+                
+                        if(type == typeof(sbyte4))
+            {
+                var field = new Field_sbyte4();
+                field.BoxedValue = value;
+                return field;
+            }
+
+                            
+                if(type == typeof(sbyte4?))
+                {
+                    var field = new Field_Nullable_sbyte4();
+                    field.BoxedValue = value;
+                    return field;
+                }
+                
+                        if(type == typeof(short4))
+            {
+                var field = new Field_short4();
+                field.BoxedValue = value;
+                return field;
+            }
+
+                            
+                if(type == typeof(short4?))
+                {
+                    var field = new Field_Nullable_short4();
+                    field.BoxedValue = value;
+                    return field;
+                }
+                
+                        if(type == typeof(int4))
+            {
+                var field = new Field_int4();
+                field.BoxedValue = value;
+                return field;
+            }
+
+                            
+                if(type == typeof(int4?))
+                {
+                    var field = new Field_Nullable_int4();
+                    field.BoxedValue = value;
+                    return field;
+                }
+                
+                        if(type == typeof(long4))
+            {
+                var field = new Field_long4();
+                field.BoxedValue = value;
+                return field;
+            }
+
+                            
+                if(type == typeof(long4?))
+                {
+                    var field = new Field_Nullable_long4();
+                    field.BoxedValue = value;
+                    return field;
+                }
+                
+                        if(type == typeof(bool4))
+            {
+                var field = new Field_bool4();
+                field.BoxedValue = value;
+                return field;
+            }
+
+                            
+                if(type == typeof(bool4?))
+                {
+                    var field = new Field_Nullable_bool4();
+                    field.BoxedValue = value;
+                    return field;
+                }
+                
+                        if(type == typeof(floatQ))
+            {
+                var field = new Field_floatQ();
+                field.BoxedValue = value;
+                return field;
+            }
+
+                            
+                if(type == typeof(floatQ?))
+                {
+                    var field = new Field_Nullable_floatQ();
+                    field.BoxedValue = value;
+                    return field;
+                }
+                
+                        if(type == typeof(doubleQ))
+            {
+                var field = new Field_doubleQ();
+                field.BoxedValue = value;
+                return field;
+            }
+
+                            
+                if(type == typeof(doubleQ?))
+                {
+                    var field = new Field_Nullable_doubleQ();
+                    field.BoxedValue = value;
+                    return field;
+                }
+                
+                        if(type == typeof(float2x2))
+            {
+                var field = new Field_float2x2();
+                field.BoxedValue = value;
+                return field;
+            }
+
+                            
+                if(type == typeof(float2x2?))
+                {
+                    var field = new Field_Nullable_float2x2();
+                    field.BoxedValue = value;
+                    return field;
+                }
+                
+                        if(type == typeof(double2x2))
+            {
+                var field = new Field_double2x2();
+                field.BoxedValue = value;
+                return field;
+            }
+
+                            
+                if(type == typeof(double2x2?))
+                {
+                    var field = new Field_Nullable_double2x2();
+                    field.BoxedValue = value;
+                    return field;
+                }
+                
+                        if(type == typeof(float3x3))
+            {
+                var field = new Field_float3x3();
+                field.BoxedValue = value;
+                return field;
+            }
+
+                            
+                if(type == typeof(float3x3?))
+                {
+                    var field = new Field_Nullable_float3x3();
+                    field.BoxedValue = value;
+                    return field;
+                }
+                
+                        if(type == typeof(double3x3))
+            {
+                var field = new Field_double3x3();
+                field.BoxedValue = value;
+                return field;
+            }
+
+                            
+                if(type == typeof(double3x3?))
+                {
+                    var field = new Field_Nullable_double3x3();
+                    field.BoxedValue = value;
+                    return field;
+                }
+                
+                        if(type == typeof(float4x4))
+            {
+                var field = new Field_float4x4();
+                field.BoxedValue = value;
+                return field;
+            }
+
+                            
+                if(type == typeof(float4x4?))
+                {
+                    var field = new Field_Nullable_float4x4();
+                    field.BoxedValue = value;
+                    return field;
+                }
+                
+                        if(type == typeof(double4x4))
+            {
+                var field = new Field_double4x4();
+                field.BoxedValue = value;
+                return field;
+            }
+
+                            
+                if(type == typeof(double4x4?))
+                {
+                    var field = new Field_Nullable_double4x4();
+                    field.BoxedValue = value;
+                    return field;
+                }
+                
+            
         throw new NotSupportedException($"Unsupported value type: {typeof(T).FullName}");
     }
 }

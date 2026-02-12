@@ -166,28 +166,66 @@ public static class FieldConverter
 {
     public static Field ToResoniteLinkField<T>(this T value)
     {
-        switch(value)
+        var type = typeof(T);
+
+        if(Nullable.GetUnderlyingType(type)?.IsEnum == true)
         {
-            // Unity Primitives (and our extensions)
-            <#
-            foreach(var type in unityPrimitives)
+            return new Field_Nullable_Enum() 
             {
-                #>
-                case UnityEngine.<#=type#> <#=type#>_value: return <#=type#>_value.ToResoniteLink().ToResoniteLinkField();
-                <#
-            }
+                Value = value?.ToString()  
+            };
+        }
+        else if(type.IsEnum)
+        {
+            return new Field_Enum() 
+            {
+                Value = value.ToString()  
+            };
+        }
+
+        // Unity Primitives (and our extensions)
+        <#
+        foreach(var type in unityPrimitives)
+        {
             #>
+            if(value is UnityEngine.<#=type#> value_<#=type#>)
+                return value_<#=type#>.ToResoniteLink().ToResoniteLinkField();
+            if(type == typeof(UnityEngine.<#=type#>?))
+                return (value as UnityEngine.<#=type#>?)?.ToResoniteLink().ToResoniteLinkField();
+
+            <#
+        }
+        #>
 
             // All other primitives
         <#
         foreach(var type in primitiveTypes)
         {
             #>
-            case <#=type#> <#=type#>_value: return new Field_<#=type#>() { Value = <#=type#>_value };
+            if(type == typeof(<#=type#>))
+            {
+                var field = new Field_<#=type#>();
+                field.BoxedValue = value;
+                return field;
+            }
+
+            <#
+            if(!nonNullableTypes.Contains(type))
+            {
+                #>                
+                if(type == typeof(<#=type#>?))
+                {
+                    var field = new Field_Nullable_<#=type#>();
+                    field.BoxedValue = value;
+                    return field;
+                }
+                <#
+            }
+            #>
+
             <#
         }
         #>
-        }
 
         throw new NotSupportedException($"Unsupported value type: {typeof(T).FullName}");
     }
