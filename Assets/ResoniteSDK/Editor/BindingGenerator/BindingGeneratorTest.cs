@@ -7,6 +7,7 @@ using UnityEngine;
 using ResoniteLink;
 using System.Threading.Tasks;
 using System.Threading;
+using UnityEditor.Experimental.GraphView;
 
 public class BindingGeneratorTest : ScriptableWizard
 {
