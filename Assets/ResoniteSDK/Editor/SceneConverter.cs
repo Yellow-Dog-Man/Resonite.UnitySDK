@@ -4,6 +4,7 @@ using UnityEngine;
 using ResoniteLink;
 using System;
 using System.Threading.Tasks;
+using Unity.VisualScripting;
 
 [Serializable]
 public class SceneConverter
@@ -20,6 +21,10 @@ public class SceneConverter
 
     public void Convert(IEnumerable<Transform> roots, LinkInterface link)
     {
+        // First update all component conversions
+        foreach (var root in roots)
+            UpdateComponentConversions(root);
+
         var messages = new List<DataModelOperation>();
 
         foreach(var root in roots)
@@ -39,6 +44,57 @@ public class SceneConverter
                 if (!subResponse.Success)
                     Debug.LogError($"Operation failed for {subResponse.SourceMessageID}: {subResponse.ErrorInfo}");
         });
+    }
+
+    void UpdateComponentConversions(Transform root)
+    {
+        var components = root.GetComponents<UnityEngine.Component>();
+        var converterMap = new Dictionary<UnityEngine.Component, ResoniteComponentConverter>();
+
+        // First get all the converters
+        foreach(var component in components)
+            if(component is ResoniteComponentConverter converter)
+            {
+                // Check if the target still exists
+                if (converter.Target == null)
+                    UnityEngine.Object.DestroyImmediate(converter);
+                else
+                    converterMap.Add(converter.Target, converter);
+            }
+
+        foreach(var component in root.GetComponents<UnityEngine.Component>())
+        {
+            // Converters don't need to be converted - they're the ones doing the conversions!
+            if (component is ResoniteComponentConverter)
+                continue;
+
+            if(!converterMap.TryGetValue(component, out var converter))
+            {
+                // There's no converter for this. Check if one is supported
+                var converterType = ComponentConverterRepository.TryGetConverter(component.GetType());
+
+                // There's no coverter for this, so just ignore it
+                if (converterType == null)
+                    continue;
+
+                // Create a new converter instance
+                converter = (ResoniteComponentConverter)root.gameObject.AddComponent(converterType);
+                converter.Initialize(component);
+
+                converterMap.Add(component, converter);
+            }
+
+            // Update the conversion. This should handle both cases when it was freshly added
+            // As well as when this is an existing one and we're updating components
+            converter.UpdateConversion();
+        }
+
+        // Process children recursively
+        for (int i = 0; i < root.childCount; i++)
+        {
+            var child = root.GetChild(i);
+            UpdateComponentConversions(child);
+        }
     }
 
     void ConvertHierarchy(Transform root, List<DataModelOperation> messages)
