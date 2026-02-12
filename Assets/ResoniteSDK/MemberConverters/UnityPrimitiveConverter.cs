@@ -29,13 +29,13 @@ public static class UnityPrimitiveConverter
     public static color ToResoniteLink(this Color c) => new color() { r = c.r, g = c.g, b = c.b, a = c.a };
     public static color32 ToResoniteLink(this Color32 c) => new color32() { r = c.r, g = c.g, b = c.b, a = c.a };
 
-    public static ResoniteLink.Rect ToResoniteLink(UnityEngine.Rect r) => new ResoniteLink.Rect()
+    public static ResoniteLink.Rect ToResoniteLink(this UnityEngine.Rect r) => new ResoniteLink.Rect()
     {
         position = r.position.ToResoniteLink(),
         size = r.size.ToResoniteLink()
     };
 
-    public static ResoniteLink.IntRect ToResoniteLink(UnityEngine.RectInt r) => new ResoniteLink.IntRect()
+    public static ResoniteLink.IntRect ToResoniteLink(this UnityEngine.RectInt r) => new ResoniteLink.IntRect()
     {
         position = r.position.ToResoniteLink(),
         size = r.size.ToResoniteLink()
