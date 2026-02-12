@@ -38,11 +38,11 @@ public class ResoniteLinkWindow : EditorWindow
     string _lastConnectionError;
     LinkInterface _linkInterface;
 
-    [MenuItem("Resonite SDK/Open ResoniteLink Manager")]
+    [MenuItem("Resonite SDK/Open Resonite SDK Manager")]
     public static void ShowWindow()
     {
         ResoniteLinkWindow window = GetWindow<ResoniteLinkWindow>();
-        window.titleContent = new GUIContent("ResoniteLink");
+        window.titleContent = new GUIContent("Resonite SDK");
     }
 
     void OnGUI()
