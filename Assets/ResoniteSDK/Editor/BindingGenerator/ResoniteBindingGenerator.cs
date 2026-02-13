@@ -66,7 +66,7 @@ public partial class ResoniteBindingGenerator
             _resoniteLinkVersion = sessionInfo.ResoniteLinkVersion;
 
             // Start generating bindings from the root category. This will work downwards recursively, covering all the component types
-            await GenerateComponentBindingsForCategory("Rendering");
+            await GenerateComponentBindingsForCategory("");
         }
         catch (System.Exception ex)
         {
