@@ -156,6 +156,11 @@ public class SceneConverter : IConversionContext
 
         foreach(var component in root.GetComponents<UnityEngine.Component>())
         {
+            // We might've just destroyed some of the components in previous step when removing converters
+            // Skip over these
+            if (component == null)
+                continue;
+
             // Converters don't need to be converted - they're the ones doing the conversions!
             if (component is ResoniteComponentConverter)
                 continue;
@@ -182,7 +187,7 @@ public class SceneConverter : IConversionContext
 
             // Update the conversion. This should handle both cases when it was freshly added
             // As well as when this is an existing one and we're updating components
-            converter.UpdateConversion();
+            converter.UpdateConversion(this);
         }
 
         // Process children recursively
