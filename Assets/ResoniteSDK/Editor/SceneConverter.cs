@@ -2,6 +2,7 @@ using ResoniteLink;
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 using Unity.VisualScripting;
 using UnityEngine;
@@ -13,6 +14,9 @@ public class SceneConverter : IConversionContext
     Dictionary<Transform, Slot> _transformMap = new Dictionary<Transform, Slot>();
 
     [SerializeField]
+    Dictionary<ResoniteComponent, Transform> _existingComponents = new Dictionary<ResoniteComponent, Transform>();
+
+    [SerializeField]
     Dictionary<ResoniteObject, string> _idMap = new Dictionary<ResoniteObject, string>();
 
     int _idPool;
@@ -21,6 +25,7 @@ public class SceneConverter : IConversionContext
     int _messageIndex;
 
     public string AllocateId() => $"Unity_{_idPrefix}_{_idPool++:X}";
+    public string GetId(ResoniteObject o) => _idMap[o];
     public string GetIdOrAllocate(ResoniteObject o) => GetIdOrAllocate(o, out _);
     public string GetIdOrAllocate(ResoniteObject o, out bool allocated)
     {
@@ -36,6 +41,7 @@ public class SceneConverter : IConversionContext
 
         return id;
     }
+    public void RemoveId(ResoniteObject o) => _idMap.Remove(o);
 
     public string GetTransformSlotId(Transform transform) => _transformMap[transform].ID;
 
@@ -52,6 +58,10 @@ public class SceneConverter : IConversionContext
         foreach(var root in roots)
             ConvertHierarchy(root, messages);
 
+        // Process any removals after all other stuff has been updated.
+        // This way any transform that were reparented will be in new safe locations
+        ProcessRemovals(messages);
+
         Task.Run(async () =>
         {
             var response = await link.RunDataModelOperationBatch(messages);
@@ -66,6 +76,66 @@ public class SceneConverter : IConversionContext
                 if (!subResponse.Success)
                     Debug.LogError($"Operation failed for {subResponse.SourceMessageID}: {subResponse.ErrorInfo}");
         });
+    }
+
+    void ProcessRemovals(List<DataModelOperation> messages)
+    {
+        List<Transform> transformsToRemove = null;
+
+        foreach(var pair in _transformMap)
+        {
+            // I don't like that Unity does it this way, but this is how it checks if it's destroyed
+            if (pair.Key != null)
+                continue;
+
+            if(transformsToRemove == null)
+                transformsToRemove = new List<Transform>();
+
+            // It's not actually null! It just pretends to be.
+            transformsToRemove.Add(pair.Key);
+
+            messages.Add(new RemoveSlot()
+            {
+                MessageID = GetUniqueMessageId($"RemoveSlot_{pair.Value.Name}"),
+                SlotID = pair.Value.ID,
+            });
+        }
+
+        if (transformsToRemove != null)
+            foreach (var remove in transformsToRemove)
+                _transformMap.Remove(remove);
+
+        List<ResoniteComponent> componentsToRemove = null;
+
+        // Do the components next
+        foreach(var component in _existingComponents)
+        {
+            if (component.Key != null)
+                continue;
+
+            // Check if the transform itself is removed also
+            // We need to do this through the dictionary, because we can't access transform on the component itself
+            // when it has been removed.
+            if (component.Value != null)
+            {
+                // The transform it exists on still exists, so we need to remove it explicitly
+                // Otherwise it will be removed with the transform/slot, so we don't need to send message for it
+                messages.Add(component.Key.GenerateRemoval(this));
+            }
+
+            // We still need to remove it
+            if (componentsToRemove == null)
+                componentsToRemove = new List<ResoniteComponent>();
+
+            componentsToRemove.Add(component.Key);
+
+            // Make sure all the ID's are cleaned up too
+            component.Key.RemoveIDs(this);
+        }
+
+        if(componentsToRemove != null)
+            foreach(var remove in componentsToRemove)
+                _existingComponents.Remove(remove);
     }
 
     void UpdateComponentConversions(Transform root)
@@ -99,7 +169,7 @@ public class SceneConverter : IConversionContext
                 // There's no converter for this. Check if one is supported
                 var converterType = ComponentConverterRepository.TryGetConverter(component.GetType());
 
-                // There's no coverter for this, so just ignore it
+                // There's no converter for this, so just ignore it
                 if (converterType == null)
                     continue;
 
@@ -198,7 +268,17 @@ public class SceneConverter : IConversionContext
     {
         var components = transform.GetComponents<ResoniteComponent>();
 
-        foreach(var c in components)
-            messages.Add(c.CollectData(this));
+        foreach (var c in components)
+        {
+            var message = c.CollectData(this);
+
+            messages.Add(message);
+
+            if (message is AddComponent)
+            {
+                // Ensure we keep track of it so we can send removal message when it's gone
+                _existingComponents.Add(c, c.transform);
+            }
+        }
     }
 }
