@@ -2,6 +2,67 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+namespace FrooxEngine
+{
+    public partial class Light
+    {
+        public void SetFrom(UnityEngine.Light light)
+        {
+            // Set the basics
+            base.SetFrom(light);
+
+            switch (light.type)
+            {
+                case UnityEngine.LightType.Point:
+                    LightType = Renderite.Shared.LightType.Point;
+                    break;
+
+                case UnityEngine.LightType.Spot:
+                    LightType = Renderite.Shared.LightType.Spot;
+                    break;
+
+                case UnityEngine.LightType.Directional:
+                    LightType = Renderite.Shared.LightType.Directional;
+                    break;
+
+                default:
+                    // Not supported, set it to invalid value
+                    LightType = (Renderite.Shared.LightType)(255);
+                    break;
+            }
+
+            Intensity = light.intensity;
+            Color = new ColorX(light.color);
+
+            switch (light.shadows)
+            {
+                case UnityEngine.LightShadows.None:
+                    ShadowType = Renderite.Shared.ShadowType.None;
+                    break;
+
+                case UnityEngine.LightShadows.Hard:
+                    ShadowType = Renderite.Shared.ShadowType.Hard;
+                    break;
+
+                case UnityEngine.LightShadows.Soft:
+                    ShadowType = Renderite.Shared.ShadowType.Soft;
+                    break;
+            }
+
+            ShadowStrength = light.shadowStrength;
+            ShadowNearPlane = light.shadowNearPlane;
+            ShadowMapResolution = light.shadowCustomResolution;
+            ShadowBias = light.shadowBias;
+            ShadowNormalBias = light.shadowNormalBias;
+
+            Range = light.range;
+            SpotAngle = light.spotAngle;
+
+            // TODO!!! Cookie
+        }
+    }
+}
+
 public class LightConverter : ResoniteComponentConverter<Light>
 {
     public FrooxEngine.LightWrapper Light;
@@ -20,56 +81,7 @@ public class LightConverter : ResoniteComponentConverter<Light>
 
     protected override void UpdateConversion(Light target)
     {
-        Light.Data.Enabled = true;
-        Light.Data.persistent = true;
-
-        switch (target.type)
-        {
-            case LightType.Point:
-                Light.Data.LightType = Renderite.Shared.LightType.Point;
-                break;
-
-            case LightType.Spot:
-                Light.Data.LightType = Renderite.Shared.LightType.Spot;
-                break;
-
-            case LightType.Directional:
-                Light.Data.LightType = Renderite.Shared.LightType.Directional;
-                break;
-
-            default:
-                // Not supported, set it to invalid value
-                Light.Data.LightType = (Renderite.Shared.LightType)(255);
-                break;
-        }
-
-        Light.Data.Intensity = target.intensity;
-        Light.Data.Color = new ColorX(target.color);
-
-        switch (target.shadows)
-        {
-            case LightShadows.None:
-                Light.Data.ShadowType = Renderite.Shared.ShadowType.None;
-                break;
-
-            case LightShadows.Hard:
-                Light.Data.ShadowType = Renderite.Shared.ShadowType.Hard;
-                break;
-
-            case LightShadows.Soft:
-                Light.Data.ShadowType = Renderite.Shared.ShadowType.Soft;
-                break;
-        }
-
-        Light.Data.ShadowStrength = target.shadowStrength;
-        Light.Data.ShadowNearPlane = target.shadowNearPlane;
-        Light.Data.ShadowMapResolution = target.shadowCustomResolution;
-        Light.Data.ShadowBias = target.shadowBias;
-        Light.Data.ShadowNormalBias = target.shadowNormalBias;
-
-        Light.Data.Range = target.range;
-        Light.Data.SpotAngle = target.spotAngle;
-
-        // TODO!!! Cookie
+        // We just assign the data
+        Light.Data.SetFrom(target);
     }
 }
