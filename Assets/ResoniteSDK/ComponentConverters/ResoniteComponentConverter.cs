@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[ExecuteInEditMode]
 public abstract class ResoniteComponentConverter : MonoBehaviour
 {
     [SerializeField]
@@ -16,16 +17,19 @@ public abstract class ResoniteComponentConverter : MonoBehaviour
         Initialize();
     }
 
-    protected abstract void Initialize();
     public abstract void UpdateConversion();
+
+    protected abstract void Initialize();
     protected abstract void Cleanup();
 
-    void OnDestroy()
-    {
-        Cleanup();
-    }
+    [ExecuteInEditMode]
+    void OnDestroy() => Cleanup();
 }
 
+/// <summary>
+/// This is the best class to derive from when you need versatility in how the component converts. 
+/// </summary>
+/// <typeparam name="T"></typeparam>
 public abstract class ResoniteComponentConverter<T> : ResoniteComponentConverter
     where T : Component
 {
@@ -34,4 +38,26 @@ public abstract class ResoniteComponentConverter<T> : ResoniteComponentConverter
 
     protected virtual void Initialize(T target) {  }
     protected abstract void UpdateConversion(T target);
+}
+
+/// <summary>
+/// This provides convenient way to define conversions that map 1:1 Unity component to a Resonite component.
+/// It automatically handles the instantiation and cleanup, so you only need to worry about providing the conversion update code.
+/// </summary>
+/// <typeparam name="TUnity"></typeparam>
+/// <typeparam name="TResoniteWrapper"></typeparam>
+public abstract class ResoniteSingleComponentConverter<TUnity, TResoniteWrapper> : ResoniteComponentConverter<TUnity>
+    where TUnity : Component
+    where TResoniteWrapper : ResoniteComponent
+{
+    public TResoniteWrapper Binding;
+
+    protected override void Initialize(TUnity target)
+    {
+        base.Initialize(target);
+
+        Binding = gameObject.AddComponent<TResoniteWrapper>();
+    }
+
+    protected override void Cleanup() => DestroyImmediate(Binding);
 }
