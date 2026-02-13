@@ -65,7 +65,7 @@ namespace FrooxEngine
 
 public class LightConverter : ResoniteSingleComponentConverter<Light, FrooxEngine.LightWrapper>
 {
-    protected override void UpdateConversion(Light target)
+    protected override void UpdateConversion(Light target, IConversionContext context)
     {
         // We just assign the data
         Binding.Data.SetFrom(target);
