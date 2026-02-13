@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.BrushTool
-// Generated on: pátek 13. února 2026 5:52:25
-// Resonite version: 2026.2.13.254
+// Generated on: pátek 13. února 2026 23:23:08
+// Resonite version: 2026.2.12.359
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -91,7 +91,7 @@ members.Add("PickColors", PickColors.ToResoniteLinkField());
 members.Add("CurrentMaterial", new ResoniteLink.Reference() { });
 members.Add("ColorMappings", new ResoniteLink.SyncList()
 {
-    Elements = ColorMappings.Select(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers() }).ToList<ResoniteLink.Member>()
+    Elements = ColorMappings.ConvertList(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers() })
 });
 members.Add("ParticleSystem", new ResoniteLink.Reference() { });
 members.Add("MeshEmitterTemplate", new ResoniteLink.Reference() { });
@@ -101,7 +101,7 @@ members.Add("_colorPicker", new ResoniteLink.Reference() { });
 members.Add("_pickedColor", _pickedColor.ToResoniteLinkField());
 members.Add("_hideOnStroke", new ResoniteLink.SyncList()
 {
-    Elements = _hideOnStroke.Select(m => new ResoniteLink.Reference() { }).ToList<ResoniteLink.Member>()
+    Elements = _hideOnStroke.ConvertList(m => new ResoniteLink.Reference() { })
 });
 members.Add("_lastUsedMaterial", new ResoniteLink.Reference() { });
 members.Add("_lastCreatedMaterial", new ResoniteLink.Reference() { });

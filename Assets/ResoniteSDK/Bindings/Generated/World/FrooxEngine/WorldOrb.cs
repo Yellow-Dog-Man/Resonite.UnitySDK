@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.WorldOrb
-// Generated on: pátek 13. února 2026 5:52:36
-// Resonite version: 2026.2.13.254
+// Generated on: pátek 13. února 2026 23:23:17
+// Resonite version: 2026.2.12.359
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -64,7 +64,7 @@ members.Add("SessionStartingUser", new ResoniteLink.Reference() { });
 members.Add("URL", URL.ToResoniteLinkField());
 members.Add("ActiveSessionURLs", new ResoniteLink.SyncList()
 {
-    Elements = ActiveSessionURLs.Select(m => m.ToResoniteLinkField()).ToList<ResoniteLink.Member>()
+    Elements = ActiveSessionURLs.ConvertList(m => m.ToResoniteLinkField())
 });
 members.Add("Visit", Visit.ToResoniteLinkField());
 members.Add("ActiveUsers", ActiveUsers.ToResoniteLinkField());

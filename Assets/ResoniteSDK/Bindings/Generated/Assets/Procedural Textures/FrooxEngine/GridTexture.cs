@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.GridTexture
-// Generated on: pátek 13. února 2026 5:51:09
-// Resonite version: 2026.2.13.254
+// Generated on: pátek 13. února 2026 23:21:36
+// Resonite version: 2026.2.12.359
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -29,7 +29,7 @@ public override void CollectMembers(System.Collections.Generic.Dictionary<string
 members.Add("BackgroundColor", BackgroundColor.ToResoniteLinkField());
 members.Add("Grids", new ResoniteLink.SyncList()
 {
-    Elements = Grids.Select(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers() }).ToList<ResoniteLink.Member>()
+    Elements = Grids.ConvertList(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers() })
 });
 }
 

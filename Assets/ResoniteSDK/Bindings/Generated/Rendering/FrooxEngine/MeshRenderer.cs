@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.MeshRenderer
-// Generated on: pátek 13. února 2026 5:51:09
-// Resonite version: 2026.2.13.254
+// Generated on: pátek 13. února 2026 23:21:36
+// Resonite version: 2026.2.12.359
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -33,11 +33,11 @@ public override void CollectMembers(System.Collections.Generic.Dictionary<string
 members.Add("Mesh", new ResoniteLink.Reference() { });
 members.Add("Materials", new ResoniteLink.SyncList()
 {
-    Elements = Materials.Select(m => new ResoniteLink.Reference() { }).ToList<ResoniteLink.Member>()
+    Elements = Materials.ConvertList(m => new ResoniteLink.Reference() { })
 });
 members.Add("MaterialPropertyBlocks", new ResoniteLink.SyncList()
 {
-    Elements = MaterialPropertyBlocks.Select(m => new ResoniteLink.Reference() { }).ToList<ResoniteLink.Member>()
+    Elements = MaterialPropertyBlocks.ConvertList(m => new ResoniteLink.Reference() { })
 });
 members.Add("ShadowCastMode", ShadowCastMode.ToResoniteLinkField());
 members.Add("MotionVectorMode", MotionVectorMode.ToResoniteLinkField());

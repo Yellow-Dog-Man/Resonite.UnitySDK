@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.AccountMigrationsList
-// Generated on: pátek 13. února 2026 5:51:10
-// Resonite version: 2026.2.13.254
+// Generated on: pátek 13. února 2026 23:21:37
+// Resonite version: 2026.2.12.359
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -35,7 +35,7 @@ members.Add("RunningMigrations", RunningMigrations.ToResoniteLinkField());
 members.Add("CompletedMigrations", CompletedMigrations.ToResoniteLinkField());
 members.Add("MigrationTaskIds", new ResoniteLink.SyncList()
 {
-    Elements = MigrationTaskIds.Select(m => m.ToResoniteLinkField()).ToList<ResoniteLink.Member>()
+    Elements = MigrationTaskIds.ConvertList(m => m.ToResoniteLinkField())
 });
 }
 

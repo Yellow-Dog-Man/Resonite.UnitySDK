@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.DebugFeed
-// Generated on: pátek 13. února 2026 5:51:12
-// Resonite version: 2026.2.13.254
+// Generated on: pátek 13. února 2026 23:21:39
+// Resonite version: 2026.2.12.359
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -33,7 +33,7 @@ members.Add("LabelItemCount", LabelItemCount.ToResoniteLinkField());
 members.Add("StringItemCount", StringItemCount.ToResoniteLinkField());
 members.Add("StringValues", new ResoniteLink.SyncList()
 {
-    Elements = StringValues.Select(m => m.ToResoniteLinkField()).ToList<ResoniteLink.Member>()
+    Elements = StringValues.ConvertList(m => m.ToResoniteLinkField())
 });
 }
 

@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.BoxGizmo
-// Generated on: pátek 13. února 2026 5:52:29
-// Resonite version: 2026.2.13.254
+// Generated on: pátek 13. února 2026 23:23:12
+// Resonite version: 2026.2.12.359
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -49,19 +49,19 @@ members.Add("BoxCenter", new ResoniteLink.Reference() { });
 members.Add("LockOffset", LockOffset.ToResoniteLinkField());
 members.Add("_vertices", new ResoniteLink.SyncList()
 {
-    Elements = _vertices.Select(m => new ResoniteLink.Reference() { }).ToList<ResoniteLink.Member>()
+    Elements = _vertices.ConvertList(m => new ResoniteLink.Reference() { })
 });
 members.Add("_edges", new ResoniteLink.SyncList()
 {
-    Elements = _edges.Select(m => new ResoniteLink.Reference() { }).ToList<ResoniteLink.Member>()
+    Elements = _edges.ConvertList(m => new ResoniteLink.Reference() { })
 });
 members.Add("_faces", new ResoniteLink.SyncList()
 {
-    Elements = _faces.Select(m => new ResoniteLink.Reference() { }).ToList<ResoniteLink.Member>()
+    Elements = _faces.ConvertList(m => new ResoniteLink.Reference() { })
 });
 members.Add("_sphereColliderRadii", new ResoniteLink.SyncList()
 {
-    Elements = _sphereColliderRadii.Select(m => new ResoniteLink.Reference() { }).ToList<ResoniteLink.Member>()
+    Elements = _sphereColliderRadii.ConvertList(m => new ResoniteLink.Reference() { })
 });
 members.Add("_material", new ResoniteLink.Reference() { });
 members.Add("_handleSphere", new ResoniteLink.Reference() { });

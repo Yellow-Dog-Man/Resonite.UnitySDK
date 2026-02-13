@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.CommonAvatar.AvatarAnchor
-// Generated on: pátek 13. února 2026 5:51:45
-// Resonite version: 2026.2.13.254
+// Generated on: pátek 13. února 2026 23:22:19
+// Resonite version: 2026.2.12.359
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -61,11 +61,11 @@ members.Add("RestoreNode", RestoreNode.ToResoniteLinkField());
 members.Add("RestoreReference", new ResoniteLink.Reference() { });
 members.Add("Filters", new ResoniteLink.SyncList()
 {
-    Elements = Filters.Select(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers() }).ToList<ResoniteLink.Member>()
+    Elements = Filters.ConvertList(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers() })
 });
 members.Add("UserFilters", new ResoniteLink.SyncList()
 {
-    Elements = UserFilters.Select(m => new ResoniteLink.Reference() { }).ToList<ResoniteLink.Member>()
+    Elements = UserFilters.ConvertList(m => new ResoniteLink.Reference() { })
 });
 members.Add("_originalSpace", new ResoniteLink.Reference() { });
 members.Add("_originalPosition", _originalPosition.ToResoniteLinkField());
@@ -73,7 +73,7 @@ members.Add("_originalRotation", _originalRotation.ToResoniteLinkField());
 members.Add("_originalScale", _originalScale.ToResoniteLinkField());
 members.Add("_dummyObjectSlots", new ResoniteLink.SyncList()
 {
-    Elements = _dummyObjectSlots.Select(m => new ResoniteLink.Reference() { }).ToList<ResoniteLink.Member>()
+    Elements = _dummyObjectSlots.ConvertList(m => new ResoniteLink.Reference() { })
 });
 }
 

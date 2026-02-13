@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.UserRestrictionsSettings+Entry
-// Generated on: pátek 13. února 2026 5:52:37
-// Resonite version: 2026.2.13.254
+// Generated on: pátek 13. února 2026 23:23:18
+// Resonite version: 2026.2.12.359
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -38,11 +38,11 @@ members.Add("Username", Username.ToResoniteLinkField());
 members.Add("UserId", UserId.ToResoniteLinkField());
 members.Add("MachineIDs", new ResoniteLink.SyncList()
 {
-    Elements = MachineIDs.Select(m => m.ToResoniteLinkField()).ToList<ResoniteLink.Member>()
+    Elements = MachineIDs.ConvertList(m => m.ToResoniteLinkField())
 });
 members.Add("BannedWorldList", new ResoniteLink.SyncList()
 {
-    Elements = BannedWorldList.Select(m => m.ToResoniteLinkField()).ToList<ResoniteLink.Member>()
+    Elements = BannedWorldList.ConvertList(m => m.ToResoniteLinkField())
 });
 }
 

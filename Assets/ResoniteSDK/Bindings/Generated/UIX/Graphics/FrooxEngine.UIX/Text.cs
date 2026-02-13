@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.UIX.Text
-// Generated on: pátek 13. února 2026 5:51:46
-// Resonite version: 2026.2.13.254
+// Generated on: pátek 13. února 2026 23:22:21
+// Resonite version: 2026.2.12.359
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -58,7 +58,7 @@ members.Add("AlignmentMode", AlignmentMode.ToResoniteLinkField());
 members.Add("Color", Color.ToResoniteLinkField());
 members.Add("Materials", new ResoniteLink.SyncList()
 {
-    Elements = Materials.Select(m => new ResoniteLink.Reference() { }).ToList<ResoniteLink.Member>()
+    Elements = Materials.ConvertList(m => new ResoniteLink.Reference() { })
 });
 members.Add("LineHeight", LineHeight.ToResoniteLinkField());
 members.Add("MaskPattern", MaskPattern.ToResoniteLinkField());

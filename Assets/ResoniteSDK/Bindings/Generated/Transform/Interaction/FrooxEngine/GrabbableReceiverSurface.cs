@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.GrabbableReceiverSurface
-// Generated on: pátek 13. února 2026 5:51:54
-// Resonite version: 2026.2.13.254
+// Generated on: pátek 13. února 2026 23:22:31
+// Resonite version: 2026.2.12.359
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -40,7 +40,7 @@ members.Add("Offset", Offset.ToResoniteLinkField());
 members.Add("CheckOffset", CheckOffset.ToResoniteLinkField());
 members.Add("Directions", new ResoniteLink.SyncList()
 {
-    Elements = Directions.Select(m => m.ToResoniteLinkField()).ToList<ResoniteLink.Member>()
+    Elements = Directions.ConvertList(m => m.ToResoniteLinkField())
 });
 members.Add("TagFilter", new ResoniteLink.SyncObject() { Members = TagFilter.CollectMembers() });
 }
