@@ -161,8 +161,10 @@ for(int dim = 2; dim <= 4; dim++)
 
 using System;
 using ResoniteLink;
+using System.Collections.Generic;
+using System.Linq;
 
-public static class FieldConverter
+public static class FieldArrayConverter
 {
     public static Field ToResoniteLinkField<T>(this T value)
     {
@@ -223,6 +225,39 @@ public static class FieldConverter
             }
             #>
 
+            <#
+        }
+        #>
+
+        throw new NotSupportedException($"Unsupported value type: {typeof(T).FullName}");
+    }
+
+    public static SyncArray ToResoniteLinkArray<T>(this IEnumerable<T> values)
+    {
+        var type = typeof(T);
+
+        // Unity Primitives (and our extensions)
+        <#
+        foreach(var type in unityPrimitives)
+        {
+            #>
+            if(values is IEnumerable<UnityEngine.<#=type#>> values_<#=type#>)
+                return values_<#=type#>.Select(v => v.ToResoniteLink()).ToResoniteLinkArray();
+            <#
+        }
+        #>
+
+        // All other primitives
+        <#
+        foreach(var type in primitiveTypes)
+        {
+            #>
+            if(type == typeof(<#=type#>))
+            {
+                var array = new Array_<#=type#>();
+                array.Values = values.Cast<<#=type#>>().ToList();
+                return array;
+            }
             <#
         }
         #>
