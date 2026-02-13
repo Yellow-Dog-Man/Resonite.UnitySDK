@@ -32,7 +32,11 @@ public partial class ResoniteBindingGenerator
 
         // Generate the data conversion for the members
         foreach (var member in members)
+        {
+            str.Append($"members.Add(\"{member.Key}\", ");
             await GenerateMemberCollection(str, member.Key, member.Value, containerType);
+            str.AppendLine(");");
+        }
 
         str.AppendLine("}");
 
@@ -81,23 +85,24 @@ public partial class ResoniteBindingGenerator
                 break;
 
             case ReferenceDefinition reference:
-                //await GenerateReferenceCollection(str, reference, containerType);
+                // TODO!!!!
+                str.Append("new ResoniteLink.Reference() { }");
                 break;
 
             case ListDefinition list:
-                //await GenerateListCollection(str, list, containerType);
+                await GenerateListCollection(str, name, list, containerType);
                 break;
 
             case ArrayDefinition array:
-                //await GenerateArrayCollection(str, array, containerType);
+                await GenerateArrayCollection(str, name, array, containerType);
                 break;
 
             case SyncObjectMemberDefinition syncObject:
-                //await GenerateSyncObjectCollection(str, syncObject, containerType);
+                await GenerateSyncObjectCollection(str, name, syncObject, containerType);
                 break;
 
             case EmptyMemberDefinition emptyMember:
-                //await GenerateEmptyMemberCollection(str, emptyMember, containerType);
+                str.Append("new ResoniteLink.EmptyElement()");
                 break;
 
             default:
@@ -189,7 +194,30 @@ public partial class ResoniteBindingGenerator
 
     async Task GenerateFieldCollection(StringBuilder str, string name, FieldDefinition field, TypeDefinition containerType)
     {
-        str.AppendLine($"members.Add({name}, {name}.ToResoniteLinkField());");
+        str.Append($"{name}.ToResoniteLinkField()");
+    }
+
+    async Task GenerateListCollection(StringBuilder str, string name, ListDefinition list, TypeDefinition containerType)
+    {
+        str.Append($@"new ResoniteLink.SyncList()
+{{
+    Elements = {name}.Select(m => ");
+
+        // Generate collection for the nested member
+        await GenerateMemberCollection(str, "m", list.ElementDefinition, containerType);
+
+        str.Append(@").ToList<ResoniteLink.Member>()
+}");
+    }
+
+    async Task GenerateArrayCollection(StringBuilder str, string name, ArrayDefinition array, TypeDefinition containerType)
+    {
+        str.Append($"{name}.ToResoniteLinkArray()");
+    }
+
+    async Task GenerateSyncObjectCollection(StringBuilder str, string name, SyncObjectMemberDefinition syncObject, TypeDefinition containerType)
+    {
+        str.Append(@$"new ResoniteLink.SyncObject() {{ Members = {name}.CollectMembers() }}");
     }
 
     #endregion

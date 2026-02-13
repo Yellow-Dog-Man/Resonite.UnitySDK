@@ -565,6 +565,9 @@ public {declarationType} {classDef} {baseDef}
 // -----------------------------------------------------------------------------
 
 using UnityEngine;
+using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace {type.Namespace}
 {{

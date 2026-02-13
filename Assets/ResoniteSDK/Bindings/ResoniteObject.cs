@@ -5,5 +5,12 @@ using UnityEngine;
 
 public abstract class ResoniteObject : ScriptableObject
 {
+    public Dictionary<string, Member> CollectMembers()
+    {
+        var members = new Dictionary<string, Member>();
+        CollectMembers(members);
+        return members;
+    }
+
     public virtual void CollectMembers(Dictionary<string, Member> members) { }
 }
