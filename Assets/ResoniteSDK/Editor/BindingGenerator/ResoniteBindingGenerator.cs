@@ -66,9 +66,9 @@ public partial class ResoniteBindingGenerator
             _resoniteLinkVersion = sessionInfo.ResoniteLinkVersion;
 
             // Start generating bindings from the root category. This will work downwards recursively, covering all the component types
-            await GenerateComponentBindingsForCategory("");
+            await GenerateComponentBindingsForCategory("Rendering");
         }
-        catch(System.Exception ex)
+        catch (System.Exception ex)
         {
             Debug.LogError($"Exception when generating bindings:\n{ex}");
         }
@@ -115,9 +115,9 @@ public partial class ResoniteBindingGenerator
                 await GenerateComponentBindingsForCategory(categoryPath + Path.DirectorySeparatorChar + subCategory);
     }
 
-    async Task<string> GenerateFilePath(string directory, TypeDefinition type)
+    async Task<string> GenerateFilePath(string directory, TypeDefinition type, string nameSuffix = null)
     {
-        var name = await GenerateRawFileName(type);
+        var name = await GenerateRawFileName(type) + nameSuffix;
 
         name += ".cs";
 
@@ -238,6 +238,15 @@ public partial class ResoniteBindingGenerator
 
         File.WriteAllText(filePath, source);
 
+        if (!definition.Type.IsAbstract)
+        {
+            // Generate wrapper as well
+            var wrapperPath = await GenerateFilePath(directoryPath, definition.Type, "Wrapper");
+            var wrapperSource = await GenerateWrapperSource(definition);
+
+            File.WriteAllText(wrapperPath, wrapperSource);
+        }
+
         GeneratedComponents++;
 
         // Ensure that all the base types are processed and we have files for those as well
@@ -270,7 +279,9 @@ public partial class ResoniteBindingGenerator
         foreach (var entry in enumDefinition.Values)
             body.AppendLine($"{entry.Key} = {entry.Value},");
 
-        var source = await GenerateBindingSource(type, body.ToString(), enumDefinition.IsFlags ? "[System.Flags]" : "", enumDefinition.BackingType);
+        var source = await GenerateBindingSource(type, body.ToString(),
+            attributes: enumDefinition.IsFlags ? "[System.Flags]" : "",
+            overrideBaseDef: enumDefinition.BackingType);
 
         // Figure out the file path for the file
         var directoryPath = Path.Combine(BINDINGS_ROOT_PATH, "Enums", type.AssemblyName);
@@ -323,7 +334,7 @@ public partial class ResoniteBindingGenerator
     {
         CheckCancellation();
 
-        if(type.IsEnginePrimitive && !type.IsEnum)
+        if (type.IsEnginePrimitive && !type.IsEnum)
         {
             var primitiveType = PrimitiveMapper.MapEnginePrimitive(type);
 
@@ -351,7 +362,7 @@ public partial class ResoniteBindingGenerator
 
         string typeName;
 
-        if(type.IsNested)
+        if (type.IsNested)
         {
             var declaringTypeDefinition = await GetTypeDefinition(type.DeclaringType);
 
@@ -364,7 +375,7 @@ public partial class ResoniteBindingGenerator
         if (type.IsGenericType && type.DirectGenericParameterCount > 0)
         {
             if (genericArguments == null || genericArguments.Count == 0)
-                typeName += $"<{"".PadLeft(type.DirectGenericParameterCount-1)}>";
+                typeName += $"<{"".PadLeft(type.DirectGenericParameterCount - 1)}>";
             else
             {
                 // Include all the generic arguments
@@ -378,7 +389,7 @@ public partial class ResoniteBindingGenerator
 
                     // If it's a generic parameter, just pass it through as is
                     if (arg.IsGenericParameter)
-                        args[i] = arg.Type;                    
+                        args[i] = arg.Type;
                     else
                     {
                         // Recursively resolve the type definition
@@ -399,18 +410,22 @@ public partial class ResoniteBindingGenerator
     {
         CheckCancellation();
 
-        return await GenerateBindingSource(type, 
+        return await GenerateBindingSource(type,
             $"// Dummy class, there's no body\n" +
-            $"// Generated as dependency for: {dependencyType}", 
+            $"// Generated as dependency for: {dependencyType}",
             "");
     }
 
-    async Task<string> GenerateDeclaration(TypeDefinition type, string body, string attributes, string overrideBaseDef = null)
+    async Task<string> GenerateDeclaration(TypeDefinition type, string body,
+        string attributes = null,
+        string overrideBaseDef = null,
+        string nameSuffix = null,
+        bool includeInterfaces = true)
     {
         CheckCancellation();
 
         // Determine the name of the class
-        var classDef = type.Name;
+        var classDef = type.Name + nameSuffix;
 
         if (type.IsGenericType && type.DirectGenericParameterCount > 0)
         {
@@ -461,8 +476,8 @@ public partial class ResoniteBindingGenerator
             declarationType = "partial class";
 
         // Collect interface implementations
-        if(type.Interfaces != null)
-            foreach(var @interface  in type.Interfaces)
+        if (type.Interfaces != null && includeInterfaces)
+            foreach (var @interface in type.Interfaces)
             {
                 if (string.IsNullOrEmpty(baseDef))
                     baseDef += ": ";
@@ -476,13 +491,13 @@ public partial class ResoniteBindingGenerator
 
         string constraints = "";
 
-        if(type.IsGenericType)
+        if (type.IsGenericType)
         {
-            for(int i = 0; i < type.DirectGenericParameterCount; i++)
+            for (int i = 0; i < type.DirectGenericParameterCount; i++)
             {
                 var parameter = type.GenericParameters[type.DirectGenericParameterCount - i - 1];
                 constraints += "\t" + await GenerateConstraint(parameter) + "\n";
-            }                
+            }
         }
 
         // TODO!!! Generic constraints & Interfaces
@@ -512,8 +527,8 @@ public {declarationType} {classDef} {baseDef}
         if (parameter.Enum)
             constraints.Add("System.Enum");
 
-        if(parameter.Types != null)
-            foreach(var type in parameter.Types)
+        if (parameter.Types != null)
+            foreach (var type in parameter.Types)
             {
                 if (type.IsGenericParameter)
                     constraints.Add(type.Type);
@@ -549,11 +564,12 @@ public {declarationType} {classDef} {baseDef}
             }}");
     }
 
-    async Task<string> GenerateBindingSource(TypeDefinition type, string body, string attributes, string overrideBaseDef = null)
+    async Task<string> GenerateBindingSource(TypeDefinition type, string body, string attributes = null,
+        string overrideBaseDef = null, string nameSuffix = null, bool includeInterfaces = true)
     {
         CheckCancellation();
 
-        var declaration = await GenerateDeclaration(type, body, attributes, overrideBaseDef);
+        var declaration = await GenerateDeclaration(type, body, attributes, overrideBaseDef, nameSuffix, includeInterfaces);
 
         return $@"
 // -----------------------------------------------------------------------------
@@ -565,6 +581,7 @@ public {declarationType} {classDef} {baseDef}
 // -----------------------------------------------------------------------------
 
 using UnityEngine;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -575,27 +592,46 @@ namespace {type.Namespace}
 }}
 ";
     }
-    
+
+    async Task<string> GenerateWrapperSource(ComponentDefinition definition)
+    {
+        CheckCancellation();
+
+        if (definition.Type.IsAbstract)
+            throw new System.ArgumentException("Wrappers can only be generated for non abstract types");
+
+        // For non-abstract types & non-generic types we can categorize!
+        // Unfortunately Unity doesn't support generic components, so we can't expose those directly
+        var attributes = new StringBuilder();
+
+        var categoryName = definition.Type.Name;
+
+        var categoryPath = $"FrooxEngine/{definition.CategoryPath ?? "Uncategorized"}/{categoryName}";
+
+        attributes.AppendLine($"[AddComponentMenu(\"{categoryPath}\")]");
+
+        var reference = await FullyQualifyType(definition.Type,
+            definition.Type.GenericParameters?.Select(p => new TypeReference()
+            {
+                IsGenericParameter = true,
+                Type = p.Name,
+            }).ToList(),
+            definition.Type.FullTypeName);
+
+        return await GenerateBindingSource(definition.Type, "",
+            attributes: attributes.ToString(),
+            overrideBaseDef: $"ResoniteComponent<{reference}>",
+            nameSuffix: "Wrapper",
+            includeInterfaces: false);
+    }
+
     async Task<string> GenerateBindingSource(ComponentDefinition definition)
     {
         CheckCancellation();
 
-        var attributes = new StringBuilder();
-
-        // For non-abstract types & non-generic types we can categorize!
-        // Unfortunately Unity doesn't support generic components, so we can't expose those directly
-        if(!definition.Type.IsAbstract && !definition.Type.IsGenericType)
-        {
-            var categoryName = definition.Type.Name;
-
-            var categoryPath = $"FrooxEngine/{definition.CategoryPath ?? "Uncategorized"}/{categoryName}";
-
-            attributes.AppendLine($"[AddComponentMenu(\"{categoryPath}\")]");
-        }
-
         var body = await GenerateBody(definition.Members, definition.Type);
 
-        return await GenerateBindingSource(definition.Type, body, attributes.ToString());
+        return await GenerateBindingSource(definition.Type, body, attributes: "[Serializable]");
     }
 
     async Task<string> GenerateBindingSource(SyncObjectDefinition definition)
@@ -604,7 +640,8 @@ namespace {type.Namespace}
 
         var body = await GenerateBody(definition.Members, definition.Type);
 
-        return await GenerateBindingSource(definition.Type, body, "");
+        return await GenerateBindingSource(definition.Type, body,
+            attributes: "[Serializable]");
     }
 
     async ValueTask<SyncObjectDefinition> GetSyncObjectDefinition(string type)

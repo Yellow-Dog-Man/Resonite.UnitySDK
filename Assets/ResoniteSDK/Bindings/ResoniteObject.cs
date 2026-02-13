@@ -1,9 +1,11 @@
 using ResoniteLink;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public abstract class ResoniteObject : ScriptableObject
+[Serializable]
+public abstract class ResoniteObject
 {
     public Dictionary<string, Member> CollectMembers()
     {

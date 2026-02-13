@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -8,10 +9,10 @@ public abstract class ResoniteComponent : MonoBehaviour
 }
 
 public abstract class ResoniteComponent<C> : ResoniteComponent
-    where C  : ResoniteObject
+    where C  : ResoniteObject, new()
 {
     [SerializeField]
-    public C Data;
+    public C Data = new C();
 
     public override ResoniteLink.Component CollectData()
     {
