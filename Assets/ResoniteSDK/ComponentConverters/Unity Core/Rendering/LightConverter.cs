@@ -63,25 +63,11 @@ namespace FrooxEngine
     }
 }
 
-public class LightConverter : ResoniteComponentConverter<Light>
+public class LightConverter : ResoniteSingleComponentConverter<Light, FrooxEngine.LightWrapper>
 {
-    public FrooxEngine.LightWrapper Light;
-
-    protected override void Cleanup()
-    {
-
-    }
-
-    protected override void Initialize(Light target)
-    {
-        base.Initialize(target);
-
-        Light = gameObject.AddComponent<FrooxEngine.LightWrapper>();
-    }
-
     protected override void UpdateConversion(Light target)
     {
         // We just assign the data
-        Light.Data.SetFrom(target);
+        Binding.Data.SetFrom(target);
     }
 }
