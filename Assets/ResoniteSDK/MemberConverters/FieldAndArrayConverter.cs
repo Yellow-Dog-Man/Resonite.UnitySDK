@@ -5,8 +5,10 @@
 
 using System;
 using ResoniteLink;
+using System.Collections.Generic;
+using System.Linq;
 
-public static class FieldConverter
+public static class FieldArrayConverter
 {
     public static Field ToResoniteLinkField<T>(this T value)
     {
@@ -1186,6 +1188,485 @@ public static class FieldConverter
                     return field;
                 }
                 
+            
+        throw new NotSupportedException($"Unsupported value type: {typeof(T).FullName}");
+    }
+
+    public static SyncArray ToResoniteLinkArray<T>(this IEnumerable<T> values)
+    {
+        var type = typeof(T);
+
+        // Unity Primitives (and our extensions)
+                    if(values is IEnumerable<UnityEngine.Vector2> values_Vector2)
+                return values_Vector2.Select(v => v.ToResoniteLink()).ToResoniteLinkArray();
+                        if(values is IEnumerable<UnityEngine.Vector3> values_Vector3)
+                return values_Vector3.Select(v => v.ToResoniteLink()).ToResoniteLinkArray();
+                        if(values is IEnumerable<UnityEngine.Vector4> values_Vector4)
+                return values_Vector4.Select(v => v.ToResoniteLink()).ToResoniteLinkArray();
+                        if(values is IEnumerable<UnityEngine.Quaternion> values_Quaternion)
+                return values_Quaternion.Select(v => v.ToResoniteLink()).ToResoniteLinkArray();
+                        if(values is IEnumerable<UnityEngine.Vector2Int> values_Vector2Int)
+                return values_Vector2Int.Select(v => v.ToResoniteLink()).ToResoniteLinkArray();
+                        if(values is IEnumerable<UnityEngine.Vector3Int> values_Vector3Int)
+                return values_Vector3Int.Select(v => v.ToResoniteLink()).ToResoniteLinkArray();
+                        if(values is IEnumerable<UnityEngine.Matrix4x4> values_Matrix4x4)
+                return values_Matrix4x4.Select(v => v.ToResoniteLink()).ToResoniteLinkArray();
+                        if(values is IEnumerable<UnityEngine.Color> values_Color)
+                return values_Color.Select(v => v.ToResoniteLink()).ToResoniteLinkArray();
+                        if(values is IEnumerable<UnityEngine.Color32> values_Color32)
+                return values_Color32.Select(v => v.ToResoniteLink()).ToResoniteLinkArray();
+                        if(values is IEnumerable<UnityEngine.Rect> values_Rect)
+                return values_Rect.Select(v => v.ToResoniteLink()).ToResoniteLinkArray();
+                        if(values is IEnumerable<UnityEngine.RectInt> values_RectInt)
+                return values_RectInt.Select(v => v.ToResoniteLink()).ToResoniteLinkArray();
+                        if(values is IEnumerable<UnityEngine.QuaternionDouble> values_QuaternionDouble)
+                return values_QuaternionDouble.Select(v => v.ToResoniteLink()).ToResoniteLinkArray();
+                        if(values is IEnumerable<UnityEngine.ColorX> values_ColorX)
+                return values_ColorX.Select(v => v.ToResoniteLink()).ToResoniteLinkArray();
+                        if(values is IEnumerable<UnityEngine.Vector2Bool> values_Vector2Bool)
+                return values_Vector2Bool.Select(v => v.ToResoniteLink()).ToResoniteLinkArray();
+                        if(values is IEnumerable<UnityEngine.Vector3Bool> values_Vector3Bool)
+                return values_Vector3Bool.Select(v => v.ToResoniteLink()).ToResoniteLinkArray();
+                        if(values is IEnumerable<UnityEngine.Vector4Bool> values_Vector4Bool)
+                return values_Vector4Bool.Select(v => v.ToResoniteLink()).ToResoniteLinkArray();
+                        if(values is IEnumerable<UnityEngine.Vector2Byte> values_Vector2Byte)
+                return values_Vector2Byte.Select(v => v.ToResoniteLink()).ToResoniteLinkArray();
+                        if(values is IEnumerable<UnityEngine.Vector3Byte> values_Vector3Byte)
+                return values_Vector3Byte.Select(v => v.ToResoniteLink()).ToResoniteLinkArray();
+                        if(values is IEnumerable<UnityEngine.Vector4Byte> values_Vector4Byte)
+                return values_Vector4Byte.Select(v => v.ToResoniteLink()).ToResoniteLinkArray();
+                        if(values is IEnumerable<UnityEngine.Vector2Ushort> values_Vector2Ushort)
+                return values_Vector2Ushort.Select(v => v.ToResoniteLink()).ToResoniteLinkArray();
+                        if(values is IEnumerable<UnityEngine.Vector3Ushort> values_Vector3Ushort)
+                return values_Vector3Ushort.Select(v => v.ToResoniteLink()).ToResoniteLinkArray();
+                        if(values is IEnumerable<UnityEngine.Vector4Ushort> values_Vector4Ushort)
+                return values_Vector4Ushort.Select(v => v.ToResoniteLink()).ToResoniteLinkArray();
+                        if(values is IEnumerable<UnityEngine.Vector2Uint> values_Vector2Uint)
+                return values_Vector2Uint.Select(v => v.ToResoniteLink()).ToResoniteLinkArray();
+                        if(values is IEnumerable<UnityEngine.Vector3Uint> values_Vector3Uint)
+                return values_Vector3Uint.Select(v => v.ToResoniteLink()).ToResoniteLinkArray();
+                        if(values is IEnumerable<UnityEngine.Vector4Uint> values_Vector4Uint)
+                return values_Vector4Uint.Select(v => v.ToResoniteLink()).ToResoniteLinkArray();
+                        if(values is IEnumerable<UnityEngine.Vector2Ulong> values_Vector2Ulong)
+                return values_Vector2Ulong.Select(v => v.ToResoniteLink()).ToResoniteLinkArray();
+                        if(values is IEnumerable<UnityEngine.Vector3Ulong> values_Vector3Ulong)
+                return values_Vector3Ulong.Select(v => v.ToResoniteLink()).ToResoniteLinkArray();
+                        if(values is IEnumerable<UnityEngine.Vector4Ulong> values_Vector4Ulong)
+                return values_Vector4Ulong.Select(v => v.ToResoniteLink()).ToResoniteLinkArray();
+                        if(values is IEnumerable<UnityEngine.Vector2Sbyte> values_Vector2Sbyte)
+                return values_Vector2Sbyte.Select(v => v.ToResoniteLink()).ToResoniteLinkArray();
+                        if(values is IEnumerable<UnityEngine.Vector3Sbyte> values_Vector3Sbyte)
+                return values_Vector3Sbyte.Select(v => v.ToResoniteLink()).ToResoniteLinkArray();
+                        if(values is IEnumerable<UnityEngine.Vector4Sbyte> values_Vector4Sbyte)
+                return values_Vector4Sbyte.Select(v => v.ToResoniteLink()).ToResoniteLinkArray();
+                        if(values is IEnumerable<UnityEngine.Vector2Short> values_Vector2Short)
+                return values_Vector2Short.Select(v => v.ToResoniteLink()).ToResoniteLinkArray();
+                        if(values is IEnumerable<UnityEngine.Vector3Short> values_Vector3Short)
+                return values_Vector3Short.Select(v => v.ToResoniteLink()).ToResoniteLinkArray();
+                        if(values is IEnumerable<UnityEngine.Vector4Short> values_Vector4Short)
+                return values_Vector4Short.Select(v => v.ToResoniteLink()).ToResoniteLinkArray();
+                        if(values is IEnumerable<UnityEngine.Vector2Long> values_Vector2Long)
+                return values_Vector2Long.Select(v => v.ToResoniteLink()).ToResoniteLinkArray();
+                        if(values is IEnumerable<UnityEngine.Vector3Long> values_Vector3Long)
+                return values_Vector3Long.Select(v => v.ToResoniteLink()).ToResoniteLinkArray();
+                        if(values is IEnumerable<UnityEngine.Vector4Long> values_Vector4Long)
+                return values_Vector4Long.Select(v => v.ToResoniteLink()).ToResoniteLinkArray();
+                        if(values is IEnumerable<UnityEngine.Vector2Double> values_Vector2Double)
+                return values_Vector2Double.Select(v => v.ToResoniteLink()).ToResoniteLinkArray();
+                        if(values is IEnumerable<UnityEngine.Vector3Double> values_Vector3Double)
+                return values_Vector3Double.Select(v => v.ToResoniteLink()).ToResoniteLinkArray();
+                        if(values is IEnumerable<UnityEngine.Vector4Double> values_Vector4Double)
+                return values_Vector4Double.Select(v => v.ToResoniteLink()).ToResoniteLinkArray();
+                        if(values is IEnumerable<UnityEngine.Matrix2x2> values_Matrix2x2)
+                return values_Matrix2x2.Select(v => v.ToResoniteLink()).ToResoniteLinkArray();
+                        if(values is IEnumerable<UnityEngine.Matrix3x3> values_Matrix3x3)
+                return values_Matrix3x3.Select(v => v.ToResoniteLink()).ToResoniteLinkArray();
+                        if(values is IEnumerable<UnityEngine.Matrix2x2Double> values_Matrix2x2Double)
+                return values_Matrix2x2Double.Select(v => v.ToResoniteLink()).ToResoniteLinkArray();
+                        if(values is IEnumerable<UnityEngine.Matrix3x3Double> values_Matrix3x3Double)
+                return values_Matrix3x3Double.Select(v => v.ToResoniteLink()).ToResoniteLinkArray();
+                        if(values is IEnumerable<UnityEngine.Matrix4x4Double> values_Matrix4x4Double)
+                return values_Matrix4x4Double.Select(v => v.ToResoniteLink()).ToResoniteLinkArray();
+            
+        // All other primitives
+                    if(type == typeof(byte))
+            {
+                var array = new Array_byte();
+                array.Values = values.Cast<byte>().ToList();
+                return array;
+            }
+                        if(type == typeof(ushort))
+            {
+                var array = new Array_ushort();
+                array.Values = values.Cast<ushort>().ToList();
+                return array;
+            }
+                        if(type == typeof(uint))
+            {
+                var array = new Array_uint();
+                array.Values = values.Cast<uint>().ToList();
+                return array;
+            }
+                        if(type == typeof(ulong))
+            {
+                var array = new Array_ulong();
+                array.Values = values.Cast<ulong>().ToList();
+                return array;
+            }
+                        if(type == typeof(sbyte))
+            {
+                var array = new Array_sbyte();
+                array.Values = values.Cast<sbyte>().ToList();
+                return array;
+            }
+                        if(type == typeof(short))
+            {
+                var array = new Array_short();
+                array.Values = values.Cast<short>().ToList();
+                return array;
+            }
+                        if(type == typeof(int))
+            {
+                var array = new Array_int();
+                array.Values = values.Cast<int>().ToList();
+                return array;
+            }
+                        if(type == typeof(long))
+            {
+                var array = new Array_long();
+                array.Values = values.Cast<long>().ToList();
+                return array;
+            }
+                        if(type == typeof(float))
+            {
+                var array = new Array_float();
+                array.Values = values.Cast<float>().ToList();
+                return array;
+            }
+                        if(type == typeof(double))
+            {
+                var array = new Array_double();
+                array.Values = values.Cast<double>().ToList();
+                return array;
+            }
+                        if(type == typeof(decimal))
+            {
+                var array = new Array_decimal();
+                array.Values = values.Cast<decimal>().ToList();
+                return array;
+            }
+                        if(type == typeof(bool))
+            {
+                var array = new Array_bool();
+                array.Values = values.Cast<bool>().ToList();
+                return array;
+            }
+                        if(type == typeof(char))
+            {
+                var array = new Array_char();
+                array.Values = values.Cast<char>().ToList();
+                return array;
+            }
+                        if(type == typeof(string))
+            {
+                var array = new Array_string();
+                array.Values = values.Cast<string>().ToList();
+                return array;
+            }
+                        if(type == typeof(Uri))
+            {
+                var array = new Array_Uri();
+                array.Values = values.Cast<Uri>().ToList();
+                return array;
+            }
+                        if(type == typeof(DateTime))
+            {
+                var array = new Array_DateTime();
+                array.Values = values.Cast<DateTime>().ToList();
+                return array;
+            }
+                        if(type == typeof(TimeSpan))
+            {
+                var array = new Array_TimeSpan();
+                array.Values = values.Cast<TimeSpan>().ToList();
+                return array;
+            }
+                        if(type == typeof(color))
+            {
+                var array = new Array_color();
+                array.Values = values.Cast<color>().ToList();
+                return array;
+            }
+                        if(type == typeof(colorX))
+            {
+                var array = new Array_colorX();
+                array.Values = values.Cast<colorX>().ToList();
+                return array;
+            }
+                        if(type == typeof(color32))
+            {
+                var array = new Array_color32();
+                array.Values = values.Cast<color32>().ToList();
+                return array;
+            }
+                        if(type == typeof(Rect))
+            {
+                var array = new Array_Rect();
+                array.Values = values.Cast<Rect>().ToList();
+                return array;
+            }
+                        if(type == typeof(IntRect))
+            {
+                var array = new Array_IntRect();
+                array.Values = values.Cast<IntRect>().ToList();
+                return array;
+            }
+                        if(type == typeof(float2))
+            {
+                var array = new Array_float2();
+                array.Values = values.Cast<float2>().ToList();
+                return array;
+            }
+                        if(type == typeof(double2))
+            {
+                var array = new Array_double2();
+                array.Values = values.Cast<double2>().ToList();
+                return array;
+            }
+                        if(type == typeof(byte2))
+            {
+                var array = new Array_byte2();
+                array.Values = values.Cast<byte2>().ToList();
+                return array;
+            }
+                        if(type == typeof(ushort2))
+            {
+                var array = new Array_ushort2();
+                array.Values = values.Cast<ushort2>().ToList();
+                return array;
+            }
+                        if(type == typeof(uint2))
+            {
+                var array = new Array_uint2();
+                array.Values = values.Cast<uint2>().ToList();
+                return array;
+            }
+                        if(type == typeof(ulong2))
+            {
+                var array = new Array_ulong2();
+                array.Values = values.Cast<ulong2>().ToList();
+                return array;
+            }
+                        if(type == typeof(sbyte2))
+            {
+                var array = new Array_sbyte2();
+                array.Values = values.Cast<sbyte2>().ToList();
+                return array;
+            }
+                        if(type == typeof(short2))
+            {
+                var array = new Array_short2();
+                array.Values = values.Cast<short2>().ToList();
+                return array;
+            }
+                        if(type == typeof(int2))
+            {
+                var array = new Array_int2();
+                array.Values = values.Cast<int2>().ToList();
+                return array;
+            }
+                        if(type == typeof(long2))
+            {
+                var array = new Array_long2();
+                array.Values = values.Cast<long2>().ToList();
+                return array;
+            }
+                        if(type == typeof(bool2))
+            {
+                var array = new Array_bool2();
+                array.Values = values.Cast<bool2>().ToList();
+                return array;
+            }
+                        if(type == typeof(float3))
+            {
+                var array = new Array_float3();
+                array.Values = values.Cast<float3>().ToList();
+                return array;
+            }
+                        if(type == typeof(double3))
+            {
+                var array = new Array_double3();
+                array.Values = values.Cast<double3>().ToList();
+                return array;
+            }
+                        if(type == typeof(byte3))
+            {
+                var array = new Array_byte3();
+                array.Values = values.Cast<byte3>().ToList();
+                return array;
+            }
+                        if(type == typeof(ushort3))
+            {
+                var array = new Array_ushort3();
+                array.Values = values.Cast<ushort3>().ToList();
+                return array;
+            }
+                        if(type == typeof(uint3))
+            {
+                var array = new Array_uint3();
+                array.Values = values.Cast<uint3>().ToList();
+                return array;
+            }
+                        if(type == typeof(ulong3))
+            {
+                var array = new Array_ulong3();
+                array.Values = values.Cast<ulong3>().ToList();
+                return array;
+            }
+                        if(type == typeof(sbyte3))
+            {
+                var array = new Array_sbyte3();
+                array.Values = values.Cast<sbyte3>().ToList();
+                return array;
+            }
+                        if(type == typeof(short3))
+            {
+                var array = new Array_short3();
+                array.Values = values.Cast<short3>().ToList();
+                return array;
+            }
+                        if(type == typeof(int3))
+            {
+                var array = new Array_int3();
+                array.Values = values.Cast<int3>().ToList();
+                return array;
+            }
+                        if(type == typeof(long3))
+            {
+                var array = new Array_long3();
+                array.Values = values.Cast<long3>().ToList();
+                return array;
+            }
+                        if(type == typeof(bool3))
+            {
+                var array = new Array_bool3();
+                array.Values = values.Cast<bool3>().ToList();
+                return array;
+            }
+                        if(type == typeof(float4))
+            {
+                var array = new Array_float4();
+                array.Values = values.Cast<float4>().ToList();
+                return array;
+            }
+                        if(type == typeof(double4))
+            {
+                var array = new Array_double4();
+                array.Values = values.Cast<double4>().ToList();
+                return array;
+            }
+                        if(type == typeof(byte4))
+            {
+                var array = new Array_byte4();
+                array.Values = values.Cast<byte4>().ToList();
+                return array;
+            }
+                        if(type == typeof(ushort4))
+            {
+                var array = new Array_ushort4();
+                array.Values = values.Cast<ushort4>().ToList();
+                return array;
+            }
+                        if(type == typeof(uint4))
+            {
+                var array = new Array_uint4();
+                array.Values = values.Cast<uint4>().ToList();
+                return array;
+            }
+                        if(type == typeof(ulong4))
+            {
+                var array = new Array_ulong4();
+                array.Values = values.Cast<ulong4>().ToList();
+                return array;
+            }
+                        if(type == typeof(sbyte4))
+            {
+                var array = new Array_sbyte4();
+                array.Values = values.Cast<sbyte4>().ToList();
+                return array;
+            }
+                        if(type == typeof(short4))
+            {
+                var array = new Array_short4();
+                array.Values = values.Cast<short4>().ToList();
+                return array;
+            }
+                        if(type == typeof(int4))
+            {
+                var array = new Array_int4();
+                array.Values = values.Cast<int4>().ToList();
+                return array;
+            }
+                        if(type == typeof(long4))
+            {
+                var array = new Array_long4();
+                array.Values = values.Cast<long4>().ToList();
+                return array;
+            }
+                        if(type == typeof(bool4))
+            {
+                var array = new Array_bool4();
+                array.Values = values.Cast<bool4>().ToList();
+                return array;
+            }
+                        if(type == typeof(floatQ))
+            {
+                var array = new Array_floatQ();
+                array.Values = values.Cast<floatQ>().ToList();
+                return array;
+            }
+                        if(type == typeof(doubleQ))
+            {
+                var array = new Array_doubleQ();
+                array.Values = values.Cast<doubleQ>().ToList();
+                return array;
+            }
+                        if(type == typeof(float2x2))
+            {
+                var array = new Array_float2x2();
+                array.Values = values.Cast<float2x2>().ToList();
+                return array;
+            }
+                        if(type == typeof(double2x2))
+            {
+                var array = new Array_double2x2();
+                array.Values = values.Cast<double2x2>().ToList();
+                return array;
+            }
+                        if(type == typeof(float3x3))
+            {
+                var array = new Array_float3x3();
+                array.Values = values.Cast<float3x3>().ToList();
+                return array;
+            }
+                        if(type == typeof(double3x3))
+            {
+                var array = new Array_double3x3();
+                array.Values = values.Cast<double3x3>().ToList();
+                return array;
+            }
+                        if(type == typeof(float4x4))
+            {
+                var array = new Array_float4x4();
+                array.Values = values.Cast<float4x4>().ToList();
+                return array;
+            }
+                        if(type == typeof(double4x4))
+            {
+                var array = new Array_double4x4();
+                array.Values = values.Cast<double4x4>().ToList();
+                return array;
+            }
             
         throw new NotSupportedException($"Unsupported value type: {typeof(T).FullName}");
     }
