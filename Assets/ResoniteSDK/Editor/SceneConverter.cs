@@ -1,16 +1,19 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
 using ResoniteLink;
 using System;
+using System.Collections;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 using Unity.VisualScripting;
+using UnityEngine;
 
 [Serializable]
-public class SceneConverter
+public class SceneConverter : IConversionContext
 {
     [SerializeField]
     Dictionary<Transform, Slot> _transformMap = new Dictionary<Transform, Slot>();
+
+    [SerializeField]
+    Dictionary<ResoniteObject, string> _idMap = new Dictionary<ResoniteObject, string>();
 
     int _idPool;
     string _idPrefix;
@@ -18,6 +21,25 @@ public class SceneConverter
     int _messageIndex;
 
     public string AllocateId() => $"Unity_{_idPrefix}_{_idPool++:X}";
+    public string GetIdOrAllocate(ResoniteObject o) => GetIdOrAllocate(o, out _);
+    public string GetIdOrAllocate(ResoniteObject o, out bool allocated)
+    {
+        if(!_idMap.TryGetValue(o, out var id))
+        {
+            id = AllocateId();
+            _idMap.Add(o, id);
+
+            allocated = true;
+        }
+        else
+            allocated = false;
+
+        return id;
+    }
+
+    public string GetTransformSlotId(Transform transform) => _transformMap[transform].ID;
+
+    public string GetUniqueMessageId(string prefix) => $"{prefix}_{_messageIndex++}";
 
     public void Convert(IEnumerable<Transform> roots, LinkInterface link)
     {
@@ -68,6 +90,10 @@ public class SceneConverter
             if (component is ResoniteComponentConverter)
                 continue;
 
+            // Ignore the Resonite components too - they're already converted (or manually attached)!
+            if (component is ResoniteComponent)
+                continue;
+
             if(!converterMap.TryGetValue(component, out var converter))
             {
                 // There's no converter for this. Check if one is supported
@@ -100,7 +126,7 @@ public class SceneConverter
     void ConvertHierarchy(Transform root, List<DataModelOperation> messages)
     {
         Convert(root, messages);
-        ConvertComponents(root);
+        ConvertComponents(root, messages);
 
         // Process children recursively
         for (int i = 0; i < root.childCount; i++)
@@ -132,12 +158,12 @@ public class SceneConverter
             _transformMap.Add(transform, slot);
 
             message = new AddSlot();
-            message.MessageID = $"AddSlot_{transform.name}_{_messageIndex++}";
+            message.MessageID = GetUniqueMessageId($"AddSlot_{transform.name})");
         }
         else
         {
             message = new UpdateSlot();
-            message.MessageID = $"UpdateSlot_{transform.name}_{_messageIndex++}";
+            message.MessageID = GetUniqueMessageId($"UpdateSlot_{transform.name})");
         }
 
         GatherTransformData(transform, slot);
@@ -168,8 +194,11 @@ public class SceneConverter
         data.IsActive.Value = transform.gameObject.activeSelf;
     }
 
-    void ConvertComponents(Transform transform)
+    void ConvertComponents(Transform transform, List<DataModelOperation> messages)
     {
-         
+        var components = transform.GetComponents<ResoniteComponent>();
+
+        foreach(var c in components)
+            messages.Add(c.CollectData(this));
     }
 }

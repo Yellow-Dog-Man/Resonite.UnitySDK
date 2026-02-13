@@ -502,6 +502,7 @@ public partial class ResoniteBindingGenerator
 
         // TODO!!! Generic constraints & Interfaces
         var selfBody = $@"{attributes}
+[ResoniteTypeName(""{type.FullTypeName}"")]
 public {declarationType} {classDef} {baseDef}
 {constraints}
 {{
