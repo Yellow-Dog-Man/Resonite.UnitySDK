@@ -1,0 +1,39 @@
+
+// -----------------------------------------------------------------------------
+// WARNING: This is auto-generated file! DO NOT MODIFY
+// Generated from type: [ProtoFluxBindings]FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Assets.AssetLoadProgress<>
+// Generated on: pátek 13. února 2026 5:51:44
+// Resonite version: 2026.2.13.254
+// Resonite Link Version: 0.7.0.0
+// -----------------------------------------------------------------------------
+
+using UnityEngine;
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
+
+namespace FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Assets
+{
+    [Serializable]
+[ResoniteTypeName("[ProtoFluxBindings]FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Assets.AssetLoadProgress<>")]
+public partial class AssetLoadProgress<A> : global::FrooxEngine.ProtoFlux.Runtimes.Execution.VoidNode<global::FrooxEngine.ProtoFlux.FrooxEngineContext>
+	where A : class, global::FrooxEngine.IAsset
+
+{
+    public global::FrooxEngine.ProtoFlux.INodeObjectOutput<global::FrooxEngine.UsersAssetLoadProgress<A>> Tracker;
+public global::FrooxEngine.ProtoFlux.INodeObjectOutput<global::FrooxEngine.User> User;
+public global::FrooxEngine.ProtoFlux.NodeObjectOutput<global::System.Nullable<global::System.Single>> DownloadProgress;
+public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::FrooxEngine.AssetLoadState> LoadState;
+
+public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+{
+    base.CollectMembers(members);
+members.Add("Tracker", new ResoniteLink.Reference() { });
+members.Add("User", new ResoniteLink.Reference() { });
+members.Add("DownloadProgress", new ResoniteLink.EmptyElement());
+members.Add("LoadState", new ResoniteLink.EmptyElement());
+}
+
+}
+}

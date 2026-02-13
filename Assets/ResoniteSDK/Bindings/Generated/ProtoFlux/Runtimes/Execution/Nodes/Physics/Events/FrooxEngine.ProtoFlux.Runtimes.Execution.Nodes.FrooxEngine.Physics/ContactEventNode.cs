@@ -1,0 +1,36 @@
+
+// -----------------------------------------------------------------------------
+// WARNING: This is auto-generated file! DO NOT MODIFY
+// Generated from type: [ProtoFluxBindings]FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Physics.ContactEventNode
+// Generated on: pátek 13. února 2026 5:52:11
+// Resonite version: 2026.2.13.254
+// Resonite Link Version: 0.7.0.0
+// -----------------------------------------------------------------------------
+
+using UnityEngine;
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
+
+namespace FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Physics
+{
+    [Serializable]
+[ResoniteTypeName("[ProtoFluxBindings]FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Physics.ContactEventNode")]
+public abstract partial class ContactEventNode : global::FrooxEngine.ProtoFlux.Runtimes.Execution.VoidNode<global::FrooxEngine.ProtoFlux.FrooxEngineContext>
+
+{
+    public global::FrooxEngine.ProtoFlux.IGlobalValueProxy<global::FrooxEngine.ICollider> Collider;
+public global::FrooxEngine.ProtoFlux.ISyncNodeOperation OnEvent;
+public global::FrooxEngine.ProtoFlux.NodeObjectOutput<global::FrooxEngine.ICollider> Other;
+
+public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+{
+    base.CollectMembers(members);
+members.Add("Collider", new ResoniteLink.Reference() { });
+members.Add("OnEvent", new ResoniteLink.Reference() { });
+members.Add("Other", new ResoniteLink.EmptyElement());
+}
+
+}
+}

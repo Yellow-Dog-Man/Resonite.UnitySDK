@@ -1,0 +1,62 @@
+
+// -----------------------------------------------------------------------------
+// WARNING: This is auto-generated file! DO NOT MODIFY
+// Generated from type: [FrooxEngine]FrooxEngine.AssetMetadata
+// Generated on: pátek 13. února 2026 5:51:11
+// Resonite version: 2026.2.13.254
+// Resonite Link Version: 0.7.0.0
+// -----------------------------------------------------------------------------
+
+using UnityEngine;
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
+
+namespace FrooxEngine
+{
+    [Serializable]
+[ResoniteTypeName("[FrooxEngine]FrooxEngine.AssetMetadata")]
+public partial class AssetMetadata : global::FrooxEngine.Component, global::FrooxEngine.IItemMetadataSource
+
+{
+    public global::System.String LocationName;
+public System.Uri LocationURL;
+public global::FrooxEngine.UserRef LocationHost;
+public global::System.Nullable<global::SkyFrost.Base.SessionAccessLevel> LocationAccessLevel;
+public global::System.Nullable<global::System.Boolean> LocationHiddenFromListing;
+public global::System.DateTime TimeTaken;
+public global::FrooxEngine.UserRef TakenBy;
+public UnityEngine.Vector3 TakenGlobalPosition;
+public UnityEngine.Quaternion TakenGlobalRotation;
+public UnityEngine.Vector3 TakenGlobalScale;
+public global::System.String AppVersion;
+public System.Collections.Generic.List<global::FrooxEngine.AssetMetadata.UserInfo> UserInfos;
+public System.Collections.Generic.List<global::FrooxEngine.UserRef> __legacyPresentUsers;
+
+public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+{
+    base.CollectMembers(members);
+members.Add("LocationName", LocationName.ToResoniteLinkField());
+members.Add("LocationURL", LocationURL.ToResoniteLinkField());
+members.Add("LocationHost", new ResoniteLink.SyncObject() { Members = LocationHost.CollectMembers() });
+members.Add("LocationAccessLevel", LocationAccessLevel.ToResoniteLinkField());
+members.Add("LocationHiddenFromListing", LocationHiddenFromListing.ToResoniteLinkField());
+members.Add("TimeTaken", TimeTaken.ToResoniteLinkField());
+members.Add("TakenBy", new ResoniteLink.SyncObject() { Members = TakenBy.CollectMembers() });
+members.Add("TakenGlobalPosition", TakenGlobalPosition.ToResoniteLinkField());
+members.Add("TakenGlobalRotation", TakenGlobalRotation.ToResoniteLinkField());
+members.Add("TakenGlobalScale", TakenGlobalScale.ToResoniteLinkField());
+members.Add("AppVersion", AppVersion.ToResoniteLinkField());
+members.Add("UserInfos", new ResoniteLink.SyncList()
+{
+    Elements = UserInfos.Select(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers() }).ToList<ResoniteLink.Member>()
+});
+members.Add("__legacyPresentUsers", new ResoniteLink.SyncList()
+{
+    Elements = __legacyPresentUsers.Select(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers() }).ToList<ResoniteLink.Member>()
+});
+}
+
+}
+}

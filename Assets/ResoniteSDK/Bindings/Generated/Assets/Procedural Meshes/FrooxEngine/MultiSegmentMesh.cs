@@ -1,0 +1,39 @@
+
+// -----------------------------------------------------------------------------
+// WARNING: This is auto-generated file! DO NOT MODIFY
+// Generated from type: [FrooxEngine]FrooxEngine.MultiSegmentMesh
+// Generated on: pátek 13. února 2026 5:51:08
+// Resonite version: 2026.2.13.254
+// Resonite Link Version: 0.7.0.0
+// -----------------------------------------------------------------------------
+
+using UnityEngine;
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
+
+namespace FrooxEngine
+{
+    [Serializable]
+[ResoniteTypeName("[FrooxEngine]FrooxEngine.MultiSegmentMesh")]
+public partial class MultiSegmentMesh : global::FrooxEngine.ProceduralMesh
+
+{
+    public global::System.Int32 Sides;
+public global::System.Boolean FlipNormalDirection;
+public System.Collections.Generic.List<global::FrooxEngine.MultiSegmentMesh.SegmentInfo> Segments;
+
+public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+{
+    base.CollectMembers(members);
+members.Add("Sides", Sides.ToResoniteLinkField());
+members.Add("FlipNormalDirection", FlipNormalDirection.ToResoniteLinkField());
+members.Add("Segments", new ResoniteLink.SyncList()
+{
+    Elements = Segments.Select(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers() }).ToList<ResoniteLink.Member>()
+});
+}
+
+}
+}

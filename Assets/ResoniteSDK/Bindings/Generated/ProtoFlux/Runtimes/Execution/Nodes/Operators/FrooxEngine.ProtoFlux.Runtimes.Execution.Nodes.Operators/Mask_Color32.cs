@@ -1,0 +1,36 @@
+
+// -----------------------------------------------------------------------------
+// WARNING: This is auto-generated file! DO NOT MODIFY
+// Generated from type: [ProtoFluxBindings]FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.Operators.Mask_Color32
+// Generated on: pátek 13. února 2026 5:52:04
+// Resonite version: 2026.2.13.254
+// Resonite Link Version: 0.7.0.0
+// -----------------------------------------------------------------------------
+
+using UnityEngine;
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
+
+namespace FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.Operators
+{
+    [Serializable]
+[ResoniteTypeName("[ProtoFluxBindings]FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.Operators.Mask_Color32")]
+public partial class Mask_Color32 : global::FrooxEngine.ProtoFlux.Runtimes.Execution.ValueFunctionNode<global::ProtoFlux.Runtimes.Execution.ExecutionContext,UnityEngine.Color32>
+
+{
+    public global::FrooxEngine.ProtoFlux.INodeValueOutput<UnityEngine.Color32> OnTrue;
+public global::FrooxEngine.ProtoFlux.INodeValueOutput<UnityEngine.Color32> OnFalse;
+public global::FrooxEngine.ProtoFlux.INodeValueOutput<UnityEngine.Vector4Bool> Mask;
+
+public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+{
+    base.CollectMembers(members);
+members.Add("OnTrue", new ResoniteLink.Reference() { });
+members.Add("OnFalse", new ResoniteLink.Reference() { });
+members.Add("Mask", new ResoniteLink.Reference() { });
+}
+
+}
+}

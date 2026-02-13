@@ -1,0 +1,81 @@
+
+// -----------------------------------------------------------------------------
+// WARNING: This is auto-generated file! DO NOT MODIFY
+// Generated from type: [ProtoFluxBindings]FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.Math.SphericalHarmonics.PackSH4<>
+// Generated on: pátek 13. února 2026 5:52:01
+// Resonite version: 2026.2.13.254
+// Resonite Link Version: 0.7.0.0
+// -----------------------------------------------------------------------------
+
+using UnityEngine;
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
+
+namespace FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.Math.SphericalHarmonics
+{
+    [Serializable]
+[ResoniteTypeName("[ProtoFluxBindings]FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.Math.SphericalHarmonics.PackSH4<>")]
+public partial class PackSH4<T> : global::FrooxEngine.ProtoFlux.Runtimes.Execution.ValueFunctionNode<global::ProtoFlux.Runtimes.Execution.ExecutionContext,global::Elements.Core.SphericalHarmonicsL4<T>>
+	where T : struct
+
+{
+    public global::FrooxEngine.ProtoFlux.INodeValueOutput<T> SH0;
+public global::FrooxEngine.ProtoFlux.INodeValueOutput<T> SH1;
+public global::FrooxEngine.ProtoFlux.INodeValueOutput<T> SH2;
+public global::FrooxEngine.ProtoFlux.INodeValueOutput<T> SH3;
+public global::FrooxEngine.ProtoFlux.INodeValueOutput<T> SH4;
+public global::FrooxEngine.ProtoFlux.INodeValueOutput<T> SH5;
+public global::FrooxEngine.ProtoFlux.INodeValueOutput<T> SH6;
+public global::FrooxEngine.ProtoFlux.INodeValueOutput<T> SH7;
+public global::FrooxEngine.ProtoFlux.INodeValueOutput<T> SH8;
+public global::FrooxEngine.ProtoFlux.INodeValueOutput<T> SH9;
+public global::FrooxEngine.ProtoFlux.INodeValueOutput<T> SH10;
+public global::FrooxEngine.ProtoFlux.INodeValueOutput<T> SH11;
+public global::FrooxEngine.ProtoFlux.INodeValueOutput<T> SH12;
+public global::FrooxEngine.ProtoFlux.INodeValueOutput<T> SH13;
+public global::FrooxEngine.ProtoFlux.INodeValueOutput<T> SH14;
+public global::FrooxEngine.ProtoFlux.INodeValueOutput<T> SH15;
+public global::FrooxEngine.ProtoFlux.INodeValueOutput<T> SH16;
+public global::FrooxEngine.ProtoFlux.INodeValueOutput<T> SH17;
+public global::FrooxEngine.ProtoFlux.INodeValueOutput<T> SH18;
+public global::FrooxEngine.ProtoFlux.INodeValueOutput<T> SH19;
+public global::FrooxEngine.ProtoFlux.INodeValueOutput<T> SH20;
+public global::FrooxEngine.ProtoFlux.INodeValueOutput<T> SH21;
+public global::FrooxEngine.ProtoFlux.INodeValueOutput<T> SH22;
+public global::FrooxEngine.ProtoFlux.INodeValueOutput<T> SH23;
+public global::FrooxEngine.ProtoFlux.INodeValueOutput<T> SH24;
+
+public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+{
+    base.CollectMembers(members);
+members.Add("SH0", new ResoniteLink.Reference() { });
+members.Add("SH1", new ResoniteLink.Reference() { });
+members.Add("SH2", new ResoniteLink.Reference() { });
+members.Add("SH3", new ResoniteLink.Reference() { });
+members.Add("SH4", new ResoniteLink.Reference() { });
+members.Add("SH5", new ResoniteLink.Reference() { });
+members.Add("SH6", new ResoniteLink.Reference() { });
+members.Add("SH7", new ResoniteLink.Reference() { });
+members.Add("SH8", new ResoniteLink.Reference() { });
+members.Add("SH9", new ResoniteLink.Reference() { });
+members.Add("SH10", new ResoniteLink.Reference() { });
+members.Add("SH11", new ResoniteLink.Reference() { });
+members.Add("SH12", new ResoniteLink.Reference() { });
+members.Add("SH13", new ResoniteLink.Reference() { });
+members.Add("SH14", new ResoniteLink.Reference() { });
+members.Add("SH15", new ResoniteLink.Reference() { });
+members.Add("SH16", new ResoniteLink.Reference() { });
+members.Add("SH17", new ResoniteLink.Reference() { });
+members.Add("SH18", new ResoniteLink.Reference() { });
+members.Add("SH19", new ResoniteLink.Reference() { });
+members.Add("SH20", new ResoniteLink.Reference() { });
+members.Add("SH21", new ResoniteLink.Reference() { });
+members.Add("SH22", new ResoniteLink.Reference() { });
+members.Add("SH23", new ResoniteLink.Reference() { });
+members.Add("SH24", new ResoniteLink.Reference() { });
+}
+
+}
+}

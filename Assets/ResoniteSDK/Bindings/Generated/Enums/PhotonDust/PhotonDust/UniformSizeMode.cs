@@ -1,0 +1,44 @@
+
+// -----------------------------------------------------------------------------
+// WARNING: This is auto-generated file! DO NOT MODIFY
+// Generated from type: [PhotonDust]PhotonDust.UniformSizeMode
+// Generated on: pátek 13. února 2026 5:52:22
+// Resonite version: 2026.2.13.254
+// Resonite Link Version: 0.7.0.0
+// -----------------------------------------------------------------------------
+
+using UnityEngine;
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
+
+namespace PhotonDust
+{
+    
+[ResoniteTypeName("[PhotonDust]PhotonDust.UniformSizeMode")]
+public enum UniformSizeMode : int
+
+{
+    X = 0,
+Y = 1,
+Z = 2,
+XY_Avg = 3,
+XY_Max = 4,
+XY_Min = 5,
+XY_Sum = 6,
+XZ_Avg = 7,
+XZ_Max = 8,
+XZ_Min = 9,
+XZ_Sum = 10,
+YZ_Avg = 11,
+YZ_Max = 12,
+YZ_Min = 13,
+YZ_Sum = 14,
+XYZ_Avg = 15,
+XYZ_Max = 16,
+XYZ_Min = 17,
+XYZ_Sum = 18,
+
+}
+}

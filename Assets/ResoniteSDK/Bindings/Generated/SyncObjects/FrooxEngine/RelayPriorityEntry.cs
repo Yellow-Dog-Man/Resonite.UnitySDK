@@ -1,0 +1,36 @@
+
+// -----------------------------------------------------------------------------
+// WARNING: This is auto-generated file! DO NOT MODIFY
+// Generated from type: [FrooxEngine]FrooxEngine.RelayPriorityEntry
+// Generated on: pátek 13. února 2026 5:52:36
+// Resonite version: 2026.2.13.254
+// Resonite Link Version: 0.7.0.0
+// -----------------------------------------------------------------------------
+
+using UnityEngine;
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
+
+namespace FrooxEngine
+{
+    [Serializable]
+[ResoniteTypeName("[FrooxEngine]FrooxEngine.RelayPriorityEntry")]
+public partial class RelayPriorityEntry : global::FrooxEngine.PriorityEntry<global::System.String>
+
+{
+    public global::System.String RelayIP;
+public global::System.Int32 CurrentUsers;
+public global::System.Boolean IsAvailable;
+
+public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+{
+    base.CollectMembers(members);
+members.Add("RelayIP", RelayIP.ToResoniteLinkField());
+members.Add("CurrentUsers", CurrentUsers.ToResoniteLinkField());
+members.Add("IsAvailable", IsAvailable.ToResoniteLinkField());
+}
+
+}
+}
