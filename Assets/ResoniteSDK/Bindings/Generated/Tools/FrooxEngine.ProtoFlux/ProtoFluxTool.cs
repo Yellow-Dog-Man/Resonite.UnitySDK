@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.ProtoFlux.ProtoFluxTool
-// Generated on: pátek 13. února 2026 5:52:24
-// Resonite version: 2026.2.13.254
+// Generated on: pátek 13. února 2026 23:23:08
+// Resonite version: 2026.2.12.359
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -49,7 +49,7 @@ members.Add("HoveringElementContentType", HoveringElementContentType.ToResoniteL
 members.Add("HoveringElementColor", HoveringElementColor.ToResoniteLinkField());
 members.Add("_selectedNodes", new ResoniteLink.SyncList()
 {
-    Elements = _selectedNodes.Select(m => new ResoniteLink.Reference() { }).ToList<ResoniteLink.Member>()
+    Elements = _selectedNodes.ConvertList(m => new ResoniteLink.Reference() { })
 });
 members.Add("_wirePointPosition", new ResoniteLink.Reference() { });
 members.Add("_text", new ResoniteLink.Reference() { });

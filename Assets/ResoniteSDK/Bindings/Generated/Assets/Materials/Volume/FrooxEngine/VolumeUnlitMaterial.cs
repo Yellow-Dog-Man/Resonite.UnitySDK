@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.VolumeUnlitMaterial
-// Generated on: pátek 13. února 2026 5:51:07
-// Resonite version: 2026.2.13.254
+// Generated on: pátek 13. února 2026 23:21:34
+// Resonite version: 2026.2.12.359
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -52,11 +52,11 @@ members.Add("InputOffset", InputOffset.ToResoniteLinkField());
 members.Add("UseAlphaChannel", UseAlphaChannel.ToResoniteLinkField());
 members.Add("Slices", new ResoniteLink.SyncList()
 {
-    Elements = Slices.Select(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers() }).ToList<ResoniteLink.Member>()
+    Elements = Slices.ConvertList(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers() })
 });
 members.Add("Highlights", new ResoniteLink.SyncList()
 {
-    Elements = Highlights.Select(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers() }).ToList<ResoniteLink.Member>()
+    Elements = Highlights.ConvertList(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers() })
 });
 }
 

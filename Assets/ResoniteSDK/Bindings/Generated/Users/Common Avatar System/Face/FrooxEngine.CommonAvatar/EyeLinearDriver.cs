@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.CommonAvatar.EyeLinearDriver
-// Generated on: pátek 13. února 2026 5:52:39
-// Resonite version: 2026.2.13.254
+// Generated on: pátek 13. února 2026 23:23:20
+// Resonite version: 2026.2.12.359
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -44,19 +44,19 @@ members.Add("MinimumTargetPointDistance", MinimumTargetPointDistance.ToResoniteL
 members.Add("PositionClampMode", PositionClampMode.ToResoniteLinkField());
 members.Add("LeftCloseSubtractLimits", new ResoniteLink.SyncList()
 {
-    Elements = LeftCloseSubtractLimits.Select(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers() }).ToList<ResoniteLink.Member>()
+    Elements = LeftCloseSubtractLimits.ConvertList(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers() })
 });
 members.Add("RightCloseSubtractLimits", new ResoniteLink.SyncList()
 {
-    Elements = RightCloseSubtractLimits.Select(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers() }).ToList<ResoniteLink.Member>()
+    Elements = RightCloseSubtractLimits.ConvertList(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers() })
 });
 members.Add("CombinedCloseSubtractLimits", new ResoniteLink.SyncList()
 {
-    Elements = CombinedCloseSubtractLimits.Select(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers() }).ToList<ResoniteLink.Member>()
+    Elements = CombinedCloseSubtractLimits.ConvertList(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers() })
 });
 members.Add("Eyes", new ResoniteLink.SyncList()
 {
-    Elements = Eyes.Select(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers() }).ToList<ResoniteLink.Member>()
+    Elements = Eyes.ConvertList(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers() })
 });
 }
 

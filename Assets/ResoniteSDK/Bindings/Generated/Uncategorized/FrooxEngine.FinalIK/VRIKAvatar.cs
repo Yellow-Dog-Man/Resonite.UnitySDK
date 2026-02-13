@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.FinalIK.VRIKAvatar
-// Generated on: pátek 13. února 2026 5:52:32
-// Resonite version: 2026.2.13.254
+// Generated on: pátek 13. února 2026 23:23:14
+// Resonite version: 2026.2.12.359
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -140,7 +140,7 @@ members.Add("FeetIgnoreOtherPlayers", FeetIgnoreOtherPlayers.ToResoniteLinkField
 members.Add("FeetCollisionListMode", FeetCollisionListMode.ToResoniteLinkField());
 members.Add("FeetCollisionList", new ResoniteLink.SyncList()
 {
-    Elements = FeetCollisionList.Select(m => new ResoniteLink.Reference() { }).ToList<ResoniteLink.Member>()
+    Elements = FeetCollisionList.ConvertList(m => new ResoniteLink.Reference() { })
 });
 members.Add("HeadMaxFixDistance", HeadMaxFixDistance.ToResoniteLinkField());
 members.Add("ForceUseFeetProxies", ForceUseFeetProxies.ToResoniteLinkField());
@@ -174,7 +174,7 @@ members.Add("SupressWalkAnimationWhenHorizontal", SupressWalkAnimationWhenHorizo
 members.Add("AlwaysUseTrackersWhenHorizontal", AlwaysUseTrackersWhenHorizontal.ToResoniteLinkField());
 members.Add("Gaits", new ResoniteLink.SyncList()
 {
-    Elements = Gaits.Select(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers() }).ToList<ResoniteLink.Member>()
+    Elements = Gaits.ConvertList(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers() })
 });
 members.Add("GaitTransitionSpeed", GaitTransitionSpeed.ToResoniteLinkField());
 members.Add("GaitMovementDirectionSmoothSpeed", GaitMovementDirectionSmoothSpeed.ToResoniteLinkField());
@@ -246,7 +246,7 @@ members.Add("_locomotionOffset", new ResoniteLink.Reference() { });
 members.Add("_simplifiedColliderEnabled", new ResoniteLink.Reference() { });
 members.Add("_rigCollidersEnabledStates", new ResoniteLink.SyncList()
 {
-    Elements = _rigCollidersEnabledStates.Select(m => new ResoniteLink.Reference() { }).ToList<ResoniteLink.Member>()
+    Elements = _rigCollidersEnabledStates.ConvertList(m => new ResoniteLink.Reference() { })
 });
 members.Add("_horizontalTrackingLocked", _horizontalTrackingLocked.ToResoniteLinkField());
 }

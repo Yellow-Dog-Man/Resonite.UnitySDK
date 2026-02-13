@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.LODGroup+LOD
-// Generated on: pátek 13. února 2026 5:52:21
-// Resonite version: 2026.2.13.254
+// Generated on: pátek 13. února 2026 23:23:04
+// Resonite version: 2026.2.12.359
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -33,7 +33,7 @@ members.Add("ScreenRelativeTransitionHeight", ScreenRelativeTransitionHeight.ToR
 members.Add("FadeTransitionWidth", FadeTransitionWidth.ToResoniteLinkField());
 members.Add("Renderers", new ResoniteLink.SyncList()
 {
-    Elements = Renderers.Select(m => new ResoniteLink.Reference() { }).ToList<ResoniteLink.Member>()
+    Elements = Renderers.ConvertList(m => new ResoniteLink.Reference() { })
 });
 }
 

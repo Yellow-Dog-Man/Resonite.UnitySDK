@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.SessionControlDialog
-// Generated on: pátek 13. února 2026 5:52:36
-// Resonite version: 2026.2.13.254
+// Generated on: pátek 13. února 2026 23:23:18
+// Resonite version: 2026.2.12.359
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -117,11 +117,11 @@ members.Add("_copyWorldURL", new ResoniteLink.Reference() { });
 members.Add("_copyRecordURL", new ResoniteLink.Reference() { });
 members.Add("_accessLevelRadios", new ResoniteLink.SyncList()
 {
-    Elements = _accessLevelRadios.Select(m => new ResoniteLink.Reference() { }).ToList<ResoniteLink.Member>()
+    Elements = _accessLevelRadios.ConvertList(m => new ResoniteLink.Reference() { })
 });
 members.Add("_accessLevelRadiosButtons", new ResoniteLink.SyncList()
 {
-    Elements = _accessLevelRadiosButtons.Select(m => new ResoniteLink.Reference() { }).ToList<ResoniteLink.Member>()
+    Elements = _accessLevelRadiosButtons.ConvertList(m => new ResoniteLink.Reference() { })
 });
 members.Add("_worldNameSync", new ResoniteLink.Reference() { });
 members.Add("_descriptionSync", new ResoniteLink.Reference() { });
@@ -149,7 +149,7 @@ members.Add("_enableResoniteLink", new ResoniteLink.Reference() { });
 members.Add("_resoniteLinkPort", new ResoniteLink.Reference() { });
 members.Add("_tabButtons", new ResoniteLink.SyncList()
 {
-    Elements = _tabButtons.Select(m => new ResoniteLink.Reference() { }).ToList<ResoniteLink.Member>()
+    Elements = _tabButtons.ConvertList(m => new ResoniteLink.Reference() { })
 });
 }
 

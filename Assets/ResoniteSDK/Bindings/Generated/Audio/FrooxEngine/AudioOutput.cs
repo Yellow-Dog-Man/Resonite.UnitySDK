@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.AudioOutput
-// Generated on: pátek 13. února 2026 5:51:10
-// Resonite version: 2026.2.13.254
+// Generated on: pátek 13. února 2026 23:21:37
+// Resonite version: 2026.2.12.359
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -64,11 +64,11 @@ members.Add("MaxScale", MaxScale.ToResoniteLinkField());
 members.Add("IgnoreAudioEffects", IgnoreAudioEffects.ToResoniteLinkField());
 members.Add("ExcludedListeners", new ResoniteLink.SyncList()
 {
-    Elements = ExcludedListeners.Select(m => new ResoniteLink.Reference() { }).ToList<ResoniteLink.Member>()
+    Elements = ExcludedListeners.ConvertList(m => new ResoniteLink.Reference() { })
 });
 members.Add("excludedUsers", new ResoniteLink.SyncList()
 {
-    Elements = excludedUsers.Select(m => new ResoniteLink.Reference() { }).ToList<ResoniteLink.Member>()
+    Elements = excludedUsers.ConvertList(m => new ResoniteLink.Reference() { })
 });
 }
 

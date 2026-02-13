@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.Camera
-// Generated on: pátek 13. února 2026 5:51:15
-// Resonite version: 2026.2.13.254
+// Generated on: pátek 13. února 2026 23:21:41
+// Resonite version: 2026.2.12.359
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -62,11 +62,11 @@ members.Add("MotionBlur", MotionBlur.ToResoniteLinkField());
 members.Add("RenderShadows", RenderShadows.ToResoniteLinkField());
 members.Add("SelectiveRender", new ResoniteLink.SyncList()
 {
-    Elements = SelectiveRender.Select(m => new ResoniteLink.Reference() { }).ToList<ResoniteLink.Member>()
+    Elements = SelectiveRender.ConvertList(m => new ResoniteLink.Reference() { })
 });
 members.Add("ExcludeRender", new ResoniteLink.SyncList()
 {
-    Elements = ExcludeRender.Select(m => new ResoniteLink.Reference() { }).ToList<ResoniteLink.Member>()
+    Elements = ExcludeRender.ConvertList(m => new ResoniteLink.Reference() { })
 });
 }
 

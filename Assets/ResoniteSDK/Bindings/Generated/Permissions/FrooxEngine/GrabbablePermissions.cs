@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.GrabbablePermissions
-// Generated on: pátek 13. února 2026 5:51:15
-// Resonite version: 2026.2.13.254
+// Generated on: pátek 13. února 2026 23:21:42
+// Resonite version: 2026.2.12.359
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -31,7 +31,7 @@ members.Add("Tags", new ResoniteLink.SyncObject() { Members = Tags.CollectMember
 members.Add("ValidateTypeListMode", ValidateTypeListMode.ToResoniteLinkField());
 members.Add("ValidateTypes", new ResoniteLink.SyncList()
 {
-    Elements = ValidateTypes.Select(m => m.ToResoniteLinkField()).ToList<ResoniteLink.Member>()
+    Elements = ValidateTypes.ConvertList(m => m.ToResoniteLinkField())
 });
 }
 

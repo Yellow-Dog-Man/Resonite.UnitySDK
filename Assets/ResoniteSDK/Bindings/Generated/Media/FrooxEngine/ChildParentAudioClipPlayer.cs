@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.ChildParentAudioClipPlayer
-// Generated on: pátek 13. února 2026 5:51:14
-// Resonite version: 2026.2.13.254
+// Generated on: pátek 13. února 2026 23:21:41
+// Resonite version: 2026.2.12.359
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -34,11 +34,11 @@ members.Add("ChildLimit", ChildLimit.ToResoniteLinkField());
 members.Add("FilterTag", FilterTag.ToResoniteLinkField());
 members.Add("ParentedClips", new ResoniteLink.SyncList()
 {
-    Elements = ParentedClips.Select(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers() }).ToList<ResoniteLink.Member>()
+    Elements = ParentedClips.ConvertList(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers() })
 });
 members.Add("UnparentedClips", new ResoniteLink.SyncList()
 {
-    Elements = UnparentedClips.Select(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers() }).ToList<ResoniteLink.Member>()
+    Elements = UnparentedClips.ConvertList(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers() })
 });
 }
 

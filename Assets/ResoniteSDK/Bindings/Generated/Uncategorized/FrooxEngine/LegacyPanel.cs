@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.LegacyPanel
-// Generated on: pátek 13. února 2026 5:52:33
-// Resonite version: 2026.2.13.254
+// Generated on: pátek 13. února 2026 23:23:15
+// Resonite version: 2026.2.12.359
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -65,11 +65,11 @@ members.Add("ZPadding", ZPadding.ToResoniteLinkField());
 members.Add("Thickness", Thickness.ToResoniteLinkField());
 members.Add("WhiteList", new ResoniteLink.SyncList()
 {
-    Elements = WhiteList.Select(m => new ResoniteLink.Reference() { }).ToList<ResoniteLink.Member>()
+    Elements = WhiteList.ConvertList(m => new ResoniteLink.Reference() { })
 });
 members.Add("BlackList", new ResoniteLink.SyncList()
 {
-    Elements = BlackList.Select(m => new ResoniteLink.Reference() { }).ToList<ResoniteLink.Member>()
+    Elements = BlackList.ConvertList(m => new ResoniteLink.Reference() { })
 });
 members.Add("Color", Color.ToResoniteLinkField());
 members.Add("_material", new ResoniteLink.Reference() { });
@@ -97,7 +97,7 @@ members.Add("_handleAnchorPointPosition", new ResoniteLink.Reference() { });
 members.Add("_userspaceOwner", new ResoniteLink.SyncObject() { Members = _userspaceOwner.CollectMembers() });
 members.Add("_titleButtons", new ResoniteLink.SyncList()
 {
-    Elements = _titleButtons.Select(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers() }).ToList<ResoniteLink.Member>()
+    Elements = _titleButtons.ConvertList(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers() })
 });
 members.Add("_highlightedButton", new ResoniteLink.Reference() { });
 members.Add("_pinButton", new ResoniteLink.Reference() { });

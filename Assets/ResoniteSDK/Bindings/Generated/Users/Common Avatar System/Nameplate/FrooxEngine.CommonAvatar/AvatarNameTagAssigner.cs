@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.CommonAvatar.AvatarNameTagAssigner
-// Generated on: pátek 13. února 2026 5:52:39
-// Resonite version: 2026.2.13.254
+// Generated on: pátek 13. února 2026 23:23:20
+// Resonite version: 2026.2.12.359
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -32,23 +32,23 @@ public override void CollectMembers(System.Collections.Generic.Dictionary<string
     base.CollectMembers(members);
 members.Add("LabelTargets", new ResoniteLink.SyncList()
 {
-    Elements = LabelTargets.Select(m => new ResoniteLink.Reference() { }).ToList<ResoniteLink.Member>()
+    Elements = LabelTargets.ConvertList(m => new ResoniteLink.Reference() { })
 });
 members.Add("UserIdTargets", new ResoniteLink.SyncList()
 {
-    Elements = UserIdTargets.Select(m => new ResoniteLink.Reference() { }).ToList<ResoniteLink.Member>()
+    Elements = UserIdTargets.ConvertList(m => new ResoniteLink.Reference() { })
 });
 members.Add("ColorTargets", new ResoniteLink.SyncList()
 {
-    Elements = ColorTargets.Select(m => new ResoniteLink.Reference() { }).ToList<ResoniteLink.Member>()
+    Elements = ColorTargets.ConvertList(m => new ResoniteLink.Reference() { })
 });
 members.Add("OutlineTargets", new ResoniteLink.SyncList()
 {
-    Elements = OutlineTargets.Select(m => new ResoniteLink.Reference() { }).ToList<ResoniteLink.Member>()
+    Elements = OutlineTargets.ConvertList(m => new ResoniteLink.Reference() { })
 });
 members.Add("BackgroundTargets", new ResoniteLink.SyncList()
 {
-    Elements = BackgroundTargets.Select(m => new ResoniteLink.Reference() { }).ToList<ResoniteLink.Member>()
+    Elements = BackgroundTargets.ConvertList(m => new ResoniteLink.Reference() { })
 });
 members.Add("DequippedLabel", DequippedLabel.ToResoniteLinkField());
 }

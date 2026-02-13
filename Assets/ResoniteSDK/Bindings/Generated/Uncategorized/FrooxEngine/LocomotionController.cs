@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.LocomotionController
-// Generated on: pátek 13. února 2026 5:51:14
-// Resonite version: 2026.2.13.254
+// Generated on: pátek 13. února 2026 23:21:41
+// Resonite version: 2026.2.12.359
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -37,15 +37,15 @@ public override void CollectMembers(System.Collections.Generic.Dictionary<string
 members.Add("ScalingEnabled", ScalingEnabled.ToResoniteLinkField());
 members.Add("SupressSources", new ResoniteLink.SyncList()
 {
-    Elements = SupressSources.Select(m => new ResoniteLink.Reference() { }).ToList<ResoniteLink.Member>()
+    Elements = SupressSources.ConvertList(m => new ResoniteLink.Reference() { })
 });
 members.Add("InputSupressSources", new ResoniteLink.SyncList()
 {
-    Elements = InputSupressSources.Select(m => new ResoniteLink.Reference() { }).ToList<ResoniteLink.Member>()
+    Elements = InputSupressSources.ConvertList(m => new ResoniteLink.Reference() { })
 });
 members.Add("LocomotionModules", new ResoniteLink.SyncList()
 {
-    Elements = LocomotionModules.Select(m => new ResoniteLink.Reference() { }).ToList<ResoniteLink.Member>()
+    Elements = LocomotionModules.ConvertList(m => new ResoniteLink.Reference() { })
 });
 members.Add("ActiveModuleIndex", ActiveModuleIndex.ToResoniteLinkField());
 members.Add("FindUserPreferredModule", FindUserPreferredModule.ToResoniteLinkField());
@@ -53,7 +53,7 @@ members.Add("_currentGroundCollider", new ResoniteLink.Reference() { });
 members.Add("_lastGroundCollider", new ResoniteLink.Reference() { });
 members.Add("_parentHierarchy", new ResoniteLink.SyncList()
 {
-    Elements = _parentHierarchy.Select(m => new ResoniteLink.Reference() { }).ToList<ResoniteLink.Member>()
+    Elements = _parentHierarchy.ConvertList(m => new ResoniteLink.Reference() { })
 });
 members.Add("_dummyCharacterController", new ResoniteLink.Reference() { });
 }

@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.FullBodyCalibrator
-// Generated on: pátek 13. února 2026 5:52:32
-// Resonite version: 2026.2.13.254
+// Generated on: pátek 13. února 2026 23:23:14
+// Resonite version: 2026.2.12.359
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -120,12 +120,12 @@ members.Add("_avatarLeftKneeOffset", new ResoniteLink.Reference() { });
 members.Add("_avatarRightKneeOffset", new ResoniteLink.Reference() { });
 members.Add("_platformBodyMaterialSets", new ResoniteLink.SyncList()
 {
-    Elements = _platformBodyMaterialSets.Select(m => new ResoniteLink.Reference() { }).ToList<ResoniteLink.Member>()
+    Elements = _platformBodyMaterialSets.ConvertList(m => new ResoniteLink.Reference() { })
 });
 members.Add("_ground", new ResoniteLink.Reference() { });
 members.Add("_trackers", new ResoniteLink.SyncList()
 {
-    Elements = _trackers.Select(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers() }).ToList<ResoniteLink.Member>()
+    Elements = _trackers.ConvertList(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers() })
 });
 members.Add("_visualizationRoot", new ResoniteLink.Reference() { });
 members.Add("_bodyNodeMaterial", new ResoniteLink.Reference() { });

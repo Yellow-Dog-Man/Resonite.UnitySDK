@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.ScreenViewPermissions
-// Generated on: pátek 13. února 2026 5:51:15
-// Resonite version: 2026.2.13.254
+// Generated on: pátek 13. února 2026 23:21:42
+// Resonite version: 2026.2.12.359
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -29,7 +29,7 @@ public override void CollectMembers(System.Collections.Generic.Dictionary<string
 members.Add("ListMode", ListMode.ToResoniteLinkField());
 members.Add("ViewFilters", new ResoniteLink.SyncList()
 {
-    Elements = ViewFilters.Select(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers() }).ToList<ResoniteLink.Member>()
+    Elements = ViewFilters.ConvertList(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers() })
 });
 }
 

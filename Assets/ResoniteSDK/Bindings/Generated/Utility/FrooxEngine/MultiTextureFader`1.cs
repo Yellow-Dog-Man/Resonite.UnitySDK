@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.MultiTextureFader<>
-// Generated on: pátek 13. února 2026 5:52:40
-// Resonite version: 2026.2.13.254
+// Generated on: pátek 13. února 2026 23:23:20
+// Resonite version: 2026.2.12.359
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -36,7 +36,7 @@ members.Add("Lerp", new ResoniteLink.Reference() { });
 members.Add("Position", Position.ToResoniteLinkField());
 members.Add("Textures", new ResoniteLink.SyncList()
 {
-    Elements = Textures.Select(m => new ResoniteLink.Reference() { }).ToList<ResoniteLink.Member>()
+    Elements = Textures.ConvertList(m => new ResoniteLink.Reference() { })
 });
 }
 

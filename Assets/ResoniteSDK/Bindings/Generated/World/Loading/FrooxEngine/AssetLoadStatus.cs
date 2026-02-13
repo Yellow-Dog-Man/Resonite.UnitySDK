@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.AssetLoadStatus
-// Generated on: pátek 13. února 2026 5:52:41
-// Resonite version: 2026.2.13.254
+// Generated on: pátek 13. února 2026 23:23:21
+// Resonite version: 2026.2.12.359
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -30,7 +30,7 @@ public override void CollectMembers(System.Collections.Generic.Dictionary<string
     base.CollectMembers(members);
 members.Add("Assets", new ResoniteLink.SyncList()
 {
-    Elements = Assets.Select(m => new ResoniteLink.Reference() { }).ToList<ResoniteLink.Member>()
+    Elements = Assets.ConvertList(m => new ResoniteLink.Reference() { })
 });
 members.Add("IsLoaded", IsLoaded.ToResoniteLinkField());
 members.Add("LoadProgress", LoadProgress.ToResoniteLinkField());

@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.InteractiveCamera
-// Generated on: pátek 13. února 2026 5:51:15
-// Resonite version: 2026.2.13.254
+// Generated on: pátek 13. února 2026 23:21:41
+// Resonite version: 2026.2.12.359
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -163,25 +163,25 @@ members.Add("_cameraRendering", new ResoniteLink.Reference() { });
 members.Add("_secondaryCameraRendering", new ResoniteLink.Reference() { });
 members.Add("ExclusiveOperators", new ResoniteLink.SyncList()
 {
-    Elements = ExclusiveOperators.Select(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers() }).ToList<ResoniteLink.Member>()
+    Elements = ExclusiveOperators.ConvertList(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers() })
 });
 members.Add("ControlActiveFields", new ResoniteLink.SyncList()
 {
-    Elements = ControlActiveFields.Select(m => new ResoniteLink.Reference() { }).ToList<ResoniteLink.Member>()
+    Elements = ControlActiveFields.ConvertList(m => new ResoniteLink.Reference() { })
 });
 members.Add("RenderOnlyForUsers", new ResoniteLink.SyncList()
 {
-    Elements = RenderOnlyForUsers.Select(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers() }).ToList<ResoniteLink.Member>()
+    Elements = RenderOnlyForUsers.ConvertList(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers() })
 });
 members.Add("ForceVisualsOff", ForceVisualsOff.ToResoniteLinkField());
 members.Add("VisualActiveFields", new ResoniteLink.SyncList()
 {
-    Elements = VisualActiveFields.Select(m => new ResoniteLink.Reference() { }).ToList<ResoniteLink.Member>()
+    Elements = VisualActiveFields.ConvertList(m => new ResoniteLink.Reference() { })
 });
 members.Add("AutoHideProximity", AutoHideProximity.ToResoniteLinkField());
 members.Add("ForceEyeAttentionUsers", new ResoniteLink.SyncList()
 {
-    Elements = ForceEyeAttentionUsers.Select(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers() }).ToList<ResoniteLink.Member>()
+    Elements = ForceEyeAttentionUsers.ConvertList(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers() })
 });
 members.Add("SimulatingUser", new ResoniteLink.SyncObject() { Members = SimulatingUser.CollectMembers() });
 members.Add("DestroyOnUserLeave", new ResoniteLink.SyncObject() { Members = DestroyOnUserLeave.CollectMembers() });
@@ -201,11 +201,11 @@ members.Add("GroupIncludeRadius", GroupIncludeRadius.ToResoniteLinkField());
 members.Add("GroupExcludeRadius", GroupExcludeRadius.ToResoniteLinkField());
 members.Add("ForceGroupInclude", new ResoniteLink.SyncList()
 {
-    Elements = ForceGroupInclude.Select(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers() }).ToList<ResoniteLink.Member>()
+    Elements = ForceGroupInclude.ConvertList(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers() })
 });
 members.Add("ForceGroupExclude", new ResoniteLink.SyncList()
 {
-    Elements = ForceGroupExclude.Select(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers() }).ToList<ResoniteLink.Member>()
+    Elements = ForceGroupExclude.ConvertList(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers() })
 });
 members.Add("PositionSmoothSpeed", PositionSmoothSpeed.ToResoniteLinkField());
 members.Add("AnglePositionSmoothSpeed", AnglePositionSmoothSpeed.ToResoniteLinkField());

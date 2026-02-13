@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.CommonAvatar.AvatarPoseNode
-// Generated on: pátek 13. února 2026 5:52:32
-// Resonite version: 2026.2.13.254
+// Generated on: pátek 13. února 2026 23:23:14
+// Resonite version: 2026.2.12.359
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -43,7 +43,7 @@ members.Add("EquipOrderPriority", EquipOrderPriority.ToResoniteLinkField());
 members.Add("RunAfterInputUpdate", RunAfterInputUpdate.ToResoniteLinkField());
 members.Add("MutuallyExclusiveNodes", new ResoniteLink.SyncList()
 {
-    Elements = MutuallyExclusiveNodes.Select(m => m.ToResoniteLinkField()).ToList<ResoniteLink.Member>()
+    Elements = MutuallyExclusiveNodes.ConvertList(m => m.ToResoniteLinkField())
 });
 members.Add("IsTracking", IsTracking.ToResoniteLinkField());
 members.Add("SourceIsTracking", SourceIsTracking.ToResoniteLinkField());

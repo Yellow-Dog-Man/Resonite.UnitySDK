@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.InteractiveCameraControl
-// Generated on: pátek 13. února 2026 5:52:33
-// Resonite version: 2026.2.13.254
+// Generated on: pátek 13. února 2026 23:23:15
+// Resonite version: 2026.2.12.359
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -116,15 +116,15 @@ members.Add("Mode", Mode.ToResoniteLinkField());
 members.Add("FramingTargetOverride", FramingTargetOverride.ToResoniteLinkField());
 members.Add("CameraOperators", new ResoniteLink.SyncList()
 {
-    Elements = CameraOperators.Select(m => m.ToResoniteLinkField()).ToList<ResoniteLink.Member>()
+    Elements = CameraOperators.ConvertList(m => m.ToResoniteLinkField())
 });
 members.Add("GroupIncludeUsers", new ResoniteLink.SyncList()
 {
-    Elements = GroupIncludeUsers.Select(m => m.ToResoniteLinkField()).ToList<ResoniteLink.Member>()
+    Elements = GroupIncludeUsers.ConvertList(m => m.ToResoniteLinkField())
 });
 members.Add("GroupExcludeUsers", new ResoniteLink.SyncList()
 {
-    Elements = GroupExcludeUsers.Select(m => m.ToResoniteLinkField()).ToList<ResoniteLink.Member>()
+    Elements = GroupExcludeUsers.ConvertList(m => m.ToResoniteLinkField())
 });
 members.Add("RenderForEveryone", RenderForEveryone.ToResoniteLinkField());
 members.Add("AnyoneCanInteract", AnyoneCanInteract.ToResoniteLinkField());

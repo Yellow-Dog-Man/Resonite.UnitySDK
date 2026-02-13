@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.LegacySegmentCircleMenuController
-// Generated on: pátek 13. února 2026 5:52:24
-// Resonite version: 2026.2.13.254
+// Generated on: pátek 13. února 2026 23:23:07
+// Resonite version: 2026.2.12.359
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -46,15 +46,15 @@ members.Add("HighlightRadiusOffset", HighlightRadiusOffset.ToResoniteLinkField()
 members.Add("logoMenuMesh", new ResoniteLink.Reference() { });
 members.Add("circleMenuItems", new ResoniteLink.SyncList()
 {
-    Elements = circleMenuItems.Select(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers() }).ToList<ResoniteLink.Member>()
+    Elements = circleMenuItems.ConvertList(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers() })
 });
 members.Add("independentMenuItems", new ResoniteLink.SyncList()
 {
-    Elements = independentMenuItems.Select(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers() }).ToList<ResoniteLink.Member>()
+    Elements = independentMenuItems.ConvertList(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers() })
 });
 members.Add("itemsArcs", new ResoniteLink.SyncList()
 {
-    Elements = itemsArcs.Select(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers() }).ToList<ResoniteLink.Member>()
+    Elements = itemsArcs.ConvertList(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers() })
 });
 members.Add("_overridesDrive", new ResoniteLink.Reference() { });
 members.Add("_independentDrive", new ResoniteLink.Reference() { });

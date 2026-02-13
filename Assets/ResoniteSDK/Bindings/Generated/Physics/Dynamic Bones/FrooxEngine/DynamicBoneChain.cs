@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.DynamicBoneChain
-// Generated on: pátek 13. února 2026 5:51:16
-// Resonite version: 2026.2.13.254
+// Generated on: pátek 13. února 2026 23:21:42
+// Resonite version: 2026.2.12.359
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -94,7 +94,7 @@ members.Add("UseLocalUserSpace", UseLocalUserSpace.ToResoniteLinkField());
 members.Add("SimulationSpace", new ResoniteLink.SyncObject() { Members = SimulationSpace.CollectMembers() });
 members.Add("StaticColliders", new ResoniteLink.SyncList()
 {
-    Elements = StaticColliders.Select(m => new ResoniteLink.Reference() { }).ToList<ResoniteLink.Member>()
+    Elements = StaticColliders.ConvertList(m => new ResoniteLink.Reference() { })
 });
 members.Add("VisualizeColliders", VisualizeColliders.ToResoniteLinkField());
 members.Add("VisualizeBones", VisualizeBones.ToResoniteLinkField());
@@ -116,7 +116,7 @@ members.Add("EffectorBoneOffset", EffectorBoneOffset.ToResoniteLinkField());
 members.Add("_activeGrabber", new ResoniteLink.Reference() { });
 members.Add("Bones", new ResoniteLink.SyncList()
 {
-    Elements = Bones.Select(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers() }).ToList<ResoniteLink.Member>()
+    Elements = Bones.ConvertList(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers() })
 });
 }
 

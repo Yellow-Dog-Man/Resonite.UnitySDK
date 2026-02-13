@@ -201,12 +201,12 @@ public partial class ResoniteBindingGenerator
     {
         str.Append($@"new ResoniteLink.SyncList()
 {{
-    Elements = {name}.Select(m => ");
+    Elements = {name}.ConvertList(m => ");
 
         // Generate collection for the nested member
         await GenerateMemberCollection(str, "m", list.ElementDefinition, containerType);
 
-        str.Append(@").ToList<ResoniteLink.Member>()
+        str.Append(@")
 }");
     }
 
