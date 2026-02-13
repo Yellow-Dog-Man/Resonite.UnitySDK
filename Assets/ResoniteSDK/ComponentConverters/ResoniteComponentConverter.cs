@@ -17,7 +17,7 @@ public abstract class ResoniteComponentConverter : MonoBehaviour
         Initialize();
     }
 
-    public abstract void UpdateConversion();
+    public abstract void UpdateConversion(IConversionContext context);
 
     protected abstract void Initialize();
     protected abstract void Cleanup();
@@ -34,10 +34,10 @@ public abstract class ResoniteComponentConverter<T> : ResoniteComponentConverter
     where T : Component
 {
     protected sealed override void Initialize() => Initialize((T)Target);
-    public sealed override void UpdateConversion() => UpdateConversion((T)Target);
+    public sealed override void UpdateConversion(IConversionContext context) => UpdateConversion((T)Target, context);
 
     protected virtual void Initialize(T target) {  }
-    protected abstract void UpdateConversion(T target);
+    protected abstract void UpdateConversion(T target, IConversionContext context);
 }
 
 /// <summary>
