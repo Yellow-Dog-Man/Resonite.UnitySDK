@@ -1,0 +1,27 @@
+
+// -----------------------------------------------------------------------------
+// WARNING: This is auto-generated file! DO NOT MODIFY
+// Generated from type: [FrooxEngine]FrooxEngine.GenericModalDialogSpawner<>
+// Generated on: pátek 13. února 2026 5:52:32
+// Resonite version: 2026.2.13.254
+// Resonite Link Version: 0.7.0.0
+// -----------------------------------------------------------------------------
+
+using UnityEngine;
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
+
+namespace FrooxEngine
+{
+    [AddComponentMenu("FrooxEngine/Uncategorized/GenericModalDialogSpawner")]
+
+[ResoniteTypeName("[FrooxEngine]FrooxEngine.GenericModalDialogSpawner<>")]
+public partial class GenericModalDialogSpawnerWrapper<T> : ResoniteComponent<global::FrooxEngine.GenericModalDialogSpawner<T>>
+	where T : global::FrooxEngine.Component
+
+{
+    
+}
+}

@@ -1,0 +1,31 @@
+
+// -----------------------------------------------------------------------------
+// WARNING: This is auto-generated file! DO NOT MODIFY
+// Generated from type: [Elements.Core]Elements.Core.StereoLayout
+// Generated on: pátek 13. února 2026 5:51:11
+// Resonite version: 2026.2.13.254
+// Resonite Link Version: 0.7.0.0
+// -----------------------------------------------------------------------------
+
+using UnityEngine;
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
+
+namespace Elements.Core
+{
+    
+[ResoniteTypeName("[Elements.Core]Elements.Core.StereoLayout")]
+public enum StereoLayout : int
+
+{
+    None = 0,
+Horizontal_LR = 1,
+Vertical_LR = 2,
+Horizontal_RL = 3,
+Vertical_RL = 4,
+Custom = 5,
+
+}
+}

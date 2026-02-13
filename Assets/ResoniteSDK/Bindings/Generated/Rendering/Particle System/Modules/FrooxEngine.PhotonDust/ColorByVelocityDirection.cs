@@ -1,0 +1,38 @@
+
+// -----------------------------------------------------------------------------
+// WARNING: This is auto-generated file! DO NOT MODIFY
+// Generated from type: [FrooxEngine]FrooxEngine.PhotonDust.ColorByVelocityDirection
+// Generated on: pátek 13. února 2026 5:52:22
+// Resonite version: 2026.2.13.254
+// Resonite Link Version: 0.7.0.0
+// -----------------------------------------------------------------------------
+
+using UnityEngine;
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
+
+namespace FrooxEngine.PhotonDust
+{
+    [Serializable]
+[ResoniteTypeName("[FrooxEngine]FrooxEngine.PhotonDust.ColorByVelocityDirection")]
+public partial class ColorByVelocityDirection : global::FrooxEngine.PhotonDust.ParticleSystemModule<global::System.Object>
+
+{
+    public UnityEngine.Vector3 ReferenceDirection;
+public UnityEngine.ColorX AlignedColor;
+public UnityEngine.ColorX OrthogonalColor;
+public UnityEngine.ColorX OppositeColor;
+
+public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+{
+    base.CollectMembers(members);
+members.Add("ReferenceDirection", ReferenceDirection.ToResoniteLinkField());
+members.Add("AlignedColor", AlignedColor.ToResoniteLinkField());
+members.Add("OrthogonalColor", OrthogonalColor.ToResoniteLinkField());
+members.Add("OppositeColor", OppositeColor.ToResoniteLinkField());
+}
+
+}
+}

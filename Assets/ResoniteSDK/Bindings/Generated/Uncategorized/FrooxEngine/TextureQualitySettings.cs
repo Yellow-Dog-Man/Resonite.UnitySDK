@@ -1,0 +1,42 @@
+
+// -----------------------------------------------------------------------------
+// WARNING: This is auto-generated file! DO NOT MODIFY
+// Generated from type: [FrooxEngine]FrooxEngine.TextureQualitySettings
+// Generated on: pátek 13. února 2026 5:52:37
+// Resonite version: 2026.2.13.254
+// Resonite Link Version: 0.7.0.0
+// -----------------------------------------------------------------------------
+
+using UnityEngine;
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
+
+namespace FrooxEngine
+{
+    [Serializable]
+[ResoniteTypeName("[FrooxEngine]FrooxEngine.TextureQualitySettings")]
+public partial class TextureQualitySettings : global::FrooxEngine.SettingComponent<global::FrooxEngine.TextureQualitySettings>
+
+{
+    public global::FrooxEngine.TextureSizeRatio TextureSizeRatio;
+public global::FrooxEngine.TextureSizeLimit TextureSizeLimit;
+public global::System.Int32 MinimumTextureSize;
+public global::Renderite.Shared.TextureFilterMode DefaultFilterMode;
+public global::System.Int32 AnisotropicLevel;
+public global::System.Boolean UseAnisotropicLevel;
+
+public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+{
+    base.CollectMembers(members);
+members.Add("TextureSizeRatio", TextureSizeRatio.ToResoniteLinkField());
+members.Add("TextureSizeLimit", TextureSizeLimit.ToResoniteLinkField());
+members.Add("MinimumTextureSize", MinimumTextureSize.ToResoniteLinkField());
+members.Add("DefaultFilterMode", DefaultFilterMode.ToResoniteLinkField());
+members.Add("AnisotropicLevel", AnisotropicLevel.ToResoniteLinkField());
+members.Add("UseAnisotropicLevel", UseAnisotropicLevel.ToResoniteLinkField());
+}
+
+}
+}

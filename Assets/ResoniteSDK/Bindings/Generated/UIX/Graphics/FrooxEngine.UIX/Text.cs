@@ -1,0 +1,79 @@
+
+// -----------------------------------------------------------------------------
+// WARNING: This is auto-generated file! DO NOT MODIFY
+// Generated from type: [FrooxEngine]FrooxEngine.UIX.Text
+// Generated on: pátek 13. února 2026 5:51:46
+// Resonite version: 2026.2.13.254
+// Resonite Link Version: 0.7.0.0
+// -----------------------------------------------------------------------------
+
+using UnityEngine;
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
+
+namespace FrooxEngine.UIX
+{
+    [Serializable]
+[ResoniteTypeName("[FrooxEngine]FrooxEngine.UIX.Text")]
+public partial class Text : global::FrooxEngine.UIX.Graphic, global::FrooxEngine.UIX.ILayoutElement, global::FrooxEngine.IText
+
+{
+    public global::FrooxEngine.IAssetProvider<global::FrooxEngine.FontSet> Font;
+public global::System.String Content;
+public global::System.Boolean ParseRichText;
+public global::System.String NullContent;
+public global::System.Single Size;
+public global::Elements.Assets.TextHorizontalAlignment HorizontalAlign;
+public global::Elements.Assets.TextVerticalAlignment VerticalAlign;
+public global::Elements.Assets.AlignmentMode AlignmentMode;
+public UnityEngine.ColorX Color;
+public System.Collections.Generic.List<global::FrooxEngine.IAssetProvider<global::FrooxEngine.Material>> Materials;
+public global::System.Single LineHeight;
+public global::System.String MaskPattern;
+public global::System.Boolean HorizontalAutoSize;
+public global::System.Boolean VerticalAutoSize;
+public global::System.Single AutoSizeMin;
+public global::System.Single AutoSizeMax;
+public global::System.Int32 CaretPosition;
+public global::System.Int32 SelectionStart;
+public UnityEngine.ColorX CaretColor;
+public UnityEngine.ColorX SelectionColor;
+public global::System.Boolean InteractionTarget;
+public global::FrooxEngine.FontMaterial _legacyFontMaterial;
+public global::Elements.Core.Alignment _legacyAlign;
+
+public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+{
+    base.CollectMembers(members);
+members.Add("Font", new ResoniteLink.Reference() { });
+members.Add("Content", Content.ToResoniteLinkField());
+members.Add("ParseRichText", ParseRichText.ToResoniteLinkField());
+members.Add("NullContent", NullContent.ToResoniteLinkField());
+members.Add("Size", Size.ToResoniteLinkField());
+members.Add("HorizontalAlign", HorizontalAlign.ToResoniteLinkField());
+members.Add("VerticalAlign", VerticalAlign.ToResoniteLinkField());
+members.Add("AlignmentMode", AlignmentMode.ToResoniteLinkField());
+members.Add("Color", Color.ToResoniteLinkField());
+members.Add("Materials", new ResoniteLink.SyncList()
+{
+    Elements = Materials.Select(m => new ResoniteLink.Reference() { }).ToList<ResoniteLink.Member>()
+});
+members.Add("LineHeight", LineHeight.ToResoniteLinkField());
+members.Add("MaskPattern", MaskPattern.ToResoniteLinkField());
+members.Add("HorizontalAutoSize", HorizontalAutoSize.ToResoniteLinkField());
+members.Add("VerticalAutoSize", VerticalAutoSize.ToResoniteLinkField());
+members.Add("AutoSizeMin", AutoSizeMin.ToResoniteLinkField());
+members.Add("AutoSizeMax", AutoSizeMax.ToResoniteLinkField());
+members.Add("CaretPosition", CaretPosition.ToResoniteLinkField());
+members.Add("SelectionStart", SelectionStart.ToResoniteLinkField());
+members.Add("CaretColor", CaretColor.ToResoniteLinkField());
+members.Add("SelectionColor", SelectionColor.ToResoniteLinkField());
+members.Add("InteractionTarget", InteractionTarget.ToResoniteLinkField());
+members.Add("_legacyFontMaterial", new ResoniteLink.Reference() { });
+members.Add("_legacyAlign", _legacyAlign.ToResoniteLinkField());
+}
+
+}
+}

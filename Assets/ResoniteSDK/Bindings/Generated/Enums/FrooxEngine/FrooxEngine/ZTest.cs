@@ -1,0 +1,32 @@
+
+// -----------------------------------------------------------------------------
+// WARNING: This is auto-generated file! DO NOT MODIFY
+// Generated from type: [FrooxEngine]FrooxEngine.ZTest
+// Generated on: pátek 13. února 2026 5:51:05
+// Resonite version: 2026.2.13.254
+// Resonite Link Version: 0.7.0.0
+// -----------------------------------------------------------------------------
+
+using UnityEngine;
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
+
+namespace FrooxEngine
+{
+    
+[ResoniteTypeName("[FrooxEngine]FrooxEngine.ZTest")]
+public enum ZTest : int
+
+{
+    Less = 0,
+Greater = 1,
+LessOrEqual = 2,
+GreaterOrEqual = 3,
+Equal = 4,
+NotEqual = 5,
+Always = 6,
+
+}
+}

@@ -1,0 +1,54 @@
+
+// -----------------------------------------------------------------------------
+// WARNING: This is auto-generated file! DO NOT MODIFY
+// Generated from type: [FrooxEngine]FrooxEngine.PointBrushTool
+// Generated on: pátek 13. února 2026 5:52:25
+// Resonite version: 2026.2.13.254
+// Resonite Link Version: 0.7.0.0
+// -----------------------------------------------------------------------------
+
+using UnityEngine;
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
+
+namespace FrooxEngine
+{
+    [Serializable]
+[ResoniteTypeName("[FrooxEngine]FrooxEngine.PointBrushTool")]
+public abstract partial class PointBrushTool : global::FrooxEngine.ParticleBrushTool
+
+{
+    public UnityEngine.Color MinColor;
+public UnityEngine.Color MaxColor;
+public global::Renderite.Shared.ColorProfile Profile;
+public global::System.Single ColorGap;
+public UnityEngine.Vector2 MinSize;
+public UnityEngine.Vector2 MaxSize;
+public global::System.Single SizeGap;
+public global::FrooxEngine.AtlasInfo AtlasInfo;
+public global::System.Boolean PressureAffectsSize;
+public global::System.Boolean PressureAffectsAlpha;
+public global::System.Boolean PressureAffectsIntensity;
+public global::System.Boolean UseColor;
+
+public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+{
+    base.CollectMembers(members);
+members.Add("MinColor", MinColor.ToResoniteLinkField());
+members.Add("MaxColor", MaxColor.ToResoniteLinkField());
+members.Add("Profile", Profile.ToResoniteLinkField());
+members.Add("ColorGap", ColorGap.ToResoniteLinkField());
+members.Add("MinSize", MinSize.ToResoniteLinkField());
+members.Add("MaxSize", MaxSize.ToResoniteLinkField());
+members.Add("SizeGap", SizeGap.ToResoniteLinkField());
+members.Add("AtlasInfo", new ResoniteLink.Reference() { });
+members.Add("PressureAffectsSize", PressureAffectsSize.ToResoniteLinkField());
+members.Add("PressureAffectsAlpha", PressureAffectsAlpha.ToResoniteLinkField());
+members.Add("PressureAffectsIntensity", PressureAffectsIntensity.ToResoniteLinkField());
+members.Add("UseColor", UseColor.ToResoniteLinkField());
+}
+
+}
+}

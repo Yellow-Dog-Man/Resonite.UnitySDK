@@ -1,0 +1,34 @@
+
+// -----------------------------------------------------------------------------
+// WARNING: This is auto-generated file! DO NOT MODIFY
+// Generated from type: [FrooxEngine]FrooxEngine.Undo.UndoManager
+// Generated on: pátek 13. února 2026 5:52:37
+// Resonite version: 2026.2.13.254
+// Resonite Link Version: 0.7.0.0
+// -----------------------------------------------------------------------------
+
+using UnityEngine;
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
+
+namespace FrooxEngine.Undo
+{
+    [Serializable]
+[ResoniteTypeName("[FrooxEngine]FrooxEngine.Undo.UndoManager")]
+public partial class UndoManager : global::FrooxEngine.Component
+
+{
+    public global::System.Int32 MaxUndoSteps;
+public global::System.Boolean UnsavedChanges;
+
+public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+{
+    base.CollectMembers(members);
+members.Add("MaxUndoSteps", MaxUndoSteps.ToResoniteLinkField());
+members.Add("UnsavedChanges", UnsavedChanges.ToResoniteLinkField());
+}
+
+}
+}

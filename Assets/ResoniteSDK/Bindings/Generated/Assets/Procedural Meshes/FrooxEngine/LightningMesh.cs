@@ -1,0 +1,51 @@
+
+// -----------------------------------------------------------------------------
+// WARNING: This is auto-generated file! DO NOT MODIFY
+// Generated from type: [FrooxEngine]FrooxEngine.LightningMesh
+// Generated on: pátek 13. února 2026 5:51:08
+// Resonite version: 2026.2.13.254
+// Resonite Link Version: 0.7.0.0
+// -----------------------------------------------------------------------------
+
+using UnityEngine;
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
+
+namespace FrooxEngine
+{
+    [Serializable]
+[ResoniteTypeName("[FrooxEngine]FrooxEngine.LightningMesh")]
+public partial class LightningMesh : global::FrooxEngine.ProceduralMesh
+
+{
+    public global::System.Int32 Seed;
+public global::System.Int32 Points;
+public global::Elements.Assets.SegmentedBuilder.Topology Topology;
+public global::Elements.Assets.SegmentedBuilder.Shading Shading;
+public global::Elements.Assets.SegmentedBuilder.Ends Ends;
+public global::System.Boolean DualSided;
+public UnityEngine.Vector3 Point0;
+public UnityEngine.Vector3 Point1;
+public System.Collections.Generic.List<global::FrooxEngine.LightningMesh.StrikeProperties> StrikeLevels;
+
+public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+{
+    base.CollectMembers(members);
+members.Add("Seed", Seed.ToResoniteLinkField());
+members.Add("Points", Points.ToResoniteLinkField());
+members.Add("Topology", Topology.ToResoniteLinkField());
+members.Add("Shading", Shading.ToResoniteLinkField());
+members.Add("Ends", Ends.ToResoniteLinkField());
+members.Add("DualSided", DualSided.ToResoniteLinkField());
+members.Add("Point0", Point0.ToResoniteLinkField());
+members.Add("Point1", Point1.ToResoniteLinkField());
+members.Add("StrikeLevels", new ResoniteLink.SyncList()
+{
+    Elements = StrikeLevels.Select(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers() }).ToList<ResoniteLink.Member>()
+});
+}
+
+}
+}

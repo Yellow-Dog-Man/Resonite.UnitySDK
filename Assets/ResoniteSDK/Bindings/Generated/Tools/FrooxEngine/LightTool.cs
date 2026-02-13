@@ -1,0 +1,67 @@
+
+// -----------------------------------------------------------------------------
+// WARNING: This is auto-generated file! DO NOT MODIFY
+// Generated from type: [FrooxEngine]FrooxEngine.LightTool
+// Generated on: pátek 13. února 2026 5:52:24
+// Resonite version: 2026.2.13.254
+// Resonite Link Version: 0.7.0.0
+// -----------------------------------------------------------------------------
+
+using UnityEngine;
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
+
+namespace FrooxEngine
+{
+    [Serializable]
+[ResoniteTypeName("[FrooxEngine]FrooxEngine.LightTool")]
+public partial class LightTool : global::FrooxEngine.Tool
+
+{
+    public global::FrooxEngine.LightTool.Mode LightMode;
+public UnityEngine.ColorX Color;
+public global::System.Single Intensity;
+public global::Renderite.Shared.ShadowType ShadowType;
+public global::System.Single ShadowStrength;
+public global::System.Single Range;
+public global::System.Single SpotAngle;
+public global::FrooxEngine.Slot PointLightVisual;
+public global::FrooxEngine.Slot SpotlightVisual;
+public global::FrooxEngine.Slot DirectionalLightVisual;
+public System.Collections.Generic.List<global::FrooxEngine.IField<UnityEngine.ColorX>> ColorIndicators;
+public global::System.Boolean ShowGizmo;
+public global::FrooxEngine.LegacySegmentCircleMenuController.Item _pointLightItem;
+public global::FrooxEngine.LegacySegmentCircleMenuController.Item _spotLightItem;
+public global::FrooxEngine.LegacySegmentCircleMenuController.Item _directionalLightItem;
+public global::FrooxEngine.LegacySegmentCircleMenuController.Item _shadowsItem;
+public global::FrooxEngine.ColorDialogInterface _colorPicker;
+
+public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+{
+    base.CollectMembers(members);
+members.Add("LightMode", LightMode.ToResoniteLinkField());
+members.Add("Color", Color.ToResoniteLinkField());
+members.Add("Intensity", Intensity.ToResoniteLinkField());
+members.Add("ShadowType", ShadowType.ToResoniteLinkField());
+members.Add("ShadowStrength", ShadowStrength.ToResoniteLinkField());
+members.Add("Range", Range.ToResoniteLinkField());
+members.Add("SpotAngle", SpotAngle.ToResoniteLinkField());
+members.Add("PointLightVisual", new ResoniteLink.Reference() { });
+members.Add("SpotlightVisual", new ResoniteLink.Reference() { });
+members.Add("DirectionalLightVisual", new ResoniteLink.Reference() { });
+members.Add("ColorIndicators", new ResoniteLink.SyncList()
+{
+    Elements = ColorIndicators.Select(m => new ResoniteLink.Reference() { }).ToList<ResoniteLink.Member>()
+});
+members.Add("ShowGizmo", ShowGizmo.ToResoniteLinkField());
+members.Add("_pointLightItem", new ResoniteLink.Reference() { });
+members.Add("_spotLightItem", new ResoniteLink.Reference() { });
+members.Add("_directionalLightItem", new ResoniteLink.Reference() { });
+members.Add("_shadowsItem", new ResoniteLink.Reference() { });
+members.Add("_colorPicker", new ResoniteLink.Reference() { });
+}
+
+}
+}

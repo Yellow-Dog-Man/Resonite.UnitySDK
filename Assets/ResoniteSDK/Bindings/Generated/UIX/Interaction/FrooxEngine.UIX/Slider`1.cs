@@ -1,0 +1,61 @@
+
+// -----------------------------------------------------------------------------
+// WARNING: This is auto-generated file! DO NOT MODIFY
+// Generated from type: [FrooxEngine]FrooxEngine.UIX.Slider<>
+// Generated on: pátek 13. února 2026 5:52:28
+// Resonite version: 2026.2.13.254
+// Resonite Link Version: 0.7.0.0
+// -----------------------------------------------------------------------------
+
+using UnityEngine;
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
+
+namespace FrooxEngine.UIX
+{
+    [Serializable]
+[ResoniteTypeName("[FrooxEngine]FrooxEngine.UIX.Slider<>")]
+public partial class Slider<T> : global::FrooxEngine.UIX.InteractionElement
+	
+
+{
+    public T Value;
+public T Min;
+public T Max;
+public global::System.Boolean Integers;
+public global::System.Boolean MaxIsExclusive;
+public global::System.Single Power;
+public global::System.Boolean Clamp;
+public T VibrationThreshold;
+public global::FrooxEngine.UIX.Slider<T>.Direction SlideDirection;
+public UnityEngine.Vector2 AnchorOffset;
+public global::FrooxEngine.IField<UnityEngine.Vector2> HandleAnchorMinDrive;
+public global::FrooxEngine.IField<UnityEngine.Vector2> HandleAnchorMaxDrive;
+public global::FrooxEngine.IField<UnityEngine.Vector2> FillLineDrive;
+public global::System.Boolean RequireLockInToInteract;
+public global::System.Boolean RequireInitialPress;
+
+public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+{
+    base.CollectMembers(members);
+members.Add("Value", Value.ToResoniteLinkField());
+members.Add("Min", Min.ToResoniteLinkField());
+members.Add("Max", Max.ToResoniteLinkField());
+members.Add("Integers", Integers.ToResoniteLinkField());
+members.Add("MaxIsExclusive", MaxIsExclusive.ToResoniteLinkField());
+members.Add("Power", Power.ToResoniteLinkField());
+members.Add("Clamp", Clamp.ToResoniteLinkField());
+members.Add("VibrationThreshold", VibrationThreshold.ToResoniteLinkField());
+members.Add("SlideDirection", SlideDirection.ToResoniteLinkField());
+members.Add("AnchorOffset", AnchorOffset.ToResoniteLinkField());
+members.Add("HandleAnchorMinDrive", new ResoniteLink.Reference() { });
+members.Add("HandleAnchorMaxDrive", new ResoniteLink.Reference() { });
+members.Add("FillLineDrive", new ResoniteLink.Reference() { });
+members.Add("RequireLockInToInteract", RequireLockInToInteract.ToResoniteLinkField());
+members.Add("RequireInitialPress", RequireInitialPress.ToResoniteLinkField());
+}
+
+}
+}

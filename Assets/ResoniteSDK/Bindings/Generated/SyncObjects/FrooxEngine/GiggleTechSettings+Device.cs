@@ -1,0 +1,53 @@
+
+// -----------------------------------------------------------------------------
+// WARNING: This is auto-generated file! DO NOT MODIFY
+// Generated from type: [FrooxEngine]FrooxEngine.GiggleTechSettings+Device
+// Generated on: pátek 13. února 2026 5:52:32
+// Resonite version: 2026.2.13.254
+// Resonite Link Version: 0.7.0.0
+// -----------------------------------------------------------------------------
+
+using UnityEngine;
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
+
+namespace FrooxEngine
+{
+    public partial class GiggleTechSettings
+            {
+                [Serializable]
+[ResoniteTypeName("[FrooxEngine]FrooxEngine.GiggleTechSettings+Device")]
+public partial class Device : global::FrooxEngine.SyncObject
+
+{
+    public global::System.String IP;
+public global::System.Boolean IsConnected;
+public global::System.Boolean UseDevice;
+public global::System.Boolean AlwaysTreatAsConnected;
+public global::System.String CustomName;
+public global::System.Single IntensityScale;
+public global::System.Single MinimumIntensity;
+public global::System.Single InitialActivationIntensity;
+public global::FrooxEngine.HapticPointMapping HapticPointMapping;
+public global::System.Int32 HapticPointIndex;
+
+public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+{
+    base.CollectMembers(members);
+members.Add("IP", IP.ToResoniteLinkField());
+members.Add("IsConnected", IsConnected.ToResoniteLinkField());
+members.Add("UseDevice", UseDevice.ToResoniteLinkField());
+members.Add("AlwaysTreatAsConnected", AlwaysTreatAsConnected.ToResoniteLinkField());
+members.Add("CustomName", CustomName.ToResoniteLinkField());
+members.Add("IntensityScale", IntensityScale.ToResoniteLinkField());
+members.Add("MinimumIntensity", MinimumIntensity.ToResoniteLinkField());
+members.Add("InitialActivationIntensity", InitialActivationIntensity.ToResoniteLinkField());
+members.Add("HapticPointMapping", new ResoniteLink.SyncObject() { Members = HapticPointMapping.CollectMembers() });
+members.Add("HapticPointIndex", HapticPointIndex.ToResoniteLinkField());
+}
+
+}
+            }
+}

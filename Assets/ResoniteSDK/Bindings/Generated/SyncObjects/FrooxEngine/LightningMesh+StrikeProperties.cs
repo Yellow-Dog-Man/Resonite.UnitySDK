@@ -1,0 +1,53 @@
+
+// -----------------------------------------------------------------------------
+// WARNING: This is auto-generated file! DO NOT MODIFY
+// Generated from type: [FrooxEngine]FrooxEngine.LightningMesh+StrikeProperties
+// Generated on: pátek 13. února 2026 5:51:08
+// Resonite version: 2026.2.13.254
+// Resonite Link Version: 0.7.0.0
+// -----------------------------------------------------------------------------
+
+using UnityEngine;
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
+
+namespace FrooxEngine
+{
+    public partial class LightningMesh
+            {
+                [Serializable]
+[ResoniteTypeName("[FrooxEngine]FrooxEngine.LightningMesh+StrikeProperties")]
+public partial class StrikeProperties : global::FrooxEngine.SyncObject
+
+{
+    public global::System.Int32 Segments;
+public global::System.Single StartWidth;
+public global::System.Single EndWidth;
+public global::System.Single MinOffset;
+public global::System.Single MaxOffset;
+public global::System.Int32 ChildCount;
+public global::System.Single MinChildTargetDistanceRatio;
+public global::System.Single MaxChildTargetDistanceRatio;
+public global::System.Single MinChildTargetOffset;
+public global::System.Single MaxChildTargetOffset;
+
+public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+{
+    base.CollectMembers(members);
+members.Add("Segments", Segments.ToResoniteLinkField());
+members.Add("StartWidth", StartWidth.ToResoniteLinkField());
+members.Add("EndWidth", EndWidth.ToResoniteLinkField());
+members.Add("MinOffset", MinOffset.ToResoniteLinkField());
+members.Add("MaxOffset", MaxOffset.ToResoniteLinkField());
+members.Add("ChildCount", ChildCount.ToResoniteLinkField());
+members.Add("MinChildTargetDistanceRatio", MinChildTargetDistanceRatio.ToResoniteLinkField());
+members.Add("MaxChildTargetDistanceRatio", MaxChildTargetDistanceRatio.ToResoniteLinkField());
+members.Add("MinChildTargetOffset", MinChildTargetOffset.ToResoniteLinkField());
+members.Add("MaxChildTargetOffset", MaxChildTargetOffset.ToResoniteLinkField());
+}
+
+}
+            }
+}

@@ -1,0 +1,30 @@
+
+// -----------------------------------------------------------------------------
+// WARNING: This is auto-generated file! DO NOT MODIFY
+// Generated from type: [FrooxEngine]FrooxEngine.MeshColliderCharacterControllerModifier
+// Generated on: pátek 13. února 2026 5:51:14
+// Resonite version: 2026.2.13.254
+// Resonite Link Version: 0.7.0.0
+// -----------------------------------------------------------------------------
+
+using UnityEngine;
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
+
+namespace FrooxEngine
+{
+    [Serializable]
+[ResoniteTypeName("[FrooxEngine]FrooxEngine.MeshColliderCharacterControllerModifier")]
+public abstract partial class MeshColliderCharacterControllerModifier : global::FrooxEngine.CharacterControllerModifier
+
+{
+    
+public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+{
+    base.CollectMembers(members);
+}
+
+}
+}
