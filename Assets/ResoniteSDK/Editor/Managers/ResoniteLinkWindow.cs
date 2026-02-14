@@ -66,13 +66,13 @@ public class ResoniteLinkWindow : EditorWindow
         GUI.enabled = State == ConnectionState.Connected;
 
         if (GUILayout.Button("Send Current Scene"))
-            SendCurrentScene();
+            SendCurrentScene(); 
     }
 
     void SendCurrentScene()
     {
-        if(_converter == null)
-            _converter = new SceneConverter();
+        // TODO!!! Better wrap this around?
+        _converter.EnsureAssetConverter();
 
         var roots = SceneManager.GetActiveScene().GetRootGameObjects();
 

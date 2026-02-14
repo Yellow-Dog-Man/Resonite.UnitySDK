@@ -19,6 +19,8 @@ public class SceneConverter : IConversionContext
     [SerializeField]
     Dictionary<ResoniteObject, string> _idMap = new Dictionary<ResoniteObject, string>();
 
+    AssetConversionManager _assetConverter;
+
     int _idPool;
     string _idPrefix;
 
@@ -47,6 +49,20 @@ public class SceneConverter : IConversionContext
 
     public string GetUniqueMessageId(string prefix) => $"{prefix}_{_messageIndex++}";
 
+    #region ASSETS
+
+    public FrooxEngine.IAssetProvider<FrooxEngine.Mesh> GetMesh(Mesh mesh) => _assetConverter.GetMesh(mesh);
+
+    public void EnsureAssetConverter()
+    {
+        if (_assetConverter != null)
+            return;
+
+        _assetConverter = new AssetConversionManager(this);
+    }
+
+    #endregion
+
     public void Convert(IEnumerable<Transform> roots, LinkInterface link)
     {
         // First update all component conversions
@@ -64,18 +80,27 @@ public class SceneConverter : IConversionContext
 
         Task.Run(async () =>
         {
-            var response = await link.RunDataModelOperationBatch(messages);
-
-            if(!response.Success)
+            try
             {
-                Debug.LogError($"Data model batch operation failed: {response.ErrorInfo}");
-                return;
-            }
+                var response = await link.RunDataModelOperationBatch(messages);
 
-            foreach (var subResponse in response.Responses)
-                if (!subResponse.Success)
-                    Debug.LogError($"Operation failed for {subResponse.SourceMessageID}: {subResponse.ErrorInfo}");
-        });
+                if (!response.Success)
+                {
+                    Debug.LogError($"Data model batch operation failed: {response.ErrorInfo}");
+                    return;
+                }
+
+                foreach (var subResponse in response.Responses)
+                    if (!subResponse.Success)
+                        Debug.LogError($"Operation failed for {subResponse.SourceMessageID}: {subResponse.ErrorInfo}");
+            }
+            catch(Exception ex)
+            {
+                Debug.LogError(ex);
+            }
+        }).Wait();
+
+        _assetConverter.ProcessConversions(link);
     }
 
     void ProcessRemovals(List<DataModelOperation> messages)
