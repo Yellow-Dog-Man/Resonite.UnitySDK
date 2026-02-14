@@ -7,12 +7,12 @@ using UnityEngine;
 [Serializable]
 public abstract class ResoniteObject
 {
-    public Dictionary<string, Member> CollectMembers()
+    public Dictionary<string, Member> CollectMembers(IConversionContext context)
     {
         var members = new Dictionary<string, Member>();
-        CollectMembers(members);
+        CollectMembers(members, context);
         return members;
     }
 
-    public virtual void CollectMembers(Dictionary<string, Member> members) { }
+    public virtual void CollectMembers(Dictionary<string, Member> members, IConversionContext context) { }
 }
