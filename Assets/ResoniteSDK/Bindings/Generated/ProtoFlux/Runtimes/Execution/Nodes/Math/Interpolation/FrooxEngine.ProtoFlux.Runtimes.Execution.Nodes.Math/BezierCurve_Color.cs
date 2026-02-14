@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [ProtoFluxBindings]FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.Math.BezierCurve_Color
-// Generated on: pátek 13. února 2026 23:22:37
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:05
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -26,12 +26,13 @@ public global::FrooxEngine.ProtoFlux.INodeValueOutput<global::System.Single> Ler
 public global::FrooxEngine.ProtoFlux.NodeValueOutput<UnityEngine.Color> Interpolated;
 public global::FrooxEngine.ProtoFlux.NodeValueOutput<UnityEngine.Color> Tangent;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
-members.Add("From", new ResoniteLink.Reference() { });
-members.Add("To", new ResoniteLink.Reference() { });
-members.Add("Lerp", new ResoniteLink.Reference() { });
+    base.CollectMembers(members, context);
+members.Add("From", From.ToResoniteReference(context));
+members.Add("To", To.ToResoniteReference(context));
+members.Add("Lerp", Lerp.ToResoniteReference(context));
 members.Add("Interpolated", new ResoniteLink.EmptyElement());
 members.Add("Tangent", new ResoniteLink.EmptyElement());
 }

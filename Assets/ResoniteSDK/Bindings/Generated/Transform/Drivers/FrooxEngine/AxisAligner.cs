@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.AxisAligner
-// Generated on: pátek 13. února 2026 23:23:08
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:38
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -31,9 +31,10 @@ public global::System.Single Separation;
 public System.Collections.Generic.List<global::FrooxEngine.IBounded> ExcludeList;
 public System.Collections.Generic.List<global::FrooxEngine.AxisAligner.Target> _targets;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
+    base.CollectMembers(members, context);
 members.Add("Direction", Direction.ToResoniteLinkField());
 members.Add("GlobalAxisXAlign", GlobalAxisXAlign.ToResoniteLinkField());
 members.Add("GlobalAxisYAlign", GlobalAxisYAlign.ToResoniteLinkField());
@@ -44,11 +45,11 @@ members.Add("ElementAxisZAlign", ElementAxisZAlign.ToResoniteLinkField());
 members.Add("Separation", Separation.ToResoniteLinkField());
 members.Add("ExcludeList", new ResoniteLink.SyncList()
 {
-    Elements = ExcludeList.ConvertList(m => new ResoniteLink.Reference() { })
+    Elements = ExcludeList.ConvertList(m => m.ToResoniteReference(context))
 });
 members.Add("_targets", new ResoniteLink.SyncList()
 {
-    Elements = _targets.ConvertList(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers() })
+    Elements = _targets.ConvertList(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers(context) })
 });
 }
 

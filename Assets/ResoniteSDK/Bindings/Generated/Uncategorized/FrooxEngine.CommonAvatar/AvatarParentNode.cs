@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.CommonAvatar.AvatarParentNode
-// Generated on: pátek 13. února 2026 23:23:12
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:41
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -26,14 +26,15 @@ public UnityEngine.Vector3 Scale;
 public global::System.Int32 EquipOrderPriority;
 public global::FrooxEngine.Slot _originalParent;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
+    base.CollectMembers(members, context);
 members.Add("Node", Node.ToResoniteLinkField());
 members.Add("DestroyOnDequip", DestroyOnDequip.ToResoniteLinkField());
 members.Add("Scale", Scale.ToResoniteLinkField());
 members.Add("EquipOrderPriority", EquipOrderPriority.ToResoniteLinkField());
-members.Add("_originalParent", new ResoniteLink.Reference() { });
+members.Add("_originalParent", _originalParent.ToResoniteReference(context));
 }
 
 }

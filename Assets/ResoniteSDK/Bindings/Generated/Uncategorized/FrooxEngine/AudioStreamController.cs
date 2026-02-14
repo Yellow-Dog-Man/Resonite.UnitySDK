@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.AudioStreamController
-// Generated on: pátek 13. února 2026 23:23:12
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:41
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -24,11 +24,12 @@ public partial class AudioStreamController : global::FrooxEngine.Component
 public global::FrooxEngine.AudioOutput AudioOutput;
 public global::System.Boolean IsPlayingForOwner;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
-members.Add("Stream", new ResoniteLink.Reference() { });
-members.Add("AudioOutput", new ResoniteLink.Reference() { });
+    base.CollectMembers(members, context);
+members.Add("Stream", Stream.ToResoniteReference(context));
+members.Add("AudioOutput", AudioOutput.ToResoniteReference(context));
 members.Add("IsPlayingForOwner", IsPlayingForOwner.ToResoniteLinkField());
 }
 

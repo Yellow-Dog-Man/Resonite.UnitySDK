@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.UnlitMaterial
-// Generated on: pátek 13. února 2026 23:21:34
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:56:57
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -55,14 +55,15 @@ public global::System.Int32 RenderQueue;
 public global::FrooxEngine.IAssetProvider<global::FrooxEngine.Shader> _unlit;
 public global::FrooxEngine.IAssetProvider<global::FrooxEngine.Shader> _unlitBillboard;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
+    base.CollectMembers(members, context);
 members.Add("TintColor", TintColor.ToResoniteLinkField());
-members.Add("Texture", new ResoniteLink.Reference() { });
+members.Add("Texture", Texture.ToResoniteReference(context));
 members.Add("TextureScale", TextureScale.ToResoniteLinkField());
 members.Add("TextureOffset", TextureOffset.ToResoniteLinkField());
-members.Add("MaskTexture", new ResoniteLink.Reference() { });
+members.Add("MaskTexture", MaskTexture.ToResoniteReference(context));
 members.Add("MaskScale", MaskScale.ToResoniteLinkField());
 members.Add("MaskOffset", MaskOffset.ToResoniteLinkField());
 members.Add("MaskMode", MaskMode.ToResoniteLinkField());
@@ -72,7 +73,7 @@ members.Add("UseVertexColors", UseVertexColors.ToResoniteLinkField());
 members.Add("VertexColorInterpolationSpace", VertexColorInterpolationSpace.ToResoniteLinkField());
 members.Add("Sidedness", Sidedness.ToResoniteLinkField());
 members.Add("ZWrite", ZWrite.ToResoniteLinkField());
-members.Add("OffsetTexture", new ResoniteLink.Reference() { });
+members.Add("OffsetTexture", OffsetTexture.ToResoniteReference(context));
 members.Add("OffsetMagnitude", OffsetMagnitude.ToResoniteLinkField());
 members.Add("OffsetTextureScale", OffsetTextureScale.ToResoniteLinkField());
 members.Add("OffsetTextureOffset", OffsetTextureOffset.ToResoniteLinkField());
@@ -90,8 +91,8 @@ members.Add("BillboardSize", BillboardSize.ToResoniteLinkField());
 members.Add("OffsetFactor", OffsetFactor.ToResoniteLinkField());
 members.Add("OffsetUnits", OffsetUnits.ToResoniteLinkField());
 members.Add("RenderQueue", RenderQueue.ToResoniteLinkField());
-members.Add("_unlit", new ResoniteLink.Reference() { });
-members.Add("_unlitBillboard", new ResoniteLink.Reference() { });
+members.Add("_unlit", _unlit.ToResoniteReference(context));
+members.Add("_unlitBillboard", _unlitBillboard.ToResoniteReference(context));
 }
 
 }

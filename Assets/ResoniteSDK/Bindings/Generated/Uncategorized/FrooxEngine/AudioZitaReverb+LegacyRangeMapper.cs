@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.AudioZitaReverb+LegacyRangeMapper
-// Generated on: pátek 13. února 2026 23:23:16
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:45
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -27,13 +27,14 @@ public global::System.Single MaxDistance;
 public global::FrooxEngine.IField<global::System.Single> Radius;
 public global::FrooxEngine.IField<global::System.Single> BlendDistance;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
+    base.CollectMembers(members, context);
 members.Add("MinDistance", MinDistance.ToResoniteLinkField());
 members.Add("MaxDistance", MaxDistance.ToResoniteLinkField());
-members.Add("Radius", new ResoniteLink.Reference() { });
-members.Add("BlendDistance", new ResoniteLink.Reference() { });
+members.Add("Radius", Radius.ToResoniteReference(context));
+members.Add("BlendDistance", BlendDistance.ToResoniteReference(context));
 }
 
 }

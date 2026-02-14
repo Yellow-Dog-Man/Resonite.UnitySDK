@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.TOTP_Dialog
-// Generated on: pátek 13. února 2026 23:23:18
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:48
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -25,13 +25,14 @@ public global::FrooxEngine.TOTP_Dialog.State _state;
 public global::FrooxEngine.UIX.TextField _codeField;
 public global::FrooxEngine.UIX.Text _messageText;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
-members.Add("_swapRegion", new ResoniteLink.Reference() { });
+    base.CollectMembers(members, context);
+members.Add("_swapRegion", _swapRegion.ToResoniteReference(context));
 members.Add("_state", _state.ToResoniteLinkField());
-members.Add("_codeField", new ResoniteLink.Reference() { });
-members.Add("_messageText", new ResoniteLink.Reference() { });
+members.Add("_codeField", _codeField.ToResoniteReference(context));
+members.Add("_messageText", _messageText.ToResoniteReference(context));
 }
 
 }

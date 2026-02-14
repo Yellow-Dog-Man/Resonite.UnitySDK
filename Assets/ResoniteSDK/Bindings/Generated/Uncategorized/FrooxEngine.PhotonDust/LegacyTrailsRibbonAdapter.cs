@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.PhotonDust.LegacyTrailsRibbonAdapter
-// Generated on: pátek 13. února 2026 23:23:16
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:45
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -32,20 +32,21 @@ public global::FrooxEngine.IField<global::PhotonDust.TrailParticleInheritance> T
 public global::FrooxEngine.IField<global::PhotonDust.TrailParticleInheritance> TrailColorInheritance;
 public global::FrooxEngine.RootSpace TrailsSpace;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
+    base.CollectMembers(members, context);
 members.Add("TrailsMode", TrailsMode.ToResoniteLinkField());
 members.Add("ParticleSizeAffectsTrailWidth", ParticleSizeAffectsTrailWidth.ToResoniteLinkField());
 members.Add("InheritTrailColorFromParticle", InheritTrailColorFromParticle.ToResoniteLinkField());
 members.Add("TrailWorldSpace", TrailWorldSpace.ToResoniteLinkField());
-members.Add("TrailsModule", new ResoniteLink.Reference() { });
-members.Add("RibbonModule", new ResoniteLink.Reference() { });
-members.Add("RibbonUseParticleSize", new ResoniteLink.Reference() { });
-members.Add("RibbonUseParticleColor", new ResoniteLink.Reference() { });
-members.Add("TrailSizeInheritance", new ResoniteLink.Reference() { });
-members.Add("TrailColorInheritance", new ResoniteLink.Reference() { });
-members.Add("TrailsSpace", new ResoniteLink.Reference() { });
+members.Add("TrailsModule", TrailsModule.ToResoniteReference(context));
+members.Add("RibbonModule", RibbonModule.ToResoniteReference(context));
+members.Add("RibbonUseParticleSize", RibbonUseParticleSize.ToResoniteReference(context));
+members.Add("RibbonUseParticleColor", RibbonUseParticleColor.ToResoniteReference(context));
+members.Add("TrailSizeInheritance", TrailSizeInheritance.ToResoniteReference(context));
+members.Add("TrailColorInheritance", TrailColorInheritance.ToResoniteReference(context));
+members.Add("TrailsSpace", TrailsSpace.ToResoniteReference(context));
 }
 
 }

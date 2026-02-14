@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.ProtoFlux.ProtoFluxDynamicElementManager
-// Generated on: pátek 13. února 2026 23:23:17
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:47
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -27,17 +27,18 @@ public global::FrooxEngine.IField<global::System.Boolean> AddButtonEnabled;
 public global::FrooxEngine.IField<global::System.Boolean> RemoveButtonEnabled;
 public System.Collections.Generic.List<global::FrooxEngine.Slot> _elements;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
-members.Add("Visual", new ResoniteLink.Reference() { });
-members.Add("List", new ResoniteLink.Reference() { });
+    base.CollectMembers(members, context);
+members.Add("Visual", Visual.ToResoniteReference(context));
+members.Add("List", List.ToResoniteReference(context));
 members.Add("MinElements", MinElements.ToResoniteLinkField());
-members.Add("AddButtonEnabled", new ResoniteLink.Reference() { });
-members.Add("RemoveButtonEnabled", new ResoniteLink.Reference() { });
+members.Add("AddButtonEnabled", AddButtonEnabled.ToResoniteReference(context));
+members.Add("RemoveButtonEnabled", RemoveButtonEnabled.ToResoniteReference(context));
 members.Add("_elements", new ResoniteLink.SyncList()
 {
-    Elements = _elements.ConvertList(m => new ResoniteLink.Reference() { })
+    Elements = _elements.ConvertList(m => m.ToResoniteReference(context))
 });
 }
 

@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.LegacyWorldDetail
-// Generated on: pátek 13. února 2026 23:23:02
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:32
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -66,54 +66,55 @@ public global::FrooxEngine.UIX.Text _compactDetailText;
 public global::FrooxEngine.UIX.Button _compactDetailExpandButton;
 public global::FrooxEngine.Slot _newSessionItemRoot;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
+    base.CollectMembers(members, context);
 members.Add("Expanded", Expanded.ToResoniteLinkField());
 members.Add("CompactDetailExpanded", CompactDetailExpanded.ToResoniteLinkField());
 members.Add("CompactDetailCategory", CompactDetailCategory.ToResoniteLinkField());
 members.Add("ModalCompactSize", ModalCompactSize.ToResoniteLinkField());
 members.Add("ModalExpandedSize", ModalExpandedSize.ToResoniteLinkField());
-members.Add("_hostText", new ResoniteLink.Reference() { });
-members.Add("_sessionItemsRoot", new ResoniteLink.Reference() { });
-members.Add("_thumbnailGraphic", new ResoniteLink.Reference() { });
-members.Add("_thumbnailTexture", new ResoniteLink.Reference() { });
-members.Add("_detailImageRoot", new ResoniteLink.Reference() { });
-members.Add("_compactRoot", new ResoniteLink.Reference() { });
-members.Add("_compactHeaderRoot", new ResoniteLink.Reference() { });
-members.Add("_detailHeaderRoot", new ResoniteLink.Reference() { });
-members.Add("_compactMaskEnabled", new ResoniteLink.Reference() { });
-members.Add("_compactMaskRootEnabled", new ResoniteLink.Reference() { });
-members.Add("_openButton", new ResoniteLink.Reference() { });
-members.Add("_scrollRect", new ResoniteLink.Reference() { });
-members.Add("_expandButton", new ResoniteLink.Reference() { });
-members.Add("_expandIcon", new ResoniteLink.Reference() { });
-members.Add("_expandSprite", new ResoniteLink.Reference() { });
-members.Add("_compactSprite", new ResoniteLink.Reference() { });
-members.Add("_description", new ResoniteLink.Reference() { });
-members.Add("_leftDetailsRoot", new ResoniteLink.Reference() { });
-members.Add("_rightDetailsRoot", new ResoniteLink.Reference() { });
-members.Add("_detailsText", new ResoniteLink.Reference() { });
-members.Add("_cycleLeftButton", new ResoniteLink.Reference() { });
-members.Add("_cycleRightButton", new ResoniteLink.Reference() { });
-members.Add("_compactParent", new ResoniteLink.Reference() { });
-members.Add("_compactHeaderParent", new ResoniteLink.Reference() { });
-members.Add("_sidebarActive", new ResoniteLink.Reference() { });
-members.Add("_sidebarAnchorMin", new ResoniteLink.Reference() { });
-members.Add("_sidebarAnchorMax", new ResoniteLink.Reference() { });
-members.Add("_contentAnchorMin", new ResoniteLink.Reference() { });
-members.Add("_contentAnchorMax", new ResoniteLink.Reference() { });
-members.Add("_rectTransformLerp", new ResoniteLink.Reference() { });
-members.Add("_modalAnchorMin", new ResoniteLink.Reference() { });
-members.Add("_modalAnchorMax", new ResoniteLink.Reference() { });
-members.Add("_compactButtonsActive", new ResoniteLink.Reference() { });
-members.Add("_compactButtonsAnchorMin", new ResoniteLink.Reference() { });
-members.Add("_compactButtonsAnchorMax", new ResoniteLink.Reference() { });
-members.Add("_compactDetailRect", new ResoniteLink.Reference() { });
-members.Add("_compactDetailButtonRect", new ResoniteLink.Reference() { });
-members.Add("_compactDetailText", new ResoniteLink.Reference() { });
-members.Add("_compactDetailExpandButton", new ResoniteLink.Reference() { });
-members.Add("_newSessionItemRoot", new ResoniteLink.Reference() { });
+members.Add("_hostText", _hostText.ToResoniteReference(context));
+members.Add("_sessionItemsRoot", _sessionItemsRoot.ToResoniteReference(context));
+members.Add("_thumbnailGraphic", _thumbnailGraphic.ToResoniteReference(context));
+members.Add("_thumbnailTexture", _thumbnailTexture.ToResoniteReference(context));
+members.Add("_detailImageRoot", _detailImageRoot.ToResoniteReference(context));
+members.Add("_compactRoot", _compactRoot.ToResoniteReference(context));
+members.Add("_compactHeaderRoot", _compactHeaderRoot.ToResoniteReference(context));
+members.Add("_detailHeaderRoot", _detailHeaderRoot.ToResoniteReference(context));
+members.Add("_compactMaskEnabled", _compactMaskEnabled.ToResoniteReference(context));
+members.Add("_compactMaskRootEnabled", _compactMaskRootEnabled.ToResoniteReference(context));
+members.Add("_openButton", _openButton.ToResoniteReference(context));
+members.Add("_scrollRect", _scrollRect.ToResoniteReference(context));
+members.Add("_expandButton", _expandButton.ToResoniteReference(context));
+members.Add("_expandIcon", _expandIcon.ToResoniteReference(context));
+members.Add("_expandSprite", _expandSprite.ToResoniteReference(context));
+members.Add("_compactSprite", _compactSprite.ToResoniteReference(context));
+members.Add("_description", _description.ToResoniteReference(context));
+members.Add("_leftDetailsRoot", _leftDetailsRoot.ToResoniteReference(context));
+members.Add("_rightDetailsRoot", _rightDetailsRoot.ToResoniteReference(context));
+members.Add("_detailsText", _detailsText.ToResoniteReference(context));
+members.Add("_cycleLeftButton", _cycleLeftButton.ToResoniteReference(context));
+members.Add("_cycleRightButton", _cycleRightButton.ToResoniteReference(context));
+members.Add("_compactParent", _compactParent.ToResoniteReference(context));
+members.Add("_compactHeaderParent", _compactHeaderParent.ToResoniteReference(context));
+members.Add("_sidebarActive", _sidebarActive.ToResoniteReference(context));
+members.Add("_sidebarAnchorMin", _sidebarAnchorMin.ToResoniteReference(context));
+members.Add("_sidebarAnchorMax", _sidebarAnchorMax.ToResoniteReference(context));
+members.Add("_contentAnchorMin", _contentAnchorMin.ToResoniteReference(context));
+members.Add("_contentAnchorMax", _contentAnchorMax.ToResoniteReference(context));
+members.Add("_rectTransformLerp", _rectTransformLerp.ToResoniteReference(context));
+members.Add("_modalAnchorMin", _modalAnchorMin.ToResoniteReference(context));
+members.Add("_modalAnchorMax", _modalAnchorMax.ToResoniteReference(context));
+members.Add("_compactButtonsActive", _compactButtonsActive.ToResoniteReference(context));
+members.Add("_compactButtonsAnchorMin", _compactButtonsAnchorMin.ToResoniteReference(context));
+members.Add("_compactButtonsAnchorMax", _compactButtonsAnchorMax.ToResoniteReference(context));
+members.Add("_compactDetailRect", _compactDetailRect.ToResoniteReference(context));
+members.Add("_compactDetailButtonRect", _compactDetailButtonRect.ToResoniteReference(context));
+members.Add("_compactDetailText", _compactDetailText.ToResoniteReference(context));
+members.Add("_compactDetailExpandButton", _compactDetailExpandButton.ToResoniteReference(context));
+members.Add("_newSessionItemRoot", _newSessionItemRoot.ToResoniteReference(context));
 }
 
 }

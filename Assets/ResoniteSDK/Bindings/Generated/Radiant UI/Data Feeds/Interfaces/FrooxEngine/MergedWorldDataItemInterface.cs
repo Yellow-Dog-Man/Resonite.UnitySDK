@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.MergedWorldDataItemInterface
-// Generated on: pátek 13. února 2026 23:23:02
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:31
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -31,19 +31,20 @@ public global::FrooxEngine.IField<global::System.Int32> TotalAggregateContacts;
 public global::FrooxEngine.FeedSubTemplate<global::FrooxEngine.DataFeedEntity<global::SkyFrost.Base.SessionInfo>,global::FrooxEngine.SessionInfoItemInterface> Sessions;
 public global::FrooxEngine.FeedSubTemplate<global::FrooxEngine.DataFeedEntity<global::FrooxEngine.World>,global::FrooxEngine.WorldItemInterface> Worlds;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
-members.Add("IsMerged", new ResoniteLink.Reference() { });
-members.Add("SessionCount", new ResoniteLink.Reference() { });
-members.Add("WorldCount", new ResoniteLink.Reference() { });
-members.Add("MainName", new ResoniteLink.Reference() { });
-members.Add("MainThumbnail", new ResoniteLink.Reference() { });
-members.Add("WorldOrSessionId", new ResoniteLink.Reference() { });
-members.Add("TotalAggregateActiveUsers", new ResoniteLink.Reference() { });
-members.Add("TotalAggregateContacts", new ResoniteLink.Reference() { });
-members.Add("Sessions", new ResoniteLink.SyncObject() { Members = Sessions.CollectMembers() });
-members.Add("Worlds", new ResoniteLink.SyncObject() { Members = Worlds.CollectMembers() });
+    base.CollectMembers(members, context);
+members.Add("IsMerged", IsMerged.ToResoniteReference(context));
+members.Add("SessionCount", SessionCount.ToResoniteReference(context));
+members.Add("WorldCount", WorldCount.ToResoniteReference(context));
+members.Add("MainName", MainName.ToResoniteReference(context));
+members.Add("MainThumbnail", MainThumbnail.ToResoniteReference(context));
+members.Add("WorldOrSessionId", WorldOrSessionId.ToResoniteReference(context));
+members.Add("TotalAggregateActiveUsers", TotalAggregateActiveUsers.ToResoniteReference(context));
+members.Add("TotalAggregateContacts", TotalAggregateContacts.ToResoniteReference(context));
+members.Add("Sessions", new ResoniteLink.SyncObject() { Members = Sessions.CollectMembers(context) });
+members.Add("Worlds", new ResoniteLink.SyncObject() { Members = Worlds.CollectMembers(context) });
 }
 
 }

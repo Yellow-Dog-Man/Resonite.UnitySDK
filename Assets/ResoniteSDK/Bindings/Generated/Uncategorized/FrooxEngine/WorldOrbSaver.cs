@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.WorldOrbSaver
-// Generated on: pátek 13. února 2026 23:23:19
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:49
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -28,14 +28,15 @@ public global::FrooxEngine.ContextMenu menu;
 public global::System.Boolean interactive;
 public global::System.Boolean saving;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
-members.Add("Orb", new ResoniteLink.Reference() { });
-members.Add("saveHereItem", new ResoniteLink.Reference() { });
-members.Add("saveToInventoryItem", new ResoniteLink.Reference() { });
-members.Add("cancelItem", new ResoniteLink.Reference() { });
-members.Add("menu", new ResoniteLink.Reference() { });
+    base.CollectMembers(members, context);
+members.Add("Orb", Orb.ToResoniteReference(context));
+members.Add("saveHereItem", saveHereItem.ToResoniteReference(context));
+members.Add("saveToInventoryItem", saveToInventoryItem.ToResoniteReference(context));
+members.Add("cancelItem", cancelItem.ToResoniteReference(context));
+members.Add("menu", menu.ToResoniteReference(context));
 members.Add("interactive", interactive.ToResoniteLinkField());
 members.Add("saving", saving.ToResoniteLinkField());
 }

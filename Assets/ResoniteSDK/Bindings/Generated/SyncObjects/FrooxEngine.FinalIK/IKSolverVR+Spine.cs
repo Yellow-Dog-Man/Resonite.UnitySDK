@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.FinalIK.IKSolverVR+Spine
-// Generated on: pátek 13. února 2026 23:23:14
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:43
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -52,16 +52,17 @@ public UnityEngine.Quaternion chestRelativeRotation;
 public UnityEngine.Vector3 chestForward;
 public UnityEngine.Vector3 pelvisForward;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
-members.Add("HeadTarget", new ResoniteLink.Reference() { });
-members.Add("PelvisTarget", new ResoniteLink.Reference() { });
+    base.CollectMembers(members, context);
+members.Add("HeadTarget", HeadTarget.ToResoniteReference(context));
+members.Add("PelvisTarget", PelvisTarget.ToResoniteReference(context));
 members.Add("PositionWeight", PositionWeight.ToResoniteLinkField());
 members.Add("RotationWeight", RotationWeight.ToResoniteLinkField());
 members.Add("PelvisPositionWeight", PelvisPositionWeight.ToResoniteLinkField());
 members.Add("PelvisRotationWeight", PelvisRotationWeight.ToResoniteLinkField());
-members.Add("ChestGoal", new ResoniteLink.Reference() { });
+members.Add("ChestGoal", ChestGoal.ToResoniteReference(context));
 members.Add("ChestGoalWeight", ChestGoalWeight.ToResoniteLinkField());
 members.Add("MinHeadHeight", MinHeadHeight.ToResoniteLinkField());
 members.Add("BodyPosStiffness", BodyPosStiffness.ToResoniteLinkField());

@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.ItemShelf
-// Generated on: pátek 13. února 2026 23:22:57
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:27
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -36,11 +36,12 @@ public global::FrooxEngine.IField<UnityEngine.Vector3> _visualOffset;
 public global::FrooxEngine.BevelStripeMesh _shelfMesh;
 public global::FrooxEngine.BoxCollider _collider;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
+    base.CollectMembers(members, context);
 members.Add("GrowDirection", GrowDirection.ToResoniteLinkField());
-members.Add("IgnoreGrabber", new ResoniteLink.Reference() { });
+members.Add("IgnoreGrabber", IgnoreGrabber.ToResoniteReference(context));
 members.Add("MinLength", MinLength.ToResoniteLinkField());
 members.Add("Width", Width.ToResoniteLinkField());
 members.Add("Thickness", Thickness.ToResoniteLinkField());
@@ -48,12 +49,12 @@ members.Add("MaxItemSize", MaxItemSize.ToResoniteLinkField());
 members.Add("MaxPlaneDistance", MaxPlaneDistance.ToResoniteLinkField());
 members.Add("MaxHeightDistance", MaxHeightDistance.ToResoniteLinkField());
 members.Add("_targetLength", _targetLength.ToResoniteLinkField());
-members.Add("_visual", new ResoniteLink.Reference() { });
-members.Add("_content", new ResoniteLink.Reference() { });
-members.Add("_material", new ResoniteLink.Reference() { });
-members.Add("_visualOffset", new ResoniteLink.Reference() { });
-members.Add("_shelfMesh", new ResoniteLink.Reference() { });
-members.Add("_collider", new ResoniteLink.Reference() { });
+members.Add("_visual", _visual.ToResoniteReference(context));
+members.Add("_content", _content.ToResoniteReference(context));
+members.Add("_material", _material.ToResoniteReference(context));
+members.Add("_visualOffset", _visualOffset.ToResoniteReference(context));
+members.Add("_shelfMesh", _shelfMesh.ToResoniteReference(context));
+members.Add("_collider", _collider.ToResoniteReference(context));
 }
 
 }

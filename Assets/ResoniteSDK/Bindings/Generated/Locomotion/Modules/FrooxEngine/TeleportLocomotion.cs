@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.TeleportLocomotion
-// Generated on: pátek 13. února 2026 23:21:41
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:57:07
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -39,10 +39,11 @@ public global::FrooxEngine.Slot _pathVisual;
 public global::FrooxEngine.Slot _targetPointVisual;
 public global::FrooxEngine.CharacterController _characterController;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
-members.Add("Turn", new ResoniteLink.SyncObject() { Members = Turn.CollectMembers() });
+    base.CollectMembers(members, context);
+members.Add("Turn", new ResoniteLink.SyncObject() { Members = Turn.CollectMembers(context) });
 members.Add("BackstepDistance", BackstepDistance.ToResoniteLinkField());
 members.Add("ActivationTime", ActivationTime.ToResoniteLinkField());
 members.Add("HeightInputMax", HeightInputMax.ToResoniteLinkField());
@@ -54,12 +55,12 @@ members.Add("StepUnit", StepUnit.ToResoniteLinkField());
 members.Add("Drag", Drag.ToResoniteLinkField());
 members.Add("MaxSmallObjectSize", MaxSmallObjectSize.ToResoniteLinkField());
 members.Add("WallDistance", WallDistance.ToResoniteLinkField());
-members.Add("_pathMesh", new ResoniteLink.Reference() { });
-members.Add("_pathMaterial", new ResoniteLink.Reference() { });
-members.Add("_pathRenderer", new ResoniteLink.Reference() { });
-members.Add("_pathVisual", new ResoniteLink.Reference() { });
-members.Add("_targetPointVisual", new ResoniteLink.Reference() { });
-members.Add("_characterController", new ResoniteLink.Reference() { });
+members.Add("_pathMesh", _pathMesh.ToResoniteReference(context));
+members.Add("_pathMaterial", _pathMaterial.ToResoniteReference(context));
+members.Add("_pathRenderer", _pathRenderer.ToResoniteReference(context));
+members.Add("_pathVisual", _pathVisual.ToResoniteReference(context));
+members.Add("_targetPointVisual", _targetPointVisual.ToResoniteReference(context));
+members.Add("_characterController", _characterController.ToResoniteReference(context));
 }
 
 }

@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.BinaryVariantDescriptor
-// Generated on: pátek 13. února 2026 23:21:31
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:56:54
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 

@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [ProtoFluxBindings]FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.Strings.ReplaceFirstSubstring
-// Generated on: pátek 13. února 2026 23:22:53
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:23
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -26,14 +26,15 @@ public global::FrooxEngine.ProtoFlux.INodeObjectOutput<global::System.String> Re
 public global::FrooxEngine.ProtoFlux.INodeValueOutput<global::System.Int32> StartIndex;
 public global::FrooxEngine.ProtoFlux.INodeValueOutput<global::System.StringComparison> ComparisonMode;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
-members.Add("Str", new ResoniteLink.Reference() { });
-members.Add("SearchFor", new ResoniteLink.Reference() { });
-members.Add("ReplaceWith", new ResoniteLink.Reference() { });
-members.Add("StartIndex", new ResoniteLink.Reference() { });
-members.Add("ComparisonMode", new ResoniteLink.Reference() { });
+    base.CollectMembers(members, context);
+members.Add("Str", Str.ToResoniteReference(context));
+members.Add("SearchFor", SearchFor.ToResoniteReference(context));
+members.Add("ReplaceWith", ReplaceWith.ToResoniteReference(context));
+members.Add("StartIndex", StartIndex.ToResoniteReference(context));
+members.Add("ComparisonMode", ComparisonMode.ToResoniteReference(context));
 }
 
 }

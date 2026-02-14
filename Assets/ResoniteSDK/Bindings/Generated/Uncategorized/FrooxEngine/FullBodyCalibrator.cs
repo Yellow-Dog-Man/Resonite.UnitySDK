@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.FullBodyCalibrator
-// Generated on: pátek 13. února 2026 23:23:14
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:44
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -75,10 +75,11 @@ public global::FrooxEngine.IField<UnityEngine.ColorX> _rightHandOverrideBehindCo
 public global::FrooxEngine.StaticTexture2D _patternTex;
 public global::FrooxEngine.TextRenderer _title;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
-members.Add("TargetUser", new ResoniteLink.Reference() { });
+    base.CollectMembers(members, context);
+members.Add("TargetUser", TargetUser.ToResoniteReference(context));
 members.Add("UseSymmetryForTrackers", UseSymmetryForTrackers.ToResoniteLinkField());
 members.Add("UseSymmetryForAvatar", UseSymmetryForAvatar.ToResoniteLinkField());
 members.Add("ShowBodyOverlay", ShowBodyOverlay.ToResoniteLinkField());
@@ -87,57 +88,57 @@ members.Add("HeightCompensation", HeightCompensation.ToResoniteLinkField());
 members.Add("AvatarHeightCompensation", AvatarHeightCompensation.ToResoniteLinkField());
 members.Add("_calibratingPose", _calibratingPose.ToResoniteLinkField());
 members.Add("_spaceOffset", _spaceOffset.ToResoniteLinkField());
-members.Add("_grabbable", new ResoniteLink.Reference() { });
-members.Add("_headReference", new ResoniteLink.Reference() { });
-members.Add("_leftHandReference", new ResoniteLink.Reference() { });
-members.Add("_rightHandReference", new ResoniteLink.Reference() { });
-members.Add("_hipsSource", new ResoniteLink.Reference() { });
-members.Add("_chestSource", new ResoniteLink.Reference() { });
-members.Add("_leftFootSource", new ResoniteLink.Reference() { });
-members.Add("_rightFootSource", new ResoniteLink.Reference() { });
-members.Add("_leftElbowSource", new ResoniteLink.Reference() { });
-members.Add("_rightElbowSource", new ResoniteLink.Reference() { });
-members.Add("_leftKneeSource", new ResoniteLink.Reference() { });
-members.Add("_rightKneeSource", new ResoniteLink.Reference() { });
-members.Add("_dialog", new ResoniteLink.Reference() { });
-members.Add("_platformBody", new ResoniteLink.SyncObject() { Members = _platformBody.CollectMembers() });
-members.Add("_userBody", new ResoniteLink.SyncObject() { Members = _userBody.CollectMembers() });
-members.Add("_customAvatar", new ResoniteLink.SyncObject() { Members = _customAvatar.CollectMembers() });
-members.Add("_leftHandOverride", new ResoniteLink.Reference() { });
-members.Add("_rightHandOverride", new ResoniteLink.Reference() { });
-members.Add("_targetCustomAvatar", new ResoniteLink.Reference() { });
-members.Add("_avatarHipsOffset", new ResoniteLink.Reference() { });
-members.Add("_avatarLeftFootOffset", new ResoniteLink.Reference() { });
-members.Add("_avatarRightFootOffset", new ResoniteLink.Reference() { });
-members.Add("_avatarLeftKneeDefaultOffset", new ResoniteLink.Reference() { });
-members.Add("_avatarRightKneeDefaultOffset", new ResoniteLink.Reference() { });
-members.Add("_avatarHipHandle", new ResoniteLink.Reference() { });
-members.Add("_avatarLeftFootHandle", new ResoniteLink.Reference() { });
-members.Add("_avatarRightFootHandle", new ResoniteLink.Reference() { });
-members.Add("_avatarLeftKneeHandle", new ResoniteLink.Reference() { });
-members.Add("_avatarRightKneeHandle", new ResoniteLink.Reference() { });
-members.Add("_avatarLeftKneeOffset", new ResoniteLink.Reference() { });
-members.Add("_avatarRightKneeOffset", new ResoniteLink.Reference() { });
+members.Add("_grabbable", _grabbable.ToResoniteReference(context));
+members.Add("_headReference", _headReference.ToResoniteReference(context));
+members.Add("_leftHandReference", _leftHandReference.ToResoniteReference(context));
+members.Add("_rightHandReference", _rightHandReference.ToResoniteReference(context));
+members.Add("_hipsSource", _hipsSource.ToResoniteReference(context));
+members.Add("_chestSource", _chestSource.ToResoniteReference(context));
+members.Add("_leftFootSource", _leftFootSource.ToResoniteReference(context));
+members.Add("_rightFootSource", _rightFootSource.ToResoniteReference(context));
+members.Add("_leftElbowSource", _leftElbowSource.ToResoniteReference(context));
+members.Add("_rightElbowSource", _rightElbowSource.ToResoniteReference(context));
+members.Add("_leftKneeSource", _leftKneeSource.ToResoniteReference(context));
+members.Add("_rightKneeSource", _rightKneeSource.ToResoniteReference(context));
+members.Add("_dialog", _dialog.ToResoniteReference(context));
+members.Add("_platformBody", new ResoniteLink.SyncObject() { Members = _platformBody.CollectMembers(context) });
+members.Add("_userBody", new ResoniteLink.SyncObject() { Members = _userBody.CollectMembers(context) });
+members.Add("_customAvatar", new ResoniteLink.SyncObject() { Members = _customAvatar.CollectMembers(context) });
+members.Add("_leftHandOverride", _leftHandOverride.ToResoniteReference(context));
+members.Add("_rightHandOverride", _rightHandOverride.ToResoniteReference(context));
+members.Add("_targetCustomAvatar", _targetCustomAvatar.ToResoniteReference(context));
+members.Add("_avatarHipsOffset", _avatarHipsOffset.ToResoniteReference(context));
+members.Add("_avatarLeftFootOffset", _avatarLeftFootOffset.ToResoniteReference(context));
+members.Add("_avatarRightFootOffset", _avatarRightFootOffset.ToResoniteReference(context));
+members.Add("_avatarLeftKneeDefaultOffset", _avatarLeftKneeDefaultOffset.ToResoniteReference(context));
+members.Add("_avatarRightKneeDefaultOffset", _avatarRightKneeDefaultOffset.ToResoniteReference(context));
+members.Add("_avatarHipHandle", _avatarHipHandle.ToResoniteReference(context));
+members.Add("_avatarLeftFootHandle", _avatarLeftFootHandle.ToResoniteReference(context));
+members.Add("_avatarRightFootHandle", _avatarRightFootHandle.ToResoniteReference(context));
+members.Add("_avatarLeftKneeHandle", _avatarLeftKneeHandle.ToResoniteReference(context));
+members.Add("_avatarRightKneeHandle", _avatarRightKneeHandle.ToResoniteReference(context));
+members.Add("_avatarLeftKneeOffset", _avatarLeftKneeOffset.ToResoniteReference(context));
+members.Add("_avatarRightKneeOffset", _avatarRightKneeOffset.ToResoniteReference(context));
 members.Add("_platformBodyMaterialSets", new ResoniteLink.SyncList()
 {
-    Elements = _platformBodyMaterialSets.ConvertList(m => new ResoniteLink.Reference() { })
+    Elements = _platformBodyMaterialSets.ConvertList(m => m.ToResoniteReference(context))
 });
-members.Add("_ground", new ResoniteLink.Reference() { });
+members.Add("_ground", _ground.ToResoniteReference(context));
 members.Add("_trackers", new ResoniteLink.SyncList()
 {
-    Elements = _trackers.ConvertList(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers() })
+    Elements = _trackers.ConvertList(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers(context) })
 });
-members.Add("_visualizationRoot", new ResoniteLink.Reference() { });
-members.Add("_bodyNodeMaterial", new ResoniteLink.Reference() { });
-members.Add("_calibrationReferenceMaterial", new ResoniteLink.Reference() { });
-members.Add("_leftHandOverrideMaterial", new ResoniteLink.Reference() { });
-members.Add("_rightHandOverrideMaterial", new ResoniteLink.Reference() { });
-members.Add("_leftHandOverrideFrontColor", new ResoniteLink.Reference() { });
-members.Add("_leftHandOverrideBehindColor", new ResoniteLink.Reference() { });
-members.Add("_rightHandOverrideFrontColor", new ResoniteLink.Reference() { });
-members.Add("_rightHandOverrideBehindColor", new ResoniteLink.Reference() { });
-members.Add("_patternTex", new ResoniteLink.Reference() { });
-members.Add("_title", new ResoniteLink.Reference() { });
+members.Add("_visualizationRoot", _visualizationRoot.ToResoniteReference(context));
+members.Add("_bodyNodeMaterial", _bodyNodeMaterial.ToResoniteReference(context));
+members.Add("_calibrationReferenceMaterial", _calibrationReferenceMaterial.ToResoniteReference(context));
+members.Add("_leftHandOverrideMaterial", _leftHandOverrideMaterial.ToResoniteReference(context));
+members.Add("_rightHandOverrideMaterial", _rightHandOverrideMaterial.ToResoniteReference(context));
+members.Add("_leftHandOverrideFrontColor", _leftHandOverrideFrontColor.ToResoniteReference(context));
+members.Add("_leftHandOverrideBehindColor", _leftHandOverrideBehindColor.ToResoniteReference(context));
+members.Add("_rightHandOverrideFrontColor", _rightHandOverrideFrontColor.ToResoniteReference(context));
+members.Add("_rightHandOverrideBehindColor", _rightHandOverrideBehindColor.ToResoniteReference(context));
+members.Add("_patternTex", _patternTex.ToResoniteReference(context));
+members.Add("_title", _title.ToResoniteReference(context));
 }
 
 }

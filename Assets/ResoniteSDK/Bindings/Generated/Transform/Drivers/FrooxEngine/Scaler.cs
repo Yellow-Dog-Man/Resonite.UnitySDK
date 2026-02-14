@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.Scaler
-// Generated on: pátek 13. února 2026 23:23:09
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:39
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -27,15 +27,16 @@ public global::FrooxEngine.Scaler.Mode ScaleMode;
 public global::FrooxEngine.RootSpace ScaleSpace;
 public global::FrooxEngine.IField<UnityEngine.Vector3> scaleTarget;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
+    base.CollectMembers(members, context);
 members.Add("ScaleOffset", ScaleOffset.ToResoniteLinkField());
 members.Add("ScaleMultiplier", ScaleMultiplier.ToResoniteLinkField());
-members.Add("ScaleSource", new ResoniteLink.Reference() { });
+members.Add("ScaleSource", ScaleSource.ToResoniteReference(context));
 members.Add("ScaleMode", ScaleMode.ToResoniteLinkField());
-members.Add("ScaleSpace", new ResoniteLink.SyncObject() { Members = ScaleSpace.CollectMembers() });
-members.Add("scaleTarget", new ResoniteLink.Reference() { });
+members.Add("ScaleSpace", new ResoniteLink.SyncObject() { Members = ScaleSpace.CollectMembers(context) });
+members.Add("scaleTarget", scaleTarget.ToResoniteReference(context));
 }
 
 }

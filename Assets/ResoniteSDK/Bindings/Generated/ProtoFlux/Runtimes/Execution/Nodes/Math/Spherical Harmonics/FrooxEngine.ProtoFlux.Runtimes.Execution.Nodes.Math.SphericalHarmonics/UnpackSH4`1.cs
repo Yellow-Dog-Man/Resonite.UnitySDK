@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [ProtoFluxBindings]FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.Math.SphericalHarmonics.UnpackSH4<>
-// Generated on: pátek 13. února 2026 23:22:39
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:09
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -48,10 +48,11 @@ public global::FrooxEngine.ProtoFlux.NodeValueOutput<T> SH22;
 public global::FrooxEngine.ProtoFlux.NodeValueOutput<T> SH23;
 public global::FrooxEngine.ProtoFlux.NodeValueOutput<T> SH24;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
-members.Add("SH", new ResoniteLink.Reference() { });
+    base.CollectMembers(members, context);
+members.Add("SH", SH.ToResoniteReference(context));
 members.Add("SH0", new ResoniteLink.EmptyElement());
 members.Add("SH1", new ResoniteLink.EmptyElement());
 members.Add("SH2", new ResoniteLink.EmptyElement());

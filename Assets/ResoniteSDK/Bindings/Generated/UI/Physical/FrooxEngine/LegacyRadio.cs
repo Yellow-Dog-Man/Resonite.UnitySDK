@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.LegacyRadio
-// Generated on: pátek 13. února 2026 23:23:11
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:40
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -30,17 +30,18 @@ public global::FrooxEngine.PBS_RimMetallic _material;
 public global::FrooxEngine.LegacyRadioGroup _group;
 public global::System.Int32 _orderNumber;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
+    base.CollectMembers(members, context);
 members.Add("IsEnabled", IsEnabled.ToResoniteLinkField());
 members.Add("Radius", Radius.ToResoniteLinkField());
 members.Add("Color", Color.ToResoniteLinkField());
 members.Add("Selected", Selected.ToResoniteLinkField());
-members.Add("_colliderRadius", new ResoniteLink.Reference() { });
-members.Add("_icosphere", new ResoniteLink.Reference() { });
-members.Add("_material", new ResoniteLink.Reference() { });
-members.Add("_group", new ResoniteLink.Reference() { });
+members.Add("_colliderRadius", _colliderRadius.ToResoniteReference(context));
+members.Add("_icosphere", _icosphere.ToResoniteReference(context));
+members.Add("_material", _material.ToResoniteReference(context));
+members.Add("_group", _group.ToResoniteReference(context));
 members.Add("_orderNumber", _orderNumber.ToResoniteLinkField());
 }
 

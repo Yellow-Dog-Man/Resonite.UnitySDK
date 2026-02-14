@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.ColorToColorX
-// Generated on: pátek 13. února 2026 23:23:09
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:38
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -26,13 +26,14 @@ public global::Renderite.Shared.ColorProfile DefaultProfile;
 public global::FrooxEngine.IField<UnityEngine.ColorX> Target;
 public global::System.Boolean WriteBack;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
-members.Add("SourceColor", new ResoniteLink.Reference() { });
-members.Add("SourceProfile", new ResoniteLink.Reference() { });
+    base.CollectMembers(members, context);
+members.Add("SourceColor", SourceColor.ToResoniteReference(context));
+members.Add("SourceProfile", SourceProfile.ToResoniteReference(context));
 members.Add("DefaultProfile", DefaultProfile.ToResoniteLinkField());
-members.Add("Target", new ResoniteLink.Reference() { });
+members.Add("Target", Target.ToResoniteReference(context));
 members.Add("WriteBack", WriteBack.ToResoniteLinkField());
 }
 

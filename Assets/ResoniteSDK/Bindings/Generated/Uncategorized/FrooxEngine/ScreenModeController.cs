@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.ScreenModeController
-// Generated on: pátek 13. února 2026 23:23:17
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:47
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -26,14 +26,15 @@ public global::FrooxEngine.IAssetProvider<global::FrooxEngine.AudioClip> _unmute
 public global::FrooxEngine.IAssetProvider<global::FrooxEngine.AudioClip> _startTalkSound;
 public global::FrooxEngine.IAssetProvider<global::FrooxEngine.AudioClip> _stopTalkSound;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
-members.Add("_dash", new ResoniteLink.Reference() { });
-members.Add("_muteSound", new ResoniteLink.Reference() { });
-members.Add("_unmuteSound", new ResoniteLink.Reference() { });
-members.Add("_startTalkSound", new ResoniteLink.Reference() { });
-members.Add("_stopTalkSound", new ResoniteLink.Reference() { });
+    base.CollectMembers(members, context);
+members.Add("_dash", _dash.ToResoniteReference(context));
+members.Add("_muteSound", _muteSound.ToResoniteReference(context));
+members.Add("_unmuteSound", _unmuteSound.ToResoniteReference(context));
+members.Add("_startTalkSound", _startTalkSound.ToResoniteReference(context));
+members.Add("_stopTalkSound", _stopTalkSound.ToResoniteReference(context));
 }
 
 }

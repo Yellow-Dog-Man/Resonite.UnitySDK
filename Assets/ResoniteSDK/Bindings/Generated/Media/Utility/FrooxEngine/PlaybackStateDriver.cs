@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.PlaybackStateDriver
-// Generated on: pátek 13. února 2026 23:21:41
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:57:08
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -26,14 +26,15 @@ public global::FrooxEngine.IField<global::System.Boolean> IsNotPlaying;
 public global::FrooxEngine.IField<global::System.Boolean> IsPaused;
 public global::FrooxEngine.IField<global::System.Boolean> IsStopped;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
-members.Add("Source", new ResoniteLink.Reference() { });
-members.Add("IsPlaying", new ResoniteLink.Reference() { });
-members.Add("IsNotPlaying", new ResoniteLink.Reference() { });
-members.Add("IsPaused", new ResoniteLink.Reference() { });
-members.Add("IsStopped", new ResoniteLink.Reference() { });
+    base.CollectMembers(members, context);
+members.Add("Source", Source.ToResoniteReference(context));
+members.Add("IsPlaying", IsPlaying.ToResoniteReference(context));
+members.Add("IsNotPlaying", IsNotPlaying.ToResoniteReference(context));
+members.Add("IsPaused", IsPaused.ToResoniteReference(context));
+members.Add("IsStopped", IsStopped.ToResoniteReference(context));
 }
 
 }

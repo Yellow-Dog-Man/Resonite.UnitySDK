@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [ProtoFluxBindings]FrooxEngine.FrooxEngine.ProtoFlux.CoreNodes.ObjectFieldDrive<>
-// Generated on: pátek 13. února 2026 23:22:21
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:57:49
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -23,10 +23,11 @@ public partial class ObjectFieldDrive<T> : global::FrooxEngine.FrooxEngine.Proto
 {
     public global::FrooxEngine.ProtoFlux.INodeObjectOutput<T> Value;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
-members.Add("Value", new ResoniteLink.Reference() { });
+    base.CollectMembers(members, context);
+members.Add("Value", Value.ToResoniteReference(context));
 }
 
 }

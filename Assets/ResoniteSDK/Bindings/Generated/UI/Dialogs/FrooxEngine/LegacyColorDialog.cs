@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.LegacyColorDialog
-// Generated on: pátek 13. února 2026 23:23:11
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:40
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -44,11 +44,12 @@ public global::FrooxEngine.LegacyButton _okButton;
 public global::FrooxEngine.LegacyButton _cancelButton;
 public global::FrooxEngine.LegacyUIStyle _style;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
+    base.CollectMembers(members, context);
 members.Add("Realtime", Realtime.ToResoniteLinkField());
-members.Add("TargetField", new ResoniteLink.Reference() { });
+members.Add("TargetField", TargetField.ToResoniteReference(context));
 members.Add("_originalColor", _originalColor.ToResoniteLinkField());
 members.Add("_hue", _hue.ToResoniteLinkField());
 members.Add("_saturation", _saturation.ToResoniteLinkField());
@@ -56,20 +57,20 @@ members.Add("_value", _value.ToResoniteLinkField());
 members.Add("_alpha", _alpha.ToResoniteLinkField());
 members.Add("_profile", _profile.ToResoniteLinkField());
 members.Add("_gain", _gain.ToResoniteLinkField());
-members.Add("_rSlider", new ResoniteLink.Reference() { });
-members.Add("_gSlider", new ResoniteLink.Reference() { });
-members.Add("_bSlider", new ResoniteLink.Reference() { });
-members.Add("_aSlider", new ResoniteLink.Reference() { });
-members.Add("_gainSlider", new ResoniteLink.Reference() { });
-members.Add("_rValue", new ResoniteLink.Reference() { });
-members.Add("_gValue", new ResoniteLink.Reference() { });
-members.Add("_bValue", new ResoniteLink.Reference() { });
-members.Add("_aValue", new ResoniteLink.Reference() { });
-members.Add("_gainValue", new ResoniteLink.Reference() { });
-members.Add("_colorWheelMesh", new ResoniteLink.Reference() { });
-members.Add("_okButton", new ResoniteLink.Reference() { });
-members.Add("_cancelButton", new ResoniteLink.Reference() { });
-members.Add("_style", new ResoniteLink.Reference() { });
+members.Add("_rSlider", _rSlider.ToResoniteReference(context));
+members.Add("_gSlider", _gSlider.ToResoniteReference(context));
+members.Add("_bSlider", _bSlider.ToResoniteReference(context));
+members.Add("_aSlider", _aSlider.ToResoniteReference(context));
+members.Add("_gainSlider", _gainSlider.ToResoniteReference(context));
+members.Add("_rValue", _rValue.ToResoniteReference(context));
+members.Add("_gValue", _gValue.ToResoniteReference(context));
+members.Add("_bValue", _bValue.ToResoniteReference(context));
+members.Add("_aValue", _aValue.ToResoniteReference(context));
+members.Add("_gainValue", _gainValue.ToResoniteReference(context));
+members.Add("_colorWheelMesh", _colorWheelMesh.ToResoniteReference(context));
+members.Add("_okButton", _okButton.ToResoniteReference(context));
+members.Add("_cancelButton", _cancelButton.ToResoniteReference(context));
+members.Add("_style", _style.ToResoniteReference(context));
 }
 
 }

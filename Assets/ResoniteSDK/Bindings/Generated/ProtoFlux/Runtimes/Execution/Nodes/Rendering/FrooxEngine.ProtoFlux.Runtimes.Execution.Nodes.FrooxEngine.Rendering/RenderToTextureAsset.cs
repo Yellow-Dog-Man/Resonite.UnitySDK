@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [ProtoFluxBindings]FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Rendering.RenderToTextureAsset
-// Generated on: pátek 13. února 2026 23:22:53
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:23
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -29,16 +29,17 @@ public global::FrooxEngine.ProtoFlux.INodeOperation OnRendered;
 public global::FrooxEngine.ProtoFlux.INodeOperation OnFailed;
 public global::FrooxEngine.ProtoFlux.NodeObjectOutput<System.Uri> RenderedAssetURL;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
-members.Add("Camera", new ResoniteLink.Reference() { });
-members.Add("Resolution", new ResoniteLink.Reference() { });
-members.Add("Format", new ResoniteLink.Reference() { });
-members.Add("Quality", new ResoniteLink.Reference() { });
-members.Add("OnRenderStarted", new ResoniteLink.Reference() { });
-members.Add("OnRendered", new ResoniteLink.Reference() { });
-members.Add("OnFailed", new ResoniteLink.Reference() { });
+    base.CollectMembers(members, context);
+members.Add("Camera", Camera.ToResoniteReference(context));
+members.Add("Resolution", Resolution.ToResoniteReference(context));
+members.Add("Format", Format.ToResoniteReference(context));
+members.Add("Quality", Quality.ToResoniteReference(context));
+members.Add("OnRenderStarted", OnRenderStarted.ToResoniteReference(context));
+members.Add("OnRendered", OnRendered.ToResoniteReference(context));
+members.Add("OnFailed", OnFailed.ToResoniteReference(context));
 members.Add("RenderedAssetURL", new ResoniteLink.EmptyElement());
 }
 

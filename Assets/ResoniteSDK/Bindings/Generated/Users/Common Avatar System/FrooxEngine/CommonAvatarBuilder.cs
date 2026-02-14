@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.CommonAvatarBuilder
-// Generated on: pátek 13. února 2026 23:23:19
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:50
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -42,15 +42,16 @@ public global::System.Boolean AlignTracking;
 public global::FrooxEngine.CommonAvatar.IEmptyAvatarSlotHandler EmptyAvatarSlotHandler;
 public global::System.Boolean FillEmptySlots;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
+    base.CollectMembers(members, context);
 members.Add("LoadCloudAvatars", LoadCloudAvatars.ToResoniteLinkField());
 members.Add("CustomAvatarTemplates", new ResoniteLink.SyncList()
 {
-    Elements = CustomAvatarTemplates.ConvertList(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers() })
+    Elements = CustomAvatarTemplates.ConvertList(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers(context) })
 });
-members.Add("AutoInject", new ResoniteLink.Reference() { });
+members.Add("AutoInject", AutoInject.ToResoniteReference(context));
 members.Add("SetupNameBadges", SetupNameBadges.ToResoniteLinkField());
 members.Add("SetupIconBadges", SetupIconBadges.ToResoniteLinkField());
 members.Add("SetupServerVoice", SetupServerVoice.ToResoniteLinkField());
@@ -61,13 +62,13 @@ members.Add("SetupLocomotion", SetupLocomotion.ToResoniteLinkField());
 members.Add("AllowLocomotion", AllowLocomotion.ToResoniteLinkField());
 members.Add("DefaultHostSilenced", DefaultHostSilenced.ToResoniteLinkField());
 members.Add("DefaultClientSilenced", DefaultClientSilenced.ToResoniteLinkField());
-members.Add("LocomotionModules", new ResoniteLink.Reference() { });
-members.Add("ForceDefaultLocomotionModule", new ResoniteLink.Reference() { });
+members.Add("LocomotionModules", LocomotionModules.ToResoniteReference(context));
+members.Add("ForceDefaultLocomotionModule", ForceDefaultLocomotionModule.ToResoniteReference(context));
 members.Add("FindUserPreferredModule", FindUserPreferredModule.ToResoniteLinkField());
 members.Add("SetupItemShelves", SetupItemShelves.ToResoniteLinkField());
 members.Add("ParentClientsToServer", ParentClientsToServer.ToResoniteLinkField());
 members.Add("AlignTracking", AlignTracking.ToResoniteLinkField());
-members.Add("EmptyAvatarSlotHandler", new ResoniteLink.Reference() { });
+members.Add("EmptyAvatarSlotHandler", EmptyAvatarSlotHandler.ToResoniteReference(context));
 members.Add("FillEmptySlots", FillEmptySlots.ToResoniteLinkField());
 }
 

@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.PBS_TriplanarMetallic
-// Generated on: pátek 13. února 2026 23:21:33
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:56:56
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -26,14 +26,15 @@ public global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D> Metall
 public global::FrooxEngine.IAssetProvider<global::FrooxEngine.Shader> _regular;
 public global::FrooxEngine.IAssetProvider<global::FrooxEngine.Shader> _transparent;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
+    base.CollectMembers(members, context);
 members.Add("Metallic", Metallic.ToResoniteLinkField());
 members.Add("Smoothness", Smoothness.ToResoniteLinkField());
-members.Add("MetallicMap", new ResoniteLink.Reference() { });
-members.Add("_regular", new ResoniteLink.Reference() { });
-members.Add("_transparent", new ResoniteLink.Reference() { });
+members.Add("MetallicMap", MetallicMap.ToResoniteReference(context));
+members.Add("_regular", _regular.ToResoniteReference(context));
+members.Add("_transparent", _transparent.ToResoniteReference(context));
 }
 
 }

@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [ProtoFluxBindings]FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Time.Stopwatch
-// Generated on: pátek 13. února 2026 23:22:56
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:26
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -29,17 +29,18 @@ public global::FrooxEngine.ProtoFlux.INodeOperation OnStart;
 public global::FrooxEngine.ProtoFlux.INodeOperation OnStop;
 public global::FrooxEngine.ProtoFlux.INodeOperation OnReset;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
+    base.CollectMembers(members, context);
 members.Add("Time", new ResoniteLink.EmptyElement());
 members.Add("IsRunning", new ResoniteLink.EmptyElement());
 members.Add("Start", new ResoniteLink.EmptyElement());
 members.Add("Stop", new ResoniteLink.EmptyElement());
 members.Add("Reset", new ResoniteLink.EmptyElement());
-members.Add("OnStart", new ResoniteLink.Reference() { });
-members.Add("OnStop", new ResoniteLink.Reference() { });
-members.Add("OnReset", new ResoniteLink.Reference() { });
+members.Add("OnStart", OnStart.ToResoniteReference(context));
+members.Add("OnStop", OnStop.ToResoniteReference(context));
+members.Add("OnReset", OnReset.ToResoniteReference(context));
 }
 
 }

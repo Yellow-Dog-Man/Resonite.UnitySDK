@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.Camera
-// Generated on: pátek 13. února 2026 23:21:41
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:57:08
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -40,9 +40,10 @@ public global::System.Boolean RenderShadows;
 public System.Collections.Generic.List<global::FrooxEngine.Slot> SelectiveRender;
 public System.Collections.Generic.List<global::FrooxEngine.Slot> ExcludeRender;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
+    base.CollectMembers(members, context);
 members.Add("DoubleBuffered", DoubleBuffered.ToResoniteLinkField());
 members.Add("ForwardOnly", ForwardOnly.ToResoniteLinkField());
 members.Add("Projection", Projection.ToResoniteLinkField());
@@ -55,18 +56,18 @@ members.Add("Clear", Clear.ToResoniteLinkField());
 members.Add("ClearColor", ClearColor.ToResoniteLinkField());
 members.Add("Viewport", Viewport.ToResoniteLinkField());
 members.Add("Depth", Depth.ToResoniteLinkField());
-members.Add("RenderTexture", new ResoniteLink.Reference() { });
+members.Add("RenderTexture", RenderTexture.ToResoniteReference(context));
 members.Add("Postprocessing", Postprocessing.ToResoniteLinkField());
 members.Add("ScreenSpaceReflections", ScreenSpaceReflections.ToResoniteLinkField());
 members.Add("MotionBlur", MotionBlur.ToResoniteLinkField());
 members.Add("RenderShadows", RenderShadows.ToResoniteLinkField());
 members.Add("SelectiveRender", new ResoniteLink.SyncList()
 {
-    Elements = SelectiveRender.ConvertList(m => new ResoniteLink.Reference() { })
+    Elements = SelectiveRender.ConvertList(m => m.ToResoniteReference(context))
 });
 members.Add("ExcludeRender", new ResoniteLink.SyncList()
 {
-    Elements = ExcludeRender.ConvertList(m => new ResoniteLink.Reference() { })
+    Elements = ExcludeRender.ConvertList(m => m.ToResoniteReference(context))
 });
 }
 

@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.CubemapCreator
-// Generated on: pátek 13. února 2026 23:23:21
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:51
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -28,16 +28,17 @@ public global::FrooxEngine.IAssetProvider<global::FrooxEngine.Texture2D> NegY;
 public global::FrooxEngine.IAssetProvider<global::FrooxEngine.Texture2D> PosZ;
 public global::FrooxEngine.IAssetProvider<global::FrooxEngine.Texture2D> NegZ;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
+    base.CollectMembers(members, context);
 members.Add("TopBottomRotation", TopBottomRotation.ToResoniteLinkField());
-members.Add("PosX", new ResoniteLink.Reference() { });
-members.Add("NegX", new ResoniteLink.Reference() { });
-members.Add("PosY", new ResoniteLink.Reference() { });
-members.Add("NegY", new ResoniteLink.Reference() { });
-members.Add("PosZ", new ResoniteLink.Reference() { });
-members.Add("NegZ", new ResoniteLink.Reference() { });
+members.Add("PosX", PosX.ToResoniteReference(context));
+members.Add("NegX", NegX.ToResoniteReference(context));
+members.Add("PosY", PosY.ToResoniteReference(context));
+members.Add("NegY", NegY.ToResoniteReference(context));
+members.Add("PosZ", PosZ.ToResoniteReference(context));
+members.Add("NegZ", NegZ.ToResoniteReference(context));
 }
 
 }

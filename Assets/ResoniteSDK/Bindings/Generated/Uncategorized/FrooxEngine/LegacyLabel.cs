@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.LegacyLabel
-// Generated on: pátek 13. února 2026 23:23:16
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:45
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -28,16 +28,17 @@ public global::System.Single LerpRatio;
 public UnityEngine.ColorX LerpColor;
 public global::FrooxEngine.IField<UnityEngine.ColorX> _textColor;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
-members.Add("TextRenderer", new ResoniteLink.Reference() { });
+    base.CollectMembers(members, context);
+members.Add("TextRenderer", TextRenderer.ToResoniteReference(context));
 members.Add("BaseColor", BaseColor.ToResoniteLinkField());
-members.Add("BaseColorElement", new ResoniteLink.Reference() { });
+members.Add("BaseColorElement", BaseColorElement.ToResoniteReference(context));
 members.Add("Brightness", Brightness.ToResoniteLinkField());
 members.Add("LerpRatio", LerpRatio.ToResoniteLinkField());
 members.Add("LerpColor", LerpColor.ToResoniteLinkField());
-members.Add("_textColor", new ResoniteLink.Reference() { });
+members.Add("_textColor", _textColor.ToResoniteReference(context));
 }
 
 }

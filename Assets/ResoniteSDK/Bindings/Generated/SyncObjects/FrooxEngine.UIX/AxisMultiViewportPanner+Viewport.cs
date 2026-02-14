@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.UIX.AxisMultiViewportPanner+Viewport
-// Generated on: pátek 13. února 2026 23:23:12
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:41
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -26,12 +26,13 @@ public partial class Viewport : global::FrooxEngine.SyncObject
 public global::FrooxEngine.IField<UnityEngine.Vector2> AnchorMax;
 public global::FrooxEngine.IField<global::System.Boolean> Active;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
-members.Add("AnchorMin", new ResoniteLink.Reference() { });
-members.Add("AnchorMax", new ResoniteLink.Reference() { });
-members.Add("Active", new ResoniteLink.Reference() { });
+    base.CollectMembers(members, context);
+members.Add("AnchorMin", AnchorMin.ToResoniteReference(context));
+members.Add("AnchorMax", AnchorMax.ToResoniteReference(context));
+members.Add("Active", Active.ToResoniteReference(context));
 }
 
 }

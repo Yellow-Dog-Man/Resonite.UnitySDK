@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.InteractiveCameraOBS
-// Generated on: pátek 13. února 2026 23:23:15
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:44
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -34,22 +34,23 @@ public global::FrooxEngine.UIX.Button _recordButton;
 public global::FrooxEngine.UIX.Button _launchOBSbutton;
 public global::FrooxEngine.UIX.Checkbox _autoMirror;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
-members.Add("CameraControl", new ResoniteLink.Reference() { });
-members.Add("_connectAddress", new ResoniteLink.Reference() { });
-members.Add("_connectPassword", new ResoniteLink.Reference() { });
-members.Add("_status", new ResoniteLink.Reference() { });
+    base.CollectMembers(members, context);
+members.Add("CameraControl", CameraControl.ToResoniteReference(context));
+members.Add("_connectAddress", _connectAddress.ToResoniteReference(context));
+members.Add("_connectPassword", _connectPassword.ToResoniteReference(context));
+members.Add("_status", _status.ToResoniteReference(context));
 members.Add("_active", _active.ToResoniteLinkField());
-members.Add("_streamTime", new ResoniteLink.Reference() { });
-members.Add("_bytesPerSec", new ResoniteLink.Reference() { });
-members.Add("_fps", new ResoniteLink.Reference() { });
-members.Add("_droppedFrames", new ResoniteLink.Reference() { });
-members.Add("_streamButton", new ResoniteLink.Reference() { });
-members.Add("_recordButton", new ResoniteLink.Reference() { });
-members.Add("_launchOBSbutton", new ResoniteLink.Reference() { });
-members.Add("_autoMirror", new ResoniteLink.Reference() { });
+members.Add("_streamTime", _streamTime.ToResoniteReference(context));
+members.Add("_bytesPerSec", _bytesPerSec.ToResoniteReference(context));
+members.Add("_fps", _fps.ToResoniteReference(context));
+members.Add("_droppedFrames", _droppedFrames.ToResoniteReference(context));
+members.Add("_streamButton", _streamButton.ToResoniteReference(context));
+members.Add("_recordButton", _recordButton.ToResoniteReference(context));
+members.Add("_launchOBSbutton", _launchOBSbutton.ToResoniteReference(context));
+members.Add("_autoMirror", _autoMirror.ToResoniteReference(context));
 }
 
 }

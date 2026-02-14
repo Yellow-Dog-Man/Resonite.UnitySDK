@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.ReflectionProbeWizard
-// Generated on: pátek 13. února 2026 23:23:17
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:47
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -28,14 +28,15 @@ public global::FrooxEngine.FloatTextEditorParser _delayBetweenProbes;
 public global::System.Int32 _bakeCount;
 public global::System.Int32 _bakeIndex;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
-members.Add("Root", new ResoniteLink.Reference() { });
+    base.CollectMembers(members, context);
+members.Add("Root", Root.ToResoniteReference(context));
 members.Add("ProcessDisabled", ProcessDisabled.ToResoniteLinkField());
 members.Add("TeleportUserToProbe", TeleportUserToProbe.ToResoniteLinkField());
-members.Add("_tag", new ResoniteLink.Reference() { });
-members.Add("_delayBetweenProbes", new ResoniteLink.Reference() { });
+members.Add("_tag", _tag.ToResoniteReference(context));
+members.Add("_delayBetweenProbes", _delayBetweenProbes.ToResoniteReference(context));
 members.Add("_bakeCount", _bakeCount.ToResoniteLinkField());
 members.Add("_bakeIndex", _bakeIndex.ToResoniteLinkField());
 }

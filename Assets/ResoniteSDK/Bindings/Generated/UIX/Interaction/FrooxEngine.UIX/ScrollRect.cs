@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.UIX.ScrollRect
-// Generated on: pátek 13. února 2026 23:23:02
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:32
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -26,14 +26,15 @@ public global::FrooxEngine.UIX.LayoutVerticalAlignment VerticalAlign;
 public global::FrooxEngine.UIX.RectTransform ViewportOverride;
 public global::FrooxEngine.UIX.RectTransform __legacyContent;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
+    base.CollectMembers(members, context);
 members.Add("NormalizedPosition", NormalizedPosition.ToResoniteLinkField());
 members.Add("HorizontalAlign", HorizontalAlign.ToResoniteLinkField());
 members.Add("VerticalAlign", VerticalAlign.ToResoniteLinkField());
-members.Add("ViewportOverride", new ResoniteLink.Reference() { });
-members.Add("__legacyContent", new ResoniteLink.Reference() { });
+members.Add("ViewportOverride", ViewportOverride.ToResoniteReference(context));
+members.Add("__legacyContent", __legacyContent.ToResoniteReference(context));
 }
 
 }

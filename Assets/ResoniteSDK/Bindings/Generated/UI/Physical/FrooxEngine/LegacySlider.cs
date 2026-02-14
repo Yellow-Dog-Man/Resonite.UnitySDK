@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.LegacySlider
-// Generated on: pátek 13. února 2026 23:23:11
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:40
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -55,11 +55,12 @@ public global::FrooxEngine.IField<UnityEngine.Vector3> _rightColliderSize;
 public global::FrooxEngine.IField<UnityEngine.Vector3> _trackColliderSize;
 public global::FrooxEngine.IField<UnityEngine.Vector3> _cursorColliderSize;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
+    base.CollectMembers(members, context);
 members.Add("IsEnabledField", IsEnabledField.ToResoniteLinkField());
-members.Add("DriveField", new ResoniteLink.Reference() { });
+members.Add("DriveField", DriveField.ToResoniteReference(context));
 members.Add("AllowWriteBack", AllowWriteBack.ToResoniteLinkField());
 members.Add("CreateUndoStep", CreateUndoStep.ToResoniteLinkField());
 members.Add("Value", Value.ToResoniteLinkField());
@@ -77,21 +78,21 @@ members.Add("SlantField", SlantField.ToResoniteLinkField());
 members.Add("SpacingRatioField", SpacingRatioField.ToResoniteLinkField());
 members.Add("TrackRatioField", TrackRatioField.ToResoniteLinkField());
 members.Add("ButtonRatioField", ButtonRatioField.ToResoniteLinkField());
-members.Add("_trackMesh", new ResoniteLink.Reference() { });
-members.Add("_leftMesh", new ResoniteLink.Reference() { });
-members.Add("_rightMesh", new ResoniteLink.Reference() { });
-members.Add("_cursorMesh", new ResoniteLink.Reference() { });
-members.Add("_trackMaterial", new ResoniteLink.Reference() { });
-members.Add("_leftMaterial", new ResoniteLink.Reference() { });
-members.Add("_rightMaterial", new ResoniteLink.Reference() { });
-members.Add("_cursorMaterial", new ResoniteLink.Reference() { });
-members.Add("_leftPosition", new ResoniteLink.Reference() { });
-members.Add("_rightPosition", new ResoniteLink.Reference() { });
-members.Add("_cursorPosition", new ResoniteLink.Reference() { });
-members.Add("_leftColliderSize", new ResoniteLink.Reference() { });
-members.Add("_rightColliderSize", new ResoniteLink.Reference() { });
-members.Add("_trackColliderSize", new ResoniteLink.Reference() { });
-members.Add("_cursorColliderSize", new ResoniteLink.Reference() { });
+members.Add("_trackMesh", _trackMesh.ToResoniteReference(context));
+members.Add("_leftMesh", _leftMesh.ToResoniteReference(context));
+members.Add("_rightMesh", _rightMesh.ToResoniteReference(context));
+members.Add("_cursorMesh", _cursorMesh.ToResoniteReference(context));
+members.Add("_trackMaterial", _trackMaterial.ToResoniteReference(context));
+members.Add("_leftMaterial", _leftMaterial.ToResoniteReference(context));
+members.Add("_rightMaterial", _rightMaterial.ToResoniteReference(context));
+members.Add("_cursorMaterial", _cursorMaterial.ToResoniteReference(context));
+members.Add("_leftPosition", _leftPosition.ToResoniteReference(context));
+members.Add("_rightPosition", _rightPosition.ToResoniteReference(context));
+members.Add("_cursorPosition", _cursorPosition.ToResoniteReference(context));
+members.Add("_leftColliderSize", _leftColliderSize.ToResoniteReference(context));
+members.Add("_rightColliderSize", _rightColliderSize.ToResoniteReference(context));
+members.Add("_trackColliderSize", _trackColliderSize.ToResoniteReference(context));
+members.Add("_cursorColliderSize", _cursorColliderSize.ToResoniteReference(context));
 }
 
 }

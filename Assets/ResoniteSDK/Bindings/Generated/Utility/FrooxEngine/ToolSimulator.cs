@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.ToolSimulator
-// Generated on: pátek 13. února 2026 23:23:20
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:51
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -27,11 +27,12 @@ public global::System.Boolean Secondary;
 public global::System.Single Strength;
 public UnityEngine.Vector2 Axis;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
-members.Add("Tool", new ResoniteLink.Reference() { });
-members.Add("SimulatingUser", new ResoniteLink.Reference() { });
+    base.CollectMembers(members, context);
+members.Add("Tool", Tool.ToResoniteReference(context));
+members.Add("SimulatingUser", SimulatingUser.ToResoniteReference(context));
 members.Add("Primary", Primary.ToResoniteLinkField());
 members.Add("Secondary", Secondary.ToResoniteLinkField());
 members.Add("Strength", Strength.ToResoniteLinkField());

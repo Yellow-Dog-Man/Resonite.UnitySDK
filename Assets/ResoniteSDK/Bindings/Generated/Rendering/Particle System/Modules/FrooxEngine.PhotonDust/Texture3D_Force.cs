@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.PhotonDust.Texture3D_Force
-// Generated on: pátek 13. února 2026 23:23:06
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:36
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -28,10 +28,11 @@ public UnityEngine.Vector3 Offset;
 public global::System.Single ColorBias;
 public global::System.Single ColorScale;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
-members.Add("Texture3D", new ResoniteLink.Reference() { });
+    base.CollectMembers(members, context);
+members.Add("Texture3D", Texture3D.ToResoniteReference(context));
 members.Add("Mode", Mode.ToResoniteLinkField());
 members.Add("Strength", Strength.ToResoniteLinkField());
 members.Add("Scale", Scale.ToResoniteLinkField());

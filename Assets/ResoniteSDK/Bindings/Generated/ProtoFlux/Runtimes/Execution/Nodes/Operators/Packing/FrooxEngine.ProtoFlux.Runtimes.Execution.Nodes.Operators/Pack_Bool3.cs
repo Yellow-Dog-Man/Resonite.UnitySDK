@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [ProtoFluxBindings]FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.Operators.Pack_Bool3
-// Generated on: pátek 13. února 2026 23:22:50
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:20
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -24,12 +24,13 @@ public partial class Pack_Bool3 : global::FrooxEngine.ProtoFlux.Runtimes.Executi
 public global::FrooxEngine.ProtoFlux.INodeValueOutput<global::System.Boolean> Y;
 public global::FrooxEngine.ProtoFlux.INodeValueOutput<global::System.Boolean> Z;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
-members.Add("X", new ResoniteLink.Reference() { });
-members.Add("Y", new ResoniteLink.Reference() { });
-members.Add("Z", new ResoniteLink.Reference() { });
+    base.CollectMembers(members, context);
+members.Add("X", X.ToResoniteReference(context));
+members.Add("Y", Y.ToResoniteReference(context));
+members.Add("Z", Z.ToResoniteReference(context));
 }
 
 }

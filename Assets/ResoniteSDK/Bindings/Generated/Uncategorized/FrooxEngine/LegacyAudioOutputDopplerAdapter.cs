@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.LegacyAudioOutputDopplerAdapter
-// Generated on: pátek 13. února 2026 23:23:15
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:45
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -23,11 +23,12 @@ public partial class LegacyAudioOutputDopplerAdapter : global::FrooxEngine.Field
     public global::FrooxEngine.IField<global::System.Single> SpatialBlend;
 public global::FrooxEngine.IField<global::System.Boolean> Spatialize;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
-members.Add("SpatialBlend", new ResoniteLink.Reference() { });
-members.Add("Spatialize", new ResoniteLink.Reference() { });
+    base.CollectMembers(members, context);
+members.Add("SpatialBlend", SpatialBlend.ToResoniteReference(context));
+members.Add("Spatialize", Spatialize.ToResoniteReference(context));
 }
 
 }

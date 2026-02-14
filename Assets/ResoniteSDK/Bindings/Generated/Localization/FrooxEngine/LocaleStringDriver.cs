@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.LocaleStringDriver
-// Generated on: pátek 13. února 2026 23:21:40
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:57:06
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -25,13 +25,14 @@ public global::System.String Key;
 public global::System.String Format;
 public global::FrooxEngine.IAssetProvider<global::FrooxEngine.LocaleResource> Locale;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
-members.Add("Target", new ResoniteLink.Reference() { });
+    base.CollectMembers(members, context);
+members.Add("Target", Target.ToResoniteReference(context));
 members.Add("Key", Key.ToResoniteLinkField());
 members.Add("Format", Format.ToResoniteLinkField());
-members.Add("Locale", new ResoniteLink.Reference() { });
+members.Add("Locale", Locale.ToResoniteReference(context));
 }
 
 }

@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.CommonAvatar.AvatarVoiceRangeVisualizer
-// Generated on: pátek 13. února 2026 23:23:20
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:50
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -30,18 +30,19 @@ public global::FrooxEngine.User _activeUser;
 public global::FrooxEngine.IField<UnityEngine.Vector3> _visualSize;
 public global::FrooxEngine.IField<UnityEngine.ColorX> _visualColor;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
-members.Add("VolumeSource", new ResoniteLink.Reference() { });
-members.Add("AudioOutput", new ResoniteLink.Reference() { });
+    base.CollectMembers(members, context);
+members.Add("VolumeSource", VolumeSource.ToResoniteReference(context));
+members.Add("AudioOutput", AudioOutput.ToResoniteReference(context));
 members.Add("WhisperColorMin", WhisperColorMin.ToResoniteLinkField());
 members.Add("WhisperColorMax", WhisperColorMax.ToResoniteLinkField());
 members.Add("WhisperColorRecordingMessage", WhisperColorRecordingMessage.ToResoniteLinkField());
-members.Add("VisualRoot", new ResoniteLink.Reference() { });
-members.Add("_activeUser", new ResoniteLink.Reference() { });
-members.Add("_visualSize", new ResoniteLink.Reference() { });
-members.Add("_visualColor", new ResoniteLink.Reference() { });
+members.Add("VisualRoot", VisualRoot.ToResoniteReference(context));
+members.Add("_activeUser", _activeUser.ToResoniteReference(context));
+members.Add("_visualSize", _visualSize.ToResoniteReference(context));
+members.Add("_visualColor", _visualColor.ToResoniteReference(context));
 }
 
 }

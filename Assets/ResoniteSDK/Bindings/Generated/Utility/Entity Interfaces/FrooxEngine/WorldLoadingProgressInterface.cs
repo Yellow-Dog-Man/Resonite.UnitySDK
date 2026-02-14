@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.WorldLoadingProgressInterface
-// Generated on: pátek 13. února 2026 23:23:19
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:49
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -53,41 +53,42 @@ public global::FrooxEngine.IField<global::System.Int64> TotalBytes;
 public global::FrooxEngine.IField<global::System.Int64> BytesPerSecond;
 public global::FrooxEngine.ProgressBarInterface ProgressBar;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
-members.Add("Progress", new ResoniteLink.Reference() { });
-members.Add("WorldName", new ResoniteLink.Reference() { });
-members.Add("Stage", new ResoniteLink.Reference() { });
-members.Add("PhaseName", new ResoniteLink.Reference() { });
-members.Add("SubPhaseName", new ResoniteLink.Reference() { });
-members.Add("HasCompleted", new ResoniteLink.Reference() { });
-members.Add("HasFailed", new ResoniteLink.Reference() { });
-members.Add("CompletionMessage", new ResoniteLink.Reference() { });
-members.Add("FailureReason", new ResoniteLink.Reference() { });
-members.Add("LoadingAssets", new ResoniteLink.Reference() { });
-members.Add("LoadedAssets", new ResoniteLink.Reference() { });
-members.Add("TotalAssets", new ResoniteLink.Reference() { });
-members.Add("LoadedTextures2D", new ResoniteLink.Reference() { });
-members.Add("TotalTextures2D", new ResoniteLink.Reference() { });
-members.Add("LoadedTextures3D", new ResoniteLink.Reference() { });
-members.Add("TotalTextures3D", new ResoniteLink.Reference() { });
-members.Add("LoadedCubemaps", new ResoniteLink.Reference() { });
-members.Add("TotalCubemaps", new ResoniteLink.Reference() { });
-members.Add("LoadedVideos", new ResoniteLink.Reference() { });
-members.Add("TotalVideos", new ResoniteLink.Reference() { });
-members.Add("LoadedMeshes", new ResoniteLink.Reference() { });
-members.Add("TotalMeshes", new ResoniteLink.Reference() { });
-members.Add("LoadedAudioClips", new ResoniteLink.Reference() { });
-members.Add("TotalAudioClips", new ResoniteLink.Reference() { });
-members.Add("LoadedShaders", new ResoniteLink.Reference() { });
-members.Add("TotalShaders", new ResoniteLink.Reference() { });
-members.Add("LoadedFonts", new ResoniteLink.Reference() { });
-members.Add("TotalFonts", new ResoniteLink.Reference() { });
-members.Add("BytesDownloaded", new ResoniteLink.Reference() { });
-members.Add("TotalBytes", new ResoniteLink.Reference() { });
-members.Add("BytesPerSecond", new ResoniteLink.Reference() { });
-members.Add("ProgressBar", new ResoniteLink.Reference() { });
+    base.CollectMembers(members, context);
+members.Add("Progress", Progress.ToResoniteReference(context));
+members.Add("WorldName", WorldName.ToResoniteReference(context));
+members.Add("Stage", Stage.ToResoniteReference(context));
+members.Add("PhaseName", PhaseName.ToResoniteReference(context));
+members.Add("SubPhaseName", SubPhaseName.ToResoniteReference(context));
+members.Add("HasCompleted", HasCompleted.ToResoniteReference(context));
+members.Add("HasFailed", HasFailed.ToResoniteReference(context));
+members.Add("CompletionMessage", CompletionMessage.ToResoniteReference(context));
+members.Add("FailureReason", FailureReason.ToResoniteReference(context));
+members.Add("LoadingAssets", LoadingAssets.ToResoniteReference(context));
+members.Add("LoadedAssets", LoadedAssets.ToResoniteReference(context));
+members.Add("TotalAssets", TotalAssets.ToResoniteReference(context));
+members.Add("LoadedTextures2D", LoadedTextures2D.ToResoniteReference(context));
+members.Add("TotalTextures2D", TotalTextures2D.ToResoniteReference(context));
+members.Add("LoadedTextures3D", LoadedTextures3D.ToResoniteReference(context));
+members.Add("TotalTextures3D", TotalTextures3D.ToResoniteReference(context));
+members.Add("LoadedCubemaps", LoadedCubemaps.ToResoniteReference(context));
+members.Add("TotalCubemaps", TotalCubemaps.ToResoniteReference(context));
+members.Add("LoadedVideos", LoadedVideos.ToResoniteReference(context));
+members.Add("TotalVideos", TotalVideos.ToResoniteReference(context));
+members.Add("LoadedMeshes", LoadedMeshes.ToResoniteReference(context));
+members.Add("TotalMeshes", TotalMeshes.ToResoniteReference(context));
+members.Add("LoadedAudioClips", LoadedAudioClips.ToResoniteReference(context));
+members.Add("TotalAudioClips", TotalAudioClips.ToResoniteReference(context));
+members.Add("LoadedShaders", LoadedShaders.ToResoniteReference(context));
+members.Add("TotalShaders", TotalShaders.ToResoniteReference(context));
+members.Add("LoadedFonts", LoadedFonts.ToResoniteReference(context));
+members.Add("TotalFonts", TotalFonts.ToResoniteReference(context));
+members.Add("BytesDownloaded", BytesDownloaded.ToResoniteReference(context));
+members.Add("TotalBytes", TotalBytes.ToResoniteReference(context));
+members.Add("BytesPerSecond", BytesPerSecond.ToResoniteReference(context));
+members.Add("ProgressBar", ProgressBar.ToResoniteReference(context));
 }
 
 }

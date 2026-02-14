@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.ValueGraphRecorder
-// Generated on: pátek 13. února 2026 23:23:21
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:51
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -38,26 +38,27 @@ public global::FrooxEngine.IField<global::System.Int32> _arrayOffsetDrive;
 public global::FrooxEngine.IField<global::System.Single> _rangeMinDrive;
 public global::FrooxEngine.IField<global::System.Single> _rangeMaxDrive;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
-members.Add("RecordingUser", new ResoniteLink.SyncObject() { Members = RecordingUser.CollectMembers() });
-members.Add("SourceValue", new ResoniteLink.Reference() { });
+    base.CollectMembers(members, context);
+members.Add("RecordingUser", new ResoniteLink.SyncObject() { Members = RecordingUser.CollectMembers(context) });
+members.Add("SourceValue", SourceValue.ToResoniteReference(context));
 members.Add("UpdateInterval", UpdateInterval.ToResoniteLinkField());
 members.Add("Points", Points.ToResoniteLinkField());
-members.Add("TargetArray", new ResoniteLink.Reference() { });
-members.Add("TargetArrayOffset", new ResoniteLink.Reference() { });
+members.Add("TargetArray", TargetArray.ToResoniteReference(context));
+members.Add("TargetArrayOffset", TargetArrayOffset.ToResoniteReference(context));
 members.Add("MinRangeAdjustThreshold", MinRangeAdjustThreshold.ToResoniteLinkField());
 members.Add("MinRangeAdjustMultiplier", MinRangeAdjustMultiplier.ToResoniteLinkField());
 members.Add("MaxRangeAdjustThreshold", MaxRangeAdjustThreshold.ToResoniteLinkField());
 members.Add("MaxRangeAdjustMultiplier", MaxRangeAdjustMultiplier.ToResoniteLinkField());
-members.Add("RangeMin", new ResoniteLink.Reference() { });
-members.Add("RangeMax", new ResoniteLink.Reference() { });
+members.Add("RangeMin", RangeMin.ToResoniteReference(context));
+members.Add("RangeMax", RangeMax.ToResoniteReference(context));
 members.Add("Drive", Drive.ToResoniteLinkField());
-members.Add("_arrayDrive", new ResoniteLink.Reference() { });
-members.Add("_arrayOffsetDrive", new ResoniteLink.Reference() { });
-members.Add("_rangeMinDrive", new ResoniteLink.Reference() { });
-members.Add("_rangeMaxDrive", new ResoniteLink.Reference() { });
+members.Add("_arrayDrive", _arrayDrive.ToResoniteReference(context));
+members.Add("_arrayOffsetDrive", _arrayOffsetDrive.ToResoniteReference(context));
+members.Add("_rangeMinDrive", _rangeMinDrive.ToResoniteReference(context));
+members.Add("_rangeMaxDrive", _rangeMaxDrive.ToResoniteReference(context));
 }
 
 }

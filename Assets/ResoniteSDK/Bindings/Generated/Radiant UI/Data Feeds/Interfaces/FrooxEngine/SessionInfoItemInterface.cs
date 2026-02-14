@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.SessionInfoItemInterface
-// Generated on: pátek 13. února 2026 23:23:02
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:31
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -46,34 +46,35 @@ public global::FrooxEngine.IField<global::System.Boolean> HideFromListing;
 public global::FrooxEngine.IField<global::System.Boolean> AwayKickEnabled;
 public global::FrooxEngine.IField<global::System.TimeSpan> AwayKickInterval;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
-members.Add("SessionName", new ResoniteLink.Reference() { });
-members.Add("Description", new ResoniteLink.Reference() { });
-members.Add("ThumbnailUrl", new ResoniteLink.Reference() { });
-members.Add("SessionId", new ResoniteLink.Reference() { });
-members.Add("SessionURLs", new ResoniteLink.Reference() { });
-members.Add("HostUserId", new ResoniteLink.Reference() { });
-members.Add("HostUserSessionId", new ResoniteLink.Reference() { });
-members.Add("HostMachineId", new ResoniteLink.Reference() { });
-members.Add("HostUsername", new ResoniteLink.Reference() { });
-members.Add("CompatibilityHash", new ResoniteLink.Reference() { });
-members.Add("UniverseId", new ResoniteLink.Reference() { });
-members.Add("AppVersion", new ResoniteLink.Reference() { });
-members.Add("IsHeadlessHost", new ResoniteLink.Reference() { });
-members.Add("IsOnLAN", new ResoniteLink.Reference() { });
-members.Add("JoinedUsers", new ResoniteLink.Reference() { });
-members.Add("ActiveUsers", new ResoniteLink.Reference() { });
-members.Add("TotalJoinedUsers", new ResoniteLink.Reference() { });
-members.Add("TotalActiveUsers", new ResoniteLink.Reference() { });
-members.Add("MaximumUsers", new ResoniteLink.Reference() { });
-members.Add("SessionBeginTime", new ResoniteLink.Reference() { });
-members.Add("LastUpdate", new ResoniteLink.Reference() { });
-members.Add("AccessLevel", new ResoniteLink.Reference() { });
-members.Add("HideFromListing", new ResoniteLink.Reference() { });
-members.Add("AwayKickEnabled", new ResoniteLink.Reference() { });
-members.Add("AwayKickInterval", new ResoniteLink.Reference() { });
+    base.CollectMembers(members, context);
+members.Add("SessionName", SessionName.ToResoniteReference(context));
+members.Add("Description", Description.ToResoniteReference(context));
+members.Add("ThumbnailUrl", ThumbnailUrl.ToResoniteReference(context));
+members.Add("SessionId", SessionId.ToResoniteReference(context));
+members.Add("SessionURLs", SessionURLs.ToResoniteReference(context));
+members.Add("HostUserId", HostUserId.ToResoniteReference(context));
+members.Add("HostUserSessionId", HostUserSessionId.ToResoniteReference(context));
+members.Add("HostMachineId", HostMachineId.ToResoniteReference(context));
+members.Add("HostUsername", HostUsername.ToResoniteReference(context));
+members.Add("CompatibilityHash", CompatibilityHash.ToResoniteReference(context));
+members.Add("UniverseId", UniverseId.ToResoniteReference(context));
+members.Add("AppVersion", AppVersion.ToResoniteReference(context));
+members.Add("IsHeadlessHost", IsHeadlessHost.ToResoniteReference(context));
+members.Add("IsOnLAN", IsOnLAN.ToResoniteReference(context));
+members.Add("JoinedUsers", JoinedUsers.ToResoniteReference(context));
+members.Add("ActiveUsers", ActiveUsers.ToResoniteReference(context));
+members.Add("TotalJoinedUsers", TotalJoinedUsers.ToResoniteReference(context));
+members.Add("TotalActiveUsers", TotalActiveUsers.ToResoniteReference(context));
+members.Add("MaximumUsers", MaximumUsers.ToResoniteReference(context));
+members.Add("SessionBeginTime", SessionBeginTime.ToResoniteReference(context));
+members.Add("LastUpdate", LastUpdate.ToResoniteReference(context));
+members.Add("AccessLevel", AccessLevel.ToResoniteReference(context));
+members.Add("HideFromListing", HideFromListing.ToResoniteReference(context));
+members.Add("AwayKickEnabled", AwayKickEnabled.ToResoniteReference(context));
+members.Add("AwayKickInterval", AwayKickInterval.ToResoniteReference(context));
 }
 
 }

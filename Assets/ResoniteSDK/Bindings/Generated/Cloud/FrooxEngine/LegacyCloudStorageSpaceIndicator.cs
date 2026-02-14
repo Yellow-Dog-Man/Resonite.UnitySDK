@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.LegacyCloudStorageSpaceIndicator
-// Generated on: pátek 13. února 2026 23:21:37
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:57:02
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -34,20 +34,21 @@ public global::FrooxEngine.LegacyProgressBar _progressBar;
 public global::System.String __legacyOwnerId;
 public global::System.Boolean __legacyMemberQuota;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
-members.Add("Source", new ResoniteLink.Reference() { });
+    base.CollectMembers(members, context);
+members.Add("Source", Source.ToResoniteReference(context));
 members.Add("ContainerColor", ContainerColor.ToResoniteLinkField());
 members.Add("UsedColor", UsedColor.ToResoniteLinkField());
 members.Add("LowSpaceColor", LowSpaceColor.ToResoniteLinkField());
 members.Add("CriticalSpaceColor", CriticalSpaceColor.ToResoniteLinkField());
 members.Add("LowSpaceThreshold", LowSpaceThreshold.ToResoniteLinkField());
 members.Add("CriticalSpaceThreshold", CriticalSpaceThreshold.ToResoniteLinkField());
-members.Add("_ownerLabel", new ResoniteLink.Reference() { });
-members.Add("_usageLabel", new ResoniteLink.Reference() { });
-members.Add("_percentLabel", new ResoniteLink.Reference() { });
-members.Add("_progressBar", new ResoniteLink.Reference() { });
+members.Add("_ownerLabel", _ownerLabel.ToResoniteReference(context));
+members.Add("_usageLabel", _usageLabel.ToResoniteReference(context));
+members.Add("_percentLabel", _percentLabel.ToResoniteReference(context));
+members.Add("_progressBar", _progressBar.ToResoniteReference(context));
 members.Add("__legacyOwnerId", __legacyOwnerId.ToResoniteLinkField());
 members.Add("__legacyMemberQuota", __legacyMemberQuota.ToResoniteLinkField());
 }

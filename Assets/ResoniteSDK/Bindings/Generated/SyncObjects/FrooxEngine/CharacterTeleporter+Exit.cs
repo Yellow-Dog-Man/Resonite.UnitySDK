@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.CharacterTeleporter+Exit
-// Generated on: pátek 13. února 2026 23:21:41
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:57:07
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -31,16 +31,17 @@ public global::System.Boolean RelativeExitPoint;
 public global::FrooxEngine.IPointGenerator RandomExitPointGenerator;
 public global::System.Nullable<UnityEngine.Vector3> TeleportExitVelocity;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
+    base.CollectMembers(members, context);
 members.Add("Weight", Weight.ToResoniteLinkField());
-members.Add("TeleportExit", new ResoniteLink.Reference() { });
-members.Add("ParentAfterTeleport", new ResoniteLink.Reference() { });
+members.Add("TeleportExit", TeleportExit.ToResoniteReference(context));
+members.Add("ParentAfterTeleport", ParentAfterTeleport.ToResoniteReference(context));
 members.Add("TransformRotation", TransformRotation.ToResoniteLinkField());
 members.Add("TransformScale", TransformScale.ToResoniteLinkField());
 members.Add("RelativeExitPoint", RelativeExitPoint.ToResoniteLinkField());
-members.Add("RandomExitPointGenerator", new ResoniteLink.Reference() { });
+members.Add("RandomExitPointGenerator", RandomExitPointGenerator.ToResoniteReference(context));
 members.Add("TeleportExitVelocity", TeleportExitVelocity.ToResoniteLinkField());
 }
 

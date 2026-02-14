@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.PBS_ColorSplatMetallic
-// Generated on: pátek 13. února 2026 23:21:33
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:56:56
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -31,9 +31,10 @@ public global::System.Single Smoothness3;
 public global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D> MetallicMap01;
 public global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D> MetallicMap23;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
+    base.CollectMembers(members, context);
 members.Add("Metallic0", Metallic0.ToResoniteLinkField());
 members.Add("Metallic1", Metallic1.ToResoniteLinkField());
 members.Add("Metallic2", Metallic2.ToResoniteLinkField());
@@ -42,8 +43,8 @@ members.Add("Smoothness0", Smoothness0.ToResoniteLinkField());
 members.Add("Smoothness1", Smoothness1.ToResoniteLinkField());
 members.Add("Smoothness2", Smoothness2.ToResoniteLinkField());
 members.Add("Smoothness3", Smoothness3.ToResoniteLinkField());
-members.Add("MetallicMap01", new ResoniteLink.Reference() { });
-members.Add("MetallicMap23", new ResoniteLink.Reference() { });
+members.Add("MetallicMap01", MetallicMap01.ToResoniteReference(context));
+members.Add("MetallicMap23", MetallicMap23.ToResoniteReference(context));
 }
 
 }

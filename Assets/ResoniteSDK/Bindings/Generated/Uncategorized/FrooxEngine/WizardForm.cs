@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.WizardForm
-// Generated on: pátek 13. února 2026 23:23:15
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:44
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -22,10 +22,11 @@ public abstract partial class WizardForm : global::FrooxEngine.Component
 {
     public global::FrooxEngine.Slot _contentRoot;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
-members.Add("_contentRoot", new ResoniteLink.Reference() { });
+    base.CollectMembers(members, context);
+members.Add("_contentRoot", _contentRoot.ToResoniteReference(context));
 }
 
 }

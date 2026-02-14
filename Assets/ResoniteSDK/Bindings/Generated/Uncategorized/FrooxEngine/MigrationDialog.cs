@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.MigrationDialog
-// Generated on: pátek 13. února 2026 23:23:16
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:45
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -37,11 +37,12 @@ public global::FrooxEngine.UIX.Button _loadGroupsButton;
 public global::FrooxEngine.MigrationDialog.State CurrentState;
 public global::FrooxEngine.UIX.SlideSwapRegion _swapRegion;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
-members.Add("_usernameField", new ResoniteLink.Reference() { });
-members.Add("_passwordField", new ResoniteLink.Reference() { });
+    base.CollectMembers(members, context);
+members.Add("_usernameField", _usernameField.ToResoniteReference(context));
+members.Add("_passwordField", _passwordField.ToResoniteReference(context));
 members.Add("_migrateFavorites", _migrateFavorites.ToResoniteLinkField());
 members.Add("_overwriteFavorites", _overwriteFavorites.ToResoniteLinkField());
 members.Add("_preserveOldHome", _preserveOldHome.ToResoniteLinkField());
@@ -51,11 +52,11 @@ members.Add("_migrateRecords", _migrateRecords.ToResoniteLinkField());
 members.Add("_migrateCloudVariables", _migrateCloudVariables.ToResoniteLinkField());
 members.Add("_migratedCloudVariableDefinitions", _migratedCloudVariableDefinitions.ToResoniteLinkField());
 members.Add("_migrateGroups", _migrateGroups.ToResoniteLinkField());
-members.Add("_groupsRoot", new ResoniteLink.Reference() { });
-members.Add("_groupsMessage", new ResoniteLink.Reference() { });
-members.Add("_loadGroupsButton", new ResoniteLink.Reference() { });
+members.Add("_groupsRoot", _groupsRoot.ToResoniteReference(context));
+members.Add("_groupsMessage", _groupsMessage.ToResoniteReference(context));
+members.Add("_loadGroupsButton", _loadGroupsButton.ToResoniteReference(context));
 members.Add("CurrentState", CurrentState.ToResoniteLinkField());
-members.Add("_swapRegion", new ResoniteLink.Reference() { });
+members.Add("_swapRegion", _swapRegion.ToResoniteReference(context));
 }
 
 }

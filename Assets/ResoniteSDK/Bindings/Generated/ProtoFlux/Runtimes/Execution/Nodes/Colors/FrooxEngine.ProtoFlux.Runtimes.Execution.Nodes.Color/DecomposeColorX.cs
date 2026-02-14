@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [ProtoFluxBindings]FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.Color.DecomposeColorX
-// Generated on: pátek 13. února 2026 23:22:20
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:57:48
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -24,10 +24,11 @@ public partial class DecomposeColorX : global::FrooxEngine.ProtoFlux.Runtimes.Ex
 public global::FrooxEngine.ProtoFlux.NodeValueOutput<UnityEngine.Color> BaseColor;
 public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::Renderite.Shared.ColorProfile> Profile;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
-members.Add("Color", new ResoniteLink.Reference() { });
+    base.CollectMembers(members, context);
+members.Add("Color", Color.ToResoniteReference(context));
 members.Add("BaseColor", new ResoniteLink.EmptyElement());
 members.Add("Profile", new ResoniteLink.EmptyElement());
 }

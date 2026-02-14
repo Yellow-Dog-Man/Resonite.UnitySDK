@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.GridContainerAnimatedEditVisual
-// Generated on: pátek 13. února 2026 23:23:14
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:44
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -26,14 +26,15 @@ public global::FrooxEngine.IField<UnityEngine.Vector2> _tiling;
 public global::FrooxEngine.IField<UnityEngine.Vector2> _offset;
 public global::FrooxEngine.IField<UnityEngine.ColorX> _tint;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
-members.Add("Grid", new ResoniteLink.Reference() { });
-members.Add("_tiledImage", new ResoniteLink.Reference() { });
-members.Add("_tiling", new ResoniteLink.Reference() { });
-members.Add("_offset", new ResoniteLink.Reference() { });
-members.Add("_tint", new ResoniteLink.Reference() { });
+    base.CollectMembers(members, context);
+members.Add("Grid", Grid.ToResoniteReference(context));
+members.Add("_tiledImage", _tiledImage.ToResoniteReference(context));
+members.Add("_tiling", _tiling.ToResoniteReference(context));
+members.Add("_offset", _offset.ToResoniteReference(context));
+members.Add("_tint", _tint.ToResoniteReference(context));
 }
 
 }

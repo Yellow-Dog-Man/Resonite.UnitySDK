@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.OnlineStatistics
-// Generated on: pátek 13. února 2026 23:21:37
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:57:02
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -48,14 +48,15 @@ public global::System.Nullable<global::System.Int32> ChatClientUsers;
 public global::System.Nullable<global::System.Int32> HeadlessUsers;
 public global::System.Nullable<global::System.Int32> BotUsers;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
+    base.CollectMembers(members, context);
 members.Add("Timestamp", Timestamp.ToResoniteLinkField());
-members.Add("VisibleSessions", new ResoniteLink.SyncObject() { Members = VisibleSessions.CollectMembers() });
-members.Add("HiddenSessions", new ResoniteLink.SyncObject() { Members = HiddenSessions.CollectMembers() });
-members.Add("ActiveVisibleSessions", new ResoniteLink.SyncObject() { Members = ActiveVisibleSessions.CollectMembers() });
-members.Add("ActiveHiddenSessions", new ResoniteLink.SyncObject() { Members = ActiveHiddenSessions.CollectMembers() });
+members.Add("VisibleSessions", new ResoniteLink.SyncObject() { Members = VisibleSessions.CollectMembers(context) });
+members.Add("HiddenSessions", new ResoniteLink.SyncObject() { Members = HiddenSessions.CollectMembers(context) });
+members.Add("ActiveVisibleSessions", new ResoniteLink.SyncObject() { Members = ActiveVisibleSessions.CollectMembers(context) });
+members.Add("ActiveHiddenSessions", new ResoniteLink.SyncObject() { Members = ActiveHiddenSessions.CollectMembers(context) });
 members.Add("RegisteredOnlineUsers", RegisteredOnlineUsers.ToResoniteLinkField());
 members.Add("TotalOnlineUsers", TotalOnlineUsers.ToResoniteLinkField());
 members.Add("PresentUsers", PresentUsers.ToResoniteLinkField());

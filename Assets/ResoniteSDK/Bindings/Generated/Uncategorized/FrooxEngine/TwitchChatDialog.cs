@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.TwitchChatDialog
-// Generated on: pátek 13. února 2026 23:23:15
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:44
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -31,19 +31,20 @@ public global::FrooxEngine.UIX.Text _highlightText;
 public global::FrooxEngine.DynamicSpriteFont _spriteSheet;
 public global::FrooxEngine.FontCollection _fontCollection;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
+    base.CollectMembers(members, context);
 members.Add("MaxMessages", MaxMessages.ToResoniteLinkField());
-members.Add("Interface", new ResoniteLink.Reference() { });
-members.Add("_channelName", new ResoniteLink.Reference() { });
-members.Add("_viewerCount", new ResoniteLink.Reference() { });
-members.Add("_messagesRoot", new ResoniteLink.Reference() { });
-members.Add("_messagesScrollRect", new ResoniteLink.Reference() { });
-members.Add("_highlightPanel", new ResoniteLink.Reference() { });
-members.Add("_highlightText", new ResoniteLink.Reference() { });
-members.Add("_spriteSheet", new ResoniteLink.Reference() { });
-members.Add("_fontCollection", new ResoniteLink.Reference() { });
+members.Add("Interface", Interface.ToResoniteReference(context));
+members.Add("_channelName", _channelName.ToResoniteReference(context));
+members.Add("_viewerCount", _viewerCount.ToResoniteReference(context));
+members.Add("_messagesRoot", _messagesRoot.ToResoniteReference(context));
+members.Add("_messagesScrollRect", _messagesScrollRect.ToResoniteReference(context));
+members.Add("_highlightPanel", _highlightPanel.ToResoniteReference(context));
+members.Add("_highlightText", _highlightText.ToResoniteReference(context));
+members.Add("_spriteSheet", _spriteSheet.ToResoniteReference(context));
+members.Add("_fontCollection", _fontCollection.ToResoniteReference(context));
 }
 
 }

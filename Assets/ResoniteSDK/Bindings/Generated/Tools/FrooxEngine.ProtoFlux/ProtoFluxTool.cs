@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.ProtoFlux.ProtoFluxTool
-// Generated on: pátek 13. února 2026 23:23:08
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:38
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -37,11 +37,12 @@ public global::FrooxEngine.IField<UnityEngine.Vector3> _cutLineScale;
 public global::FrooxEngine.IField<UnityEngine.Quaternion> _cutLineOrientation;
 public global::FrooxEngine.ProtoFlux.ProtoFluxNodeVisual _currentHighlightedNode;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
+    base.CollectMembers(members, context);
 members.Add("SpawnNodeType", SpawnNodeType.ToResoniteLinkField());
-members.Add("WirePoint", new ResoniteLink.Reference() { });
+members.Add("WirePoint", WirePoint.ToResoniteReference(context));
 members.Add("MaxConnectDistance", MaxConnectDistance.ToResoniteLinkField());
 members.Add("SelectionProgress", SelectionProgress.ToResoniteLinkField());
 members.Add("HoveringElementName", HoveringElementName.ToResoniteLinkField());
@@ -49,16 +50,16 @@ members.Add("HoveringElementContentType", HoveringElementContentType.ToResoniteL
 members.Add("HoveringElementColor", HoveringElementColor.ToResoniteLinkField());
 members.Add("_selectedNodes", new ResoniteLink.SyncList()
 {
-    Elements = _selectedNodes.ConvertList(m => new ResoniteLink.Reference() { })
+    Elements = _selectedNodes.ConvertList(m => m.ToResoniteReference(context))
 });
-members.Add("_wirePointPosition", new ResoniteLink.Reference() { });
-members.Add("_text", new ResoniteLink.Reference() { });
-members.Add("_currentProxy", new ResoniteLink.Reference() { });
-members.Add("_currentTempWire", new ResoniteLink.Reference() { });
-members.Add("_currentCutLine", new ResoniteLink.Reference() { });
-members.Add("_cutLineScale", new ResoniteLink.Reference() { });
-members.Add("_cutLineOrientation", new ResoniteLink.Reference() { });
-members.Add("_currentHighlightedNode", new ResoniteLink.Reference() { });
+members.Add("_wirePointPosition", _wirePointPosition.ToResoniteReference(context));
+members.Add("_text", _text.ToResoniteReference(context));
+members.Add("_currentProxy", _currentProxy.ToResoniteReference(context));
+members.Add("_currentTempWire", _currentTempWire.ToResoniteReference(context));
+members.Add("_currentCutLine", _currentCutLine.ToResoniteReference(context));
+members.Add("_cutLineScale", _cutLineScale.ToResoniteReference(context));
+members.Add("_cutLineOrientation", _cutLineOrientation.ToResoniteReference(context));
+members.Add("_currentHighlightedNode", _currentHighlightedNode.ToResoniteReference(context));
 }
 
 }

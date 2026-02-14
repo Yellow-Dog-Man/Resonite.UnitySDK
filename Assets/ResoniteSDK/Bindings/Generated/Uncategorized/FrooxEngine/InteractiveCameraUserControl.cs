@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.InteractiveCameraUserControl
-// Generated on: pátek 13. února 2026 23:23:15
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:44
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -23,11 +23,12 @@ public partial class InteractiveCameraUserControl : global::FrooxEngine.LegacyCa
     public global::FrooxEngine.InteractiveCameraControl Control;
 public global::FrooxEngine.Slot _uiRoot;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
-members.Add("Control", new ResoniteLink.Reference() { });
-members.Add("_uiRoot", new ResoniteLink.Reference() { });
+    base.CollectMembers(members, context);
+members.Add("Control", Control.ToResoniteReference(context));
+members.Add("_uiRoot", _uiRoot.ToResoniteReference(context));
 }
 
 }

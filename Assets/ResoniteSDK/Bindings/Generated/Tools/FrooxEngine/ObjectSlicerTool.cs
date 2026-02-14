@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.ObjectSlicerTool
-// Generated on: pátek 13. února 2026 23:23:07
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:38
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -26,19 +26,20 @@ public global::System.Single EdgeEnd;
 public System.Collections.Generic.List<global::FrooxEngine.GenericSlicer> _slicers;
 public System.Collections.Generic.List<global::FrooxEngine.PBS_Slice> _sliceMaterials;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
+    base.CollectMembers(members, context);
 members.Add("EdgeColor", EdgeColor.ToResoniteLinkField());
 members.Add("EdgeStart", EdgeStart.ToResoniteLinkField());
 members.Add("EdgeEnd", EdgeEnd.ToResoniteLinkField());
 members.Add("_slicers", new ResoniteLink.SyncList()
 {
-    Elements = _slicers.ConvertList(m => new ResoniteLink.Reference() { })
+    Elements = _slicers.ConvertList(m => m.ToResoniteReference(context))
 });
 members.Add("_sliceMaterials", new ResoniteLink.SyncList()
 {
-    Elements = _sliceMaterials.ConvertList(m => new ResoniteLink.Reference() { })
+    Elements = _sliceMaterials.ConvertList(m => m.ToResoniteReference(context))
 });
 }
 

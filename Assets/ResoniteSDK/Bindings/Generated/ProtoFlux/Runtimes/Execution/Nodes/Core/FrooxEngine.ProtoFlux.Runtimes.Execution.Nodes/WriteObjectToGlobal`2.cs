@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [ProtoFluxBindings]FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.WriteObjectToGlobal<,>
-// Generated on: pátek 13. února 2026 23:22:21
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:57:50
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -27,13 +27,14 @@ public global::FrooxEngine.ProtoFlux.INodeObjectOutput<T> Value;
 public global::FrooxEngine.ProtoFlux.INodeOperation OnWritten;
 public global::FrooxEngine.ProtoFlux.INodeOperation OnFail;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
-members.Add("Global", new ResoniteLink.Reference() { });
-members.Add("Value", new ResoniteLink.Reference() { });
-members.Add("OnWritten", new ResoniteLink.Reference() { });
-members.Add("OnFail", new ResoniteLink.Reference() { });
+    base.CollectMembers(members, context);
+members.Add("Global", Global.ToResoniteReference(context));
+members.Add("Value", Value.ToResoniteReference(context));
+members.Add("OnWritten", OnWritten.ToResoniteReference(context));
+members.Add("OnFail", OnFail.ToResoniteReference(context));
 }
 
 }

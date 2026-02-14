@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [ProtoFluxBindings]FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Network.RequestHostAccess
-// Generated on: pátek 13. února 2026 23:22:41
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:10
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -25,13 +25,14 @@ public global::FrooxEngine.ProtoFlux.INodeValueOutput<global::System.Int32> Port
 public global::FrooxEngine.ProtoFlux.INodeValueOutput<global::FrooxEngine.HostAccessScope> Scope;
 public global::FrooxEngine.ProtoFlux.INodeObjectOutput<global::System.String> Reason;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
-members.Add("Host", new ResoniteLink.Reference() { });
-members.Add("Port", new ResoniteLink.Reference() { });
-members.Add("Scope", new ResoniteLink.Reference() { });
-members.Add("Reason", new ResoniteLink.Reference() { });
+    base.CollectMembers(members, context);
+members.Add("Host", Host.ToResoniteReference(context));
+members.Add("Port", Port.ToResoniteReference(context));
+members.Add("Scope", Scope.ToResoniteReference(context));
+members.Add("Reason", Reason.ToResoniteReference(context));
 }
 
 }

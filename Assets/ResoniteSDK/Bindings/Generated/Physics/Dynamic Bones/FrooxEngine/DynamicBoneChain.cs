@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.DynamicBoneChain
-// Generated on: pátek 13. února 2026 23:21:42
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:57:10
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -65,9 +65,10 @@ public UnityEngine.Vector3 EffectorBoneOffset;
 public global::FrooxEngine.Grabber _activeGrabber;
 public System.Collections.Generic.List<global::FrooxEngine.DynamicBoneChain.Bone> Bones;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
+    base.CollectMembers(members, context);
 members.Add("Inertia", Inertia.ToResoniteLinkField());
 members.Add("InertiaForce", InertiaForce.ToResoniteLinkField());
 members.Add("Damping", Damping.ToResoniteLinkField());
@@ -83,7 +84,7 @@ members.Add("CollideWithBody", CollideWithBody.ToResoniteLinkField());
 members.Add("CollideWithLeftHand", CollideWithLeftHand.ToResoniteLinkField());
 members.Add("CollideWithRightHand", CollideWithRightHand.ToResoniteLinkField());
 members.Add("Gravity", Gravity.ToResoniteLinkField());
-members.Add("GravitySpace", new ResoniteLink.SyncObject() { Members = GravitySpace.CollectMembers() });
+members.Add("GravitySpace", new ResoniteLink.SyncObject() { Members = GravitySpace.CollectMembers(context) });
 members.Add("UseUserGravityDirection", UseUserGravityDirection.ToResoniteLinkField());
 members.Add("LocalForce", LocalForce.ToResoniteLinkField());
 members.Add("GlobalStretch", GlobalStretch.ToResoniteLinkField());
@@ -91,10 +92,10 @@ members.Add("MaxStretchRatio", MaxStretchRatio.ToResoniteLinkField());
 members.Add("CurrentStretchRatio", CurrentStretchRatio.ToResoniteLinkField());
 members.Add("StretchRestoreSpeed", StretchRestoreSpeed.ToResoniteLinkField());
 members.Add("UseLocalUserSpace", UseLocalUserSpace.ToResoniteLinkField());
-members.Add("SimulationSpace", new ResoniteLink.SyncObject() { Members = SimulationSpace.CollectMembers() });
+members.Add("SimulationSpace", new ResoniteLink.SyncObject() { Members = SimulationSpace.CollectMembers(context) });
 members.Add("StaticColliders", new ResoniteLink.SyncList()
 {
-    Elements = StaticColliders.ConvertList(m => new ResoniteLink.Reference() { })
+    Elements = StaticColliders.ConvertList(m => m.ToResoniteReference(context))
 });
 members.Add("VisualizeColliders", VisualizeColliders.ToResoniteLinkField());
 members.Add("VisualizeBones", VisualizeBones.ToResoniteLinkField());
@@ -110,13 +111,13 @@ members.Add("GrabTerminalBones", GrabTerminalBones.ToResoniteLinkField());
 members.Add("GrabVibration", GrabVibration.ToResoniteLinkField());
 members.Add("IgnoreOwnLeftHand", IgnoreOwnLeftHand.ToResoniteLinkField());
 members.Add("IgnoreOwnRightHand", IgnoreOwnRightHand.ToResoniteLinkField());
-members.Add("EffectorTarget", new ResoniteLink.Reference() { });
+members.Add("EffectorTarget", EffectorTarget.ToResoniteReference(context));
 members.Add("EffectorBoneIndex", EffectorBoneIndex.ToResoniteLinkField());
 members.Add("EffectorBoneOffset", EffectorBoneOffset.ToResoniteLinkField());
-members.Add("_activeGrabber", new ResoniteLink.Reference() { });
+members.Add("_activeGrabber", _activeGrabber.ToResoniteReference(context));
 members.Add("Bones", new ResoniteLink.SyncList()
 {
-    Elements = Bones.ConvertList(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers() })
+    Elements = Bones.ConvertList(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers(context) })
 });
 }
 

@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.GeometryLineBrushTool+Line
-// Generated on: pátek 13. února 2026 23:23:08
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:38
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -41,9 +41,10 @@ public global::FrooxEngine.Slot OverrideTipRotation;
 public global::FrooxEngine.RootSpace OffsetSpace;
 public global::FrooxEngine.RootSpace RotationSpace;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
+    base.CollectMembers(members, context);
 members.Add("Topology", Topology.ToResoniteLinkField());
 members.Add("Ends", Ends.ToResoniteLinkField());
 members.Add("Shading", Shading.ToResoniteLinkField());
@@ -58,10 +59,10 @@ members.Add("ColorMode", ColorMode.ToResoniteLinkField());
 members.Add("Color", Color.ToResoniteLinkField());
 members.Add("UseTipRotation", UseTipRotation.ToResoniteLinkField());
 members.Add("MaxSize", MaxSize.ToResoniteLinkField());
-members.Add("OverrideTip", new ResoniteLink.Reference() { });
-members.Add("OverrideTipRotation", new ResoniteLink.Reference() { });
-members.Add("OffsetSpace", new ResoniteLink.SyncObject() { Members = OffsetSpace.CollectMembers() });
-members.Add("RotationSpace", new ResoniteLink.SyncObject() { Members = RotationSpace.CollectMembers() });
+members.Add("OverrideTip", OverrideTip.ToResoniteReference(context));
+members.Add("OverrideTipRotation", OverrideTipRotation.ToResoniteReference(context));
+members.Add("OffsetSpace", new ResoniteLink.SyncObject() { Members = OffsetSpace.CollectMembers(context) });
+members.Add("RotationSpace", new ResoniteLink.SyncObject() { Members = RotationSpace.CollectMembers(context) });
 }
 
 }

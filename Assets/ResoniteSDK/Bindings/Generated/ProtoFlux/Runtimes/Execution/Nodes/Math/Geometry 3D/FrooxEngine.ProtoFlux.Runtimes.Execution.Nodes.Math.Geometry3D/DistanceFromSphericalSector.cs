@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [ProtoFluxBindings]FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.Math.Geometry3D.DistanceFromSphericalSector
-// Generated on: pátek 13. února 2026 23:22:36
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:05
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -26,14 +26,15 @@ public global::FrooxEngine.ProtoFlux.INodeValueOutput<global::System.Single> Rad
 public global::FrooxEngine.ProtoFlux.INodeValueOutput<global::System.Single> Angle;
 public global::FrooxEngine.ProtoFlux.INodeValueOutput<UnityEngine.Vector3> Point;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
-members.Add("Center", new ResoniteLink.Reference() { });
-members.Add("Direction", new ResoniteLink.Reference() { });
-members.Add("Radius", new ResoniteLink.Reference() { });
-members.Add("Angle", new ResoniteLink.Reference() { });
-members.Add("Point", new ResoniteLink.Reference() { });
+    base.CollectMembers(members, context);
+members.Add("Center", Center.ToResoniteReference(context));
+members.Add("Direction", Direction.ToResoniteReference(context));
+members.Add("Radius", Radius.ToResoniteReference(context));
+members.Add("Angle", Angle.ToResoniteReference(context));
+members.Add("Point", Point.ToResoniteReference(context));
 }
 
 }

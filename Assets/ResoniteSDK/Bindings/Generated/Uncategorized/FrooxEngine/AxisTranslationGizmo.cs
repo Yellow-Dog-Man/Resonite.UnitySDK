@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.AxisTranslationGizmo
-// Generated on: pátek 13. února 2026 23:23:12
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:42
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -38,26 +38,27 @@ public global::FrooxEngine.Slot _linesRoot;
 public global::FrooxEngine.SegmentMesh _line0;
 public global::FrooxEngine.SegmentMesh _line1;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
+    base.CollectMembers(members, context);
 members.Add("Axis", Axis.ToResoniteLinkField());
-members.Add("AxisSpace", new ResoniteLink.SyncObject() { Members = AxisSpace.CollectMembers() });
-members.Add("PointSpace", new ResoniteLink.SyncObject() { Members = PointSpace.CollectMembers() });
-members.Add("TargetPoint", new ResoniteLink.Reference() { });
-members.Add("TargetValue", new ResoniteLink.Reference() { });
+members.Add("AxisSpace", new ResoniteLink.SyncObject() { Members = AxisSpace.CollectMembers(context) });
+members.Add("PointSpace", new ResoniteLink.SyncObject() { Members = PointSpace.CollectMembers(context) });
+members.Add("TargetPoint", TargetPoint.ToResoniteReference(context));
+members.Add("TargetValue", TargetValue.ToResoniteReference(context));
 members.Add("UseCustomVisual", UseCustomVisual.ToResoniteLinkField());
-members.Add("_customVisualRoot", new ResoniteLink.Reference() { });
+members.Add("_customVisualRoot", _customVisualRoot.ToResoniteReference(context));
 members.Add("ArrowLength", ArrowLength.ToResoniteLinkField());
 members.Add("CreateUndoSteps", CreateUndoSteps.ToResoniteLinkField());
-members.Add("_visualRoot", new ResoniteLink.Reference() { });
-members.Add("_visualRot", new ResoniteLink.Reference() { });
-members.Add("_arrowVector", new ResoniteLink.Reference() { });
-members.Add("_arrow", new ResoniteLink.Reference() { });
-members.Add("_collider", new ResoniteLink.Reference() { });
-members.Add("_linesRoot", new ResoniteLink.Reference() { });
-members.Add("_line0", new ResoniteLink.Reference() { });
-members.Add("_line1", new ResoniteLink.Reference() { });
+members.Add("_visualRoot", _visualRoot.ToResoniteReference(context));
+members.Add("_visualRot", _visualRot.ToResoniteReference(context));
+members.Add("_arrowVector", _arrowVector.ToResoniteReference(context));
+members.Add("_arrow", _arrow.ToResoniteReference(context));
+members.Add("_collider", _collider.ToResoniteReference(context));
+members.Add("_linesRoot", _linesRoot.ToResoniteReference(context));
+members.Add("_line0", _line0.ToResoniteReference(context));
+members.Add("_line1", _line1.ToResoniteReference(context));
 }
 
 }

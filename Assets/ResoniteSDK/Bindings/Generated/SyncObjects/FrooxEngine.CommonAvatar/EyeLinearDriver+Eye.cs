@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.CommonAvatar.EyeLinearDriver+Eye
-// Generated on: pátek 13. února 2026 23:23:20
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:50
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -77,25 +77,26 @@ public global::System.Single MaxOutputOuterBrowLower;
 public global::System.Single LookMultiply;
 public global::System.Single LookPower;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
+    base.CollectMembers(members, context);
 members.Add("Side", Side.ToResoniteLinkField());
-members.Add("ProjectionPlanePoint", new ResoniteLink.Reference() { });
-members.Add("PositionOffset", new ResoniteLink.Reference() { });
-members.Add("LookLeft", new ResoniteLink.Reference() { });
-members.Add("LookUp", new ResoniteLink.Reference() { });
-members.Add("LookRight", new ResoniteLink.Reference() { });
-members.Add("LookDown", new ResoniteLink.Reference() { });
-members.Add("OpenCloseTarget", new ResoniteLink.Reference() { });
-members.Add("PupilSizeTarget", new ResoniteLink.Reference() { });
-members.Add("WidenTarget", new ResoniteLink.Reference() { });
-members.Add("SqueezeTarget", new ResoniteLink.Reference() { });
-members.Add("FrownTarget", new ResoniteLink.Reference() { });
-members.Add("InnerBrowRaiseTarget", new ResoniteLink.Reference() { });
-members.Add("InnerBrowLowerTarget", new ResoniteLink.Reference() { });
-members.Add("OuterBrowRaiseTarget", new ResoniteLink.Reference() { });
-members.Add("OuterBrowLowerTarget", new ResoniteLink.Reference() { });
+members.Add("ProjectionPlanePoint", ProjectionPlanePoint.ToResoniteReference(context));
+members.Add("PositionOffset", PositionOffset.ToResoniteReference(context));
+members.Add("LookLeft", LookLeft.ToResoniteReference(context));
+members.Add("LookUp", LookUp.ToResoniteReference(context));
+members.Add("LookRight", LookRight.ToResoniteReference(context));
+members.Add("LookDown", LookDown.ToResoniteReference(context));
+members.Add("OpenCloseTarget", OpenCloseTarget.ToResoniteReference(context));
+members.Add("PupilSizeTarget", PupilSizeTarget.ToResoniteReference(context));
+members.Add("WidenTarget", WidenTarget.ToResoniteReference(context));
+members.Add("SqueezeTarget", SqueezeTarget.ToResoniteReference(context));
+members.Add("FrownTarget", FrownTarget.ToResoniteReference(context));
+members.Add("InnerBrowRaiseTarget", InnerBrowRaiseTarget.ToResoniteReference(context));
+members.Add("InnerBrowLowerTarget", InnerBrowLowerTarget.ToResoniteReference(context));
+members.Add("OuterBrowRaiseTarget", OuterBrowRaiseTarget.ToResoniteReference(context));
+members.Add("OuterBrowLowerTarget", OuterBrowLowerTarget.ToResoniteReference(context));
 members.Add("MinInputCloseness", MinInputCloseness.ToResoniteLinkField());
 members.Add("MaxInputCloseness", MaxInputCloseness.ToResoniteLinkField());
 members.Add("OpenState", OpenState.ToResoniteLinkField());

@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [ProtoFluxBindings]FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Undo.CreateUndoBatch
-// Generated on: pátek 13. února 2026 23:22:58
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:28
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -24,12 +24,13 @@ public partial class CreateUndoBatch : global::FrooxEngine.ProtoFlux.Runtimes.Ex
 public global::FrooxEngine.ProtoFlux.ISyncNodeOperation Create;
 public global::FrooxEngine.ProtoFlux.INodeOperation OnCreated;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
-members.Add("Description", new ResoniteLink.Reference() { });
-members.Add("Create", new ResoniteLink.Reference() { });
-members.Add("OnCreated", new ResoniteLink.Reference() { });
+    base.CollectMembers(members, context);
+members.Add("Description", Description.ToResoniteReference(context));
+members.Add("Create", Create.ToResoniteReference(context));
+members.Add("OnCreated", OnCreated.ToResoniteReference(context));
 }
 
 }

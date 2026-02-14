@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.ScaleObjectCreator
-// Generated on: pátek 13. února 2026 23:23:10
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:40
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -27,15 +27,16 @@ public global::FrooxEngine.IField<global::System.Double> TemplateSizeField;
 public global::FrooxEngine.QuantityTextEditorParser<global::Elements.Quantity.Distance> _sizeParser;
 public global::FrooxEngine.FresnelMaterial _material;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
-members.Add("Manager", new ResoniteLink.Reference() { });
-members.Add("Template", new ResoniteLink.Reference() { });
-members.Add("TemplateNameField", new ResoniteLink.Reference() { });
-members.Add("TemplateSizeField", new ResoniteLink.Reference() { });
-members.Add("_sizeParser", new ResoniteLink.Reference() { });
-members.Add("_material", new ResoniteLink.Reference() { });
+    base.CollectMembers(members, context);
+members.Add("Manager", Manager.ToResoniteReference(context));
+members.Add("Template", Template.ToResoniteReference(context));
+members.Add("TemplateNameField", TemplateNameField.ToResoniteReference(context));
+members.Add("TemplateSizeField", TemplateSizeField.ToResoniteReference(context));
+members.Add("_sizeParser", _sizeParser.ToResoniteReference(context));
+members.Add("_material", _material.ToResoniteReference(context));
 }
 
 }

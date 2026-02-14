@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.ContextMenu
-// Generated on: pátek 13. února 2026 23:22:57
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:27
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -65,53 +65,54 @@ public global::System.Boolean _flickEnabled;
 public global::System.Boolean _hidden;
 public global::FrooxEngine.ContextMenuItem _selectedItem;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
-members.Add("Owner", new ResoniteLink.Reference() { });
-members.Add("Pointer", new ResoniteLink.Reference() { });
+    base.CollectMembers(members, context);
+members.Add("Owner", Owner.ToResoniteReference(context));
+members.Add("Pointer", Pointer.ToResoniteReference(context));
 members.Add("Separation", Separation.ToResoniteLinkField());
 members.Add("LabelSize", LabelSize.ToResoniteLinkField());
 members.Add("RadiusRatio", RadiusRatio.ToResoniteLinkField());
-members.Add("_currentSummoner", new ResoniteLink.Reference() { });
-members.Add("_canvas", new ResoniteLink.Reference() { });
-members.Add("_arcLayout", new ResoniteLink.Reference() { });
-members.Add("_canvasActive", new ResoniteLink.Reference() { });
-members.Add("_colliderEnabled", new ResoniteLink.Reference() { });
-members.Add("_iconImage", new ResoniteLink.Reference() { });
-members.Add("_separation", new ResoniteLink.Reference() { });
-members.Add("_offsetMin", new ResoniteLink.Reference() { });
-members.Add("_offsetMax", new ResoniteLink.Reference() { });
-members.Add("_innerCircle", new ResoniteLink.Reference() { });
-members.Add("_innerCircleButton", new ResoniteLink.Reference() { });
-members.Add("_innerCircleAnchorMin", new ResoniteLink.Reference() { });
-members.Add("_innerCircleAnchorMax", new ResoniteLink.Reference() { });
-members.Add("_itemsRoot", new ResoniteLink.Reference() { });
-members.Add("_arcMaterial", new ResoniteLink.Reference() { });
-members.Add("_fontMaterial", new ResoniteLink.Reference() { });
-members.Add("_spriteMaterial", new ResoniteLink.Reference() { });
-members.Add("_arcOverlay", new ResoniteLink.Reference() { });
-members.Add("_fontOverlay", new ResoniteLink.Reference() { });
-members.Add("_spriteOverlay", new ResoniteLink.Reference() { });
-members.Add("_arcZTest", new ResoniteLink.Reference() { });
-members.Add("_fontZTest", new ResoniteLink.Reference() { });
-members.Add("_spriteZTest", new ResoniteLink.Reference() { });
-members.Add("_zwriteArc", new ResoniteLink.Reference() { });
-members.Add("_zwriteText", new ResoniteLink.Reference() { });
-members.Add("_arcRenderQueue", new ResoniteLink.Reference() { });
-members.Add("_fontRenderQueue", new ResoniteLink.Reference() { });
-members.Add("_spriteRenderQueue", new ResoniteLink.Reference() { });
-members.Add("_canvasOffset", new ResoniteLink.Reference() { });
-members.Add("_fillFade", new ResoniteLink.Reference() { });
-members.Add("_outlineFade", new ResoniteLink.Reference() { });
-members.Add("_textFade", new ResoniteLink.Reference() { });
-members.Add("_iconFade", new ResoniteLink.Reference() { });
+members.Add("_currentSummoner", _currentSummoner.ToResoniteReference(context));
+members.Add("_canvas", _canvas.ToResoniteReference(context));
+members.Add("_arcLayout", _arcLayout.ToResoniteReference(context));
+members.Add("_canvasActive", _canvasActive.ToResoniteReference(context));
+members.Add("_colliderEnabled", _colliderEnabled.ToResoniteReference(context));
+members.Add("_iconImage", _iconImage.ToResoniteReference(context));
+members.Add("_separation", _separation.ToResoniteReference(context));
+members.Add("_offsetMin", _offsetMin.ToResoniteReference(context));
+members.Add("_offsetMax", _offsetMax.ToResoniteReference(context));
+members.Add("_innerCircle", _innerCircle.ToResoniteReference(context));
+members.Add("_innerCircleButton", _innerCircleButton.ToResoniteReference(context));
+members.Add("_innerCircleAnchorMin", _innerCircleAnchorMin.ToResoniteReference(context));
+members.Add("_innerCircleAnchorMax", _innerCircleAnchorMax.ToResoniteReference(context));
+members.Add("_itemsRoot", _itemsRoot.ToResoniteReference(context));
+members.Add("_arcMaterial", _arcMaterial.ToResoniteReference(context));
+members.Add("_fontMaterial", _fontMaterial.ToResoniteReference(context));
+members.Add("_spriteMaterial", _spriteMaterial.ToResoniteReference(context));
+members.Add("_arcOverlay", _arcOverlay.ToResoniteReference(context));
+members.Add("_fontOverlay", _fontOverlay.ToResoniteReference(context));
+members.Add("_spriteOverlay", _spriteOverlay.ToResoniteReference(context));
+members.Add("_arcZTest", _arcZTest.ToResoniteReference(context));
+members.Add("_fontZTest", _fontZTest.ToResoniteReference(context));
+members.Add("_spriteZTest", _spriteZTest.ToResoniteReference(context));
+members.Add("_zwriteArc", _zwriteArc.ToResoniteReference(context));
+members.Add("_zwriteText", _zwriteText.ToResoniteReference(context));
+members.Add("_arcRenderQueue", _arcRenderQueue.ToResoniteReference(context));
+members.Add("_fontRenderQueue", _fontRenderQueue.ToResoniteReference(context));
+members.Add("_spriteRenderQueue", _spriteRenderQueue.ToResoniteReference(context));
+members.Add("_canvasOffset", _canvasOffset.ToResoniteReference(context));
+members.Add("_fillFade", _fillFade.ToResoniteReference(context));
+members.Add("_outlineFade", _outlineFade.ToResoniteReference(context));
+members.Add("_textFade", _textFade.ToResoniteReference(context));
+members.Add("_iconFade", _iconFade.ToResoniteReference(context));
 members.Add("_lerp", _lerp.ToResoniteLinkField());
 members.Add("_state", _state.ToResoniteLinkField());
 members.Add("_flickModeActive", _flickModeActive.ToResoniteLinkField());
 members.Add("_flickEnabled", _flickEnabled.ToResoniteLinkField());
 members.Add("_hidden", _hidden.ToResoniteLinkField());
-members.Add("_selectedItem", new ResoniteLink.Reference() { });
+members.Add("_selectedItem", _selectedItem.ToResoniteReference(context));
 }
 
 }

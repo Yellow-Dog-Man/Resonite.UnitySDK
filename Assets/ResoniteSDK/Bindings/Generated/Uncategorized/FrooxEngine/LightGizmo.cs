@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.LightGizmo
-// Generated on: pátek 13. února 2026 23:23:16
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:45
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -33,21 +33,22 @@ public global::FrooxEngine.ConeGizmo _spotGizmo;
 public global::FrooxEngine.VectorGizmo _dirGizmo;
 public global::FrooxEngine.OverlayFresnelMaterial _iconMaterial;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
+    base.CollectMembers(members, context);
 members.Add("Active", Active.ToResoniteLinkField());
-members.Add("_target", new ResoniteLink.Reference() { });
-members.Add("_pointIconActive", new ResoniteLink.Reference() { });
-members.Add("_spotIconActive", new ResoniteLink.Reference() { });
-members.Add("_directionalIconActive", new ResoniteLink.Reference() { });
-members.Add("_pointActive", new ResoniteLink.Reference() { });
-members.Add("_spotActive", new ResoniteLink.Reference() { });
-members.Add("_directionalActive", new ResoniteLink.Reference() { });
-members.Add("_pointGizmo", new ResoniteLink.Reference() { });
-members.Add("_spotGizmo", new ResoniteLink.Reference() { });
-members.Add("_dirGizmo", new ResoniteLink.Reference() { });
-members.Add("_iconMaterial", new ResoniteLink.Reference() { });
+members.Add("_target", _target.ToResoniteReference(context));
+members.Add("_pointIconActive", _pointIconActive.ToResoniteReference(context));
+members.Add("_spotIconActive", _spotIconActive.ToResoniteReference(context));
+members.Add("_directionalIconActive", _directionalIconActive.ToResoniteReference(context));
+members.Add("_pointActive", _pointActive.ToResoniteReference(context));
+members.Add("_spotActive", _spotActive.ToResoniteReference(context));
+members.Add("_directionalActive", _directionalActive.ToResoniteReference(context));
+members.Add("_pointGizmo", _pointGizmo.ToResoniteReference(context));
+members.Add("_spotGizmo", _spotGizmo.ToResoniteReference(context));
+members.Add("_dirGizmo", _dirGizmo.ToResoniteReference(context));
+members.Add("_iconMaterial", _iconMaterial.ToResoniteReference(context));
 }
 
 }

@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.BrushTool
-// Generated on: pátek 13. února 2026 23:23:08
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:38
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -65,9 +65,10 @@ public global::System.Single StrokeFadeMultiplier;
 public global::System.Int32 StrokeGroupIndex;
 public global::System.Boolean StrokeGroupActive;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
+    base.CollectMembers(members, context);
 members.Add("FixedMinimumPointDistance", FixedMinimumPointDistance.ToResoniteLinkField());
 members.Add("PositionSmoothing", PositionSmoothing.ToResoniteLinkField());
 members.Add("RotationSmoothing", RotationSmoothing.ToResoniteLinkField());
@@ -81,30 +82,30 @@ members.Add("DeactivationThresholdRatio", DeactivationThresholdRatio.ToResoniteL
 members.Add("MenuSizeChange", MenuSizeChange.ToResoniteLinkField());
 members.Add("SnapTip", SnapTip.ToResoniteLinkField());
 members.Add("SnapLine", SnapLine.ToResoniteLinkField());
-members.Add("StrokesSpace", new ResoniteLink.SyncObject() { Members = StrokesSpace.CollectMembers() });
+members.Add("StrokesSpace", new ResoniteLink.SyncObject() { Members = StrokesSpace.CollectMembers(context) });
 members.Add("MakeStrokesGrabbable", MakeStrokesGrabbable.ToResoniteLinkField());
 members.Add("PositionStrokesToTip", PositionStrokesToTip.ToResoniteLinkField());
 members.Add("OrientStrokesToTip", OrientStrokesToTip.ToResoniteLinkField());
 members.Add("ScaleStrokesToUser", ScaleStrokesToUser.ToResoniteLinkField());
 members.Add("PickMaterials", PickMaterials.ToResoniteLinkField());
 members.Add("PickColors", PickColors.ToResoniteLinkField());
-members.Add("CurrentMaterial", new ResoniteLink.Reference() { });
+members.Add("CurrentMaterial", CurrentMaterial.ToResoniteReference(context));
 members.Add("ColorMappings", new ResoniteLink.SyncList()
 {
-    Elements = ColorMappings.ConvertList(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers() })
+    Elements = ColorMappings.ConvertList(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers(context) })
 });
-members.Add("ParticleSystem", new ResoniteLink.Reference() { });
-members.Add("MeshEmitterTemplate", new ResoniteLink.Reference() { });
+members.Add("ParticleSystem", ParticleSystem.ToResoniteReference(context));
+members.Add("MeshEmitterTemplate", MeshEmitterTemplate.ToResoniteReference(context));
 members.Add("ParticleTemplateHandling", ParticleTemplateHandling.ToResoniteLinkField());
 members.Add("EmissionRatePerUnitLength", EmissionRatePerUnitLength.ToResoniteLinkField());
-members.Add("_colorPicker", new ResoniteLink.Reference() { });
+members.Add("_colorPicker", _colorPicker.ToResoniteReference(context));
 members.Add("_pickedColor", _pickedColor.ToResoniteLinkField());
 members.Add("_hideOnStroke", new ResoniteLink.SyncList()
 {
-    Elements = _hideOnStroke.ConvertList(m => new ResoniteLink.Reference() { })
+    Elements = _hideOnStroke.ConvertList(m => m.ToResoniteReference(context))
 });
-members.Add("_lastUsedMaterial", new ResoniteLink.Reference() { });
-members.Add("_lastCreatedMaterial", new ResoniteLink.Reference() { });
+members.Add("_lastUsedMaterial", _lastUsedMaterial.ToResoniteReference(context));
+members.Add("_lastCreatedMaterial", _lastCreatedMaterial.ToResoniteReference(context));
 members.Add("Pressure", Pressure.ToResoniteLinkField());
 members.Add("Position", Position.ToResoniteLinkField());
 members.Add("Rotation", Rotation.ToResoniteLinkField());

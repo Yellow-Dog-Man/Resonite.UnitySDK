@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.UIX.ProgressBar
-// Generated on: pátek 13. února 2026 23:23:11
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:41
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -27,14 +27,15 @@ public global::FrooxEngine.IField<UnityEngine.Vector2> AnchorMin;
 public global::FrooxEngine.IField<UnityEngine.Vector2> AnchorMax;
 public global::System.Single Power;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
+    base.CollectMembers(members, context);
 members.Add("Progress", Progress.ToResoniteLinkField());
 members.Add("AnchorMinOffset", AnchorMinOffset.ToResoniteLinkField());
 members.Add("AnchorMaxOffset", AnchorMaxOffset.ToResoniteLinkField());
-members.Add("AnchorMin", new ResoniteLink.Reference() { });
-members.Add("AnchorMax", new ResoniteLink.Reference() { });
+members.Add("AnchorMin", AnchorMin.ToResoniteReference(context));
+members.Add("AnchorMax", AnchorMax.ToResoniteReference(context));
 members.Add("Power", Power.ToResoniteLinkField());
 }
 

@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.InteractionHandlerStreamDriver
-// Generated on: pátek 13. února 2026 23:22:57
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:27
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -28,16 +28,17 @@ public global::FrooxEngine.ValueStream<global::System.Boolean> ShowLaserToOthers
 public global::FrooxEngine.ValueStream<UnityEngine.Vector3> LaserTargetStream;
 public global::FrooxEngine.ValueStream<global::System.Single> GrabDistanceStream;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
+    base.CollectMembers(members, context);
 members.Add("Side", Side.ToResoniteLinkField());
-members.Add("PrimaryBlockedStream", new ResoniteLink.Reference() { });
-members.Add("SecondaryBlockedStream", new ResoniteLink.Reference() { });
-members.Add("LaserActiveStream", new ResoniteLink.Reference() { });
-members.Add("ShowLaserToOthersStream", new ResoniteLink.Reference() { });
-members.Add("LaserTargetStream", new ResoniteLink.Reference() { });
-members.Add("GrabDistanceStream", new ResoniteLink.Reference() { });
+members.Add("PrimaryBlockedStream", PrimaryBlockedStream.ToResoniteReference(context));
+members.Add("SecondaryBlockedStream", SecondaryBlockedStream.ToResoniteReference(context));
+members.Add("LaserActiveStream", LaserActiveStream.ToResoniteReference(context));
+members.Add("ShowLaserToOthersStream", ShowLaserToOthersStream.ToResoniteReference(context));
+members.Add("LaserTargetStream", LaserTargetStream.ToResoniteReference(context));
+members.Add("GrabDistanceStream", GrabDistanceStream.ToResoniteReference(context));
 }
 
 }

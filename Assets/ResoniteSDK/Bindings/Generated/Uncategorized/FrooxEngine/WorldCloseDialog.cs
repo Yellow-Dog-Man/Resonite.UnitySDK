@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.WorldCloseDialog
-// Generated on: pátek 13. února 2026 23:23:19
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:49
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -28,16 +28,17 @@ public global::FrooxEngine.WorldCloseAction _saveAction;
 public global::FrooxEngine.WorldCloseAction _saveAsAction;
 public global::FrooxEngine.WorldCloseAction _discardAction;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
-members.Add("_worldName", new ResoniteLink.Reference() { });
-members.Add("_saveButton", new ResoniteLink.Reference() { });
-members.Add("_saveAsButton", new ResoniteLink.Reference() { });
-members.Add("_discardButton", new ResoniteLink.Reference() { });
-members.Add("_saveAction", new ResoniteLink.Reference() { });
-members.Add("_saveAsAction", new ResoniteLink.Reference() { });
-members.Add("_discardAction", new ResoniteLink.Reference() { });
+    base.CollectMembers(members, context);
+members.Add("_worldName", _worldName.ToResoniteReference(context));
+members.Add("_saveButton", _saveButton.ToResoniteReference(context));
+members.Add("_saveAsButton", _saveAsButton.ToResoniteReference(context));
+members.Add("_discardButton", _discardButton.ToResoniteReference(context));
+members.Add("_saveAction", _saveAction.ToResoniteReference(context));
+members.Add("_saveAsAction", _saveAsAction.ToResoniteReference(context));
+members.Add("_discardAction", _discardAction.ToResoniteReference(context));
 }
 
 }

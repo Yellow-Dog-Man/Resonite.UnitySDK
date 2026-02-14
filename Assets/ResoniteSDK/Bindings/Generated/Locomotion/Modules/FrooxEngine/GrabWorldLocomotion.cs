@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.GrabWorldLocomotion
-// Generated on: pátek 13. února 2026 23:21:41
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:57:07
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -27,15 +27,16 @@ public global::FrooxEngine.Slot _visual;
 public global::FrooxEngine.CrossMesh _crossMesh;
 public global::FrooxEngine.PBS_RimMetallic _material;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
-members.Add("Turn", new ResoniteLink.SyncObject() { Members = Turn.CollectMembers() });
+    base.CollectMembers(members, context);
+members.Add("Turn", new ResoniteLink.SyncObject() { Members = Turn.CollectMembers(context) });
 members.Add("ActivationThreshold", ActivationThreshold.ToResoniteLinkField());
 members.Add("DeactivationThreshold", DeactivationThreshold.ToResoniteLinkField());
-members.Add("_visual", new ResoniteLink.Reference() { });
-members.Add("_crossMesh", new ResoniteLink.Reference() { });
-members.Add("_material", new ResoniteLink.Reference() { });
+members.Add("_visual", _visual.ToResoniteReference(context));
+members.Add("_crossMesh", _crossMesh.ToResoniteReference(context));
+members.Add("_material", _material.ToResoniteReference(context));
 }
 
 }

@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.LegacyFieldBase
-// Generated on: pátek 13. února 2026 23:23:11
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:40
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -45,33 +45,34 @@ public global::FrooxEngine.IField<UnityEngine.Vector3> _rightOffset;
 public global::FrooxEngine.IField<UnityEngine.Vector3> _leftTextPosition;
 public global::FrooxEngine.IField<UnityEngine.Vector3> _rightTextPosition;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
+    base.CollectMembers(members, context);
 members.Add("Color", Color.ToResoniteLinkField());
 members.Add("Width", Width.ToResoniteLinkField());
 members.Add("Height", Height.ToResoniteLinkField());
 members.Add("Thickness", Thickness.ToResoniteLinkField());
 members.Add("Slant", Slant.ToResoniteLinkField());
-members.Add("_textSlot", new ResoniteLink.Reference() { });
-members.Add("_textRenderer", new ResoniteLink.Reference() { });
-members.Add("_textEditor", new ResoniteLink.Reference() { });
-members.Add("_material", new ResoniteLink.Reference() { });
-members.Add("_mesh", new ResoniteLink.Reference() { });
-members.Add("_textBounds", new ResoniteLink.Reference() { });
-members.Add("_colliderSize", new ResoniteLink.Reference() { });
-members.Add("_meshLeft", new ResoniteLink.Reference() { });
-members.Add("_meshRight", new ResoniteLink.Reference() { });
-members.Add("_textLeftBounds", new ResoniteLink.Reference() { });
-members.Add("_textRightBounds", new ResoniteLink.Reference() { });
-members.Add("_leftTextRenderer", new ResoniteLink.Reference() { });
-members.Add("_rightTextRenderer", new ResoniteLink.Reference() { });
-members.Add("_colliderLeftSize", new ResoniteLink.Reference() { });
-members.Add("_colliderRightSize", new ResoniteLink.Reference() { });
-members.Add("_leftOffset", new ResoniteLink.Reference() { });
-members.Add("_rightOffset", new ResoniteLink.Reference() { });
-members.Add("_leftTextPosition", new ResoniteLink.Reference() { });
-members.Add("_rightTextPosition", new ResoniteLink.Reference() { });
+members.Add("_textSlot", _textSlot.ToResoniteReference(context));
+members.Add("_textRenderer", _textRenderer.ToResoniteReference(context));
+members.Add("_textEditor", _textEditor.ToResoniteReference(context));
+members.Add("_material", _material.ToResoniteReference(context));
+members.Add("_mesh", _mesh.ToResoniteReference(context));
+members.Add("_textBounds", _textBounds.ToResoniteReference(context));
+members.Add("_colliderSize", _colliderSize.ToResoniteReference(context));
+members.Add("_meshLeft", _meshLeft.ToResoniteReference(context));
+members.Add("_meshRight", _meshRight.ToResoniteReference(context));
+members.Add("_textLeftBounds", _textLeftBounds.ToResoniteReference(context));
+members.Add("_textRightBounds", _textRightBounds.ToResoniteReference(context));
+members.Add("_leftTextRenderer", _leftTextRenderer.ToResoniteReference(context));
+members.Add("_rightTextRenderer", _rightTextRenderer.ToResoniteReference(context));
+members.Add("_colliderLeftSize", _colliderLeftSize.ToResoniteReference(context));
+members.Add("_colliderRightSize", _colliderRightSize.ToResoniteReference(context));
+members.Add("_leftOffset", _leftOffset.ToResoniteReference(context));
+members.Add("_rightOffset", _rightOffset.ToResoniteReference(context));
+members.Add("_leftTextPosition", _leftTextPosition.ToResoniteReference(context));
+members.Add("_rightTextPosition", _rightTextPosition.ToResoniteReference(context));
 }
 
 }

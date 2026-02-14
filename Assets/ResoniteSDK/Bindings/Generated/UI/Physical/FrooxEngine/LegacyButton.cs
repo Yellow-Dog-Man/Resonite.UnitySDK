@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.LegacyButton
-// Generated on: pátek 13. února 2026 23:23:11
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:40
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -42,9 +42,10 @@ public global::FrooxEngine.PBS_RimMetallic _buttonMaterial;
 public global::System.Single _pressDepth;
 public global::System.Int32 _flashIndex;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
+    base.CollectMembers(members, context);
 members.Add("Color", Color.ToResoniteLinkField());
 members.Add("Width", Width.ToResoniteLinkField());
 members.Add("Height", Height.ToResoniteLinkField());
@@ -53,17 +54,17 @@ members.Add("Slant", Slant.ToResoniteLinkField());
 members.Add("IsEnabled", IsEnabled.ToResoniteLinkField());
 members.Add("IsPressed", IsPressed.ToResoniteLinkField());
 members.Add("AcceptOutOfSightTouch", AcceptOutOfSightTouch.ToResoniteLinkField());
-members.Add("_textSlot", new ResoniteLink.Reference() { });
-members.Add("_textRenderer", new ResoniteLink.Reference() { });
-members.Add("_buttonPosition", new ResoniteLink.Reference() { });
-members.Add("_colliderSize", new ResoniteLink.Reference() { });
-members.Add("_colliderOffset", new ResoniteLink.Reference() { });
-members.Add("_textPosition", new ResoniteLink.Reference() { });
-members.Add("_textBounds", new ResoniteLink.Reference() { });
-members.Add("_holderMesh", new ResoniteLink.Reference() { });
-members.Add("_buttonMesh", new ResoniteLink.Reference() { });
-members.Add("_holderMaterial", new ResoniteLink.Reference() { });
-members.Add("_buttonMaterial", new ResoniteLink.Reference() { });
+members.Add("_textSlot", _textSlot.ToResoniteReference(context));
+members.Add("_textRenderer", _textRenderer.ToResoniteReference(context));
+members.Add("_buttonPosition", _buttonPosition.ToResoniteReference(context));
+members.Add("_colliderSize", _colliderSize.ToResoniteReference(context));
+members.Add("_colliderOffset", _colliderOffset.ToResoniteReference(context));
+members.Add("_textPosition", _textPosition.ToResoniteReference(context));
+members.Add("_textBounds", _textBounds.ToResoniteReference(context));
+members.Add("_holderMesh", _holderMesh.ToResoniteReference(context));
+members.Add("_buttonMesh", _buttonMesh.ToResoniteReference(context));
+members.Add("_holderMaterial", _holderMaterial.ToResoniteReference(context));
+members.Add("_buttonMaterial", _buttonMaterial.ToResoniteReference(context));
 members.Add("_pressDepth", _pressDepth.ToResoniteLinkField());
 members.Add("_flashIndex", _flashIndex.ToResoniteLinkField());
 }

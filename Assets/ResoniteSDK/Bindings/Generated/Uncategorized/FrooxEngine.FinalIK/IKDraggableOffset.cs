@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.FinalIK.IKDraggableOffset
-// Generated on: pátek 13. února 2026 23:23:15
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:44
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -30,16 +30,17 @@ public global::FrooxEngine.Slot _holdSlot;
 public UnityEngine.Vector3 _posOffset;
 public UnityEngine.Quaternion _rotOffset;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
-members.Add("Solver", new ResoniteLink.Reference() { });
-members.Add("PositionTarget", new ResoniteLink.Reference() { });
-members.Add("RotationTarget", new ResoniteLink.Reference() { });
-members.Add("Weight", new ResoniteLink.Reference() { });
-members.Add("_grabber", new ResoniteLink.Reference() { });
-members.Add("_grabbingUser", new ResoniteLink.Reference() { });
-members.Add("_holdSlot", new ResoniteLink.Reference() { });
+    base.CollectMembers(members, context);
+members.Add("Solver", Solver.ToResoniteReference(context));
+members.Add("PositionTarget", PositionTarget.ToResoniteReference(context));
+members.Add("RotationTarget", RotationTarget.ToResoniteReference(context));
+members.Add("Weight", Weight.ToResoniteReference(context));
+members.Add("_grabber", _grabber.ToResoniteReference(context));
+members.Add("_grabbingUser", _grabbingUser.ToResoniteReference(context));
+members.Add("_holdSlot", _holdSlot.ToResoniteReference(context));
 members.Add("_posOffset", _posOffset.ToResoniteLinkField());
 members.Add("_rotOffset", _rotOffset.ToResoniteLinkField());
 }

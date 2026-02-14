@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.TextureRefEditor
-// Generated on: pátek 13. února 2026 23:23:18
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:48
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -30,17 +30,18 @@ public global::FrooxEngine.IField<global::System.String> _referenceText;
 public global::FrooxEngine.IField<global::System.String> _infoText;
 public global::System.Boolean _isNormalMap;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
-members.Add("_targetRef", new ResoniteLink.Reference() { });
-members.Add("_drive", new ResoniteLink.Reference() { });
-members.Add("_clearReferenceButton", new ResoniteLink.Reference() { });
-members.Add("_openInspectorButton", new ResoniteLink.Reference() { });
-members.Add("_copyTextureButton", new ResoniteLink.Reference() { });
-members.Add("_pasteTextureButton", new ResoniteLink.Reference() { });
-members.Add("_referenceText", new ResoniteLink.Reference() { });
-members.Add("_infoText", new ResoniteLink.Reference() { });
+    base.CollectMembers(members, context);
+members.Add("_targetRef", _targetRef.ToResoniteReference(context));
+members.Add("_drive", _drive.ToResoniteReference(context));
+members.Add("_clearReferenceButton", _clearReferenceButton.ToResoniteReference(context));
+members.Add("_openInspectorButton", _openInspectorButton.ToResoniteReference(context));
+members.Add("_copyTextureButton", _copyTextureButton.ToResoniteReference(context));
+members.Add("_pasteTextureButton", _pasteTextureButton.ToResoniteReference(context));
+members.Add("_referenceText", _referenceText.ToResoniteReference(context));
+members.Add("_infoText", _infoText.ToResoniteReference(context));
 members.Add("_isNormalMap", _isNormalMap.ToResoniteLinkField());
 }
 

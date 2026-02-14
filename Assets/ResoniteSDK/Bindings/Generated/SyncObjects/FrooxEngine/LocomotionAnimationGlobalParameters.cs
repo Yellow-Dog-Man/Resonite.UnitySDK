@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.LocomotionAnimationGlobalParameters
-// Generated on: pátek 13. února 2026 23:23:14
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:43
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -122,9 +122,10 @@ public global::System.Single FloatingFingerCurlVariationSpeed;
 public global::System.Single FloatingFingerCurlSpeedMagnitude;
 public global::System.Single FloatingFingerCurlSpeedReference;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
+    base.CollectMembers(members, context);
 members.Add("MinimumTravelSpeed", MinimumTravelSpeed.ToResoniteLinkField());
 members.Add("TargetPosChangeSpeed", TargetPosChangeSpeed.ToResoniteLinkField());
 members.Add("MinFullTravelDistanceSpeed", MinFullTravelDistanceSpeed.ToResoniteLinkField());
@@ -207,7 +208,7 @@ members.Add("HeadSwayMaxSpeed", HeadSwayMaxSpeed.ToResoniteLinkField());
 members.Add("HeadSwaySpeedSpeed", HeadSwaySpeedSpeed.ToResoniteLinkField());
 members.Add("HeadMaxLookDirectionAngle", HeadMaxLookDirectionAngle.ToResoniteLinkField());
 members.Add("HeadLookSpeed", HeadLookSpeed.ToResoniteLinkField());
-members.Add("InAirFingerBasePose", new ResoniteLink.Reference() { });
+members.Add("InAirFingerBasePose", InAirFingerBasePose.ToResoniteReference(context));
 members.Add("InAirFingerCurlOffset", InAirFingerCurlOffset.ToResoniteLinkField());
 members.Add("InAirFingerCurlSwayMagnitude", InAirFingerCurlSwayMagnitude.ToResoniteLinkField());
 members.Add("InAirFingerCurlSwaySpeed", InAirFingerCurlSwaySpeed.ToResoniteLinkField());
@@ -217,7 +218,7 @@ members.Add("InAirFingerUpwardsSplayMagnitude", InAirFingerUpwardsSplayMagnitude
 members.Add("InAirFingerUpwardsVelocityReference", InAirFingerUpwardsVelocityReference.ToResoniteLinkField());
 members.Add("InAirFingerDownwardsSplayMagnitude", InAirFingerDownwardsSplayMagnitude.ToResoniteLinkField());
 members.Add("InAirFingerDownwardsVelocityReference", InAirFingerDownwardsVelocityReference.ToResoniteLinkField());
-members.Add("FloatingFingerBasePose", new ResoniteLink.Reference() { });
+members.Add("FloatingFingerBasePose", FloatingFingerBasePose.ToResoniteReference(context));
 members.Add("FloatingFingerCurlOffset", FloatingFingerCurlOffset.ToResoniteLinkField());
 members.Add("FloatingFingerSplayOffset", FloatingFingerSplayOffset.ToResoniteLinkField());
 members.Add("FloatingFingerCurlSwayMagnitude", FloatingFingerCurlSwayMagnitude.ToResoniteLinkField());

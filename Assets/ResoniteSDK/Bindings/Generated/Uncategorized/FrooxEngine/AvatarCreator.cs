@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.AvatarCreator
-// Generated on: pátek 13. února 2026 23:23:12
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:41
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -48,21 +48,22 @@ public global::System.Single _scale;
 public global::FrooxEngine.IField<global::System.Boolean> _protectAvatarEnabled;
 public global::FrooxEngine.IField<global::System.Boolean> _createEnabled;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
-members.Add("_headsetPoint", new ResoniteLink.Reference() { });
-members.Add("_leftPoint", new ResoniteLink.Reference() { });
-members.Add("_rightPoint", new ResoniteLink.Reference() { });
-members.Add("_leftFootPoint", new ResoniteLink.Reference() { });
-members.Add("_rightFootPoint", new ResoniteLink.Reference() { });
-members.Add("_pelvisPoint", new ResoniteLink.Reference() { });
-members.Add("_headsetReference", new ResoniteLink.Reference() { });
-members.Add("_pelvisReference", new ResoniteLink.Reference() { });
-members.Add("_leftReference", new ResoniteLink.Reference() { });
-members.Add("_rightReference", new ResoniteLink.Reference() { });
-members.Add("_leftFootReference", new ResoniteLink.Reference() { });
-members.Add("_rightFootReference", new ResoniteLink.Reference() { });
+    base.CollectMembers(members, context);
+members.Add("_headsetPoint", _headsetPoint.ToResoniteReference(context));
+members.Add("_leftPoint", _leftPoint.ToResoniteReference(context));
+members.Add("_rightPoint", _rightPoint.ToResoniteReference(context));
+members.Add("_leftFootPoint", _leftFootPoint.ToResoniteReference(context));
+members.Add("_rightFootPoint", _rightFootPoint.ToResoniteReference(context));
+members.Add("_pelvisPoint", _pelvisPoint.ToResoniteReference(context));
+members.Add("_headsetReference", _headsetReference.ToResoniteReference(context));
+members.Add("_pelvisReference", _pelvisReference.ToResoniteReference(context));
+members.Add("_leftReference", _leftReference.ToResoniteReference(context));
+members.Add("_rightReference", _rightReference.ToResoniteReference(context));
+members.Add("_leftFootReference", _leftFootReference.ToResoniteReference(context));
+members.Add("_rightFootReference", _rightFootReference.ToResoniteReference(context));
 members.Add("_initialized", _initialized.ToResoniteLinkField());
 members.Add("_showAnchors", _showAnchors.ToResoniteLinkField());
 members.Add("_useSymmetry", _useSymmetry.ToResoniteLinkField());
@@ -76,11 +77,11 @@ members.Add("_canProtect", _canProtect.ToResoniteLinkField());
 members.Add("_symmetrySetup", _symmetrySetup.ToResoniteLinkField());
 members.Add("_anchors", new ResoniteLink.SyncList()
 {
-    Elements = _anchors.ConvertList(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers() })
+    Elements = _anchors.ConvertList(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers(context) })
 });
 members.Add("_scale", _scale.ToResoniteLinkField());
-members.Add("_protectAvatarEnabled", new ResoniteLink.Reference() { });
-members.Add("_createEnabled", new ResoniteLink.Reference() { });
+members.Add("_protectAvatarEnabled", _protectAvatarEnabled.ToResoniteReference(context));
+members.Add("_createEnabled", _createEnabled.ToResoniteReference(context));
 }
 
 }

@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.DynamicVisemeDriver+TargetDriver
-// Generated on: pátek 13. února 2026 23:23:04
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:33
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -25,13 +25,14 @@ public partial class TargetDriver : global::FrooxEngine.SyncObject
     public global::FrooxEngine.IField<global::System.Single> Target;
 public System.Collections.Generic.List<global::FrooxEngine.DynamicVisemeDriver.VisemeSource> Sources;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
-members.Add("Target", new ResoniteLink.Reference() { });
+    base.CollectMembers(members, context);
+members.Add("Target", Target.ToResoniteReference(context));
 members.Add("Sources", new ResoniteLink.SyncList()
 {
-    Elements = Sources.ConvertList(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers() })
+    Elements = Sources.ConvertList(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers(context) })
 });
 }
 

@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.TexturePackingWizard
-// Generated on: pátek 13. února 2026 23:23:21
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:51
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -43,22 +43,23 @@ public global::System.Boolean GenerateMips;
 public global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D> OutputTexture;
 public global::System.Boolean IsProcessing;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
-members.Add("RTexture", new ResoniteLink.Reference() { });
+    base.CollectMembers(members, context);
+members.Add("RTexture", RTexture.ToResoniteReference(context));
 members.Add("RFallbackValue", RFallbackValue.ToResoniteLinkField());
 members.Add("RColorChannel", RColorChannel.ToResoniteLinkField());
 members.Add("RInvert", RInvert.ToResoniteLinkField());
-members.Add("GTexture", new ResoniteLink.Reference() { });
+members.Add("GTexture", GTexture.ToResoniteReference(context));
 members.Add("GFallbackValue", GFallbackValue.ToResoniteLinkField());
 members.Add("GColorChannel", GColorChannel.ToResoniteLinkField());
 members.Add("GInvert", GInvert.ToResoniteLinkField());
-members.Add("BTexture", new ResoniteLink.Reference() { });
+members.Add("BTexture", BTexture.ToResoniteReference(context));
 members.Add("BFallbackValue", BFallbackValue.ToResoniteLinkField());
 members.Add("BColorChannel", BColorChannel.ToResoniteLinkField());
 members.Add("BInvert", BInvert.ToResoniteLinkField());
-members.Add("ATexture", new ResoniteLink.Reference() { });
+members.Add("ATexture", ATexture.ToResoniteReference(context));
 members.Add("AFallbackValue", AFallbackValue.ToResoniteLinkField());
 members.Add("AColorChannel", AColorChannel.ToResoniteLinkField());
 members.Add("AInvert", AInvert.ToResoniteLinkField());
@@ -66,7 +67,7 @@ members.Add("ResolutionOverride", ResolutionOverride.ToResoniteLinkField());
 members.Add("ResolutionSizing", ResolutionSizing.ToResoniteLinkField());
 members.Add("EmptyFallbackResolution", EmptyFallbackResolution.ToResoniteLinkField());
 members.Add("GenerateMips", GenerateMips.ToResoniteLinkField());
-members.Add("OutputTexture", new ResoniteLink.Reference() { });
+members.Add("OutputTexture", OutputTexture.ToResoniteReference(context));
 members.Add("IsProcessing", IsProcessing.ToResoniteLinkField());
 }
 

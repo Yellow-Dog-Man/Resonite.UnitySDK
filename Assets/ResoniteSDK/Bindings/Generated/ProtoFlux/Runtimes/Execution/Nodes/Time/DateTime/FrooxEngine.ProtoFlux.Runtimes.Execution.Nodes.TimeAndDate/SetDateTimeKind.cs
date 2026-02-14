@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [ProtoFluxBindings]FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.TimeAndDate.SetDateTimeKind
-// Generated on: pátek 13. února 2026 23:22:56
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:26
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -23,11 +23,12 @@ public partial class SetDateTimeKind : global::FrooxEngine.ProtoFlux.Runtimes.Ex
     public global::FrooxEngine.ProtoFlux.INodeValueOutput<global::System.DateTime> DateTime;
 public global::FrooxEngine.ProtoFlux.INodeValueOutput<global::System.DateTimeKind> Kind;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
-members.Add("DateTime", new ResoniteLink.Reference() { });
-members.Add("Kind", new ResoniteLink.Reference() { });
+    base.CollectMembers(members, context);
+members.Add("DateTime", DateTime.ToResoniteReference(context));
+members.Add("Kind", Kind.ToResoniteReference(context));
 }
 
 }

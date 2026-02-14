@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.GrabInstancerBase
-// Generated on: pátek 13. února 2026 23:23:10
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:40
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -28,18 +28,19 @@ public global::System.Boolean EnableGrabbable;
 public global::System.Nullable<global::System.Boolean> SetInstancePersistent;
 public System.Collections.Generic.List<global::FrooxEngine.Slot> ExcludedParts;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
-members.Add("Template", new ResoniteLink.Reference() { });
-members.Add("ContainerTemplate", new ResoniteLink.Reference() { });
-members.Add("ContainerTemplateInstanceRoot", new ResoniteLink.Reference() { });
+    base.CollectMembers(members, context);
+members.Add("Template", Template.ToResoniteReference(context));
+members.Add("ContainerTemplate", ContainerTemplate.ToResoniteReference(context));
+members.Add("ContainerTemplateInstanceRoot", ContainerTemplateInstanceRoot.ToResoniteReference(context));
 members.Add("ActivateRoot", ActivateRoot.ToResoniteLinkField());
 members.Add("EnableGrabbable", EnableGrabbable.ToResoniteLinkField());
 members.Add("SetInstancePersistent", SetInstancePersistent.ToResoniteLinkField());
 members.Add("ExcludedParts", new ResoniteLink.SyncList()
 {
-    Elements = ExcludedParts.ConvertList(m => new ResoniteLink.Reference() { })
+    Elements = ExcludedParts.ConvertList(m => m.ToResoniteReference(context))
 });
 }
 

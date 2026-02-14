@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.RadiantDashButton
-// Generated on: pátek 13. února 2026 23:23:13
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:42
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -33,21 +33,22 @@ public global::FrooxEngine.UIX.LayoutElement _layout;
 public global::FrooxEngine.UIX.RectTransform _rootRect;
 public global::FrooxEngine.UIX.RectTransform _iconRect;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
-members.Add("Dash", new ResoniteLink.Reference() { });
-members.Add("Screen", new ResoniteLink.Reference() { });
-members.Add("_switchingEnabled", new ResoniteLink.Reference() { });
-members.Add("_screenEnabled", new ResoniteLink.Reference() { });
-members.Add("_currentScreen", new ResoniteLink.Reference() { });
-members.Add("_button", new ResoniteLink.Reference() { });
-members.Add("_text", new ResoniteLink.Reference() { });
-members.Add("_textBg", new ResoniteLink.Reference() { });
-members.Add("_icon", new ResoniteLink.Reference() { });
-members.Add("_layout", new ResoniteLink.Reference() { });
-members.Add("_rootRect", new ResoniteLink.Reference() { });
-members.Add("_iconRect", new ResoniteLink.Reference() { });
+    base.CollectMembers(members, context);
+members.Add("Dash", Dash.ToResoniteReference(context));
+members.Add("Screen", Screen.ToResoniteReference(context));
+members.Add("_switchingEnabled", _switchingEnabled.ToResoniteReference(context));
+members.Add("_screenEnabled", _screenEnabled.ToResoniteReference(context));
+members.Add("_currentScreen", _currentScreen.ToResoniteReference(context));
+members.Add("_button", _button.ToResoniteReference(context));
+members.Add("_text", _text.ToResoniteReference(context));
+members.Add("_textBg", _textBg.ToResoniteReference(context));
+members.Add("_icon", _icon.ToResoniteReference(context));
+members.Add("_layout", _layout.ToResoniteReference(context));
+members.Add("_rootRect", _rootRect.ToResoniteReference(context));
+members.Add("_iconRect", _iconRect.ToResoniteReference(context));
 }
 
 }

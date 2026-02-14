@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.TrackedDevicePositioner
-// Generated on: pátek 13. února 2026 23:23:14
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:43
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -33,21 +33,22 @@ public global::System.Boolean IsSimulated;
 public global::System.Boolean CreateAvatarObjectSlot;
 public global::FrooxEngine.UserPoseController PoseFilter;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
+    base.CollectMembers(members, context);
 members.Add("DeviceIndex", DeviceIndex.ToResoniteLinkField());
 members.Add("CorrespondingBodyNode", CorrespondingBodyNode.ToResoniteLinkField());
 members.Add("AutoBodyNode", AutoBodyNode.ToResoniteLinkField());
 members.Add("AlwaysRenderModel", AlwaysRenderModel.ToResoniteLinkField());
-members.Add("ReferenceModel", new ResoniteLink.Reference() { });
-members.Add("BodyNodeRoot", new ResoniteLink.Reference() { });
-members.Add("ObjectSlot", new ResoniteLink.Reference() { });
+members.Add("ReferenceModel", ReferenceModel.ToResoniteReference(context));
+members.Add("BodyNodeRoot", BodyNodeRoot.ToResoniteReference(context));
+members.Add("ObjectSlot", ObjectSlot.ToResoniteReference(context));
 members.Add("IsTracking", IsTracking.ToResoniteLinkField());
 members.Add("IsActive", IsActive.ToResoniteLinkField());
 members.Add("IsSimulated", IsSimulated.ToResoniteLinkField());
 members.Add("CreateAvatarObjectSlot", CreateAvatarObjectSlot.ToResoniteLinkField());
-members.Add("PoseFilter", new ResoniteLink.Reference() { });
+members.Add("PoseFilter", PoseFilter.ToResoniteReference(context));
 }
 
 }

@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [ProtoFluxBindings]FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Rendering.BakeReflectionProbe
-// Generated on: pátek 13. února 2026 23:22:52
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:23
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -26,13 +26,14 @@ public global::FrooxEngine.ProtoFlux.INodeOperation OnBakeFail;
 public global::FrooxEngine.ProtoFlux.INodeOperation OnBakeComplete;
 public global::FrooxEngine.ProtoFlux.NodeObjectOutput<System.Uri> BakedCubemapURL;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
-members.Add("Probe", new ResoniteLink.Reference() { });
-members.Add("OnBakeStart", new ResoniteLink.Reference() { });
-members.Add("OnBakeFail", new ResoniteLink.Reference() { });
-members.Add("OnBakeComplete", new ResoniteLink.Reference() { });
+    base.CollectMembers(members, context);
+members.Add("Probe", Probe.ToResoniteReference(context));
+members.Add("OnBakeStart", OnBakeStart.ToResoniteReference(context));
+members.Add("OnBakeFail", OnBakeFail.ToResoniteReference(context));
+members.Add("OnBakeComplete", OnBakeComplete.ToResoniteReference(context));
 members.Add("BakedCubemapURL", new ResoniteLink.EmptyElement());
 }
 

@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [ProtoFluxBindings]FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.Color.HSV_ToColor
-// Generated on: pátek 13. února 2026 23:22:20
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:57:48
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -24,12 +24,13 @@ public partial class HSV_ToColor : global::FrooxEngine.ProtoFlux.Runtimes.Execut
 public global::FrooxEngine.ProtoFlux.INodeValueOutput<global::System.Single> S;
 public global::FrooxEngine.ProtoFlux.INodeValueOutput<global::System.Single> V;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
-members.Add("H", new ResoniteLink.Reference() { });
-members.Add("S", new ResoniteLink.Reference() { });
-members.Add("V", new ResoniteLink.Reference() { });
+    base.CollectMembers(members, context);
+members.Add("H", H.ToResoniteReference(context));
+members.Add("S", S.ToResoniteReference(context));
+members.Add("V", V.ToResoniteReference(context));
 }
 
 }

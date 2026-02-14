@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.VolumeMeterBase
-// Generated on: pátek 13. února 2026 23:21:41
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:57:08
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -25,13 +25,14 @@ public global::System.Single Power;
 public global::FrooxEngine.VolumeMeterMethod Method;
 public global::FrooxEngine.IWorldAudioDataSource Source;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
+    base.CollectMembers(members, context);
 members.Add("Smoothing", Smoothing.ToResoniteLinkField());
 members.Add("Power", Power.ToResoniteLinkField());
 members.Add("Method", Method.ToResoniteLinkField());
-members.Add("Source", new ResoniteLink.Reference() { });
+members.Add("Source", Source.ToResoniteReference(context));
 }
 
 }

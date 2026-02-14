@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.CommonAvatar.AvatarPoseNode
-// Generated on: pátek 13. února 2026 23:23:14
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:44
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -35,9 +35,10 @@ public global::FrooxEngine.IField<UnityEngine.Quaternion> _rotation;
 public global::FrooxEngine.IField<UnityEngine.Vector3> _scale;
 public global::FrooxEngine.IField<global::System.Boolean> _active;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
+    base.CollectMembers(members, context);
 members.Add("Node", Node.ToResoniteLinkField());
 members.Add("EquipOrderPriority", EquipOrderPriority.ToResoniteLinkField());
 members.Add("RunAfterInputUpdate", RunAfterInputUpdate.ToResoniteLinkField());
@@ -49,12 +50,12 @@ members.Add("IsTracking", IsTracking.ToResoniteLinkField());
 members.Add("SourceIsTracking", SourceIsTracking.ToResoniteLinkField());
 members.Add("SourceIsActive", SourceIsActive.ToResoniteLinkField());
 members.Add("SourceIsSimulated", SourceIsSimulated.ToResoniteLinkField());
-members.Add("_objectSlot", new ResoniteLink.Reference() { });
-members.Add("_source", new ResoniteLink.Reference() { });
-members.Add("_position", new ResoniteLink.Reference() { });
-members.Add("_rotation", new ResoniteLink.Reference() { });
-members.Add("_scale", new ResoniteLink.Reference() { });
-members.Add("_active", new ResoniteLink.Reference() { });
+members.Add("_objectSlot", _objectSlot.ToResoniteReference(context));
+members.Add("_source", _source.ToResoniteReference(context));
+members.Add("_position", _position.ToResoniteReference(context));
+members.Add("_rotation", _rotation.ToResoniteReference(context));
+members.Add("_scale", _scale.ToResoniteReference(context));
+members.Add("_active", _active.ToResoniteReference(context));
 }
 
 }

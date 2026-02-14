@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.WireframeMaterial
-// Generated on: pátek 13. února 2026 23:21:34
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:56:57
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -41,9 +41,10 @@ public global::System.Int32 RenderQueue;
 public global::FrooxEngine.IAssetProvider<global::FrooxEngine.Shader> _regular;
 public global::FrooxEngine.IAssetProvider<global::FrooxEngine.Shader> _regularDoubleSided;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
+    base.CollectMembers(members, context);
 members.Add("Thickness", Thickness.ToResoniteLinkField());
 members.Add("ScreenSpace", ScreenSpace.ToResoniteLinkField());
 members.Add("LineColor", LineColor.ToResoniteLinkField());
@@ -56,14 +57,14 @@ members.Add("FillFarColor", FillFarColor.ToResoniteLinkField());
 members.Add("InnerLineFarColor", InnerLineFarColor.ToResoniteLinkField());
 members.Add("InnerFillFarColor", InnerFillFarColor.ToResoniteLinkField());
 members.Add("Exp", Exp.ToResoniteLinkField());
-members.Add("Texture", new ResoniteLink.Reference() { });
+members.Add("Texture", Texture.ToResoniteReference(context));
 members.Add("ZWrite", ZWrite.ToResoniteLinkField());
 members.Add("DoubleSided", DoubleSided.ToResoniteLinkField());
 members.Add("OffsetFactor", OffsetFactor.ToResoniteLinkField());
 members.Add("OffsetUnits", OffsetUnits.ToResoniteLinkField());
 members.Add("RenderQueue", RenderQueue.ToResoniteLinkField());
-members.Add("_regular", new ResoniteLink.Reference() { });
-members.Add("_regularDoubleSided", new ResoniteLink.Reference() { });
+members.Add("_regular", _regular.ToResoniteReference(context));
+members.Add("_regularDoubleSided", _regularDoubleSided.ToResoniteReference(context));
 }
 
 }

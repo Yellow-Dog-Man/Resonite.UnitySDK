@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.VolumeTranslationGizmo
-// Generated on: pátek 13. února 2026 23:23:18
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:48
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -30,18 +30,19 @@ public global::System.Boolean CreateUndoSteps;
 public global::FrooxEngine.IField<UnityEngine.Vector3> _cubeSize;
 public global::FrooxEngine.IField<UnityEngine.Vector3> _colliderSize;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
-members.Add("PointSpace", new ResoniteLink.SyncObject() { Members = PointSpace.CollectMembers() });
-members.Add("TargetPoint", new ResoniteLink.Reference() { });
+    base.CollectMembers(members, context);
+members.Add("PointSpace", new ResoniteLink.SyncObject() { Members = PointSpace.CollectMembers(context) });
+members.Add("TargetPoint", TargetPoint.ToResoniteReference(context));
 members.Add("UseCustomVisual", UseCustomVisual.ToResoniteLinkField());
-members.Add("_customVisualRoot", new ResoniteLink.Reference() { });
-members.Add("_visualRoot", new ResoniteLink.Reference() { });
+members.Add("_customVisualRoot", _customVisualRoot.ToResoniteReference(context));
+members.Add("_visualRoot", _visualRoot.ToResoniteReference(context));
 members.Add("CubeSize", CubeSize.ToResoniteLinkField());
 members.Add("CreateUndoSteps", CreateUndoSteps.ToResoniteLinkField());
-members.Add("_cubeSize", new ResoniteLink.Reference() { });
-members.Add("_colliderSize", new ResoniteLink.Reference() { });
+members.Add("_cubeSize", _cubeSize.ToResoniteReference(context));
+members.Add("_colliderSize", _colliderSize.ToResoniteReference(context));
 }
 
 }

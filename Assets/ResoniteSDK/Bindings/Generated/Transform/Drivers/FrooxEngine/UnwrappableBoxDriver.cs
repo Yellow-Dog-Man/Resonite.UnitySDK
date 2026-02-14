@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.UnwrappableBoxDriver
-// Generated on: pátek 13. února 2026 23:23:10
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:39
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -45,33 +45,34 @@ public global::FrooxEngine.IField<UnityEngine.Vector3> _side3contentScale;
 public global::FrooxEngine.IField<UnityEngine.Vector3> _bottomContentScale;
 public global::FrooxEngine.IField<UnityEngine.Vector3> _topContentScale;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
+    base.CollectMembers(members, context);
 members.Add("Unwrap", Unwrap.ToResoniteLinkField());
 members.Add("SideSize", SideSize.ToResoniteLinkField());
 members.Add("ScaleContent", ScaleContent.ToResoniteLinkField());
-members.Add("_side0rotation", new ResoniteLink.Reference() { });
-members.Add("_side1rotation", new ResoniteLink.Reference() { });
-members.Add("_side2rotation", new ResoniteLink.Reference() { });
-members.Add("_side3rotation", new ResoniteLink.Reference() { });
-members.Add("_topRotation", new ResoniteLink.Reference() { });
-members.Add("_side0offset", new ResoniteLink.Reference() { });
-members.Add("_side1offset", new ResoniteLink.Reference() { });
-members.Add("_side2offset", new ResoniteLink.Reference() { });
-members.Add("_side3offset", new ResoniteLink.Reference() { });
-members.Add("_topOffset", new ResoniteLink.Reference() { });
-members.Add("_side0contentOffset", new ResoniteLink.Reference() { });
-members.Add("_side1contentOffset", new ResoniteLink.Reference() { });
-members.Add("_side2contentOffset", new ResoniteLink.Reference() { });
-members.Add("_side3contentOffset", new ResoniteLink.Reference() { });
-members.Add("_topContentOffset", new ResoniteLink.Reference() { });
-members.Add("_side0contentScale", new ResoniteLink.Reference() { });
-members.Add("_side1contentScale", new ResoniteLink.Reference() { });
-members.Add("_side2contentScale", new ResoniteLink.Reference() { });
-members.Add("_side3contentScale", new ResoniteLink.Reference() { });
-members.Add("_bottomContentScale", new ResoniteLink.Reference() { });
-members.Add("_topContentScale", new ResoniteLink.Reference() { });
+members.Add("_side0rotation", _side0rotation.ToResoniteReference(context));
+members.Add("_side1rotation", _side1rotation.ToResoniteReference(context));
+members.Add("_side2rotation", _side2rotation.ToResoniteReference(context));
+members.Add("_side3rotation", _side3rotation.ToResoniteReference(context));
+members.Add("_topRotation", _topRotation.ToResoniteReference(context));
+members.Add("_side0offset", _side0offset.ToResoniteReference(context));
+members.Add("_side1offset", _side1offset.ToResoniteReference(context));
+members.Add("_side2offset", _side2offset.ToResoniteReference(context));
+members.Add("_side3offset", _side3offset.ToResoniteReference(context));
+members.Add("_topOffset", _topOffset.ToResoniteReference(context));
+members.Add("_side0contentOffset", _side0contentOffset.ToResoniteReference(context));
+members.Add("_side1contentOffset", _side1contentOffset.ToResoniteReference(context));
+members.Add("_side2contentOffset", _side2contentOffset.ToResoniteReference(context));
+members.Add("_side3contentOffset", _side3contentOffset.ToResoniteReference(context));
+members.Add("_topContentOffset", _topContentOffset.ToResoniteReference(context));
+members.Add("_side0contentScale", _side0contentScale.ToResoniteReference(context));
+members.Add("_side1contentScale", _side1contentScale.ToResoniteReference(context));
+members.Add("_side2contentScale", _side2contentScale.ToResoniteReference(context));
+members.Add("_side3contentScale", _side3contentScale.ToResoniteReference(context));
+members.Add("_bottomContentScale", _bottomContentScale.ToResoniteReference(context));
+members.Add("_topContentScale", _topContentScale.ToResoniteReference(context));
 }
 
 }

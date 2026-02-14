@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.DroneCamera
-// Generated on: pátek 13. února 2026 23:23:20
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:50
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -68,21 +68,22 @@ public global::System.Single MaxFov;
 public global::System.Single MinChangeFovTime;
 public global::System.Single MaxChangeFovTime;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
-members.Add("CameraUser", new ResoniteLink.SyncObject() { Members = CameraUser.CollectMembers() });
+    base.CollectMembers(members, context);
+members.Add("CameraUser", new ResoniteLink.SyncObject() { Members = CameraUser.CollectMembers(context) });
 members.Add("SimulateOnHost", SimulateOnHost.ToResoniteLinkField());
 members.Add("ManualControl", ManualControl.ToResoniteLinkField());
 members.Add("SlowSpeed", SlowSpeed.ToResoniteLinkField());
 members.Add("Speed", Speed.ToResoniteLinkField());
 members.Add("FastSpeed", FastSpeed.ToResoniteLinkField());
 members.Add("MouseSensitivity", MouseSensitivity.ToResoniteLinkField());
-members.Add("FieldOfViewSource", new ResoniteLink.Reference() { });
+members.Add("FieldOfViewSource", FieldOfViewSource.ToResoniteReference(context));
 members.Add("FieldOfView", FieldOfView.ToResoniteLinkField());
-members.Add("AspectRatioSource", new ResoniteLink.Reference() { });
+members.Add("AspectRatioSource", AspectRatioSource.ToResoniteReference(context));
 members.Add("AspectRatio", AspectRatio.ToResoniteLinkField());
-members.Add("FollowUser", new ResoniteLink.Reference() { });
+members.Add("FollowUser", FollowUser.ToResoniteReference(context));
 members.Add("ControllerRejectDistance", ControllerRejectDistance.ToResoniteLinkField());
 members.Add("GroupSearchRadius", GroupSearchRadius.ToResoniteLinkField());
 members.Add("BiggestGroupSearchInterval", BiggestGroupSearchInterval.ToResoniteLinkField());

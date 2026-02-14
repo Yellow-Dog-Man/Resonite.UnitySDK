@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.PhotoCaptureManager
-// Generated on: pátek 13. února 2026 23:23:17
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:46
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -59,9 +59,10 @@ public global::FrooxEngine.AudioOutput _timerCountdownSlowOutput;
 public global::FrooxEngine.AudioOutput _timerCountdownFastOutput;
 public global::FrooxEngine.Slot _timerRoot;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
+    base.CollectMembers(members, context);
 members.Add("FingerGestureEnabled", FingerGestureEnabled.ToResoniteLinkField());
 members.Add("MinDistance", MinDistance.ToResoniteLinkField());
 members.Add("MaxDistance", MaxDistance.ToResoniteLinkField());
@@ -77,29 +78,29 @@ members.Add("HideAllNameplates", HideAllNameplates.ToResoniteLinkField());
 members.Add("EncodeFormat", EncodeFormat.ToResoniteLinkField());
 members.Add("DebugGesture", DebugGesture.ToResoniteLinkField());
 members.Add("_timerActive", _timerActive.ToResoniteLinkField());
-members.Add("_originalParent", new ResoniteLink.Reference() { });
+members.Add("_originalParent", _originalParent.ToResoniteReference(context));
 members.Add("_originalPosition", _originalPosition.ToResoniteLinkField());
 members.Add("_originalRotation", _originalRotation.ToResoniteLinkField());
 members.Add("_originalScale", _originalScale.ToResoniteLinkField());
-members.Add("_root", new ResoniteLink.Reference() { });
-members.Add("_previewRoot", new ResoniteLink.Reference() { });
-members.Add("_renderTex", new ResoniteLink.Reference() { });
-members.Add("_quad", new ResoniteLink.Reference() { });
-members.Add("_frame", new ResoniteLink.Reference() { });
-members.Add("_cameraRoot", new ResoniteLink.Reference() { });
-members.Add("_cameraPos", new ResoniteLink.Reference() { });
-members.Add("_cameraRot", new ResoniteLink.Reference() { });
-members.Add("_camera", new ResoniteLink.Reference() { });
-members.Add("_frameMaterial", new ResoniteLink.Reference() { });
-members.Add("_timerTextRoot", new ResoniteLink.Reference() { });
-members.Add("_timerText", new ResoniteLink.Reference() { });
-members.Add("_shutterClip", new ResoniteLink.Reference() { });
-members.Add("_timerStartClip", new ResoniteLink.Reference() { });
-members.Add("_timerCountdownSlowPlayer", new ResoniteLink.Reference() { });
-members.Add("_timerCountdownFastPlayer", new ResoniteLink.Reference() { });
-members.Add("_timerCountdownSlowOutput", new ResoniteLink.Reference() { });
-members.Add("_timerCountdownFastOutput", new ResoniteLink.Reference() { });
-members.Add("_timerRoot", new ResoniteLink.Reference() { });
+members.Add("_root", _root.ToResoniteReference(context));
+members.Add("_previewRoot", _previewRoot.ToResoniteReference(context));
+members.Add("_renderTex", _renderTex.ToResoniteReference(context));
+members.Add("_quad", _quad.ToResoniteReference(context));
+members.Add("_frame", _frame.ToResoniteReference(context));
+members.Add("_cameraRoot", _cameraRoot.ToResoniteReference(context));
+members.Add("_cameraPos", _cameraPos.ToResoniteReference(context));
+members.Add("_cameraRot", _cameraRot.ToResoniteReference(context));
+members.Add("_camera", _camera.ToResoniteReference(context));
+members.Add("_frameMaterial", _frameMaterial.ToResoniteReference(context));
+members.Add("_timerTextRoot", _timerTextRoot.ToResoniteReference(context));
+members.Add("_timerText", _timerText.ToResoniteReference(context));
+members.Add("_shutterClip", _shutterClip.ToResoniteReference(context));
+members.Add("_timerStartClip", _timerStartClip.ToResoniteReference(context));
+members.Add("_timerCountdownSlowPlayer", _timerCountdownSlowPlayer.ToResoniteReference(context));
+members.Add("_timerCountdownFastPlayer", _timerCountdownFastPlayer.ToResoniteReference(context));
+members.Add("_timerCountdownSlowOutput", _timerCountdownSlowOutput.ToResoniteReference(context));
+members.Add("_timerCountdownFastOutput", _timerCountdownFastOutput.ToResoniteReference(context));
+members.Add("_timerRoot", _timerRoot.ToResoniteReference(context));
 }
 
 }

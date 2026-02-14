@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.PBS_Intersect
-// Generated on: pátek 13. února 2026 23:21:33
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:56:56
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -40,9 +40,10 @@ public global::System.Single OffsetFactor;
 public global::System.Single OffsetUnits;
 public global::System.Int32 RenderQueue;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
+    base.CollectMembers(members, context);
 members.Add("BeginTransitionStart", BeginTransitionStart.ToResoniteLinkField());
 members.Add("BeginTransitionEnd", BeginTransitionEnd.ToResoniteLinkField());
 members.Add("EndTransitionStart", EndTransitionStart.ToResoniteLinkField());
@@ -51,13 +52,13 @@ members.Add("TextureScale", TextureScale.ToResoniteLinkField());
 members.Add("TextureOffset", TextureOffset.ToResoniteLinkField());
 members.Add("AlbedoColor", AlbedoColor.ToResoniteLinkField());
 members.Add("IntersectAlbedoColor", IntersectAlbedoColor.ToResoniteLinkField());
-members.Add("AlbedoTexture", new ResoniteLink.Reference() { });
+members.Add("AlbedoTexture", AlbedoTexture.ToResoniteReference(context));
 members.Add("EmissiveColor", EmissiveColor.ToResoniteLinkField());
 members.Add("IntersectEmissiveColor", IntersectEmissiveColor.ToResoniteLinkField());
-members.Add("EmissiveMap", new ResoniteLink.Reference() { });
-members.Add("NormalMap", new ResoniteLink.Reference() { });
+members.Add("EmissiveMap", EmissiveMap.ToResoniteReference(context));
+members.Add("NormalMap", NormalMap.ToResoniteReference(context));
 members.Add("NormalScale", NormalScale.ToResoniteLinkField());
-members.Add("OcclusionMap", new ResoniteLink.Reference() { });
+members.Add("OcclusionMap", OcclusionMap.ToResoniteReference(context));
 members.Add("Culling", Culling.ToResoniteLinkField());
 members.Add("OffsetFactor", OffsetFactor.ToResoniteLinkField());
 members.Add("OffsetUnits", OffsetUnits.ToResoniteLinkField());

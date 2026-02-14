@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [ProtoFluxBindings]FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.Operators.Unpack_Int2
-// Generated on: pátek 13. února 2026 23:22:51
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:21
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -24,10 +24,11 @@ public partial class Unpack_Int2 : global::FrooxEngine.ProtoFlux.Runtimes.Execut
 public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Int32> X;
 public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Int32> Y;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
-members.Add("V", new ResoniteLink.Reference() { });
+    base.CollectMembers(members, context);
+members.Add("V", V.ToResoniteReference(context));
 members.Add("X", new ResoniteLink.EmptyElement());
 members.Add("Y", new ResoniteLink.EmptyElement());
 }

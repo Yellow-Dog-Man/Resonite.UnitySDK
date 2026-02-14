@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.CommonAvatar.AvatarObjectSlot
-// Generated on: pátek 13. února 2026 23:22:19
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:57:47
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -32,11 +32,12 @@ public global::System.Boolean DoNotSimulate;
 public global::FrooxEngine.PrioritySyncRefList<global::FrooxEngine.CommonAvatar.IAvatarPoseFilter> Filters;
 public global::FrooxEngine.CommonAvatar.AvatarPoseSmoothLerp _autoSmoothing;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
+    base.CollectMembers(members, context);
 members.Add("Priority", Priority.ToResoniteLinkField());
-members.Add("Equipped", new ResoniteLink.Reference() { });
+members.Add("Equipped", Equipped.ToResoniteReference(context));
 members.Add("Node", Node.ToResoniteLinkField());
 members.Add("IsTracking", IsTracking.ToResoniteLinkField());
 members.Add("IsActive", IsActive.ToResoniteLinkField());
@@ -44,8 +45,8 @@ members.Add("IsSimulated", IsSimulated.ToResoniteLinkField());
 members.Add("DriveActive", DriveActive.ToResoniteLinkField());
 members.Add("DriveScale", DriveScale.ToResoniteLinkField());
 members.Add("DoNotSimulate", DoNotSimulate.ToResoniteLinkField());
-members.Add("Filters", new ResoniteLink.SyncObject() { Members = Filters.CollectMembers() });
-members.Add("_autoSmoothing", new ResoniteLink.Reference() { });
+members.Add("Filters", new ResoniteLink.SyncObject() { Members = Filters.CollectMembers(context) });
+members.Add("_autoSmoothing", _autoSmoothing.ToResoniteReference(context));
 }
 
 }

@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.LineSegment
-// Generated on: pátek 13. února 2026 23:23:16
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:45
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -32,20 +32,21 @@ public global::FrooxEngine.IField<UnityEngine.Vector3> _offset;
 public global::FrooxEngine.IField<UnityEngine.Quaternion> _rotation;
 public global::FrooxEngine.IField<UnityEngine.Vector3> _visualScale;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
+    base.CollectMembers(members, context);
 members.Add("Radius", Radius.ToResoniteLinkField());
 members.Add("Sides", Sides.ToResoniteLinkField());
 members.Add("Point0", Point0.ToResoniteLinkField());
 members.Add("Point1", Point1.ToResoniteLinkField());
-members.Add("Anchor0", new ResoniteLink.Reference() { });
-members.Add("Anchor1", new ResoniteLink.Reference() { });
-members.Add("_cylinder", new ResoniteLink.Reference() { });
-members.Add("_collider", new ResoniteLink.Reference() { });
-members.Add("_offset", new ResoniteLink.Reference() { });
-members.Add("_rotation", new ResoniteLink.Reference() { });
-members.Add("_visualScale", new ResoniteLink.Reference() { });
+members.Add("Anchor0", Anchor0.ToResoniteReference(context));
+members.Add("Anchor1", Anchor1.ToResoniteReference(context));
+members.Add("_cylinder", _cylinder.ToResoniteReference(context));
+members.Add("_collider", _collider.ToResoniteReference(context));
+members.Add("_offset", _offset.ToResoniteReference(context));
+members.Add("_rotation", _rotation.ToResoniteReference(context));
+members.Add("_visualScale", _visualScale.ToResoniteReference(context));
 }
 
 }

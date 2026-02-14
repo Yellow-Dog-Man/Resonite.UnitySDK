@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [ProtoFluxBindings]FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Interaction.ButtonEvents
-// Generated on: pátek 13. února 2026 23:22:31
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:57:59
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -32,16 +32,17 @@ public global::FrooxEngine.ProtoFlux.NodeValueOutput<UnityEngine.Vector3> Global
 public global::FrooxEngine.ProtoFlux.NodeValueOutput<UnityEngine.Vector2> LocalPoint;
 public global::FrooxEngine.ProtoFlux.NodeValueOutput<UnityEngine.Vector2> NormalizedPoint;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
-members.Add("Button", new ResoniteLink.Reference() { });
-members.Add("Pressed", new ResoniteLink.Reference() { });
-members.Add("Pressing", new ResoniteLink.Reference() { });
-members.Add("Released", new ResoniteLink.Reference() { });
-members.Add("HoverEnter", new ResoniteLink.Reference() { });
-members.Add("HoverStay", new ResoniteLink.Reference() { });
-members.Add("HoverLeave", new ResoniteLink.Reference() { });
+    base.CollectMembers(members, context);
+members.Add("Button", Button.ToResoniteReference(context));
+members.Add("Pressed", Pressed.ToResoniteReference(context));
+members.Add("Pressing", Pressing.ToResoniteReference(context));
+members.Add("Released", Released.ToResoniteReference(context));
+members.Add("HoverEnter", HoverEnter.ToResoniteReference(context));
+members.Add("HoverStay", HoverStay.ToResoniteReference(context));
+members.Add("HoverLeave", HoverLeave.ToResoniteReference(context));
 members.Add("Source", new ResoniteLink.EmptyElement());
 members.Add("GlobalPoint", new ResoniteLink.EmptyElement());
 members.Add("LocalPoint", new ResoniteLink.EmptyElement());

@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.FileVisual
-// Generated on: pátek 13. února 2026 23:23:20
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:50
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -27,15 +27,16 @@ public global::FrooxEngine.PBS_DualSidedMetallic FillMaterial;
 public global::FrooxEngine.PBS_DualSidedMetallic OutlineMaterial;
 public global::FrooxEngine.PBS_DualSidedMetallic TypeMaterial;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
-members.Add("MetadataSource", new ResoniteLink.Reference() { });
-members.Add("TypeLabel", new ResoniteLink.Reference() { });
-members.Add("NameLabel", new ResoniteLink.Reference() { });
-members.Add("FillMaterial", new ResoniteLink.Reference() { });
-members.Add("OutlineMaterial", new ResoniteLink.Reference() { });
-members.Add("TypeMaterial", new ResoniteLink.Reference() { });
+    base.CollectMembers(members, context);
+members.Add("MetadataSource", MetadataSource.ToResoniteReference(context));
+members.Add("TypeLabel", TypeLabel.ToResoniteReference(context));
+members.Add("NameLabel", NameLabel.ToResoniteReference(context));
+members.Add("FillMaterial", FillMaterial.ToResoniteReference(context));
+members.Add("OutlineMaterial", OutlineMaterial.ToResoniteReference(context));
+members.Add("TypeMaterial", TypeMaterial.ToResoniteReference(context));
 }
 
 }

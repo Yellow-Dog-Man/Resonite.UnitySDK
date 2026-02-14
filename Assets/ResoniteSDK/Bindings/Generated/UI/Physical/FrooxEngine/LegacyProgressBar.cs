@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.LegacyProgressBar
-// Generated on: pátek 13. února 2026 23:21:37
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:57:02
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -35,9 +35,10 @@ public global::FrooxEngine.PBS_RimMetallic _containerMaterial;
 public global::FrooxEngine.IField<UnityEngine.Vector3> _barPosition;
 public global::FrooxEngine.IField<UnityEngine.Vector3> _colliderSize;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
+    base.CollectMembers(members, context);
 members.Add("IsEnabledField", IsEnabledField.ToResoniteLinkField());
 members.Add("Progress", Progress.ToResoniteLinkField());
 members.Add("BarColorField", BarColorField.ToResoniteLinkField());
@@ -46,12 +47,12 @@ members.Add("WidthField", WidthField.ToResoniteLinkField());
 members.Add("HeightField", HeightField.ToResoniteLinkField());
 members.Add("ThicknessField", ThicknessField.ToResoniteLinkField());
 members.Add("SlantField", SlantField.ToResoniteLinkField());
-members.Add("_barMesh", new ResoniteLink.Reference() { });
-members.Add("_containerMesh", new ResoniteLink.Reference() { });
-members.Add("_barMaterial", new ResoniteLink.Reference() { });
-members.Add("_containerMaterial", new ResoniteLink.Reference() { });
-members.Add("_barPosition", new ResoniteLink.Reference() { });
-members.Add("_colliderSize", new ResoniteLink.Reference() { });
+members.Add("_barMesh", _barMesh.ToResoniteReference(context));
+members.Add("_containerMesh", _containerMesh.ToResoniteReference(context));
+members.Add("_barMaterial", _barMaterial.ToResoniteReference(context));
+members.Add("_containerMaterial", _containerMaterial.ToResoniteReference(context));
+members.Add("_barPosition", _barPosition.ToResoniteReference(context));
+members.Add("_colliderSize", _colliderSize.ToResoniteReference(context));
 }
 
 }

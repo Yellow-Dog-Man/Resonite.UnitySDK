@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [ProtoFluxBindings]FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Playback.Wait
-// Generated on: pátek 13. února 2026 23:22:41
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:10
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -24,12 +24,13 @@ public partial class Wait : global::FrooxEngine.ProtoFlux.Runtimes.Execution.Asy
 public global::FrooxEngine.ProtoFlux.INodeOperation OnWaitBegin;
 public global::FrooxEngine.ProtoFlux.INodeOperation OnPlaybackFinished;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
-members.Add("Target", new ResoniteLink.Reference() { });
-members.Add("OnWaitBegin", new ResoniteLink.Reference() { });
-members.Add("OnPlaybackFinished", new ResoniteLink.Reference() { });
+    base.CollectMembers(members, context);
+members.Add("Target", Target.ToResoniteReference(context));
+members.Add("OnWaitBegin", OnWaitBegin.ToResoniteReference(context));
+members.Add("OnPlaybackFinished", OnPlaybackFinished.ToResoniteReference(context));
 }
 
 }

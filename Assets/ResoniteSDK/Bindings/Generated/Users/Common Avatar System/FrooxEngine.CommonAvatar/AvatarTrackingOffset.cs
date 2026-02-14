@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.CommonAvatar.AvatarTrackingOffset
-// Generated on: pátek 13. února 2026 23:23:19
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:49
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -23,11 +23,12 @@ public partial class AvatarTrackingOffset : global::FrooxEngine.Component, globa
     public UnityEngine.Vector3 Offset;
 public global::FrooxEngine.User _user;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
+    base.CollectMembers(members, context);
 members.Add("Offset", Offset.ToResoniteLinkField());
-members.Add("_user", new ResoniteLink.Reference() { });
+members.Add("_user", _user.ToResoniteReference(context));
 }
 
 }

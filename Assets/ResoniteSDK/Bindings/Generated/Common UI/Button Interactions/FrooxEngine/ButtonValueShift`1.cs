@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.ButtonValueShift<>
-// Generated on: pátek 13. února 2026 23:21:38
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:57:03
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -28,10 +28,11 @@ public T Max;
 public global::System.Boolean WrapAround;
 public global::System.Boolean MaxIsExclusive;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
-members.Add("TargetValue", new ResoniteLink.Reference() { });
+    base.CollectMembers(members, context);
+members.Add("TargetValue", TargetValue.ToResoniteReference(context));
 members.Add("Delta", Delta.ToResoniteLinkField());
 members.Add("Min", Min.ToResoniteLinkField());
 members.Add("Max", Max.ToResoniteLinkField());

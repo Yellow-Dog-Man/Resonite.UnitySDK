@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [ProtoFluxBindings]FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.Math.Pow_Double4
-// Generated on: pátek 13. února 2026 23:22:34
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:03
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -23,11 +23,12 @@ public partial class Pow_Double4 : global::FrooxEngine.ProtoFlux.Runtimes.Execut
     public global::FrooxEngine.ProtoFlux.INodeValueOutput<UnityEngine.Vector4Double> N;
 public global::FrooxEngine.ProtoFlux.INodeValueOutput<UnityEngine.Vector4Double> Power;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
-members.Add("N", new ResoniteLink.Reference() { });
-members.Add("Power", new ResoniteLink.Reference() { });
+    base.CollectMembers(members, context);
+members.Add("N", N.ToResoniteReference(context));
+members.Add("Power", Power.ToResoniteReference(context));
 }
 
 }

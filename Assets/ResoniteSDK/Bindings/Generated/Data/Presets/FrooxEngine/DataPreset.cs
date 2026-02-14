@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.DataPreset
-// Generated on: pátek 13. února 2026 23:21:39
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:57:04
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -23,13 +23,14 @@ public partial class DataPreset : global::FrooxEngine.Component, global::FrooxEn
     public global::System.Boolean IsActive;
 public System.Collections.Generic.List<global::FrooxEngine.IDataPresetEntry> Entries;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
+    base.CollectMembers(members, context);
 members.Add("IsActive", IsActive.ToResoniteLinkField());
 members.Add("Entries", new ResoniteLink.SyncList()
 {
-    Elements = Entries.ConvertList(m => new ResoniteLink.Reference() { })
+    Elements = Entries.ConvertList(m => m.ToResoniteReference(context))
 });
 }
 

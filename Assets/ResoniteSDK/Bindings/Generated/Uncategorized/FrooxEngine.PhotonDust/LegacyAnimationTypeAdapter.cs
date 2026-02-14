@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.PhotonDust.LegacyAnimationTypeAdapter
-// Generated on: pátek 13. února 2026 23:23:15
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:45
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -25,13 +25,14 @@ public global::FrooxEngine.IField<global::PhotonDust.TextureSheetAnimationType> 
 public global::FrooxEngine.IValue<UnityEngine.Vector2Int> AnimationTiles;
 public global::FrooxEngine.IField<global::System.Boolean> AnimationEnabled;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
+    base.CollectMembers(members, context);
 members.Add("Source", Source.ToResoniteLinkField());
-members.Add("Target", new ResoniteLink.Reference() { });
-members.Add("AnimationTiles", new ResoniteLink.Reference() { });
-members.Add("AnimationEnabled", new ResoniteLink.Reference() { });
+members.Add("Target", Target.ToResoniteReference(context));
+members.Add("AnimationTiles", AnimationTiles.ToResoniteReference(context));
+members.Add("AnimationEnabled", AnimationEnabled.ToResoniteReference(context));
 }
 
 }

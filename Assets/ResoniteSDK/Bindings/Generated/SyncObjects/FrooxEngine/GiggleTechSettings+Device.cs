@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.GiggleTechSettings+Device
-// Generated on: pátek 13. února 2026 23:23:14
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:44
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -33,9 +33,10 @@ public global::System.Single InitialActivationIntensity;
 public global::FrooxEngine.HapticPointMapping HapticPointMapping;
 public global::System.Int32 HapticPointIndex;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
+    base.CollectMembers(members, context);
 members.Add("IP", IP.ToResoniteLinkField());
 members.Add("IsConnected", IsConnected.ToResoniteLinkField());
 members.Add("UseDevice", UseDevice.ToResoniteLinkField());
@@ -44,7 +45,7 @@ members.Add("CustomName", CustomName.ToResoniteLinkField());
 members.Add("IntensityScale", IntensityScale.ToResoniteLinkField());
 members.Add("MinimumIntensity", MinimumIntensity.ToResoniteLinkField());
 members.Add("InitialActivationIntensity", InitialActivationIntensity.ToResoniteLinkField());
-members.Add("HapticPointMapping", new ResoniteLink.SyncObject() { Members = HapticPointMapping.CollectMembers() });
+members.Add("HapticPointMapping", new ResoniteLink.SyncObject() { Members = HapticPointMapping.CollectMembers(context) });
 members.Add("HapticPointIndex", HapticPointIndex.ToResoniteLinkField());
 }
 

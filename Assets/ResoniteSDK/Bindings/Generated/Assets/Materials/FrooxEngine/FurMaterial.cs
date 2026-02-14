@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.FurMaterial
-// Generated on: pátek 13. února 2026 23:21:32
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:56:55
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -41,9 +41,10 @@ public UnityEngine.Vector4 ForceGlobal;
 public UnityEngine.Vector4 ForceLocal;
 public global::System.Int32 RenderQueue;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
+    base.CollectMembers(members, context);
 members.Add("Color", Color.ToResoniteLinkField());
 members.Add("SpecularColor", SpecularColor.ToResoniteLinkField());
 members.Add("Shininess", Shininess.ToResoniteLinkField());
@@ -55,9 +56,9 @@ members.Add("FurHardness", FurHardness.ToResoniteLinkField());
 members.Add("FurThinness", FurThinness.ToResoniteLinkField());
 members.Add("FurShading", FurShading.ToResoniteLinkField());
 members.Add("FurColoring", FurColoring.ToResoniteLinkField());
-members.Add("Base", new ResoniteLink.Reference() { });
-members.Add("NormalMap", new ResoniteLink.Reference() { });
-members.Add("Noise", new ResoniteLink.Reference() { });
+members.Add("Base", Base.ToResoniteReference(context));
+members.Add("NormalMap", NormalMap.ToResoniteReference(context));
+members.Add("Noise", Noise.ToResoniteReference(context));
 members.Add("TextureScale", TextureScale.ToResoniteLinkField());
 members.Add("TextureOffset", TextureOffset.ToResoniteLinkField());
 members.Add("AlphaCutoff", AlphaCutoff.ToResoniteLinkField());

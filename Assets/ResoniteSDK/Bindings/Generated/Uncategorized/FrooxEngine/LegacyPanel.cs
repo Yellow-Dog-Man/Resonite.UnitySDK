@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.LegacyPanel
-// Generated on: pátek 13. února 2026 23:23:15
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:44
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -55,9 +55,10 @@ public System.Collections.Generic.List<global::FrooxEngine.LegacyPanel.TitleButt
 public global::FrooxEngine.LegacyPanel.TitleButton _highlightedButton;
 public global::FrooxEngine.LegacyPanel.TitleButton _pinButton;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
+    base.CollectMembers(members, context);
 members.Add("ShowHeader", ShowHeader.ToResoniteLinkField());
 members.Add("ShowHandle", ShowHandle.ToResoniteLinkField());
 members.Add("Padding", Padding.ToResoniteLinkField());
@@ -65,42 +66,42 @@ members.Add("ZPadding", ZPadding.ToResoniteLinkField());
 members.Add("Thickness", Thickness.ToResoniteLinkField());
 members.Add("WhiteList", new ResoniteLink.SyncList()
 {
-    Elements = WhiteList.ConvertList(m => new ResoniteLink.Reference() { })
+    Elements = WhiteList.ConvertList(m => m.ToResoniteReference(context))
 });
 members.Add("BlackList", new ResoniteLink.SyncList()
 {
-    Elements = BlackList.ConvertList(m => new ResoniteLink.Reference() { })
+    Elements = BlackList.ConvertList(m => m.ToResoniteReference(context))
 });
 members.Add("Color", Color.ToResoniteLinkField());
-members.Add("_material", new ResoniteLink.Reference() { });
-members.Add("_panelMesh", new ResoniteLink.Reference() { });
-members.Add("_panelPos", new ResoniteLink.Reference() { });
-members.Add("_handleActive", new ResoniteLink.Reference() { });
-members.Add("_headerActive", new ResoniteLink.Reference() { });
-members.Add("_handleMesh", new ResoniteLink.Reference() { });
-members.Add("_handlePos", new ResoniteLink.Reference() { });
-members.Add("_handleColliderSize", new ResoniteLink.Reference() { });
-members.Add("_headerTitleMesh", new ResoniteLink.Reference() { });
-members.Add("_headerButtonMesh", new ResoniteLink.Reference() { });
-members.Add("_headerCollider", new ResoniteLink.Reference() { });
-members.Add("_headerPos", new ResoniteLink.Reference() { });
-members.Add("_headerTitlePos", new ResoniteLink.Reference() { });
+members.Add("_material", _material.ToResoniteReference(context));
+members.Add("_panelMesh", _panelMesh.ToResoniteReference(context));
+members.Add("_panelPos", _panelPos.ToResoniteReference(context));
+members.Add("_handleActive", _handleActive.ToResoniteReference(context));
+members.Add("_headerActive", _headerActive.ToResoniteReference(context));
+members.Add("_handleMesh", _handleMesh.ToResoniteReference(context));
+members.Add("_handlePos", _handlePos.ToResoniteReference(context));
+members.Add("_handleColliderSize", _handleColliderSize.ToResoniteReference(context));
+members.Add("_headerTitleMesh", _headerTitleMesh.ToResoniteReference(context));
+members.Add("_headerButtonMesh", _headerButtonMesh.ToResoniteReference(context));
+members.Add("_headerCollider", _headerCollider.ToResoniteReference(context));
+members.Add("_headerPos", _headerPos.ToResoniteReference(context));
+members.Add("_headerTitlePos", _headerTitlePos.ToResoniteReference(context));
 members.Add("_title", _title.ToResoniteLinkField());
-members.Add("_titleText", new ResoniteLink.Reference() { });
+members.Add("_titleText", _titleText.ToResoniteReference(context));
 members.Add("_indicatePrivate", _indicatePrivate.ToResoniteLinkField());
-members.Add("_titlePos", new ResoniteLink.Reference() { });
-members.Add("_titleBounds", new ResoniteLink.Reference() { });
-members.Add("_contentSlot", new ResoniteLink.Reference() { });
-members.Add("_headerRoot", new ResoniteLink.Reference() { });
-members.Add("_handleAnchorPoint", new ResoniteLink.Reference() { });
-members.Add("_handleAnchorPointPosition", new ResoniteLink.Reference() { });
-members.Add("_userspaceOwner", new ResoniteLink.SyncObject() { Members = _userspaceOwner.CollectMembers() });
+members.Add("_titlePos", _titlePos.ToResoniteReference(context));
+members.Add("_titleBounds", _titleBounds.ToResoniteReference(context));
+members.Add("_contentSlot", _contentSlot.ToResoniteReference(context));
+members.Add("_headerRoot", _headerRoot.ToResoniteReference(context));
+members.Add("_handleAnchorPoint", _handleAnchorPoint.ToResoniteReference(context));
+members.Add("_handleAnchorPointPosition", _handleAnchorPointPosition.ToResoniteReference(context));
+members.Add("_userspaceOwner", new ResoniteLink.SyncObject() { Members = _userspaceOwner.CollectMembers(context) });
 members.Add("_titleButtons", new ResoniteLink.SyncList()
 {
-    Elements = _titleButtons.ConvertList(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers() })
+    Elements = _titleButtons.ConvertList(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers(context) })
 });
-members.Add("_highlightedButton", new ResoniteLink.Reference() { });
-members.Add("_pinButton", new ResoniteLink.Reference() { });
+members.Add("_highlightedButton", _highlightedButton.ToResoniteReference(context));
+members.Add("_pinButton", _pinButton.ToResoniteReference(context));
 }
 
 }

@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.LocomotionAnimationGaitParameters
-// Generated on: pátek 13. února 2026 23:23:14
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:43
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -61,9 +61,10 @@ public global::System.Single HeadVerticalBobOffset;
 public global::System.Single HeadVerticalBobAngle;
 public global::System.Single VerticalHeadAngleOffset;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
+    base.CollectMembers(members, context);
 members.Add("ReferenceSpeed", ReferenceSpeed.ToResoniteLinkField());
 members.Add("MinOpposingProgress", MinOpposingProgress.ToResoniteLinkField());
 members.Add("VelocityIncreaseSmoothTime", VelocityIncreaseSmoothTime.ToResoniteLinkField());
@@ -92,7 +93,7 @@ members.Add("HandOffset", HandOffset.ToResoniteLinkField());
 members.Add("HandDirectionCenterOffset", HandDirectionCenterOffset.ToResoniteLinkField());
 members.Add("HandSwingDirection", HandSwingDirection.ToResoniteLinkField());
 members.Add("HandSwingArcPeak", HandSwingArcPeak.ToResoniteLinkField());
-members.Add("FingerBasePose", new ResoniteLink.Reference() { });
+members.Add("FingerBasePose", FingerBasePose.ToResoniteReference(context));
 members.Add("FingerCurlOffset", FingerCurlOffset.ToResoniteLinkField());
 members.Add("FingerCurlSwayMagnitude", FingerCurlSwayMagnitude.ToResoniteLinkField());
 members.Add("FingerCurlSwaySpeed", FingerCurlSwaySpeed.ToResoniteLinkField());

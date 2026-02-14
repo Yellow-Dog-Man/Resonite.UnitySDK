@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.PointClusterMesh
-// Generated on: pátek 13. února 2026 23:21:35
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:57:00
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -46,20 +46,21 @@ public UnityEngine.Vector2 MaxSize;
 public global::System.Single MinRotation;
 public global::System.Single MaxRotation;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
+    base.CollectMembers(members, context);
 members.Add("Distribution", Distribution.ToResoniteLinkField());
 members.Add("Colors", Colors.ToResoniteLinkField());
-members.Add("TextureColorSource", new ResoniteLink.Reference() { });
-members.Add("HeightScaleSource", new ResoniteLink.Reference() { });
+members.Add("TextureColorSource", TextureColorSource.ToResoniteReference(context));
+members.Add("HeightScaleSource", HeightScaleSource.ToResoniteReference(context));
 members.Add("TextureIntensityClip", TextureIntensityClip.ToResoniteLinkField());
 members.Add("TextureAlphaClip", TextureAlphaClip.ToResoniteLinkField());
 members.Add("MaxClipAttempts", MaxClipAttempts.ToResoniteLinkField());
 members.Add("HeightmapExp", HeightmapExp.ToResoniteLinkField());
 members.Add("Seed", Seed.ToResoniteLinkField());
 members.Add("Points", Points.ToResoniteLinkField());
-members.Add("Atlas", new ResoniteLink.Reference() { });
+members.Add("Atlas", Atlas.ToResoniteReference(context));
 members.Add("Scale", Scale.ToResoniteLinkField());
 members.Add("RangeExp", RangeExp.ToResoniteLinkField());
 members.Add("JitterRange", JitterRange.ToResoniteLinkField());

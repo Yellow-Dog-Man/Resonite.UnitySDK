@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.WorldItemInterface
-// Generated on: pátek 13. února 2026 23:23:02
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:31
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -29,17 +29,18 @@ public global::FrooxEngine.IField<global::System.Boolean> IsHost;
 public global::FrooxEngine.IField<global::System.Boolean> AwayKickEnabled;
 public global::FrooxEngine.IField<global::System.TimeSpan> AwayKickInterval;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
-members.Add("WorldName", new ResoniteLink.Reference() { });
-members.Add("Description", new ResoniteLink.Reference() { });
-members.Add("ThumbnailUrl", new ResoniteLink.Reference() { });
-members.Add("JoinedUsers", new ResoniteLink.Reference() { });
-members.Add("ActiveUsers", new ResoniteLink.Reference() { });
-members.Add("IsHost", new ResoniteLink.Reference() { });
-members.Add("AwayKickEnabled", new ResoniteLink.Reference() { });
-members.Add("AwayKickInterval", new ResoniteLink.Reference() { });
+    base.CollectMembers(members, context);
+members.Add("WorldName", WorldName.ToResoniteReference(context));
+members.Add("Description", Description.ToResoniteReference(context));
+members.Add("ThumbnailUrl", ThumbnailUrl.ToResoniteReference(context));
+members.Add("JoinedUsers", JoinedUsers.ToResoniteReference(context));
+members.Add("ActiveUsers", ActiveUsers.ToResoniteReference(context));
+members.Add("IsHost", IsHost.ToResoniteReference(context));
+members.Add("AwayKickEnabled", AwayKickEnabled.ToResoniteReference(context));
+members.Add("AwayKickInterval", AwayKickInterval.ToResoniteReference(context));
 }
 
 }

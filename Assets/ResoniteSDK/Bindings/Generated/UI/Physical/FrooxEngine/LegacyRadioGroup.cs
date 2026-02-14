@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.LegacyRadioGroup
-// Generated on: pátek 13. února 2026 23:23:11
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:40
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -28,16 +28,17 @@ public global::FrooxEngine.IField<UnityEngine.Quaternion> _choiceRotation;
 public global::FrooxEngine.IField<UnityEngine.Vector3> _choiceScale;
 public global::FrooxEngine.PBS_RimMetallic _choiceMaterial;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
+    base.CollectMembers(members, context);
 members.Add("IsEnabled", IsEnabled.ToResoniteLinkField());
-members.Add("_selectedOption", new ResoniteLink.Reference() { });
-members.Add("_choiceVisual", new ResoniteLink.Reference() { });
-members.Add("_choicePosition", new ResoniteLink.Reference() { });
-members.Add("_choiceRotation", new ResoniteLink.Reference() { });
-members.Add("_choiceScale", new ResoniteLink.Reference() { });
-members.Add("_choiceMaterial", new ResoniteLink.Reference() { });
+members.Add("_selectedOption", _selectedOption.ToResoniteReference(context));
+members.Add("_choiceVisual", _choiceVisual.ToResoniteReference(context));
+members.Add("_choicePosition", _choicePosition.ToResoniteReference(context));
+members.Add("_choiceRotation", _choiceRotation.ToResoniteReference(context));
+members.Add("_choiceScale", _choiceScale.ToResoniteReference(context));
+members.Add("_choiceMaterial", _choiceMaterial.ToResoniteReference(context));
 }
 
 }

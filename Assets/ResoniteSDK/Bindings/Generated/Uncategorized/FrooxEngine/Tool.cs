@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.Tool
-// Generated on: pátek 13. února 2026 23:22:57
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:27
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -28,15 +28,16 @@ public global::System.String EquipName;
 public global::FrooxEngine.InteractionHandler _overrideActiveTool;
 public global::System.Boolean _gripPosesGenerated;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
+    base.CollectMembers(members, context);
 members.Add("_equipLink", new ResoniteLink.EmptyElement());
-members.Add("TipReference", new ResoniteLink.Reference() { });
+members.Add("TipReference", TipReference.ToResoniteReference(context));
 members.Add("BlockGripEquip", BlockGripEquip.ToResoniteLinkField());
 members.Add("BlockRemoteEquip", BlockRemoteEquip.ToResoniteLinkField());
 members.Add("EquipName", EquipName.ToResoniteLinkField());
-members.Add("_overrideActiveTool", new ResoniteLink.Reference() { });
+members.Add("_overrideActiveTool", _overrideActiveTool.ToResoniteReference(context));
 members.Add("_gripPosesGenerated", _gripPosesGenerated.ToResoniteLinkField());
 }
 

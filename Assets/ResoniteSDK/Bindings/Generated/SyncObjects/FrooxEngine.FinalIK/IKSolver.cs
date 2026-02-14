@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.FinalIK.IKSolver
-// Generated on: pátek 13. února 2026 23:23:14
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:44
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -27,15 +27,16 @@ public global::FrooxEngine.Slot OffsetSpace;
 public global::System.Boolean _initiated;
 public global::FrooxEngine.Slot root;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
+    base.CollectMembers(members, context);
 members.Add("IKPosition", IKPosition.ToResoniteLinkField());
 members.Add("IKPositionWeight", IKPositionWeight.ToResoniteLinkField());
-members.Add("SimulationSpace", new ResoniteLink.Reference() { });
-members.Add("OffsetSpace", new ResoniteLink.Reference() { });
+members.Add("SimulationSpace", SimulationSpace.ToResoniteReference(context));
+members.Add("OffsetSpace", OffsetSpace.ToResoniteReference(context));
 members.Add("_initiated", _initiated.ToResoniteLinkField());
-members.Add("root", new ResoniteLink.Reference() { });
+members.Add("root", root.ToResoniteReference(context));
 }
 
 }

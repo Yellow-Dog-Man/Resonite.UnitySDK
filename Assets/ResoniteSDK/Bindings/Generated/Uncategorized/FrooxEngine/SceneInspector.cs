@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.SceneInspector
-// Generated on: pátek 13. února 2026 23:23:17
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:47
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -29,17 +29,18 @@ public global::FrooxEngine.Slot _componentsContentRoot;
 public global::FrooxEngine.Slot _currentComponent;
 public global::FrooxEngine.Slot _currentRoot;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
-members.Add("Root", new ResoniteLink.Reference() { });
-members.Add("ComponentView", new ResoniteLink.Reference() { });
-members.Add("_rootText", new ResoniteLink.Reference() { });
-members.Add("_componentText", new ResoniteLink.Reference() { });
-members.Add("_hierarchyContentRoot", new ResoniteLink.Reference() { });
-members.Add("_componentsContentRoot", new ResoniteLink.Reference() { });
-members.Add("_currentComponent", new ResoniteLink.Reference() { });
-members.Add("_currentRoot", new ResoniteLink.Reference() { });
+    base.CollectMembers(members, context);
+members.Add("Root", Root.ToResoniteReference(context));
+members.Add("ComponentView", ComponentView.ToResoniteReference(context));
+members.Add("_rootText", _rootText.ToResoniteReference(context));
+members.Add("_componentText", _componentText.ToResoniteReference(context));
+members.Add("_hierarchyContentRoot", _hierarchyContentRoot.ToResoniteReference(context));
+members.Add("_componentsContentRoot", _componentsContentRoot.ToResoniteReference(context));
+members.Add("_currentComponent", _currentComponent.ToResoniteReference(context));
+members.Add("_currentRoot", _currentRoot.ToResoniteReference(context));
 }
 
 }

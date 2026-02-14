@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.PixelateMaterial
-// Generated on: pátek 13. února 2026 23:21:32
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:56:56
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -32,20 +32,21 @@ public global::FrooxEngine.ZTest ZTest;
 public global::FrooxEngine.IAssetProvider<global::FrooxEngine.Shader> _global;
 public global::FrooxEngine.IAssetProvider<global::FrooxEngine.Shader> _perObject;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
+    base.CollectMembers(members, context);
 members.Add("PerObject", PerObject.ToResoniteLinkField());
 members.Add("Resolution", Resolution.ToResoniteLinkField());
-members.Add("ResolutionMagnitudeTexture", new ResoniteLink.Reference() { });
+members.Add("ResolutionMagnitudeTexture", ResolutionMagnitudeTexture.ToResoniteReference(context));
 members.Add("ResolutionTextureScale", ResolutionTextureScale.ToResoniteLinkField());
 members.Add("ResolutionTextureOffset", ResolutionTextureOffset.ToResoniteLinkField());
 members.Add("BlendMode", BlendMode.ToResoniteLinkField());
 members.Add("Sidedness", Sidedness.ToResoniteLinkField());
 members.Add("ZWrite", ZWrite.ToResoniteLinkField());
 members.Add("ZTest", ZTest.ToResoniteLinkField());
-members.Add("_global", new ResoniteLink.Reference() { });
-members.Add("_perObject", new ResoniteLink.Reference() { });
+members.Add("_global", _global.ToResoniteReference(context));
+members.Add("_perObject", _perObject.ToResoniteReference(context));
 }
 
 }

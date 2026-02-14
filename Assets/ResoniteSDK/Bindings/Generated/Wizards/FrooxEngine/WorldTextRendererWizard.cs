@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.WorldTextRendererWizard
-// Generated on: pátek 13. února 2026 23:23:21
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:51
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -29,17 +29,18 @@ public global::System.Boolean ProcessUIXRenderers;
 public UnityEngine.ColorX Color;
 public global::FrooxEngine.UIX.TextField _tag;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
-members.Add("Root", new ResoniteLink.Reference() { });
-members.Add("Material", new ResoniteLink.Reference() { });
-members.Add("Font", new ResoniteLink.Reference() { });
+    base.CollectMembers(members, context);
+members.Add("Root", Root.ToResoniteReference(context));
+members.Add("Material", Material.ToResoniteReference(context));
+members.Add("Font", Font.ToResoniteReference(context));
 members.Add("ProcessDisabled", ProcessDisabled.ToResoniteLinkField());
 members.Add("ProcessStandaloneRenderers", ProcessStandaloneRenderers.ToResoniteLinkField());
 members.Add("ProcessUIXRenderers", ProcessUIXRenderers.ToResoniteLinkField());
 members.Add("Color", Color.ToResoniteLinkField());
-members.Add("_tag", new ResoniteLink.Reference() { });
+members.Add("_tag", _tag.ToResoniteReference(context));
 }
 
 }

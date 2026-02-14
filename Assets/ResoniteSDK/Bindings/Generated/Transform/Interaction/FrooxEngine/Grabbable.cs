@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.Grabbable
-// Generated on: pátek 13. února 2026 23:23:10
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:39
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -38,9 +38,10 @@ public global::FrooxEngine.Slot _lastParent;
 public global::System.Boolean _lastParentIsUserSpace;
 public global::System.Boolean __legacyActiveUserRootOnly;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
+    base.CollectMembers(members, context);
 members.Add("ReparentOnRelease", ReparentOnRelease.ToResoniteLinkField());
 members.Add("PreserveUserSpace", PreserveUserSpace.ToResoniteLinkField());
 members.Add("DestroyOnRelease", DestroyOnRelease.ToResoniteLinkField());
@@ -52,13 +53,13 @@ members.Add("DropOnDisable", DropOnDisable.ToResoniteLinkField());
 members.Add("ActiveUserFilter", ActiveUserFilter.ToResoniteLinkField());
 members.Add("OnlyUsers", new ResoniteLink.SyncList()
 {
-    Elements = OnlyUsers.ConvertList(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers() })
+    Elements = OnlyUsers.ConvertList(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers(context) })
 });
 members.Add("Scalable", Scalable.ToResoniteLinkField());
 members.Add("Receivable", Receivable.ToResoniteLinkField());
 members.Add("AllowOnlyPhysicalGrab", AllowOnlyPhysicalGrab.ToResoniteLinkField());
-members.Add("_grabber", new ResoniteLink.Reference() { });
-members.Add("_lastParent", new ResoniteLink.Reference() { });
+members.Add("_grabber", _grabber.ToResoniteReference(context));
+members.Add("_lastParent", _lastParent.ToResoniteReference(context));
 members.Add("_lastParentIsUserSpace", _lastParentIsUserSpace.ToResoniteLinkField());
 members.Add("__legacyActiveUserRootOnly", __legacyActiveUserRootOnly.ToResoniteLinkField());
 }

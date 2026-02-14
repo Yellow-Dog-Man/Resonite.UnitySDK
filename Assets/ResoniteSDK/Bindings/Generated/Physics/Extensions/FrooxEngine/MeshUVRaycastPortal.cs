@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.MeshUVRaycastPortal
-// Generated on: pátek 13. února 2026 23:21:42
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:57:10
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -28,11 +28,12 @@ public global::System.Boolean RepeatUV;
 public global::System.Nullable<global::System.Boolean> OverrideHitTriggers;
 public global::FrooxEngine.FilterCombineMode FilterMode;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
+    base.CollectMembers(members, context);
 members.Add("Offset", Offset.ToResoniteLinkField());
-members.Add("RayExit", new ResoniteLink.Reference() { });
+members.Add("RayExit", RayExit.ToResoniteReference(context));
 members.Add("UVOffset", UVOffset.ToResoniteLinkField());
 members.Add("UVScale", UVScale.ToResoniteLinkField());
 members.Add("RepeatUV", RepeatUV.ToResoniteLinkField());

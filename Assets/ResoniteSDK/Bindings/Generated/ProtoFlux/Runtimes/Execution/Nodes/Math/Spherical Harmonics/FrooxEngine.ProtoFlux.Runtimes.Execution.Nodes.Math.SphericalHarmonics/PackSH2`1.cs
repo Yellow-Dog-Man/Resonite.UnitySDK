@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [ProtoFluxBindings]FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.Math.SphericalHarmonics.PackSH2<>
-// Generated on: pátek 13. února 2026 23:22:39
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:09
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -31,18 +31,19 @@ public global::FrooxEngine.ProtoFlux.INodeValueOutput<T> SH6;
 public global::FrooxEngine.ProtoFlux.INodeValueOutput<T> SH7;
 public global::FrooxEngine.ProtoFlux.INodeValueOutput<T> SH8;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
-members.Add("SH0", new ResoniteLink.Reference() { });
-members.Add("SH1", new ResoniteLink.Reference() { });
-members.Add("SH2", new ResoniteLink.Reference() { });
-members.Add("SH3", new ResoniteLink.Reference() { });
-members.Add("SH4", new ResoniteLink.Reference() { });
-members.Add("SH5", new ResoniteLink.Reference() { });
-members.Add("SH6", new ResoniteLink.Reference() { });
-members.Add("SH7", new ResoniteLink.Reference() { });
-members.Add("SH8", new ResoniteLink.Reference() { });
+    base.CollectMembers(members, context);
+members.Add("SH0", SH0.ToResoniteReference(context));
+members.Add("SH1", SH1.ToResoniteReference(context));
+members.Add("SH2", SH2.ToResoniteReference(context));
+members.Add("SH3", SH3.ToResoniteReference(context));
+members.Add("SH4", SH4.ToResoniteReference(context));
+members.Add("SH5", SH5.ToResoniteReference(context));
+members.Add("SH6", SH6.ToResoniteReference(context));
+members.Add("SH7", SH7.ToResoniteReference(context));
+members.Add("SH8", SH8.ToResoniteReference(context));
 }
 
 }

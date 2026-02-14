@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [ProtoFluxBindings]FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.Binary.ComposeBits_ulong
-// Generated on: pátek 13. února 2026 23:23:00
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:29
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -85,73 +85,74 @@ public global::FrooxEngine.ProtoFlux.INodeValueOutput<global::System.Boolean> Bi
 public global::FrooxEngine.ProtoFlux.INodeValueOutput<global::System.Boolean> Bit62;
 public global::FrooxEngine.ProtoFlux.INodeValueOutput<global::System.Boolean> Bit63;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
-members.Add("Bit0", new ResoniteLink.Reference() { });
-members.Add("Bit1", new ResoniteLink.Reference() { });
-members.Add("Bit2", new ResoniteLink.Reference() { });
-members.Add("Bit3", new ResoniteLink.Reference() { });
-members.Add("Bit4", new ResoniteLink.Reference() { });
-members.Add("Bit5", new ResoniteLink.Reference() { });
-members.Add("Bit6", new ResoniteLink.Reference() { });
-members.Add("Bit7", new ResoniteLink.Reference() { });
-members.Add("Bit8", new ResoniteLink.Reference() { });
-members.Add("Bit9", new ResoniteLink.Reference() { });
-members.Add("Bit10", new ResoniteLink.Reference() { });
-members.Add("Bit11", new ResoniteLink.Reference() { });
-members.Add("Bit12", new ResoniteLink.Reference() { });
-members.Add("Bit13", new ResoniteLink.Reference() { });
-members.Add("Bit14", new ResoniteLink.Reference() { });
-members.Add("Bit15", new ResoniteLink.Reference() { });
-members.Add("Bit16", new ResoniteLink.Reference() { });
-members.Add("Bit17", new ResoniteLink.Reference() { });
-members.Add("Bit18", new ResoniteLink.Reference() { });
-members.Add("Bit19", new ResoniteLink.Reference() { });
-members.Add("Bit20", new ResoniteLink.Reference() { });
-members.Add("Bit21", new ResoniteLink.Reference() { });
-members.Add("Bit22", new ResoniteLink.Reference() { });
-members.Add("Bit23", new ResoniteLink.Reference() { });
-members.Add("Bit24", new ResoniteLink.Reference() { });
-members.Add("Bit25", new ResoniteLink.Reference() { });
-members.Add("Bit26", new ResoniteLink.Reference() { });
-members.Add("Bit27", new ResoniteLink.Reference() { });
-members.Add("Bit28", new ResoniteLink.Reference() { });
-members.Add("Bit29", new ResoniteLink.Reference() { });
-members.Add("Bit30", new ResoniteLink.Reference() { });
-members.Add("Bit31", new ResoniteLink.Reference() { });
-members.Add("Bit32", new ResoniteLink.Reference() { });
-members.Add("Bit33", new ResoniteLink.Reference() { });
-members.Add("Bit34", new ResoniteLink.Reference() { });
-members.Add("Bit35", new ResoniteLink.Reference() { });
-members.Add("Bit36", new ResoniteLink.Reference() { });
-members.Add("Bit37", new ResoniteLink.Reference() { });
-members.Add("Bit38", new ResoniteLink.Reference() { });
-members.Add("Bit39", new ResoniteLink.Reference() { });
-members.Add("Bit40", new ResoniteLink.Reference() { });
-members.Add("Bit41", new ResoniteLink.Reference() { });
-members.Add("Bit42", new ResoniteLink.Reference() { });
-members.Add("Bit43", new ResoniteLink.Reference() { });
-members.Add("Bit44", new ResoniteLink.Reference() { });
-members.Add("Bit45", new ResoniteLink.Reference() { });
-members.Add("Bit46", new ResoniteLink.Reference() { });
-members.Add("Bit47", new ResoniteLink.Reference() { });
-members.Add("Bit48", new ResoniteLink.Reference() { });
-members.Add("Bit49", new ResoniteLink.Reference() { });
-members.Add("Bit50", new ResoniteLink.Reference() { });
-members.Add("Bit51", new ResoniteLink.Reference() { });
-members.Add("Bit52", new ResoniteLink.Reference() { });
-members.Add("Bit53", new ResoniteLink.Reference() { });
-members.Add("Bit54", new ResoniteLink.Reference() { });
-members.Add("Bit55", new ResoniteLink.Reference() { });
-members.Add("Bit56", new ResoniteLink.Reference() { });
-members.Add("Bit57", new ResoniteLink.Reference() { });
-members.Add("Bit58", new ResoniteLink.Reference() { });
-members.Add("Bit59", new ResoniteLink.Reference() { });
-members.Add("Bit60", new ResoniteLink.Reference() { });
-members.Add("Bit61", new ResoniteLink.Reference() { });
-members.Add("Bit62", new ResoniteLink.Reference() { });
-members.Add("Bit63", new ResoniteLink.Reference() { });
+    base.CollectMembers(members, context);
+members.Add("Bit0", Bit0.ToResoniteReference(context));
+members.Add("Bit1", Bit1.ToResoniteReference(context));
+members.Add("Bit2", Bit2.ToResoniteReference(context));
+members.Add("Bit3", Bit3.ToResoniteReference(context));
+members.Add("Bit4", Bit4.ToResoniteReference(context));
+members.Add("Bit5", Bit5.ToResoniteReference(context));
+members.Add("Bit6", Bit6.ToResoniteReference(context));
+members.Add("Bit7", Bit7.ToResoniteReference(context));
+members.Add("Bit8", Bit8.ToResoniteReference(context));
+members.Add("Bit9", Bit9.ToResoniteReference(context));
+members.Add("Bit10", Bit10.ToResoniteReference(context));
+members.Add("Bit11", Bit11.ToResoniteReference(context));
+members.Add("Bit12", Bit12.ToResoniteReference(context));
+members.Add("Bit13", Bit13.ToResoniteReference(context));
+members.Add("Bit14", Bit14.ToResoniteReference(context));
+members.Add("Bit15", Bit15.ToResoniteReference(context));
+members.Add("Bit16", Bit16.ToResoniteReference(context));
+members.Add("Bit17", Bit17.ToResoniteReference(context));
+members.Add("Bit18", Bit18.ToResoniteReference(context));
+members.Add("Bit19", Bit19.ToResoniteReference(context));
+members.Add("Bit20", Bit20.ToResoniteReference(context));
+members.Add("Bit21", Bit21.ToResoniteReference(context));
+members.Add("Bit22", Bit22.ToResoniteReference(context));
+members.Add("Bit23", Bit23.ToResoniteReference(context));
+members.Add("Bit24", Bit24.ToResoniteReference(context));
+members.Add("Bit25", Bit25.ToResoniteReference(context));
+members.Add("Bit26", Bit26.ToResoniteReference(context));
+members.Add("Bit27", Bit27.ToResoniteReference(context));
+members.Add("Bit28", Bit28.ToResoniteReference(context));
+members.Add("Bit29", Bit29.ToResoniteReference(context));
+members.Add("Bit30", Bit30.ToResoniteReference(context));
+members.Add("Bit31", Bit31.ToResoniteReference(context));
+members.Add("Bit32", Bit32.ToResoniteReference(context));
+members.Add("Bit33", Bit33.ToResoniteReference(context));
+members.Add("Bit34", Bit34.ToResoniteReference(context));
+members.Add("Bit35", Bit35.ToResoniteReference(context));
+members.Add("Bit36", Bit36.ToResoniteReference(context));
+members.Add("Bit37", Bit37.ToResoniteReference(context));
+members.Add("Bit38", Bit38.ToResoniteReference(context));
+members.Add("Bit39", Bit39.ToResoniteReference(context));
+members.Add("Bit40", Bit40.ToResoniteReference(context));
+members.Add("Bit41", Bit41.ToResoniteReference(context));
+members.Add("Bit42", Bit42.ToResoniteReference(context));
+members.Add("Bit43", Bit43.ToResoniteReference(context));
+members.Add("Bit44", Bit44.ToResoniteReference(context));
+members.Add("Bit45", Bit45.ToResoniteReference(context));
+members.Add("Bit46", Bit46.ToResoniteReference(context));
+members.Add("Bit47", Bit47.ToResoniteReference(context));
+members.Add("Bit48", Bit48.ToResoniteReference(context));
+members.Add("Bit49", Bit49.ToResoniteReference(context));
+members.Add("Bit50", Bit50.ToResoniteReference(context));
+members.Add("Bit51", Bit51.ToResoniteReference(context));
+members.Add("Bit52", Bit52.ToResoniteReference(context));
+members.Add("Bit53", Bit53.ToResoniteReference(context));
+members.Add("Bit54", Bit54.ToResoniteReference(context));
+members.Add("Bit55", Bit55.ToResoniteReference(context));
+members.Add("Bit56", Bit56.ToResoniteReference(context));
+members.Add("Bit57", Bit57.ToResoniteReference(context));
+members.Add("Bit58", Bit58.ToResoniteReference(context));
+members.Add("Bit59", Bit59.ToResoniteReference(context));
+members.Add("Bit60", Bit60.ToResoniteReference(context));
+members.Add("Bit61", Bit61.ToResoniteReference(context));
+members.Add("Bit62", Bit62.ToResoniteReference(context));
+members.Add("Bit63", Bit63.ToResoniteReference(context));
 }
 
 }

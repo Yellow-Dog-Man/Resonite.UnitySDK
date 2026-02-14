@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [ProtoFluxBindings]FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.Operators.PackRows_Float2x2
-// Generated on: pátek 13. února 2026 23:22:50
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:20
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -23,11 +23,12 @@ public partial class PackRows_Float2x2 : global::FrooxEngine.ProtoFlux.Runtimes.
     public global::FrooxEngine.ProtoFlux.INodeValueOutput<UnityEngine.Vector2> Row0;
 public global::FrooxEngine.ProtoFlux.INodeValueOutput<UnityEngine.Vector2> Row1;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
-members.Add("Row0", new ResoniteLink.Reference() { });
-members.Add("Row1", new ResoniteLink.Reference() { });
+    base.CollectMembers(members, context);
+members.Add("Row0", Row0.ToResoniteReference(context));
+members.Add("Row1", Row1.ToResoniteReference(context));
 }
 
 }

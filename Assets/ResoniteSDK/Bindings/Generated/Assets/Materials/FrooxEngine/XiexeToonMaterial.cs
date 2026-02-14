@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.XiexeToonMaterial
-// Generated on: pátek 13. února 2026 23:21:32
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:56:56
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -96,10 +96,11 @@ public global::System.Boolean __legacyCutout;
 public global::FrooxEngine.IAssetProvider<global::FrooxEngine.Shader> _regular;
 public global::FrooxEngine.IAssetProvider<global::FrooxEngine.Shader> _outline;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
-members.Add("MainTexture", new ResoniteLink.Reference() { });
+    base.CollectMembers(members, context);
+members.Add("MainTexture", MainTexture.ToResoniteReference(context));
 members.Add("Color", Color.ToResoniteLinkField());
 members.Add("UseVertexColors", UseVertexColors.ToResoniteLinkField());
 members.Add("VertexColorInterpolationSpace", VertexColorInterpolationSpace.ToResoniteLinkField());
@@ -109,17 +110,17 @@ members.Add("AlphaClip", AlphaClip.ToResoniteLinkField());
 members.Add("MainTextureScale", MainTextureScale.ToResoniteLinkField());
 members.Add("MainTextureOffset", MainTextureOffset.ToResoniteLinkField());
 members.Add("Saturation", Saturation.ToResoniteLinkField());
-members.Add("NormalMap", new ResoniteLink.Reference() { });
+members.Add("NormalMap", NormalMap.ToResoniteReference(context));
 members.Add("NormalMapScale", NormalMapScale.ToResoniteLinkField());
 members.Add("NormalMapOffset", NormalMapOffset.ToResoniteLinkField());
 members.Add("NormalScale", NormalScale.ToResoniteLinkField());
 members.Add("Metallic", Metallic.ToResoniteLinkField());
 members.Add("Glossiness", Glossiness.ToResoniteLinkField());
 members.Add("Reflectivity", Reflectivity.ToResoniteLinkField());
-members.Add("MetallicGlossMap", new ResoniteLink.Reference() { });
+members.Add("MetallicGlossMap", MetallicGlossMap.ToResoniteReference(context));
 members.Add("MetallicGlossMapScale", MetallicGlossMapScale.ToResoniteLinkField());
 members.Add("MetallicGlossMapOffset", MetallicGlossMapOffset.ToResoniteLinkField());
-members.Add("EmissionMap", new ResoniteLink.Reference() { });
+members.Add("EmissionMap", EmissionMap.ToResoniteReference(context));
 members.Add("EmissionColor", EmissionColor.ToResoniteLinkField());
 members.Add("EmissionMapScale", EmissionMapScale.ToResoniteLinkField());
 members.Add("EmissionMapOffset", EmissionMapOffset.ToResoniteLinkField());
@@ -132,9 +133,9 @@ members.Add("RimThreshold", RimThreshold.ToResoniteLinkField());
 members.Add("RimSharpness", RimSharpness.ToResoniteLinkField());
 members.Add("SpecularIntensity", SpecularIntensity.ToResoniteLinkField());
 members.Add("SpecularArea", SpecularArea.ToResoniteLinkField());
-members.Add("Matcap", new ResoniteLink.Reference() { });
+members.Add("Matcap", Matcap.ToResoniteReference(context));
 members.Add("MatcapTint", MatcapTint.ToResoniteLinkField());
-members.Add("OcclusionMap", new ResoniteLink.Reference() { });
+members.Add("OcclusionMap", OcclusionMap.ToResoniteReference(context));
 members.Add("OcclusionMapScale", OcclusionMapScale.ToResoniteLinkField());
 members.Add("OcclusionMapOffset", OcclusionMapOffset.ToResoniteLinkField());
 members.Add("OcclusionColor", OcclusionColor.ToResoniteLinkField());
@@ -142,9 +143,9 @@ members.Add("Outline", Outline.ToResoniteLinkField());
 members.Add("OutlineWidth", OutlineWidth.ToResoniteLinkField());
 members.Add("OutlineColor", OutlineColor.ToResoniteLinkField());
 members.Add("OutlineAlbedoTint", OutlineAlbedoTint.ToResoniteLinkField());
-members.Add("OutlineMask", new ResoniteLink.Reference() { });
-members.Add("ShadowRamp", new ResoniteLink.Reference() { });
-members.Add("ShadowRampMask", new ResoniteLink.Reference() { });
+members.Add("OutlineMask", OutlineMask.ToResoniteReference(context));
+members.Add("ShadowRamp", ShadowRamp.ToResoniteReference(context));
+members.Add("ShadowRampMask", ShadowRampMask.ToResoniteReference(context));
 members.Add("ShadowRampMaskScale", ShadowRampMaskScale.ToResoniteLinkField());
 members.Add("ShadowRampMaskOffset", ShadowRampMaskOffset.ToResoniteLinkField());
 members.Add("ShadowRim", ShadowRim.ToResoniteLinkField());
@@ -153,7 +154,7 @@ members.Add("ShadowRimRange", ShadowRimRange.ToResoniteLinkField());
 members.Add("ShadowRimThreshold", ShadowRimThreshold.ToResoniteLinkField());
 members.Add("ShadowRimSharpness", ShadowRimSharpness.ToResoniteLinkField());
 members.Add("ShadowRimAlbedoTint", ShadowRimAlbedoTint.ToResoniteLinkField());
-members.Add("ThicknessMap", new ResoniteLink.Reference() { });
+members.Add("ThicknessMap", ThicknessMap.ToResoniteReference(context));
 members.Add("ThicknessMapScale", ThicknessMapScale.ToResoniteLinkField());
 members.Add("ThicknessMapOffset", ThicknessMapOffset.ToResoniteLinkField());
 members.Add("SubsurfaceColor", SubsurfaceColor.ToResoniteLinkField());
@@ -172,8 +173,8 @@ members.Add("OcclusionUV", OcclusionUV.ToResoniteLinkField());
 members.Add("EmissionUV", EmissionUV.ToResoniteLinkField());
 members.Add("RenderQueue", RenderQueue.ToResoniteLinkField());
 members.Add("__legacyCutout", __legacyCutout.ToResoniteLinkField());
-members.Add("_regular", new ResoniteLink.Reference() { });
-members.Add("_outline", new ResoniteLink.Reference() { });
+members.Add("_regular", _regular.ToResoniteReference(context));
+members.Add("_outline", _outline.ToResoniteReference(context));
 }
 
 }

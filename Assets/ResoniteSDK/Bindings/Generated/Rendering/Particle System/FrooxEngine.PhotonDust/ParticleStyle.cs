@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.PhotonDust.ParticleStyle
-// Generated on: pátek 13. února 2026 23:23:04
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:34
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -26,13 +26,14 @@ public global::System.Boolean UseSystemLocalScale;
 public global::PhotonDust.ScaleMultiplierMode ParticleScaleMode;
 public global::System.Boolean UseSystemLocalRotation;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
-members.Add("Renderer", new ResoniteLink.Reference() { });
+    base.CollectMembers(members, context);
+members.Add("Renderer", Renderer.ToResoniteReference(context));
 members.Add("Modules", new ResoniteLink.SyncList()
 {
-    Elements = Modules.ConvertList(m => new ResoniteLink.Reference() { })
+    Elements = Modules.ConvertList(m => m.ToResoniteReference(context))
 });
 members.Add("UseSystemLocalScale", UseSystemLocalScale.ToResoniteLinkField());
 members.Add("ParticleScaleMode", ParticleScaleMode.ToResoniteLinkField());

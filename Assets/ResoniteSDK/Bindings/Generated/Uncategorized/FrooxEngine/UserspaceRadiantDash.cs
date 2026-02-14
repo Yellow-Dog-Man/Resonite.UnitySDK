@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.UserspaceRadiantDash
-// Generated on: pátek 13. února 2026 23:23:16
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:46
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -38,26 +38,27 @@ public global::FrooxEngine.NotificationPanel _notifications;
 public global::FrooxEngine.Slot _notificationsRoot;
 public global::FrooxEngine.Slot _notificationsHolder;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
+    base.CollectMembers(members, context);
 members.Add("BlockOpenClose", BlockOpenClose.ToResoniteLinkField());
 members.Add("Freeform", Freeform.ToResoniteLinkField());
-members.Add("_dash", new ResoniteLink.Reference() { });
-members.Add("_dashVisualRoot", new ResoniteLink.Reference() { });
-members.Add("_positioner", new ResoniteLink.Reference() { });
-members.Add("_modalOverlay", new ResoniteLink.Reference() { });
-members.Add("_legacyInventoryPanel", new ResoniteLink.Reference() { });
-members.Add("_legacyInventory", new ResoniteLink.Reference() { });
-members.Add("_slider", new ResoniteLink.Reference() { });
-members.Add("_lookat", new ResoniteLink.Reference() { });
-members.Add("_uiEditModeToggle", new ResoniteLink.Reference() { });
-members.Add("_alwaysOnFacetRoot", new ResoniteLink.Reference() { });
-members.Add("_screensWorkspace", new ResoniteLink.Reference() { });
-members.Add("_topWorkspace", new ResoniteLink.Reference() { });
-members.Add("_notifications", new ResoniteLink.Reference() { });
-members.Add("_notificationsRoot", new ResoniteLink.Reference() { });
-members.Add("_notificationsHolder", new ResoniteLink.Reference() { });
+members.Add("_dash", _dash.ToResoniteReference(context));
+members.Add("_dashVisualRoot", _dashVisualRoot.ToResoniteReference(context));
+members.Add("_positioner", _positioner.ToResoniteReference(context));
+members.Add("_modalOverlay", _modalOverlay.ToResoniteReference(context));
+members.Add("_legacyInventoryPanel", _legacyInventoryPanel.ToResoniteReference(context));
+members.Add("_legacyInventory", _legacyInventory.ToResoniteReference(context));
+members.Add("_slider", _slider.ToResoniteReference(context));
+members.Add("_lookat", _lookat.ToResoniteReference(context));
+members.Add("_uiEditModeToggle", _uiEditModeToggle.ToResoniteReference(context));
+members.Add("_alwaysOnFacetRoot", _alwaysOnFacetRoot.ToResoniteReference(context));
+members.Add("_screensWorkspace", _screensWorkspace.ToResoniteReference(context));
+members.Add("_topWorkspace", _topWorkspace.ToResoniteReference(context));
+members.Add("_notifications", _notifications.ToResoniteReference(context));
+members.Add("_notificationsRoot", _notificationsRoot.ToResoniteReference(context));
+members.Add("_notificationsHolder", _notificationsHolder.ToResoniteReference(context));
 }
 
 }
