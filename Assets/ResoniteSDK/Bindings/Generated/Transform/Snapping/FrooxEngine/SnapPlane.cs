@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.SnapPlane
-// Generated on: pátek 13. února 2026 23:23:10
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:40
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -23,11 +23,12 @@ public partial class SnapPlane : global::FrooxEngine.Component, global::FrooxEng
     public UnityEngine.Vector3 Normal;
 public global::FrooxEngine.Slot SnapParent;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
+    base.CollectMembers(members, context);
 members.Add("Normal", Normal.ToResoniteLinkField());
-members.Add("SnapParent", new ResoniteLink.Reference() { });
+members.Add("SnapParent", SnapParent.ToResoniteReference(context));
 }
 
 }

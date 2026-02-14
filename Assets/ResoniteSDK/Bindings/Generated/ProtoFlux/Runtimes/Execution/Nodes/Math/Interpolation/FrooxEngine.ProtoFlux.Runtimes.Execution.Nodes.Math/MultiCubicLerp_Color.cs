@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [ProtoFluxBindings]FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.Math.MultiCubicLerp_Color
-// Generated on: pátek 13. února 2026 23:22:37
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:07
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -23,14 +23,15 @@ public partial class MultiCubicLerp_Color : global::FrooxEngine.ProtoFlux.Runtim
     public System.Collections.Generic.List<global::FrooxEngine.ProtoFlux.INodeValueOutput<global::ProtoFlux.Runtimes.Execution.Nodes.Math.TangentPointColor>> Operands;
 public global::FrooxEngine.ProtoFlux.INodeValueOutput<global::System.Single> Lerp;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
+    base.CollectMembers(members, context);
 members.Add("Operands", new ResoniteLink.SyncList()
 {
-    Elements = Operands.ConvertList(m => new ResoniteLink.Reference() { })
+    Elements = Operands.ConvertList(m => m.ToResoniteReference(context))
 });
-members.Add("Lerp", new ResoniteLink.Reference() { });
+members.Add("Lerp", Lerp.ToResoniteReference(context));
 }
 
 }

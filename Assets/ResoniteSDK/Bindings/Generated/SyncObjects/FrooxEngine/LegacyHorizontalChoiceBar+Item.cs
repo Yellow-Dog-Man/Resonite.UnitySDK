@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.LegacyHorizontalChoiceBar+Item
-// Generated on: pátek 13. února 2026 23:23:11
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:40
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -34,20 +34,21 @@ public global::FrooxEngine.IField<UnityEngine.Vector3> _colliderOffset;
 public global::FrooxEngine.BevelStripeMesh _mesh;
 public global::FrooxEngine.PBS_RimMetallic _material;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
+    base.CollectMembers(members, context);
 members.Add("OverrideColor", OverrideColor.ToResoniteLinkField());
 members.Add("Highlight", Highlight.ToResoniteLinkField());
-members.Add("_slot", new ResoniteLink.Reference() { });
-members.Add("_text", new ResoniteLink.Reference() { });
-members.Add("_position", new ResoniteLink.Reference() { });
-members.Add("_textPosition", new ResoniteLink.Reference() { });
-members.Add("_textBounds", new ResoniteLink.Reference() { });
-members.Add("_colliderSize", new ResoniteLink.Reference() { });
-members.Add("_colliderOffset", new ResoniteLink.Reference() { });
-members.Add("_mesh", new ResoniteLink.Reference() { });
-members.Add("_material", new ResoniteLink.Reference() { });
+members.Add("_slot", _slot.ToResoniteReference(context));
+members.Add("_text", _text.ToResoniteReference(context));
+members.Add("_position", _position.ToResoniteReference(context));
+members.Add("_textPosition", _textPosition.ToResoniteReference(context));
+members.Add("_textBounds", _textBounds.ToResoniteReference(context));
+members.Add("_colliderSize", _colliderSize.ToResoniteReference(context));
+members.Add("_colliderOffset", _colliderOffset.ToResoniteReference(context));
+members.Add("_mesh", _mesh.ToResoniteReference(context));
+members.Add("_material", _material.ToResoniteReference(context));
 }
 
 }

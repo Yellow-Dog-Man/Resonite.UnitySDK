@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.ReflectionProbe
-// Generated on: pátek 13. února 2026 23:22:52
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:23
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -40,19 +40,20 @@ public global::System.Boolean SkyboxOnly;
 public global::System.Boolean ShowDebugVisuals;
 public global::FrooxEngine.Slot _debugVisual;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
+    base.CollectMembers(members, context);
 members.Add("ProbeType", ProbeType.ToResoniteLinkField());
 members.Add("Importance", Importance.ToResoniteLinkField());
 members.Add("Intensity", Intensity.ToResoniteLinkField());
 members.Add("BlendDistance", BlendDistance.ToResoniteLinkField());
 members.Add("BoxSize", BoxSize.ToResoniteLinkField());
 members.Add("BoxProjection", BoxProjection.ToResoniteLinkField());
-members.Add("BakedCubemap", new ResoniteLink.Reference() { });
+members.Add("BakedCubemap", BakedCubemap.ToResoniteReference(context));
 members.Add("ChangesSources", new ResoniteLink.SyncList()
 {
-    Elements = ChangesSources.ConvertList(m => new ResoniteLink.Reference() { })
+    Elements = ChangesSources.ConvertList(m => m.ToResoniteReference(context))
 });
 members.Add("TimeSlicing", TimeSlicing.ToResoniteLinkField());
 members.Add("Resolution", Resolution.ToResoniteLinkField());
@@ -64,7 +65,7 @@ members.Add("NearClip", NearClip.ToResoniteLinkField());
 members.Add("FarClip", FarClip.ToResoniteLinkField());
 members.Add("SkyboxOnly", SkyboxOnly.ToResoniteLinkField());
 members.Add("ShowDebugVisuals", ShowDebugVisuals.ToResoniteLinkField());
-members.Add("_debugVisual", new ResoniteLink.Reference() { });
+members.Add("_debugVisual", _debugVisual.ToResoniteReference(context));
 }
 
 }

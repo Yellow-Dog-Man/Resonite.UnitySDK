@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.WorldOrb
-// Generated on: pátek 13. února 2026 23:23:17
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:47
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -57,10 +57,11 @@ public global::FrooxEngine.NewWorldDialog _sessionStartDialog;
 public global::System.Double _lastTouch;
 public global::System.Double _lastFlash;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
-members.Add("SessionStartingUser", new ResoniteLink.Reference() { });
+    base.CollectMembers(members, context);
+members.Add("SessionStartingUser", SessionStartingUser.ToResoniteReference(context));
 members.Add("URL", URL.ToResoniteLinkField());
 members.Add("ActiveSessionURLs", new ResoniteLink.SyncList()
 {
@@ -73,30 +74,30 @@ members.Add("IsPublic", IsPublic.ToResoniteLinkField());
 members.Add("CanModify", CanModify.ToResoniteLinkField());
 members.Add("LongPressIndicatorColor", LongPressIndicatorColor.ToResoniteLinkField());
 members.Add("LongPressTime", LongPressTime.ToResoniteLinkField());
-members.Add("_longPressIndicator", new ResoniteLink.Reference() { });
-members.Add("_longPressIndicatorMaterial", new ResoniteLink.Reference() { });
+members.Add("_longPressIndicator", _longPressIndicator.ToResoniteReference(context));
+members.Add("_longPressIndicatorMaterial", _longPressIndicatorMaterial.ToResoniteReference(context));
 members.Add("_lastFetchedUrl", _lastFetchedUrl.ToResoniteLinkField());
 members.Add("_isReadOnly", _isReadOnly.ToResoniteLinkField());
-members.Add("_orbRoot", new ResoniteLink.Reference() { });
-members.Add("_infoRoot", new ResoniteLink.Reference() { });
-members.Add("_thumbTex", new ResoniteLink.Reference() { });
-members.Add("_thumbMaterial", new ResoniteLink.Reference() { });
-members.Add("_shellMaterial", new ResoniteLink.Reference() { });
-members.Add("_nameText", new ResoniteLink.Reference() { });
-members.Add("_creatorText", new ResoniteLink.Reference() { });
-members.Add("_visitsText", new ResoniteLink.Reference() { });
-members.Add("_usersText", new ResoniteLink.Reference() { });
-members.Add("_namePosition", new ResoniteLink.Reference() { });
-members.Add("_creatorPosition", new ResoniteLink.Reference() { });
-members.Add("_visitsPosition", new ResoniteLink.Reference() { });
-members.Add("_usersPosition", new ResoniteLink.Reference() { });
-members.Add("_userCountText", new ResoniteLink.Reference() { });
-members.Add("_sizeDrive", new ResoniteLink.Reference() { });
-members.Add("_iconSlot", new ResoniteLink.Reference() { });
-members.Add("_iconTexture", new ResoniteLink.Reference() { });
-members.Add("_iconMaterial", new ResoniteLink.Reference() { });
-members.Add("_iconPosition", new ResoniteLink.Reference() { });
-members.Add("_sessionStartDialog", new ResoniteLink.Reference() { });
+members.Add("_orbRoot", _orbRoot.ToResoniteReference(context));
+members.Add("_infoRoot", _infoRoot.ToResoniteReference(context));
+members.Add("_thumbTex", _thumbTex.ToResoniteReference(context));
+members.Add("_thumbMaterial", _thumbMaterial.ToResoniteReference(context));
+members.Add("_shellMaterial", _shellMaterial.ToResoniteReference(context));
+members.Add("_nameText", _nameText.ToResoniteReference(context));
+members.Add("_creatorText", _creatorText.ToResoniteReference(context));
+members.Add("_visitsText", _visitsText.ToResoniteReference(context));
+members.Add("_usersText", _usersText.ToResoniteReference(context));
+members.Add("_namePosition", _namePosition.ToResoniteReference(context));
+members.Add("_creatorPosition", _creatorPosition.ToResoniteReference(context));
+members.Add("_visitsPosition", _visitsPosition.ToResoniteReference(context));
+members.Add("_usersPosition", _usersPosition.ToResoniteReference(context));
+members.Add("_userCountText", _userCountText.ToResoniteReference(context));
+members.Add("_sizeDrive", _sizeDrive.ToResoniteReference(context));
+members.Add("_iconSlot", _iconSlot.ToResoniteReference(context));
+members.Add("_iconTexture", _iconTexture.ToResoniteReference(context));
+members.Add("_iconMaterial", _iconMaterial.ToResoniteReference(context));
+members.Add("_iconPosition", _iconPosition.ToResoniteReference(context));
+members.Add("_sessionStartDialog", _sessionStartDialog.ToResoniteReference(context));
 members.Add("_lastTouch", _lastTouch.ToResoniteLinkField());
 members.Add("_lastFlash", _lastFlash.ToResoniteLinkField());
 }

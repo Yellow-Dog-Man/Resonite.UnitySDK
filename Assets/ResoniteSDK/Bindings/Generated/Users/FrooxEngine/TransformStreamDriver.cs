@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.TransformStreamDriver
-// Generated on: pátek 13. února 2026 23:23:19
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:49
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -34,16 +34,17 @@ public global::System.Nullable<UnityEngine.Quaternion> RotationOffset;
 public global::System.Nullable<UnityEngine.Vector3> ScaleOffset;
 public global::System.Boolean RunBeforePhysics;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
-members.Add("PositionStream", new ResoniteLink.Reference() { });
-members.Add("RotationStream", new ResoniteLink.Reference() { });
-members.Add("ScaleStream", new ResoniteLink.Reference() { });
-members.Add("RootSpaceStream", new ResoniteLink.Reference() { });
-members.Add("Position", new ResoniteLink.Reference() { });
-members.Add("Rotation", new ResoniteLink.Reference() { });
-members.Add("Scale", new ResoniteLink.Reference() { });
+    base.CollectMembers(members, context);
+members.Add("PositionStream", PositionStream.ToResoniteReference(context));
+members.Add("RotationStream", RotationStream.ToResoniteReference(context));
+members.Add("ScaleStream", ScaleStream.ToResoniteReference(context));
+members.Add("RootSpaceStream", RootSpaceStream.ToResoniteReference(context));
+members.Add("Position", Position.ToResoniteReference(context));
+members.Add("Rotation", Rotation.ToResoniteReference(context));
+members.Add("Scale", Scale.ToResoniteReference(context));
 members.Add("AllowOffsets", AllowOffsets.ToResoniteLinkField());
 members.Add("ResetStreamsOnDestroy", ResetStreamsOnDestroy.ToResoniteLinkField());
 members.Add("PositionOffset", PositionOffset.ToResoniteLinkField());

@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.MeterTool
-// Generated on: pátek 13. února 2026 23:23:07
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:37
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -31,17 +31,18 @@ public global::FrooxEngine.LineTransform _currentLineTransform;
 public global::System.String FormatNumber;
 public global::System.String FormatUnit;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
-members.Add("_indicationColor", new ResoniteLink.Reference() { });
+    base.CollectMembers(members, context);
+members.Add("_indicationColor", _indicationColor.ToResoniteReference(context));
 members.Add("MeterMode", MeterMode.ToResoniteLinkField());
 members.Add("MeasureInObjectSpace", MeasureInObjectSpace.ToResoniteLinkField());
 members.Add("RaycastIgnoresUsers", RaycastIgnoresUsers.ToResoniteLinkField());
 members.Add("MultiPoint", MultiPoint.ToResoniteLinkField());
-members.Add("_lastPoint", new ResoniteLink.Reference() { });
-members.Add("_currentMeter", new ResoniteLink.Reference() { });
-members.Add("_currentLineTransform", new ResoniteLink.Reference() { });
+members.Add("_lastPoint", _lastPoint.ToResoniteReference(context));
+members.Add("_currentMeter", _currentMeter.ToResoniteReference(context));
+members.Add("_currentLineTransform", _currentLineTransform.ToResoniteReference(context));
 members.Add("FormatNumber", FormatNumber.ToResoniteLinkField());
 members.Add("FormatUnit", FormatUnit.ToResoniteLinkField());
 }

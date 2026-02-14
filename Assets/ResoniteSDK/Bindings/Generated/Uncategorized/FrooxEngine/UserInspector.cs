@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.UserInspector
-// Generated on: pátek 13. února 2026 23:23:18
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:48
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -30,18 +30,19 @@ public global::FrooxEngine.Slot _userListContentRoot;
 public global::FrooxEngine.Slot _workersContentRoot;
 public global::FrooxEngine.Sync<global::System.String> _userText;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
-members.Add("ViewUser", new ResoniteLink.Reference() { });
+    base.CollectMembers(members, context);
+members.Add("ViewUser", ViewUser.ToResoniteReference(context));
 members.Add("ViewGroup", ViewGroup.ToResoniteLinkField());
 members.Add("ViewStreamGroup", ViewStreamGroup.ToResoniteLinkField());
-members.Add("_currentUser", new ResoniteLink.Reference() { });
+members.Add("_currentUser", _currentUser.ToResoniteReference(context));
 members.Add("_currentViewGroup", _currentViewGroup.ToResoniteLinkField());
 members.Add("_currentStreamGroup", _currentStreamGroup.ToResoniteLinkField());
-members.Add("_userListContentRoot", new ResoniteLink.Reference() { });
-members.Add("_workersContentRoot", new ResoniteLink.Reference() { });
-members.Add("_userText", new ResoniteLink.Reference() { });
+members.Add("_userListContentRoot", _userListContentRoot.ToResoniteReference(context));
+members.Add("_workersContentRoot", _workersContentRoot.ToResoniteReference(context));
+members.Add("_userText", _userText.ToResoniteReference(context));
 }
 
 }

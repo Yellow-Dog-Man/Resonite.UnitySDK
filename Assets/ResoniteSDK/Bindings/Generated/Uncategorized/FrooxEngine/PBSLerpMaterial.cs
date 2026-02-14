@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.PBSLerpMaterial
-// Generated on: pátek 13. února 2026 23:21:33
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:56:57
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -52,11 +52,12 @@ public global::System.Single OffsetFactor;
 public global::System.Single OffsetUnits;
 public global::System.Int32 RenderQueue;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
+    base.CollectMembers(members, context);
 members.Add("Lerp", Lerp.ToResoniteLinkField());
-members.Add("LerpTexture", new ResoniteLink.Reference() { });
+members.Add("LerpTexture", LerpTexture.ToResoniteReference(context));
 members.Add("LerpTextureScale", LerpTextureScale.ToResoniteLinkField());
 members.Add("LerpTextureOffset", LerpTextureOffset.ToResoniteLinkField());
 members.Add("Texture0Scale", Texture0Scale.ToResoniteLinkField());
@@ -65,19 +66,19 @@ members.Add("Texture1Scale", Texture1Scale.ToResoniteLinkField());
 members.Add("Texture1Offset", Texture1Offset.ToResoniteLinkField());
 members.Add("AlbedoColor0", AlbedoColor0.ToResoniteLinkField());
 members.Add("AlbedoColor1", AlbedoColor1.ToResoniteLinkField());
-members.Add("AlbedoTexture0", new ResoniteLink.Reference() { });
-members.Add("AlbedoTexture1", new ResoniteLink.Reference() { });
+members.Add("AlbedoTexture0", AlbedoTexture0.ToResoniteReference(context));
+members.Add("AlbedoTexture1", AlbedoTexture1.ToResoniteReference(context));
 members.Add("EmissiveColor0", EmissiveColor0.ToResoniteLinkField());
 members.Add("EmissiveColor1", EmissiveColor1.ToResoniteLinkField());
-members.Add("EmissiveMap0", new ResoniteLink.Reference() { });
-members.Add("EmissiveMap1", new ResoniteLink.Reference() { });
-members.Add("NormalMap0", new ResoniteLink.Reference() { });
-members.Add("NormalMap1", new ResoniteLink.Reference() { });
+members.Add("EmissiveMap0", EmissiveMap0.ToResoniteReference(context));
+members.Add("EmissiveMap1", EmissiveMap1.ToResoniteReference(context));
+members.Add("NormalMap0", NormalMap0.ToResoniteReference(context));
+members.Add("NormalMap1", NormalMap1.ToResoniteReference(context));
 members.Add("NormalScale0", NormalScale0.ToResoniteLinkField());
 members.Add("NormalScale1", NormalScale1.ToResoniteLinkField());
 members.Add("MultiValue", MultiValue.ToResoniteLinkField());
-members.Add("OcclusionMap0", new ResoniteLink.Reference() { });
-members.Add("OcclusionMap1", new ResoniteLink.Reference() { });
+members.Add("OcclusionMap0", OcclusionMap0.ToResoniteReference(context));
+members.Add("OcclusionMap1", OcclusionMap1.ToResoniteReference(context));
 members.Add("BlendMode", BlendMode.ToResoniteLinkField());
 members.Add("AlphaCutoff", AlphaCutoff.ToResoniteLinkField());
 members.Add("ZWrite", ZWrite.ToResoniteLinkField());

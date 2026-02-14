@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [ProtoFluxBindings]FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.Math.Easing.EaseInElasticDouble
-// Generated on: pátek 13. února 2026 23:22:36
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:04
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -24,12 +24,13 @@ public partial class EaseInElasticDouble : global::FrooxEngine.ProtoFlux.Runtime
 public global::FrooxEngine.ProtoFlux.INodeValueOutput<global::System.Double> Amplitude;
 public global::FrooxEngine.ProtoFlux.INodeValueOutput<global::System.Double> Period;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
-members.Add("Time", new ResoniteLink.Reference() { });
-members.Add("Amplitude", new ResoniteLink.Reference() { });
-members.Add("Period", new ResoniteLink.Reference() { });
+    base.CollectMembers(members, context);
+members.Add("Time", Time.ToResoniteReference(context));
+members.Add("Amplitude", Amplitude.ToResoniteReference(context));
+members.Add("Period", Period.ToResoniteReference(context));
 }
 
 }

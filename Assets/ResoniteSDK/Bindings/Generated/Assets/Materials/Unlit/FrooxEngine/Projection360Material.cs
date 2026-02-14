@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.Projection360Material
-// Generated on: pátek 13. února 2026 23:21:34
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:56:57
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -69,13 +69,14 @@ public global::System.Byte StencilWriteMask;
 public global::System.Byte StencilReadMask;
 public global::System.Int32 RenderQueue;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
-members.Add("Texture", new ResoniteLink.Reference() { });
-members.Add("SecondaryTexture", new ResoniteLink.Reference() { });
-members.Add("Cubemap", new ResoniteLink.Reference() { });
-members.Add("SecondaryCubemap", new ResoniteLink.Reference() { });
+    base.CollectMembers(members, context);
+members.Add("Texture", Texture.ToResoniteReference(context));
+members.Add("SecondaryTexture", SecondaryTexture.ToResoniteReference(context));
+members.Add("Cubemap", Cubemap.ToResoniteReference(context));
+members.Add("SecondaryCubemap", SecondaryCubemap.ToResoniteReference(context));
 members.Add("CubemapLOD", CubemapLOD.ToResoniteLinkField());
 members.Add("TextureLerp", TextureLerp.ToResoniteLinkField());
 members.Add("Projection", Projection.ToResoniteLinkField());
@@ -86,7 +87,7 @@ members.Add("PerspectiveAngleOffset", PerspectiveAngleOffset.ToResoniteLinkField
 members.Add("Tint", Tint.ToResoniteLinkField());
 members.Add("Exposure", Exposure.ToResoniteLinkField());
 members.Add("Gamma", Gamma.ToResoniteLinkField());
-members.Add("TintTexture", new ResoniteLink.Reference() { });
+members.Add("TintTexture", TintTexture.ToResoniteReference(context));
 members.Add("TintTextureScale", TintTextureScale.ToResoniteLinkField());
 members.Add("TintTextureOffset", TintTextureOffset.ToResoniteLinkField());
 members.Add("TintTextureMode", TintTextureMode.ToResoniteLinkField());
@@ -109,8 +110,8 @@ members.Add("MaxIntensity", MaxIntensity.ToResoniteLinkField());
 members.Add("Rect", Rect.ToResoniteLinkField());
 members.Add("RectClip", RectClip.ToResoniteLinkField());
 members.Add("ColorMask", ColorMask.ToResoniteLinkField());
-members.Add("OffsetTexture", new ResoniteLink.Reference() { });
-members.Add("OffsetMask", new ResoniteLink.Reference() { });
+members.Add("OffsetTexture", OffsetTexture.ToResoniteReference(context));
+members.Add("OffsetMask", OffsetMask.ToResoniteReference(context));
 members.Add("OffsetTextureOffset", OffsetTextureOffset.ToResoniteLinkField());
 members.Add("OffsetTextureScale", OffsetTextureScale.ToResoniteLinkField());
 members.Add("OffsetMagnitude", OffsetMagnitude.ToResoniteLinkField());

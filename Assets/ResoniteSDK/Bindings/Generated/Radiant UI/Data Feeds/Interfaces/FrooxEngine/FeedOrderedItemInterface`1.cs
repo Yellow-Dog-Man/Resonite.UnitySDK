@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.FeedOrderedItemInterface<>
-// Generated on: pátek 13. února 2026 23:23:01
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:31
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -36,23 +36,24 @@ public global::FrooxEngine.IField<global::System.Boolean> HasMoveDown;
 public global::FrooxEngine.IField<global::System.Boolean> HasMakeFirst;
 public global::FrooxEngine.IField<global::System.Boolean> HasMakeLast;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
-members.Add("IsFirst", new ResoniteLink.Reference() { });
-members.Add("IsLast", new ResoniteLink.Reference() { });
-members.Add("MoveUpLabel", new ResoniteLink.Reference() { });
-members.Add("MoveDownLabel", new ResoniteLink.Reference() { });
-members.Add("MakeFirstLabel", new ResoniteLink.Reference() { });
-members.Add("MakeLastLabel", new ResoniteLink.Reference() { });
-members.Add("MoveUp", new ResoniteLink.Reference() { });
-members.Add("MoveDown", new ResoniteLink.Reference() { });
-members.Add("MakeFirst", new ResoniteLink.Reference() { });
-members.Add("MakeLast", new ResoniteLink.Reference() { });
-members.Add("HasMoveUp", new ResoniteLink.Reference() { });
-members.Add("HasMoveDown", new ResoniteLink.Reference() { });
-members.Add("HasMakeFirst", new ResoniteLink.Reference() { });
-members.Add("HasMakeLast", new ResoniteLink.Reference() { });
+    base.CollectMembers(members, context);
+members.Add("IsFirst", IsFirst.ToResoniteReference(context));
+members.Add("IsLast", IsLast.ToResoniteReference(context));
+members.Add("MoveUpLabel", MoveUpLabel.ToResoniteReference(context));
+members.Add("MoveDownLabel", MoveDownLabel.ToResoniteReference(context));
+members.Add("MakeFirstLabel", MakeFirstLabel.ToResoniteReference(context));
+members.Add("MakeLastLabel", MakeLastLabel.ToResoniteReference(context));
+members.Add("MoveUp", MoveUp.ToResoniteReference(context));
+members.Add("MoveDown", MoveDown.ToResoniteReference(context));
+members.Add("MakeFirst", MakeFirst.ToResoniteReference(context));
+members.Add("MakeLast", MakeLast.ToResoniteReference(context));
+members.Add("HasMoveUp", HasMoveUp.ToResoniteReference(context));
+members.Add("HasMoveDown", HasMoveDown.ToResoniteReference(context));
+members.Add("HasMakeFirst", HasMakeFirst.ToResoniteReference(context));
+members.Add("HasMakeLast", HasMakeLast.ToResoniteReference(context));
 }
 
 }

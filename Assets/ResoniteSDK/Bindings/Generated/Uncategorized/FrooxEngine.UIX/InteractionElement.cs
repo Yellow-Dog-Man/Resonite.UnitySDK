@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.UIX.InteractionElement
-// Generated on: pátek 13. února 2026 23:21:37
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:57:02
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -31,20 +31,21 @@ public global::FrooxEngine.IField<UnityEngine.ColorX> __legacy_ColorDrive;
 public global::System.Boolean IsPressed;
 public global::System.Boolean IsHovering;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
+    base.CollectMembers(members, context);
 members.Add("BaseColor", BaseColor.ToResoniteLinkField());
 members.Add("ColorDrivers", new ResoniteLink.SyncList()
 {
-    Elements = ColorDrivers.ConvertList(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers() })
+    Elements = ColorDrivers.ConvertList(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers(context) })
 });
 members.Add("__legacy_NormalColor", __legacy_NormalColor.ToResoniteLinkField());
 members.Add("__legacy_HighlightColor", __legacy_HighlightColor.ToResoniteLinkField());
 members.Add("__legacy_PressColor", __legacy_PressColor.ToResoniteLinkField());
 members.Add("__legacy_DisabledColor", __legacy_DisabledColor.ToResoniteLinkField());
 members.Add("__legacy_TintColorMode", __legacy_TintColorMode.ToResoniteLinkField());
-members.Add("__legacy_ColorDrive", new ResoniteLink.Reference() { });
+members.Add("__legacy_ColorDrive", __legacy_ColorDrive.ToResoniteReference(context));
 members.Add("IsPressed", IsPressed.ToResoniteLinkField());
 members.Add("IsHovering", IsHovering.ToResoniteLinkField());
 }

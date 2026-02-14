@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.AvatarAudioConfiguration
-// Generated on: pátek 13. února 2026 23:23:20
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:50
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -24,12 +24,13 @@ public partial class AvatarAudioConfiguration : global::FrooxEngine.UserRootComp
 public global::FrooxEngine.VoiceModeConfig Shout;
 public global::FrooxEngine.VoiceModeConfig Broadcast;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
-members.Add("Normal", new ResoniteLink.SyncObject() { Members = Normal.CollectMembers() });
-members.Add("Shout", new ResoniteLink.SyncObject() { Members = Shout.CollectMembers() });
-members.Add("Broadcast", new ResoniteLink.SyncObject() { Members = Broadcast.CollectMembers() });
+    base.CollectMembers(members, context);
+members.Add("Normal", new ResoniteLink.SyncObject() { Members = Normal.CollectMembers(context) });
+members.Add("Shout", new ResoniteLink.SyncObject() { Members = Shout.CollectMembers(context) });
+members.Add("Broadcast", new ResoniteLink.SyncObject() { Members = Broadcast.CollectMembers(context) });
 }
 
 }

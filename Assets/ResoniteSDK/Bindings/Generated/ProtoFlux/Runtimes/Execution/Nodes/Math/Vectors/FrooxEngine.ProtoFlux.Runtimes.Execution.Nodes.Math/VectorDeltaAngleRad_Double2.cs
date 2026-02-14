@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [ProtoFluxBindings]FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.Math.VectorDeltaAngleRad_Double2
-// Generated on: pátek 13. února 2026 23:22:40
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:10
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -23,11 +23,12 @@ public partial class VectorDeltaAngleRad_Double2 : global::FrooxEngine.ProtoFlux
     public global::FrooxEngine.ProtoFlux.INodeValueOutput<UnityEngine.Vector2Double> From;
 public global::FrooxEngine.ProtoFlux.INodeValueOutput<UnityEngine.Vector2Double> To;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
-members.Add("From", new ResoniteLink.Reference() { });
-members.Add("To", new ResoniteLink.Reference() { });
+    base.CollectMembers(members, context);
+members.Add("From", From.ToResoniteReference(context));
+members.Add("To", To.ToResoniteReference(context));
 }
 
 }

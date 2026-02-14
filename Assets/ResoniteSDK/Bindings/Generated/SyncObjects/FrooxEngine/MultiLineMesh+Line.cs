@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.MultiLineMesh+Line
-// Generated on: pátek 13. února 2026 23:21:35
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:57:00
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -40,9 +40,10 @@ public UnityEngine.Color[] Colors;
 public global::Renderite.Shared.ColorProfile Profile;
 public UnityEngine.Vector3[] PointOffsets;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
+    base.CollectMembers(members, context);
 members.Add("Scale", Scale.ToResoniteLinkField());
 members.Add("Color", Color.ToResoniteLinkField());
 members.Add("Points", Points.ToResoniteLinkField());

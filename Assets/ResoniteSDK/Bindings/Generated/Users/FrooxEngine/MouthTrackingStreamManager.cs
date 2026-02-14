@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.MouthTrackingStreamManager
-// Generated on: pátek 13. února 2026 23:23:19
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:49
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -59,47 +59,48 @@ public global::FrooxEngine.ValueStream<global::System.Single> NoseWrinkleRight;
 public global::FrooxEngine.ValueStream<global::System.Single> ChinRaiseBottom;
 public global::FrooxEngine.ValueStream<global::System.Single> ChinRaiseTop;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
-members.Add("User", new ResoniteLink.Reference() { });
-members.Add("IsTracking", new ResoniteLink.Reference() { });
-members.Add("Jaw", new ResoniteLink.Reference() { });
-members.Add("JawOpen", new ResoniteLink.Reference() { });
-members.Add("Tongue", new ResoniteLink.Reference() { });
-members.Add("TongueRoll", new ResoniteLink.Reference() { });
-members.Add("LipUpperLeftRaise", new ResoniteLink.Reference() { });
-members.Add("LipUpperRightRaise", new ResoniteLink.Reference() { });
-members.Add("LipLowerLeftaise", new ResoniteLink.Reference() { });
-members.Add("LipLowerRightRaise", new ResoniteLink.Reference() { });
-members.Add("LipUpperHorizontal", new ResoniteLink.Reference() { });
-members.Add("LipLowerHorizontal", new ResoniteLink.Reference() { });
-members.Add("MouthLeftSmileFrown", new ResoniteLink.Reference() { });
-members.Add("MouthRightSmileFrown", new ResoniteLink.Reference() { });
-members.Add("MouthLeftDimple", new ResoniteLink.Reference() { });
-members.Add("MouthRightDimple", new ResoniteLink.Reference() { });
-members.Add("MouthPoutLeft", new ResoniteLink.Reference() { });
-members.Add("MouthPoutRight", new ResoniteLink.Reference() { });
-members.Add("LipTopLeftOverturn", new ResoniteLink.Reference() { });
-members.Add("LipTopRightOverturn", new ResoniteLink.Reference() { });
-members.Add("LipBottomLeftOverturn", new ResoniteLink.Reference() { });
-members.Add("LipBottomRightOverturn", new ResoniteLink.Reference() { });
-members.Add("LipTopLeftOverUnder", new ResoniteLink.Reference() { });
-members.Add("LipTopRightOverUnder", new ResoniteLink.Reference() { });
-members.Add("LipBottomLeftOverUnder", new ResoniteLink.Reference() { });
-members.Add("LipBottomRightOverUnder", new ResoniteLink.Reference() { });
-members.Add("LipLeftStretchTighten", new ResoniteLink.Reference() { });
-members.Add("LipRightStretchTighten", new ResoniteLink.Reference() { });
-members.Add("LipsLeftPress", new ResoniteLink.Reference() { });
-members.Add("LipsRightPress", new ResoniteLink.Reference() { });
-members.Add("CheekLeftPuffSuck", new ResoniteLink.Reference() { });
-members.Add("CheekRightPuffSuck", new ResoniteLink.Reference() { });
-members.Add("CheekLeftRaise", new ResoniteLink.Reference() { });
-members.Add("CheekRightRaise", new ResoniteLink.Reference() { });
-members.Add("NoseWrinkleLeft", new ResoniteLink.Reference() { });
-members.Add("NoseWrinkleRight", new ResoniteLink.Reference() { });
-members.Add("ChinRaiseBottom", new ResoniteLink.Reference() { });
-members.Add("ChinRaiseTop", new ResoniteLink.Reference() { });
+    base.CollectMembers(members, context);
+members.Add("User", User.ToResoniteReference(context));
+members.Add("IsTracking", IsTracking.ToResoniteReference(context));
+members.Add("Jaw", Jaw.ToResoniteReference(context));
+members.Add("JawOpen", JawOpen.ToResoniteReference(context));
+members.Add("Tongue", Tongue.ToResoniteReference(context));
+members.Add("TongueRoll", TongueRoll.ToResoniteReference(context));
+members.Add("LipUpperLeftRaise", LipUpperLeftRaise.ToResoniteReference(context));
+members.Add("LipUpperRightRaise", LipUpperRightRaise.ToResoniteReference(context));
+members.Add("LipLowerLeftaise", LipLowerLeftaise.ToResoniteReference(context));
+members.Add("LipLowerRightRaise", LipLowerRightRaise.ToResoniteReference(context));
+members.Add("LipUpperHorizontal", LipUpperHorizontal.ToResoniteReference(context));
+members.Add("LipLowerHorizontal", LipLowerHorizontal.ToResoniteReference(context));
+members.Add("MouthLeftSmileFrown", MouthLeftSmileFrown.ToResoniteReference(context));
+members.Add("MouthRightSmileFrown", MouthRightSmileFrown.ToResoniteReference(context));
+members.Add("MouthLeftDimple", MouthLeftDimple.ToResoniteReference(context));
+members.Add("MouthRightDimple", MouthRightDimple.ToResoniteReference(context));
+members.Add("MouthPoutLeft", MouthPoutLeft.ToResoniteReference(context));
+members.Add("MouthPoutRight", MouthPoutRight.ToResoniteReference(context));
+members.Add("LipTopLeftOverturn", LipTopLeftOverturn.ToResoniteReference(context));
+members.Add("LipTopRightOverturn", LipTopRightOverturn.ToResoniteReference(context));
+members.Add("LipBottomLeftOverturn", LipBottomLeftOverturn.ToResoniteReference(context));
+members.Add("LipBottomRightOverturn", LipBottomRightOverturn.ToResoniteReference(context));
+members.Add("LipTopLeftOverUnder", LipTopLeftOverUnder.ToResoniteReference(context));
+members.Add("LipTopRightOverUnder", LipTopRightOverUnder.ToResoniteReference(context));
+members.Add("LipBottomLeftOverUnder", LipBottomLeftOverUnder.ToResoniteReference(context));
+members.Add("LipBottomRightOverUnder", LipBottomRightOverUnder.ToResoniteReference(context));
+members.Add("LipLeftStretchTighten", LipLeftStretchTighten.ToResoniteReference(context));
+members.Add("LipRightStretchTighten", LipRightStretchTighten.ToResoniteReference(context));
+members.Add("LipsLeftPress", LipsLeftPress.ToResoniteReference(context));
+members.Add("LipsRightPress", LipsRightPress.ToResoniteReference(context));
+members.Add("CheekLeftPuffSuck", CheekLeftPuffSuck.ToResoniteReference(context));
+members.Add("CheekRightPuffSuck", CheekRightPuffSuck.ToResoniteReference(context));
+members.Add("CheekLeftRaise", CheekLeftRaise.ToResoniteReference(context));
+members.Add("CheekRightRaise", CheekRightRaise.ToResoniteReference(context));
+members.Add("NoseWrinkleLeft", NoseWrinkleLeft.ToResoniteReference(context));
+members.Add("NoseWrinkleRight", NoseWrinkleRight.ToResoniteReference(context));
+members.Add("ChinRaiseBottom", ChinRaiseBottom.ToResoniteReference(context));
+members.Add("ChinRaiseTop", ChinRaiseTop.ToResoniteReference(context));
 }
 
 }

@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [ProtoFluxBindings]FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Interaction.Tools.RawDataToolEvents
-// Generated on: pátek 13. února 2026 23:22:57
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:27
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -31,19 +31,20 @@ public global::FrooxEngine.ProtoFlux.ISyncNodeOperation SecondaryPressed;
 public global::FrooxEngine.ProtoFlux.ISyncNodeOperation SecondaryHeld;
 public global::FrooxEngine.ProtoFlux.ISyncNodeOperation SecondaryReleased;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
-members.Add("Tool", new ResoniteLink.Reference() { });
-members.Add("Equipped", new ResoniteLink.Reference() { });
-members.Add("Dequipped", new ResoniteLink.Reference() { });
-members.Add("ToolUpdate", new ResoniteLink.Reference() { });
-members.Add("PrimaryPressed", new ResoniteLink.Reference() { });
-members.Add("PrimaryHeld", new ResoniteLink.Reference() { });
-members.Add("PrimaryReleased", new ResoniteLink.Reference() { });
-members.Add("SecondaryPressed", new ResoniteLink.Reference() { });
-members.Add("SecondaryHeld", new ResoniteLink.Reference() { });
-members.Add("SecondaryReleased", new ResoniteLink.Reference() { });
+    base.CollectMembers(members, context);
+members.Add("Tool", Tool.ToResoniteReference(context));
+members.Add("Equipped", Equipped.ToResoniteReference(context));
+members.Add("Dequipped", Dequipped.ToResoniteReference(context));
+members.Add("ToolUpdate", ToolUpdate.ToResoniteReference(context));
+members.Add("PrimaryPressed", PrimaryPressed.ToResoniteReference(context));
+members.Add("PrimaryHeld", PrimaryHeld.ToResoniteReference(context));
+members.Add("PrimaryReleased", PrimaryReleased.ToResoniteReference(context));
+members.Add("SecondaryPressed", SecondaryPressed.ToResoniteReference(context));
+members.Add("SecondaryHeld", SecondaryHeld.ToResoniteReference(context));
+members.Add("SecondaryReleased", SecondaryReleased.ToResoniteReference(context));
 }
 
 }

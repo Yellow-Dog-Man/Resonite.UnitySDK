@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.CommonAvatar.AvatarRawEyeData
-// Generated on: pátek 13. února 2026 23:23:20
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:50
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -27,15 +27,16 @@ public global::System.Single ConvergenceDistance;
 public global::System.Double Timestamp;
 public global::FrooxEngine.User _activeUser;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
-members.Add("LeftEye", new ResoniteLink.SyncObject() { Members = LeftEye.CollectMembers() });
-members.Add("RightEye", new ResoniteLink.SyncObject() { Members = RightEye.CollectMembers() });
-members.Add("CombinedEye", new ResoniteLink.SyncObject() { Members = CombinedEye.CollectMembers() });
+    base.CollectMembers(members, context);
+members.Add("LeftEye", new ResoniteLink.SyncObject() { Members = LeftEye.CollectMembers(context) });
+members.Add("RightEye", new ResoniteLink.SyncObject() { Members = RightEye.CollectMembers(context) });
+members.Add("CombinedEye", new ResoniteLink.SyncObject() { Members = CombinedEye.CollectMembers(context) });
 members.Add("ConvergenceDistance", ConvergenceDistance.ToResoniteLinkField());
 members.Add("Timestamp", Timestamp.ToResoniteLinkField());
-members.Add("_activeUser", new ResoniteLink.Reference() { });
+members.Add("_activeUser", _activeUser.ToResoniteReference(context));
 }
 
 }

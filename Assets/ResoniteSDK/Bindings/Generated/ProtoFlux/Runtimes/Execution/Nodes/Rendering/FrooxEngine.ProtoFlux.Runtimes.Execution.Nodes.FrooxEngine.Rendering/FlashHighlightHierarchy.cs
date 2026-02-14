@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [ProtoFluxBindings]FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Rendering.FlashHighlightHierarchy
-// Generated on: pátek 13. února 2026 23:22:53
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:23
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -29,16 +29,17 @@ public global::FrooxEngine.ProtoFlux.INodeValueOutput<global::System.Single> Dur
 public global::FrooxEngine.ProtoFlux.INodeValueOutput<UnityEngine.ColorX> Color;
 public global::FrooxEngine.ProtoFlux.NodeObjectOutput<global::FrooxEngine.Slot> FlashRoot;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
-members.Add("HierarchyRoot", new ResoniteLink.Reference() { });
-members.Add("ExcludeColliders", new ResoniteLink.Reference() { });
-members.Add("ExcludeMeshes", new ResoniteLink.Reference() { });
-members.Add("ExcludeDisabled", new ResoniteLink.Reference() { });
-members.Add("TrackPosition", new ResoniteLink.Reference() { });
-members.Add("Duration", new ResoniteLink.Reference() { });
-members.Add("Color", new ResoniteLink.Reference() { });
+    base.CollectMembers(members, context);
+members.Add("HierarchyRoot", HierarchyRoot.ToResoniteReference(context));
+members.Add("ExcludeColliders", ExcludeColliders.ToResoniteReference(context));
+members.Add("ExcludeMeshes", ExcludeMeshes.ToResoniteReference(context));
+members.Add("ExcludeDisabled", ExcludeDisabled.ToResoniteReference(context));
+members.Add("TrackPosition", TrackPosition.ToResoniteReference(context));
+members.Add("Duration", Duration.ToResoniteReference(context));
+members.Add("Color", Color.ToResoniteReference(context));
 members.Add("FlashRoot", new ResoniteLink.EmptyElement());
 }
 

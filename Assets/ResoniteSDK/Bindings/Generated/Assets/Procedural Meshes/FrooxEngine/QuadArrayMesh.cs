@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.QuadArrayMesh
-// Generated on: pátek 13. února 2026 23:21:35
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:57:00
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -27,9 +27,10 @@ public UnityEngine.Color[] Colors;
 public global::Renderite.Shared.ColorProfile ColorsProfile;
 public UnityEngine.Vector4[] UVs;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
+    base.CollectMembers(members, context);
 members.Add("Points", Points.ToResoniteLinkArray());
 members.Add("Sizes", Sizes.ToResoniteLinkArray());
 members.Add("Rotations", Rotations.ToResoniteLinkArray());

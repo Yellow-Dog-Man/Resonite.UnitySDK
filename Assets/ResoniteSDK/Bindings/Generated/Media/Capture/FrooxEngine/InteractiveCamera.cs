@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.InteractiveCamera
-// Generated on: pátek 13. února 2026 23:21:41
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:57:08
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -110,9 +110,10 @@ public global::FrooxEngine.IField<UnityEngine.Quaternion> _rotationDrive;
 public UnityEngine.Vector3 _releasePosition;
 public UnityEngine.Quaternion _releaseRotation;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
+    base.CollectMembers(members, context);
 members.Add("CameraMode", CameraMode.ToResoniteLinkField());
 members.Add("PreviewWidth", PreviewWidth.ToResoniteLinkField());
 members.Add("PreviewHeight", PreviewHeight.ToResoniteLinkField());
@@ -120,76 +121,76 @@ members.Add("RenderWidth", RenderWidth.ToResoniteLinkField());
 members.Add("StereoSeparation", StereoSeparation.ToResoniteLinkField());
 members.Add("TimerInterval", TimerInterval.ToResoniteLinkField());
 members.Add("TimerEnabled", TimerEnabled.ToResoniteLinkField());
-members.Add("TimerCountIndicator", new ResoniteLink.Reference() { });
-members.Add("TimerColorIndicator", new ResoniteLink.Reference() { });
-members.Add("_timerUser", new ResoniteLink.Reference() { });
-members.Add("MainCamera", new ResoniteLink.Reference() { });
-members.Add("SecondaryCamera", new ResoniteLink.Reference() { });
-members.Add("PreviewTexture", new ResoniteLink.Reference() { });
-members.Add("DisplayMaterial", new ResoniteLink.Reference() { });
+members.Add("TimerCountIndicator", TimerCountIndicator.ToResoniteReference(context));
+members.Add("TimerColorIndicator", TimerColorIndicator.ToResoniteReference(context));
+members.Add("_timerUser", _timerUser.ToResoniteReference(context));
+members.Add("MainCamera", MainCamera.ToResoniteReference(context));
+members.Add("SecondaryCamera", SecondaryCamera.ToResoniteReference(context));
+members.Add("PreviewTexture", PreviewTexture.ToResoniteReference(context));
+members.Add("DisplayMaterial", DisplayMaterial.ToResoniteReference(context));
 members.Add("Format", Format.ToResoniteLinkField());
 members.Add("Quality", Quality.ToResoniteLinkField());
 members.Add("SpawnPhotoInWorld", SpawnPhotoInWorld.ToResoniteLinkField());
-members.Add("PhotoSpawnPoint", new ResoniteLink.Reference() { });
+members.Add("PhotoSpawnPoint", PhotoSpawnPoint.ToResoniteReference(context));
 members.Add("PhotoSpawnSize", PhotoSpawnSize.ToResoniteLinkField());
-members.Add("PanoramaIndicator", new ResoniteLink.Reference() { });
-members.Add("PanoramaIndicatorSize", new ResoniteLink.Reference() { });
-members.Add("ObjectTargetSource", new ResoniteLink.Reference() { });
-members.Add("ObjectTargetSourceActive", new ResoniteLink.Reference() { });
+members.Add("PanoramaIndicator", PanoramaIndicator.ToResoniteReference(context));
+members.Add("PanoramaIndicatorSize", PanoramaIndicatorSize.ToResoniteReference(context));
+members.Add("ObjectTargetSource", ObjectTargetSource.ToResoniteReference(context));
+members.Add("ObjectTargetSourceActive", ObjectTargetSourceActive.ToResoniteReference(context));
 members.Add("ObjectAutoPose", ObjectAutoPose.ToResoniteLinkField());
 members.Add("HideLasersOnCapture", HideLasersOnCapture.ToResoniteLinkField());
-members.Add("CaptureSound", new ResoniteLink.Reference() { });
-members.Add("TimerStartSound", new ResoniteLink.Reference() { });
-members.Add("TimerCountdownSlowPlayer", new ResoniteLink.Reference() { });
-members.Add("TimerCountdownFastPlayer", new ResoniteLink.Reference() { });
-members.Add("TimerCountdownSlowOutput", new ResoniteLink.Reference() { });
-members.Add("TimerCountdownFastOutput", new ResoniteLink.Reference() { });
+members.Add("CaptureSound", CaptureSound.ToResoniteReference(context));
+members.Add("TimerStartSound", TimerStartSound.ToResoniteReference(context));
+members.Add("TimerCountdownSlowPlayer", TimerCountdownSlowPlayer.ToResoniteReference(context));
+members.Add("TimerCountdownFastPlayer", TimerCountdownFastPlayer.ToResoniteReference(context));
+members.Add("TimerCountdownSlowOutput", TimerCountdownSlowOutput.ToResoniteReference(context));
+members.Add("TimerCountdownFastOutput", TimerCountdownFastOutput.ToResoniteReference(context));
 members.Add("PreviewScale", PreviewScale.ToResoniteLinkField());
 members.Add("CameraModelOverride", CameraModelOverride.ToResoniteLinkField());
-members.Add("FrustumVisual", new ResoniteLink.Reference() { });
+members.Add("FrustumVisual", FrustumVisual.ToResoniteReference(context));
 members.Add("DefaultNearClip", DefaultNearClip.ToResoniteLinkField());
 members.Add("DefaultFarClip", DefaultFarClip.ToResoniteLinkField());
-members.Add("_frustumPosition", new ResoniteLink.Reference() { });
-members.Add("_frustumRotation", new ResoniteLink.Reference() { });
-members.Add("_frustumVerticalFOV", new ResoniteLink.Reference() { });
-members.Add("_frustumHorizontalFOV", new ResoniteLink.Reference() { });
-members.Add("_frustumNear", new ResoniteLink.Reference() { });
-members.Add("_frustumFar", new ResoniteLink.Reference() { });
-members.Add("_leftCamOffset", new ResoniteLink.Reference() { });
-members.Add("_rightCamOffset", new ResoniteLink.Reference() { });
-members.Add("_leftCamOrientation", new ResoniteLink.Reference() { });
-members.Add("_rightCamOrientation", new ResoniteLink.Reference() { });
-members.Add("_cameraRendering", new ResoniteLink.Reference() { });
-members.Add("_secondaryCameraRendering", new ResoniteLink.Reference() { });
+members.Add("_frustumPosition", _frustumPosition.ToResoniteReference(context));
+members.Add("_frustumRotation", _frustumRotation.ToResoniteReference(context));
+members.Add("_frustumVerticalFOV", _frustumVerticalFOV.ToResoniteReference(context));
+members.Add("_frustumHorizontalFOV", _frustumHorizontalFOV.ToResoniteReference(context));
+members.Add("_frustumNear", _frustumNear.ToResoniteReference(context));
+members.Add("_frustumFar", _frustumFar.ToResoniteReference(context));
+members.Add("_leftCamOffset", _leftCamOffset.ToResoniteReference(context));
+members.Add("_rightCamOffset", _rightCamOffset.ToResoniteReference(context));
+members.Add("_leftCamOrientation", _leftCamOrientation.ToResoniteReference(context));
+members.Add("_rightCamOrientation", _rightCamOrientation.ToResoniteReference(context));
+members.Add("_cameraRendering", _cameraRendering.ToResoniteReference(context));
+members.Add("_secondaryCameraRendering", _secondaryCameraRendering.ToResoniteReference(context));
 members.Add("ExclusiveOperators", new ResoniteLink.SyncList()
 {
-    Elements = ExclusiveOperators.ConvertList(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers() })
+    Elements = ExclusiveOperators.ConvertList(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers(context) })
 });
 members.Add("ControlActiveFields", new ResoniteLink.SyncList()
 {
-    Elements = ControlActiveFields.ConvertList(m => new ResoniteLink.Reference() { })
+    Elements = ControlActiveFields.ConvertList(m => m.ToResoniteReference(context))
 });
 members.Add("RenderOnlyForUsers", new ResoniteLink.SyncList()
 {
-    Elements = RenderOnlyForUsers.ConvertList(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers() })
+    Elements = RenderOnlyForUsers.ConvertList(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers(context) })
 });
 members.Add("ForceVisualsOff", ForceVisualsOff.ToResoniteLinkField());
 members.Add("VisualActiveFields", new ResoniteLink.SyncList()
 {
-    Elements = VisualActiveFields.ConvertList(m => new ResoniteLink.Reference() { })
+    Elements = VisualActiveFields.ConvertList(m => m.ToResoniteReference(context))
 });
 members.Add("AutoHideProximity", AutoHideProximity.ToResoniteLinkField());
 members.Add("ForceEyeAttentionUsers", new ResoniteLink.SyncList()
 {
-    Elements = ForceEyeAttentionUsers.ConvertList(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers() })
+    Elements = ForceEyeAttentionUsers.ConvertList(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers(context) })
 });
-members.Add("SimulatingUser", new ResoniteLink.SyncObject() { Members = SimulatingUser.CollectMembers() });
-members.Add("DestroyOnUserLeave", new ResoniteLink.SyncObject() { Members = DestroyOnUserLeave.CollectMembers() });
+members.Add("SimulatingUser", new ResoniteLink.SyncObject() { Members = SimulatingUser.CollectMembers(context) });
+members.Add("DestroyOnUserLeave", new ResoniteLink.SyncObject() { Members = DestroyOnUserLeave.CollectMembers(context) });
 members.Add("PositioningMode", PositioningMode.ToResoniteLinkField());
-members.Add("ActiveAnchor", new ResoniteLink.Reference() { });
+members.Add("ActiveAnchor", ActiveAnchor.ToResoniteReference(context));
 members.Add("AnchorInterpolationSpeed", AnchorInterpolationSpeed.ToResoniteLinkField());
 members.Add("AnchorLinearInterpolation", AnchorLinearInterpolation.ToResoniteLinkField());
-members.Add("FrameTargetUser", new ResoniteLink.SyncObject() { Members = FrameTargetUser.CollectMembers() });
+members.Add("FrameTargetUser", new ResoniteLink.SyncObject() { Members = FrameTargetUser.CollectMembers(context) });
 members.Add("HeadPointOffset", HeadPointOffset.ToResoniteLinkField());
 members.Add("AnglePosition", AnglePosition.ToResoniteLinkField());
 members.Add("Distance", Distance.ToResoniteLinkField());
@@ -201,11 +202,11 @@ members.Add("GroupIncludeRadius", GroupIncludeRadius.ToResoniteLinkField());
 members.Add("GroupExcludeRadius", GroupExcludeRadius.ToResoniteLinkField());
 members.Add("ForceGroupInclude", new ResoniteLink.SyncList()
 {
-    Elements = ForceGroupInclude.ConvertList(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers() })
+    Elements = ForceGroupInclude.ConvertList(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers(context) })
 });
 members.Add("ForceGroupExclude", new ResoniteLink.SyncList()
 {
-    Elements = ForceGroupExclude.ConvertList(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers() })
+    Elements = ForceGroupExclude.ConvertList(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers(context) })
 });
 members.Add("PositionSmoothSpeed", PositionSmoothSpeed.ToResoniteLinkField());
 members.Add("AnglePositionSmoothSpeed", AnglePositionSmoothSpeed.ToResoniteLinkField());
@@ -217,10 +218,10 @@ members.Add("FramingViewportPosition", FramingViewportPosition.ToResoniteLinkFie
 members.Add("AvoidOcclusion", AvoidOcclusion.ToResoniteLinkField());
 members.Add("OcclusionIncludePlayers", OcclusionIncludePlayers.ToResoniteLinkField());
 members.Add("OcclusionIncludeAnyColliders", OcclusionIncludeAnyColliders.ToResoniteLinkField());
-members.Add("_positionStream", new ResoniteLink.Reference() { });
-members.Add("_rotationStream", new ResoniteLink.Reference() { });
-members.Add("_positionDrive", new ResoniteLink.Reference() { });
-members.Add("_rotationDrive", new ResoniteLink.Reference() { });
+members.Add("_positionStream", _positionStream.ToResoniteReference(context));
+members.Add("_rotationStream", _rotationStream.ToResoniteReference(context));
+members.Add("_positionDrive", _positionDrive.ToResoniteReference(context));
+members.Add("_rotationDrive", _rotationDrive.ToResoniteReference(context));
 members.Add("_releasePosition", _releasePosition.ToResoniteLinkField());
 members.Add("_releaseRotation", _releaseRotation.ToResoniteLinkField());
 }

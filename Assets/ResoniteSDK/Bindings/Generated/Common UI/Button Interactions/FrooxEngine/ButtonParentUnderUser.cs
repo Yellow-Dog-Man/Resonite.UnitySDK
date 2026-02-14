@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.ButtonParentUnderUser
-// Generated on: pátek 13. února 2026 23:21:38
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:57:03
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -26,14 +26,15 @@ public global::System.Boolean UnparentWhenParented;
 public global::System.Boolean PreserveOriginalSpace;
 public global::FrooxEngine.Slot _originalSpace;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
-members.Add("Root", new ResoniteLink.Reference() { });
+    base.CollectMembers(members, context);
+members.Add("Root", Root.ToResoniteReference(context));
 members.Add("FindObjectRoot", FindObjectRoot.ToResoniteLinkField());
 members.Add("UnparentWhenParented", UnparentWhenParented.ToResoniteLinkField());
 members.Add("PreserveOriginalSpace", PreserveOriginalSpace.ToResoniteLinkField());
-members.Add("_originalSpace", new ResoniteLink.Reference() { });
+members.Add("_originalSpace", _originalSpace.ToResoniteReference(context));
 }
 
 }

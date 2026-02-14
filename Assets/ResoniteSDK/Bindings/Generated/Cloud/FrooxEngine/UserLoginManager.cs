@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.UserLoginManager
-// Generated on: pátek 13. února 2026 23:21:37
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:57:02
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -29,9 +29,10 @@ public global::System.Nullable<UnityEngine.ColorX> CurrentAccountColorOverride;
 public System.Uri CurrentProfileIcon;
 public global::FrooxEngine.UIX.Button LoginLogoutButton;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
+    base.CollectMembers(members, context);
 members.Add("IsLoggedIn", IsLoggedIn.ToResoniteLinkField());
 members.Add("IsLoggingOut", IsLoggingOut.ToResoniteLinkField());
 members.Add("CurrentUsername", CurrentUsername.ToResoniteLinkField());
@@ -39,7 +40,7 @@ members.Add("CurrentUserId", CurrentUserId.ToResoniteLinkField());
 members.Add("CurrentAccountType", CurrentAccountType.ToResoniteLinkField());
 members.Add("CurrentAccountColorOverride", CurrentAccountColorOverride.ToResoniteLinkField());
 members.Add("CurrentProfileIcon", CurrentProfileIcon.ToResoniteLinkField());
-members.Add("LoginLogoutButton", new ResoniteLink.Reference() { });
+members.Add("LoginLogoutButton", LoginLogoutButton.ToResoniteReference(context));
 }
 
 }

@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.FullBodyCalibrator+BodyReference
-// Generated on: pátek 13. února 2026 23:23:14
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:44
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -58,44 +58,45 @@ public global::FrooxEngine.IField<UnityEngine.Vector3> _rightElbowPos;
 public global::FrooxEngine.IField<UnityEngine.Quaternion> _rightElbowRot;
 public global::FrooxEngine.IField<global::System.Single> _ikWeight;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
-members.Add("_vrIkAvatar", new ResoniteLink.Reference() { });
-members.Add("_head", new ResoniteLink.Reference() { });
-members.Add("_hips", new ResoniteLink.Reference() { });
-members.Add("_chest", new ResoniteLink.Reference() { });
-members.Add("_leftHand", new ResoniteLink.Reference() { });
-members.Add("_rightHand", new ResoniteLink.Reference() { });
-members.Add("_leftElbow", new ResoniteLink.Reference() { });
-members.Add("_rightElbow", new ResoniteLink.Reference() { });
-members.Add("_leftFoot", new ResoniteLink.Reference() { });
-members.Add("_rightFoot", new ResoniteLink.Reference() { });
-members.Add("_leftKnee", new ResoniteLink.Reference() { });
-members.Add("_rightKnee", new ResoniteLink.Reference() { });
-members.Add("_headPos", new ResoniteLink.Reference() { });
-members.Add("_headRot", new ResoniteLink.Reference() { });
-members.Add("_leftHandPos", new ResoniteLink.Reference() { });
-members.Add("_leftHandRot", new ResoniteLink.Reference() { });
-members.Add("_rightHandPos", new ResoniteLink.Reference() { });
-members.Add("_rightHandRot", new ResoniteLink.Reference() { });
-members.Add("_hipsPos", new ResoniteLink.Reference() { });
-members.Add("_hipsRot", new ResoniteLink.Reference() { });
-members.Add("_chestPos", new ResoniteLink.Reference() { });
-members.Add("_chestRot", new ResoniteLink.Reference() { });
-members.Add("_leftFootPos", new ResoniteLink.Reference() { });
-members.Add("_leftFootRot", new ResoniteLink.Reference() { });
-members.Add("_rightFootPos", new ResoniteLink.Reference() { });
-members.Add("_rightFootRot", new ResoniteLink.Reference() { });
-members.Add("_leftKneePos", new ResoniteLink.Reference() { });
-members.Add("_leftKneeRot", new ResoniteLink.Reference() { });
-members.Add("_rightKneePos", new ResoniteLink.Reference() { });
-members.Add("_rightKneeRot", new ResoniteLink.Reference() { });
-members.Add("_leftElbowPos", new ResoniteLink.Reference() { });
-members.Add("_leftElbowRot", new ResoniteLink.Reference() { });
-members.Add("_rightElbowPos", new ResoniteLink.Reference() { });
-members.Add("_rightElbowRot", new ResoniteLink.Reference() { });
-members.Add("_ikWeight", new ResoniteLink.Reference() { });
+    base.CollectMembers(members, context);
+members.Add("_vrIkAvatar", _vrIkAvatar.ToResoniteReference(context));
+members.Add("_head", _head.ToResoniteReference(context));
+members.Add("_hips", _hips.ToResoniteReference(context));
+members.Add("_chest", _chest.ToResoniteReference(context));
+members.Add("_leftHand", _leftHand.ToResoniteReference(context));
+members.Add("_rightHand", _rightHand.ToResoniteReference(context));
+members.Add("_leftElbow", _leftElbow.ToResoniteReference(context));
+members.Add("_rightElbow", _rightElbow.ToResoniteReference(context));
+members.Add("_leftFoot", _leftFoot.ToResoniteReference(context));
+members.Add("_rightFoot", _rightFoot.ToResoniteReference(context));
+members.Add("_leftKnee", _leftKnee.ToResoniteReference(context));
+members.Add("_rightKnee", _rightKnee.ToResoniteReference(context));
+members.Add("_headPos", _headPos.ToResoniteReference(context));
+members.Add("_headRot", _headRot.ToResoniteReference(context));
+members.Add("_leftHandPos", _leftHandPos.ToResoniteReference(context));
+members.Add("_leftHandRot", _leftHandRot.ToResoniteReference(context));
+members.Add("_rightHandPos", _rightHandPos.ToResoniteReference(context));
+members.Add("_rightHandRot", _rightHandRot.ToResoniteReference(context));
+members.Add("_hipsPos", _hipsPos.ToResoniteReference(context));
+members.Add("_hipsRot", _hipsRot.ToResoniteReference(context));
+members.Add("_chestPos", _chestPos.ToResoniteReference(context));
+members.Add("_chestRot", _chestRot.ToResoniteReference(context));
+members.Add("_leftFootPos", _leftFootPos.ToResoniteReference(context));
+members.Add("_leftFootRot", _leftFootRot.ToResoniteReference(context));
+members.Add("_rightFootPos", _rightFootPos.ToResoniteReference(context));
+members.Add("_rightFootRot", _rightFootRot.ToResoniteReference(context));
+members.Add("_leftKneePos", _leftKneePos.ToResoniteReference(context));
+members.Add("_leftKneeRot", _leftKneeRot.ToResoniteReference(context));
+members.Add("_rightKneePos", _rightKneePos.ToResoniteReference(context));
+members.Add("_rightKneeRot", _rightKneeRot.ToResoniteReference(context));
+members.Add("_leftElbowPos", _leftElbowPos.ToResoniteReference(context));
+members.Add("_leftElbowRot", _leftElbowRot.ToResoniteReference(context));
+members.Add("_rightElbowPos", _rightElbowPos.ToResoniteReference(context));
+members.Add("_rightElbowRot", _rightElbowRot.ToResoniteReference(context));
+members.Add("_ikWeight", _ikWeight.ToResoniteReference(context));
 }
 
 }

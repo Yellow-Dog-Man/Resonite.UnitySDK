@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.CommonAvatar.MultiUserAvatarAnchor
-// Generated on: pátek 13. února 2026 23:23:19
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:50
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -29,14 +29,15 @@ public global::System.Boolean AcceptOutOfSightTouch;
 public global::System.Boolean AcceptPhysicalTouch;
 public global::System.Boolean AcceptRemoteTouch;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
-members.Add("AnchorPointSnap", new ResoniteLink.Reference() { });
+    base.CollectMembers(members, context);
+members.Add("AnchorPointSnap", AnchorPointSnap.ToResoniteReference(context));
 members.Add("MaxUsers", MaxUsers.ToResoniteLinkField());
 members.Add("MinDistance", MinDistance.ToResoniteLinkField());
-members.Add("Template", new ResoniteLink.Reference() { });
-members.Add("AnchorsRoot", new ResoniteLink.Reference() { });
+members.Add("Template", Template.ToResoniteReference(context));
+members.Add("AnchorsRoot", AnchorsRoot.ToResoniteReference(context));
 members.Add("AcceptOutOfSightTouch", AcceptOutOfSightTouch.ToResoniteLinkField());
 members.Add("AcceptPhysicalTouch", AcceptPhysicalTouch.ToResoniteLinkField());
 members.Add("AcceptRemoteTouch", AcceptRemoteTouch.ToResoniteLinkField());

@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.BrowserDialog
-// Generated on: pátek 13. února 2026 23:23:12
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:42
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -33,21 +33,22 @@ public global::FrooxEngine.SpriteProvider _tabSprite;
 public global::FrooxEngine.Slot _loadingIndicator;
 public global::FrooxEngine.UIX.SlideSwapRegion _swapper;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
-members.Add("SelectedItem", new ResoniteLink.Reference() { });
-members.Add("_previousSelectedItem", new ResoniteLink.Reference() { });
+    base.CollectMembers(members, context);
+members.Add("SelectedItem", SelectedItem.ToResoniteReference(context));
+members.Add("_previousSelectedItem", _previousSelectedItem.ToResoniteReference(context));
 members.Add("AllowSelect", AllowSelect.ToResoniteLinkField());
 members.Add("ItemSize", ItemSize.ToResoniteLinkField());
-members.Add("_selectedText", new ResoniteLink.Reference() { });
-members.Add("_pathRoot", new ResoniteLink.Reference() { });
-members.Add("_buttonsRoot", new ResoniteLink.Reference() { });
-members.Add("_folderGrid", new ResoniteLink.Reference() { });
-members.Add("_itemGrid", new ResoniteLink.Reference() { });
-members.Add("_tabSprite", new ResoniteLink.Reference() { });
-members.Add("_loadingIndicator", new ResoniteLink.Reference() { });
-members.Add("_swapper", new ResoniteLink.Reference() { });
+members.Add("_selectedText", _selectedText.ToResoniteReference(context));
+members.Add("_pathRoot", _pathRoot.ToResoniteReference(context));
+members.Add("_buttonsRoot", _buttonsRoot.ToResoniteReference(context));
+members.Add("_folderGrid", _folderGrid.ToResoniteReference(context));
+members.Add("_itemGrid", _itemGrid.ToResoniteReference(context));
+members.Add("_tabSprite", _tabSprite.ToResoniteReference(context));
+members.Add("_loadingIndicator", _loadingIndicator.ToResoniteReference(context));
+members.Add("_swapper", _swapper.ToResoniteReference(context));
 }
 
 }

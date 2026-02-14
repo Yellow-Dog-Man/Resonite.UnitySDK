@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.MazeGenerator
-// Generated on: pátek 13. února 2026 23:21:40
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:57:06
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -28,15 +28,16 @@ public UnityEngine.Vector2Int Point1;
 public global::FrooxEngine.MaterialProvider Material;
 public global::System.Boolean Bake;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
+    base.CollectMembers(members, context);
 members.Add("Seed", Seed.ToResoniteLinkField());
 members.Add("Cells", Cells.ToResoniteLinkField());
 members.Add("WallSize", WallSize.ToResoniteLinkField());
 members.Add("Point0", Point0.ToResoniteLinkField());
 members.Add("Point1", Point1.ToResoniteLinkField());
-members.Add("Material", new ResoniteLink.Reference() { });
+members.Add("Material", Material.ToResoniteReference(context));
 members.Add("Bake", Bake.ToResoniteLinkField());
 }
 

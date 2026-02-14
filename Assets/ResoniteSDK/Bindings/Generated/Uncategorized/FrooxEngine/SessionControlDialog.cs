@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.SessionControlDialog
-// Generated on: pátek 13. února 2026 23:23:18
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:47
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -80,76 +80,77 @@ public global::FrooxEngine.UIX.Button _enableResoniteLink;
 public global::FrooxEngine.UIX.Text _resoniteLinkPort;
 public System.Collections.Generic.List<global::FrooxEngine.UIX.Button> _tabButtons;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
+    base.CollectMembers(members, context);
 members.Add("ActiveTab", ActiveTab.ToResoniteLinkField());
-members.Add("_contentRoot", new ResoniteLink.Reference() { });
-members.Add("_worldName", new ResoniteLink.Reference() { });
-members.Add("_maxUsers", new ResoniteLink.Reference() { });
-members.Add("_awayKickEnabled", new ResoniteLink.Reference() { });
-members.Add("_awayKickMinutes", new ResoniteLink.Reference() { });
-members.Add("_autosaveEnabled", new ResoniteLink.Reference() { });
-members.Add("_autosaveMinutes", new ResoniteLink.Reference() { });
-members.Add("_autocleanEnabled", new ResoniteLink.Reference() { });
-members.Add("_autocleanMinutes", new ResoniteLink.Reference() { });
-members.Add("_mobileFriendly", new ResoniteLink.Reference() { });
-members.Add("_hideFromListing", new ResoniteLink.Reference() { });
-members.Add("_description", new ResoniteLink.Reference() { });
-members.Add("_worldNameButton", new ResoniteLink.Reference() { });
-members.Add("_descriptionButton", new ResoniteLink.Reference() { });
-members.Add("_maxUsersButton", new ResoniteLink.Reference() { });
-members.Add("_awayKickEnabledButton", new ResoniteLink.Reference() { });
-members.Add("_awayKickMinutesButton", new ResoniteLink.Reference() { });
-members.Add("_autosaveEnabledButton", new ResoniteLink.Reference() { });
-members.Add("_autosaveMinutesButton", new ResoniteLink.Reference() { });
-members.Add("_autocleanEnabledButton", new ResoniteLink.Reference() { });
-members.Add("_autocleanMinutesButton", new ResoniteLink.Reference() { });
-members.Add("_mobileFriendlyButton", new ResoniteLink.Reference() { });
-members.Add("_hideFromListingButton", new ResoniteLink.Reference() { });
-members.Add("_permissionOverridesIndicator", new ResoniteLink.Reference() { });
-members.Add("_permissionOverridesButton", new ResoniteLink.Reference() { });
-members.Add("_getSessionOrb", new ResoniteLink.Reference() { });
-members.Add("_getWorldOrb", new ResoniteLink.Reference() { });
-members.Add("_editMode", new ResoniteLink.Reference() { });
-members.Add("_copySessionURL", new ResoniteLink.Reference() { });
-members.Add("_copyWorldURL", new ResoniteLink.Reference() { });
-members.Add("_copyRecordURL", new ResoniteLink.Reference() { });
+members.Add("_contentRoot", _contentRoot.ToResoniteReference(context));
+members.Add("_worldName", _worldName.ToResoniteReference(context));
+members.Add("_maxUsers", _maxUsers.ToResoniteReference(context));
+members.Add("_awayKickEnabled", _awayKickEnabled.ToResoniteReference(context));
+members.Add("_awayKickMinutes", _awayKickMinutes.ToResoniteReference(context));
+members.Add("_autosaveEnabled", _autosaveEnabled.ToResoniteReference(context));
+members.Add("_autosaveMinutes", _autosaveMinutes.ToResoniteReference(context));
+members.Add("_autocleanEnabled", _autocleanEnabled.ToResoniteReference(context));
+members.Add("_autocleanMinutes", _autocleanMinutes.ToResoniteReference(context));
+members.Add("_mobileFriendly", _mobileFriendly.ToResoniteReference(context));
+members.Add("_hideFromListing", _hideFromListing.ToResoniteReference(context));
+members.Add("_description", _description.ToResoniteReference(context));
+members.Add("_worldNameButton", _worldNameButton.ToResoniteReference(context));
+members.Add("_descriptionButton", _descriptionButton.ToResoniteReference(context));
+members.Add("_maxUsersButton", _maxUsersButton.ToResoniteReference(context));
+members.Add("_awayKickEnabledButton", _awayKickEnabledButton.ToResoniteReference(context));
+members.Add("_awayKickMinutesButton", _awayKickMinutesButton.ToResoniteReference(context));
+members.Add("_autosaveEnabledButton", _autosaveEnabledButton.ToResoniteReference(context));
+members.Add("_autosaveMinutesButton", _autosaveMinutesButton.ToResoniteReference(context));
+members.Add("_autocleanEnabledButton", _autocleanEnabledButton.ToResoniteReference(context));
+members.Add("_autocleanMinutesButton", _autocleanMinutesButton.ToResoniteReference(context));
+members.Add("_mobileFriendlyButton", _mobileFriendlyButton.ToResoniteReference(context));
+members.Add("_hideFromListingButton", _hideFromListingButton.ToResoniteReference(context));
+members.Add("_permissionOverridesIndicator", _permissionOverridesIndicator.ToResoniteReference(context));
+members.Add("_permissionOverridesButton", _permissionOverridesButton.ToResoniteReference(context));
+members.Add("_getSessionOrb", _getSessionOrb.ToResoniteReference(context));
+members.Add("_getWorldOrb", _getWorldOrb.ToResoniteReference(context));
+members.Add("_editMode", _editMode.ToResoniteReference(context));
+members.Add("_copySessionURL", _copySessionURL.ToResoniteReference(context));
+members.Add("_copyWorldURL", _copyWorldURL.ToResoniteReference(context));
+members.Add("_copyRecordURL", _copyRecordURL.ToResoniteReference(context));
 members.Add("_accessLevelRadios", new ResoniteLink.SyncList()
 {
-    Elements = _accessLevelRadios.ConvertList(m => new ResoniteLink.Reference() { })
+    Elements = _accessLevelRadios.ConvertList(m => m.ToResoniteReference(context))
 });
 members.Add("_accessLevelRadiosButtons", new ResoniteLink.SyncList()
 {
-    Elements = _accessLevelRadiosButtons.ConvertList(m => new ResoniteLink.Reference() { })
+    Elements = _accessLevelRadiosButtons.ConvertList(m => m.ToResoniteReference(context))
 });
-members.Add("_worldNameSync", new ResoniteLink.Reference() { });
-members.Add("_descriptionSync", new ResoniteLink.Reference() { });
-members.Add("_maxUsersSync", new ResoniteLink.Reference() { });
-members.Add("_awayKickEnabledSync", new ResoniteLink.Reference() { });
-members.Add("_awayKickMinutesSync", new ResoniteLink.Reference() { });
-members.Add("_autosaveEnabledSync", new ResoniteLink.Reference() { });
-members.Add("_autosaveMinutesSync", new ResoniteLink.Reference() { });
-members.Add("_autocleanEnabledSync", new ResoniteLink.Reference() { });
-members.Add("_autocleanSecondsSync", new ResoniteLink.Reference() { });
-members.Add("_mobileFriendlySync", new ResoniteLink.Reference() { });
-members.Add("_hideFromListingSync", new ResoniteLink.Reference() { });
-members.Add("_editModeSync", new ResoniteLink.Reference() { });
-members.Add("_accessLevelSync", new ResoniteLink.Reference() { });
-members.Add("_customVerifierLabel", new ResoniteLink.Reference() { });
-members.Add("_customVerifierCheckbox", new ResoniteLink.Reference() { });
-members.Add("_customVerifierButton", new ResoniteLink.Reference() { });
-members.Add("_customVerifierSync", new ResoniteLink.Reference() { });
-members.Add("_uiContentRoot", new ResoniteLink.Reference() { });
-members.Add("_slideSwap", new ResoniteLink.Reference() { });
-members.Add("_saveWorld", new ResoniteLink.Reference() { });
-members.Add("_saveWorldAs", new ResoniteLink.Reference() { });
-members.Add("_saveWorldCopy", new ResoniteLink.Reference() { });
-members.Add("_enableResoniteLink", new ResoniteLink.Reference() { });
-members.Add("_resoniteLinkPort", new ResoniteLink.Reference() { });
+members.Add("_worldNameSync", _worldNameSync.ToResoniteReference(context));
+members.Add("_descriptionSync", _descriptionSync.ToResoniteReference(context));
+members.Add("_maxUsersSync", _maxUsersSync.ToResoniteReference(context));
+members.Add("_awayKickEnabledSync", _awayKickEnabledSync.ToResoniteReference(context));
+members.Add("_awayKickMinutesSync", _awayKickMinutesSync.ToResoniteReference(context));
+members.Add("_autosaveEnabledSync", _autosaveEnabledSync.ToResoniteReference(context));
+members.Add("_autosaveMinutesSync", _autosaveMinutesSync.ToResoniteReference(context));
+members.Add("_autocleanEnabledSync", _autocleanEnabledSync.ToResoniteReference(context));
+members.Add("_autocleanSecondsSync", _autocleanSecondsSync.ToResoniteReference(context));
+members.Add("_mobileFriendlySync", _mobileFriendlySync.ToResoniteReference(context));
+members.Add("_hideFromListingSync", _hideFromListingSync.ToResoniteReference(context));
+members.Add("_editModeSync", _editModeSync.ToResoniteReference(context));
+members.Add("_accessLevelSync", _accessLevelSync.ToResoniteReference(context));
+members.Add("_customVerifierLabel", _customVerifierLabel.ToResoniteReference(context));
+members.Add("_customVerifierCheckbox", _customVerifierCheckbox.ToResoniteReference(context));
+members.Add("_customVerifierButton", _customVerifierButton.ToResoniteReference(context));
+members.Add("_customVerifierSync", _customVerifierSync.ToResoniteReference(context));
+members.Add("_uiContentRoot", _uiContentRoot.ToResoniteReference(context));
+members.Add("_slideSwap", _slideSwap.ToResoniteReference(context));
+members.Add("_saveWorld", _saveWorld.ToResoniteReference(context));
+members.Add("_saveWorldAs", _saveWorldAs.ToResoniteReference(context));
+members.Add("_saveWorldCopy", _saveWorldCopy.ToResoniteReference(context));
+members.Add("_enableResoniteLink", _enableResoniteLink.ToResoniteReference(context));
+members.Add("_resoniteLinkPort", _resoniteLinkPort.ToResoniteReference(context));
 members.Add("_tabButtons", new ResoniteLink.SyncList()
 {
-    Elements = _tabButtons.ConvertList(m => new ResoniteLink.Reference() { })
+    Elements = _tabButtons.ConvertList(m => m.ToResoniteReference(context))
 });
 }
 

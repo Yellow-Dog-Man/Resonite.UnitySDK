@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.LegacyHorizontalChoiceBar
-// Generated on: pátek 13. února 2026 23:23:11
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:40
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -30,12 +30,13 @@ public global::System.Boolean Symmetrical;
 public global::FrooxEngine.Slot _root;
 public global::FrooxEngine.IField<UnityEngine.Vector3> _rootScale;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
+    base.CollectMembers(members, context);
 members.Add("_items", new ResoniteLink.SyncList()
 {
-    Elements = _items.ConvertList(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers() })
+    Elements = _items.ConvertList(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers(context) })
 });
 members.Add("Width", Width.ToResoniteLinkField());
 members.Add("Height", Height.ToResoniteLinkField());
@@ -43,8 +44,8 @@ members.Add("Thickness", Thickness.ToResoniteLinkField());
 members.Add("Spacing", Spacing.ToResoniteLinkField());
 members.Add("Slant", Slant.ToResoniteLinkField());
 members.Add("Symmetrical", Symmetrical.ToResoniteLinkField());
-members.Add("_root", new ResoniteLink.Reference() { });
-members.Add("_rootScale", new ResoniteLink.Reference() { });
+members.Add("_root", _root.ToResoniteReference(context));
+members.Add("_rootScale", _rootScale.ToResoniteReference(context));
 }
 
 }

@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [ProtoFluxBindings]FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.Color.ColorToHSL
-// Generated on: pátek 13. února 2026 23:22:20
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:57:48
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -25,10 +25,11 @@ public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Single> H;
 public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Single> S;
 public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Single> L;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
-members.Add("C", new ResoniteLink.Reference() { });
+    base.CollectMembers(members, context);
+members.Add("C", C.ToResoniteReference(context));
 members.Add("H", new ResoniteLink.EmptyElement());
 members.Add("S", new ResoniteLink.EmptyElement());
 members.Add("L", new ResoniteLink.EmptyElement());

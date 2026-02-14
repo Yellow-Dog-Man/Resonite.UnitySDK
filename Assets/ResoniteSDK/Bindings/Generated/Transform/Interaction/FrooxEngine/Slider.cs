@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.Slider
-// Generated on: pátek 13. února 2026 23:23:10
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:40
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -37,9 +37,10 @@ public UnityEngine.Quaternion rotOffset;
 public UnityEngine.Vector3 scaleReference;
 public global::FrooxEngine.Slot referenceParent;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
+    base.CollectMembers(members, context);
 members.Add("Rotatable", Rotatable.ToResoniteLinkField());
 members.Add("Scalable", Scalable.ToResoniteLinkField());
 members.Add("Range", Range.ToResoniteLinkField());
@@ -53,12 +54,12 @@ members.Add("SnapTime", SnapTime.ToResoniteLinkField());
 members.Add("SnapOnRelease", SnapOnRelease.ToResoniteLinkField());
 members.Add("SnapPositions", new ResoniteLink.SyncList()
 {
-    Elements = SnapPositions.ConvertList(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers() })
+    Elements = SnapPositions.ConvertList(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers(context) })
 });
 members.Add("posOffset", posOffset.ToResoniteLinkField());
 members.Add("rotOffset", rotOffset.ToResoniteLinkField());
 members.Add("scaleReference", scaleReference.ToResoniteLinkField());
-members.Add("referenceParent", new ResoniteLink.Reference() { });
+members.Add("referenceParent", referenceParent.ToResoniteReference(context));
 }
 
 }

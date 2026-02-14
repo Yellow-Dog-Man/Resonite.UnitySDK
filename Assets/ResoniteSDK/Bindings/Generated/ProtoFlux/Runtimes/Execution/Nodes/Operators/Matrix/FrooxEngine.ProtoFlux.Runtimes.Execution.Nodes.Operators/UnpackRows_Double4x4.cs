@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [ProtoFluxBindings]FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.Operators.UnpackRows_Double4x4
-// Generated on: pátek 13. února 2026 23:22:50
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:20
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -26,10 +26,11 @@ public global::FrooxEngine.ProtoFlux.NodeValueOutput<UnityEngine.Vector4Double> 
 public global::FrooxEngine.ProtoFlux.NodeValueOutput<UnityEngine.Vector4Double> Row2;
 public global::FrooxEngine.ProtoFlux.NodeValueOutput<UnityEngine.Vector4Double> Row3;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
-members.Add("Matrix", new ResoniteLink.Reference() { });
+    base.CollectMembers(members, context);
+members.Add("Matrix", Matrix.ToResoniteReference(context));
 members.Add("Row0", new ResoniteLink.EmptyElement());
 members.Add("Row1", new ResoniteLink.EmptyElement());
 members.Add("Row2", new ResoniteLink.EmptyElement());

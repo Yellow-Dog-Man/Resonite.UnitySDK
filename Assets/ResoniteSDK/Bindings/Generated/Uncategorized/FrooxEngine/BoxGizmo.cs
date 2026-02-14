@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.BoxGizmo
-// Generated on: pátek 13. února 2026 23:23:12
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:42
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -38,38 +38,39 @@ public global::FrooxEngine.IField<UnityEngine.Quaternion> _visualRotation;
 public global::FrooxEngine.IField<UnityEngine.Vector3> _visualScale;
 public global::FrooxEngine.TubeBoxMesh _tubeBox;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
-members.Add("TargetSlot", new ResoniteLink.Reference() { });
-members.Add("BoxCenterSpace", new ResoniteLink.SyncObject() { Members = BoxCenterSpace.CollectMembers() });
-members.Add("BoxSizeSpace", new ResoniteLink.SyncObject() { Members = BoxSizeSpace.CollectMembers() });
-members.Add("BoxSize", new ResoniteLink.Reference() { });
-members.Add("BoxCenter", new ResoniteLink.Reference() { });
+    base.CollectMembers(members, context);
+members.Add("TargetSlot", TargetSlot.ToResoniteReference(context));
+members.Add("BoxCenterSpace", new ResoniteLink.SyncObject() { Members = BoxCenterSpace.CollectMembers(context) });
+members.Add("BoxSizeSpace", new ResoniteLink.SyncObject() { Members = BoxSizeSpace.CollectMembers(context) });
+members.Add("BoxSize", BoxSize.ToResoniteReference(context));
+members.Add("BoxCenter", BoxCenter.ToResoniteReference(context));
 members.Add("LockOffset", LockOffset.ToResoniteLinkField());
 members.Add("_vertices", new ResoniteLink.SyncList()
 {
-    Elements = _vertices.ConvertList(m => new ResoniteLink.Reference() { })
+    Elements = _vertices.ConvertList(m => m.ToResoniteReference(context))
 });
 members.Add("_edges", new ResoniteLink.SyncList()
 {
-    Elements = _edges.ConvertList(m => new ResoniteLink.Reference() { })
+    Elements = _edges.ConvertList(m => m.ToResoniteReference(context))
 });
 members.Add("_faces", new ResoniteLink.SyncList()
 {
-    Elements = _faces.ConvertList(m => new ResoniteLink.Reference() { })
+    Elements = _faces.ConvertList(m => m.ToResoniteReference(context))
 });
 members.Add("_sphereColliderRadii", new ResoniteLink.SyncList()
 {
-    Elements = _sphereColliderRadii.ConvertList(m => new ResoniteLink.Reference() { })
+    Elements = _sphereColliderRadii.ConvertList(m => m.ToResoniteReference(context))
 });
-members.Add("_material", new ResoniteLink.Reference() { });
-members.Add("_handleSphere", new ResoniteLink.Reference() { });
-members.Add("_visualRoot", new ResoniteLink.Reference() { });
-members.Add("_visualPosition", new ResoniteLink.Reference() { });
-members.Add("_visualRotation", new ResoniteLink.Reference() { });
-members.Add("_visualScale", new ResoniteLink.Reference() { });
-members.Add("_tubeBox", new ResoniteLink.Reference() { });
+members.Add("_material", _material.ToResoniteReference(context));
+members.Add("_handleSphere", _handleSphere.ToResoniteReference(context));
+members.Add("_visualRoot", _visualRoot.ToResoniteReference(context));
+members.Add("_visualPosition", _visualPosition.ToResoniteReference(context));
+members.Add("_visualRotation", _visualRotation.ToResoniteReference(context));
+members.Add("_visualScale", _visualScale.ToResoniteReference(context));
+members.Add("_tubeBox", _tubeBox.ToResoniteReference(context));
 }
 
 }

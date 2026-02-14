@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [ProtoFluxBindings]FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Audio.PlayOneShot
-// Generated on: pátek 13. února 2026 23:22:18
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:57:46
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -43,31 +43,32 @@ public global::FrooxEngine.ProtoFlux.INodeValueOutput<global::System.Boolean> Lo
 public global::FrooxEngine.ProtoFlux.NodeObjectOutput<global::FrooxEngine.AudioOutput> Audio;
 public global::FrooxEngine.ProtoFlux.INodeOperation OnStartedPlaying;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
-members.Add("Clip", new ResoniteLink.Reference() { });
-members.Add("Volume", new ResoniteLink.Reference() { });
-members.Add("Speed", new ResoniteLink.Reference() { });
-members.Add("Spatialize", new ResoniteLink.Reference() { });
-members.Add("SpatialBlend", new ResoniteLink.Reference() { });
-members.Add("Global", new ResoniteLink.Reference() { });
-members.Add("Point", new ResoniteLink.Reference() { });
-members.Add("Root", new ResoniteLink.Reference() { });
-members.Add("ParentUnderRoot", new ResoniteLink.Reference() { });
-members.Add("Priority", new ResoniteLink.Reference() { });
-members.Add("Doppler", new ResoniteLink.Reference() { });
-members.Add("MinDistance", new ResoniteLink.Reference() { });
-members.Add("MaxDistance", new ResoniteLink.Reference() { });
-members.Add("Rolloff", new ResoniteLink.Reference() { });
-members.Add("DistanceSpace", new ResoniteLink.Reference() { });
-members.Add("MinScale", new ResoniteLink.Reference() { });
-members.Add("MaxScale", new ResoniteLink.Reference() { });
-members.Add("Group", new ResoniteLink.Reference() { });
-members.Add("IgnoreAudioEffects", new ResoniteLink.Reference() { });
-members.Add("LocalOnly", new ResoniteLink.Reference() { });
+    base.CollectMembers(members, context);
+members.Add("Clip", Clip.ToResoniteReference(context));
+members.Add("Volume", Volume.ToResoniteReference(context));
+members.Add("Speed", Speed.ToResoniteReference(context));
+members.Add("Spatialize", Spatialize.ToResoniteReference(context));
+members.Add("SpatialBlend", SpatialBlend.ToResoniteReference(context));
+members.Add("Global", Global.ToResoniteReference(context));
+members.Add("Point", Point.ToResoniteReference(context));
+members.Add("Root", Root.ToResoniteReference(context));
+members.Add("ParentUnderRoot", ParentUnderRoot.ToResoniteReference(context));
+members.Add("Priority", Priority.ToResoniteReference(context));
+members.Add("Doppler", Doppler.ToResoniteReference(context));
+members.Add("MinDistance", MinDistance.ToResoniteReference(context));
+members.Add("MaxDistance", MaxDistance.ToResoniteReference(context));
+members.Add("Rolloff", Rolloff.ToResoniteReference(context));
+members.Add("DistanceSpace", DistanceSpace.ToResoniteReference(context));
+members.Add("MinScale", MinScale.ToResoniteReference(context));
+members.Add("MaxScale", MaxScale.ToResoniteReference(context));
+members.Add("Group", Group.ToResoniteReference(context));
+members.Add("IgnoreAudioEffects", IgnoreAudioEffects.ToResoniteReference(context));
+members.Add("LocalOnly", LocalOnly.ToResoniteReference(context));
 members.Add("Audio", new ResoniteLink.EmptyElement());
-members.Add("OnStartedPlaying", new ResoniteLink.Reference() { });
+members.Add("OnStartedPlaying", OnStartedPlaying.ToResoniteReference(context));
 }
 
 }

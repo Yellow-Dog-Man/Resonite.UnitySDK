@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [ProtoFluxBindings]FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Users.SetUserScale
-// Generated on: pátek 13. února 2026 23:22:58
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:28
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -26,14 +26,15 @@ public global::FrooxEngine.ProtoFlux.INodeValueOutput<global::System.Single> Ani
 public global::FrooxEngine.ProtoFlux.INodeOperation OnScaleChangeStart;
 public global::FrooxEngine.ProtoFlux.INodeOperation OnAnimationFinished;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
-members.Add("UserRoot", new ResoniteLink.Reference() { });
-members.Add("Scale", new ResoniteLink.Reference() { });
-members.Add("AnimationTime", new ResoniteLink.Reference() { });
-members.Add("OnScaleChangeStart", new ResoniteLink.Reference() { });
-members.Add("OnAnimationFinished", new ResoniteLink.Reference() { });
+    base.CollectMembers(members, context);
+members.Add("UserRoot", UserRoot.ToResoniteReference(context));
+members.Add("Scale", Scale.ToResoniteReference(context));
+members.Add("AnimationTime", AnimationTime.ToResoniteReference(context));
+members.Add("OnScaleChangeStart", OnScaleChangeStart.ToResoniteReference(context));
+members.Add("OnAnimationFinished", OnAnimationFinished.ToResoniteReference(context));
 }
 
 }

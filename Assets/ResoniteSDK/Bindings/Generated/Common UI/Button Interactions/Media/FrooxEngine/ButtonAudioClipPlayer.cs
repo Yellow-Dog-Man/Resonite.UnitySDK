@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.ButtonAudioClipPlayer
-// Generated on: pátek 13. února 2026 23:21:38
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:57:03
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -25,24 +25,25 @@ public System.Collections.Generic.List<global::FrooxEngine.RandomAudioClipPlayer
 public System.Collections.Generic.List<global::FrooxEngine.RandomAudioClipPlayerBase.ClipData> HoverEnterClips;
 public System.Collections.Generic.List<global::FrooxEngine.RandomAudioClipPlayerBase.ClipData> HoverLeaveClips;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
+    base.CollectMembers(members, context);
 members.Add("PressedClips", new ResoniteLink.SyncList()
 {
-    Elements = PressedClips.ConvertList(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers() })
+    Elements = PressedClips.ConvertList(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers(context) })
 });
 members.Add("ReleasedClips", new ResoniteLink.SyncList()
 {
-    Elements = ReleasedClips.ConvertList(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers() })
+    Elements = ReleasedClips.ConvertList(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers(context) })
 });
 members.Add("HoverEnterClips", new ResoniteLink.SyncList()
 {
-    Elements = HoverEnterClips.ConvertList(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers() })
+    Elements = HoverEnterClips.ConvertList(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers(context) })
 });
 members.Add("HoverLeaveClips", new ResoniteLink.SyncList()
 {
-    Elements = HoverLeaveClips.ConvertList(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers() })
+    Elements = HoverLeaveClips.ConvertList(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers(context) })
 });
 }
 

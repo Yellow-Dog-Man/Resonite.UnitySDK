@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.CharacterController
-// Generated on: pátek 13. února 2026 23:21:41
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:57:07
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -57,12 +57,13 @@ public global::System.Boolean __collideWithOtherCharacters;
 public global::System.Boolean __ignoreRaycasts;
 public global::System.Boolean __rootAtBottom;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
-members.Add("SimulatingUser", new ResoniteLink.Reference() { });
-members.Add("CharacterRoot", new ResoniteLink.Reference() { });
-members.Add("HeadReference", new ResoniteLink.Reference() { });
+    base.CollectMembers(members, context);
+members.Add("SimulatingUser", SimulatingUser.ToResoniteReference(context));
+members.Add("CharacterRoot", CharacterRoot.ToResoniteReference(context));
+members.Add("HeadReference", HeadReference.ToResoniteReference(context));
 members.Add("SimulateRotation", SimulateRotation.ToResoniteLinkField());
 members.Add("MassScaling", MassScaling.ToResoniteLinkField());
 members.Add("ForceScaling", ForceScaling.ToResoniteLinkField());
@@ -88,7 +89,7 @@ members.Add("MaximumSupportSlope", MaximumSupportSlope.ToResoniteLinkField());
 members.Add("JumpSpeed", JumpSpeed.ToResoniteLinkField());
 members.Add("SlidingJumpSpeed", SlidingJumpSpeed.ToResoniteLinkField());
 members.Add("Gravity", Gravity.ToResoniteLinkField());
-members.Add("GravitySpace", new ResoniteLink.SyncObject() { Members = GravitySpace.CollectMembers() });
+members.Add("GravitySpace", new ResoniteLink.SyncObject() { Members = GravitySpace.CollectMembers(context) });
 members.Add("DebugVisualDuration", DebugVisualDuration.ToResoniteLinkField());
 members.Add("__height", __height.ToResoniteLinkField());
 members.Add("__radius", __radius.ToResoniteLinkField());

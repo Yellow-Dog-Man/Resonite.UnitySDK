@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [ProtoFluxBindings]FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Animation.TweenValue<>
-// Generated on: pátek 13. února 2026 23:22:17
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:57:45
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -30,17 +30,18 @@ public global::FrooxEngine.ProtoFlux.INodeObjectOutput<global::FrooxEngine.IFiel
 public global::FrooxEngine.ProtoFlux.INodeOperation OnStarted;
 public global::FrooxEngine.ProtoFlux.INodeOperation OnDone;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
-members.Add("To", new ResoniteLink.Reference() { });
-members.Add("From", new ResoniteLink.Reference() { });
-members.Add("Duration", new ResoniteLink.Reference() { });
-members.Add("Curve", new ResoniteLink.Reference() { });
-members.Add("ProportionalDuration", new ResoniteLink.Reference() { });
-members.Add("Target", new ResoniteLink.Reference() { });
-members.Add("OnStarted", new ResoniteLink.Reference() { });
-members.Add("OnDone", new ResoniteLink.Reference() { });
+    base.CollectMembers(members, context);
+members.Add("To", To.ToResoniteReference(context));
+members.Add("From", From.ToResoniteReference(context));
+members.Add("Duration", Duration.ToResoniteReference(context));
+members.Add("Curve", Curve.ToResoniteReference(context));
+members.Add("ProportionalDuration", ProportionalDuration.ToResoniteReference(context));
+members.Add("Target", Target.ToResoniteReference(context));
+members.Add("OnStarted", OnStarted.ToResoniteReference(context));
+members.Add("OnDone", OnDone.ToResoniteReference(context));
 }
 
 }

@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.GizmoLink
-// Generated on: pátek 13. února 2026 23:23:14
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:44
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -24,11 +24,12 @@ public partial class GizmoLink : global::FrooxEngine.Component
 public global::FrooxEngine.IComponentGizmo _gizmo;
 public System.String _type;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
-members.Add("_worker", new ResoniteLink.Reference() { });
-members.Add("_gizmo", new ResoniteLink.Reference() { });
+    base.CollectMembers(members, context);
+members.Add("_worker", _worker.ToResoniteReference(context));
+members.Add("_gizmo", _gizmo.ToResoniteReference(context));
 members.Add("_type", _type.ToResoniteLinkField());
 }
 

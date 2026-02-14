@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.CameraPortal
-// Generated on: pátek 13. února 2026 23:23:04
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:33
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -33,15 +33,16 @@ public global::System.Boolean DisableShadows;
 public global::System.Nullable<global::System.Single> OverrideFarClip;
 public global::System.Nullable<global::System.Single> OverrideNearClip;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
-members.Add("Renderer", new ResoniteLink.Reference() { });
-members.Add("ReflectionTexture", new ResoniteLink.Reference() { });
+    base.CollectMembers(members, context);
+members.Add("Renderer", Renderer.ToResoniteReference(context));
+members.Add("ReflectionTexture", ReflectionTexture.ToResoniteReference(context));
 members.Add("PlaneOffset", PlaneOffset.ToResoniteLinkField());
 members.Add("PlaneNormal", PlaneNormal.ToResoniteLinkField());
 members.Add("RenderMode", RenderMode.ToResoniteLinkField());
-members.Add("PortalTarget", new ResoniteLink.Reference() { });
+members.Add("PortalTarget", PortalTarget.ToResoniteReference(context));
 members.Add("OverrideClear", OverrideClear.ToResoniteLinkField());
 members.Add("ClearColor", ClearColor.ToResoniteLinkField());
 members.Add("DisablePerPixelLights", DisablePerPixelLights.ToResoniteLinkField());

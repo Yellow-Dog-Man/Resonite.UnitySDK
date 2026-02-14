@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.CommonAvatar.AvatarNameTagAssigner
-// Generated on: pátek 13. února 2026 23:23:20
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:50
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -27,28 +27,29 @@ public System.Collections.Generic.List<global::FrooxEngine.IField<UnityEngine.Co
 public System.Collections.Generic.List<global::FrooxEngine.IField<UnityEngine.ColorX>> BackgroundTargets;
 public global::System.String DequippedLabel;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
+    base.CollectMembers(members, context);
 members.Add("LabelTargets", new ResoniteLink.SyncList()
 {
-    Elements = LabelTargets.ConvertList(m => new ResoniteLink.Reference() { })
+    Elements = LabelTargets.ConvertList(m => m.ToResoniteReference(context))
 });
 members.Add("UserIdTargets", new ResoniteLink.SyncList()
 {
-    Elements = UserIdTargets.ConvertList(m => new ResoniteLink.Reference() { })
+    Elements = UserIdTargets.ConvertList(m => m.ToResoniteReference(context))
 });
 members.Add("ColorTargets", new ResoniteLink.SyncList()
 {
-    Elements = ColorTargets.ConvertList(m => new ResoniteLink.Reference() { })
+    Elements = ColorTargets.ConvertList(m => m.ToResoniteReference(context))
 });
 members.Add("OutlineTargets", new ResoniteLink.SyncList()
 {
-    Elements = OutlineTargets.ConvertList(m => new ResoniteLink.Reference() { })
+    Elements = OutlineTargets.ConvertList(m => m.ToResoniteReference(context))
 });
 members.Add("BackgroundTargets", new ResoniteLink.SyncList()
 {
-    Elements = BackgroundTargets.ConvertList(m => new ResoniteLink.Reference() { })
+    Elements = BackgroundTargets.ConvertList(m => m.ToResoniteReference(context))
 });
 members.Add("DequippedLabel", DequippedLabel.ToResoniteLinkField());
 }

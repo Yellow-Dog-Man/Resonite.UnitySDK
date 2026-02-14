@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.GeometryLineBrushTool
-// Generated on: pátek 13. února 2026 23:23:08
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:38
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -31,13 +31,14 @@ public global::FrooxEngine.MultiLineMesh _previewMesh;
 public global::FrooxEngine.IField<UnityEngine.Vector3> _previewMeshOffset;
 public global::FrooxEngine.Slot _sizeKnob;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
-members.Add("TipAnchor", new ResoniteLink.Reference() { });
+    base.CollectMembers(members, context);
+members.Add("TipAnchor", TipAnchor.ToResoniteReference(context));
 members.Add("LineStyles", new ResoniteLink.SyncList()
 {
-    Elements = LineStyles.ConvertList(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers() })
+    Elements = LineStyles.ConvertList(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers(context) })
 });
 members.Add("Profile", Profile.ToResoniteLinkField());
 members.Add("UseRelativeMinimumPointDistance", UseRelativeMinimumPointDistance.ToResoniteLinkField());
@@ -45,11 +46,11 @@ members.Add("RelativeMinimumPointDistanceRatio", RelativeMinimumPointDistanceRat
 members.Add("PressureAffectsSize", PressureAffectsSize.ToResoniteLinkField());
 members.Add("MaterialPreviews", new ResoniteLink.SyncList()
 {
-    Elements = MaterialPreviews.ConvertList(m => new ResoniteLink.Reference() { })
+    Elements = MaterialPreviews.ConvertList(m => m.ToResoniteReference(context))
 });
-members.Add("_previewMesh", new ResoniteLink.Reference() { });
-members.Add("_previewMeshOffset", new ResoniteLink.Reference() { });
-members.Add("_sizeKnob", new ResoniteLink.Reference() { });
+members.Add("_previewMesh", _previewMesh.ToResoniteReference(context));
+members.Add("_previewMeshOffset", _previewMeshOffset.ToResoniteReference(context));
+members.Add("_sizeKnob", _sizeKnob.ToResoniteReference(context));
 }
 
 }

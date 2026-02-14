@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [ProtoFluxBindings]FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Physics.Raycaster
-// Generated on: pátek 13. února 2026 23:22:52
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:22
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -33,15 +33,16 @@ public global::FrooxEngine.ProtoFlux.NodeValueOutput<UnityEngine.Vector3> HitPoi
 public global::FrooxEngine.ProtoFlux.NodeValueOutput<UnityEngine.Vector3> HitNormal;
 public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Int32> HitTriangleIndex;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
-members.Add("Origin", new ResoniteLink.Reference() { });
-members.Add("Direction", new ResoniteLink.Reference() { });
-members.Add("MaxDistance", new ResoniteLink.Reference() { });
-members.Add("HitTriggers", new ResoniteLink.Reference() { });
-members.Add("UsersOnly", new ResoniteLink.Reference() { });
-members.Add("Root", new ResoniteLink.Reference() { });
+    base.CollectMembers(members, context);
+members.Add("Origin", Origin.ToResoniteReference(context));
+members.Add("Direction", Direction.ToResoniteReference(context));
+members.Add("MaxDistance", MaxDistance.ToResoniteReference(context));
+members.Add("HitTriggers", HitTriggers.ToResoniteReference(context));
+members.Add("UsersOnly", UsersOnly.ToResoniteReference(context));
+members.Add("Root", Root.ToResoniteReference(context));
 members.Add("HasHit", new ResoniteLink.EmptyElement());
 members.Add("HitCollider", new ResoniteLink.EmptyElement());
 members.Add("HitDistance", new ResoniteLink.EmptyElement());

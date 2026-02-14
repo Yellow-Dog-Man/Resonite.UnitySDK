@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.AssetMultiplexer<>
-// Generated on: pátek 13. února 2026 23:21:36
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:57:01
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -25,14 +25,15 @@ public partial class AssetMultiplexer<A> : global::FrooxEngine.Component
 public global::System.Int32 Index;
 public System.Collections.Generic.List<global::FrooxEngine.IAssetProvider<A>> Assets;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
-members.Add("Target", new ResoniteLink.Reference() { });
+    base.CollectMembers(members, context);
+members.Add("Target", Target.ToResoniteReference(context));
 members.Add("Index", Index.ToResoniteLinkField());
 members.Add("Assets", new ResoniteLink.SyncList()
 {
-    Elements = Assets.ConvertList(m => new ResoniteLink.Reference() { })
+    Elements = Assets.ConvertList(m => m.ToResoniteReference(context))
 });
 }
 

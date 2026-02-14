@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.InteractionLaser
-// Generated on: pátek 13. února 2026 23:22:57
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:27
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -73,9 +73,10 @@ public global::FrooxEngine.IField<UnityEngine.ColorX> _segmentColorFront;
 public global::FrooxEngine.IField<UnityEngine.ColorX> _segmentColorBehind;
 public global::FrooxEngine.IField<global::System.Int32> _segmentRenderQueue;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
+    base.CollectMembers(members, context);
 members.Add("SmoothSpeed", SmoothSpeed.ToResoniteLinkField());
 members.Add("SmoothModulateStartAngle", SmoothModulateStartAngle.ToResoniteLinkField());
 members.Add("SmoothModulateEndAngle", SmoothModulateEndAngle.ToResoniteLinkField());
@@ -84,50 +85,50 @@ members.Add("SmoothModulateMultiplier", SmoothModulateMultiplier.ToResoniteLinkF
 members.Add("StickThreshold", StickThreshold.ToResoniteLinkField());
 members.Add("ShowInDesktop", ShowInDesktop.ToResoniteLinkField());
 members.Add("MaxTouchPenetrationDistance", MaxTouchPenetrationDistance.ToResoniteLinkField());
-members.Add("StickPointSpace", new ResoniteLink.Reference() { });
+members.Add("StickPointSpace", StickPointSpace.ToResoniteReference(context));
 members.Add("StickPointPosition", StickPointPosition.ToResoniteLinkField());
-members.Add("_handler", new ResoniteLink.Reference() { });
-members.Add("_lastHit", new ResoniteLink.Reference() { });
-members.Add("_lastInteractionTarget", new ResoniteLink.Reference() { });
-members.Add("_lastInteractionModifier", new ResoniteLink.Reference() { });
+members.Add("_handler", _handler.ToResoniteReference(context));
+members.Add("_lastHit", _lastHit.ToResoniteReference(context));
+members.Add("_lastInteractionTarget", _lastInteractionTarget.ToResoniteReference(context));
+members.Add("_lastInteractionModifier", _lastInteractionModifier.ToResoniteReference(context));
 members.Add("_hitColor", _hitColor.ToResoniteLinkField());
 members.Add("_laserTextureSpeed", _laserTextureSpeed.ToResoniteLinkField());
-members.Add("_touchSource", new ResoniteLink.Reference() { });
-members.Add("_laserMesh", new ResoniteLink.Reference() { });
-members.Add("_laserMaterial", new ResoniteLink.Reference() { });
-members.Add("_laserTexture", new ResoniteLink.Reference() { });
-members.Add("_behindLaserTint", new ResoniteLink.Reference() { });
-members.Add("_laserRenderQueue", new ResoniteLink.Reference() { });
-members.Add("_laserFrontTextureOffset", new ResoniteLink.Reference() { });
-members.Add("_laserBehindTextureOffset", new ResoniteLink.Reference() { });
-members.Add("_directPoint", new ResoniteLink.Reference() { });
-members.Add("_actualPoint", new ResoniteLink.Reference() { });
-members.Add("_startColor", new ResoniteLink.Reference() { });
-members.Add("_endColor", new ResoniteLink.Reference() { });
-members.Add("_pointSlot", new ResoniteLink.Reference() { });
-members.Add("_pointSlotPos", new ResoniteLink.Reference() { });
-members.Add("_laserVisible", new ResoniteLink.Reference() { });
-members.Add("_cursorVisible", new ResoniteLink.Reference() { });
-members.Add("_cursorRoot", new ResoniteLink.Reference() { });
-members.Add("_cursorImageRoot", new ResoniteLink.Reference() { });
-members.Add("_cursorTexture", new ResoniteLink.Reference() { });
-members.Add("_cursorMaterial", new ResoniteLink.Reference() { });
-members.Add("_cursorFrontTint", new ResoniteLink.Reference() { });
-members.Add("_cursorBehindTint", new ResoniteLink.Reference() { });
-members.Add("_cursorRenderQueue", new ResoniteLink.Reference() { });
-members.Add("_cursorOrientation", new ResoniteLink.Reference() { });
+members.Add("_touchSource", _touchSource.ToResoniteReference(context));
+members.Add("_laserMesh", _laserMesh.ToResoniteReference(context));
+members.Add("_laserMaterial", _laserMaterial.ToResoniteReference(context));
+members.Add("_laserTexture", _laserTexture.ToResoniteReference(context));
+members.Add("_behindLaserTint", _behindLaserTint.ToResoniteReference(context));
+members.Add("_laserRenderQueue", _laserRenderQueue.ToResoniteReference(context));
+members.Add("_laserFrontTextureOffset", _laserFrontTextureOffset.ToResoniteReference(context));
+members.Add("_laserBehindTextureOffset", _laserBehindTextureOffset.ToResoniteReference(context));
+members.Add("_directPoint", _directPoint.ToResoniteReference(context));
+members.Add("_actualPoint", _actualPoint.ToResoniteReference(context));
+members.Add("_startColor", _startColor.ToResoniteReference(context));
+members.Add("_endColor", _endColor.ToResoniteReference(context));
+members.Add("_pointSlot", _pointSlot.ToResoniteReference(context));
+members.Add("_pointSlotPos", _pointSlotPos.ToResoniteReference(context));
+members.Add("_laserVisible", _laserVisible.ToResoniteReference(context));
+members.Add("_cursorVisible", _cursorVisible.ToResoniteReference(context));
+members.Add("_cursorRoot", _cursorRoot.ToResoniteReference(context));
+members.Add("_cursorImageRoot", _cursorImageRoot.ToResoniteReference(context));
+members.Add("_cursorTexture", _cursorTexture.ToResoniteReference(context));
+members.Add("_cursorMaterial", _cursorMaterial.ToResoniteReference(context));
+members.Add("_cursorFrontTint", _cursorFrontTint.ToResoniteReference(context));
+members.Add("_cursorBehindTint", _cursorBehindTint.ToResoniteReference(context));
+members.Add("_cursorRenderQueue", _cursorRenderQueue.ToResoniteReference(context));
+members.Add("_cursorOrientation", _cursorOrientation.ToResoniteReference(context));
 members.Add("_cursorTint", _cursorTint.ToResoniteLinkField());
 members.Add("_directCursorVisualsVisible", _directCursorVisualsVisible.ToResoniteLinkField());
-members.Add("_directCursorActive", new ResoniteLink.Reference() { });
-members.Add("_directCursorRoot", new ResoniteLink.Reference() { });
-members.Add("_directCursorImageRoot", new ResoniteLink.Reference() { });
-members.Add("_directCursorOffset", new ResoniteLink.Reference() { });
-members.Add("_directCursorOrientation", new ResoniteLink.Reference() { });
-members.Add("_directLineTarget", new ResoniteLink.Reference() { });
-members.Add("_directLineMesh", new ResoniteLink.Reference() { });
-members.Add("_segmentColorFront", new ResoniteLink.Reference() { });
-members.Add("_segmentColorBehind", new ResoniteLink.Reference() { });
-members.Add("_segmentRenderQueue", new ResoniteLink.Reference() { });
+members.Add("_directCursorActive", _directCursorActive.ToResoniteReference(context));
+members.Add("_directCursorRoot", _directCursorRoot.ToResoniteReference(context));
+members.Add("_directCursorImageRoot", _directCursorImageRoot.ToResoniteReference(context));
+members.Add("_directCursorOffset", _directCursorOffset.ToResoniteReference(context));
+members.Add("_directCursorOrientation", _directCursorOrientation.ToResoniteReference(context));
+members.Add("_directLineTarget", _directLineTarget.ToResoniteReference(context));
+members.Add("_directLineMesh", _directLineMesh.ToResoniteReference(context));
+members.Add("_segmentColorFront", _segmentColorFront.ToResoniteReference(context));
+members.Add("_segmentColorBehind", _segmentColorBehind.ToResoniteReference(context));
+members.Add("_segmentRenderQueue", _segmentRenderQueue.ToResoniteReference(context));
 }
 
 }

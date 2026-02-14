@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.NullableMemberEditor
-// Generated on: pátek 13. února 2026 23:23:17
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:46
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -25,13 +25,14 @@ public global::FrooxEngine.UIX.Checkbox _checkBox;
 public global::FrooxEngine.IField<global::System.Boolean> _stateDrive;
 public global::FrooxEngine.UIX.Button _button;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
+    base.CollectMembers(members, context);
 members.Add("NullableBaseType", NullableBaseType.ToResoniteLinkField());
-members.Add("_checkBox", new ResoniteLink.Reference() { });
-members.Add("_stateDrive", new ResoniteLink.Reference() { });
-members.Add("_button", new ResoniteLink.Reference() { });
+members.Add("_checkBox", _checkBox.ToResoniteReference(context));
+members.Add("_stateDrive", _stateDrive.ToResoniteReference(context));
+members.Add("_button", _button.ToResoniteReference(context));
 }
 
 }

@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.PhysicalLocomotion
-// Generated on: pátek 13. února 2026 23:21:41
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:57:07
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -48,14 +48,15 @@ public UnityEngine.ColorX _defaultColor;
 public global::FrooxEngine.CharacterController _characterController;
 public global::System.String __legacyName;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
-members.Add("Turn", new ResoniteLink.SyncObject() { Members = Turn.CollectMembers() });
+    base.CollectMembers(members, context);
+members.Add("Turn", new ResoniteLink.SyncObject() { Members = Turn.CollectMembers(context) });
 members.Add("Archetype", Archetype.ToResoniteLinkField());
 members.Add("MinInitializationDelay", MinInitializationDelay.ToResoniteLinkField());
 members.Add("MaxInitializationDelay", MaxInitializationDelay.ToResoniteLinkField());
-members.Add("InitializationColliderRoot", new ResoniteLink.Reference() { });
+members.Add("InitializationColliderRoot", InitializationColliderRoot.ToResoniteReference(context));
 members.Add("UseSpeedFromUserSettings", UseSpeedFromUserSettings.ToResoniteLinkField());
 members.Add("Description", Description.ToResoniteLinkField());
 members.Add("Mode", Mode.ToResoniteLinkField());
@@ -76,7 +77,7 @@ members.Add("AllowCrouch", AllowCrouch.ToResoniteLinkField());
 members.Add("MaximumNormalizedSpeed", MaximumNormalizedSpeed.ToResoniteLinkField());
 members.Add("_defaultIcon", _defaultIcon.ToResoniteLinkField());
 members.Add("_defaultColor", _defaultColor.ToResoniteLinkField());
-members.Add("_characterController", new ResoniteLink.Reference() { });
+members.Add("_characterController", _characterController.ToResoniteReference(context));
 members.Add("__legacyName", __legacyName.ToResoniteLinkField());
 }
 

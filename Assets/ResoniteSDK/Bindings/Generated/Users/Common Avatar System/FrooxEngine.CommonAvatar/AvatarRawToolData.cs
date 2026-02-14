@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.CommonAvatar.AvatarRawToolData
-// Generated on: pátek 13. února 2026 23:23:19
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:49
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -33,21 +33,22 @@ public global::FrooxEngine.ValueStream<global::System.Boolean> _primaryStream;
 public global::FrooxEngine.ValueStream<global::System.Boolean> _secondaryStream;
 public global::FrooxEngine.ValueStream<global::System.Boolean> _grabStream;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
+    base.CollectMembers(members, context);
 members.Add("ControllerSide", ControllerSide.ToResoniteLinkField());
 members.Add("PressingPrimary", PressingPrimary.ToResoniteLinkField());
 members.Add("PressingSecondary", PressingSecondary.ToResoniteLinkField());
 members.Add("PressingGrab", PressingGrab.ToResoniteLinkField());
 members.Add("PrimaryStrength", PrimaryStrength.ToResoniteLinkField());
 members.Add("SecondaryAxis", SecondaryAxis.ToResoniteLinkField());
-members.Add("_activeUser", new ResoniteLink.Reference() { });
-members.Add("_strengthStream", new ResoniteLink.Reference() { });
-members.Add("_axisStream", new ResoniteLink.Reference() { });
-members.Add("_primaryStream", new ResoniteLink.Reference() { });
-members.Add("_secondaryStream", new ResoniteLink.Reference() { });
-members.Add("_grabStream", new ResoniteLink.Reference() { });
+members.Add("_activeUser", _activeUser.ToResoniteReference(context));
+members.Add("_strengthStream", _strengthStream.ToResoniteReference(context));
+members.Add("_axisStream", _axisStream.ToResoniteReference(context));
+members.Add("_primaryStream", _primaryStream.ToResoniteReference(context));
+members.Add("_secondaryStream", _secondaryStream.ToResoniteReference(context));
+members.Add("_grabStream", _grabStream.ToResoniteReference(context));
 }
 
 }

@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.StaticFont
-// Generated on: pátek 13. února 2026 23:21:31
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:56:55
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -27,9 +27,10 @@ public global::System.Boolean MipMaps;
 public global::Elements.Assets.Filtering MipMapFiltering;
 public global::System.Single LODBias;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
+    base.CollectMembers(members, context);
 members.Add("Padding", Padding.ToResoniteLinkField());
 members.Add("PixelRange", PixelRange.ToResoniteLinkField());
 members.Add("GlyphEmSize", GlyphEmSize.ToResoniteLinkField());

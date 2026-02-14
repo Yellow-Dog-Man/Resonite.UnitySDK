@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.FullBodyCalibratorDialog
-// Generated on: pátek 13. února 2026 23:23:14
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:43
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -39,27 +39,28 @@ public global::FrooxEngine.UIX.Text _heightWarning;
 public global::System.Boolean _useImperial;
 public global::FrooxEngine.UIX.SlideSwapRegion _swapRegion;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
-members.Add("_calibrator", new ResoniteLink.Reference() { });
+    base.CollectMembers(members, context);
+members.Add("_calibrator", _calibrator.ToResoniteReference(context));
 members.Add("_currentPage", _currentPage.ToResoniteLinkField());
-members.Add("_confirmTrackers", new ResoniteLink.Reference() { });
-members.Add("_resetTrackers", new ResoniteLink.Reference() { });
-members.Add("_calibrateAvatar", new ResoniteLink.Reference() { });
-members.Add("_heightCompensation", new ResoniteLink.Reference() { });
-members.Add("_useSymmetry", new ResoniteLink.Reference() { });
-members.Add("_showBodyOverlay", new ResoniteLink.Reference() { });
-members.Add("_showAvatarOverlay", new ResoniteLink.Reference() { });
-members.Add("_hipsMapping", new ResoniteLink.Reference() { });
-members.Add("_feetMapping", new ResoniteLink.Reference() { });
-members.Add("_chestMapping", new ResoniteLink.Reference() { });
-members.Add("_elbowsMapping", new ResoniteLink.Reference() { });
-members.Add("_kneesMapping", new ResoniteLink.Reference() { });
-members.Add("_heightField", new ResoniteLink.Reference() { });
-members.Add("_heightWarning", new ResoniteLink.Reference() { });
+members.Add("_confirmTrackers", _confirmTrackers.ToResoniteReference(context));
+members.Add("_resetTrackers", _resetTrackers.ToResoniteReference(context));
+members.Add("_calibrateAvatar", _calibrateAvatar.ToResoniteReference(context));
+members.Add("_heightCompensation", _heightCompensation.ToResoniteReference(context));
+members.Add("_useSymmetry", _useSymmetry.ToResoniteReference(context));
+members.Add("_showBodyOverlay", _showBodyOverlay.ToResoniteReference(context));
+members.Add("_showAvatarOverlay", _showAvatarOverlay.ToResoniteReference(context));
+members.Add("_hipsMapping", _hipsMapping.ToResoniteReference(context));
+members.Add("_feetMapping", _feetMapping.ToResoniteReference(context));
+members.Add("_chestMapping", _chestMapping.ToResoniteReference(context));
+members.Add("_elbowsMapping", _elbowsMapping.ToResoniteReference(context));
+members.Add("_kneesMapping", _kneesMapping.ToResoniteReference(context));
+members.Add("_heightField", _heightField.ToResoniteReference(context));
+members.Add("_heightWarning", _heightWarning.ToResoniteReference(context));
 members.Add("_useImperial", _useImperial.ToResoniteLinkField());
-members.Add("_swapRegion", new ResoniteLink.Reference() { });
+members.Add("_swapRegion", _swapRegion.ToResoniteReference(context));
 }
 
 }

@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [ProtoFluxBindings]FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.Math.Quaternions.LookRotation_floatQ
-// Generated on: pátek 13. února 2026 23:22:39
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:08
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -23,11 +23,12 @@ public partial class LookRotation_floatQ : global::FrooxEngine.ProtoFlux.Runtime
     public global::FrooxEngine.ProtoFlux.INodeValueOutput<UnityEngine.Vector3> Forward;
 public global::FrooxEngine.ProtoFlux.INodeValueOutput<UnityEngine.Vector3> Up;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
-members.Add("Forward", new ResoniteLink.Reference() { });
-members.Add("Up", new ResoniteLink.Reference() { });
+    base.CollectMembers(members, context);
+members.Add("Forward", Forward.ToResoniteReference(context));
+members.Add("Up", Up.ToResoniteReference(context));
 }
 
 }

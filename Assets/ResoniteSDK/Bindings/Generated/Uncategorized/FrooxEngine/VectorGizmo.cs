@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.VectorGizmo
-// Generated on: pátek 13. února 2026 23:23:13
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:43
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -31,19 +31,20 @@ public global::FrooxEngine.IField<UnityEngine.Quaternion> _colliderRotation;
 public global::FrooxEngine.CylinderCollider _collider;
 public global::FrooxEngine.ArrowMesh _mesh;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
-members.Add("VectorSpace", new ResoniteLink.SyncObject() { Members = VectorSpace.CollectMembers() });
-members.Add("TargetVector", new ResoniteLink.Reference() { });
-members.Add("TargetRotation", new ResoniteLink.Reference() { });
+    base.CollectMembers(members, context);
+members.Add("VectorSpace", new ResoniteLink.SyncObject() { Members = VectorSpace.CollectMembers(context) });
+members.Add("TargetVector", TargetVector.ToResoniteReference(context));
+members.Add("TargetRotation", TargetRotation.ToResoniteReference(context));
 members.Add("FixMagnitude", FixMagnitude.ToResoniteLinkField());
 members.Add("FixedMagnitude", FixedMagnitude.ToResoniteLinkField());
 members.Add("VisualMagnitudeScale", VisualMagnitudeScale.ToResoniteLinkField());
 members.Add("VisualThickness", VisualThickness.ToResoniteLinkField());
-members.Add("_colliderRotation", new ResoniteLink.Reference() { });
-members.Add("_collider", new ResoniteLink.Reference() { });
-members.Add("_mesh", new ResoniteLink.Reference() { });
+members.Add("_colliderRotation", _colliderRotation.ToResoniteReference(context));
+members.Add("_collider", _collider.ToResoniteReference(context));
+members.Add("_mesh", _mesh.ToResoniteReference(context));
 }
 
 }

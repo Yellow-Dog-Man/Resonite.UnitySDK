@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.FinalIK.IKSolverVR+References
-// Generated on: pátek 13. února 2026 23:23:14
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:43
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -45,31 +45,32 @@ public global::FrooxEngine.Slot rightCalf;
 public global::FrooxEngine.Slot rightFoot;
 public global::FrooxEngine.Slot rightToes;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
-members.Add("root", new ResoniteLink.Reference() { });
-members.Add("pelvis", new ResoniteLink.Reference() { });
-members.Add("spine", new ResoniteLink.Reference() { });
-members.Add("chest", new ResoniteLink.Reference() { });
-members.Add("neck", new ResoniteLink.Reference() { });
-members.Add("head", new ResoniteLink.Reference() { });
-members.Add("leftShoulder", new ResoniteLink.Reference() { });
-members.Add("leftUpperArm", new ResoniteLink.Reference() { });
-members.Add("leftForearm", new ResoniteLink.Reference() { });
-members.Add("leftHand", new ResoniteLink.Reference() { });
-members.Add("rightShoulder", new ResoniteLink.Reference() { });
-members.Add("rightUpperArm", new ResoniteLink.Reference() { });
-members.Add("rightForearm", new ResoniteLink.Reference() { });
-members.Add("rightHand", new ResoniteLink.Reference() { });
-members.Add("leftThigh", new ResoniteLink.Reference() { });
-members.Add("leftCalf", new ResoniteLink.Reference() { });
-members.Add("leftFoot", new ResoniteLink.Reference() { });
-members.Add("leftToes", new ResoniteLink.Reference() { });
-members.Add("rightThigh", new ResoniteLink.Reference() { });
-members.Add("rightCalf", new ResoniteLink.Reference() { });
-members.Add("rightFoot", new ResoniteLink.Reference() { });
-members.Add("rightToes", new ResoniteLink.Reference() { });
+    base.CollectMembers(members, context);
+members.Add("root", root.ToResoniteReference(context));
+members.Add("pelvis", pelvis.ToResoniteReference(context));
+members.Add("spine", spine.ToResoniteReference(context));
+members.Add("chest", chest.ToResoniteReference(context));
+members.Add("neck", neck.ToResoniteReference(context));
+members.Add("head", head.ToResoniteReference(context));
+members.Add("leftShoulder", leftShoulder.ToResoniteReference(context));
+members.Add("leftUpperArm", leftUpperArm.ToResoniteReference(context));
+members.Add("leftForearm", leftForearm.ToResoniteReference(context));
+members.Add("leftHand", leftHand.ToResoniteReference(context));
+members.Add("rightShoulder", rightShoulder.ToResoniteReference(context));
+members.Add("rightUpperArm", rightUpperArm.ToResoniteReference(context));
+members.Add("rightForearm", rightForearm.ToResoniteReference(context));
+members.Add("rightHand", rightHand.ToResoniteReference(context));
+members.Add("leftThigh", leftThigh.ToResoniteReference(context));
+members.Add("leftCalf", leftCalf.ToResoniteReference(context));
+members.Add("leftFoot", leftFoot.ToResoniteReference(context));
+members.Add("leftToes", leftToes.ToResoniteReference(context));
+members.Add("rightThigh", rightThigh.ToResoniteReference(context));
+members.Add("rightCalf", rightCalf.ToResoniteReference(context));
+members.Add("rightFoot", rightFoot.ToResoniteReference(context));
+members.Add("rightToes", rightToes.ToResoniteReference(context));
 }
 
 }

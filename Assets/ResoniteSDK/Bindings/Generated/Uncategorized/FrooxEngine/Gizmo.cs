@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.Gizmo
-// Generated on: pátek 13. února 2026 23:23:12
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:42
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -30,18 +30,19 @@ public global::FrooxEngine.Slot _lineRoot;
 public global::FrooxEngine.SegmentMesh _lineSegment;
 public global::FrooxEngine.Slot _snapHighlight;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
-members.Add("TargetSlot", new ResoniteLink.Reference() { });
+    base.CollectMembers(members, context);
+members.Add("TargetSlot", TargetSlot.ToResoniteReference(context));
 members.Add("AutoPositionAtTargetSlot", AutoPositionAtTargetSlot.ToResoniteLinkField());
-members.Add("_interactingComponent", new ResoniteLink.Reference() { });
-members.Add("_material", new ResoniteLink.Reference() { });
-members.Add("_toolPoint", new ResoniteLink.Reference() { });
-members.Add("_activePoint", new ResoniteLink.Reference() { });
-members.Add("_lineRoot", new ResoniteLink.Reference() { });
-members.Add("_lineSegment", new ResoniteLink.Reference() { });
-members.Add("_snapHighlight", new ResoniteLink.Reference() { });
+members.Add("_interactingComponent", _interactingComponent.ToResoniteReference(context));
+members.Add("_material", _material.ToResoniteReference(context));
+members.Add("_toolPoint", _toolPoint.ToResoniteReference(context));
+members.Add("_activePoint", _activePoint.ToResoniteReference(context));
+members.Add("_lineRoot", _lineRoot.ToResoniteReference(context));
+members.Add("_lineSegment", _lineSegment.ToResoniteReference(context));
+members.Add("_snapHighlight", _snapHighlight.ToResoniteReference(context));
 }
 
 }

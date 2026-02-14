@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.ReferenceSpatialVariableDriver<>
-// Generated on: pátek 13. února 2026 23:21:39
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:57:05
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -25,12 +25,13 @@ public partial class ReferenceSpatialVariableDriver<T> : global::FrooxEngine.Com
 public global::System.String VariableName;
 public T DefaultTarget;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
-members.Add("Drive", new ResoniteLink.Reference() { });
+    base.CollectMembers(members, context);
+members.Add("Drive", Drive.ToResoniteReference(context));
 members.Add("VariableName", VariableName.ToResoniteLinkField());
-members.Add("DefaultTarget", new ResoniteLink.Reference() { });
+members.Add("DefaultTarget", DefaultTarget.ToResoniteReference(context));
 }
 
 }

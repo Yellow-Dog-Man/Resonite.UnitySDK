@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [ProtoFluxBindings]FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Physics.GripEvents
-// Generated on: pátek 13. února 2026 23:22:52
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:22
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -25,11 +25,12 @@ public global::FrooxEngine.ProtoFlux.ISyncNodeOperation OnEvent;
 public global::FrooxEngine.ProtoFlux.NodeObjectOutput<global::FrooxEngine.ILocomotionModule> Module;
 public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::Renderite.Shared.BodyNode> GrippingBodyNode;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
-members.Add("Grip", new ResoniteLink.Reference() { });
-members.Add("OnEvent", new ResoniteLink.Reference() { });
+    base.CollectMembers(members, context);
+members.Add("Grip", Grip.ToResoniteReference(context));
+members.Add("OnEvent", OnEvent.ToResoniteReference(context));
 members.Add("Module", new ResoniteLink.EmptyElement());
 members.Add("GrippingBodyNode", new ResoniteLink.EmptyElement());
 }

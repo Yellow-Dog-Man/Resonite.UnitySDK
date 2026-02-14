@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.UIX.TextExpandIndicator
-// Generated on: pátek 13. února 2026 23:23:18
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:48
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -27,12 +27,13 @@ public global::System.String Closed;
 public global::System.String Opened;
 public global::System.String Empty;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
-members.Add("Text", new ResoniteLink.Reference() { });
-members.Add("SectionRoot", new ResoniteLink.Reference() { });
-members.Add("ChildrenRoot", new ResoniteLink.Reference() { });
+    base.CollectMembers(members, context);
+members.Add("Text", Text.ToResoniteReference(context));
+members.Add("SectionRoot", SectionRoot.ToResoniteReference(context));
+members.Add("ChildrenRoot", ChildrenRoot.ToResoniteReference(context));
 members.Add("Closed", Closed.ToResoniteLinkField());
 members.Add("Opened", Opened.ToResoniteLinkField());
 members.Add("Empty", Empty.ToResoniteLinkField());

@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.InteractionHandler
-// Generated on: pátek 13. února 2026 23:22:57
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:27
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -62,50 +62,51 @@ public global::FrooxEngine.FresnelMaterial _grabMaterial;
 public global::FrooxEngine.Slot _itemShelfSlot;
 public global::FrooxEngine.ItemShelf _itemShelf;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
+    base.CollectMembers(members, context);
 members.Add("Side", Side.ToResoniteLinkField());
-members.Add("LocomotionController", new ResoniteLink.Reference() { });
+members.Add("LocomotionController", LocomotionController.ToResoniteReference(context));
 members.Add("GrabSmoothing", GrabSmoothing.ToResoniteLinkField());
-members.Add("_streamDriver", new ResoniteLink.Reference() { });
-members.Add("_undoItem", new ResoniteLink.Reference() { });
-members.Add("_redoItem", new ResoniteLink.Reference() { });
-members.Add("ContextMenu", new ResoniteLink.Reference() { });
+members.Add("_streamDriver", _streamDriver.ToResoniteReference(context));
+members.Add("_undoItem", _undoItem.ToResoniteReference(context));
+members.Add("_redoItem", _redoItem.ToResoniteReference(context));
+members.Add("ContextMenu", ContextMenu.ToResoniteReference(context));
 members.Add("EquippingEnabled", EquippingEnabled.ToResoniteLinkField());
 members.Add("MenuEnabled", MenuEnabled.ToResoniteLinkField());
 members.Add("UserScalingEnabled", UserScalingEnabled.ToResoniteLinkField());
 members.Add("VisualEnabled", VisualEnabled.ToResoniteLinkField());
 members.Add("PointingGrab", PointingGrab.ToResoniteLinkField());
 members.Add("PointingTouch", PointingTouch.ToResoniteLinkField());
-members.Add("_toolRoot", new ResoniteLink.Reference() { });
-members.Add("_laserSlot", new ResoniteLink.Reference() { });
-members.Add("_laserPosition", new ResoniteLink.Reference() { });
-members.Add("_laserRotation", new ResoniteLink.Reference() { });
-members.Add("_interactionLaser", new ResoniteLink.Reference() { });
+members.Add("_toolRoot", _toolRoot.ToResoniteReference(context));
+members.Add("_laserSlot", _laserSlot.ToResoniteReference(context));
+members.Add("_laserPosition", _laserPosition.ToResoniteReference(context));
+members.Add("_laserRotation", _laserRotation.ToResoniteReference(context));
+members.Add("_interactionLaser", _interactionLaser.ToResoniteReference(context));
 members.Add("_laserEnabled", _laserEnabled.ToResoniteLinkField());
 members.Add("_handGrabType", _handGrabType.ToResoniteLinkField());
 members.Add("_grabToggle", _grabToggle.ToResoniteLinkField());
-members.Add("_holderPos", new ResoniteLink.Reference() { });
-members.Add("_holderRot", new ResoniteLink.Reference() { });
+members.Add("_holderPos", _holderPos.ToResoniteReference(context));
+members.Add("_holderRot", _holderRot.ToResoniteReference(context));
 members.Add("_laserRotationType", _laserRotationType.ToResoniteLinkField());
 members.Add("_holderAxisOffset", _holderAxisOffset.ToResoniteLinkField());
 members.Add("_holderRotationOffset", _holderRotationOffset.ToResoniteLinkField());
 members.Add("_holderRotationReference", _holderRotationReference.ToResoniteLinkField());
 members.Add("_originalTwistOffset", _originalTwistOffset.ToResoniteLinkField());
-members.Add("_userspaceToggleIndicator", new ResoniteLink.Reference() { });
-members.Add("ToolHolder", new ResoniteLink.Reference() { });
+members.Add("_userspaceToggleIndicator", _userspaceToggleIndicator.ToResoniteReference(context));
+members.Add("ToolHolder", ToolHolder.ToResoniteReference(context));
 members.Add("ShowInteractionHints", ShowInteractionHints.ToResoniteLinkField());
-members.Add("_grabberSphereActive", new ResoniteLink.Reference() { });
-members.Add("_grabIgnoreRoot", new ResoniteLink.Reference() { });
-members.Add("_grabber", new ResoniteLink.Reference() { });
+members.Add("_grabberSphereActive", _grabberSphereActive.ToResoniteReference(context));
+members.Add("_grabIgnoreRoot", _grabIgnoreRoot.ToResoniteReference(context));
+members.Add("_grabber", _grabber.ToResoniteReference(context));
 members.Add("_currentGrabType", _currentGrabType.ToResoniteLinkField());
-members.Add("ActiveToolLink", new ResoniteLink.Reference() { });
-members.Add("_activeToolGripPoseReference", new ResoniteLink.Reference() { });
+members.Add("ActiveToolLink", ActiveToolLink.ToResoniteReference(context));
+members.Add("_activeToolGripPoseReference", _activeToolGripPoseReference.ToResoniteReference(context));
 members.Add("_toolLocked", _toolLocked.ToResoniteLinkField());
-members.Add("_grabMaterial", new ResoniteLink.Reference() { });
-members.Add("_itemShelfSlot", new ResoniteLink.Reference() { });
-members.Add("_itemShelf", new ResoniteLink.Reference() { });
+members.Add("_grabMaterial", _grabMaterial.ToResoniteReference(context));
+members.Add("_itemShelfSlot", _itemShelfSlot.ToResoniteReference(context));
+members.Add("_itemShelf", _itemShelf.ToResoniteReference(context));
 }
 
 }

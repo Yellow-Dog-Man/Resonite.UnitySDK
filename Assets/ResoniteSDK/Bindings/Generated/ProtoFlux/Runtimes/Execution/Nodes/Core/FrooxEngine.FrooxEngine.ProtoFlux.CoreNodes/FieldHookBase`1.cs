@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [ProtoFluxBindings]FrooxEngine.FrooxEngine.ProtoFlux.CoreNodes.FieldHookBase<>
-// Generated on: pátek 13. února 2026 23:22:21
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:57:49
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -29,16 +29,17 @@ public global::FrooxEngine.ProtoFlux.INodeOperation OnStartDrive;
 public global::FrooxEngine.ProtoFlux.INodeOperation OnStopDrive;
 public global::FrooxEngine.ProtoFlux.ISyncNodeOperation OnHook;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
-members.Add("Target", new ResoniteLink.Reference() { });
+    base.CollectMembers(members, context);
+members.Add("Target", Target.ToResoniteReference(context));
 members.Add("IsDriving", new ResoniteLink.EmptyElement());
 members.Add("StartDrive", new ResoniteLink.EmptyElement());
 members.Add("StopDrive", new ResoniteLink.EmptyElement());
-members.Add("OnStartDrive", new ResoniteLink.Reference() { });
-members.Add("OnStopDrive", new ResoniteLink.Reference() { });
-members.Add("OnHook", new ResoniteLink.Reference() { });
+members.Add("OnStartDrive", OnStartDrive.ToResoniteReference(context));
+members.Add("OnStopDrive", OnStopDrive.ToResoniteReference(context));
+members.Add("OnHook", OnHook.ToResoniteReference(context));
 }
 
 }

@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.UIX.OutlinedArc
-// Generated on: pátek 13. února 2026 23:22:57
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:27
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -30,9 +30,10 @@ public UnityEngine.ColorX OutlineColor;
 public global::System.Single OutlineThickness;
 public global::FrooxEngine.IAssetProvider<global::FrooxEngine.Material> Material;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
+    base.CollectMembers(members, context);
 members.Add("Arc", Arc.ToResoniteLinkField());
 members.Add("Offset", Offset.ToResoniteLinkField());
 members.Add("OuterRadiusRatio", OuterRadiusRatio.ToResoniteLinkField());
@@ -41,7 +42,7 @@ members.Add("RoundedCornerRadius", RoundedCornerRadius.ToResoniteLinkField());
 members.Add("FillColor", FillColor.ToResoniteLinkField());
 members.Add("OutlineColor", OutlineColor.ToResoniteLinkField());
 members.Add("OutlineThickness", OutlineThickness.ToResoniteLinkField());
-members.Add("Material", new ResoniteLink.Reference() { });
+members.Add("Material", Material.ToResoniteReference(context));
 }
 
 }

@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.SessionUserController
-// Generated on: pátek 13. února 2026 23:23:18
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:47
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -29,17 +29,18 @@ public global::FrooxEngine.UIX.Button _silence;
 public global::FrooxEngine.UIX.Button _kick;
 public global::FrooxEngine.UIX.Button _ban;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
-members.Add("_name", new ResoniteLink.Reference() { });
-members.Add("_slider", new ResoniteLink.Reference() { });
-members.Add("_mute", new ResoniteLink.Reference() { });
-members.Add("_jump", new ResoniteLink.Reference() { });
-members.Add("_respawn", new ResoniteLink.Reference() { });
-members.Add("_silence", new ResoniteLink.Reference() { });
-members.Add("_kick", new ResoniteLink.Reference() { });
-members.Add("_ban", new ResoniteLink.Reference() { });
+    base.CollectMembers(members, context);
+members.Add("_name", _name.ToResoniteReference(context));
+members.Add("_slider", _slider.ToResoniteReference(context));
+members.Add("_mute", _mute.ToResoniteReference(context));
+members.Add("_jump", _jump.ToResoniteReference(context));
+members.Add("_respawn", _respawn.ToResoniteReference(context));
+members.Add("_silence", _silence.ToResoniteReference(context));
+members.Add("_kick", _kick.ToResoniteReference(context));
+members.Add("_ban", _ban.ToResoniteReference(context));
 }
 
 }

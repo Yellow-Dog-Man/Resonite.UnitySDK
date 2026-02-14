@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.CharacterForceField
-// Generated on: pátek 13. února 2026 23:21:41
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:57:07
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -36,14 +36,15 @@ public global::System.Single MaxCharacterVelocity;
 public global::System.Single MinCharacterVelocity;
 public global::System.Single CharacterVelocityDampeningSpeed;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
+    base.CollectMembers(members, context);
 members.Add("Force", Force.ToResoniteLinkField());
 members.Add("ForceMode", ForceMode.ToResoniteLinkField());
 members.Add("ForceSpace", ForceSpace.ToResoniteLinkField());
 members.Add("RadialForceRadius", RadialForceRadius.ToResoniteLinkField());
-members.Add("ForceSlotSpace", new ResoniteLink.SyncObject() { Members = ForceSlotSpace.CollectMembers() });
+members.Add("ForceSlotSpace", new ResoniteLink.SyncObject() { Members = ForceSlotSpace.CollectMembers(context) });
 members.Add("MinActivationVelocity", MinActivationVelocity.ToResoniteLinkField());
 members.Add("MaxForceVelocity", MaxForceVelocity.ToResoniteLinkField());
 members.Add("HoldJumpMaxForceVelocity", HoldJumpMaxForceVelocity.ToResoniteLinkField());

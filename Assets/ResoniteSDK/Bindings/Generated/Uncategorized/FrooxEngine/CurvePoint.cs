@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.CurvePoint
-// Generated on: pátek 13. února 2026 23:23:12
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:42
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -23,11 +23,12 @@ public partial class CurvePoint : global::FrooxEngine.Component
     public global::FrooxEngine.Slot LeftTangentSource;
 public global::FrooxEngine.Slot RightTangentSource;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
-members.Add("LeftTangentSource", new ResoniteLink.Reference() { });
-members.Add("RightTangentSource", new ResoniteLink.Reference() { });
+    base.CollectMembers(members, context);
+members.Add("LeftTangentSource", LeftTangentSource.ToResoniteReference(context));
+members.Add("RightTangentSource", RightTangentSource.ToResoniteReference(context));
 }
 
 }

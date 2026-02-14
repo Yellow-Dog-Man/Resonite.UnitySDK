@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.PhotonDust.SimplexTurbulentForce
-// Generated on: pátek 13. února 2026 23:23:06
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:36
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -29,9 +29,10 @@ public global::System.Single X_NoiseOffset;
 public global::System.Single Y_NoiseOffset;
 public global::System.Single Z_NoiseOffset;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
+    base.CollectMembers(members, context);
 members.Add("Mode", Mode.ToResoniteLinkField());
 members.Add("Strength", Strength.ToResoniteLinkField());
 members.Add("GlobalNoiseOffset", GlobalNoiseOffset.ToResoniteLinkField());

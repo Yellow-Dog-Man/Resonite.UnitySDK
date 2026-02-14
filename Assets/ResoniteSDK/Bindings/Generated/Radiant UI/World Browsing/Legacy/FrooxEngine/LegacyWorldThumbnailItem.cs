@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.LegacyWorldThumbnailItem
-// Generated on: pátek 13. února 2026 23:23:02
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:32
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -34,21 +34,22 @@ public global::FrooxEngine.UIX.Text _counterText;
 public global::FrooxEngine.UIX.Image _borderOverlay;
 public UnityEngine.ColorX _borderColor;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
-members.Add("_thumbnailGraphic", new ResoniteLink.Reference() { });
-members.Add("_thumbnailTexture", new ResoniteLink.Reference() { });
-members.Add("_nameRoot", new ResoniteLink.Reference() { });
-members.Add("_detailRoot", new ResoniteLink.Reference() { });
-members.Add("_visitedRoot", new ResoniteLink.Reference() { });
-members.Add("_counterRoot", new ResoniteLink.Reference() { });
-members.Add("_iconsRoot", new ResoniteLink.Reference() { });
-members.Add("_closeButton", new ResoniteLink.Reference() { });
-members.Add("_nameText", new ResoniteLink.Reference() { });
-members.Add("_detailText", new ResoniteLink.Reference() { });
-members.Add("_counterText", new ResoniteLink.Reference() { });
-members.Add("_borderOverlay", new ResoniteLink.Reference() { });
+    base.CollectMembers(members, context);
+members.Add("_thumbnailGraphic", _thumbnailGraphic.ToResoniteReference(context));
+members.Add("_thumbnailTexture", _thumbnailTexture.ToResoniteReference(context));
+members.Add("_nameRoot", _nameRoot.ToResoniteReference(context));
+members.Add("_detailRoot", _detailRoot.ToResoniteReference(context));
+members.Add("_visitedRoot", _visitedRoot.ToResoniteReference(context));
+members.Add("_counterRoot", _counterRoot.ToResoniteReference(context));
+members.Add("_iconsRoot", _iconsRoot.ToResoniteReference(context));
+members.Add("_closeButton", _closeButton.ToResoniteReference(context));
+members.Add("_nameText", _nameText.ToResoniteReference(context));
+members.Add("_detailText", _detailText.ToResoniteReference(context));
+members.Add("_counterText", _counterText.ToResoniteReference(context));
+members.Add("_borderOverlay", _borderOverlay.ToResoniteReference(context));
 members.Add("_borderColor", _borderColor.ToResoniteLinkField());
 }
 

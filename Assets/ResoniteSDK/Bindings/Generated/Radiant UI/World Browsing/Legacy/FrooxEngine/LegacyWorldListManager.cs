@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.LegacyWorldListManager
-// Generated on: pátek 13. února 2026 23:23:02
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:32
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -57,11 +57,12 @@ public global::System.Boolean HasMoreResults;
 public global::System.Int32 TotalResults;
 public global::System.Int32 FilteredResults;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
-members.Add("UpdatingUser", new ResoniteLink.SyncObject() { Members = UpdatingUser.CollectMembers() });
-members.Add("WorldItemTemplate", new ResoniteLink.Reference() { });
+    base.CollectMembers(members, context);
+members.Add("UpdatingUser", new ResoniteLink.SyncObject() { Members = UpdatingUser.CollectMembers(context) });
+members.Add("WorldItemTemplate", WorldItemTemplate.ToResoniteReference(context));
 members.Add("WorldItemType", WorldItemType.ToResoniteLinkField());
 members.Add("ShowOpenedWorlds", ShowOpenedWorlds.ToResoniteLinkField());
 members.Add("ShowSessions", ShowSessions.ToResoniteLinkField());
@@ -93,7 +94,7 @@ members.Add("ParentSessionId", ParentSessionId.ToResoniteLinkField());
 members.Add("Visited", Visited.ToResoniteLinkField());
 members.Add("SortProperties", new ResoniteLink.SyncList()
 {
-    Elements = SortProperties.ConvertList(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers() })
+    Elements = SortProperties.ConvertList(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers(context) })
 });
 members.Add("IsSearching", IsSearching.ToResoniteLinkField());
 members.Add("HasMoreResults", HasMoreResults.ToResoniteLinkField());

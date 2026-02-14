@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.SessionPermissionController
-// Generated on: pátek 13. února 2026 23:23:18
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:47
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -23,13 +23,14 @@ public partial class SessionPermissionController : global::FrooxEngine.Component
     public global::FrooxEngine.UIX.Text _name;
 public System.Collections.Generic.List<global::FrooxEngine.UIX.Button> _rolesButtons;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
-members.Add("_name", new ResoniteLink.Reference() { });
+    base.CollectMembers(members, context);
+members.Add("_name", _name.ToResoniteReference(context));
 members.Add("_rolesButtons", new ResoniteLink.SyncList()
 {
-    Elements = _rolesButtons.ConvertList(m => new ResoniteLink.Reference() { })
+    Elements = _rolesButtons.ConvertList(m => m.ToResoniteReference(context))
 });
 }
 

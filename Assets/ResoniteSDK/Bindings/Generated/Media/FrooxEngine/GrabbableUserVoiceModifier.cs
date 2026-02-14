@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.GrabbableUserVoiceModifier
-// Generated on: pátek 13. února 2026 23:21:41
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:57:08
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -26,9 +26,10 @@ public global::System.Boolean _originalEnabled;
 public global::System.Boolean _originalSpatialize;
 public global::System.Single _originalSpatialBlend;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
+    base.CollectMembers(members, context);
 members.Add("StateOnGrabbed", StateOnGrabbed.ToResoniteLinkField());
 members.Add("StateOnReleased", StateOnReleased.ToResoniteLinkField());
 members.Add("_originalEnabled", _originalEnabled.ToResoniteLinkField());

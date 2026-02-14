@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.SlotGizmo
-// Generated on: pátek 13. února 2026 23:23:18
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:48
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -44,34 +44,35 @@ public global::FrooxEngine.RotationGizmo _rotationGizmo;
 public global::FrooxEngine.ScaleGizmo _scaleGizmo;
 public global::System.Boolean IsLocalSpace;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
+    base.CollectMembers(members, context);
 members.Add("_isFolded", _isFolded.ToResoniteLinkField());
-members.Add("_activeGizmo", new ResoniteLink.Reference() { });
-members.Add("_targetSlot", new ResoniteLink.Reference() { });
-members.Add("_positionDrive", new ResoniteLink.Reference() { });
-members.Add("_scaleDrive", new ResoniteLink.Reference() { });
-members.Add("_boundsMesh", new ResoniteLink.Reference() { });
-members.Add("_boundsRoot", new ResoniteLink.Reference() { });
-members.Add("_boundsRotation", new ResoniteLink.Reference() { });
-members.Add("_boundsOffset", new ResoniteLink.Reference() { });
-members.Add("_boundsActive", new ResoniteLink.Reference() { });
-members.Add("_nameText", new ResoniteLink.Reference() { });
-members.Add("_nameOffset", new ResoniteLink.Reference() { });
-members.Add("_nameRotation", new ResoniteLink.Reference() { });
-members.Add("_nameActive", new ResoniteLink.Reference() { });
-members.Add("_xPosSegment", new ResoniteLink.Reference() { });
-members.Add("_yPosSegment", new ResoniteLink.Reference() { });
-members.Add("_zPosSegment", new ResoniteLink.Reference() { });
+members.Add("_activeGizmo", _activeGizmo.ToResoniteReference(context));
+members.Add("_targetSlot", _targetSlot.ToResoniteReference(context));
+members.Add("_positionDrive", _positionDrive.ToResoniteReference(context));
+members.Add("_scaleDrive", _scaleDrive.ToResoniteReference(context));
+members.Add("_boundsMesh", _boundsMesh.ToResoniteReference(context));
+members.Add("_boundsRoot", _boundsRoot.ToResoniteReference(context));
+members.Add("_boundsRotation", _boundsRotation.ToResoniteReference(context));
+members.Add("_boundsOffset", _boundsOffset.ToResoniteReference(context));
+members.Add("_boundsActive", _boundsActive.ToResoniteReference(context));
+members.Add("_nameText", _nameText.ToResoniteReference(context));
+members.Add("_nameOffset", _nameOffset.ToResoniteReference(context));
+members.Add("_nameRotation", _nameRotation.ToResoniteReference(context));
+members.Add("_nameActive", _nameActive.ToResoniteReference(context));
+members.Add("_xPosSegment", _xPosSegment.ToResoniteReference(context));
+members.Add("_yPosSegment", _yPosSegment.ToResoniteReference(context));
+members.Add("_zPosSegment", _zPosSegment.ToResoniteReference(context));
 members.Add("_boundsAnchorPositions", new ResoniteLink.SyncList()
 {
-    Elements = _boundsAnchorPositions.ConvertList(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers() })
+    Elements = _boundsAnchorPositions.ConvertList(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers(context) })
 });
-members.Add("_rootAnchor", new ResoniteLink.Reference() { });
-members.Add("_translationGizmo", new ResoniteLink.Reference() { });
-members.Add("_rotationGizmo", new ResoniteLink.Reference() { });
-members.Add("_scaleGizmo", new ResoniteLink.Reference() { });
+members.Add("_rootAnchor", _rootAnchor.ToResoniteReference(context));
+members.Add("_translationGizmo", _translationGizmo.ToResoniteReference(context));
+members.Add("_rotationGizmo", _rotationGizmo.ToResoniteReference(context));
+members.Add("_scaleGizmo", _scaleGizmo.ToResoniteReference(context));
 members.Add("IsLocalSpace", IsLocalSpace.ToResoniteLinkField());
 }
 

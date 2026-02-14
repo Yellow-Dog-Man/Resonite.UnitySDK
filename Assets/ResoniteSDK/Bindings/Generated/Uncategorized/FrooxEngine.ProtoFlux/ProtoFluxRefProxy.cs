@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.ProtoFlux.ProtoFluxRefProxy
-// Generated on: pátek 13. února 2026 23:23:17
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:46
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -27,15 +27,16 @@ public global::FrooxEngine.IField<global::System.String> _label;
 public global::FrooxEngine.UIX.Button _proxyVisual;
 public global::FrooxEngine.ReferenceProxySource _refProxySource;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
-members.Add("Node", new ResoniteLink.Reference() { });
+    base.CollectMembers(members, context);
+members.Add("Node", Node.ToResoniteReference(context));
 members.Add("ElementName", ElementName.ToResoniteLinkField());
 members.Add("ValueType", ValueType.ToResoniteLinkField());
-members.Add("_label", new ResoniteLink.Reference() { });
-members.Add("_proxyVisual", new ResoniteLink.Reference() { });
-members.Add("_refProxySource", new ResoniteLink.Reference() { });
+members.Add("_label", _label.ToResoniteReference(context));
+members.Add("_proxyVisual", _proxyVisual.ToResoniteReference(context));
+members.Add("_refProxySource", _refProxySource.ToResoniteReference(context));
 }
 
 }

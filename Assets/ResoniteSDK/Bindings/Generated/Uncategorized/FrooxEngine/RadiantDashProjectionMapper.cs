@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.RadiantDashProjectionMapper
-// Generated on: pátek 13. února 2026 23:23:17
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:47
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -27,15 +27,16 @@ public global::FrooxEngine.Camera Camera;
 public global::FrooxEngine.IField<UnityEngine.Vector2> UVScale;
 public global::FrooxEngine.IField<UnityEngine.Vector2> UVOffset;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
-members.Add("Dash", new ResoniteLink.Reference() { });
-members.Add("Root", new ResoniteLink.Reference() { });
-members.Add("Mesh", new ResoniteLink.Reference() { });
-members.Add("Camera", new ResoniteLink.Reference() { });
-members.Add("UVScale", new ResoniteLink.Reference() { });
-members.Add("UVOffset", new ResoniteLink.Reference() { });
+    base.CollectMembers(members, context);
+members.Add("Dash", Dash.ToResoniteReference(context));
+members.Add("Root", Root.ToResoniteReference(context));
+members.Add("Mesh", Mesh.ToResoniteReference(context));
+members.Add("Camera", Camera.ToResoniteReference(context));
+members.Add("UVScale", UVScale.ToResoniteReference(context));
+members.Add("UVOffset", UVOffset.ToResoniteReference(context));
 }
 
 }

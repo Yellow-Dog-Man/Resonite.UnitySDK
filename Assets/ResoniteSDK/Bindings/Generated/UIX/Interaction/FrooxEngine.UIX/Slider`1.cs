@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.UIX.Slider<>
-// Generated on: pátek 13. února 2026 23:23:11
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:41
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -37,9 +37,10 @@ public global::FrooxEngine.IField<UnityEngine.Vector2> FillLineDrive;
 public global::System.Boolean RequireLockInToInteract;
 public global::System.Boolean RequireInitialPress;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
+    base.CollectMembers(members, context);
 members.Add("Value", Value.ToResoniteLinkField());
 members.Add("Min", Min.ToResoniteLinkField());
 members.Add("Max", Max.ToResoniteLinkField());
@@ -50,9 +51,9 @@ members.Add("Clamp", Clamp.ToResoniteLinkField());
 members.Add("VibrationThreshold", VibrationThreshold.ToResoniteLinkField());
 members.Add("SlideDirection", SlideDirection.ToResoniteLinkField());
 members.Add("AnchorOffset", AnchorOffset.ToResoniteLinkField());
-members.Add("HandleAnchorMinDrive", new ResoniteLink.Reference() { });
-members.Add("HandleAnchorMaxDrive", new ResoniteLink.Reference() { });
-members.Add("FillLineDrive", new ResoniteLink.Reference() { });
+members.Add("HandleAnchorMinDrive", HandleAnchorMinDrive.ToResoniteReference(context));
+members.Add("HandleAnchorMaxDrive", HandleAnchorMaxDrive.ToResoniteReference(context));
+members.Add("FillLineDrive", FillLineDrive.ToResoniteReference(context));
 members.Add("RequireLockInToInteract", RequireLockInToInteract.ToResoniteLinkField());
 members.Add("RequireInitialPress", RequireInitialPress.ToResoniteLinkField());
 }

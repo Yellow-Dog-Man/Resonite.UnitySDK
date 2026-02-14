@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.AccountMigrationStatus
-// Generated on: pátek 13. února 2026 23:21:37
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:57:02
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -45,9 +45,10 @@ public global::System.Int32 TotalGroupCount;
 public global::System.Int32 MigratedGroupCount;
 public global::System.Int32 TotalMigratedMemberCount;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
+    base.CollectMembers(members, context);
 members.Add("TaskId", TaskId.ToResoniteLinkField());
 members.Add("Exists", Exists.ToResoniteLinkField());
 members.Add("Name", Name.ToResoniteLinkField());

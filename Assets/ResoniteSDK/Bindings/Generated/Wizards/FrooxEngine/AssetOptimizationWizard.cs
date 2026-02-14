@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.AssetOptimizationWizard
-// Generated on: pátek 13. února 2026 23:23:21
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:51
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -25,13 +25,14 @@ public global::System.Boolean IgnoreNonpersistentUsers;
 public global::FrooxEngine.IntTextEditorParser _maxResolution;
 public global::FrooxEngine.UIX.Text _message;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
-members.Add("Root", new ResoniteLink.Reference() { });
+    base.CollectMembers(members, context);
+members.Add("Root", Root.ToResoniteReference(context));
 members.Add("IgnoreNonpersistentUsers", IgnoreNonpersistentUsers.ToResoniteLinkField());
-members.Add("_maxResolution", new ResoniteLink.Reference() { });
-members.Add("_message", new ResoniteLink.Reference() { });
+members.Add("_maxResolution", _maxResolution.ToResoniteReference(context));
+members.Add("_message", _message.ToResoniteReference(context));
 }
 
 }

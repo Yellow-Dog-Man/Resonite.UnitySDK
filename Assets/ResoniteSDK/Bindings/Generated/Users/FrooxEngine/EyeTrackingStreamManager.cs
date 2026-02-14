@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.EyeTrackingStreamManager
-// Generated on: pátek 13. února 2026 23:23:19
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:49
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -26,14 +26,15 @@ public global::FrooxEngine.ValueStream<global::System.Boolean> IsEyeTrackingActi
 public global::FrooxEngine.EyeTrackingStreamManager.EyeStreams LeftEyeStreams;
 public global::FrooxEngine.EyeTrackingStreamManager.EyeStreams RightEyeStreams;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
-members.Add("User", new ResoniteLink.Reference() { });
-members.Add("ConvergenceDistance", new ResoniteLink.Reference() { });
-members.Add("IsEyeTrackingActive", new ResoniteLink.Reference() { });
-members.Add("LeftEyeStreams", new ResoniteLink.SyncObject() { Members = LeftEyeStreams.CollectMembers() });
-members.Add("RightEyeStreams", new ResoniteLink.SyncObject() { Members = RightEyeStreams.CollectMembers() });
+    base.CollectMembers(members, context);
+members.Add("User", User.ToResoniteReference(context));
+members.Add("ConvergenceDistance", ConvergenceDistance.ToResoniteReference(context));
+members.Add("IsEyeTrackingActive", IsEyeTrackingActive.ToResoniteReference(context));
+members.Add("LeftEyeStreams", new ResoniteLink.SyncObject() { Members = LeftEyeStreams.CollectMembers(context) });
+members.Add("RightEyeStreams", new ResoniteLink.SyncObject() { Members = RightEyeStreams.CollectMembers(context) });
 }
 
 }

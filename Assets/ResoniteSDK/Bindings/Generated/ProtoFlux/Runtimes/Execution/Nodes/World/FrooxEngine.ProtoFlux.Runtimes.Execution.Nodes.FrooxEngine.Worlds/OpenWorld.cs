@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [ProtoFluxBindings]FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Worlds.OpenWorld
-// Generated on: pátek 13. února 2026 23:23:01
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:30
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -32,20 +32,21 @@ public global::FrooxEngine.ProtoFlux.INodeOperation OnOpenDone;
 public global::FrooxEngine.ProtoFlux.INodeOperation OnWorldReady;
 public global::FrooxEngine.ProtoFlux.INodeOperation OnOpenFail;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
-members.Add("Relation", new ResoniteLink.Reference() { });
-members.Add("GetExisting", new ResoniteLink.Reference() { });
-members.Add("LoadingIndicator", new ResoniteLink.Reference() { });
-members.Add("AutoFocus", new ResoniteLink.Reference() { });
-members.Add("MakePrivate", new ResoniteLink.Reference() { });
+    base.CollectMembers(members, context);
+members.Add("Relation", Relation.ToResoniteReference(context));
+members.Add("GetExisting", GetExisting.ToResoniteReference(context));
+members.Add("LoadingIndicator", LoadingIndicator.ToResoniteReference(context));
+members.Add("AutoFocus", AutoFocus.ToResoniteReference(context));
+members.Add("MakePrivate", MakePrivate.ToResoniteReference(context));
 members.Add("SessionID", new ResoniteLink.EmptyElement());
 members.Add("SessionURL", new ResoniteLink.EmptyElement());
-members.Add("OnOpenStart", new ResoniteLink.Reference() { });
-members.Add("OnOpenDone", new ResoniteLink.Reference() { });
-members.Add("OnWorldReady", new ResoniteLink.Reference() { });
-members.Add("OnOpenFail", new ResoniteLink.Reference() { });
+members.Add("OnOpenStart", OnOpenStart.ToResoniteReference(context));
+members.Add("OnOpenDone", OnOpenDone.ToResoniteReference(context));
+members.Add("OnWorldReady", OnWorldReady.ToResoniteReference(context));
+members.Add("OnOpenFail", OnOpenFail.ToResoniteReference(context));
 }
 
 }

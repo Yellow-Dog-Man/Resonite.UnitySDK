@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.OverlayFresnelMaterial
-// Generated on: pátek 13. února 2026 23:21:34
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:56:57
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -48,19 +48,20 @@ public global::System.Single OffsetUnits;
 public global::System.Boolean PolarUVmapping;
 public global::System.Single PolarPower;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
+    base.CollectMembers(members, context);
 members.Add("Exponent", Exponent.ToResoniteLinkField());
 members.Add("GammaCurve", GammaCurve.ToResoniteLinkField());
 members.Add("BehindFarColor", BehindFarColor.ToResoniteLinkField());
 members.Add("BehindNearColor", BehindNearColor.ToResoniteLinkField());
 members.Add("FrontFarColor", FrontFarColor.ToResoniteLinkField());
 members.Add("FrontNearColor", FrontNearColor.ToResoniteLinkField());
-members.Add("BehindFarTexture", new ResoniteLink.Reference() { });
-members.Add("BehindNearTexture", new ResoniteLink.Reference() { });
-members.Add("FrontFarTexture", new ResoniteLink.Reference() { });
-members.Add("FrontNearTexture", new ResoniteLink.Reference() { });
+members.Add("BehindFarTexture", BehindFarTexture.ToResoniteReference(context));
+members.Add("BehindNearTexture", BehindNearTexture.ToResoniteReference(context));
+members.Add("FrontFarTexture", FrontFarTexture.ToResoniteReference(context));
+members.Add("FrontNearTexture", FrontNearTexture.ToResoniteReference(context));
 members.Add("BehindFarTextureScale", BehindFarTextureScale.ToResoniteLinkField());
 members.Add("BehindFarTextureOffset", BehindFarTextureOffset.ToResoniteLinkField());
 members.Add("BehindNearTextureScale", BehindNearTextureScale.ToResoniteLinkField());
@@ -69,7 +70,7 @@ members.Add("FrontFarTextureScale", FrontFarTextureScale.ToResoniteLinkField());
 members.Add("FrontFarTextureOffset", FrontFarTextureOffset.ToResoniteLinkField());
 members.Add("FrontNearTextureScale", FrontNearTextureScale.ToResoniteLinkField());
 members.Add("FrontNearTextureOffset", FrontNearTextureOffset.ToResoniteLinkField());
-members.Add("NormalMap", new ResoniteLink.Reference() { });
+members.Add("NormalMap", NormalMap.ToResoniteReference(context));
 members.Add("BlendMode", BlendMode.ToResoniteLinkField());
 members.Add("Sidedness", Sidedness.ToResoniteLinkField());
 members.Add("ZWrite", ZWrite.ToResoniteLinkField());

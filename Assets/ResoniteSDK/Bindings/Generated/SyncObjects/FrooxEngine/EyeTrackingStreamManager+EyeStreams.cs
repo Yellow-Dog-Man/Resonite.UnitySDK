@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.EyeTrackingStreamManager+EyeStreams
-// Generated on: pátek 13. února 2026 23:23:19
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:49
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -33,19 +33,20 @@ public global::FrooxEngine.ValueStream<global::System.Single> InnerBrowVertical;
 public global::FrooxEngine.ValueStream<global::System.Single> OuterBrowVertical;
 public global::FrooxEngine.ValueStream<global::System.Single> PupilDiameter;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
-members.Add("IsTracking", new ResoniteLink.Reference() { });
-members.Add("Position", new ResoniteLink.Reference() { });
-members.Add("Direction", new ResoniteLink.Reference() { });
-members.Add("Openness", new ResoniteLink.Reference() { });
-members.Add("Widen", new ResoniteLink.Reference() { });
-members.Add("Squeeze", new ResoniteLink.Reference() { });
-members.Add("Frown", new ResoniteLink.Reference() { });
-members.Add("InnerBrowVertical", new ResoniteLink.Reference() { });
-members.Add("OuterBrowVertical", new ResoniteLink.Reference() { });
-members.Add("PupilDiameter", new ResoniteLink.Reference() { });
+    base.CollectMembers(members, context);
+members.Add("IsTracking", IsTracking.ToResoniteReference(context));
+members.Add("Position", Position.ToResoniteReference(context));
+members.Add("Direction", Direction.ToResoniteReference(context));
+members.Add("Openness", Openness.ToResoniteReference(context));
+members.Add("Widen", Widen.ToResoniteReference(context));
+members.Add("Squeeze", Squeeze.ToResoniteReference(context));
+members.Add("Frown", Frown.ToResoniteReference(context));
+members.Add("InnerBrowVertical", InnerBrowVertical.ToResoniteReference(context));
+members.Add("OuterBrowVertical", OuterBrowVertical.ToResoniteReference(context));
+members.Add("PupilDiameter", PupilDiameter.ToResoniteReference(context));
 }
 
 }

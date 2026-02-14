@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.ReferenceMultiplexer<>
-// Generated on: pátek 13. února 2026 23:23:20
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:51
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -26,14 +26,15 @@ public global::System.Int32 Index;
 public System.Collections.Generic.List<T> References;
 public global::System.Boolean AllowWriteBack;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
-members.Add("Target", new ResoniteLink.Reference() { });
+    base.CollectMembers(members, context);
+members.Add("Target", Target.ToResoniteReference(context));
 members.Add("Index", Index.ToResoniteLinkField());
 members.Add("References", new ResoniteLink.SyncList()
 {
-    Elements = References.ConvertList(m => new ResoniteLink.Reference() { })
+    Elements = References.ConvertList(m => m.ToResoniteReference(context))
 });
 members.Add("AllowWriteBack", AllowWriteBack.ToResoniteLinkField());
 }

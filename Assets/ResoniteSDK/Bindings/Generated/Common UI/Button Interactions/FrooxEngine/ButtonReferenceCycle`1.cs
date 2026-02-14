@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.ButtonReferenceCycle<>
-// Generated on: pátek 13. února 2026 23:21:38
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:57:03
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -24,13 +24,14 @@ public partial class ButtonReferenceCycle<T> : global::FrooxEngine.Component, gl
     public global::FrooxEngine.SyncRef<T> TargetReference;
 public System.Collections.Generic.List<T> Targets;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
-members.Add("TargetReference", new ResoniteLink.Reference() { });
+    base.CollectMembers(members, context);
+members.Add("TargetReference", TargetReference.ToResoniteReference(context));
 members.Add("Targets", new ResoniteLink.SyncList()
 {
-    Elements = Targets.ConvertList(m => new ResoniteLink.Reference() { })
+    Elements = Targets.ConvertList(m => m.ToResoniteReference(context))
 });
 }
 

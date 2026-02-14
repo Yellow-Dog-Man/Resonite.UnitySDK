@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.LocomotionModule
-// Generated on: pátek 13. února 2026 23:21:41
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:57:07
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -26,12 +26,13 @@ public global::FrooxEngine.LocomotionController _currentController;
 public System.Uri _lastDefaultIcon;
 public global::System.Nullable<UnityEngine.ColorX> _lastDefaultColor;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
-members.Add("Icon", new ResoniteLink.Reference() { });
+    base.CollectMembers(members, context);
+members.Add("Icon", Icon.ToResoniteReference(context));
 members.Add("Color", Color.ToResoniteLinkField());
-members.Add("_currentController", new ResoniteLink.Reference() { });
+members.Add("_currentController", _currentController.ToResoniteReference(context));
 members.Add("_lastDefaultIcon", _lastDefaultIcon.ToResoniteLinkField());
 members.Add("_lastDefaultColor", _lastDefaultColor.ToResoniteLinkField());
 }

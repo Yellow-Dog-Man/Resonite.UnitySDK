@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.ViewReferenceController
-// Generated on: pátek 13. února 2026 23:23:19
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:49
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -27,15 +27,16 @@ public global::System.Boolean ShouldVoiceBeActive;
 public global::FrooxEngine.IField<UnityEngine.Vector3> _objectSlotScale;
 public global::FrooxEngine.IField<global::System.Boolean> _objectSlotActive;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
-members.Add("PositionStream", new ResoniteLink.Reference() { });
-members.Add("RotationStream", new ResoniteLink.Reference() { });
-members.Add("ObjectSlot", new ResoniteLink.Reference() { });
+    base.CollectMembers(members, context);
+members.Add("PositionStream", PositionStream.ToResoniteReference(context));
+members.Add("RotationStream", RotationStream.ToResoniteReference(context));
+members.Add("ObjectSlot", ObjectSlot.ToResoniteReference(context));
 members.Add("ShouldVoiceBeActive", ShouldVoiceBeActive.ToResoniteLinkField());
-members.Add("_objectSlotScale", new ResoniteLink.Reference() { });
-members.Add("_objectSlotActive", new ResoniteLink.Reference() { });
+members.Add("_objectSlotScale", _objectSlotScale.ToResoniteReference(context));
+members.Add("_objectSlotActive", _objectSlotActive.ToResoniteReference(context));
 }
 
 }

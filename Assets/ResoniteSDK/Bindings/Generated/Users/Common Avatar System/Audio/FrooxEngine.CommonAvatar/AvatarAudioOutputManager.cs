@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.CommonAvatar.AvatarAudioOutputManager
-// Generated on: pátek 13. února 2026 23:23:20
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:50
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -49,15 +49,16 @@ public global::FrooxEngine.IField<global::System.Single> _maxScale;
 public global::System.Single _scaleCompensation;
 public global::FrooxEngine.AvatarAudioConfiguration _audioConfiguration;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
-members.Add("AudioOutput", new ResoniteLink.Reference() { });
+    base.CollectMembers(members, context);
+members.Add("AudioOutput", AudioOutput.ToResoniteReference(context));
 members.Add("IsViewVoice", IsViewVoice.ToResoniteLinkField());
-members.Add("WhisperConfig", new ResoniteLink.SyncObject() { Members = WhisperConfig.CollectMembers() });
-members.Add("NormalConfig", new ResoniteLink.SyncObject() { Members = NormalConfig.CollectMembers() });
-members.Add("ShoutConfig", new ResoniteLink.SyncObject() { Members = ShoutConfig.CollectMembers() });
-members.Add("BroadcastConfig", new ResoniteLink.SyncObject() { Members = BroadcastConfig.CollectMembers() });
+members.Add("WhisperConfig", new ResoniteLink.SyncObject() { Members = WhisperConfig.CollectMembers(context) });
+members.Add("NormalConfig", new ResoniteLink.SyncObject() { Members = NormalConfig.CollectMembers(context) });
+members.Add("ShoutConfig", new ResoniteLink.SyncObject() { Members = ShoutConfig.CollectMembers(context) });
+members.Add("BroadcastConfig", new ResoniteLink.SyncObject() { Members = BroadcastConfig.CollectMembers(context) });
 members.Add("__legacyWhisperVolume", __legacyWhisperVolume.ToResoniteLinkField());
 members.Add("__legacyNormalVolume", __legacyNormalVolume.ToResoniteLinkField());
 members.Add("__legacyShoutVolume", __legacyShoutVolume.ToResoniteLinkField());
@@ -65,21 +66,21 @@ members.Add("__legacyBroadcastVolume", __legacyBroadcastVolume.ToResoniteLinkFie
 members.Add("__legacyNormalDopplerLevel", __legacyNormalDopplerLevel.ToResoniteLinkField());
 members.Add("__legacyShoutDopplerLevel", __legacyShoutDopplerLevel.ToResoniteLinkField());
 members.Add("__legacyWhisperRange", __legacyWhisperRange.ToResoniteLinkField());
-members.Add("_activeUser", new ResoniteLink.Reference() { });
-members.Add("_enabled", new ResoniteLink.Reference() { });
-members.Add("_volume", new ResoniteLink.Reference() { });
-members.Add("_doppler", new ResoniteLink.Reference() { });
-members.Add("_spatialize", new ResoniteLink.Reference() { });
-members.Add("_spatialBlend", new ResoniteLink.Reference() { });
-members.Add("_ignoreAudioEffects", new ResoniteLink.Reference() { });
-members.Add("_minDistance", new ResoniteLink.Reference() { });
-members.Add("_maxDistance", new ResoniteLink.Reference() { });
-members.Add("_rollOffMode", new ResoniteLink.Reference() { });
-members.Add("_distanceSpace", new ResoniteLink.Reference() { });
-members.Add("_minScale", new ResoniteLink.Reference() { });
-members.Add("_maxScale", new ResoniteLink.Reference() { });
+members.Add("_activeUser", _activeUser.ToResoniteReference(context));
+members.Add("_enabled", _enabled.ToResoniteReference(context));
+members.Add("_volume", _volume.ToResoniteReference(context));
+members.Add("_doppler", _doppler.ToResoniteReference(context));
+members.Add("_spatialize", _spatialize.ToResoniteReference(context));
+members.Add("_spatialBlend", _spatialBlend.ToResoniteReference(context));
+members.Add("_ignoreAudioEffects", _ignoreAudioEffects.ToResoniteReference(context));
+members.Add("_minDistance", _minDistance.ToResoniteReference(context));
+members.Add("_maxDistance", _maxDistance.ToResoniteReference(context));
+members.Add("_rollOffMode", _rollOffMode.ToResoniteReference(context));
+members.Add("_distanceSpace", _distanceSpace.ToResoniteReference(context));
+members.Add("_minScale", _minScale.ToResoniteReference(context));
+members.Add("_maxScale", _maxScale.ToResoniteReference(context));
 members.Add("_scaleCompensation", _scaleCompensation.ToResoniteLinkField());
-members.Add("_audioConfiguration", new ResoniteLink.Reference() { });
+members.Add("_audioConfiguration", _audioConfiguration.ToResoniteReference(context));
 }
 
 }

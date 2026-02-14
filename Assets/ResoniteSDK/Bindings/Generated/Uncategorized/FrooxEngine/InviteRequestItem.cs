@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.InviteRequestItem
-// Generated on: pátek 13. února 2026 23:23:15
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:45
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -25,13 +25,14 @@ public global::FrooxEngine.UIX.Text HeaderText;
 public global::FrooxEngine.UIX.Button InviteButton;
 public global::FrooxEngine.UIX.Button AddContactButton;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
-members.Add("ContactDialog", new ResoniteLink.Reference() { });
-members.Add("HeaderText", new ResoniteLink.Reference() { });
-members.Add("InviteButton", new ResoniteLink.Reference() { });
-members.Add("AddContactButton", new ResoniteLink.Reference() { });
+    base.CollectMembers(members, context);
+members.Add("ContactDialog", ContactDialog.ToResoniteReference(context));
+members.Add("HeaderText", HeaderText.ToResoniteReference(context));
+members.Add("InviteButton", InviteButton.ToResoniteReference(context));
+members.Add("AddContactButton", AddContactButton.ToResoniteReference(context));
 }
 
 }

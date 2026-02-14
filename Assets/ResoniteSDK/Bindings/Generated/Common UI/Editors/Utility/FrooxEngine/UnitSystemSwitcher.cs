@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.UnitSystemSwitcher
-// Generated on: pátek 13. února 2026 23:21:38
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:57:04
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -30,18 +30,19 @@ public global::FrooxEngine.IField<global::System.String> CompoundSeparator;
 public global::FrooxEngine.UnitSystemSwitcher.Preset DefaultPreset;
 public global::FrooxEngine.UnitSystemSwitcher.Preset ImperialPreset;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
-members.Add("DefaultUnit", new ResoniteLink.Reference() { });
-members.Add("FormatUnit", new ResoniteLink.Reference() { });
-members.Add("FormatNumber", new ResoniteLink.Reference() { });
-members.Add("CompoundFormatUnits", new ResoniteLink.Reference() { });
-members.Add("CompoundOverrideNames", new ResoniteLink.Reference() { });
-members.Add("CompoundUseLongNames", new ResoniteLink.Reference() { });
-members.Add("CompoundSeparator", new ResoniteLink.Reference() { });
-members.Add("DefaultPreset", new ResoniteLink.SyncObject() { Members = DefaultPreset.CollectMembers() });
-members.Add("ImperialPreset", new ResoniteLink.SyncObject() { Members = ImperialPreset.CollectMembers() });
+    base.CollectMembers(members, context);
+members.Add("DefaultUnit", DefaultUnit.ToResoniteReference(context));
+members.Add("FormatUnit", FormatUnit.ToResoniteReference(context));
+members.Add("FormatNumber", FormatNumber.ToResoniteReference(context));
+members.Add("CompoundFormatUnits", CompoundFormatUnits.ToResoniteReference(context));
+members.Add("CompoundOverrideNames", CompoundOverrideNames.ToResoniteReference(context));
+members.Add("CompoundUseLongNames", CompoundUseLongNames.ToResoniteReference(context));
+members.Add("CompoundSeparator", CompoundSeparator.ToResoniteReference(context));
+members.Add("DefaultPreset", new ResoniteLink.SyncObject() { Members = DefaultPreset.CollectMembers(context) });
+members.Add("ImperialPreset", new ResoniteLink.SyncObject() { Members = ImperialPreset.CollectMembers(context) });
 }
 
 }

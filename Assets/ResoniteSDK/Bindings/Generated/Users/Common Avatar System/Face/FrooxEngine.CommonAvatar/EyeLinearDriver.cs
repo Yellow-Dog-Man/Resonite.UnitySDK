@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.CommonAvatar.EyeLinearDriver
-// Generated on: pátek 13. února 2026 23:23:20
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:50
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -32,10 +32,11 @@ public System.Collections.Generic.List<global::FrooxEngine.CommonAvatar.EyeLinea
 public System.Collections.Generic.List<global::FrooxEngine.CommonAvatar.EyeLinearDriver.EyeCloseLimit> CombinedCloseSubtractLimits;
 public System.Collections.Generic.List<global::FrooxEngine.CommonAvatar.EyeLinearDriver.Eye> Eyes;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
-members.Add("EyeManager", new ResoniteLink.Reference() { });
+    base.CollectMembers(members, context);
+members.Add("EyeManager", EyeManager.ToResoniteReference(context));
 members.Add("ProjectionPlaneSize", ProjectionPlaneSize.ToResoniteLinkField());
 members.Add("ProjectionPointDistance", ProjectionPointDistance.ToResoniteLinkField());
 members.Add("PositionOffsetCenter", PositionOffsetCenter.ToResoniteLinkField());
@@ -44,19 +45,19 @@ members.Add("MinimumTargetPointDistance", MinimumTargetPointDistance.ToResoniteL
 members.Add("PositionClampMode", PositionClampMode.ToResoniteLinkField());
 members.Add("LeftCloseSubtractLimits", new ResoniteLink.SyncList()
 {
-    Elements = LeftCloseSubtractLimits.ConvertList(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers() })
+    Elements = LeftCloseSubtractLimits.ConvertList(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers(context) })
 });
 members.Add("RightCloseSubtractLimits", new ResoniteLink.SyncList()
 {
-    Elements = RightCloseSubtractLimits.ConvertList(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers() })
+    Elements = RightCloseSubtractLimits.ConvertList(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers(context) })
 });
 members.Add("CombinedCloseSubtractLimits", new ResoniteLink.SyncList()
 {
-    Elements = CombinedCloseSubtractLimits.ConvertList(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers() })
+    Elements = CombinedCloseSubtractLimits.ConvertList(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers(context) })
 });
 members.Add("Eyes", new ResoniteLink.SyncList()
 {
-    Elements = Eyes.ConvertList(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers() })
+    Elements = Eyes.ConvertList(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers(context) })
 });
 }
 

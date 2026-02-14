@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.SingleShapeCharacterControllerManager
-// Generated on: pátek 13. února 2026 23:21:42
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:57:10
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -32,9 +32,10 @@ public global::FrooxEngine.IField<global::System.Single> TargetHeight;
 public global::FrooxEngine.IField<global::System.Single> TargetWidth;
 public global::FrooxEngine.IField<UnityEngine.Vector3> TargetOffset;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
+    base.CollectMembers(members, context);
 members.Add("UseUserHeadHeightWhenAvailable", UseUserHeadHeightWhenAvailable.ToResoniteLinkField());
 members.Add("HeadHeightOffset", HeadHeightOffset.ToResoniteLinkField());
 members.Add("CrouchTargetWidth", CrouchTargetWidth.ToResoniteLinkField());
@@ -43,9 +44,9 @@ members.Add("CrouchEnd", CrouchEnd.ToResoniteLinkField());
 members.Add("DefaultHeight", DefaultHeight.ToResoniteLinkField());
 members.Add("DefaultWidth", DefaultWidth.ToResoniteLinkField());
 members.Add("RootAtBottom", RootAtBottom.ToResoniteLinkField());
-members.Add("TargetHeight", new ResoniteLink.Reference() { });
-members.Add("TargetWidth", new ResoniteLink.Reference() { });
-members.Add("TargetOffset", new ResoniteLink.Reference() { });
+members.Add("TargetHeight", TargetHeight.ToResoniteReference(context));
+members.Add("TargetWidth", TargetWidth.ToResoniteReference(context));
+members.Add("TargetOffset", TargetOffset.ToResoniteReference(context));
 }
 
 }

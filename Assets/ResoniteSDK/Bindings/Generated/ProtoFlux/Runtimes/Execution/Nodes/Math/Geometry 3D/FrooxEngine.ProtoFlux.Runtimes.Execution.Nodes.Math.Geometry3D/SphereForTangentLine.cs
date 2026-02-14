@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [ProtoFluxBindings]FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.Math.Geometry3D.SphereForTangentLine
-// Generated on: pátek 13. února 2026 23:22:36
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:05
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -26,12 +26,13 @@ public global::FrooxEngine.ProtoFlux.INodeValueOutput<UnityEngine.Vector3> Spher
 public global::FrooxEngine.ProtoFlux.NodeValueOutput<UnityEngine.Vector3> TangentPoint;
 public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Single> Radius;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
-members.Add("LinePoint", new ResoniteLink.Reference() { });
-members.Add("LineDirection", new ResoniteLink.Reference() { });
-members.Add("SphereCenter", new ResoniteLink.Reference() { });
+    base.CollectMembers(members, context);
+members.Add("LinePoint", LinePoint.ToResoniteReference(context));
+members.Add("LineDirection", LineDirection.ToResoniteReference(context));
+members.Add("SphereCenter", SphereCenter.ToResoniteReference(context));
 members.Add("TangentPoint", new ResoniteLink.EmptyElement());
 members.Add("Radius", new ResoniteLink.EmptyElement());
 }

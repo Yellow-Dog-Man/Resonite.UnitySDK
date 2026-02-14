@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.FundingStatistics
-// Generated on: pátek 13. února 2026 23:21:37
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:57:02
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -25,13 +25,14 @@ public global::FrooxEngine.FundingStatistics.ServiceStats Aggregate;
 public global::FrooxEngine.FundingStatistics.ServiceStats Patreon;
 public global::FrooxEngine.FundingStatistics.ServiceStats Stripe;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
+    base.CollectMembers(members, context);
 members.Add("Timestamp", Timestamp.ToResoniteLinkField());
-members.Add("Aggregate", new ResoniteLink.SyncObject() { Members = Aggregate.CollectMembers() });
-members.Add("Patreon", new ResoniteLink.SyncObject() { Members = Patreon.CollectMembers() });
-members.Add("Stripe", new ResoniteLink.SyncObject() { Members = Stripe.CollectMembers() });
+members.Add("Aggregate", new ResoniteLink.SyncObject() { Members = Aggregate.CollectMembers(context) });
+members.Add("Patreon", new ResoniteLink.SyncObject() { Members = Patreon.CollectMembers(context) });
+members.Add("Stripe", new ResoniteLink.SyncObject() { Members = Stripe.CollectMembers(context) });
 }
 
 }

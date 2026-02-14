@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.UIX.ProjectedRectSlotDriver
-// Generated on: pátek 13. února 2026 23:23:12
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:41
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -26,14 +26,15 @@ public global::FrooxEngine.IField<UnityEngine.Vector3> _scale;
 public global::FrooxEngine.Slot _originalParent;
 public global::FrooxEngine.Slot _lastTarget;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
-members.Add("Target", new ResoniteLink.Reference() { });
-members.Add("_rotation", new ResoniteLink.Reference() { });
-members.Add("_scale", new ResoniteLink.Reference() { });
-members.Add("_originalParent", new ResoniteLink.Reference() { });
-members.Add("_lastTarget", new ResoniteLink.Reference() { });
+    base.CollectMembers(members, context);
+members.Add("Target", Target.ToResoniteReference(context));
+members.Add("_rotation", _rotation.ToResoniteReference(context));
+members.Add("_scale", _scale.ToResoniteReference(context));
+members.Add("_originalParent", _originalParent.ToResoniteReference(context));
+members.Add("_lastTarget", _lastTarget.ToResoniteReference(context));
 }
 
 }

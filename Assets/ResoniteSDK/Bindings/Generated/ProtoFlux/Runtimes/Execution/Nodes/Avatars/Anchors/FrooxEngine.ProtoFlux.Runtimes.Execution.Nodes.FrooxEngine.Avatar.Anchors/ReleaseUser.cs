@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [ProtoFluxBindings]FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Avatar.Anchors.ReleaseUser
-// Generated on: pátek 13. února 2026 23:22:19
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:57:47
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -24,12 +24,13 @@ public partial class ReleaseUser : global::FrooxEngine.ProtoFlux.Runtimes.Execut
 public global::FrooxEngine.ProtoFlux.INodeOperation OnReleased;
 public global::FrooxEngine.ProtoFlux.INodeOperation OnFailure;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
-members.Add("Anchor", new ResoniteLink.Reference() { });
-members.Add("OnReleased", new ResoniteLink.Reference() { });
-members.Add("OnFailure", new ResoniteLink.Reference() { });
+    base.CollectMembers(members, context);
+members.Add("Anchor", Anchor.ToResoniteReference(context));
+members.Add("OnReleased", OnReleased.ToResoniteReference(context));
+members.Add("OnFailure", OnFailure.ToResoniteReference(context));
 }
 
 }

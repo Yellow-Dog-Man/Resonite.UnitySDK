@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.LookAt
-// Generated on: pátek 13. února 2026 23:23:09
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:39
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -31,19 +31,20 @@ public global::System.Single MaxSwing;
 public global::System.Single MaxTwist;
 public global::FrooxEngine.IField<UnityEngine.Quaternion> _target;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
-members.Add("Target", new ResoniteLink.Reference() { });
+    base.CollectMembers(members, context);
+members.Add("Target", Target.ToResoniteReference(context));
 members.Add("TargetPoint", TargetPoint.ToResoniteLinkField());
-members.Add("TargetPointSpace", new ResoniteLink.SyncObject() { Members = TargetPointSpace.CollectMembers() });
+members.Add("TargetPointSpace", new ResoniteLink.SyncObject() { Members = TargetPointSpace.CollectMembers(context) });
 members.Add("Up", Up.ToResoniteLinkField());
 members.Add("RotationOffset", RotationOffset.ToResoniteLinkField());
 members.Add("SwingReference", SwingReference.ToResoniteLinkField());
 members.Add("TwistReference", TwistReference.ToResoniteLinkField());
 members.Add("MaxSwing", MaxSwing.ToResoniteLinkField());
 members.Add("MaxTwist", MaxTwist.ToResoniteLinkField());
-members.Add("_target", new ResoniteLink.Reference() { });
+members.Add("_target", _target.ToResoniteReference(context));
 }
 
 }

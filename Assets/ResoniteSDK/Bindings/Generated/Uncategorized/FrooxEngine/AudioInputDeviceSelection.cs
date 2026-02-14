@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.AudioInputDeviceSelection
-// Generated on: pátek 13. února 2026 23:23:12
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:41
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -29,17 +29,18 @@ public global::FrooxEngine.AudioOutput _audioOutput;
 public global::FrooxEngine.VolumeMeter _deviceVolume;
 public global::FrooxEngine.UIX.ProgressBar _volumeBar;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
+    base.CollectMembers(members, context);
 members.Add("SelectedDeviceIndex", SelectedDeviceIndex.ToResoniteLinkField());
 members.Add("SelectedDeviceName", SelectedDeviceName.ToResoniteLinkField());
 members.Add("UseFilteredData", UseFilteredData.ToResoniteLinkField());
-members.Add("_deviceButtonRoot", new ResoniteLink.Reference() { });
-members.Add("_audioStream", new ResoniteLink.Reference() { });
-members.Add("_audioOutput", new ResoniteLink.Reference() { });
-members.Add("_deviceVolume", new ResoniteLink.Reference() { });
-members.Add("_volumeBar", new ResoniteLink.Reference() { });
+members.Add("_deviceButtonRoot", _deviceButtonRoot.ToResoniteReference(context));
+members.Add("_audioStream", _audioStream.ToResoniteReference(context));
+members.Add("_audioOutput", _audioOutput.ToResoniteReference(context));
+members.Add("_deviceVolume", _deviceVolume.ToResoniteReference(context));
+members.Add("_volumeBar", _volumeBar.ToResoniteReference(context));
 }
 
 }

@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.CommonAvatar.EyeManager
-// Generated on: pátek 13. února 2026 23:23:13
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:43
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -91,9 +91,10 @@ public global::System.Single MiniExpressionProbability;
 public global::System.Single MiniExpressionInterval;
 public System.Collections.Generic.List<global::FrooxEngine.CommonAvatar.EyeManager.MiniExpression> MiniExpressions;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
+    base.CollectMembers(members, context);
 members.Add("TargetPoint", TargetPoint.ToResoniteLinkField());
 members.Add("LeftEyeTargetPoint", LeftEyeTargetPoint.ToResoniteLinkField());
 members.Add("RightEyeTargetPoint", RightEyeTargetPoint.ToResoniteLinkField());
@@ -118,8 +119,8 @@ members.Add("CombinedEyeInnerBrowVertical", CombinedEyeInnerBrowVertical.ToReson
 members.Add("LeftEyeOuterBrowVertical", LeftEyeOuterBrowVertical.ToResoniteLinkField());
 members.Add("RightEyeOuterBrowVertical", RightEyeOuterBrowVertical.ToResoniteLinkField());
 members.Add("CombinedEyeOuterBrowVertical", CombinedEyeOuterBrowVertical.ToResoniteLinkField());
-members.Add("EyeDataSource", new ResoniteLink.Reference() { });
-members.Add("SimulatingUser", new ResoniteLink.Reference() { });
+members.Add("EyeDataSource", EyeDataSource.ToResoniteReference(context));
+members.Add("SimulatingUser", SimulatingUser.ToResoniteReference(context));
 members.Add("SimulateOnHost", SimulateOnHost.ToResoniteLinkField());
 members.Add("IgnoreLocalUserHead", IgnoreLocalUserHead.ToResoniteLinkField());
 members.Add("UserHeadWeight", UserHeadWeight.ToResoniteLinkField());
@@ -127,10 +128,10 @@ members.Add("UserHandWeight", UserHandWeight.ToResoniteLinkField());
 members.Add("GrippingHandWeight", GrippingHandWeight.ToResoniteLinkField());
 members.Add("CameraWeight", CameraWeight.ToResoniteLinkField());
 members.Add("ForcedCameraWeight", ForcedCameraWeight.ToResoniteLinkField());
-members.Add("EyeReference", new ResoniteLink.Reference() { });
+members.Add("EyeReference", EyeReference.ToResoniteReference(context));
 members.Add("EyeSeparation", EyeSeparation.ToResoniteLinkField());
 members.Add("SaccadeSpeed", SaccadeSpeed.ToResoniteLinkField());
-members.Add("LookTargetRoot", new ResoniteLink.Reference() { });
+members.Add("LookTargetRoot", LookTargetRoot.ToResoniteReference(context));
 members.Add("LookTargetLocalPoint", LookTargetLocalPoint.ToResoniteLinkField());
 members.Add("LeftEyeTargetOffset", LeftEyeTargetOffset.ToResoniteLinkField());
 members.Add("RightEyeTargetOffset", RightEyeTargetOffset.ToResoniteLinkField());
@@ -165,7 +166,7 @@ members.Add("MiniExpressionProbability", MiniExpressionProbability.ToResoniteLin
 members.Add("MiniExpressionInterval", MiniExpressionInterval.ToResoniteLinkField());
 members.Add("MiniExpressions", new ResoniteLink.SyncList()
 {
-    Elements = MiniExpressions.ConvertList(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers() })
+    Elements = MiniExpressions.ConvertList(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers(context) })
 });
 }
 

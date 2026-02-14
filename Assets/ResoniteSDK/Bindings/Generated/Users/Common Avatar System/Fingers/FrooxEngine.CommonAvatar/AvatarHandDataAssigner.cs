@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.CommonAvatar.AvatarHandDataAssigner
-// Generated on: pátek 13. února 2026 23:23:20
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:50
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -26,14 +26,15 @@ public global::FrooxEngine.VibrationDeviceRelay VibrationRelay;
 public global::Renderite.Shared.Chirality Chirality;
 public global::FrooxEngine.CommonAvatar.AvatarObjectSlot _equippingSlot;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
-members.Add("TargetReference", new ResoniteLink.Reference() { });
-members.Add("TouchSource", new ResoniteLink.Reference() { });
-members.Add("VibrationRelay", new ResoniteLink.Reference() { });
+    base.CollectMembers(members, context);
+members.Add("TargetReference", TargetReference.ToResoniteReference(context));
+members.Add("TouchSource", TouchSource.ToResoniteReference(context));
+members.Add("VibrationRelay", VibrationRelay.ToResoniteReference(context));
 members.Add("Chirality", Chirality.ToResoniteLinkField());
-members.Add("_equippingSlot", new ResoniteLink.Reference() { });
+members.Add("_equippingSlot", _equippingSlot.ToResoniteReference(context));
 }
 
 }

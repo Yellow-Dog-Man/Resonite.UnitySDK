@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [ProtoFluxBindings]FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.Math.Geometry3D.ClosestPointsBetweenLines
-// Generated on: pátek 13. února 2026 23:22:36
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:05
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -27,13 +27,14 @@ public global::FrooxEngine.ProtoFlux.INodeValueOutput<UnityEngine.Vector3> LineD
 public global::FrooxEngine.ProtoFlux.NodeValueOutput<UnityEngine.Vector3> Point0;
 public global::FrooxEngine.ProtoFlux.NodeValueOutput<UnityEngine.Vector3> Point1;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
-members.Add("LinePoint0", new ResoniteLink.Reference() { });
-members.Add("LineDir0", new ResoniteLink.Reference() { });
-members.Add("LinePoint1", new ResoniteLink.Reference() { });
-members.Add("LineDir1", new ResoniteLink.Reference() { });
+    base.CollectMembers(members, context);
+members.Add("LinePoint0", LinePoint0.ToResoniteReference(context));
+members.Add("LineDir0", LineDir0.ToResoniteReference(context));
+members.Add("LinePoint1", LinePoint1.ToResoniteReference(context));
+members.Add("LineDir1", LineDir1.ToResoniteReference(context));
 members.Add("Point0", new ResoniteLink.EmptyElement());
 members.Add("Point1", new ResoniteLink.EmptyElement());
 }

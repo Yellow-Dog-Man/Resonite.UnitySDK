@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.OverlayUnlitMaterial
-// Generated on: pátek 13. února 2026 23:21:34
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:56:57
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -40,15 +40,16 @@ public global::System.Single OffsetFactor;
 public global::System.Single OffsetUnits;
 public global::System.Int32 RenderQueue;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
+    base.CollectMembers(members, context);
 members.Add("BehindTintColor", BehindTintColor.ToResoniteLinkField());
 members.Add("FrontTintColor", FrontTintColor.ToResoniteLinkField());
-members.Add("BehindTexture", new ResoniteLink.Reference() { });
+members.Add("BehindTexture", BehindTexture.ToResoniteReference(context));
 members.Add("BehindTextureScale", BehindTextureScale.ToResoniteLinkField());
 members.Add("BehindTextureOffset", BehindTextureOffset.ToResoniteLinkField());
-members.Add("FrontTexture", new ResoniteLink.Reference() { });
+members.Add("FrontTexture", FrontTexture.ToResoniteReference(context));
 members.Add("FrontTextureScale", FrontTextureScale.ToResoniteLinkField());
 members.Add("FrontTextureOffset", FrontTextureOffset.ToResoniteLinkField());
 members.Add("BlendMode", BlendMode.ToResoniteLinkField());

@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [ProtoFluxBindings]FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.Math.Bounds.TransformBounds
-// Generated on: pátek 13. února 2026 23:22:57
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:27
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -24,12 +24,13 @@ public partial class TransformBounds : global::FrooxEngine.ProtoFlux.Runtimes.Ex
 public global::FrooxEngine.ProtoFlux.INodeObjectOutput<global::FrooxEngine.Slot> SourceSpace;
 public global::FrooxEngine.ProtoFlux.INodeObjectOutput<global::FrooxEngine.Slot> TargetSpace;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
-members.Add("Bounds", new ResoniteLink.Reference() { });
-members.Add("SourceSpace", new ResoniteLink.Reference() { });
-members.Add("TargetSpace", new ResoniteLink.Reference() { });
+    base.CollectMembers(members, context);
+members.Add("Bounds", Bounds.ToResoniteReference(context));
+members.Add("SourceSpace", SourceSpace.ToResoniteReference(context));
+members.Add("TargetSpace", TargetSpace.ToResoniteReference(context));
 }
 
 }

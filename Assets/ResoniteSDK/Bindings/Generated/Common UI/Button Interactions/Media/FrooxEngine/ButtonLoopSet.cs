@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.ButtonLoopSet
-// Generated on: pátek 13. února 2026 23:21:38
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:57:03
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -24,10 +24,11 @@ public partial class ButtonLoopSet : global::FrooxEngine.Component, global::Froo
 public global::FrooxEngine.LoopSetOptions OnPress;
 public global::FrooxEngine.LoopSetOptions OnRelease;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
-members.Add("Playback", new ResoniteLink.Reference() { });
+    base.CollectMembers(members, context);
+members.Add("Playback", Playback.ToResoniteReference(context));
 members.Add("OnPress", OnPress.ToResoniteLinkField());
 members.Add("OnRelease", OnRelease.ToResoniteLinkField());
 }

@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.ValueSpatialVariablePartialDerivativeDriver<>
-// Generated on: pátek 13. února 2026 23:21:39
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:57:05
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -30,12 +30,13 @@ public T DefaultValue;
 public global::System.Single SamplingDistance;
 public global::System.Boolean ComputeInLocalSpace;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
-members.Add("DriveX", new ResoniteLink.Reference() { });
-members.Add("DriveY", new ResoniteLink.Reference() { });
-members.Add("DriveZ", new ResoniteLink.Reference() { });
+    base.CollectMembers(members, context);
+members.Add("DriveX", DriveX.ToResoniteReference(context));
+members.Add("DriveY", DriveY.ToResoniteReference(context));
+members.Add("DriveZ", DriveZ.ToResoniteReference(context));
 members.Add("VariableName", VariableName.ToResoniteLinkField());
 members.Add("Mode", Mode.ToResoniteLinkField());
 members.Add("DefaultValue", DefaultValue.ToResoniteLinkField());

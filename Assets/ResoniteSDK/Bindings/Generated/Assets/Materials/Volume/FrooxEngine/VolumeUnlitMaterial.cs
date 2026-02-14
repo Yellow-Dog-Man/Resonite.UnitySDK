@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.VolumeUnlitMaterial
-// Generated on: pátek 13. února 2026 23:21:34
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:56:58
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -35,13 +35,14 @@ public global::System.Boolean UseAlphaChannel;
 public System.Collections.Generic.List<global::FrooxEngine.VolumeUnlitMaterial.SlicePlane> Slices;
 public System.Collections.Generic.List<global::FrooxEngine.VolumeUnlitMaterial.Highlight> Highlights;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
+    base.CollectMembers(members, context);
 members.Add("Mode", Mode.ToResoniteLinkField());
 members.Add("BlendMode", BlendMode.ToResoniteLinkField());
 members.Add("RenderQueue", RenderQueue.ToResoniteLinkField());
-members.Add("Volume", new ResoniteLink.Reference() { });
+members.Add("Volume", Volume.ToResoniteReference(context));
 members.Add("StepSize", StepSize.ToResoniteLinkField());
 members.Add("Gain", Gain.ToResoniteLinkField());
 members.Add("Exp", Exp.ToResoniteLinkField());
@@ -52,11 +53,11 @@ members.Add("InputOffset", InputOffset.ToResoniteLinkField());
 members.Add("UseAlphaChannel", UseAlphaChannel.ToResoniteLinkField());
 members.Add("Slices", new ResoniteLink.SyncList()
 {
-    Elements = Slices.ConvertList(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers() })
+    Elements = Slices.ConvertList(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers(context) })
 });
 members.Add("Highlights", new ResoniteLink.SyncList()
 {
-    Elements = Highlights.ConvertList(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers() })
+    Elements = Highlights.ConvertList(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers(context) })
 });
 }
 

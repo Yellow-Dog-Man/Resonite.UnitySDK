@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.DynamicBlendShapeDriver+BlendShape
-// Generated on: pátek 13. února 2026 23:23:09
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:39
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -26,12 +26,13 @@ public partial class BlendShape : global::FrooxEngine.SyncObject
 public global::System.Single Value;
 public global::FrooxEngine.IField<global::System.Single> _drive;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
+    base.CollectMembers(members, context);
 members.Add("BlendShapeName", BlendShapeName.ToResoniteLinkField());
 members.Add("Value", Value.ToResoniteLinkField());
-members.Add("_drive", new ResoniteLink.Reference() { });
+members.Add("_drive", _drive.ToResoniteReference(context));
 }
 
 }

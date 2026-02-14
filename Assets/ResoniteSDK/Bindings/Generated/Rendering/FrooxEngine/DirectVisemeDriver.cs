@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.DirectVisemeDriver
-// Generated on: pátek 13. února 2026 23:23:04
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:33
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -44,32 +44,33 @@ public global::FrooxEngine.IField<global::System.Single> oh;
 public global::FrooxEngine.IField<global::System.Single> ou;
 public global::FrooxEngine.IField<global::System.Single> Laugh;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
-members.Add("Source", new ResoniteLink.Reference() { });
-members.Add("MouthTrackingSource", new ResoniteLink.Reference() { });
+    base.CollectMembers(members, context);
+members.Add("Source", Source.ToResoniteReference(context));
+members.Add("MouthTrackingSource", MouthTrackingSource.ToResoniteReference(context));
 members.Add("StrengthMultiplier", StrengthMultiplier.ToResoniteLinkField());
 members.Add("VoiceMouthSupressWeight", VoiceMouthSupressWeight.ToResoniteLinkField());
 members.Add("LaughThreshold", LaughThreshold.ToResoniteLinkField());
 members.Add("LaughBeginSpeed", LaughBeginSpeed.ToResoniteLinkField());
 members.Add("LaughEndSpeed", LaughEndSpeed.ToResoniteLinkField());
-members.Add("Silence", new ResoniteLink.Reference() { });
-members.Add("PP", new ResoniteLink.Reference() { });
-members.Add("FF", new ResoniteLink.Reference() { });
-members.Add("TH", new ResoniteLink.Reference() { });
-members.Add("DD", new ResoniteLink.Reference() { });
-members.Add("kk", new ResoniteLink.Reference() { });
-members.Add("CH", new ResoniteLink.Reference() { });
-members.Add("SS", new ResoniteLink.Reference() { });
-members.Add("nn", new ResoniteLink.Reference() { });
-members.Add("RR", new ResoniteLink.Reference() { });
-members.Add("aa", new ResoniteLink.Reference() { });
-members.Add("E", new ResoniteLink.Reference() { });
-members.Add("ih", new ResoniteLink.Reference() { });
-members.Add("oh", new ResoniteLink.Reference() { });
-members.Add("ou", new ResoniteLink.Reference() { });
-members.Add("Laugh", new ResoniteLink.Reference() { });
+members.Add("Silence", Silence.ToResoniteReference(context));
+members.Add("PP", PP.ToResoniteReference(context));
+members.Add("FF", FF.ToResoniteReference(context));
+members.Add("TH", TH.ToResoniteReference(context));
+members.Add("DD", DD.ToResoniteReference(context));
+members.Add("kk", kk.ToResoniteReference(context));
+members.Add("CH", CH.ToResoniteReference(context));
+members.Add("SS", SS.ToResoniteReference(context));
+members.Add("nn", nn.ToResoniteReference(context));
+members.Add("RR", RR.ToResoniteReference(context));
+members.Add("aa", aa.ToResoniteReference(context));
+members.Add("E", E.ToResoniteReference(context));
+members.Add("ih", ih.ToResoniteReference(context));
+members.Add("oh", oh.ToResoniteReference(context));
+members.Add("ou", ou.ToResoniteReference(context));
+members.Add("Laugh", Laugh.ToResoniteReference(context));
 }
 
 }

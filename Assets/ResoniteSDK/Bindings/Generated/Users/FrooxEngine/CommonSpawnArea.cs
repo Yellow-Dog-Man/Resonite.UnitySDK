@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.CommonSpawnArea
-// Generated on: pátek 13. února 2026 23:23:19
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:49
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -32,10 +32,11 @@ public global::FrooxEngine.UserRoot.UserNode PositionNode;
 public global::FrooxEngine.UserRoot.UserNode RotationNode;
 public global::FrooxEngine.Slot ParentOverride;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
-members.Add("SpawnPointGenerator", new ResoniteLink.Reference() { });
+    base.CollectMembers(members, context);
+members.Add("SpawnPointGenerator", SpawnPointGenerator.ToResoniteReference(context));
 members.Add("FloorPointRay", FloorPointRay.ToResoniteLinkField());
 members.Add("OtherUserCheckRadius", OtherUserCheckRadius.ToResoniteLinkField());
 members.Add("ParentUser", ParentUser.ToResoniteLinkField());
@@ -45,7 +46,7 @@ members.Add("Capacity", Capacity.ToResoniteLinkField());
 members.Add("BaseWeight", BaseWeight.ToResoniteLinkField());
 members.Add("PositionNode", PositionNode.ToResoniteLinkField());
 members.Add("RotationNode", RotationNode.ToResoniteLinkField());
-members.Add("ParentOverride", new ResoniteLink.Reference() { });
+members.Add("ParentOverride", ParentOverride.ToResoniteReference(context));
 }
 
 }

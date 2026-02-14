@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.DebugVector
-// Generated on: pátek 13. února 2026 23:21:40
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:57:05
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -26,9 +26,10 @@ public UnityEngine.Vector3 Vector;
 public UnityEngine.ColorX Color;
 public global::System.Boolean UseGlobalSpace;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
+    base.CollectMembers(members, context);
 members.Add("PositionOffset", PositionOffset.ToResoniteLinkField());
 members.Add("RotationOffset", RotationOffset.ToResoniteLinkField());
 members.Add("Vector", Vector.ToResoniteLinkField());

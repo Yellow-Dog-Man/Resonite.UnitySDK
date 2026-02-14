@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [ProtoFluxBindings]FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Audio.ConstructZitaParameters
-// Generated on: pátek 13. února 2026 23:22:18
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:57:46
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -32,20 +32,21 @@ public global::FrooxEngine.ProtoFlux.INodeValueOutput<global::System.Single> EQ2
 public global::FrooxEngine.ProtoFlux.INodeValueOutput<global::System.Single> Mix;
 public global::FrooxEngine.ProtoFlux.INodeValueOutput<global::System.Single> Level;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
-members.Add("InDelay", new ResoniteLink.Reference() { });
-members.Add("Crossover", new ResoniteLink.Reference() { });
-members.Add("RT60Low", new ResoniteLink.Reference() { });
-members.Add("RT60Mid", new ResoniteLink.Reference() { });
-members.Add("HighFrequencyDamping", new ResoniteLink.Reference() { });
-members.Add("EQ1Frequency", new ResoniteLink.Reference() { });
-members.Add("EQ1Level", new ResoniteLink.Reference() { });
-members.Add("EQ2Frequency", new ResoniteLink.Reference() { });
-members.Add("EQ2Level", new ResoniteLink.Reference() { });
-members.Add("Mix", new ResoniteLink.Reference() { });
-members.Add("Level", new ResoniteLink.Reference() { });
+    base.CollectMembers(members, context);
+members.Add("InDelay", InDelay.ToResoniteReference(context));
+members.Add("Crossover", Crossover.ToResoniteReference(context));
+members.Add("RT60Low", RT60Low.ToResoniteReference(context));
+members.Add("RT60Mid", RT60Mid.ToResoniteReference(context));
+members.Add("HighFrequencyDamping", HighFrequencyDamping.ToResoniteReference(context));
+members.Add("EQ1Frequency", EQ1Frequency.ToResoniteReference(context));
+members.Add("EQ1Level", EQ1Level.ToResoniteReference(context));
+members.Add("EQ2Frequency", EQ2Frequency.ToResoniteReference(context));
+members.Add("EQ2Level", EQ2Level.ToResoniteReference(context));
+members.Add("Mix", Mix.ToResoniteReference(context));
+members.Add("Level", Level.ToResoniteReference(context));
 }
 
 }

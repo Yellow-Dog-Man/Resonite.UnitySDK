@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.MirrorTransform
-// Generated on: pátek 13. února 2026 23:23:09
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:39
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -28,16 +28,17 @@ public global::System.Boolean AllowWriteBack;
 public global::FrooxEngine.IField<UnityEngine.Vector3> _position;
 public global::FrooxEngine.IField<UnityEngine.Quaternion> _rotation;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
-members.Add("MirrorSource", new ResoniteLink.Reference() { });
-members.Add("MirrorPlane", new ResoniteLink.Reference() { });
+    base.CollectMembers(members, context);
+members.Add("MirrorSource", MirrorSource.ToResoniteReference(context));
+members.Add("MirrorPlane", MirrorPlane.ToResoniteReference(context));
 members.Add("MirrorOffset", MirrorOffset.ToResoniteLinkField());
 members.Add("MirrorNormal", MirrorNormal.ToResoniteLinkField());
 members.Add("AllowWriteBack", AllowWriteBack.ToResoniteLinkField());
-members.Add("_position", new ResoniteLink.Reference() { });
-members.Add("_rotation", new ResoniteLink.Reference() { });
+members.Add("_position", _position.ToResoniteReference(context));
+members.Add("_rotation", _rotation.ToResoniteReference(context));
 }
 
 }

@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.WorldLightSourcesWizard
-// Generated on: pátek 13. února 2026 23:23:21
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:51
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -30,18 +30,19 @@ public global::FrooxEngine.UIX.TextField _tag;
 public global::FrooxEngine.FloatTextEditorParser _intensityField;
 public global::FrooxEngine.FloatTextEditorParser _rangeField;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
-members.Add("Root", new ResoniteLink.Reference() { });
+    base.CollectMembers(members, context);
+members.Add("Root", Root.ToResoniteReference(context));
 members.Add("ProcessPointLights", ProcessPointLights.ToResoniteLinkField());
 members.Add("ProcessSpotLights", ProcessSpotLights.ToResoniteLinkField());
 members.Add("ProcessDirectionalLights", ProcessDirectionalLights.ToResoniteLinkField());
 members.Add("ProcessDisabled", ProcessDisabled.ToResoniteLinkField());
 members.Add("TargetShadowType", TargetShadowType.ToResoniteLinkField());
-members.Add("_tag", new ResoniteLink.Reference() { });
-members.Add("_intensityField", new ResoniteLink.Reference() { });
-members.Add("_rangeField", new ResoniteLink.Reference() { });
+members.Add("_tag", _tag.ToResoniteReference(context));
+members.Add("_intensityField", _intensityField.ToResoniteReference(context));
+members.Add("_rangeField", _rangeField.ToResoniteReference(context));
 }
 
 }

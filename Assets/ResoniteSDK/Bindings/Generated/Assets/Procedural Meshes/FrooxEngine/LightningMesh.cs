@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.LightningMesh
-// Generated on: pátek 13. února 2026 23:21:35
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:57:00
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -30,9 +30,10 @@ public UnityEngine.Vector3 Point0;
 public UnityEngine.Vector3 Point1;
 public System.Collections.Generic.List<global::FrooxEngine.LightningMesh.StrikeProperties> StrikeLevels;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
+    base.CollectMembers(members, context);
 members.Add("Seed", Seed.ToResoniteLinkField());
 members.Add("Points", Points.ToResoniteLinkField());
 members.Add("Topology", Topology.ToResoniteLinkField());
@@ -43,7 +44,7 @@ members.Add("Point0", Point0.ToResoniteLinkField());
 members.Add("Point1", Point1.ToResoniteLinkField());
 members.Add("StrikeLevels", new ResoniteLink.SyncList()
 {
-    Elements = StrikeLevels.ConvertList(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers() })
+    Elements = StrikeLevels.ConvertList(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers(context) })
 });
 }
 

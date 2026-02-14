@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.ProgressBarInterface
-// Generated on: pátek 13. února 2026 23:23:19
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:49
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -35,23 +35,24 @@ public global::FrooxEngine.IField<global::System.String> CompletionMessage;
 public global::FrooxEngine.IField<global::System.String> FailureReason;
 public global::FrooxEngine.IField<global::System.Boolean> CanBeHidden;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
-members.Add("ProgressKnown", new ResoniteLink.Reference() { });
-members.Add("Progress", new ResoniteLink.Reference() { });
-members.Add("ProcessedCountKnown", new ResoniteLink.Reference() { });
-members.Add("ProcessedItemCount", new ResoniteLink.Reference() { });
-members.Add("TotalItemCountKnown", new ResoniteLink.Reference() { });
-members.Add("TotalItemCount", new ResoniteLink.Reference() { });
-members.Add("PhaseName", new ResoniteLink.Reference() { });
-members.Add("SubPhaseName", new ResoniteLink.Reference() { });
-members.Add("Stage", new ResoniteLink.Reference() { });
-members.Add("HasCompleted", new ResoniteLink.Reference() { });
-members.Add("HasFailed", new ResoniteLink.Reference() { });
-members.Add("CompletionMessage", new ResoniteLink.Reference() { });
-members.Add("FailureReason", new ResoniteLink.Reference() { });
-members.Add("CanBeHidden", new ResoniteLink.Reference() { });
+    base.CollectMembers(members, context);
+members.Add("ProgressKnown", ProgressKnown.ToResoniteReference(context));
+members.Add("Progress", Progress.ToResoniteReference(context));
+members.Add("ProcessedCountKnown", ProcessedCountKnown.ToResoniteReference(context));
+members.Add("ProcessedItemCount", ProcessedItemCount.ToResoniteReference(context));
+members.Add("TotalItemCountKnown", TotalItemCountKnown.ToResoniteReference(context));
+members.Add("TotalItemCount", TotalItemCount.ToResoniteReference(context));
+members.Add("PhaseName", PhaseName.ToResoniteReference(context));
+members.Add("SubPhaseName", SubPhaseName.ToResoniteReference(context));
+members.Add("Stage", Stage.ToResoniteReference(context));
+members.Add("HasCompleted", HasCompleted.ToResoniteReference(context));
+members.Add("HasFailed", HasFailed.ToResoniteReference(context));
+members.Add("CompletionMessage", CompletionMessage.ToResoniteReference(context));
+members.Add("FailureReason", FailureReason.ToResoniteReference(context));
+members.Add("CanBeHidden", CanBeHidden.ToResoniteReference(context));
 }
 
 }

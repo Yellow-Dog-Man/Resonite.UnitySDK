@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.UIX.RectTransformLerp
-// Generated on: pátek 13. února 2026 23:23:12
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:41
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -23,11 +23,12 @@ public partial class RectTransformLerp : global::FrooxEngine.UIX.UIController
     public global::System.Single Lerp;
 public global::FrooxEngine.UIX.RectTransform SourceRect;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
+    base.CollectMembers(members, context);
 members.Add("Lerp", Lerp.ToResoniteLinkField());
-members.Add("SourceRect", new ResoniteLink.Reference() { });
+members.Add("SourceRect", SourceRect.ToResoniteReference(context));
 }
 
 }

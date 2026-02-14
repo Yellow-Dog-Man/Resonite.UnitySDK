@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.FresnelLerpMaterial
-// Generated on: pátek 13. února 2026 23:21:34
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:56:57
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -46,11 +46,12 @@ public global::System.Single OffsetFactor;
 public global::System.Single OffsetUnits;
 public global::System.Int32 RenderQueue;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
+    base.CollectMembers(members, context);
 members.Add("Lerp", Lerp.ToResoniteLinkField());
-members.Add("LerpTexture", new ResoniteLink.Reference() { });
+members.Add("LerpTexture", LerpTexture.ToResoniteReference(context));
 members.Add("LerpTextureScale", LerpTextureScale.ToResoniteLinkField());
 members.Add("LerpTextureOffset", LerpTextureOffset.ToResoniteLinkField());
 members.Add("LerpTexturePolarUV", LerpTexturePolarUV.ToResoniteLinkField());
@@ -62,12 +63,12 @@ members.Add("FarColor0", FarColor0.ToResoniteLinkField());
 members.Add("NearColor0", NearColor0.ToResoniteLinkField());
 members.Add("FarColor1", FarColor1.ToResoniteLinkField());
 members.Add("NearColor1", NearColor1.ToResoniteLinkField());
-members.Add("FarTexture0", new ResoniteLink.Reference() { });
-members.Add("NearTexture0", new ResoniteLink.Reference() { });
-members.Add("FarTexture1", new ResoniteLink.Reference() { });
-members.Add("NearTexture1", new ResoniteLink.Reference() { });
-members.Add("NormalMap0", new ResoniteLink.Reference() { });
-members.Add("NormalMap1", new ResoniteLink.Reference() { });
+members.Add("FarTexture0", FarTexture0.ToResoniteReference(context));
+members.Add("NearTexture0", NearTexture0.ToResoniteReference(context));
+members.Add("FarTexture1", FarTexture1.ToResoniteReference(context));
+members.Add("NearTexture1", NearTexture1.ToResoniteReference(context));
+members.Add("NormalMap0", NormalMap0.ToResoniteReference(context));
+members.Add("NormalMap1", NormalMap1.ToResoniteReference(context));
 members.Add("BlendMode", BlendMode.ToResoniteLinkField());
 members.Add("Sidedness", Sidedness.ToResoniteLinkField());
 members.Add("ZWrite", ZWrite.ToResoniteLinkField());

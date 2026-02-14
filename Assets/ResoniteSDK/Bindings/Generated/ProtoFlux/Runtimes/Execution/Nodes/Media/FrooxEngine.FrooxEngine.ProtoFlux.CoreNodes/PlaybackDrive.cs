@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [ProtoFluxBindings]FrooxEngine.FrooxEngine.ProtoFlux.CoreNodes.PlaybackDrive
-// Generated on: pátek 13. února 2026 23:22:41
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:10
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -34,22 +34,23 @@ public global::FrooxEngine.ProtoFlux.INodeOperation OnStartDrive;
 public global::FrooxEngine.ProtoFlux.INodeOperation OnStopDrive;
 public global::FrooxEngine.ProtoFlux.INodeOperation OnResync;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
-members.Add("Target", new ResoniteLink.Reference() { });
-members.Add("NormalizedPosition", new ResoniteLink.Reference() { });
-members.Add("MaximumPositionError", new ResoniteLink.Reference() { });
-members.Add("Speed", new ResoniteLink.Reference() { });
-members.Add("Play", new ResoniteLink.Reference() { });
-members.Add("Loop", new ResoniteLink.Reference() { });
+    base.CollectMembers(members, context);
+members.Add("Target", Target.ToResoniteReference(context));
+members.Add("NormalizedPosition", NormalizedPosition.ToResoniteReference(context));
+members.Add("MaximumPositionError", MaximumPositionError.ToResoniteReference(context));
+members.Add("Speed", Speed.ToResoniteReference(context));
+members.Add("Play", Play.ToResoniteReference(context));
+members.Add("Loop", Loop.ToResoniteReference(context));
 members.Add("IsDriving", new ResoniteLink.EmptyElement());
 members.Add("StartDrive", new ResoniteLink.EmptyElement());
 members.Add("StopDrive", new ResoniteLink.EmptyElement());
 members.Add("ForceResync", new ResoniteLink.EmptyElement());
-members.Add("OnStartDrive", new ResoniteLink.Reference() { });
-members.Add("OnStopDrive", new ResoniteLink.Reference() { });
-members.Add("OnResync", new ResoniteLink.Reference() { });
+members.Add("OnStartDrive", OnStartDrive.ToResoniteReference(context));
+members.Add("OnStopDrive", OnStopDrive.ToResoniteReference(context));
+members.Add("OnResync", OnResync.ToResoniteReference(context));
 }
 
 }

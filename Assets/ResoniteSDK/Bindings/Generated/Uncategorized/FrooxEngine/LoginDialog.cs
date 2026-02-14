@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.LoginDialog
-// Generated on: pátek 13. února 2026 23:23:16
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:45
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -38,25 +38,26 @@ public global::FrooxEngine.UIX.Checkbox _policies;
 public global::FrooxEngine.UIX.Button _registerButton;
 public global::System.String _loginEmail;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
+    base.CollectMembers(members, context);
 members.Add("RegisterOnly", RegisterOnly.ToResoniteLinkField());
 members.Add("_interactionEnabled", _interactionEnabled.ToResoniteLinkField());
-members.Add("_swapRegion", new ResoniteLink.Reference() { });
-members.Add("_username", new ResoniteLink.Reference() { });
-members.Add("_email", new ResoniteLink.Reference() { });
-members.Add("_emailRepeat", new ResoniteLink.Reference() { });
-members.Add("_password", new ResoniteLink.Reference() { });
-members.Add("_passwordRepeat", new ResoniteLink.Reference() { });
-members.Add("_recoveryCode", new ResoniteLink.Reference() { });
-members.Add("_birthMonth", new ResoniteLink.Reference() { });
-members.Add("_birthDay", new ResoniteLink.Reference() { });
-members.Add("_birthYear", new ResoniteLink.Reference() { });
-members.Add("_rememberLogin", new ResoniteLink.Reference() { });
-members.Add("_resetUserId", new ResoniteLink.Reference() { });
-members.Add("_policies", new ResoniteLink.Reference() { });
-members.Add("_registerButton", new ResoniteLink.Reference() { });
+members.Add("_swapRegion", _swapRegion.ToResoniteReference(context));
+members.Add("_username", _username.ToResoniteReference(context));
+members.Add("_email", _email.ToResoniteReference(context));
+members.Add("_emailRepeat", _emailRepeat.ToResoniteReference(context));
+members.Add("_password", _password.ToResoniteReference(context));
+members.Add("_passwordRepeat", _passwordRepeat.ToResoniteReference(context));
+members.Add("_recoveryCode", _recoveryCode.ToResoniteReference(context));
+members.Add("_birthMonth", _birthMonth.ToResoniteReference(context));
+members.Add("_birthDay", _birthDay.ToResoniteReference(context));
+members.Add("_birthYear", _birthYear.ToResoniteReference(context));
+members.Add("_rememberLogin", _rememberLogin.ToResoniteReference(context));
+members.Add("_resetUserId", _resetUserId.ToResoniteReference(context));
+members.Add("_policies", _policies.ToResoniteReference(context));
+members.Add("_registerButton", _registerButton.ToResoniteReference(context));
 members.Add("_loginEmail", _loginEmail.ToResoniteLinkField());
 }
 

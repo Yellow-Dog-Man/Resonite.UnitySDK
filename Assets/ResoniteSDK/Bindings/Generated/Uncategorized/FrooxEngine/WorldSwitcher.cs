@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.WorldSwitcher
-// Generated on: pátek 13. února 2026 23:23:19
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:49
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -28,16 +28,17 @@ public global::FrooxEngine.Slider _slider;
 public global::FrooxEngine.Slot _centerOrb;
 public global::FrooxEngine.Slot _visualRoot;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
+    base.CollectMembers(members, context);
 members.Add("Show", Show.ToResoniteLinkField());
-members.Add("IgnoreTouchesFrom", new ResoniteLink.Reference() { });
-members.Add("_repulsionTree", new ResoniteLink.Reference() { });
-members.Add("_linesMesh", new ResoniteLink.Reference() { });
-members.Add("_slider", new ResoniteLink.Reference() { });
-members.Add("_centerOrb", new ResoniteLink.Reference() { });
-members.Add("_visualRoot", new ResoniteLink.Reference() { });
+members.Add("IgnoreTouchesFrom", IgnoreTouchesFrom.ToResoniteReference(context));
+members.Add("_repulsionTree", _repulsionTree.ToResoniteReference(context));
+members.Add("_linesMesh", _linesMesh.ToResoniteReference(context));
+members.Add("_slider", _slider.ToResoniteReference(context));
+members.Add("_centerOrb", _centerOrb.ToResoniteReference(context));
+members.Add("_visualRoot", _visualRoot.ToResoniteReference(context));
 }
 
 }

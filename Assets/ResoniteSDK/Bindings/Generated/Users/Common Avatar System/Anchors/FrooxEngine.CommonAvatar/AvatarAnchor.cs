@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.CommonAvatar.AvatarAnchor
-// Generated on: pátek 13. února 2026 23:22:19
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:57:47
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -42,38 +42,39 @@ public UnityEngine.Quaternion _originalRotation;
 public global::System.Single _originalScale;
 public System.Collections.Generic.List<global::FrooxEngine.CommonAvatar.AvatarObjectSlot> _dummyObjectSlots;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
+    base.CollectMembers(members, context);
 members.Add("Highlight", Highlight.ToResoniteLinkField());
-members.Add("ParentSpace", new ResoniteLink.SyncObject() { Members = ParentSpace.CollectMembers() });
+members.Add("ParentSpace", new ResoniteLink.SyncObject() { Members = ParentSpace.CollectMembers(context) });
 members.Add("MinScale", MinScale.ToResoniteLinkField());
 members.Add("MaxScale", MaxScale.ToResoniteLinkField());
 members.Add("PositionNode", PositionNode.ToResoniteLinkField());
-members.Add("PositionReference", new ResoniteLink.Reference() { });
+members.Add("PositionReference", PositionReference.ToResoniteReference(context));
 members.Add("RotationNode", RotationNode.ToResoniteLinkField());
-members.Add("RotationReference", new ResoniteLink.Reference() { });
+members.Add("RotationReference", RotationReference.ToResoniteReference(context));
 members.Add("PreserveUpOnEnter", PreserveUpOnEnter.ToResoniteLinkField());
 members.Add("PreserveUpOnExit", PreserveUpOnExit.ToResoniteLinkField());
 members.Add("UnparentEverythingOnDestroy", UnparentEverythingOnDestroy.ToResoniteLinkField());
 members.Add("TransformRestoreMode", TransformRestoreMode.ToResoniteLinkField());
 members.Add("RestoreNode", RestoreNode.ToResoniteLinkField());
-members.Add("RestoreReference", new ResoniteLink.Reference() { });
+members.Add("RestoreReference", RestoreReference.ToResoniteReference(context));
 members.Add("Filters", new ResoniteLink.SyncList()
 {
-    Elements = Filters.ConvertList(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers() })
+    Elements = Filters.ConvertList(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers(context) })
 });
 members.Add("UserFilters", new ResoniteLink.SyncList()
 {
-    Elements = UserFilters.ConvertList(m => new ResoniteLink.Reference() { })
+    Elements = UserFilters.ConvertList(m => m.ToResoniteReference(context))
 });
-members.Add("_originalSpace", new ResoniteLink.Reference() { });
+members.Add("_originalSpace", _originalSpace.ToResoniteReference(context));
 members.Add("_originalPosition", _originalPosition.ToResoniteLinkField());
 members.Add("_originalRotation", _originalRotation.ToResoniteLinkField());
 members.Add("_originalScale", _originalScale.ToResoniteLinkField());
 members.Add("_dummyObjectSlots", new ResoniteLink.SyncList()
 {
-    Elements = _dummyObjectSlots.ConvertList(m => new ResoniteLink.Reference() { })
+    Elements = _dummyObjectSlots.ConvertList(m => m.ToResoniteReference(context))
 });
 }
 

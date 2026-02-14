@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [ProtoFluxBindings]FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Avatar.BodyNodes.BodyNodeConverter<>
-// Generated on: pátek 13. února 2026 23:22:19
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:57:47
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -23,10 +23,11 @@ public abstract partial class BodyNodeConverter<T> : global::FrooxEngine.ProtoFl
 {
     public global::FrooxEngine.ProtoFlux.INodeValueOutput<global::Renderite.Shared.BodyNode> Node;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
-members.Add("Node", new ResoniteLink.Reference() { });
+    base.CollectMembers(members, context);
+members.Add("Node", Node.ToResoniteReference(context));
 }
 
 }

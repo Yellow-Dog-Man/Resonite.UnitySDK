@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.UIX.Text
-// Generated on: pátek 13. února 2026 23:22:21
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:57:49
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -44,10 +44,11 @@ public global::System.Boolean InteractionTarget;
 public global::FrooxEngine.FontMaterial _legacyFontMaterial;
 public global::Elements.Core.Alignment _legacyAlign;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
-members.Add("Font", new ResoniteLink.Reference() { });
+    base.CollectMembers(members, context);
+members.Add("Font", Font.ToResoniteReference(context));
 members.Add("Content", Content.ToResoniteLinkField());
 members.Add("ParseRichText", ParseRichText.ToResoniteLinkField());
 members.Add("NullContent", NullContent.ToResoniteLinkField());
@@ -58,7 +59,7 @@ members.Add("AlignmentMode", AlignmentMode.ToResoniteLinkField());
 members.Add("Color", Color.ToResoniteLinkField());
 members.Add("Materials", new ResoniteLink.SyncList()
 {
-    Elements = Materials.ConvertList(m => new ResoniteLink.Reference() { })
+    Elements = Materials.ConvertList(m => m.ToResoniteReference(context))
 });
 members.Add("LineHeight", LineHeight.ToResoniteLinkField());
 members.Add("MaskPattern", MaskPattern.ToResoniteLinkField());
@@ -71,7 +72,7 @@ members.Add("SelectionStart", SelectionStart.ToResoniteLinkField());
 members.Add("CaretColor", CaretColor.ToResoniteLinkField());
 members.Add("SelectionColor", SelectionColor.ToResoniteLinkField());
 members.Add("InteractionTarget", InteractionTarget.ToResoniteLinkField());
-members.Add("_legacyFontMaterial", new ResoniteLink.Reference() { });
+members.Add("_legacyFontMaterial", _legacyFontMaterial.ToResoniteReference(context));
 members.Add("_legacyAlign", _legacyAlign.ToResoniteLinkField());
 }
 

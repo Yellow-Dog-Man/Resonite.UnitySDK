@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [ProtoFluxBindings]FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Rendering.SampleColorX
-// Generated on: pátek 13. února 2026 23:22:53
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:23
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -29,16 +29,17 @@ public global::FrooxEngine.ProtoFlux.INodeOperation OnSampleStart;
 public global::FrooxEngine.ProtoFlux.INodeOperation OnSampled;
 public global::FrooxEngine.ProtoFlux.NodeValueOutput<UnityEngine.ColorX> SampledColor;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
-members.Add("Point", new ResoniteLink.Reference() { });
-members.Add("Direction", new ResoniteLink.Reference() { });
-members.Add("Reference", new ResoniteLink.Reference() { });
-members.Add("NearClip", new ResoniteLink.Reference() { });
-members.Add("FarClip", new ResoniteLink.Reference() { });
-members.Add("OnSampleStart", new ResoniteLink.Reference() { });
-members.Add("OnSampled", new ResoniteLink.Reference() { });
+    base.CollectMembers(members, context);
+members.Add("Point", Point.ToResoniteReference(context));
+members.Add("Direction", Direction.ToResoniteReference(context));
+members.Add("Reference", Reference.ToResoniteReference(context));
+members.Add("NearClip", NearClip.ToResoniteReference(context));
+members.Add("FarClip", FarClip.ToResoniteReference(context));
+members.Add("OnSampleStart", OnSampleStart.ToResoniteReference(context));
+members.Add("OnSampled", OnSampled.ToResoniteReference(context));
 members.Add("SampledColor", new ResoniteLink.EmptyElement());
 }
 

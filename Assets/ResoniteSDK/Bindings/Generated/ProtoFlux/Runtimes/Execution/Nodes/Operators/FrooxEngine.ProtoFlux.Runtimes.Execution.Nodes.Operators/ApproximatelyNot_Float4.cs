@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [ProtoFluxBindings]FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.Operators.ApproximatelyNot_Float4
-// Generated on: pátek 13. února 2026 23:22:42
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:12
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -24,12 +24,13 @@ public partial class ApproximatelyNot_Float4 : global::FrooxEngine.ProtoFlux.Run
 public global::FrooxEngine.ProtoFlux.INodeValueOutput<UnityEngine.Vector4> B;
 public global::FrooxEngine.ProtoFlux.INodeValueOutput<global::System.Single> Epsilon;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
-members.Add("A", new ResoniteLink.Reference() { });
-members.Add("B", new ResoniteLink.Reference() { });
-members.Add("Epsilon", new ResoniteLink.Reference() { });
+    base.CollectMembers(members, context);
+members.Add("A", A.ToResoniteReference(context));
+members.Add("B", B.ToResoniteReference(context));
+members.Add("Epsilon", Epsilon.ToResoniteReference(context));
 }
 
 }

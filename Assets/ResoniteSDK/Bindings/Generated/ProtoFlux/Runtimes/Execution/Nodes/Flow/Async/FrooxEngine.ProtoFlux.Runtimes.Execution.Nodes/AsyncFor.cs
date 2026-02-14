@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [ProtoFluxBindings]FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.AsyncFor
-// Generated on: pátek 13. února 2026 23:22:30
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:57:59
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -27,14 +27,15 @@ public global::FrooxEngine.ProtoFlux.INodeOperation LoopIteration;
 public global::FrooxEngine.ProtoFlux.INodeOperation LoopEnd;
 public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Int32> Iteration;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
-members.Add("Count", new ResoniteLink.Reference() { });
-members.Add("Reverse", new ResoniteLink.Reference() { });
-members.Add("LoopStart", new ResoniteLink.Reference() { });
-members.Add("LoopIteration", new ResoniteLink.Reference() { });
-members.Add("LoopEnd", new ResoniteLink.Reference() { });
+    base.CollectMembers(members, context);
+members.Add("Count", Count.ToResoniteReference(context));
+members.Add("Reverse", Reverse.ToResoniteReference(context));
+members.Add("LoopStart", LoopStart.ToResoniteReference(context));
+members.Add("LoopIteration", LoopIteration.ToResoniteReference(context));
+members.Add("LoopEnd", LoopEnd.ToResoniteReference(context));
 members.Add("Iteration", new ResoniteLink.EmptyElement());
 }
 

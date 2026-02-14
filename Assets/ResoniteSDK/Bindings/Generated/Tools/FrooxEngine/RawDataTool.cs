@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.RawDataTool
-// Generated on: pátek 13. února 2026 23:22:57
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:27
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -44,11 +44,12 @@ public global::System.Boolean _rawSecondary;
 public global::System.String PrimaryActionDescription;
 public global::System.String SecondaryActionDescription;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
+    base.CollectMembers(members, context);
 members.Add("LocalTipOffset", LocalTipOffset.ToResoniteLinkField());
-members.Add("LocalTipReference", new ResoniteLink.Reference() { });
+members.Add("LocalTipReference", LocalTipReference.ToResoniteReference(context));
 members.Add("UseLaser", UseLaser.ToResoniteLinkField());
 members.Add("BlockPrimaryWhenTouching", BlockPrimaryWhenTouching.ToResoniteLinkField());
 members.Add("UseSecondary", UseSecondary.ToResoniteLinkField());
@@ -60,10 +61,10 @@ members.Add("PrimaryStrength", PrimaryStrength.ToResoniteLinkField());
 members.Add("SecondaryAxis", SecondaryAxis.ToResoniteLinkField());
 members.Add("Primary", Primary.ToResoniteLinkField());
 members.Add("Secondary", Secondary.ToResoniteLinkField());
-members.Add("_primaryStrengthStream", new ResoniteLink.Reference() { });
-members.Add("_secondaryAxisStream", new ResoniteLink.Reference() { });
-members.Add("_primaryStream", new ResoniteLink.Reference() { });
-members.Add("_secondaryStream", new ResoniteLink.Reference() { });
+members.Add("_primaryStrengthStream", _primaryStrengthStream.ToResoniteReference(context));
+members.Add("_secondaryAxisStream", _secondaryAxisStream.ToResoniteReference(context));
+members.Add("_primaryStream", _primaryStream.ToResoniteReference(context));
+members.Add("_secondaryStream", _secondaryStream.ToResoniteReference(context));
 members.Add("_rawStrength", _rawStrength.ToResoniteLinkField());
 members.Add("_rawAxis", _rawAxis.ToResoniteLinkField());
 members.Add("_rawPrimary", _rawPrimary.ToResoniteLinkField());

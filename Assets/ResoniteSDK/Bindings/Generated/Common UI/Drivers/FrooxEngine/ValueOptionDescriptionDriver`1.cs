@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.ValueOptionDescriptionDriver<>
-// Generated on: pátek 13. února 2026 23:21:38
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:57:03
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -32,20 +32,21 @@ public global::FrooxEngine.ValueOptionDescriptionDriver<T>.Option DefaultOption;
 public System.Collections.Generic.List<global::FrooxEngine.ValueOptionDescriptionDriver<T>.Option> Options;
 public UnityEngine.ColorX SpriteTintBase;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
-members.Add("Value", new ResoniteLink.Reference() { });
+    base.CollectMembers(members, context);
+members.Add("Value", Value.ToResoniteReference(context));
 members.Add("ForceDeselected", ForceDeselected.ToResoniteLinkField());
-members.Add("Label", new ResoniteLink.Reference() { });
-members.Add("Color", new ResoniteLink.Reference() { });
-members.Add("Sprite", new ResoniteLink.Reference() { });
-members.Add("SpriteURL", new ResoniteLink.Reference() { });
-members.Add("SpriteTint", new ResoniteLink.Reference() { });
-members.Add("DefaultOption", new ResoniteLink.SyncObject() { Members = DefaultOption.CollectMembers() });
+members.Add("Label", Label.ToResoniteReference(context));
+members.Add("Color", Color.ToResoniteReference(context));
+members.Add("Sprite", Sprite.ToResoniteReference(context));
+members.Add("SpriteURL", SpriteURL.ToResoniteReference(context));
+members.Add("SpriteTint", SpriteTint.ToResoniteReference(context));
+members.Add("DefaultOption", new ResoniteLink.SyncObject() { Members = DefaultOption.CollectMembers(context) });
 members.Add("Options", new ResoniteLink.SyncList()
 {
-    Elements = Options.ConvertList(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers() })
+    Elements = Options.ConvertList(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers(context) })
 });
 members.Add("SpriteTintBase", SpriteTintBase.ToResoniteLinkField());
 }

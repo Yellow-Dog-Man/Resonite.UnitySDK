@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.ProtoFlux.ProtoFluxReferenceProxy
-// Generated on: pátek 13. února 2026 23:23:17
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:47
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -29,17 +29,18 @@ public global::FrooxEngine.IValue<global::System.Boolean> _targetHovering;
 public global::FrooxEngine.IField<global::System.Boolean> _arrowManagerEnabled;
 public global::FrooxEngine.IField<global::System.Boolean> _arrowRendererEnabled;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
-members.Add("NodeReference", new ResoniteLink.Reference() { });
-members.Add("Arrow", new ResoniteLink.Reference() { });
-members.Add("ConnectPoint", new ResoniteLink.Reference() { });
-members.Add("_currentName", new ResoniteLink.Reference() { });
-members.Add("_selfHovering", new ResoniteLink.Reference() { });
-members.Add("_targetHovering", new ResoniteLink.Reference() { });
-members.Add("_arrowManagerEnabled", new ResoniteLink.Reference() { });
-members.Add("_arrowRendererEnabled", new ResoniteLink.Reference() { });
+    base.CollectMembers(members, context);
+members.Add("NodeReference", NodeReference.ToResoniteReference(context));
+members.Add("Arrow", Arrow.ToResoniteReference(context));
+members.Add("ConnectPoint", ConnectPoint.ToResoniteReference(context));
+members.Add("_currentName", _currentName.ToResoniteReference(context));
+members.Add("_selfHovering", _selfHovering.ToResoniteReference(context));
+members.Add("_targetHovering", _targetHovering.ToResoniteReference(context));
+members.Add("_arrowManagerEnabled", _arrowManagerEnabled.ToResoniteReference(context));
+members.Add("_arrowRendererEnabled", _arrowRendererEnabled.ToResoniteReference(context));
 }
 
 }

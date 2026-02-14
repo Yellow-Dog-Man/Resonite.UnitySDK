@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.LegacyCheckbox
-// Generated on: pátek 13. února 2026 23:23:11
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:40
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -38,26 +38,27 @@ public global::FrooxEngine.IField<UnityEngine.Vector3> _colliderSize;
 public global::FrooxEngine.PBS_RimMetallic _shellMaterial;
 public global::FrooxEngine.PBS_RimMetallic _checkMaterial;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
+    base.CollectMembers(members, context);
 members.Add("IsChecked", IsChecked.ToResoniteLinkField());
 members.Add("IsEnabled", IsEnabled.ToResoniteLinkField());
-members.Add("DriveField", new ResoniteLink.Reference() { });
+members.Add("DriveField", DriveField.ToResoniteReference(context));
 members.Add("AllowWriteBack", AllowWriteBack.ToResoniteLinkField());
 members.Add("Size", Size.ToResoniteLinkField());
 members.Add("BevelPercent", BevelPercent.ToResoniteLinkField());
 members.Add("Color", Color.ToResoniteLinkField());
-members.Add("_shellMesh", new ResoniteLink.Reference() { });
-members.Add("_checkMesh", new ResoniteLink.Reference() { });
-members.Add("_titleBar", new ResoniteLink.Reference() { });
-members.Add("_shellSize", new ResoniteLink.Reference() { });
-members.Add("_shellBevel", new ResoniteLink.Reference() { });
-members.Add("_checkSize", new ResoniteLink.Reference() { });
-members.Add("_checkBevel", new ResoniteLink.Reference() { });
-members.Add("_colliderSize", new ResoniteLink.Reference() { });
-members.Add("_shellMaterial", new ResoniteLink.Reference() { });
-members.Add("_checkMaterial", new ResoniteLink.Reference() { });
+members.Add("_shellMesh", _shellMesh.ToResoniteReference(context));
+members.Add("_checkMesh", _checkMesh.ToResoniteReference(context));
+members.Add("_titleBar", _titleBar.ToResoniteReference(context));
+members.Add("_shellSize", _shellSize.ToResoniteReference(context));
+members.Add("_shellBevel", _shellBevel.ToResoniteReference(context));
+members.Add("_checkSize", _checkSize.ToResoniteReference(context));
+members.Add("_checkBevel", _checkBevel.ToResoniteReference(context));
+members.Add("_colliderSize", _colliderSize.ToResoniteReference(context));
+members.Add("_shellMaterial", _shellMaterial.ToResoniteReference(context));
+members.Add("_checkMaterial", _checkMaterial.ToResoniteReference(context));
 }
 
 }

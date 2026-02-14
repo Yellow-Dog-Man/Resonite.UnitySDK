@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.DynamicBonePlayerColliders
-// Generated on: pátek 13. února 2026 23:21:42
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:57:10
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -27,9 +27,10 @@ public global::System.Boolean DisableDefaultLeftHandColliders;
 public global::System.Boolean DisableDefaultRightHandColliders;
 public System.Collections.Generic.List<global::FrooxEngine.IDynamicBoneCollider> Colliders;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
+    base.CollectMembers(members, context);
 members.Add("VisualizeColliders", VisualizeColliders.ToResoniteLinkField());
 members.Add("DisableDefaultHeadColliders", DisableDefaultHeadColliders.ToResoniteLinkField());
 members.Add("DisableDefaultBodyColliders", DisableDefaultBodyColliders.ToResoniteLinkField());
@@ -37,7 +38,7 @@ members.Add("DisableDefaultLeftHandColliders", DisableDefaultLeftHandColliders.T
 members.Add("DisableDefaultRightHandColliders", DisableDefaultRightHandColliders.ToResoniteLinkField());
 members.Add("Colliders", new ResoniteLink.SyncList()
 {
-    Elements = Colliders.ConvertList(m => new ResoniteLink.Reference() { })
+    Elements = Colliders.ConvertList(m => m.ToResoniteReference(context))
 });
 }
 

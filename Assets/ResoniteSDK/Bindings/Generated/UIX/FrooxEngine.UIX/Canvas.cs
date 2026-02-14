@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.UIX.Canvas
-// Generated on: pátek 13. února 2026 23:22:57
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:27
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -39,9 +39,10 @@ public global::FrooxEngine.IField<UnityEngine.Vector3> _colliderOffset;
 public global::System.Int32 StartingOffset;
 public global::System.Int32 StartingMaskDepth;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
+    base.CollectMembers(members, context);
 members.Add("Size", Size.ToResoniteLinkField());
 members.Add("EditModeOnly", EditModeOnly.ToResoniteLinkField());
 members.Add("AcceptRemoteTouch", AcceptRemoteTouch.ToResoniteLinkField());
@@ -53,11 +54,11 @@ members.Add("BlockAllInteractions", BlockAllInteractions.ToResoniteLinkField());
 members.Add("LaserPassThrough", LaserPassThrough.ToResoniteLinkField());
 members.Add("PixelScale", PixelScale.ToResoniteLinkField());
 members.Add("UnitScale", UnitScale.ToResoniteLinkField());
-members.Add("_rootRect", new ResoniteLink.Reference() { });
-members.Add("Collider", new ResoniteLink.Reference() { });
+members.Add("_rootRect", _rootRect.ToResoniteReference(context));
+members.Add("Collider", Collider.ToResoniteReference(context));
 members.Add("DefaultCulling", DefaultCulling.ToResoniteLinkField());
-members.Add("_colliderSize", new ResoniteLink.Reference() { });
-members.Add("_colliderOffset", new ResoniteLink.Reference() { });
+members.Add("_colliderSize", _colliderSize.ToResoniteReference(context));
+members.Add("_colliderOffset", _colliderOffset.ToResoniteReference(context));
 members.Add("StartingOffset", StartingOffset.ToResoniteLinkField());
 members.Add("StartingMaskDepth", StartingMaskDepth.ToResoniteLinkField());
 }

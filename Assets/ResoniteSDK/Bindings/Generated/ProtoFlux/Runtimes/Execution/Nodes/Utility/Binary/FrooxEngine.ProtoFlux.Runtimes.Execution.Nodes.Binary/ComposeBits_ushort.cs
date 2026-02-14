@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [ProtoFluxBindings]FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.Binary.ComposeBits_ushort
-// Generated on: pátek 13. února 2026 23:23:00
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:29
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -37,25 +37,26 @@ public global::FrooxEngine.ProtoFlux.INodeValueOutput<global::System.Boolean> Bi
 public global::FrooxEngine.ProtoFlux.INodeValueOutput<global::System.Boolean> Bit14;
 public global::FrooxEngine.ProtoFlux.INodeValueOutput<global::System.Boolean> Bit15;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
-members.Add("Bit0", new ResoniteLink.Reference() { });
-members.Add("Bit1", new ResoniteLink.Reference() { });
-members.Add("Bit2", new ResoniteLink.Reference() { });
-members.Add("Bit3", new ResoniteLink.Reference() { });
-members.Add("Bit4", new ResoniteLink.Reference() { });
-members.Add("Bit5", new ResoniteLink.Reference() { });
-members.Add("Bit6", new ResoniteLink.Reference() { });
-members.Add("Bit7", new ResoniteLink.Reference() { });
-members.Add("Bit8", new ResoniteLink.Reference() { });
-members.Add("Bit9", new ResoniteLink.Reference() { });
-members.Add("Bit10", new ResoniteLink.Reference() { });
-members.Add("Bit11", new ResoniteLink.Reference() { });
-members.Add("Bit12", new ResoniteLink.Reference() { });
-members.Add("Bit13", new ResoniteLink.Reference() { });
-members.Add("Bit14", new ResoniteLink.Reference() { });
-members.Add("Bit15", new ResoniteLink.Reference() { });
+    base.CollectMembers(members, context);
+members.Add("Bit0", Bit0.ToResoniteReference(context));
+members.Add("Bit1", Bit1.ToResoniteReference(context));
+members.Add("Bit2", Bit2.ToResoniteReference(context));
+members.Add("Bit3", Bit3.ToResoniteReference(context));
+members.Add("Bit4", Bit4.ToResoniteReference(context));
+members.Add("Bit5", Bit5.ToResoniteReference(context));
+members.Add("Bit6", Bit6.ToResoniteReference(context));
+members.Add("Bit7", Bit7.ToResoniteReference(context));
+members.Add("Bit8", Bit8.ToResoniteReference(context));
+members.Add("Bit9", Bit9.ToResoniteReference(context));
+members.Add("Bit10", Bit10.ToResoniteReference(context));
+members.Add("Bit11", Bit11.ToResoniteReference(context));
+members.Add("Bit12", Bit12.ToResoniteReference(context));
+members.Add("Bit13", Bit13.ToResoniteReference(context));
+members.Add("Bit14", Bit14.ToResoniteReference(context));
+members.Add("Bit15", Bit15.ToResoniteReference(context));
 }
 
 }

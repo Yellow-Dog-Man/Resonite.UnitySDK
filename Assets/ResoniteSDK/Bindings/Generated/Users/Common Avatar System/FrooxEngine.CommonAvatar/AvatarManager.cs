@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.CommonAvatar.AvatarManager
-// Generated on: pátek 13. února 2026 23:23:19
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:49
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -37,27 +37,28 @@ public global::FrooxEngine.Slot _autoIconBadge;
 public global::FrooxEngine.Slot _autoLiveIndicator;
 public global::System.Int32 _updateVersion;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
+    base.CollectMembers(members, context);
 members.Add("_objectGroups", new ResoniteLink.SyncList()
 {
-    Elements = _objectGroups.ConvertList(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers() })
+    Elements = _objectGroups.ConvertList(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers(context) })
 });
-members.Add("_currentAnchor", new ResoniteLink.Reference() { });
+members.Add("_currentAnchor", _currentAnchor.ToResoniteReference(context));
 members.Add("AutoAddNameBadge", AutoAddNameBadge.ToResoniteLinkField());
 members.Add("AutoAddIconBadge", AutoAddIconBadge.ToResoniteLinkField());
 members.Add("AutoAddLiveIndicator", AutoAddLiveIndicator.ToResoniteLinkField());
-members.Add("EmptySlotHandler", new ResoniteLink.Reference() { });
+members.Add("EmptySlotHandler", EmptySlotHandler.ToResoniteReference(context));
 members.Add("DefaultScale", DefaultScale.ToResoniteLinkField());
 members.Add("NameTagText", NameTagText.ToResoniteLinkField());
 members.Add("NameTagColor", NameTagColor.ToResoniteLinkField());
 members.Add("NameTagOutline", NameTagOutline.ToResoniteLinkField());
 members.Add("NameTagBackground", NameTagBackground.ToResoniteLinkField());
-members.Add("_badgeTemplates", new ResoniteLink.Reference() { });
-members.Add("_autoNameBadge", new ResoniteLink.Reference() { });
-members.Add("_autoIconBadge", new ResoniteLink.Reference() { });
-members.Add("_autoLiveIndicator", new ResoniteLink.Reference() { });
+members.Add("_badgeTemplates", _badgeTemplates.ToResoniteReference(context));
+members.Add("_autoNameBadge", _autoNameBadge.ToResoniteReference(context));
+members.Add("_autoIconBadge", _autoIconBadge.ToResoniteReference(context));
+members.Add("_autoLiveIndicator", _autoLiveIndicator.ToResoniteReference(context));
 members.Add("_updateVersion", _updateVersion.ToResoniteLinkField());
 }
 

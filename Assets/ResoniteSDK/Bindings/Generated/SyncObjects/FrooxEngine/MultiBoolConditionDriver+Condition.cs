@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.MultiBoolConditionDriver+Condition
-// Generated on: pátek 13. února 2026 23:23:09
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:39
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -25,10 +25,11 @@ public partial class Condition : global::FrooxEngine.SyncObject
     public global::FrooxEngine.IField<global::System.Boolean> Field;
 public global::System.Boolean Invert;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
-members.Add("Field", new ResoniteLink.Reference() { });
+    base.CollectMembers(members, context);
+members.Add("Field", Field.ToResoniteReference(context));
 members.Add("Invert", Invert.ToResoniteLinkField());
 }
 

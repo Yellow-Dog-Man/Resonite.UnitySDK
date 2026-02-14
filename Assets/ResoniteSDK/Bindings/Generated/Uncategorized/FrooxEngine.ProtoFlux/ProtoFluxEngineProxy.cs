@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.ProtoFlux.ProtoFluxEngineProxy
-// Generated on: pátek 13. února 2026 23:22:21
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:57:49
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -23,13 +23,14 @@ public abstract partial class ProtoFluxEngineProxy : global::FrooxEngine.Compone
     public global::FrooxEngine.ProtoFlux.IProtoFluxNode Node;
 public System.Collections.Generic.List<global::FrooxEngine.ProtoFlux.IProtoFluxNode> Path;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
-members.Add("Node", new ResoniteLink.Reference() { });
+    base.CollectMembers(members, context);
+members.Add("Node", Node.ToResoniteReference(context));
 members.Add("Path", new ResoniteLink.SyncList()
 {
-    Elements = Path.ConvertList(m => new ResoniteLink.Reference() { })
+    Elements = Path.ConvertList(m => m.ToResoniteReference(context))
 });
 }
 

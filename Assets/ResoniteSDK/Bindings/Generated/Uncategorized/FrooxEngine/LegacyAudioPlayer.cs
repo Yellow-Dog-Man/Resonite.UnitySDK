@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.LegacyAudioPlayer
-// Generated on: pátek 13. února 2026 23:23:15
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:45
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -40,28 +40,29 @@ public global::FrooxEngine.IField<System.Uri> _spatialIconURL;
 public global::FrooxEngine.AudioExportable _exportable;
 public global::FrooxEngine.AssetProxy<global::FrooxEngine.AudioClip> _assetProxy;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
-members.Add("AudioClip", new ResoniteLink.Reference() { });
-members.Add("_clipPlayer", new ResoniteLink.Reference() { });
-members.Add("_audioOutput", new ResoniteLink.Reference() { });
-members.Add("_waveformMaterial", new ResoniteLink.Reference() { });
-members.Add("_playbackMaterial", new ResoniteLink.Reference() { });
-members.Add("_waveformRingMesh", new ResoniteLink.Reference() { });
-members.Add("_playbackRingMesh", new ResoniteLink.Reference() { });
-members.Add("_playbackRingArc", new ResoniteLink.Reference() { });
-members.Add("_volumeRingArc", new ResoniteLink.Reference() { });
-members.Add("_playbackTimeText", new ResoniteLink.Reference() { });
-members.Add("_clipLengthTimeText", new ResoniteLink.Reference() { });
-members.Add("_iconTextureURL", new ResoniteLink.Reference() { });
-members.Add("_stopItem", new ResoniteLink.Reference() { });
-members.Add("_loopItem", new ResoniteLink.Reference() { });
-members.Add("_spatialItem", new ResoniteLink.Reference() { });
-members.Add("_loopIconURL", new ResoniteLink.Reference() { });
-members.Add("_spatialIconURL", new ResoniteLink.Reference() { });
-members.Add("_exportable", new ResoniteLink.Reference() { });
-members.Add("_assetProxy", new ResoniteLink.Reference() { });
+    base.CollectMembers(members, context);
+members.Add("AudioClip", AudioClip.ToResoniteReference(context));
+members.Add("_clipPlayer", _clipPlayer.ToResoniteReference(context));
+members.Add("_audioOutput", _audioOutput.ToResoniteReference(context));
+members.Add("_waveformMaterial", _waveformMaterial.ToResoniteReference(context));
+members.Add("_playbackMaterial", _playbackMaterial.ToResoniteReference(context));
+members.Add("_waveformRingMesh", _waveformRingMesh.ToResoniteReference(context));
+members.Add("_playbackRingMesh", _playbackRingMesh.ToResoniteReference(context));
+members.Add("_playbackRingArc", _playbackRingArc.ToResoniteReference(context));
+members.Add("_volumeRingArc", _volumeRingArc.ToResoniteReference(context));
+members.Add("_playbackTimeText", _playbackTimeText.ToResoniteReference(context));
+members.Add("_clipLengthTimeText", _clipLengthTimeText.ToResoniteReference(context));
+members.Add("_iconTextureURL", _iconTextureURL.ToResoniteReference(context));
+members.Add("_stopItem", _stopItem.ToResoniteReference(context));
+members.Add("_loopItem", _loopItem.ToResoniteReference(context));
+members.Add("_spatialItem", _spatialItem.ToResoniteReference(context));
+members.Add("_loopIconURL", _loopIconURL.ToResoniteReference(context));
+members.Add("_spatialIconURL", _spatialIconURL.ToResoniteReference(context));
+members.Add("_exportable", _exportable.ToResoniteReference(context));
+members.Add("_assetProxy", _assetProxy.ToResoniteReference(context));
 }
 
 }

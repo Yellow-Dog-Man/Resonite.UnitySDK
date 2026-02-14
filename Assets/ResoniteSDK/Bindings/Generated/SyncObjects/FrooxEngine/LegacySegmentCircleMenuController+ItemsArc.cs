@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.LegacySegmentCircleMenuController+ItemsArc
-// Generated on: pátek 13. února 2026 23:23:07
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:37
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -27,18 +27,19 @@ public global::System.Single SeparationAngle;
 public System.Collections.Generic.List<global::FrooxEngine.LegacySegmentCircleMenuController.ItemsArc.ArcItem> _left;
 public System.Collections.Generic.List<global::FrooxEngine.LegacySegmentCircleMenuController.ItemsArc.ArcItem> _right;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
-members.Add("CenterItem", new ResoniteLink.Reference() { });
+    base.CollectMembers(members, context);
+members.Add("CenterItem", CenterItem.ToResoniteReference(context));
 members.Add("SeparationAngle", SeparationAngle.ToResoniteLinkField());
 members.Add("_left", new ResoniteLink.SyncList()
 {
-    Elements = _left.ConvertList(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers() })
+    Elements = _left.ConvertList(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers(context) })
 });
 members.Add("_right", new ResoniteLink.SyncList()
 {
-    Elements = _right.ConvertList(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers() })
+    Elements = _right.ConvertList(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers(context) })
 });
 }
 

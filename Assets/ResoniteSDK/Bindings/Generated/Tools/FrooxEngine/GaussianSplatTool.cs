@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.GaussianSplatTool
-// Generated on: pátek 13. února 2026 23:23:07
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:36
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -28,16 +28,17 @@ public global::FrooxEngine.GaussianSplatTool.BoxInterface _activeBox;
 public global::FrooxEngine.GaussianSplatTool.SphereInterface _activeSphere;
 public global::FrooxEngine.GaussianSplatTool.CylinderInterface _activeCylinder;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
+    base.CollectMembers(members, context);
 members.Add("Mode", Mode.ToResoniteLinkField());
-members.Add("BoxSelectionTemplate", new ResoniteLink.Reference() { });
-members.Add("SphereSelectionTemplate", new ResoniteLink.Reference() { });
-members.Add("CylinderSelectionTemplate", new ResoniteLink.Reference() { });
-members.Add("_activeBox", new ResoniteLink.Reference() { });
-members.Add("_activeSphere", new ResoniteLink.Reference() { });
-members.Add("_activeCylinder", new ResoniteLink.Reference() { });
+members.Add("BoxSelectionTemplate", BoxSelectionTemplate.ToResoniteReference(context));
+members.Add("SphereSelectionTemplate", SphereSelectionTemplate.ToResoniteReference(context));
+members.Add("CylinderSelectionTemplate", CylinderSelectionTemplate.ToResoniteReference(context));
+members.Add("_activeBox", _activeBox.ToResoniteReference(context));
+members.Add("_activeSphere", _activeSphere.ToResoniteReference(context));
+members.Add("_activeCylinder", _activeCylinder.ToResoniteReference(context));
 }
 
 }

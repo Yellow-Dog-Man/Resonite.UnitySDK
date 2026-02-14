@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.RadiantDashScreen
-// Generated on: pátek 13. února 2026 23:23:13
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:42
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -31,19 +31,20 @@ public global::FrooxEngine.ModalOverlayManager _modalOverlayManager;
 public global::FrooxEngine.RadiantDashButton _button;
 public global::FrooxEngine.IAssetProvider<global::FrooxEngine.Texture2D> _iconTexture;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
+    base.CollectMembers(members, context);
 members.Add("Icon", Icon.ToResoniteLinkField());
 members.Add("ActiveColor", ActiveColor.ToResoniteLinkField());
 members.Add("Label", Label.ToResoniteLinkField());
 members.Add("ScreenEnabled", ScreenEnabled.ToResoniteLinkField());
 members.Add("BaseResolution", BaseResolution.ToResoniteLinkField());
-members.Add("_screenRoot", new ResoniteLink.Reference() { });
-members.Add("_screenCanvas", new ResoniteLink.Reference() { });
-members.Add("_modalOverlayManager", new ResoniteLink.Reference() { });
-members.Add("_button", new ResoniteLink.Reference() { });
-members.Add("_iconTexture", new ResoniteLink.Reference() { });
+members.Add("_screenRoot", _screenRoot.ToResoniteReference(context));
+members.Add("_screenCanvas", _screenCanvas.ToResoniteReference(context));
+members.Add("_modalOverlayManager", _modalOverlayManager.ToResoniteReference(context));
+members.Add("_button", _button.ToResoniteReference(context));
+members.Add("_iconTexture", _iconTexture.ToResoniteReference(context));
 }
 
 }

@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.ProtoFlux.ProtoFluxNodeVisual
-// Generated on: pátek 13. února 2026 23:23:08
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:38
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -33,21 +33,22 @@ public global::FrooxEngine.IField<UnityEngine.ColorX> _overviewBg;
 public global::FrooxEngine.IField<global::System.Boolean> _labelBg;
 public global::FrooxEngine.IField<global::System.Boolean> _labelText;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
-members.Add("Node", new ResoniteLink.Reference() { });
+    base.CollectMembers(members, context);
+members.Add("Node", Node.ToResoniteReference(context));
 members.Add("IsSelected", IsSelected.ToResoniteLinkField());
 members.Add("IsHighlighted", IsHighlighted.ToResoniteLinkField());
-members.Add("_nodeHoverArea", new ResoniteLink.Reference() { });
-members.Add("_bgImage", new ResoniteLink.Reference() { });
-members.Add("_inputsRoot", new ResoniteLink.Reference() { });
-members.Add("_outputsRoot", new ResoniteLink.Reference() { });
-members.Add("_referencesRoot", new ResoniteLink.Reference() { });
-members.Add("_overviewVisual", new ResoniteLink.Reference() { });
-members.Add("_overviewBg", new ResoniteLink.Reference() { });
-members.Add("_labelBg", new ResoniteLink.Reference() { });
-members.Add("_labelText", new ResoniteLink.Reference() { });
+members.Add("_nodeHoverArea", _nodeHoverArea.ToResoniteReference(context));
+members.Add("_bgImage", _bgImage.ToResoniteReference(context));
+members.Add("_inputsRoot", _inputsRoot.ToResoniteReference(context));
+members.Add("_outputsRoot", _outputsRoot.ToResoniteReference(context));
+members.Add("_referencesRoot", _referencesRoot.ToResoniteReference(context));
+members.Add("_overviewVisual", _overviewVisual.ToResoniteReference(context));
+members.Add("_overviewBg", _overviewBg.ToResoniteReference(context));
+members.Add("_labelBg", _labelBg.ToResoniteReference(context));
+members.Add("_labelText", _labelText.ToResoniteReference(context));
 }
 
 }

@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.InteractiveCameraControl
-// Generated on: pátek 13. února 2026 23:23:15
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:44
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -92,9 +92,10 @@ public global::FrooxEngine.UIX.Button _OBS_Button;
 public global::FrooxEngine.UIX.Button _twitchButton;
 public global::FrooxEngine.UI_UnlitMaterial _previewMaterial;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
+    base.CollectMembers(members, context);
 members.Add("FieldOfView", FieldOfView.ToResoniteLinkField());
 members.Add("AnglePosition", AnglePosition.ToResoniteLinkField());
 members.Add("Distance", Distance.ToResoniteLinkField());
@@ -133,48 +134,48 @@ members.Add("MotionBlur", MotionBlur.ToResoniteLinkField());
 members.Add("ScreenSpaceReflections", ScreenSpaceReflections.ToResoniteLinkField());
 members.Add("SpawnPhotoInWorld", SpawnPhotoInWorld.ToResoniteLinkField());
 members.Add("FlipPreview", FlipPreview.ToResoniteLinkField());
-members.Add("_renderTextureProxy", new ResoniteLink.Reference() { });
-members.Add("_framingReticle", new ResoniteLink.Reference() { });
-members.Add("_mirrorMessage", new ResoniteLink.Reference() { });
-members.Add("_smoothFirstPersonButton", new ResoniteLink.Reference() { });
-members.Add("_thirdPersonButton", new ResoniteLink.Reference() { });
-members.Add("_groupButton", new ResoniteLink.Reference() { });
-members.Add("_worldButton", new ResoniteLink.Reference() { });
-members.Add("_manualButton", new ResoniteLink.Reference() { });
-members.Add("_mirrorButton", new ResoniteLink.Reference() { });
-members.Add("_usersButton", new ResoniteLink.Reference() { });
-members.Add("_angleIncreaseButton", new ResoniteLink.Reference() { });
-members.Add("_angleDecreaseButton", new ResoniteLink.Reference() { });
-members.Add("_heightIncreaseButton", new ResoniteLink.Reference() { });
-members.Add("_heightDecreaseButton", new ResoniteLink.Reference() { });
-members.Add("_distanceIncreaseButton", new ResoniteLink.Reference() { });
-members.Add("_distanceDecreaseButton", new ResoniteLink.Reference() { });
-members.Add("_resetButton", new ResoniteLink.Reference() { });
-members.Add("_fovSlider", new ResoniteLink.Reference() { });
-members.Add("_avoidOcclusion", new ResoniteLink.Reference() { });
-members.Add("_keepInWorldSpace", new ResoniteLink.Reference() { });
-members.Add("_movementWobble", new ResoniteLink.Reference() { });
-members.Add("_aimInFrontOfHead", new ResoniteLink.Reference() { });
-members.Add("_forceEyesOnCamera", new ResoniteLink.Reference() { });
-members.Add("_hideCamera", new ResoniteLink.Reference() { });
-members.Add("_hideBadge", new ResoniteLink.Reference() { });
-members.Add("_hideLasers", new ResoniteLink.Reference() { });
-members.Add("_showFrustum", new ResoniteLink.Reference() { });
-members.Add("_timer", new ResoniteLink.Reference() { });
-members.Add("_forceLive", new ResoniteLink.Reference() { });
-members.Add("_audioFromCameraViewpoint", new ResoniteLink.Reference() { });
-members.Add("_userControl", new ResoniteLink.Reference() { });
-members.Add("_settingsDialog", new ResoniteLink.Reference() { });
-members.Add("_positioningDialog", new ResoniteLink.Reference() { });
-members.Add("_anchorsDialog", new ResoniteLink.Reference() { });
-members.Add("_OBS_Dialog", new ResoniteLink.Reference() { });
-members.Add("_twitchDialog", new ResoniteLink.Reference() { });
-members.Add("_settingsButton", new ResoniteLink.Reference() { });
-members.Add("_positioningButton", new ResoniteLink.Reference() { });
-members.Add("_anchorsButton", new ResoniteLink.Reference() { });
-members.Add("_OBS_Button", new ResoniteLink.Reference() { });
-members.Add("_twitchButton", new ResoniteLink.Reference() { });
-members.Add("_previewMaterial", new ResoniteLink.Reference() { });
+members.Add("_renderTextureProxy", _renderTextureProxy.ToResoniteReference(context));
+members.Add("_framingReticle", _framingReticle.ToResoniteReference(context));
+members.Add("_mirrorMessage", _mirrorMessage.ToResoniteReference(context));
+members.Add("_smoothFirstPersonButton", _smoothFirstPersonButton.ToResoniteReference(context));
+members.Add("_thirdPersonButton", _thirdPersonButton.ToResoniteReference(context));
+members.Add("_groupButton", _groupButton.ToResoniteReference(context));
+members.Add("_worldButton", _worldButton.ToResoniteReference(context));
+members.Add("_manualButton", _manualButton.ToResoniteReference(context));
+members.Add("_mirrorButton", _mirrorButton.ToResoniteReference(context));
+members.Add("_usersButton", _usersButton.ToResoniteReference(context));
+members.Add("_angleIncreaseButton", _angleIncreaseButton.ToResoniteReference(context));
+members.Add("_angleDecreaseButton", _angleDecreaseButton.ToResoniteReference(context));
+members.Add("_heightIncreaseButton", _heightIncreaseButton.ToResoniteReference(context));
+members.Add("_heightDecreaseButton", _heightDecreaseButton.ToResoniteReference(context));
+members.Add("_distanceIncreaseButton", _distanceIncreaseButton.ToResoniteReference(context));
+members.Add("_distanceDecreaseButton", _distanceDecreaseButton.ToResoniteReference(context));
+members.Add("_resetButton", _resetButton.ToResoniteReference(context));
+members.Add("_fovSlider", _fovSlider.ToResoniteReference(context));
+members.Add("_avoidOcclusion", _avoidOcclusion.ToResoniteReference(context));
+members.Add("_keepInWorldSpace", _keepInWorldSpace.ToResoniteReference(context));
+members.Add("_movementWobble", _movementWobble.ToResoniteReference(context));
+members.Add("_aimInFrontOfHead", _aimInFrontOfHead.ToResoniteReference(context));
+members.Add("_forceEyesOnCamera", _forceEyesOnCamera.ToResoniteReference(context));
+members.Add("_hideCamera", _hideCamera.ToResoniteReference(context));
+members.Add("_hideBadge", _hideBadge.ToResoniteReference(context));
+members.Add("_hideLasers", _hideLasers.ToResoniteReference(context));
+members.Add("_showFrustum", _showFrustum.ToResoniteReference(context));
+members.Add("_timer", _timer.ToResoniteReference(context));
+members.Add("_forceLive", _forceLive.ToResoniteReference(context));
+members.Add("_audioFromCameraViewpoint", _audioFromCameraViewpoint.ToResoniteReference(context));
+members.Add("_userControl", _userControl.ToResoniteReference(context));
+members.Add("_settingsDialog", _settingsDialog.ToResoniteReference(context));
+members.Add("_positioningDialog", _positioningDialog.ToResoniteReference(context));
+members.Add("_anchorsDialog", _anchorsDialog.ToResoniteReference(context));
+members.Add("_OBS_Dialog", _OBS_Dialog.ToResoniteReference(context));
+members.Add("_twitchDialog", _twitchDialog.ToResoniteReference(context));
+members.Add("_settingsButton", _settingsButton.ToResoniteReference(context));
+members.Add("_positioningButton", _positioningButton.ToResoniteReference(context));
+members.Add("_anchorsButton", _anchorsButton.ToResoniteReference(context));
+members.Add("_OBS_Button", _OBS_Button.ToResoniteReference(context));
+members.Add("_twitchButton", _twitchButton.ToResoniteReference(context));
+members.Add("_previewMaterial", _previewMaterial.ToResoniteReference(context));
 }
 
 }

@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.UserRoot
-// Generated on: pátek 13. února 2026 23:22:19
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:57:46
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -26,14 +26,15 @@ public global::FrooxEngine.Slot OverrideRoot;
 public global::FrooxEngine.Slot OverrideView;
 public global::FrooxEngine.AudioListener PrimaryListener;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
-members.Add("RenderSettings", new ResoniteLink.Reference() { });
-members.Add("ScreenController", new ResoniteLink.Reference() { });
-members.Add("OverrideRoot", new ResoniteLink.Reference() { });
-members.Add("OverrideView", new ResoniteLink.Reference() { });
-members.Add("PrimaryListener", new ResoniteLink.Reference() { });
+    base.CollectMembers(members, context);
+members.Add("RenderSettings", RenderSettings.ToResoniteReference(context));
+members.Add("ScreenController", ScreenController.ToResoniteReference(context));
+members.Add("OverrideRoot", OverrideRoot.ToResoniteReference(context));
+members.Add("OverrideView", OverrideView.ToResoniteReference(context));
+members.Add("PrimaryListener", PrimaryListener.ToResoniteReference(context));
 }
 
 }

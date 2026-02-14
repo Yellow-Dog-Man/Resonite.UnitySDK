@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.LegacyPanel+TitleButton
-// Generated on: pátek 13. února 2026 23:23:15
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:44
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -33,19 +33,20 @@ public global::FrooxEngine.IField<UnityEngine.Vector3> _colliderSize;
 public global::FrooxEngine.IField<UnityEngine.Vector2> _iconSize;
 public global::FrooxEngine.IField<UnityEngine.Vector3> _iconOffset;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
+    base.CollectMembers(members, context);
 members.Add("ItemColor", ItemColor.ToResoniteLinkField());
 members.Add("Enabled", Enabled.ToResoniteLinkField());
-members.Add("_material", new ResoniteLink.Reference() { });
-members.Add("_iconMaterial", new ResoniteLink.Reference() { });
-members.Add("_iconTexture", new ResoniteLink.Reference() { });
-members.Add("_itemRoot", new ResoniteLink.Reference() { });
-members.Add("_position", new ResoniteLink.Reference() { });
-members.Add("_colliderSize", new ResoniteLink.Reference() { });
-members.Add("_iconSize", new ResoniteLink.Reference() { });
-members.Add("_iconOffset", new ResoniteLink.Reference() { });
+members.Add("_material", _material.ToResoniteReference(context));
+members.Add("_iconMaterial", _iconMaterial.ToResoniteReference(context));
+members.Add("_iconTexture", _iconTexture.ToResoniteReference(context));
+members.Add("_itemRoot", _itemRoot.ToResoniteReference(context));
+members.Add("_position", _position.ToResoniteReference(context));
+members.Add("_colliderSize", _colliderSize.ToResoniteReference(context));
+members.Add("_iconSize", _iconSize.ToResoniteReference(context));
+members.Add("_iconOffset", _iconOffset.ToResoniteReference(context));
 }
 
 }

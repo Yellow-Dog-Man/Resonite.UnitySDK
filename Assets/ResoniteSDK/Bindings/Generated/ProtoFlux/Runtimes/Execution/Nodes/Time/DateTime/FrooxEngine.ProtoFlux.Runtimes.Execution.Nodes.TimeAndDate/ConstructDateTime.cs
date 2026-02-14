@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [ProtoFluxBindings]FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.TimeAndDate.ConstructDateTime
-// Generated on: pátek 13. února 2026 23:22:56
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:26
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -29,17 +29,18 @@ public global::FrooxEngine.ProtoFlux.INodeValueOutput<global::System.Int32> Seco
 public global::FrooxEngine.ProtoFlux.INodeValueOutput<global::System.Int32> Millisecond;
 public global::FrooxEngine.ProtoFlux.INodeValueOutput<global::System.DateTimeKind> Kind;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
-members.Add("Year", new ResoniteLink.Reference() { });
-members.Add("Month", new ResoniteLink.Reference() { });
-members.Add("Day", new ResoniteLink.Reference() { });
-members.Add("Hour", new ResoniteLink.Reference() { });
-members.Add("Minute", new ResoniteLink.Reference() { });
-members.Add("Second", new ResoniteLink.Reference() { });
-members.Add("Millisecond", new ResoniteLink.Reference() { });
-members.Add("Kind", new ResoniteLink.Reference() { });
+    base.CollectMembers(members, context);
+members.Add("Year", Year.ToResoniteReference(context));
+members.Add("Month", Month.ToResoniteReference(context));
+members.Add("Day", Day.ToResoniteReference(context));
+members.Add("Hour", Hour.ToResoniteReference(context));
+members.Add("Minute", Minute.ToResoniteReference(context));
+members.Add("Second", Second.ToResoniteReference(context));
+members.Add("Millisecond", Millisecond.ToResoniteReference(context));
+members.Add("Kind", Kind.ToResoniteReference(context));
 }
 
 }

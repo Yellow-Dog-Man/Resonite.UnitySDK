@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.LegacyVideoPlayer
-// Generated on: pátek 13. února 2026 23:23:16
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:45
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -54,42 +54,43 @@ public global::FrooxEngine.VideoExportable _exportable;
 public global::FrooxEngine.AssetProxy<global::FrooxEngine.VideoTexture> _assetProxy;
 public global::FrooxEngine.ReferenceProxy _referenceProxy;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
+    base.CollectMembers(members, context);
 members.Add("StereoLayout", StereoLayout.ToResoniteLinkField());
 members.Add("SizeCompensation", SizeCompensation.ToResoniteLinkField());
-members.Add("videoProvider", new ResoniteLink.Reference() { });
-members.Add("_style", new ResoniteLink.Reference() { });
-members.Add("_indicatorTextureUrl", new ResoniteLink.Reference() { });
-members.Add("_indicatorTint", new ResoniteLink.Reference() { });
-members.Add("_colliderSize", new ResoniteLink.Reference() { });
-members.Add("_frameWidth", new ResoniteLink.Reference() { });
-members.Add("_frameHeight", new ResoniteLink.Reference() { });
-members.Add("_frameMaterial", new ResoniteLink.Reference() { });
-members.Add("_displayMaterial", new ResoniteLink.Reference() { });
-members.Add("_displayMaterialTexture", new ResoniteLink.Reference() { });
-members.Add("_displaySize", new ResoniteLink.Reference() { });
-members.Add("_mainAudioOutput", new ResoniteLink.Reference() { });
-members.Add("_timelineSlider", new ResoniteLink.Reference() { });
-members.Add("_timelinePosition", new ResoniteLink.Reference() { });
-members.Add("_timelineWidth", new ResoniteLink.Reference() { });
-members.Add("_positionDrive", new ResoniteLink.Reference() { });
-members.Add("_volumeSlider", new ResoniteLink.Reference() { });
-members.Add("_volumePosition", new ResoniteLink.Reference() { });
-members.Add("_volumeWidth", new ResoniteLink.Reference() { });
-members.Add("_volumeDrive", new ResoniteLink.Reference() { });
-members.Add("_buttonsWidth", new ResoniteLink.Reference() { });
-members.Add("_buttonsHeight", new ResoniteLink.Reference() { });
-members.Add("_buttonsPosition", new ResoniteLink.Reference() { });
-members.Add("_playButtonColor", new ResoniteLink.Reference() { });
-members.Add("_pauseButtonColor", new ResoniteLink.Reference() { });
-members.Add("_stopButtonColor", new ResoniteLink.Reference() { });
-members.Add("_loopButtonColor", new ResoniteLink.Reference() { });
-members.Add("_audio3DButtonColor", new ResoniteLink.Reference() { });
-members.Add("_exportable", new ResoniteLink.Reference() { });
-members.Add("_assetProxy", new ResoniteLink.Reference() { });
-members.Add("_referenceProxy", new ResoniteLink.Reference() { });
+members.Add("videoProvider", videoProvider.ToResoniteReference(context));
+members.Add("_style", _style.ToResoniteReference(context));
+members.Add("_indicatorTextureUrl", _indicatorTextureUrl.ToResoniteReference(context));
+members.Add("_indicatorTint", _indicatorTint.ToResoniteReference(context));
+members.Add("_colliderSize", _colliderSize.ToResoniteReference(context));
+members.Add("_frameWidth", _frameWidth.ToResoniteReference(context));
+members.Add("_frameHeight", _frameHeight.ToResoniteReference(context));
+members.Add("_frameMaterial", _frameMaterial.ToResoniteReference(context));
+members.Add("_displayMaterial", _displayMaterial.ToResoniteReference(context));
+members.Add("_displayMaterialTexture", _displayMaterialTexture.ToResoniteReference(context));
+members.Add("_displaySize", _displaySize.ToResoniteReference(context));
+members.Add("_mainAudioOutput", _mainAudioOutput.ToResoniteReference(context));
+members.Add("_timelineSlider", _timelineSlider.ToResoniteReference(context));
+members.Add("_timelinePosition", _timelinePosition.ToResoniteReference(context));
+members.Add("_timelineWidth", _timelineWidth.ToResoniteReference(context));
+members.Add("_positionDrive", _positionDrive.ToResoniteReference(context));
+members.Add("_volumeSlider", _volumeSlider.ToResoniteReference(context));
+members.Add("_volumePosition", _volumePosition.ToResoniteReference(context));
+members.Add("_volumeWidth", _volumeWidth.ToResoniteReference(context));
+members.Add("_volumeDrive", _volumeDrive.ToResoniteReference(context));
+members.Add("_buttonsWidth", _buttonsWidth.ToResoniteReference(context));
+members.Add("_buttonsHeight", _buttonsHeight.ToResoniteReference(context));
+members.Add("_buttonsPosition", _buttonsPosition.ToResoniteReference(context));
+members.Add("_playButtonColor", _playButtonColor.ToResoniteReference(context));
+members.Add("_pauseButtonColor", _pauseButtonColor.ToResoniteReference(context));
+members.Add("_stopButtonColor", _stopButtonColor.ToResoniteReference(context));
+members.Add("_loopButtonColor", _loopButtonColor.ToResoniteReference(context));
+members.Add("_audio3DButtonColor", _audio3DButtonColor.ToResoniteReference(context));
+members.Add("_exportable", _exportable.ToResoniteReference(context));
+members.Add("_assetProxy", _assetProxy.ToResoniteReference(context));
+members.Add("_referenceProxy", _referenceProxy.ToResoniteReference(context));
 }
 
 }

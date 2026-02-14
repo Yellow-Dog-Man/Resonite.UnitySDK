@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.LegacyCircleSegmentMesh
-// Generated on: pátek 13. února 2026 23:23:07
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:37
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -36,9 +36,10 @@ public System.Collections.Generic.List<global::FrooxEngine.LegacyCircleSegmentMe
 public System.Collections.Generic.List<global::FrooxEngine.LegacyCircleSegmentMesh.MenuSegment> IndependentSegments;
 public global::System.Single OutlineWidth;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
+    base.CollectMembers(members, context);
 members.Add("ExpandLerp", ExpandLerp.ToResoniteLinkField());
 members.Add("InnerCircle", InnerCircle.ToResoniteLinkField());
 members.Add("RadiusStart", RadiusStart.ToResoniteLinkField());
@@ -53,11 +54,11 @@ members.Add("FillColor", FillColor.ToResoniteLinkField());
 members.Add("OutlineColor", OutlineColor.ToResoniteLinkField());
 members.Add("CircleItemOverrides", new ResoniteLink.SyncList()
 {
-    Elements = CircleItemOverrides.ConvertList(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers() })
+    Elements = CircleItemOverrides.ConvertList(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers(context) })
 });
 members.Add("IndependentSegments", new ResoniteLink.SyncList()
 {
-    Elements = IndependentSegments.ConvertList(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers() })
+    Elements = IndependentSegments.ConvertList(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers(context) })
 });
 members.Add("OutlineWidth", OutlineWidth.ToResoniteLinkField());
 }

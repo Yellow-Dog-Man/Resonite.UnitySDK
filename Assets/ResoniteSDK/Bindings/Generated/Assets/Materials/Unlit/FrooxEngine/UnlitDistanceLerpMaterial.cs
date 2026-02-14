@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.UnlitDistanceLerpMaterial
-// Generated on: pátek 13. února 2026 23:21:34
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:56:57
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -42,15 +42,16 @@ public global::System.Single OffsetFactor;
 public global::System.Single OffsetUnits;
 public global::System.Int32 RenderQueue;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
+    base.CollectMembers(members, context);
 members.Add("LocalSpace", LocalSpace.ToResoniteLinkField());
 members.Add("Point", Point.ToResoniteLinkField());
 members.Add("Distance", Distance.ToResoniteLinkField());
 members.Add("TransitionRange", TransitionRange.ToResoniteLinkField());
-members.Add("NearTexture", new ResoniteLink.Reference() { });
-members.Add("FarTexture", new ResoniteLink.Reference() { });
+members.Add("NearTexture", NearTexture.ToResoniteReference(context));
+members.Add("FarTexture", FarTexture.ToResoniteReference(context));
 members.Add("NearTextureScale", NearTextureScale.ToResoniteLinkField());
 members.Add("NearTextureOffset", NearTextureOffset.ToResoniteLinkField());
 members.Add("FarTextureScale", FarTextureScale.ToResoniteLinkField());

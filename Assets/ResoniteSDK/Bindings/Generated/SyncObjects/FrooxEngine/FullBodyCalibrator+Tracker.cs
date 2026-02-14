@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.FullBodyCalibrator+Tracker
-// Generated on: pátek 13. února 2026 23:23:14
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:44
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -33,19 +33,20 @@ public global::FrooxEngine.IField<UnityEngine.Quaternion> _rotation;
 public global::FrooxEngine.IField<UnityEngine.Vector3> _labelPosition;
 public global::FrooxEngine.IField<UnityEngine.Quaternion> _labelRotation;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
-members.Add("VisualRoot", new ResoniteLink.Reference() { });
-members.Add("TrackingReference", new ResoniteLink.Reference() { });
-members.Add("TrackedDevice", new ResoniteLink.Reference() { });
-members.Add("Material", new ResoniteLink.Reference() { });
-members.Add("Label", new ResoniteLink.Reference() { });
-members.Add("CalibrationReference", new ResoniteLink.Reference() { });
-members.Add("_position", new ResoniteLink.Reference() { });
-members.Add("_rotation", new ResoniteLink.Reference() { });
-members.Add("_labelPosition", new ResoniteLink.Reference() { });
-members.Add("_labelRotation", new ResoniteLink.Reference() { });
+    base.CollectMembers(members, context);
+members.Add("VisualRoot", VisualRoot.ToResoniteReference(context));
+members.Add("TrackingReference", TrackingReference.ToResoniteReference(context));
+members.Add("TrackedDevice", TrackedDevice.ToResoniteReference(context));
+members.Add("Material", Material.ToResoniteReference(context));
+members.Add("Label", Label.ToResoniteReference(context));
+members.Add("CalibrationReference", CalibrationReference.ToResoniteReference(context));
+members.Add("_position", _position.ToResoniteReference(context));
+members.Add("_rotation", _rotation.ToResoniteReference(context));
+members.Add("_labelPosition", _labelPosition.ToResoniteReference(context));
+members.Add("_labelRotation", _labelRotation.ToResoniteReference(context));
 }
 
 }

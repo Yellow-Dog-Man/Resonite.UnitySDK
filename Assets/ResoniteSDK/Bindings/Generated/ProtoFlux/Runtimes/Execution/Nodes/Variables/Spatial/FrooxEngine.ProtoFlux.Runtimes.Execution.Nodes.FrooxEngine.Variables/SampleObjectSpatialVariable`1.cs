@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [ProtoFluxBindings]FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Variables.SampleObjectSpatialVariable<>
-// Generated on: pátek 13. února 2026 23:23:01
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:30
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -25,12 +25,13 @@ public partial class SampleObjectSpatialVariable<T> : global::FrooxEngine.ProtoF
 public global::FrooxEngine.ProtoFlux.INodeObjectOutput<global::System.String> Name;
 public global::FrooxEngine.ProtoFlux.INodeObjectOutput<T> DefaultValue;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
-members.Add("Point", new ResoniteLink.Reference() { });
-members.Add("Name", new ResoniteLink.Reference() { });
-members.Add("DefaultValue", new ResoniteLink.Reference() { });
+    base.CollectMembers(members, context);
+members.Add("Point", Point.ToResoniteReference(context));
+members.Add("Name", Name.ToResoniteReference(context));
+members.Add("DefaultValue", DefaultValue.ToResoniteReference(context));
 }
 
 }

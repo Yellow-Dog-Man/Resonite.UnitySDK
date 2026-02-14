@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.PBS_ColorSplatSpecular
-// Generated on: pátek 13. února 2026 23:21:33
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:56:56
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -29,17 +29,18 @@ public global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D> Specul
 public global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D> SpecularMap2;
 public global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D> SpecularMap3;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
+    base.CollectMembers(members, context);
 members.Add("SpecularColor0", SpecularColor0.ToResoniteLinkField());
 members.Add("SpecularColor1", SpecularColor1.ToResoniteLinkField());
 members.Add("SpecularColor2", SpecularColor2.ToResoniteLinkField());
 members.Add("SpecularColor3", SpecularColor3.ToResoniteLinkField());
-members.Add("SpecularMap0", new ResoniteLink.Reference() { });
-members.Add("SpecularMap1", new ResoniteLink.Reference() { });
-members.Add("SpecularMap2", new ResoniteLink.Reference() { });
-members.Add("SpecularMap3", new ResoniteLink.Reference() { });
+members.Add("SpecularMap0", SpecularMap0.ToResoniteReference(context));
+members.Add("SpecularMap1", SpecularMap1.ToResoniteReference(context));
+members.Add("SpecularMap2", SpecularMap2.ToResoniteReference(context));
+members.Add("SpecularMap3", SpecularMap3.ToResoniteReference(context));
 }
 
 }

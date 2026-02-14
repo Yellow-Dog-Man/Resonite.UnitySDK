@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.KnobControl
-// Generated on: pátek 13. února 2026 23:23:10
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:40
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -29,17 +29,18 @@ public global::System.Single _lastRotation;
 public UnityEngine.Vector3 _lastAxis;
 public global::FrooxEngine.User _lastUser;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
-members.Add("Target", new ResoniteLink.Reference() { });
+    base.CollectMembers(members, context);
+members.Add("Target", Target.ToResoniteReference(context));
 members.Add("RotationAxis", RotationAxis.ToResoniteLinkField());
 members.Add("Rate", Rate.ToResoniteLinkField());
 members.Add("Min", Min.ToResoniteLinkField());
 members.Add("Max", Max.ToResoniteLinkField());
 members.Add("_lastRotation", _lastRotation.ToResoniteLinkField());
 members.Add("_lastAxis", _lastAxis.ToResoniteLinkField());
-members.Add("_lastUser", new ResoniteLink.Reference() { });
+members.Add("_lastUser", _lastUser.ToResoniteReference(context));
 }
 
 }

@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.DistanceMeter
-// Generated on: pátek 13. února 2026 23:23:07
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:37
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -34,15 +34,16 @@ public global::Elements.Quantity.CompoundZeroHandling CompoundZeroHandling;
 public global::FrooxEngine.RootSpace MeasurementSpace;
 public global::FrooxEngine.IField<global::System.String> DistanceText;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
+    base.CollectMembers(members, context);
 members.Add("Anchors", new ResoniteLink.SyncList()
 {
-    Elements = Anchors.ConvertList(m => new ResoniteLink.Reference() { })
+    Elements = Anchors.ConvertList(m => m.ToResoniteReference(context))
 });
-members.Add("_legacyAnchor0", new ResoniteLink.Reference() { });
-members.Add("_legacyAnchor1", new ResoniteLink.Reference() { });
+members.Add("_legacyAnchor0", _legacyAnchor0.ToResoniteReference(context));
+members.Add("_legacyAnchor1", _legacyAnchor1.ToResoniteReference(context));
 members.Add("FormatUnit", FormatUnit.ToResoniteLinkField());
 members.Add("FormatNumber", FormatNumber.ToResoniteLinkField());
 members.Add("CompoundFormatUnits", new ResoniteLink.SyncList()
@@ -54,8 +55,8 @@ members.Add("CompoundOverrideNames", CompoundOverrideNames.ToResoniteLinkField()
 members.Add("CompoundDiscardLastFraction", CompoundDiscardLastFraction.ToResoniteLinkField());
 members.Add("CompoundSeparator", CompoundSeparator.ToResoniteLinkField());
 members.Add("CompoundZeroHandling", CompoundZeroHandling.ToResoniteLinkField());
-members.Add("MeasurementSpace", new ResoniteLink.SyncObject() { Members = MeasurementSpace.CollectMembers() });
-members.Add("DistanceText", new ResoniteLink.Reference() { });
+members.Add("MeasurementSpace", new ResoniteLink.SyncObject() { Members = MeasurementSpace.CollectMembers(context) });
+members.Add("DistanceText", DistanceText.ToResoniteReference(context));
 }
 
 }

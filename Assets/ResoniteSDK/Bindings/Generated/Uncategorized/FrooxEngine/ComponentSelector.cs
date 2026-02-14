@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.ComponentSelector
-// Generated on: pátek 13. února 2026 23:23:13
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:42
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -27,17 +27,18 @@ public global::FrooxEngine.IField<global::System.String> _customGenericTypeLabel
 public global::FrooxEngine.IField<UnityEngine.ColorX> _customGenericTypeColor;
 public System.Collections.Generic.List<global::FrooxEngine.UIX.TextField> _customGenericArguments;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
-members.Add("_uiRoot", new ResoniteLink.Reference() { });
+    base.CollectMembers(members, context);
+members.Add("_uiRoot", _uiRoot.ToResoniteReference(context));
 members.Add("_rootPath", _rootPath.ToResoniteLinkField());
 members.Add("_genericType", _genericType.ToResoniteLinkField());
-members.Add("_customGenericTypeLabel", new ResoniteLink.Reference() { });
-members.Add("_customGenericTypeColor", new ResoniteLink.Reference() { });
+members.Add("_customGenericTypeLabel", _customGenericTypeLabel.ToResoniteReference(context));
+members.Add("_customGenericTypeColor", _customGenericTypeColor.ToResoniteReference(context));
 members.Add("_customGenericArguments", new ResoniteLink.SyncList()
 {
-    Elements = _customGenericArguments.ConvertList(m => new ResoniteLink.Reference() { })
+    Elements = _customGenericArguments.ConvertList(m => m.ToResoniteReference(context))
 });
 }
 

@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.FacetContainer
-// Generated on: pátek 13. února 2026 23:23:01
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:31
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -26,14 +26,15 @@ public global::FrooxEngine.UIX.RectTransform _background;
 public global::FrooxEngine.UIX.RectTransform _content;
 public global::FrooxEngine.UIX.RectTransform _overlay;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
+    base.CollectMembers(members, context);
 members.Add("EditMode", EditMode.ToResoniteLinkField());
-members.Add("FacetsRoot", new ResoniteLink.Reference() { });
-members.Add("_background", new ResoniteLink.Reference() { });
-members.Add("_content", new ResoniteLink.Reference() { });
-members.Add("_overlay", new ResoniteLink.Reference() { });
+members.Add("FacetsRoot", FacetsRoot.ToResoniteReference(context));
+members.Add("_background", _background.ToResoniteReference(context));
+members.Add("_content", _content.ToResoniteReference(context));
+members.Add("_overlay", _overlay.ToResoniteReference(context));
 }
 
 }

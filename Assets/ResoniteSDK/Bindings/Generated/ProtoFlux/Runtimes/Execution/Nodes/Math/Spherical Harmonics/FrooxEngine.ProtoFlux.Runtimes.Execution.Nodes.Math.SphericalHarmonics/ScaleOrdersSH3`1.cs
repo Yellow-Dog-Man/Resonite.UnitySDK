@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [ProtoFluxBindings]FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.Math.SphericalHarmonics.ScaleOrdersSH3<>
-// Generated on: pátek 13. února 2026 23:22:39
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:09
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -27,14 +27,15 @@ public global::FrooxEngine.ProtoFlux.INodeValueOutput<global::System.Single> Ord
 public global::FrooxEngine.ProtoFlux.INodeValueOutput<global::System.Single> Order2;
 public global::FrooxEngine.ProtoFlux.INodeValueOutput<global::System.Single> Order3;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
-members.Add("SH", new ResoniteLink.Reference() { });
-members.Add("Order0", new ResoniteLink.Reference() { });
-members.Add("Order1", new ResoniteLink.Reference() { });
-members.Add("Order2", new ResoniteLink.Reference() { });
-members.Add("Order3", new ResoniteLink.Reference() { });
+    base.CollectMembers(members, context);
+members.Add("SH", SH.ToResoniteReference(context));
+members.Add("Order0", Order0.ToResoniteReference(context));
+members.Add("Order1", Order1.ToResoniteReference(context));
+members.Add("Order2", Order2.ToResoniteReference(context));
+members.Add("Order3", Order3.ToResoniteReference(context));
 }
 
 }

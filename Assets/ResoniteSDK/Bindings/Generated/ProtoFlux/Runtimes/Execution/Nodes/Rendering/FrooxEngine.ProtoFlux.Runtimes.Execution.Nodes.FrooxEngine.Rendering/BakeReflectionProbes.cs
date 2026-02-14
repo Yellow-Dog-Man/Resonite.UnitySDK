@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [ProtoFluxBindings]FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Rendering.BakeReflectionProbes
-// Generated on: pátek 13. února 2026 23:22:53
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:23
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -32,20 +32,21 @@ public global::FrooxEngine.ProtoFlux.INodeOperation OnBeforeProbeBake;
 public global::FrooxEngine.ProtoFlux.INodeOperation OnProbeBaked;
 public global::FrooxEngine.ProtoFlux.INodeOperation OnBakeBatchFinished;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
-members.Add("Root", new ResoniteLink.Reference() { });
-members.Add("BakeInactive", new ResoniteLink.Reference() { });
-members.Add("FilterWithTag", new ResoniteLink.Reference() { });
-members.Add("DelayBeforeBake", new ResoniteLink.Reference() { });
+    base.CollectMembers(members, context);
+members.Add("Root", Root.ToResoniteReference(context));
+members.Add("BakeInactive", BakeInactive.ToResoniteReference(context));
+members.Add("FilterWithTag", FilterWithTag.ToResoniteReference(context));
+members.Add("DelayBeforeBake", DelayBeforeBake.ToResoniteReference(context));
 members.Add("Probe", new ResoniteLink.EmptyElement());
 members.Add("ProbeIndex", new ResoniteLink.EmptyElement());
 members.Add("ProbeCount", new ResoniteLink.EmptyElement());
-members.Add("OnBakeBatchStart", new ResoniteLink.Reference() { });
-members.Add("OnBeforeProbeBake", new ResoniteLink.Reference() { });
-members.Add("OnProbeBaked", new ResoniteLink.Reference() { });
-members.Add("OnBakeBatchFinished", new ResoniteLink.Reference() { });
+members.Add("OnBakeBatchStart", OnBakeBatchStart.ToResoniteReference(context));
+members.Add("OnBeforeProbeBake", OnBeforeProbeBake.ToResoniteReference(context));
+members.Add("OnProbeBaked", OnProbeBaked.ToResoniteReference(context));
+members.Add("OnBakeBatchFinished", OnBakeBatchFinished.ToResoniteReference(context));
 }
 
 }

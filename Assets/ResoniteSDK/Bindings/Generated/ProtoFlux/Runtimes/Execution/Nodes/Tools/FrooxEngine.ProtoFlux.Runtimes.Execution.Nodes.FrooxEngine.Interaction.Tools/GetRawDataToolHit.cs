@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [ProtoFluxBindings]FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Interaction.Tools.GetRawDataToolHit
-// Generated on: pátek 13. února 2026 23:22:57
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:27
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -27,10 +27,11 @@ public global::FrooxEngine.ProtoFlux.NodeValueOutput<UnityEngine.Vector3> HitNor
 public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Single> HitDistance;
 public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Int32> HitTriangleIndex;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
-members.Add("Tool", new ResoniteLink.Reference() { });
+    base.CollectMembers(members, context);
+members.Add("Tool", Tool.ToResoniteReference(context));
 members.Add("HitCollider", new ResoniteLink.EmptyElement());
 members.Add("HitPoint", new ResoniteLink.EmptyElement());
 members.Add("HitNormal", new ResoniteLink.EmptyElement());

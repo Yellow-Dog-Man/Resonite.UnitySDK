@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [ProtoFluxBindings]FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.Operators.PackRows_Double4x4
-// Generated on: pátek 13. února 2026 23:22:50
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:20
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -25,13 +25,14 @@ public global::FrooxEngine.ProtoFlux.INodeValueOutput<UnityEngine.Vector4Double>
 public global::FrooxEngine.ProtoFlux.INodeValueOutput<UnityEngine.Vector4Double> Row2;
 public global::FrooxEngine.ProtoFlux.INodeValueOutput<UnityEngine.Vector4Double> Row3;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
-members.Add("Row0", new ResoniteLink.Reference() { });
-members.Add("Row1", new ResoniteLink.Reference() { });
-members.Add("Row2", new ResoniteLink.Reference() { });
-members.Add("Row3", new ResoniteLink.Reference() { });
+    base.CollectMembers(members, context);
+members.Add("Row0", Row0.ToResoniteReference(context));
+members.Add("Row1", Row1.ToResoniteReference(context));
+members.Add("Row2", Row2.ToResoniteReference(context));
+members.Add("Row3", Row3.ToResoniteReference(context));
 }
 
 }

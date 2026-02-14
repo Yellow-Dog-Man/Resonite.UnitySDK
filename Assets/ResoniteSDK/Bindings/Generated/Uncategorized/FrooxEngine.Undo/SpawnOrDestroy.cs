@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.Undo.SpawnOrDestroy
-// Generated on: pátek 13. února 2026 23:23:18
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:58:48
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -32,17 +32,18 @@ public global::System.Boolean _isSaving;
 public global::System.String _description;
 public global::System.Boolean _performed;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
-members.Add("Target", new ResoniteLink.Reference() { });
-members.Add("TargetParent", new ResoniteLink.Reference() { });
+    base.CollectMembers(members, context);
+members.Add("Target", Target.ToResoniteReference(context));
+members.Add("TargetParent", TargetParent.ToResoniteReference(context));
 members.Add("_mode", _mode.ToResoniteLinkField());
 members.Add("_preserveAssets", _preserveAssets.ToResoniteLinkField());
 members.Add("_sendDestroyingEvents", _sendDestroyingEvents.ToResoniteLinkField());
 members.Add("_savedObject", _savedObject.ToResoniteLinkField());
 members.Add("_isComponent", _isComponent.ToResoniteLinkField());
-members.Add("_referenceTable", new ResoniteLink.Reference() { });
+members.Add("_referenceTable", _referenceTable.ToResoniteReference(context));
 members.Add("_isSaving", _isSaving.ToResoniteLinkField());
 members.Add("_description", _description.ToResoniteLinkField());
 members.Add("_performed", _performed.ToResoniteLinkField());

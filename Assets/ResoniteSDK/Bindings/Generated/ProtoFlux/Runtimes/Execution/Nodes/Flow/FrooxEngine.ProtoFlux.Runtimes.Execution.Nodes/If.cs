@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [ProtoFluxBindings]FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.If
-// Generated on: pátek 13. února 2026 23:22:30
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:57:58
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -24,12 +24,13 @@ public partial class If : global::FrooxEngine.ProtoFlux.Runtimes.Execution.Actio
 public global::FrooxEngine.ProtoFlux.INodeOperation OnFalse;
 public global::FrooxEngine.ProtoFlux.INodeValueOutput<global::System.Boolean> Condition;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
-members.Add("OnTrue", new ResoniteLink.Reference() { });
-members.Add("OnFalse", new ResoniteLink.Reference() { });
-members.Add("Condition", new ResoniteLink.Reference() { });
+    base.CollectMembers(members, context);
+members.Add("OnTrue", OnTrue.ToResoniteReference(context));
+members.Add("OnFalse", OnFalse.ToResoniteReference(context));
+members.Add("Condition", Condition.ToResoniteReference(context));
 }
 
 }

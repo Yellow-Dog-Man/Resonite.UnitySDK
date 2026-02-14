@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [ProtoFluxBindings]FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Variables.DataModelBooleanToggle
-// Generated on: pátek 13. února 2026 23:22:29
-// Resonite version: 2026.2.12.359
+// Generated on: sobota 14. února 2026 8:57:57
+// Resonite version: 2026.2.14.493
 // Resonite Link Version: 0.7.0.0
 // -----------------------------------------------------------------------------
 
@@ -26,14 +26,15 @@ public global::FrooxEngine.ProtoFlux.SyncNodeOperation Toggle;
 public global::FrooxEngine.ProtoFlux.INodeOperation OnSet;
 public global::FrooxEngine.ProtoFlux.INodeOperation OnReset;
 
-public override void CollectMembers(System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members)
+public override void CollectMembers(
+    System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
-    base.CollectMembers(members);
+    base.CollectMembers(members, context);
 members.Add("Set", new ResoniteLink.EmptyElement());
 members.Add("Reset", new ResoniteLink.EmptyElement());
 members.Add("Toggle", new ResoniteLink.EmptyElement());
-members.Add("OnSet", new ResoniteLink.Reference() { });
-members.Add("OnReset", new ResoniteLink.Reference() { });
+members.Add("OnSet", OnSet.ToResoniteReference(context));
+members.Add("OnReset", OnReset.ToResoniteReference(context));
 }
 
 }
