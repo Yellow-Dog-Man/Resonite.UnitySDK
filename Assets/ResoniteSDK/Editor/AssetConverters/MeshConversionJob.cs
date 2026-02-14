@@ -40,7 +40,12 @@ public class MeshConversionJob
 
             // Send the update! 
             // We could just do it all at once, but having it pop piece by piece is more interactive and looks cooler :3
-            var update = (UpdateComponent)Provider.CollectData(manager.Converter);
+            var update = new UpdateComponent()
+            {
+                MessageID = manager.Converter.GetUniqueMessageId($"UpdateComponentWithURL_{Provider.GetType().Name}"),
+                Data = Provider.CollectData(manager.Converter),
+            };
+
             var updateResult = await link.UpdateComponent(update);
 
             if (!updateResult.Success)

@@ -7,7 +7,7 @@ using UnityEngine;
 
 public abstract class ResoniteComponent : MonoBehaviour
 {
-    public abstract ResoniteLink.AddUpdateComponent CollectData(IConversionContext context);
+    public abstract ResoniteLink.Component CollectData(IConversionContext context);
     public abstract string TypeName { get; }
     public abstract ResoniteLink.RemoveComponent GenerateRemoval(IConversionContext context);
     public abstract void RemoveIDs(IConversionContext context);
@@ -19,34 +19,16 @@ public abstract class ResoniteComponent<C> : ResoniteComponent
     [SerializeField]
     public C Data = new C();
 
-    public override ResoniteLink.AddUpdateComponent CollectData(IConversionContext context)
+    public override ResoniteLink.Component CollectData(IConversionContext context)
     {
         var component = new ResoniteLink.Component();
 
-        component.ID = context.GetIdOrAllocate(Data, out var allocated);
+        component.ID = context.GetIdOrAllocate(Data);
 
         component.Members = new Dictionary<string, ResoniteLink.Member>();
-        Data.CollectMembers(component.Members);
+        Data.CollectMembers(component.Members, context);
 
-        if (allocated)
-        {
-            // We're adding this component for the first time, so we need to indicate the type
-            // TODO!!! Generics
-            component.ComponentType = TypeName;
-
-            return new ResoniteLink.AddComponent()
-            {
-                MessageID = context.GetUniqueMessageId($"AddComponent_{typeof(C)}"),
-                ContainerSlotId = context.GetTransformSlotId(transform),
-                Data = component,
-            };
-        }
-        else
-            return new ResoniteLink.UpdateComponent()
-            {
-                MessageID = context.GetUniqueMessageId($"UpdateComponent_{typeof(C)}"),
-                Data = component
-            };
+        return component;
     }
 
     public override ResoniteLink.RemoveComponent GenerateRemoval(IConversionContext context)

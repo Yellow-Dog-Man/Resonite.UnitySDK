@@ -26,14 +26,14 @@ public class SceneConverter : IConversionContext
 
     int _messageIndex;
 
-    public string AllocateId() => $"Unity_{_idPrefix}_{_idPool++:X}";
+    public string AllocateId(ResoniteObject o = null) => $"Unity_{_idPrefix}_{o?.GetType().Name}_{_idPool++:X}";
     public string GetId(ResoniteObject o) => _idMap[o];
     public string GetIdOrAllocate(ResoniteObject o) => GetIdOrAllocate(o, out _);
     public string GetIdOrAllocate(ResoniteObject o, out bool allocated)
     {
         if(!_idMap.TryGetValue(o, out var id))
         {
-            id = AllocateId();
+            id = AllocateId(o);
             _idMap.Add(o, id);
 
             allocated = true;
@@ -82,6 +82,12 @@ public class SceneConverter : IConversionContext
         {
             try
             {
+                // For quick debug purposes
+                /*var operations = new DataModelOperationBatch();
+                operations.Operations = messages.ToList<Message>();
+                var json = System.Text.Json.JsonSerializer.Serialize(operations, ResoniteLink.LinkInterface.SerializationOptions);
+                Debug.Log(json);*/
+
                 var response = await link.RunDataModelOperationBatch(messages);
 
                 if (!response.Success)
@@ -300,14 +306,34 @@ public class SceneConverter : IConversionContext
 
         foreach (var c in components)
         {
-            var message = c.CollectData(this);
+            var data = c.CollectData(this);
 
-            messages.Add(message);
-
-            if (message is AddComponent)
+            if(_existingComponents.TryAdd(c, c.transform))
             {
-                // Ensure we keep track of it so we can send removal message when it's gone
-                _existingComponents.Add(c, c.transform);
+                // We just added this component, so we need to generate add component message
+
+                // We must assign the type when we're adding it
+                // For updates we skip, since it's no longer necessary
+                data.ComponentType = c.TypeName;
+
+                var addComponent = new AddComponent()
+                {
+                    MessageID = GetUniqueMessageId($"AddComponent_{c.GetType().Name}"),
+                    ContainerSlotId = GetTransformSlotId(c.transform),
+                    Data = data,
+                };
+
+                messages.Add(addComponent);
+            }
+            else
+            {
+                var updateComponent = new UpdateComponent()
+                {
+                    MessageID = GetUniqueMessageId($"UpdateComponent_{c.GetType().Name}"),
+                    Data = data
+                };
+
+                messages.Add(updateComponent);
             }
         }
     }
