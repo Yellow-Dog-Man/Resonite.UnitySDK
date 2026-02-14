@@ -59,5 +59,12 @@ public abstract class ResoniteSingleComponentConverter<TUnity, TResoniteWrapper>
         Binding = gameObject.AddComponent<TResoniteWrapper>();
     }
 
-    protected override void Cleanup() => DestroyImmediate(Binding);
+    protected override void Cleanup()
+    {
+        // Cleanup the binding if it still exists
+        if (Binding == null)
+            return;
+
+        DestroyImmediate(Binding);
+    }
 }
