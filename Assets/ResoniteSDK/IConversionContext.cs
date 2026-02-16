@@ -20,6 +20,8 @@ public interface IConversionContext
     #region ASSET CONVERSION
 
     IAssetProvider<FrooxEngine.Mesh> GetMesh(UnityEngine.Mesh mesh);
+    IAssetProvider<FrooxEngine.Material> GetMaterial(UnityEngine.Material material);
 
     #endregion
 }
+ 

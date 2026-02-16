@@ -1,3 +1,4 @@
+using BepuPhysics.Collidables;
 using FrooxEngine;
 using ResoniteLink;
 using System.Collections;
@@ -42,6 +43,21 @@ public class AssetConversionManager
         }
 
         return staticMesh.Data;
+    }
+
+    public IAssetProvider<FrooxEngine.Material> GetMaterial(UnityEngine.Material material)
+    {
+        // TODO!!! Actual conversion
+        var root = new GameObject($"Material - {material.name}");
+        root.transform.parent = AssetsRoot;
+
+        var pbs = root.AddComponent<PBS_MetallicWrapper>();
+
+        pbs.Data.AlbedoColor = new ColorX(Color.white);
+        pbs.Data.Enabled = true;
+        pbs.Data.persistent = true;
+
+        return pbs.Data;
     }
 
     public void ProcessConversions(LinkInterface link)

@@ -1,3 +1,4 @@
+using FrooxEngine;
 using ResoniteLink;
 using System;
 using System.Collections;
@@ -11,7 +12,7 @@ using UnityEngine;
 public class SceneConverter : IConversionContext
 {
     [SerializeField]
-    Dictionary<Transform, Slot> _transformMap = new Dictionary<Transform, Slot>();
+    Dictionary<Transform, ResoniteLink.Slot> _transformMap = new Dictionary<Transform, ResoniteLink.Slot>();
 
     [SerializeField]
     Dictionary<ResoniteComponent, Transform> _existingComponents = new Dictionary<ResoniteComponent, Transform>();
@@ -51,7 +52,8 @@ public class SceneConverter : IConversionContext
 
     #region ASSETS
 
-    public FrooxEngine.IAssetProvider<FrooxEngine.Mesh> GetMesh(Mesh mesh) => _assetConverter.GetMesh(mesh);
+    public FrooxEngine.IAssetProvider<FrooxEngine.Mesh> GetMesh(UnityEngine.Mesh mesh) => _assetConverter.GetMesh(mesh);
+    public IAssetProvider<FrooxEngine.Material> GetMaterial(UnityEngine.Material material) => _assetConverter.GetMaterial(material);
 
     public void EnsureAssetConverter()
     {
@@ -248,7 +250,7 @@ public class SceneConverter : IConversionContext
 
         if (!_transformMap.TryGetValue(transform, out var slot))
         {
-            slot = new Slot();
+            slot = new ResoniteLink.Slot();
 
             slot.ID = AllocateId();
 
@@ -279,7 +281,7 @@ public class SceneConverter : IConversionContext
         messages.Add(message);
     }
 
-    void GatherTransformData(Transform transform, Slot data)
+    void GatherTransformData(Transform transform, ResoniteLink.Slot data)
     {
         if (transform.parent == null)
             data.Parent.TargetID = "Root";
