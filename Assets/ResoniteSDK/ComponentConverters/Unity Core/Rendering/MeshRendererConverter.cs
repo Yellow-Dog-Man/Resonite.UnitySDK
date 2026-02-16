@@ -65,8 +65,7 @@ namespace FrooxEngine
 
             for(int i = 0; i < sourceMaterials.Length; i++)
             {
-                // TODO!!!
-                IAssetProvider<Material> converted = null;
+                var converted = context.GetMaterial(sourceMaterials[i]);
 
                 if (Materials.Count == i)
                     Materials.Add(converted);
