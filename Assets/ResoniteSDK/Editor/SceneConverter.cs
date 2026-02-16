@@ -52,8 +52,20 @@ public class SceneConverter : IConversionContext
 
     #region ASSETS
 
-    public FrooxEngine.IAssetProvider<FrooxEngine.Mesh> GetMesh(UnityEngine.Mesh mesh) => _assetConverter.GetMesh(mesh);
-    public IAssetProvider<FrooxEngine.Material> GetMaterial(UnityEngine.Material material) => _assetConverter.GetMaterial(material);
+    public FrooxEngine.IAssetProvider<FrooxEngine.Mesh> GetMesh(UnityEngine.Mesh mesh)
+    {
+        if (mesh == null)
+            return null;
+
+        return _assetConverter.GetMesh(mesh);
+    }
+    public IAssetProvider<FrooxEngine.Material> GetMaterial(UnityEngine.Material material)
+    {
+        if (material == null)
+            return null;
+
+        return _assetConverter.GetMaterial(material);
+    }
 
     public void EnsureAssetConverter()
     {
