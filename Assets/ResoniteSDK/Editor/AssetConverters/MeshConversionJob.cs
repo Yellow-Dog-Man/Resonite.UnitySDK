@@ -7,7 +7,7 @@ using System.Runtime.InteropServices;
 using System.Threading.Tasks;
 using UnityEngine;
 
-public class MeshConversionJob
+public class MeshConversionJob : AssetConversionJob
 {
     public const int MAX_UV_CHANNEL_COUNT = 8;
 
@@ -20,37 +20,25 @@ public class MeshConversionJob
         this.Provider = provider;
     }
 
-    public void Convert(AssetConversionManager manager, LinkInterface link)
+    protected override string AssetClass => "Mesh";
+    protected override string AssetName => Source.name;
+    protected override Message GenerateConversion() => ConvertMesh(Source);
+    protected override async Task<AssetData> SendConversion(Message message, LinkInterface link)
     {
-        var data = ConvertMesh(Source);
-        var name = Source.name;
-
-        Task.Run(async () =>
+        switch (message)
         {
-            var result = await link.ImportMesh(data);
+            case ImportMeshRawData importRawData:
+                return await link.ImportMesh(importRawData);
 
-            if (!result.Success)
-            {
-                Debug.LogError($"Failed to convert mesh {name}: {result.ErrorInfo}");
-                return;
-            }
+            default:
+                throw new NotSupportedException("Unsupported conversion message: " + message.GetType());
+        }
+    }
+    protected override ResoniteLink.Component UpdateProvider(Uri assetUrl, IConversionContext context)
+    {
+        Provider.Data.URL = assetUrl;
 
-            // Assign the URL of the converted mesh
-            Provider.Data.URL = result.AssetURL;
-
-            // Send the update! 
-            // We could just do it all at once, but having it pop piece by piece is more interactive and looks cooler :3
-            var update = new UpdateComponent()
-            {
-                MessageID = manager.Converter.GetUniqueMessageId($"UpdateComponentWithURL_{Provider.GetType().Name}"),
-                Data = Provider.CollectData(manager.Converter),
-            };
-
-            var updateResult = await link.UpdateComponent(update);
-
-            if (!updateResult.Success)
-                Debug.LogError($"Failed to update asset provider with URL: " + updateResult.ErrorInfo);
-        }).Wait();
+        return Provider.CollectData(context);
     }
 
     public static ResoniteLink.ImportMeshRawData ConvertMesh(UnityEngine.Mesh mesh)

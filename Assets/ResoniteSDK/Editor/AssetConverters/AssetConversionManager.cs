@@ -1,6 +1,8 @@
 using BepuPhysics.Collidables;
 using FrooxEngine;
+using FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Assets;
 using ResoniteLink;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Threading.Tasks;
@@ -12,11 +14,12 @@ public class AssetConversionManager
     public Transform AssetsRoot { get; private set; }
 
     Dictionary<UnityEngine.Mesh, StaticMeshWrapper> _meshes = new Dictionary<UnityEngine.Mesh, StaticMeshWrapper>();
+    Dictionary<UnityEngine.Texture2D, StaticTexture2DWrapper> _textures = new Dictionary<UnityEngine.Texture2D, StaticTexture2DWrapper>();
 
     Dictionary<UnityEngine.Material, ResoniteMaterialConverter> _materials = new Dictionary<UnityEngine.Material, ResoniteMaterialConverter>();
     Dictionary<UnityEngine.Material, FrooxEngine.IAssetProvider<FrooxEngine.Material>> _cachedMaterials = new Dictionary<UnityEngine.Material, IAssetProvider<FrooxEngine.Material>>();
 
-    Queue<MeshConversionJob> _conversions = new Queue<MeshConversionJob>();
+    Queue<AssetConversionJob> _conversions = new Queue<AssetConversionJob>();
 
     public AssetConversionManager(SceneConverter converter)
     {
@@ -32,28 +35,41 @@ public class AssetConversionManager
         _cachedMaterials.Clear();
     }
 
-    public IAssetProvider<FrooxEngine.Mesh> GetMesh(UnityEngine.Mesh mesh)
+    public IAssetProvider<FrooxEngine.Mesh> GetMesh(UnityEngine.Mesh mesh) =>
+        GetAsset<StaticMesh, StaticMeshWrapper, UnityEngine.Mesh, FrooxEngine.Mesh>(
+            mesh, mesh.name, _meshes, (provider) => new MeshConversionJob(mesh, provider));
+
+    public IAssetProvider<FrooxEngine.Texture2D> GetTexture2D(UnityEngine.Texture2D mesh) =>
+        GetAsset<StaticTexture2D, StaticTexture2DWrapper, UnityEngine.Texture2D, FrooxEngine.Texture2D>(
+            mesh, mesh.name, _textures, (provider) => new Texture2DConversionJob(mesh, provider));
+
+    TProvider GetAsset<TProvider, TWrapper, TUnity, TResonite>(TUnity unity, 
+        string name, Dictionary<TUnity, TWrapper> assets,
+        Func<TWrapper, AssetConversionJob> conversionJobGenerator)
+        where TProvider : FrooxEngine.Component, IAssetProvider<TResonite>, new()
+        where TWrapper : ResoniteComponent<TProvider>
+        where TResonite : FrooxEngine.IAsset
     {
-        if (!_meshes.TryGetValue(mesh, out var staticMesh))
+        if(!assets.TryGetValue(unity, out var wrapper))
         {
             // Provider doesn't exist yet, we need to create one and schedule conversion
-            var root = new GameObject($"Mesh - {mesh.name}");
+            var root = new GameObject($"{typeof(TResonite).Name} - {name}");
             root.transform.parent = AssetsRoot;
 
-            staticMesh = root.AddComponent<FrooxEngine.StaticMeshWrapper>();
+            wrapper = root.AddComponent<TWrapper>();
 
-            staticMesh.Data.Enabled = true;
-            staticMesh.Data.persistent = true;
+            wrapper.Data.Enabled = true;
+            wrapper.Data.persistent = true;
 
-            _meshes.Add(mesh, staticMesh);
+            assets.Add(unity, wrapper);
 
             // Create & enqueue conversion job
-            var job = new MeshConversionJob(mesh, staticMesh);
+            var job = conversionJobGenerator(wrapper);
 
             _conversions.Enqueue(job);
         }
 
-        return staticMesh.Data;
+        return wrapper.Data;
     }
 
     public IAssetProvider<FrooxEngine.Material> GetMaterial(UnityEngine.Material material)
