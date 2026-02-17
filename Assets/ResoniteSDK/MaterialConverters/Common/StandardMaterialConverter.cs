@@ -15,6 +15,17 @@ public class StandardMaterialConverter : ResoniteMaterialConverter
 
         var data = PBS.Data;
 
+        data.RenderQueue = material.renderQueue;
+
+        if (material.IsKeywordEnabled("_ALPHATEST_ON"))
+            data.BlendMode = BlendMode.Cutout;
+        else if (material.IsKeywordEnabled("_ALPHAPREMULTIPLY_ON"))
+            data.BlendMode = BlendMode.Transparent;
+        else if (material.IsKeywordEnabled("_ALPHABLEND_ON"))
+            data.BlendMode = BlendMode.Alpha;
+        else
+            data.BlendMode = BlendMode.Opaque;
+
         data.AlbedoColor = material.GetColor("_Color").ToColorX_Auto();
 
         data.AlbedoTexture = context.GetTextureAuto(material.GetTexture("_MainTex"));
