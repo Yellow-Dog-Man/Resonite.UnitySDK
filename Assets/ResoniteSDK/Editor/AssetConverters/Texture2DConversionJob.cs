@@ -8,11 +8,17 @@ using System.Threading.Tasks;
 using System.IO;
 using UnityEditor;
 using UnityEngine;
+using Elements.Assets;
 
 public class Texture2DConversionJob : AssetConversionJob
 {
     public readonly UnityEngine.Texture2D Source;
     public readonly StaticTexture2DWrapper Provider;
+
+    Renderite.Shared.TextureWrapMode _wrapModeU;
+    Renderite.Shared.TextureWrapMode _wrapModeV;
+    Renderite.Shared.TextureFilterMode _filterMode;
+    int _anisoLevel;
 
     public Texture2DConversionJob(UnityEngine.Texture2D source, StaticTexture2DWrapper provider)
     {
@@ -22,7 +28,28 @@ public class Texture2DConversionJob : AssetConversionJob
 
     protected override string AssetClass => "Texture2D";
     protected override string AssetName => Source.name;
-    protected override Message GenerateConversion() => ConvertTexture2D(Source);
+    protected override Message GenerateConversion()
+    {
+        // Cache the texture wrap mode and other properties. We'll need to update provider with these.
+        // Unity hates accessing those properties from other threads, so we have to fetch it here while
+        // we're on the main thread.
+        _wrapModeU = Source.wrapModeU.ToResoniteLink();
+        _wrapModeV = Source.wrapModeV.ToResoniteLink();
+
+        if (Source.anisoLevel > 0)
+        {
+            _anisoLevel = Source.anisoLevel;
+            _filterMode = Renderite.Shared.TextureFilterMode.Anisotropic;
+        }
+        else
+        {
+            _anisoLevel = 0;
+            _filterMode = Source.filterMode.ToResoniteLink();
+        }
+
+        return ConvertTexture2D(Source);
+    }
+
     protected override async Task<AssetData> SendConversion(Message message, LinkInterface link)
     {
         switch (message)
@@ -43,6 +70,12 @@ public class Texture2DConversionJob : AssetConversionJob
     protected override ResoniteLink.Component UpdateProvider(Uri assetUrl, IConversionContext context)
     {
         Provider.Data.URL = assetUrl;
+
+        Provider.Data.WrapModeU = _wrapModeU;
+        Provider.Data.WrapModeV = _wrapModeV;
+
+        Provider.Data.AnisotropicLevel = _anisoLevel;
+        Provider.Data.FilterMode = _filterMode;
 
         return Provider.CollectData(context);
     }
