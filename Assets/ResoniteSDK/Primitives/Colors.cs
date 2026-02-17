@@ -8,24 +8,17 @@ namespace UnityEngine
         public ColorX(Color color)
         {
             this.color = color;
-
-#if RESOLINK_BINDINGS_GENERATED
             this.profile = Renderite.Shared.ColorProfile.sRGB;
-#endif
         }
 
-#if RESOLINK_BINDINGS_GENERATED
         public ColorX(Color color, Renderite.Shared.ColorProfile profile)
         {
             this.color = color;
             this.profile = profile;
         }
-#endif
 
         public Color color;
-#if RESOLINK_BINDINGS_GENERATED
-    public Renderite.Shared.ColorProfile profile;
-#endif
+        public Renderite.Shared.ColorProfile profile;
 
         public ResoniteLink.colorX ToResoniteLink() => new ResoniteLink.colorX()
         {
@@ -34,9 +27,20 @@ namespace UnityEngine
             b = color.b,
             a = color.a,
 
-#if RESOLINK_BINDINGS_GENERATED
             Profile = profile.ToString()
-#endif
         };
+    }
+
+    public static class ColorXHelper
+    {
+        public static ColorX ToColorX(this Color color, Renderite.Shared.ColorProfile profile) =>
+            new ColorX(color, profile);
+
+        public static ColorX ToColorX_Auto(this Color color) =>
+            color.ToColorX(QualitySettings.activeColorSpace ==
+                ColorSpace.Gamma ? Renderite.Shared.ColorProfile.sRGB : Renderite.Shared.ColorProfile.Linear);
+
+        public static ColorX ToColorX_Linear(this Color color) => color.ToColorX(Renderite.Shared.ColorProfile.Linear);
+        public static ColorX ToColorX_sRGB(this Color color) => color.ToColorX(Renderite.Shared.ColorProfile.sRGB);
     }
 }

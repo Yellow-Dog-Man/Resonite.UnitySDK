@@ -79,6 +79,8 @@ public class SceneConverter : IConversionContext
 
     public void Convert(IEnumerable<Transform> roots, LinkInterface link)
     {
+        _assetConverter.BeginConversion();
+
         // First update all component conversions
         foreach (var root in roots)
             UpdateComponentConversions(root);

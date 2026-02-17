@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
+using UnityEngine;
 using UnityEditor;
 
 public static class ComponentConverterRepository
@@ -19,7 +21,7 @@ public static class ComponentConverterRepository
 
     static ComponentConverterRepository()
     {
-        foreach(var converter in TypeCache.GetTypesDerivedFrom<ResoniteComponentConverter>())
+        foreach (var converter in TypeCache.GetTypesDerivedFrom<ResoniteComponentConverter>())
         {
             // Ignore abstract ones
             if (converter.IsAbstract)
