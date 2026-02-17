@@ -3,15 +3,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[MaterialConverter(false, "Standard")]
-public class StandardMaterialConverter : ResoniteMaterialConverter
+public abstract class StandardBaseConverter<TWrapper, TMaterial> : ResoniteMaterialConverter
+    where TWrapper : ResoniteComponent<TMaterial>
+    where TMaterial : FrooxEngine.PBS_Material, new()
 {
-    public FrooxEngine.PBS_MetallicWrapper PBS;
+    public TWrapper PBS;
 
     public override IAssetProvider<FrooxEngine.Material> UpdateConversion(UnityEngine.Material material, IConversionContext context)
     {
         if (PBS == null)
-            PBS = gameObject.AddComponent<FrooxEngine.PBS_MetallicWrapper>();
+            PBS = gameObject.AddComponent<TWrapper>();
 
         var data = PBS.Data;
 
@@ -26,19 +27,14 @@ public class StandardMaterialConverter : ResoniteMaterialConverter
         else
             data.BlendMode = BlendMode.Opaque;
 
-        data.AlbedoColor = material.GetColor("_Color").ToColorX_Auto();
+        data.AlphaCutoff = material.GetFloat("_Cutoff");
 
+        data.AlbedoColor = material.GetColor("_Color").ToColorX_Auto();
         data.AlbedoTexture = context.GetTextureAuto(material.GetTexture("_MainTex"));
         data.TextureScale = material.GetTextureScale("_MainTex");
         data.TextureOffset = material.GetTextureOffset("_MainTex");
 
         data.NormalMap = context.GetTextureAuto(material.GetTexture("_BumpMap"));
-
-        data.AlphaCutoff = material.GetFloat("_Cutoff");
-        data.Smoothness = material.GetFloat("_Glossiness");
-
-        data.Metallic = material.GetFloat("_Metallic");
-
         data.NormalScale = material.GetFloat("_BumpScale");
 
         data.HeightScale = material.GetFloat("_Parallax");
@@ -46,7 +42,7 @@ public class StandardMaterialConverter : ResoniteMaterialConverter
 
         data.OcclusionMap = context.GetTextureAuto(material.GetTexture("_OcclusionMap"));
 
-        if(material.IsKeywordEnabled("_EMISSION"))
+        if (material.IsKeywordEnabled("_EMISSION"))
         {
             data.EmissiveColor = material.GetColor("_EmissionColor").ToColorX_Linear();
             data.EmissiveMap = context.GetTextureAuto(material.GetTexture("_EmissionMap"));
@@ -57,6 +53,6 @@ public class StandardMaterialConverter : ResoniteMaterialConverter
             data.EmissiveColor = Color.black.ToColorX_Linear();
         }
 
-        return data;
+        return PBS.Data;
     }
 }
