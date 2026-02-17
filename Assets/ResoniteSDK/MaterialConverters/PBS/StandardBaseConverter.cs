@@ -30,9 +30,9 @@ public abstract class StandardBaseConverter<TWrapper, TMaterial> : ResoniteMater
         data.AlphaCutoff = material.GetFloat("_Cutoff");
 
         data.AlbedoColor = material.GetColor("_Color").ToColorX_Auto();
-        data.AlbedoTexture = context.GetTextureAuto(material.GetTexture("_MainTex"));
-        data.TextureScale = material.GetTextureScale("_MainTex");
-        data.TextureOffset = material.GetTextureOffset("_MainTex");
+        data.AlbedoTexture = context.GetTextureAuto(material.mainTexture);
+        data.TextureScale = material.mainTextureScale;
+        data.TextureOffset = material.mainTextureOffset;
 
         data.NormalMap = context.GetTextureAuto(material.GetTexture("_BumpMap"));
         data.NormalScale = material.GetFloat("_BumpScale");
