@@ -17,6 +17,12 @@ public class StandardMaterialConverter : ResoniteMaterialConverter
 
         data.AlbedoColor = material.GetColor("_Color").ToColorX_Auto();
 
+        data.AlbedoTexture = context.GetTextureAuto(material.GetTexture("_MainTex"));
+        data.TextureScale = material.GetTextureScale("_MainTex");
+        data.TextureOffset = material.GetTextureOffset("_MainTex");
+
+        data.NormalMap = context.GetTextureAuto(material.GetTexture("_BumpMap"));
+
         data.AlphaCutoff = material.GetFloat("_Cutoff");
         data.Smoothness = material.GetFloat("_Glossiness");
 
@@ -25,10 +31,14 @@ public class StandardMaterialConverter : ResoniteMaterialConverter
         data.NormalScale = material.GetFloat("_BumpScale");
 
         data.HeightScale = material.GetFloat("_Parallax");
+        data.HeightMap = context.GetTextureAuto(material.GetTexture("_ParallaxMap"));
+
+        data.OcclusionMap = context.GetTextureAuto(material.GetTexture("_OcclusionMap"));
 
         if(material.IsKeywordEnabled("_EMISSION"))
         {
             data.EmissiveColor = material.GetColor("_EmissionColor").ToColorX_Linear();
+            data.EmissiveMap = context.GetTextureAuto(material.GetTexture("_EmissionMap"));
         }
         else
         {

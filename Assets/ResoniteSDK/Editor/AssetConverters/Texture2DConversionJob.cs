@@ -1,0 +1,174 @@
+﻿using FrooxEngine;
+using ResoniteLink;
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Runtime.InteropServices;
+using System.Threading.Tasks;
+using System.IO;
+using UnityEditor;
+using UnityEngine;
+
+public class Texture2DConversionJob : AssetConversionJob
+{
+    public readonly UnityEngine.Texture2D Source;
+    public readonly StaticTexture2DWrapper Provider;
+
+    public Texture2DConversionJob(UnityEngine.Texture2D source, StaticTexture2DWrapper provider)
+    {
+        Source = source;
+        Provider = provider;
+    }
+
+    protected override string AssetClass => "Texture2D";
+    protected override string AssetName => Source.name;
+    protected override Message GenerateConversion() => ConvertTexture2D(Source);
+    protected override async Task<AssetData> SendConversion(Message message, LinkInterface link)
+    {
+        switch (message)
+        {
+            case ImportTexture2DFile importFile:
+                return await link.ImportTexture(importFile);
+
+            case ImportTexture2DRawData importRawData:
+                return await link.ImportTexture(importRawData);
+
+            case ImportTexture2DRawDataHDR importRawDataHDR:
+                return await link.ImportTexture(importRawDataHDR);
+
+            default:
+                throw new NotSupportedException("Unsupported conversion message: " + message.GetType());
+        }
+    }
+    protected override ResoniteLink.Component UpdateProvider(Uri assetUrl, IConversionContext context)
+    {
+        Provider.Data.URL = assetUrl;
+
+        return Provider.CollectData(context);
+    }
+
+    public static ResoniteLink.Message ConvertTexture2D(UnityEngine.Texture2D texture)
+    {
+        // First try to import it as a file. This is easiest and will preserve most data
+        // Rather than just extracting the raw pixels
+        var assetPath = AssetDatabase.GetAssetPath(texture);
+
+        if (!string.IsNullOrWhiteSpace(assetPath))
+        {
+            assetPath = Path.GetFullPath(assetPath);
+
+            if(File.Exists(assetPath) && IsFileSupportedByResonite(assetPath))
+                return new ImportTexture2DFile() { FilePath = assetPath };
+        }
+
+        // It is not supported directly, so we have to extract the raw data and send it over
+        if (IsHDR(texture))
+        {
+            var import = new ImportTexture2DRawDataHDR()
+            {
+                Width = texture.width,
+                Height = texture.height,
+            };
+
+            var data = import.AccessRawData();
+            var pixels = texture.GetPixels(0);
+
+            for (int y = 0; y < import.Height; y++)
+                for(int x = 0; x < import.Width; x++)
+                {
+                    var c = pixels[x + y * import.Width];
+                    data[x, y] = c.ToResoniteLink();
+                }
+
+            return import;
+        }
+        else
+        {
+            var import = new ImportTexture2DRawData()
+            {
+                Width = texture.width,
+                Height = texture.height,
+            };
+
+            var data = import.AccessRawData();
+            var pixels = texture.GetPixels32(0);
+
+            for (int y = 0; y < import.Height; y++)
+                for (int x = 0; x < import.Width; x++)
+                {
+                    var c = pixels[x + y * import.Width];
+                    data[x, y] = c.ToResoniteLink();
+                }
+
+            return import;
+        }
+    }
+
+    /// <summary>
+    /// Determines if given texture asset is supported to be imported as a file
+    /// </summary>
+    /// <param name="assetPath">Path to the asset file</param>
+    /// <returns>True if Resonite should support this file directly</returns>
+    public static bool IsFileSupportedByResonite(string assetPath)
+    {
+        // Just a simple heuristic using the most common formats that Resonite supports
+        // Could potentially be expanded in the future
+        var extension = Path.GetExtension(assetPath).ToLowerInvariant();
+
+        switch(extension)
+        {
+            case ".jpg":
+            case ".jpeg":
+            case ".jif":
+
+            case ".png":
+
+            case ".webp":
+
+            case ".bmp":
+            case ".ico":
+            case ".gif":
+
+            case ".tga":
+
+            case ".tif":
+            case ".tiff":
+
+            case ".psd":
+            case ".dng":
+
+                // HDR
+            case ".exr":
+            case ".hdr":
+                return true;
+
+            default:
+                return false;
+        }
+    }
+
+    /// <summary>
+    /// Determines if given Texture2D contains HDR data or not
+    /// </summary>
+    /// <param name="texture">Texture to determine</param>
+    /// <returns>True if it contains HDR data</returns>
+    public static bool IsHDR(UnityEngine.Texture2D texture)
+    {
+        switch (texture.format)
+        {
+            case TextureFormat.RHalf:
+            case TextureFormat.RGHalf:
+            case TextureFormat.RGBAHalf:
+
+            case TextureFormat.RFloat:
+            case TextureFormat.RGFloat:
+            case TextureFormat.RGBAFloat:
+
+            case TextureFormat.BC6H:
+                return true;
+
+            default:
+                return false;
+        }
+    }
+}

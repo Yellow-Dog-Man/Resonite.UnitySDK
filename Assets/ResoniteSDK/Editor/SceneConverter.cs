@@ -59,6 +59,31 @@ public class SceneConverter : IConversionContext
 
         return _assetConverter.GetMesh(mesh);
     }
+
+    public FrooxEngine.IAssetProvider<FrooxEngine.ITexture2D> GetTextureAuto(UnityEngine.Texture texture)
+    {
+        if (texture == null)
+            return null;
+
+        switch(texture)
+        {
+            case UnityEngine.Texture2D texture2D:
+                return (FrooxEngine.IAssetProvider<FrooxEngine.ITexture2D>)GetTexture2D(texture2D);
+
+            default:
+                Debug.LogWarning($"Unsupported texture type: {texture.GetType()}");
+                return null;
+        }
+    }
+
+    public FrooxEngine.IAssetProvider<FrooxEngine.Texture2D> GetTexture2D(UnityEngine.Texture2D texture)
+    {
+        if (texture == null)
+            return null;
+
+        return _assetConverter.GetTexture2D(texture);
+    }
+
     public IAssetProvider<FrooxEngine.Material> GetMaterial(UnityEngine.Material material)
     {
         if (material == null)
