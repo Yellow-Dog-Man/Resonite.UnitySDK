@@ -66,7 +66,12 @@ public class ResoniteLinkWindow : EditorWindow
         GUI.enabled = State == ConnectionState.Connected;
 
         if (GUILayout.Button("Send Current Scene"))
-            SendCurrentScene(); 
+            SendCurrentScene();
+
+        GUI.enabled = true;
+
+        if (GUILayout.Button("Cleanup Converters"))
+            CleanupConverters();
     }
 
     void SendCurrentScene()
@@ -111,6 +116,15 @@ public class ResoniteLinkWindow : EditorWindow
                 __linkInterface.Dispose();
             });
         }
+    }
+
+    void CleanupConverters()
+    {
+        var roots = SceneManager.GetActiveScene().GetRootGameObjects();
+
+        foreach (var root in roots)
+            foreach (var converter in root.GetComponentsInChildren<ResoniteComponentConverter>())
+                DestroyImmediate(converter);
     }
 
     string ConnectButtonLabel => State switch
