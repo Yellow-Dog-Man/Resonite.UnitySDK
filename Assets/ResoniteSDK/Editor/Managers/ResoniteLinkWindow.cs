@@ -71,6 +71,9 @@ public class ResoniteLinkWindow : EditorWindow
 
     void SendCurrentScene()
     {
+        if(_converter == null)
+            _converter = new SceneConverter();
+
         // TODO!!! Better wrap this around?
         _converter.EnsureAssetConverter();
 
