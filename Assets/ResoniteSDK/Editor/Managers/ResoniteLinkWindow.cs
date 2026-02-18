@@ -23,12 +23,15 @@ public class ResoniteLinkWindow : EditorWindow
     {
         get
         {
-            if (_linkInterface == null)
-                return ConnectionState.Disconnected;
-            else if (_linkInterface.IsConnected)
-                return ConnectionState.Connected;
-            else
-                return ConnectionState.Connecting;
+            if(_linkInterface != null)
+            {
+                if (_linkInterface.IsConnected)
+                    return ConnectionState.Connected;
+                else if (_connecting)
+                    return ConnectionState.Connecting;
+            }
+
+            return ConnectionState.Disconnected;
         }
     }
 
@@ -37,6 +40,7 @@ public class ResoniteLinkWindow : EditorWindow
 
     string _lastConnectionError;
     LinkInterface _linkInterface;
+    bool _connecting;
 
     [MenuItem("Resonite SDK/Open Resonite SDK Manager")]
     public static void ShowWindow()
@@ -93,7 +97,12 @@ public class ResoniteLinkWindow : EditorWindow
 
         if (State == ConnectionState.Disconnected)
         {
+            // Cleanup any previous interface if it exists
+            _linkInterface?.Dispose();
+
+            _connecting = true;
             _linkInterface = new LinkInterface();
+
             Task.Run(async () =>
             {
                 try
@@ -103,6 +112,14 @@ public class ResoniteLinkWindow : EditorWindow
                 catch(System.Exception ex)
                 {
                     _lastConnectionError = ex.Message;
+
+                    // Cleanup
+                    _linkInterface.Dispose();
+                    _linkInterface = null;
+                }
+                finally
+                {
+                    _connecting = false;
                 }
             });
         }
