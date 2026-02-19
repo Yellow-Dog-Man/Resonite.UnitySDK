@@ -3,6 +3,7 @@ using ResoniteLink;
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Threading.Tasks;
 using Unity.VisualScripting;
@@ -220,7 +221,9 @@ public class SceneConverter : IConversionContext
 
     void UpdateComponentConversions(Transform root)
     {
-        var components = root.GetComponents<UnityEngine.Component>();
+        var components = new List<UnityEngine.Component>();
+
+        root.GetComponents<UnityEngine.Component>(components);
         var converterMap = new Dictionary<UnityEngine.Component, ResoniteComponentConverter>();
 
         // First get all the converters
@@ -234,32 +237,46 @@ public class SceneConverter : IConversionContext
                     converterMap.Add(converter.Target, converter);
             }
 
-        foreach(var component in root.GetComponents<UnityEngine.Component>())
+        // Re-fetch the components, because some might've been destroyed in the previous step
+        components.Clear();
+        root.GetComponents<UnityEngine.Component>(components);
+
+        // Filter out the converters or the converted components, those don't need to be converted!
+        components.RemoveAll(c => c is ResoniteComponentConverter || c is ResoniteComponent);
+
+        // Get converters for all the types we have
+        var converters = new Dictionary<UnityEngine.Component, ConverterInfo>();
+
+        foreach(var component in components)
         {
-            // We might've just destroyed some of the components in previous step when removing converters
-            // Skip over these
+            var converter = ComponentConverterRepository.TryGetConverter(component.GetType());
+
+            if (converter == null)
+                continue;
+
+            converters.Add(component, converter);
+        }
+
+        // Run supression for all converters if present. This will remove any components that should not be converted directly
+        foreach (var converter in converters.Values)
+            converter.SupressionHandler?.Invoke(root, components);
+
+        // Update/instantiate converters for all the components that we should process
+        foreach(var component in components)
+        {
+            // We might've just destroyed some of the components in previous iterations - e.g. converters
+            // can add/remove more components, so skip those just in case
             if (component == null)
-                continue;
-
-            // Converters don't need to be converted - they're the ones doing the conversions!
-            if (component is ResoniteComponentConverter)
-                continue;
-
-            // Ignore the Resonite components too - they're already converted (or manually attached)!
-            if (component is ResoniteComponent)
-                continue;
+                continue;            
 
             if(!converterMap.TryGetValue(component, out var converter))
             {
-                // There's no converter for this. Check if one is supported
-                var converterType = ComponentConverterRepository.TryGetConverter(component.GetType());
-
-                // There's no converter for this, so just ignore it
-                if (converterType == null)
+                // There's no existing converter for this. Check if one is supported. If not ignore it
+                if (!converters.TryGetValue(component, out var converterInfo))
                     continue;
 
                 // Create a new converter instance
-                converter = (ResoniteComponentConverter)root.gameObject.AddComponent(converterType);
+                converter = (ResoniteComponentConverter)root.gameObject.AddComponent(converterInfo.Type);
                 converter.Initialize(component);
 
                 converterMap.Add(component, converter);
