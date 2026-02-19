@@ -85,6 +85,11 @@ public static class FieldArrayConverter
             if(type == typeof(UnityEngine.RectInt?))
                 return (value as UnityEngine.RectInt?)?.ToResoniteLink().ToResoniteLinkField();
 
+                        if(value is UnityEngine.Bounds value_Bounds)
+                return value_Bounds.ToResoniteLink().ToResoniteLinkField();
+            if(type == typeof(UnityEngine.Bounds?))
+                return (value as UnityEngine.Bounds?)?.ToResoniteLink().ToResoniteLinkField();
+
                         if(value is UnityEngine.QuaternionDouble value_QuaternionDouble)
                 return value_QuaternionDouble.ToResoniteLink().ToResoniteLinkField();
             if(type == typeof(UnityEngine.QuaternionDouble?))
@@ -569,6 +574,21 @@ public static class FieldArrayConverter
                 if(type == typeof(IntRect?))
                 {
                     var field = new Field_Nullable_IntRect();
+                    field.BoxedValue = value;
+                    return field;
+                }
+                
+                        if(type == typeof(BoundingBox))
+            {
+                var field = new Field_BoundingBox();
+                field.BoxedValue = value;
+                return field;
+            }
+
+                            
+                if(type == typeof(BoundingBox?))
+                {
+                    var field = new Field_Nullable_BoundingBox();
                     field.BoxedValue = value;
                     return field;
                 }
@@ -1219,6 +1239,8 @@ public static class FieldArrayConverter
                 return values_Rect.Select(v => v.ToResoniteLink()).ToResoniteLinkArray();
                         if(values is IEnumerable<UnityEngine.RectInt> values_RectInt)
                 return values_RectInt.Select(v => v.ToResoniteLink()).ToResoniteLinkArray();
+                        if(values is IEnumerable<UnityEngine.Bounds> values_Bounds)
+                return values_Bounds.Select(v => v.ToResoniteLink()).ToResoniteLinkArray();
                         if(values is IEnumerable<UnityEngine.QuaternionDouble> values_QuaternionDouble)
                 return values_QuaternionDouble.Select(v => v.ToResoniteLink()).ToResoniteLinkArray();
                         if(values is IEnumerable<UnityEngine.ColorX> values_ColorX)
@@ -1419,6 +1441,12 @@ public static class FieldArrayConverter
             {
                 var array = new Array_IntRect();
                 array.Values = values.Cast<IntRect>().ToList();
+                return array;
+            }
+                        if(type == typeof(BoundingBox))
+            {
+                var array = new Array_BoundingBox();
+                array.Values = values.Cast<BoundingBox>().ToList();
                 return array;
             }
                         if(type == typeof(float2))

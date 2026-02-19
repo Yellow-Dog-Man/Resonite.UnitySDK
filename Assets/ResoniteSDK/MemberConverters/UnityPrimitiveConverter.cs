@@ -40,4 +40,10 @@ public static class UnityPrimitiveConverter
         position = r.position.ToResoniteLink(),
         size = r.size.ToResoniteLink()
     };
+
+    public static ResoniteLink.BoundingBox ToResoniteLink(this UnityEngine.Bounds b) => new ResoniteLink.BoundingBox()
+    {
+        min = b.min.ToResoniteLink(),
+        max = b.max.ToResoniteLink()
+    };
 }

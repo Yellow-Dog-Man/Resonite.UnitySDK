@@ -33,6 +33,7 @@ List<string> unityPrimitives = new List<string>()
 
     "Rect",
     "RectInt",
+    "Bounds",
 
     // Custom extensions
     "QuaternionDouble",
@@ -114,6 +115,7 @@ List<string> standaloneTypes = new List<string>
 
     "Rect",
     "IntRect",
+    "BoundingBox",
 };
 
 List<string> vectorTypes = new List<string>
