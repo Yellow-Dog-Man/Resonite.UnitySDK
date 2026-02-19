@@ -2,9 +2,9 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [ProtoFluxBindings]FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Cloud.WriteObjectCloudVariable<>
-// Generated on: sobota 14. února 2026 8:58:30
-// Resonite version: 2026.2.14.493
-// Resonite Link Version: 0.7.0.0
+// Generated on: čtvrtek 19. února 2026 8:00:16
+// Resonite version: 2026.2.19.471
+// Resonite Link Version: 1.0.0.0
 // -----------------------------------------------------------------------------
 
 using UnityEngine;
