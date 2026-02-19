@@ -17,7 +17,7 @@ public class StandardSpecularConverter : StandardBaseConverter<PBS_SpecularWrapp
         // Resonite uses the alpha channel to determine the glossiness
         specColor.a = material.GetFloat("_Glossiness");
 
-        data.SpecularColor = specColor.ToColorX_Linear();
+        data.SpecularColor = specColor.ToColorX_sRGB();
         data.SpecularMap = context.GetTextureAuto(material.GetTexture("_SpecGlossMap"));
 
         return provider;

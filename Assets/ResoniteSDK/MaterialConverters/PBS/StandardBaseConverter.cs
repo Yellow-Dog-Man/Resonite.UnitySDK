@@ -29,7 +29,7 @@ public abstract class StandardBaseConverter<TWrapper, TMaterial> : ResoniteMater
 
         data.AlphaCutoff = material.GetFloat("_Cutoff");
 
-        data.AlbedoColor = material.GetColor("_Color").ToColorX_Auto();
+        data.AlbedoColor = material.GetColor("_Color").ToColorX_sRGB();
         data.AlbedoTexture = context.GetTextureAuto(material.mainTexture);
         data.TextureScale = material.mainTextureScale;
         data.TextureOffset = material.mainTextureOffset;
@@ -44,13 +44,13 @@ public abstract class StandardBaseConverter<TWrapper, TMaterial> : ResoniteMater
 
         if (material.IsKeywordEnabled("_EMISSION"))
         {
-            data.EmissiveColor = material.GetColor("_EmissionColor").ToColorX_Linear();
+            data.EmissiveColor = material.GetColor("_EmissionColor").ToColorX_sRGB();
             data.EmissiveMap = context.GetTextureAuto(material.GetTexture("_EmissionMap"));
         }
         else
         {
             // There's no actual toggle for emission on the Resonite version, so just set it to black
-            data.EmissiveColor = Color.black.ToColorX_Linear();
+            data.EmissiveColor = Color.black.ToColorX_sRGB();
         }
 
         return PBS.Data;
