@@ -118,8 +118,6 @@ public class CubemapConversionJob : AssetConversionJob
                     default: throw new ArgumentException($"Invalid face: {unityFace}");
                 }
 
-                Debug.Log($"Converting face {face}. Mip: {mip}. DataSize: {data.width}x{data.height}. Pixels: {pixels.Length}");
-
                 for (int y = 0; y < data.height; y++)
                     for(int x = 0; x < data.width; x++)
                     {
