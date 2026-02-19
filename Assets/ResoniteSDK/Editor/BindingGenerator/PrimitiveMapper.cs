@@ -58,6 +58,7 @@ public static class PrimitiveMapper
 
             case "Rect": return typeof(UnityEngine.Rect);
             case "IntRect": return typeof(UnityEngine.RectInt);
+            case "BoundingBox": return typeof(UnityEngine.Bounds);
             #endregion
 
             #region MISC
