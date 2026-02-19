@@ -20,6 +20,9 @@ public class Texture2DConversionJob : AssetConversionJob
     Renderite.Shared.TextureFilterMode _filterMode;
     int _anisoLevel;
     bool _uncompressed;
+    bool _crunchCompressed;
+    bool _mipMaps;
+    bool _readable;
 
     public Texture2DConversionJob(UnityEngine.Texture2D source, StaticTexture2DWrapper provider)
     {
@@ -48,9 +51,14 @@ public class Texture2DConversionJob : AssetConversionJob
             _filterMode = Source.filterMode.ToResoniteLink();
         }
 
+        _mipMaps = Source.mipmapCount > 1;
+
         // If the format is not compressed in Unity, we should also avoid compression
         // This is improtant for texturew with lots of colors, pixel art and such
         _uncompressed = !Source.format.IsCompressed();
+        _crunchCompressed = Source.format.IsCrunchCompressed();
+
+        _readable = Source.isReadable;
 
         return ConvertTexture2D(Source);
     }
@@ -82,7 +90,11 @@ public class Texture2DConversionJob : AssetConversionJob
         Provider.Data.AnisotropicLevel = _anisoLevel;
         Provider.Data.FilterMode = _filterMode;
 
+        Provider.Data.MipMaps = _mipMaps;
         Provider.Data.Uncompressed = _uncompressed;
+        Provider.Data.CrunchCompressed = _crunchCompressed;
+
+        Provider.Data.Readable = _readable;
 
         return Provider.CollectData(context);
     }
