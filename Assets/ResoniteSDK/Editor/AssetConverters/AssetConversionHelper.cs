@@ -34,6 +34,38 @@ public static class AssetConversionHelper
     }
 
     /// <summary>
+    /// Determines if given texture format is VRAM compressed or not
+    /// </summary>
+    /// <param name="format">Format to determine</param>
+    /// <returns>True if it's VRAM compressed format</returns>
+    public static bool IsCompressed(this TextureFormat format)
+    {
+        switch(format)
+        {
+            case TextureFormat.DXT1:
+            case TextureFormat.DXT1Crunched:
+            case TextureFormat.DXT5:
+            case TextureFormat.DXT5Crunched:
+            case TextureFormat.BC4:
+            case TextureFormat.BC5:
+            case TextureFormat.BC6H:
+            case TextureFormat.BC7:
+
+            case TextureFormat.ETC_RGB4:
+            case TextureFormat.ETC_RGB4Crunched:
+
+            case TextureFormat.ETC2_RGB:
+            case TextureFormat.ETC2_RGBA8:
+            case TextureFormat.ETC2_RGBA8Crunched:
+
+                return true;
+
+            default:
+                return false;
+        }
+    }
+
+    /// <summary>
     /// Determines if given texture asset is supported to be imported as a file
     /// </summary>
     /// <param name="assetPath">Path to the asset file</param>
