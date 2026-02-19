@@ -7,9 +7,21 @@ using System.Threading.Tasks;
 using UnityEngine;
 using UnityEditor;
 
+public class ConverterInfo
+{
+    public Type Type { get; private set; }
+    public ConversionSupressionHandler SupressionHandler { get; private set; }
+
+    public ConverterInfo(Type type, ConversionSupressionHandler supressionHandler)
+    {
+        this.Type = type;
+        this.SupressionHandler = supressionHandler;
+    }
+}
+
 public static class ComponentConverterRepository
 {
-    public static Type TryGetConverter(Type unityType)
+    public static ConverterInfo TryGetConverter(Type unityType)
     {
         if (_converters.TryGetValue(unityType, out var converter))
             return converter;
@@ -17,7 +29,7 @@ public static class ComponentConverterRepository
         return null;
     }
 
-    static Dictionary<Type, Type> _converters = new Dictionary<Type, Type>();
+    static Dictionary<Type, ConverterInfo> _converters = new Dictionary<Type, ConverterInfo>();
 
     static ComponentConverterRepository()
     {
@@ -30,7 +42,26 @@ public static class ComponentConverterRepository
             // Determine the type it converts from the generic base type
             var unityType = GetUnityComponentType(converter);
 
-            _converters.Add(unityType, converter);
+            var supressionHandlers = converter.GetMethods(BindingFlags.Static | BindingFlags.Public).
+                Where(m => m.GetCustomAttribute<ConverterSupressionHandlerAttribute>() != null).ToList();
+
+            if (supressionHandlers.Count > 1)
+                Debug.LogWarning($"Converter {converter.GetType().FullName} has multiple supression handler methods. Only one is supported");
+
+            ConversionSupressionHandler supressionHandler = null;
+
+            try
+            {
+                if (supressionHandlers.Count > 0)
+                    supressionHandler = (ConversionSupressionHandler)supressionHandlers[0].CreateDelegate(typeof(ConversionSupressionHandler));
+            }
+            catch(Exception ex)
+            {
+                Debug.LogWarning($"Failed to get conversion supression handler for converter {converter.GetType().FullName}. " +
+                    $"Is the method signature correct?");
+            }
+
+            _converters.Add(unityType, new ConverterInfo(converter, supressionHandler));
         }
     }
 
