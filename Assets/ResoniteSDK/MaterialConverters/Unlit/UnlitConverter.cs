@@ -24,9 +24,9 @@ public class UnlitTransparentConverter : ResoniteMaterialConverter
 
         // Make sure we have proper tint color set
         if (material.shader.name == "Unlit/Color")
-            data.TintColor = material.GetColor("_Color").ToColorX_Auto();
+            data.TintColor = material.GetColor("_Color").ToColorX_sRGB();
         else
-            data.TintColor = Color.white.ToColorX_Auto();
+            data.TintColor = Color.white.ToColorX_sRGB();
 
         data.Texture = context.GetTextureAuto(material.mainTexture);
         data.TextureScale = material.mainTextureScale;
