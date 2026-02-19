@@ -90,12 +90,12 @@ public class Texture2DConversionJob : AssetConversionJob
         {
             assetPath = Path.GetFullPath(assetPath);
 
-            if(File.Exists(assetPath) && IsFileSupportedByResonite(assetPath))
+            if(File.Exists(assetPath) && AssetConversionHelper.IsTextureFileSupportedByResonite(assetPath))
                 return new ImportTexture2DFile() { FilePath = assetPath };
         }
 
         // It is not supported directly, so we have to extract the raw data and send it over
-        if (IsHDR(texture))
+        if (texture.format.IsHDR())
         {
             var import = new ImportTexture2DRawDataHDR()
             {
@@ -134,74 +134,6 @@ public class Texture2DConversionJob : AssetConversionJob
                 }
 
             return import;
-        }
-    }
-
-    /// <summary>
-    /// Determines if given texture asset is supported to be imported as a file
-    /// </summary>
-    /// <param name="assetPath">Path to the asset file</param>
-    /// <returns>True if Resonite should support this file directly</returns>
-    public static bool IsFileSupportedByResonite(string assetPath)
-    {
-        // Just a simple heuristic using the most common formats that Resonite supports
-        // Could potentially be expanded in the future
-        var extension = Path.GetExtension(assetPath).ToLowerInvariant();
-
-        switch(extension)
-        {
-            case ".jpg":
-            case ".jpeg":
-            case ".jif":
-
-            case ".png":
-
-            case ".webp":
-
-            case ".bmp":
-            case ".ico":
-            case ".gif":
-
-            case ".tga":
-
-            case ".tif":
-            case ".tiff":
-
-            case ".psd":
-            case ".dng":
-
-                // HDR
-            case ".exr":
-            case ".hdr":
-                return true;
-
-            default:
-                return false;
-        }
-    }
-
-    /// <summary>
-    /// Determines if given Texture2D contains HDR data or not
-    /// </summary>
-    /// <param name="texture">Texture to determine</param>
-    /// <returns>True if it contains HDR data</returns>
-    public static bool IsHDR(UnityEngine.Texture2D texture)
-    {
-        switch (texture.format)
-        {
-            case TextureFormat.RHalf:
-            case TextureFormat.RGHalf:
-            case TextureFormat.RGBAHalf:
-
-            case TextureFormat.RFloat:
-            case TextureFormat.RGFloat:
-            case TextureFormat.RGBAFloat:
-
-            case TextureFormat.BC6H:
-                return true;
-
-            default:
-                return false;
         }
     }
 }
