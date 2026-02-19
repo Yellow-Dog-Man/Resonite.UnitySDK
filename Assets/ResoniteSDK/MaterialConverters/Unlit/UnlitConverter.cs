@@ -3,7 +3,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[MaterialConverter(false, "Unlit/Transparent", "Unlit/Transparent Cutout")]
+[MaterialConverter(false, 
+    "Unlit/Transparent", 
+    "Unlit/Transparent Cutout",
+    "Unlit/Texture",
+    "Unlit/Color"
+    )]
 public class UnlitTransparentConverter : ResoniteMaterialConverter
 {
     public FrooxEngine.UnlitMaterialWrapper Unlit;
@@ -18,7 +23,10 @@ public class UnlitTransparentConverter : ResoniteMaterialConverter
         data.RenderQueue = material.renderQueue;
 
         // Make sure we have proper tint color set
-        data.TintColor = Color.white.ToColorX_Auto();
+        if (material.shader.name == "Unlit/Color")
+            data.TintColor = material.GetColor("_Color").ToColorX_Auto();
+        else
+            data.TintColor = Color.white.ToColorX_Auto();
 
         data.Texture = context.GetTextureAuto(material.mainTexture);
         data.TextureScale = material.mainTextureScale;
@@ -33,6 +41,11 @@ public class UnlitTransparentConverter : ResoniteMaterialConverter
             case "Unlit/Transparent Cutout":
                 data.BlendMode = BlendMode.Cutout;
                 data.AlphaCutoff = material.GetFloat("_Cutoff");
+                break;
+
+            case "Unlit/Texture":
+            case "Unlit/Color":
+                data.BlendMode = BlendMode.Opaque;
                 break;
         }
 
