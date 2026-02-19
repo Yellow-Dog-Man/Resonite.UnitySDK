@@ -84,6 +84,14 @@ public class SceneConverter : IConversionContext
         return _assetConverter.GetTexture2D(texture);
     }
 
+    public FrooxEngine.IAssetProvider<FrooxEngine.Cubemap> GetCubemap(UnityEngine.Cubemap cubemap)
+    {
+        if (cubemap == null)
+            return null;
+
+        return _assetConverter.GetCubemap(cubemap);
+    }
+
     public IAssetProvider<FrooxEngine.Material> GetMaterial(UnityEngine.Material material)
     {
         if (material == null)

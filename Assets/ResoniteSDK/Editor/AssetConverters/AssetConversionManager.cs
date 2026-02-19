@@ -15,6 +15,7 @@ public class AssetConversionManager
 
     Dictionary<UnityEngine.Mesh, StaticMeshWrapper> _meshes = new Dictionary<UnityEngine.Mesh, StaticMeshWrapper>();
     Dictionary<UnityEngine.Texture2D, StaticTexture2DWrapper> _textures = new Dictionary<UnityEngine.Texture2D, StaticTexture2DWrapper>();
+    Dictionary<UnityEngine.Cubemap, StaticCubemapWrapper> _cubemaps = new Dictionary<UnityEngine.Cubemap, StaticCubemapWrapper>();
 
     Dictionary<UnityEngine.Material, ResoniteMaterialConverter> _materials = new Dictionary<UnityEngine.Material, ResoniteMaterialConverter>();
     Dictionary<UnityEngine.Material, FrooxEngine.IAssetProvider<FrooxEngine.Material>> _cachedMaterials = new Dictionary<UnityEngine.Material, IAssetProvider<FrooxEngine.Material>>();
@@ -42,6 +43,10 @@ public class AssetConversionManager
     public IAssetProvider<FrooxEngine.Texture2D> GetTexture2D(UnityEngine.Texture2D mesh) =>
         GetAsset<StaticTexture2D, StaticTexture2DWrapper, UnityEngine.Texture2D, FrooxEngine.Texture2D>(
             mesh, mesh.name, _textures, (provider) => new Texture2DConversionJob(mesh, provider));
+
+    public IAssetProvider<FrooxEngine.Cubemap> GetCubemap(UnityEngine.Cubemap mesh) =>
+        GetAsset<StaticCubemap, StaticCubemapWrapper, UnityEngine.Cubemap, FrooxEngine.Cubemap>(
+            mesh, mesh.name, _cubemaps, (provider) => new CubemapConversionJob(mesh, provider));
 
     TProvider GetAsset<TProvider, TWrapper, TUnity, TResonite>(TUnity unity, 
         string name, Dictionary<TUnity, TWrapper> assets,
