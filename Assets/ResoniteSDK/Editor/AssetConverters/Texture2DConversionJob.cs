@@ -37,7 +37,7 @@ public class Texture2DConversionJob : AssetConversionJob
         _wrapModeU = Source.wrapModeU.ToResoniteLink();
         _wrapModeV = Source.wrapModeV.ToResoniteLink();
 
-        if (Source.anisoLevel > 0)
+        if (Source.anisoLevel > 1)
         {
             _anisoLevel = Source.anisoLevel;
             _filterMode = Renderite.Shared.TextureFilterMode.Anisotropic;
