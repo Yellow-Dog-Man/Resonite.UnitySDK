@@ -2,9 +2,9 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [ProtoFluxBindings]FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.Math.Bounds.EncapsulateBounds
-// Generated on: sobota 14. února 2026 8:58:27
-// Resonite version: 2026.2.14.493
-// Resonite Link Version: 0.7.0.0
+// Generated on: čtvrtek 19. února 2026 8:00:14
+// Resonite version: 2026.2.19.471
+// Resonite Link Version: 1.0.0.0
 // -----------------------------------------------------------------------------
 
 using UnityEngine;
@@ -17,11 +17,11 @@ namespace FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.Math.Bounds
 {
     [Serializable]
 [ResoniteTypeName("[ProtoFluxBindings]FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.Math.Bounds.EncapsulateBounds")]
-public partial class EncapsulateBounds : global::FrooxEngine.ProtoFlux.Runtimes.Execution.ValueFunctionNode<global::ProtoFlux.Runtimes.Execution.ExecutionContext,global::Elements.Core.BoundingBox>
+public partial class EncapsulateBounds : global::FrooxEngine.ProtoFlux.Runtimes.Execution.ValueFunctionNode<global::ProtoFlux.Runtimes.Execution.ExecutionContext,UnityEngine.Bounds>
 
 {
-    public global::FrooxEngine.ProtoFlux.INodeValueOutput<global::Elements.Core.BoundingBox> Bounds;
-public global::FrooxEngine.ProtoFlux.INodeValueOutput<global::Elements.Core.BoundingBox> OtherBounds;
+    public global::FrooxEngine.ProtoFlux.INodeValueOutput<UnityEngine.Bounds> Bounds;
+public global::FrooxEngine.ProtoFlux.INodeValueOutput<UnityEngine.Bounds> OtherBounds;
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)

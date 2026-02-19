@@ -2,9 +2,9 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [ProtoFluxBindings]FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.Math.Bounds.FromCenterSize
-// Generated on: sobota 14. února 2026 8:58:27
-// Resonite version: 2026.2.14.493
-// Resonite Link Version: 0.7.0.0
+// Generated on: čtvrtek 19. února 2026 8:00:14
+// Resonite version: 2026.2.19.471
+// Resonite Link Version: 1.0.0.0
 // -----------------------------------------------------------------------------
 
 using UnityEngine;
@@ -17,7 +17,7 @@ namespace FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.Math.Bounds
 {
     [Serializable]
 [ResoniteTypeName("[ProtoFluxBindings]FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.Math.Bounds.FromCenterSize")]
-public partial class FromCenterSize : global::FrooxEngine.ProtoFlux.Runtimes.Execution.ValueFunctionNode<global::ProtoFlux.Runtimes.Execution.ExecutionContext,global::Elements.Core.BoundingBox>
+public partial class FromCenterSize : global::FrooxEngine.ProtoFlux.Runtimes.Execution.ValueFunctionNode<global::ProtoFlux.Runtimes.Execution.ExecutionContext,UnityEngine.Bounds>
 
 {
     public global::FrooxEngine.ProtoFlux.INodeValueOutput<UnityEngine.Vector3> Center;
