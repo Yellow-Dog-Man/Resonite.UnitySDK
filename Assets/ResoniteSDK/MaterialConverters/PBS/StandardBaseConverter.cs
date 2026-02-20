@@ -30,22 +30,22 @@ public abstract class StandardBaseConverter<TWrapper, TMaterial> : ResoniteMater
         data.AlphaCutoff = material.GetFloat("_Cutoff");
 
         data.AlbedoColor = material.GetColor("_Color").ToColorX_sRGB();
-        data.AlbedoTexture = context.GetTextureAuto(material.mainTexture);
+        data.AlbedoTexture = context.GetITexture2D(material.mainTexture);
         data.TextureScale = material.mainTextureScale;
         data.TextureOffset = material.mainTextureOffset;
 
-        data.NormalMap = context.GetTextureAuto(material.GetTexture("_BumpMap"));
+        data.NormalMap = context.GetITexture2D(material.GetTexture("_BumpMap"));
         data.NormalScale = material.GetFloat("_BumpScale");
 
         data.HeightScale = material.GetFloat("_Parallax");
-        data.HeightMap = context.GetTextureAuto(material.GetTexture("_ParallaxMap"));
+        data.HeightMap = context.GetITexture2D(material.GetTexture("_ParallaxMap"));
 
-        data.OcclusionMap = context.GetTextureAuto(material.GetTexture("_OcclusionMap"));
+        data.OcclusionMap = context.GetITexture2D(material.GetTexture("_OcclusionMap"));
 
         if (material.IsKeywordEnabled("_EMISSION"))
         {
             data.EmissiveColor = material.GetColor("_EmissionColor").ToColorX_sRGB();
-            data.EmissiveMap = context.GetTextureAuto(material.GetTexture("_EmissionMap"));
+            data.EmissiveMap = context.GetITexture2D(material.GetTexture("_EmissionMap"));
         }
         else
         {

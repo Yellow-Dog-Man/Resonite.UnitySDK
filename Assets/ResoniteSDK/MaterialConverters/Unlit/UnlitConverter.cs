@@ -28,7 +28,7 @@ public class UnlitTransparentConverter : ResoniteMaterialConverter
         else
             data.TintColor = Color.white.ToColorX_sRGB();
 
-        data.Texture = context.GetTextureAuto(material.mainTexture);
+        data.Texture = context.GetITexture2D(material.mainTexture);
         data.TextureScale = material.mainTextureScale;
         data.TextureOffset = material.mainTextureOffset;
 
