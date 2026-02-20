@@ -25,6 +25,7 @@ public interface IConversionContext
     IAssetProvider<FrooxEngine.Texture2D> GetTexture2D(UnityEngine.Texture2D texture);
     IAssetProvider<FrooxEngine.Cubemap> GetCubemap(UnityEngine.Cubemap cubemap);
     IAssetProvider<FrooxEngine.Material> GetMaterial(UnityEngine.Material material);
+    IAssetProvider<FrooxEngine.AudioClip> GetAudioClip(UnityEngine.AudioClip audioClip);
 
     #endregion
 }

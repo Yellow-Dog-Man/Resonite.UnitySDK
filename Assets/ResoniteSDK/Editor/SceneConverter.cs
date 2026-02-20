@@ -120,6 +120,14 @@ public class SceneConverter : IConversionContext
         return _assetConverter.GetMaterial(material);
     }
 
+    public IAssetProvider<FrooxEngine.AudioClip> GetAudioClip(UnityEngine.AudioClip audioClip)
+    {
+        if (audioClip == null)
+            return null;
+
+        return _assetConverter.GetAudioClip(audioClip);
+    }
+
     public void EnsureAssetConverter()
     {
         if (_assetConverter != null)

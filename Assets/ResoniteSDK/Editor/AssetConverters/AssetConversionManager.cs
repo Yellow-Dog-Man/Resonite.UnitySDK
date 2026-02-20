@@ -16,6 +16,7 @@ public class AssetConversionManager
     Dictionary<UnityEngine.Mesh, MeshConverter> _meshes = new Dictionary<UnityEngine.Mesh, MeshConverter>();
     Dictionary<UnityEngine.Texture2D, Texture2DConverter> _textures = new Dictionary<UnityEngine.Texture2D, Texture2DConverter>();
     Dictionary<UnityEngine.Cubemap, CubemapConverter> _cubemaps = new Dictionary<UnityEngine.Cubemap, CubemapConverter>();
+    Dictionary<UnityEngine.AudioClip, AudioClipConverter> _audioClips = new Dictionary<UnityEngine.AudioClip, AudioClipConverter>();
 
     Dictionary<UnityEngine.Material, ResoniteMaterialConverter> _materials = new Dictionary<UnityEngine.Material, ResoniteMaterialConverter>();
     Dictionary<UnityEngine.Material, FrooxEngine.IAssetProvider<FrooxEngine.Material>> _cachedMaterials = new Dictionary<UnityEngine.Material, IAssetProvider<FrooxEngine.Material>>();
@@ -52,6 +53,10 @@ public class AssetConversionManager
     public IAssetProvider<FrooxEngine.Cubemap> GetCubemap(UnityEngine.Cubemap cubemap) =>
         GetAsset<StaticCubemap, StaticCubemapWrapper, UnityEngine.Cubemap, FrooxEngine.Cubemap, CubemapConverter>(
             cubemap, _cubemaps, (m, t) => new CubemapConverter(m, t));
+
+    public IAssetProvider<FrooxEngine.AudioClip> GetAudioClip(UnityEngine.AudioClip audioClip) =>
+        GetAsset<StaticAudioClip, StaticAudioClipWrapper, UnityEngine.AudioClip, FrooxEngine.AudioClip, AudioClipConverter>(
+            audioClip, _audioClips, (m, t) => new AudioClipConverter(m, t));
 
     TProvider GetAsset<TProvider, TWrapper, TUnity, TResonite, TConverter>(TUnity unity,
         Dictionary<TUnity, TConverter> converters,
