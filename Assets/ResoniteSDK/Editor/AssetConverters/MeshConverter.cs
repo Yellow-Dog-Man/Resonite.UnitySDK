@@ -7,17 +7,13 @@ using System.Runtime.InteropServices;
 using System.Threading.Tasks;
 using UnityEngine;
 
-public class MeshConversionJob : AssetConversionJob
+public class MeshConverter : AssetConverter<StaticMeshWrapper, StaticMesh, UnityEngine.Mesh, FrooxEngine.Mesh>
 {
     public const int MAX_UV_CHANNEL_COUNT = 8;
 
-    public readonly UnityEngine.Mesh Source;
-    public readonly StaticMeshWrapper Provider;
-
-    public MeshConversionJob(UnityEngine.Mesh source, StaticMeshWrapper provider)
+    public MeshConverter(UnityEngine.Mesh source, Transform assetsRoot) : base(source, assetsRoot)
     {
-        this.Source = source;
-        this.Provider = provider;
+        
     }
 
     protected override string AssetClass => "Mesh";

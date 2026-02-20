@@ -13,14 +13,15 @@ public class AssetConversionManager
     public SceneConverter Converter { get; private set; }
     public Transform AssetsRoot { get; private set; }
 
-    Dictionary<UnityEngine.Mesh, StaticMeshWrapper> _meshes = new Dictionary<UnityEngine.Mesh, StaticMeshWrapper>();
-    Dictionary<UnityEngine.Texture2D, StaticTexture2DWrapper> _textures = new Dictionary<UnityEngine.Texture2D, StaticTexture2DWrapper>();
-    Dictionary<UnityEngine.Cubemap, StaticCubemapWrapper> _cubemaps = new Dictionary<UnityEngine.Cubemap, StaticCubemapWrapper>();
+    Dictionary<UnityEngine.Mesh, MeshConverter> _meshes = new Dictionary<UnityEngine.Mesh, MeshConverter>();
+    Dictionary<UnityEngine.Texture2D, Texture2DConverter> _textures = new Dictionary<UnityEngine.Texture2D, Texture2DConverter>();
+    Dictionary<UnityEngine.Cubemap, CubemapConverter> _cubemaps = new Dictionary<UnityEngine.Cubemap, CubemapConverter>();
 
     Dictionary<UnityEngine.Material, ResoniteMaterialConverter> _materials = new Dictionary<UnityEngine.Material, ResoniteMaterialConverter>();
     Dictionary<UnityEngine.Material, FrooxEngine.IAssetProvider<FrooxEngine.Material>> _cachedMaterials = new Dictionary<UnityEngine.Material, IAssetProvider<FrooxEngine.Material>>();
 
-    Queue<AssetConversionJob> _conversions = new Queue<AssetConversionJob>();
+    HashSet<AssetConverter> _checkedConverters = new HashSet<AssetConverter>();
+    Queue<AssetConverter> _scheduledConversions = new Queue<AssetConverter>();
 
     public AssetConversionManager(SceneConverter converter)
     {
@@ -34,47 +35,59 @@ public class AssetConversionManager
         // change between conversions - e.g. their parameters are updated, so we want to re-run the conversion
         // every time.
         _cachedMaterials.Clear();
+
+        // Since we're running a new conversion batch, we need to re-check all the converters again, because the assets
+        // might have changed.
+        _checkedConverters.Clear();
     }
 
     public IAssetProvider<FrooxEngine.Mesh> GetMesh(UnityEngine.Mesh mesh) =>
-        GetAsset<StaticMesh, StaticMeshWrapper, UnityEngine.Mesh, FrooxEngine.Mesh>(
-            mesh, mesh.name, _meshes, (provider) => new MeshConversionJob(mesh, provider));
+        GetAsset<StaticMesh, StaticMeshWrapper, UnityEngine.Mesh, FrooxEngine.Mesh, MeshConverter>(
+            mesh, _meshes, (m, t) => new MeshConverter(m, t));
 
-    public IAssetProvider<FrooxEngine.Texture2D> GetTexture2D(UnityEngine.Texture2D mesh) =>
-        GetAsset<StaticTexture2D, StaticTexture2DWrapper, UnityEngine.Texture2D, FrooxEngine.Texture2D>(
-            mesh, mesh.name, _textures, (provider) => new Texture2DConversionJob(mesh, provider));
+    public IAssetProvider<FrooxEngine.Texture2D> GetTexture2D(UnityEngine.Texture2D texture) =>
+        GetAsset<StaticTexture2D, StaticTexture2DWrapper, UnityEngine.Texture2D, FrooxEngine.Texture2D, Texture2DConverter>(
+            texture, _textures, (m, t) => new Texture2DConverter(m, t));
 
-    public IAssetProvider<FrooxEngine.Cubemap> GetCubemap(UnityEngine.Cubemap mesh) =>
-        GetAsset<StaticCubemap, StaticCubemapWrapper, UnityEngine.Cubemap, FrooxEngine.Cubemap>(
-            mesh, mesh.name, _cubemaps, (provider) => new CubemapConversionJob(mesh, provider));
+    public IAssetProvider<FrooxEngine.Cubemap> GetCubemap(UnityEngine.Cubemap cubemap) =>
+        GetAsset<StaticCubemap, StaticCubemapWrapper, UnityEngine.Cubemap, FrooxEngine.Cubemap, CubemapConverter>(
+            cubemap, _cubemaps, (m, t) => new CubemapConverter(m, t));
 
-    TProvider GetAsset<TProvider, TWrapper, TUnity, TResonite>(TUnity unity, 
-        string name, Dictionary<TUnity, TWrapper> assets,
-        Func<TWrapper, AssetConversionJob> conversionJobGenerator)
+    TProvider GetAsset<TProvider, TWrapper, TUnity, TResonite, TConverter>(TUnity unity,
+        Dictionary<TUnity, TConverter> converters,
+        Func<TUnity, Transform, TConverter> conversionJobGenerator)
         where TProvider : FrooxEngine.Component, IAssetProvider<TResonite>, new()
         where TWrapper : ResoniteComponent<TProvider>
         where TResonite : FrooxEngine.IAsset
+        where TConverter : AssetConverter<TWrapper, TProvider, TUnity, TResonite>
+        where TUnity : UnityEngine.Object
     {
-        if(!assets.TryGetValue(unity, out var wrapper))
+        if (unity == null)
+            throw new ArgumentNullException(nameof(unity));
+
+        bool needsToConvert = false;
+
+        if (!converters.TryGetValue(unity, out var converter))
         {
-            // Provider doesn't exist yet, we need to create one and schedule conversion
-            var root = new GameObject($"{typeof(TResonite).Name} - {name}");
-            root.transform.parent = AssetsRoot;
+            // There's no active converter for this, so create one
+            converter = conversionJobGenerator(unity, AssetsRoot);
 
-            wrapper = root.AddComponent<TWrapper>();
+            // Since it's brand new it needs to be converted for the first time
+            needsToConvert = true;
 
-            wrapper.Data.Enabled = true;
-            wrapper.Data.persistent = true;
-
-            assets.Add(unity, wrapper);
-
-            // Create & enqueue conversion job
-            var job = conversionJobGenerator(wrapper);
-
-            _conversions.Enqueue(job);
+            converters.Add(unity, converter);
+        }
+        else if (_checkedConverters.Add(converter) && converter.HasAssetChanged())
+        {
+            // We haven't checked this conversion yet for updates and the asset has changed
+            // so we need to run the conversion again to update the data
+            needsToConvert = true;
         }
 
-        return wrapper.Data;
+        if (needsToConvert)
+            _scheduledConversions.Enqueue(converter);
+
+        return converter.Provider.Data;
     }
 
     public IAssetProvider<FrooxEngine.Material> GetMaterial(UnityEngine.Material material)
@@ -125,9 +138,9 @@ public class AssetConversionManager
 
     public void ProcessConversions(LinkInterface link)
     {
-        while(_conversions.Count > 0)
+        while(_scheduledConversions.Count > 0)
         {
-            var job = _conversions.Dequeue();
+            var job = _scheduledConversions.Dequeue();
             job.Convert(this, link); 
         }
     }
