@@ -35,12 +35,18 @@ public class ResoniteLinkWindow : EditorWindow
         }
     }
 
+    public string UniqueSessionId => _uniqueSessionId;
+
     [SerializeField]
     SceneConverter _converter;
 
     string _lastConnectionError;
     LinkInterface _linkInterface;
     bool _connecting;
+
+    string _resoniteVersion;
+    string _resoniteLinkVersion;
+    string _uniqueSessionId;
 
     [MenuItem("Resonite SDK/Open Resonite SDK Manager")]
     public static void ShowWindow()
@@ -88,7 +94,7 @@ public class ResoniteLinkWindow : EditorWindow
 
         var roots = SceneManager.GetActiveScene().GetRootGameObjects();
 
-        _converter.Convert(roots.Select(g => g.transform), _linkInterface);
+        _converter.Convert(roots.Select(g => g.transform), _linkInterface, UniqueSessionId);
     }
 
     void ConnectPressed()
@@ -100,6 +106,10 @@ public class ResoniteLinkWindow : EditorWindow
             // Cleanup any previous interface if it exists
             _linkInterface?.Dispose();
 
+            _resoniteLinkVersion = null;
+            _resoniteVersion = null;
+            _uniqueSessionId = null;
+
             _connecting = true;
             _linkInterface = new LinkInterface();
 
@@ -108,6 +118,16 @@ public class ResoniteLinkWindow : EditorWindow
                 try
                 {
                     await _linkInterface.Connect(new System.Uri($"ws://localhost:{Port}"), System.Threading.CancellationToken.None);
+
+                    var sessionInfo = await _linkInterface.GetSessionData();
+
+                    if (!sessionInfo.Success)
+                        throw new System.Exception($"Error getting session info: {sessionInfo.ErrorInfo}");
+
+                    _resoniteLinkVersion = sessionInfo.ResoniteLinkVersion;
+                    _resoniteVersion = sessionInfo.ResoniteVersion;
+
+                    _uniqueSessionId = sessionInfo.UniqueSessionId;
                 }
                 catch(System.Exception ex)
                 {
@@ -155,6 +175,6 @@ public class ResoniteLinkWindow : EditorWindow
     {
         ConnectionState.Disconnected => "Disconnected",
         ConnectionState.Connecting => $"Connecting to port {Port}...",
-        ConnectionState.Connected => $"Connected on port {Port}"
+        ConnectionState.Connected => $"Connected on port {Port} (Resonite: {_resoniteVersion})"
     };
 }

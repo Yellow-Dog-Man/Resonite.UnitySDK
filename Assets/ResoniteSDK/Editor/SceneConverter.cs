@@ -130,8 +130,10 @@ public class SceneConverter : IConversionContext
 
     #endregion
 
-    public void Convert(IEnumerable<Transform> roots, LinkInterface link)
+    public void Convert(IEnumerable<Transform> roots, LinkInterface link, string uniqueSessionId)
     {
+        _idPrefix = uniqueSessionId;
+
         _assetConverter.BeginConversion();
 
         // First update all component conversions
