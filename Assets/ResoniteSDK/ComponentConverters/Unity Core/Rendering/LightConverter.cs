@@ -6,7 +6,7 @@ namespace FrooxEngine
 {
     public partial class Light
     {
-        public void SetFrom(UnityEngine.Light light)
+        public void SetFrom(UnityEngine.Light light, IConversionContext context)
         {
             // Set the basics
             base.SetFrom(light);
@@ -58,7 +58,7 @@ namespace FrooxEngine
             Range = light.range;
             SpotAngle = light.spotAngle;
 
-            // TODO!!! Cookie
+            Cookie = context.GetITexture(light.cookie);
         }
     }
 }
@@ -68,6 +68,6 @@ public class LightConverter : ResoniteSingleComponentConverter<Light, FrooxEngin
     protected override void UpdateConversion(Light target, IConversionContext context)
     {
         // We just assign the data
-        Binding.Data.SetFrom(target);
+        Binding.Data.SetFrom(target, context);
     }
 }

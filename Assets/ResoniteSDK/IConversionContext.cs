@@ -20,7 +20,8 @@ public interface IConversionContext
     #region ASSET CONVERSION
 
     IAssetProvider<FrooxEngine.Mesh> GetMesh(UnityEngine.Mesh mesh);
-    IAssetProvider<FrooxEngine.ITexture2D> GetTextureAuto(UnityEngine.Texture texture);
+    IAssetProvider<FrooxEngine.ITexture> GetITexture(UnityEngine.Texture texture);
+    IAssetProvider<FrooxEngine.ITexture2D> GetITexture2D(UnityEngine.Texture texture);
     IAssetProvider<FrooxEngine.Texture2D> GetTexture2D(UnityEngine.Texture2D texture);
     IAssetProvider<FrooxEngine.Cubemap> GetCubemap(UnityEngine.Cubemap cubemap);
     IAssetProvider<FrooxEngine.Material> GetMaterial(UnityEngine.Material material);

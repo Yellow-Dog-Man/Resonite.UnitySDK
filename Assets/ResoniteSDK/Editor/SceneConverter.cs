@@ -61,7 +61,7 @@ public class SceneConverter : IConversionContext
         return _assetConverter.GetMesh(mesh);
     }
 
-    public FrooxEngine.IAssetProvider<FrooxEngine.ITexture2D> GetTextureAuto(UnityEngine.Texture texture)
+    public FrooxEngine.IAssetProvider<FrooxEngine.ITexture2D> GetITexture2D(UnityEngine.Texture texture)
     {
         if (texture == null)
             return null;
@@ -72,7 +72,26 @@ public class SceneConverter : IConversionContext
                 return (FrooxEngine.IAssetProvider<FrooxEngine.ITexture2D>)GetTexture2D(texture2D);
 
             default:
-                Debug.LogWarning($"Unsupported texture type: {texture.GetType()}");
+                Debug.LogWarning($"Unsupported ITexture2D type: {texture.GetType()}");
+                return null;
+        }
+    }
+
+    public FrooxEngine.IAssetProvider<FrooxEngine.ITexture> GetITexture(UnityEngine.Texture texture)
+    {
+        if (texture == null)
+            return null;
+
+        switch (texture)
+        {
+            case UnityEngine.Texture2D texture2D:
+                return (FrooxEngine.IAssetProvider<FrooxEngine.ITexture>)GetTexture2D(texture2D);
+
+            case UnityEngine.Cubemap cubemap:
+                return (FrooxEngine.IAssetProvider<FrooxEngine.ITexture>)GetCubemap(cubemap);
+
+            default:
+                Debug.LogWarning($"Unsupported ITexture2D type: {texture.GetType()}");
                 return null;
         }
     }
