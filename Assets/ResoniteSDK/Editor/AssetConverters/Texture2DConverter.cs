@@ -14,8 +14,8 @@ public class Texture2DConverter : AssetConverter<StaticTexture2DWrapper, StaticT
 {
     Renderite.Shared.TextureWrapMode _wrapModeU;
     Renderite.Shared.TextureWrapMode _wrapModeV;
-    Renderite.Shared.TextureFilterMode _filterMode;
-    int _anisoLevel;
+    Renderite.Shared.TextureFilterMode? _filterMode;
+    int? _anisoLevel;
     bool _uncompressed;
     bool _crunchCompressed;
     bool _mipMaps;
@@ -43,8 +43,14 @@ public class Texture2DConverter : AssetConverter<StaticTexture2DWrapper, StaticT
         }
         else
         {
-            _anisoLevel = 0;
-            _filterMode = Source.filterMode.ToResoniteLink();
+            _anisoLevel = null;
+
+            // Only explicitly set the point filtering mode, since that's usually a stylistic choice
+            // However Bilinear and up is generally ok to leave to the actual graphics settings
+            if (Source.filterMode == FilterMode.Point)
+                _filterMode = Renderite.Shared.TextureFilterMode.Point;
+            else
+                _filterMode = null;
         }
 
         _mipMaps = Source.mipmapCount > 1;
@@ -87,6 +93,8 @@ public class Texture2DConverter : AssetConverter<StaticTexture2DWrapper, StaticT
         Provider.Data.FilterMode = _filterMode;
 
         Provider.Data.MipMaps = _mipMaps;
+        Provider.Data.MipMapFilter = Filtering.Box;
+
         Provider.Data.Uncompressed = _uncompressed;
         Provider.Data.CrunchCompressed = _crunchCompressed;
 
