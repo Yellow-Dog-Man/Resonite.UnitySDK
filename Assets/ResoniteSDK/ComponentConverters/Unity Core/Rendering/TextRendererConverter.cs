@@ -64,8 +64,6 @@ public class TextRendererConverter : ResoniteSingleComponentConverter<UnityEngin
     [ConverterSupressionHandler]
     public static void FilterConverters(Transform root, List<Component> toConvert)
     {
-        Debug.Log("Filtering converters");
-
         // TextMesh uses the MeshRenderer for actual rendering, so we don't want it to be converted as an actual mesh renderer
         // We move it from the list
         toConvert.RemoveAll(c => c is UnityEngine.MeshRenderer);
