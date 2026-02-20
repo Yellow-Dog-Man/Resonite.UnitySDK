@@ -53,7 +53,7 @@ public abstract class AssetConverter
 
     protected abstract ulong GetAssetTimestamp();
 
-    protected abstract string AssetClass { get; }
+    protected abstract string AssetClass { get; } 
     protected abstract string AssetName { get; }
     protected abstract ResoniteLink.Message GenerateConversion();
     protected abstract Task<AssetData> SendConversion(ResoniteLink.Message message, LinkInterface link);

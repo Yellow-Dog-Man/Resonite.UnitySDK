@@ -125,4 +125,35 @@ public static class AssetConversionHelper
                 return false;
         }
     }
+
+    /// <summary>
+    /// Determines if given audio clip file is supported to be improted as a file
+    /// </summary>
+    /// <param name="assetPath">Path to the asset file</param>
+    /// <returns>True if Resonite should support this file directly</returns>
+    public static bool IsAudioFileSupportedByResonite(string assetPath)
+    {
+        // Just a simple heuristic using the most common formats that Resonite supports
+        // Could potentially be expanded in the future
+        var extension = Path.GetExtension(assetPath).ToLowerInvariant();
+
+        switch(extension)
+        {
+            case ".wav":
+            case ".wave":
+
+            case ".ogg":
+
+            case ".flac":
+            case ".fla":
+
+            case ".aiff":
+            case ".aif":
+            case ".aifc":
+                return true;
+
+            default:
+                return false;
+        }
+    }
 }
