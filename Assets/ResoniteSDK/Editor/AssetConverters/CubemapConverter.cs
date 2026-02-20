@@ -57,10 +57,29 @@ public class CubemapConverter : AssetConverter<StaticCubemapWrapper, StaticCubem
         if(!cubemap.isReadable)
         {
             string path = AssetDatabase.GetAssetPath(cubemap);
-            var importer = (TextureImporter)AssetImporter.GetAtPath(path);
 
-            importer.isReadable = true;
-            importer.SaveAndReimport();
+            var importer = AssetImporter.GetAtPath(path);
+
+            switch (importer)
+            {
+                case TextureImporter textureImporter:
+                    textureImporter.isReadable = true;
+                    textureImporter.SaveAndReimport();
+                    break;
+
+                case AssetImporter assetImporter:
+                    // This is likely a legacy cubemap. We can't mark this as isReadable to my knowledge, so we have to read it
+                    var readableCubemap = new UnityEngine.Cubemap(cubemap.width, cubemap.format, cubemap.mipmapCount > 1, true);
+
+                    for(int f = 0; f < 6; f++)
+                        Graphics.CopyTexture(cubemap, f, readableCubemap, f);
+
+                    cubemap = readableCubemap;
+                    break;
+
+                default:
+                    throw new NotImplementedException($"Unsupported importer type: {importer?.GetType().FullName}");
+            }            
         }
 
         var hasMipMaps = cubemap.mipmapCount > 1;
