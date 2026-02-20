@@ -10,11 +10,8 @@ using UnityEditor;
 using UnityEngine;
 using Elements.Assets;
 
-public class Texture2DConversionJob : AssetConversionJob
+public class Texture2DConverter : AssetConverter<StaticTexture2DWrapper, StaticTexture2D, UnityEngine.Texture2D, FrooxEngine.Texture2D>
 {
-    public readonly UnityEngine.Texture2D Source;
-    public readonly StaticTexture2DWrapper Provider;
-
     Renderite.Shared.TextureWrapMode _wrapModeU;
     Renderite.Shared.TextureWrapMode _wrapModeV;
     Renderite.Shared.TextureFilterMode _filterMode;
@@ -24,10 +21,9 @@ public class Texture2DConversionJob : AssetConversionJob
     bool _mipMaps;
     bool _readable;
 
-    public Texture2DConversionJob(UnityEngine.Texture2D source, StaticTexture2DWrapper provider)
+    public Texture2DConverter(UnityEngine.Texture2D source, Transform assetsRoot) : base(source, assetsRoot)
     {
-        Source = source;
-        Provider = provider;
+        
     }
 
     protected override string AssetClass => "Texture2D";

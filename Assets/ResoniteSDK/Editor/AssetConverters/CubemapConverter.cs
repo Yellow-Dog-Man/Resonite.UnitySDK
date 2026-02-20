@@ -10,15 +10,10 @@ using UnityEditor;
 using UnityEngine;
 using Elements.Assets;
 
-public class CubemapConversionJob : AssetConversionJob
+public class CubemapConverter : AssetConverter<StaticCubemapWrapper, StaticCubemap, UnityEngine.Cubemap, FrooxEngine.Cubemap>
 {
-    public readonly UnityEngine.Cubemap Source;
-    public readonly StaticCubemapWrapper Provider;
-
-    public CubemapConversionJob(UnityEngine.Cubemap source, StaticCubemapWrapper provider)
+    public CubemapConverter(UnityEngine.Cubemap source, Transform assetsRoot) : base(source, assetsRoot)
     {
-        Source = source;
-        Provider = provider;
     }
 
     protected override string AssetClass => "Cubemap";
