@@ -37,6 +37,8 @@ public class ResoniteLinkWindow : EditorWindow
 
     public string UniqueSessionId => _uniqueSessionId;
 
+    public LinkInterface Link => _linkInterface;
+
     [SerializeField]
     SceneConverter _converter;
 
@@ -80,21 +82,33 @@ public class ResoniteLinkWindow : EditorWindow
 
         GUI.enabled = true;
 
+        if (GUILayout.Button("Start Realtime Mode"))
+            StartRealtimeMode();
+
         if (GUILayout.Button("Cleanup Converters"))
             CleanupConverters();
     }
 
-    void SendCurrentScene()
+    void EnsureConverter()
     {
-        if(_converter == null)
+        if (_converter == null)
             _converter = new SceneConverter();
 
-        // TODO!!! Better wrap this around?
-        _converter.EnsureAssetConverter();
+        _converter.EnsureInitialized(this);
+    }
 
-        var roots = SceneManager.GetActiveScene().GetRootGameObjects();
+    void SendCurrentScene()
+    {
+        EnsureConverter();
 
-        _converter.Convert(roots.Select(g => g.transform), _linkInterface, UniqueSessionId);
+        _converter.ConvertScene();
+    }
+
+    void StartRealtimeMode()
+    {
+        EnsureConverter();
+
+        _converter.StartRealtimeMode();
     }
 
     void ConnectPressed()
