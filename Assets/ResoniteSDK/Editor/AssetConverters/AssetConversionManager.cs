@@ -13,6 +13,8 @@ public class AssetConversionManager
     public SceneConverter Converter { get; private set; }
     public Transform AssetsRoot { get; private set; }
 
+    public bool HasPendingChanges => _scheduledConversions.Count > 0 || _updatedAssetProviderRoots.Count > 0;
+
     Dictionary<UnityEngine.Mesh, MeshConverter> _meshes = new Dictionary<UnityEngine.Mesh, MeshConverter>();
     Dictionary<UnityEngine.Texture2D, Texture2DConverter> _textures = new Dictionary<UnityEngine.Texture2D, Texture2DConverter>();
     Dictionary<UnityEngine.Cubemap, CubemapConverter> _cubemaps = new Dictionary<UnityEngine.Cubemap, CubemapConverter>();
@@ -23,6 +25,10 @@ public class AssetConversionManager
 
     HashSet<AssetConverter> _checkedConverters = new HashSet<AssetConverter>();
     Queue<AssetConverter> _scheduledConversions = new Queue<AssetConverter>();
+
+    HashSet<Transform> _updatedAssetProviderRoots = new HashSet<Transform>();
+
+    public IEnumerable<Transform> UpdatedAssetProviderRoots => _updatedAssetProviderRoots;
 
     public AssetConversionManager(SceneConverter converter)
     {
@@ -41,6 +47,12 @@ public class AssetConversionManager
         // might have changed.
         _checkedConverters.Clear();
     }
+
+    public bool HasMesh(UnityEngine.Mesh mesh) => _meshes.ContainsKey(mesh);
+    public bool HasTexture2D(UnityEngine.Texture2D texture2D) => _textures.ContainsKey(texture2D);
+    public bool HasCubemap(UnityEngine.Cubemap cubemap) => _cubemaps.ContainsKey(cubemap);
+    public bool HasAudioClip(UnityEngine.AudioClip audioClip) => _audioClips.ContainsKey(audioClip);
+    public bool HasMaterial(UnityEngine.Material material) => _materials.ContainsKey(material);
 
     public IAssetProvider<FrooxEngine.Mesh> GetMesh(UnityEngine.Mesh mesh) =>
         GetAsset<StaticMesh, StaticMeshWrapper, UnityEngine.Mesh, FrooxEngine.Mesh, MeshConverter>(
@@ -90,7 +102,11 @@ public class AssetConversionManager
         }
 
         if (needsToConvert)
+        {
             _scheduledConversions.Enqueue(converter);
+
+            _updatedAssetProviderRoots.Add(converter.Provider.transform);
+        }
 
         return converter.Provider.Data;
     }
@@ -135,6 +151,9 @@ public class AssetConversionManager
         // properties provided. The converter can all be null, hence the null check
         provider = converter?.UpdateConversion(material, Converter);
 
+        if (provider != null)
+            _updatedAssetProviderRoots.Add(converter.transform);
+
         // Cache it for this run - the same material only needs to be converted/updated once per run
         _cachedMaterials.Add(material, provider);
 
@@ -148,5 +167,8 @@ public class AssetConversionManager
             var job = _scheduledConversions.Dequeue();
             job.Convert(this, link); 
         }
+
+        // Once conversions are processed, clear this. This is only relevant before the conversions take place
+        _updatedAssetProviderRoots.Clear();
     }
 }

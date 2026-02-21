@@ -6,12 +6,22 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 using Unity.VisualScripting;
+using Unity.VisualScripting.FullSerializer;
+using UnityEditor;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 [Serializable]
 public class SceneConverter : IConversionContext
 {
+    public string UniqueSessionId => _window.UniqueSessionId;
+    public LinkInterface Link => _window.Link;
+
+    // TODO!!! Move this to a dedicated connection manager so the Window is only managing the UI?
+    ResoniteLinkWindow _window;
+
     [SerializeField]
     Dictionary<Transform, ResoniteLink.Slot> _transformMap = new Dictionary<Transform, ResoniteLink.Slot>();
 
@@ -24,11 +34,9 @@ public class SceneConverter : IConversionContext
     AssetConversionManager _assetConverter;
 
     int _idPool;
-    string _idPrefix;
-
     int _messageIndex;
 
-    public string AllocateId(ResoniteObject o = null) => $"Unity_{_idPrefix}_{o?.GetType().Name}_{_idPool++:X}";
+    public string AllocateId(ResoniteObject o = null) => $"Unity_{UniqueSessionId}_{o?.GetType().Name}_{_idPool++:X}";
     public string GetId(ResoniteObject o) => _idMap[o];
     public string GetIdOrAllocate(ResoniteObject o) => GetIdOrAllocate(o, out _);
     public string GetIdOrAllocate(ResoniteObject o, out bool allocated)
@@ -138,10 +146,37 @@ public class SceneConverter : IConversionContext
 
     #endregion
 
-    public void Convert(IEnumerable<Transform> roots, LinkInterface link, string uniqueSessionId)
+    public void EnsureInitialized(ResoniteLinkWindow window)
     {
-        _idPrefix = uniqueSessionId;
+        _window = window;
+    }
 
+    public void StartRealtimeMode()
+    {
+        // We must convert the whole scene first
+        ConvertScene();
+
+        // Start listening to events
+        ObjectChangeEvents.changesPublished += ObjectChangeEvents_changesPublished;
+    }
+
+    public void StopRealtimeMode()
+    {
+        ObjectChangeEvents.changesPublished -= ObjectChangeEvents_changesPublished;
+    }
+
+    public void ConvertScene()
+    {
+        // Ensure asset converter has been initialized
+        EnsureAssetConverter();
+
+        var roots = SceneManager.GetActiveScene().GetRootGameObjects();
+
+        Convert(roots.Select(g => g.transform));
+    }
+
+    public void Convert(IEnumerable<Transform> roots)
+    {
         _assetConverter.BeginConversion();
 
         // First update all component conversions
@@ -157,35 +192,45 @@ public class SceneConverter : IConversionContext
         // This way any transform that were reparented will be in new safe locations
         ProcessRemovals(messages);
 
-        Task.Run(async () =>
+        SendOperationBatch(messages);
+    }
+
+    void SendOperationBatch(List<DataModelOperation> messages)
+    {
+        // Only send messages when there are actually any
+        // We still want to run the rest of the function, because there can be any asset conversions scheduled
+        if (messages.Count > 0)
         {
-            try
+            Task.Run(async () =>
             {
-                // For quick debug purposes
-                /*var operations = new DataModelOperationBatch();
-                operations.Operations = messages.ToList<Message>();
-                var json = System.Text.Json.JsonSerializer.Serialize(operations, ResoniteLink.LinkInterface.SerializationOptions);
-                Debug.Log(json);*/
-
-                var response = await link.RunDataModelOperationBatch(messages);
-
-                if (!response.Success)
+                try
                 {
-                    Debug.LogError($"Data model batch operation failed: {response.ErrorInfo}");
-                    return;
+                    // For quick debug purposes
+                    /*var operations = new DataModelOperationBatch();
+                    operations.Operations = messages.ToList<Message>();
+                    var json = System.Text.Json.JsonSerializer.Serialize(operations, ResoniteLink.LinkInterface.SerializationOptions);
+                    Debug.Log(json);*/
+
+                    var response = await Link.RunDataModelOperationBatch(messages);
+
+                    if (!response.Success)
+                    {
+                        Debug.LogError($"Data model batch operation failed: {response.ErrorInfo}");
+                        return;
+                    }
+
+                    foreach (var subResponse in response.Responses)
+                        if (!subResponse.Success)
+                            Debug.LogError($"Operation failed for {subResponse.SourceMessageID}: {subResponse.ErrorInfo}");
                 }
+                catch (Exception ex)
+                {
+                    Debug.LogError(ex);
+                }
+            }).Wait();
+        }
 
-                foreach (var subResponse in response.Responses)
-                    if (!subResponse.Success)
-                        Debug.LogError($"Operation failed for {subResponse.SourceMessageID}: {subResponse.ErrorInfo}");
-            }
-            catch(Exception ex)
-            {
-                Debug.LogError(ex);
-            }
-        }).Wait();
-
-        _assetConverter.ProcessConversions(link);
+        _assetConverter.ProcessConversions(Link);
     }
 
     void ProcessRemovals(List<DataModelOperation> messages)
@@ -431,5 +476,146 @@ public class SceneConverter : IConversionContext
                 messages.Add(updateComponent);
             }
         }
+    }
+
+    void ObjectChangeEvents_changesPublished(ref ObjectChangeEventStream stream)
+    {
+        _assetConverter.BeginConversion();
+
+        var processedTransforms = new HashSet<Transform>();
+        var transformsWithChangedComponents = new HashSet<Transform>();
+        var messages = new List<DataModelOperation>();
+
+        void TransformUpdated(Transform transform)
+        {
+            if (!processedTransforms.Add(transform))
+                return;
+
+            Convert(transform, messages);
+        }
+
+        void ComponentUpdated(UnityEngine.Component component)
+        {
+            // We want to process the transforms as whole, since the combinations of components might require
+            // filtering and other things, so we just collect all the transforms that had their components changed
+            transformsWithChangedComponents.Add(component.transform);
+        }
+
+        void ObjectChanged(UnityEngine.Object o, bool forceComponentUpdate = false)
+        {
+            switch(o)
+            {
+                case Transform transform:
+                    TransformUpdated(transform);
+
+                    if (forceComponentUpdate)
+                        transformsWithChangedComponents.Add(transform);
+                    break;
+
+                case GameObject gameObject:
+                    ObjectChanged(gameObject.transform, forceComponentUpdate);
+                    break;
+
+                case UnityEngine.Component component:
+                    ComponentUpdated(component);
+                    break; 
+
+                default:
+                    Debug.LogWarning($"Unsupported object changed: {o}");
+                    break;
+            }
+        }
+
+        for (int i = 0; i < stream.length; i++)
+        {
+            switch (stream.GetEventType(i))
+            {
+                case ObjectChangeKind.ChangeGameObjectOrComponentProperties:
+                    stream.GetChangeGameObjectOrComponentPropertiesEvent(i, out var changeObject);
+                    ObjectChanged(EditorUtility.InstanceIDToObject(changeObject.instanceId));
+                    break;
+
+                case ObjectChangeKind.CreateGameObjectHierarchy:
+                    stream.GetCreateGameObjectHierarchyEvent(i, out var createObject);
+                    ObjectChanged(EditorUtility.InstanceIDToObject(createObject.instanceId), true);
+                    break;
+
+                case ObjectChangeKind.ChangeGameObjectStructure:
+                    stream.GetChangeGameObjectStructureEvent(i, out var changeStructure);
+                    ObjectChanged(EditorUtility.InstanceIDToObject(changeStructure.instanceId), true);
+                    break;
+
+                case ObjectChangeKind.ChangeGameObjectParent:
+                    stream.GetChangeGameObjectParentEvent(i, out var changeParent);
+                    ObjectChanged(EditorUtility.InstanceIDToObject(changeParent.instanceId));
+                    break;
+
+                case ObjectChangeKind.DestroyGameObjectHierarchy:
+                    stream.GetDestroyGameObjectHierarchyEvent(i, out var destroyObject);
+                    var destroyedObject = EditorUtility.InstanceIDToObject(destroyObject.instanceId);
+                    Debug.Log($"Destroyed object: {destroyedObject}");
+                    break;
+
+                case ObjectChangeKind.ChangeAssetObjectProperties:
+                    stream.GetChangeAssetObjectPropertiesEvent(i, out var changeAsset);
+                    var changedAsset = EditorUtility.InstanceIDToObject(changeAsset.instanceId);
+
+                    // Force an asset update for any assets that have been converted
+                    // Ignore everything else - it's not an asset we transferred over yet, so we don't need to bother with it
+                    // Once it gets referenced by something, e.g. a component that will ensure conversion happens
+                    switch(changedAsset)
+                    {
+                        case UnityEngine.Mesh mesh:
+                            if (_assetConverter.HasMesh(mesh))
+                                _assetConverter.GetMesh(mesh);
+                            break;
+
+                        case UnityEngine.Texture2D texture2D:
+                            if (_assetConverter.HasTexture2D(texture2D))
+                                _assetConverter.GetTexture2D(texture2D);
+                            break;
+
+                        case UnityEngine.Cubemap cubemap:
+                            if (_assetConverter.HasCubemap(cubemap))
+                                _assetConverter.GetCubemap(cubemap);
+                            break;
+
+                        case UnityEngine.AudioClip audioClip:
+                            if (_assetConverter.HasAudioClip(audioClip))
+                                _assetConverter.GetAudioClip(audioClip);
+                            break;
+
+                        case UnityEngine.Material material:
+                            if (_assetConverter.HasMaterial(material))
+                                _assetConverter.GetMaterial(material);
+                            break;
+                    }
+                    break;
+
+                default:
+                    Debug.Log($"Change: {stream.GetEventType(i)}");
+                    break;
+            }
+        }
+
+        // Update the conversions first
+        foreach (var changedComponents in transformsWithChangedComponents)
+            UpdateComponentConversions(changedComponents);
+
+        // Convert the actual components
+        foreach (var changedComponents in transformsWithChangedComponents)
+            ConvertComponents(changedComponents, messages);
+
+        // Convert any updated asset providers
+        // We don't need to run the component conversion on these - this should be only the bindings
+        if (_assetConverter.HasPendingChanges)
+            foreach (var root in _assetConverter.UpdatedAssetProviderRoots)
+                ConvertHierarchy(root, messages);
+
+        // If nothing of relevance was changed, just skip
+        if (messages.Count == 0 && !_assetConverter.HasPendingChanges)
+            return;
+
+        SendOperationBatch(messages);
     }
 }
