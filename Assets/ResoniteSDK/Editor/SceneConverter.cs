@@ -526,6 +526,8 @@ public class SceneConverter : IConversionContext
             }
         }
 
+        bool gameObjectsDestroyed = false;
+
         for (int i = 0; i < stream.length; i++)
         {
             switch (stream.GetEventType(i))
@@ -551,9 +553,10 @@ public class SceneConverter : IConversionContext
                     break;
 
                 case ObjectChangeKind.DestroyGameObjectHierarchy:
-                    stream.GetDestroyGameObjectHierarchyEvent(i, out var destroyObject);
-                    var destroyedObject = EditorUtility.InstanceIDToObject(destroyObject.instanceId);
-                    Debug.Log($"Destroyed object: {destroyedObject}");
+                    // TODO!!! Should we keep track of the ID's and only target ones that are actually destroyed?
+                    // This requires a bunch of extra bookkeeping, and just running the removals is simpler here
+                    // but it might not perform the best for large scenes, so we'll have to re-evaluate the approach.
+                    gameObjectsDestroyed = true;
                     break;
 
                 case ObjectChangeKind.ChangeAssetObjectProperties:
@@ -605,6 +608,9 @@ public class SceneConverter : IConversionContext
         // Convert the actual components
         foreach (var changedComponents in transformsWithChangedComponents)
             ConvertComponents(changedComponents, messages);
+
+        if (gameObjectsDestroyed)
+            ProcessRemovals(messages);
 
         // Convert any updated asset providers
         // We don't need to run the component conversion on these - this should be only the bindings
