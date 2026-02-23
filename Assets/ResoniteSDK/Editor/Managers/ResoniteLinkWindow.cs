@@ -85,8 +85,13 @@ public class ResoniteLinkWindow : EditorWindow
         if (GUILayout.Button("Start Realtime Mode"))
             StartRealtimeMode();
 
-        if (GUILayout.Button("Cleanup Converters"))
+        GUILayout.Space(32);
+
+        if (GUILayout.Button("Cleanup converters in the scene"))
             CleanupConverters();
+
+        if (GUILayout.Button("Reset conversion state"))
+            ResetConversionState();
     }
 
     void EnsureConverter()
@@ -176,6 +181,12 @@ public class ResoniteLinkWindow : EditorWindow
         foreach (var root in roots)
             foreach (var converter in root.GetComponentsInChildren<ResoniteComponentConverter>())
                 DestroyImmediate(converter);
+    }
+
+    void ResetConversionState()
+    {
+        _converter = null;
+        EnsureConverter();
     }
 
     string ConnectButtonLabel => State switch
