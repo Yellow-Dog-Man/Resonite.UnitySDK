@@ -44,7 +44,23 @@ namespace FrooxEngine
             while (BlendShapeWeights.Count > blendshapeCount)
                 BlendShapeWeights.RemoveAt(BlendShapeWeights.Count - 1);
 
-            // TODO!!! Bones!
+            // Bones
+            if(Bones == null)
+                Bones = new List<Slot>();
+
+            for(int b = 0; b < renderer.bones.Length; b++)
+            {
+                var bone = renderer.bones[b];
+                var slot = bone.GetSlot();
+
+                if (Bones.Count == b)
+                    Bones.Add(slot);
+                else
+                    Bones[b] = slot;
+            }
+
+            while (Bones.Count > renderer.bones.Length)
+                Bones.RemoveAt(Bones.Count - 1);
         }
     }
 }
