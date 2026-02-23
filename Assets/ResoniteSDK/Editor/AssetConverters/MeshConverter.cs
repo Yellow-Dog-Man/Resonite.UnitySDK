@@ -61,8 +61,6 @@ public class MeshConverter : AssetConverter<StaticMeshWrapper, StaticMesh, Unity
             data.UV_Channel_Dimensions.Add(2);
         }
 
-        //data.BoneWeightCount = mesh.HasVertexAttribute(UnityEngine.Rendering.VertexAttribute.BlendWeight) ? 4 : 0;
-
         data.Submeshes = new List<ResoniteLink.SubmeshRawData>();
 
         // Since there can be unsupported submeshes, keep the indexes of the ones that match
@@ -130,7 +128,7 @@ public class MeshConverter : AssetConverter<StaticMeshWrapper, StaticMesh, Unity
             data.BlendShapes.Add(blendshape);
         }
 
-        // TODO!!! Bones
+        data.BoneWeightCount = mesh.HasVertexAttribute(UnityEngine.Rendering.VertexAttribute.BlendWeight) ? 4 : 0;
 
         // Convert the vertex data
         data.AllocateBuffer();
@@ -191,7 +189,40 @@ public class MeshConverter : AssetConverter<StaticMeshWrapper, StaticMesh, Unity
             }
         }
 
-        // TODO!!! Convert Bones
+        if(data.BoneWeightCount > 0)
+        {
+            var sourceBoneWeights = mesh.boneWeights;
+            var boneWeights = data.BoneWeights;
+
+            for(int v = 0; v < sourceBoneWeights.Length; v++)
+            {
+                var sourceWeight = sourceBoneWeights[v];
+
+                // TODO!!! If we support varying number of weights per vertex, we'll need to change this, but we do 4 now
+                var offset = v * 4;
+
+                boneWeights[offset + 0] = new ResoniteLink.BoneWeight() { BoneIndex = sourceWeight.boneIndex0, Weight = sourceWeight.weight0 };
+                boneWeights[offset + 1] = new ResoniteLink.BoneWeight() { BoneIndex = sourceWeight.boneIndex1, Weight = sourceWeight.weight1 };
+                boneWeights[offset + 2] = new ResoniteLink.BoneWeight() { BoneIndex = sourceWeight.boneIndex2, Weight = sourceWeight.weight2 };
+                boneWeights[offset + 3] = new ResoniteLink.BoneWeight() { BoneIndex = sourceWeight.boneIndex3, Weight = sourceWeight.weight3 };
+            }
+
+            var bindPoses = mesh.bindposes;
+
+            data.Bones = new List<Bone>();
+
+            for (int b = 0; b < bindPoses.Length; b++)
+            {
+                var bone = new Bone();
+
+                bone.BindPose = bindPoses[b].ToResoniteLink();
+
+                // TODO!!! Is there a way to get the bone name from the mesh?
+                bone.Name = $"Bone {b}";
+
+                data.Bones.Add(bone);
+            }
+        }
 
         return data;
     }
