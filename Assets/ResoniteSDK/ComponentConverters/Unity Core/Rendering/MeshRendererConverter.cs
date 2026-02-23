@@ -1,19 +1,19 @@
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 
 namespace FrooxEngine
 {
     public partial class MeshRenderer
-    { 
-        public void SetFrom(UnityEngine.MeshRenderer renderer, IConversionContext context)
+    {
+        // We specifically set this from the renderer, so this code can be shared between different renderers
+        public void SetFrom(UnityEngine.Renderer renderer, IConversionContext context)
         {
             // There's no base to set these from, so we can't use the shared one?
             persistent = true;
             Enabled = renderer.enabled;
 
-            switch(renderer.shadowCastingMode)
+            switch (renderer.shadowCastingMode)
             {
                 case UnityEngine.Rendering.ShadowCastingMode.On:
                     ShadowCastMode = Renderite.Shared.ShadowCastMode.On;
@@ -32,7 +32,7 @@ namespace FrooxEngine
                     break;
             }
 
-            switch(renderer.motionVectorGenerationMode)
+            switch (renderer.motionVectorGenerationMode)
             {
                 case MotionVectorGenerationMode.Object:
                     MotionVectorMode = Renderite.Shared.MotionVectorMode.Object;
@@ -49,21 +49,13 @@ namespace FrooxEngine
 
             SortingOrder = renderer.sortingOrder;
 
-            // We need to get the matching mesh filter for this to get the mesh data
-            var meshFilter = renderer.transform.GetComponent<MeshFilter>();
-
-            if (meshFilter == null)
-                Mesh = null;
-            else
-                Mesh = context.GetMesh(meshFilter.sharedMesh);
-
             // Convert materials!
             if (Materials == null)
                 Materials = new List<IAssetProvider<Material>>();
 
             var sourceMaterials = renderer.sharedMaterials;
 
-            for(int i = 0; i < sourceMaterials.Length; i++)
+            for (int i = 0; i < sourceMaterials.Length; i++)
             {
                 var converted = context.GetMaterial(sourceMaterials[i]);
 
@@ -76,6 +68,20 @@ namespace FrooxEngine
             // Remove excess material slots
             while (Materials.Count > sourceMaterials.Length)
                 Materials.RemoveAt(Materials.Count - 1);
+        }
+
+        public void SetFrom(UnityEngine.MeshRenderer renderer, IConversionContext context)
+        {
+            // We need to explicitly cast here to use the shared method for setting from the Renderer itself
+            SetFrom((UnityEngine.Renderer)renderer, context);
+
+            // We need to get the matching mesh filter for this to get the mesh data
+            var meshFilter = renderer.transform.GetComponent<MeshFilter>();
+
+            if (meshFilter == null)
+                Mesh = null;
+            else
+                Mesh = context.GetMesh(meshFilter.sharedMesh);
         }
     }
 }
