@@ -103,7 +103,34 @@ public class MeshConverter : AssetConverter<StaticMeshWrapper, StaticMesh, Unity
             }
         }
 
-        // TODO!!! Blendshapes & Bones
+        data.BlendShapes = new List<BlendShapeRawData>();
+        
+        for(int b = 0; b < mesh.blendShapeCount; b++)
+        {
+            var blendshape = new BlendShapeRawData();
+
+            blendshape.Name = mesh.GetBlendShapeName(b);
+
+            // TODO!!! Is there a way to programmaticaly determine if the mesh has those buffers or not?
+            // I haven't found a way to access this information, so we just assume it does right now
+            blendshape.HasNormalDeltas = true;
+            blendshape.HasTangentDeltas = true;
+
+            blendshape.Frames = new List<BlendShapeFrameRawData>();
+            var frameCount = mesh.GetBlendShapeFrameCount(b);
+
+            for(int f = 0; f < frameCount; f++)
+            {
+                var frame = new BlendShapeFrameRawData();
+                frame.Position = mesh.GetBlendShapeFrameWeight(b, f);
+
+                blendshape.Frames.Add(frame);
+            }
+
+            data.BlendShapes.Add(blendshape);
+        }
+
+        // TODO!!! Bones
 
         // Convert the vertex data
         data.AllocateBuffer();
@@ -141,7 +168,30 @@ public class MeshConverter : AssetConverter<StaticMeshWrapper, StaticMesh, Unity
             indicies.AsSpan().CopyTo(submesh.Indices);
         }
 
-        // TODO!!! Convert Blendshapes & Bones
+        if (mesh.blendShapeCount > 0)
+        {
+            var deltaPositions = new Vector3[mesh.vertexCount];
+            var deltaNormals = new Vector3[mesh.vertexCount];
+            var deltaTangents = new Vector3[mesh.vertexCount];
+
+            for (int b = 0; b < mesh.blendShapeCount; b++)
+            {
+                var blendshape = data.BlendShapes[b];
+
+                for(int f = 0; f < blendshape.Frames.Count; f++)
+                {
+                    var frame = blendshape.Frames[f];
+
+                    mesh.GetBlendShapeFrameVertices(b, f, deltaPositions, deltaNormals, deltaTangents);
+
+                    deltaPositions.CopyTo(MemoryMarshal.Cast<float3, Vector3>(frame.PositionDeltas));
+                    deltaNormals.CopyTo(MemoryMarshal.Cast<float3, Vector3>(frame.NormalDeltas));
+                    deltaTangents.CopyTo(MemoryMarshal.Cast<float3, Vector3>(frame.TangentDeltas));
+                }
+            }
+        }
+
+        // TODO!!! Convert Bones
 
         return data;
     }
