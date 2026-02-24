@@ -2,9 +2,9 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.VideoTextureProvider
-// Generated on: čtvrtek 19. února 2026 7:58:49
-// Resonite version: 2026.2.19.471
-// Resonite Link Version: 1.0.0.0
+// Generated on: úterý 24. února 2026 18:17:33
+// Resonite version: 2026.2.24.1074
+// Resonite Link Version: 0.9.1.0
 // -----------------------------------------------------------------------------
 
 using UnityEngine;
@@ -20,7 +20,8 @@ namespace FrooxEngine
 public partial class VideoTextureProvider : global::FrooxEngine.AssetProvider<global::FrooxEngine.VideoTexture>, global::FrooxEngine.ITexture2DProvider, global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D>, global::FrooxEngine.ITextureProvider, global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture>, global::FrooxEngine.IPlayable, global::FrooxEngine.IWorldAudioDataSource, global::FrooxEngine.IStaticAssetProvider
 
 {
-    public System.Uri URL;
+    public PlaybackState Playback;
+public System.Uri URL;
 public global::System.Boolean Stream;
 public global::System.Single Volume;
 public global::System.String ForcePlaybackEngine;
@@ -41,6 +42,7 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
+members.Add("Playback", Playback.ToResoniteLink());
 members.Add("URL", URL.ToResoniteLinkField());
 members.Add("Stream", Stream.ToResoniteLinkField());
 members.Add("Volume", Volume.ToResoniteLinkField());

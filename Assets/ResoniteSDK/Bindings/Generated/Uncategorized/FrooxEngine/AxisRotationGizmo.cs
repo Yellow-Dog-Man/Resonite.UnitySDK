@@ -2,9 +2,9 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.AxisRotationGizmo
-// Generated on: čtvrtek 19. února 2026 8:00:26
-// Resonite version: 2026.2.19.471
-// Resonite Link Version: 1.0.0.0
+// Generated on: úterý 24. února 2026 18:20:18
+// Resonite version: 2026.2.24.1074
+// Resonite Link Version: 0.9.1.0
 // -----------------------------------------------------------------------------
 
 using UnityEngine;
