@@ -535,7 +535,7 @@ public class SceneConverter : IConversionContext
             transformsWithChangedComponents.Add(component.transform);
         }
 
-        void ObjectChanged(UnityEngine.Object o, bool forceComponentUpdate = false)
+        void ObjectChanged(UnityEngine.Object o, bool forceComponentUpdate = false, bool recursive = false)
         {
             switch(o)
             {
@@ -544,10 +544,14 @@ public class SceneConverter : IConversionContext
 
                     if (forceComponentUpdate)
                         transformsWithChangedComponents.Add(transform);
+
+                    if(recursive)
+                        for (int i = 0; i < transform.childCount; i++)
+                            ObjectChanged(transform.GetChild(i), forceComponentUpdate, recursive);
                     break;
 
                 case GameObject gameObject:
-                    ObjectChanged(gameObject.transform, forceComponentUpdate);
+                    ObjectChanged(gameObject.transform, forceComponentUpdate, recursive);
                     break;
 
                 case UnityEngine.Component component:
@@ -573,7 +577,7 @@ public class SceneConverter : IConversionContext
 
                 case ObjectChangeKind.CreateGameObjectHierarchy:
                     stream.GetCreateGameObjectHierarchyEvent(i, out var createObject);
-                    ObjectChanged(EditorUtility.InstanceIDToObject(createObject.instanceId), true);
+                    ObjectChanged(EditorUtility.InstanceIDToObject(createObject.instanceId), true, recursive: true);
                     break;
 
                 case ObjectChangeKind.ChangeGameObjectStructure:
