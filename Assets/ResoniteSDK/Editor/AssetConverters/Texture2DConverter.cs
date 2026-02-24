@@ -26,8 +26,8 @@ public class Texture2DConverter : AssetConverter<StaticTexture2DWrapper, StaticT
         
     }
 
-    protected override string AssetClass => "Texture2D";
-    protected override string AssetName => Source.name;
+    public override string AssetClass => "Texture2D";
+    public override string AssetName => Source.name;
     protected override Message GenerateConversion()
     {
         // Cache the texture wrap mode and other properties. We'll need to update provider with these.

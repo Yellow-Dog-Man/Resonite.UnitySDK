@@ -16,8 +16,8 @@ public class AudioClipConverter : AssetConverter<StaticAudioClipWrapper, StaticA
     {
     }
 
-    protected override string AssetClass => "AudioClip";
-    protected override string AssetName => Source.name;
+    public override string AssetClass => "AudioClip";
+    public override string AssetName => Source.name;
 
     protected override Message GenerateConversion() => ConvertAudioClip(Source);
 

@@ -6,6 +6,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using UnityEditor;
 using UnityEngine;
 
 public class AssetConversionManager
@@ -162,13 +163,27 @@ public class AssetConversionManager
 
     public void ProcessConversions(LinkInterface link)
     {
-        while(_scheduledConversions.Count > 0)
+        try
         {
-            var job = _scheduledConversions.Dequeue();
-            job.Convert(this, link); 
-        }
+            int totalToConvert = _scheduledConversions.Count;
 
-        // Once conversions are processed, clear this. This is only relevant before the conversions take place
-        _updatedAssetProviderRoots.Clear();
+            while (_scheduledConversions.Count > 0)
+            {
+                var progress = (totalToConvert - _scheduledConversions.Count) / (float)totalToConvert;
+
+                var job = _scheduledConversions.Dequeue();
+
+                EditorUtility.DisplayProgressBar("Converting assets...", $"{job.AssetClass}: {job.AssetName}", progress);
+
+                job.Convert(this, link);
+            }
+
+            // Once conversions are processed, clear this. This is only relevant before the conversions take place
+            _updatedAssetProviderRoots.Clear();
+        }
+        finally
+        {
+            EditorUtility.ClearProgressBar();
+        }
     }
 }

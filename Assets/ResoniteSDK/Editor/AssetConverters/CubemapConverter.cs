@@ -16,8 +16,8 @@ public class CubemapConverter : AssetConverter<StaticCubemapWrapper, StaticCubem
     {
     }
 
-    protected override string AssetClass => "Cubemap";
-    protected override string AssetName => Source.name;
+    public override string AssetClass => "Cubemap";
+    public override string AssetName => Source.name;
 
     protected override Message GenerateConversion()
     {

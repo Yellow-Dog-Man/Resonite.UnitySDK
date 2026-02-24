@@ -16,8 +16,8 @@ public class MeshConverter : AssetConverter<StaticMeshWrapper, StaticMesh, Unity
         
     }
 
-    protected override string AssetClass => "Mesh";
-    protected override string AssetName => Source.name;
+    public override string AssetClass => "Mesh";
+    public override string AssetName => Source.name;
     protected override Message GenerateConversion() => ConvertMesh(Source);
     protected override async Task<AssetData> SendConversion(Message message, LinkInterface link)
     {
