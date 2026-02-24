@@ -72,6 +72,10 @@ public partial class ResoniteBindingGenerator
                 await GenerateEmptyMemberDeclaration(str, emptyMember, containerType);
                 break;
 
+            case SyncPlaybackDefinition playback:
+                str.Append("PlaybackState");
+                break;
+
             default:
                 throw new System.NotImplementedException($"Member type not implemented: {member.GetType().FullName}");
         }
@@ -103,6 +107,10 @@ public partial class ResoniteBindingGenerator
 
             case EmptyMemberDefinition emptyMember:
                 str.Append("new ResoniteLink.EmptyElement()");
+                break;
+
+            case SyncPlaybackDefinition playback:
+                str.Append($"{name}.ToResoniteLink()");
                 break;
 
             default:
