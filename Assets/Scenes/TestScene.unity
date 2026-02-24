@@ -8411,19 +8411,19 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 1151837637}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 939aa195794865742bf73deaa402cb25, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.03
+      value: 11.98
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 939aa195794865742bf73deaa402cb25, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.85
+      value: 0.81999993
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 939aa195794865742bf73deaa402cb25, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 11.56
+      value: 8.67
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 939aa195794865742bf73deaa402cb25, type: 3}
       propertyPath: m_LocalRotation.w
@@ -8474,6 +8474,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 939aa195794865742bf73deaa402cb25, type: 3}
+--- !u!4 &615299621 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 939aa195794865742bf73deaa402cb25, type: 3}
+  m_PrefabInstance: {fileID: 615299620}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &615677952
 GameObject:
   m_ObjectHideFlags: 0
@@ -15506,6 +15511,7 @@ Transform:
   - {fileID: 175946622}
   - {fileID: 307630525}
   - {fileID: 1130771083}
+  - {fileID: 615299621}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1154261233
@@ -15729,7 +15735,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -25111,7 +25117,6 @@ SceneRoots:
   - {fileID: 722779447}
   - {fileID: 1130744953}
   - {fileID: 1588724453}
-  - {fileID: 615299620}
   - {fileID: 160160385}
   - {fileID: 340231159}
   - {fileID: 197916666}

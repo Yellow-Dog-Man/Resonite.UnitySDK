@@ -61,6 +61,11 @@ namespace FrooxEngine
             base.SetFrom(audioSource);
 
             Clip = context.GetAudioClip(audioSource.clip);
+
+            playback.Position = 0;
+            playback.Playing = audioSource.playOnAwake;
+            playback.Loop = audioSource.loop;
+            playback.Speed = audioSource.pitch;
         }
     }
 }
