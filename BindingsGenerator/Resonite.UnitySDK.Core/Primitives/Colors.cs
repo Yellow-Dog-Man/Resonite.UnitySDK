@@ -2,23 +2,29 @@
 
 namespace UnityEngine
 {
+    public enum ColorProfile
+    {
+        sRGB,
+        Linear
+    };
+
     [Serializable]
     public struct ColorX
     {
         public ColorX(Color color)
         {
             this.color = color;
-            this.profile = Renderite.Shared.ColorProfile.sRGB;
+            this.profile = ColorProfile.sRGB;
         }
 
-        public ColorX(Color color, Renderite.Shared.ColorProfile profile)
+        public ColorX(Color color, ColorProfile profile)
         {
             this.color = color;
             this.profile = profile;
         }
 
         public Color color;
-        public Renderite.Shared.ColorProfile profile;
+        public ColorProfile profile;
 
         public ResoniteLink.colorX ToResoniteLink() => new ResoniteLink.colorX()
         {
@@ -33,14 +39,13 @@ namespace UnityEngine
 
     public static class ColorXHelper
     {
-        public static ColorX ToColorX(this Color color, Renderite.Shared.ColorProfile profile) =>
-            new ColorX(color, profile);
+        public static ColorX ToColorX(this Color color, ColorProfile profile) => new ColorX(color, profile);
 
         public static ColorX ToColorX_Auto(this Color color) =>
             color.ToColorX(QualitySettings.activeColorSpace ==
-                ColorSpace.Gamma ? Renderite.Shared.ColorProfile.sRGB : Renderite.Shared.ColorProfile.Linear);
+                ColorSpace.Gamma ? ColorProfile.sRGB : ColorProfile.Linear);
 
-        public static ColorX ToColorX_Linear(this Color color) => color.ToColorX(Renderite.Shared.ColorProfile.Linear);
-        public static ColorX ToColorX_sRGB(this Color color) => color.ToColorX(Renderite.Shared.ColorProfile.sRGB);
+        public static ColorX ToColorX_Linear(this Color color) => color.ToColorX(ColorProfile.Linear);
+        public static ColorX ToColorX_sRGB(this Color color) => color.ToColorX(ColorProfile.sRGB);
     }
 }

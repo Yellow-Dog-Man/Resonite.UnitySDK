@@ -7,8 +7,6 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
-using Unity.VisualScripting;
-using UnityEditor;
 using UnityEngine;
 
 public partial class ResoniteBindingGenerator
@@ -46,6 +44,15 @@ public partial class ResoniteBindingGenerator
 
     async Task GenerateMemberDeclaration(StringBuilder str, MemberDefinition member, TypeDefinition containerType)
     {
+        /*if (member.Type == null)
+            throw new System.Exception($"Type is null for member {member} on container: {containerType.FullTypeName}");
+
+        var memberTypeDec = await GenerateTypeDeclaration(member.Type, containerType);
+
+        str.Append("Element<");
+        str.Append(memberTypeDec);
+        str.AppendLine(",");*/
+
         switch (member)
         {
             case FieldDefinition field:
@@ -79,6 +86,8 @@ public partial class ResoniteBindingGenerator
             default:
                 throw new System.NotImplementedException($"Member type not implemented: {member.GetType().FullName}");
         }
+
+        //str.Append(">");
     }
 
     async Task GenerateMemberCollection(StringBuilder str, string name, MemberDefinition member, TypeDefinition containerType)
@@ -170,10 +179,10 @@ public partial class ResoniteBindingGenerator
 
     async Task GenerateEmptyMemberDeclaration(StringBuilder str, EmptyMemberDefinition empty, TypeDefinition containerType)
     {
-        var typeDec = await GenerateTypeDeclaration(empty.MemberType, containerType);
+        var typeDec = await GenerateTypeDeclaration(empty.Type, containerType);
 
         if (typeDec == null)
-            throw new System.Exception($"Failed to generate empty member declaration for type: {empty.MemberType}");
+            throw new System.Exception($"Failed to generate empty member declaration for type: {empty.Type}");
 
         str.Append(typeDec);
     }
@@ -191,7 +200,7 @@ public partial class ResoniteBindingGenerator
         }
         catch(System.Exception ex)
         {
-            throw new System.Exception($"Failed to qualify type declaration: {type}\nOn container: {containerType.FullTypeName}\n" +
+            throw new System.Exception($"Failed to qualify type declaration: {type.Type}\nOn container: {containerType.FullTypeName}\n" +
                 $"Error: {ex}");
         }
     }

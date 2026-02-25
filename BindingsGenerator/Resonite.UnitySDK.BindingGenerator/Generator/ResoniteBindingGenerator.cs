@@ -7,13 +7,11 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
-using Unity.VisualScripting;
-using UnityEditor;
 using UnityEngine;
 
 public partial class ResoniteBindingGenerator
 {
-    public string BINDINGS_ROOT_PATH => Path.Combine("Assets", "ResoniteSDK", "Bindings", "Generated");
+    public string TargetPath { get; private set; }
 
     public int GeneratedComponents { get; private set; }
     public int TotalComponentsToGenerate { get; private set; }
@@ -29,7 +27,6 @@ public partial class ResoniteBindingGenerator
     }
 
     readonly ResoniteLink.LinkInterface link;
-    readonly ProgressSynchronizer progress;
     readonly CancellationToken cancellationToken;
 
     Dictionary<string, ComponentDefinition> _componentDefinitionCache = new Dictionary<string, ComponentDefinition>();
@@ -40,24 +37,25 @@ public partial class ResoniteBindingGenerator
     string _resoniteVersion;
     string _resoniteLinkVersion;
 
-    public ResoniteBindingGenerator(ResoniteLink.LinkInterface link, CancellationToken cancellationToken, ProgressSynchronizer progress = null)
+    public ResoniteBindingGenerator(ResoniteLink.LinkInterface link, CancellationToken cancellationToken)
     {
         this.link = link;
-        this.progress = progress;
         this.cancellationToken = cancellationToken;
     }
 
-    public async Task GenerateBindings()
+    public async Task GenerateBindings(string targetPath)
     {
         try
         {
-            progress?.UpdateProgress("Starting generation", Progress);
+            TargetPath = targetPath;
+
+            Console.WriteLine("Starting generation");
 
             // Delete previous bindings, since we'll regenerate everything
-            if (Directory.Exists(BINDINGS_ROOT_PATH))
+            if (Directory.Exists(TargetPath))
             {
-                progress?.UpdateProgress("Deleting old bindings", Progress);
-                Directory.Delete(BINDINGS_ROOT_PATH, true);
+                Console.WriteLine("Deleting old bindings");
+                Directory.Delete(TargetPath, true);
             }
 
             var sessionInfo = await link.GetSessionData();
@@ -70,11 +68,10 @@ public partial class ResoniteBindingGenerator
         }
         catch (System.Exception ex)
         {
-            Debug.LogError($"Exception when generating bindings:\n{ex}");
+            Console.WriteLine($"Exception when generating bindings:\n{ex}");
         }
         finally
         {
-            progress?.Complete();
         }
     }
 
@@ -90,6 +87,11 @@ public partial class ResoniteBindingGenerator
             return false;
 
         return true;
+    }
+
+    void LogProgress(string message)
+    {
+        Console.WriteLine($"{message}\t{Progress:P}");
     }
 
     public async Task GenerateComponentBindingsForCategory(string categoryPath)
@@ -187,7 +189,7 @@ public partial class ResoniteBindingGenerator
         var source = await GenerateBindingSource(definition);
 
         // Figure out the file path for the file
-        var directoryPath = Path.Combine(BINDINGS_ROOT_PATH, "SyncObjects");
+        var directoryPath = Path.Combine(TargetPath, "SyncObjects");
         var filePath = await GenerateFilePath(directoryPath, definition.Type);
 
         File.WriteAllText(filePath, source);
@@ -212,7 +214,7 @@ public partial class ResoniteBindingGenerator
 
         var definition = await GetComponentDefinition(type);
 
-        progress?.UpdateProgress(definition.Type.FullTypeName, Progress);
+        LogProgress(definition.Type.FullTypeName);
 
         if (definition.Type.IsGenericType && !definition.Type.IsGenericTypeDefinition)
         {
@@ -233,7 +235,7 @@ public partial class ResoniteBindingGenerator
         var source = await GenerateBindingSource(definition);
 
         // Figure out the file path for the file
-        var directoryPath = Path.Combine(BINDINGS_ROOT_PATH, definition.CategoryPath ?? "Uncategorized");
+        var directoryPath = Path.Combine(TargetPath, definition.CategoryPath ?? "Uncategorized");
         var filePath = await GenerateFilePath(directoryPath, definition.Type);
 
         File.WriteAllText(filePath, source);
@@ -284,7 +286,7 @@ public partial class ResoniteBindingGenerator
             overrideBaseDef: enumDefinition.BackingType);
 
         // Figure out the file path for the file
-        var directoryPath = Path.Combine(BINDINGS_ROOT_PATH, "Enums", type.AssemblyName);
+        var directoryPath = Path.Combine(TargetPath, "Enums", type.AssemblyName);
         var filePath = await GenerateFilePath(directoryPath, type);
 
         Directory.CreateDirectory(directoryPath);
@@ -303,7 +305,7 @@ public partial class ResoniteBindingGenerator
         if (!_generatedTypes.Add(type.FullTypeName))
             return;
 
-        progress?.UpdateProgress(type.FullTypeName, Progress);
+        LogProgress(type.FullTypeName);
 
         if (type.IsGenericType && !type.IsGenericTypeDefinition)
         {
@@ -323,7 +325,7 @@ public partial class ResoniteBindingGenerator
 
         var code = await GenerateDummySource(type, dependencyType);
 
-        var directoryPath = Path.Combine(BINDINGS_ROOT_PATH, "DummyTypes", type.AssemblyName);
+        var directoryPath = Path.Combine(TargetPath, "DummyTypes", type.AssemblyName);
         var filePath = await GenerateFilePath(directoryPath, type);
 
         Directory.CreateDirectory(directoryPath);
@@ -539,6 +541,12 @@ public {declarationType} {classDef} {baseDef}
                     constraints.Add(await FullyQualifyType(typeDefinition, type.GenericArguments, parameter.Name));
                 }
             }
+
+        // Always add the new() constraint
+        // This is because the bindings can always be instantiated and often will be for references
+        // This makes it work with the Element<TReference, TData> wrapper
+        //if(!parameter.Struct && !parameter.Unmanaged && !parameter.Enum)
+        //    constraints.Add("new()");
 
         if (constraints.Count > 0)
             return $"where {parameter.Name} : {string.Join(", ", constraints)}";
