@@ -1,0 +1,29 @@
+
+// -----------------------------------------------------------------------------
+// WARNING: This is auto-generated file! DO NOT MODIFY
+// Generated from type: [FrooxEngine]FrooxEngine.VibratePreset
+// Generated on: středa 25. února 2026 16:13:06
+// Resonite version: 2026.2.25.455
+// Resonite Link Version: 0.9.2.0
+// -----------------------------------------------------------------------------
+
+using UnityEngine;
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
+
+namespace FrooxEngine
+{
+    
+[ResoniteTypeName("[FrooxEngine]FrooxEngine.VibratePreset")]
+public enum VibratePreset : int
+
+{
+    None = 0,
+Short = 1,
+Medium = 2,
+Long = 3,
+
+}
+}
