@@ -2,17 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace FrooxEngine
+public static class SphereColliderHelper
 {
-    public partial class SphereCollider
+    public static void SetFrom(this FrooxEngine.SphereCollider resonite, UnityEngine.SphereCollider unity)
     {
-        public void SetFrom(UnityEngine.SphereCollider collider)
-        {
-            base.SetFrom(collider);
+        // Set the base data
+        resonite.SetFrom((UnityEngine.Collider)unity);
 
-            Radius = collider.radius;
-            Offset = collider.center;
-        }
+        resonite.Radius = unity.radius;
+        resonite.Offset = unity.center;
     }
 }
 

@@ -3,36 +3,32 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace FrooxEngine
+public static class MeshColliderHelper
 {
-    public partial class MeshCollider
+    public static void SetFrom(this FrooxEngine.MeshCollider resonite, UnityEngine.MeshCollider unity, IConversionContext context)
     {
-        public void SetFrom(UnityEngine.MeshCollider collider, IConversionContext context)
-        {
-            if (collider.convex)
-                throw new System.InvalidOperationException($"Unity mesh collider is convex. You need to use ConvexHullCollider instead");
+        if (unity.convex)
+            throw new System.InvalidOperationException($"Unity mesh collider is convex. You need to use ConvexHullCollider instead");
 
-            base.SetFrom(collider);
+        // Set the base data
+        resonite.SetFrom((UnityEngine.Collider)unity);
 
-            Mesh = context.GetMesh(collider.sharedMesh);
+        resonite.Mesh = context.GetMesh(unity.sharedMesh);
 
-            // Unity Mesh Colliders are one-sided based on their documentation:
-            // https://docs.unity3d.com/6000.3/Documentation/Manual/mesh-colliders-introduction.html
-            Sidedness = MeshColliderSidedness.Front;
-        }
+        // Unity Mesh Colliders are one-sided based on their documentation:
+        // https://docs.unity3d.com/6000.3/Documentation/Manual/mesh-colliders-introduction.html
+        resonite.Sidedness = MeshColliderSidedness.Front;
     }
 
-    public partial class ConvexHullCollider
+    public static void SetFrom(this FrooxEngine.ConvexHullCollider resonite, UnityEngine.MeshCollider unity, IConversionContext context)
     {
-        public void SetFrom(UnityEngine.MeshCollider collider, IConversionContext context)
-        {
-            if (!collider.convex)
-                throw new System.InvalidOperationException($"Unity mesh collider not is convex. You need to use ConvexHullCollider instead");
+        if (unity.convex)
+            throw new System.InvalidOperationException($"Unity mesh collider is convex. You need to use ConvexHullCollider instead");
 
-            base.SetFrom(collider);
+        // Set the base data
+        resonite.SetFrom((UnityEngine.Collider)unity);
 
-            Mesh = context.GetMesh(collider.sharedMesh);
-        }
+        resonite.Mesh = context.GetMesh(unity.sharedMesh);
     }
 }
 

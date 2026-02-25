@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="Resonite.UnitySDK.BindingGenerator/Resonite.UnitySDK.BindingGenerator.csproj" />
+  <Project Path="Resonite.UnitySDK.Core/Resonite.UnitySDK.Core.csproj" />
+  <Project Path="Resonite.UnitySDK.Bindings/Resonite.UnitySDK.Bindings.csproj" />
+</Solution>

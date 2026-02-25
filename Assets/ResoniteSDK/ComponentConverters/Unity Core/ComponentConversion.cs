@@ -3,21 +3,19 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using FrooxEngine;
 
-namespace FrooxEngine
+public static class ComponentHelper
 {
-    public abstract partial class ComponentBase<C>
+    public static void SetFrom(this ComponentBase<FrooxEngine.Component> resonite, UnityEngine.Behaviour unity)
     {
-        public void SetFrom(UnityEngine.Behaviour component)
-        {
-            // Unity doens't have a same concept of persistence, so just leave it to be true
-            persistent = true;
+        // Unity doens't have a same concept of persistence, so just leave it to be true
+        resonite.persistent = true;
 
-            // Straight up copy
-            Enabled = component.enabled;
+        // Straight up copy
+        resonite.Enabled = unity.enabled;
 
-            // TODO!!!
-            // UpdateOrder? Fetch from Unity? It might not quite map.
-        }
+        // TODO!!!
+        // UpdateOrder? Fetch from Unity? It might not quite map.
     }
 }

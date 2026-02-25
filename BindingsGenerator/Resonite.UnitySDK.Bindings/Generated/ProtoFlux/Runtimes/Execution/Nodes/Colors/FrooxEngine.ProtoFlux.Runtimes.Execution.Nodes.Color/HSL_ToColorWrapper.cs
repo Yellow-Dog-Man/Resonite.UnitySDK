@@ -1,0 +1,26 @@
+
+// -----------------------------------------------------------------------------
+// WARNING: This is auto-generated file! DO NOT MODIFY
+// Generated from type: [ProtoFluxBindings]FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.Color.HSL_ToColor
+// Generated on: středa 25. února 2026 16:13:38
+// Resonite version: 2026.2.25.455
+// Resonite Link Version: 0.9.2.0
+// -----------------------------------------------------------------------------
+
+using UnityEngine;
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
+
+namespace FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.Color
+{
+    [AddComponentMenu("FrooxEngine/ProtoFlux/Runtimes/Execution/Nodes/Colors/HSL_ToColor")]
+
+[ResoniteTypeName("[ProtoFluxBindings]FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.Color.HSL_ToColor")]
+public partial class HSL_ToColorWrapper : ResoniteComponent<global::FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.Color.HSL_ToColor>
+
+{
+    
+}
+}
