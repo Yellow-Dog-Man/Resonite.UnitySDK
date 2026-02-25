@@ -1,19 +1,18 @@
+using FrooxEngine.UIX;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace FrooxEngine
+public static class CapsuleColliderHelper
 {
-    public partial class CapsuleCollider
+    public static void SetFrom(this FrooxEngine.CapsuleCollider resonite, UnityEngine.CapsuleCollider unity)
     {
-        public void SetFrom(UnityEngine.CapsuleCollider collider)
-        {
-            base.SetFrom(collider);
+        // Set the base data
+        resonite.SetFrom((UnityEngine.Collider)unity);
 
-            Height = collider.height;
-            Radius = collider.radius;
-            Offset = collider.center;
-        }
+        resonite.Height = unity.height;
+        resonite.Radius = unity.radius;
+        resonite.Offset = unity.center;
     }
 }
 

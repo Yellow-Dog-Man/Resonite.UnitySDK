@@ -1,28 +1,27 @@
-using UnityEngine;
+using FrooxEngine;
 using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using UnityEngine;
 
-namespace FrooxEngine
+public static class ColliderHelper
 {
-    public abstract partial class Collider<TShape>
+    public static void SetFrom<TShape>(this FrooxEngine.Collider<TShape> resonite, UnityEngine.Collider unity)
+         where TShape : struct
     {
-        public void SetFrom(UnityEngine.Collider collider)
-        {
-            persistent = true;
-            Enabled = collider.enabled;
+        resonite.persistent = true;
+        resonite.Enabled = unity.enabled;
 
-            if (collider.isTrigger)
-            {
-                Type = ColliderType.Trigger;
-                CharacterCollider = false;
-            }
-            else
-            {
-                Type = ColliderType.Static;
-                CharacterCollider = true;
-            }
+        if (unity.isTrigger)
+        {
+            resonite.Type = ColliderType.Trigger;
+            resonite.CharacterCollider = false;
+        }
+        else
+        {
+            resonite.Type = ColliderType.Static;
+            resonite.CharacterCollider = true;
         }
     }
 }

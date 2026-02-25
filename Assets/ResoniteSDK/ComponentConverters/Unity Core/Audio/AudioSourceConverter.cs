@@ -2,71 +2,65 @@ using FrooxEngine;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static UnityEditor.Timeline.TimelinePlaybackControls;
 
-namespace FrooxEngine
+public static class AudioSourceHelper
 {
-    public partial class AudioOutput
+    public static void SetFrom(this FrooxEngine.AudioOutput resonite, UnityEngine.AudioSource unity)
     {
-        public void SetFrom(UnityEngine.AudioSource audioSource)
+        // Set the basics
+        resonite.SetFrom((UnityEngine.Behaviour)unity);
+
+        resonite.Volume = unity.volume;
+        resonite.SpatialBlend = unity.spatialBlend;
+        resonite.Spatialize = unity.spatialize;
+
+        resonite.MinDistance = unity.minDistance;
+        resonite.MaxDistance = unity.maxDistance;
+
+        resonite.SpatializationStartDistance = 0.2f;
+        resonite.SpatializationTransitionRange = 0.5f;
+
+        resonite.Pitch = 1;
+
+        resonite.DopplerLevel = unity.dopplerLevel;
+
+        resonite.Priority = unity.priority;
+
+        // TODO!!! Is there a good way to classify this here?
+        resonite.AudioTypeGroup = AudioTypeGroup.SoundEffect;
+
+        // Unity uses everything in the global space
+        resonite.DistanceSpace = AudioDistanceSpace.Global;
+
+        resonite.IgnoreAudioEffects = unity.bypassReverbZones || unity.bypassEffects;
+
+        switch (unity.rolloffMode)
         {
-            // Set the basics
-            base.SetFrom(audioSource);
+            case AudioRolloffMode.Linear:
+                resonite.RolloffMode = Awwdio.AudioRolloffCurve.Linear;
+                break;
 
-            Volume = audioSource.volume;
-            SpatialBlend = audioSource.spatialBlend;
-            Spatialize = audioSource.spatialize;
+            case AudioRolloffMode.Logarithmic:
+                resonite.RolloffMode = Awwdio.AudioRolloffCurve.Logarithmic;
+                break;
 
-            MinDistance = audioSource.minDistance;
-            MaxDistance = audioSource.maxDistance;
-
-            SpatializationStartDistance = 0.2f;
-            SpatializationTransitionRange = 0.5f;
-
-            Pitch = 1;
-
-            DopplerLevel = audioSource.dopplerLevel;
-
-            Priority = audioSource.priority;
-
-            // TODO!!! Is there a good way to classify this here?
-            AudioTypeGroup = AudioTypeGroup.SoundEffect;
-
-            // Unity uses everything in the global space
-            DistanceSpace = AudioDistanceSpace.Global;
-
-            IgnoreAudioEffects = audioSource.bypassReverbZones || audioSource.bypassEffects;
-
-            switch(audioSource.rolloffMode)
-            {
-                case AudioRolloffMode.Linear:
-                    RolloffMode = Awwdio.AudioRolloffCurve.Linear;
-                    break;
-
-                case AudioRolloffMode.Logarithmic:
-                    RolloffMode = Awwdio.AudioRolloffCurve.Logarithmic;
-                    break;
-
-                case AudioRolloffMode.Custom:
-                    Debug.LogWarning("Custom audio rolloff isn't currently supported");
-                    RolloffMode = Awwdio.AudioRolloffCurve.Logarithmic;
-                    break;
-            }
+            case AudioRolloffMode.Custom:
+                Debug.LogWarning("Custom audio rolloff isn't currently supported");
+                resonite.RolloffMode = Awwdio.AudioRolloffCurve.Logarithmic;
+                break;
         }
     }
-
-    public partial class AudioClipPlayer
+    public static void SetFrom(this FrooxEngine.AudioClipPlayer resonite, UnityEngine.AudioSource unity, IConversionContext context)
     {
-        public void SetFrom(UnityEngine.AudioSource audioSource, IConversionContext context)
-        {
-            base.SetFrom(audioSource);
+        resonite.SetFrom((UnityEngine.Behaviour)unity);
 
-            Clip = context.GetAudioClip(audioSource.clip);
+        resonite.Clip = context.GetAudioClip(unity.clip);
 
-            playback.Position = 0;
-            playback.Playing = audioSource.playOnAwake;
-            playback.Loop = audioSource.loop;
-            playback.Speed = audioSource.pitch;
-        }
+        resonite.playback.Position = 0;
+        resonite.playback.Playing = unity.playOnAwake;
+        resonite.playback.Loop = unity.loop;
+        resonite.playback.Speed = unity.pitch;
     }
 }
 

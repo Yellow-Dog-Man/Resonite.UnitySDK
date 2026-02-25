@@ -1,18 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Drawing;
 using UnityEngine;
 
-namespace FrooxEngine
+public static class BoxColliderHelper
 {
-    public partial class BoxCollider
+    public static void SetFrom(this FrooxEngine.BoxCollider resonite, UnityEngine.BoxCollider unity)
     {
-        public void SetFrom(UnityEngine.BoxCollider collider)
-        {
-            base.SetFrom(collider);
+        // Set the base data
+        resonite.SetFrom((UnityEngine.Collider)unity);
 
-            Size = collider.size;
-            Offset = collider.center;
-        }
+        resonite.Size = unity.size;
+        resonite.Offset = unity.center;
     }
 }
 

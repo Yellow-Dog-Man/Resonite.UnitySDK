@@ -2,66 +2,63 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace FrooxEngine
+public static class SkinnedMeshRendererHelper
 {
-    public partial class SkinnedMeshRenderer
+    public static void SetFrom(this FrooxEngine.SkinnedMeshRenderer resonite, UnityEngine.SkinnedMeshRenderer unity, IConversionContext context)
     {
-        public void SetFrom(UnityEngine.SkinnedMeshRenderer renderer, IConversionContext context)
+        // This will assign all the shared stuff for the MeshRenderer
+        // Shadow casting, materials and so on, EXCEPT the mesh and skinned data
+        resonite.SetFrom((UnityEngine.Renderer)unity, context);
+
+        var mesh = unity.sharedMesh;
+
+        // SkinnedMeshRenderer doesn't use mesh filter, we just get it directly
+        resonite.Mesh = context.GetMesh(mesh);
+
+        // If the mesh isn't assigned, we can't actually calculate these properly
+        if (mesh == null)
+            return;
+
+        // Blendshapes
+        var blendshapeCount = mesh.blendShapeCount;
+
+        if (resonite.BlendShapeWeights == null)
+            resonite.BlendShapeWeights = new List<float>();
+
+        for (int b = 0; b < blendshapeCount; b++)
         {
-            // This will assign all the shared stuff for the MeshRenderer
-            // Shadow casting, materials and so on, EXCEPT the mesh and skinned data
-            base.SetFrom((UnityEngine.Renderer)renderer, context);
+            var endFrameWeight = mesh.GetBlendShapeFrameWeight(b, mesh.GetBlendShapeFrameCount(b) - 1);
 
-            var mesh = renderer.sharedMesh;
+            // Resonite uses normalized blendshape frame weight range between 0...1
+            // We need to scale the weight to the actual frame of the mesh, otherwise the strength will be wrong
+            var weight = unity.GetBlendShapeWeight(b) / endFrameWeight;
 
-            // SkinnedMeshRenderer doesn't use mesh filter, we just get it directly
-            Mesh = context.GetMesh(mesh);
-
-            // If the mesh isn't assigned, we can't actually calculate these properly
-            if (mesh == null)
-                return;
-
-            // Blendshapes
-            var blendshapeCount = mesh.blendShapeCount;
-
-            if (BlendShapeWeights == null)
-                BlendShapeWeights = new List<float>();
-
-            for(int b = 0; b < blendshapeCount; b++)
-            {
-                var endFrameWeight = mesh.GetBlendShapeFrameWeight(b, mesh.GetBlendShapeFrameCount(b) - 1);
-
-                // Resonite uses normalized blendshape frame weight range between 0...1
-                // We need to scale the weight to the actual frame of the mesh, otherwise the strength will be wrong
-                var weight = renderer.GetBlendShapeWeight(b) / endFrameWeight;
-
-                if (BlendShapeWeights.Count == b)
-                    BlendShapeWeights.Add(weight);
-                else
-                    BlendShapeWeights[b] = weight;
-            }
-
-            while (BlendShapeWeights.Count > blendshapeCount)
-                BlendShapeWeights.RemoveAt(BlendShapeWeights.Count - 1);
-
-            // Bones
-            if(Bones == null)
-                Bones = new List<Slot>();
-
-            for(int b = 0; b < renderer.bones.Length; b++)
-            {
-                var bone = renderer.bones[b];
-                var slot = bone.GetSlot();
-
-                if (Bones.Count == b)
-                    Bones.Add(slot);
-                else
-                    Bones[b] = slot;
-            }
-
-            while (Bones.Count > renderer.bones.Length)
-                Bones.RemoveAt(Bones.Count - 1);
+            if (resonite.BlendShapeWeights.Count == b)
+                resonite.BlendShapeWeights.Add(weight);
+            else
+                resonite.BlendShapeWeights[b] = weight;
         }
+
+        while (resonite.BlendShapeWeights.Count > blendshapeCount)
+            resonite.BlendShapeWeights.RemoveAt(resonite.BlendShapeWeights.Count - 1);
+
+        // Bones
+        if (resonite.Bones == null)
+            resonite.Bones = new List<FrooxEngine.Slot>();
+
+        for (int b = 0; b < unity.bones.Length; b++)
+        {
+            var bone = unity.bones[b];
+            var slot = bone.GetSlot();
+
+            if (resonite.Bones.Count == b)
+                resonite.Bones.Add(slot);
+            else
+                resonite.Bones[b] = slot;
+        }
+
+        while (resonite.Bones.Count > unity.bones.Length)
+            resonite.Bones.RemoveAt(resonite.Bones.Count - 1);
     }
 }
 
