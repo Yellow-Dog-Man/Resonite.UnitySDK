@@ -2,9 +2,9 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.ExternalSlotSaver
-// Generated on: čtvrtek 26. února 2026 12:28:16
-// Resonite version: 2026.2.26.702
-// Resonite Link Version: 0.9.2.0
+// Generated on: čtvrtek 26. února 2026 15:09:17
+// Resonite version: 2026.2.26.828
+// Resonite Link Version: 0.9.3.0
 // -----------------------------------------------------------------------------
 
 using UnityEngine;
@@ -21,7 +21,7 @@ public partial class ExternalSlotSaver : global::FrooxEngine.Component, global::
 
 {
     public global::FrooxEngine.Slot TargetSlot { get => TargetSlot_Element.Data; set => TargetSlot_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> TargetSlot_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> TargetSlot_Element = new();
 public global::System.Nullable<global::System.Boolean> SaveActiveSelfOverride { get => SaveActiveSelfOverride_Element.Data; set => SaveActiveSelfOverride_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<global::System.Nullable<global::System.Boolean>>, global::System.Nullable<global::System.Boolean>> SaveActiveSelfOverride_Element = new();
 public global::System.Nullable<UnityEngine.Vector3> SaveLocalPositionOverride { get => SaveLocalPositionOverride_Element.Data; set => SaveLocalPositionOverride_Element.Data = value; }

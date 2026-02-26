@@ -2,9 +2,9 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.FresnelLerpMaterial
-// Generated on: čtvrtek 26. února 2026 12:26:48
-// Resonite version: 2026.2.26.702
-// Resonite Link Version: 0.9.2.0
+// Generated on: čtvrtek 26. února 2026 15:07:54
+// Resonite version: 2026.2.26.828
+// Resonite Link Version: 0.9.3.0
 // -----------------------------------------------------------------------------
 
 using UnityEngine;
@@ -23,7 +23,7 @@ public partial class FresnelLerpMaterial : global::FrooxEngine.SingleShaderMater
     public global::System.Single Lerp { get => Lerp_Element.Data; set => Lerp_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> Lerp_Element = new();
 public global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D> LerpTexture { get => LerpTexture_Element.Data; set => LerpTexture_Element.Data = value; }
-public Field<global::FrooxEngine.AssetRef<global::FrooxEngine.ITexture2D>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D>> LerpTexture_Element = new();
+public Reference<global::FrooxEngine.AssetRef<global::FrooxEngine.ITexture2D>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D>> LerpTexture_Element = new();
 public UnityEngine.Vector2 LerpTextureScale { get => LerpTextureScale_Element.Data; set => LerpTextureScale_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<UnityEngine.Vector2>, UnityEngine.Vector2> LerpTextureScale_Element = new();
 public UnityEngine.Vector2 LerpTextureOffset { get => LerpTextureOffset_Element.Data; set => LerpTextureOffset_Element.Data = value; }
@@ -47,17 +47,17 @@ public Field<global::FrooxEngine.Sync<UnityEngine.ColorX>, UnityEngine.ColorX> F
 public UnityEngine.ColorX NearColor1 { get => NearColor1_Element.Data; set => NearColor1_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<UnityEngine.ColorX>, UnityEngine.ColorX> NearColor1_Element = new();
 public global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D> FarTexture0 { get => FarTexture0_Element.Data; set => FarTexture0_Element.Data = value; }
-public Field<global::FrooxEngine.AssetRef<global::FrooxEngine.ITexture2D>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D>> FarTexture0_Element = new();
+public Reference<global::FrooxEngine.AssetRef<global::FrooxEngine.ITexture2D>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D>> FarTexture0_Element = new();
 public global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D> NearTexture0 { get => NearTexture0_Element.Data; set => NearTexture0_Element.Data = value; }
-public Field<global::FrooxEngine.AssetRef<global::FrooxEngine.ITexture2D>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D>> NearTexture0_Element = new();
+public Reference<global::FrooxEngine.AssetRef<global::FrooxEngine.ITexture2D>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D>> NearTexture0_Element = new();
 public global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D> FarTexture1 { get => FarTexture1_Element.Data; set => FarTexture1_Element.Data = value; }
-public Field<global::FrooxEngine.AssetRef<global::FrooxEngine.ITexture2D>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D>> FarTexture1_Element = new();
+public Reference<global::FrooxEngine.AssetRef<global::FrooxEngine.ITexture2D>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D>> FarTexture1_Element = new();
 public global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D> NearTexture1 { get => NearTexture1_Element.Data; set => NearTexture1_Element.Data = value; }
-public Field<global::FrooxEngine.AssetRef<global::FrooxEngine.ITexture2D>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D>> NearTexture1_Element = new();
+public Reference<global::FrooxEngine.AssetRef<global::FrooxEngine.ITexture2D>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D>> NearTexture1_Element = new();
 public global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D> NormalMap0 { get => NormalMap0_Element.Data; set => NormalMap0_Element.Data = value; }
-public Field<global::FrooxEngine.AssetRef<global::FrooxEngine.ITexture2D>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D>> NormalMap0_Element = new();
+public Reference<global::FrooxEngine.AssetRef<global::FrooxEngine.ITexture2D>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D>> NormalMap0_Element = new();
 public global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D> NormalMap1 { get => NormalMap1_Element.Data; set => NormalMap1_Element.Data = value; }
-public Field<global::FrooxEngine.AssetRef<global::FrooxEngine.ITexture2D>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D>> NormalMap1_Element = new();
+public Reference<global::FrooxEngine.AssetRef<global::FrooxEngine.ITexture2D>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D>> NormalMap1_Element = new();
 public global::FrooxEngine.BlendMode BlendMode { get => BlendMode_Element.Data; set => BlendMode_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<global::FrooxEngine.BlendMode>, global::FrooxEngine.BlendMode> BlendMode_Element = new();
 public global::FrooxEngine.Sidedness Sidedness { get => Sidedness_Element.Data; set => Sidedness_Element.Data = value; }

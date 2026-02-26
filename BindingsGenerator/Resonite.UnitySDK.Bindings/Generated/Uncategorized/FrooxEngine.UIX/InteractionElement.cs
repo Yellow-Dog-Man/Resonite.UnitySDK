@@ -2,9 +2,9 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.UIX.InteractionElement
-// Generated on: čtvrtek 26. února 2026 12:26:52
-// Resonite version: 2026.2.26.702
-// Resonite Link Version: 0.9.2.0
+// Generated on: čtvrtek 26. února 2026 15:07:57
+// Resonite version: 2026.2.26.828
+// Resonite Link Version: 0.9.3.0
 // -----------------------------------------------------------------------------
 
 using UnityEngine;
@@ -34,7 +34,7 @@ public Field<global::FrooxEngine.Sync<UnityEngine.ColorX>, UnityEngine.ColorX> _
 public global::FrooxEngine.UIX.InteractionElement.ColorMode __legacy_TintColorMode { get => __legacy_TintColorMode_Element.Data; set => __legacy_TintColorMode_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<global::FrooxEngine.UIX.InteractionElement.ColorMode>, global::FrooxEngine.UIX.InteractionElement.ColorMode> __legacy_TintColorMode_Element = new();
 public global::FrooxEngine.IField<UnityEngine.ColorX> __legacy_ColorDrive { get => __legacy_ColorDrive_Element.Data; set => __legacy_ColorDrive_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<UnityEngine.ColorX>, global::FrooxEngine.IField<UnityEngine.ColorX>> __legacy_ColorDrive_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<UnityEngine.ColorX>, global::FrooxEngine.IField<UnityEngine.ColorX>> __legacy_ColorDrive_Element = new();
 public global::System.Boolean IsPressed { get => IsPressed_Element.Data; set => IsPressed_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> IsPressed_Element = new();
 public global::System.Boolean IsHovering { get => IsHovering_Element.Data; set => IsHovering_Element.Data = value; }

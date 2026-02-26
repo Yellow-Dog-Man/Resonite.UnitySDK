@@ -2,9 +2,9 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.TextUnlitMaterial
-// Generated on: čtvrtek 26. února 2026 12:26:48
-// Resonite version: 2026.2.26.702
-// Resonite Link Version: 0.9.2.0
+// Generated on: čtvrtek 26. února 2026 15:07:54
+// Resonite version: 2026.2.26.828
+// Resonite Link Version: 0.9.3.0
 // -----------------------------------------------------------------------------
 
 using UnityEngine;
@@ -21,7 +21,7 @@ public partial class TextUnlitMaterial : global::FrooxEngine.SingleShaderMateria
 
 {
     public global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D> FontAtlas { get => FontAtlas_Element.Data; set => FontAtlas_Element.Data = value; }
-public Field<global::FrooxEngine.AssetRef<global::FrooxEngine.ITexture2D>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D>> FontAtlas_Element = new();
+public Reference<global::FrooxEngine.AssetRef<global::FrooxEngine.ITexture2D>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D>> FontAtlas_Element = new();
 public UnityEngine.ColorX TintColor { get => TintColor_Element.Data; set => TintColor_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<UnityEngine.ColorX>, UnityEngine.ColorX> TintColor_Element = new();
 public UnityEngine.ColorX OutlineColor { get => OutlineColor_Element.Data; set => OutlineColor_Element.Data = value; }

@@ -2,9 +2,9 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.DroneCamera
-// Generated on: čtvrtek 26. února 2026 12:28:16
-// Resonite version: 2026.2.26.702
-// Resonite Link Version: 0.9.2.0
+// Generated on: čtvrtek 26. února 2026 15:09:17
+// Resonite version: 2026.2.26.828
+// Resonite Link Version: 0.9.3.0
 // -----------------------------------------------------------------------------
 
 using UnityEngine;
@@ -34,15 +34,15 @@ public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Sin
 public global::System.Single MouseSensitivity { get => MouseSensitivity_Element.Data; set => MouseSensitivity_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> MouseSensitivity_Element = new();
 public global::FrooxEngine.IField<global::System.Single> FieldOfViewSource { get => FieldOfViewSource_Element.Data; set => FieldOfViewSource_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.IField<global::System.Single>>, global::FrooxEngine.IField<global::System.Single>> FieldOfViewSource_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.IField<global::System.Single>>, global::FrooxEngine.IField<global::System.Single>> FieldOfViewSource_Element = new();
 public global::System.Single FieldOfView { get => FieldOfView_Element.Data; set => FieldOfView_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> FieldOfView_Element = new();
 public global::FrooxEngine.IField<global::System.Single> AspectRatioSource { get => AspectRatioSource_Element.Data; set => AspectRatioSource_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.IField<global::System.Single>>, global::FrooxEngine.IField<global::System.Single>> AspectRatioSource_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.IField<global::System.Single>>, global::FrooxEngine.IField<global::System.Single>> AspectRatioSource_Element = new();
 public global::System.Single AspectRatio { get => AspectRatio_Element.Data; set => AspectRatio_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> AspectRatio_Element = new();
 public global::FrooxEngine.User FollowUser { get => FollowUser_Element.Data; set => FollowUser_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.User>, global::FrooxEngine.User> FollowUser_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.User>, global::FrooxEngine.User> FollowUser_Element = new();
 public global::System.Single ControllerRejectDistance { get => ControllerRejectDistance_Element.Data; set => ControllerRejectDistance_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> ControllerRejectDistance_Element = new();
 public global::System.Single GroupSearchRadius { get => GroupSearchRadius_Element.Data; set => GroupSearchRadius_Element.Data = value; }

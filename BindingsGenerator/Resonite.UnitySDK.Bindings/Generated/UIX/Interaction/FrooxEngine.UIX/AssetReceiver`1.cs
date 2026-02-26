@@ -2,9 +2,9 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.UIX.AssetReceiver<>
-// Generated on: čtvrtek 26. února 2026 12:28:08
-// Resonite version: 2026.2.26.702
-// Resonite Link Version: 0.9.2.0
+// Generated on: čtvrtek 26. února 2026 15:09:09
+// Resonite version: 2026.2.26.828
+// Resonite Link Version: 0.9.3.0
 // -----------------------------------------------------------------------------
 
 using UnityEngine;
@@ -22,7 +22,7 @@ public partial class AssetReceiver<A> : global::FrooxEngine.Component, global::F
 
 {
     public global::FrooxEngine.AssetRef<A> Reference { get => Reference_Element.Data; set => Reference_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.AssetRef<A>>, global::FrooxEngine.AssetRef<A>> Reference_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.AssetRef<A>>, global::FrooxEngine.AssetRef<A>> Reference_Element = new();
 public global::System.Boolean Undoable { get => Undoable_Element.Data; set => Undoable_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> Undoable_Element = new();
 

@@ -2,9 +2,9 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.ProceduralSkyMaterial
-// Generated on: čtvrtek 26. února 2026 12:26:48
-// Resonite version: 2026.2.26.702
-// Resonite Link Version: 0.9.2.0
+// Generated on: čtvrtek 26. února 2026 15:07:54
+// Resonite version: 2026.2.26.828
+// Resonite Link Version: 0.9.3.0
 // -----------------------------------------------------------------------------
 
 using UnityEngine;
@@ -25,7 +25,7 @@ public Field<global::FrooxEngine.Sync<global::FrooxEngine.ProceduralSkyMaterial.
 public global::System.Single SunSize { get => SunSize_Element.Data; set => SunSize_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> SunSize_Element = new();
 public global::FrooxEngine.Light Sun { get => Sun_Element.Data; set => Sun_Element.Data = value; }
-public Field<global::FrooxEngine.RelayRef<global::FrooxEngine.Light>, global::FrooxEngine.Light> Sun_Element = new();
+public Reference<global::FrooxEngine.RelayRef<global::FrooxEngine.Light>, global::FrooxEngine.Light> Sun_Element = new();
 public global::System.Single AtmosphereThickness { get => AtmosphereThickness_Element.Data; set => AtmosphereThickness_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> AtmosphereThickness_Element = new();
 public UnityEngine.ColorX SkyTint { get => SkyTint_Element.Data; set => SkyTint_Element.Data = value; }

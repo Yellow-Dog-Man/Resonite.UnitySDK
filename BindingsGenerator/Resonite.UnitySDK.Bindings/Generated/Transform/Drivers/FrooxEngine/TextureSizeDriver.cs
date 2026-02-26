@@ -2,9 +2,9 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.TextureSizeDriver
-// Generated on: čtvrtek 26. února 2026 12:28:07
-// Resonite version: 2026.2.26.702
-// Resonite Link Version: 0.9.2.0
+// Generated on: čtvrtek 26. února 2026 15:09:08
+// Resonite version: 2026.2.26.828
+// Resonite Link Version: 0.9.3.0
 // -----------------------------------------------------------------------------
 
 using UnityEngine;
@@ -21,9 +21,9 @@ public partial class TextureSizeDriver : global::FrooxEngine.Component
 
 {
     public global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D> Texture { get => Texture_Element.Data; set => Texture_Element.Data = value; }
-public Field<global::FrooxEngine.AssetRef<global::FrooxEngine.ITexture2D>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D>> Texture_Element = new();
+public Reference<global::FrooxEngine.AssetRef<global::FrooxEngine.ITexture2D>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D>> Texture_Element = new();
 public global::FrooxEngine.IField<UnityEngine.Vector2> Target { get => Target_Element.Data; set => Target_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<UnityEngine.Vector2>, global::FrooxEngine.IField<UnityEngine.Vector2>> Target_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<UnityEngine.Vector2>, global::FrooxEngine.IField<UnityEngine.Vector2>> Target_Element = new();
 public global::FrooxEngine.TextureSizeDriver.Mode DriveMode { get => DriveMode_Element.Data; set => DriveMode_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<global::FrooxEngine.TextureSizeDriver.Mode>, global::FrooxEngine.TextureSizeDriver.Mode> DriveMode_Element = new();
 public UnityEngine.Vector2 Premultiply { get => Premultiply_Element.Data; set => Premultiply_Element.Data = value; }

@@ -2,9 +2,9 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [ProtoFluxBindings]FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.Operators.Mask_Double4
-// Generated on: čtvrtek 26. února 2026 12:27:47
-// Resonite version: 2026.2.26.702
-// Resonite Link Version: 0.9.2.0
+// Generated on: čtvrtek 26. února 2026 15:08:49
+// Resonite version: 2026.2.26.828
+// Resonite Link Version: 0.9.3.0
 // -----------------------------------------------------------------------------
 
 using UnityEngine;
@@ -21,11 +21,11 @@ public partial class Mask_Double4 : global::FrooxEngine.ProtoFlux.Runtimes.Execu
 
 {
     public global::FrooxEngine.ProtoFlux.INodeValueOutput<UnityEngine.Vector4Double> OnTrue { get => OnTrue_Element.Data; set => OnTrue_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.ProtoFlux.INodeValueOutput<UnityEngine.Vector4Double>>, global::FrooxEngine.ProtoFlux.INodeValueOutput<UnityEngine.Vector4Double>> OnTrue_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.ProtoFlux.INodeValueOutput<UnityEngine.Vector4Double>>, global::FrooxEngine.ProtoFlux.INodeValueOutput<UnityEngine.Vector4Double>> OnTrue_Element = new();
 public global::FrooxEngine.ProtoFlux.INodeValueOutput<UnityEngine.Vector4Double> OnFalse { get => OnFalse_Element.Data; set => OnFalse_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.ProtoFlux.INodeValueOutput<UnityEngine.Vector4Double>>, global::FrooxEngine.ProtoFlux.INodeValueOutput<UnityEngine.Vector4Double>> OnFalse_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.ProtoFlux.INodeValueOutput<UnityEngine.Vector4Double>>, global::FrooxEngine.ProtoFlux.INodeValueOutput<UnityEngine.Vector4Double>> OnFalse_Element = new();
 public global::FrooxEngine.ProtoFlux.INodeValueOutput<UnityEngine.Vector4Bool> Mask { get => Mask_Element.Data; set => Mask_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.ProtoFlux.INodeValueOutput<UnityEngine.Vector4Bool>>, global::FrooxEngine.ProtoFlux.INodeValueOutput<UnityEngine.Vector4Bool>> Mask_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.ProtoFlux.INodeValueOutput<UnityEngine.Vector4Bool>>, global::FrooxEngine.ProtoFlux.INodeValueOutput<UnityEngine.Vector4Bool>> Mask_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)

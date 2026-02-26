@@ -2,9 +2,9 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.RadiantModalOverlay
-// Generated on: čtvrtek 26. února 2026 12:28:08
-// Resonite version: 2026.2.26.702
-// Resonite Link Version: 0.9.2.0
+// Generated on: čtvrtek 26. února 2026 15:09:09
+// Resonite version: 2026.2.26.828
+// Resonite Link Version: 0.9.3.0
 // -----------------------------------------------------------------------------
 
 using UnityEngine;
@@ -31,33 +31,33 @@ public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Sin
 public global::System.Single Padding { get => Padding_Element.Data; set => Padding_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> Padding_Element = new();
 public global::FrooxEngine.UIX.Text _title { get => _title_Element.Data; set => _title_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.UIX.Text>, global::FrooxEngine.UIX.Text> _title_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.UIX.Text>, global::FrooxEngine.UIX.Text> _title_Element = new();
 public global::FrooxEngine.BlurMaterial _blur { get => _blur_Element.Data; set => _blur_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.BlurMaterial>, global::FrooxEngine.BlurMaterial> _blur_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.BlurMaterial>, global::FrooxEngine.BlurMaterial> _blur_Element = new();
 public global::FrooxEngine.UIX.RawGraphic _blurGraphic { get => _blurGraphic_Element.Data; set => _blurGraphic_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.UIX.RawGraphic>, global::FrooxEngine.UIX.RawGraphic> _blurGraphic_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.UIX.RawGraphic>, global::FrooxEngine.UIX.RawGraphic> _blurGraphic_Element = new();
 public global::FrooxEngine.IField<UnityEngine.Vector2> _blurSpread { get => _blurSpread_Element.Data; set => _blurSpread_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<UnityEngine.Vector2>, global::FrooxEngine.IField<UnityEngine.Vector2>> _blurSpread_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<UnityEngine.Vector2>, global::FrooxEngine.IField<UnityEngine.Vector2>> _blurSpread_Element = new();
 public global::FrooxEngine.IField<UnityEngine.ColorX> _backgroundColor { get => _backgroundColor_Element.Data; set => _backgroundColor_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<UnityEngine.ColorX>, global::FrooxEngine.IField<UnityEngine.ColorX>> _backgroundColor_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<UnityEngine.ColorX>, global::FrooxEngine.IField<UnityEngine.ColorX>> _backgroundColor_Element = new();
 public global::FrooxEngine.IField<UnityEngine.Rect> _maskRect { get => _maskRect_Element.Data; set => _maskRect_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<UnityEngine.Rect>, global::FrooxEngine.IField<UnityEngine.Rect>> _maskRect_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<UnityEngine.Rect>, global::FrooxEngine.IField<UnityEngine.Rect>> _maskRect_Element = new();
 public global::FrooxEngine.IField<UnityEngine.Vector2> _headerOffsetMin { get => _headerOffsetMin_Element.Data; set => _headerOffsetMin_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<UnityEngine.Vector2>, global::FrooxEngine.IField<UnityEngine.Vector2>> _headerOffsetMin_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<UnityEngine.Vector2>, global::FrooxEngine.IField<UnityEngine.Vector2>> _headerOffsetMin_Element = new();
 public global::FrooxEngine.IField<UnityEngine.Vector2> _headerOffsetMax { get => _headerOffsetMax_Element.Data; set => _headerOffsetMax_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<UnityEngine.Vector2>, global::FrooxEngine.IField<UnityEngine.Vector2>> _headerOffsetMax_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<UnityEngine.Vector2>, global::FrooxEngine.IField<UnityEngine.Vector2>> _headerOffsetMax_Element = new();
 public global::FrooxEngine.IField<UnityEngine.Vector2> _contentOffsetMin { get => _contentOffsetMin_Element.Data; set => _contentOffsetMin_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<UnityEngine.Vector2>, global::FrooxEngine.IField<UnityEngine.Vector2>> _contentOffsetMin_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<UnityEngine.Vector2>, global::FrooxEngine.IField<UnityEngine.Vector2>> _contentOffsetMin_Element = new();
 public global::FrooxEngine.IField<UnityEngine.Vector2> _contentOffsetMax { get => _contentOffsetMax_Element.Data; set => _contentOffsetMax_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<UnityEngine.Vector2>, global::FrooxEngine.IField<UnityEngine.Vector2>> _contentOffsetMax_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<UnityEngine.Vector2>, global::FrooxEngine.IField<UnityEngine.Vector2>> _contentOffsetMax_Element = new();
 public global::FrooxEngine.IField<UnityEngine.Vector2> _titleOffsetMin { get => _titleOffsetMin_Element.Data; set => _titleOffsetMin_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<UnityEngine.Vector2>, global::FrooxEngine.IField<UnityEngine.Vector2>> _titleOffsetMin_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<UnityEngine.Vector2>, global::FrooxEngine.IField<UnityEngine.Vector2>> _titleOffsetMin_Element = new();
 public global::FrooxEngine.IField<UnityEngine.Vector2> _titleOffsetMax { get => _titleOffsetMax_Element.Data; set => _titleOffsetMax_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<UnityEngine.Vector2>, global::FrooxEngine.IField<UnityEngine.Vector2>> _titleOffsetMax_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<UnityEngine.Vector2>, global::FrooxEngine.IField<UnityEngine.Vector2>> _titleOffsetMax_Element = new();
 public global::FrooxEngine.IField<UnityEngine.Vector2> _closeOffsetMin { get => _closeOffsetMin_Element.Data; set => _closeOffsetMin_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<UnityEngine.Vector2>, global::FrooxEngine.IField<UnityEngine.Vector2>> _closeOffsetMin_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<UnityEngine.Vector2>, global::FrooxEngine.IField<UnityEngine.Vector2>> _closeOffsetMin_Element = new();
 public global::FrooxEngine.IField<UnityEngine.Vector2> _closeOffsetMax { get => _closeOffsetMax_Element.Data; set => _closeOffsetMax_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<UnityEngine.Vector2>, global::FrooxEngine.IField<UnityEngine.Vector2>> _closeOffsetMax_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<UnityEngine.Vector2>, global::FrooxEngine.IField<UnityEngine.Vector2>> _closeOffsetMax_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)

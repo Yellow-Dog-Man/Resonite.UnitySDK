@@ -2,9 +2,9 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.VisemeAnalyzer
-// Generated on: čtvrtek 26. února 2026 12:26:57
-// Resonite version: 2026.2.26.702
-// Resonite Link Version: 0.9.2.0
+// Generated on: čtvrtek 26. února 2026 15:08:01
+// Resonite version: 2026.2.26.828
+// Resonite Link Version: 0.9.3.0
 // -----------------------------------------------------------------------------
 
 using UnityEngine;
@@ -21,9 +21,9 @@ public partial class VisemeAnalyzer : global::FrooxEngine.Component
 
 {
     public global::FrooxEngine.IWorldAudioDataSource Source { get => Source_Element.Data; set => Source_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.IWorldAudioDataSource>, global::FrooxEngine.IWorldAudioDataSource> Source_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.IWorldAudioDataSource>, global::FrooxEngine.IWorldAudioDataSource> Source_Element = new();
 public global::FrooxEngine.MultiValueStream<global::System.Single> RemoteSource { get => RemoteSource_Element.Data; set => RemoteSource_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.MultiValueStream<global::System.Single>>, global::FrooxEngine.MultiValueStream<global::System.Single>> RemoteSource_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.MultiValueStream<global::System.Single>>, global::FrooxEngine.MultiValueStream<global::System.Single>> RemoteSource_Element = new();
 public global::FrooxEngine.VisemeAnalyzerEngine PreferredAnalyzer { get => PreferredAnalyzer_Element.Data; set => PreferredAnalyzer_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<global::FrooxEngine.VisemeAnalyzerEngine>, global::FrooxEngine.VisemeAnalyzerEngine> PreferredAnalyzer_Element = new();
 public global::System.Single Smoothing { get => Smoothing_Element.Data; set => Smoothing_Element.Data = value; }

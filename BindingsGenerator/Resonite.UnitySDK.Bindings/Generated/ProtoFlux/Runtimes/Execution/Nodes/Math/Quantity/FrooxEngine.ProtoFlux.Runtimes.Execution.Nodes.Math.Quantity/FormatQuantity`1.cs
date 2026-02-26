@@ -2,9 +2,9 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [ProtoFluxBindings]FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.Math.Quantity.FormatQuantity<>
-// Generated on: čtvrtek 26. února 2026 12:27:41
-// Resonite version: 2026.2.26.702
-// Resonite Link Version: 0.9.2.0
+// Generated on: čtvrtek 26. února 2026 15:08:44
+// Resonite version: 2026.2.26.828
+// Resonite Link Version: 0.9.3.0
 // -----------------------------------------------------------------------------
 
 using UnityEngine;
@@ -22,13 +22,13 @@ public partial class FormatQuantity<U> : global::FrooxEngine.ProtoFlux.Runtimes.
 
 {
     public global::FrooxEngine.ProtoFlux.INodeValueOutput<U> Value { get => Value_Element.Data; set => Value_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.ProtoFlux.INodeValueOutput<U>>, global::FrooxEngine.ProtoFlux.INodeValueOutput<U>> Value_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.ProtoFlux.INodeValueOutput<U>>, global::FrooxEngine.ProtoFlux.INodeValueOutput<U>> Value_Element = new();
 public global::FrooxEngine.ProtoFlux.INodeObjectOutput<global::System.String> FormatUnit { get => FormatUnit_Element.Data; set => FormatUnit_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.ProtoFlux.INodeObjectOutput<global::System.String>>, global::FrooxEngine.ProtoFlux.INodeObjectOutput<global::System.String>> FormatUnit_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.ProtoFlux.INodeObjectOutput<global::System.String>>, global::FrooxEngine.ProtoFlux.INodeObjectOutput<global::System.String>> FormatUnit_Element = new();
 public global::FrooxEngine.ProtoFlux.INodeObjectOutput<global::System.String> FormatNumber { get => FormatNumber_Element.Data; set => FormatNumber_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.ProtoFlux.INodeObjectOutput<global::System.String>>, global::FrooxEngine.ProtoFlux.INodeObjectOutput<global::System.String>> FormatNumber_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.ProtoFlux.INodeObjectOutput<global::System.String>>, global::FrooxEngine.ProtoFlux.INodeObjectOutput<global::System.String>> FormatNumber_Element = new();
 public global::FrooxEngine.ProtoFlux.INodeValueOutput<global::System.Boolean> UseLongNames { get => UseLongNames_Element.Data; set => UseLongNames_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.ProtoFlux.INodeValueOutput<global::System.Boolean>>, global::FrooxEngine.ProtoFlux.INodeValueOutput<global::System.Boolean>> UseLongNames_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.ProtoFlux.INodeValueOutput<global::System.Boolean>>, global::FrooxEngine.ProtoFlux.INodeValueOutput<global::System.Boolean>> UseLongNames_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)

@@ -2,9 +2,9 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [ProtoFluxBindings]FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Network.WebsocketEvents
-// Generated on: čtvrtek 26. února 2026 12:27:45
-// Resonite version: 2026.2.26.702
-// Resonite Link Version: 0.9.2.0
+// Generated on: čtvrtek 26. února 2026 15:08:47
+// Resonite version: 2026.2.26.828
+// Resonite Link Version: 0.9.3.0
 // -----------------------------------------------------------------------------
 
 using UnityEngine;
@@ -21,7 +21,7 @@ public abstract partial class WebsocketEvents : global::FrooxEngine.ProtoFlux.Ru
 
 {
     public global::FrooxEngine.ProtoFlux.IGlobalValueProxy<global::FrooxEngine.WebsocketClient> Client { get => Client_Element.Data; set => Client_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.ProtoFlux.IGlobalValueProxy<global::FrooxEngine.WebsocketClient>>, global::FrooxEngine.ProtoFlux.IGlobalValueProxy<global::FrooxEngine.WebsocketClient>> Client_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.ProtoFlux.IGlobalValueProxy<global::FrooxEngine.WebsocketClient>>, global::FrooxEngine.ProtoFlux.IGlobalValueProxy<global::FrooxEngine.WebsocketClient>> Client_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)

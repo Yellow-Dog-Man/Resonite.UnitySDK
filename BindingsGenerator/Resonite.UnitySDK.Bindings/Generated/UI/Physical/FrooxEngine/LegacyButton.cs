@@ -2,9 +2,9 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.LegacyButton
-// Generated on: čtvrtek 26. února 2026 12:28:08
-// Resonite version: 2026.2.26.702
-// Resonite Link Version: 0.9.2.0
+// Generated on: čtvrtek 26. února 2026 15:09:09
+// Resonite version: 2026.2.26.828
+// Resonite Link Version: 0.9.3.0
 // -----------------------------------------------------------------------------
 
 using UnityEngine;
@@ -37,27 +37,27 @@ public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Bo
 public global::System.Boolean AcceptOutOfSightTouch { get => AcceptOutOfSightTouch_Element.Data; set => AcceptOutOfSightTouch_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> AcceptOutOfSightTouch_Element = new();
 public global::FrooxEngine.Slot _textSlot { get => _textSlot_Element.Data; set => _textSlot_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> _textSlot_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> _textSlot_Element = new();
 public global::FrooxEngine.TextRenderer _textRenderer { get => _textRenderer_Element.Data; set => _textRenderer_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.TextRenderer>, global::FrooxEngine.TextRenderer> _textRenderer_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.TextRenderer>, global::FrooxEngine.TextRenderer> _textRenderer_Element = new();
 public global::FrooxEngine.IField<UnityEngine.Vector3> _buttonPosition { get => _buttonPosition_Element.Data; set => _buttonPosition_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<UnityEngine.Vector3>, global::FrooxEngine.IField<UnityEngine.Vector3>> _buttonPosition_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<UnityEngine.Vector3>, global::FrooxEngine.IField<UnityEngine.Vector3>> _buttonPosition_Element = new();
 public global::FrooxEngine.IField<UnityEngine.Vector3> _colliderSize { get => _colliderSize_Element.Data; set => _colliderSize_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<UnityEngine.Vector3>, global::FrooxEngine.IField<UnityEngine.Vector3>> _colliderSize_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<UnityEngine.Vector3>, global::FrooxEngine.IField<UnityEngine.Vector3>> _colliderSize_Element = new();
 public global::FrooxEngine.IField<UnityEngine.Vector3> _colliderOffset { get => _colliderOffset_Element.Data; set => _colliderOffset_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<UnityEngine.Vector3>, global::FrooxEngine.IField<UnityEngine.Vector3>> _colliderOffset_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<UnityEngine.Vector3>, global::FrooxEngine.IField<UnityEngine.Vector3>> _colliderOffset_Element = new();
 public global::FrooxEngine.IField<UnityEngine.Vector3> _textPosition { get => _textPosition_Element.Data; set => _textPosition_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<UnityEngine.Vector3>, global::FrooxEngine.IField<UnityEngine.Vector3>> _textPosition_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<UnityEngine.Vector3>, global::FrooxEngine.IField<UnityEngine.Vector3>> _textPosition_Element = new();
 public global::FrooxEngine.IField<UnityEngine.Vector2> _textBounds { get => _textBounds_Element.Data; set => _textBounds_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<UnityEngine.Vector2>, global::FrooxEngine.IField<UnityEngine.Vector2>> _textBounds_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<UnityEngine.Vector2>, global::FrooxEngine.IField<UnityEngine.Vector2>> _textBounds_Element = new();
 public global::FrooxEngine.BevelStripeMesh _holderMesh { get => _holderMesh_Element.Data; set => _holderMesh_Element.Data = value; }
-public Field<global::FrooxEngine.DriveRef<global::FrooxEngine.BevelStripeMesh>, global::FrooxEngine.BevelStripeMesh> _holderMesh_Element = new();
+public Reference<global::FrooxEngine.DriveRef<global::FrooxEngine.BevelStripeMesh>, global::FrooxEngine.BevelStripeMesh> _holderMesh_Element = new();
 public global::FrooxEngine.BevelStripeMesh _buttonMesh { get => _buttonMesh_Element.Data; set => _buttonMesh_Element.Data = value; }
-public Field<global::FrooxEngine.DriveRef<global::FrooxEngine.BevelStripeMesh>, global::FrooxEngine.BevelStripeMesh> _buttonMesh_Element = new();
+public Reference<global::FrooxEngine.DriveRef<global::FrooxEngine.BevelStripeMesh>, global::FrooxEngine.BevelStripeMesh> _buttonMesh_Element = new();
 public global::FrooxEngine.PBS_RimMetallic _holderMaterial { get => _holderMaterial_Element.Data; set => _holderMaterial_Element.Data = value; }
-public Field<global::FrooxEngine.DriveRef<global::FrooxEngine.PBS_RimMetallic>, global::FrooxEngine.PBS_RimMetallic> _holderMaterial_Element = new();
+public Reference<global::FrooxEngine.DriveRef<global::FrooxEngine.PBS_RimMetallic>, global::FrooxEngine.PBS_RimMetallic> _holderMaterial_Element = new();
 public global::FrooxEngine.PBS_RimMetallic _buttonMaterial { get => _buttonMaterial_Element.Data; set => _buttonMaterial_Element.Data = value; }
-public Field<global::FrooxEngine.DriveRef<global::FrooxEngine.PBS_RimMetallic>, global::FrooxEngine.PBS_RimMetallic> _buttonMaterial_Element = new();
+public Reference<global::FrooxEngine.DriveRef<global::FrooxEngine.PBS_RimMetallic>, global::FrooxEngine.PBS_RimMetallic> _buttonMaterial_Element = new();
 public global::System.Single _pressDepth { get => _pressDepth_Element.Data; set => _pressDepth_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> _pressDepth_Element = new();
 public global::System.Int32 _flashIndex { get => _flashIndex_Element.Data; set => _flashIndex_Element.Data = value; }

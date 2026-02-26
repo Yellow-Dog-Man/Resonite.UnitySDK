@@ -2,9 +2,9 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.FinalIK.VRIKAvatar
-// Generated on: čtvrtek 26. února 2026 12:28:11
-// Resonite version: 2026.2.26.702
-// Resonite Link Version: 0.9.2.0
+// Generated on: čtvrtek 26. února 2026 15:09:11
+// Resonite version: 2026.2.26.828
+// Resonite Link Version: 0.9.3.0
 // -----------------------------------------------------------------------------
 
 using UnityEngine;
@@ -21,7 +21,7 @@ public partial class VRIKAvatar : global::FrooxEngine.UserRootComponent, global:
 
 {
     public global::FrooxEngine.FinalIK.VRIK IK { get => IK_Element.Data; set => IK_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.FinalIK.VRIK>, global::FrooxEngine.FinalIK.VRIK> IK_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.FinalIK.VRIK>, global::FrooxEngine.FinalIK.VRIK> IK_Element = new();
 public global::System.Single HeightCompensation { get => HeightCompensation_Element.Data; set => HeightCompensation_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> HeightCompensation_Element = new();
 public global::System.Single AvatarHeight { get => AvatarHeight_Element.Data; set => AvatarHeight_Element.Data = value; }
@@ -32,7 +32,7 @@ public global::System.Boolean FeetIgnoreOtherPlayers { get => FeetIgnoreOtherPla
 public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> FeetIgnoreOtherPlayers_Element = new();
 public global::FrooxEngine.ListFilterMode FeetCollisionListMode { get => FeetCollisionListMode_Element.Data; set => FeetCollisionListMode_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<global::FrooxEngine.ListFilterMode>, global::FrooxEngine.ListFilterMode> FeetCollisionListMode_Element = new();
-public global::SyncFieldList<global::FrooxEngine.SyncRefList<global::FrooxEngine.Slot>, global::FrooxEngine.Slot, Field<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot>> FeetCollisionList = new();
+public global::SyncFieldList<global::FrooxEngine.SyncRefList<global::FrooxEngine.Slot>, global::FrooxEngine.Slot, Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot>> FeetCollisionList = new();
 public global::System.Single HeadMaxFixDistance { get => HeadMaxFixDistance_Element.Data; set => HeadMaxFixDistance_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> HeadMaxFixDistance_Element = new();
 public global::System.Boolean ForceUseFeetProxies { get => ForceUseFeetProxies_Element.Data; set => ForceUseFeetProxies_Element.Data = value; }
@@ -111,126 +111,126 @@ public Field<global::FrooxEngine.RawOutput<global::System.Boolean>, global::Syst
 public global::System.Int32 CurrentGaitIndex { get => CurrentGaitIndex_Element.Data; set => CurrentGaitIndex_Element.Data = value; }
 public Field<global::FrooxEngine.RawOutput<global::System.Int32>, global::System.Int32> CurrentGaitIndex_Element = new();
 public global::FrooxEngine.LocomotionController _locomotionController { get => _locomotionController_Element.Data; set => _locomotionController_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.LocomotionController>, global::FrooxEngine.LocomotionController> _locomotionController_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.LocomotionController>, global::FrooxEngine.LocomotionController> _locomotionController_Element = new();
 public global::FrooxEngine.CommonAvatar.AvatarPoseNode _leftHandNode { get => _leftHandNode_Element.Data; set => _leftHandNode_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.CommonAvatar.AvatarPoseNode>, global::FrooxEngine.CommonAvatar.AvatarPoseNode> _leftHandNode_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.CommonAvatar.AvatarPoseNode>, global::FrooxEngine.CommonAvatar.AvatarPoseNode> _leftHandNode_Element = new();
 public global::FrooxEngine.CommonAvatar.AvatarPoseNode _rightHandNode { get => _rightHandNode_Element.Data; set => _rightHandNode_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.CommonAvatar.AvatarPoseNode>, global::FrooxEngine.CommonAvatar.AvatarPoseNode> _rightHandNode_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.CommonAvatar.AvatarPoseNode>, global::FrooxEngine.CommonAvatar.AvatarPoseNode> _rightHandNode_Element = new();
 public global::FrooxEngine.CommonAvatar.AvatarPoseNode _leftElbowNode { get => _leftElbowNode_Element.Data; set => _leftElbowNode_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.CommonAvatar.AvatarPoseNode>, global::FrooxEngine.CommonAvatar.AvatarPoseNode> _leftElbowNode_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.CommonAvatar.AvatarPoseNode>, global::FrooxEngine.CommonAvatar.AvatarPoseNode> _leftElbowNode_Element = new();
 public global::FrooxEngine.CommonAvatar.AvatarPoseNode _rightElbowNode { get => _rightElbowNode_Element.Data; set => _rightElbowNode_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.CommonAvatar.AvatarPoseNode>, global::FrooxEngine.CommonAvatar.AvatarPoseNode> _rightElbowNode_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.CommonAvatar.AvatarPoseNode>, global::FrooxEngine.CommonAvatar.AvatarPoseNode> _rightElbowNode_Element = new();
 public global::FrooxEngine.CommonAvatar.AvatarPoseNode _leftFootNode { get => _leftFootNode_Element.Data; set => _leftFootNode_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.CommonAvatar.AvatarPoseNode>, global::FrooxEngine.CommonAvatar.AvatarPoseNode> _leftFootNode_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.CommonAvatar.AvatarPoseNode>, global::FrooxEngine.CommonAvatar.AvatarPoseNode> _leftFootNode_Element = new();
 public global::FrooxEngine.CommonAvatar.AvatarPoseNode _rightFootNode { get => _rightFootNode_Element.Data; set => _rightFootNode_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.CommonAvatar.AvatarPoseNode>, global::FrooxEngine.CommonAvatar.AvatarPoseNode> _rightFootNode_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.CommonAvatar.AvatarPoseNode>, global::FrooxEngine.CommonAvatar.AvatarPoseNode> _rightFootNode_Element = new();
 public global::FrooxEngine.CommonAvatar.AvatarPoseNode _leftKneeNode { get => _leftKneeNode_Element.Data; set => _leftKneeNode_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.CommonAvatar.AvatarPoseNode>, global::FrooxEngine.CommonAvatar.AvatarPoseNode> _leftKneeNode_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.CommonAvatar.AvatarPoseNode>, global::FrooxEngine.CommonAvatar.AvatarPoseNode> _leftKneeNode_Element = new();
 public global::FrooxEngine.CommonAvatar.AvatarPoseNode _rightKneeNode { get => _rightKneeNode_Element.Data; set => _rightKneeNode_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.CommonAvatar.AvatarPoseNode>, global::FrooxEngine.CommonAvatar.AvatarPoseNode> _rightKneeNode_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.CommonAvatar.AvatarPoseNode>, global::FrooxEngine.CommonAvatar.AvatarPoseNode> _rightKneeNode_Element = new();
 public global::FrooxEngine.CommonAvatar.AvatarPoseNode _headNode { get => _headNode_Element.Data; set => _headNode_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.CommonAvatar.AvatarPoseNode>, global::FrooxEngine.CommonAvatar.AvatarPoseNode> _headNode_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.CommonAvatar.AvatarPoseNode>, global::FrooxEngine.CommonAvatar.AvatarPoseNode> _headNode_Element = new();
 public global::FrooxEngine.CommonAvatar.AvatarPoseNode _pelvisNode { get => _pelvisNode_Element.Data; set => _pelvisNode_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.CommonAvatar.AvatarPoseNode>, global::FrooxEngine.CommonAvatar.AvatarPoseNode> _pelvisNode_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.CommonAvatar.AvatarPoseNode>, global::FrooxEngine.CommonAvatar.AvatarPoseNode> _pelvisNode_Element = new();
 public global::FrooxEngine.CommonAvatar.AvatarPoseNode _chestNode { get => _chestNode_Element.Data; set => _chestNode_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.CommonAvatar.AvatarPoseNode>, global::FrooxEngine.CommonAvatar.AvatarPoseNode> _chestNode_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.CommonAvatar.AvatarPoseNode>, global::FrooxEngine.CommonAvatar.AvatarPoseNode> _chestNode_Element = new();
 public global::FrooxEngine.Slot _headProxy { get => _headProxy_Element.Data; set => _headProxy_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> _headProxy_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> _headProxy_Element = new();
 public global::FrooxEngine.Slot _pelvisProxy { get => _pelvisProxy_Element.Data; set => _pelvisProxy_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> _pelvisProxy_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> _pelvisProxy_Element = new();
 public global::FrooxEngine.Slot _chestProxy { get => _chestProxy_Element.Data; set => _chestProxy_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> _chestProxy_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> _chestProxy_Element = new();
 public global::FrooxEngine.Slot _leftHandProxy { get => _leftHandProxy_Element.Data; set => _leftHandProxy_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> _leftHandProxy_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> _leftHandProxy_Element = new();
 public global::FrooxEngine.Slot _rightHandProxy { get => _rightHandProxy_Element.Data; set => _rightHandProxy_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> _rightHandProxy_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> _rightHandProxy_Element = new();
 public global::FrooxEngine.Slot _leftElbowProxy { get => _leftElbowProxy_Element.Data; set => _leftElbowProxy_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> _leftElbowProxy_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> _leftElbowProxy_Element = new();
 public global::FrooxEngine.Slot _rightElbowProxy { get => _rightElbowProxy_Element.Data; set => _rightElbowProxy_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> _rightElbowProxy_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> _rightElbowProxy_Element = new();
 public global::FrooxEngine.Slot _leftFootProxy { get => _leftFootProxy_Element.Data; set => _leftFootProxy_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> _leftFootProxy_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> _leftFootProxy_Element = new();
 public global::FrooxEngine.Slot _rightFootProxy { get => _rightFootProxy_Element.Data; set => _rightFootProxy_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> _rightFootProxy_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> _rightFootProxy_Element = new();
 public global::FrooxEngine.Slot _leftKneeProxy { get => _leftKneeProxy_Element.Data; set => _leftKneeProxy_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> _leftKneeProxy_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> _leftKneeProxy_Element = new();
 public global::FrooxEngine.Slot _rightKneeProxy { get => _rightKneeProxy_Element.Data; set => _rightKneeProxy_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> _rightKneeProxy_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> _rightKneeProxy_Element = new();
 public global::FrooxEngine.Slot _leftKneeDefaultProxy { get => _leftKneeDefaultProxy_Element.Data; set => _leftKneeDefaultProxy_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> _leftKneeDefaultProxy_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> _leftKneeDefaultProxy_Element = new();
 public global::FrooxEngine.Slot _rightKneeDefaultProxy { get => _rightKneeDefaultProxy_Element.Data; set => _rightKneeDefaultProxy_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> _rightKneeDefaultProxy_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> _rightKneeDefaultProxy_Element = new();
 public global::FrooxEngine.IField<UnityEngine.Vector3> _headTargetPos { get => _headTargetPos_Element.Data; set => _headTargetPos_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<UnityEngine.Vector3>, global::FrooxEngine.IField<UnityEngine.Vector3>> _headTargetPos_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<UnityEngine.Vector3>, global::FrooxEngine.IField<UnityEngine.Vector3>> _headTargetPos_Element = new();
 public global::FrooxEngine.IField<UnityEngine.Quaternion> _headTargetRot { get => _headTargetRot_Element.Data; set => _headTargetRot_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<UnityEngine.Quaternion>, global::FrooxEngine.IField<UnityEngine.Quaternion>> _headTargetRot_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<UnityEngine.Quaternion>, global::FrooxEngine.IField<UnityEngine.Quaternion>> _headTargetRot_Element = new();
 public global::FrooxEngine.IField<UnityEngine.Vector3> _pelvisTargetPos { get => _pelvisTargetPos_Element.Data; set => _pelvisTargetPos_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<UnityEngine.Vector3>, global::FrooxEngine.IField<UnityEngine.Vector3>> _pelvisTargetPos_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<UnityEngine.Vector3>, global::FrooxEngine.IField<UnityEngine.Vector3>> _pelvisTargetPos_Element = new();
 public global::FrooxEngine.IField<UnityEngine.Quaternion> _pelvisTargetRot { get => _pelvisTargetRot_Element.Data; set => _pelvisTargetRot_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<UnityEngine.Quaternion>, global::FrooxEngine.IField<UnityEngine.Quaternion>> _pelvisTargetRot_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<UnityEngine.Quaternion>, global::FrooxEngine.IField<UnityEngine.Quaternion>> _pelvisTargetRot_Element = new();
 public global::FrooxEngine.IField<UnityEngine.Vector3> _chestTargetPos { get => _chestTargetPos_Element.Data; set => _chestTargetPos_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<UnityEngine.Vector3>, global::FrooxEngine.IField<UnityEngine.Vector3>> _chestTargetPos_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<UnityEngine.Vector3>, global::FrooxEngine.IField<UnityEngine.Vector3>> _chestTargetPos_Element = new();
 public global::FrooxEngine.IField<UnityEngine.Vector3> _leftHandTargetPos { get => _leftHandTargetPos_Element.Data; set => _leftHandTargetPos_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<UnityEngine.Vector3>, global::FrooxEngine.IField<UnityEngine.Vector3>> _leftHandTargetPos_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<UnityEngine.Vector3>, global::FrooxEngine.IField<UnityEngine.Vector3>> _leftHandTargetPos_Element = new();
 public global::FrooxEngine.IField<UnityEngine.Quaternion> _leftHandTargetRot { get => _leftHandTargetRot_Element.Data; set => _leftHandTargetRot_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<UnityEngine.Quaternion>, global::FrooxEngine.IField<UnityEngine.Quaternion>> _leftHandTargetRot_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<UnityEngine.Quaternion>, global::FrooxEngine.IField<UnityEngine.Quaternion>> _leftHandTargetRot_Element = new();
 public global::FrooxEngine.IField<UnityEngine.Vector3> _rightHandTargetPos { get => _rightHandTargetPos_Element.Data; set => _rightHandTargetPos_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<UnityEngine.Vector3>, global::FrooxEngine.IField<UnityEngine.Vector3>> _rightHandTargetPos_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<UnityEngine.Vector3>, global::FrooxEngine.IField<UnityEngine.Vector3>> _rightHandTargetPos_Element = new();
 public global::FrooxEngine.IField<UnityEngine.Quaternion> _rightHandTargetRot { get => _rightHandTargetRot_Element.Data; set => _rightHandTargetRot_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<UnityEngine.Quaternion>, global::FrooxEngine.IField<UnityEngine.Quaternion>> _rightHandTargetRot_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<UnityEngine.Quaternion>, global::FrooxEngine.IField<UnityEngine.Quaternion>> _rightHandTargetRot_Element = new();
 public global::FrooxEngine.IField<UnityEngine.Vector3> _leftElbowTargetPos { get => _leftElbowTargetPos_Element.Data; set => _leftElbowTargetPos_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<UnityEngine.Vector3>, global::FrooxEngine.IField<UnityEngine.Vector3>> _leftElbowTargetPos_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<UnityEngine.Vector3>, global::FrooxEngine.IField<UnityEngine.Vector3>> _leftElbowTargetPos_Element = new();
 public global::FrooxEngine.IField<UnityEngine.Vector3> _rightElbowTargetPos { get => _rightElbowTargetPos_Element.Data; set => _rightElbowTargetPos_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<UnityEngine.Vector3>, global::FrooxEngine.IField<UnityEngine.Vector3>> _rightElbowTargetPos_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<UnityEngine.Vector3>, global::FrooxEngine.IField<UnityEngine.Vector3>> _rightElbowTargetPos_Element = new();
 public global::FrooxEngine.IField<UnityEngine.Vector3> _leftFootTargetPos { get => _leftFootTargetPos_Element.Data; set => _leftFootTargetPos_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<UnityEngine.Vector3>, global::FrooxEngine.IField<UnityEngine.Vector3>> _leftFootTargetPos_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<UnityEngine.Vector3>, global::FrooxEngine.IField<UnityEngine.Vector3>> _leftFootTargetPos_Element = new();
 public global::FrooxEngine.IField<UnityEngine.Quaternion> _leftFootTargetRot { get => _leftFootTargetRot_Element.Data; set => _leftFootTargetRot_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<UnityEngine.Quaternion>, global::FrooxEngine.IField<UnityEngine.Quaternion>> _leftFootTargetRot_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<UnityEngine.Quaternion>, global::FrooxEngine.IField<UnityEngine.Quaternion>> _leftFootTargetRot_Element = new();
 public global::FrooxEngine.IField<UnityEngine.Vector3> _rightFootTargetPos { get => _rightFootTargetPos_Element.Data; set => _rightFootTargetPos_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<UnityEngine.Vector3>, global::FrooxEngine.IField<UnityEngine.Vector3>> _rightFootTargetPos_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<UnityEngine.Vector3>, global::FrooxEngine.IField<UnityEngine.Vector3>> _rightFootTargetPos_Element = new();
 public global::FrooxEngine.IField<UnityEngine.Quaternion> _rightFootTargetRot { get => _rightFootTargetRot_Element.Data; set => _rightFootTargetRot_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<UnityEngine.Quaternion>, global::FrooxEngine.IField<UnityEngine.Quaternion>> _rightFootTargetRot_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<UnityEngine.Quaternion>, global::FrooxEngine.IField<UnityEngine.Quaternion>> _rightFootTargetRot_Element = new();
 public global::FrooxEngine.IField<UnityEngine.Vector3> _leftKneeTargetPos { get => _leftKneeTargetPos_Element.Data; set => _leftKneeTargetPos_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<UnityEngine.Vector3>, global::FrooxEngine.IField<UnityEngine.Vector3>> _leftKneeTargetPos_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<UnityEngine.Vector3>, global::FrooxEngine.IField<UnityEngine.Vector3>> _leftKneeTargetPos_Element = new();
 public global::FrooxEngine.IField<UnityEngine.Vector3> _rightKneeTargetPos { get => _rightKneeTargetPos_Element.Data; set => _rightKneeTargetPos_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<UnityEngine.Vector3>, global::FrooxEngine.IField<UnityEngine.Vector3>> _rightKneeTargetPos_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<UnityEngine.Vector3>, global::FrooxEngine.IField<UnityEngine.Vector3>> _rightKneeTargetPos_Element = new();
 public global::FrooxEngine.IField<global::System.Single> _pelvisPositionWeight { get => _pelvisPositionWeight_Element.Data; set => _pelvisPositionWeight_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<global::System.Single>, global::FrooxEngine.IField<global::System.Single>> _pelvisPositionWeight_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<global::System.Single>, global::FrooxEngine.IField<global::System.Single>> _pelvisPositionWeight_Element = new();
 public global::FrooxEngine.IField<global::System.Single> _pelvisRotationWeight { get => _pelvisRotationWeight_Element.Data; set => _pelvisRotationWeight_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<global::System.Single>, global::FrooxEngine.IField<global::System.Single>> _pelvisRotationWeight_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<global::System.Single>, global::FrooxEngine.IField<global::System.Single>> _pelvisRotationWeight_Element = new();
 public global::FrooxEngine.IField<global::System.Single> _chestWeight { get => _chestWeight_Element.Data; set => _chestWeight_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<global::System.Single>, global::FrooxEngine.IField<global::System.Single>> _chestWeight_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<global::System.Single>, global::FrooxEngine.IField<global::System.Single>> _chestWeight_Element = new();
 public global::FrooxEngine.IField<global::System.Single> _locomotionWeight { get => _locomotionWeight_Element.Data; set => _locomotionWeight_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<global::System.Single>, global::FrooxEngine.IField<global::System.Single>> _locomotionWeight_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<global::System.Single>, global::FrooxEngine.IField<global::System.Single>> _locomotionWeight_Element = new();
 public global::FrooxEngine.IField<global::System.Single> _leftLegPositionWeight { get => _leftLegPositionWeight_Element.Data; set => _leftLegPositionWeight_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<global::System.Single>, global::FrooxEngine.IField<global::System.Single>> _leftLegPositionWeight_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<global::System.Single>, global::FrooxEngine.IField<global::System.Single>> _leftLegPositionWeight_Element = new();
 public global::FrooxEngine.IField<global::System.Single> _leftLegRotationWeight { get => _leftLegRotationWeight_Element.Data; set => _leftLegRotationWeight_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<global::System.Single>, global::FrooxEngine.IField<global::System.Single>> _leftLegRotationWeight_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<global::System.Single>, global::FrooxEngine.IField<global::System.Single>> _leftLegRotationWeight_Element = new();
 public global::FrooxEngine.IField<global::System.Single> _rightLegPositionWeight { get => _rightLegPositionWeight_Element.Data; set => _rightLegPositionWeight_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<global::System.Single>, global::FrooxEngine.IField<global::System.Single>> _rightLegPositionWeight_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<global::System.Single>, global::FrooxEngine.IField<global::System.Single>> _rightLegPositionWeight_Element = new();
 public global::FrooxEngine.IField<global::System.Single> _rightLegRotationWeight { get => _rightLegRotationWeight_Element.Data; set => _rightLegRotationWeight_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<global::System.Single>, global::FrooxEngine.IField<global::System.Single>> _rightLegRotationWeight_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<global::System.Single>, global::FrooxEngine.IField<global::System.Single>> _rightLegRotationWeight_Element = new();
 public global::FrooxEngine.IField<global::System.Single> _leftKneeBendWeight { get => _leftKneeBendWeight_Element.Data; set => _leftKneeBendWeight_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<global::System.Single>, global::FrooxEngine.IField<global::System.Single>> _leftKneeBendWeight_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<global::System.Single>, global::FrooxEngine.IField<global::System.Single>> _leftKneeBendWeight_Element = new();
 public global::FrooxEngine.IField<global::System.Single> _rightKneeBendWeight { get => _rightKneeBendWeight_Element.Data; set => _rightKneeBendWeight_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<global::System.Single>, global::FrooxEngine.IField<global::System.Single>> _rightKneeBendWeight_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<global::System.Single>, global::FrooxEngine.IField<global::System.Single>> _rightKneeBendWeight_Element = new();
 public global::FrooxEngine.IField<global::System.Single> _leftElbowBendWeight { get => _leftElbowBendWeight_Element.Data; set => _leftElbowBendWeight_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<global::System.Single>, global::FrooxEngine.IField<global::System.Single>> _leftElbowBendWeight_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<global::System.Single>, global::FrooxEngine.IField<global::System.Single>> _leftElbowBendWeight_Element = new();
 public global::FrooxEngine.IField<global::System.Single> _rightElbowBendWeight { get => _rightElbowBendWeight_Element.Data; set => _rightElbowBendWeight_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<global::System.Single>, global::FrooxEngine.IField<global::System.Single>> _rightElbowBendWeight_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<global::System.Single>, global::FrooxEngine.IField<global::System.Single>> _rightElbowBendWeight_Element = new();
 public global::FrooxEngine.IField<UnityEngine.Vector3> _leftFootOffset { get => _leftFootOffset_Element.Data; set => _leftFootOffset_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<UnityEngine.Vector3>, global::FrooxEngine.IField<UnityEngine.Vector3>> _leftFootOffset_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<UnityEngine.Vector3>, global::FrooxEngine.IField<UnityEngine.Vector3>> _leftFootOffset_Element = new();
 public global::FrooxEngine.IField<UnityEngine.Vector3> _rightFootOffset { get => _rightFootOffset_Element.Data; set => _rightFootOffset_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<UnityEngine.Vector3>, global::FrooxEngine.IField<UnityEngine.Vector3>> _rightFootOffset_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<UnityEngine.Vector3>, global::FrooxEngine.IField<UnityEngine.Vector3>> _rightFootOffset_Element = new();
 public UnityEngine.Quaternion _leftFootRelativeToRoot { get => _leftFootRelativeToRoot_Element.Data; set => _leftFootRelativeToRoot_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<UnityEngine.Quaternion>, UnityEngine.Quaternion> _leftFootRelativeToRoot_Element = new();
 public UnityEngine.Quaternion _rightFootRelativeToRoot { get => _rightFootRelativeToRoot_Element.Data; set => _rightFootRelativeToRoot_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<UnityEngine.Quaternion>, UnityEngine.Quaternion> _rightFootRelativeToRoot_Element = new();
 public global::FrooxEngine.IField<UnityEngine.Vector3> _locomotionOffset { get => _locomotionOffset_Element.Data; set => _locomotionOffset_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<UnityEngine.Vector3>, global::FrooxEngine.IField<UnityEngine.Vector3>> _locomotionOffset_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<UnityEngine.Vector3>, global::FrooxEngine.IField<UnityEngine.Vector3>> _locomotionOffset_Element = new();
 public global::FrooxEngine.IField<global::System.Boolean> _simplifiedColliderEnabled { get => _simplifiedColliderEnabled_Element.Data; set => _simplifiedColliderEnabled_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<global::System.Boolean>, global::FrooxEngine.IField<global::System.Boolean>> _simplifiedColliderEnabled_Element = new();
-public global::SyncFieldList<global::FrooxEngine.SyncList<global::FrooxEngine.FieldDrive<global::System.Boolean>>, global::FrooxEngine.IField<global::System.Boolean>, Field<global::FrooxEngine.FieldDrive<global::System.Boolean>, global::FrooxEngine.IField<global::System.Boolean>>> _rigCollidersEnabledStates = new();
+public Reference<global::FrooxEngine.FieldDrive<global::System.Boolean>, global::FrooxEngine.IField<global::System.Boolean>> _simplifiedColliderEnabled_Element = new();
+public global::SyncFieldList<global::FrooxEngine.SyncList<global::FrooxEngine.FieldDrive<global::System.Boolean>>, global::FrooxEngine.IField<global::System.Boolean>, Reference<global::FrooxEngine.FieldDrive<global::System.Boolean>, global::FrooxEngine.IField<global::System.Boolean>>> _rigCollidersEnabledStates = new();
 public global::System.Boolean _horizontalTrackingLocked { get => _horizontalTrackingLocked_Element.Data; set => _horizontalTrackingLocked_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> _horizontalTrackingLocked_Element = new();
 

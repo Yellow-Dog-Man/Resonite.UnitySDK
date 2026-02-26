@@ -2,9 +2,9 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.Panner4D
-// Generated on: čtvrtek 26. února 2026 12:28:07
-// Resonite version: 2026.2.26.702
-// Resonite Link Version: 0.9.2.0
+// Generated on: čtvrtek 26. února 2026 15:09:08
+// Resonite version: 2026.2.26.828
+// Resonite Link Version: 0.9.3.0
 // -----------------------------------------------------------------------------
 
 using UnityEngine;
@@ -21,7 +21,7 @@ public partial class Panner4D : global::FrooxEngine.Component
 
 {
     public global::FrooxEngine.IField<UnityEngine.Vector4> _target { get => _target_Element.Data; set => _target_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<UnityEngine.Vector4>, global::FrooxEngine.IField<UnityEngine.Vector4>> _target_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<UnityEngine.Vector4>, global::FrooxEngine.IField<UnityEngine.Vector4>> _target_Element = new();
 public UnityEngine.Vector4 _offset { get => _offset_Element.Data; set => _offset_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<UnityEngine.Vector4>, UnityEngine.Vector4> _offset_Element = new();
 public UnityEngine.Vector4 _preOffset { get => _preOffset_Element.Data; set => _preOffset_Element.Data = value; }

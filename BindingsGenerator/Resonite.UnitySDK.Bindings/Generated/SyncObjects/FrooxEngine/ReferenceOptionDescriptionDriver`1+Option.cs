@@ -2,9 +2,9 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.ReferenceOptionDescriptionDriver<>+Option
-// Generated on: čtvrtek 26. února 2026 12:26:53
-// Resonite version: 2026.2.26.702
-// Resonite Link Version: 0.9.2.0
+// Generated on: čtvrtek 26. února 2026 15:07:58
+// Resonite version: 2026.2.26.828
+// Resonite Link Version: 0.9.3.0
 // -----------------------------------------------------------------------------
 
 using UnityEngine;
@@ -23,13 +23,13 @@ public partial class Option : global::FrooxEngine.SyncObject
 
 {
     public T ReferenceTarget { get => ReferenceTarget_Element.Data; set => ReferenceTarget_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<T>, T> ReferenceTarget_Element = new();
+public Reference<global::FrooxEngine.SyncRef<T>, T> ReferenceTarget_Element = new();
 public global::System.String Label { get => Label_Element.Data; set => Label_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<global::System.String>, global::System.String> Label_Element = new();
 public UnityEngine.ColorX Color { get => Color_Element.Data; set => Color_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<UnityEngine.ColorX>, UnityEngine.ColorX> Color_Element = new();
 public global::FrooxEngine.IAssetProvider<global::FrooxEngine.Sprite> Sprite { get => Sprite_Element.Data; set => Sprite_Element.Data = value; }
-public Field<global::FrooxEngine.AssetRef<global::FrooxEngine.Sprite>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.Sprite>> Sprite_Element = new();
+public Reference<global::FrooxEngine.AssetRef<global::FrooxEngine.Sprite>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.Sprite>> Sprite_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)

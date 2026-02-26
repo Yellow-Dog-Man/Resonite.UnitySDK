@@ -2,9 +2,9 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.ProtoFlux.ProtoFluxGlobalRefProxy
-// Generated on: čtvrtek 26. února 2026 12:28:12
-// Resonite version: 2026.2.26.702
-// Resonite Link Version: 0.9.2.0
+// Generated on: čtvrtek 26. února 2026 15:09:14
+// Resonite version: 2026.2.26.828
+// Resonite Link Version: 0.9.3.0
 // -----------------------------------------------------------------------------
 
 using UnityEngine;
@@ -21,9 +21,9 @@ public partial class ProtoFluxGlobalRefProxy : global::FrooxEngine.ProtoFlux.Pro
 
 {
     public global::FrooxEngine.ISyncRef TargetGlobalRef { get => TargetGlobalRef_Element.Data; set => TargetGlobalRef_Element.Data = value; }
-public Field<global::FrooxEngine.RelayRef<global::FrooxEngine.ISyncRef>, global::FrooxEngine.ISyncRef> TargetGlobalRef_Element = new();
+public Reference<global::FrooxEngine.RelayRef<global::FrooxEngine.ISyncRef>, global::FrooxEngine.ISyncRef> TargetGlobalRef_Element = new();
 public global::FrooxEngine.ProtoFlux.IGlobalValueProxy _currentProxy { get => _currentProxy_Element.Data; set => _currentProxy_Element.Data = value; }
-public Field<global::FrooxEngine.RelayRef<global::FrooxEngine.ProtoFlux.IGlobalValueProxy>, global::FrooxEngine.ProtoFlux.IGlobalValueProxy> _currentProxy_Element = new();
+public Reference<global::FrooxEngine.RelayRef<global::FrooxEngine.ProtoFlux.IGlobalValueProxy>, global::FrooxEngine.ProtoFlux.IGlobalValueProxy> _currentProxy_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)

@@ -2,9 +2,9 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.ReferenceUserOverride<>
-// Generated on: čtvrtek 26. února 2026 12:28:07
-// Resonite version: 2026.2.26.702
-// Resonite Link Version: 0.9.2.0
+// Generated on: čtvrtek 26. února 2026 15:09:08
+// Resonite version: 2026.2.26.828
+// Resonite Link Version: 0.9.3.0
 // -----------------------------------------------------------------------------
 
 using UnityEngine;
@@ -22,9 +22,9 @@ public partial class ReferenceUserOverride<T> : global::FrooxEngine.Component
 
 {
     public global::FrooxEngine.SyncRef<T> Target { get => Target_Element.Data; set => Target_Element.Data = value; }
-public Field<global::FrooxEngine.RefDrive<T>, global::FrooxEngine.SyncRef<T>> Target_Element = new();
+public Reference<global::FrooxEngine.RefDrive<T>, global::FrooxEngine.SyncRef<T>> Target_Element = new();
 public T Default { get => Default_Element.Data; set => Default_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<T>, T> Default_Element = new();
+public Reference<global::FrooxEngine.SyncRef<T>, T> Default_Element = new();
 public global::System.Boolean CreateOverrideOnWrite { get => CreateOverrideOnWrite_Element.Data; set => CreateOverrideOnWrite_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> CreateOverrideOnWrite_Element = new();
 public global::System.Boolean PersistentOverrides { get => PersistentOverrides_Element.Data; set => PersistentOverrides_Element.Data = value; }

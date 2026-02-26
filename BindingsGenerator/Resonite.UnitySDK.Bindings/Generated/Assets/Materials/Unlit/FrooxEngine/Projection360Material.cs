@@ -2,9 +2,9 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.Projection360Material
-// Generated on: čtvrtek 26. února 2026 12:26:49
-// Resonite version: 2026.2.26.702
-// Resonite Link Version: 0.9.2.0
+// Generated on: čtvrtek 26. února 2026 15:07:54
+// Resonite version: 2026.2.26.828
+// Resonite Link Version: 0.9.3.0
 // -----------------------------------------------------------------------------
 
 using UnityEngine;
@@ -21,13 +21,13 @@ public partial class Projection360Material : global::FrooxEngine.SingleShaderMat
 
 {
     public global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D> Texture { get => Texture_Element.Data; set => Texture_Element.Data = value; }
-public Field<global::FrooxEngine.AssetRef<global::FrooxEngine.ITexture2D>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D>> Texture_Element = new();
+public Reference<global::FrooxEngine.AssetRef<global::FrooxEngine.ITexture2D>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D>> Texture_Element = new();
 public global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D> SecondaryTexture { get => SecondaryTexture_Element.Data; set => SecondaryTexture_Element.Data = value; }
-public Field<global::FrooxEngine.AssetRef<global::FrooxEngine.ITexture2D>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D>> SecondaryTexture_Element = new();
+public Reference<global::FrooxEngine.AssetRef<global::FrooxEngine.ITexture2D>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D>> SecondaryTexture_Element = new();
 public global::FrooxEngine.IAssetProvider<global::FrooxEngine.Cubemap> Cubemap { get => Cubemap_Element.Data; set => Cubemap_Element.Data = value; }
-public Field<global::FrooxEngine.AssetRef<global::FrooxEngine.Cubemap>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.Cubemap>> Cubemap_Element = new();
+public Reference<global::FrooxEngine.AssetRef<global::FrooxEngine.Cubemap>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.Cubemap>> Cubemap_Element = new();
 public global::FrooxEngine.IAssetProvider<global::FrooxEngine.Cubemap> SecondaryCubemap { get => SecondaryCubemap_Element.Data; set => SecondaryCubemap_Element.Data = value; }
-public Field<global::FrooxEngine.AssetRef<global::FrooxEngine.Cubemap>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.Cubemap>> SecondaryCubemap_Element = new();
+public Reference<global::FrooxEngine.AssetRef<global::FrooxEngine.Cubemap>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.Cubemap>> SecondaryCubemap_Element = new();
 public global::System.Nullable<global::System.Single> CubemapLOD { get => CubemapLOD_Element.Data; set => CubemapLOD_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<global::System.Nullable<global::System.Single>>, global::System.Nullable<global::System.Single>> CubemapLOD_Element = new();
 public global::System.Single TextureLerp { get => TextureLerp_Element.Data; set => TextureLerp_Element.Data = value; }
@@ -49,7 +49,7 @@ public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Sin
 public global::System.Single Gamma { get => Gamma_Element.Data; set => Gamma_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> Gamma_Element = new();
 public global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D> TintTexture { get => TintTexture_Element.Data; set => TintTexture_Element.Data = value; }
-public Field<global::FrooxEngine.AssetRef<global::FrooxEngine.ITexture2D>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D>> TintTexture_Element = new();
+public Reference<global::FrooxEngine.AssetRef<global::FrooxEngine.ITexture2D>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D>> TintTexture_Element = new();
 public UnityEngine.Vector2 TintTextureScale { get => TintTextureScale_Element.Data; set => TintTextureScale_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<UnityEngine.Vector2>, UnityEngine.Vector2> TintTextureScale_Element = new();
 public UnityEngine.Vector2 TintTextureOffset { get => TintTextureOffset_Element.Data; set => TintTextureOffset_Element.Data = value; }
@@ -95,9 +95,9 @@ public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Bo
 public global::FrooxEngine.ColorMask ColorMask { get => ColorMask_Element.Data; set => ColorMask_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<global::FrooxEngine.ColorMask>, global::FrooxEngine.ColorMask> ColorMask_Element = new();
 public global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D> OffsetTexture { get => OffsetTexture_Element.Data; set => OffsetTexture_Element.Data = value; }
-public Field<global::FrooxEngine.AssetRef<global::FrooxEngine.ITexture2D>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D>> OffsetTexture_Element = new();
+public Reference<global::FrooxEngine.AssetRef<global::FrooxEngine.ITexture2D>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D>> OffsetTexture_Element = new();
 public global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D> OffsetMask { get => OffsetMask_Element.Data; set => OffsetMask_Element.Data = value; }
-public Field<global::FrooxEngine.AssetRef<global::FrooxEngine.ITexture2D>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D>> OffsetMask_Element = new();
+public Reference<global::FrooxEngine.AssetRef<global::FrooxEngine.ITexture2D>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D>> OffsetMask_Element = new();
 public UnityEngine.Vector2 OffsetTextureOffset { get => OffsetTextureOffset_Element.Data; set => OffsetTextureOffset_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<UnityEngine.Vector2>, UnityEngine.Vector2> OffsetTextureOffset_Element = new();
 public UnityEngine.Vector2 OffsetTextureScale { get => OffsetTextureScale_Element.Data; set => OffsetTextureScale_Element.Data = value; }

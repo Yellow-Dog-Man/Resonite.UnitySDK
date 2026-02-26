@@ -2,9 +2,9 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.LegacyProgressBar
-// Generated on: čtvrtek 26. února 2026 12:26:52
-// Resonite version: 2026.2.26.702
-// Resonite Link Version: 0.9.2.0
+// Generated on: čtvrtek 26. února 2026 15:07:57
+// Resonite version: 2026.2.26.828
+// Resonite Link Version: 0.9.3.0
 // -----------------------------------------------------------------------------
 
 using UnityEngine;
@@ -37,17 +37,17 @@ public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Sin
 public global::System.Single SlantField { get => SlantField_Element.Data; set => SlantField_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> SlantField_Element = new();
 public global::FrooxEngine.BevelStripeMesh _barMesh { get => _barMesh_Element.Data; set => _barMesh_Element.Data = value; }
-public Field<global::FrooxEngine.DriveRef<global::FrooxEngine.BevelStripeMesh>, global::FrooxEngine.BevelStripeMesh> _barMesh_Element = new();
+public Reference<global::FrooxEngine.DriveRef<global::FrooxEngine.BevelStripeMesh>, global::FrooxEngine.BevelStripeMesh> _barMesh_Element = new();
 public global::FrooxEngine.BevelStripeMesh _containerMesh { get => _containerMesh_Element.Data; set => _containerMesh_Element.Data = value; }
-public Field<global::FrooxEngine.DriveRef<global::FrooxEngine.BevelStripeMesh>, global::FrooxEngine.BevelStripeMesh> _containerMesh_Element = new();
+public Reference<global::FrooxEngine.DriveRef<global::FrooxEngine.BevelStripeMesh>, global::FrooxEngine.BevelStripeMesh> _containerMesh_Element = new();
 public global::FrooxEngine.PBS_RimMetallic _barMaterial { get => _barMaterial_Element.Data; set => _barMaterial_Element.Data = value; }
-public Field<global::FrooxEngine.DriveRef<global::FrooxEngine.PBS_RimMetallic>, global::FrooxEngine.PBS_RimMetallic> _barMaterial_Element = new();
+public Reference<global::FrooxEngine.DriveRef<global::FrooxEngine.PBS_RimMetallic>, global::FrooxEngine.PBS_RimMetallic> _barMaterial_Element = new();
 public global::FrooxEngine.PBS_RimMetallic _containerMaterial { get => _containerMaterial_Element.Data; set => _containerMaterial_Element.Data = value; }
-public Field<global::FrooxEngine.DriveRef<global::FrooxEngine.PBS_RimMetallic>, global::FrooxEngine.PBS_RimMetallic> _containerMaterial_Element = new();
+public Reference<global::FrooxEngine.DriveRef<global::FrooxEngine.PBS_RimMetallic>, global::FrooxEngine.PBS_RimMetallic> _containerMaterial_Element = new();
 public global::FrooxEngine.IField<UnityEngine.Vector3> _barPosition { get => _barPosition_Element.Data; set => _barPosition_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<UnityEngine.Vector3>, global::FrooxEngine.IField<UnityEngine.Vector3>> _barPosition_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<UnityEngine.Vector3>, global::FrooxEngine.IField<UnityEngine.Vector3>> _barPosition_Element = new();
 public global::FrooxEngine.IField<UnityEngine.Vector3> _colliderSize { get => _colliderSize_Element.Data; set => _colliderSize_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<UnityEngine.Vector3>, global::FrooxEngine.IField<UnityEngine.Vector3>> _colliderSize_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<UnityEngine.Vector3>, global::FrooxEngine.IField<UnityEngine.Vector3>> _colliderSize_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)

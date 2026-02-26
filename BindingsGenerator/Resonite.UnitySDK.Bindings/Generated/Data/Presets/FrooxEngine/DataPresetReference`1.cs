@@ -2,9 +2,9 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.DataPresetReference<>
-// Generated on: čtvrtek 26. února 2026 12:26:54
-// Resonite version: 2026.2.26.702
-// Resonite Link Version: 0.9.2.0
+// Generated on: čtvrtek 26. února 2026 15:07:59
+// Resonite version: 2026.2.26.828
+// Resonite Link Version: 0.9.3.0
 // -----------------------------------------------------------------------------
 
 using UnityEngine;
@@ -22,9 +22,9 @@ public partial class DataPresetReference<T> : global::FrooxEngine.Component, glo
 
 {
     public T PresetReference { get => PresetReference_Element.Data; set => PresetReference_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<T>, T> PresetReference_Element = new();
+public Reference<global::FrooxEngine.SyncRef<T>, T> PresetReference_Element = new();
 public global::FrooxEngine.SyncRef<T> TargetReference { get => TargetReference_Element.Data; set => TargetReference_Element.Data = value; }
-public Field<global::FrooxEngine.RelayRef<global::FrooxEngine.SyncRef<T>>, global::FrooxEngine.SyncRef<T>> TargetReference_Element = new();
+public Reference<global::FrooxEngine.RelayRef<global::FrooxEngine.SyncRef<T>>, global::FrooxEngine.SyncRef<T>> TargetReference_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)

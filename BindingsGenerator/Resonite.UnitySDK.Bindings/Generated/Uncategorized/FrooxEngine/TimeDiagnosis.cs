@@ -2,9 +2,9 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.TimeDiagnosis
-// Generated on: čtvrtek 26. února 2026 12:28:13
-// Resonite version: 2026.2.26.702
-// Resonite Link Version: 0.9.2.0
+// Generated on: čtvrtek 26. února 2026 15:09:15
+// Resonite version: 2026.2.26.828
+// Resonite Link Version: 0.9.3.0
 // -----------------------------------------------------------------------------
 
 using UnityEngine;
@@ -23,7 +23,7 @@ public partial class TimeDiagnosis : global::FrooxEngine.Component
     public global::System.Boolean FormatTime { get => FormatTime_Element.Data; set => FormatTime_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> FormatTime_Element = new();
 public global::FrooxEngine.Sync<global::System.String> text { get => text_Element.Data; set => text_Element.Data = value; }
-public Field<global::FrooxEngine.DriveRef<global::FrooxEngine.Sync<global::System.String>>, global::FrooxEngine.Sync<global::System.String>> text_Element = new();
+public Reference<global::FrooxEngine.DriveRef<global::FrooxEngine.Sync<global::System.String>>, global::FrooxEngine.Sync<global::System.String>> text_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)

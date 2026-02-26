@@ -2,9 +2,9 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.RefractMaterial
-// Generated on: čtvrtek 26. února 2026 12:26:47
-// Resonite version: 2026.2.26.702
-// Resonite Link Version: 0.9.2.0
+// Generated on: čtvrtek 26. února 2026 15:07:53
+// Resonite version: 2026.2.26.828
+// Resonite Link Version: 0.9.3.0
 // -----------------------------------------------------------------------------
 
 using UnityEngine;
@@ -27,7 +27,7 @@ public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Sin
 public global::System.Single DepthFadeDivisor { get => DepthFadeDivisor_Element.Data; set => DepthFadeDivisor_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> DepthFadeDivisor_Element = new();
 public global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D> NormalMap { get => NormalMap_Element.Data; set => NormalMap_Element.Data = value; }
-public Field<global::FrooxEngine.AssetRef<global::FrooxEngine.ITexture2D>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D>> NormalMap_Element = new();
+public Reference<global::FrooxEngine.AssetRef<global::FrooxEngine.ITexture2D>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D>> NormalMap_Element = new();
 public UnityEngine.Vector2 NormalTextureScale { get => NormalTextureScale_Element.Data; set => NormalTextureScale_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<UnityEngine.Vector2>, UnityEngine.Vector2> NormalTextureScale_Element = new();
 public UnityEngine.Vector2 NormalTextureOffset { get => NormalTextureOffset_Element.Data; set => NormalTextureOffset_Element.Data = value; }
@@ -43,9 +43,9 @@ public Field<global::FrooxEngine.Sync<global::FrooxEngine.ZWrite>, global::Froox
 public global::FrooxEngine.ZTest ZTest { get => ZTest_Element.Data; set => ZTest_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<global::FrooxEngine.ZTest>, global::FrooxEngine.ZTest> ZTest_Element = new();
 public global::FrooxEngine.IAssetProvider<global::FrooxEngine.Shader> _global { get => _global_Element.Data; set => _global_Element.Data = value; }
-public Field<global::FrooxEngine.AssetRef<global::FrooxEngine.Shader>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.Shader>> _global_Element = new();
+public Reference<global::FrooxEngine.AssetRef<global::FrooxEngine.Shader>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.Shader>> _global_Element = new();
 public global::FrooxEngine.IAssetProvider<global::FrooxEngine.Shader> _perObject { get => _perObject_Element.Data; set => _perObject_Element.Data = value; }
-public Field<global::FrooxEngine.AssetRef<global::FrooxEngine.Shader>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.Shader>> _perObject_Element = new();
+public Reference<global::FrooxEngine.AssetRef<global::FrooxEngine.Shader>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.Shader>> _perObject_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)

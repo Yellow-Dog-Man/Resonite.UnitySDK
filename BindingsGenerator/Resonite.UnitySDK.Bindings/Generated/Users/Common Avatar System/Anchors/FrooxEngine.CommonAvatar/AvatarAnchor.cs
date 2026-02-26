@@ -2,9 +2,9 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.CommonAvatar.AvatarAnchor
-// Generated on: čtvrtek 26. února 2026 12:27:26
-// Resonite version: 2026.2.26.702
-// Resonite Link Version: 0.9.2.0
+// Generated on: čtvrtek 26. února 2026 15:08:30
+// Resonite version: 2026.2.26.828
+// Resonite Link Version: 0.9.3.0
 // -----------------------------------------------------------------------------
 
 using UnityEngine;
@@ -30,11 +30,11 @@ public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Sin
 public global::FrooxEngine.UserRoot.UserNode PositionNode { get => PositionNode_Element.Data; set => PositionNode_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<global::FrooxEngine.UserRoot.UserNode>, global::FrooxEngine.UserRoot.UserNode> PositionNode_Element = new();
 public global::FrooxEngine.Slot PositionReference { get => PositionReference_Element.Data; set => PositionReference_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> PositionReference_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> PositionReference_Element = new();
 public global::FrooxEngine.UserRoot.UserNode RotationNode { get => RotationNode_Element.Data; set => RotationNode_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<global::FrooxEngine.UserRoot.UserNode>, global::FrooxEngine.UserRoot.UserNode> RotationNode_Element = new();
 public global::FrooxEngine.Slot RotationReference { get => RotationReference_Element.Data; set => RotationReference_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> RotationReference_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> RotationReference_Element = new();
 public global::System.Boolean PreserveUpOnEnter { get => PreserveUpOnEnter_Element.Data; set => PreserveUpOnEnter_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> PreserveUpOnEnter_Element = new();
 public global::System.Boolean PreserveUpOnExit { get => PreserveUpOnExit_Element.Data; set => PreserveUpOnExit_Element.Data = value; }
@@ -46,18 +46,18 @@ public Field<global::FrooxEngine.Sync<global::FrooxEngine.CommonAvatar.AvatarAnc
 public global::FrooxEngine.UserRoot.UserNode RestoreNode { get => RestoreNode_Element.Data; set => RestoreNode_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<global::FrooxEngine.UserRoot.UserNode>, global::FrooxEngine.UserRoot.UserNode> RestoreNode_Element = new();
 public global::FrooxEngine.Slot RestoreReference { get => RestoreReference_Element.Data; set => RestoreReference_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> RestoreReference_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> RestoreReference_Element = new();
 public global::SyncList<global::FrooxEngine.SyncList<global::FrooxEngine.CommonAvatar.AvatarAnchor.BodyNodeFilters>, global::FrooxEngine.CommonAvatar.AvatarAnchor.BodyNodeFilters> Filters = new();
-public global::SyncFieldList<global::FrooxEngine.SyncRefList<global::FrooxEngine.IAvatarAnchorUserFilter>, global::FrooxEngine.IAvatarAnchorUserFilter, Field<global::FrooxEngine.SyncRef<global::FrooxEngine.IAvatarAnchorUserFilter>, global::FrooxEngine.IAvatarAnchorUserFilter>> UserFilters = new();
+public global::SyncFieldList<global::FrooxEngine.SyncRefList<global::FrooxEngine.IAvatarAnchorUserFilter>, global::FrooxEngine.IAvatarAnchorUserFilter, Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.IAvatarAnchorUserFilter>, global::FrooxEngine.IAvatarAnchorUserFilter>> UserFilters = new();
 public global::FrooxEngine.Slot _originalSpace { get => _originalSpace_Element.Data; set => _originalSpace_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> _originalSpace_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> _originalSpace_Element = new();
 public UnityEngine.Vector3 _originalPosition { get => _originalPosition_Element.Data; set => _originalPosition_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<UnityEngine.Vector3>, UnityEngine.Vector3> _originalPosition_Element = new();
 public UnityEngine.Quaternion _originalRotation { get => _originalRotation_Element.Data; set => _originalRotation_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<UnityEngine.Quaternion>, UnityEngine.Quaternion> _originalRotation_Element = new();
 public global::System.Single _originalScale { get => _originalScale_Element.Data; set => _originalScale_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> _originalScale_Element = new();
-public global::SyncFieldList<global::FrooxEngine.SyncRefList<global::FrooxEngine.CommonAvatar.AvatarObjectSlot>, global::FrooxEngine.CommonAvatar.AvatarObjectSlot, Field<global::FrooxEngine.SyncRef<global::FrooxEngine.CommonAvatar.AvatarObjectSlot>, global::FrooxEngine.CommonAvatar.AvatarObjectSlot>> _dummyObjectSlots = new();
+public global::SyncFieldList<global::FrooxEngine.SyncRefList<global::FrooxEngine.CommonAvatar.AvatarObjectSlot>, global::FrooxEngine.CommonAvatar.AvatarObjectSlot, Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.CommonAvatar.AvatarObjectSlot>, global::FrooxEngine.CommonAvatar.AvatarObjectSlot>> _dummyObjectSlots = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)

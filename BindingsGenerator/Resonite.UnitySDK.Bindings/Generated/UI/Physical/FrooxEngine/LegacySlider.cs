@@ -2,9 +2,9 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.LegacySlider
-// Generated on: čtvrtek 26. února 2026 12:28:08
-// Resonite version: 2026.2.26.702
-// Resonite Link Version: 0.9.2.0
+// Generated on: čtvrtek 26. února 2026 15:09:09
+// Resonite version: 2026.2.26.828
+// Resonite Link Version: 0.9.3.0
 // -----------------------------------------------------------------------------
 
 using UnityEngine;
@@ -23,7 +23,7 @@ public partial class LegacySlider : global::FrooxEngine.LegacyUIElement, global:
     public global::System.Boolean IsEnabledField { get => IsEnabledField_Element.Data; set => IsEnabledField_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> IsEnabledField_Element = new();
 public global::FrooxEngine.IField<global::System.Single> DriveField { get => DriveField_Element.Data; set => DriveField_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<global::System.Single>, global::FrooxEngine.IField<global::System.Single>> DriveField_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<global::System.Single>, global::FrooxEngine.IField<global::System.Single>> DriveField_Element = new();
 public global::System.Boolean AllowWriteBack { get => AllowWriteBack_Element.Data; set => AllowWriteBack_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> AllowWriteBack_Element = new();
 public global::System.Boolean CreateUndoStep { get => CreateUndoStep_Element.Data; set => CreateUndoStep_Element.Data = value; }
@@ -59,35 +59,35 @@ public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Sin
 public global::System.Single ButtonRatioField { get => ButtonRatioField_Element.Data; set => ButtonRatioField_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> ButtonRatioField_Element = new();
 public global::FrooxEngine.MultiBevelStripeMesh _trackMesh { get => _trackMesh_Element.Data; set => _trackMesh_Element.Data = value; }
-public Field<global::FrooxEngine.DriveRef<global::FrooxEngine.MultiBevelStripeMesh>, global::FrooxEngine.MultiBevelStripeMesh> _trackMesh_Element = new();
+public Reference<global::FrooxEngine.DriveRef<global::FrooxEngine.MultiBevelStripeMesh>, global::FrooxEngine.MultiBevelStripeMesh> _trackMesh_Element = new();
 public global::FrooxEngine.BevelStripeMesh _leftMesh { get => _leftMesh_Element.Data; set => _leftMesh_Element.Data = value; }
-public Field<global::FrooxEngine.DriveRef<global::FrooxEngine.BevelStripeMesh>, global::FrooxEngine.BevelStripeMesh> _leftMesh_Element = new();
+public Reference<global::FrooxEngine.DriveRef<global::FrooxEngine.BevelStripeMesh>, global::FrooxEngine.BevelStripeMesh> _leftMesh_Element = new();
 public global::FrooxEngine.BevelStripeMesh _rightMesh { get => _rightMesh_Element.Data; set => _rightMesh_Element.Data = value; }
-public Field<global::FrooxEngine.DriveRef<global::FrooxEngine.BevelStripeMesh>, global::FrooxEngine.BevelStripeMesh> _rightMesh_Element = new();
+public Reference<global::FrooxEngine.DriveRef<global::FrooxEngine.BevelStripeMesh>, global::FrooxEngine.BevelStripeMesh> _rightMesh_Element = new();
 public global::FrooxEngine.BevelStripeMesh _cursorMesh { get => _cursorMesh_Element.Data; set => _cursorMesh_Element.Data = value; }
-public Field<global::FrooxEngine.DriveRef<global::FrooxEngine.BevelStripeMesh>, global::FrooxEngine.BevelStripeMesh> _cursorMesh_Element = new();
+public Reference<global::FrooxEngine.DriveRef<global::FrooxEngine.BevelStripeMesh>, global::FrooxEngine.BevelStripeMesh> _cursorMesh_Element = new();
 public global::FrooxEngine.PBS_RimMetallic _trackMaterial { get => _trackMaterial_Element.Data; set => _trackMaterial_Element.Data = value; }
-public Field<global::FrooxEngine.DriveRef<global::FrooxEngine.PBS_RimMetallic>, global::FrooxEngine.PBS_RimMetallic> _trackMaterial_Element = new();
+public Reference<global::FrooxEngine.DriveRef<global::FrooxEngine.PBS_RimMetallic>, global::FrooxEngine.PBS_RimMetallic> _trackMaterial_Element = new();
 public global::FrooxEngine.PBS_RimMetallic _leftMaterial { get => _leftMaterial_Element.Data; set => _leftMaterial_Element.Data = value; }
-public Field<global::FrooxEngine.DriveRef<global::FrooxEngine.PBS_RimMetallic>, global::FrooxEngine.PBS_RimMetallic> _leftMaterial_Element = new();
+public Reference<global::FrooxEngine.DriveRef<global::FrooxEngine.PBS_RimMetallic>, global::FrooxEngine.PBS_RimMetallic> _leftMaterial_Element = new();
 public global::FrooxEngine.PBS_RimMetallic _rightMaterial { get => _rightMaterial_Element.Data; set => _rightMaterial_Element.Data = value; }
-public Field<global::FrooxEngine.DriveRef<global::FrooxEngine.PBS_RimMetallic>, global::FrooxEngine.PBS_RimMetallic> _rightMaterial_Element = new();
+public Reference<global::FrooxEngine.DriveRef<global::FrooxEngine.PBS_RimMetallic>, global::FrooxEngine.PBS_RimMetallic> _rightMaterial_Element = new();
 public global::FrooxEngine.PBS_RimMetallic _cursorMaterial { get => _cursorMaterial_Element.Data; set => _cursorMaterial_Element.Data = value; }
-public Field<global::FrooxEngine.DriveRef<global::FrooxEngine.PBS_RimMetallic>, global::FrooxEngine.PBS_RimMetallic> _cursorMaterial_Element = new();
+public Reference<global::FrooxEngine.DriveRef<global::FrooxEngine.PBS_RimMetallic>, global::FrooxEngine.PBS_RimMetallic> _cursorMaterial_Element = new();
 public global::FrooxEngine.IField<UnityEngine.Vector3> _leftPosition { get => _leftPosition_Element.Data; set => _leftPosition_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<UnityEngine.Vector3>, global::FrooxEngine.IField<UnityEngine.Vector3>> _leftPosition_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<UnityEngine.Vector3>, global::FrooxEngine.IField<UnityEngine.Vector3>> _leftPosition_Element = new();
 public global::FrooxEngine.IField<UnityEngine.Vector3> _rightPosition { get => _rightPosition_Element.Data; set => _rightPosition_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<UnityEngine.Vector3>, global::FrooxEngine.IField<UnityEngine.Vector3>> _rightPosition_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<UnityEngine.Vector3>, global::FrooxEngine.IField<UnityEngine.Vector3>> _rightPosition_Element = new();
 public global::FrooxEngine.IField<UnityEngine.Vector3> _cursorPosition { get => _cursorPosition_Element.Data; set => _cursorPosition_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<UnityEngine.Vector3>, global::FrooxEngine.IField<UnityEngine.Vector3>> _cursorPosition_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<UnityEngine.Vector3>, global::FrooxEngine.IField<UnityEngine.Vector3>> _cursorPosition_Element = new();
 public global::FrooxEngine.IField<UnityEngine.Vector3> _leftColliderSize { get => _leftColliderSize_Element.Data; set => _leftColliderSize_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<UnityEngine.Vector3>, global::FrooxEngine.IField<UnityEngine.Vector3>> _leftColliderSize_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<UnityEngine.Vector3>, global::FrooxEngine.IField<UnityEngine.Vector3>> _leftColliderSize_Element = new();
 public global::FrooxEngine.IField<UnityEngine.Vector3> _rightColliderSize { get => _rightColliderSize_Element.Data; set => _rightColliderSize_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<UnityEngine.Vector3>, global::FrooxEngine.IField<UnityEngine.Vector3>> _rightColliderSize_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<UnityEngine.Vector3>, global::FrooxEngine.IField<UnityEngine.Vector3>> _rightColliderSize_Element = new();
 public global::FrooxEngine.IField<UnityEngine.Vector3> _trackColliderSize { get => _trackColliderSize_Element.Data; set => _trackColliderSize_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<UnityEngine.Vector3>, global::FrooxEngine.IField<UnityEngine.Vector3>> _trackColliderSize_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<UnityEngine.Vector3>, global::FrooxEngine.IField<UnityEngine.Vector3>> _trackColliderSize_Element = new();
 public global::FrooxEngine.IField<UnityEngine.Vector3> _cursorColliderSize { get => _cursorColliderSize_Element.Data; set => _cursorColliderSize_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<UnityEngine.Vector3>, global::FrooxEngine.IField<UnityEngine.Vector3>> _cursorColliderSize_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<UnityEngine.Vector3>, global::FrooxEngine.IField<UnityEngine.Vector3>> _cursorColliderSize_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)

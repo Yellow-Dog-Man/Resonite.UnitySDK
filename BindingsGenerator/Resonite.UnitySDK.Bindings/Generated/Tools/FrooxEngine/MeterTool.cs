@@ -2,9 +2,9 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.MeterTool
-// Generated on: čtvrtek 26. února 2026 12:28:06
-// Resonite version: 2026.2.26.702
-// Resonite Link Version: 0.9.2.0
+// Generated on: čtvrtek 26. února 2026 15:09:06
+// Resonite version: 2026.2.26.828
+// Resonite Link Version: 0.9.3.0
 // -----------------------------------------------------------------------------
 
 using UnityEngine;
@@ -21,7 +21,7 @@ public partial class MeterTool : global::FrooxEngine.Tool
 
 {
     public global::FrooxEngine.IField<UnityEngine.ColorX> _indicationColor { get => _indicationColor_Element.Data; set => _indicationColor_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.IField<UnityEngine.ColorX>>, global::FrooxEngine.IField<UnityEngine.ColorX>> _indicationColor_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.IField<UnityEngine.ColorX>>, global::FrooxEngine.IField<UnityEngine.ColorX>> _indicationColor_Element = new();
 public global::FrooxEngine.MeterTool.Mode MeterMode { get => MeterMode_Element.Data; set => MeterMode_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<global::FrooxEngine.MeterTool.Mode>, global::FrooxEngine.MeterTool.Mode> MeterMode_Element = new();
 public global::System.Boolean MeasureInObjectSpace { get => MeasureInObjectSpace_Element.Data; set => MeasureInObjectSpace_Element.Data = value; }
@@ -31,11 +31,11 @@ public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Bo
 public global::System.Boolean MultiPoint { get => MultiPoint_Element.Data; set => MultiPoint_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> MultiPoint_Element = new();
 public global::FrooxEngine.Slot _lastPoint { get => _lastPoint_Element.Data; set => _lastPoint_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> _lastPoint_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> _lastPoint_Element = new();
 public global::FrooxEngine.DistanceMeter _currentMeter { get => _currentMeter_Element.Data; set => _currentMeter_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.DistanceMeter>, global::FrooxEngine.DistanceMeter> _currentMeter_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.DistanceMeter>, global::FrooxEngine.DistanceMeter> _currentMeter_Element = new();
 public global::FrooxEngine.LineTransform _currentLineTransform { get => _currentLineTransform_Element.Data; set => _currentLineTransform_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.LineTransform>, global::FrooxEngine.LineTransform> _currentLineTransform_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.LineTransform>, global::FrooxEngine.LineTransform> _currentLineTransform_Element = new();
 public global::System.String FormatNumber { get => FormatNumber_Element.Data; set => FormatNumber_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<global::System.String>, global::System.String> FormatNumber_Element = new();
 public global::System.String FormatUnit { get => FormatUnit_Element.Data; set => FormatUnit_Element.Data = value; }

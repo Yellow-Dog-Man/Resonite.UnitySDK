@@ -2,9 +2,9 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.PhotonDust.Texture3D_Force
-// Generated on: čtvrtek 26. února 2026 12:28:05
-// Resonite version: 2026.2.26.702
-// Resonite Link Version: 0.9.2.0
+// Generated on: čtvrtek 26. února 2026 15:09:05
+// Resonite version: 2026.2.26.828
+// Resonite Link Version: 0.9.3.0
 // -----------------------------------------------------------------------------
 
 using UnityEngine;
@@ -21,7 +21,7 @@ public partial class Texture3D_Force : global::FrooxEngine.PhotonDust.ParticleSy
 
 {
     public global::FrooxEngine.IAssetProvider<global::FrooxEngine.Texture3D> Texture3D { get => Texture3D_Element.Data; set => Texture3D_Element.Data = value; }
-public Field<global::FrooxEngine.AssetRef<global::FrooxEngine.Texture3D>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.Texture3D>> Texture3D_Element = new();
+public Reference<global::FrooxEngine.AssetRef<global::FrooxEngine.Texture3D>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.Texture3D>> Texture3D_Element = new();
 public global::PhotonDust.ForceMode Mode { get => Mode_Element.Data; set => Mode_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<global::PhotonDust.ForceMode>, global::PhotonDust.ForceMode> Mode_Element = new();
 public global::System.Single Strength { get => Strength_Element.Data; set => Strength_Element.Data = value; }

@@ -2,9 +2,9 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.BillboardBrushTool
-// Generated on: čtvrtek 26. února 2026 12:28:06
-// Resonite version: 2026.2.26.702
-// Resonite Link Version: 0.9.2.0
+// Generated on: čtvrtek 26. února 2026 15:09:07
+// Resonite version: 2026.2.26.828
+// Resonite Link Version: 0.9.3.0
 // -----------------------------------------------------------------------------
 
 using UnityEngine;
@@ -33,11 +33,11 @@ public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Bo
 public global::System.Boolean UseUV { get => UseUV_Element.Data; set => UseUV_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> UseUV_Element = new();
 public global::FrooxEngine.MeshRenderer _previewRenderer { get => _previewRenderer_Element.Data; set => _previewRenderer_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.MeshRenderer>, global::FrooxEngine.MeshRenderer> _previewRenderer_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.MeshRenderer>, global::FrooxEngine.MeshRenderer> _previewRenderer_Element = new();
 public global::FrooxEngine.PointMesh _previewMesh { get => _previewMesh_Element.Data; set => _previewMesh_Element.Data = value; }
-public Field<global::FrooxEngine.DriveRef<global::FrooxEngine.PointMesh>, global::FrooxEngine.PointMesh> _previewMesh_Element = new();
+public Reference<global::FrooxEngine.DriveRef<global::FrooxEngine.PointMesh>, global::FrooxEngine.PointMesh> _previewMesh_Element = new();
 public global::FrooxEngine.IField<UnityEngine.Vector3> _previewMeshOffset { get => _previewMeshOffset_Element.Data; set => _previewMeshOffset_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<UnityEngine.Vector3>, global::FrooxEngine.IField<UnityEngine.Vector3>> _previewMeshOffset_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<UnityEngine.Vector3>, global::FrooxEngine.IField<UnityEngine.Vector3>> _previewMeshOffset_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)

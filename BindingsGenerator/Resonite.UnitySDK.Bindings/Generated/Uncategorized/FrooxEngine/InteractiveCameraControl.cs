@@ -2,9 +2,9 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.InteractiveCameraControl
-// Generated on: čtvrtek 26. února 2026 12:28:11
-// Resonite version: 2026.2.26.702
-// Resonite Link Version: 0.9.2.0
+// Generated on: čtvrtek 26. února 2026 15:09:12
+// Resonite version: 2026.2.26.828
+// Resonite Link Version: 0.9.3.0
 // -----------------------------------------------------------------------------
 
 using UnityEngine;
@@ -76,89 +76,89 @@ public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Bo
 public global::System.Boolean FlipPreview { get => FlipPreview_Element.Data; set => FlipPreview_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> FlipPreview_Element = new();
 public global::FrooxEngine.RenderTextureProxyProvider _renderTextureProxy { get => _renderTextureProxy_Element.Data; set => _renderTextureProxy_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.RenderTextureProxyProvider>, global::FrooxEngine.RenderTextureProxyProvider> _renderTextureProxy_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.RenderTextureProxyProvider>, global::FrooxEngine.RenderTextureProxyProvider> _renderTextureProxy_Element = new();
 public global::FrooxEngine.UIX.RectTransform _framingReticle { get => _framingReticle_Element.Data; set => _framingReticle_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.UIX.RectTransform>, global::FrooxEngine.UIX.RectTransform> _framingReticle_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.UIX.RectTransform>, global::FrooxEngine.UIX.RectTransform> _framingReticle_Element = new();
 public global::FrooxEngine.UIX.RectTransform _mirrorMessage { get => _mirrorMessage_Element.Data; set => _mirrorMessage_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.UIX.RectTransform>, global::FrooxEngine.UIX.RectTransform> _mirrorMessage_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.UIX.RectTransform>, global::FrooxEngine.UIX.RectTransform> _mirrorMessage_Element = new();
 public global::FrooxEngine.UIX.Button _smoothFirstPersonButton { get => _smoothFirstPersonButton_Element.Data; set => _smoothFirstPersonButton_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.UIX.Button>, global::FrooxEngine.UIX.Button> _smoothFirstPersonButton_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.UIX.Button>, global::FrooxEngine.UIX.Button> _smoothFirstPersonButton_Element = new();
 public global::FrooxEngine.UIX.Button _thirdPersonButton { get => _thirdPersonButton_Element.Data; set => _thirdPersonButton_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.UIX.Button>, global::FrooxEngine.UIX.Button> _thirdPersonButton_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.UIX.Button>, global::FrooxEngine.UIX.Button> _thirdPersonButton_Element = new();
 public global::FrooxEngine.UIX.Button _groupButton { get => _groupButton_Element.Data; set => _groupButton_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.UIX.Button>, global::FrooxEngine.UIX.Button> _groupButton_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.UIX.Button>, global::FrooxEngine.UIX.Button> _groupButton_Element = new();
 public global::FrooxEngine.UIX.Button _worldButton { get => _worldButton_Element.Data; set => _worldButton_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.UIX.Button>, global::FrooxEngine.UIX.Button> _worldButton_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.UIX.Button>, global::FrooxEngine.UIX.Button> _worldButton_Element = new();
 public global::FrooxEngine.UIX.Button _manualButton { get => _manualButton_Element.Data; set => _manualButton_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.UIX.Button>, global::FrooxEngine.UIX.Button> _manualButton_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.UIX.Button>, global::FrooxEngine.UIX.Button> _manualButton_Element = new();
 public global::FrooxEngine.UIX.Button _mirrorButton { get => _mirrorButton_Element.Data; set => _mirrorButton_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.UIX.Button>, global::FrooxEngine.UIX.Button> _mirrorButton_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.UIX.Button>, global::FrooxEngine.UIX.Button> _mirrorButton_Element = new();
 public global::FrooxEngine.UIX.Button _usersButton { get => _usersButton_Element.Data; set => _usersButton_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.UIX.Button>, global::FrooxEngine.UIX.Button> _usersButton_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.UIX.Button>, global::FrooxEngine.UIX.Button> _usersButton_Element = new();
 public global::FrooxEngine.UIX.Button _angleIncreaseButton { get => _angleIncreaseButton_Element.Data; set => _angleIncreaseButton_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.UIX.Button>, global::FrooxEngine.UIX.Button> _angleIncreaseButton_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.UIX.Button>, global::FrooxEngine.UIX.Button> _angleIncreaseButton_Element = new();
 public global::FrooxEngine.UIX.Button _angleDecreaseButton { get => _angleDecreaseButton_Element.Data; set => _angleDecreaseButton_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.UIX.Button>, global::FrooxEngine.UIX.Button> _angleDecreaseButton_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.UIX.Button>, global::FrooxEngine.UIX.Button> _angleDecreaseButton_Element = new();
 public global::FrooxEngine.UIX.Button _heightIncreaseButton { get => _heightIncreaseButton_Element.Data; set => _heightIncreaseButton_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.UIX.Button>, global::FrooxEngine.UIX.Button> _heightIncreaseButton_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.UIX.Button>, global::FrooxEngine.UIX.Button> _heightIncreaseButton_Element = new();
 public global::FrooxEngine.UIX.Button _heightDecreaseButton { get => _heightDecreaseButton_Element.Data; set => _heightDecreaseButton_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.UIX.Button>, global::FrooxEngine.UIX.Button> _heightDecreaseButton_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.UIX.Button>, global::FrooxEngine.UIX.Button> _heightDecreaseButton_Element = new();
 public global::FrooxEngine.UIX.Button _distanceIncreaseButton { get => _distanceIncreaseButton_Element.Data; set => _distanceIncreaseButton_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.UIX.Button>, global::FrooxEngine.UIX.Button> _distanceIncreaseButton_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.UIX.Button>, global::FrooxEngine.UIX.Button> _distanceIncreaseButton_Element = new();
 public global::FrooxEngine.UIX.Button _distanceDecreaseButton { get => _distanceDecreaseButton_Element.Data; set => _distanceDecreaseButton_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.UIX.Button>, global::FrooxEngine.UIX.Button> _distanceDecreaseButton_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.UIX.Button>, global::FrooxEngine.UIX.Button> _distanceDecreaseButton_Element = new();
 public global::FrooxEngine.UIX.Button _resetButton { get => _resetButton_Element.Data; set => _resetButton_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.UIX.Button>, global::FrooxEngine.UIX.Button> _resetButton_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.UIX.Button>, global::FrooxEngine.UIX.Button> _resetButton_Element = new();
 public global::FrooxEngine.UIX.Slider<global::System.Single> _fovSlider { get => _fovSlider_Element.Data; set => _fovSlider_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.UIX.Slider<global::System.Single>>, global::FrooxEngine.UIX.Slider<global::System.Single>> _fovSlider_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.UIX.Slider<global::System.Single>>, global::FrooxEngine.UIX.Slider<global::System.Single>> _fovSlider_Element = new();
 public global::FrooxEngine.UIX.Checkbox _avoidOcclusion { get => _avoidOcclusion_Element.Data; set => _avoidOcclusion_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.UIX.Checkbox>, global::FrooxEngine.UIX.Checkbox> _avoidOcclusion_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.UIX.Checkbox>, global::FrooxEngine.UIX.Checkbox> _avoidOcclusion_Element = new();
 public global::FrooxEngine.UIX.Checkbox _keepInWorldSpace { get => _keepInWorldSpace_Element.Data; set => _keepInWorldSpace_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.UIX.Checkbox>, global::FrooxEngine.UIX.Checkbox> _keepInWorldSpace_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.UIX.Checkbox>, global::FrooxEngine.UIX.Checkbox> _keepInWorldSpace_Element = new();
 public global::FrooxEngine.UIX.Checkbox _movementWobble { get => _movementWobble_Element.Data; set => _movementWobble_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.UIX.Checkbox>, global::FrooxEngine.UIX.Checkbox> _movementWobble_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.UIX.Checkbox>, global::FrooxEngine.UIX.Checkbox> _movementWobble_Element = new();
 public global::FrooxEngine.UIX.Checkbox _aimInFrontOfHead { get => _aimInFrontOfHead_Element.Data; set => _aimInFrontOfHead_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.UIX.Checkbox>, global::FrooxEngine.UIX.Checkbox> _aimInFrontOfHead_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.UIX.Checkbox>, global::FrooxEngine.UIX.Checkbox> _aimInFrontOfHead_Element = new();
 public global::FrooxEngine.UIX.Checkbox _forceEyesOnCamera { get => _forceEyesOnCamera_Element.Data; set => _forceEyesOnCamera_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.UIX.Checkbox>, global::FrooxEngine.UIX.Checkbox> _forceEyesOnCamera_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.UIX.Checkbox>, global::FrooxEngine.UIX.Checkbox> _forceEyesOnCamera_Element = new();
 public global::FrooxEngine.UIX.Checkbox _hideCamera { get => _hideCamera_Element.Data; set => _hideCamera_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.UIX.Checkbox>, global::FrooxEngine.UIX.Checkbox> _hideCamera_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.UIX.Checkbox>, global::FrooxEngine.UIX.Checkbox> _hideCamera_Element = new();
 public global::FrooxEngine.UIX.Checkbox _hideBadge { get => _hideBadge_Element.Data; set => _hideBadge_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.UIX.Checkbox>, global::FrooxEngine.UIX.Checkbox> _hideBadge_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.UIX.Checkbox>, global::FrooxEngine.UIX.Checkbox> _hideBadge_Element = new();
 public global::FrooxEngine.UIX.Checkbox _hideLasers { get => _hideLasers_Element.Data; set => _hideLasers_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.UIX.Checkbox>, global::FrooxEngine.UIX.Checkbox> _hideLasers_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.UIX.Checkbox>, global::FrooxEngine.UIX.Checkbox> _hideLasers_Element = new();
 public global::FrooxEngine.UIX.Checkbox _showFrustum { get => _showFrustum_Element.Data; set => _showFrustum_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.UIX.Checkbox>, global::FrooxEngine.UIX.Checkbox> _showFrustum_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.UIX.Checkbox>, global::FrooxEngine.UIX.Checkbox> _showFrustum_Element = new();
 public global::FrooxEngine.UIX.Checkbox _timer { get => _timer_Element.Data; set => _timer_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.UIX.Checkbox>, global::FrooxEngine.UIX.Checkbox> _timer_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.UIX.Checkbox>, global::FrooxEngine.UIX.Checkbox> _timer_Element = new();
 public global::FrooxEngine.UIX.Checkbox _forceLive { get => _forceLive_Element.Data; set => _forceLive_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.UIX.Checkbox>, global::FrooxEngine.UIX.Checkbox> _forceLive_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.UIX.Checkbox>, global::FrooxEngine.UIX.Checkbox> _forceLive_Element = new();
 public global::FrooxEngine.UIX.Checkbox _audioFromCameraViewpoint { get => _audioFromCameraViewpoint_Element.Data; set => _audioFromCameraViewpoint_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.UIX.Checkbox>, global::FrooxEngine.UIX.Checkbox> _audioFromCameraViewpoint_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.UIX.Checkbox>, global::FrooxEngine.UIX.Checkbox> _audioFromCameraViewpoint_Element = new();
 public global::FrooxEngine.InteractiveCameraUserControl _userControl { get => _userControl_Element.Data; set => _userControl_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.InteractiveCameraUserControl>, global::FrooxEngine.InteractiveCameraUserControl> _userControl_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.InteractiveCameraUserControl>, global::FrooxEngine.InteractiveCameraUserControl> _userControl_Element = new();
 public global::FrooxEngine.InteractiveCameraControlSettings _settingsDialog { get => _settingsDialog_Element.Data; set => _settingsDialog_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.InteractiveCameraControlSettings>, global::FrooxEngine.InteractiveCameraControlSettings> _settingsDialog_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.InteractiveCameraControlSettings>, global::FrooxEngine.InteractiveCameraControlSettings> _settingsDialog_Element = new();
 public global::FrooxEngine.InteractiveCameraControlPositioning _positioningDialog { get => _positioningDialog_Element.Data; set => _positioningDialog_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.InteractiveCameraControlPositioning>, global::FrooxEngine.InteractiveCameraControlPositioning> _positioningDialog_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.InteractiveCameraControlPositioning>, global::FrooxEngine.InteractiveCameraControlPositioning> _positioningDialog_Element = new();
 public global::FrooxEngine.InteractiveCameraControlAnchors _anchorsDialog { get => _anchorsDialog_Element.Data; set => _anchorsDialog_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.InteractiveCameraControlAnchors>, global::FrooxEngine.InteractiveCameraControlAnchors> _anchorsDialog_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.InteractiveCameraControlAnchors>, global::FrooxEngine.InteractiveCameraControlAnchors> _anchorsDialog_Element = new();
 public global::FrooxEngine.InteractiveCameraOBS _OBS_Dialog { get => _OBS_Dialog_Element.Data; set => _OBS_Dialog_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.InteractiveCameraOBS>, global::FrooxEngine.InteractiveCameraOBS> _OBS_Dialog_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.InteractiveCameraOBS>, global::FrooxEngine.InteractiveCameraOBS> _OBS_Dialog_Element = new();
 public global::FrooxEngine.TwitchChatDialog _twitchDialog { get => _twitchDialog_Element.Data; set => _twitchDialog_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.TwitchChatDialog>, global::FrooxEngine.TwitchChatDialog> _twitchDialog_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.TwitchChatDialog>, global::FrooxEngine.TwitchChatDialog> _twitchDialog_Element = new();
 public global::FrooxEngine.UIX.Button _settingsButton { get => _settingsButton_Element.Data; set => _settingsButton_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.UIX.Button>, global::FrooxEngine.UIX.Button> _settingsButton_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.UIX.Button>, global::FrooxEngine.UIX.Button> _settingsButton_Element = new();
 public global::FrooxEngine.UIX.Button _positioningButton { get => _positioningButton_Element.Data; set => _positioningButton_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.UIX.Button>, global::FrooxEngine.UIX.Button> _positioningButton_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.UIX.Button>, global::FrooxEngine.UIX.Button> _positioningButton_Element = new();
 public global::FrooxEngine.UIX.Button _anchorsButton { get => _anchorsButton_Element.Data; set => _anchorsButton_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.UIX.Button>, global::FrooxEngine.UIX.Button> _anchorsButton_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.UIX.Button>, global::FrooxEngine.UIX.Button> _anchorsButton_Element = new();
 public global::FrooxEngine.UIX.Button _OBS_Button { get => _OBS_Button_Element.Data; set => _OBS_Button_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.UIX.Button>, global::FrooxEngine.UIX.Button> _OBS_Button_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.UIX.Button>, global::FrooxEngine.UIX.Button> _OBS_Button_Element = new();
 public global::FrooxEngine.UIX.Button _twitchButton { get => _twitchButton_Element.Data; set => _twitchButton_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.UIX.Button>, global::FrooxEngine.UIX.Button> _twitchButton_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.UIX.Button>, global::FrooxEngine.UIX.Button> _twitchButton_Element = new();
 public global::FrooxEngine.UI_UnlitMaterial _previewMaterial { get => _previewMaterial_Element.Data; set => _previewMaterial_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.UI_UnlitMaterial>, global::FrooxEngine.UI_UnlitMaterial> _previewMaterial_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.UI_UnlitMaterial>, global::FrooxEngine.UI_UnlitMaterial> _previewMaterial_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)

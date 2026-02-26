@@ -2,9 +2,9 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.TranslationGizmo
-// Generated on: čtvrtek 26. února 2026 12:28:13
-// Resonite version: 2026.2.26.702
-// Resonite Link Version: 0.9.2.0
+// Generated on: čtvrtek 26. února 2026 15:09:14
+// Resonite version: 2026.2.26.828
+// Resonite Link Version: 0.9.3.0
 // -----------------------------------------------------------------------------
 
 using UnityEngine;
@@ -21,19 +21,19 @@ public partial class TranslationGizmo : global::FrooxEngine.Component
 
 {
     public global::FrooxEngine.VolumeTranslationGizmo _xyzGizmo { get => _xyzGizmo_Element.Data; set => _xyzGizmo_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.VolumeTranslationGizmo>, global::FrooxEngine.VolumeTranslationGizmo> _xyzGizmo_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.VolumeTranslationGizmo>, global::FrooxEngine.VolumeTranslationGizmo> _xyzGizmo_Element = new();
 public global::FrooxEngine.PlaneTranslationGizmo _xyGizmo { get => _xyGizmo_Element.Data; set => _xyGizmo_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.PlaneTranslationGizmo>, global::FrooxEngine.PlaneTranslationGizmo> _xyGizmo_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.PlaneTranslationGizmo>, global::FrooxEngine.PlaneTranslationGizmo> _xyGizmo_Element = new();
 public global::FrooxEngine.PlaneTranslationGizmo _xzGizmo { get => _xzGizmo_Element.Data; set => _xzGizmo_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.PlaneTranslationGizmo>, global::FrooxEngine.PlaneTranslationGizmo> _xzGizmo_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.PlaneTranslationGizmo>, global::FrooxEngine.PlaneTranslationGizmo> _xzGizmo_Element = new();
 public global::FrooxEngine.PlaneTranslationGizmo _yzGizmo { get => _yzGizmo_Element.Data; set => _yzGizmo_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.PlaneTranslationGizmo>, global::FrooxEngine.PlaneTranslationGizmo> _yzGizmo_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.PlaneTranslationGizmo>, global::FrooxEngine.PlaneTranslationGizmo> _yzGizmo_Element = new();
 public global::FrooxEngine.AxisTranslationGizmo _xGizmo { get => _xGizmo_Element.Data; set => _xGizmo_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.AxisTranslationGizmo>, global::FrooxEngine.AxisTranslationGizmo> _xGizmo_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.AxisTranslationGizmo>, global::FrooxEngine.AxisTranslationGizmo> _xGizmo_Element = new();
 public global::FrooxEngine.AxisTranslationGizmo _yGizmo { get => _yGizmo_Element.Data; set => _yGizmo_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.AxisTranslationGizmo>, global::FrooxEngine.AxisTranslationGizmo> _yGizmo_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.AxisTranslationGizmo>, global::FrooxEngine.AxisTranslationGizmo> _yGizmo_Element = new();
 public global::FrooxEngine.AxisTranslationGizmo _zGizmo { get => _zGizmo_Element.Data; set => _zGizmo_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.AxisTranslationGizmo>, global::FrooxEngine.AxisTranslationGizmo> _zGizmo_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.AxisTranslationGizmo>, global::FrooxEngine.AxisTranslationGizmo> _zGizmo_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)

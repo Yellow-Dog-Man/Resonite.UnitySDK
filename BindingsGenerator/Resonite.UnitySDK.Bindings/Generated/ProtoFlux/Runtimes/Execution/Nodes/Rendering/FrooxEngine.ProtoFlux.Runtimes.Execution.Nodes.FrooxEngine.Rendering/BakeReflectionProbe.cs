@@ -2,9 +2,9 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [ProtoFluxBindings]FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Rendering.BakeReflectionProbe
-// Generated on: čtvrtek 26. února 2026 12:27:54
-// Resonite version: 2026.2.26.702
-// Resonite Link Version: 0.9.2.0
+// Generated on: čtvrtek 26. února 2026 15:08:55
+// Resonite version: 2026.2.26.828
+// Resonite Link Version: 0.9.3.0
 // -----------------------------------------------------------------------------
 
 using UnityEngine;
@@ -21,13 +21,13 @@ public partial class BakeReflectionProbe : global::FrooxEngine.ProtoFlux.Runtime
 
 {
     public global::FrooxEngine.ProtoFlux.INodeObjectOutput<global::FrooxEngine.ReflectionProbe> Probe { get => Probe_Element.Data; set => Probe_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.ProtoFlux.INodeObjectOutput<global::FrooxEngine.ReflectionProbe>>, global::FrooxEngine.ProtoFlux.INodeObjectOutput<global::FrooxEngine.ReflectionProbe>> Probe_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.ProtoFlux.INodeObjectOutput<global::FrooxEngine.ReflectionProbe>>, global::FrooxEngine.ProtoFlux.INodeObjectOutput<global::FrooxEngine.ReflectionProbe>> Probe_Element = new();
 public global::FrooxEngine.ProtoFlux.INodeOperation OnBakeStart { get => OnBakeStart_Element.Data; set => OnBakeStart_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.ProtoFlux.INodeOperation>, global::FrooxEngine.ProtoFlux.INodeOperation> OnBakeStart_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.ProtoFlux.INodeOperation>, global::FrooxEngine.ProtoFlux.INodeOperation> OnBakeStart_Element = new();
 public global::FrooxEngine.ProtoFlux.INodeOperation OnBakeFail { get => OnBakeFail_Element.Data; set => OnBakeFail_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.ProtoFlux.INodeOperation>, global::FrooxEngine.ProtoFlux.INodeOperation> OnBakeFail_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.ProtoFlux.INodeOperation>, global::FrooxEngine.ProtoFlux.INodeOperation> OnBakeFail_Element = new();
 public global::FrooxEngine.ProtoFlux.INodeOperation OnBakeComplete { get => OnBakeComplete_Element.Data; set => OnBakeComplete_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.ProtoFlux.INodeOperation>, global::FrooxEngine.ProtoFlux.INodeOperation> OnBakeComplete_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.ProtoFlux.INodeOperation>, global::FrooxEngine.ProtoFlux.INodeOperation> OnBakeComplete_Element = new();
 public global::FrooxEngine.ProtoFlux.NodeObjectOutput<System.Uri> BakedCubemapURL = new();
 
 public override void CollectMembers(

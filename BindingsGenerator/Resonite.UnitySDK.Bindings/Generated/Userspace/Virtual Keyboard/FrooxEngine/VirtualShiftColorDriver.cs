@@ -2,9 +2,9 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.VirtualShiftColorDriver
-// Generated on: čtvrtek 26. února 2026 12:28:15
-// Resonite version: 2026.2.26.702
-// Resonite Link Version: 0.9.2.0
+// Generated on: čtvrtek 26. února 2026 15:09:17
+// Resonite version: 2026.2.26.828
+// Resonite Link Version: 0.9.3.0
 // -----------------------------------------------------------------------------
 
 using UnityEngine;
@@ -21,9 +21,9 @@ public partial class VirtualShiftColorDriver : global::FrooxEngine.Component
 
 {
     public global::FrooxEngine.VirtualKeyboard Keyboard { get => Keyboard_Element.Data; set => Keyboard_Element.Data = value; }
-public Field<global::FrooxEngine.RelayRef<global::FrooxEngine.VirtualKeyboard>, global::FrooxEngine.VirtualKeyboard> Keyboard_Element = new();
+public Reference<global::FrooxEngine.RelayRef<global::FrooxEngine.VirtualKeyboard>, global::FrooxEngine.VirtualKeyboard> Keyboard_Element = new();
 public global::FrooxEngine.IField<UnityEngine.ColorX> ColorTarget { get => ColorTarget_Element.Data; set => ColorTarget_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.IField<UnityEngine.ColorX>>, global::FrooxEngine.IField<UnityEngine.ColorX>> ColorTarget_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.IField<UnityEngine.ColorX>>, global::FrooxEngine.IField<UnityEngine.ColorX>> ColorTarget_Element = new();
 public UnityEngine.ColorX NormalColor { get => NormalColor_Element.Data; set => NormalColor_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<UnityEngine.ColorX>, UnityEngine.ColorX> NormalColor_Element = new();
 public UnityEngine.ColorX ShiftColor { get => ShiftColor_Element.Data; set => ShiftColor_Element.Data = value; }

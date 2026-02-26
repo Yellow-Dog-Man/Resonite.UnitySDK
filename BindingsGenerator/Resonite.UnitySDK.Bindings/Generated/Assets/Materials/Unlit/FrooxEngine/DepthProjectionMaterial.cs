@@ -2,9 +2,9 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.DepthProjectionMaterial
-// Generated on: čtvrtek 26. února 2026 12:26:48
-// Resonite version: 2026.2.26.702
-// Resonite Link Version: 0.9.2.0
+// Generated on: čtvrtek 26. února 2026 15:07:54
+// Resonite version: 2026.2.26.828
+// Resonite Link Version: 0.9.3.0
 // -----------------------------------------------------------------------------
 
 using UnityEngine;
@@ -21,9 +21,9 @@ public partial class DepthProjectionMaterial : global::FrooxEngine.SingleShaderM
 
 {
     public global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D> Color { get => Color_Element.Data; set => Color_Element.Data = value; }
-public Field<global::FrooxEngine.AssetRef<global::FrooxEngine.ITexture2D>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D>> Color_Element = new();
+public Reference<global::FrooxEngine.AssetRef<global::FrooxEngine.ITexture2D>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D>> Color_Element = new();
 public global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D> Depth { get => Depth_Element.Data; set => Depth_Element.Data = value; }
-public Field<global::FrooxEngine.AssetRef<global::FrooxEngine.ITexture2D>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D>> Depth_Element = new();
+public Reference<global::FrooxEngine.AssetRef<global::FrooxEngine.ITexture2D>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D>> Depth_Element = new();
 public global::FrooxEngine.DepthEncoding DepthEncoding { get => DepthEncoding_Element.Data; set => DepthEncoding_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<global::FrooxEngine.DepthEncoding>, global::FrooxEngine.DepthEncoding> DepthEncoding_Element = new();
 public UnityEngine.Vector2 ColorTextureOffset { get => ColorTextureOffset_Element.Data; set => ColorTextureOffset_Element.Data = value; }

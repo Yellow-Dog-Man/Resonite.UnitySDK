@@ -2,9 +2,9 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.WorldCloseDialog
-// Generated on: čtvrtek 26. února 2026 12:28:14
-// Resonite version: 2026.2.26.702
-// Resonite Link Version: 0.9.2.0
+// Generated on: čtvrtek 26. února 2026 15:09:15
+// Resonite version: 2026.2.26.828
+// Resonite Link Version: 0.9.3.0
 // -----------------------------------------------------------------------------
 
 using UnityEngine;
@@ -21,19 +21,19 @@ public partial class WorldCloseDialog : global::FrooxEngine.Component
 
 {
     public global::FrooxEngine.UIX.Text _worldName { get => _worldName_Element.Data; set => _worldName_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.UIX.Text>, global::FrooxEngine.UIX.Text> _worldName_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.UIX.Text>, global::FrooxEngine.UIX.Text> _worldName_Element = new();
 public global::FrooxEngine.UIX.Button _saveButton { get => _saveButton_Element.Data; set => _saveButton_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.UIX.Button>, global::FrooxEngine.UIX.Button> _saveButton_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.UIX.Button>, global::FrooxEngine.UIX.Button> _saveButton_Element = new();
 public global::FrooxEngine.UIX.Button _saveAsButton { get => _saveAsButton_Element.Data; set => _saveAsButton_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.UIX.Button>, global::FrooxEngine.UIX.Button> _saveAsButton_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.UIX.Button>, global::FrooxEngine.UIX.Button> _saveAsButton_Element = new();
 public global::FrooxEngine.UIX.Button _discardButton { get => _discardButton_Element.Data; set => _discardButton_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.UIX.Button>, global::FrooxEngine.UIX.Button> _discardButton_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.UIX.Button>, global::FrooxEngine.UIX.Button> _discardButton_Element = new();
 public global::FrooxEngine.WorldCloseAction _saveAction { get => _saveAction_Element.Data; set => _saveAction_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.WorldCloseAction>, global::FrooxEngine.WorldCloseAction> _saveAction_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.WorldCloseAction>, global::FrooxEngine.WorldCloseAction> _saveAction_Element = new();
 public global::FrooxEngine.WorldCloseAction _saveAsAction { get => _saveAsAction_Element.Data; set => _saveAsAction_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.WorldCloseAction>, global::FrooxEngine.WorldCloseAction> _saveAsAction_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.WorldCloseAction>, global::FrooxEngine.WorldCloseAction> _saveAsAction_Element = new();
 public global::FrooxEngine.WorldCloseAction _discardAction { get => _discardAction_Element.Data; set => _discardAction_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.WorldCloseAction>, global::FrooxEngine.WorldCloseAction> _discardAction_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.WorldCloseAction>, global::FrooxEngine.WorldCloseAction> _discardAction_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)

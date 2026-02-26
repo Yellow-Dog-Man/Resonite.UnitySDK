@@ -2,9 +2,9 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.CommonAvatar.EyeManager
-// Generated on: čtvrtek 26. února 2026 12:28:10
-// Resonite version: 2026.2.26.702
-// Resonite Link Version: 0.9.2.0
+// Generated on: čtvrtek 26. února 2026 15:09:11
+// Resonite version: 2026.2.26.828
+// Resonite Link Version: 0.9.3.0
 // -----------------------------------------------------------------------------
 
 using UnityEngine;
@@ -69,9 +69,9 @@ public Field<global::FrooxEngine.RawOutput<global::System.Single>, global::Syste
 public global::System.Single CombinedEyeOuterBrowVertical { get => CombinedEyeOuterBrowVertical_Element.Data; set => CombinedEyeOuterBrowVertical_Element.Data = value; }
 public Field<global::FrooxEngine.RawOutput<global::System.Single>, global::System.Single> CombinedEyeOuterBrowVertical_Element = new();
 public global::FrooxEngine.IEyeDataSourceComponent EyeDataSource { get => EyeDataSource_Element.Data; set => EyeDataSource_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.IEyeDataSourceComponent>, global::FrooxEngine.IEyeDataSourceComponent> EyeDataSource_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.IEyeDataSourceComponent>, global::FrooxEngine.IEyeDataSourceComponent> EyeDataSource_Element = new();
 public global::FrooxEngine.User SimulatingUser { get => SimulatingUser_Element.Data; set => SimulatingUser_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.User>, global::FrooxEngine.User> SimulatingUser_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.User>, global::FrooxEngine.User> SimulatingUser_Element = new();
 public global::System.Boolean SimulateOnHost { get => SimulateOnHost_Element.Data; set => SimulateOnHost_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> SimulateOnHost_Element = new();
 public global::System.Boolean IgnoreLocalUserHead { get => IgnoreLocalUserHead_Element.Data; set => IgnoreLocalUserHead_Element.Data = value; }
@@ -87,13 +87,13 @@ public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Sin
 public global::System.Single ForcedCameraWeight { get => ForcedCameraWeight_Element.Data; set => ForcedCameraWeight_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> ForcedCameraWeight_Element = new();
 public global::FrooxEngine.Slot EyeReference { get => EyeReference_Element.Data; set => EyeReference_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> EyeReference_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> EyeReference_Element = new();
 public global::System.Single EyeSeparation { get => EyeSeparation_Element.Data; set => EyeSeparation_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> EyeSeparation_Element = new();
 public global::System.Single SaccadeSpeed { get => SaccadeSpeed_Element.Data; set => SaccadeSpeed_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> SaccadeSpeed_Element = new();
 public global::FrooxEngine.Slot LookTargetRoot { get => LookTargetRoot_Element.Data; set => LookTargetRoot_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> LookTargetRoot_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> LookTargetRoot_Element = new();
 public UnityEngine.Vector3 LookTargetLocalPoint { get => LookTargetLocalPoint_Element.Data; set => LookTargetLocalPoint_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<UnityEngine.Vector3>, UnityEngine.Vector3> LookTargetLocalPoint_Element = new();
 public UnityEngine.Vector3 LeftEyeTargetOffset { get => LeftEyeTargetOffset_Element.Data; set => LeftEyeTargetOffset_Element.Data = value; }

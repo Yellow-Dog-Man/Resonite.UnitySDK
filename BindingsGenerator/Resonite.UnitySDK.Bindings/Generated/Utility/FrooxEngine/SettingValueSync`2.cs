@@ -2,9 +2,9 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.SettingValueSync<,>
-// Generated on: čtvrtek 26. února 2026 12:28:16
-// Resonite version: 2026.2.26.702
-// Resonite Link Version: 0.9.2.0
+// Generated on: čtvrtek 26. února 2026 15:09:17
+// Resonite version: 2026.2.26.828
+// Resonite Link Version: 0.9.3.0
 // -----------------------------------------------------------------------------
 
 using UnityEngine;
@@ -26,7 +26,7 @@ public partial class SettingValueSync<T,S> : global::FrooxEngine.Component
 public global::System.String SettingName { get => SettingName_Element.Data; set => SettingName_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<global::System.String>, global::System.String> SettingName_Element = new();
 public global::FrooxEngine.IField<T> TargetField { get => TargetField_Element.Data; set => TargetField_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<T>, global::FrooxEngine.IField<T>> TargetField_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<T>, global::FrooxEngine.IField<T>> TargetField_Element = new();
 public global::System.String SubsettingGetter { get => SubsettingGetter_Element.Data; set => SubsettingGetter_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<global::System.String>, global::System.String> SubsettingGetter_Element = new();
 public global::System.String SubsettingKey { get => SubsettingKey_Element.Data; set => SubsettingKey_Element.Data = value; }

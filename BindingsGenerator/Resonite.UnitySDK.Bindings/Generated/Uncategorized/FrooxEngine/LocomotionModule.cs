@@ -2,9 +2,9 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.LocomotionModule
-// Generated on: čtvrtek 26. února 2026 12:26:56
-// Resonite version: 2026.2.26.702
-// Resonite Link Version: 0.9.2.0
+// Generated on: čtvrtek 26. února 2026 15:08:01
+// Resonite version: 2026.2.26.828
+// Resonite Link Version: 0.9.3.0
 // -----------------------------------------------------------------------------
 
 using UnityEngine;
@@ -21,11 +21,11 @@ public abstract partial class LocomotionModule : global::FrooxEngine.UserRootCom
 
 {
     public global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D> Icon { get => Icon_Element.Data; set => Icon_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D>>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D>> Icon_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D>>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D>> Icon_Element = new();
 public UnityEngine.ColorX Color { get => Color_Element.Data; set => Color_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<UnityEngine.ColorX>, UnityEngine.ColorX> Color_Element = new();
 public global::FrooxEngine.LocomotionController _currentController { get => _currentController_Element.Data; set => _currentController_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.LocomotionController>, global::FrooxEngine.LocomotionController> _currentController_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.LocomotionController>, global::FrooxEngine.LocomotionController> _currentController_Element = new();
 public System.Uri _lastDefaultIcon { get => _lastDefaultIcon_Element.Data; set => _lastDefaultIcon_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<System.Uri>, System.Uri> _lastDefaultIcon_Element = new();
 public global::System.Nullable<UnityEngine.ColorX> _lastDefaultColor { get => _lastDefaultColor_Element.Data; set => _lastDefaultColor_Element.Data = value; }

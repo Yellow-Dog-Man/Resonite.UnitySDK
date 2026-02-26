@@ -2,9 +2,9 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.TypeSpatialVariableDriver
-// Generated on: čtvrtek 26. února 2026 12:26:54
-// Resonite version: 2026.2.26.702
-// Resonite Link Version: 0.9.2.0
+// Generated on: čtvrtek 26. února 2026 15:07:59
+// Resonite version: 2026.2.26.828
+// Resonite Link Version: 0.9.3.0
 // -----------------------------------------------------------------------------
 
 using UnityEngine;
@@ -21,7 +21,7 @@ public partial class TypeSpatialVariableDriver : global::FrooxEngine.Component
 
 {
     public global::FrooxEngine.SyncType Drive { get => Drive_Element.Data; set => Drive_Element.Data = value; }
-public Field<global::FrooxEngine.DriveRef<global::FrooxEngine.SyncType>, global::FrooxEngine.SyncType> Drive_Element = new();
+public Reference<global::FrooxEngine.DriveRef<global::FrooxEngine.SyncType>, global::FrooxEngine.SyncType> Drive_Element = new();
 public global::System.String VariableName { get => VariableName_Element.Data; set => VariableName_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<global::System.String>, global::System.String> VariableName_Element = new();
 public System.String DefaultType { get => DefaultType_Element.Data; set => DefaultType_Element.Data = value; }

@@ -2,9 +2,9 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.LegacyRadioGroup
-// Generated on: čtvrtek 26. února 2026 12:28:08
-// Resonite version: 2026.2.26.702
-// Resonite Link Version: 0.9.2.0
+// Generated on: čtvrtek 26. února 2026 15:09:09
+// Resonite version: 2026.2.26.828
+// Resonite Link Version: 0.9.3.0
 // -----------------------------------------------------------------------------
 
 using UnityEngine;
@@ -23,17 +23,17 @@ public partial class LegacyRadioGroup : global::FrooxEngine.LegacyUIElement, glo
     public global::System.Boolean IsEnabled { get => IsEnabled_Element.Data; set => IsEnabled_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> IsEnabled_Element = new();
 public global::FrooxEngine.LegacyRadio _selectedOption { get => _selectedOption_Element.Data; set => _selectedOption_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.LegacyRadio>, global::FrooxEngine.LegacyRadio> _selectedOption_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.LegacyRadio>, global::FrooxEngine.LegacyRadio> _selectedOption_Element = new();
 public global::FrooxEngine.Slot _choiceVisual { get => _choiceVisual_Element.Data; set => _choiceVisual_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> _choiceVisual_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> _choiceVisual_Element = new();
 public global::FrooxEngine.IField<UnityEngine.Vector3> _choicePosition { get => _choicePosition_Element.Data; set => _choicePosition_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<UnityEngine.Vector3>, global::FrooxEngine.IField<UnityEngine.Vector3>> _choicePosition_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<UnityEngine.Vector3>, global::FrooxEngine.IField<UnityEngine.Vector3>> _choicePosition_Element = new();
 public global::FrooxEngine.IField<UnityEngine.Quaternion> _choiceRotation { get => _choiceRotation_Element.Data; set => _choiceRotation_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<UnityEngine.Quaternion>, global::FrooxEngine.IField<UnityEngine.Quaternion>> _choiceRotation_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<UnityEngine.Quaternion>, global::FrooxEngine.IField<UnityEngine.Quaternion>> _choiceRotation_Element = new();
 public global::FrooxEngine.IField<UnityEngine.Vector3> _choiceScale { get => _choiceScale_Element.Data; set => _choiceScale_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<UnityEngine.Vector3>, global::FrooxEngine.IField<UnityEngine.Vector3>> _choiceScale_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<UnityEngine.Vector3>, global::FrooxEngine.IField<UnityEngine.Vector3>> _choiceScale_Element = new();
 public global::FrooxEngine.PBS_RimMetallic _choiceMaterial { get => _choiceMaterial_Element.Data; set => _choiceMaterial_Element.Data = value; }
-public Field<global::FrooxEngine.DriveRef<global::FrooxEngine.PBS_RimMetallic>, global::FrooxEngine.PBS_RimMetallic> _choiceMaterial_Element = new();
+public Reference<global::FrooxEngine.DriveRef<global::FrooxEngine.PBS_RimMetallic>, global::FrooxEngine.PBS_RimMetallic> _choiceMaterial_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)

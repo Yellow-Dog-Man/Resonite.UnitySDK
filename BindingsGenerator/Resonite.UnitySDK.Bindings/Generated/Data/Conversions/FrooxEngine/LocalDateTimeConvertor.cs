@@ -2,9 +2,9 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.LocalDateTimeConvertor
-// Generated on: čtvrtek 26. února 2026 12:26:54
-// Resonite version: 2026.2.26.702
-// Resonite Link Version: 0.9.2.0
+// Generated on: čtvrtek 26. února 2026 15:07:58
+// Resonite version: 2026.2.26.828
+// Resonite Link Version: 0.9.3.0
 // -----------------------------------------------------------------------------
 
 using UnityEngine;
@@ -21,7 +21,7 @@ public partial class LocalDateTimeConvertor : global::FrooxEngine.Component
 
 {
     public global::FrooxEngine.IField<global::System.DateTime> Source { get => Source_Element.Data; set => Source_Element.Data = value; }
-public Field<global::FrooxEngine.RelayRef<global::FrooxEngine.IField<global::System.DateTime>>, global::FrooxEngine.IField<global::System.DateTime>> Source_Element = new();
+public Reference<global::FrooxEngine.RelayRef<global::FrooxEngine.IField<global::System.DateTime>>, global::FrooxEngine.IField<global::System.DateTime>> Source_Element = new();
 public global::System.DateTime LocalDateTime { get => LocalDateTime_Element.Data; set => LocalDateTime_Element.Data = value; }
 public Field<global::FrooxEngine.RawOutput<global::System.DateTime>, global::System.DateTime> LocalDateTime_Element = new();
 

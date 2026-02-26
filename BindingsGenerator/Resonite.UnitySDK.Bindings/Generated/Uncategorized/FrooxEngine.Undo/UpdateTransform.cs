@@ -2,9 +2,9 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.Undo.UpdateTransform
-// Generated on: čtvrtek 26. února 2026 12:28:14
-// Resonite version: 2026.2.26.702
-// Resonite Link Version: 0.9.2.0
+// Generated on: čtvrtek 26. února 2026 15:09:15
+// Resonite version: 2026.2.26.828
+// Resonite Link Version: 0.9.3.0
 // -----------------------------------------------------------------------------
 
 using UnityEngine;
@@ -21,7 +21,7 @@ public partial class UpdateTransform : global::FrooxEngine.Component, global::Fr
 
 {
     public global::FrooxEngine.Slot Target { get => Target_Element.Data; set => Target_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> Target_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> Target_Element = new();
 public global::System.Boolean RestoreParent { get => RestoreParent_Element.Data; set => RestoreParent_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> RestoreParent_Element = new();
 public global::System.Boolean RestorePosition { get => RestorePosition_Element.Data; set => RestorePosition_Element.Data = value; }
@@ -31,9 +31,9 @@ public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Bo
 public global::System.Boolean RestoreScale { get => RestoreScale_Element.Data; set => RestoreScale_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> RestoreScale_Element = new();
 public global::FrooxEngine.Slot ParentBefore { get => ParentBefore_Element.Data; set => ParentBefore_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> ParentBefore_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> ParentBefore_Element = new();
 public global::FrooxEngine.Slot ParentAfter { get => ParentAfter_Element.Data; set => ParentAfter_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> ParentAfter_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> ParentAfter_Element = new();
 public UnityEngine.Vector3 LocalPositionBefore { get => LocalPositionBefore_Element.Data; set => LocalPositionBefore_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<UnityEngine.Vector3>, UnityEngine.Vector3> LocalPositionBefore_Element = new();
 public UnityEngine.Quaternion LocalRotationBefore { get => LocalRotationBefore_Element.Data; set => LocalRotationBefore_Element.Data = value; }

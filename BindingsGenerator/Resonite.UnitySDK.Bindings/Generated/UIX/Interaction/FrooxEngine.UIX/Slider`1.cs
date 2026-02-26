@@ -2,9 +2,9 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.UIX.Slider<>
-// Generated on: čtvrtek 26. února 2026 12:28:09
-// Resonite version: 2026.2.26.702
-// Resonite Link Version: 0.9.2.0
+// Generated on: čtvrtek 26. února 2026 15:09:09
+// Resonite version: 2026.2.26.828
+// Resonite Link Version: 0.9.3.0
 // -----------------------------------------------------------------------------
 
 using UnityEngine;
@@ -42,11 +42,11 @@ public Field<global::FrooxEngine.Sync<global::FrooxEngine.UIX.Slider<T>.Directio
 public UnityEngine.Vector2 AnchorOffset { get => AnchorOffset_Element.Data; set => AnchorOffset_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<UnityEngine.Vector2>, UnityEngine.Vector2> AnchorOffset_Element = new();
 public global::FrooxEngine.IField<UnityEngine.Vector2> HandleAnchorMinDrive { get => HandleAnchorMinDrive_Element.Data; set => HandleAnchorMinDrive_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<UnityEngine.Vector2>, global::FrooxEngine.IField<UnityEngine.Vector2>> HandleAnchorMinDrive_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<UnityEngine.Vector2>, global::FrooxEngine.IField<UnityEngine.Vector2>> HandleAnchorMinDrive_Element = new();
 public global::FrooxEngine.IField<UnityEngine.Vector2> HandleAnchorMaxDrive { get => HandleAnchorMaxDrive_Element.Data; set => HandleAnchorMaxDrive_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<UnityEngine.Vector2>, global::FrooxEngine.IField<UnityEngine.Vector2>> HandleAnchorMaxDrive_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<UnityEngine.Vector2>, global::FrooxEngine.IField<UnityEngine.Vector2>> HandleAnchorMaxDrive_Element = new();
 public global::FrooxEngine.IField<UnityEngine.Vector2> FillLineDrive { get => FillLineDrive_Element.Data; set => FillLineDrive_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<UnityEngine.Vector2>, global::FrooxEngine.IField<UnityEngine.Vector2>> FillLineDrive_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<UnityEngine.Vector2>, global::FrooxEngine.IField<UnityEngine.Vector2>> FillLineDrive_Element = new();
 public global::System.Boolean RequireLockInToInteract { get => RequireLockInToInteract_Element.Data; set => RequireLockInToInteract_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> RequireLockInToInteract_Element = new();
 public global::System.Boolean RequireInitialPress { get => RequireInitialPress_Element.Data; set => RequireInitialPress_Element.Data = value; }

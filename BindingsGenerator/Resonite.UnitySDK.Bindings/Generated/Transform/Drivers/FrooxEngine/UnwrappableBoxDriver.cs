@@ -2,9 +2,9 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.UnwrappableBoxDriver
-// Generated on: čtvrtek 26. února 2026 12:28:07
-// Resonite version: 2026.2.26.702
-// Resonite Link Version: 0.9.2.0
+// Generated on: čtvrtek 26. února 2026 15:09:08
+// Resonite version: 2026.2.26.828
+// Resonite Link Version: 0.9.3.0
 // -----------------------------------------------------------------------------
 
 using UnityEngine;
@@ -27,47 +27,47 @@ public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Sin
 public global::System.Boolean ScaleContent { get => ScaleContent_Element.Data; set => ScaleContent_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> ScaleContent_Element = new();
 public global::FrooxEngine.IField<UnityEngine.Quaternion> _side0rotation { get => _side0rotation_Element.Data; set => _side0rotation_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<UnityEngine.Quaternion>, global::FrooxEngine.IField<UnityEngine.Quaternion>> _side0rotation_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<UnityEngine.Quaternion>, global::FrooxEngine.IField<UnityEngine.Quaternion>> _side0rotation_Element = new();
 public global::FrooxEngine.IField<UnityEngine.Quaternion> _side1rotation { get => _side1rotation_Element.Data; set => _side1rotation_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<UnityEngine.Quaternion>, global::FrooxEngine.IField<UnityEngine.Quaternion>> _side1rotation_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<UnityEngine.Quaternion>, global::FrooxEngine.IField<UnityEngine.Quaternion>> _side1rotation_Element = new();
 public global::FrooxEngine.IField<UnityEngine.Quaternion> _side2rotation { get => _side2rotation_Element.Data; set => _side2rotation_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<UnityEngine.Quaternion>, global::FrooxEngine.IField<UnityEngine.Quaternion>> _side2rotation_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<UnityEngine.Quaternion>, global::FrooxEngine.IField<UnityEngine.Quaternion>> _side2rotation_Element = new();
 public global::FrooxEngine.IField<UnityEngine.Quaternion> _side3rotation { get => _side3rotation_Element.Data; set => _side3rotation_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<UnityEngine.Quaternion>, global::FrooxEngine.IField<UnityEngine.Quaternion>> _side3rotation_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<UnityEngine.Quaternion>, global::FrooxEngine.IField<UnityEngine.Quaternion>> _side3rotation_Element = new();
 public global::FrooxEngine.IField<UnityEngine.Quaternion> _topRotation { get => _topRotation_Element.Data; set => _topRotation_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<UnityEngine.Quaternion>, global::FrooxEngine.IField<UnityEngine.Quaternion>> _topRotation_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<UnityEngine.Quaternion>, global::FrooxEngine.IField<UnityEngine.Quaternion>> _topRotation_Element = new();
 public global::FrooxEngine.IField<UnityEngine.Vector3> _side0offset { get => _side0offset_Element.Data; set => _side0offset_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<UnityEngine.Vector3>, global::FrooxEngine.IField<UnityEngine.Vector3>> _side0offset_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<UnityEngine.Vector3>, global::FrooxEngine.IField<UnityEngine.Vector3>> _side0offset_Element = new();
 public global::FrooxEngine.IField<UnityEngine.Vector3> _side1offset { get => _side1offset_Element.Data; set => _side1offset_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<UnityEngine.Vector3>, global::FrooxEngine.IField<UnityEngine.Vector3>> _side1offset_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<UnityEngine.Vector3>, global::FrooxEngine.IField<UnityEngine.Vector3>> _side1offset_Element = new();
 public global::FrooxEngine.IField<UnityEngine.Vector3> _side2offset { get => _side2offset_Element.Data; set => _side2offset_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<UnityEngine.Vector3>, global::FrooxEngine.IField<UnityEngine.Vector3>> _side2offset_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<UnityEngine.Vector3>, global::FrooxEngine.IField<UnityEngine.Vector3>> _side2offset_Element = new();
 public global::FrooxEngine.IField<UnityEngine.Vector3> _side3offset { get => _side3offset_Element.Data; set => _side3offset_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<UnityEngine.Vector3>, global::FrooxEngine.IField<UnityEngine.Vector3>> _side3offset_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<UnityEngine.Vector3>, global::FrooxEngine.IField<UnityEngine.Vector3>> _side3offset_Element = new();
 public global::FrooxEngine.IField<UnityEngine.Vector3> _topOffset { get => _topOffset_Element.Data; set => _topOffset_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<UnityEngine.Vector3>, global::FrooxEngine.IField<UnityEngine.Vector3>> _topOffset_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<UnityEngine.Vector3>, global::FrooxEngine.IField<UnityEngine.Vector3>> _topOffset_Element = new();
 public global::FrooxEngine.IField<UnityEngine.Vector3> _side0contentOffset { get => _side0contentOffset_Element.Data; set => _side0contentOffset_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<UnityEngine.Vector3>, global::FrooxEngine.IField<UnityEngine.Vector3>> _side0contentOffset_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<UnityEngine.Vector3>, global::FrooxEngine.IField<UnityEngine.Vector3>> _side0contentOffset_Element = new();
 public global::FrooxEngine.IField<UnityEngine.Vector3> _side1contentOffset { get => _side1contentOffset_Element.Data; set => _side1contentOffset_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<UnityEngine.Vector3>, global::FrooxEngine.IField<UnityEngine.Vector3>> _side1contentOffset_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<UnityEngine.Vector3>, global::FrooxEngine.IField<UnityEngine.Vector3>> _side1contentOffset_Element = new();
 public global::FrooxEngine.IField<UnityEngine.Vector3> _side2contentOffset { get => _side2contentOffset_Element.Data; set => _side2contentOffset_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<UnityEngine.Vector3>, global::FrooxEngine.IField<UnityEngine.Vector3>> _side2contentOffset_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<UnityEngine.Vector3>, global::FrooxEngine.IField<UnityEngine.Vector3>> _side2contentOffset_Element = new();
 public global::FrooxEngine.IField<UnityEngine.Vector3> _side3contentOffset { get => _side3contentOffset_Element.Data; set => _side3contentOffset_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<UnityEngine.Vector3>, global::FrooxEngine.IField<UnityEngine.Vector3>> _side3contentOffset_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<UnityEngine.Vector3>, global::FrooxEngine.IField<UnityEngine.Vector3>> _side3contentOffset_Element = new();
 public global::FrooxEngine.IField<UnityEngine.Vector3> _topContentOffset { get => _topContentOffset_Element.Data; set => _topContentOffset_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<UnityEngine.Vector3>, global::FrooxEngine.IField<UnityEngine.Vector3>> _topContentOffset_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<UnityEngine.Vector3>, global::FrooxEngine.IField<UnityEngine.Vector3>> _topContentOffset_Element = new();
 public global::FrooxEngine.IField<UnityEngine.Vector3> _side0contentScale { get => _side0contentScale_Element.Data; set => _side0contentScale_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<UnityEngine.Vector3>, global::FrooxEngine.IField<UnityEngine.Vector3>> _side0contentScale_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<UnityEngine.Vector3>, global::FrooxEngine.IField<UnityEngine.Vector3>> _side0contentScale_Element = new();
 public global::FrooxEngine.IField<UnityEngine.Vector3> _side1contentScale { get => _side1contentScale_Element.Data; set => _side1contentScale_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<UnityEngine.Vector3>, global::FrooxEngine.IField<UnityEngine.Vector3>> _side1contentScale_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<UnityEngine.Vector3>, global::FrooxEngine.IField<UnityEngine.Vector3>> _side1contentScale_Element = new();
 public global::FrooxEngine.IField<UnityEngine.Vector3> _side2contentScale { get => _side2contentScale_Element.Data; set => _side2contentScale_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<UnityEngine.Vector3>, global::FrooxEngine.IField<UnityEngine.Vector3>> _side2contentScale_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<UnityEngine.Vector3>, global::FrooxEngine.IField<UnityEngine.Vector3>> _side2contentScale_Element = new();
 public global::FrooxEngine.IField<UnityEngine.Vector3> _side3contentScale { get => _side3contentScale_Element.Data; set => _side3contentScale_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<UnityEngine.Vector3>, global::FrooxEngine.IField<UnityEngine.Vector3>> _side3contentScale_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<UnityEngine.Vector3>, global::FrooxEngine.IField<UnityEngine.Vector3>> _side3contentScale_Element = new();
 public global::FrooxEngine.IField<UnityEngine.Vector3> _bottomContentScale { get => _bottomContentScale_Element.Data; set => _bottomContentScale_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<UnityEngine.Vector3>, global::FrooxEngine.IField<UnityEngine.Vector3>> _bottomContentScale_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<UnityEngine.Vector3>, global::FrooxEngine.IField<UnityEngine.Vector3>> _bottomContentScale_Element = new();
 public global::FrooxEngine.IField<UnityEngine.Vector3> _topContentScale { get => _topContentScale_Element.Data; set => _topContentScale_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<UnityEngine.Vector3>, global::FrooxEngine.IField<UnityEngine.Vector3>> _topContentScale_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<UnityEngine.Vector3>, global::FrooxEngine.IField<UnityEngine.Vector3>> _topContentScale_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)

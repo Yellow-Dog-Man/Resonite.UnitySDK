@@ -2,9 +2,9 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.Gizmo
-// Generated on: čtvrtek 26. února 2026 12:28:09
-// Resonite version: 2026.2.26.702
-// Resonite Link Version: 0.9.2.0
+// Generated on: čtvrtek 26. února 2026 15:09:10
+// Resonite version: 2026.2.26.828
+// Resonite Link Version: 0.9.3.0
 // -----------------------------------------------------------------------------
 
 using UnityEngine;
@@ -21,23 +21,23 @@ public abstract partial class Gizmo : global::FrooxEngine.Component, global::Fro
 
 {
     public global::FrooxEngine.Slot TargetSlot { get => TargetSlot_Element.Data; set => TargetSlot_Element.Data = value; }
-public Field<global::FrooxEngine.TransformRelayRef, global::FrooxEngine.Slot> TargetSlot_Element = new();
+public Reference<global::FrooxEngine.TransformRelayRef, global::FrooxEngine.Slot> TargetSlot_Element = new();
 public global::System.Boolean AutoPositionAtTargetSlot { get => AutoPositionAtTargetSlot_Element.Data; set => AutoPositionAtTargetSlot_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> AutoPositionAtTargetSlot_Element = new();
 public global::FrooxEngine.Component _interactingComponent { get => _interactingComponent_Element.Data; set => _interactingComponent_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.Component>, global::FrooxEngine.Component> _interactingComponent_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.Component>, global::FrooxEngine.Component> _interactingComponent_Element = new();
 public global::FrooxEngine.OverlayFresnelMaterial _material { get => _material_Element.Data; set => _material_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.OverlayFresnelMaterial>, global::FrooxEngine.OverlayFresnelMaterial> _material_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.OverlayFresnelMaterial>, global::FrooxEngine.OverlayFresnelMaterial> _material_Element = new();
 public global::FrooxEngine.Slot _toolPoint { get => _toolPoint_Element.Data; set => _toolPoint_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> _toolPoint_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> _toolPoint_Element = new();
 public global::FrooxEngine.Slot _activePoint { get => _activePoint_Element.Data; set => _activePoint_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> _activePoint_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> _activePoint_Element = new();
 public global::FrooxEngine.Slot _lineRoot { get => _lineRoot_Element.Data; set => _lineRoot_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> _lineRoot_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> _lineRoot_Element = new();
 public global::FrooxEngine.SegmentMesh _lineSegment { get => _lineSegment_Element.Data; set => _lineSegment_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.SegmentMesh>, global::FrooxEngine.SegmentMesh> _lineSegment_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.SegmentMesh>, global::FrooxEngine.SegmentMesh> _lineSegment_Element = new();
 public global::FrooxEngine.Slot _snapHighlight { get => _snapHighlight_Element.Data; set => _snapHighlight_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> _snapHighlight_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> _snapHighlight_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)

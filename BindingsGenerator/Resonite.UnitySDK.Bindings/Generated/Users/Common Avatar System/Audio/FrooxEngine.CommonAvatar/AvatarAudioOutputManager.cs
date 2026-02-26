@@ -2,9 +2,9 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.CommonAvatar.AvatarAudioOutputManager
-// Generated on: čtvrtek 26. února 2026 12:28:15
-// Resonite version: 2026.2.26.702
-// Resonite Link Version: 0.9.2.0
+// Generated on: čtvrtek 26. února 2026 15:09:16
+// Resonite version: 2026.2.26.828
+// Resonite Link Version: 0.9.3.0
 // -----------------------------------------------------------------------------
 
 using UnityEngine;
@@ -21,7 +21,7 @@ public partial class AvatarAudioOutputManager : global::FrooxEngine.Component, g
 
 {
     public global::FrooxEngine.AudioOutput AudioOutput { get => AudioOutput_Element.Data; set => AudioOutput_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.AudioOutput>, global::FrooxEngine.AudioOutput> AudioOutput_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.AudioOutput>, global::FrooxEngine.AudioOutput> AudioOutput_Element = new();
 public global::System.Boolean IsViewVoice { get => IsViewVoice_Element.Data; set => IsViewVoice_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> IsViewVoice_Element = new();
 public global::FrooxEngine.VoiceModeConfig WhisperConfig = new();
@@ -43,35 +43,35 @@ public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Sin
 public global::System.Single __legacyWhisperRange { get => __legacyWhisperRange_Element.Data; set => __legacyWhisperRange_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> __legacyWhisperRange_Element = new();
 public global::FrooxEngine.User _activeUser { get => _activeUser_Element.Data; set => _activeUser_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.User>, global::FrooxEngine.User> _activeUser_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.User>, global::FrooxEngine.User> _activeUser_Element = new();
 public global::FrooxEngine.IField<global::System.Boolean> _enabled { get => _enabled_Element.Data; set => _enabled_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<global::System.Boolean>, global::FrooxEngine.IField<global::System.Boolean>> _enabled_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<global::System.Boolean>, global::FrooxEngine.IField<global::System.Boolean>> _enabled_Element = new();
 public global::FrooxEngine.IField<global::System.Single> _volume { get => _volume_Element.Data; set => _volume_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<global::System.Single>, global::FrooxEngine.IField<global::System.Single>> _volume_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<global::System.Single>, global::FrooxEngine.IField<global::System.Single>> _volume_Element = new();
 public global::FrooxEngine.IField<global::System.Single> _doppler { get => _doppler_Element.Data; set => _doppler_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<global::System.Single>, global::FrooxEngine.IField<global::System.Single>> _doppler_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<global::System.Single>, global::FrooxEngine.IField<global::System.Single>> _doppler_Element = new();
 public global::FrooxEngine.IField<global::System.Boolean> _spatialize { get => _spatialize_Element.Data; set => _spatialize_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<global::System.Boolean>, global::FrooxEngine.IField<global::System.Boolean>> _spatialize_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<global::System.Boolean>, global::FrooxEngine.IField<global::System.Boolean>> _spatialize_Element = new();
 public global::FrooxEngine.IField<global::System.Single> _spatialBlend { get => _spatialBlend_Element.Data; set => _spatialBlend_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<global::System.Single>, global::FrooxEngine.IField<global::System.Single>> _spatialBlend_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<global::System.Single>, global::FrooxEngine.IField<global::System.Single>> _spatialBlend_Element = new();
 public global::FrooxEngine.IField<global::System.Boolean> _ignoreAudioEffects { get => _ignoreAudioEffects_Element.Data; set => _ignoreAudioEffects_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<global::System.Boolean>, global::FrooxEngine.IField<global::System.Boolean>> _ignoreAudioEffects_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<global::System.Boolean>, global::FrooxEngine.IField<global::System.Boolean>> _ignoreAudioEffects_Element = new();
 public global::FrooxEngine.IField<global::System.Single> _minDistance { get => _minDistance_Element.Data; set => _minDistance_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<global::System.Single>, global::FrooxEngine.IField<global::System.Single>> _minDistance_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<global::System.Single>, global::FrooxEngine.IField<global::System.Single>> _minDistance_Element = new();
 public global::FrooxEngine.IField<global::System.Single> _maxDistance { get => _maxDistance_Element.Data; set => _maxDistance_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<global::System.Single>, global::FrooxEngine.IField<global::System.Single>> _maxDistance_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<global::System.Single>, global::FrooxEngine.IField<global::System.Single>> _maxDistance_Element = new();
 public global::FrooxEngine.IField<global::Awwdio.AudioRolloffCurve> _rollOffMode { get => _rollOffMode_Element.Data; set => _rollOffMode_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<global::Awwdio.AudioRolloffCurve>, global::FrooxEngine.IField<global::Awwdio.AudioRolloffCurve>> _rollOffMode_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<global::Awwdio.AudioRolloffCurve>, global::FrooxEngine.IField<global::Awwdio.AudioRolloffCurve>> _rollOffMode_Element = new();
 public global::FrooxEngine.IField<global::FrooxEngine.AudioDistanceSpace> _distanceSpace { get => _distanceSpace_Element.Data; set => _distanceSpace_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<global::FrooxEngine.AudioDistanceSpace>, global::FrooxEngine.IField<global::FrooxEngine.AudioDistanceSpace>> _distanceSpace_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<global::FrooxEngine.AudioDistanceSpace>, global::FrooxEngine.IField<global::FrooxEngine.AudioDistanceSpace>> _distanceSpace_Element = new();
 public global::FrooxEngine.IField<global::System.Single> _minScale { get => _minScale_Element.Data; set => _minScale_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<global::System.Single>, global::FrooxEngine.IField<global::System.Single>> _minScale_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<global::System.Single>, global::FrooxEngine.IField<global::System.Single>> _minScale_Element = new();
 public global::FrooxEngine.IField<global::System.Single> _maxScale { get => _maxScale_Element.Data; set => _maxScale_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<global::System.Single>, global::FrooxEngine.IField<global::System.Single>> _maxScale_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<global::System.Single>, global::FrooxEngine.IField<global::System.Single>> _maxScale_Element = new();
 public global::System.Single _scaleCompensation { get => _scaleCompensation_Element.Data; set => _scaleCompensation_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> _scaleCompensation_Element = new();
 public global::FrooxEngine.AvatarAudioConfiguration _audioConfiguration { get => _audioConfiguration_Element.Data; set => _audioConfiguration_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.AvatarAudioConfiguration>, global::FrooxEngine.AvatarAudioConfiguration> _audioConfiguration_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.AvatarAudioConfiguration>, global::FrooxEngine.AvatarAudioConfiguration> _audioConfiguration_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)

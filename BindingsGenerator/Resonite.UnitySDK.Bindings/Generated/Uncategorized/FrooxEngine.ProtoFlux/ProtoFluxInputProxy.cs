@@ -2,9 +2,9 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.ProtoFlux.ProtoFluxInputProxy
-// Generated on: čtvrtek 26. února 2026 12:28:13
-// Resonite version: 2026.2.26.702
-// Resonite Link Version: 0.9.2.0
+// Generated on: čtvrtek 26. února 2026 15:09:14
+// Resonite version: 2026.2.26.828
+// Resonite Link Version: 0.9.3.0
 // -----------------------------------------------------------------------------
 
 using UnityEngine;
@@ -21,7 +21,7 @@ public partial class ProtoFluxInputProxy : global::FrooxEngine.ProtoFlux.ProtoFl
 
 {
     public global::FrooxEngine.ISyncRef NodeInput { get => NodeInput_Element.Data; set => NodeInput_Element.Data = value; }
-public Field<global::FrooxEngine.RelayRef<global::FrooxEngine.ISyncRef>, global::FrooxEngine.ISyncRef> NodeInput_Element = new();
+public Reference<global::FrooxEngine.RelayRef<global::FrooxEngine.ISyncRef>, global::FrooxEngine.ISyncRef> NodeInput_Element = new();
 public System.String InputType { get => InputType_Element.Data; set => InputType_Element.Data = value; }
 public Field<global::FrooxEngine.SyncType, System.String> InputType_Element = new();
 

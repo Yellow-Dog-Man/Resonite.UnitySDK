@@ -2,9 +2,9 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.ProtoFlux.ProtoFluxWireManager
-// Generated on: čtvrtek 26. února 2026 12:28:13
-// Resonite version: 2026.2.26.702
-// Resonite Link Version: 0.9.2.0
+// Generated on: čtvrtek 26. února 2026 15:09:14
+// Resonite version: 2026.2.26.828
+// Resonite Link Version: 0.9.3.0
 // -----------------------------------------------------------------------------
 
 using UnityEngine;
@@ -21,7 +21,7 @@ public partial class ProtoFluxWireManager : global::FrooxEngine.Component
 
 {
     public global::FrooxEngine.Slot ConnectPoint { get => ConnectPoint_Element.Data; set => ConnectPoint_Element.Data = value; }
-public Field<global::FrooxEngine.TransformRelayRef, global::FrooxEngine.Slot> ConnectPoint_Element = new();
+public Reference<global::FrooxEngine.TransformRelayRef, global::FrooxEngine.Slot> ConnectPoint_Element = new();
 public global::FrooxEngine.ProtoFlux.WireType Type { get => Type_Element.Data; set => Type_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<global::FrooxEngine.ProtoFlux.WireType>, global::FrooxEngine.ProtoFlux.WireType> Type_Element = new();
 public global::System.Single Width { get => Width_Element.Data; set => Width_Element.Data = value; }
@@ -33,19 +33,19 @@ public Field<global::FrooxEngine.Sync<UnityEngine.ColorX>, UnityEngine.ColorX> E
 public global::System.Boolean DeleteHighlight { get => DeleteHighlight_Element.Data; set => DeleteHighlight_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> DeleteHighlight_Element = new();
 public global::FrooxEngine.StripeWireMesh _wireMesh { get => _wireMesh_Element.Data; set => _wireMesh_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.StripeWireMesh>, global::FrooxEngine.StripeWireMesh> _wireMesh_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.StripeWireMesh>, global::FrooxEngine.StripeWireMesh> _wireMesh_Element = new();
 public global::FrooxEngine.MeshRenderer _renderer { get => _renderer_Element.Data; set => _renderer_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.MeshRenderer>, global::FrooxEngine.MeshRenderer> _renderer_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.MeshRenderer>, global::FrooxEngine.MeshRenderer> _renderer_Element = new();
 public global::FrooxEngine.MeshCollider _collider { get => _collider_Element.Data; set => _collider_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.MeshCollider>, global::FrooxEngine.MeshCollider> _collider_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.MeshCollider>, global::FrooxEngine.MeshCollider> _collider_Element = new();
 public global::FrooxEngine.IField<UnityEngine.Vector3> _targetPosition { get => _targetPosition_Element.Data; set => _targetPosition_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<UnityEngine.Vector3>, global::FrooxEngine.IField<UnityEngine.Vector3>> _targetPosition_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<UnityEngine.Vector3>, global::FrooxEngine.IField<UnityEngine.Vector3>> _targetPosition_Element = new();
 public global::FrooxEngine.IField<UnityEngine.Vector3> _targetTangent { get => _targetTangent_Element.Data; set => _targetTangent_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<UnityEngine.Vector3>, global::FrooxEngine.IField<UnityEngine.Vector3>> _targetTangent_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<UnityEngine.Vector3>, global::FrooxEngine.IField<UnityEngine.Vector3>> _targetTangent_Element = new();
 public global::FrooxEngine.IField<UnityEngine.Quaternion> _targetOrientation { get => _targetOrientation_Element.Data; set => _targetOrientation_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<UnityEngine.Quaternion>, global::FrooxEngine.IField<UnityEngine.Quaternion>> _targetOrientation_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<UnityEngine.Quaternion>, global::FrooxEngine.IField<UnityEngine.Quaternion>> _targetOrientation_Element = new();
 public global::FrooxEngine.IField<global::System.Single> _targetWidth { get => _targetWidth_Element.Data; set => _targetWidth_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<global::System.Single>, global::FrooxEngine.IField<global::System.Single>> _targetWidth_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<global::System.Single>, global::FrooxEngine.IField<global::System.Single>> _targetWidth_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)

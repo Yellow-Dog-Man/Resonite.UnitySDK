@@ -2,9 +2,9 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.LegacyRadio
-// Generated on: čtvrtek 26. února 2026 12:28:08
-// Resonite version: 2026.2.26.702
-// Resonite Link Version: 0.9.2.0
+// Generated on: čtvrtek 26. února 2026 15:09:09
+// Resonite version: 2026.2.26.828
+// Resonite Link Version: 0.9.3.0
 // -----------------------------------------------------------------------------
 
 using UnityEngine;
@@ -29,13 +29,13 @@ public Field<global::FrooxEngine.Sync<UnityEngine.ColorX>, UnityEngine.ColorX> C
 public global::System.Boolean Selected { get => Selected_Element.Data; set => Selected_Element.Data = value; }
 public Field<global::FrooxEngine.RawOutput<global::System.Boolean>, global::System.Boolean> Selected_Element = new();
 public global::FrooxEngine.IField<global::System.Single> _colliderRadius { get => _colliderRadius_Element.Data; set => _colliderRadius_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<global::System.Single>, global::FrooxEngine.IField<global::System.Single>> _colliderRadius_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<global::System.Single>, global::FrooxEngine.IField<global::System.Single>> _colliderRadius_Element = new();
 public global::FrooxEngine.IcoSphereMesh _icosphere { get => _icosphere_Element.Data; set => _icosphere_Element.Data = value; }
-public Field<global::FrooxEngine.DriveRef<global::FrooxEngine.IcoSphereMesh>, global::FrooxEngine.IcoSphereMesh> _icosphere_Element = new();
+public Reference<global::FrooxEngine.DriveRef<global::FrooxEngine.IcoSphereMesh>, global::FrooxEngine.IcoSphereMesh> _icosphere_Element = new();
 public global::FrooxEngine.PBS_RimMetallic _material { get => _material_Element.Data; set => _material_Element.Data = value; }
-public Field<global::FrooxEngine.DriveRef<global::FrooxEngine.PBS_RimMetallic>, global::FrooxEngine.PBS_RimMetallic> _material_Element = new();
+public Reference<global::FrooxEngine.DriveRef<global::FrooxEngine.PBS_RimMetallic>, global::FrooxEngine.PBS_RimMetallic> _material_Element = new();
 public global::FrooxEngine.LegacyRadioGroup _group { get => _group_Element.Data; set => _group_Element.Data = value; }
-public Field<global::FrooxEngine.RelayRef<global::FrooxEngine.LegacyRadioGroup>, global::FrooxEngine.LegacyRadioGroup> _group_Element = new();
+public Reference<global::FrooxEngine.RelayRef<global::FrooxEngine.LegacyRadioGroup>, global::FrooxEngine.LegacyRadioGroup> _group_Element = new();
 public global::System.Int32 _orderNumber { get => _orderNumber_Element.Data; set => _orderNumber_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<global::System.Int32>, global::System.Int32> _orderNumber_Element = new();
 

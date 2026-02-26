@@ -2,9 +2,9 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.ReflectionProbe
-// Generated on: čtvrtek 26. února 2026 12:27:54
-// Resonite version: 2026.2.26.702
-// Resonite Link Version: 0.9.2.0
+// Generated on: čtvrtek 26. února 2026 15:08:55
+// Resonite version: 2026.2.26.828
+// Resonite Link Version: 0.9.3.0
 // -----------------------------------------------------------------------------
 
 using UnityEngine;
@@ -33,8 +33,8 @@ public Field<global::FrooxEngine.Sync<UnityEngine.Vector3>, UnityEngine.Vector3>
 public global::System.Boolean BoxProjection { get => BoxProjection_Element.Data; set => BoxProjection_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> BoxProjection_Element = new();
 public global::FrooxEngine.IAssetProvider<global::FrooxEngine.Cubemap> BakedCubemap { get => BakedCubemap_Element.Data; set => BakedCubemap_Element.Data = value; }
-public Field<global::FrooxEngine.AssetRef<global::FrooxEngine.Cubemap>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.Cubemap>> BakedCubemap_Element = new();
-public global::SyncFieldList<global::FrooxEngine.SyncList<global::FrooxEngine.RelayEventRef<global::FrooxEngine.IChangeable>>, global::FrooxEngine.IChangeable, Field<global::FrooxEngine.RelayEventRef<global::FrooxEngine.IChangeable>, global::FrooxEngine.IChangeable>> ChangesSources = new();
+public Reference<global::FrooxEngine.AssetRef<global::FrooxEngine.Cubemap>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.Cubemap>> BakedCubemap_Element = new();
+public global::SyncFieldList<global::FrooxEngine.SyncList<global::FrooxEngine.RelayEventRef<global::FrooxEngine.IChangeable>>, global::FrooxEngine.IChangeable, Reference<global::FrooxEngine.RelayEventRef<global::FrooxEngine.IChangeable>, global::FrooxEngine.IChangeable>> ChangesSources = new();
 public global::Renderite.Shared.ReflectionProbeTimeSlicingMode TimeSlicing { get => TimeSlicing_Element.Data; set => TimeSlicing_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<global::Renderite.Shared.ReflectionProbeTimeSlicingMode>, global::Renderite.Shared.ReflectionProbeTimeSlicingMode> TimeSlicing_Element = new();
 public global::System.Int32 Resolution { get => Resolution_Element.Data; set => Resolution_Element.Data = value; }
@@ -56,7 +56,7 @@ public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Bo
 public global::System.Boolean ShowDebugVisuals { get => ShowDebugVisuals_Element.Data; set => ShowDebugVisuals_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> ShowDebugVisuals_Element = new();
 public global::FrooxEngine.Slot _debugVisual { get => _debugVisual_Element.Data; set => _debugVisual_Element.Data = value; }
-public Field<global::FrooxEngine.SlotCleanupRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> _debugVisual_Element = new();
+public Reference<global::FrooxEngine.SlotCleanupRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> _debugVisual_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)

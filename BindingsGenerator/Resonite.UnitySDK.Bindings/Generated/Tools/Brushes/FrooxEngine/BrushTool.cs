@@ -2,9 +2,9 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.BrushTool
-// Generated on: čtvrtek 26. února 2026 12:28:06
-// Resonite version: 2026.2.26.702
-// Resonite Link Version: 0.9.2.0
+// Generated on: čtvrtek 26. února 2026 15:09:07
+// Resonite version: 2026.2.26.828
+// Resonite Link Version: 0.9.3.0
 // -----------------------------------------------------------------------------
 
 using UnityEngine;
@@ -60,25 +60,25 @@ public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Bo
 public global::System.Boolean PickColors { get => PickColors_Element.Data; set => PickColors_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> PickColors_Element = new();
 public global::FrooxEngine.IAssetProvider<global::FrooxEngine.Material> CurrentMaterial { get => CurrentMaterial_Element.Data; set => CurrentMaterial_Element.Data = value; }
-public Field<global::FrooxEngine.AssetRef<global::FrooxEngine.Material>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.Material>> CurrentMaterial_Element = new();
+public Reference<global::FrooxEngine.AssetRef<global::FrooxEngine.Material>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.Material>> CurrentMaterial_Element = new();
 public global::SyncList<global::FrooxEngine.SyncList<global::FrooxEngine.BrushTool.ColorMapping>, global::FrooxEngine.BrushTool.ColorMapping> ColorMappings = new();
 public global::FrooxEngine.PhotonDust.ParticleSystem ParticleSystem { get => ParticleSystem_Element.Data; set => ParticleSystem_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.PhotonDust.ParticleSystem>, global::FrooxEngine.PhotonDust.ParticleSystem> ParticleSystem_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.PhotonDust.ParticleSystem>, global::FrooxEngine.PhotonDust.ParticleSystem> ParticleSystem_Element = new();
 public global::FrooxEngine.PhotonDust.MeshEmitter MeshEmitterTemplate { get => MeshEmitterTemplate_Element.Data; set => MeshEmitterTemplate_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.PhotonDust.MeshEmitter>, global::FrooxEngine.PhotonDust.MeshEmitter> MeshEmitterTemplate_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.PhotonDust.MeshEmitter>, global::FrooxEngine.PhotonDust.MeshEmitter> MeshEmitterTemplate_Element = new();
 public global::FrooxEngine.BrushTool.TemplateHandling ParticleTemplateHandling { get => ParticleTemplateHandling_Element.Data; set => ParticleTemplateHandling_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<global::FrooxEngine.BrushTool.TemplateHandling>, global::FrooxEngine.BrushTool.TemplateHandling> ParticleTemplateHandling_Element = new();
 public global::System.Nullable<global::System.Single> EmissionRatePerUnitLength { get => EmissionRatePerUnitLength_Element.Data; set => EmissionRatePerUnitLength_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<global::System.Nullable<global::System.Single>>, global::System.Nullable<global::System.Single>> EmissionRatePerUnitLength_Element = new();
 public global::FrooxEngine.ColorDialogInterface _colorPicker { get => _colorPicker_Element.Data; set => _colorPicker_Element.Data = value; }
-public Field<global::FrooxEngine.SlotCleanupRef<global::FrooxEngine.ColorDialogInterface>, global::FrooxEngine.ColorDialogInterface> _colorPicker_Element = new();
+public Reference<global::FrooxEngine.SlotCleanupRef<global::FrooxEngine.ColorDialogInterface>, global::FrooxEngine.ColorDialogInterface> _colorPicker_Element = new();
 public UnityEngine.ColorX _pickedColor { get => _pickedColor_Element.Data; set => _pickedColor_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<UnityEngine.ColorX>, UnityEngine.ColorX> _pickedColor_Element = new();
-public global::SyncFieldList<global::FrooxEngine.SyncRefList<global::FrooxEngine.Slot>, global::FrooxEngine.Slot, Field<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot>> _hideOnStroke = new();
+public global::SyncFieldList<global::FrooxEngine.SyncRefList<global::FrooxEngine.Slot>, global::FrooxEngine.Slot, Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot>> _hideOnStroke = new();
 public global::FrooxEngine.IAssetProvider<global::FrooxEngine.Material> _lastUsedMaterial { get => _lastUsedMaterial_Element.Data; set => _lastUsedMaterial_Element.Data = value; }
-public Field<global::FrooxEngine.AssetRef<global::FrooxEngine.Material>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.Material>> _lastUsedMaterial_Element = new();
+public Reference<global::FrooxEngine.AssetRef<global::FrooxEngine.Material>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.Material>> _lastUsedMaterial_Element = new();
 public global::FrooxEngine.IAssetProvider<global::FrooxEngine.Material> _lastCreatedMaterial { get => _lastCreatedMaterial_Element.Data; set => _lastCreatedMaterial_Element.Data = value; }
-public Field<global::FrooxEngine.AssetRef<global::FrooxEngine.Material>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.Material>> _lastCreatedMaterial_Element = new();
+public Reference<global::FrooxEngine.AssetRef<global::FrooxEngine.Material>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.Material>> _lastCreatedMaterial_Element = new();
 public global::System.Single Pressure { get => Pressure_Element.Data; set => Pressure_Element.Data = value; }
 public Field<global::FrooxEngine.RawOutput<global::System.Single>, global::System.Single> Pressure_Element = new();
 public UnityEngine.Vector3 Position { get => Position_Element.Data; set => Position_Element.Data = value; }

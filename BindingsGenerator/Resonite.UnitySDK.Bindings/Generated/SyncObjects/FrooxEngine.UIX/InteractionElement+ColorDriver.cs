@@ -2,9 +2,9 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.UIX.InteractionElement+ColorDriver
-// Generated on: čtvrtek 26. února 2026 12:26:52
-// Resonite version: 2026.2.26.702
-// Resonite Link Version: 0.9.2.0
+// Generated on: čtvrtek 26. února 2026 15:07:57
+// Resonite version: 2026.2.26.828
+// Resonite Link Version: 0.9.3.0
 // -----------------------------------------------------------------------------
 
 using UnityEngine;
@@ -23,7 +23,7 @@ public partial class ColorDriver : global::FrooxEngine.SyncObject
 
 {
     public global::FrooxEngine.IField<UnityEngine.ColorX> ColorDrive { get => ColorDrive_Element.Data; set => ColorDrive_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<UnityEngine.ColorX>, global::FrooxEngine.IField<UnityEngine.ColorX>> ColorDrive_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<UnityEngine.ColorX>, global::FrooxEngine.IField<UnityEngine.ColorX>> ColorDrive_Element = new();
 public global::FrooxEngine.UIX.InteractionElement.ColorMode TintColorMode { get => TintColorMode_Element.Data; set => TintColorMode_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<global::FrooxEngine.UIX.InteractionElement.ColorMode>, global::FrooxEngine.UIX.InteractionElement.ColorMode> TintColorMode_Element = new();
 public UnityEngine.ColorX NormalColor { get => NormalColor_Element.Data; set => NormalColor_Element.Data = value; }

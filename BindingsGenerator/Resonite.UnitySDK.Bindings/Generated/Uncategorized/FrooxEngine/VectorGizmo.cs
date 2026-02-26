@@ -2,9 +2,9 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.VectorGizmo
-// Generated on: čtvrtek 26. února 2026 12:28:10
-// Resonite version: 2026.2.26.702
-// Resonite Link Version: 0.9.2.0
+// Generated on: čtvrtek 26. února 2026 15:09:11
+// Resonite version: 2026.2.26.828
+// Resonite Link Version: 0.9.3.0
 // -----------------------------------------------------------------------------
 
 using UnityEngine;
@@ -22,9 +22,9 @@ public partial class VectorGizmo : global::FrooxEngine.Gizmo
 {
     public global::FrooxEngine.RootSpace VectorSpace = new();
 public global::FrooxEngine.IField<UnityEngine.Vector3> TargetVector { get => TargetVector_Element.Data; set => TargetVector_Element.Data = value; }
-public Field<global::FrooxEngine.RelayRef<global::FrooxEngine.IField<UnityEngine.Vector3>>, global::FrooxEngine.IField<UnityEngine.Vector3>> TargetVector_Element = new();
+public Reference<global::FrooxEngine.RelayRef<global::FrooxEngine.IField<UnityEngine.Vector3>>, global::FrooxEngine.IField<UnityEngine.Vector3>> TargetVector_Element = new();
 public global::FrooxEngine.IField<UnityEngine.Quaternion> TargetRotation { get => TargetRotation_Element.Data; set => TargetRotation_Element.Data = value; }
-public Field<global::FrooxEngine.RelayRef<global::FrooxEngine.IField<UnityEngine.Quaternion>>, global::FrooxEngine.IField<UnityEngine.Quaternion>> TargetRotation_Element = new();
+public Reference<global::FrooxEngine.RelayRef<global::FrooxEngine.IField<UnityEngine.Quaternion>>, global::FrooxEngine.IField<UnityEngine.Quaternion>> TargetRotation_Element = new();
 public global::System.Boolean FixMagnitude { get => FixMagnitude_Element.Data; set => FixMagnitude_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> FixMagnitude_Element = new();
 public global::System.Single FixedMagnitude { get => FixedMagnitude_Element.Data; set => FixedMagnitude_Element.Data = value; }
@@ -34,11 +34,11 @@ public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Sin
 public global::System.Single VisualThickness { get => VisualThickness_Element.Data; set => VisualThickness_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> VisualThickness_Element = new();
 public global::FrooxEngine.IField<UnityEngine.Quaternion> _colliderRotation { get => _colliderRotation_Element.Data; set => _colliderRotation_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<UnityEngine.Quaternion>, global::FrooxEngine.IField<UnityEngine.Quaternion>> _colliderRotation_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<UnityEngine.Quaternion>, global::FrooxEngine.IField<UnityEngine.Quaternion>> _colliderRotation_Element = new();
 public global::FrooxEngine.CylinderCollider _collider { get => _collider_Element.Data; set => _collider_Element.Data = value; }
-public Field<global::FrooxEngine.DriveRef<global::FrooxEngine.CylinderCollider>, global::FrooxEngine.CylinderCollider> _collider_Element = new();
+public Reference<global::FrooxEngine.DriveRef<global::FrooxEngine.CylinderCollider>, global::FrooxEngine.CylinderCollider> _collider_Element = new();
 public global::FrooxEngine.ArrowMesh _mesh { get => _mesh_Element.Data; set => _mesh_Element.Data = value; }
-public Field<global::FrooxEngine.DriveRef<global::FrooxEngine.ArrowMesh>, global::FrooxEngine.ArrowMesh> _mesh_Element = new();
+public Reference<global::FrooxEngine.DriveRef<global::FrooxEngine.ArrowMesh>, global::FrooxEngine.ArrowMesh> _mesh_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)

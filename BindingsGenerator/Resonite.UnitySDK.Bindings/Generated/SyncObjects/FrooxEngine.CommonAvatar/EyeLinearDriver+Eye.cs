@@ -2,9 +2,9 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.CommonAvatar.EyeLinearDriver+Eye
-// Generated on: čtvrtek 26. února 2026 12:28:15
-// Resonite version: 2026.2.26.702
-// Resonite Link Version: 0.9.2.0
+// Generated on: čtvrtek 26. února 2026 15:09:16
+// Resonite version: 2026.2.26.828
+// Resonite Link Version: 0.9.3.0
 // -----------------------------------------------------------------------------
 
 using UnityEngine;
@@ -25,35 +25,35 @@ public partial class Eye : global::FrooxEngine.SyncObject
     public global::FrooxEngine.EyeSide Side { get => Side_Element.Data; set => Side_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<global::FrooxEngine.EyeSide>, global::FrooxEngine.EyeSide> Side_Element = new();
 public global::FrooxEngine.Slot ProjectionPlanePoint { get => ProjectionPlanePoint_Element.Data; set => ProjectionPlanePoint_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> ProjectionPlanePoint_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> ProjectionPlanePoint_Element = new();
 public global::FrooxEngine.IField<UnityEngine.Vector2> PositionOffset { get => PositionOffset_Element.Data; set => PositionOffset_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<UnityEngine.Vector2>, global::FrooxEngine.IField<UnityEngine.Vector2>> PositionOffset_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<UnityEngine.Vector2>, global::FrooxEngine.IField<UnityEngine.Vector2>> PositionOffset_Element = new();
 public global::FrooxEngine.IField<global::System.Single> LookLeft { get => LookLeft_Element.Data; set => LookLeft_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<global::System.Single>, global::FrooxEngine.IField<global::System.Single>> LookLeft_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<global::System.Single>, global::FrooxEngine.IField<global::System.Single>> LookLeft_Element = new();
 public global::FrooxEngine.IField<global::System.Single> LookUp { get => LookUp_Element.Data; set => LookUp_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<global::System.Single>, global::FrooxEngine.IField<global::System.Single>> LookUp_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<global::System.Single>, global::FrooxEngine.IField<global::System.Single>> LookUp_Element = new();
 public global::FrooxEngine.IField<global::System.Single> LookRight { get => LookRight_Element.Data; set => LookRight_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<global::System.Single>, global::FrooxEngine.IField<global::System.Single>> LookRight_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<global::System.Single>, global::FrooxEngine.IField<global::System.Single>> LookRight_Element = new();
 public global::FrooxEngine.IField<global::System.Single> LookDown { get => LookDown_Element.Data; set => LookDown_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<global::System.Single>, global::FrooxEngine.IField<global::System.Single>> LookDown_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<global::System.Single>, global::FrooxEngine.IField<global::System.Single>> LookDown_Element = new();
 public global::FrooxEngine.IField<global::System.Single> OpenCloseTarget { get => OpenCloseTarget_Element.Data; set => OpenCloseTarget_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<global::System.Single>, global::FrooxEngine.IField<global::System.Single>> OpenCloseTarget_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<global::System.Single>, global::FrooxEngine.IField<global::System.Single>> OpenCloseTarget_Element = new();
 public global::FrooxEngine.IField<global::System.Single> PupilSizeTarget { get => PupilSizeTarget_Element.Data; set => PupilSizeTarget_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<global::System.Single>, global::FrooxEngine.IField<global::System.Single>> PupilSizeTarget_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<global::System.Single>, global::FrooxEngine.IField<global::System.Single>> PupilSizeTarget_Element = new();
 public global::FrooxEngine.IField<global::System.Single> WidenTarget { get => WidenTarget_Element.Data; set => WidenTarget_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<global::System.Single>, global::FrooxEngine.IField<global::System.Single>> WidenTarget_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<global::System.Single>, global::FrooxEngine.IField<global::System.Single>> WidenTarget_Element = new();
 public global::FrooxEngine.IField<global::System.Single> SqueezeTarget { get => SqueezeTarget_Element.Data; set => SqueezeTarget_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<global::System.Single>, global::FrooxEngine.IField<global::System.Single>> SqueezeTarget_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<global::System.Single>, global::FrooxEngine.IField<global::System.Single>> SqueezeTarget_Element = new();
 public global::FrooxEngine.IField<global::System.Single> FrownTarget { get => FrownTarget_Element.Data; set => FrownTarget_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<global::System.Single>, global::FrooxEngine.IField<global::System.Single>> FrownTarget_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<global::System.Single>, global::FrooxEngine.IField<global::System.Single>> FrownTarget_Element = new();
 public global::FrooxEngine.IField<global::System.Single> InnerBrowRaiseTarget { get => InnerBrowRaiseTarget_Element.Data; set => InnerBrowRaiseTarget_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<global::System.Single>, global::FrooxEngine.IField<global::System.Single>> InnerBrowRaiseTarget_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<global::System.Single>, global::FrooxEngine.IField<global::System.Single>> InnerBrowRaiseTarget_Element = new();
 public global::FrooxEngine.IField<global::System.Single> InnerBrowLowerTarget { get => InnerBrowLowerTarget_Element.Data; set => InnerBrowLowerTarget_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<global::System.Single>, global::FrooxEngine.IField<global::System.Single>> InnerBrowLowerTarget_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<global::System.Single>, global::FrooxEngine.IField<global::System.Single>> InnerBrowLowerTarget_Element = new();
 public global::FrooxEngine.IField<global::System.Single> OuterBrowRaiseTarget { get => OuterBrowRaiseTarget_Element.Data; set => OuterBrowRaiseTarget_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<global::System.Single>, global::FrooxEngine.IField<global::System.Single>> OuterBrowRaiseTarget_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<global::System.Single>, global::FrooxEngine.IField<global::System.Single>> OuterBrowRaiseTarget_Element = new();
 public global::FrooxEngine.IField<global::System.Single> OuterBrowLowerTarget { get => OuterBrowLowerTarget_Element.Data; set => OuterBrowLowerTarget_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<global::System.Single>, global::FrooxEngine.IField<global::System.Single>> OuterBrowLowerTarget_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<global::System.Single>, global::FrooxEngine.IField<global::System.Single>> OuterBrowLowerTarget_Element = new();
 public global::System.Single MinInputCloseness { get => MinInputCloseness_Element.Data; set => MinInputCloseness_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> MinInputCloseness_Element = new();
 public global::System.Single MaxInputCloseness { get => MaxInputCloseness_Element.Data; set => MaxInputCloseness_Element.Data = value; }

@@ -2,9 +2,9 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.BrushTool+ColorMapping
-// Generated on: čtvrtek 26. února 2026 12:28:06
-// Resonite version: 2026.2.26.702
-// Resonite Link Version: 0.9.2.0
+// Generated on: čtvrtek 26. února 2026 15:09:07
+// Resonite version: 2026.2.26.828
+// Resonite Link Version: 0.9.3.0
 // -----------------------------------------------------------------------------
 
 using UnityEngine;
@@ -23,7 +23,7 @@ public partial class ColorMapping : global::FrooxEngine.SyncObject
 
 {
     public global::FrooxEngine.IField<UnityEngine.ColorX> Field { get => Field_Element.Data; set => Field_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.IField<UnityEngine.ColorX>>, global::FrooxEngine.IField<UnityEngine.ColorX>> Field_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.IField<UnityEngine.ColorX>>, global::FrooxEngine.IField<UnityEngine.ColorX>> Field_Element = new();
 public global::System.Single HueOffset { get => HueOffset_Element.Data; set => HueOffset_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> HueOffset_Element = new();
 public global::System.Single ValueOffset { get => ValueOffset_Element.Data; set => ValueOffset_Element.Data = value; }

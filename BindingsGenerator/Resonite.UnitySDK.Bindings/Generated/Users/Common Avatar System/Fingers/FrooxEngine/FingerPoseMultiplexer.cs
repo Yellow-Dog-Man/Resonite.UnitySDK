@@ -2,9 +2,9 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.FingerPoseMultiplexer
-// Generated on: čtvrtek 26. února 2026 12:28:15
-// Resonite version: 2026.2.26.702
-// Resonite Link Version: 0.9.2.0
+// Generated on: čtvrtek 26. února 2026 15:09:16
+// Resonite version: 2026.2.26.828
+// Resonite Link Version: 0.9.3.0
 // -----------------------------------------------------------------------------
 
 using UnityEngine;
@@ -24,7 +24,7 @@ public partial class FingerPoseMultiplexer : global::FrooxEngine.FingerPoseProce
 public Field<global::FrooxEngine.Sync<global::System.Int32>, global::System.Int32> Index_Element = new();
 public global::System.Single InterpolationSpeed { get => InterpolationSpeed_Element.Data; set => InterpolationSpeed_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> InterpolationSpeed_Element = new();
-public global::SyncFieldList<global::FrooxEngine.SyncRefList<global::FrooxEngine.IFingerPoseSourceComponent>, global::FrooxEngine.IFingerPoseSourceComponent, Field<global::FrooxEngine.SyncRef<global::FrooxEngine.IFingerPoseSourceComponent>, global::FrooxEngine.IFingerPoseSourceComponent>> Sources = new();
+public global::SyncFieldList<global::FrooxEngine.SyncRefList<global::FrooxEngine.IFingerPoseSourceComponent>, global::FrooxEngine.IFingerPoseSourceComponent, Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.IFingerPoseSourceComponent>, global::FrooxEngine.IFingerPoseSourceComponent>> Sources = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)

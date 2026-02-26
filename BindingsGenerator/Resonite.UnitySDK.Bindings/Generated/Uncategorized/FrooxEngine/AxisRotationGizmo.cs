@@ -2,9 +2,9 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.AxisRotationGizmo
-// Generated on: čtvrtek 26. února 2026 12:28:09
-// Resonite version: 2026.2.26.702
-// Resonite Link Version: 0.9.2.0
+// Generated on: čtvrtek 26. února 2026 15:09:10
+// Resonite version: 2026.2.26.828
+// Resonite Link Version: 0.9.3.0
 // -----------------------------------------------------------------------------
 
 using UnityEngine;
@@ -25,29 +25,29 @@ public Field<global::FrooxEngine.Sync<UnityEngine.Vector3>, UnityEngine.Vector3>
 public global::FrooxEngine.RootSpace AxisSpace = new();
 public global::FrooxEngine.RootSpace RotationSpace = new();
 public global::FrooxEngine.IField<UnityEngine.Quaternion> TargetRotation { get => TargetRotation_Element.Data; set => TargetRotation_Element.Data = value; }
-public Field<global::FrooxEngine.RelayRef<global::FrooxEngine.IField<UnityEngine.Quaternion>>, global::FrooxEngine.IField<UnityEngine.Quaternion>> TargetRotation_Element = new();
+public Reference<global::FrooxEngine.RelayRef<global::FrooxEngine.IField<UnityEngine.Quaternion>>, global::FrooxEngine.IField<UnityEngine.Quaternion>> TargetRotation_Element = new();
 public global::FrooxEngine.IField<global::System.Single> TargetValue { get => TargetValue_Element.Data; set => TargetValue_Element.Data = value; }
-public Field<global::FrooxEngine.RelayRef<global::FrooxEngine.IField<global::System.Single>>, global::FrooxEngine.IField<global::System.Single>> TargetValue_Element = new();
+public Reference<global::FrooxEngine.RelayRef<global::FrooxEngine.IField<global::System.Single>>, global::FrooxEngine.IField<global::System.Single>> TargetValue_Element = new();
 public global::System.Single CircleRadius { get => CircleRadius_Element.Data; set => CircleRadius_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> CircleRadius_Element = new();
 public global::System.Single CircleThickness { get => CircleThickness_Element.Data; set => CircleThickness_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> CircleThickness_Element = new();
 public global::FrooxEngine.Slot _visualRoot { get => _visualRoot_Element.Data; set => _visualRoot_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> _visualRoot_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> _visualRoot_Element = new();
 public global::FrooxEngine.IField<UnityEngine.Quaternion> _visualRot { get => _visualRot_Element.Data; set => _visualRot_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<UnityEngine.Quaternion>, global::FrooxEngine.IField<UnityEngine.Quaternion>> _visualRot_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<UnityEngine.Quaternion>, global::FrooxEngine.IField<UnityEngine.Quaternion>> _visualRot_Element = new();
 public global::FrooxEngine.TorusMesh _circle { get => _circle_Element.Data; set => _circle_Element.Data = value; }
-public Field<global::FrooxEngine.DriveRef<global::FrooxEngine.TorusMesh>, global::FrooxEngine.TorusMesh> _circle_Element = new();
+public Reference<global::FrooxEngine.DriveRef<global::FrooxEngine.TorusMesh>, global::FrooxEngine.TorusMesh> _circle_Element = new();
 public global::FrooxEngine.TorusMesh _circleColliderMesh { get => _circleColliderMesh_Element.Data; set => _circleColliderMesh_Element.Data = value; }
-public Field<global::FrooxEngine.DriveRef<global::FrooxEngine.TorusMesh>, global::FrooxEngine.TorusMesh> _circleColliderMesh_Element = new();
+public Reference<global::FrooxEngine.DriveRef<global::FrooxEngine.TorusMesh>, global::FrooxEngine.TorusMesh> _circleColliderMesh_Element = new();
 public global::FrooxEngine.SegmentMesh _referenceLine { get => _referenceLine_Element.Data; set => _referenceLine_Element.Data = value; }
-public Field<global::FrooxEngine.DriveRef<global::FrooxEngine.SegmentMesh>, global::FrooxEngine.SegmentMesh> _referenceLine_Element = new();
+public Reference<global::FrooxEngine.DriveRef<global::FrooxEngine.SegmentMesh>, global::FrooxEngine.SegmentMesh> _referenceLine_Element = new();
 public global::FrooxEngine.Slot _linesRoot { get => _linesRoot_Element.Data; set => _linesRoot_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> _linesRoot_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> _linesRoot_Element = new();
 public global::FrooxEngine.SegmentMesh _line0 { get => _line0_Element.Data; set => _line0_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.SegmentMesh>, global::FrooxEngine.SegmentMesh> _line0_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.SegmentMesh>, global::FrooxEngine.SegmentMesh> _line0_Element = new();
 public global::FrooxEngine.SegmentMesh _line1 { get => _line1_Element.Data; set => _line1_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.SegmentMesh>, global::FrooxEngine.SegmentMesh> _line1_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.SegmentMesh>, global::FrooxEngine.SegmentMesh> _line1_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)

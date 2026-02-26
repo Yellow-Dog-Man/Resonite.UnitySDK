@@ -2,9 +2,9 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.DynamicBoneChain
-// Generated on: čtvrtek 26. února 2026 12:26:58
-// Resonite version: 2026.2.26.702
-// Resonite Link Version: 0.9.2.0
+// Generated on: čtvrtek 26. února 2026 15:08:03
+// Resonite version: 2026.2.26.828
+// Resonite Link Version: 0.9.3.0
 // -----------------------------------------------------------------------------
 
 using UnityEngine;
@@ -66,7 +66,7 @@ public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Sin
 public global::System.Boolean UseLocalUserSpace { get => UseLocalUserSpace_Element.Data; set => UseLocalUserSpace_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> UseLocalUserSpace_Element = new();
 public global::FrooxEngine.RootSpace SimulationSpace = new();
-public global::SyncFieldList<global::FrooxEngine.SyncRefList<global::FrooxEngine.IDynamicBoneCollider>, global::FrooxEngine.IDynamicBoneCollider, Field<global::FrooxEngine.SyncRef<global::FrooxEngine.IDynamicBoneCollider>, global::FrooxEngine.IDynamicBoneCollider>> StaticColliders = new();
+public global::SyncFieldList<global::FrooxEngine.SyncRefList<global::FrooxEngine.IDynamicBoneCollider>, global::FrooxEngine.IDynamicBoneCollider, Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.IDynamicBoneCollider>, global::FrooxEngine.IDynamicBoneCollider>> StaticColliders = new();
 public global::System.Boolean VisualizeColliders { get => VisualizeColliders_Element.Data; set => VisualizeColliders_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> VisualizeColliders_Element = new();
 public global::System.Boolean VisualizeBones { get => VisualizeBones_Element.Data; set => VisualizeBones_Element.Data = value; }
@@ -96,13 +96,13 @@ public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Bo
 public global::System.Boolean IgnoreOwnRightHand { get => IgnoreOwnRightHand_Element.Data; set => IgnoreOwnRightHand_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> IgnoreOwnRightHand_Element = new();
 public global::FrooxEngine.Slot EffectorTarget { get => EffectorTarget_Element.Data; set => EffectorTarget_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> EffectorTarget_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> EffectorTarget_Element = new();
 public global::System.Int32 EffectorBoneIndex { get => EffectorBoneIndex_Element.Data; set => EffectorBoneIndex_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<global::System.Int32>, global::System.Int32> EffectorBoneIndex_Element = new();
 public UnityEngine.Vector3 EffectorBoneOffset { get => EffectorBoneOffset_Element.Data; set => EffectorBoneOffset_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<UnityEngine.Vector3>, UnityEngine.Vector3> EffectorBoneOffset_Element = new();
 public global::FrooxEngine.Grabber _activeGrabber { get => _activeGrabber_Element.Data; set => _activeGrabber_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.Grabber>, global::FrooxEngine.Grabber> _activeGrabber_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.Grabber>, global::FrooxEngine.Grabber> _activeGrabber_Element = new();
 public global::SyncList<global::FrooxEngine.SyncList<global::FrooxEngine.DynamicBoneChain.Bone>, global::FrooxEngine.DynamicBoneChain.Bone> Bones = new();
 
 public override void CollectMembers(

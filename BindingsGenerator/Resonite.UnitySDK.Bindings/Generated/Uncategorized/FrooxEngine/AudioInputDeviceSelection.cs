@@ -2,9 +2,9 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.AudioInputDeviceSelection
-// Generated on: čtvrtek 26. února 2026 12:28:09
-// Resonite version: 2026.2.26.702
-// Resonite Link Version: 0.9.2.0
+// Generated on: čtvrtek 26. února 2026 15:09:09
+// Resonite version: 2026.2.26.828
+// Resonite Link Version: 0.9.3.0
 // -----------------------------------------------------------------------------
 
 using UnityEngine;
@@ -27,15 +27,15 @@ public Field<global::FrooxEngine.Sync<global::System.String>, global::System.Str
 public global::System.Boolean UseFilteredData { get => UseFilteredData_Element.Data; set => UseFilteredData_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> UseFilteredData_Element = new();
 public global::FrooxEngine.Slot _deviceButtonRoot { get => _deviceButtonRoot_Element.Data; set => _deviceButtonRoot_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> _deviceButtonRoot_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> _deviceButtonRoot_Element = new();
 public global::FrooxEngine.LocalAudioDeviceStream _audioStream { get => _audioStream_Element.Data; set => _audioStream_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.LocalAudioDeviceStream>, global::FrooxEngine.LocalAudioDeviceStream> _audioStream_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.LocalAudioDeviceStream>, global::FrooxEngine.LocalAudioDeviceStream> _audioStream_Element = new();
 public global::FrooxEngine.AudioOutput _audioOutput { get => _audioOutput_Element.Data; set => _audioOutput_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.AudioOutput>, global::FrooxEngine.AudioOutput> _audioOutput_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.AudioOutput>, global::FrooxEngine.AudioOutput> _audioOutput_Element = new();
 public global::FrooxEngine.VolumeMeter _deviceVolume { get => _deviceVolume_Element.Data; set => _deviceVolume_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.VolumeMeter>, global::FrooxEngine.VolumeMeter> _deviceVolume_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.VolumeMeter>, global::FrooxEngine.VolumeMeter> _deviceVolume_Element = new();
 public global::FrooxEngine.UIX.ProgressBar _volumeBar { get => _volumeBar_Element.Data; set => _volumeBar_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.UIX.ProgressBar>, global::FrooxEngine.UIX.ProgressBar> _volumeBar_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.UIX.ProgressBar>, global::FrooxEngine.UIX.ProgressBar> _volumeBar_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)

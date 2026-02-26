@@ -2,9 +2,9 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.UnitSystemSwitcher
-// Generated on: čtvrtek 26. února 2026 12:26:53
-// Resonite version: 2026.2.26.702
-// Resonite Link Version: 0.9.2.0
+// Generated on: čtvrtek 26. února 2026 15:07:58
+// Resonite version: 2026.2.26.828
+// Resonite Link Version: 0.9.3.0
 // -----------------------------------------------------------------------------
 
 using UnityEngine;
@@ -21,19 +21,19 @@ public partial class UnitSystemSwitcher : global::FrooxEngine.Component
 
 {
     public global::FrooxEngine.IField<global::System.String> DefaultUnit { get => DefaultUnit_Element.Data; set => DefaultUnit_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<global::System.String>, global::FrooxEngine.IField<global::System.String>> DefaultUnit_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<global::System.String>, global::FrooxEngine.IField<global::System.String>> DefaultUnit_Element = new();
 public global::FrooxEngine.IField<global::System.String> FormatUnit { get => FormatUnit_Element.Data; set => FormatUnit_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<global::System.String>, global::FrooxEngine.IField<global::System.String>> FormatUnit_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<global::System.String>, global::FrooxEngine.IField<global::System.String>> FormatUnit_Element = new();
 public global::FrooxEngine.IField<global::System.String> FormatNumber { get => FormatNumber_Element.Data; set => FormatNumber_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<global::System.String>, global::FrooxEngine.IField<global::System.String>> FormatNumber_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<global::System.String>, global::FrooxEngine.IField<global::System.String>> FormatNumber_Element = new();
 public global::FrooxEngine.SyncFieldList<global::System.String> CompoundFormatUnits { get => CompoundFormatUnits_Element.Data; set => CompoundFormatUnits_Element.Data = value; }
-public Field<global::FrooxEngine.DriveRef<global::FrooxEngine.SyncFieldList<global::System.String>>, global::FrooxEngine.SyncFieldList<global::System.String>> CompoundFormatUnits_Element = new();
+public Reference<global::FrooxEngine.DriveRef<global::FrooxEngine.SyncFieldList<global::System.String>>, global::FrooxEngine.SyncFieldList<global::System.String>> CompoundFormatUnits_Element = new();
 public global::FrooxEngine.IField<global::System.Boolean> CompoundOverrideNames { get => CompoundOverrideNames_Element.Data; set => CompoundOverrideNames_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<global::System.Boolean>, global::FrooxEngine.IField<global::System.Boolean>> CompoundOverrideNames_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<global::System.Boolean>, global::FrooxEngine.IField<global::System.Boolean>> CompoundOverrideNames_Element = new();
 public global::FrooxEngine.IField<global::System.Boolean> CompoundUseLongNames { get => CompoundUseLongNames_Element.Data; set => CompoundUseLongNames_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<global::System.Boolean>, global::FrooxEngine.IField<global::System.Boolean>> CompoundUseLongNames_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<global::System.Boolean>, global::FrooxEngine.IField<global::System.Boolean>> CompoundUseLongNames_Element = new();
 public global::FrooxEngine.IField<global::System.String> CompoundSeparator { get => CompoundSeparator_Element.Data; set => CompoundSeparator_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<global::System.String>, global::FrooxEngine.IField<global::System.String>> CompoundSeparator_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<global::System.String>, global::FrooxEngine.IField<global::System.String>> CompoundSeparator_Element = new();
 public global::FrooxEngine.UnitSystemSwitcher.Preset DefaultPreset = new();
 public global::FrooxEngine.UnitSystemSwitcher.Preset ImperialPreset = new();
 

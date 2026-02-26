@@ -2,9 +2,9 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.LightTool
-// Generated on: čtvrtek 26. února 2026 12:28:06
-// Resonite version: 2026.2.26.702
-// Resonite Link Version: 0.9.2.0
+// Generated on: čtvrtek 26. února 2026 15:09:06
+// Resonite version: 2026.2.26.828
+// Resonite Link Version: 0.9.3.0
 // -----------------------------------------------------------------------------
 
 using UnityEngine;
@@ -35,24 +35,24 @@ public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Sin
 public global::System.Single SpotAngle { get => SpotAngle_Element.Data; set => SpotAngle_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> SpotAngle_Element = new();
 public global::FrooxEngine.Slot PointLightVisual { get => PointLightVisual_Element.Data; set => PointLightVisual_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> PointLightVisual_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> PointLightVisual_Element = new();
 public global::FrooxEngine.Slot SpotlightVisual { get => SpotlightVisual_Element.Data; set => SpotlightVisual_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> SpotlightVisual_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> SpotlightVisual_Element = new();
 public global::FrooxEngine.Slot DirectionalLightVisual { get => DirectionalLightVisual_Element.Data; set => DirectionalLightVisual_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> DirectionalLightVisual_Element = new();
-public global::SyncFieldList<global::FrooxEngine.SyncList<global::FrooxEngine.FieldDrive<UnityEngine.ColorX>>, global::FrooxEngine.IField<UnityEngine.ColorX>, Field<global::FrooxEngine.FieldDrive<UnityEngine.ColorX>, global::FrooxEngine.IField<UnityEngine.ColorX>>> ColorIndicators = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> DirectionalLightVisual_Element = new();
+public global::SyncFieldList<global::FrooxEngine.SyncList<global::FrooxEngine.FieldDrive<UnityEngine.ColorX>>, global::FrooxEngine.IField<UnityEngine.ColorX>, Reference<global::FrooxEngine.FieldDrive<UnityEngine.ColorX>, global::FrooxEngine.IField<UnityEngine.ColorX>>> ColorIndicators = new();
 public global::System.Boolean ShowGizmo { get => ShowGizmo_Element.Data; set => ShowGizmo_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> ShowGizmo_Element = new();
 public global::FrooxEngine.LegacySegmentCircleMenuController.Item _pointLightItem { get => _pointLightItem_Element.Data; set => _pointLightItem_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.LegacySegmentCircleMenuController.Item>, global::FrooxEngine.LegacySegmentCircleMenuController.Item> _pointLightItem_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.LegacySegmentCircleMenuController.Item>, global::FrooxEngine.LegacySegmentCircleMenuController.Item> _pointLightItem_Element = new();
 public global::FrooxEngine.LegacySegmentCircleMenuController.Item _spotLightItem { get => _spotLightItem_Element.Data; set => _spotLightItem_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.LegacySegmentCircleMenuController.Item>, global::FrooxEngine.LegacySegmentCircleMenuController.Item> _spotLightItem_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.LegacySegmentCircleMenuController.Item>, global::FrooxEngine.LegacySegmentCircleMenuController.Item> _spotLightItem_Element = new();
 public global::FrooxEngine.LegacySegmentCircleMenuController.Item _directionalLightItem { get => _directionalLightItem_Element.Data; set => _directionalLightItem_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.LegacySegmentCircleMenuController.Item>, global::FrooxEngine.LegacySegmentCircleMenuController.Item> _directionalLightItem_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.LegacySegmentCircleMenuController.Item>, global::FrooxEngine.LegacySegmentCircleMenuController.Item> _directionalLightItem_Element = new();
 public global::FrooxEngine.LegacySegmentCircleMenuController.Item _shadowsItem { get => _shadowsItem_Element.Data; set => _shadowsItem_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.LegacySegmentCircleMenuController.Item>, global::FrooxEngine.LegacySegmentCircleMenuController.Item> _shadowsItem_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.LegacySegmentCircleMenuController.Item>, global::FrooxEngine.LegacySegmentCircleMenuController.Item> _shadowsItem_Element = new();
 public global::FrooxEngine.ColorDialogInterface _colorPicker { get => _colorPicker_Element.Data; set => _colorPicker_Element.Data = value; }
-public Field<global::FrooxEngine.SlotCleanupRef<global::FrooxEngine.ColorDialogInterface>, global::FrooxEngine.ColorDialogInterface> _colorPicker_Element = new();
+public Reference<global::FrooxEngine.SlotCleanupRef<global::FrooxEngine.ColorDialogInterface>, global::FrooxEngine.ColorDialogInterface> _colorPicker_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)

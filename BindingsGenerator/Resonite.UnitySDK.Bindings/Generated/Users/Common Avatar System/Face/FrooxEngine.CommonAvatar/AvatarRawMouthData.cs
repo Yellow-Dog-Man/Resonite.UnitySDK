@@ -2,9 +2,9 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.CommonAvatar.AvatarRawMouthData
-// Generated on: čtvrtek 26. února 2026 12:28:15
-// Resonite version: 2026.2.26.702
-// Resonite Link Version: 0.9.2.0
+// Generated on: čtvrtek 26. února 2026 15:09:16
+// Resonite version: 2026.2.26.828
+// Resonite Link Version: 0.9.3.0
 // -----------------------------------------------------------------------------
 
 using UnityEngine;
@@ -21,7 +21,7 @@ public partial class AvatarRawMouthData : global::FrooxEngine.Component, global:
 
 {
     public global::FrooxEngine.IMouthTrackingSourceComponent DataSource { get => DataSource_Element.Data; set => DataSource_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.IMouthTrackingSourceComponent>, global::FrooxEngine.IMouthTrackingSourceComponent> DataSource_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.IMouthTrackingSourceComponent>, global::FrooxEngine.IMouthTrackingSourceComponent> DataSource_Element = new();
 public global::System.Single StrengthMultiplier { get => StrengthMultiplier_Element.Data; set => StrengthMultiplier_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> StrengthMultiplier_Element = new();
 public UnityEngine.Vector3 Jaw { get => Jaw_Element.Data; set => Jaw_Element.Data = value; }

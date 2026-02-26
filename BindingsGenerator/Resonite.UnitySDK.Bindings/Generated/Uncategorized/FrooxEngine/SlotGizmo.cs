@@ -2,9 +2,9 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.SlotGizmo
-// Generated on: čtvrtek 26. února 2026 12:28:13
-// Resonite version: 2026.2.26.702
-// Resonite Link Version: 0.9.2.0
+// Generated on: čtvrtek 26. února 2026 15:09:14
+// Resonite version: 2026.2.26.828
+// Resonite Link Version: 0.9.3.0
 // -----------------------------------------------------------------------------
 
 using UnityEngine;
@@ -23,46 +23,46 @@ public partial class SlotGizmo : global::FrooxEngine.Component, global::FrooxEng
     public global::System.Boolean _isFolded { get => _isFolded_Element.Data; set => _isFolded_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> _isFolded_Element = new();
 public global::FrooxEngine.Worker _activeGizmo { get => _activeGizmo_Element.Data; set => _activeGizmo_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.Worker>, global::FrooxEngine.Worker> _activeGizmo_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.Worker>, global::FrooxEngine.Worker> _activeGizmo_Element = new();
 public global::FrooxEngine.Slot _targetSlot { get => _targetSlot_Element.Data; set => _targetSlot_Element.Data = value; }
-public Field<global::FrooxEngine.TransformRelayRef, global::FrooxEngine.Slot> _targetSlot_Element = new();
+public Reference<global::FrooxEngine.TransformRelayRef, global::FrooxEngine.Slot> _targetSlot_Element = new();
 public global::FrooxEngine.IField<UnityEngine.Vector3> _positionDrive { get => _positionDrive_Element.Data; set => _positionDrive_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<UnityEngine.Vector3>, global::FrooxEngine.IField<UnityEngine.Vector3>> _positionDrive_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<UnityEngine.Vector3>, global::FrooxEngine.IField<UnityEngine.Vector3>> _positionDrive_Element = new();
 public global::FrooxEngine.IField<UnityEngine.Vector3> _scaleDrive { get => _scaleDrive_Element.Data; set => _scaleDrive_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<UnityEngine.Vector3>, global::FrooxEngine.IField<UnityEngine.Vector3>> _scaleDrive_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<UnityEngine.Vector3>, global::FrooxEngine.IField<UnityEngine.Vector3>> _scaleDrive_Element = new();
 public global::FrooxEngine.TubeBoxMesh _boundsMesh { get => _boundsMesh_Element.Data; set => _boundsMesh_Element.Data = value; }
-public Field<global::FrooxEngine.DriveRef<global::FrooxEngine.TubeBoxMesh>, global::FrooxEngine.TubeBoxMesh> _boundsMesh_Element = new();
+public Reference<global::FrooxEngine.DriveRef<global::FrooxEngine.TubeBoxMesh>, global::FrooxEngine.TubeBoxMesh> _boundsMesh_Element = new();
 public global::FrooxEngine.Slot _boundsRoot { get => _boundsRoot_Element.Data; set => _boundsRoot_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> _boundsRoot_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> _boundsRoot_Element = new();
 public global::FrooxEngine.IField<UnityEngine.Quaternion> _boundsRotation { get => _boundsRotation_Element.Data; set => _boundsRotation_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<UnityEngine.Quaternion>, global::FrooxEngine.IField<UnityEngine.Quaternion>> _boundsRotation_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<UnityEngine.Quaternion>, global::FrooxEngine.IField<UnityEngine.Quaternion>> _boundsRotation_Element = new();
 public global::FrooxEngine.IField<UnityEngine.Vector3> _boundsOffset { get => _boundsOffset_Element.Data; set => _boundsOffset_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<UnityEngine.Vector3>, global::FrooxEngine.IField<UnityEngine.Vector3>> _boundsOffset_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<UnityEngine.Vector3>, global::FrooxEngine.IField<UnityEngine.Vector3>> _boundsOffset_Element = new();
 public global::FrooxEngine.IField<global::System.Boolean> _boundsActive { get => _boundsActive_Element.Data; set => _boundsActive_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<global::System.Boolean>, global::FrooxEngine.IField<global::System.Boolean>> _boundsActive_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<global::System.Boolean>, global::FrooxEngine.IField<global::System.Boolean>> _boundsActive_Element = new();
 public global::FrooxEngine.IField<global::System.String> _nameText { get => _nameText_Element.Data; set => _nameText_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<global::System.String>, global::FrooxEngine.IField<global::System.String>> _nameText_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<global::System.String>, global::FrooxEngine.IField<global::System.String>> _nameText_Element = new();
 public global::FrooxEngine.IField<UnityEngine.Vector3> _nameOffset { get => _nameOffset_Element.Data; set => _nameOffset_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<UnityEngine.Vector3>, global::FrooxEngine.IField<UnityEngine.Vector3>> _nameOffset_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<UnityEngine.Vector3>, global::FrooxEngine.IField<UnityEngine.Vector3>> _nameOffset_Element = new();
 public global::FrooxEngine.IField<UnityEngine.Quaternion> _nameRotation { get => _nameRotation_Element.Data; set => _nameRotation_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<UnityEngine.Quaternion>, global::FrooxEngine.IField<UnityEngine.Quaternion>> _nameRotation_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<UnityEngine.Quaternion>, global::FrooxEngine.IField<UnityEngine.Quaternion>> _nameRotation_Element = new();
 public global::FrooxEngine.IField<global::System.Boolean> _nameActive { get => _nameActive_Element.Data; set => _nameActive_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<global::System.Boolean>, global::FrooxEngine.IField<global::System.Boolean>> _nameActive_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<global::System.Boolean>, global::FrooxEngine.IField<global::System.Boolean>> _nameActive_Element = new();
 public global::FrooxEngine.SegmentMesh _xPosSegment { get => _xPosSegment_Element.Data; set => _xPosSegment_Element.Data = value; }
-public Field<global::FrooxEngine.DriveRef<global::FrooxEngine.SegmentMesh>, global::FrooxEngine.SegmentMesh> _xPosSegment_Element = new();
+public Reference<global::FrooxEngine.DriveRef<global::FrooxEngine.SegmentMesh>, global::FrooxEngine.SegmentMesh> _xPosSegment_Element = new();
 public global::FrooxEngine.SegmentMesh _yPosSegment { get => _yPosSegment_Element.Data; set => _yPosSegment_Element.Data = value; }
-public Field<global::FrooxEngine.DriveRef<global::FrooxEngine.SegmentMesh>, global::FrooxEngine.SegmentMesh> _yPosSegment_Element = new();
+public Reference<global::FrooxEngine.DriveRef<global::FrooxEngine.SegmentMesh>, global::FrooxEngine.SegmentMesh> _yPosSegment_Element = new();
 public global::FrooxEngine.SegmentMesh _zPosSegment { get => _zPosSegment_Element.Data; set => _zPosSegment_Element.Data = value; }
-public Field<global::FrooxEngine.DriveRef<global::FrooxEngine.SegmentMesh>, global::FrooxEngine.SegmentMesh> _zPosSegment_Element = new();
+public Reference<global::FrooxEngine.DriveRef<global::FrooxEngine.SegmentMesh>, global::FrooxEngine.SegmentMesh> _zPosSegment_Element = new();
 public global::SyncList<global::FrooxEngine.SyncList<global::FrooxEngine.SlotGizmo.AnchorInfo>, global::FrooxEngine.SlotGizmo.AnchorInfo> _boundsAnchorPositions = new();
 public global::FrooxEngine.PointAnchor _rootAnchor { get => _rootAnchor_Element.Data; set => _rootAnchor_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.PointAnchor>, global::FrooxEngine.PointAnchor> _rootAnchor_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.PointAnchor>, global::FrooxEngine.PointAnchor> _rootAnchor_Element = new();
 public global::FrooxEngine.TranslationGizmo _translationGizmo { get => _translationGizmo_Element.Data; set => _translationGizmo_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.TranslationGizmo>, global::FrooxEngine.TranslationGizmo> _translationGizmo_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.TranslationGizmo>, global::FrooxEngine.TranslationGizmo> _translationGizmo_Element = new();
 public global::FrooxEngine.RotationGizmo _rotationGizmo { get => _rotationGizmo_Element.Data; set => _rotationGizmo_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.RotationGizmo>, global::FrooxEngine.RotationGizmo> _rotationGizmo_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.RotationGizmo>, global::FrooxEngine.RotationGizmo> _rotationGizmo_Element = new();
 public global::FrooxEngine.ScaleGizmo _scaleGizmo { get => _scaleGizmo_Element.Data; set => _scaleGizmo_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.ScaleGizmo>, global::FrooxEngine.ScaleGizmo> _scaleGizmo_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.ScaleGizmo>, global::FrooxEngine.ScaleGizmo> _scaleGizmo_Element = new();
 public global::System.Boolean IsLocalSpace { get => IsLocalSpace_Element.Data; set => IsLocalSpace_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> IsLocalSpace_Element = new();
 

@@ -2,9 +2,9 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.LegacyColorDialog
-// Generated on: čtvrtek 26. února 2026 12:28:08
-// Resonite version: 2026.2.26.702
-// Resonite Link Version: 0.9.2.0
+// Generated on: čtvrtek 26. února 2026 15:09:09
+// Resonite version: 2026.2.26.828
+// Resonite Link Version: 0.9.3.0
 // -----------------------------------------------------------------------------
 
 using UnityEngine;
@@ -23,7 +23,7 @@ public partial class LegacyColorDialog : global::FrooxEngine.Component, global::
     public global::System.Boolean Realtime { get => Realtime_Element.Data; set => Realtime_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> Realtime_Element = new();
 public global::FrooxEngine.IField<UnityEngine.ColorX> TargetField { get => TargetField_Element.Data; set => TargetField_Element.Data = value; }
-public Field<global::FrooxEngine.RelayRef<global::FrooxEngine.IField<UnityEngine.ColorX>>, global::FrooxEngine.IField<UnityEngine.ColorX>> TargetField_Element = new();
+public Reference<global::FrooxEngine.RelayRef<global::FrooxEngine.IField<UnityEngine.ColorX>>, global::FrooxEngine.IField<UnityEngine.ColorX>> TargetField_Element = new();
 public UnityEngine.ColorX _originalColor { get => _originalColor_Element.Data; set => _originalColor_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<UnityEngine.ColorX>, UnityEngine.ColorX> _originalColor_Element = new();
 public global::System.Single _hue { get => _hue_Element.Data; set => _hue_Element.Data = value; }
@@ -39,33 +39,33 @@ public Field<global::FrooxEngine.Sync<global::Renderite.Shared.ColorProfile>, gl
 public global::System.Single _gain { get => _gain_Element.Data; set => _gain_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> _gain_Element = new();
 public global::FrooxEngine.LegacySlider _rSlider { get => _rSlider_Element.Data; set => _rSlider_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.LegacySlider>, global::FrooxEngine.LegacySlider> _rSlider_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.LegacySlider>, global::FrooxEngine.LegacySlider> _rSlider_Element = new();
 public global::FrooxEngine.LegacySlider _gSlider { get => _gSlider_Element.Data; set => _gSlider_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.LegacySlider>, global::FrooxEngine.LegacySlider> _gSlider_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.LegacySlider>, global::FrooxEngine.LegacySlider> _gSlider_Element = new();
 public global::FrooxEngine.LegacySlider _bSlider { get => _bSlider_Element.Data; set => _bSlider_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.LegacySlider>, global::FrooxEngine.LegacySlider> _bSlider_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.LegacySlider>, global::FrooxEngine.LegacySlider> _bSlider_Element = new();
 public global::FrooxEngine.LegacySlider _aSlider { get => _aSlider_Element.Data; set => _aSlider_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.LegacySlider>, global::FrooxEngine.LegacySlider> _aSlider_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.LegacySlider>, global::FrooxEngine.LegacySlider> _aSlider_Element = new();
 public global::FrooxEngine.LegacySlider _gainSlider { get => _gainSlider_Element.Data; set => _gainSlider_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.LegacySlider>, global::FrooxEngine.LegacySlider> _gainSlider_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.LegacySlider>, global::FrooxEngine.LegacySlider> _gainSlider_Element = new();
 public global::FrooxEngine.IField<global::System.Single> _rValue { get => _rValue_Element.Data; set => _rValue_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<global::System.Single>, global::FrooxEngine.IField<global::System.Single>> _rValue_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<global::System.Single>, global::FrooxEngine.IField<global::System.Single>> _rValue_Element = new();
 public global::FrooxEngine.IField<global::System.Single> _gValue { get => _gValue_Element.Data; set => _gValue_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<global::System.Single>, global::FrooxEngine.IField<global::System.Single>> _gValue_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<global::System.Single>, global::FrooxEngine.IField<global::System.Single>> _gValue_Element = new();
 public global::FrooxEngine.IField<global::System.Single> _bValue { get => _bValue_Element.Data; set => _bValue_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<global::System.Single>, global::FrooxEngine.IField<global::System.Single>> _bValue_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<global::System.Single>, global::FrooxEngine.IField<global::System.Single>> _bValue_Element = new();
 public global::FrooxEngine.IField<global::System.Single> _aValue { get => _aValue_Element.Data; set => _aValue_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<global::System.Single>, global::FrooxEngine.IField<global::System.Single>> _aValue_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<global::System.Single>, global::FrooxEngine.IField<global::System.Single>> _aValue_Element = new();
 public global::FrooxEngine.IField<global::System.Single> _gainValue { get => _gainValue_Element.Data; set => _gainValue_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<global::System.Single>, global::FrooxEngine.IField<global::System.Single>> _gainValue_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<global::System.Single>, global::FrooxEngine.IField<global::System.Single>> _gainValue_Element = new();
 public global::FrooxEngine.ColorWheelTriangleMesh _colorWheelMesh { get => _colorWheelMesh_Element.Data; set => _colorWheelMesh_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.ColorWheelTriangleMesh>, global::FrooxEngine.ColorWheelTriangleMesh> _colorWheelMesh_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.ColorWheelTriangleMesh>, global::FrooxEngine.ColorWheelTriangleMesh> _colorWheelMesh_Element = new();
 public global::FrooxEngine.LegacyButton _okButton { get => _okButton_Element.Data; set => _okButton_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.LegacyButton>, global::FrooxEngine.LegacyButton> _okButton_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.LegacyButton>, global::FrooxEngine.LegacyButton> _okButton_Element = new();
 public global::FrooxEngine.LegacyButton _cancelButton { get => _cancelButton_Element.Data; set => _cancelButton_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.LegacyButton>, global::FrooxEngine.LegacyButton> _cancelButton_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.LegacyButton>, global::FrooxEngine.LegacyButton> _cancelButton_Element = new();
 public global::FrooxEngine.LegacyUIStyle _style { get => _style_Element.Data; set => _style_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.LegacyUIStyle>, global::FrooxEngine.LegacyUIStyle> _style_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.LegacyUIStyle>, global::FrooxEngine.LegacyUIStyle> _style_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)

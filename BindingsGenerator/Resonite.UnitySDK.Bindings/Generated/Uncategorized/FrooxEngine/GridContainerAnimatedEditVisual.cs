@@ -2,9 +2,9 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.GridContainerAnimatedEditVisual
-// Generated on: čtvrtek 26. února 2026 12:28:11
-// Resonite version: 2026.2.26.702
-// Resonite Link Version: 0.9.2.0
+// Generated on: čtvrtek 26. února 2026 15:09:12
+// Resonite version: 2026.2.26.828
+// Resonite Link Version: 0.9.3.0
 // -----------------------------------------------------------------------------
 
 using UnityEngine;
@@ -21,15 +21,15 @@ public partial class GridContainerAnimatedEditVisual : global::FrooxEngine.Compo
 
 {
     public global::FrooxEngine.GridContainer Grid { get => Grid_Element.Data; set => Grid_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.GridContainer>, global::FrooxEngine.GridContainer> Grid_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.GridContainer>, global::FrooxEngine.GridContainer> Grid_Element = new();
 public global::FrooxEngine.UIX.TiledRawImage _tiledImage { get => _tiledImage_Element.Data; set => _tiledImage_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.UIX.TiledRawImage>, global::FrooxEngine.UIX.TiledRawImage> _tiledImage_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.UIX.TiledRawImage>, global::FrooxEngine.UIX.TiledRawImage> _tiledImage_Element = new();
 public global::FrooxEngine.IField<UnityEngine.Vector2> _tiling { get => _tiling_Element.Data; set => _tiling_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<UnityEngine.Vector2>, global::FrooxEngine.IField<UnityEngine.Vector2>> _tiling_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<UnityEngine.Vector2>, global::FrooxEngine.IField<UnityEngine.Vector2>> _tiling_Element = new();
 public global::FrooxEngine.IField<UnityEngine.Vector2> _offset { get => _offset_Element.Data; set => _offset_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<UnityEngine.Vector2>, global::FrooxEngine.IField<UnityEngine.Vector2>> _offset_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<UnityEngine.Vector2>, global::FrooxEngine.IField<UnityEngine.Vector2>> _offset_Element = new();
 public global::FrooxEngine.IField<UnityEngine.ColorX> _tint { get => _tint_Element.Data; set => _tint_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<UnityEngine.ColorX>, global::FrooxEngine.IField<UnityEngine.ColorX>> _tint_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<UnityEngine.ColorX>, global::FrooxEngine.IField<UnityEngine.ColorX>> _tint_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)

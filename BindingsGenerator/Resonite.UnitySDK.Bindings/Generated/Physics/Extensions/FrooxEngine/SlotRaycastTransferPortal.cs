@@ -2,9 +2,9 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.SlotRaycastTransferPortal
-// Generated on: čtvrtek 26. února 2026 12:26:58
-// Resonite version: 2026.2.26.702
-// Resonite Link Version: 0.9.2.0
+// Generated on: čtvrtek 26. února 2026 15:08:03
+// Resonite version: 2026.2.26.828
+// Resonite Link Version: 0.9.3.0
 // -----------------------------------------------------------------------------
 
 using UnityEngine;
@@ -21,7 +21,7 @@ public partial class SlotRaycastTransferPortal : global::FrooxEngine.Component, 
 
 {
     public global::FrooxEngine.Slot Exit { get => Exit_Element.Data; set => Exit_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> Exit_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> Exit_Element = new();
 public global::System.Nullable<global::System.Boolean> OverrideHitTriggers { get => OverrideHitTriggers_Element.Data; set => OverrideHitTriggers_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<global::System.Nullable<global::System.Boolean>>, global::System.Nullable<global::System.Boolean>> OverrideHitTriggers_Element = new();
 public global::FrooxEngine.FilterCombineMode FilterMode { get => FilterMode_Element.Data; set => FilterMode_Element.Data = value; }

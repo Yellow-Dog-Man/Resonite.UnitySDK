@@ -2,9 +2,9 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.RotationGizmo
-// Generated on: čtvrtek 26. února 2026 12:28:13
-// Resonite version: 2026.2.26.702
-// Resonite Link Version: 0.9.2.0
+// Generated on: čtvrtek 26. února 2026 15:09:14
+// Resonite version: 2026.2.26.828
+// Resonite Link Version: 0.9.3.0
 // -----------------------------------------------------------------------------
 
 using UnityEngine;
@@ -21,11 +21,11 @@ public partial class RotationGizmo : global::FrooxEngine.Component
 
 {
     public global::FrooxEngine.AxisRotationGizmo _xGizmo { get => _xGizmo_Element.Data; set => _xGizmo_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.AxisRotationGizmo>, global::FrooxEngine.AxisRotationGizmo> _xGizmo_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.AxisRotationGizmo>, global::FrooxEngine.AxisRotationGizmo> _xGizmo_Element = new();
 public global::FrooxEngine.AxisRotationGizmo _yGizmo { get => _yGizmo_Element.Data; set => _yGizmo_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.AxisRotationGizmo>, global::FrooxEngine.AxisRotationGizmo> _yGizmo_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.AxisRotationGizmo>, global::FrooxEngine.AxisRotationGizmo> _yGizmo_Element = new();
 public global::FrooxEngine.AxisRotationGizmo _zGizmo { get => _zGizmo_Element.Data; set => _zGizmo_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.AxisRotationGizmo>, global::FrooxEngine.AxisRotationGizmo> _zGizmo_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.AxisRotationGizmo>, global::FrooxEngine.AxisRotationGizmo> _zGizmo_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)

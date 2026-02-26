@@ -2,9 +2,9 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.ImageColorDistributionGraph
-// Generated on: čtvrtek 26. února 2026 12:26:50
-// Resonite version: 2026.2.26.702
-// Resonite Link Version: 0.9.2.0
+// Generated on: čtvrtek 26. února 2026 15:07:55
+// Resonite version: 2026.2.26.828
+// Resonite Link Version: 0.9.3.0
 // -----------------------------------------------------------------------------
 
 using UnityEngine;
@@ -21,7 +21,7 @@ public partial class ImageColorDistributionGraph : global::FrooxEngine.Procedura
 
 {
     public global::FrooxEngine.IAssetProvider<global::FrooxEngine.Texture2D> Texture { get => Texture_Element.Data; set => Texture_Element.Data = value; }
-public Field<global::FrooxEngine.AssetRef<global::FrooxEngine.Texture2D>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.Texture2D>> Texture_Element = new();
+public Reference<global::FrooxEngine.AssetRef<global::FrooxEngine.Texture2D>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.Texture2D>> Texture_Element = new();
 public global::FrooxEngine.ImageColorDistributionGraph.Space ColorSpace { get => ColorSpace_Element.Data; set => ColorSpace_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<global::FrooxEngine.ImageColorDistributionGraph.Space>, global::FrooxEngine.ImageColorDistributionGraph.Space> ColorSpace_Element = new();
 public global::System.Int32 MaxTextureSize { get => MaxTextureSize_Element.Data; set => MaxTextureSize_Element.Data = value; }

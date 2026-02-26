@@ -2,9 +2,9 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.BrowserItem
-// Generated on: čtvrtek 26. února 2026 12:28:09
-// Resonite version: 2026.2.26.702
-// Resonite Link Version: 0.9.2.0
+// Generated on: čtvrtek 26. února 2026 15:09:10
+// Resonite version: 2026.2.26.828
+// Resonite Link Version: 0.9.3.0
 // -----------------------------------------------------------------------------
 
 using UnityEngine;
@@ -21,7 +21,7 @@ public abstract partial class BrowserItem : global::FrooxEngine.Component, globa
 
 {
     public global::FrooxEngine.BrowserDialog Browser { get => Browser_Element.Data; set => Browser_Element.Data = value; }
-public Field<global::FrooxEngine.RelayRef<global::FrooxEngine.BrowserDialog>, global::FrooxEngine.BrowserDialog> Browser_Element = new();
+public Reference<global::FrooxEngine.RelayRef<global::FrooxEngine.BrowserDialog>, global::FrooxEngine.BrowserDialog> Browser_Element = new();
 public UnityEngine.ColorX SelectedColor { get => SelectedColor_Element.Data; set => SelectedColor_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<UnityEngine.ColorX>, UnityEngine.ColorX> SelectedColor_Element = new();
 public UnityEngine.ColorX SelectedText { get => SelectedText_Element.Data; set => SelectedText_Element.Data = value; }

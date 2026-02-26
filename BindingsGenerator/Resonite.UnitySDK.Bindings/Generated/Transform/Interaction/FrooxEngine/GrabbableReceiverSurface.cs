@@ -2,9 +2,9 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.GrabbableReceiverSurface
-// Generated on: čtvrtek 26. února 2026 12:27:35
-// Resonite version: 2026.2.26.702
-// Resonite Link Version: 0.9.2.0
+// Generated on: čtvrtek 26. února 2026 15:08:39
+// Resonite version: 2026.2.26.828
+// Resonite Link Version: 0.9.3.0
 // -----------------------------------------------------------------------------
 
 using UnityEngine;
@@ -23,7 +23,7 @@ public partial class GrabbableReceiverSurface : global::FrooxEngine.Component, g
     public global::System.Boolean ParentPlaced { get => ParentPlaced_Element.Data; set => ParentPlaced_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> ParentPlaced_Element = new();
 public global::FrooxEngine.Slot OverrideParent { get => OverrideParent_Element.Data; set => OverrideParent_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> OverrideParent_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> OverrideParent_Element = new();
 public global::System.Single TweenTime { get => TweenTime_Element.Data; set => TweenTime_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> TweenTime_Element = new();
 public global::System.Single MaxDistance { get => MaxDistance_Element.Data; set => MaxDistance_Element.Data = value; }

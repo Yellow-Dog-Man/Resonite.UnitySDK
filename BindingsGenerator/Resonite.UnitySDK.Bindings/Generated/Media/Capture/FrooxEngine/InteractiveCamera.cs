@@ -2,9 +2,9 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.InteractiveCamera
-// Generated on: čtvrtek 26. února 2026 12:26:57
-// Resonite version: 2026.2.26.702
-// Resonite Link Version: 0.9.2.0
+// Generated on: čtvrtek 26. února 2026 15:08:01
+// Resonite version: 2026.2.26.828
+// Resonite Link Version: 0.9.3.0
 // -----------------------------------------------------------------------------
 
 using UnityEngine;
@@ -35,19 +35,19 @@ public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Sin
 public global::System.Boolean TimerEnabled { get => TimerEnabled_Element.Data; set => TimerEnabled_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> TimerEnabled_Element = new();
 public global::FrooxEngine.IField<global::System.String> TimerCountIndicator { get => TimerCountIndicator_Element.Data; set => TimerCountIndicator_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<global::System.String>, global::FrooxEngine.IField<global::System.String>> TimerCountIndicator_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<global::System.String>, global::FrooxEngine.IField<global::System.String>> TimerCountIndicator_Element = new();
 public global::FrooxEngine.IField<UnityEngine.ColorX> TimerColorIndicator { get => TimerColorIndicator_Element.Data; set => TimerColorIndicator_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<UnityEngine.ColorX>, global::FrooxEngine.IField<UnityEngine.ColorX>> TimerColorIndicator_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<UnityEngine.ColorX>, global::FrooxEngine.IField<UnityEngine.ColorX>> TimerColorIndicator_Element = new();
 public global::FrooxEngine.User _timerUser { get => _timerUser_Element.Data; set => _timerUser_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.User>, global::FrooxEngine.User> _timerUser_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.User>, global::FrooxEngine.User> _timerUser_Element = new();
 public global::FrooxEngine.Camera MainCamera { get => MainCamera_Element.Data; set => MainCamera_Element.Data = value; }
-public Field<global::FrooxEngine.RelayRef<global::FrooxEngine.Camera>, global::FrooxEngine.Camera> MainCamera_Element = new();
+public Reference<global::FrooxEngine.RelayRef<global::FrooxEngine.Camera>, global::FrooxEngine.Camera> MainCamera_Element = new();
 public global::FrooxEngine.Camera SecondaryCamera { get => SecondaryCamera_Element.Data; set => SecondaryCamera_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.Camera>, global::FrooxEngine.Camera> SecondaryCamera_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.Camera>, global::FrooxEngine.Camera> SecondaryCamera_Element = new();
 public global::FrooxEngine.RenderTextureProvider PreviewTexture { get => PreviewTexture_Element.Data; set => PreviewTexture_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.RenderTextureProvider>, global::FrooxEngine.RenderTextureProvider> PreviewTexture_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.RenderTextureProvider>, global::FrooxEngine.RenderTextureProvider> PreviewTexture_Element = new();
 public global::FrooxEngine.IStereoMaterial DisplayMaterial { get => DisplayMaterial_Element.Data; set => DisplayMaterial_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.IStereoMaterial>, global::FrooxEngine.IStereoMaterial> DisplayMaterial_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.IStereoMaterial>, global::FrooxEngine.IStereoMaterial> DisplayMaterial_Element = new();
 public global::FrooxEngine.InteractiveCamera.EncodeFormat Format { get => Format_Element.Data; set => Format_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<global::FrooxEngine.InteractiveCamera.EncodeFormat>, global::FrooxEngine.InteractiveCamera.EncodeFormat> Format_Element = new();
 public global::System.Single Quality { get => Quality_Element.Data; set => Quality_Element.Data = value; }
@@ -55,73 +55,73 @@ public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Sin
 public global::System.Boolean SpawnPhotoInWorld { get => SpawnPhotoInWorld_Element.Data; set => SpawnPhotoInWorld_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> SpawnPhotoInWorld_Element = new();
 public global::FrooxEngine.Slot PhotoSpawnPoint { get => PhotoSpawnPoint_Element.Data; set => PhotoSpawnPoint_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> PhotoSpawnPoint_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> PhotoSpawnPoint_Element = new();
 public global::System.Single PhotoSpawnSize { get => PhotoSpawnSize_Element.Data; set => PhotoSpawnSize_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> PhotoSpawnSize_Element = new();
 public global::FrooxEngine.Slot PanoramaIndicator { get => PanoramaIndicator_Element.Data; set => PanoramaIndicator_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> PanoramaIndicator_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> PanoramaIndicator_Element = new();
 public global::FrooxEngine.IField<UnityEngine.Vector3> PanoramaIndicatorSize { get => PanoramaIndicatorSize_Element.Data; set => PanoramaIndicatorSize_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<UnityEngine.Vector3>, global::FrooxEngine.IField<UnityEngine.Vector3>> PanoramaIndicatorSize_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<UnityEngine.Vector3>, global::FrooxEngine.IField<UnityEngine.Vector3>> PanoramaIndicatorSize_Element = new();
 public global::FrooxEngine.Slot ObjectTargetSource { get => ObjectTargetSource_Element.Data; set => ObjectTargetSource_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> ObjectTargetSource_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> ObjectTargetSource_Element = new();
 public global::FrooxEngine.IField<global::System.Boolean> ObjectTargetSourceActive { get => ObjectTargetSourceActive_Element.Data; set => ObjectTargetSourceActive_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<global::System.Boolean>, global::FrooxEngine.IField<global::System.Boolean>> ObjectTargetSourceActive_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<global::System.Boolean>, global::FrooxEngine.IField<global::System.Boolean>> ObjectTargetSourceActive_Element = new();
 public global::System.Boolean ObjectAutoPose { get => ObjectAutoPose_Element.Data; set => ObjectAutoPose_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> ObjectAutoPose_Element = new();
 public global::System.Boolean HideLasersOnCapture { get => HideLasersOnCapture_Element.Data; set => HideLasersOnCapture_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> HideLasersOnCapture_Element = new();
 public global::FrooxEngine.IAssetProvider<global::FrooxEngine.AudioClip> CaptureSound { get => CaptureSound_Element.Data; set => CaptureSound_Element.Data = value; }
-public Field<global::FrooxEngine.AssetRef<global::FrooxEngine.AudioClip>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.AudioClip>> CaptureSound_Element = new();
+public Reference<global::FrooxEngine.AssetRef<global::FrooxEngine.AudioClip>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.AudioClip>> CaptureSound_Element = new();
 public global::FrooxEngine.IAssetProvider<global::FrooxEngine.AudioClip> TimerStartSound { get => TimerStartSound_Element.Data; set => TimerStartSound_Element.Data = value; }
-public Field<global::FrooxEngine.AssetRef<global::FrooxEngine.AudioClip>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.AudioClip>> TimerStartSound_Element = new();
+public Reference<global::FrooxEngine.AssetRef<global::FrooxEngine.AudioClip>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.AudioClip>> TimerStartSound_Element = new();
 public global::FrooxEngine.AudioClipPlayer TimerCountdownSlowPlayer { get => TimerCountdownSlowPlayer_Element.Data; set => TimerCountdownSlowPlayer_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.AudioClipPlayer>, global::FrooxEngine.AudioClipPlayer> TimerCountdownSlowPlayer_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.AudioClipPlayer>, global::FrooxEngine.AudioClipPlayer> TimerCountdownSlowPlayer_Element = new();
 public global::FrooxEngine.AudioClipPlayer TimerCountdownFastPlayer { get => TimerCountdownFastPlayer_Element.Data; set => TimerCountdownFastPlayer_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.AudioClipPlayer>, global::FrooxEngine.AudioClipPlayer> TimerCountdownFastPlayer_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.AudioClipPlayer>, global::FrooxEngine.AudioClipPlayer> TimerCountdownFastPlayer_Element = new();
 public global::FrooxEngine.AudioOutput TimerCountdownSlowOutput { get => TimerCountdownSlowOutput_Element.Data; set => TimerCountdownSlowOutput_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.AudioOutput>, global::FrooxEngine.AudioOutput> TimerCountdownSlowOutput_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.AudioOutput>, global::FrooxEngine.AudioOutput> TimerCountdownSlowOutput_Element = new();
 public global::FrooxEngine.AudioOutput TimerCountdownFastOutput { get => TimerCountdownFastOutput_Element.Data; set => TimerCountdownFastOutput_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.AudioOutput>, global::FrooxEngine.AudioOutput> TimerCountdownFastOutput_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.AudioOutput>, global::FrooxEngine.AudioOutput> TimerCountdownFastOutput_Element = new();
 public UnityEngine.Vector2 PreviewScale { get => PreviewScale_Element.Data; set => PreviewScale_Element.Data = value; }
 public Field<global::FrooxEngine.RawOutput<UnityEngine.Vector2>, UnityEngine.Vector2> PreviewScale_Element = new();
 public global::System.String CameraModelOverride { get => CameraModelOverride_Element.Data; set => CameraModelOverride_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<global::System.String>, global::System.String> CameraModelOverride_Element = new();
 public global::FrooxEngine.CameraFrustumMesh FrustumVisual { get => FrustumVisual_Element.Data; set => FrustumVisual_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.CameraFrustumMesh>, global::FrooxEngine.CameraFrustumMesh> FrustumVisual_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.CameraFrustumMesh>, global::FrooxEngine.CameraFrustumMesh> FrustumVisual_Element = new();
 public global::System.Single DefaultNearClip { get => DefaultNearClip_Element.Data; set => DefaultNearClip_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> DefaultNearClip_Element = new();
 public global::System.Single DefaultFarClip { get => DefaultFarClip_Element.Data; set => DefaultFarClip_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> DefaultFarClip_Element = new();
 public global::FrooxEngine.IField<UnityEngine.Vector3> _frustumPosition { get => _frustumPosition_Element.Data; set => _frustumPosition_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<UnityEngine.Vector3>, global::FrooxEngine.IField<UnityEngine.Vector3>> _frustumPosition_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<UnityEngine.Vector3>, global::FrooxEngine.IField<UnityEngine.Vector3>> _frustumPosition_Element = new();
 public global::FrooxEngine.IField<UnityEngine.Quaternion> _frustumRotation { get => _frustumRotation_Element.Data; set => _frustumRotation_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<UnityEngine.Quaternion>, global::FrooxEngine.IField<UnityEngine.Quaternion>> _frustumRotation_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<UnityEngine.Quaternion>, global::FrooxEngine.IField<UnityEngine.Quaternion>> _frustumRotation_Element = new();
 public global::FrooxEngine.IField<global::System.Single> _frustumVerticalFOV { get => _frustumVerticalFOV_Element.Data; set => _frustumVerticalFOV_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<global::System.Single>, global::FrooxEngine.IField<global::System.Single>> _frustumVerticalFOV_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<global::System.Single>, global::FrooxEngine.IField<global::System.Single>> _frustumVerticalFOV_Element = new();
 public global::FrooxEngine.IField<global::System.Single> _frustumHorizontalFOV { get => _frustumHorizontalFOV_Element.Data; set => _frustumHorizontalFOV_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<global::System.Single>, global::FrooxEngine.IField<global::System.Single>> _frustumHorizontalFOV_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<global::System.Single>, global::FrooxEngine.IField<global::System.Single>> _frustumHorizontalFOV_Element = new();
 public global::FrooxEngine.IField<global::System.Single> _frustumNear { get => _frustumNear_Element.Data; set => _frustumNear_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<global::System.Single>, global::FrooxEngine.IField<global::System.Single>> _frustumNear_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<global::System.Single>, global::FrooxEngine.IField<global::System.Single>> _frustumNear_Element = new();
 public global::FrooxEngine.IField<global::System.Single> _frustumFar { get => _frustumFar_Element.Data; set => _frustumFar_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<global::System.Single>, global::FrooxEngine.IField<global::System.Single>> _frustumFar_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<global::System.Single>, global::FrooxEngine.IField<global::System.Single>> _frustumFar_Element = new();
 public global::FrooxEngine.IField<UnityEngine.Vector3> _leftCamOffset { get => _leftCamOffset_Element.Data; set => _leftCamOffset_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<UnityEngine.Vector3>, global::FrooxEngine.IField<UnityEngine.Vector3>> _leftCamOffset_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<UnityEngine.Vector3>, global::FrooxEngine.IField<UnityEngine.Vector3>> _leftCamOffset_Element = new();
 public global::FrooxEngine.IField<UnityEngine.Vector3> _rightCamOffset { get => _rightCamOffset_Element.Data; set => _rightCamOffset_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<UnityEngine.Vector3>, global::FrooxEngine.IField<UnityEngine.Vector3>> _rightCamOffset_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<UnityEngine.Vector3>, global::FrooxEngine.IField<UnityEngine.Vector3>> _rightCamOffset_Element = new();
 public global::FrooxEngine.IField<UnityEngine.Quaternion> _leftCamOrientation { get => _leftCamOrientation_Element.Data; set => _leftCamOrientation_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<UnityEngine.Quaternion>, global::FrooxEngine.IField<UnityEngine.Quaternion>> _leftCamOrientation_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<UnityEngine.Quaternion>, global::FrooxEngine.IField<UnityEngine.Quaternion>> _leftCamOrientation_Element = new();
 public global::FrooxEngine.IField<UnityEngine.Quaternion> _rightCamOrientation { get => _rightCamOrientation_Element.Data; set => _rightCamOrientation_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<UnityEngine.Quaternion>, global::FrooxEngine.IField<UnityEngine.Quaternion>> _rightCamOrientation_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<UnityEngine.Quaternion>, global::FrooxEngine.IField<UnityEngine.Quaternion>> _rightCamOrientation_Element = new();
 public global::FrooxEngine.IField<global::System.Boolean> _cameraRendering { get => _cameraRendering_Element.Data; set => _cameraRendering_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<global::System.Boolean>, global::FrooxEngine.IField<global::System.Boolean>> _cameraRendering_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<global::System.Boolean>, global::FrooxEngine.IField<global::System.Boolean>> _cameraRendering_Element = new();
 public global::FrooxEngine.IField<global::System.Boolean> _secondaryCameraRendering { get => _secondaryCameraRendering_Element.Data; set => _secondaryCameraRendering_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<global::System.Boolean>, global::FrooxEngine.IField<global::System.Boolean>> _secondaryCameraRendering_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<global::System.Boolean>, global::FrooxEngine.IField<global::System.Boolean>> _secondaryCameraRendering_Element = new();
 public global::SyncList<global::FrooxEngine.SyncList<global::FrooxEngine.UserRef>, global::FrooxEngine.UserRef> ExclusiveOperators = new();
-public global::SyncFieldList<global::FrooxEngine.SyncList<global::FrooxEngine.FieldDrive<global::System.Boolean>>, global::FrooxEngine.IField<global::System.Boolean>, Field<global::FrooxEngine.FieldDrive<global::System.Boolean>, global::FrooxEngine.IField<global::System.Boolean>>> ControlActiveFields = new();
+public global::SyncFieldList<global::FrooxEngine.SyncList<global::FrooxEngine.FieldDrive<global::System.Boolean>>, global::FrooxEngine.IField<global::System.Boolean>, Reference<global::FrooxEngine.FieldDrive<global::System.Boolean>, global::FrooxEngine.IField<global::System.Boolean>>> ControlActiveFields = new();
 public global::SyncList<global::FrooxEngine.SyncList<global::FrooxEngine.UserRef>, global::FrooxEngine.UserRef> RenderOnlyForUsers = new();
 public global::System.Boolean ForceVisualsOff { get => ForceVisualsOff_Element.Data; set => ForceVisualsOff_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> ForceVisualsOff_Element = new();
-public global::SyncFieldList<global::FrooxEngine.SyncList<global::FrooxEngine.FieldDrive<global::System.Boolean>>, global::FrooxEngine.IField<global::System.Boolean>, Field<global::FrooxEngine.FieldDrive<global::System.Boolean>, global::FrooxEngine.IField<global::System.Boolean>>> VisualActiveFields = new();
+public global::SyncFieldList<global::FrooxEngine.SyncList<global::FrooxEngine.FieldDrive<global::System.Boolean>>, global::FrooxEngine.IField<global::System.Boolean>, Reference<global::FrooxEngine.FieldDrive<global::System.Boolean>, global::FrooxEngine.IField<global::System.Boolean>>> VisualActiveFields = new();
 public global::System.Single AutoHideProximity { get => AutoHideProximity_Element.Data; set => AutoHideProximity_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> AutoHideProximity_Element = new();
 public global::SyncList<global::FrooxEngine.SyncList<global::FrooxEngine.UserRef>, global::FrooxEngine.UserRef> ForceEyeAttentionUsers = new();
@@ -130,7 +130,7 @@ public global::FrooxEngine.UserRef DestroyOnUserLeave = new();
 public global::FrooxEngine.CameraPositioningMode PositioningMode { get => PositioningMode_Element.Data; set => PositioningMode_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<global::FrooxEngine.CameraPositioningMode>, global::FrooxEngine.CameraPositioningMode> PositioningMode_Element = new();
 public global::FrooxEngine.InteractiveCameraAnchor ActiveAnchor { get => ActiveAnchor_Element.Data; set => ActiveAnchor_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.InteractiveCameraAnchor>, global::FrooxEngine.InteractiveCameraAnchor> ActiveAnchor_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.InteractiveCameraAnchor>, global::FrooxEngine.InteractiveCameraAnchor> ActiveAnchor_Element = new();
 public global::System.Single AnchorInterpolationSpeed { get => AnchorInterpolationSpeed_Element.Data; set => AnchorInterpolationSpeed_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> AnchorInterpolationSpeed_Element = new();
 public global::System.Boolean AnchorLinearInterpolation { get => AnchorLinearInterpolation_Element.Data; set => AnchorLinearInterpolation_Element.Data = value; }
@@ -177,13 +177,13 @@ public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Bo
 public global::System.Boolean OcclusionIncludeAnyColliders { get => OcclusionIncludeAnyColliders_Element.Data; set => OcclusionIncludeAnyColliders_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> OcclusionIncludeAnyColliders_Element = new();
 public global::FrooxEngine.ValueStream<UnityEngine.Vector3> _positionStream { get => _positionStream_Element.Data; set => _positionStream_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.ValueStream<UnityEngine.Vector3>>, global::FrooxEngine.ValueStream<UnityEngine.Vector3>> _positionStream_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.ValueStream<UnityEngine.Vector3>>, global::FrooxEngine.ValueStream<UnityEngine.Vector3>> _positionStream_Element = new();
 public global::FrooxEngine.ValueStream<UnityEngine.Quaternion> _rotationStream { get => _rotationStream_Element.Data; set => _rotationStream_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.ValueStream<UnityEngine.Quaternion>>, global::FrooxEngine.ValueStream<UnityEngine.Quaternion>> _rotationStream_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.ValueStream<UnityEngine.Quaternion>>, global::FrooxEngine.ValueStream<UnityEngine.Quaternion>> _rotationStream_Element = new();
 public global::FrooxEngine.IField<UnityEngine.Vector3> _positionDrive { get => _positionDrive_Element.Data; set => _positionDrive_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<UnityEngine.Vector3>, global::FrooxEngine.IField<UnityEngine.Vector3>> _positionDrive_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<UnityEngine.Vector3>, global::FrooxEngine.IField<UnityEngine.Vector3>> _positionDrive_Element = new();
 public global::FrooxEngine.IField<UnityEngine.Quaternion> _rotationDrive { get => _rotationDrive_Element.Data; set => _rotationDrive_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<UnityEngine.Quaternion>, global::FrooxEngine.IField<UnityEngine.Quaternion>> _rotationDrive_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<UnityEngine.Quaternion>, global::FrooxEngine.IField<UnityEngine.Quaternion>> _rotationDrive_Element = new();
 public UnityEngine.Vector3 _releasePosition { get => _releasePosition_Element.Data; set => _releasePosition_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<UnityEngine.Vector3>, UnityEngine.Vector3> _releasePosition_Element = new();
 public UnityEngine.Quaternion _releaseRotation { get => _releaseRotation_Element.Data; set => _releaseRotation_Element.Data = value; }

@@ -2,9 +2,9 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [ProtoFluxBindings]FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.Operators.XOR_Multi_Ulong4
-// Generated on: čtvrtek 26. února 2026 12:27:51
-// Resonite version: 2026.2.26.702
-// Resonite Link Version: 0.9.2.0
+// Generated on: čtvrtek 26. února 2026 15:08:52
+// Resonite version: 2026.2.26.828
+// Resonite Link Version: 0.9.3.0
 // -----------------------------------------------------------------------------
 
 using UnityEngine;
@@ -20,7 +20,7 @@ namespace FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.Operators
 public partial class XOR_Multi_Ulong4 : global::FrooxEngine.ProtoFlux.Runtimes.Execution.ValueFunctionNode<global::ProtoFlux.Runtimes.Execution.ExecutionContext,UnityEngine.Vector4Ulong>
 
 {
-    public global::SyncFieldList<global::FrooxEngine.SyncRefList<global::FrooxEngine.ProtoFlux.INodeValueOutput<UnityEngine.Vector4Ulong>>, global::FrooxEngine.ProtoFlux.INodeValueOutput<UnityEngine.Vector4Ulong>, Field<global::FrooxEngine.SyncRef<global::FrooxEngine.ProtoFlux.INodeValueOutput<UnityEngine.Vector4Ulong>>, global::FrooxEngine.ProtoFlux.INodeValueOutput<UnityEngine.Vector4Ulong>>> Operands = new();
+    public global::SyncFieldList<global::FrooxEngine.SyncRefList<global::FrooxEngine.ProtoFlux.INodeValueOutput<UnityEngine.Vector4Ulong>>, global::FrooxEngine.ProtoFlux.INodeValueOutput<UnityEngine.Vector4Ulong>, Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.ProtoFlux.INodeValueOutput<UnityEngine.Vector4Ulong>>, global::FrooxEngine.ProtoFlux.INodeValueOutput<UnityEngine.Vector4Ulong>>> Operands = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)

@@ -2,9 +2,9 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.VirtualKey
-// Generated on: čtvrtek 26. února 2026 12:28:15
-// Resonite version: 2026.2.26.702
-// Resonite Link Version: 0.9.2.0
+// Generated on: čtvrtek 26. února 2026 15:09:17
+// Resonite version: 2026.2.26.828
+// Resonite Link Version: 0.9.3.0
 // -----------------------------------------------------------------------------
 
 using UnityEngine;
@@ -31,13 +31,13 @@ public Field<global::FrooxEngine.Sync<global::System.String>, global::System.Str
 public global::System.Boolean IgnoreShift { get => IgnoreShift_Element.Data; set => IgnoreShift_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> IgnoreShift_Element = new();
 public global::FrooxEngine.VirtualModifierKey ModifierKey { get => ModifierKey_Element.Data; set => ModifierKey_Element.Data = value; }
-public Field<global::FrooxEngine.RelayRef<global::FrooxEngine.VirtualModifierKey>, global::FrooxEngine.VirtualModifierKey> ModifierKey_Element = new();
+public Reference<global::FrooxEngine.RelayRef<global::FrooxEngine.VirtualModifierKey>, global::FrooxEngine.VirtualModifierKey> ModifierKey_Element = new();
 public global::Renderite.Shared.Key ModifiedTargetKey { get => ModifiedTargetKey_Element.Data; set => ModifiedTargetKey_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<global::Renderite.Shared.Key>, global::Renderite.Shared.Key> ModifiedTargetKey_Element = new();
 public global::System.String ModifiedAppendString { get => ModifiedAppendString_Element.Data; set => ModifiedAppendString_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<global::System.String>, global::System.String> ModifiedAppendString_Element = new();
 public global::FrooxEngine.VirtualKeyboard Keyboard { get => Keyboard_Element.Data; set => Keyboard_Element.Data = value; }
-public Field<global::FrooxEngine.RelayRef<global::FrooxEngine.VirtualKeyboard>, global::FrooxEngine.VirtualKeyboard> Keyboard_Element = new();
+public Reference<global::FrooxEngine.RelayRef<global::FrooxEngine.VirtualKeyboard>, global::FrooxEngine.VirtualKeyboard> Keyboard_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)

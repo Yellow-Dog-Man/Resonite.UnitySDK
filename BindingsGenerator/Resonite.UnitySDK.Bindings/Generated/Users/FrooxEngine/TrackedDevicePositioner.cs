@@ -2,9 +2,9 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.TrackedDevicePositioner
-// Generated on: čtvrtek 26. února 2026 12:28:10
-// Resonite version: 2026.2.26.702
-// Resonite Link Version: 0.9.2.0
+// Generated on: čtvrtek 26. února 2026 15:09:11
+// Resonite version: 2026.2.26.828
+// Resonite Link Version: 0.9.3.0
 // -----------------------------------------------------------------------------
 
 using UnityEngine;
@@ -29,11 +29,11 @@ public Field<global::FrooxEngine.Sync<global::System.Nullable<global::Renderite.
 public global::System.Boolean AlwaysRenderModel { get => AlwaysRenderModel_Element.Data; set => AlwaysRenderModel_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> AlwaysRenderModel_Element = new();
 public global::FrooxEngine.Slot ReferenceModel { get => ReferenceModel_Element.Data; set => ReferenceModel_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> ReferenceModel_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> ReferenceModel_Element = new();
 public global::FrooxEngine.Slot BodyNodeRoot { get => BodyNodeRoot_Element.Data; set => BodyNodeRoot_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> BodyNodeRoot_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> BodyNodeRoot_Element = new();
 public global::FrooxEngine.CommonAvatar.AvatarObjectSlot ObjectSlot { get => ObjectSlot_Element.Data; set => ObjectSlot_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.CommonAvatar.AvatarObjectSlot>, global::FrooxEngine.CommonAvatar.AvatarObjectSlot> ObjectSlot_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.CommonAvatar.AvatarObjectSlot>, global::FrooxEngine.CommonAvatar.AvatarObjectSlot> ObjectSlot_Element = new();
 public global::System.Boolean IsTracking { get => IsTracking_Element.Data; set => IsTracking_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> IsTracking_Element = new();
 public global::System.Boolean IsActive { get => IsActive_Element.Data; set => IsActive_Element.Data = value; }
@@ -43,7 +43,7 @@ public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Bo
 public global::System.Boolean CreateAvatarObjectSlot { get => CreateAvatarObjectSlot_Element.Data; set => CreateAvatarObjectSlot_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> CreateAvatarObjectSlot_Element = new();
 public global::FrooxEngine.UserPoseController PoseFilter { get => PoseFilter_Element.Data; set => PoseFilter_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.UserPoseController>, global::FrooxEngine.UserPoseController> PoseFilter_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.UserPoseController>, global::FrooxEngine.UserPoseController> PoseFilter_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)

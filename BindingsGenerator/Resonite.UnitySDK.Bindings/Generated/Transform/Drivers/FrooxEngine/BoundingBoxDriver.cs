@@ -2,9 +2,9 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.BoundingBoxDriver
-// Generated on: čtvrtek 26. února 2026 12:28:07
-// Resonite version: 2026.2.26.702
-// Resonite Link Version: 0.9.2.0
+// Generated on: čtvrtek 26. února 2026 15:09:07
+// Resonite version: 2026.2.26.828
+// Resonite Link Version: 0.9.3.0
 // -----------------------------------------------------------------------------
 
 using UnityEngine;
@@ -21,11 +21,11 @@ public partial class BoundingBoxDriver : global::FrooxEngine.Component
 
 {
     public global::FrooxEngine.IBounded BoundedSource { get => BoundedSource_Element.Data; set => BoundedSource_Element.Data = value; }
-public Field<global::FrooxEngine.RelayRef<global::FrooxEngine.IBounded>, global::FrooxEngine.IBounded> BoundedSource_Element = new();
+public Reference<global::FrooxEngine.RelayRef<global::FrooxEngine.IBounded>, global::FrooxEngine.IBounded> BoundedSource_Element = new();
 public global::FrooxEngine.IField<UnityEngine.Vector3> Size { get => Size_Element.Data; set => Size_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<UnityEngine.Vector3>, global::FrooxEngine.IField<UnityEngine.Vector3>> Size_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<UnityEngine.Vector3>, global::FrooxEngine.IField<UnityEngine.Vector3>> Size_Element = new();
 public global::FrooxEngine.IField<UnityEngine.Vector3> Center { get => Center_Element.Data; set => Center_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<UnityEngine.Vector3>, global::FrooxEngine.IField<UnityEngine.Vector3>> Center_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<UnityEngine.Vector3>, global::FrooxEngine.IField<UnityEngine.Vector3>> Center_Element = new();
 public UnityEngine.Vector3 Padding { get => Padding_Element.Data; set => Padding_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<UnityEngine.Vector3>, UnityEngine.Vector3> Padding_Element = new();
 public UnityEngine.Vector3 Scale { get => Scale_Element.Data; set => Scale_Element.Data = value; }

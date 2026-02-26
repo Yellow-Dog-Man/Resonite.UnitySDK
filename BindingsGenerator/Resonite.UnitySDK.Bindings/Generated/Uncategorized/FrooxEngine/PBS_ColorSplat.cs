@@ -2,9 +2,9 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.PBS_ColorSplat
-// Generated on: čtvrtek 26. února 2026 12:26:47
-// Resonite version: 2026.2.26.702
-// Resonite Link Version: 0.9.2.0
+// Generated on: čtvrtek 26. února 2026 15:07:53
+// Resonite version: 2026.2.26.828
+// Resonite Link Version: 0.9.3.0
 // -----------------------------------------------------------------------------
 
 using UnityEngine;
@@ -23,13 +23,13 @@ public abstract partial class PBS_ColorSplat : global::FrooxEngine.SingleShaderM
     public global::System.Boolean MultiValue { get => MultiValue_Element.Data; set => MultiValue_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> MultiValue_Element = new();
 public global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D> ColorMap { get => ColorMap_Element.Data; set => ColorMap_Element.Data = value; }
-public Field<global::FrooxEngine.AssetRef<global::FrooxEngine.ITexture2D>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D>> ColorMap_Element = new();
+public Reference<global::FrooxEngine.AssetRef<global::FrooxEngine.ITexture2D>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D>> ColorMap_Element = new();
 public UnityEngine.Vector2 ColorMapScale { get => ColorMapScale_Element.Data; set => ColorMapScale_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<UnityEngine.Vector2>, UnityEngine.Vector2> ColorMapScale_Element = new();
 public UnityEngine.Vector2 ColorMapOffset { get => ColorMapOffset_Element.Data; set => ColorMapOffset_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<UnityEngine.Vector2>, UnityEngine.Vector2> ColorMapOffset_Element = new();
 public global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D> PackedHeightMap { get => PackedHeightMap_Element.Data; set => PackedHeightMap_Element.Data = value; }
-public Field<global::FrooxEngine.AssetRef<global::FrooxEngine.ITexture2D>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D>> PackedHeightMap_Element = new();
+public Reference<global::FrooxEngine.AssetRef<global::FrooxEngine.ITexture2D>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D>> PackedHeightMap_Element = new();
 public global::System.Single HeightTransitionRange { get => HeightTransitionRange_Element.Data; set => HeightTransitionRange_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> HeightTransitionRange_Element = new();
 public UnityEngine.Vector2 TextureScale { get => TextureScale_Element.Data; set => TextureScale_Element.Data = value; }
@@ -45,13 +45,13 @@ public Field<global::FrooxEngine.Sync<UnityEngine.ColorX>, UnityEngine.ColorX> A
 public UnityEngine.ColorX AlbedoColor3 { get => AlbedoColor3_Element.Data; set => AlbedoColor3_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<UnityEngine.ColorX>, UnityEngine.ColorX> AlbedoColor3_Element = new();
 public global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D> AlbedoTexture0 { get => AlbedoTexture0_Element.Data; set => AlbedoTexture0_Element.Data = value; }
-public Field<global::FrooxEngine.AssetRef<global::FrooxEngine.ITexture2D>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D>> AlbedoTexture0_Element = new();
+public Reference<global::FrooxEngine.AssetRef<global::FrooxEngine.ITexture2D>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D>> AlbedoTexture0_Element = new();
 public global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D> AlbedoTexture1 { get => AlbedoTexture1_Element.Data; set => AlbedoTexture1_Element.Data = value; }
-public Field<global::FrooxEngine.AssetRef<global::FrooxEngine.ITexture2D>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D>> AlbedoTexture1_Element = new();
+public Reference<global::FrooxEngine.AssetRef<global::FrooxEngine.ITexture2D>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D>> AlbedoTexture1_Element = new();
 public global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D> AlbedoTexture2 { get => AlbedoTexture2_Element.Data; set => AlbedoTexture2_Element.Data = value; }
-public Field<global::FrooxEngine.AssetRef<global::FrooxEngine.ITexture2D>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D>> AlbedoTexture2_Element = new();
+public Reference<global::FrooxEngine.AssetRef<global::FrooxEngine.ITexture2D>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D>> AlbedoTexture2_Element = new();
 public global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D> AlbedoTexture3 { get => AlbedoTexture3_Element.Data; set => AlbedoTexture3_Element.Data = value; }
-public Field<global::FrooxEngine.AssetRef<global::FrooxEngine.ITexture2D>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D>> AlbedoTexture3_Element = new();
+public Reference<global::FrooxEngine.AssetRef<global::FrooxEngine.ITexture2D>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D>> AlbedoTexture3_Element = new();
 public UnityEngine.ColorX EmissiveColor0 { get => EmissiveColor0_Element.Data; set => EmissiveColor0_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<UnityEngine.ColorX>, UnityEngine.ColorX> EmissiveColor0_Element = new();
 public UnityEngine.ColorX EmissiveColor1 { get => EmissiveColor1_Element.Data; set => EmissiveColor1_Element.Data = value; }
@@ -61,19 +61,19 @@ public Field<global::FrooxEngine.Sync<UnityEngine.ColorX>, UnityEngine.ColorX> E
 public UnityEngine.ColorX EmissiveColor3 { get => EmissiveColor3_Element.Data; set => EmissiveColor3_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<UnityEngine.ColorX>, UnityEngine.ColorX> EmissiveColor3_Element = new();
 public global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D> EmissiveMap0 { get => EmissiveMap0_Element.Data; set => EmissiveMap0_Element.Data = value; }
-public Field<global::FrooxEngine.AssetRef<global::FrooxEngine.ITexture2D>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D>> EmissiveMap0_Element = new();
+public Reference<global::FrooxEngine.AssetRef<global::FrooxEngine.ITexture2D>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D>> EmissiveMap0_Element = new();
 public global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D> EmissiveMap1 { get => EmissiveMap1_Element.Data; set => EmissiveMap1_Element.Data = value; }
-public Field<global::FrooxEngine.AssetRef<global::FrooxEngine.ITexture2D>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D>> EmissiveMap1_Element = new();
+public Reference<global::FrooxEngine.AssetRef<global::FrooxEngine.ITexture2D>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D>> EmissiveMap1_Element = new();
 public global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D> EmissiveMap2 { get => EmissiveMap2_Element.Data; set => EmissiveMap2_Element.Data = value; }
-public Field<global::FrooxEngine.AssetRef<global::FrooxEngine.ITexture2D>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D>> EmissiveMap2_Element = new();
+public Reference<global::FrooxEngine.AssetRef<global::FrooxEngine.ITexture2D>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D>> EmissiveMap2_Element = new();
 public global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D> EmissiveMap3 { get => EmissiveMap3_Element.Data; set => EmissiveMap3_Element.Data = value; }
-public Field<global::FrooxEngine.AssetRef<global::FrooxEngine.ITexture2D>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D>> EmissiveMap3_Element = new();
+public Reference<global::FrooxEngine.AssetRef<global::FrooxEngine.ITexture2D>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D>> EmissiveMap3_Element = new();
 public global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D> PackedEmissionMap { get => PackedEmissionMap_Element.Data; set => PackedEmissionMap_Element.Data = value; }
-public Field<global::FrooxEngine.AssetRef<global::FrooxEngine.ITexture2D>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D>> PackedEmissionMap_Element = new();
+public Reference<global::FrooxEngine.AssetRef<global::FrooxEngine.ITexture2D>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D>> PackedEmissionMap_Element = new();
 public global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D> PackedNormalMap01 { get => PackedNormalMap01_Element.Data; set => PackedNormalMap01_Element.Data = value; }
-public Field<global::FrooxEngine.AssetRef<global::FrooxEngine.ITexture2D>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D>> PackedNormalMap01_Element = new();
+public Reference<global::FrooxEngine.AssetRef<global::FrooxEngine.ITexture2D>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D>> PackedNormalMap01_Element = new();
 public global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D> PackedNormalMap23 { get => PackedNormalMap23_Element.Data; set => PackedNormalMap23_Element.Data = value; }
-public Field<global::FrooxEngine.AssetRef<global::FrooxEngine.ITexture2D>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D>> PackedNormalMap23_Element = new();
+public Reference<global::FrooxEngine.AssetRef<global::FrooxEngine.ITexture2D>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D>> PackedNormalMap23_Element = new();
 public global::System.Single NormalScale0 { get => NormalScale0_Element.Data; set => NormalScale0_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> NormalScale0_Element = new();
 public global::System.Single NormalScale1 { get => NormalScale1_Element.Data; set => NormalScale1_Element.Data = value; }

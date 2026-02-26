@@ -2,9 +2,9 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.DistanceMeter
-// Generated on: čtvrtek 26. února 2026 12:28:06
-// Resonite version: 2026.2.26.702
-// Resonite Link Version: 0.9.2.0
+// Generated on: čtvrtek 26. února 2026 15:09:06
+// Resonite version: 2026.2.26.828
+// Resonite Link Version: 0.9.3.0
 // -----------------------------------------------------------------------------
 
 using UnityEngine;
@@ -20,11 +20,11 @@ namespace FrooxEngine
 public partial class DistanceMeter : global::FrooxEngine.Component
 
 {
-    public global::SyncFieldList<global::FrooxEngine.SyncRefList<global::FrooxEngine.Slot>, global::FrooxEngine.Slot, Field<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot>> Anchors = new();
+    public global::SyncFieldList<global::FrooxEngine.SyncRefList<global::FrooxEngine.Slot>, global::FrooxEngine.Slot, Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot>> Anchors = new();
 public global::FrooxEngine.Slot _legacyAnchor0 { get => _legacyAnchor0_Element.Data; set => _legacyAnchor0_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> _legacyAnchor0_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> _legacyAnchor0_Element = new();
 public global::FrooxEngine.Slot _legacyAnchor1 { get => _legacyAnchor1_Element.Data; set => _legacyAnchor1_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> _legacyAnchor1_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> _legacyAnchor1_Element = new();
 public global::System.String FormatUnit { get => FormatUnit_Element.Data; set => FormatUnit_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<global::System.String>, global::System.String> FormatUnit_Element = new();
 public global::System.String FormatNumber { get => FormatNumber_Element.Data; set => FormatNumber_Element.Data = value; }
@@ -42,7 +42,7 @@ public global::Elements.Quantity.CompoundZeroHandling CompoundZeroHandling { get
 public Field<global::FrooxEngine.Sync<global::Elements.Quantity.CompoundZeroHandling>, global::Elements.Quantity.CompoundZeroHandling> CompoundZeroHandling_Element = new();
 public global::FrooxEngine.RootSpace MeasurementSpace = new();
 public global::FrooxEngine.IField<global::System.String> DistanceText { get => DistanceText_Element.Data; set => DistanceText_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<global::System.String>, global::FrooxEngine.IField<global::System.String>> DistanceText_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<global::System.String>, global::FrooxEngine.IField<global::System.String>> DistanceText_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)

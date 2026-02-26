@@ -2,9 +2,9 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.HandPoser
-// Generated on: čtvrtek 26. února 2026 12:28:15
-// Resonite version: 2026.2.26.702
-// Resonite Link Version: 0.9.2.0
+// Generated on: čtvrtek 26. února 2026 15:09:17
+// Resonite version: 2026.2.26.828
+// Resonite Link Version: 0.9.3.0
 // -----------------------------------------------------------------------------
 
 using UnityEngine;
@@ -21,13 +21,13 @@ public partial class HandPoser : global::FrooxEngine.UserRootComponent, global::
 
 {
     public global::FrooxEngine.IFingerPoseSourceComponent PoseSource { get => PoseSource_Element.Data; set => PoseSource_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.IFingerPoseSourceComponent>, global::FrooxEngine.IFingerPoseSourceComponent> PoseSource_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.IFingerPoseSourceComponent>, global::FrooxEngine.IFingerPoseSourceComponent> PoseSource_Element = new();
 public global::Renderite.Shared.Chirality Side { get => Side_Element.Data; set => Side_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<global::Renderite.Shared.Chirality>, global::Renderite.Shared.Chirality> Side_Element = new();
 public global::System.Boolean PoseMetacarpals { get => PoseMetacarpals_Element.Data; set => PoseMetacarpals_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> PoseMetacarpals_Element = new();
 public global::FrooxEngine.Slot HandRoot { get => HandRoot_Element.Data; set => HandRoot_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> HandRoot_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> HandRoot_Element = new();
 public UnityEngine.Vector3 HandForward { get => HandForward_Element.Data; set => HandForward_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<UnityEngine.Vector3>, UnityEngine.Vector3> HandForward_Element = new();
 public UnityEngine.Vector3 HandUp { get => HandUp_Element.Data; set => HandUp_Element.Data = value; }

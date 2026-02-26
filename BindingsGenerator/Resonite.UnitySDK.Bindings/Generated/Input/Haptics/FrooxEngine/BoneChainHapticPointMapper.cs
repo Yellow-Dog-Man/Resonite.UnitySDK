@@ -2,9 +2,9 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.BoneChainHapticPointMapper
-// Generated on: čtvrtek 26. února 2026 12:26:55
-// Resonite version: 2026.2.26.702
-// Resonite Link Version: 0.9.2.0
+// Generated on: čtvrtek 26. února 2026 15:08:00
+// Resonite version: 2026.2.26.828
+// Resonite Link Version: 0.9.3.0
 // -----------------------------------------------------------------------------
 
 using UnityEngine;
@@ -20,7 +20,7 @@ namespace FrooxEngine
 public abstract partial class BoneChainHapticPointMapper : global::FrooxEngine.HapticPointMapper
 
 {
-    public global::SyncFieldList<global::FrooxEngine.SyncRefList<global::FrooxEngine.Slot>, global::FrooxEngine.Slot, Field<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot>> BoneChain = new();
+    public global::SyncFieldList<global::FrooxEngine.SyncRefList<global::FrooxEngine.Slot>, global::FrooxEngine.Slot, Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot>> BoneChain = new();
 public global::System.Single NormalizedStart { get => NormalizedStart_Element.Data; set => NormalizedStart_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> NormalizedStart_Element = new();
 public global::System.Single NormalizedEnd { get => NormalizedEnd_Element.Data; set => NormalizedEnd_Element.Data = value; }

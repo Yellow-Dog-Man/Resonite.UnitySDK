@@ -2,9 +2,9 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.PhotonDust.ParticleStyle
-// Generated on: čtvrtek 26. února 2026 12:28:03
-// Resonite version: 2026.2.26.702
-// Resonite Link Version: 0.9.2.0
+// Generated on: čtvrtek 26. února 2026 15:09:03
+// Resonite version: 2026.2.26.828
+// Resonite Link Version: 0.9.3.0
 // -----------------------------------------------------------------------------
 
 using UnityEngine;
@@ -21,8 +21,8 @@ public partial class ParticleStyle : global::FrooxEngine.Component
 
 {
     public global::FrooxEngine.PhotonDust.IParticleRenderer Renderer { get => Renderer_Element.Data; set => Renderer_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.PhotonDust.IParticleRenderer>, global::FrooxEngine.PhotonDust.IParticleRenderer> Renderer_Element = new();
-public global::SyncFieldList<global::FrooxEngine.SyncRefList<global::FrooxEngine.PhotonDust.IParticleSystemSubsystem>, global::FrooxEngine.PhotonDust.IParticleSystemSubsystem, Field<global::FrooxEngine.SyncRef<global::FrooxEngine.PhotonDust.IParticleSystemSubsystem>, global::FrooxEngine.PhotonDust.IParticleSystemSubsystem>> Modules = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.PhotonDust.IParticleRenderer>, global::FrooxEngine.PhotonDust.IParticleRenderer> Renderer_Element = new();
+public global::SyncFieldList<global::FrooxEngine.SyncRefList<global::FrooxEngine.PhotonDust.IParticleSystemSubsystem>, global::FrooxEngine.PhotonDust.IParticleSystemSubsystem, Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.PhotonDust.IParticleSystemSubsystem>, global::FrooxEngine.PhotonDust.IParticleSystemSubsystem>> Modules = new();
 public global::System.Boolean UseSystemLocalScale { get => UseSystemLocalScale_Element.Data; set => UseSystemLocalScale_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> UseSystemLocalScale_Element = new();
 public global::PhotonDust.ScaleMultiplierMode ParticleScaleMode { get => ParticleScaleMode_Element.Data; set => ParticleScaleMode_Element.Data = value; }

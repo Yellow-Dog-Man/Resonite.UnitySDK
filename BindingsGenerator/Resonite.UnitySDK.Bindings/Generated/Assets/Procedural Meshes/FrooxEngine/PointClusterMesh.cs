@@ -2,9 +2,9 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.PointClusterMesh
-// Generated on: čtvrtek 26. února 2026 12:26:51
-// Resonite version: 2026.2.26.702
-// Resonite Link Version: 0.9.2.0
+// Generated on: čtvrtek 26. února 2026 15:07:55
+// Resonite version: 2026.2.26.828
+// Resonite Link Version: 0.9.3.0
 // -----------------------------------------------------------------------------
 
 using UnityEngine;
@@ -25,9 +25,9 @@ public Field<global::FrooxEngine.Sync<global::FrooxEngine.PointClusterMesh.Distr
 public global::FrooxEngine.PointClusterMesh.ColorMode Colors { get => Colors_Element.Data; set => Colors_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<global::FrooxEngine.PointClusterMesh.ColorMode>, global::FrooxEngine.PointClusterMesh.ColorMode> Colors_Element = new();
 public global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture> TextureColorSource { get => TextureColorSource_Element.Data; set => TextureColorSource_Element.Data = value; }
-public Field<global::FrooxEngine.AssetRef<global::FrooxEngine.ITexture>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture>> TextureColorSource_Element = new();
+public Reference<global::FrooxEngine.AssetRef<global::FrooxEngine.ITexture>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture>> TextureColorSource_Element = new();
 public global::FrooxEngine.IAssetProvider<global::FrooxEngine.Texture2D> HeightScaleSource { get => HeightScaleSource_Element.Data; set => HeightScaleSource_Element.Data = value; }
-public Field<global::FrooxEngine.AssetRef<global::FrooxEngine.Texture2D>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.Texture2D>> HeightScaleSource_Element = new();
+public Reference<global::FrooxEngine.AssetRef<global::FrooxEngine.Texture2D>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.Texture2D>> HeightScaleSource_Element = new();
 public global::System.Single TextureIntensityClip { get => TextureIntensityClip_Element.Data; set => TextureIntensityClip_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> TextureIntensityClip_Element = new();
 public global::System.Single TextureAlphaClip { get => TextureAlphaClip_Element.Data; set => TextureAlphaClip_Element.Data = value; }
@@ -41,7 +41,7 @@ public Field<global::FrooxEngine.Sync<global::System.Int32>, global::System.Int3
 public global::System.Int32 Points { get => Points_Element.Data; set => Points_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<global::System.Int32>, global::System.Int32> Points_Element = new();
 public global::FrooxEngine.AtlasInfo Atlas { get => Atlas_Element.Data; set => Atlas_Element.Data = value; }
-public Field<global::FrooxEngine.RelayRef<global::FrooxEngine.AtlasInfo>, global::FrooxEngine.AtlasInfo> Atlas_Element = new();
+public Reference<global::FrooxEngine.RelayRef<global::FrooxEngine.AtlasInfo>, global::FrooxEngine.AtlasInfo> Atlas_Element = new();
 public UnityEngine.Vector3 Scale { get => Scale_Element.Data; set => Scale_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<UnityEngine.Vector3>, UnityEngine.Vector3> Scale_Element = new();
 public global::System.Single RangeExp { get => RangeExp_Element.Data; set => RangeExp_Element.Data = value; }

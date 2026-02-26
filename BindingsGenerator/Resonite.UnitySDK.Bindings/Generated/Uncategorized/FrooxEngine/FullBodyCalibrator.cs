@@ -2,9 +2,9 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.FullBodyCalibrator
-// Generated on: čtvrtek 26. února 2026 12:28:11
-// Resonite version: 2026.2.26.702
-// Resonite Link Version: 0.9.2.0
+// Generated on: čtvrtek 26. února 2026 15:09:11
+// Resonite version: 2026.2.26.828
+// Resonite Link Version: 0.9.3.0
 // -----------------------------------------------------------------------------
 
 using UnityEngine;
@@ -21,7 +21,7 @@ public partial class FullBodyCalibrator : global::FrooxEngine.Component
 
 {
     public global::FrooxEngine.User TargetUser { get => TargetUser_Element.Data; set => TargetUser_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.User>, global::FrooxEngine.User> TargetUser_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.User>, global::FrooxEngine.User> TargetUser_Element = new();
 public global::System.Boolean UseSymmetryForTrackers { get => UseSymmetryForTrackers_Element.Data; set => UseSymmetryForTrackers_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> UseSymmetryForTrackers_Element = new();
 public global::System.Boolean UseSymmetryForAvatar { get => UseSymmetryForAvatar_Element.Data; set => UseSymmetryForAvatar_Element.Data = value; }
@@ -39,90 +39,90 @@ public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Bo
 public UnityEngine.Vector3 _spaceOffset { get => _spaceOffset_Element.Data; set => _spaceOffset_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<UnityEngine.Vector3>, UnityEngine.Vector3> _spaceOffset_Element = new();
 public global::FrooxEngine.Grabbable _grabbable { get => _grabbable_Element.Data; set => _grabbable_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.Grabbable>, global::FrooxEngine.Grabbable> _grabbable_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.Grabbable>, global::FrooxEngine.Grabbable> _grabbable_Element = new();
 public global::FrooxEngine.Slot _headReference { get => _headReference_Element.Data; set => _headReference_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> _headReference_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> _headReference_Element = new();
 public global::FrooxEngine.Slot _leftHandReference { get => _leftHandReference_Element.Data; set => _leftHandReference_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> _leftHandReference_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> _leftHandReference_Element = new();
 public global::FrooxEngine.Slot _rightHandReference { get => _rightHandReference_Element.Data; set => _rightHandReference_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> _rightHandReference_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> _rightHandReference_Element = new();
 public global::FrooxEngine.TrackedDevicePositioner _hipsSource { get => _hipsSource_Element.Data; set => _hipsSource_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.TrackedDevicePositioner>, global::FrooxEngine.TrackedDevicePositioner> _hipsSource_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.TrackedDevicePositioner>, global::FrooxEngine.TrackedDevicePositioner> _hipsSource_Element = new();
 public global::FrooxEngine.TrackedDevicePositioner _chestSource { get => _chestSource_Element.Data; set => _chestSource_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.TrackedDevicePositioner>, global::FrooxEngine.TrackedDevicePositioner> _chestSource_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.TrackedDevicePositioner>, global::FrooxEngine.TrackedDevicePositioner> _chestSource_Element = new();
 public global::FrooxEngine.TrackedDevicePositioner _leftFootSource { get => _leftFootSource_Element.Data; set => _leftFootSource_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.TrackedDevicePositioner>, global::FrooxEngine.TrackedDevicePositioner> _leftFootSource_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.TrackedDevicePositioner>, global::FrooxEngine.TrackedDevicePositioner> _leftFootSource_Element = new();
 public global::FrooxEngine.TrackedDevicePositioner _rightFootSource { get => _rightFootSource_Element.Data; set => _rightFootSource_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.TrackedDevicePositioner>, global::FrooxEngine.TrackedDevicePositioner> _rightFootSource_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.TrackedDevicePositioner>, global::FrooxEngine.TrackedDevicePositioner> _rightFootSource_Element = new();
 public global::FrooxEngine.TrackedDevicePositioner _leftElbowSource { get => _leftElbowSource_Element.Data; set => _leftElbowSource_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.TrackedDevicePositioner>, global::FrooxEngine.TrackedDevicePositioner> _leftElbowSource_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.TrackedDevicePositioner>, global::FrooxEngine.TrackedDevicePositioner> _leftElbowSource_Element = new();
 public global::FrooxEngine.TrackedDevicePositioner _rightElbowSource { get => _rightElbowSource_Element.Data; set => _rightElbowSource_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.TrackedDevicePositioner>, global::FrooxEngine.TrackedDevicePositioner> _rightElbowSource_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.TrackedDevicePositioner>, global::FrooxEngine.TrackedDevicePositioner> _rightElbowSource_Element = new();
 public global::FrooxEngine.TrackedDevicePositioner _leftKneeSource { get => _leftKneeSource_Element.Data; set => _leftKneeSource_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.TrackedDevicePositioner>, global::FrooxEngine.TrackedDevicePositioner> _leftKneeSource_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.TrackedDevicePositioner>, global::FrooxEngine.TrackedDevicePositioner> _leftKneeSource_Element = new();
 public global::FrooxEngine.TrackedDevicePositioner _rightKneeSource { get => _rightKneeSource_Element.Data; set => _rightKneeSource_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.TrackedDevicePositioner>, global::FrooxEngine.TrackedDevicePositioner> _rightKneeSource_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.TrackedDevicePositioner>, global::FrooxEngine.TrackedDevicePositioner> _rightKneeSource_Element = new();
 public global::FrooxEngine.FullBodyCalibratorDialog _dialog { get => _dialog_Element.Data; set => _dialog_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.FullBodyCalibratorDialog>, global::FrooxEngine.FullBodyCalibratorDialog> _dialog_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.FullBodyCalibratorDialog>, global::FrooxEngine.FullBodyCalibratorDialog> _dialog_Element = new();
 public global::FrooxEngine.FullBodyCalibrator.BodyReference _platformBody = new();
 public global::FrooxEngine.FullBodyCalibrator.BodyReference _userBody = new();
 public global::FrooxEngine.FullBodyCalibrator.BodyReference _customAvatar = new();
 public global::FrooxEngine.Slot _leftHandOverride { get => _leftHandOverride_Element.Data; set => _leftHandOverride_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> _leftHandOverride_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> _leftHandOverride_Element = new();
 public global::FrooxEngine.Slot _rightHandOverride { get => _rightHandOverride_Element.Data; set => _rightHandOverride_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> _rightHandOverride_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> _rightHandOverride_Element = new();
 public global::FrooxEngine.FinalIK.VRIKAvatar _targetCustomAvatar { get => _targetCustomAvatar_Element.Data; set => _targetCustomAvatar_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.FinalIK.VRIKAvatar>, global::FrooxEngine.FinalIK.VRIKAvatar> _targetCustomAvatar_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.FinalIK.VRIKAvatar>, global::FrooxEngine.FinalIK.VRIKAvatar> _targetCustomAvatar_Element = new();
 public global::FrooxEngine.Slot _avatarHipsOffset { get => _avatarHipsOffset_Element.Data; set => _avatarHipsOffset_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> _avatarHipsOffset_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> _avatarHipsOffset_Element = new();
 public global::FrooxEngine.Slot _avatarLeftFootOffset { get => _avatarLeftFootOffset_Element.Data; set => _avatarLeftFootOffset_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> _avatarLeftFootOffset_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> _avatarLeftFootOffset_Element = new();
 public global::FrooxEngine.Slot _avatarRightFootOffset { get => _avatarRightFootOffset_Element.Data; set => _avatarRightFootOffset_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> _avatarRightFootOffset_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> _avatarRightFootOffset_Element = new();
 public global::FrooxEngine.Slot _avatarLeftKneeDefaultOffset { get => _avatarLeftKneeDefaultOffset_Element.Data; set => _avatarLeftKneeDefaultOffset_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> _avatarLeftKneeDefaultOffset_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> _avatarLeftKneeDefaultOffset_Element = new();
 public global::FrooxEngine.Slot _avatarRightKneeDefaultOffset { get => _avatarRightKneeDefaultOffset_Element.Data; set => _avatarRightKneeDefaultOffset_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> _avatarRightKneeDefaultOffset_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> _avatarRightKneeDefaultOffset_Element = new();
 public global::FrooxEngine.Slot _avatarHipHandle { get => _avatarHipHandle_Element.Data; set => _avatarHipHandle_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> _avatarHipHandle_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> _avatarHipHandle_Element = new();
 public global::FrooxEngine.Slot _avatarLeftFootHandle { get => _avatarLeftFootHandle_Element.Data; set => _avatarLeftFootHandle_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> _avatarLeftFootHandle_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> _avatarLeftFootHandle_Element = new();
 public global::FrooxEngine.Slot _avatarRightFootHandle { get => _avatarRightFootHandle_Element.Data; set => _avatarRightFootHandle_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> _avatarRightFootHandle_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> _avatarRightFootHandle_Element = new();
 public global::FrooxEngine.Slot _avatarLeftKneeHandle { get => _avatarLeftKneeHandle_Element.Data; set => _avatarLeftKneeHandle_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> _avatarLeftKneeHandle_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> _avatarLeftKneeHandle_Element = new();
 public global::FrooxEngine.Slot _avatarRightKneeHandle { get => _avatarRightKneeHandle_Element.Data; set => _avatarRightKneeHandle_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> _avatarRightKneeHandle_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> _avatarRightKneeHandle_Element = new();
 public global::FrooxEngine.IField<UnityEngine.Vector3> _avatarLeftKneeOffset { get => _avatarLeftKneeOffset_Element.Data; set => _avatarLeftKneeOffset_Element.Data = value; }
-public Field<global::FrooxEngine.FieldHook<UnityEngine.Vector3>, global::FrooxEngine.IField<UnityEngine.Vector3>> _avatarLeftKneeOffset_Element = new();
+public Reference<global::FrooxEngine.FieldHook<UnityEngine.Vector3>, global::FrooxEngine.IField<UnityEngine.Vector3>> _avatarLeftKneeOffset_Element = new();
 public global::FrooxEngine.IField<UnityEngine.Vector3> _avatarRightKneeOffset { get => _avatarRightKneeOffset_Element.Data; set => _avatarRightKneeOffset_Element.Data = value; }
-public Field<global::FrooxEngine.FieldHook<UnityEngine.Vector3>, global::FrooxEngine.IField<UnityEngine.Vector3>> _avatarRightKneeOffset_Element = new();
-public global::SyncFieldList<global::FrooxEngine.SyncRefList<global::FrooxEngine.MaterialSet>, global::FrooxEngine.MaterialSet, Field<global::FrooxEngine.SyncRef<global::FrooxEngine.MaterialSet>, global::FrooxEngine.MaterialSet>> _platformBodyMaterialSets = new();
+public Reference<global::FrooxEngine.FieldHook<UnityEngine.Vector3>, global::FrooxEngine.IField<UnityEngine.Vector3>> _avatarRightKneeOffset_Element = new();
+public global::SyncFieldList<global::FrooxEngine.SyncRefList<global::FrooxEngine.MaterialSet>, global::FrooxEngine.MaterialSet, Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.MaterialSet>, global::FrooxEngine.MaterialSet>> _platformBodyMaterialSets = new();
 public global::FrooxEngine.Slot _ground { get => _ground_Element.Data; set => _ground_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> _ground_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> _ground_Element = new();
 public global::SyncList<global::FrooxEngine.SyncList<global::FrooxEngine.FullBodyCalibrator.Tracker>, global::FrooxEngine.FullBodyCalibrator.Tracker> _trackers = new();
 public global::FrooxEngine.Slot _visualizationRoot { get => _visualizationRoot_Element.Data; set => _visualizationRoot_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> _visualizationRoot_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> _visualizationRoot_Element = new();
 public global::FrooxEngine.FresnelMaterial _bodyNodeMaterial { get => _bodyNodeMaterial_Element.Data; set => _bodyNodeMaterial_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.FresnelMaterial>, global::FrooxEngine.FresnelMaterial> _bodyNodeMaterial_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.FresnelMaterial>, global::FrooxEngine.FresnelMaterial> _bodyNodeMaterial_Element = new();
 public global::FrooxEngine.OverlayFresnelMaterial _calibrationReferenceMaterial { get => _calibrationReferenceMaterial_Element.Data; set => _calibrationReferenceMaterial_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.OverlayFresnelMaterial>, global::FrooxEngine.OverlayFresnelMaterial> _calibrationReferenceMaterial_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.OverlayFresnelMaterial>, global::FrooxEngine.OverlayFresnelMaterial> _calibrationReferenceMaterial_Element = new();
 public global::FrooxEngine.OverlayFresnelMaterial _leftHandOverrideMaterial { get => _leftHandOverrideMaterial_Element.Data; set => _leftHandOverrideMaterial_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.OverlayFresnelMaterial>, global::FrooxEngine.OverlayFresnelMaterial> _leftHandOverrideMaterial_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.OverlayFresnelMaterial>, global::FrooxEngine.OverlayFresnelMaterial> _leftHandOverrideMaterial_Element = new();
 public global::FrooxEngine.OverlayFresnelMaterial _rightHandOverrideMaterial { get => _rightHandOverrideMaterial_Element.Data; set => _rightHandOverrideMaterial_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.OverlayFresnelMaterial>, global::FrooxEngine.OverlayFresnelMaterial> _rightHandOverrideMaterial_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.OverlayFresnelMaterial>, global::FrooxEngine.OverlayFresnelMaterial> _rightHandOverrideMaterial_Element = new();
 public global::FrooxEngine.IField<UnityEngine.ColorX> _leftHandOverrideFrontColor { get => _leftHandOverrideFrontColor_Element.Data; set => _leftHandOverrideFrontColor_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<UnityEngine.ColorX>, global::FrooxEngine.IField<UnityEngine.ColorX>> _leftHandOverrideFrontColor_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<UnityEngine.ColorX>, global::FrooxEngine.IField<UnityEngine.ColorX>> _leftHandOverrideFrontColor_Element = new();
 public global::FrooxEngine.IField<UnityEngine.ColorX> _leftHandOverrideBehindColor { get => _leftHandOverrideBehindColor_Element.Data; set => _leftHandOverrideBehindColor_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<UnityEngine.ColorX>, global::FrooxEngine.IField<UnityEngine.ColorX>> _leftHandOverrideBehindColor_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<UnityEngine.ColorX>, global::FrooxEngine.IField<UnityEngine.ColorX>> _leftHandOverrideBehindColor_Element = new();
 public global::FrooxEngine.IField<UnityEngine.ColorX> _rightHandOverrideFrontColor { get => _rightHandOverrideFrontColor_Element.Data; set => _rightHandOverrideFrontColor_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<UnityEngine.ColorX>, global::FrooxEngine.IField<UnityEngine.ColorX>> _rightHandOverrideFrontColor_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<UnityEngine.ColorX>, global::FrooxEngine.IField<UnityEngine.ColorX>> _rightHandOverrideFrontColor_Element = new();
 public global::FrooxEngine.IField<UnityEngine.ColorX> _rightHandOverrideBehindColor { get => _rightHandOverrideBehindColor_Element.Data; set => _rightHandOverrideBehindColor_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<UnityEngine.ColorX>, global::FrooxEngine.IField<UnityEngine.ColorX>> _rightHandOverrideBehindColor_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<UnityEngine.ColorX>, global::FrooxEngine.IField<UnityEngine.ColorX>> _rightHandOverrideBehindColor_Element = new();
 public global::FrooxEngine.StaticTexture2D _patternTex { get => _patternTex_Element.Data; set => _patternTex_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.StaticTexture2D>, global::FrooxEngine.StaticTexture2D> _patternTex_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.StaticTexture2D>, global::FrooxEngine.StaticTexture2D> _patternTex_Element = new();
 public global::FrooxEngine.TextRenderer _title { get => _title_Element.Data; set => _title_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.TextRenderer>, global::FrooxEngine.TextRenderer> _title_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.TextRenderer>, global::FrooxEngine.TextRenderer> _title_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)

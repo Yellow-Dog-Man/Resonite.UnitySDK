@@ -2,9 +2,9 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.TouchValueOption<>
-// Generated on: čtvrtek 26. února 2026 12:28:08
-// Resonite version: 2026.2.26.702
-// Resonite Link Version: 0.9.2.0
+// Generated on: čtvrtek 26. února 2026 15:09:08
+// Resonite version: 2026.2.26.828
+// Resonite Link Version: 0.9.3.0
 // -----------------------------------------------------------------------------
 
 using UnityEngine;
@@ -22,13 +22,13 @@ public partial class TouchValueOption<T> : global::FrooxEngine.Component, global
 
 {
     public global::FrooxEngine.IField<T> Target { get => Target_Element.Data; set => Target_Element.Data = value; }
-public Field<global::FrooxEngine.RelayRef<global::FrooxEngine.IField<T>>, global::FrooxEngine.IField<T>> Target_Element = new();
+public Reference<global::FrooxEngine.RelayRef<global::FrooxEngine.IField<T>>, global::FrooxEngine.IField<T>> Target_Element = new();
 public T Value { get => Value_Element.Data; set => Value_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<T>, T> Value_Element = new();
 public global::FrooxEngine.IField<global::System.Boolean> ActiveIndicator { get => ActiveIndicator_Element.Data; set => ActiveIndicator_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<global::System.Boolean>, global::FrooxEngine.IField<global::System.Boolean>> ActiveIndicator_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<global::System.Boolean>, global::FrooxEngine.IField<global::System.Boolean>> ActiveIndicator_Element = new();
 public global::FrooxEngine.IField<global::System.Boolean> HoverIndicator { get => HoverIndicator_Element.Data; set => HoverIndicator_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<global::System.Boolean>, global::FrooxEngine.IField<global::System.Boolean>> HoverIndicator_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<global::System.Boolean>, global::FrooxEngine.IField<global::System.Boolean>> HoverIndicator_Element = new();
 public global::FrooxEngine.VibratePreset HoverVibrate { get => HoverVibrate_Element.Data; set => HoverVibrate_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<global::FrooxEngine.VibratePreset>, global::FrooxEngine.VibratePreset> HoverVibrate_Element = new();
 public global::FrooxEngine.VibratePreset Vibrate { get => Vibrate_Element.Data; set => Vibrate_Element.Data = value; }

@@ -2,9 +2,9 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [ProtoFluxBindings]FrooxEngine.FrooxEngine.ProtoFlux.CoreNodes.ObjectFieldHook<>
-// Generated on: čtvrtek 26. února 2026 12:27:28
-// Resonite version: 2026.2.26.702
-// Resonite Link Version: 0.9.2.0
+// Generated on: čtvrtek 26. února 2026 15:08:32
+// Resonite version: 2026.2.26.828
+// Resonite Link Version: 0.9.3.0
 // -----------------------------------------------------------------------------
 
 using UnityEngine;
@@ -22,7 +22,7 @@ public partial class ObjectFieldHook<T> : global::FrooxEngine.FrooxEngine.ProtoF
 
 {
     public global::FrooxEngine.ProtoFlux.INodeObjectOutput<T> Source { get => Source_Element.Data; set => Source_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.ProtoFlux.INodeObjectOutput<T>>, global::FrooxEngine.ProtoFlux.INodeObjectOutput<T>> Source_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.ProtoFlux.INodeObjectOutput<T>>, global::FrooxEngine.ProtoFlux.INodeObjectOutput<T>> Source_Element = new();
 public global::FrooxEngine.ProtoFlux.NodeObjectOutput<T> HookedValue = new();
 
 public override void CollectMembers(

@@ -2,9 +2,9 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.MeshUVRaycastPortal
-// Generated on: čtvrtek 26. února 2026 12:26:58
-// Resonite version: 2026.2.26.702
-// Resonite Link Version: 0.9.2.0
+// Generated on: čtvrtek 26. února 2026 15:08:03
+// Resonite version: 2026.2.26.828
+// Resonite Link Version: 0.9.3.0
 // -----------------------------------------------------------------------------
 
 using UnityEngine;
@@ -23,7 +23,7 @@ public partial class MeshUVRaycastPortal : global::FrooxEngine.Component, global
     public global::System.Single Offset { get => Offset_Element.Data; set => Offset_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> Offset_Element = new();
 public global::FrooxEngine.IUVToRayConverter RayExit { get => RayExit_Element.Data; set => RayExit_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.IUVToRayConverter>, global::FrooxEngine.IUVToRayConverter> RayExit_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.IUVToRayConverter>, global::FrooxEngine.IUVToRayConverter> RayExit_Element = new();
 public UnityEngine.Vector2 UVOffset { get => UVOffset_Element.Data; set => UVOffset_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<UnityEngine.Vector2>, UnityEngine.Vector2> UVOffset_Element = new();
 public UnityEngine.Vector2 UVScale { get => UVScale_Element.Data; set => UVScale_Element.Data = value; }

@@ -2,9 +2,9 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [ProtoFluxBindings]FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Cloud.Twitch.TwitchFollowEvent
-// Generated on: čtvrtek 26. února 2026 12:27:45
-// Resonite version: 2026.2.26.702
-// Resonite Link Version: 0.9.2.0
+// Generated on: čtvrtek 26. února 2026 15:08:46
+// Resonite version: 2026.2.26.828
+// Resonite Link Version: 0.9.3.0
 // -----------------------------------------------------------------------------
 
 using UnityEngine;
@@ -21,7 +21,7 @@ public partial class TwitchFollowEvent : global::FrooxEngine.ProtoFlux.Runtimes.
 
 {
     public global::FrooxEngine.ProtoFlux.ISyncNodeOperation OnFollow { get => OnFollow_Element.Data; set => OnFollow_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.ProtoFlux.ISyncNodeOperation>, global::FrooxEngine.ProtoFlux.ISyncNodeOperation> OnFollow_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.ProtoFlux.ISyncNodeOperation>, global::FrooxEngine.ProtoFlux.ISyncNodeOperation> OnFollow_Element = new();
 public global::FrooxEngine.ProtoFlux.NodeObjectOutput<global::System.String> UserId = new();
 public global::FrooxEngine.ProtoFlux.NodeObjectOutput<global::System.String> DisplayName = new();
 

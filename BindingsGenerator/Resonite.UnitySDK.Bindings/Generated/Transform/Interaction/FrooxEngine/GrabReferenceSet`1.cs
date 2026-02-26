@@ -2,9 +2,9 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.GrabReferenceSet<>
-// Generated on: čtvrtek 26. února 2026 12:28:08
-// Resonite version: 2026.2.26.702
-// Resonite Link Version: 0.9.2.0
+// Generated on: čtvrtek 26. února 2026 15:09:08
+// Resonite version: 2026.2.26.828
+// Resonite Link Version: 0.9.3.0
 // -----------------------------------------------------------------------------
 
 using UnityEngine;
@@ -22,11 +22,11 @@ public partial class GrabReferenceSet<T> : global::FrooxEngine.Component, global
 
 {
     public global::FrooxEngine.SyncRef<T> Target { get => Target_Element.Data; set => Target_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.SyncRef<T>>, global::FrooxEngine.SyncRef<T>> Target_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.SyncRef<T>>, global::FrooxEngine.SyncRef<T>> Target_Element = new();
 public T GrabbedTarget { get => GrabbedTarget_Element.Data; set => GrabbedTarget_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<T>, T> GrabbedTarget_Element = new();
+public Reference<global::FrooxEngine.SyncRef<T>, T> GrabbedTarget_Element = new();
 public T ReleasedTarget { get => ReleasedTarget_Element.Data; set => ReleasedTarget_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<T>, T> ReleasedTarget_Element = new();
+public Reference<global::FrooxEngine.SyncRef<T>, T> ReleasedTarget_Element = new();
 public global::System.Boolean SetOnGrabbed { get => SetOnGrabbed_Element.Data; set => SetOnGrabbed_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> SetOnGrabbed_Element = new();
 public global::System.Boolean SetOnReleased { get => SetOnReleased_Element.Data; set => SetOnReleased_Element.Data = value; }

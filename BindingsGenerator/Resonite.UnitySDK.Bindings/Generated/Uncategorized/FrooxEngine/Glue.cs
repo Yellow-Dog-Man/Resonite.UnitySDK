@@ -2,9 +2,9 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.Glue
-// Generated on: čtvrtek 26. února 2026 12:28:05
-// Resonite version: 2026.2.26.702
-// Resonite Link Version: 0.9.2.0
+// Generated on: čtvrtek 26. února 2026 15:09:06
+// Resonite version: 2026.2.26.828
+// Resonite Link Version: 0.9.3.0
 // -----------------------------------------------------------------------------
 
 using UnityEngine;
@@ -29,7 +29,7 @@ public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Sin
 public global::System.Double Expire { get => Expire_Element.Data; set => Expire_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<global::System.Double>, global::System.Double> Expire_Element = new();
 public global::FrooxEngine.User GluingUser { get => GluingUser_Element.Data; set => GluingUser_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.User>, global::FrooxEngine.User> GluingUser_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.User>, global::FrooxEngine.User> GluingUser_Element = new();
 public global::System.Boolean _forceDry { get => _forceDry_Element.Data; set => _forceDry_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> _forceDry_Element = new();
 public global::System.Boolean isDrying { get => isDrying_Element.Data; set => isDrying_Element.Data = value; }

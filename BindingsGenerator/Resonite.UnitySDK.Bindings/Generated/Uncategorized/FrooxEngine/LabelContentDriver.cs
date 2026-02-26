@@ -2,9 +2,9 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.LabelContentDriver
-// Generated on: čtvrtek 26. února 2026 12:28:11
-// Resonite version: 2026.2.26.702
-// Resonite Link Version: 0.9.2.0
+// Generated on: čtvrtek 26. února 2026 15:09:12
+// Resonite version: 2026.2.26.828
+// Resonite Link Version: 0.9.3.0
 // -----------------------------------------------------------------------------
 
 using UnityEngine;
@@ -30,23 +30,23 @@ public global::FrooxEngine.RootSpace ContentOrientSpace = new();
 public global::System.Boolean OrientAtLocalUser { get => OrientAtLocalUser_Element.Data; set => OrientAtLocalUser_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> OrientAtLocalUser_Element = new();
 public global::FrooxEngine.Slot _contentRoot { get => _contentRoot_Element.Data; set => _contentRoot_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> _contentRoot_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> _contentRoot_Element = new();
 public global::FrooxEngine.Slot _targetPoint { get => _targetPoint_Element.Data; set => _targetPoint_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> _targetPoint_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> _targetPoint_Element = new();
 public UnityEngine.Quaternion _contentRotation { get => _contentRotation_Element.Data; set => _contentRotation_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<UnityEngine.Quaternion>, UnityEngine.Quaternion> _contentRotation_Element = new();
 public global::FrooxEngine.IField<UnityEngine.Quaternion> _contentRotationDrive { get => _contentRotationDrive_Element.Data; set => _contentRotationDrive_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<UnityEngine.Quaternion>, global::FrooxEngine.IField<UnityEngine.Quaternion>> _contentRotationDrive_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<UnityEngine.Quaternion>, global::FrooxEngine.IField<UnityEngine.Quaternion>> _contentRotationDrive_Element = new();
 public global::FrooxEngine.IField<UnityEngine.Vector3> _labelPosition { get => _labelPosition_Element.Data; set => _labelPosition_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<UnityEngine.Vector3>, global::FrooxEngine.IField<UnityEngine.Vector3>> _labelPosition_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<UnityEngine.Vector3>, global::FrooxEngine.IField<UnityEngine.Vector3>> _labelPosition_Element = new();
 public global::FrooxEngine.IField<global::System.Single> _labelWidth { get => _labelWidth_Element.Data; set => _labelWidth_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<global::System.Single>, global::FrooxEngine.IField<global::System.Single>> _labelWidth_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<global::System.Single>, global::FrooxEngine.IField<global::System.Single>> _labelWidth_Element = new();
 public global::FrooxEngine.IField<global::System.Single> _lineWidth { get => _lineWidth_Element.Data; set => _lineWidth_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<global::System.Single>, global::FrooxEngine.IField<global::System.Single>> _lineWidth_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<global::System.Single>, global::FrooxEngine.IField<global::System.Single>> _lineWidth_Element = new();
 public global::FrooxEngine.IField<UnityEngine.Quaternion> _labelRotation { get => _labelRotation_Element.Data; set => _labelRotation_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<UnityEngine.Quaternion>, global::FrooxEngine.IField<UnityEngine.Quaternion>> _labelRotation_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<UnityEngine.Quaternion>, global::FrooxEngine.IField<UnityEngine.Quaternion>> _labelRotation_Element = new();
 public global::FrooxEngine.IField<UnityEngine.Vector3> _pointPosition { get => _pointPosition_Element.Data; set => _pointPosition_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<UnityEngine.Vector3>, global::FrooxEngine.IField<UnityEngine.Vector3>> _pointPosition_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<UnityEngine.Vector3>, global::FrooxEngine.IField<UnityEngine.Vector3>> _pointPosition_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)

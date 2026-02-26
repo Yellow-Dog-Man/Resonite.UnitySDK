@@ -2,9 +2,9 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.Wobbler4D
-// Generated on: čtvrtek 26. února 2026 12:28:07
-// Resonite version: 2026.2.26.702
-// Resonite Link Version: 0.9.2.0
+// Generated on: čtvrtek 26. února 2026 15:09:08
+// Resonite version: 2026.2.26.828
+// Resonite Link Version: 0.9.3.0
 // -----------------------------------------------------------------------------
 
 using UnityEngine;
@@ -21,7 +21,7 @@ public partial class Wobbler4D : global::FrooxEngine.Component
 
 {
     public global::FrooxEngine.IField<UnityEngine.Vector4> Target { get => Target_Element.Data; set => Target_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<UnityEngine.Vector4>, global::FrooxEngine.IField<UnityEngine.Vector4>> Target_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<UnityEngine.Vector4>, global::FrooxEngine.IField<UnityEngine.Vector4>> Target_Element = new();
 public UnityEngine.Vector4 Offset { get => Offset_Element.Data; set => Offset_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<UnityEngine.Vector4>, UnityEngine.Vector4> Offset_Element = new();
 public UnityEngine.Vector4 Speed { get => Speed_Element.Data; set => Speed_Element.Data = value; }

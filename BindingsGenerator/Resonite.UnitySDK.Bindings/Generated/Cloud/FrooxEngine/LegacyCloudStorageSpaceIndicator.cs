@@ -2,9 +2,9 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.LegacyCloudStorageSpaceIndicator
-// Generated on: čtvrtek 26. února 2026 12:26:52
-// Resonite version: 2026.2.26.702
-// Resonite Link Version: 0.9.2.0
+// Generated on: čtvrtek 26. února 2026 15:07:57
+// Resonite version: 2026.2.26.828
+// Resonite Link Version: 0.9.3.0
 // -----------------------------------------------------------------------------
 
 using UnityEngine;
@@ -21,7 +21,7 @@ public partial class LegacyCloudStorageSpaceIndicator : global::FrooxEngine.Comp
 
 {
     public global::FrooxEngine.StorageUsageStatus Source { get => Source_Element.Data; set => Source_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.StorageUsageStatus>, global::FrooxEngine.StorageUsageStatus> Source_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.StorageUsageStatus>, global::FrooxEngine.StorageUsageStatus> Source_Element = new();
 public UnityEngine.ColorX ContainerColor { get => ContainerColor_Element.Data; set => ContainerColor_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<UnityEngine.ColorX>, UnityEngine.ColorX> ContainerColor_Element = new();
 public UnityEngine.ColorX UsedColor { get => UsedColor_Element.Data; set => UsedColor_Element.Data = value; }
@@ -35,13 +35,13 @@ public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Sin
 public global::System.Single CriticalSpaceThreshold { get => CriticalSpaceThreshold_Element.Data; set => CriticalSpaceThreshold_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> CriticalSpaceThreshold_Element = new();
 public global::FrooxEngine.TextRenderer _ownerLabel { get => _ownerLabel_Element.Data; set => _ownerLabel_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.TextRenderer>, global::FrooxEngine.TextRenderer> _ownerLabel_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.TextRenderer>, global::FrooxEngine.TextRenderer> _ownerLabel_Element = new();
 public global::FrooxEngine.TextRenderer _usageLabel { get => _usageLabel_Element.Data; set => _usageLabel_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.TextRenderer>, global::FrooxEngine.TextRenderer> _usageLabel_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.TextRenderer>, global::FrooxEngine.TextRenderer> _usageLabel_Element = new();
 public global::FrooxEngine.TextRenderer _percentLabel { get => _percentLabel_Element.Data; set => _percentLabel_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.TextRenderer>, global::FrooxEngine.TextRenderer> _percentLabel_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.TextRenderer>, global::FrooxEngine.TextRenderer> _percentLabel_Element = new();
 public global::FrooxEngine.LegacyProgressBar _progressBar { get => _progressBar_Element.Data; set => _progressBar_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.LegacyProgressBar>, global::FrooxEngine.LegacyProgressBar> _progressBar_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.LegacyProgressBar>, global::FrooxEngine.LegacyProgressBar> _progressBar_Element = new();
 public global::System.String __legacyOwnerId { get => __legacyOwnerId_Element.Data; set => __legacyOwnerId_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<global::System.String>, global::System.String> __legacyOwnerId_Element = new();
 public global::System.Boolean __legacyMemberQuota { get => __legacyMemberQuota_Element.Data; set => __legacyMemberQuota_Element.Data = value; }

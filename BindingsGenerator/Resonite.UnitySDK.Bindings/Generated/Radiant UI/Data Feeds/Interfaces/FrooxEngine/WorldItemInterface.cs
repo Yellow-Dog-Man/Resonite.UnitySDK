@@ -2,9 +2,9 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.WorldItemInterface
-// Generated on: čtvrtek 26. února 2026 12:28:01
-// Resonite version: 2026.2.26.702
-// Resonite Link Version: 0.9.2.0
+// Generated on: čtvrtek 26. února 2026 15:09:01
+// Resonite version: 2026.2.26.828
+// Resonite Link Version: 0.9.3.0
 // -----------------------------------------------------------------------------
 
 using UnityEngine;
@@ -21,21 +21,21 @@ public partial class WorldItemInterface : global::FrooxEngine.FeedItemInterface
 
 {
     public global::FrooxEngine.IField<global::System.String> WorldName { get => WorldName_Element.Data; set => WorldName_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.IField<global::System.String>>, global::FrooxEngine.IField<global::System.String>> WorldName_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.IField<global::System.String>>, global::FrooxEngine.IField<global::System.String>> WorldName_Element = new();
 public global::FrooxEngine.IField<global::System.String> Description { get => Description_Element.Data; set => Description_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.IField<global::System.String>>, global::FrooxEngine.IField<global::System.String>> Description_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.IField<global::System.String>>, global::FrooxEngine.IField<global::System.String>> Description_Element = new();
 public global::FrooxEngine.IField<System.Uri> ThumbnailUrl { get => ThumbnailUrl_Element.Data; set => ThumbnailUrl_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.IField<System.Uri>>, global::FrooxEngine.IField<System.Uri>> ThumbnailUrl_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.IField<System.Uri>>, global::FrooxEngine.IField<System.Uri>> ThumbnailUrl_Element = new();
 public global::FrooxEngine.IField<global::System.Int32> JoinedUsers { get => JoinedUsers_Element.Data; set => JoinedUsers_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.IField<global::System.Int32>>, global::FrooxEngine.IField<global::System.Int32>> JoinedUsers_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.IField<global::System.Int32>>, global::FrooxEngine.IField<global::System.Int32>> JoinedUsers_Element = new();
 public global::FrooxEngine.IField<global::System.Int32> ActiveUsers { get => ActiveUsers_Element.Data; set => ActiveUsers_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.IField<global::System.Int32>>, global::FrooxEngine.IField<global::System.Int32>> ActiveUsers_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.IField<global::System.Int32>>, global::FrooxEngine.IField<global::System.Int32>> ActiveUsers_Element = new();
 public global::FrooxEngine.IField<global::System.Boolean> IsHost { get => IsHost_Element.Data; set => IsHost_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.IField<global::System.Boolean>>, global::FrooxEngine.IField<global::System.Boolean>> IsHost_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.IField<global::System.Boolean>>, global::FrooxEngine.IField<global::System.Boolean>> IsHost_Element = new();
 public global::FrooxEngine.IField<global::System.Boolean> AwayKickEnabled { get => AwayKickEnabled_Element.Data; set => AwayKickEnabled_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.IField<global::System.Boolean>>, global::FrooxEngine.IField<global::System.Boolean>> AwayKickEnabled_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.IField<global::System.Boolean>>, global::FrooxEngine.IField<global::System.Boolean>> AwayKickEnabled_Element = new();
 public global::FrooxEngine.IField<global::System.TimeSpan> AwayKickInterval { get => AwayKickInterval_Element.Data; set => AwayKickInterval_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.IField<global::System.TimeSpan>>, global::FrooxEngine.IField<global::System.TimeSpan>> AwayKickInterval_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.IField<global::System.TimeSpan>>, global::FrooxEngine.IField<global::System.TimeSpan>> AwayKickInterval_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)

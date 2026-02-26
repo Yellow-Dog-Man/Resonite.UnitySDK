@@ -2,9 +2,9 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.TexturePackingWizard
-// Generated on: čtvrtek 26. února 2026 12:28:16
-// Resonite version: 2026.2.26.702
-// Resonite Link Version: 0.9.2.0
+// Generated on: čtvrtek 26. února 2026 15:09:17
+// Resonite version: 2026.2.26.828
+// Resonite Link Version: 0.9.3.0
 // -----------------------------------------------------------------------------
 
 using UnityEngine;
@@ -21,7 +21,7 @@ public partial class TexturePackingWizard : global::FrooxEngine.Component, globa
 
 {
     public global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D> RTexture { get => RTexture_Element.Data; set => RTexture_Element.Data = value; }
-public Field<global::FrooxEngine.AssetRef<global::FrooxEngine.ITexture2D>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D>> RTexture_Element = new();
+public Reference<global::FrooxEngine.AssetRef<global::FrooxEngine.ITexture2D>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D>> RTexture_Element = new();
 public global::System.Single RFallbackValue { get => RFallbackValue_Element.Data; set => RFallbackValue_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> RFallbackValue_Element = new();
 public global::Elements.Core.ColorChannel RColorChannel { get => RColorChannel_Element.Data; set => RColorChannel_Element.Data = value; }
@@ -29,7 +29,7 @@ public Field<global::FrooxEngine.Sync<global::Elements.Core.ColorChannel>, globa
 public global::System.Boolean RInvert { get => RInvert_Element.Data; set => RInvert_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> RInvert_Element = new();
 public global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D> GTexture { get => GTexture_Element.Data; set => GTexture_Element.Data = value; }
-public Field<global::FrooxEngine.AssetRef<global::FrooxEngine.ITexture2D>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D>> GTexture_Element = new();
+public Reference<global::FrooxEngine.AssetRef<global::FrooxEngine.ITexture2D>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D>> GTexture_Element = new();
 public global::System.Single GFallbackValue { get => GFallbackValue_Element.Data; set => GFallbackValue_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> GFallbackValue_Element = new();
 public global::Elements.Core.ColorChannel GColorChannel { get => GColorChannel_Element.Data; set => GColorChannel_Element.Data = value; }
@@ -37,7 +37,7 @@ public Field<global::FrooxEngine.Sync<global::Elements.Core.ColorChannel>, globa
 public global::System.Boolean GInvert { get => GInvert_Element.Data; set => GInvert_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> GInvert_Element = new();
 public global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D> BTexture { get => BTexture_Element.Data; set => BTexture_Element.Data = value; }
-public Field<global::FrooxEngine.AssetRef<global::FrooxEngine.ITexture2D>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D>> BTexture_Element = new();
+public Reference<global::FrooxEngine.AssetRef<global::FrooxEngine.ITexture2D>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D>> BTexture_Element = new();
 public global::System.Single BFallbackValue { get => BFallbackValue_Element.Data; set => BFallbackValue_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> BFallbackValue_Element = new();
 public global::Elements.Core.ColorChannel BColorChannel { get => BColorChannel_Element.Data; set => BColorChannel_Element.Data = value; }
@@ -45,7 +45,7 @@ public Field<global::FrooxEngine.Sync<global::Elements.Core.ColorChannel>, globa
 public global::System.Boolean BInvert { get => BInvert_Element.Data; set => BInvert_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> BInvert_Element = new();
 public global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D> ATexture { get => ATexture_Element.Data; set => ATexture_Element.Data = value; }
-public Field<global::FrooxEngine.AssetRef<global::FrooxEngine.ITexture2D>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D>> ATexture_Element = new();
+public Reference<global::FrooxEngine.AssetRef<global::FrooxEngine.ITexture2D>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D>> ATexture_Element = new();
 public global::System.Single AFallbackValue { get => AFallbackValue_Element.Data; set => AFallbackValue_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> AFallbackValue_Element = new();
 public global::Elements.Core.ColorChannel AColorChannel { get => AColorChannel_Element.Data; set => AColorChannel_Element.Data = value; }
@@ -61,7 +61,7 @@ public Field<global::FrooxEngine.Sync<UnityEngine.Vector2Int>, UnityEngine.Vecto
 public global::System.Boolean GenerateMips { get => GenerateMips_Element.Data; set => GenerateMips_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> GenerateMips_Element = new();
 public global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D> OutputTexture { get => OutputTexture_Element.Data; set => OutputTexture_Element.Data = value; }
-public Field<global::FrooxEngine.AssetRef<global::FrooxEngine.ITexture2D>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D>> OutputTexture_Element = new();
+public Reference<global::FrooxEngine.AssetRef<global::FrooxEngine.ITexture2D>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D>> OutputTexture_Element = new();
 public global::System.Boolean IsProcessing { get => IsProcessing_Element.Data; set => IsProcessing_Element.Data = value; }
 public Field<global::FrooxEngine.RawOutput<global::System.Boolean>, global::System.Boolean> IsProcessing_Element = new();
 

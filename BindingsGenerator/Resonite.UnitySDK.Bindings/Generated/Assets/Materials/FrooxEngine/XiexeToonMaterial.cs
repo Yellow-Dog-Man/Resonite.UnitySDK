@@ -2,9 +2,9 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.XiexeToonMaterial
-// Generated on: čtvrtek 26. února 2026 12:26:47
-// Resonite version: 2026.2.26.702
-// Resonite Link Version: 0.9.2.0
+// Generated on: čtvrtek 26. února 2026 15:07:53
+// Resonite version: 2026.2.26.828
+// Resonite Link Version: 0.9.3.0
 // -----------------------------------------------------------------------------
 
 using UnityEngine;
@@ -21,7 +21,7 @@ public partial class XiexeToonMaterial : global::FrooxEngine.MaterialProvider, g
 
 {
     public global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D> MainTexture { get => MainTexture_Element.Data; set => MainTexture_Element.Data = value; }
-public Field<global::FrooxEngine.AssetRef<global::FrooxEngine.ITexture2D>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D>> MainTexture_Element = new();
+public Reference<global::FrooxEngine.AssetRef<global::FrooxEngine.ITexture2D>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D>> MainTexture_Element = new();
 public UnityEngine.ColorX Color { get => Color_Element.Data; set => Color_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<UnityEngine.ColorX>, UnityEngine.ColorX> Color_Element = new();
 public global::System.Boolean UseVertexColors { get => UseVertexColors_Element.Data; set => UseVertexColors_Element.Data = value; }
@@ -41,7 +41,7 @@ public Field<global::FrooxEngine.Sync<UnityEngine.Vector2>, UnityEngine.Vector2>
 public global::System.Single Saturation { get => Saturation_Element.Data; set => Saturation_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> Saturation_Element = new();
 public global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D> NormalMap { get => NormalMap_Element.Data; set => NormalMap_Element.Data = value; }
-public Field<global::FrooxEngine.AssetRef<global::FrooxEngine.ITexture2D>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D>> NormalMap_Element = new();
+public Reference<global::FrooxEngine.AssetRef<global::FrooxEngine.ITexture2D>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D>> NormalMap_Element = new();
 public UnityEngine.Vector2 NormalMapScale { get => NormalMapScale_Element.Data; set => NormalMapScale_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<UnityEngine.Vector2>, UnityEngine.Vector2> NormalMapScale_Element = new();
 public UnityEngine.Vector2 NormalMapOffset { get => NormalMapOffset_Element.Data; set => NormalMapOffset_Element.Data = value; }
@@ -55,13 +55,13 @@ public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Sin
 public global::System.Single Reflectivity { get => Reflectivity_Element.Data; set => Reflectivity_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> Reflectivity_Element = new();
 public global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D> MetallicGlossMap { get => MetallicGlossMap_Element.Data; set => MetallicGlossMap_Element.Data = value; }
-public Field<global::FrooxEngine.AssetRef<global::FrooxEngine.ITexture2D>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D>> MetallicGlossMap_Element = new();
+public Reference<global::FrooxEngine.AssetRef<global::FrooxEngine.ITexture2D>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D>> MetallicGlossMap_Element = new();
 public UnityEngine.Vector2 MetallicGlossMapScale { get => MetallicGlossMapScale_Element.Data; set => MetallicGlossMapScale_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<UnityEngine.Vector2>, UnityEngine.Vector2> MetallicGlossMapScale_Element = new();
 public UnityEngine.Vector2 MetallicGlossMapOffset { get => MetallicGlossMapOffset_Element.Data; set => MetallicGlossMapOffset_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<UnityEngine.Vector2>, UnityEngine.Vector2> MetallicGlossMapOffset_Element = new();
 public global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D> EmissionMap { get => EmissionMap_Element.Data; set => EmissionMap_Element.Data = value; }
-public Field<global::FrooxEngine.AssetRef<global::FrooxEngine.ITexture2D>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D>> EmissionMap_Element = new();
+public Reference<global::FrooxEngine.AssetRef<global::FrooxEngine.ITexture2D>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D>> EmissionMap_Element = new();
 public UnityEngine.ColorX EmissionColor { get => EmissionColor_Element.Data; set => EmissionColor_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<UnityEngine.ColorX>, UnityEngine.ColorX> EmissionColor_Element = new();
 public UnityEngine.Vector2 EmissionMapScale { get => EmissionMapScale_Element.Data; set => EmissionMapScale_Element.Data = value; }
@@ -87,11 +87,11 @@ public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Sin
 public global::System.Single SpecularArea { get => SpecularArea_Element.Data; set => SpecularArea_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> SpecularArea_Element = new();
 public global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D> Matcap { get => Matcap_Element.Data; set => Matcap_Element.Data = value; }
-public Field<global::FrooxEngine.AssetRef<global::FrooxEngine.ITexture2D>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D>> Matcap_Element = new();
+public Reference<global::FrooxEngine.AssetRef<global::FrooxEngine.ITexture2D>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D>> Matcap_Element = new();
 public UnityEngine.ColorX MatcapTint { get => MatcapTint_Element.Data; set => MatcapTint_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<UnityEngine.ColorX>, UnityEngine.ColorX> MatcapTint_Element = new();
 public global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D> OcclusionMap { get => OcclusionMap_Element.Data; set => OcclusionMap_Element.Data = value; }
-public Field<global::FrooxEngine.AssetRef<global::FrooxEngine.ITexture2D>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D>> OcclusionMap_Element = new();
+public Reference<global::FrooxEngine.AssetRef<global::FrooxEngine.ITexture2D>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D>> OcclusionMap_Element = new();
 public UnityEngine.Vector2 OcclusionMapScale { get => OcclusionMapScale_Element.Data; set => OcclusionMapScale_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<UnityEngine.Vector2>, UnityEngine.Vector2> OcclusionMapScale_Element = new();
 public UnityEngine.Vector2 OcclusionMapOffset { get => OcclusionMapOffset_Element.Data; set => OcclusionMapOffset_Element.Data = value; }
@@ -107,11 +107,11 @@ public Field<global::FrooxEngine.Sync<UnityEngine.ColorX>, UnityEngine.ColorX> O
 public global::System.Boolean OutlineAlbedoTint { get => OutlineAlbedoTint_Element.Data; set => OutlineAlbedoTint_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> OutlineAlbedoTint_Element = new();
 public global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D> OutlineMask { get => OutlineMask_Element.Data; set => OutlineMask_Element.Data = value; }
-public Field<global::FrooxEngine.AssetRef<global::FrooxEngine.ITexture2D>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D>> OutlineMask_Element = new();
+public Reference<global::FrooxEngine.AssetRef<global::FrooxEngine.ITexture2D>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D>> OutlineMask_Element = new();
 public global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D> ShadowRamp { get => ShadowRamp_Element.Data; set => ShadowRamp_Element.Data = value; }
-public Field<global::FrooxEngine.AssetRef<global::FrooxEngine.ITexture2D>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D>> ShadowRamp_Element = new();
+public Reference<global::FrooxEngine.AssetRef<global::FrooxEngine.ITexture2D>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D>> ShadowRamp_Element = new();
 public global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D> ShadowRampMask { get => ShadowRampMask_Element.Data; set => ShadowRampMask_Element.Data = value; }
-public Field<global::FrooxEngine.AssetRef<global::FrooxEngine.ITexture2D>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D>> ShadowRampMask_Element = new();
+public Reference<global::FrooxEngine.AssetRef<global::FrooxEngine.ITexture2D>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D>> ShadowRampMask_Element = new();
 public UnityEngine.Vector2 ShadowRampMaskScale { get => ShadowRampMaskScale_Element.Data; set => ShadowRampMaskScale_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<UnityEngine.Vector2>, UnityEngine.Vector2> ShadowRampMaskScale_Element = new();
 public UnityEngine.Vector2 ShadowRampMaskOffset { get => ShadowRampMaskOffset_Element.Data; set => ShadowRampMaskOffset_Element.Data = value; }
@@ -129,7 +129,7 @@ public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Sin
 public global::System.Single ShadowRimAlbedoTint { get => ShadowRimAlbedoTint_Element.Data; set => ShadowRimAlbedoTint_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> ShadowRimAlbedoTint_Element = new();
 public global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D> ThicknessMap { get => ThicknessMap_Element.Data; set => ThicknessMap_Element.Data = value; }
-public Field<global::FrooxEngine.AssetRef<global::FrooxEngine.ITexture2D>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D>> ThicknessMap_Element = new();
+public Reference<global::FrooxEngine.AssetRef<global::FrooxEngine.ITexture2D>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D>> ThicknessMap_Element = new();
 public UnityEngine.Vector2 ThicknessMapScale { get => ThicknessMapScale_Element.Data; set => ThicknessMapScale_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<UnityEngine.Vector2>, UnityEngine.Vector2> ThicknessMapScale_Element = new();
 public UnityEngine.Vector2 ThicknessMapOffset { get => ThicknessMapOffset_Element.Data; set => ThicknessMapOffset_Element.Data = value; }
@@ -167,9 +167,9 @@ public Field<global::FrooxEngine.Sync<global::System.Int32>, global::System.Int3
 public global::System.Boolean __legacyCutout { get => __legacyCutout_Element.Data; set => __legacyCutout_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> __legacyCutout_Element = new();
 public global::FrooxEngine.IAssetProvider<global::FrooxEngine.Shader> _regular { get => _regular_Element.Data; set => _regular_Element.Data = value; }
-public Field<global::FrooxEngine.AssetRef<global::FrooxEngine.Shader>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.Shader>> _regular_Element = new();
+public Reference<global::FrooxEngine.AssetRef<global::FrooxEngine.Shader>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.Shader>> _regular_Element = new();
 public global::FrooxEngine.IAssetProvider<global::FrooxEngine.Shader> _outline { get => _outline_Element.Data; set => _outline_Element.Data = value; }
-public Field<global::FrooxEngine.AssetRef<global::FrooxEngine.Shader>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.Shader>> _outline_Element = new();
+public Reference<global::FrooxEngine.AssetRef<global::FrooxEngine.Shader>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.Shader>> _outline_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)

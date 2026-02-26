@@ -2,9 +2,9 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.LUT_Material
-// Generated on: čtvrtek 26. února 2026 12:26:47
-// Resonite version: 2026.2.26.702
-// Resonite Link Version: 0.9.2.0
+// Generated on: čtvrtek 26. února 2026 15:07:53
+// Resonite version: 2026.2.26.828
+// Resonite Link Version: 0.9.3.0
 // -----------------------------------------------------------------------------
 
 using UnityEngine;
@@ -21,9 +21,9 @@ public partial class LUT_Material : global::FrooxEngine.SingleShaderUI_StencilMa
 
 {
     public global::FrooxEngine.IAssetProvider<global::FrooxEngine.Texture3D> LUT { get => LUT_Element.Data; set => LUT_Element.Data = value; }
-public Field<global::FrooxEngine.AssetRef<global::FrooxEngine.Texture3D>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.Texture3D>> LUT_Element = new();
+public Reference<global::FrooxEngine.AssetRef<global::FrooxEngine.Texture3D>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.Texture3D>> LUT_Element = new();
 public global::FrooxEngine.IAssetProvider<global::FrooxEngine.Texture3D> SecondaryLUT { get => SecondaryLUT_Element.Data; set => SecondaryLUT_Element.Data = value; }
-public Field<global::FrooxEngine.AssetRef<global::FrooxEngine.Texture3D>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.Texture3D>> SecondaryLUT_Element = new();
+public Reference<global::FrooxEngine.AssetRef<global::FrooxEngine.Texture3D>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.Texture3D>> SecondaryLUT_Element = new();
 public global::System.Boolean UseSRGB { get => UseSRGB_Element.Data; set => UseSRGB_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> UseSRGB_Element = new();
 public global::System.Single Lerp { get => Lerp_Element.Data; set => Lerp_Element.Data = value; }

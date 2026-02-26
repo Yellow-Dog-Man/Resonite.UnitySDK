@@ -2,9 +2,9 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.RadiantDash
-// Generated on: čtvrtek 26. února 2026 12:28:10
-// Resonite version: 2026.2.26.702
-// Resonite Link Version: 0.9.2.0
+// Generated on: čtvrtek 26. února 2026 15:09:10
+// Resonite version: 2026.2.26.828
+// Resonite Link Version: 0.9.3.0
 // -----------------------------------------------------------------------------
 
 using UnityEngine;
@@ -21,7 +21,7 @@ public partial class RadiantDash : global::FrooxEngine.Component
 
 {
     public global::FrooxEngine.RadiantDashScreen CurrentScreen { get => CurrentScreen_Element.Data; set => CurrentScreen_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.RadiantDashScreen>, global::FrooxEngine.RadiantDashScreen> CurrentScreen_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.RadiantDashScreen>, global::FrooxEngine.RadiantDashScreen> CurrentScreen_Element = new();
 public global::System.Boolean Open { get => Open_Element.Data; set => Open_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> Open_Element = new();
 public global::System.Single AnimationSpeed { get => AnimationSpeed_Element.Data; set => AnimationSpeed_Element.Data = value; }
@@ -35,63 +35,63 @@ public Field<global::FrooxEngine.Sync<global::FrooxEngine.CurvedPlaneMesh.Curvat
 public global::System.Boolean ScreenSwitchingEnabled { get => ScreenSwitchingEnabled_Element.Data; set => ScreenSwitchingEnabled_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> ScreenSwitchingEnabled_Element = new();
 public global::FrooxEngine.Slot _screensContainer { get => _screensContainer_Element.Data; set => _screensContainer_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> _screensContainer_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> _screensContainer_Element = new();
 public global::FrooxEngine.Camera _camera { get => _camera_Element.Data; set => _camera_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.Camera>, global::FrooxEngine.Camera> _camera_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.Camera>, global::FrooxEngine.Camera> _camera_Element = new();
 public global::FrooxEngine.RenderTextureProvider _renderTexture { get => _renderTexture_Element.Data; set => _renderTexture_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.RenderTextureProvider>, global::FrooxEngine.RenderTextureProvider> _renderTexture_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.RenderTextureProvider>, global::FrooxEngine.RenderTextureProvider> _renderTexture_Element = new();
 public global::FrooxEngine.Slot _topContainer { get => _topContainer_Element.Data; set => _topContainer_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> _topContainer_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> _topContainer_Element = new();
 public global::FrooxEngine.CurvedPlaneMesh _topMesh { get => _topMesh_Element.Data; set => _topMesh_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.CurvedPlaneMesh>, global::FrooxEngine.CurvedPlaneMesh> _topMesh_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.CurvedPlaneMesh>, global::FrooxEngine.CurvedPlaneMesh> _topMesh_Element = new();
 public global::FrooxEngine.CurvedPlaneMesh _screenMesh { get => _screenMesh_Element.Data; set => _screenMesh_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.CurvedPlaneMesh>, global::FrooxEngine.CurvedPlaneMesh> _screenMesh_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.CurvedPlaneMesh>, global::FrooxEngine.CurvedPlaneMesh> _screenMesh_Element = new();
 public global::FrooxEngine.CurvedPlaneMesh _buttonsMesh { get => _buttonsMesh_Element.Data; set => _buttonsMesh_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.CurvedPlaneMesh>, global::FrooxEngine.CurvedPlaneMesh> _buttonsMesh_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.CurvedPlaneMesh>, global::FrooxEngine.CurvedPlaneMesh> _buttonsMesh_Element = new();
 public global::FrooxEngine.UnlitMaterial _topMaterial { get => _topMaterial_Element.Data; set => _topMaterial_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.UnlitMaterial>, global::FrooxEngine.UnlitMaterial> _topMaterial_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.UnlitMaterial>, global::FrooxEngine.UnlitMaterial> _topMaterial_Element = new();
 public global::FrooxEngine.UnlitMaterial _screenMaterial { get => _screenMaterial_Element.Data; set => _screenMaterial_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.UnlitMaterial>, global::FrooxEngine.UnlitMaterial> _screenMaterial_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.UnlitMaterial>, global::FrooxEngine.UnlitMaterial> _screenMaterial_Element = new();
 public global::FrooxEngine.UnlitMaterial _buttonsMaterial { get => _buttonsMaterial_Element.Data; set => _buttonsMaterial_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.UnlitMaterial>, global::FrooxEngine.UnlitMaterial> _buttonsMaterial_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.UnlitMaterial>, global::FrooxEngine.UnlitMaterial> _buttonsMaterial_Element = new();
 public global::FrooxEngine.UI_UnlitMaterial _overlayEffectMaterial { get => _overlayEffectMaterial_Element.Data; set => _overlayEffectMaterial_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.UI_UnlitMaterial>, global::FrooxEngine.UI_UnlitMaterial> _overlayEffectMaterial_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.UI_UnlitMaterial>, global::FrooxEngine.UI_UnlitMaterial> _overlayEffectMaterial_Element = new();
 public global::FrooxEngine.UV_RectMaterial _topBorderMaterial { get => _topBorderMaterial_Element.Data; set => _topBorderMaterial_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.UV_RectMaterial>, global::FrooxEngine.UV_RectMaterial> _topBorderMaterial_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.UV_RectMaterial>, global::FrooxEngine.UV_RectMaterial> _topBorderMaterial_Element = new();
 public global::FrooxEngine.UV_RectMaterial _screenBorderMaterial { get => _screenBorderMaterial_Element.Data; set => _screenBorderMaterial_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.UV_RectMaterial>, global::FrooxEngine.UV_RectMaterial> _screenBorderMaterial_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.UV_RectMaterial>, global::FrooxEngine.UV_RectMaterial> _screenBorderMaterial_Element = new();
 public global::FrooxEngine.UV_RectMaterial _buttonsBorderMaterial { get => _buttonsBorderMaterial_Element.Data; set => _buttonsBorderMaterial_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.UV_RectMaterial>, global::FrooxEngine.UV_RectMaterial> _buttonsBorderMaterial_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.UV_RectMaterial>, global::FrooxEngine.UV_RectMaterial> _buttonsBorderMaterial_Element = new();
 public global::FrooxEngine.Slot _renderRoot { get => _renderRoot_Element.Data; set => _renderRoot_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> _renderRoot_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> _renderRoot_Element = new();
 public global::FrooxEngine.Slot _topRoot { get => _topRoot_Element.Data; set => _topRoot_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> _topRoot_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> _topRoot_Element = new();
 public global::FrooxEngine.Slot _screenRoot { get => _screenRoot_Element.Data; set => _screenRoot_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> _screenRoot_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> _screenRoot_Element = new();
 public global::FrooxEngine.Slot _buttonsRoot { get => _buttonsRoot_Element.Data; set => _buttonsRoot_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> _buttonsRoot_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> _buttonsRoot_Element = new();
 public global::FrooxEngine.Slot _visualsRoot { get => _visualsRoot_Element.Data; set => _visualsRoot_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> _visualsRoot_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> _visualsRoot_Element = new();
 public global::FrooxEngine.Slot _effectRoot { get => _effectRoot_Element.Data; set => _effectRoot_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> _effectRoot_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> _effectRoot_Element = new();
 public global::FrooxEngine.UIX.Canvas _topCanvas { get => _topCanvas_Element.Data; set => _topCanvas_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.UIX.Canvas>, global::FrooxEngine.UIX.Canvas> _topCanvas_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.UIX.Canvas>, global::FrooxEngine.UIX.Canvas> _topCanvas_Element = new();
 public global::FrooxEngine.Slot _buttonsUIroot { get => _buttonsUIroot_Element.Data; set => _buttonsUIroot_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> _buttonsUIroot_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> _buttonsUIroot_Element = new();
 public global::FrooxEngine.UIX.Canvas _buttonsCanvas { get => _buttonsCanvas_Element.Data; set => _buttonsCanvas_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.UIX.Canvas>, global::FrooxEngine.UIX.Canvas> _buttonsCanvas_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.UIX.Canvas>, global::FrooxEngine.UIX.Canvas> _buttonsCanvas_Element = new();
 public global::FrooxEngine.PhotonDust.ParticleStyle _style { get => _style_Element.Data; set => _style_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.PhotonDust.ParticleStyle>, global::FrooxEngine.PhotonDust.ParticleStyle> _style_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.PhotonDust.ParticleStyle>, global::FrooxEngine.PhotonDust.ParticleStyle> _style_Element = new();
 public global::FrooxEngine.PhotonDust.ColorRangeInitializer _particleColors { get => _particleColors_Element.Data; set => _particleColors_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.PhotonDust.ColorRangeInitializer>, global::FrooxEngine.PhotonDust.ColorRangeInitializer> _particleColors_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.PhotonDust.ColorRangeInitializer>, global::FrooxEngine.PhotonDust.ColorRangeInitializer> _particleColors_Element = new();
 public global::FrooxEngine.PhotonDust.MeshEmitter _emitter { get => _emitter_Element.Data; set => _emitter_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.PhotonDust.MeshEmitter>, global::FrooxEngine.PhotonDust.MeshEmitter> _emitter_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.PhotonDust.MeshEmitter>, global::FrooxEngine.PhotonDust.MeshEmitter> _emitter_Element = new();
 public global::FrooxEngine.MeshCollider _topCollider { get => _topCollider_Element.Data; set => _topCollider_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.MeshCollider>, global::FrooxEngine.MeshCollider> _topCollider_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.MeshCollider>, global::FrooxEngine.MeshCollider> _topCollider_Element = new();
 public global::FrooxEngine.MeshCollider _screenCollider { get => _screenCollider_Element.Data; set => _screenCollider_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.MeshCollider>, global::FrooxEngine.MeshCollider> _screenCollider_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.MeshCollider>, global::FrooxEngine.MeshCollider> _screenCollider_Element = new();
 public global::FrooxEngine.MeshCollider _buttonsCollider { get => _buttonsCollider_Element.Data; set => _buttonsCollider_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.MeshCollider>, global::FrooxEngine.MeshCollider> _buttonsCollider_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.MeshCollider>, global::FrooxEngine.MeshCollider> _buttonsCollider_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)

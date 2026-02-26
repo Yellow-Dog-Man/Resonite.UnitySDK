@@ -2,9 +2,9 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.InventoryBrowser
-// Generated on: čtvrtek 26. února 2026 12:28:11
-// Resonite version: 2026.2.26.702
-// Resonite Link Version: 0.9.2.0
+// Generated on: čtvrtek 26. února 2026 15:09:12
+// Resonite version: 2026.2.26.828
+// Resonite Link Version: 0.9.3.0
 // -----------------------------------------------------------------------------
 
 using UnityEngine;
@@ -28,19 +28,19 @@ public Field<global::FrooxEngine.Sync<global::System.String>, global::System.Str
 public global::System.String _currentOwnerId { get => _currentOwnerId_Element.Data; set => _currentOwnerId_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<global::System.String>, global::System.String> _currentOwnerId_Element = new();
 public global::FrooxEngine.UIX.Button _addNewButton { get => _addNewButton_Element.Data; set => _addNewButton_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.UIX.Button>, global::FrooxEngine.UIX.Button> _addNewButton_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.UIX.Button>, global::FrooxEngine.UIX.Button> _addNewButton_Element = new();
 public global::FrooxEngine.UIX.Button _deleteButton { get => _deleteButton_Element.Data; set => _deleteButton_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.UIX.Button>, global::FrooxEngine.UIX.Button> _deleteButton_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.UIX.Button>, global::FrooxEngine.UIX.Button> _deleteButton_Element = new();
 public global::FrooxEngine.UIX.Button _inventoriesButton { get => _inventoriesButton_Element.Data; set => _inventoriesButton_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.UIX.Button>, global::FrooxEngine.UIX.Button> _inventoriesButton_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.UIX.Button>, global::FrooxEngine.UIX.Button> _inventoriesButton_Element = new();
 public global::FrooxEngine.UIX.Button _shareButton { get => _shareButton_Element.Data; set => _shareButton_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.UIX.Button>, global::FrooxEngine.UIX.Button> _shareButton_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.UIX.Button>, global::FrooxEngine.UIX.Button> _shareButton_Element = new();
 public global::FrooxEngine.UIX.Button _unshareButton { get => _unshareButton_Element.Data; set => _unshareButton_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.UIX.Button>, global::FrooxEngine.UIX.Button> _unshareButton_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.UIX.Button>, global::FrooxEngine.UIX.Button> _unshareButton_Element = new();
 public global::FrooxEngine.UIX.Button _copyLink { get => _copyLink_Element.Data; set => _copyLink_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.UIX.Button>, global::FrooxEngine.UIX.Button> _copyLink_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.UIX.Button>, global::FrooxEngine.UIX.Button> _copyLink_Element = new();
 public global::FrooxEngine.UIX.Button _addCurrentAvatar { get => _addCurrentAvatar_Element.Data; set => _addCurrentAvatar_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.UIX.Button>, global::FrooxEngine.UIX.Button> _addCurrentAvatar_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.UIX.Button>, global::FrooxEngine.UIX.Button> _addCurrentAvatar_Element = new();
 public global::FrooxEngine.InventoryBrowser.SpecialItemType _lastSpecialItemType { get => _lastSpecialItemType_Element.Data; set => _lastSpecialItemType_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<global::FrooxEngine.InventoryBrowser.SpecialItemType>, global::FrooxEngine.InventoryBrowser.SpecialItemType> _lastSpecialItemType_Element = new();
 

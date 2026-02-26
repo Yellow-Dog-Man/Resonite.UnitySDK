@@ -2,9 +2,9 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.CommonAvatar.AvatarPoseBoxConstraint
-// Generated on: čtvrtek 26. února 2026 12:28:15
-// Resonite version: 2026.2.26.702
-// Resonite Link Version: 0.9.2.0
+// Generated on: čtvrtek 26. února 2026 15:09:17
+// Resonite version: 2026.2.26.828
+// Resonite Link Version: 0.9.3.0
 // -----------------------------------------------------------------------------
 
 using UnityEngine;
@@ -23,7 +23,7 @@ public partial class AvatarPoseBoxConstraint : global::FrooxEngine.Component, gl
     public UnityEngine.Vector3 BoxSize { get => BoxSize_Element.Data; set => BoxSize_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<UnityEngine.Vector3>, UnityEngine.Vector3> BoxSize_Element = new();
 public global::FrooxEngine.Slot DefaultPoseReference { get => DefaultPoseReference_Element.Data; set => DefaultPoseReference_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> DefaultPoseReference_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> DefaultPoseReference_Element = new();
 public global::System.Boolean ProcessSimulatedPoses { get => ProcessSimulatedPoses_Element.Data; set => ProcessSimulatedPoses_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> ProcessSimulatedPoses_Element = new();
 

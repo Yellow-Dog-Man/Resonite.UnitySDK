@@ -2,9 +2,9 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.ContextMenuItem
-// Generated on: čtvrtek 26. února 2026 12:27:57
-// Resonite version: 2026.2.26.702
-// Resonite Link Version: 0.9.2.0
+// Generated on: čtvrtek 26. února 2026 15:08:58
+// Resonite version: 2026.2.26.828
+// Resonite Link Version: 0.9.3.0
 // -----------------------------------------------------------------------------
 
 using UnityEngine;
@@ -23,23 +23,23 @@ public partial class ContextMenuItem : global::FrooxEngine.Component, global::Fr
     public global::System.Boolean Highlight { get => Highlight_Element.Data; set => Highlight_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> Highlight_Element = new();
 public global::FrooxEngine.UIX.Image Icon { get => Icon_Element.Data; set => Icon_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.UIX.Image>, global::FrooxEngine.UIX.Image> Icon_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.UIX.Image>, global::FrooxEngine.UIX.Image> Icon_Element = new();
 public global::FrooxEngine.IAssetProvider<global::FrooxEngine.Sprite> Sprite { get => Sprite_Element.Data; set => Sprite_Element.Data = value; }
-public Field<global::FrooxEngine.RelayRef<global::FrooxEngine.IAssetProvider<global::FrooxEngine.Sprite>>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.Sprite>> Sprite_Element = new();
+public Reference<global::FrooxEngine.RelayRef<global::FrooxEngine.IAssetProvider<global::FrooxEngine.Sprite>>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.Sprite>> Sprite_Element = new();
 public global::FrooxEngine.IField<global::System.String> Label { get => Label_Element.Data; set => Label_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.IField<global::System.String>>, global::FrooxEngine.IField<global::System.String>> Label_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.IField<global::System.String>>, global::FrooxEngine.IField<global::System.String>> Label_Element = new();
 public UnityEngine.ColorX Color { get => Color_Element.Data; set => Color_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<UnityEngine.ColorX>, UnityEngine.ColorX> Color_Element = new();
 public global::FrooxEngine.ContextMenu _menu { get => _menu_Element.Data; set => _menu_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.ContextMenu>, global::FrooxEngine.ContextMenu> _menu_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.ContextMenu>, global::FrooxEngine.ContextMenu> _menu_Element = new();
 public global::System.Boolean _highlighted { get => _highlighted_Element.Data; set => _highlighted_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> _highlighted_Element = new();
 public global::FrooxEngine.IField<global::System.Single> _arc { get => _arc_Element.Data; set => _arc_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<global::System.Single>, global::FrooxEngine.IField<global::System.Single>> _arc_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<global::System.Single>, global::FrooxEngine.IField<global::System.Single>> _arc_Element = new();
 public global::FrooxEngine.IField<global::System.Single> _outerRadius { get => _outerRadius_Element.Data; set => _outerRadius_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<global::System.Single>, global::FrooxEngine.IField<global::System.Single>> _outerRadius_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<global::System.Single>, global::FrooxEngine.IField<global::System.Single>> _outerRadius_Element = new();
 public global::FrooxEngine.UIX.Button _button { get => _button_Element.Data; set => _button_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.UIX.Button>, global::FrooxEngine.UIX.Button> _button_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.UIX.Button>, global::FrooxEngine.UIX.Button> _button_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)

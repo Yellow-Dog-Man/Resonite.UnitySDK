@@ -2,9 +2,9 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.Undo.SetType
-// Generated on: čtvrtek 26. února 2026 12:28:13
-// Resonite version: 2026.2.26.702
-// Resonite Link Version: 0.9.2.0
+// Generated on: čtvrtek 26. února 2026 15:09:14
+// Resonite version: 2026.2.26.828
+// Resonite Link Version: 0.9.3.0
 // -----------------------------------------------------------------------------
 
 using UnityEngine;
@@ -21,7 +21,7 @@ public partial class SetType : global::FrooxEngine.Component, global::FrooxEngin
 
 {
     public global::FrooxEngine.SyncType Target { get => Target_Element.Data; set => Target_Element.Data = value; }
-public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.SyncType>, global::FrooxEngine.SyncType> Target_Element = new();
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.SyncType>, global::FrooxEngine.SyncType> Target_Element = new();
 public System.String ValueBefore { get => ValueBefore_Element.Data; set => ValueBefore_Element.Data = value; }
 public Field<global::FrooxEngine.SyncType, System.String> ValueBefore_Element = new();
 public System.String ValueAfter { get => ValueAfter_Element.Data; set => ValueAfter_Element.Data = value; }

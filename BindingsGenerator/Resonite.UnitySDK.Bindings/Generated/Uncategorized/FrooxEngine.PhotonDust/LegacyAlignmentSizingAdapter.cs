@@ -2,9 +2,9 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.PhotonDust.LegacyAlignmentSizingAdapter
-// Generated on: čtvrtek 26. února 2026 12:28:11
-// Resonite version: 2026.2.26.702
-// Resonite Link Version: 0.9.2.0
+// Generated on: čtvrtek 26. února 2026 15:09:12
+// Resonite version: 2026.2.26.828
+// Resonite Link Version: 0.9.3.0
 // -----------------------------------------------------------------------------
 
 using UnityEngine;
@@ -27,33 +27,33 @@ public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Sin
 public global::FrooxEngine.PhotonDust.LegacyParticleAlignment Alignment { get => Alignment_Element.Data; set => Alignment_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<global::FrooxEngine.PhotonDust.LegacyParticleAlignment>, global::FrooxEngine.PhotonDust.LegacyParticleAlignment> Alignment_Element = new();
 public global::FrooxEngine.AssetRef<global::FrooxEngine.Mesh> ParticleMesh { get => ParticleMesh_Element.Data; set => ParticleMesh_Element.Data = value; }
-public Field<global::FrooxEngine.RelayRef<global::FrooxEngine.AssetRef<global::FrooxEngine.Mesh>>, global::FrooxEngine.AssetRef<global::FrooxEngine.Mesh>> ParticleMesh_Element = new();
+public Reference<global::FrooxEngine.RelayRef<global::FrooxEngine.AssetRef<global::FrooxEngine.Mesh>>, global::FrooxEngine.AssetRef<global::FrooxEngine.Mesh>> ParticleMesh_Element = new();
 public global::System.Boolean UsingStretch { get => UsingStretch_Element.Data; set => UsingStretch_Element.Data = value; }
 public Field<global::FrooxEngine.RawOutput<global::System.Boolean>, global::System.Boolean> UsingStretch_Element = new();
 public global::FrooxEngine.IField<global::System.Boolean> RotationSimulator { get => RotationSimulator_Element.Data; set => RotationSimulator_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<global::System.Boolean>, global::FrooxEngine.IField<global::System.Boolean>> RotationSimulator_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<global::System.Boolean>, global::FrooxEngine.IField<global::System.Boolean>> RotationSimulator_Element = new();
 public global::FrooxEngine.IField<global::System.Boolean> OrientByVelocity { get => OrientByVelocity_Element.Data; set => OrientByVelocity_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<global::System.Boolean>, global::FrooxEngine.IField<global::System.Boolean>> OrientByVelocity_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<global::System.Boolean>, global::FrooxEngine.IField<global::System.Boolean>> OrientByVelocity_Element = new();
 public global::FrooxEngine.IField<global::System.Boolean> PivotModule { get => PivotModule_Element.Data; set => PivotModule_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<global::System.Boolean>, global::FrooxEngine.IField<global::System.Boolean>> PivotModule_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<global::System.Boolean>, global::FrooxEngine.IField<global::System.Boolean>> PivotModule_Element = new();
 public global::FrooxEngine.IField<global::System.Boolean> UseLocalRotation { get => UseLocalRotation_Element.Data; set => UseLocalRotation_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<global::System.Boolean>, global::FrooxEngine.IField<global::System.Boolean>> UseLocalRotation_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<global::System.Boolean>, global::FrooxEngine.IField<global::System.Boolean>> UseLocalRotation_Element = new();
 public global::FrooxEngine.IField<global::System.Boolean> SizeModifierEnabled { get => SizeModifierEnabled_Element.Data; set => SizeModifierEnabled_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<global::System.Boolean>, global::FrooxEngine.IField<global::System.Boolean>> SizeModifierEnabled_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<global::System.Boolean>, global::FrooxEngine.IField<global::System.Boolean>> SizeModifierEnabled_Element = new();
 public global::FrooxEngine.IField<global::System.Boolean> SizeOffsetByvelocityEnabled { get => SizeOffsetByvelocityEnabled_Element.Data; set => SizeOffsetByvelocityEnabled_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<global::System.Boolean>, global::FrooxEngine.IField<global::System.Boolean>> SizeOffsetByvelocityEnabled_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<global::System.Boolean>, global::FrooxEngine.IField<global::System.Boolean>> SizeOffsetByvelocityEnabled_Element = new();
 public global::FrooxEngine.IField<UnityEngine.Vector3> OrientUp { get => OrientUp_Element.Data; set => OrientUp_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<UnityEngine.Vector3>, global::FrooxEngine.IField<UnityEngine.Vector3>> OrientUp_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<UnityEngine.Vector3>, global::FrooxEngine.IField<UnityEngine.Vector3>> OrientUp_Element = new();
 public global::FrooxEngine.IField<UnityEngine.Vector3> LengthSizeMultiplier { get => LengthSizeMultiplier_Element.Data; set => LengthSizeMultiplier_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<UnityEngine.Vector3>, global::FrooxEngine.IField<UnityEngine.Vector3>> LengthSizeMultiplier_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<UnityEngine.Vector3>, global::FrooxEngine.IField<UnityEngine.Vector3>> LengthSizeMultiplier_Element = new();
 public global::FrooxEngine.IField<UnityEngine.Vector3> VelocitySizeMultiplier { get => VelocitySizeMultiplier_Element.Data; set => VelocitySizeMultiplier_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<UnityEngine.Vector3>, global::FrooxEngine.IField<UnityEngine.Vector3>> VelocitySizeMultiplier_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<UnityEngine.Vector3>, global::FrooxEngine.IField<UnityEngine.Vector3>> VelocitySizeMultiplier_Element = new();
 public global::FrooxEngine.IField<UnityEngine.Vector3> PivotMultiplier { get => PivotMultiplier_Element.Data; set => PivotMultiplier_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<UnityEngine.Vector3>, global::FrooxEngine.IField<UnityEngine.Vector3>> PivotMultiplier_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<UnityEngine.Vector3>, global::FrooxEngine.IField<UnityEngine.Vector3>> PivotMultiplier_Element = new();
 public global::FrooxEngine.IField<global::Renderite.Shared.BillboardAlignment> BillboardAlignment { get => BillboardAlignment_Element.Data; set => BillboardAlignment_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<global::Renderite.Shared.BillboardAlignment>, global::FrooxEngine.IField<global::Renderite.Shared.BillboardAlignment>> BillboardAlignment_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<global::Renderite.Shared.BillboardAlignment>, global::FrooxEngine.IField<global::Renderite.Shared.BillboardAlignment>> BillboardAlignment_Element = new();
 public global::FrooxEngine.IField<global::Renderite.Shared.MeshAlignment> MeshAlignment { get => MeshAlignment_Element.Data; set => MeshAlignment_Element.Data = value; }
-public Field<global::FrooxEngine.FieldDrive<global::Renderite.Shared.MeshAlignment>, global::FrooxEngine.IField<global::Renderite.Shared.MeshAlignment>> MeshAlignment_Element = new();
+public Reference<global::FrooxEngine.FieldDrive<global::Renderite.Shared.MeshAlignment>, global::FrooxEngine.IField<global::Renderite.Shared.MeshAlignment>> MeshAlignment_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
