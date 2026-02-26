@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: PanningFast
+  m_Name: PanningSlow
   m_Shader: {fileID: 4800000, guid: 7c73d50ad335f06419de045f699d7866, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -80,5 +80,5 @@ Material:
     m_Colors:
     - _Color: {r: 0.7388158, g: 0, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _PanningSpeed: {r: 20, g: -10, b: 0, a: 0}
+    - _PanningSpeed: {r: -0.1, g: 0.1, b: 0, a: 0}
   m_BuildTextureStacks: []
