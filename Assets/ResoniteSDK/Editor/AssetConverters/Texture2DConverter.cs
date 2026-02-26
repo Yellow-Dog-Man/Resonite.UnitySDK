@@ -117,6 +117,16 @@ public class Texture2DConverter : AssetConverter<StaticTexture2DWrapper, StaticT
                 return new ImportTexture2DFile() { FilePath = assetPath };
         }
 
+        if(!texture.isReadable)
+        {
+            var readableTexture = new UnityEngine.Texture2D(texture.width, texture.height,
+                texture.format.IsHDR() ? TextureFormat.RGBAHalf : TextureFormat.RGBA32, false);
+
+            Graphics.CopyTexture(texture, 0, 0, readableTexture, 0, 0);
+
+            texture = readableTexture;
+        }
+
         // It is not supported directly, so we have to extract the raw data and send it over
         if (texture.format.IsHDR())
         {
