@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.IO;
+using System.IO.Pipes;
 using System.Linq;
 using System.Runtime.InteropServices;
 using System.Text;
@@ -15,11 +16,22 @@ public partial class ResoniteBindingGenerator
     {
         var str = new StringBuilder();
 
+        var quickAccessMembers = new HashSet<string>();
+
         foreach(var member in members)
         {
+            var hasQuickAccess = await GenerateMemberQuickAccess(str, member.Key, member.Value, containerType);
+
+            if (hasQuickAccess)
+                quickAccessMembers.Add(member.Key);
+
             str.Append("public ");
             await GenerateMemberDeclaration(str, member.Value, containerType);
-            str.AppendLine($" {member.Key};");
+
+            if(hasQuickAccess)
+                str.AppendLine($" {member.Key}_Element = new();");
+            else
+                str.AppendLine($" {member.Key} = new();");
         }
 
         str.AppendLine();
@@ -32,8 +44,10 @@ public partial class ResoniteBindingGenerator
         // Generate the data conversion for the members
         foreach (var member in members)
         {
+            var hasQuickAccess = quickAccessMembers.Contains(member.Key);
+
             str.Append($"members.Add(\"{member.Key}\", ");
-            await GenerateMemberCollection(str, member.Key, member.Value, containerType);
+            await GenerateMemberCollection(str, member.Key + (hasQuickAccess ? "_Element" : ""), member.Value, containerType);
             str.AppendLine(");");
         }
 
@@ -42,17 +56,31 @@ public partial class ResoniteBindingGenerator
         return str.ToString();
     }
 
+    async Task<bool> GenerateMemberQuickAccess(StringBuilder str, string name, MemberDefinition member, TypeDefinition containerType)
+    {
+        switch(member)
+        {
+            case FieldDefinition field:
+                var valueDec = await GenerateTypeDeclaration(field.ValueType, containerType);
+                str.AppendLine($"public {valueDec} {name} {{ get => {name}_Element.Data; set => {name}_Element.Data = value; }}");
+                return true;
+
+            case ReferenceDefinition reference:
+                var referenceDec = await GenerateTypeDeclaration(reference.TargetType, containerType);
+                str.AppendLine($"public {referenceDec} {name} {{ get => {name}_Element.Data; set => {name}_Element.Data = value; }}");
+                return true;
+
+            case SyncPlaybackDefinition playback:
+                str.AppendLine($"public PlaybackState {name} {{ get => {name}_Element.Data; set => {name}_Element.Data = value; }}");
+                return true;
+
+            default:
+                return false;
+        }
+    }
+
     async Task GenerateMemberDeclaration(StringBuilder str, MemberDefinition member, TypeDefinition containerType)
     {
-        /*if (member.Type == null)
-            throw new System.Exception($"Type is null for member {member} on container: {containerType.FullTypeName}");
-
-        var memberTypeDec = await GenerateTypeDeclaration(member.Type, containerType);
-
-        str.Append("Element<");
-        str.Append(memberTypeDec);
-        str.AppendLine(",");*/
-
         switch (member)
         {
             case FieldDefinition field:
@@ -80,14 +108,12 @@ public partial class ResoniteBindingGenerator
                 break;
 
             case SyncPlaybackDefinition playback:
-                str.Append("PlaybackState");
+                await GeneratePlaybackDeclaration(str, playback, containerType);
                 break;
 
             default:
                 throw new System.NotImplementedException($"Member type not implemented: {member.GetType().FullName}");
         }
-
-        //str.Append(">");
     }
 
     async Task GenerateMemberCollection(StringBuilder str, string name, MemberDefinition member, TypeDefinition containerType)
@@ -119,7 +145,7 @@ public partial class ResoniteBindingGenerator
                 break;
 
             case SyncPlaybackDefinition playback:
-                str.Append($"{name}.ToResoniteLink()");
+                str.Append($"{name}.Data.ToResoniteLink()");
                 break;
 
             default:
@@ -136,7 +162,9 @@ public partial class ResoniteBindingGenerator
         if (typeDec == null)
             throw new System.Exception($"Failed to generate field declaration for type: {field.ValueType}");
 
-        str.Append(typeDec);
+        var memberTypeDec = await GenerateTypeDeclaration(field.Type, containerType);
+
+        str.Append($"Field<{memberTypeDec}, {typeDec}>");
     }
 
     async Task GenerateReferenceDeclaration(StringBuilder str, ReferenceDefinition reference, TypeDefinition containerType)
@@ -146,7 +174,9 @@ public partial class ResoniteBindingGenerator
         if (typeDec == null)
             throw new System.Exception($"Failed to generate reference declaration for type: {reference.TargetType}");
 
-        str.Append(typeDec);
+        var memberTypeDec = await GenerateTypeDeclaration(reference.Type, containerType);
+
+        str.Append($"Field<{memberTypeDec}, {typeDec}>");
     }
 
     async Task GenerateSyncObjectDeclaration(StringBuilder str, SyncObjectMemberDefinition syncObject, TypeDefinition containerType)
@@ -161,9 +191,28 @@ public partial class ResoniteBindingGenerator
 
     async Task GenerateListDeclaration(StringBuilder str, ListDefinition list, TypeDefinition containerType)
     {
-        str.Append("System.Collections.Generic.List<");
+        var memberTypeDec = await GenerateTypeDeclaration(list.Type, containerType);
+
+        switch(list.ElementDefinition)
+        {
+            case FieldDefinition field:
+                var valueDec = await GenerateTypeDeclaration(field.ValueType, containerType);
+                str.Append($"global::SyncFieldList<{memberTypeDec}, {valueDec}, ");
+                break;
+
+            case ReferenceDefinition reference:
+                var referenceDec = await GenerateTypeDeclaration(reference.TargetType, containerType);
+                str.Append($"global::SyncFieldList<{memberTypeDec}, {referenceDec}, ");
+                break;
+
+            default:
+                str.Append($"global::SyncList<{memberTypeDec}, ");
+                break;
+        }
+
         await GenerateMemberDeclaration(str, list.ElementDefinition, containerType);
-        str.Append(">");
+
+        str.Append($">");
     }
 
     async Task GenerateArrayDeclaration(StringBuilder str, ArrayDefinition array, TypeDefinition containerType)
@@ -173,8 +222,9 @@ public partial class ResoniteBindingGenerator
         if (typeDec == null)
             throw new System.Exception($"Failed to generate array declaration for type: {array.ValueType}");
 
-        str.Append(typeDec);
-        str.Append("[]");
+        var memberTypeDec = await GenerateTypeDeclaration(array.Type, containerType);
+
+        str.Append($"global::SyncArray<{memberTypeDec}, {typeDec}>");
     }
 
     async Task GenerateEmptyMemberDeclaration(StringBuilder str, EmptyMemberDefinition empty, TypeDefinition containerType)
@@ -185,6 +235,16 @@ public partial class ResoniteBindingGenerator
             throw new System.Exception($"Failed to generate empty member declaration for type: {empty.Type}");
 
         str.Append(typeDec);
+    }
+
+    async Task GeneratePlaybackDeclaration(StringBuilder str, SyncPlaybackDefinition playback, TypeDefinition containerType)
+    {
+        var typeDec = await GenerateTypeDeclaration(playback.Type, containerType);
+
+        if (typeDec == null)
+            throw new System.Exception($"Failed to generate playback member declaration for type: {playback.Type}");
+
+        str.Append($"Field<{typeDec}, PlaybackState>");
     }
 
     async ValueTask<string> GenerateTypeDeclaration(TypeReference type, TypeDefinition containerType)
@@ -211,19 +271,19 @@ public partial class ResoniteBindingGenerator
 
     async Task GenerateFieldCollection(StringBuilder str, string name, FieldDefinition field, TypeDefinition containerType)
     {
-        str.Append($"{name}.ToResoniteLinkField()");
+        str.Append($"{name}.Data.ToResoniteLinkField()");
     }
 
     async Task GenerateReferenceCollection(StringBuilder str, string name, ReferenceDefinition reference, TypeDefinition containerType)
     {
-        str.Append($"{name}.ToResoniteReference(context)");
+        str.Append($"{name}.Data.ToResoniteReference(context)");
     }
 
     async Task GenerateListCollection(StringBuilder str, string name, ListDefinition list, TypeDefinition containerType)
     {
         str.Append($@"new ResoniteLink.SyncList()
 {{
-    Elements = {name}.ConvertList(m => ");
+    Elements = {name}.Data.ConvertList(m => ");
 
         // Generate collection for the nested member 
         await GenerateMemberCollection(str, "m", list.ElementDefinition, containerType);
@@ -234,7 +294,7 @@ public partial class ResoniteBindingGenerator
 
     async Task GenerateArrayCollection(StringBuilder str, string name, ArrayDefinition array, TypeDefinition containerType)
     {
-        str.Append($"{name}.ToResoniteLinkArray()");
+        str.Append($"{name}.Data.ToResoniteLinkArray()");
     }
 
     async Task GenerateSyncObjectCollection(StringBuilder str, string name, SyncObjectMemberDefinition syncObject, TypeDefinition containerType)

@@ -478,18 +478,25 @@ public partial class ResoniteBindingGenerator
             declarationType = "partial class";
 
         // Collect interface implementations
-        if (type.Interfaces != null && includeInterfaces)
-            foreach (var @interface in type.Interfaces)
+        if (includeInterfaces)
+        {
+            void AddInterface(string declaration)
             {
                 if (string.IsNullOrEmpty(baseDef))
                     baseDef += ": ";
                 else
                     baseDef += ", ";
 
-                var interfaceDefinition = await GetTypeDefinition(@interface.Type);
-
-                baseDef += await FullyQualifyType(interfaceDefinition, @interface.GenericArguments, type.FullTypeName);
+                baseDef += declaration;
             }
+
+            if (type.Interfaces != null)
+                foreach (var @interface in type.Interfaces)
+                {
+                    var interfaceDefinition = await GetTypeDefinition(@interface.Type);
+                    AddInterface(await FullyQualifyType(interfaceDefinition, @interface.GenericArguments, type.FullTypeName));
+                }
+        }
 
         string constraints = "";
 
@@ -530,6 +537,8 @@ public {declarationType} {classDef} {baseDef}
         if (parameter.Enum)
             constraints.Add("System.Enum");
 
+        bool addNewConstraint = false;
+
         if (parameter.Types != null)
             foreach (var type in parameter.Types)
             {
@@ -539,14 +548,17 @@ public {declarationType} {classDef} {baseDef}
                 {
                     var typeDefinition = await GetTypeDefinition(type.Type);
                     constraints.Add(await FullyQualifyType(typeDefinition, type.GenericArguments, parameter.Name));
+
+                    if (typeDefinition.IsSyncObject)
+                        addNewConstraint = true;
                 }
             }
 
-        // Always add the new() constraint
+        // Add the new() constraint
         // This is because the bindings can always be instantiated and often will be for references
         // This makes it work with the Element<TReference, TData> wrapper
-        //if(!parameter.Struct && !parameter.Unmanaged && !parameter.Enum)
-        //    constraints.Add("new()");
+        if (addNewConstraint)
+            constraints.Add("new()");
 
         if (constraints.Count > 0)
             return $"where {parameter.Name} : {string.Join(", ", constraints)}";
