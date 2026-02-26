@@ -15,10 +15,12 @@ public class Field<TReference, TData> : IField<TData>
     where TReference : IWorldElement, new()
 {
     [SerializeField]
-    public TData Data { get; set; }
+    public TData Data;
 
     [NonSerialized]
     public TReference Reference = new();
+
+    TData IField<TData>.Data { get => Data; set => Data = value; }
 
     public ResoniteLink.Field ToLinkField(IConversionContext context)
     {

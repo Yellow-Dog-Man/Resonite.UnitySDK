@@ -10,7 +10,7 @@ public class SyncList<TReference, TElement>
     where TReference : IWorldElement, new()
 {
     [SerializeField]
-    public List<TElement> Data { get; set; } = new List<TElement>();
+    public List<TElement> Data = new List<TElement>();
 
     [NonSerialized]
     public TReference Reference = new();

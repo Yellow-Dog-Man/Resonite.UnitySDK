@@ -9,7 +9,7 @@ public class SyncArray<TReference, TData>
     where TReference : IWorldElement, new()
 {
     [SerializeField]
-    public TData[] Data { get; set; }
+    public TData[] Data;
 
     [NonSerialized]
     public TReference Reference = new();
