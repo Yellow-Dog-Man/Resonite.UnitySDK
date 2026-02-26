@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.ContextMenuSubmenu
-// Generated on: čtvrtek 26. února 2026 10:04:35
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:28:01
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -39,13 +39,13 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("ItemsRoot", ItemsRoot_Element.Data.ToResoniteReference(context));
-members.Add("SearchWholeHierarchy", SearchWholeHierarchy_Element.Data.ToResoniteLinkField());
-members.Add("DisableFlick", DisableFlick_Element.Data.ToResoniteLinkField());
-members.Add("SpeedOverride", SpeedOverride_Element.Data.ToResoniteLinkField());
-members.Add("CounterClockwise", CounterClockwise_Element.Data.ToResoniteLinkField());
-members.Add("KeepPosition", KeepPosition_Element.Data.ToResoniteLinkField());
-members.Add("Hidden", Hidden_Element.Data.ToResoniteLinkField());
+members.Add("ItemsRoot", ItemsRoot_Element.ToLinkReference(context));
+members.Add("SearchWholeHierarchy", SearchWholeHierarchy_Element.ToLinkField(context));
+members.Add("DisableFlick", DisableFlick_Element.ToLinkField(context));
+members.Add("SpeedOverride", SpeedOverride_Element.ToLinkField(context));
+members.Add("CounterClockwise", CounterClockwise_Element.ToLinkField(context));
+members.Add("KeepPosition", KeepPosition_Element.ToLinkField(context));
+members.Add("Hidden", Hidden_Element.ToLinkField(context));
 }
 
 }

@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.Gizmo
-// Generated on: čtvrtek 26. února 2026 10:04:43
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:28:09
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -43,15 +43,15 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("TargetSlot", TargetSlot_Element.Data.ToResoniteReference(context));
-members.Add("AutoPositionAtTargetSlot", AutoPositionAtTargetSlot_Element.Data.ToResoniteLinkField());
-members.Add("_interactingComponent", _interactingComponent_Element.Data.ToResoniteReference(context));
-members.Add("_material", _material_Element.Data.ToResoniteReference(context));
-members.Add("_toolPoint", _toolPoint_Element.Data.ToResoniteReference(context));
-members.Add("_activePoint", _activePoint_Element.Data.ToResoniteReference(context));
-members.Add("_lineRoot", _lineRoot_Element.Data.ToResoniteReference(context));
-members.Add("_lineSegment", _lineSegment_Element.Data.ToResoniteReference(context));
-members.Add("_snapHighlight", _snapHighlight_Element.Data.ToResoniteReference(context));
+members.Add("TargetSlot", TargetSlot_Element.ToLinkReference(context));
+members.Add("AutoPositionAtTargetSlot", AutoPositionAtTargetSlot_Element.ToLinkField(context));
+members.Add("_interactingComponent", _interactingComponent_Element.ToLinkReference(context));
+members.Add("_material", _material_Element.ToLinkReference(context));
+members.Add("_toolPoint", _toolPoint_Element.ToLinkReference(context));
+members.Add("_activePoint", _activePoint_Element.ToLinkReference(context));
+members.Add("_lineRoot", _lineRoot_Element.ToLinkReference(context));
+members.Add("_lineSegment", _lineSegment_Element.ToLinkReference(context));
+members.Add("_snapHighlight", _snapHighlight_Element.ToLinkReference(context));
 }
 
 }

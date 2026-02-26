@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.ButtonParentUnderUser
-// Generated on: čtvrtek 26. února 2026 10:03:37
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:26:53
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -35,11 +35,11 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Root", Root_Element.Data.ToResoniteReference(context));
-members.Add("FindObjectRoot", FindObjectRoot_Element.Data.ToResoniteLinkField());
-members.Add("UnparentWhenParented", UnparentWhenParented_Element.Data.ToResoniteLinkField());
-members.Add("PreserveOriginalSpace", PreserveOriginalSpace_Element.Data.ToResoniteLinkField());
-members.Add("_originalSpace", _originalSpace_Element.Data.ToResoniteReference(context));
+members.Add("Root", Root_Element.ToLinkReference(context));
+members.Add("FindObjectRoot", FindObjectRoot_Element.ToLinkField(context));
+members.Add("UnparentWhenParented", UnparentWhenParented_Element.ToLinkField(context));
+members.Add("PreserveOriginalSpace", PreserveOriginalSpace_Element.ToLinkField(context));
+members.Add("_originalSpace", _originalSpace_Element.ToLinkReference(context));
 }
 
 }

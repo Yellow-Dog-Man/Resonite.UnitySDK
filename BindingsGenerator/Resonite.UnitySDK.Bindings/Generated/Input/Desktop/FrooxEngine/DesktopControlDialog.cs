@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.DesktopControlDialog
-// Generated on: čtvrtek 26. února 2026 10:03:39
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:26:55
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -37,12 +37,12 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("InteractionRelay", InteractionRelay_Element.Data.ToResoniteReference(context));
-members.Add("Index", Index_Element.Data.ToResoniteLinkField());
-members.Add("FollowCursor", FollowCursor_Element.Data.ToResoniteLinkField());
-members.Add("Brightness", Brightness_Element.Data.ToResoniteLinkField());
-members.Add("Opacity", Opacity_Element.Data.ToResoniteLinkField());
-members.Add("LegacyInputMode", LegacyInputMode_Element.Data.ToResoniteLinkField());
+members.Add("InteractionRelay", InteractionRelay_Element.ToLinkReference(context));
+members.Add("Index", Index_Element.ToLinkField(context));
+members.Add("FollowCursor", FollowCursor_Element.ToLinkField(context));
+members.Add("Brightness", Brightness_Element.ToLinkField(context));
+members.Add("Opacity", Opacity_Element.ToLinkField(context));
+members.Add("LegacyInputMode", LegacyInputMode_Element.ToLinkField(context));
 }
 
 }

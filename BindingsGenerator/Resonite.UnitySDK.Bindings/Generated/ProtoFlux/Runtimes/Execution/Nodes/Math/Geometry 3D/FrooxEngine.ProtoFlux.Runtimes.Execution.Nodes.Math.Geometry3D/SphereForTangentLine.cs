@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [ProtoFluxBindings]FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.Math.Geometry3D.SphereForTangentLine
-// Generated on: čtvrtek 26. února 2026 10:04:18
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:27:39
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -33,11 +33,11 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("LinePoint", LinePoint_Element.Data.ToResoniteReference(context));
-members.Add("LineDirection", LineDirection_Element.Data.ToResoniteReference(context));
-members.Add("SphereCenter", SphereCenter_Element.Data.ToResoniteReference(context));
-members.Add("TangentPoint", new ResoniteLink.EmptyElement());
-members.Add("Radius", new ResoniteLink.EmptyElement());
+members.Add("LinePoint", LinePoint_Element.ToLinkReference(context));
+members.Add("LineDirection", LineDirection_Element.ToLinkReference(context));
+members.Add("SphereCenter", SphereCenter_Element.ToLinkReference(context));
+members.Add("TangentPoint", TangentPoint.ToLinkEmpty(context));
+members.Add("Radius", Radius.ToLinkEmpty(context));
 }
 
 }

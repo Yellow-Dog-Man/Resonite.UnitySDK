@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.InteractiveCameraFramingSettings
-// Generated on: čtvrtek 26. února 2026 10:04:46
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:28:11
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -45,16 +45,16 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("PositioningMode", PositioningMode_Element.Data.ToResoniteLinkField());
-members.Add("FieldOfView", FieldOfView_Element.Data.ToResoniteLinkField());
-members.Add("AnglePosition", AnglePosition_Element.Data.ToResoniteLinkField());
-members.Add("Distance", Distance_Element.Data.ToResoniteLinkField());
-members.Add("HeightOffset", HeightOffset_Element.Data.ToResoniteLinkField());
-members.Add("FirstPersonPitch", FirstPersonPitch_Element.Data.ToResoniteLinkField());
-members.Add("FirstPersonRoll", FirstPersonRoll_Element.Data.ToResoniteLinkField());
-members.Add("FirstPersonOffset", FirstPersonOffset_Element.Data.ToResoniteLinkField());
-members.Add("FramingViewportPosition", FramingViewportPosition_Element.Data.ToResoniteLinkField());
-members.Add("AimInFrontOfHead", AimInFrontOfHead_Element.Data.ToResoniteLinkField());
+members.Add("PositioningMode", PositioningMode_Element.ToLinkField(context));
+members.Add("FieldOfView", FieldOfView_Element.ToLinkField(context));
+members.Add("AnglePosition", AnglePosition_Element.ToLinkField(context));
+members.Add("Distance", Distance_Element.ToLinkField(context));
+members.Add("HeightOffset", HeightOffset_Element.ToLinkField(context));
+members.Add("FirstPersonPitch", FirstPersonPitch_Element.ToLinkField(context));
+members.Add("FirstPersonRoll", FirstPersonRoll_Element.ToLinkField(context));
+members.Add("FirstPersonOffset", FirstPersonOffset_Element.ToLinkField(context));
+members.Add("FramingViewportPosition", FramingViewportPosition_Element.ToLinkField(context));
+members.Add("AimInFrontOfHead", AimInFrontOfHead_Element.ToLinkField(context));
 }
 
 }

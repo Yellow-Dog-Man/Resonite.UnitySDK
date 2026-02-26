@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.DashSettings
-// Generated on: čtvrtek 26. února 2026 10:04:44
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:28:10
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -31,9 +31,9 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("DashCurvature", DashCurvature_Element.Data.ToResoniteLinkField());
-members.Add("OpenCloseSpeed", OpenCloseSpeed_Element.Data.ToResoniteLinkField());
-members.Add("AllowReplacingSettings", AllowReplacingSettings_Element.Data.ToResoniteLinkField());
+members.Add("DashCurvature", DashCurvature_Element.ToLinkField(context));
+members.Add("OpenCloseSpeed", OpenCloseSpeed_Element.ToLinkField(context));
+members.Add("AllowReplacingSettings", AllowReplacingSettings_Element.ToLinkField(context));
 }
 
 }

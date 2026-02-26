@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.DynamicSpriteFont+SpriteGlyph
-// Generated on: čtvrtek 26. února 2026 10:03:35
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:26:50
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -41,13 +41,13 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("SpriteURL", SpriteURL_Element.Data.ToResoniteLinkField());
-members.Add("UnicodeCodepoint", UnicodeCodepoint_Element.Data.ToResoniteLinkField());
-members.Add("SpriteName", SpriteName_Element.Data.ToResoniteLinkField());
-members.Add("Bearing", Bearing_Element.Data.ToResoniteLinkField());
-members.Add("Advance", Advance_Element.Data.ToResoniteLinkField());
-members.Add("Size", Size_Element.Data.ToResoniteLinkField());
-members.Add("Tintable", Tintable_Element.Data.ToResoniteLinkField());
+members.Add("SpriteURL", SpriteURL_Element.ToLinkField(context));
+members.Add("UnicodeCodepoint", UnicodeCodepoint_Element.ToLinkField(context));
+members.Add("SpriteName", SpriteName_Element.ToLinkField(context));
+members.Add("Bearing", Bearing_Element.ToLinkField(context));
+members.Add("Advance", Advance_Element.ToLinkField(context));
+members.Add("Size", Size_Element.ToLinkField(context));
+members.Add("Tintable", Tintable_Element.ToLinkField(context));
 }
 
 }

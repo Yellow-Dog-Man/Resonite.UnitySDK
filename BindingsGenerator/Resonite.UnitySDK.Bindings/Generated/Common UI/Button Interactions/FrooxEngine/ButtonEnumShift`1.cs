@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.ButtonEnumShift<>
-// Generated on: čtvrtek 26. února 2026 10:03:37
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:26:53
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -30,8 +30,8 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("TargetValue", TargetValue_Element.Data.ToResoniteReference(context));
-members.Add("ShiftDelta", ShiftDelta_Element.Data.ToResoniteLinkField());
+members.Add("TargetValue", TargetValue_Element.ToLinkReference(context));
+members.Add("ShiftDelta", ShiftDelta_Element.ToLinkField(context));
 }
 
 }

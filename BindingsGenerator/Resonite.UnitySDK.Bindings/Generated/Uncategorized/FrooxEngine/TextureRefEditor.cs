@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.TextureRefEditor
-// Generated on: čtvrtek 26. února 2026 10:04:48
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:28:13
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -43,15 +43,15 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("_targetRef", _targetRef_Element.Data.ToResoniteReference(context));
-members.Add("_drive", _drive_Element.Data.ToResoniteReference(context));
-members.Add("_clearReferenceButton", _clearReferenceButton_Element.Data.ToResoniteReference(context));
-members.Add("_openInspectorButton", _openInspectorButton_Element.Data.ToResoniteReference(context));
-members.Add("_copyTextureButton", _copyTextureButton_Element.Data.ToResoniteReference(context));
-members.Add("_pasteTextureButton", _pasteTextureButton_Element.Data.ToResoniteReference(context));
-members.Add("_referenceText", _referenceText_Element.Data.ToResoniteReference(context));
-members.Add("_infoText", _infoText_Element.Data.ToResoniteReference(context));
-members.Add("_isNormalMap", _isNormalMap_Element.Data.ToResoniteLinkField());
+members.Add("_targetRef", _targetRef_Element.ToLinkReference(context));
+members.Add("_drive", _drive_Element.ToLinkReference(context));
+members.Add("_clearReferenceButton", _clearReferenceButton_Element.ToLinkReference(context));
+members.Add("_openInspectorButton", _openInspectorButton_Element.ToLinkReference(context));
+members.Add("_copyTextureButton", _copyTextureButton_Element.ToLinkReference(context));
+members.Add("_pasteTextureButton", _pasteTextureButton_Element.ToLinkReference(context));
+members.Add("_referenceText", _referenceText_Element.ToLinkReference(context));
+members.Add("_infoText", _infoText_Element.ToLinkReference(context));
+members.Add("_isNormalMap", _isNormalMap_Element.ToLinkField(context));
 }
 
 }

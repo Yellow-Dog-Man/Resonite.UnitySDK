@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.SessionInfoSource
-// Generated on: čtvrtek 26. února 2026 10:04:51
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:28:16
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -73,37 +73,31 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("SessionId", SessionId_Element.Data.ToResoniteLinkField());
-members.Add("IsOpen", IsOpen_Element.Data.ToResoniteLinkField());
-members.Add("LastUpdated", LastUpdated_Element.Data.ToResoniteLinkField());
-members.Add("Name", Name_Element.Data.ToResoniteLinkField());
-members.Add("Description", Description_Element.Data.ToResoniteLinkField());
-members.Add("Tags", new ResoniteLink.SyncList()
-{
-    Elements = Tags.Data.ConvertList(m => m.Data.ToResoniteLinkField())
-});
-members.Add("CorrespondingRecordId", CorrespondingRecordId_Element.Data.ToResoniteLinkField());
-members.Add("CorrespondingOwnerId", CorrespondingOwnerId_Element.Data.ToResoniteLinkField());
-members.Add("HostUserId", HostUserId_Element.Data.ToResoniteLinkField());
-members.Add("HostUsername", HostUsername_Element.Data.ToResoniteLinkField());
-members.Add("SanitizedHostUsername", SanitizedHostUsername_Element.Data.ToResoniteLinkField());
-members.Add("AppVersion", AppVersion_Element.Data.ToResoniteLinkField());
-members.Add("HeadlessHost", HeadlessHost_Element.Data.ToResoniteLinkField());
-members.Add("SessionURLs", new ResoniteLink.SyncList()
-{
-    Elements = SessionURLs.Data.ConvertList(m => m.Data.ToResoniteLinkField())
-});
-members.Add("Thumbnail", Thumbnail_Element.Data.ToResoniteLinkField());
-members.Add("JoinedUsers", JoinedUsers_Element.Data.ToResoniteLinkField());
-members.Add("ActiveUsers", ActiveUsers_Element.Data.ToResoniteLinkField());
-members.Add("TotalJoinedUsers", TotalJoinedUsers_Element.Data.ToResoniteLinkField());
-members.Add("TotalActiveUsers", TotalActiveUsers_Element.Data.ToResoniteLinkField());
-members.Add("MaximumUsers", MaximumUsers_Element.Data.ToResoniteLinkField());
-members.Add("MobileFriendly", MobileFriendly_Element.Data.ToResoniteLinkField());
-members.Add("AccessLevel", AccessLevel_Element.Data.ToResoniteLinkField());
-members.Add("IsOnLAN", IsOnLAN_Element.Data.ToResoniteLinkField());
-members.Add("AwayKickEnabled", AwayKickEnabled_Element.Data.ToResoniteLinkField());
-members.Add("AwayKickInterval", AwayKickInterval_Element.Data.ToResoniteLinkField());
+members.Add("SessionId", SessionId_Element.ToLinkField(context));
+members.Add("IsOpen", IsOpen_Element.ToLinkField(context));
+members.Add("LastUpdated", LastUpdated_Element.ToLinkField(context));
+members.Add("Name", Name_Element.ToLinkField(context));
+members.Add("Description", Description_Element.ToLinkField(context));
+members.Add("Tags", Tags.ToLinkList(context, m => m.ToLinkField(context)));
+members.Add("CorrespondingRecordId", CorrespondingRecordId_Element.ToLinkField(context));
+members.Add("CorrespondingOwnerId", CorrespondingOwnerId_Element.ToLinkField(context));
+members.Add("HostUserId", HostUserId_Element.ToLinkField(context));
+members.Add("HostUsername", HostUsername_Element.ToLinkField(context));
+members.Add("SanitizedHostUsername", SanitizedHostUsername_Element.ToLinkField(context));
+members.Add("AppVersion", AppVersion_Element.ToLinkField(context));
+members.Add("HeadlessHost", HeadlessHost_Element.ToLinkField(context));
+members.Add("SessionURLs", SessionURLs.ToLinkList(context, m => m.ToLinkField(context)));
+members.Add("Thumbnail", Thumbnail_Element.ToLinkField(context));
+members.Add("JoinedUsers", JoinedUsers_Element.ToLinkField(context));
+members.Add("ActiveUsers", ActiveUsers_Element.ToLinkField(context));
+members.Add("TotalJoinedUsers", TotalJoinedUsers_Element.ToLinkField(context));
+members.Add("TotalActiveUsers", TotalActiveUsers_Element.ToLinkField(context));
+members.Add("MaximumUsers", MaximumUsers_Element.ToLinkField(context));
+members.Add("MobileFriendly", MobileFriendly_Element.ToLinkField(context));
+members.Add("AccessLevel", AccessLevel_Element.ToLinkField(context));
+members.Add("IsOnLAN", IsOnLAN_Element.ToLinkField(context));
+members.Add("AwayKickEnabled", AwayKickEnabled_Element.ToLinkField(context));
+members.Add("AwayKickInterval", AwayKickInterval_Element.ToLinkField(context));
 }
 
 }

@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [ProtoFluxBindings]FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.Binary.ExtractBits_sbyte
-// Generated on: čtvrtek 26. února 2026 10:04:34
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:27:59
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -35,15 +35,15 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Integer", Integer_Element.Data.ToResoniteReference(context));
-members.Add("Bit0", new ResoniteLink.EmptyElement());
-members.Add("Bit1", new ResoniteLink.EmptyElement());
-members.Add("Bit2", new ResoniteLink.EmptyElement());
-members.Add("Bit3", new ResoniteLink.EmptyElement());
-members.Add("Bit4", new ResoniteLink.EmptyElement());
-members.Add("Bit5", new ResoniteLink.EmptyElement());
-members.Add("Bit6", new ResoniteLink.EmptyElement());
-members.Add("Bit7", new ResoniteLink.EmptyElement());
+members.Add("Integer", Integer_Element.ToLinkReference(context));
+members.Add("Bit0", Bit0.ToLinkEmpty(context));
+members.Add("Bit1", Bit1.ToLinkEmpty(context));
+members.Add("Bit2", Bit2.ToLinkEmpty(context));
+members.Add("Bit3", Bit3.ToLinkEmpty(context));
+members.Add("Bit4", Bit4.ToLinkEmpty(context));
+members.Add("Bit5", Bit5.ToLinkEmpty(context));
+members.Add("Bit6", Bit6.ToLinkEmpty(context));
+members.Add("Bit7", Bit7.ToLinkEmpty(context));
 }
 
 }

@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.ScaleObjectManager
-// Generated on: čtvrtek 26. února 2026 10:04:42
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:28:08
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -57,22 +57,22 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("ScalePower", ScalePower_Element.Data.ToResoniteLinkField());
-members.Add("LowerBound", LowerBound_Element.Data.ToResoniteLinkField());
-members.Add("UpperBound", UpperBound_Element.Data.ToResoniteLinkField());
-members.Add("FarSizeTransitionRange", FarSizeTransitionRange_Element.Data.ToResoniteLinkField());
-members.Add("FarSizeTransitionExp", FarSizeTransitionExp_Element.Data.ToResoniteLinkField());
-members.Add("NearSizeTransitionRange", NearSizeTransitionRange_Element.Data.ToResoniteLinkField());
-members.Add("NearSizeTransitionExp", NearSizeTransitionExp_Element.Data.ToResoniteLinkField());
-members.Add("FarOffsetTransitionRange", FarOffsetTransitionRange_Element.Data.ToResoniteLinkField());
-members.Add("FarOffsetTransitionExp", FarOffsetTransitionExp_Element.Data.ToResoniteLinkField());
-members.Add("FarTransitionOffset", FarTransitionOffset_Element.Data.ToResoniteLinkField());
-members.Add("NearOffsetTransitionRange", NearOffsetTransitionRange_Element.Data.ToResoniteLinkField());
-members.Add("NearOffsetTransitionExp", NearOffsetTransitionExp_Element.Data.ToResoniteLinkField());
-members.Add("NearTransitionOffset", NearTransitionOffset_Element.Data.ToResoniteLinkField());
-members.Add("CenterOffsetRadius", CenterOffsetRadius_Element.Data.ToResoniteLinkField());
-members.Add("OptimalDistance", OptimalDistance_Element.Data.ToResoniteLinkField());
-members.Add("CoordinatePowerBase", CoordinatePowerBase_Element.Data.ToResoniteLinkField());
+members.Add("ScalePower", ScalePower_Element.ToLinkField(context));
+members.Add("LowerBound", LowerBound_Element.ToLinkField(context));
+members.Add("UpperBound", UpperBound_Element.ToLinkField(context));
+members.Add("FarSizeTransitionRange", FarSizeTransitionRange_Element.ToLinkField(context));
+members.Add("FarSizeTransitionExp", FarSizeTransitionExp_Element.ToLinkField(context));
+members.Add("NearSizeTransitionRange", NearSizeTransitionRange_Element.ToLinkField(context));
+members.Add("NearSizeTransitionExp", NearSizeTransitionExp_Element.ToLinkField(context));
+members.Add("FarOffsetTransitionRange", FarOffsetTransitionRange_Element.ToLinkField(context));
+members.Add("FarOffsetTransitionExp", FarOffsetTransitionExp_Element.ToLinkField(context));
+members.Add("FarTransitionOffset", FarTransitionOffset_Element.ToLinkField(context));
+members.Add("NearOffsetTransitionRange", NearOffsetTransitionRange_Element.ToLinkField(context));
+members.Add("NearOffsetTransitionExp", NearOffsetTransitionExp_Element.ToLinkField(context));
+members.Add("NearTransitionOffset", NearTransitionOffset_Element.ToLinkField(context));
+members.Add("CenterOffsetRadius", CenterOffsetRadius_Element.ToLinkField(context));
+members.Add("OptimalDistance", OptimalDistance_Element.ToLinkField(context));
+members.Add("CoordinatePowerBase", CoordinatePowerBase_Element.ToLinkField(context));
 }
 
 }

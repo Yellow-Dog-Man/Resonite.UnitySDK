@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.ConeGizmo+Handle
-// Generated on: čtvrtek 26. února 2026 10:04:44
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:28:09
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -35,10 +35,10 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("RelativeHeight", RelativeHeight_Element.Data.ToResoniteLinkField());
-members.Add("root", root_Element.Data.ToResoniteReference(context));
-members.Add("offset", offset_Element.Data.ToResoniteReference(context));
-members.Add("mesh", mesh_Element.Data.ToResoniteReference(context));
+members.Add("RelativeHeight", RelativeHeight_Element.ToLinkField(context));
+members.Add("root", root_Element.ToLinkReference(context));
+members.Add("offset", offset_Element.ToLinkReference(context));
+members.Add("mesh", mesh_Element.ToLinkReference(context));
 }
 
 }

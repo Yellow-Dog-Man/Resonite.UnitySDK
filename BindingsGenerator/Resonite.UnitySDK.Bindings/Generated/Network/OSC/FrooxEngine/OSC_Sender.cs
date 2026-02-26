@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.OSC_Sender
-// Generated on: čtvrtek 26. února 2026 10:03:40
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:26:57
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -35,11 +35,11 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("URL", URL_Element.Data.ToResoniteLinkField());
-members.Add("LocalPort", LocalPort_Element.Data.ToResoniteLinkField());
-members.Add("IsSending", IsSending_Element.Data.ToResoniteLinkField());
-members.Add("SendMode", SendMode_Element.Data.ToResoniteLinkField());
-members.Add("AutoResendInterval", AutoResendInterval_Element.Data.ToResoniteLinkField());
+members.Add("URL", URL_Element.ToLinkField(context));
+members.Add("LocalPort", LocalPort_Element.ToLinkField(context));
+members.Add("IsSending", IsSending_Element.ToLinkField(context));
+members.Add("SendMode", SendMode_Element.ToLinkField(context));
+members.Add("AutoResendInterval", AutoResendInterval_Element.ToLinkField(context));
 }
 
 }

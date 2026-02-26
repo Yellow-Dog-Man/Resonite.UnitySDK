@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.VoiceModeSync
-// Generated on: čtvrtek 26. února 2026 10:04:50
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:28:16
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -39,13 +39,13 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("FocusedWorldVoiceMode", FocusedWorldVoiceMode_Element.Data.ToResoniteLinkField());
-members.Add("GlobalMute", GlobalMute_Element.Data.ToResoniteLinkField());
-members.Add("FocusedWorldMaxAllowedVoiceMode", FocusedWorldMaxAllowedVoiceMode_Element.Data.ToResoniteLinkField());
-members.Add("BroadcastAllowed", BroadcastAllowed_Element.Data.ToResoniteLinkField());
-members.Add("ShoutAllowed", ShoutAllowed_Element.Data.ToResoniteLinkField());
-members.Add("NormalAllowed", NormalAllowed_Element.Data.ToResoniteLinkField());
-members.Add("WhisperAllowed", WhisperAllowed_Element.Data.ToResoniteLinkField());
+members.Add("FocusedWorldVoiceMode", FocusedWorldVoiceMode_Element.ToLinkField(context));
+members.Add("GlobalMute", GlobalMute_Element.ToLinkField(context));
+members.Add("FocusedWorldMaxAllowedVoiceMode", FocusedWorldMaxAllowedVoiceMode_Element.ToLinkField(context));
+members.Add("BroadcastAllowed", BroadcastAllowed_Element.ToLinkField(context));
+members.Add("ShoutAllowed", ShoutAllowed_Element.ToLinkField(context));
+members.Add("NormalAllowed", NormalAllowed_Element.ToLinkField(context));
+members.Add("WhisperAllowed", WhisperAllowed_Element.ToLinkField(context));
 }
 
 }

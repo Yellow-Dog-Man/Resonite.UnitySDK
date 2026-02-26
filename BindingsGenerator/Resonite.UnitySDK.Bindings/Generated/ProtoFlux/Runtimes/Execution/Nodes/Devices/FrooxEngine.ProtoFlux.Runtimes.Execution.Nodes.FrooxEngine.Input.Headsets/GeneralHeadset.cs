@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [ProtoFluxBindings]FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Input.Headsets.GeneralHeadset
-// Generated on: čtvrtek 26. února 2026 10:04:12
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:27:32
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -30,10 +30,10 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("User", User_Element.Data.ToResoniteReference(context));
-members.Add("IsActive", new ResoniteLink.EmptyElement());
-members.Add("BatteryLevel", new ResoniteLink.EmptyElement());
-members.Add("IsBatteryCharging", new ResoniteLink.EmptyElement());
+members.Add("User", User_Element.ToLinkReference(context));
+members.Add("IsActive", IsActive.ToLinkEmpty(context));
+members.Add("BatteryLevel", BatteryLevel.ToLinkEmpty(context));
+members.Add("IsBatteryCharging", IsBatteryCharging.ToLinkEmpty(context));
 }
 
 }

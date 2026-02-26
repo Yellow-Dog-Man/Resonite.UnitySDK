@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.PagingControl
-// Generated on: čtvrtek 26. února 2026 10:03:38
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:26:54
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -47,17 +47,17 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("ItemsPerPage", ItemsPerPage_Element.Data.ToResoniteLinkField());
-members.Add("TotalItems", TotalItems_Element.Data.ToResoniteLinkField());
-members.Add("HasMoreItems", HasMoreItems_Element.Data.ToResoniteLinkField());
-members.Add("SkipItems", SkipItems_Element.Data.ToResoniteLinkField());
-members.Add("NoItemsLabel", NoItemsLabel_Element.Data.ToResoniteLinkField());
-members.Add("PagingInfoLabel", PagingInfoLabel_Element.Data.ToResoniteLinkField());
-members.Add("TotalPages", TotalPages_Element.Data.ToResoniteLinkField());
-members.Add("RemainingItems", RemainingItems_Element.Data.ToResoniteLinkField());
-members.Add("_label", _label_Element.Data.ToResoniteReference(context));
-members.Add("_previousEnabled", _previousEnabled_Element.Data.ToResoniteReference(context));
-members.Add("_nextEnabled", _nextEnabled_Element.Data.ToResoniteReference(context));
+members.Add("ItemsPerPage", ItemsPerPage_Element.ToLinkField(context));
+members.Add("TotalItems", TotalItems_Element.ToLinkField(context));
+members.Add("HasMoreItems", HasMoreItems_Element.ToLinkField(context));
+members.Add("SkipItems", SkipItems_Element.ToLinkField(context));
+members.Add("NoItemsLabel", NoItemsLabel_Element.ToLinkField(context));
+members.Add("PagingInfoLabel", PagingInfoLabel_Element.ToLinkField(context));
+members.Add("TotalPages", TotalPages_Element.ToLinkField(context));
+members.Add("RemainingItems", RemainingItems_Element.ToLinkField(context));
+members.Add("_label", _label_Element.ToLinkReference(context));
+members.Add("_previousEnabled", _previousEnabled_Element.ToLinkReference(context));
+members.Add("_nextEnabled", _nextEnabled_Element.ToLinkReference(context));
 }
 
 }

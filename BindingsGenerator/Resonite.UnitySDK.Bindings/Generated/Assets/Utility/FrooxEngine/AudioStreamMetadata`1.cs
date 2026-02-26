@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.AudioStreamMetadata<>
-// Generated on: čtvrtek 26. února 2026 10:03:36
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:26:51
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -60,23 +60,23 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Stream", Stream_Element.Data.ToResoniteReference(context));
-members.Add("UnreadSamples", UnreadSamples_Element.Data.ToResoniteLinkField());
-members.Add("TotalMissedSamples", TotalMissedSamples_Element.Data.ToResoniteLinkField());
-members.Add("LastMissedSamples", LastMissedSamples_Element.Data.ToResoniteLinkField());
-members.Add("BufferLength", BufferLength_Element.Data.ToResoniteLinkField());
-members.Add("AverageReadSamplesPerSecond", AverageReadSamplesPerSecond_Element.Data.ToResoniteLinkField());
-members.Add("AverageWriteSamplesPerSecond", AverageWriteSamplesPerSecond_Element.Data.ToResoniteLinkField());
-members.Add("GlobalIndex", GlobalIndex_Element.Data.ToResoniteLinkField());
-members.Add("SamplesAvailableForEncode", SamplesAvailableForEncode_Element.Data.ToResoniteLinkField());
-members.Add("FrameSize", FrameSize_Element.Data.ToResoniteLinkField());
-members.Add("MaxFrameSize", MaxFrameSize_Element.Data.ToResoniteLinkField());
-members.Add("EncodedSampleRate", EncodedSampleRate_Element.Data.ToResoniteLinkField());
-members.Add("TotalPacketCount", TotalPacketCount_Element.Data.ToResoniteLinkField());
-members.Add("TotalLostPackets", TotalLostPackets_Element.Data.ToResoniteLinkField());
-members.Add("LastLostPackets", LastLostPackets_Element.Data.ToResoniteLinkField());
-members.Add("PacketLossRatio", PacketLossRatio_Element.Data.ToResoniteLinkField());
-members.Add("AverageCodecSamplesPerSecond", AverageCodecSamplesPerSecond_Element.Data.ToResoniteLinkField());
+members.Add("Stream", Stream_Element.ToLinkReference(context));
+members.Add("UnreadSamples", UnreadSamples_Element.ToLinkField(context));
+members.Add("TotalMissedSamples", TotalMissedSamples_Element.ToLinkField(context));
+members.Add("LastMissedSamples", LastMissedSamples_Element.ToLinkField(context));
+members.Add("BufferLength", BufferLength_Element.ToLinkField(context));
+members.Add("AverageReadSamplesPerSecond", AverageReadSamplesPerSecond_Element.ToLinkField(context));
+members.Add("AverageWriteSamplesPerSecond", AverageWriteSamplesPerSecond_Element.ToLinkField(context));
+members.Add("GlobalIndex", GlobalIndex_Element.ToLinkField(context));
+members.Add("SamplesAvailableForEncode", SamplesAvailableForEncode_Element.ToLinkField(context));
+members.Add("FrameSize", FrameSize_Element.ToLinkField(context));
+members.Add("MaxFrameSize", MaxFrameSize_Element.ToLinkField(context));
+members.Add("EncodedSampleRate", EncodedSampleRate_Element.ToLinkField(context));
+members.Add("TotalPacketCount", TotalPacketCount_Element.ToLinkField(context));
+members.Add("TotalLostPackets", TotalLostPackets_Element.ToLinkField(context));
+members.Add("LastLostPackets", LastLostPackets_Element.ToLinkField(context));
+members.Add("PacketLossRatio", PacketLossRatio_Element.ToLinkField(context));
+members.Add("AverageCodecSamplesPerSecond", AverageCodecSamplesPerSecond_Element.ToLinkField(context));
 }
 
 }

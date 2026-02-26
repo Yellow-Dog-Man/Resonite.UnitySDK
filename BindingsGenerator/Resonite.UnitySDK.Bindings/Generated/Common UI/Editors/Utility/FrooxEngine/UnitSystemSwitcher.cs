@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.UnitSystemSwitcher
-// Generated on: čtvrtek 26. února 2026 10:03:38
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:26:53
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -41,15 +41,15 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("DefaultUnit", DefaultUnit_Element.Data.ToResoniteReference(context));
-members.Add("FormatUnit", FormatUnit_Element.Data.ToResoniteReference(context));
-members.Add("FormatNumber", FormatNumber_Element.Data.ToResoniteReference(context));
-members.Add("CompoundFormatUnits", CompoundFormatUnits_Element.Data.ToResoniteReference(context));
-members.Add("CompoundOverrideNames", CompoundOverrideNames_Element.Data.ToResoniteReference(context));
-members.Add("CompoundUseLongNames", CompoundUseLongNames_Element.Data.ToResoniteReference(context));
-members.Add("CompoundSeparator", CompoundSeparator_Element.Data.ToResoniteReference(context));
-members.Add("DefaultPreset", new ResoniteLink.SyncObject() { Members = DefaultPreset.CollectMembers(context) });
-members.Add("ImperialPreset", new ResoniteLink.SyncObject() { Members = ImperialPreset.CollectMembers(context) });
+members.Add("DefaultUnit", DefaultUnit_Element.ToLinkReference(context));
+members.Add("FormatUnit", FormatUnit_Element.ToLinkReference(context));
+members.Add("FormatNumber", FormatNumber_Element.ToLinkReference(context));
+members.Add("CompoundFormatUnits", CompoundFormatUnits_Element.ToLinkReference(context));
+members.Add("CompoundOverrideNames", CompoundOverrideNames_Element.ToLinkReference(context));
+members.Add("CompoundUseLongNames", CompoundUseLongNames_Element.ToLinkReference(context));
+members.Add("CompoundSeparator", CompoundSeparator_Element.ToLinkReference(context));
+members.Add("DefaultPreset", DefaultPreset.ToLinkSyncObject(context));
+members.Add("ImperialPreset", ImperialPreset.ToLinkSyncObject(context));
 }
 
 }

@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.PlatformColorPalette
-// Generated on: čtvrtek 26. února 2026 10:04:50
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:28:16
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -30,11 +30,11 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Neutrals", new ResoniteLink.SyncObject() { Members = Neutrals.CollectMembers(context) });
-members.Add("Hero", new ResoniteLink.SyncObject() { Members = Hero.CollectMembers(context) });
-members.Add("Mid", new ResoniteLink.SyncObject() { Members = Mid.CollectMembers(context) });
-members.Add("Sub", new ResoniteLink.SyncObject() { Members = Sub.CollectMembers(context) });
-members.Add("Dark", new ResoniteLink.SyncObject() { Members = Dark.CollectMembers(context) });
+members.Add("Neutrals", Neutrals.ToLinkSyncObject(context));
+members.Add("Hero", Hero.ToLinkSyncObject(context));
+members.Add("Mid", Mid.ToLinkSyncObject(context));
+members.Add("Sub", Sub.ToLinkSyncObject(context));
+members.Add("Dark", Dark.ToLinkSyncObject(context));
 }
 
 }

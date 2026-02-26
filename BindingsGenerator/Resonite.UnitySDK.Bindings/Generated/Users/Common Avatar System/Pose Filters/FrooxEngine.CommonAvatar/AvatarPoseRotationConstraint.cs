@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.CommonAvatar.AvatarPoseRotationConstraint
-// Generated on: čtvrtek 26. února 2026 10:04:50
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:28:15
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -33,10 +33,10 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("MaxTwist", MaxTwist_Element.Data.ToResoniteLinkField());
-members.Add("MaxSwing", MaxSwing_Element.Data.ToResoniteLinkField());
-members.Add("Axis", Axis_Element.Data.ToResoniteLinkField());
-members.Add("TwistReferenceAxis", TwistReferenceAxis_Element.Data.ToResoniteLinkField());
+members.Add("MaxTwist", MaxTwist_Element.ToLinkField(context));
+members.Add("MaxSwing", MaxSwing_Element.ToLinkField(context));
+members.Add("Axis", Axis_Element.ToLinkField(context));
+members.Add("TwistReferenceAxis", TwistReferenceAxis_Element.ToLinkField(context));
 }
 
 }

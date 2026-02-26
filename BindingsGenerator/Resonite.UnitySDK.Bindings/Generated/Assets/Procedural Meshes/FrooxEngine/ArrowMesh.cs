@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.ArrowMesh
-// Generated on: čtvrtek 26. února 2026 10:03:35
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:26:50
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -53,20 +53,20 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Vector", Vector_Element.Data.ToResoniteLinkField());
-members.Add("Sides", Sides_Element.Data.ToResoniteLinkField());
-members.Add("BodyRadius", BodyRadius_Element.Data.ToResoniteLinkField());
-members.Add("HeadRadius", HeadRadius_Element.Data.ToResoniteLinkField());
-members.Add("HeadLength", HeadLength_Element.Data.ToResoniteLinkField());
-members.Add("MinimalBodyLength", MinimalBodyLength_Element.Data.ToResoniteLinkField());
-members.Add("SphereOnZero", SphereOnZero_Element.Data.ToResoniteLinkField());
-members.Add("BodyUVScale", BodyUVScale_Element.Data.ToResoniteLinkField());
-members.Add("BodyUVOffset", BodyUVOffset_Element.Data.ToResoniteLinkField());
-members.Add("HeadUVScale", HeadUVScale_Element.Data.ToResoniteLinkField());
-members.Add("HeadUVOffset", HeadUVOffset_Element.Data.ToResoniteLinkField());
-members.Add("BaseColor", BaseColor_Element.Data.ToResoniteLinkField());
-members.Add("TopColor", TopColor_Element.Data.ToResoniteLinkField());
-members.Add("HeadColor", HeadColor_Element.Data.ToResoniteLinkField());
+members.Add("Vector", Vector_Element.ToLinkField(context));
+members.Add("Sides", Sides_Element.ToLinkField(context));
+members.Add("BodyRadius", BodyRadius_Element.ToLinkField(context));
+members.Add("HeadRadius", HeadRadius_Element.ToLinkField(context));
+members.Add("HeadLength", HeadLength_Element.ToLinkField(context));
+members.Add("MinimalBodyLength", MinimalBodyLength_Element.ToLinkField(context));
+members.Add("SphereOnZero", SphereOnZero_Element.ToLinkField(context));
+members.Add("BodyUVScale", BodyUVScale_Element.ToLinkField(context));
+members.Add("BodyUVOffset", BodyUVOffset_Element.ToLinkField(context));
+members.Add("HeadUVScale", HeadUVScale_Element.ToLinkField(context));
+members.Add("HeadUVOffset", HeadUVOffset_Element.ToLinkField(context));
+members.Add("BaseColor", BaseColor_Element.ToLinkField(context));
+members.Add("TopColor", TopColor_Element.ToLinkField(context));
+members.Add("HeadColor", HeadColor_Element.ToLinkField(context));
 }
 
 }

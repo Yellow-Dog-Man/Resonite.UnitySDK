@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.TriangleDiagnosticMesh
-// Generated on: čtvrtek 26. února 2026 10:03:36
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:26:51
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -39,13 +39,13 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("TriangleIndex", TriangleIndex_Element.Data.ToResoniteLinkField());
-members.Add("Vertex0Color", Vertex0Color_Element.Data.ToResoniteLinkField());
-members.Add("Vertex1Color", Vertex1Color_Element.Data.ToResoniteLinkField());
-members.Add("Vertex2Color", Vertex2Color_Element.Data.ToResoniteLinkField());
-members.Add("VertexColorProfile", VertexColorProfile_Element.Data.ToResoniteLinkField());
-members.Add("Displace", Displace_Element.Data.ToResoniteLinkField());
-members.Add("Mesh", Mesh_Element.Data.ToResoniteReference(context));
+members.Add("TriangleIndex", TriangleIndex_Element.ToLinkField(context));
+members.Add("Vertex0Color", Vertex0Color_Element.ToLinkField(context));
+members.Add("Vertex1Color", Vertex1Color_Element.ToLinkField(context));
+members.Add("Vertex2Color", Vertex2Color_Element.ToLinkField(context));
+members.Add("VertexColorProfile", VertexColorProfile_Element.ToLinkField(context));
+members.Add("Displace", Displace_Element.ToLinkField(context));
+members.Add("Mesh", Mesh_Element.ToLinkReference(context));
 }
 
 }

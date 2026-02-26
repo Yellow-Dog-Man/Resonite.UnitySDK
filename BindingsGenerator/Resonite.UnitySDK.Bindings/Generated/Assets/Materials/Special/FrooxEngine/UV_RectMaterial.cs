@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.UV_RectMaterial
-// Generated on: čtvrtek 26. února 2026 10:03:34
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:26:48
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -47,17 +47,17 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Rect", Rect_Element.Data.ToResoniteLinkField());
-members.Add("OuterColor", OuterColor_Element.Data.ToResoniteLinkField());
-members.Add("InnerColor", InnerColor_Element.Data.ToResoniteLinkField());
-members.Add("ClipRect", ClipRect_Element.Data.ToResoniteLinkField());
-members.Add("BlendMode", BlendMode_Element.Data.ToResoniteLinkField());
-members.Add("Sidedness", Sidedness_Element.Data.ToResoniteLinkField());
-members.Add("ZWrite", ZWrite_Element.Data.ToResoniteLinkField());
-members.Add("ZTest", ZTest_Element.Data.ToResoniteLinkField());
-members.Add("OffsetFactor", OffsetFactor_Element.Data.ToResoniteLinkField());
-members.Add("OffsetUnits", OffsetUnits_Element.Data.ToResoniteLinkField());
-members.Add("RenderQueue", RenderQueue_Element.Data.ToResoniteLinkField());
+members.Add("Rect", Rect_Element.ToLinkField(context));
+members.Add("OuterColor", OuterColor_Element.ToLinkField(context));
+members.Add("InnerColor", InnerColor_Element.ToLinkField(context));
+members.Add("ClipRect", ClipRect_Element.ToLinkField(context));
+members.Add("BlendMode", BlendMode_Element.ToLinkField(context));
+members.Add("Sidedness", Sidedness_Element.ToLinkField(context));
+members.Add("ZWrite", ZWrite_Element.ToLinkField(context));
+members.Add("ZTest", ZTest_Element.ToLinkField(context));
+members.Add("OffsetFactor", OffsetFactor_Element.ToLinkField(context));
+members.Add("OffsetUnits", OffsetUnits_Element.ToLinkField(context));
+members.Add("RenderQueue", RenderQueue_Element.ToLinkField(context));
 }
 
 }

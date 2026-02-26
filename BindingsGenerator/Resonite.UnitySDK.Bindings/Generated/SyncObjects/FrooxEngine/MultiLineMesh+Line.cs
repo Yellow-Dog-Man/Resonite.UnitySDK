@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.MultiLineMesh+Line
-// Generated on: čtvrtek 26. února 2026 10:03:36
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:26:50
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -56,23 +56,23 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Scale", Scale_Element.Data.ToResoniteLinkField());
-members.Add("Color", Color_Element.Data.ToResoniteLinkField());
-members.Add("Points", Points_Element.Data.ToResoniteLinkField());
-members.Add("Topology", Topology_Element.Data.ToResoniteLinkField());
-members.Add("Shading", Shading_Element.Data.ToResoniteLinkField());
-members.Add("Ends", Ends_Element.Data.ToResoniteLinkField());
-members.Add("DualSided", DualSided_Element.Data.ToResoniteLinkField());
-members.Add("AbsolutePointOffets", AbsolutePointOffets_Element.Data.ToResoniteLinkField());
-members.Add("UVScale", UVScale_Element.Data.ToResoniteLinkField());
-members.Add("ScaleUVByCircumference", ScaleUVByCircumference_Element.Data.ToResoniteLinkField());
-members.Add("PreciseUV", PreciseUV_Element.Data.ToResoniteLinkField());
-members.Add("Positions", Positions.Data.ToResoniteLinkArray());
-members.Add("Scales", Scales.Data.ToResoniteLinkArray());
-members.Add("Orientations", Orientations.Data.ToResoniteLinkArray());
-members.Add("Colors", Colors.Data.ToResoniteLinkArray());
-members.Add("Profile", Profile_Element.Data.ToResoniteLinkField());
-members.Add("PointOffsets", PointOffsets.Data.ToResoniteLinkArray());
+members.Add("Scale", Scale_Element.ToLinkField(context));
+members.Add("Color", Color_Element.ToLinkField(context));
+members.Add("Points", Points_Element.ToLinkField(context));
+members.Add("Topology", Topology_Element.ToLinkField(context));
+members.Add("Shading", Shading_Element.ToLinkField(context));
+members.Add("Ends", Ends_Element.ToLinkField(context));
+members.Add("DualSided", DualSided_Element.ToLinkField(context));
+members.Add("AbsolutePointOffets", AbsolutePointOffets_Element.ToLinkField(context));
+members.Add("UVScale", UVScale_Element.ToLinkField(context));
+members.Add("ScaleUVByCircumference", ScaleUVByCircumference_Element.ToLinkField(context));
+members.Add("PreciseUV", PreciseUV_Element.ToLinkField(context));
+members.Add("Positions", Positions.ToLinkArray(context));
+members.Add("Scales", Scales.ToLinkArray(context));
+members.Add("Orientations", Orientations.ToLinkArray(context));
+members.Add("Colors", Colors.ToLinkArray(context));
+members.Add("Profile", Profile_Element.ToLinkField(context));
+members.Add("PointOffsets", PointOffsets.ToLinkArray(context));
 }
 
 }

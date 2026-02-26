@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [ProtoFluxBindings]FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.Operators.Unpack_ColorX
-// Generated on: čtvrtek 26. února 2026 10:04:07
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:27:27
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -32,12 +32,12 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("V", V_Element.Data.ToResoniteReference(context));
-members.Add("R", new ResoniteLink.EmptyElement());
-members.Add("G", new ResoniteLink.EmptyElement());
-members.Add("B", new ResoniteLink.EmptyElement());
-members.Add("A", new ResoniteLink.EmptyElement());
-members.Add("Profile", new ResoniteLink.EmptyElement());
+members.Add("V", V_Element.ToLinkReference(context));
+members.Add("R", R.ToLinkEmpty(context));
+members.Add("G", G.ToLinkEmpty(context));
+members.Add("B", B.ToLinkEmpty(context));
+members.Add("A", A.ToLinkEmpty(context));
+members.Add("Profile", Profile.ToLinkEmpty(context));
 }
 
 }

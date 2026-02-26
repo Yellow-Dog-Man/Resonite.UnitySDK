@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [ProtoFluxBindings]FrooxEngine.FrooxEngine.ProtoFlux.CoreNodes.AsyncValueFunctionProxy_0023<,,,,,,>
-// Generated on: čtvrtek 26. února 2026 10:03:50
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:27:09
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 

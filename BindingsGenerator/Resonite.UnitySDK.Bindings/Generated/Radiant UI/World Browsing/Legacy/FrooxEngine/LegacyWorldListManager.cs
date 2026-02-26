@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.LegacyWorldListManager
-// Generated on: čtvrtek 26. února 2026 10:04:36
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:28:02
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -95,45 +95,42 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("UpdatingUser", new ResoniteLink.SyncObject() { Members = UpdatingUser.CollectMembers(context) });
-members.Add("WorldItemTemplate", WorldItemTemplate_Element.Data.ToResoniteReference(context));
-members.Add("WorldItemType", WorldItemType_Element.Data.ToResoniteLinkField());
-members.Add("ShowOpenedWorlds", ShowOpenedWorlds_Element.Data.ToResoniteLinkField());
-members.Add("ShowSessions", ShowSessions_Element.Data.ToResoniteLinkField());
-members.Add("ShowPublishedWorlds", ShowPublishedWorlds_Element.Data.ToResoniteLinkField());
-members.Add("ShowLocallySavedWorlds", ShowLocallySavedWorlds_Element.Data.ToResoniteLinkField());
-members.Add("MergeSessionsByWorldId", MergeSessionsByWorldId_Element.Data.ToResoniteLinkField());
-members.Add("IdleSortDelay", IdleSortDelay_Element.Data.ToResoniteLinkField());
-members.Add("InteractingSortDelay", InteractingSortDelay_Element.Data.ToResoniteLinkField());
-members.Add("SearchTerm", SearchTerm_Element.Data.ToResoniteLinkField());
-members.Add("SubmittedTo", SubmittedTo_Element.Data.ToResoniteLinkField());
-members.Add("OnlyFeatured", OnlyFeatured_Element.Data.ToResoniteLinkField());
-members.Add("OwnWorlds", OwnWorlds_Element.Data.ToResoniteLinkField());
-members.Add("ByOwner", ByOwner_Element.Data.ToResoniteLinkField());
-members.Add("OwnerType", OwnerType_Element.Data.ToResoniteLinkField());
-members.Add("MinDate", MinDate_Element.Data.ToResoniteLinkField());
-members.Add("MaxDate", MaxDate_Element.Data.ToResoniteLinkField());
-members.Add("MaxItems", MaxItems_Element.Data.ToResoniteLinkField());
-members.Add("SkipItems", SkipItems_Element.Data.ToResoniteLinkField());
-members.Add("EmptySessions", EmptySessions_Element.Data.ToResoniteLinkField());
-members.Add("IncompatibleSessions", IncompatibleSessions_Element.Data.ToResoniteLinkField());
-members.Add("OnlyHeadlessHosts", OnlyHeadlessHosts_Element.Data.ToResoniteLinkField());
-members.Add("MinimumTotalUsers", MinimumTotalUsers_Element.Data.ToResoniteLinkField());
-members.Add("MinimumTotalContacts", MinimumTotalContacts_Element.Data.ToResoniteLinkField());
-members.Add("MinSessionAccessLevel", MinSessionAccessLevel_Element.Data.ToResoniteLinkField());
-members.Add("MaxSessionAccessLevel", MaxSessionAccessLevel_Element.Data.ToResoniteLinkField());
-members.Add("MinUptime", MinUptime_Element.Data.ToResoniteLinkField());
-members.Add("MaxUptime", MaxUptime_Element.Data.ToResoniteLinkField());
-members.Add("ParentSessionId", ParentSessionId_Element.Data.ToResoniteLinkField());
-members.Add("Visited", Visited_Element.Data.ToResoniteLinkField());
-members.Add("SortProperties", new ResoniteLink.SyncList()
-{
-    Elements = SortProperties.Data.ConvertList(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers(context) })
-});
-members.Add("IsSearching", IsSearching_Element.Data.ToResoniteLinkField());
-members.Add("HasMoreResults", HasMoreResults_Element.Data.ToResoniteLinkField());
-members.Add("TotalResults", TotalResults_Element.Data.ToResoniteLinkField());
-members.Add("FilteredResults", FilteredResults_Element.Data.ToResoniteLinkField());
+members.Add("UpdatingUser", UpdatingUser.ToLinkSyncObject(context));
+members.Add("WorldItemTemplate", WorldItemTemplate_Element.ToLinkReference(context));
+members.Add("WorldItemType", WorldItemType_Element.ToLinkField(context));
+members.Add("ShowOpenedWorlds", ShowOpenedWorlds_Element.ToLinkField(context));
+members.Add("ShowSessions", ShowSessions_Element.ToLinkField(context));
+members.Add("ShowPublishedWorlds", ShowPublishedWorlds_Element.ToLinkField(context));
+members.Add("ShowLocallySavedWorlds", ShowLocallySavedWorlds_Element.ToLinkField(context));
+members.Add("MergeSessionsByWorldId", MergeSessionsByWorldId_Element.ToLinkField(context));
+members.Add("IdleSortDelay", IdleSortDelay_Element.ToLinkField(context));
+members.Add("InteractingSortDelay", InteractingSortDelay_Element.ToLinkField(context));
+members.Add("SearchTerm", SearchTerm_Element.ToLinkField(context));
+members.Add("SubmittedTo", SubmittedTo_Element.ToLinkField(context));
+members.Add("OnlyFeatured", OnlyFeatured_Element.ToLinkField(context));
+members.Add("OwnWorlds", OwnWorlds_Element.ToLinkField(context));
+members.Add("ByOwner", ByOwner_Element.ToLinkField(context));
+members.Add("OwnerType", OwnerType_Element.ToLinkField(context));
+members.Add("MinDate", MinDate_Element.ToLinkField(context));
+members.Add("MaxDate", MaxDate_Element.ToLinkField(context));
+members.Add("MaxItems", MaxItems_Element.ToLinkField(context));
+members.Add("SkipItems", SkipItems_Element.ToLinkField(context));
+members.Add("EmptySessions", EmptySessions_Element.ToLinkField(context));
+members.Add("IncompatibleSessions", IncompatibleSessions_Element.ToLinkField(context));
+members.Add("OnlyHeadlessHosts", OnlyHeadlessHosts_Element.ToLinkField(context));
+members.Add("MinimumTotalUsers", MinimumTotalUsers_Element.ToLinkField(context));
+members.Add("MinimumTotalContacts", MinimumTotalContacts_Element.ToLinkField(context));
+members.Add("MinSessionAccessLevel", MinSessionAccessLevel_Element.ToLinkField(context));
+members.Add("MaxSessionAccessLevel", MaxSessionAccessLevel_Element.ToLinkField(context));
+members.Add("MinUptime", MinUptime_Element.ToLinkField(context));
+members.Add("MaxUptime", MaxUptime_Element.ToLinkField(context));
+members.Add("ParentSessionId", ParentSessionId_Element.ToLinkField(context));
+members.Add("Visited", Visited_Element.ToLinkField(context));
+members.Add("SortProperties", SortProperties.ToLinkList(context, m => m.ToLinkSyncObject(context)));
+members.Add("IsSearching", IsSearching_Element.ToLinkField(context));
+members.Add("HasMoreResults", HasMoreResults_Element.ToLinkField(context));
+members.Add("TotalResults", TotalResults_Element.ToLinkField(context));
+members.Add("FilteredResults", FilteredResults_Element.ToLinkField(context));
 }
 
 }

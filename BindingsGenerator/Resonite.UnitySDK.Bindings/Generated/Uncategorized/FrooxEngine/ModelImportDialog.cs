@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.ModelImportDialog
-// Generated on: čtvrtek 26. února 2026 10:04:47
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:28:12
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -113,50 +113,50 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("_scale", _scale_Element.Data.ToResoniteLinkField());
-members.Add("_autoScale", _autoScale_Element.Data.ToResoniteLinkField());
-members.Add("_material", _material_Element.Data.ToResoniteLinkField());
-members.Add("_preferSpecular", _preferSpecular_Element.Data.ToResoniteLinkField());
-members.Add("_rig", _rig_Element.Data.ToResoniteLinkField());
-members.Add("_setupIK", _setupIK_Element.Data.ToResoniteLinkField());
-members.Add("_debugRig", _debugRig_Element.Data.ToResoniteLinkField());
-members.Add("_colliders", _colliders_Element.Data.ToResoniteLinkField());
-members.Add("_animations", _animations_Element.Data.ToResoniteLinkField());
-members.Add("_snappable", _snappable_Element.Data.ToResoniteLinkField());
-members.Add("_timelapse", _timelapse_Element.Data.ToResoniteLinkField());
-members.Add("_externalTextures", _externalTextures_Element.Data.ToResoniteLinkField());
-members.Add("_grabbable", _grabbable_Element.Data.ToResoniteLinkField());
-members.Add("_scalable", _scalable_Element.Data.ToResoniteLinkField());
-members.Add("_importAtOrigin", _importAtOrigin_Element.Data.ToResoniteLinkField());
-members.Add("_forceTpose", _forceTpose_Element.Data.ToResoniteLinkField());
-members.Add("_assetsOnObject", _assetsOnObject_Element.Data.ToResoniteLinkField());
-members.Add("_asPointCloud", _asPointCloud_Element.Data.ToResoniteLinkField());
-members.Add("_importImagesByName", _importImagesByName_Element.Data.ToResoniteLinkField());
-members.Add("_importImageAlignment", _importImageAlignment_Element.Data.ToResoniteLinkField());
-members.Add("_calculateNormals", _calculateNormals_Element.Data.ToResoniteLinkField());
-members.Add("_calculateTangents", _calculateTangents_Element.Data.ToResoniteLinkField());
-members.Add("_calculateTextureAlpha", _calculateTextureAlpha_Element.Data.ToResoniteLinkField());
-members.Add("_importVertexColors", _importVertexColors_Element.Data.ToResoniteLinkField());
-members.Add("_importAlbedoColor", _importAlbedoColor_Element.Data.ToResoniteLinkField());
-members.Add("_importEmissive", _importEmissive_Element.Data.ToResoniteLinkField());
-members.Add("_importBones", _importBones_Element.Data.ToResoniteLinkField());
-members.Add("_importLights", _importLights_Element.Data.ToResoniteLinkField());
-members.Add("_makeDualSided", _makeDualSided_Element.Data.ToResoniteLinkField());
-members.Add("_makeFlatShaded", _makeFlatShaded_Element.Data.ToResoniteLinkField());
-members.Add("_deduplicateInstances", _deduplicateInstances_Element.Data.ToResoniteLinkField());
-members.Add("_optimizeModel", _optimizeModel_Element.Data.ToResoniteLinkField());
-members.Add("_splitSubmeshes", _splitSubmeshes_Element.Data.ToResoniteLinkField());
-members.Add("_generateRandomColors", _generateRandomColors_Element.Data.ToResoniteLinkField());
-members.Add("_spawnMaterialOrbs", _spawnMaterialOrbs_Element.Data.ToResoniteLinkField());
-members.Add("_maxTextureSize", _maxTextureSize_Element.Data.ToResoniteLinkField());
-members.Add("_textureConversion", _textureConversion_Element.Data.ToResoniteLinkField());
-members.Add("_forcePointFiltering", _forcePointFiltering_Element.Data.ToResoniteLinkField());
-members.Add("_forceNoMipMaps", _forceNoMipMaps_Element.Data.ToResoniteLinkField());
-members.Add("_forceUncompressed", _forceUncompressed_Element.Data.ToResoniteLinkField());
-members.Add("ForceAsPointCloud", ForceAsPointCloud_Element.Data.ToResoniteLinkField());
-members.Add("PotentialGaussianSplat", PotentialGaussianSplat_Element.Data.ToResoniteLinkField());
-members.Add("_flipY", _flipY_Element.Data.ToResoniteLinkField());
-members.Add("_encodeSPZ", _encodeSPZ_Element.Data.ToResoniteLinkField());
+members.Add("_scale", _scale_Element.ToLinkField(context));
+members.Add("_autoScale", _autoScale_Element.ToLinkField(context));
+members.Add("_material", _material_Element.ToLinkField(context));
+members.Add("_preferSpecular", _preferSpecular_Element.ToLinkField(context));
+members.Add("_rig", _rig_Element.ToLinkField(context));
+members.Add("_setupIK", _setupIK_Element.ToLinkField(context));
+members.Add("_debugRig", _debugRig_Element.ToLinkField(context));
+members.Add("_colliders", _colliders_Element.ToLinkField(context));
+members.Add("_animations", _animations_Element.ToLinkField(context));
+members.Add("_snappable", _snappable_Element.ToLinkField(context));
+members.Add("_timelapse", _timelapse_Element.ToLinkField(context));
+members.Add("_externalTextures", _externalTextures_Element.ToLinkField(context));
+members.Add("_grabbable", _grabbable_Element.ToLinkField(context));
+members.Add("_scalable", _scalable_Element.ToLinkField(context));
+members.Add("_importAtOrigin", _importAtOrigin_Element.ToLinkField(context));
+members.Add("_forceTpose", _forceTpose_Element.ToLinkField(context));
+members.Add("_assetsOnObject", _assetsOnObject_Element.ToLinkField(context));
+members.Add("_asPointCloud", _asPointCloud_Element.ToLinkField(context));
+members.Add("_importImagesByName", _importImagesByName_Element.ToLinkField(context));
+members.Add("_importImageAlignment", _importImageAlignment_Element.ToLinkField(context));
+members.Add("_calculateNormals", _calculateNormals_Element.ToLinkField(context));
+members.Add("_calculateTangents", _calculateTangents_Element.ToLinkField(context));
+members.Add("_calculateTextureAlpha", _calculateTextureAlpha_Element.ToLinkField(context));
+members.Add("_importVertexColors", _importVertexColors_Element.ToLinkField(context));
+members.Add("_importAlbedoColor", _importAlbedoColor_Element.ToLinkField(context));
+members.Add("_importEmissive", _importEmissive_Element.ToLinkField(context));
+members.Add("_importBones", _importBones_Element.ToLinkField(context));
+members.Add("_importLights", _importLights_Element.ToLinkField(context));
+members.Add("_makeDualSided", _makeDualSided_Element.ToLinkField(context));
+members.Add("_makeFlatShaded", _makeFlatShaded_Element.ToLinkField(context));
+members.Add("_deduplicateInstances", _deduplicateInstances_Element.ToLinkField(context));
+members.Add("_optimizeModel", _optimizeModel_Element.ToLinkField(context));
+members.Add("_splitSubmeshes", _splitSubmeshes_Element.ToLinkField(context));
+members.Add("_generateRandomColors", _generateRandomColors_Element.ToLinkField(context));
+members.Add("_spawnMaterialOrbs", _spawnMaterialOrbs_Element.ToLinkField(context));
+members.Add("_maxTextureSize", _maxTextureSize_Element.ToLinkField(context));
+members.Add("_textureConversion", _textureConversion_Element.ToLinkField(context));
+members.Add("_forcePointFiltering", _forcePointFiltering_Element.ToLinkField(context));
+members.Add("_forceNoMipMaps", _forceNoMipMaps_Element.ToLinkField(context));
+members.Add("_forceUncompressed", _forceUncompressed_Element.ToLinkField(context));
+members.Add("ForceAsPointCloud", ForceAsPointCloud_Element.ToLinkField(context));
+members.Add("PotentialGaussianSplat", PotentialGaussianSplat_Element.ToLinkField(context));
+members.Add("_flipY", _flipY_Element.ToLinkField(context));
+members.Add("_encodeSPZ", _encodeSPZ_Element.ToLinkField(context));
 }
 
 }

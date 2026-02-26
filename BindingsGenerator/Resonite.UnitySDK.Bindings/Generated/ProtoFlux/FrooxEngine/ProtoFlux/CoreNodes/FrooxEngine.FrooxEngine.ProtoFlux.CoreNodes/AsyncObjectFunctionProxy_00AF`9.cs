@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [ProtoFluxBindings]FrooxEngine.FrooxEngine.ProtoFlux.CoreNodes.AsyncObjectFunctionProxy_00AF<,,,,,,,,>
-// Generated on: čtvrtek 26. února 2026 10:03:49
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:27:07
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -51,15 +51,15 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Arg0", Arg0_Element.Data.ToResoniteReference(context));
-members.Add("Arg1", Arg1_Element.Data.ToResoniteReference(context));
-members.Add("Arg2", Arg2_Element.Data.ToResoniteReference(context));
-members.Add("Arg3", Arg3_Element.Data.ToResoniteReference(context));
-members.Add("Arg4", Arg4_Element.Data.ToResoniteReference(context));
-members.Add("Arg5", Arg5_Element.Data.ToResoniteReference(context));
-members.Add("Arg6", Arg6_Element.Data.ToResoniteReference(context));
-members.Add("Arg7", Arg7_Element.Data.ToResoniteReference(context));
-members.Add("Result", new ResoniteLink.EmptyElement());
+members.Add("Arg0", Arg0_Element.ToLinkReference(context));
+members.Add("Arg1", Arg1_Element.ToLinkReference(context));
+members.Add("Arg2", Arg2_Element.ToLinkReference(context));
+members.Add("Arg3", Arg3_Element.ToLinkReference(context));
+members.Add("Arg4", Arg4_Element.ToLinkReference(context));
+members.Add("Arg5", Arg5_Element.ToLinkReference(context));
+members.Add("Arg6", Arg6_Element.ToLinkReference(context));
+members.Add("Arg7", Arg7_Element.ToLinkReference(context));
+members.Add("Result", Result.ToLinkEmpty(context));
 }
 
 }

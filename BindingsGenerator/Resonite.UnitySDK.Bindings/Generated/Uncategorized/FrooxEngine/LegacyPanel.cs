@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.LegacyPanel
-// Generated on: čtvrtek 26. února 2026 10:04:46
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:28:11
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -89,49 +89,40 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("ShowHeader", ShowHeader_Element.Data.ToResoniteLinkField());
-members.Add("ShowHandle", ShowHandle_Element.Data.ToResoniteLinkField());
-members.Add("Padding", Padding_Element.Data.ToResoniteLinkField());
-members.Add("ZPadding", ZPadding_Element.Data.ToResoniteLinkField());
-members.Add("Thickness", Thickness_Element.Data.ToResoniteLinkField());
-members.Add("WhiteList", new ResoniteLink.SyncList()
-{
-    Elements = WhiteList.Data.ConvertList(m => m.Data.ToResoniteReference(context))
-});
-members.Add("BlackList", new ResoniteLink.SyncList()
-{
-    Elements = BlackList.Data.ConvertList(m => m.Data.ToResoniteReference(context))
-});
-members.Add("Color", Color_Element.Data.ToResoniteLinkField());
-members.Add("_material", _material_Element.Data.ToResoniteReference(context));
-members.Add("_panelMesh", _panelMesh_Element.Data.ToResoniteReference(context));
-members.Add("_panelPos", _panelPos_Element.Data.ToResoniteReference(context));
-members.Add("_handleActive", _handleActive_Element.Data.ToResoniteReference(context));
-members.Add("_headerActive", _headerActive_Element.Data.ToResoniteReference(context));
-members.Add("_handleMesh", _handleMesh_Element.Data.ToResoniteReference(context));
-members.Add("_handlePos", _handlePos_Element.Data.ToResoniteReference(context));
-members.Add("_handleColliderSize", _handleColliderSize_Element.Data.ToResoniteReference(context));
-members.Add("_headerTitleMesh", _headerTitleMesh_Element.Data.ToResoniteReference(context));
-members.Add("_headerButtonMesh", _headerButtonMesh_Element.Data.ToResoniteReference(context));
-members.Add("_headerCollider", _headerCollider_Element.Data.ToResoniteReference(context));
-members.Add("_headerPos", _headerPos_Element.Data.ToResoniteReference(context));
-members.Add("_headerTitlePos", _headerTitlePos_Element.Data.ToResoniteReference(context));
-members.Add("_title", _title_Element.Data.ToResoniteLinkField());
-members.Add("_titleText", _titleText_Element.Data.ToResoniteReference(context));
-members.Add("_indicatePrivate", _indicatePrivate_Element.Data.ToResoniteLinkField());
-members.Add("_titlePos", _titlePos_Element.Data.ToResoniteReference(context));
-members.Add("_titleBounds", _titleBounds_Element.Data.ToResoniteReference(context));
-members.Add("_contentSlot", _contentSlot_Element.Data.ToResoniteReference(context));
-members.Add("_headerRoot", _headerRoot_Element.Data.ToResoniteReference(context));
-members.Add("_handleAnchorPoint", _handleAnchorPoint_Element.Data.ToResoniteReference(context));
-members.Add("_handleAnchorPointPosition", _handleAnchorPointPosition_Element.Data.ToResoniteReference(context));
-members.Add("_userspaceOwner", new ResoniteLink.SyncObject() { Members = _userspaceOwner.CollectMembers(context) });
-members.Add("_titleButtons", new ResoniteLink.SyncList()
-{
-    Elements = _titleButtons.Data.ConvertList(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers(context) })
-});
-members.Add("_highlightedButton", _highlightedButton_Element.Data.ToResoniteReference(context));
-members.Add("_pinButton", _pinButton_Element.Data.ToResoniteReference(context));
+members.Add("ShowHeader", ShowHeader_Element.ToLinkField(context));
+members.Add("ShowHandle", ShowHandle_Element.ToLinkField(context));
+members.Add("Padding", Padding_Element.ToLinkField(context));
+members.Add("ZPadding", ZPadding_Element.ToLinkField(context));
+members.Add("Thickness", Thickness_Element.ToLinkField(context));
+members.Add("WhiteList", WhiteList.ToLinkList(context, m => m.ToLinkReference(context)));
+members.Add("BlackList", BlackList.ToLinkList(context, m => m.ToLinkReference(context)));
+members.Add("Color", Color_Element.ToLinkField(context));
+members.Add("_material", _material_Element.ToLinkReference(context));
+members.Add("_panelMesh", _panelMesh_Element.ToLinkReference(context));
+members.Add("_panelPos", _panelPos_Element.ToLinkReference(context));
+members.Add("_handleActive", _handleActive_Element.ToLinkReference(context));
+members.Add("_headerActive", _headerActive_Element.ToLinkReference(context));
+members.Add("_handleMesh", _handleMesh_Element.ToLinkReference(context));
+members.Add("_handlePos", _handlePos_Element.ToLinkReference(context));
+members.Add("_handleColliderSize", _handleColliderSize_Element.ToLinkReference(context));
+members.Add("_headerTitleMesh", _headerTitleMesh_Element.ToLinkReference(context));
+members.Add("_headerButtonMesh", _headerButtonMesh_Element.ToLinkReference(context));
+members.Add("_headerCollider", _headerCollider_Element.ToLinkReference(context));
+members.Add("_headerPos", _headerPos_Element.ToLinkReference(context));
+members.Add("_headerTitlePos", _headerTitlePos_Element.ToLinkReference(context));
+members.Add("_title", _title_Element.ToLinkField(context));
+members.Add("_titleText", _titleText_Element.ToLinkReference(context));
+members.Add("_indicatePrivate", _indicatePrivate_Element.ToLinkField(context));
+members.Add("_titlePos", _titlePos_Element.ToLinkReference(context));
+members.Add("_titleBounds", _titleBounds_Element.ToLinkReference(context));
+members.Add("_contentSlot", _contentSlot_Element.ToLinkReference(context));
+members.Add("_headerRoot", _headerRoot_Element.ToLinkReference(context));
+members.Add("_handleAnchorPoint", _handleAnchorPoint_Element.ToLinkReference(context));
+members.Add("_handleAnchorPointPosition", _handleAnchorPointPosition_Element.ToLinkReference(context));
+members.Add("_userspaceOwner", _userspaceOwner.ToLinkSyncObject(context));
+members.Add("_titleButtons", _titleButtons.ToLinkList(context, m => m.ToLinkSyncObject(context)));
+members.Add("_highlightedButton", _highlightedButton_Element.ToLinkReference(context));
+members.Add("_pinButton", _pinButton_Element.ToLinkReference(context));
 }
 
 }

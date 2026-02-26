@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.DepthProjectionMaterial
-// Generated on: čtvrtek 26. února 2026 10:03:34
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:26:48
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -57,22 +57,22 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Color", Color_Element.Data.ToResoniteReference(context));
-members.Add("Depth", Depth_Element.Data.ToResoniteReference(context));
-members.Add("DepthEncoding", DepthEncoding_Element.Data.ToResoniteLinkField());
-members.Add("ColorTextureOffset", ColorTextureOffset_Element.Data.ToResoniteLinkField());
-members.Add("ColorTextureScale", ColorTextureScale_Element.Data.ToResoniteLinkField());
-members.Add("DepthTextureOffset", DepthTextureOffset_Element.Data.ToResoniteLinkField());
-members.Add("DepthTextureScale", DepthTextureScale_Element.Data.ToResoniteLinkField());
-members.Add("DepthFrom", DepthFrom_Element.Data.ToResoniteLinkField());
-members.Add("DepthTo", DepthTo_Element.Data.ToResoniteLinkField());
-members.Add("FieldOfView", FieldOfView_Element.Data.ToResoniteLinkField());
-members.Add("NearClip", NearClip_Element.Data.ToResoniteLinkField());
-members.Add("FarClip", FarClip_Element.Data.ToResoniteLinkField());
-members.Add("DiscardThreshold", DiscardThreshold_Element.Data.ToResoniteLinkField());
-members.Add("DiscardOffset", DiscardOffset_Element.Data.ToResoniteLinkField());
-members.Add("BlendMode", BlendMode_Element.Data.ToResoniteLinkField());
-members.Add("ZWrite", ZWrite_Element.Data.ToResoniteLinkField());
+members.Add("Color", Color_Element.ToLinkReference(context));
+members.Add("Depth", Depth_Element.ToLinkReference(context));
+members.Add("DepthEncoding", DepthEncoding_Element.ToLinkField(context));
+members.Add("ColorTextureOffset", ColorTextureOffset_Element.ToLinkField(context));
+members.Add("ColorTextureScale", ColorTextureScale_Element.ToLinkField(context));
+members.Add("DepthTextureOffset", DepthTextureOffset_Element.ToLinkField(context));
+members.Add("DepthTextureScale", DepthTextureScale_Element.ToLinkField(context));
+members.Add("DepthFrom", DepthFrom_Element.ToLinkField(context));
+members.Add("DepthTo", DepthTo_Element.ToLinkField(context));
+members.Add("FieldOfView", FieldOfView_Element.ToLinkField(context));
+members.Add("NearClip", NearClip_Element.ToLinkField(context));
+members.Add("FarClip", FarClip_Element.ToLinkField(context));
+members.Add("DiscardThreshold", DiscardThreshold_Element.ToLinkField(context));
+members.Add("DiscardOffset", DiscardOffset_Element.ToLinkField(context));
+members.Add("BlendMode", BlendMode_Element.ToLinkField(context));
+members.Add("ZWrite", ZWrite_Element.ToLinkField(context));
 }
 
 }

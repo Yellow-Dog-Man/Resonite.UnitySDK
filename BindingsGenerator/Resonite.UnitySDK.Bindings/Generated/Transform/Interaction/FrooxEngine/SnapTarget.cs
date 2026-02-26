@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.SnapTarget
-// Generated on: čtvrtek 26. února 2026 10:04:42
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:28:08
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -41,21 +41,15 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("SnapperWhitelist", new ResoniteLink.SyncList()
-{
-    Elements = SnapperWhitelist.Data.ConvertList(m => m.Data.ToResoniteReference(context))
-});
-members.Add("SnapperKeywordWhitelist", new ResoniteLink.SyncList()
-{
-    Elements = SnapperKeywordWhitelist.Data.ConvertList(m => m.Data.ToResoniteLinkField())
-});
-members.Add("DirectSnapOnly", DirectSnapOnly_Element.Data.ToResoniteLinkField());
-members.Add("MaximumSnapDistance", MaximumSnapDistance_Element.Data.ToResoniteLinkField());
-members.Add("MaximumAngleDeviation", MaximumAngleDeviation_Element.Data.ToResoniteLinkField());
-members.Add("AnimationTime", AnimationTime_Element.Data.ToResoniteLinkField());
-members.Add("AutoSnap", AutoSnap_Element.Data.ToResoniteLinkField());
-members.Add("_snapColliderRadius", _snapColliderRadius_Element.Data.ToResoniteReference(context));
-members.Add("proxySphere", proxySphere_Element.Data.ToResoniteReference(context));
+members.Add("SnapperWhitelist", SnapperWhitelist.ToLinkList(context, m => m.ToLinkReference(context)));
+members.Add("SnapperKeywordWhitelist", SnapperKeywordWhitelist.ToLinkList(context, m => m.ToLinkField(context)));
+members.Add("DirectSnapOnly", DirectSnapOnly_Element.ToLinkField(context));
+members.Add("MaximumSnapDistance", MaximumSnapDistance_Element.ToLinkField(context));
+members.Add("MaximumAngleDeviation", MaximumAngleDeviation_Element.ToLinkField(context));
+members.Add("AnimationTime", AnimationTime_Element.ToLinkField(context));
+members.Add("AutoSnap", AutoSnap_Element.ToLinkField(context));
+members.Add("_snapColliderRadius", _snapColliderRadius_Element.ToLinkReference(context));
+members.Add("proxySphere", proxySphere_Element.ToLinkReference(context));
 }
 
 }

@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.UIX.GridLayout
-// Generated on: čtvrtek 26. února 2026 10:04:43
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:28:09
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -47,17 +47,17 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("PaddingTop", PaddingTop_Element.Data.ToResoniteLinkField());
-members.Add("PaddingRight", PaddingRight_Element.Data.ToResoniteLinkField());
-members.Add("PaddingBottom", PaddingBottom_Element.Data.ToResoniteLinkField());
-members.Add("PaddingLeft", PaddingLeft_Element.Data.ToResoniteLinkField());
-members.Add("CellSize", CellSize_Element.Data.ToResoniteLinkField());
-members.Add("Spacing", Spacing_Element.Data.ToResoniteLinkField());
-members.Add("HorizontalAlign", HorizontalAlign_Element.Data.ToResoniteLinkField());
-members.Add("VerticalAlign", VerticalAlign_Element.Data.ToResoniteLinkField());
-members.Add("ExpandWidthToFit", ExpandWidthToFit_Element.Data.ToResoniteLinkField());
-members.Add("PreserveAspectOnExpand", PreserveAspectOnExpand_Element.Data.ToResoniteLinkField());
-members.Add("AlignLastRowIndividually", AlignLastRowIndividually_Element.Data.ToResoniteLinkField());
+members.Add("PaddingTop", PaddingTop_Element.ToLinkField(context));
+members.Add("PaddingRight", PaddingRight_Element.ToLinkField(context));
+members.Add("PaddingBottom", PaddingBottom_Element.ToLinkField(context));
+members.Add("PaddingLeft", PaddingLeft_Element.ToLinkField(context));
+members.Add("CellSize", CellSize_Element.ToLinkField(context));
+members.Add("Spacing", Spacing_Element.ToLinkField(context));
+members.Add("HorizontalAlign", HorizontalAlign_Element.ToLinkField(context));
+members.Add("VerticalAlign", VerticalAlign_Element.ToLinkField(context));
+members.Add("ExpandWidthToFit", ExpandWidthToFit_Element.ToLinkField(context));
+members.Add("PreserveAspectOnExpand", PreserveAspectOnExpand_Element.ToLinkField(context));
+members.Add("AlignLastRowIndividually", AlignLastRowIndividually_Element.ToLinkField(context));
 }
 
 }

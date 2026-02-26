@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.NotificationPanel
-// Generated on: čtvrtek 26. února 2026 10:04:47
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:28:12
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -45,16 +45,16 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("DisplayDuration", DisplayDuration_Element.Data.ToResoniteLinkField());
-members.Add("Dash", Dash_Element.Data.ToResoniteReference(context));
-members.Add("_canvas", _canvas_Element.Data.ToResoniteReference(context));
-members.Add("_notificationClip", _notificationClip_Element.Data.ToResoniteReference(context));
-members.Add("_contactRequestClip", _contactRequestClip_Element.Data.ToResoniteReference(context));
-members.Add("_inviteClip", _inviteClip_Element.Data.ToResoniteReference(context));
-members.Add("_inviteRequestClip", _inviteRequestClip_Element.Data.ToResoniteReference(context));
-members.Add("_sociableClip", _sociableClip_Element.Data.ToResoniteReference(context));
-members.Add("_userJoinClip", _userJoinClip_Element.Data.ToResoniteReference(context));
-members.Add("_userLeaveClip", _userLeaveClip_Element.Data.ToResoniteReference(context));
+members.Add("DisplayDuration", DisplayDuration_Element.ToLinkField(context));
+members.Add("Dash", Dash_Element.ToLinkReference(context));
+members.Add("_canvas", _canvas_Element.ToLinkReference(context));
+members.Add("_notificationClip", _notificationClip_Element.ToLinkReference(context));
+members.Add("_contactRequestClip", _contactRequestClip_Element.ToLinkReference(context));
+members.Add("_inviteClip", _inviteClip_Element.ToLinkReference(context));
+members.Add("_inviteRequestClip", _inviteRequestClip_Element.ToLinkReference(context));
+members.Add("_sociableClip", _sociableClip_Element.ToLinkReference(context));
+members.Add("_userJoinClip", _userJoinClip_Element.ToLinkReference(context));
+members.Add("_userLeaveClip", _userLeaveClip_Element.ToLinkReference(context));
 }
 
 }

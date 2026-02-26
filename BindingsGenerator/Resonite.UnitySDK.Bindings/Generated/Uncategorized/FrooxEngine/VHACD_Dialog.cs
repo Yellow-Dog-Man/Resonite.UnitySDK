@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.VHACD_Dialog
-// Generated on: čtvrtek 26. února 2026 10:04:49
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:28:14
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -57,22 +57,22 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("TargetCollider", TargetCollider_Element.Data.ToResoniteReference(context));
-members.Add("MergeDoubles", MergeDoubles_Element.Data.ToResoniteReference(context));
-members.Add("Resolution", Resolution_Element.Data.ToResoniteReference(context));
-members.Add("Depth", Depth_Element.Data.ToResoniteReference(context));
-members.Add("Concavity", Concavity_Element.Data.ToResoniteReference(context));
-members.Add("PlaneDownsampling", PlaneDownsampling_Element.Data.ToResoniteReference(context));
-members.Add("ConvexHullDownsampling", ConvexHullDownsampling_Element.Data.ToResoniteReference(context));
-members.Add("Alpha", Alpha_Element.Data.ToResoniteReference(context));
-members.Add("Beta", Beta_Element.Data.ToResoniteReference(context));
-members.Add("Gamma", Gamma_Element.Data.ToResoniteReference(context));
-members.Add("Delta", Delta_Element.Data.ToResoniteReference(context));
-members.Add("PCA", PCA_Element.Data.ToResoniteReference(context));
-members.Add("Mode", Mode_Element.Data.ToResoniteLinkField());
-members.Add("MaxVerticesPerHull", MaxVerticesPerHull_Element.Data.ToResoniteReference(context));
-members.Add("MinVolumePerHull", MinVolumePerHull_Element.Data.ToResoniteReference(context));
-members.Add("ConvexHullApproximation", ConvexHullApproximation_Element.Data.ToResoniteReference(context));
+members.Add("TargetCollider", TargetCollider_Element.ToLinkReference(context));
+members.Add("MergeDoubles", MergeDoubles_Element.ToLinkReference(context));
+members.Add("Resolution", Resolution_Element.ToLinkReference(context));
+members.Add("Depth", Depth_Element.ToLinkReference(context));
+members.Add("Concavity", Concavity_Element.ToLinkReference(context));
+members.Add("PlaneDownsampling", PlaneDownsampling_Element.ToLinkReference(context));
+members.Add("ConvexHullDownsampling", ConvexHullDownsampling_Element.ToLinkReference(context));
+members.Add("Alpha", Alpha_Element.ToLinkReference(context));
+members.Add("Beta", Beta_Element.ToLinkReference(context));
+members.Add("Gamma", Gamma_Element.ToLinkReference(context));
+members.Add("Delta", Delta_Element.ToLinkReference(context));
+members.Add("PCA", PCA_Element.ToLinkReference(context));
+members.Add("Mode", Mode_Element.ToLinkField(context));
+members.Add("MaxVerticesPerHull", MaxVerticesPerHull_Element.ToLinkReference(context));
+members.Add("MinVolumePerHull", MinVolumePerHull_Element.ToLinkReference(context));
+members.Add("ConvexHullApproximation", ConvexHullApproximation_Element.ToLinkReference(context));
 }
 
 }

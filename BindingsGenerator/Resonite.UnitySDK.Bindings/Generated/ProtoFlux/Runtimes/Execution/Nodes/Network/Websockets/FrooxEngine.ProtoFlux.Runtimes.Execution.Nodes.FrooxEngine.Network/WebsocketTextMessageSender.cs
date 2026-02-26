@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [ProtoFluxBindings]FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Network.WebsocketTextMessageSender
-// Generated on: čtvrtek 26. února 2026 10:04:22
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:27:45
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -35,11 +35,11 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Client", Client_Element.Data.ToResoniteReference(context));
-members.Add("Data", Data_Element.Data.ToResoniteReference(context));
-members.Add("OnSendStart", OnSendStart_Element.Data.ToResoniteReference(context));
-members.Add("OnSent", OnSent_Element.Data.ToResoniteReference(context));
-members.Add("OnSendError", OnSendError_Element.Data.ToResoniteReference(context));
+members.Add("Client", Client_Element.ToLinkReference(context));
+members.Add("Data", Data_Element.ToLinkReference(context));
+members.Add("OnSendStart", OnSendStart_Element.ToLinkReference(context));
+members.Add("OnSent", OnSent_Element.ToLinkReference(context));
+members.Add("OnSendError", OnSendError_Element.ToLinkReference(context));
 }
 
 }

@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.QuadMesh
-// Generated on: čtvrtek 26. února 2026 10:03:36
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:26:51
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -47,17 +47,17 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Rotation", Rotation_Element.Data.ToResoniteLinkField());
-members.Add("Size", Size_Element.Data.ToResoniteLinkField());
-members.Add("UVOffset", UVOffset_Element.Data.ToResoniteLinkField());
-members.Add("UVScale", UVScale_Element.Data.ToResoniteLinkField());
-members.Add("ScaleUVWithSize", ScaleUVWithSize_Element.Data.ToResoniteLinkField());
-members.Add("DualSided", DualSided_Element.Data.ToResoniteLinkField());
-members.Add("UseVertexColors", UseVertexColors_Element.Data.ToResoniteLinkField());
-members.Add("UpperLeftColor", UpperLeftColor_Element.Data.ToResoniteLinkField());
-members.Add("LowerLeftColor", LowerLeftColor_Element.Data.ToResoniteLinkField());
-members.Add("LowerRightColor", LowerRightColor_Element.Data.ToResoniteLinkField());
-members.Add("UpperRightColor", UpperRightColor_Element.Data.ToResoniteLinkField());
+members.Add("Rotation", Rotation_Element.ToLinkField(context));
+members.Add("Size", Size_Element.ToLinkField(context));
+members.Add("UVOffset", UVOffset_Element.ToLinkField(context));
+members.Add("UVScale", UVScale_Element.ToLinkField(context));
+members.Add("ScaleUVWithSize", ScaleUVWithSize_Element.ToLinkField(context));
+members.Add("DualSided", DualSided_Element.ToLinkField(context));
+members.Add("UseVertexColors", UseVertexColors_Element.ToLinkField(context));
+members.Add("UpperLeftColor", UpperLeftColor_Element.ToLinkField(context));
+members.Add("LowerLeftColor", LowerLeftColor_Element.ToLinkField(context));
+members.Add("LowerRightColor", LowerRightColor_Element.ToLinkField(context));
+members.Add("UpperRightColor", UpperRightColor_Element.ToLinkField(context));
 }
 
 }

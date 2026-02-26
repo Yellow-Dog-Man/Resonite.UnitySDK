@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.PhotonDust.ParticleRibbonsModule
-// Generated on: čtvrtek 26. února 2026 10:04:38
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:28:04
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -41,14 +41,14 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("RibbonPointRatio", RibbonPointRatio_Element.Data.ToResoniteLinkField());
-members.Add("Distribution", Distribution_Element.Data.ToResoniteLinkField());
-members.Add("MaxRibbonPoints", MaxRibbonPoints_Element.Data.ToResoniteLinkField());
-members.Add("InterweavedRibbonCount", InterweavedRibbonCount_Element.Data.ToResoniteLinkField());
-members.Add("UseParticleColor", UseParticleColor_Element.Data.ToResoniteLinkField());
-members.Add("UseParticleSize", UseParticleSize_Element.Data.ToResoniteLinkField());
-members.Add("ShuffleInterweavedRibbons", ShuffleInterweavedRibbons_Element.Data.ToResoniteLinkField());
-members.Add("SizeInheritanceMode", SizeInheritanceMode_Element.Data.ToResoniteLinkField());
+members.Add("RibbonPointRatio", RibbonPointRatio_Element.ToLinkField(context));
+members.Add("Distribution", Distribution_Element.ToLinkField(context));
+members.Add("MaxRibbonPoints", MaxRibbonPoints_Element.ToLinkField(context));
+members.Add("InterweavedRibbonCount", InterweavedRibbonCount_Element.ToLinkField(context));
+members.Add("UseParticleColor", UseParticleColor_Element.ToLinkField(context));
+members.Add("UseParticleSize", UseParticleSize_Element.ToLinkField(context));
+members.Add("ShuffleInterweavedRibbons", ShuffleInterweavedRibbons_Element.ToLinkField(context));
+members.Add("SizeInheritanceMode", SizeInheritanceMode_Element.ToLinkField(context));
 }
 
 }

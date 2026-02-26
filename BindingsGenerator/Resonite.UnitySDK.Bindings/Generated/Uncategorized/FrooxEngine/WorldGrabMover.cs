@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.WorldGrabMover
-// Generated on: čtvrtek 26. února 2026 10:04:49
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:28:14
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -39,13 +39,13 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("ShowLerp", ShowLerp_Element.Data.ToResoniteLinkField());
-members.Add("_activatingUser", _activatingUser_Element.Data.ToResoniteReference(context));
-members.Add("_crossMesh", _crossMesh_Element.Data.ToResoniteReference(context));
-members.Add("_visualVisible", _visualVisible_Element.Data.ToResoniteReference(context));
-members.Add("_visualRotation", _visualRotation_Element.Data.ToResoniteReference(context));
-members.Add("_material", _material_Element.Data.ToResoniteReference(context));
-members.Add("_referencePosition", _referencePosition_Element.Data.ToResoniteLinkField());
+members.Add("ShowLerp", ShowLerp_Element.ToLinkField(context));
+members.Add("_activatingUser", _activatingUser_Element.ToLinkReference(context));
+members.Add("_crossMesh", _crossMesh_Element.ToLinkReference(context));
+members.Add("_visualVisible", _visualVisible_Element.ToLinkReference(context));
+members.Add("_visualRotation", _visualRotation_Element.ToLinkReference(context));
+members.Add("_material", _material_Element.ToLinkReference(context));
+members.Add("_referencePosition", _referencePosition_Element.ToLinkField(context));
 }
 
 }

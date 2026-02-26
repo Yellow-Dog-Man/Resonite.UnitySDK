@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.AvatarCreator
-// Generated on: čtvrtek 26. února 2026 10:04:43
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:28:09
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -78,36 +78,33 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("_headsetPoint", _headsetPoint_Element.Data.ToResoniteReference(context));
-members.Add("_leftPoint", _leftPoint_Element.Data.ToResoniteReference(context));
-members.Add("_rightPoint", _rightPoint_Element.Data.ToResoniteReference(context));
-members.Add("_leftFootPoint", _leftFootPoint_Element.Data.ToResoniteReference(context));
-members.Add("_rightFootPoint", _rightFootPoint_Element.Data.ToResoniteReference(context));
-members.Add("_pelvisPoint", _pelvisPoint_Element.Data.ToResoniteReference(context));
-members.Add("_headsetReference", _headsetReference_Element.Data.ToResoniteReference(context));
-members.Add("_pelvisReference", _pelvisReference_Element.Data.ToResoniteReference(context));
-members.Add("_leftReference", _leftReference_Element.Data.ToResoniteReference(context));
-members.Add("_rightReference", _rightReference_Element.Data.ToResoniteReference(context));
-members.Add("_leftFootReference", _leftFootReference_Element.Data.ToResoniteReference(context));
-members.Add("_rightFootReference", _rightFootReference_Element.Data.ToResoniteReference(context));
-members.Add("_initialized", _initialized_Element.Data.ToResoniteLinkField());
-members.Add("_showAnchors", _showAnchors_Element.Data.ToResoniteLinkField());
-members.Add("_useSymmetry", _useSymmetry_Element.Data.ToResoniteLinkField());
-members.Add("_setupVolumeMeter", _setupVolumeMeter_Element.Data.ToResoniteLinkField());
-members.Add("_setupProtection", _setupProtection_Element.Data.ToResoniteLinkField());
-members.Add("_setupEyes", _setupEyes_Element.Data.ToResoniteLinkField());
-members.Add("_setupFaceTracking", _setupFaceTracking_Element.Data.ToResoniteLinkField());
-members.Add("_calibrateFeet", _calibrateFeet_Element.Data.ToResoniteLinkField());
-members.Add("_calibratePelvis", _calibratePelvis_Element.Data.ToResoniteLinkField());
-members.Add("_canProtect", _canProtect_Element.Data.ToResoniteLinkField());
-members.Add("_symmetrySetup", _symmetrySetup_Element.Data.ToResoniteLinkField());
-members.Add("_anchors", new ResoniteLink.SyncList()
-{
-    Elements = _anchors.Data.ConvertList(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers(context) })
-});
-members.Add("_scale", _scale_Element.Data.ToResoniteLinkField());
-members.Add("_protectAvatarEnabled", _protectAvatarEnabled_Element.Data.ToResoniteReference(context));
-members.Add("_createEnabled", _createEnabled_Element.Data.ToResoniteReference(context));
+members.Add("_headsetPoint", _headsetPoint_Element.ToLinkReference(context));
+members.Add("_leftPoint", _leftPoint_Element.ToLinkReference(context));
+members.Add("_rightPoint", _rightPoint_Element.ToLinkReference(context));
+members.Add("_leftFootPoint", _leftFootPoint_Element.ToLinkReference(context));
+members.Add("_rightFootPoint", _rightFootPoint_Element.ToLinkReference(context));
+members.Add("_pelvisPoint", _pelvisPoint_Element.ToLinkReference(context));
+members.Add("_headsetReference", _headsetReference_Element.ToLinkReference(context));
+members.Add("_pelvisReference", _pelvisReference_Element.ToLinkReference(context));
+members.Add("_leftReference", _leftReference_Element.ToLinkReference(context));
+members.Add("_rightReference", _rightReference_Element.ToLinkReference(context));
+members.Add("_leftFootReference", _leftFootReference_Element.ToLinkReference(context));
+members.Add("_rightFootReference", _rightFootReference_Element.ToLinkReference(context));
+members.Add("_initialized", _initialized_Element.ToLinkField(context));
+members.Add("_showAnchors", _showAnchors_Element.ToLinkField(context));
+members.Add("_useSymmetry", _useSymmetry_Element.ToLinkField(context));
+members.Add("_setupVolumeMeter", _setupVolumeMeter_Element.ToLinkField(context));
+members.Add("_setupProtection", _setupProtection_Element.ToLinkField(context));
+members.Add("_setupEyes", _setupEyes_Element.ToLinkField(context));
+members.Add("_setupFaceTracking", _setupFaceTracking_Element.ToLinkField(context));
+members.Add("_calibrateFeet", _calibrateFeet_Element.ToLinkField(context));
+members.Add("_calibratePelvis", _calibratePelvis_Element.ToLinkField(context));
+members.Add("_canProtect", _canProtect_Element.ToLinkField(context));
+members.Add("_symmetrySetup", _symmetrySetup_Element.ToLinkField(context));
+members.Add("_anchors", _anchors.ToLinkList(context, m => m.ToLinkSyncObject(context)));
+members.Add("_scale", _scale_Element.ToLinkField(context));
+members.Add("_protectAvatarEnabled", _protectAvatarEnabled_Element.ToLinkReference(context));
+members.Add("_createEnabled", _createEnabled_Element.ToLinkReference(context));
 }
 
 }

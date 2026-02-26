@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.SlotGizmo
-// Generated on: čtvrtek 26. února 2026 10:04:48
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:28:13
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -70,32 +70,29 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("_isFolded", _isFolded_Element.Data.ToResoniteLinkField());
-members.Add("_activeGizmo", _activeGizmo_Element.Data.ToResoniteReference(context));
-members.Add("_targetSlot", _targetSlot_Element.Data.ToResoniteReference(context));
-members.Add("_positionDrive", _positionDrive_Element.Data.ToResoniteReference(context));
-members.Add("_scaleDrive", _scaleDrive_Element.Data.ToResoniteReference(context));
-members.Add("_boundsMesh", _boundsMesh_Element.Data.ToResoniteReference(context));
-members.Add("_boundsRoot", _boundsRoot_Element.Data.ToResoniteReference(context));
-members.Add("_boundsRotation", _boundsRotation_Element.Data.ToResoniteReference(context));
-members.Add("_boundsOffset", _boundsOffset_Element.Data.ToResoniteReference(context));
-members.Add("_boundsActive", _boundsActive_Element.Data.ToResoniteReference(context));
-members.Add("_nameText", _nameText_Element.Data.ToResoniteReference(context));
-members.Add("_nameOffset", _nameOffset_Element.Data.ToResoniteReference(context));
-members.Add("_nameRotation", _nameRotation_Element.Data.ToResoniteReference(context));
-members.Add("_nameActive", _nameActive_Element.Data.ToResoniteReference(context));
-members.Add("_xPosSegment", _xPosSegment_Element.Data.ToResoniteReference(context));
-members.Add("_yPosSegment", _yPosSegment_Element.Data.ToResoniteReference(context));
-members.Add("_zPosSegment", _zPosSegment_Element.Data.ToResoniteReference(context));
-members.Add("_boundsAnchorPositions", new ResoniteLink.SyncList()
-{
-    Elements = _boundsAnchorPositions.Data.ConvertList(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers(context) })
-});
-members.Add("_rootAnchor", _rootAnchor_Element.Data.ToResoniteReference(context));
-members.Add("_translationGizmo", _translationGizmo_Element.Data.ToResoniteReference(context));
-members.Add("_rotationGizmo", _rotationGizmo_Element.Data.ToResoniteReference(context));
-members.Add("_scaleGizmo", _scaleGizmo_Element.Data.ToResoniteReference(context));
-members.Add("IsLocalSpace", IsLocalSpace_Element.Data.ToResoniteLinkField());
+members.Add("_isFolded", _isFolded_Element.ToLinkField(context));
+members.Add("_activeGizmo", _activeGizmo_Element.ToLinkReference(context));
+members.Add("_targetSlot", _targetSlot_Element.ToLinkReference(context));
+members.Add("_positionDrive", _positionDrive_Element.ToLinkReference(context));
+members.Add("_scaleDrive", _scaleDrive_Element.ToLinkReference(context));
+members.Add("_boundsMesh", _boundsMesh_Element.ToLinkReference(context));
+members.Add("_boundsRoot", _boundsRoot_Element.ToLinkReference(context));
+members.Add("_boundsRotation", _boundsRotation_Element.ToLinkReference(context));
+members.Add("_boundsOffset", _boundsOffset_Element.ToLinkReference(context));
+members.Add("_boundsActive", _boundsActive_Element.ToLinkReference(context));
+members.Add("_nameText", _nameText_Element.ToLinkReference(context));
+members.Add("_nameOffset", _nameOffset_Element.ToLinkReference(context));
+members.Add("_nameRotation", _nameRotation_Element.ToLinkReference(context));
+members.Add("_nameActive", _nameActive_Element.ToLinkReference(context));
+members.Add("_xPosSegment", _xPosSegment_Element.ToLinkReference(context));
+members.Add("_yPosSegment", _yPosSegment_Element.ToLinkReference(context));
+members.Add("_zPosSegment", _zPosSegment_Element.ToLinkReference(context));
+members.Add("_boundsAnchorPositions", _boundsAnchorPositions.ToLinkList(context, m => m.ToLinkSyncObject(context)));
+members.Add("_rootAnchor", _rootAnchor_Element.ToLinkReference(context));
+members.Add("_translationGizmo", _translationGizmo_Element.ToLinkReference(context));
+members.Add("_rotationGizmo", _rotationGizmo_Element.ToLinkReference(context));
+members.Add("_scaleGizmo", _scaleGizmo_Element.ToLinkReference(context));
+members.Add("IsLocalSpace", IsLocalSpace_Element.ToLinkField(context));
 }
 
 }

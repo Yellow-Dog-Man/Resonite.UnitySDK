@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.Undo.AddRemoveListElement<>
-// Generated on: čtvrtek 26. února 2026 10:04:43
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:28:09
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -42,14 +42,14 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("TargetList", TargetList_Element.Data.ToResoniteReference(context));
-members.Add("TargetElement", TargetElement_Element.Data.ToResoniteReference(context));
-members.Add("_description", _description_Element.Data.ToResoniteLinkField());
-members.Add("_savedObject", _savedObject_Element.Data.ToResoniteLinkField());
-members.Add("_referenceTable", _referenceTable_Element.Data.ToResoniteReference(context));
-members.Add("_isSaving", _isSaving_Element.Data.ToResoniteLinkField());
-members.Add("_mode", _mode_Element.Data.ToResoniteLinkField());
-members.Add("_performed", _performed_Element.Data.ToResoniteLinkField());
+members.Add("TargetList", TargetList_Element.ToLinkReference(context));
+members.Add("TargetElement", TargetElement_Element.ToLinkReference(context));
+members.Add("_description", _description_Element.ToLinkField(context));
+members.Add("_savedObject", _savedObject_Element.ToLinkField(context));
+members.Add("_referenceTable", _referenceTable_Element.ToLinkReference(context));
+members.Add("_isSaving", _isSaving_Element.ToLinkField(context));
+members.Add("_mode", _mode_Element.ToLinkField(context));
+members.Add("_performed", _performed_Element.ToLinkField(context));
 }
 
 }

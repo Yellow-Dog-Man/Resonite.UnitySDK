@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [ProtoFluxBindings]FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Avatar.Anchors.AnchorLocomotionData
-// Generated on: čtvrtek 26. února 2026 10:04:06
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:27:26
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -33,13 +33,13 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("OnLocomotionUpdate", OnLocomotionUpdate_Element.Data.ToResoniteReference(context));
-members.Add("HasPrimary", new ResoniteLink.EmptyElement());
-members.Add("HasSecondary", new ResoniteLink.EmptyElement());
-members.Add("PrimaryAxis", new ResoniteLink.EmptyElement());
-members.Add("SecondaryAxis", new ResoniteLink.EmptyElement());
-members.Add("PrimaryAction", new ResoniteLink.EmptyElement());
-members.Add("SecondaryAction", new ResoniteLink.EmptyElement());
+members.Add("OnLocomotionUpdate", OnLocomotionUpdate_Element.ToLinkReference(context));
+members.Add("HasPrimary", HasPrimary.ToLinkEmpty(context));
+members.Add("HasSecondary", HasSecondary.ToLinkEmpty(context));
+members.Add("PrimaryAxis", PrimaryAxis.ToLinkEmpty(context));
+members.Add("SecondaryAxis", SecondaryAxis.ToLinkEmpty(context));
+members.Add("PrimaryAction", PrimaryAction.ToLinkEmpty(context));
+members.Add("SecondaryAction", SecondaryAction.ToLinkEmpty(context));
 }
 
 }

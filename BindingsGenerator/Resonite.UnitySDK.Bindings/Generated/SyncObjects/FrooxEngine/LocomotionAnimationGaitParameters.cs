@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.LocomotionAnimationGaitParameters
-// Generated on: čtvrtek 26. února 2026 10:04:45
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:28:10
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -105,46 +105,46 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("ReferenceSpeed", ReferenceSpeed_Element.Data.ToResoniteLinkField());
-members.Add("MinOpposingProgress", MinOpposingProgress_Element.Data.ToResoniteLinkField());
-members.Add("VelocityIncreaseSmoothTime", VelocityIncreaseSmoothTime_Element.Data.ToResoniteLinkField());
-members.Add("VelocityDecreaseSmoothTime", VelocityDecreaseSmoothTime_Element.Data.ToResoniteLinkField());
-members.Add("FootTravelDistance", FootTravelDistance_Element.Data.ToResoniteLinkField());
-members.Add("FootSidewaysDistanceRatio", FootSidewaysDistanceRatio_Element.Data.ToResoniteLinkField());
-members.Add("FootBackwardsDistanceRatio", FootBackwardsDistanceRatio_Element.Data.ToResoniteLinkField());
-members.Add("FootMaxAngle", FootMaxAngle_Element.Data.ToResoniteLinkField());
-members.Add("FootTurnInfluence", FootTurnInfluence_Element.Data.ToResoniteLinkField());
-members.Add("Offset", Offset_Element.Data.ToResoniteLinkField());
-members.Add("FootStepUpHeight", FootStepUpHeight_Element.Data.ToResoniteLinkField());
-members.Add("FootStepDownHeight", FootStepDownHeight_Element.Data.ToResoniteLinkField());
-members.Add("FootStepUpPow", FootStepUpPow_Element.Data.ToResoniteLinkField());
-members.Add("FootStepDownPow", FootStepDownPow_Element.Data.ToResoniteLinkField());
-members.Add("FootStepUpVelocityMultiplier", FootStepUpVelocityMultiplier_Element.Data.ToResoniteLinkField());
-members.Add("FootStepUpVelocityVerticalRatio", FootStepUpVelocityVerticalRatio_Element.Data.ToResoniteLinkField());
-members.Add("FootGroundAngle", FootGroundAngle_Element.Data.ToResoniteLinkField());
-members.Add("FootGroundPow", FootGroundPow_Element.Data.ToResoniteLinkField());
-members.Add("FootStepUpAngularVelocityMultiplier", FootStepUpAngularVelocityMultiplier_Element.Data.ToResoniteLinkField());
-members.Add("FootStepDownAngle", FootStepDownAngle_Element.Data.ToResoniteLinkField());
-members.Add("HandForwardForce", HandForwardForce_Element.Data.ToResoniteLinkField());
-members.Add("HandBackwardForce", HandBackwardForce_Element.Data.ToResoniteLinkField());
-members.Add("HandDrag", HandDrag_Element.Data.ToResoniteLinkField());
-members.Add("HandSwingDistance", HandSwingDistance_Element.Data.ToResoniteLinkField());
-members.Add("HandOffset", HandOffset_Element.Data.ToResoniteLinkField());
-members.Add("HandDirectionCenterOffset", HandDirectionCenterOffset_Element.Data.ToResoniteLinkField());
-members.Add("HandSwingDirection", HandSwingDirection_Element.Data.ToResoniteLinkField());
-members.Add("HandSwingArcPeak", HandSwingArcPeak_Element.Data.ToResoniteLinkField());
-members.Add("FingerBasePose", FingerBasePose_Element.Data.ToResoniteReference(context));
-members.Add("FingerCurlOffset", FingerCurlOffset_Element.Data.ToResoniteLinkField());
-members.Add("FingerCurlSwayMagnitude", FingerCurlSwayMagnitude_Element.Data.ToResoniteLinkField());
-members.Add("FingerCurlSwaySpeed", FingerCurlSwaySpeed_Element.Data.ToResoniteLinkField());
-members.Add("FingerCurlVariationMagnitude", FingerCurlVariationMagnitude_Element.Data.ToResoniteLinkField());
-members.Add("FingerCurlVariationSpeed", FingerCurlVariationSpeed_Element.Data.ToResoniteLinkField());
-members.Add("HeadSmoothingSpeed", HeadSmoothingSpeed_Element.Data.ToResoniteLinkField());
-members.Add("HeadHorizontalBobOffset", HeadHorizontalBobOffset_Element.Data.ToResoniteLinkField());
-members.Add("HeadHorizontalBobAngle", HeadHorizontalBobAngle_Element.Data.ToResoniteLinkField());
-members.Add("HeadVerticalBobOffset", HeadVerticalBobOffset_Element.Data.ToResoniteLinkField());
-members.Add("HeadVerticalBobAngle", HeadVerticalBobAngle_Element.Data.ToResoniteLinkField());
-members.Add("VerticalHeadAngleOffset", VerticalHeadAngleOffset_Element.Data.ToResoniteLinkField());
+members.Add("ReferenceSpeed", ReferenceSpeed_Element.ToLinkField(context));
+members.Add("MinOpposingProgress", MinOpposingProgress_Element.ToLinkField(context));
+members.Add("VelocityIncreaseSmoothTime", VelocityIncreaseSmoothTime_Element.ToLinkField(context));
+members.Add("VelocityDecreaseSmoothTime", VelocityDecreaseSmoothTime_Element.ToLinkField(context));
+members.Add("FootTravelDistance", FootTravelDistance_Element.ToLinkField(context));
+members.Add("FootSidewaysDistanceRatio", FootSidewaysDistanceRatio_Element.ToLinkField(context));
+members.Add("FootBackwardsDistanceRatio", FootBackwardsDistanceRatio_Element.ToLinkField(context));
+members.Add("FootMaxAngle", FootMaxAngle_Element.ToLinkField(context));
+members.Add("FootTurnInfluence", FootTurnInfluence_Element.ToLinkField(context));
+members.Add("Offset", Offset_Element.ToLinkField(context));
+members.Add("FootStepUpHeight", FootStepUpHeight_Element.ToLinkField(context));
+members.Add("FootStepDownHeight", FootStepDownHeight_Element.ToLinkField(context));
+members.Add("FootStepUpPow", FootStepUpPow_Element.ToLinkField(context));
+members.Add("FootStepDownPow", FootStepDownPow_Element.ToLinkField(context));
+members.Add("FootStepUpVelocityMultiplier", FootStepUpVelocityMultiplier_Element.ToLinkField(context));
+members.Add("FootStepUpVelocityVerticalRatio", FootStepUpVelocityVerticalRatio_Element.ToLinkField(context));
+members.Add("FootGroundAngle", FootGroundAngle_Element.ToLinkField(context));
+members.Add("FootGroundPow", FootGroundPow_Element.ToLinkField(context));
+members.Add("FootStepUpAngularVelocityMultiplier", FootStepUpAngularVelocityMultiplier_Element.ToLinkField(context));
+members.Add("FootStepDownAngle", FootStepDownAngle_Element.ToLinkField(context));
+members.Add("HandForwardForce", HandForwardForce_Element.ToLinkField(context));
+members.Add("HandBackwardForce", HandBackwardForce_Element.ToLinkField(context));
+members.Add("HandDrag", HandDrag_Element.ToLinkField(context));
+members.Add("HandSwingDistance", HandSwingDistance_Element.ToLinkField(context));
+members.Add("HandOffset", HandOffset_Element.ToLinkField(context));
+members.Add("HandDirectionCenterOffset", HandDirectionCenterOffset_Element.ToLinkField(context));
+members.Add("HandSwingDirection", HandSwingDirection_Element.ToLinkField(context));
+members.Add("HandSwingArcPeak", HandSwingArcPeak_Element.ToLinkField(context));
+members.Add("FingerBasePose", FingerBasePose_Element.ToLinkReference(context));
+members.Add("FingerCurlOffset", FingerCurlOffset_Element.ToLinkField(context));
+members.Add("FingerCurlSwayMagnitude", FingerCurlSwayMagnitude_Element.ToLinkField(context));
+members.Add("FingerCurlSwaySpeed", FingerCurlSwaySpeed_Element.ToLinkField(context));
+members.Add("FingerCurlVariationMagnitude", FingerCurlVariationMagnitude_Element.ToLinkField(context));
+members.Add("FingerCurlVariationSpeed", FingerCurlVariationSpeed_Element.ToLinkField(context));
+members.Add("HeadSmoothingSpeed", HeadSmoothingSpeed_Element.ToLinkField(context));
+members.Add("HeadHorizontalBobOffset", HeadHorizontalBobOffset_Element.ToLinkField(context));
+members.Add("HeadHorizontalBobAngle", HeadHorizontalBobAngle_Element.ToLinkField(context));
+members.Add("HeadVerticalBobOffset", HeadVerticalBobOffset_Element.ToLinkField(context));
+members.Add("HeadVerticalBobAngle", HeadVerticalBobAngle_Element.ToLinkField(context));
+members.Add("VerticalHeadAngleOffset", VerticalHeadAngleOffset_Element.ToLinkField(context));
 }
 
 }

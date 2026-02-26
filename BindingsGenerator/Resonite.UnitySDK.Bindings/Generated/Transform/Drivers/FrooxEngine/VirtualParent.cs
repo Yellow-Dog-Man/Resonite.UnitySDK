@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.VirtualParent
-// Generated on: čtvrtek 26. února 2026 10:04:42
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:28:07
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -39,13 +39,13 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("OverrideParent", OverrideParent_Element.Data.ToResoniteReference(context));
-members.Add("_targetPos", _targetPos_Element.Data.ToResoniteReference(context));
-members.Add("_targetRot", _targetRot_Element.Data.ToResoniteReference(context));
-members.Add("_targetScl", _targetScl_Element.Data.ToResoniteReference(context));
-members.Add("LocalPosition", LocalPosition_Element.Data.ToResoniteLinkField());
-members.Add("LocalRotation", LocalRotation_Element.Data.ToResoniteLinkField());
-members.Add("LocalScale", LocalScale_Element.Data.ToResoniteLinkField());
+members.Add("OverrideParent", OverrideParent_Element.ToLinkReference(context));
+members.Add("_targetPos", _targetPos_Element.ToLinkReference(context));
+members.Add("_targetRot", _targetRot_Element.ToLinkReference(context));
+members.Add("_targetScl", _targetScl_Element.ToLinkReference(context));
+members.Add("LocalPosition", LocalPosition_Element.ToLinkField(context));
+members.Add("LocalRotation", LocalRotation_Element.ToLinkField(context));
+members.Add("LocalScale", LocalScale_Element.ToLinkField(context));
 }
 
 }

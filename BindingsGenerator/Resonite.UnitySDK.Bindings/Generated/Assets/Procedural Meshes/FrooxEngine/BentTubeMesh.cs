@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.BentTubeMesh
-// Generated on: čtvrtek 26. února 2026 10:03:35
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:26:50
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -45,16 +45,16 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Radius", Radius_Element.Data.ToResoniteLinkField());
-members.Add("Sides", Sides_Element.Data.ToResoniteLinkField());
-members.Add("Segments", Segments_Element.Data.ToResoniteLinkField());
-members.Add("StartPoint", StartPoint_Element.Data.ToResoniteLinkField());
-members.Add("DirectTargetPoint", DirectTargetPoint_Element.Data.ToResoniteLinkField());
-members.Add("ActualTargetPoint", ActualTargetPoint_Element.Data.ToResoniteLinkField());
-members.Add("StartPointColor", StartPointColor_Element.Data.ToResoniteLinkField());
-members.Add("EndPointColor", EndPointColor_Element.Data.ToResoniteLinkField());
-members.Add("Ends", Ends_Element.Data.ToResoniteLinkField());
-members.Add("Shading", Shading_Element.Data.ToResoniteLinkField());
+members.Add("Radius", Radius_Element.ToLinkField(context));
+members.Add("Sides", Sides_Element.ToLinkField(context));
+members.Add("Segments", Segments_Element.ToLinkField(context));
+members.Add("StartPoint", StartPoint_Element.ToLinkField(context));
+members.Add("DirectTargetPoint", DirectTargetPoint_Element.ToLinkField(context));
+members.Add("ActualTargetPoint", ActualTargetPoint_Element.ToLinkField(context));
+members.Add("StartPointColor", StartPointColor_Element.ToLinkField(context));
+members.Add("EndPointColor", EndPointColor_Element.ToLinkField(context));
+members.Add("Ends", Ends_Element.ToLinkField(context));
+members.Add("Shading", Shading_Element.ToLinkField(context));
 }
 
 }

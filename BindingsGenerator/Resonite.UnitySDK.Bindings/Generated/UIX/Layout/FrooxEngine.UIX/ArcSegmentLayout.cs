@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.UIX.ArcSegmentLayout
-// Generated on: čtvrtek 26. února 2026 10:04:43
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:28:09
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -35,11 +35,11 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Nested", Nested_Element.Data.ToResoniteReference(context));
-members.Add("NestedSizeRatio", NestedSizeRatio_Element.Data.ToResoniteLinkField());
-members.Add("Label", Label_Element.Data.ToResoniteReference(context));
-members.Add("LabelSize", LabelSize_Element.Data.ToResoniteLinkField());
-members.Add("LabelDistance", LabelDistance_Element.Data.ToResoniteLinkField());
+members.Add("Nested", Nested_Element.ToLinkReference(context));
+members.Add("NestedSizeRatio", NestedSizeRatio_Element.ToLinkField(context));
+members.Add("Label", Label_Element.ToLinkReference(context));
+members.Add("LabelSize", LabelSize_Element.ToLinkField(context));
+members.Add("LabelDistance", LabelDistance_Element.ToLinkField(context));
 }
 
 }

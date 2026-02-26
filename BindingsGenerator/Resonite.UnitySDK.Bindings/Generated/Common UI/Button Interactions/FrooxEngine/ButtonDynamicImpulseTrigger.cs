@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.ButtonDynamicImpulseTrigger
-// Generated on: čtvrtek 26. února 2026 10:03:37
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:26:53
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -41,14 +41,14 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Target", Target_Element.Data.ToResoniteReference(context));
-members.Add("ExcludeDisabled", ExcludeDisabled_Element.Data.ToResoniteLinkField());
-members.Add("PressedTag", PressedTag_Element.Data.ToResoniteLinkField());
-members.Add("PressingTag", PressingTag_Element.Data.ToResoniteLinkField());
-members.Add("ReleasedTag", ReleasedTag_Element.Data.ToResoniteLinkField());
-members.Add("HoverEnterTag", HoverEnterTag_Element.Data.ToResoniteLinkField());
-members.Add("HoverStayTag", HoverStayTag_Element.Data.ToResoniteLinkField());
-members.Add("HoverLeaveTag", HoverLeaveTag_Element.Data.ToResoniteLinkField());
+members.Add("Target", Target_Element.ToLinkReference(context));
+members.Add("ExcludeDisabled", ExcludeDisabled_Element.ToLinkField(context));
+members.Add("PressedTag", PressedTag_Element.ToLinkField(context));
+members.Add("PressingTag", PressingTag_Element.ToLinkField(context));
+members.Add("ReleasedTag", ReleasedTag_Element.ToLinkField(context));
+members.Add("HoverEnterTag", HoverEnterTag_Element.ToLinkField(context));
+members.Add("HoverStayTag", HoverStayTag_Element.ToLinkField(context));
+members.Add("HoverLeaveTag", HoverLeaveTag_Element.ToLinkField(context));
 }
 
 }

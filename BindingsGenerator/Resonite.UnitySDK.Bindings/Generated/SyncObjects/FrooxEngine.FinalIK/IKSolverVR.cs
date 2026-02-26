@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.FinalIK.IKSolverVR
-// Generated on: čtvrtek 26. února 2026 10:04:45
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:28:11
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -48,22 +48,22 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("BoneReferences", new ResoniteLink.SyncObject() { Members = BoneReferences.CollectMembers(context) });
-members.Add("defaultLocalPositions", defaultLocalPositions.Data.ToResoniteLinkArray());
-members.Add("defaultLocalRotations", defaultLocalRotations.Data.ToResoniteLinkArray());
-members.Add("DebugVisuals", DebugVisuals_Element.Data.ToResoniteLinkField());
-members.Add("PlantFeet", PlantFeet_Element.Data.ToResoniteLinkField());
-members.Add("spine", new ResoniteLink.SyncObject() { Members = spine.CollectMembers(context) });
-members.Add("leftArm", new ResoniteLink.SyncObject() { Members = leftArm.CollectMembers(context) });
-members.Add("rightArm", new ResoniteLink.SyncObject() { Members = rightArm.CollectMembers(context) });
-members.Add("leftLeg", new ResoniteLink.SyncObject() { Members = leftLeg.CollectMembers(context) });
-members.Add("rightLeg", new ResoniteLink.SyncObject() { Members = rightLeg.CollectMembers(context) });
-members.Add("locomotion", new ResoniteLink.SyncObject() { Members = locomotion.CollectMembers(context) });
-members.Add("ForwardFlipped", ForwardFlipped_Element.Data.ToResoniteLinkField());
-members.Add("ForceRootHeight", ForceRootHeight_Element.Data.ToResoniteLinkField());
-members.Add("LocomotionPositionOffset", LocomotionPositionOffset_Element.Data.ToResoniteLinkField());
-members.Add("DefaultRootPosition", DefaultRootPosition_Element.Data.ToResoniteLinkField());
-members.Add("DefaultRootRotation", DefaultRootRotation_Element.Data.ToResoniteLinkField());
+members.Add("BoneReferences", BoneReferences.ToLinkSyncObject(context));
+members.Add("defaultLocalPositions", defaultLocalPositions.ToLinkArray(context));
+members.Add("defaultLocalRotations", defaultLocalRotations.ToLinkArray(context));
+members.Add("DebugVisuals", DebugVisuals_Element.ToLinkField(context));
+members.Add("PlantFeet", PlantFeet_Element.ToLinkField(context));
+members.Add("spine", spine.ToLinkSyncObject(context));
+members.Add("leftArm", leftArm.ToLinkSyncObject(context));
+members.Add("rightArm", rightArm.ToLinkSyncObject(context));
+members.Add("leftLeg", leftLeg.ToLinkSyncObject(context));
+members.Add("rightLeg", rightLeg.ToLinkSyncObject(context));
+members.Add("locomotion", locomotion.ToLinkSyncObject(context));
+members.Add("ForwardFlipped", ForwardFlipped_Element.ToLinkField(context));
+members.Add("ForceRootHeight", ForceRootHeight_Element.ToLinkField(context));
+members.Add("LocomotionPositionOffset", LocomotionPositionOffset_Element.ToLinkField(context));
+members.Add("DefaultRootPosition", DefaultRootPosition_Element.ToLinkField(context));
+members.Add("DefaultRootRotation", DefaultRootRotation_Element.ToLinkField(context));
 }
 
 }

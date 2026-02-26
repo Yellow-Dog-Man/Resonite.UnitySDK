@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.UIX.AxisMultiViewportPanner
-// Generated on: čtvrtek 26. února 2026 10:04:43
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:28:09
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -32,13 +32,10 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("ViewportIndex", ViewportIndex_Element.Data.ToResoniteLinkField());
-members.Add("AnimationTime", AnimationTime_Element.Data.ToResoniteLinkField());
-members.Add("Direction", Direction_Element.Data.ToResoniteLinkField());
-members.Add("Viewports", new ResoniteLink.SyncList()
-{
-    Elements = Viewports.Data.ConvertList(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers(context) })
-});
+members.Add("ViewportIndex", ViewportIndex_Element.ToLinkField(context));
+members.Add("AnimationTime", AnimationTime_Element.ToLinkField(context));
+members.Add("Direction", Direction_Element.ToLinkField(context));
+members.Add("Viewports", Viewports.ToLinkList(context, m => m.ToLinkSyncObject(context)));
 }
 
 }

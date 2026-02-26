@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.LegacyLabel
-// Generated on: čtvrtek 26. února 2026 10:04:46
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:28:12
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -39,13 +39,13 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("TextRenderer", TextRenderer_Element.Data.ToResoniteReference(context));
-members.Add("BaseColor", BaseColor_Element.Data.ToResoniteLinkField());
-members.Add("BaseColorElement", BaseColorElement_Element.Data.ToResoniteReference(context));
-members.Add("Brightness", Brightness_Element.Data.ToResoniteLinkField());
-members.Add("LerpRatio", LerpRatio_Element.Data.ToResoniteLinkField());
-members.Add("LerpColor", LerpColor_Element.Data.ToResoniteLinkField());
-members.Add("_textColor", _textColor_Element.Data.ToResoniteReference(context));
+members.Add("TextRenderer", TextRenderer_Element.ToLinkReference(context));
+members.Add("BaseColor", BaseColor_Element.ToLinkField(context));
+members.Add("BaseColorElement", BaseColorElement_Element.ToLinkReference(context));
+members.Add("Brightness", Brightness_Element.ToLinkField(context));
+members.Add("LerpRatio", LerpRatio_Element.ToLinkField(context));
+members.Add("LerpColor", LerpColor_Element.ToLinkField(context));
+members.Add("_textColor", _textColor_Element.ToLinkReference(context));
 }
 
 }

@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.FileBrowser
-// Generated on: čtvrtek 26. února 2026 10:04:44
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:28:10
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -38,13 +38,13 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("CurrentPath", CurrentPath_Element.Data.ToResoniteLinkField());
-members.Add("_lastPath", _lastPath_Element.Data.ToResoniteLinkField());
-members.Add("_user", new ResoniteLink.SyncObject() { Members = _user.CollectMembers(context) });
-members.Add("_importButton", _importButton_Element.Data.ToResoniteReference(context));
-members.Add("_rawImportButton", _rawImportButton_Element.Data.ToResoniteReference(context));
-members.Add("_createNewButton", _createNewButton_Element.Data.ToResoniteReference(context));
-members.Add("_reloadButton", _reloadButton_Element.Data.ToResoniteReference(context));
+members.Add("CurrentPath", CurrentPath_Element.ToLinkField(context));
+members.Add("_lastPath", _lastPath_Element.ToLinkField(context));
+members.Add("_user", _user.ToLinkSyncObject(context));
+members.Add("_importButton", _importButton_Element.ToLinkReference(context));
+members.Add("_rawImportButton", _rawImportButton_Element.ToLinkReference(context));
+members.Add("_createNewButton", _createNewButton_Element.ToLinkReference(context));
+members.Add("_reloadButton", _reloadButton_Element.ToLinkReference(context));
 }
 
 }

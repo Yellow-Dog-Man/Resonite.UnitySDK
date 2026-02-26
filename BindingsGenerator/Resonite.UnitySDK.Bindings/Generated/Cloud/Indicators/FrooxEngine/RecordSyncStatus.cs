@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.RecordSyncStatus
-// Generated on: čtvrtek 26. února 2026 10:03:37
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:26:52
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -43,15 +43,15 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("RecordQueueCount", RecordQueueCount_Element.Data.ToResoniteLinkField());
-members.Add("AssetVariantQueueCount", AssetVariantQueueCount_Element.Data.ToResoniteLinkField());
-members.Add("CurrentTaskProgress", CurrentTaskProgress_Element.Data.ToResoniteLinkField());
-members.Add("LastError", LastError_Element.Data.ToResoniteLinkField());
-members.Add("StatusMessage", StatusMessage_Element.Data.ToResoniteLinkField());
-members.Add("FullySyncedColor", FullySyncedColor_Element.Data.ToResoniteLinkField());
-members.Add("ErrorColor", ErrorColor_Element.Data.ToResoniteLinkField());
-members.Add("SyncingRecordsColor", SyncingRecordsColor_Element.Data.ToResoniteLinkField());
-members.Add("UploadingAssetVariantsColor", UploadingAssetVariantsColor_Element.Data.ToResoniteLinkField());
+members.Add("RecordQueueCount", RecordQueueCount_Element.ToLinkField(context));
+members.Add("AssetVariantQueueCount", AssetVariantQueueCount_Element.ToLinkField(context));
+members.Add("CurrentTaskProgress", CurrentTaskProgress_Element.ToLinkField(context));
+members.Add("LastError", LastError_Element.ToLinkField(context));
+members.Add("StatusMessage", StatusMessage_Element.ToLinkField(context));
+members.Add("FullySyncedColor", FullySyncedColor_Element.ToLinkField(context));
+members.Add("ErrorColor", ErrorColor_Element.ToLinkField(context));
+members.Add("SyncingRecordsColor", SyncingRecordsColor_Element.ToLinkField(context));
+members.Add("UploadingAssetVariantsColor", UploadingAssetVariantsColor_Element.ToLinkField(context));
 }
 
 }

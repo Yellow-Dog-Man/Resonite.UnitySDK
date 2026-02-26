@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [ProtoFluxBindings]FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Security.VerifyJoinRequest
-// Generated on: čtvrtek 26. února 2026 10:04:29
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:27:54
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -39,19 +39,19 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Verify", Verify_Element.Data.ToResoniteReference(context));
-members.Add("UserId", new ResoniteLink.EmptyElement());
-members.Add("UserSessionId", new ResoniteLink.EmptyElement());
-members.Add("MachineId", new ResoniteLink.EmptyElement());
-members.Add("Username", new ResoniteLink.EmptyElement());
-members.Add("HeadOutputDevice", new ResoniteLink.EmptyElement());
-members.Add("Platform", new ResoniteLink.EmptyElement());
-members.Add("IsInvited", new ResoniteLink.EmptyElement());
-members.Add("IsContact", new ResoniteLink.EmptyElement());
-members.Add("IsInKioskMode", new ResoniteLink.EmptyElement());
-members.Add("IsSpectatorBanned", new ResoniteLink.EmptyElement());
-members.Add("IsMuteBanned", new ResoniteLink.EmptyElement());
-members.Add("Handle", new ResoniteLink.EmptyElement());
+members.Add("Verify", Verify_Element.ToLinkReference(context));
+members.Add("UserId", UserId.ToLinkEmpty(context));
+members.Add("UserSessionId", UserSessionId.ToLinkEmpty(context));
+members.Add("MachineId", MachineId.ToLinkEmpty(context));
+members.Add("Username", Username.ToLinkEmpty(context));
+members.Add("HeadOutputDevice", HeadOutputDevice.ToLinkEmpty(context));
+members.Add("Platform", Platform.ToLinkEmpty(context));
+members.Add("IsInvited", IsInvited.ToLinkEmpty(context));
+members.Add("IsContact", IsContact.ToLinkEmpty(context));
+members.Add("IsInKioskMode", IsInKioskMode.ToLinkEmpty(context));
+members.Add("IsSpectatorBanned", IsSpectatorBanned.ToLinkEmpty(context));
+members.Add("IsMuteBanned", IsMuteBanned.ToLinkEmpty(context));
+members.Add("Handle", Handle.ToLinkEmpty(context));
 }
 
 }

@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.AutoLookAtUser
-// Generated on: čtvrtek 26. února 2026 10:04:41
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:28:06
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -45,16 +45,16 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("RetargetDistance", RetargetDistance_Element.Data.ToResoniteLinkField());
-members.Add("LerpSpeed", LerpSpeed_Element.Data.ToResoniteLinkField());
-members.Add("TargetedUser", TargetedUser_Element.Data.ToResoniteReference(context));
-members.Add("AutoTarget", AutoTarget_Element.Data.ToResoniteLinkField());
-members.Add("ExcludeActiveUser", ExcludeActiveUser_Element.Data.ToResoniteLinkField());
-members.Add("SwingReference", SwingReference_Element.Data.ToResoniteLinkField());
-members.Add("TwistReference", TwistReference_Element.Data.ToResoniteLinkField());
-members.Add("MaxSwing", MaxSwing_Element.Data.ToResoniteLinkField());
-members.Add("MaxTwist", MaxTwist_Element.Data.ToResoniteLinkField());
-members.Add("_rotation", _rotation_Element.Data.ToResoniteReference(context));
+members.Add("RetargetDistance", RetargetDistance_Element.ToLinkField(context));
+members.Add("LerpSpeed", LerpSpeed_Element.ToLinkField(context));
+members.Add("TargetedUser", TargetedUser_Element.ToLinkReference(context));
+members.Add("AutoTarget", AutoTarget_Element.ToLinkField(context));
+members.Add("ExcludeActiveUser", ExcludeActiveUser_Element.ToLinkField(context));
+members.Add("SwingReference", SwingReference_Element.ToLinkField(context));
+members.Add("TwistReference", TwistReference_Element.ToLinkField(context));
+members.Add("MaxSwing", MaxSwing_Element.ToLinkField(context));
+members.Add("MaxTwist", MaxTwist_Element.ToLinkField(context));
+members.Add("_rotation", _rotation_Element.ToLinkReference(context));
 }
 
 }

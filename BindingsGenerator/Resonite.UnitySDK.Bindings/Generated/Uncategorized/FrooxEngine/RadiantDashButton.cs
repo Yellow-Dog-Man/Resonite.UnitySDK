@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.RadiantDashButton
-// Generated on: čtvrtek 26. února 2026 10:04:44
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:28:10
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -49,18 +49,18 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Dash", Dash_Element.Data.ToResoniteReference(context));
-members.Add("Screen", Screen_Element.Data.ToResoniteReference(context));
-members.Add("_switchingEnabled", _switchingEnabled_Element.Data.ToResoniteReference(context));
-members.Add("_screenEnabled", _screenEnabled_Element.Data.ToResoniteReference(context));
-members.Add("_currentScreen", _currentScreen_Element.Data.ToResoniteReference(context));
-members.Add("_button", _button_Element.Data.ToResoniteReference(context));
-members.Add("_text", _text_Element.Data.ToResoniteReference(context));
-members.Add("_textBg", _textBg_Element.Data.ToResoniteReference(context));
-members.Add("_icon", _icon_Element.Data.ToResoniteReference(context));
-members.Add("_layout", _layout_Element.Data.ToResoniteReference(context));
-members.Add("_rootRect", _rootRect_Element.Data.ToResoniteReference(context));
-members.Add("_iconRect", _iconRect_Element.Data.ToResoniteReference(context));
+members.Add("Dash", Dash_Element.ToLinkReference(context));
+members.Add("Screen", Screen_Element.ToLinkReference(context));
+members.Add("_switchingEnabled", _switchingEnabled_Element.ToLinkReference(context));
+members.Add("_screenEnabled", _screenEnabled_Element.ToLinkReference(context));
+members.Add("_currentScreen", _currentScreen_Element.ToLinkReference(context));
+members.Add("_button", _button_Element.ToLinkReference(context));
+members.Add("_text", _text_Element.ToLinkReference(context));
+members.Add("_textBg", _textBg_Element.ToLinkReference(context));
+members.Add("_icon", _icon_Element.ToLinkReference(context));
+members.Add("_layout", _layout_Element.ToLinkReference(context));
+members.Add("_rootRect", _rootRect_Element.ToLinkReference(context));
+members.Add("_iconRect", _iconRect_Element.ToLinkReference(context));
 }
 
 }

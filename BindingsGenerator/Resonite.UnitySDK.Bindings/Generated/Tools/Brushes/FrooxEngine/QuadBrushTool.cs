@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.QuadBrushTool
-// Generated on: čtvrtek 26. února 2026 10:04:39
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:28:06
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -42,15 +42,15 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Pivot", Pivot_Element.Data.ToResoniteLinkField());
-members.Add("DualSided", DualSided_Element.Data.ToResoniteLinkField());
-members.Add("MinRotation", MinRotation_Element.Data.ToResoniteLinkField());
-members.Add("MaxRotation", MaxRotation_Element.Data.ToResoniteLinkField());
-members.Add("RotationSpace", new ResoniteLink.SyncObject() { Members = RotationSpace.CollectMembers(context) });
-members.Add("_previewRenderer", _previewRenderer_Element.Data.ToResoniteReference(context));
-members.Add("_previewMesh", _previewMesh_Element.Data.ToResoniteReference(context));
-members.Add("_previewMeshOffset", _previewMeshOffset_Element.Data.ToResoniteReference(context));
-members.Add("_previewMeshRotation", _previewMeshRotation_Element.Data.ToResoniteReference(context));
+members.Add("Pivot", Pivot_Element.ToLinkField(context));
+members.Add("DualSided", DualSided_Element.ToLinkField(context));
+members.Add("MinRotation", MinRotation_Element.ToLinkField(context));
+members.Add("MaxRotation", MaxRotation_Element.ToLinkField(context));
+members.Add("RotationSpace", RotationSpace.ToLinkSyncObject(context));
+members.Add("_previewRenderer", _previewRenderer_Element.ToLinkReference(context));
+members.Add("_previewMesh", _previewMesh_Element.ToLinkReference(context));
+members.Add("_previewMeshOffset", _previewMeshOffset_Element.ToLinkReference(context));
+members.Add("_previewMeshRotation", _previewMeshRotation_Element.ToLinkReference(context));
 }
 
 }

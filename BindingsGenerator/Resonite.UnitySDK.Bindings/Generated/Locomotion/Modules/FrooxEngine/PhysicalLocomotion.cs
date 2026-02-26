@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.PhysicalLocomotion
-// Generated on: čtvrtek 26. února 2026 10:03:40
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:26:56
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -78,33 +78,33 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Turn", new ResoniteLink.SyncObject() { Members = Turn.CollectMembers(context) });
-members.Add("Archetype", Archetype_Element.Data.ToResoniteLinkField());
-members.Add("MinInitializationDelay", MinInitializationDelay_Element.Data.ToResoniteLinkField());
-members.Add("MaxInitializationDelay", MaxInitializationDelay_Element.Data.ToResoniteLinkField());
-members.Add("InitializationColliderRoot", InitializationColliderRoot_Element.Data.ToResoniteReference(context));
-members.Add("UseSpeedFromUserSettings", UseSpeedFromUserSettings_Element.Data.ToResoniteLinkField());
-members.Add("Description", Description_Element.Data.ToResoniteLinkField());
-members.Add("Mode", Mode_Element.Data.ToResoniteLinkField());
-members.Add("Gripping", Gripping_Element.Data.ToResoniteLinkField());
-members.Add("GripOnHold", GripOnHold_Element.Data.ToResoniteLinkField());
-members.Add("GripRadius", GripRadius_Element.Data.ToResoniteLinkField());
-members.Add("GripVelocityMultiplier", GripVelocityMultiplier_Element.Data.ToResoniteLinkField());
-members.Add("GripHandRotationMode", GripHandRotationMode_Element.Data.ToResoniteLinkField());
-members.Add("GripObjectRotationMode", GripObjectRotationMode_Element.Data.ToResoniteLinkField());
-members.Add("HandGripRotationSmoothSpeed", HandGripRotationSmoothSpeed_Element.Data.ToResoniteLinkField());
-members.Add("FallRespawnPosition", FallRespawnPosition_Element.Data.ToResoniteLinkField());
-members.Add("MakeGravityCharacterLocal", MakeGravityCharacterLocal_Element.Data.ToResoniteLinkField());
-members.Add("AutoAlignVerticalWithGravitySpeed", AutoAlignVerticalWithGravitySpeed_Element.Data.ToResoniteLinkField());
-members.Add("ManualAlignVerticalWithGravitySpeed", ManualAlignVerticalWithGravitySpeed_Element.Data.ToResoniteLinkField());
-members.Add("AirDecelerationSpeed", AirDecelerationSpeed_Element.Data.ToResoniteLinkField());
-members.Add("GripScaleDelay", GripScaleDelay_Element.Data.ToResoniteLinkField());
-members.Add("AllowCrouch", AllowCrouch_Element.Data.ToResoniteLinkField());
-members.Add("MaximumNormalizedSpeed", MaximumNormalizedSpeed_Element.Data.ToResoniteLinkField());
-members.Add("_defaultIcon", _defaultIcon_Element.Data.ToResoniteLinkField());
-members.Add("_defaultColor", _defaultColor_Element.Data.ToResoniteLinkField());
-members.Add("_characterController", _characterController_Element.Data.ToResoniteReference(context));
-members.Add("__legacyName", __legacyName_Element.Data.ToResoniteLinkField());
+members.Add("Turn", Turn.ToLinkSyncObject(context));
+members.Add("Archetype", Archetype_Element.ToLinkField(context));
+members.Add("MinInitializationDelay", MinInitializationDelay_Element.ToLinkField(context));
+members.Add("MaxInitializationDelay", MaxInitializationDelay_Element.ToLinkField(context));
+members.Add("InitializationColliderRoot", InitializationColliderRoot_Element.ToLinkReference(context));
+members.Add("UseSpeedFromUserSettings", UseSpeedFromUserSettings_Element.ToLinkField(context));
+members.Add("Description", Description_Element.ToLinkField(context));
+members.Add("Mode", Mode_Element.ToLinkField(context));
+members.Add("Gripping", Gripping_Element.ToLinkField(context));
+members.Add("GripOnHold", GripOnHold_Element.ToLinkField(context));
+members.Add("GripRadius", GripRadius_Element.ToLinkField(context));
+members.Add("GripVelocityMultiplier", GripVelocityMultiplier_Element.ToLinkField(context));
+members.Add("GripHandRotationMode", GripHandRotationMode_Element.ToLinkField(context));
+members.Add("GripObjectRotationMode", GripObjectRotationMode_Element.ToLinkField(context));
+members.Add("HandGripRotationSmoothSpeed", HandGripRotationSmoothSpeed_Element.ToLinkField(context));
+members.Add("FallRespawnPosition", FallRespawnPosition_Element.ToLinkField(context));
+members.Add("MakeGravityCharacterLocal", MakeGravityCharacterLocal_Element.ToLinkField(context));
+members.Add("AutoAlignVerticalWithGravitySpeed", AutoAlignVerticalWithGravitySpeed_Element.ToLinkField(context));
+members.Add("ManualAlignVerticalWithGravitySpeed", ManualAlignVerticalWithGravitySpeed_Element.ToLinkField(context));
+members.Add("AirDecelerationSpeed", AirDecelerationSpeed_Element.ToLinkField(context));
+members.Add("GripScaleDelay", GripScaleDelay_Element.ToLinkField(context));
+members.Add("AllowCrouch", AllowCrouch_Element.ToLinkField(context));
+members.Add("MaximumNormalizedSpeed", MaximumNormalizedSpeed_Element.ToLinkField(context));
+members.Add("_defaultIcon", _defaultIcon_Element.ToLinkField(context));
+members.Add("_defaultColor", _defaultColor_Element.ToLinkField(context));
+members.Add("_characterController", _characterController_Element.ToLinkReference(context));
+members.Add("__legacyName", __legacyName_Element.ToLinkField(context));
 }
 
 }

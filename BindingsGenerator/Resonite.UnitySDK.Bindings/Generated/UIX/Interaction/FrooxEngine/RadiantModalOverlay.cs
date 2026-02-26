@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.RadiantModalOverlay
-// Generated on: čtvrtek 26. února 2026 10:04:43
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:28:08
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -63,25 +63,25 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("BlurSpread", BlurSpread_Element.Data.ToResoniteLinkField());
-members.Add("BackgroundColor", BackgroundColor_Element.Data.ToResoniteLinkField());
-members.Add("ContentAnimationScaleOffset", ContentAnimationScaleOffset_Element.Data.ToResoniteLinkField());
-members.Add("HeaderSize", HeaderSize_Element.Data.ToResoniteLinkField());
-members.Add("Padding", Padding_Element.Data.ToResoniteLinkField());
-members.Add("_title", _title_Element.Data.ToResoniteReference(context));
-members.Add("_blur", _blur_Element.Data.ToResoniteReference(context));
-members.Add("_blurGraphic", _blurGraphic_Element.Data.ToResoniteReference(context));
-members.Add("_blurSpread", _blurSpread_Element.Data.ToResoniteReference(context));
-members.Add("_backgroundColor", _backgroundColor_Element.Data.ToResoniteReference(context));
-members.Add("_maskRect", _maskRect_Element.Data.ToResoniteReference(context));
-members.Add("_headerOffsetMin", _headerOffsetMin_Element.Data.ToResoniteReference(context));
-members.Add("_headerOffsetMax", _headerOffsetMax_Element.Data.ToResoniteReference(context));
-members.Add("_contentOffsetMin", _contentOffsetMin_Element.Data.ToResoniteReference(context));
-members.Add("_contentOffsetMax", _contentOffsetMax_Element.Data.ToResoniteReference(context));
-members.Add("_titleOffsetMin", _titleOffsetMin_Element.Data.ToResoniteReference(context));
-members.Add("_titleOffsetMax", _titleOffsetMax_Element.Data.ToResoniteReference(context));
-members.Add("_closeOffsetMin", _closeOffsetMin_Element.Data.ToResoniteReference(context));
-members.Add("_closeOffsetMax", _closeOffsetMax_Element.Data.ToResoniteReference(context));
+members.Add("BlurSpread", BlurSpread_Element.ToLinkField(context));
+members.Add("BackgroundColor", BackgroundColor_Element.ToLinkField(context));
+members.Add("ContentAnimationScaleOffset", ContentAnimationScaleOffset_Element.ToLinkField(context));
+members.Add("HeaderSize", HeaderSize_Element.ToLinkField(context));
+members.Add("Padding", Padding_Element.ToLinkField(context));
+members.Add("_title", _title_Element.ToLinkReference(context));
+members.Add("_blur", _blur_Element.ToLinkReference(context));
+members.Add("_blurGraphic", _blurGraphic_Element.ToLinkReference(context));
+members.Add("_blurSpread", _blurSpread_Element.ToLinkReference(context));
+members.Add("_backgroundColor", _backgroundColor_Element.ToLinkReference(context));
+members.Add("_maskRect", _maskRect_Element.ToLinkReference(context));
+members.Add("_headerOffsetMin", _headerOffsetMin_Element.ToLinkReference(context));
+members.Add("_headerOffsetMax", _headerOffsetMax_Element.ToLinkReference(context));
+members.Add("_contentOffsetMin", _contentOffsetMin_Element.ToLinkReference(context));
+members.Add("_contentOffsetMax", _contentOffsetMax_Element.ToLinkReference(context));
+members.Add("_titleOffsetMin", _titleOffsetMin_Element.ToLinkReference(context));
+members.Add("_titleOffsetMax", _titleOffsetMax_Element.ToLinkReference(context));
+members.Add("_closeOffsetMin", _closeOffsetMin_Element.ToLinkReference(context));
+members.Add("_closeOffsetMax", _closeOffsetMax_Element.ToLinkReference(context));
 }
 
 }

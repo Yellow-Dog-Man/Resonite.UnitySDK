@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.LabelContentDriver
-// Generated on: čtvrtek 26. února 2026 10:04:46
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:28:11
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -52,20 +52,20 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("AutoUpdate", AutoUpdate_Element.Data.ToResoniteLinkField());
-members.Add("Padding", Padding_Element.Data.ToResoniteLinkField());
-members.Add("BaseWidth", BaseWidth_Element.Data.ToResoniteLinkField());
-members.Add("ContentOrientSpace", new ResoniteLink.SyncObject() { Members = ContentOrientSpace.CollectMembers(context) });
-members.Add("OrientAtLocalUser", OrientAtLocalUser_Element.Data.ToResoniteLinkField());
-members.Add("_contentRoot", _contentRoot_Element.Data.ToResoniteReference(context));
-members.Add("_targetPoint", _targetPoint_Element.Data.ToResoniteReference(context));
-members.Add("_contentRotation", _contentRotation_Element.Data.ToResoniteLinkField());
-members.Add("_contentRotationDrive", _contentRotationDrive_Element.Data.ToResoniteReference(context));
-members.Add("_labelPosition", _labelPosition_Element.Data.ToResoniteReference(context));
-members.Add("_labelWidth", _labelWidth_Element.Data.ToResoniteReference(context));
-members.Add("_lineWidth", _lineWidth_Element.Data.ToResoniteReference(context));
-members.Add("_labelRotation", _labelRotation_Element.Data.ToResoniteReference(context));
-members.Add("_pointPosition", _pointPosition_Element.Data.ToResoniteReference(context));
+members.Add("AutoUpdate", AutoUpdate_Element.ToLinkField(context));
+members.Add("Padding", Padding_Element.ToLinkField(context));
+members.Add("BaseWidth", BaseWidth_Element.ToLinkField(context));
+members.Add("ContentOrientSpace", ContentOrientSpace.ToLinkSyncObject(context));
+members.Add("OrientAtLocalUser", OrientAtLocalUser_Element.ToLinkField(context));
+members.Add("_contentRoot", _contentRoot_Element.ToLinkReference(context));
+members.Add("_targetPoint", _targetPoint_Element.ToLinkReference(context));
+members.Add("_contentRotation", _contentRotation_Element.ToLinkField(context));
+members.Add("_contentRotationDrive", _contentRotationDrive_Element.ToLinkReference(context));
+members.Add("_labelPosition", _labelPosition_Element.ToLinkReference(context));
+members.Add("_labelWidth", _labelWidth_Element.ToLinkReference(context));
+members.Add("_lineWidth", _lineWidth_Element.ToLinkReference(context));
+members.Add("_labelRotation", _labelRotation_Element.ToLinkReference(context));
+members.Add("_pointPosition", _pointPosition_Element.ToLinkReference(context));
 }
 
 }

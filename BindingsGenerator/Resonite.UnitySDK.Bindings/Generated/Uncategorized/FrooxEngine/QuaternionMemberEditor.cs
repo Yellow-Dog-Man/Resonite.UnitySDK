@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.QuaternionMemberEditor
-// Generated on: čtvrtek 26. února 2026 10:04:47
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:28:13
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -47,17 +47,17 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Vertical", Vertical_Element.Data.ToResoniteLinkField());
-members.Add("_xEditor", _xEditor_Element.Data.ToResoniteReference(context));
-members.Add("_yEditor", _yEditor_Element.Data.ToResoniteReference(context));
-members.Add("_zEditor", _zEditor_Element.Data.ToResoniteReference(context));
-members.Add("_xDrive", _xDrive_Element.Data.ToResoniteReference(context));
-members.Add("_yDrive", _yDrive_Element.Data.ToResoniteReference(context));
-members.Add("_zDrive", _zDrive_Element.Data.ToResoniteReference(context));
-members.Add("_xButton", _xButton_Element.Data.ToResoniteReference(context));
-members.Add("_yButton", _yButton_Element.Data.ToResoniteReference(context));
-members.Add("_zButton", _zButton_Element.Data.ToResoniteReference(context));
-members.Add("_editingValue", _editingValue_Element.Data.ToResoniteLinkField());
+members.Add("Vertical", Vertical_Element.ToLinkField(context));
+members.Add("_xEditor", _xEditor_Element.ToLinkReference(context));
+members.Add("_yEditor", _yEditor_Element.ToLinkReference(context));
+members.Add("_zEditor", _zEditor_Element.ToLinkReference(context));
+members.Add("_xDrive", _xDrive_Element.ToLinkReference(context));
+members.Add("_yDrive", _yDrive_Element.ToLinkReference(context));
+members.Add("_zDrive", _zDrive_Element.ToLinkReference(context));
+members.Add("_xButton", _xButton_Element.ToLinkReference(context));
+members.Add("_yButton", _yButton_Element.ToLinkReference(context));
+members.Add("_zButton", _zButton_Element.ToLinkReference(context));
+members.Add("_editingValue", _editingValue_Element.ToLinkField(context));
 }
 
 }

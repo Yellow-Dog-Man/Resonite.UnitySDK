@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.UIX.InteractionElement
-// Generated on: čtvrtek 26. února 2026 10:03:37
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:26:52
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -44,19 +44,16 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("BaseColor", BaseColor_Element.Data.ToResoniteLinkField());
-members.Add("ColorDrivers", new ResoniteLink.SyncList()
-{
-    Elements = ColorDrivers.Data.ConvertList(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers(context) })
-});
-members.Add("__legacy_NormalColor", __legacy_NormalColor_Element.Data.ToResoniteLinkField());
-members.Add("__legacy_HighlightColor", __legacy_HighlightColor_Element.Data.ToResoniteLinkField());
-members.Add("__legacy_PressColor", __legacy_PressColor_Element.Data.ToResoniteLinkField());
-members.Add("__legacy_DisabledColor", __legacy_DisabledColor_Element.Data.ToResoniteLinkField());
-members.Add("__legacy_TintColorMode", __legacy_TintColorMode_Element.Data.ToResoniteLinkField());
-members.Add("__legacy_ColorDrive", __legacy_ColorDrive_Element.Data.ToResoniteReference(context));
-members.Add("IsPressed", IsPressed_Element.Data.ToResoniteLinkField());
-members.Add("IsHovering", IsHovering_Element.Data.ToResoniteLinkField());
+members.Add("BaseColor", BaseColor_Element.ToLinkField(context));
+members.Add("ColorDrivers", ColorDrivers.ToLinkList(context, m => m.ToLinkSyncObject(context)));
+members.Add("__legacy_NormalColor", __legacy_NormalColor_Element.ToLinkField(context));
+members.Add("__legacy_HighlightColor", __legacy_HighlightColor_Element.ToLinkField(context));
+members.Add("__legacy_PressColor", __legacy_PressColor_Element.ToLinkField(context));
+members.Add("__legacy_DisabledColor", __legacy_DisabledColor_Element.ToLinkField(context));
+members.Add("__legacy_TintColorMode", __legacy_TintColorMode_Element.ToLinkField(context));
+members.Add("__legacy_ColorDrive", __legacy_ColorDrive_Element.ToLinkReference(context));
+members.Add("IsPressed", IsPressed_Element.ToLinkField(context));
+members.Add("IsHovering", IsHovering_Element.ToLinkField(context));
 }
 
 }

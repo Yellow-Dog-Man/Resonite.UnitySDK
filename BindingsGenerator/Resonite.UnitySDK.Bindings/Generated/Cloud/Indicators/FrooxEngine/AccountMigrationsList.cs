@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.AccountMigrationsList
-// Generated on: čtvrtek 26. února 2026 10:03:37
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:26:52
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -34,14 +34,11 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("TotalMigrations", TotalMigrations_Element.Data.ToResoniteLinkField());
-members.Add("WaitingMigrations", WaitingMigrations_Element.Data.ToResoniteLinkField());
-members.Add("RunningMigrations", RunningMigrations_Element.Data.ToResoniteLinkField());
-members.Add("CompletedMigrations", CompletedMigrations_Element.Data.ToResoniteLinkField());
-members.Add("MigrationTaskIds", new ResoniteLink.SyncList()
-{
-    Elements = MigrationTaskIds.Data.ConvertList(m => m.Data.ToResoniteLinkField())
-});
+members.Add("TotalMigrations", TotalMigrations_Element.ToLinkField(context));
+members.Add("WaitingMigrations", WaitingMigrations_Element.ToLinkField(context));
+members.Add("RunningMigrations", RunningMigrations_Element.ToLinkField(context));
+members.Add("CompletedMigrations", CompletedMigrations_Element.ToLinkField(context));
+members.Add("MigrationTaskIds", MigrationTaskIds.ToLinkList(context, m => m.ToLinkField(context)));
 }
 
 }

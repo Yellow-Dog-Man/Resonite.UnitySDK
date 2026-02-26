@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.PlatformColorPalette+Grayscale
-// Generated on: čtvrtek 26. února 2026 10:04:50
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:28:16
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -43,14 +43,14 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("DarkHex", DarkHex_Element.Data.ToResoniteLinkField());
-members.Add("MidHex", MidHex_Element.Data.ToResoniteLinkField());
-members.Add("MidLightHex", MidLightHex_Element.Data.ToResoniteLinkField());
-members.Add("LightHex", LightHex_Element.Data.ToResoniteLinkField());
-members.Add("Dark", Dark_Element.Data.ToResoniteLinkField());
-members.Add("Mid", Mid_Element.Data.ToResoniteLinkField());
-members.Add("MidLight", MidLight_Element.Data.ToResoniteLinkField());
-members.Add("Light", Light_Element.Data.ToResoniteLinkField());
+members.Add("DarkHex", DarkHex_Element.ToLinkField(context));
+members.Add("MidHex", MidHex_Element.ToLinkField(context));
+members.Add("MidLightHex", MidLightHex_Element.ToLinkField(context));
+members.Add("LightHex", LightHex_Element.ToLinkField(context));
+members.Add("Dark", Dark_Element.ToLinkField(context));
+members.Add("Mid", Mid_Element.ToLinkField(context));
+members.Add("MidLight", MidLight_Element.ToLinkField(context));
+members.Add("Light", Light_Element.ToLinkField(context));
 }
 
 }

@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.ExportDialog
-// Generated on: čtvrtek 26. února 2026 10:04:44
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:28:10
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -40,17 +40,14 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("SelectedExportOption", SelectedExportOption_Element.Data.ToResoniteLinkField());
-members.Add("ExportName", ExportName_Element.Data.ToResoniteReference(context));
-members.Add("_targetFolder", _targetFolder_Element.Data.ToResoniteLinkField());
-members.Add("EditEnabled", EditEnabled_Element.Data.ToResoniteLinkField());
-members.Add("_cancel", _cancel_Element.Data.ToResoniteReference(context));
-members.Add("_export", _export_Element.Data.ToResoniteReference(context));
-members.Add("_exportOptions", new ResoniteLink.SyncList()
-{
-    Elements = _exportOptions.Data.ConvertList(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers(context) })
-});
-members.Add("FileName", FileName_Element.Data.ToResoniteReference(context));
+members.Add("SelectedExportOption", SelectedExportOption_Element.ToLinkField(context));
+members.Add("ExportName", ExportName_Element.ToLinkReference(context));
+members.Add("_targetFolder", _targetFolder_Element.ToLinkField(context));
+members.Add("EditEnabled", EditEnabled_Element.ToLinkField(context));
+members.Add("_cancel", _cancel_Element.ToLinkReference(context));
+members.Add("_export", _export_Element.ToLinkReference(context));
+members.Add("_exportOptions", _exportOptions.ToLinkList(context, m => m.ToLinkSyncObject(context)));
+members.Add("FileName", FileName_Element.ToLinkReference(context));
 }
 
 }

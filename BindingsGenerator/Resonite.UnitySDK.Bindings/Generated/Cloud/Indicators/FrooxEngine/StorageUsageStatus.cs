@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.StorageUsageStatus
-// Generated on: čtvrtek 26. února 2026 10:03:37
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:26:52
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -55,21 +55,21 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("OwnerId", OwnerId_Element.Data.ToResoniteLinkField());
-members.Add("GroupMemberQuota", GroupMemberQuota_Element.Data.ToResoniteLinkField());
-members.Add("HasValidData", HasValidData_Element.Data.ToResoniteLinkField());
-members.Add("StorageBytes", StorageBytes_Element.Data.ToResoniteLinkField());
-members.Add("FullStorageBytes", FullStorageBytes_Element.Data.ToResoniteLinkField());
-members.Add("ShareableStorageBytes", ShareableStorageBytes_Element.Data.ToResoniteLinkField());
-members.Add("SharedStorageBytes", SharedStorageBytes_Element.Data.ToResoniteLinkField());
-members.Add("UsageBytes", UsageBytes_Element.Data.ToResoniteLinkField());
-members.Add("UsageRatio", UsageRatio_Element.Data.ToResoniteLinkField());
-members.Add("StorageString", StorageString_Element.Data.ToResoniteLinkField());
-members.Add("FullStorageString", FullStorageString_Element.Data.ToResoniteLinkField());
-members.Add("ShareableStorageString", ShareableStorageString_Element.Data.ToResoniteLinkField());
-members.Add("SharedStorageString", SharedStorageString_Element.Data.ToResoniteLinkField());
-members.Add("UsageString", UsageString_Element.Data.ToResoniteLinkField());
-members.Add("RatioString", RatioString_Element.Data.ToResoniteLinkField());
+members.Add("OwnerId", OwnerId_Element.ToLinkField(context));
+members.Add("GroupMemberQuota", GroupMemberQuota_Element.ToLinkField(context));
+members.Add("HasValidData", HasValidData_Element.ToLinkField(context));
+members.Add("StorageBytes", StorageBytes_Element.ToLinkField(context));
+members.Add("FullStorageBytes", FullStorageBytes_Element.ToLinkField(context));
+members.Add("ShareableStorageBytes", ShareableStorageBytes_Element.ToLinkField(context));
+members.Add("SharedStorageBytes", SharedStorageBytes_Element.ToLinkField(context));
+members.Add("UsageBytes", UsageBytes_Element.ToLinkField(context));
+members.Add("UsageRatio", UsageRatio_Element.ToLinkField(context));
+members.Add("StorageString", StorageString_Element.ToLinkField(context));
+members.Add("FullStorageString", FullStorageString_Element.ToLinkField(context));
+members.Add("ShareableStorageString", ShareableStorageString_Element.ToLinkField(context));
+members.Add("SharedStorageString", SharedStorageString_Element.ToLinkField(context));
+members.Add("UsageString", UsageString_Element.ToLinkField(context));
+members.Add("RatioString", RatioString_Element.ToLinkField(context));
 }
 
 }

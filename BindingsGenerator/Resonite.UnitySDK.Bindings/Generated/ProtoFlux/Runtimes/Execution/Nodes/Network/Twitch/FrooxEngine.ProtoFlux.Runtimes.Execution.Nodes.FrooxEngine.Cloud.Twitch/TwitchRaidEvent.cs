@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [ProtoFluxBindings]FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Cloud.Twitch.TwitchRaidEvent
-// Generated on: čtvrtek 26. února 2026 10:04:21
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:27:45
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -32,12 +32,12 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("OnRaid", OnRaid_Element.Data.ToResoniteReference(context));
-members.Add("UserId", new ResoniteLink.EmptyElement());
-members.Add("DisplayName", new ResoniteLink.EmptyElement());
-members.Add("Color", new ResoniteLink.EmptyElement());
-members.Add("ViewerCount", new ResoniteLink.EmptyElement());
-members.Add("IsSubscriber", new ResoniteLink.EmptyElement());
+members.Add("OnRaid", OnRaid_Element.ToLinkReference(context));
+members.Add("UserId", UserId.ToLinkEmpty(context));
+members.Add("DisplayName", DisplayName.ToLinkEmpty(context));
+members.Add("Color", Color.ToLinkEmpty(context));
+members.Add("ViewerCount", ViewerCount.ToLinkEmpty(context));
+members.Add("IsSubscriber", IsSubscriber.ToLinkEmpty(context));
 }
 
 }

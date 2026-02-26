@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.WorldOrb
-// Generated on: čtvrtek 26. února 2026 10:04:47
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:28:13
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -96,45 +96,42 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("SessionStartingUser", SessionStartingUser_Element.Data.ToResoniteReference(context));
-members.Add("URL", URL_Element.Data.ToResoniteLinkField());
-members.Add("ActiveSessionURLs", new ResoniteLink.SyncList()
-{
-    Elements = ActiveSessionURLs.Data.ConvertList(m => m.Data.ToResoniteLinkField())
-});
-members.Add("Visit", Visit_Element.Data.ToResoniteLinkField());
-members.Add("ActiveUsers", ActiveUsers_Element.Data.ToResoniteLinkField());
-members.Add("RecordStateUpdated", RecordStateUpdated_Element.Data.ToResoniteLinkField());
-members.Add("IsPublic", IsPublic_Element.Data.ToResoniteLinkField());
-members.Add("CanModify", CanModify_Element.Data.ToResoniteLinkField());
-members.Add("LongPressIndicatorColor", LongPressIndicatorColor_Element.Data.ToResoniteLinkField());
-members.Add("LongPressTime", LongPressTime_Element.Data.ToResoniteLinkField());
-members.Add("_longPressIndicator", _longPressIndicator_Element.Data.ToResoniteReference(context));
-members.Add("_longPressIndicatorMaterial", _longPressIndicatorMaterial_Element.Data.ToResoniteReference(context));
-members.Add("_lastFetchedUrl", _lastFetchedUrl_Element.Data.ToResoniteLinkField());
-members.Add("_isReadOnly", _isReadOnly_Element.Data.ToResoniteLinkField());
-members.Add("_orbRoot", _orbRoot_Element.Data.ToResoniteReference(context));
-members.Add("_infoRoot", _infoRoot_Element.Data.ToResoniteReference(context));
-members.Add("_thumbTex", _thumbTex_Element.Data.ToResoniteReference(context));
-members.Add("_thumbMaterial", _thumbMaterial_Element.Data.ToResoniteReference(context));
-members.Add("_shellMaterial", _shellMaterial_Element.Data.ToResoniteReference(context));
-members.Add("_nameText", _nameText_Element.Data.ToResoniteReference(context));
-members.Add("_creatorText", _creatorText_Element.Data.ToResoniteReference(context));
-members.Add("_visitsText", _visitsText_Element.Data.ToResoniteReference(context));
-members.Add("_usersText", _usersText_Element.Data.ToResoniteReference(context));
-members.Add("_namePosition", _namePosition_Element.Data.ToResoniteReference(context));
-members.Add("_creatorPosition", _creatorPosition_Element.Data.ToResoniteReference(context));
-members.Add("_visitsPosition", _visitsPosition_Element.Data.ToResoniteReference(context));
-members.Add("_usersPosition", _usersPosition_Element.Data.ToResoniteReference(context));
-members.Add("_userCountText", _userCountText_Element.Data.ToResoniteReference(context));
-members.Add("_sizeDrive", _sizeDrive_Element.Data.ToResoniteReference(context));
-members.Add("_iconSlot", _iconSlot_Element.Data.ToResoniteReference(context));
-members.Add("_iconTexture", _iconTexture_Element.Data.ToResoniteReference(context));
-members.Add("_iconMaterial", _iconMaterial_Element.Data.ToResoniteReference(context));
-members.Add("_iconPosition", _iconPosition_Element.Data.ToResoniteReference(context));
-members.Add("_sessionStartDialog", _sessionStartDialog_Element.Data.ToResoniteReference(context));
-members.Add("_lastTouch", _lastTouch_Element.Data.ToResoniteLinkField());
-members.Add("_lastFlash", _lastFlash_Element.Data.ToResoniteLinkField());
+members.Add("SessionStartingUser", SessionStartingUser_Element.ToLinkReference(context));
+members.Add("URL", URL_Element.ToLinkField(context));
+members.Add("ActiveSessionURLs", ActiveSessionURLs.ToLinkList(context, m => m.ToLinkField(context)));
+members.Add("Visit", Visit_Element.ToLinkField(context));
+members.Add("ActiveUsers", ActiveUsers_Element.ToLinkField(context));
+members.Add("RecordStateUpdated", RecordStateUpdated_Element.ToLinkField(context));
+members.Add("IsPublic", IsPublic_Element.ToLinkField(context));
+members.Add("CanModify", CanModify_Element.ToLinkField(context));
+members.Add("LongPressIndicatorColor", LongPressIndicatorColor_Element.ToLinkField(context));
+members.Add("LongPressTime", LongPressTime_Element.ToLinkField(context));
+members.Add("_longPressIndicator", _longPressIndicator_Element.ToLinkReference(context));
+members.Add("_longPressIndicatorMaterial", _longPressIndicatorMaterial_Element.ToLinkReference(context));
+members.Add("_lastFetchedUrl", _lastFetchedUrl_Element.ToLinkField(context));
+members.Add("_isReadOnly", _isReadOnly_Element.ToLinkField(context));
+members.Add("_orbRoot", _orbRoot_Element.ToLinkReference(context));
+members.Add("_infoRoot", _infoRoot_Element.ToLinkReference(context));
+members.Add("_thumbTex", _thumbTex_Element.ToLinkReference(context));
+members.Add("_thumbMaterial", _thumbMaterial_Element.ToLinkReference(context));
+members.Add("_shellMaterial", _shellMaterial_Element.ToLinkReference(context));
+members.Add("_nameText", _nameText_Element.ToLinkReference(context));
+members.Add("_creatorText", _creatorText_Element.ToLinkReference(context));
+members.Add("_visitsText", _visitsText_Element.ToLinkReference(context));
+members.Add("_usersText", _usersText_Element.ToLinkReference(context));
+members.Add("_namePosition", _namePosition_Element.ToLinkReference(context));
+members.Add("_creatorPosition", _creatorPosition_Element.ToLinkReference(context));
+members.Add("_visitsPosition", _visitsPosition_Element.ToLinkReference(context));
+members.Add("_usersPosition", _usersPosition_Element.ToLinkReference(context));
+members.Add("_userCountText", _userCountText_Element.ToLinkReference(context));
+members.Add("_sizeDrive", _sizeDrive_Element.ToLinkReference(context));
+members.Add("_iconSlot", _iconSlot_Element.ToLinkReference(context));
+members.Add("_iconTexture", _iconTexture_Element.ToLinkReference(context));
+members.Add("_iconMaterial", _iconMaterial_Element.ToLinkReference(context));
+members.Add("_iconPosition", _iconPosition_Element.ToLinkReference(context));
+members.Add("_sessionStartDialog", _sessionStartDialog_Element.ToLinkReference(context));
+members.Add("_lastTouch", _lastTouch_Element.ToLinkField(context));
+members.Add("_lastFlash", _lastFlash_Element.ToLinkField(context));
 }
 
 }

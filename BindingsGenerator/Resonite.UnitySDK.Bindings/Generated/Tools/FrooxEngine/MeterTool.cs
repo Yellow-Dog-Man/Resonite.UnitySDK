@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.MeterTool
-// Generated on: čtvrtek 26. února 2026 10:04:39
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:28:06
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -45,16 +45,16 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("_indicationColor", _indicationColor_Element.Data.ToResoniteReference(context));
-members.Add("MeterMode", MeterMode_Element.Data.ToResoniteLinkField());
-members.Add("MeasureInObjectSpace", MeasureInObjectSpace_Element.Data.ToResoniteLinkField());
-members.Add("RaycastIgnoresUsers", RaycastIgnoresUsers_Element.Data.ToResoniteLinkField());
-members.Add("MultiPoint", MultiPoint_Element.Data.ToResoniteLinkField());
-members.Add("_lastPoint", _lastPoint_Element.Data.ToResoniteReference(context));
-members.Add("_currentMeter", _currentMeter_Element.Data.ToResoniteReference(context));
-members.Add("_currentLineTransform", _currentLineTransform_Element.Data.ToResoniteReference(context));
-members.Add("FormatNumber", FormatNumber_Element.Data.ToResoniteLinkField());
-members.Add("FormatUnit", FormatUnit_Element.Data.ToResoniteLinkField());
+members.Add("_indicationColor", _indicationColor_Element.ToLinkReference(context));
+members.Add("MeterMode", MeterMode_Element.ToLinkField(context));
+members.Add("MeasureInObjectSpace", MeasureInObjectSpace_Element.ToLinkField(context));
+members.Add("RaycastIgnoresUsers", RaycastIgnoresUsers_Element.ToLinkField(context));
+members.Add("MultiPoint", MultiPoint_Element.ToLinkField(context));
+members.Add("_lastPoint", _lastPoint_Element.ToLinkReference(context));
+members.Add("_currentMeter", _currentMeter_Element.ToLinkReference(context));
+members.Add("_currentLineTransform", _currentLineTransform_Element.ToLinkReference(context));
+members.Add("FormatNumber", FormatNumber_Element.ToLinkField(context));
+members.Add("FormatUnit", FormatUnit_Element.ToLinkField(context));
 }
 
 }

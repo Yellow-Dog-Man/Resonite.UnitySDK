@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.ScreenController
-// Generated on: čtvrtek 26. února 2026 10:04:06
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:27:26
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -47,17 +47,17 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("TransitionSpeed", TransitionSpeed_Element.Data.ToResoniteLinkField());
-members.Add("PointerController", PointerController_Element.Data.ToResoniteReference(context));
-members.Add("ActiveTargetting", ActiveTargetting_Element.Data.ToResoniteReference(context));
-members.Add("Head", Head_Element.Data.ToResoniteReference(context));
-members.Add("LeftHand", LeftHand_Element.Data.ToResoniteReference(context));
-members.Add("RightHand", RightHand_Element.Data.ToResoniteReference(context));
-members.Add("_previousTargetting", _previousTargetting_Element.Data.ToResoniteReference(context));
-members.Add("_firstPerson", _firstPerson_Element.Data.ToResoniteReference(context));
-members.Add("_thirdPerson", _thirdPerson_Element.Data.ToResoniteReference(context));
-members.Add("_uiCamera", _uiCamera_Element.Data.ToResoniteReference(context));
-members.Add("_freeformCamera", _freeformCamera_Element.Data.ToResoniteReference(context));
+members.Add("TransitionSpeed", TransitionSpeed_Element.ToLinkField(context));
+members.Add("PointerController", PointerController_Element.ToLinkReference(context));
+members.Add("ActiveTargetting", ActiveTargetting_Element.ToLinkReference(context));
+members.Add("Head", Head_Element.ToLinkReference(context));
+members.Add("LeftHand", LeftHand_Element.ToLinkReference(context));
+members.Add("RightHand", RightHand_Element.ToLinkReference(context));
+members.Add("_previousTargetting", _previousTargetting_Element.ToLinkReference(context));
+members.Add("_firstPerson", _firstPerson_Element.ToLinkReference(context));
+members.Add("_thirdPerson", _thirdPerson_Element.ToLinkReference(context));
+members.Add("_uiCamera", _uiCamera_Element.ToLinkReference(context));
+members.Add("_freeformCamera", _freeformCamera_Element.ToLinkReference(context));
 }
 
 }

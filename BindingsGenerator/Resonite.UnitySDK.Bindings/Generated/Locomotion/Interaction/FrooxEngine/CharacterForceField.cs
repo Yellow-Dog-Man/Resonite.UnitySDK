@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.CharacterForceField
-// Generated on: čtvrtek 26. února 2026 10:03:40
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:26:56
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -54,21 +54,21 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Force", Force_Element.Data.ToResoniteLinkField());
-members.Add("ForceMode", ForceMode_Element.Data.ToResoniteLinkField());
-members.Add("ForceSpace", ForceSpace_Element.Data.ToResoniteLinkField());
-members.Add("RadialForceRadius", RadialForceRadius_Element.Data.ToResoniteLinkField());
-members.Add("ForceSlotSpace", new ResoniteLink.SyncObject() { Members = ForceSlotSpace.CollectMembers(context) });
-members.Add("MinActivationVelocity", MinActivationVelocity_Element.Data.ToResoniteLinkField());
-members.Add("MaxForceVelocity", MaxForceVelocity_Element.Data.ToResoniteLinkField());
-members.Add("HoldJumpMaxForceVelocity", HoldJumpMaxForceVelocity_Element.Data.ToResoniteLinkField());
-members.Add("PreseveDirectionAcrossPlane", PreseveDirectionAcrossPlane_Element.Data.ToResoniteLinkField());
-members.Add("IgnoreParentUser", IgnoreParentUser_Element.Data.ToResoniteLinkField());
-members.Add("NoJumpMultiplier", NoJumpMultiplier_Element.Data.ToResoniteLinkField());
-members.Add("HoldJumpMultiplier", HoldJumpMultiplier_Element.Data.ToResoniteLinkField());
-members.Add("MaxCharacterVelocity", MaxCharacterVelocity_Element.Data.ToResoniteLinkField());
-members.Add("MinCharacterVelocity", MinCharacterVelocity_Element.Data.ToResoniteLinkField());
-members.Add("CharacterVelocityDampeningSpeed", CharacterVelocityDampeningSpeed_Element.Data.ToResoniteLinkField());
+members.Add("Force", Force_Element.ToLinkField(context));
+members.Add("ForceMode", ForceMode_Element.ToLinkField(context));
+members.Add("ForceSpace", ForceSpace_Element.ToLinkField(context));
+members.Add("RadialForceRadius", RadialForceRadius_Element.ToLinkField(context));
+members.Add("ForceSlotSpace", ForceSlotSpace.ToLinkSyncObject(context));
+members.Add("MinActivationVelocity", MinActivationVelocity_Element.ToLinkField(context));
+members.Add("MaxForceVelocity", MaxForceVelocity_Element.ToLinkField(context));
+members.Add("HoldJumpMaxForceVelocity", HoldJumpMaxForceVelocity_Element.ToLinkField(context));
+members.Add("PreseveDirectionAcrossPlane", PreseveDirectionAcrossPlane_Element.ToLinkField(context));
+members.Add("IgnoreParentUser", IgnoreParentUser_Element.ToLinkField(context));
+members.Add("NoJumpMultiplier", NoJumpMultiplier_Element.ToLinkField(context));
+members.Add("HoldJumpMultiplier", HoldJumpMultiplier_Element.ToLinkField(context));
+members.Add("MaxCharacterVelocity", MaxCharacterVelocity_Element.ToLinkField(context));
+members.Add("MinCharacterVelocity", MinCharacterVelocity_Element.ToLinkField(context));
+members.Add("CharacterVelocityDampeningSpeed", CharacterVelocityDampeningSpeed_Element.ToLinkField(context));
 }
 
 }

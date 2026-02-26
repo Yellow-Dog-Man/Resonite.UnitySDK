@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.Undo.SpawnOrDestroy
-// Generated on: čtvrtek 26. února 2026 10:04:48
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:28:13
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -47,17 +47,17 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Target", Target_Element.Data.ToResoniteReference(context));
-members.Add("TargetParent", TargetParent_Element.Data.ToResoniteReference(context));
-members.Add("_mode", _mode_Element.Data.ToResoniteLinkField());
-members.Add("_preserveAssets", _preserveAssets_Element.Data.ToResoniteLinkField());
-members.Add("_sendDestroyingEvents", _sendDestroyingEvents_Element.Data.ToResoniteLinkField());
-members.Add("_savedObject", _savedObject_Element.Data.ToResoniteLinkField());
-members.Add("_isComponent", _isComponent_Element.Data.ToResoniteLinkField());
-members.Add("_referenceTable", _referenceTable_Element.Data.ToResoniteReference(context));
-members.Add("_isSaving", _isSaving_Element.Data.ToResoniteLinkField());
-members.Add("_description", _description_Element.Data.ToResoniteLinkField());
-members.Add("_performed", _performed_Element.Data.ToResoniteLinkField());
+members.Add("Target", Target_Element.ToLinkReference(context));
+members.Add("TargetParent", TargetParent_Element.ToLinkReference(context));
+members.Add("_mode", _mode_Element.ToLinkField(context));
+members.Add("_preserveAssets", _preserveAssets_Element.ToLinkField(context));
+members.Add("_sendDestroyingEvents", _sendDestroyingEvents_Element.ToLinkField(context));
+members.Add("_savedObject", _savedObject_Element.ToLinkField(context));
+members.Add("_isComponent", _isComponent_Element.ToLinkField(context));
+members.Add("_referenceTable", _referenceTable_Element.ToLinkReference(context));
+members.Add("_isSaving", _isSaving_Element.ToLinkField(context));
+members.Add("_description", _description_Element.ToLinkField(context));
+members.Add("_performed", _performed_Element.ToLinkField(context));
 }
 
 }

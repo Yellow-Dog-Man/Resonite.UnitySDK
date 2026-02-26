@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.TranslationGizmo
-// Generated on: čtvrtek 26. února 2026 10:04:48
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:28:13
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -39,13 +39,13 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("_xyzGizmo", _xyzGizmo_Element.Data.ToResoniteReference(context));
-members.Add("_xyGizmo", _xyGizmo_Element.Data.ToResoniteReference(context));
-members.Add("_xzGizmo", _xzGizmo_Element.Data.ToResoniteReference(context));
-members.Add("_yzGizmo", _yzGizmo_Element.Data.ToResoniteReference(context));
-members.Add("_xGizmo", _xGizmo_Element.Data.ToResoniteReference(context));
-members.Add("_yGizmo", _yGizmo_Element.Data.ToResoniteReference(context));
-members.Add("_zGizmo", _zGizmo_Element.Data.ToResoniteReference(context));
+members.Add("_xyzGizmo", _xyzGizmo_Element.ToLinkReference(context));
+members.Add("_xyGizmo", _xyGizmo_Element.ToLinkReference(context));
+members.Add("_xzGizmo", _xzGizmo_Element.ToLinkReference(context));
+members.Add("_yzGizmo", _yzGizmo_Element.ToLinkReference(context));
+members.Add("_xGizmo", _xGizmo_Element.ToLinkReference(context));
+members.Add("_yGizmo", _yGizmo_Element.ToLinkReference(context));
+members.Add("_zGizmo", _zGizmo_Element.ToLinkReference(context));
 }
 
 }

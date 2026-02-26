@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.FullBodyCalibrator
-// Generated on: čtvrtek 26. února 2026 10:04:45
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:28:11
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -128,66 +128,60 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("TargetUser", TargetUser_Element.Data.ToResoniteReference(context));
-members.Add("UseSymmetryForTrackers", UseSymmetryForTrackers_Element.Data.ToResoniteLinkField());
-members.Add("UseSymmetryForAvatar", UseSymmetryForAvatar_Element.Data.ToResoniteLinkField());
-members.Add("ShowBodyOverlay", ShowBodyOverlay_Element.Data.ToResoniteLinkField());
-members.Add("ShowAvatarOverlay", ShowAvatarOverlay_Element.Data.ToResoniteLinkField());
-members.Add("HeightCompensation", HeightCompensation_Element.Data.ToResoniteLinkField());
-members.Add("AvatarHeightCompensation", AvatarHeightCompensation_Element.Data.ToResoniteLinkField());
-members.Add("_calibratingPose", _calibratingPose_Element.Data.ToResoniteLinkField());
-members.Add("_spaceOffset", _spaceOffset_Element.Data.ToResoniteLinkField());
-members.Add("_grabbable", _grabbable_Element.Data.ToResoniteReference(context));
-members.Add("_headReference", _headReference_Element.Data.ToResoniteReference(context));
-members.Add("_leftHandReference", _leftHandReference_Element.Data.ToResoniteReference(context));
-members.Add("_rightHandReference", _rightHandReference_Element.Data.ToResoniteReference(context));
-members.Add("_hipsSource", _hipsSource_Element.Data.ToResoniteReference(context));
-members.Add("_chestSource", _chestSource_Element.Data.ToResoniteReference(context));
-members.Add("_leftFootSource", _leftFootSource_Element.Data.ToResoniteReference(context));
-members.Add("_rightFootSource", _rightFootSource_Element.Data.ToResoniteReference(context));
-members.Add("_leftElbowSource", _leftElbowSource_Element.Data.ToResoniteReference(context));
-members.Add("_rightElbowSource", _rightElbowSource_Element.Data.ToResoniteReference(context));
-members.Add("_leftKneeSource", _leftKneeSource_Element.Data.ToResoniteReference(context));
-members.Add("_rightKneeSource", _rightKneeSource_Element.Data.ToResoniteReference(context));
-members.Add("_dialog", _dialog_Element.Data.ToResoniteReference(context));
-members.Add("_platformBody", new ResoniteLink.SyncObject() { Members = _platformBody.CollectMembers(context) });
-members.Add("_userBody", new ResoniteLink.SyncObject() { Members = _userBody.CollectMembers(context) });
-members.Add("_customAvatar", new ResoniteLink.SyncObject() { Members = _customAvatar.CollectMembers(context) });
-members.Add("_leftHandOverride", _leftHandOverride_Element.Data.ToResoniteReference(context));
-members.Add("_rightHandOverride", _rightHandOverride_Element.Data.ToResoniteReference(context));
-members.Add("_targetCustomAvatar", _targetCustomAvatar_Element.Data.ToResoniteReference(context));
-members.Add("_avatarHipsOffset", _avatarHipsOffset_Element.Data.ToResoniteReference(context));
-members.Add("_avatarLeftFootOffset", _avatarLeftFootOffset_Element.Data.ToResoniteReference(context));
-members.Add("_avatarRightFootOffset", _avatarRightFootOffset_Element.Data.ToResoniteReference(context));
-members.Add("_avatarLeftKneeDefaultOffset", _avatarLeftKneeDefaultOffset_Element.Data.ToResoniteReference(context));
-members.Add("_avatarRightKneeDefaultOffset", _avatarRightKneeDefaultOffset_Element.Data.ToResoniteReference(context));
-members.Add("_avatarHipHandle", _avatarHipHandle_Element.Data.ToResoniteReference(context));
-members.Add("_avatarLeftFootHandle", _avatarLeftFootHandle_Element.Data.ToResoniteReference(context));
-members.Add("_avatarRightFootHandle", _avatarRightFootHandle_Element.Data.ToResoniteReference(context));
-members.Add("_avatarLeftKneeHandle", _avatarLeftKneeHandle_Element.Data.ToResoniteReference(context));
-members.Add("_avatarRightKneeHandle", _avatarRightKneeHandle_Element.Data.ToResoniteReference(context));
-members.Add("_avatarLeftKneeOffset", _avatarLeftKneeOffset_Element.Data.ToResoniteReference(context));
-members.Add("_avatarRightKneeOffset", _avatarRightKneeOffset_Element.Data.ToResoniteReference(context));
-members.Add("_platformBodyMaterialSets", new ResoniteLink.SyncList()
-{
-    Elements = _platformBodyMaterialSets.Data.ConvertList(m => m.Data.ToResoniteReference(context))
-});
-members.Add("_ground", _ground_Element.Data.ToResoniteReference(context));
-members.Add("_trackers", new ResoniteLink.SyncList()
-{
-    Elements = _trackers.Data.ConvertList(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers(context) })
-});
-members.Add("_visualizationRoot", _visualizationRoot_Element.Data.ToResoniteReference(context));
-members.Add("_bodyNodeMaterial", _bodyNodeMaterial_Element.Data.ToResoniteReference(context));
-members.Add("_calibrationReferenceMaterial", _calibrationReferenceMaterial_Element.Data.ToResoniteReference(context));
-members.Add("_leftHandOverrideMaterial", _leftHandOverrideMaterial_Element.Data.ToResoniteReference(context));
-members.Add("_rightHandOverrideMaterial", _rightHandOverrideMaterial_Element.Data.ToResoniteReference(context));
-members.Add("_leftHandOverrideFrontColor", _leftHandOverrideFrontColor_Element.Data.ToResoniteReference(context));
-members.Add("_leftHandOverrideBehindColor", _leftHandOverrideBehindColor_Element.Data.ToResoniteReference(context));
-members.Add("_rightHandOverrideFrontColor", _rightHandOverrideFrontColor_Element.Data.ToResoniteReference(context));
-members.Add("_rightHandOverrideBehindColor", _rightHandOverrideBehindColor_Element.Data.ToResoniteReference(context));
-members.Add("_patternTex", _patternTex_Element.Data.ToResoniteReference(context));
-members.Add("_title", _title_Element.Data.ToResoniteReference(context));
+members.Add("TargetUser", TargetUser_Element.ToLinkReference(context));
+members.Add("UseSymmetryForTrackers", UseSymmetryForTrackers_Element.ToLinkField(context));
+members.Add("UseSymmetryForAvatar", UseSymmetryForAvatar_Element.ToLinkField(context));
+members.Add("ShowBodyOverlay", ShowBodyOverlay_Element.ToLinkField(context));
+members.Add("ShowAvatarOverlay", ShowAvatarOverlay_Element.ToLinkField(context));
+members.Add("HeightCompensation", HeightCompensation_Element.ToLinkField(context));
+members.Add("AvatarHeightCompensation", AvatarHeightCompensation_Element.ToLinkField(context));
+members.Add("_calibratingPose", _calibratingPose_Element.ToLinkField(context));
+members.Add("_spaceOffset", _spaceOffset_Element.ToLinkField(context));
+members.Add("_grabbable", _grabbable_Element.ToLinkReference(context));
+members.Add("_headReference", _headReference_Element.ToLinkReference(context));
+members.Add("_leftHandReference", _leftHandReference_Element.ToLinkReference(context));
+members.Add("_rightHandReference", _rightHandReference_Element.ToLinkReference(context));
+members.Add("_hipsSource", _hipsSource_Element.ToLinkReference(context));
+members.Add("_chestSource", _chestSource_Element.ToLinkReference(context));
+members.Add("_leftFootSource", _leftFootSource_Element.ToLinkReference(context));
+members.Add("_rightFootSource", _rightFootSource_Element.ToLinkReference(context));
+members.Add("_leftElbowSource", _leftElbowSource_Element.ToLinkReference(context));
+members.Add("_rightElbowSource", _rightElbowSource_Element.ToLinkReference(context));
+members.Add("_leftKneeSource", _leftKneeSource_Element.ToLinkReference(context));
+members.Add("_rightKneeSource", _rightKneeSource_Element.ToLinkReference(context));
+members.Add("_dialog", _dialog_Element.ToLinkReference(context));
+members.Add("_platformBody", _platformBody.ToLinkSyncObject(context));
+members.Add("_userBody", _userBody.ToLinkSyncObject(context));
+members.Add("_customAvatar", _customAvatar.ToLinkSyncObject(context));
+members.Add("_leftHandOverride", _leftHandOverride_Element.ToLinkReference(context));
+members.Add("_rightHandOverride", _rightHandOverride_Element.ToLinkReference(context));
+members.Add("_targetCustomAvatar", _targetCustomAvatar_Element.ToLinkReference(context));
+members.Add("_avatarHipsOffset", _avatarHipsOffset_Element.ToLinkReference(context));
+members.Add("_avatarLeftFootOffset", _avatarLeftFootOffset_Element.ToLinkReference(context));
+members.Add("_avatarRightFootOffset", _avatarRightFootOffset_Element.ToLinkReference(context));
+members.Add("_avatarLeftKneeDefaultOffset", _avatarLeftKneeDefaultOffset_Element.ToLinkReference(context));
+members.Add("_avatarRightKneeDefaultOffset", _avatarRightKneeDefaultOffset_Element.ToLinkReference(context));
+members.Add("_avatarHipHandle", _avatarHipHandle_Element.ToLinkReference(context));
+members.Add("_avatarLeftFootHandle", _avatarLeftFootHandle_Element.ToLinkReference(context));
+members.Add("_avatarRightFootHandle", _avatarRightFootHandle_Element.ToLinkReference(context));
+members.Add("_avatarLeftKneeHandle", _avatarLeftKneeHandle_Element.ToLinkReference(context));
+members.Add("_avatarRightKneeHandle", _avatarRightKneeHandle_Element.ToLinkReference(context));
+members.Add("_avatarLeftKneeOffset", _avatarLeftKneeOffset_Element.ToLinkReference(context));
+members.Add("_avatarRightKneeOffset", _avatarRightKneeOffset_Element.ToLinkReference(context));
+members.Add("_platformBodyMaterialSets", _platformBodyMaterialSets.ToLinkList(context, m => m.ToLinkReference(context)));
+members.Add("_ground", _ground_Element.ToLinkReference(context));
+members.Add("_trackers", _trackers.ToLinkList(context, m => m.ToLinkSyncObject(context)));
+members.Add("_visualizationRoot", _visualizationRoot_Element.ToLinkReference(context));
+members.Add("_bodyNodeMaterial", _bodyNodeMaterial_Element.ToLinkReference(context));
+members.Add("_calibrationReferenceMaterial", _calibrationReferenceMaterial_Element.ToLinkReference(context));
+members.Add("_leftHandOverrideMaterial", _leftHandOverrideMaterial_Element.ToLinkReference(context));
+members.Add("_rightHandOverrideMaterial", _rightHandOverrideMaterial_Element.ToLinkReference(context));
+members.Add("_leftHandOverrideFrontColor", _leftHandOverrideFrontColor_Element.ToLinkReference(context));
+members.Add("_leftHandOverrideBehindColor", _leftHandOverrideBehindColor_Element.ToLinkReference(context));
+members.Add("_rightHandOverrideFrontColor", _rightHandOverrideFrontColor_Element.ToLinkReference(context));
+members.Add("_rightHandOverrideBehindColor", _rightHandOverrideBehindColor_Element.ToLinkReference(context));
+members.Add("_patternTex", _patternTex_Element.ToLinkReference(context));
+members.Add("_title", _title_Element.ToLinkReference(context));
 }
 
 }

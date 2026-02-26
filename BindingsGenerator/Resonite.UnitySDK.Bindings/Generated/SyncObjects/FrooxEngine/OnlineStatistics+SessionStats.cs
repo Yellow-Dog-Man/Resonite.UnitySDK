@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.OnlineStatistics+SessionStats
-// Generated on: čtvrtek 26. února 2026 10:03:37
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:26:52
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -39,12 +39,12 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("PublicSessions", PublicSessions_Element.Data.ToResoniteLinkField());
-members.Add("RegisteredSessions", RegisteredSessions_Element.Data.ToResoniteLinkField());
-members.Add("ContactsPlusSessions", ContactsPlusSessions_Element.Data.ToResoniteLinkField());
-members.Add("ContactsSessions", ContactsSessions_Element.Data.ToResoniteLinkField());
-members.Add("LANSessions", LANSessions_Element.Data.ToResoniteLinkField());
-members.Add("PrivateSessions", PrivateSessions_Element.Data.ToResoniteLinkField());
+members.Add("PublicSessions", PublicSessions_Element.ToLinkField(context));
+members.Add("RegisteredSessions", RegisteredSessions_Element.ToLinkField(context));
+members.Add("ContactsPlusSessions", ContactsPlusSessions_Element.ToLinkField(context));
+members.Add("ContactsSessions", ContactsSessions_Element.ToLinkField(context));
+members.Add("LANSessions", LANSessions_Element.ToLinkField(context));
+members.Add("PrivateSessions", PrivateSessions_Element.ToLinkField(context));
 }
 
 }

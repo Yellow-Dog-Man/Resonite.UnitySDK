@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.LegacyProgressBar
-// Generated on: čtvrtek 26. února 2026 10:03:37
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:26:52
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -53,20 +53,20 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("IsEnabledField", IsEnabledField_Element.Data.ToResoniteLinkField());
-members.Add("Progress", Progress_Element.Data.ToResoniteLinkField());
-members.Add("BarColorField", BarColorField_Element.Data.ToResoniteLinkField());
-members.Add("ContainerColorField", ContainerColorField_Element.Data.ToResoniteLinkField());
-members.Add("WidthField", WidthField_Element.Data.ToResoniteLinkField());
-members.Add("HeightField", HeightField_Element.Data.ToResoniteLinkField());
-members.Add("ThicknessField", ThicknessField_Element.Data.ToResoniteLinkField());
-members.Add("SlantField", SlantField_Element.Data.ToResoniteLinkField());
-members.Add("_barMesh", _barMesh_Element.Data.ToResoniteReference(context));
-members.Add("_containerMesh", _containerMesh_Element.Data.ToResoniteReference(context));
-members.Add("_barMaterial", _barMaterial_Element.Data.ToResoniteReference(context));
-members.Add("_containerMaterial", _containerMaterial_Element.Data.ToResoniteReference(context));
-members.Add("_barPosition", _barPosition_Element.Data.ToResoniteReference(context));
-members.Add("_colliderSize", _colliderSize_Element.Data.ToResoniteReference(context));
+members.Add("IsEnabledField", IsEnabledField_Element.ToLinkField(context));
+members.Add("Progress", Progress_Element.ToLinkField(context));
+members.Add("BarColorField", BarColorField_Element.ToLinkField(context));
+members.Add("ContainerColorField", ContainerColorField_Element.ToLinkField(context));
+members.Add("WidthField", WidthField_Element.ToLinkField(context));
+members.Add("HeightField", HeightField_Element.ToLinkField(context));
+members.Add("ThicknessField", ThicknessField_Element.ToLinkField(context));
+members.Add("SlantField", SlantField_Element.ToLinkField(context));
+members.Add("_barMesh", _barMesh_Element.ToLinkReference(context));
+members.Add("_containerMesh", _containerMesh_Element.ToLinkReference(context));
+members.Add("_barMaterial", _barMaterial_Element.ToLinkReference(context));
+members.Add("_containerMaterial", _containerMaterial_Element.ToLinkReference(context));
+members.Add("_barPosition", _barPosition_Element.ToLinkReference(context));
+members.Add("_colliderSize", _colliderSize_Element.ToLinkReference(context));
 }
 
 }

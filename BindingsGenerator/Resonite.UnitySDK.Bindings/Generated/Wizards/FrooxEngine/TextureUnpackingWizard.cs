@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.TextureUnpackingWizard
-// Generated on: čtvrtek 26. února 2026 10:04:51
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:28:16
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -41,14 +41,14 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("InputTexture", InputTexture_Element.Data.ToResoniteReference(context));
-members.Add("Channels", Channels_Element.Data.ToResoniteLinkField());
-members.Add("ResolutionOverride", ResolutionOverride_Element.Data.ToResoniteLinkField());
-members.Add("RTexture", RTexture_Element.Data.ToResoniteReference(context));
-members.Add("GTexture", GTexture_Element.Data.ToResoniteReference(context));
-members.Add("BTexture", BTexture_Element.Data.ToResoniteReference(context));
-members.Add("ATexture", ATexture_Element.Data.ToResoniteReference(context));
-members.Add("IsProcessing", IsProcessing_Element.Data.ToResoniteLinkField());
+members.Add("InputTexture", InputTexture_Element.ToLinkReference(context));
+members.Add("Channels", Channels_Element.ToLinkField(context));
+members.Add("ResolutionOverride", ResolutionOverride_Element.ToLinkField(context));
+members.Add("RTexture", RTexture_Element.ToLinkReference(context));
+members.Add("GTexture", GTexture_Element.ToLinkReference(context));
+members.Add("BTexture", BTexture_Element.ToLinkReference(context));
+members.Add("ATexture", ATexture_Element.ToLinkReference(context));
+members.Add("IsProcessing", IsProcessing_Element.ToLinkField(context));
 }
 
 }

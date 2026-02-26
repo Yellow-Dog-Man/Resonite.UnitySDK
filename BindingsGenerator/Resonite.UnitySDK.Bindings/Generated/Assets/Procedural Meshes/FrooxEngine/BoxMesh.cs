@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.BoxMesh
-// Generated on: čtvrtek 26. února 2026 10:03:35
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:26:50
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -31,9 +31,9 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Size", Size_Element.Data.ToResoniteLinkField());
-members.Add("UVScale", UVScale_Element.Data.ToResoniteLinkField());
-members.Add("ScaleUVWithSize", ScaleUVWithSize_Element.Data.ToResoniteLinkField());
+members.Add("Size", Size_Element.ToLinkField(context));
+members.Add("UVScale", UVScale_Element.ToLinkField(context));
+members.Add("ScaleUVWithSize", ScaleUVWithSize_Element.ToLinkField(context));
 }
 
 }

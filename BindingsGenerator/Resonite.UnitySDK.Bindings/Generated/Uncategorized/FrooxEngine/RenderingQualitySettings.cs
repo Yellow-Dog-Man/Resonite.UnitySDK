@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.RenderingQualitySettings
-// Generated on: čtvrtek 26. února 2026 10:04:48
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:28:13
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -35,11 +35,11 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("PerPixelLights", PerPixelLights_Element.Data.ToResoniteLinkField());
-members.Add("ShadowCascades", ShadowCascades_Element.Data.ToResoniteLinkField());
-members.Add("ShadowResolution", ShadowResolution_Element.Data.ToResoniteLinkField());
-members.Add("ShadowDistance", ShadowDistance_Element.Data.ToResoniteLinkField());
-members.Add("SkinWeightMode", SkinWeightMode_Element.Data.ToResoniteLinkField());
+members.Add("PerPixelLights", PerPixelLights_Element.ToLinkField(context));
+members.Add("ShadowCascades", ShadowCascades_Element.ToLinkField(context));
+members.Add("ShadowResolution", ShadowResolution_Element.ToLinkField(context));
+members.Add("ShadowDistance", ShadowDistance_Element.ToLinkField(context));
+members.Add("SkinWeightMode", SkinWeightMode_Element.ToLinkField(context));
 }
 
 }

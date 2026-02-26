@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.KnobControl
-// Generated on: čtvrtek 26. února 2026 10:04:42
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:28:08
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -41,14 +41,14 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Target", Target_Element.Data.ToResoniteReference(context));
-members.Add("RotationAxis", RotationAxis_Element.Data.ToResoniteLinkField());
-members.Add("Rate", Rate_Element.Data.ToResoniteLinkField());
-members.Add("Min", Min_Element.Data.ToResoniteLinkField());
-members.Add("Max", Max_Element.Data.ToResoniteLinkField());
-members.Add("_lastRotation", _lastRotation_Element.Data.ToResoniteLinkField());
-members.Add("_lastAxis", _lastAxis_Element.Data.ToResoniteLinkField());
-members.Add("_lastUser", _lastUser_Element.Data.ToResoniteReference(context));
+members.Add("Target", Target_Element.ToLinkReference(context));
+members.Add("RotationAxis", RotationAxis_Element.ToLinkField(context));
+members.Add("Rate", Rate_Element.ToLinkField(context));
+members.Add("Min", Min_Element.ToLinkField(context));
+members.Add("Max", Max_Element.ToLinkField(context));
+members.Add("_lastRotation", _lastRotation_Element.ToLinkField(context));
+members.Add("_lastAxis", _lastAxis_Element.ToLinkField(context));
+members.Add("_lastUser", _lastUser_Element.ToLinkReference(context));
 }
 
 }

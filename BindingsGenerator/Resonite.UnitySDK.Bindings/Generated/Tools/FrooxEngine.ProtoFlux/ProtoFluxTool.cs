@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.ProtoFlux.ProtoFluxTool
-// Generated on: čtvrtek 26. února 2026 10:04:39
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:28:06
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -56,25 +56,22 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("SpawnNodeType", SpawnNodeType_Element.Data.ToResoniteLinkField());
-members.Add("WirePoint", WirePoint_Element.Data.ToResoniteReference(context));
-members.Add("MaxConnectDistance", MaxConnectDistance_Element.Data.ToResoniteLinkField());
-members.Add("SelectionProgress", SelectionProgress_Element.Data.ToResoniteLinkField());
-members.Add("HoveringElementName", HoveringElementName_Element.Data.ToResoniteLinkField());
-members.Add("HoveringElementContentType", HoveringElementContentType_Element.Data.ToResoniteLinkField());
-members.Add("HoveringElementColor", HoveringElementColor_Element.Data.ToResoniteLinkField());
-members.Add("_selectedNodes", new ResoniteLink.SyncList()
-{
-    Elements = _selectedNodes.Data.ConvertList(m => m.Data.ToResoniteReference(context))
-});
-members.Add("_wirePointPosition", _wirePointPosition_Element.Data.ToResoniteReference(context));
-members.Add("_text", _text_Element.Data.ToResoniteReference(context));
-members.Add("_currentProxy", _currentProxy_Element.Data.ToResoniteReference(context));
-members.Add("_currentTempWire", _currentTempWire_Element.Data.ToResoniteReference(context));
-members.Add("_currentCutLine", _currentCutLine_Element.Data.ToResoniteReference(context));
-members.Add("_cutLineScale", _cutLineScale_Element.Data.ToResoniteReference(context));
-members.Add("_cutLineOrientation", _cutLineOrientation_Element.Data.ToResoniteReference(context));
-members.Add("_currentHighlightedNode", _currentHighlightedNode_Element.Data.ToResoniteReference(context));
+members.Add("SpawnNodeType", SpawnNodeType_Element.ToLinkField(context));
+members.Add("WirePoint", WirePoint_Element.ToLinkReference(context));
+members.Add("MaxConnectDistance", MaxConnectDistance_Element.ToLinkField(context));
+members.Add("SelectionProgress", SelectionProgress_Element.ToLinkField(context));
+members.Add("HoveringElementName", HoveringElementName_Element.ToLinkField(context));
+members.Add("HoveringElementContentType", HoveringElementContentType_Element.ToLinkField(context));
+members.Add("HoveringElementColor", HoveringElementColor_Element.ToLinkField(context));
+members.Add("_selectedNodes", _selectedNodes.ToLinkList(context, m => m.ToLinkReference(context)));
+members.Add("_wirePointPosition", _wirePointPosition_Element.ToLinkReference(context));
+members.Add("_text", _text_Element.ToLinkReference(context));
+members.Add("_currentProxy", _currentProxy_Element.ToLinkReference(context));
+members.Add("_currentTempWire", _currentTempWire_Element.ToLinkReference(context));
+members.Add("_currentCutLine", _currentCutLine_Element.ToLinkReference(context));
+members.Add("_cutLineScale", _cutLineScale_Element.ToLinkReference(context));
+members.Add("_cutLineOrientation", _cutLineOrientation_Element.ToLinkReference(context));
+members.Add("_currentHighlightedNode", _currentHighlightedNode_Element.ToLinkReference(context));
 }
 
 }

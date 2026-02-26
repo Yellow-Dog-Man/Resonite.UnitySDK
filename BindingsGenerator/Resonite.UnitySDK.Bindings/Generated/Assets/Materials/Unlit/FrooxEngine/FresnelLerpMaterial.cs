@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.FresnelLerpMaterial
-// Generated on: čtvrtek 26. února 2026 10:03:34
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:26:48
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -75,31 +75,31 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Lerp", Lerp_Element.Data.ToResoniteLinkField());
-members.Add("LerpTexture", LerpTexture_Element.Data.ToResoniteReference(context));
-members.Add("LerpTextureScale", LerpTextureScale_Element.Data.ToResoniteLinkField());
-members.Add("LerpTextureOffset", LerpTextureOffset_Element.Data.ToResoniteLinkField());
-members.Add("LerpTexturePolarUV", LerpTexturePolarUV_Element.Data.ToResoniteLinkField());
-members.Add("LerpTexturePolarPower", LerpTexturePolarPower_Element.Data.ToResoniteLinkField());
-members.Add("Exponent0", Exponent0_Element.Data.ToResoniteLinkField());
-members.Add("Exponent1", Exponent1_Element.Data.ToResoniteLinkField());
-members.Add("GammaCurve", GammaCurve_Element.Data.ToResoniteLinkField());
-members.Add("FarColor0", FarColor0_Element.Data.ToResoniteLinkField());
-members.Add("NearColor0", NearColor0_Element.Data.ToResoniteLinkField());
-members.Add("FarColor1", FarColor1_Element.Data.ToResoniteLinkField());
-members.Add("NearColor1", NearColor1_Element.Data.ToResoniteLinkField());
-members.Add("FarTexture0", FarTexture0_Element.Data.ToResoniteReference(context));
-members.Add("NearTexture0", NearTexture0_Element.Data.ToResoniteReference(context));
-members.Add("FarTexture1", FarTexture1_Element.Data.ToResoniteReference(context));
-members.Add("NearTexture1", NearTexture1_Element.Data.ToResoniteReference(context));
-members.Add("NormalMap0", NormalMap0_Element.Data.ToResoniteReference(context));
-members.Add("NormalMap1", NormalMap1_Element.Data.ToResoniteReference(context));
-members.Add("BlendMode", BlendMode_Element.Data.ToResoniteLinkField());
-members.Add("Sidedness", Sidedness_Element.Data.ToResoniteLinkField());
-members.Add("ZWrite", ZWrite_Element.Data.ToResoniteLinkField());
-members.Add("OffsetFactor", OffsetFactor_Element.Data.ToResoniteLinkField());
-members.Add("OffsetUnits", OffsetUnits_Element.Data.ToResoniteLinkField());
-members.Add("RenderQueue", RenderQueue_Element.Data.ToResoniteLinkField());
+members.Add("Lerp", Lerp_Element.ToLinkField(context));
+members.Add("LerpTexture", LerpTexture_Element.ToLinkReference(context));
+members.Add("LerpTextureScale", LerpTextureScale_Element.ToLinkField(context));
+members.Add("LerpTextureOffset", LerpTextureOffset_Element.ToLinkField(context));
+members.Add("LerpTexturePolarUV", LerpTexturePolarUV_Element.ToLinkField(context));
+members.Add("LerpTexturePolarPower", LerpTexturePolarPower_Element.ToLinkField(context));
+members.Add("Exponent0", Exponent0_Element.ToLinkField(context));
+members.Add("Exponent1", Exponent1_Element.ToLinkField(context));
+members.Add("GammaCurve", GammaCurve_Element.ToLinkField(context));
+members.Add("FarColor0", FarColor0_Element.ToLinkField(context));
+members.Add("NearColor0", NearColor0_Element.ToLinkField(context));
+members.Add("FarColor1", FarColor1_Element.ToLinkField(context));
+members.Add("NearColor1", NearColor1_Element.ToLinkField(context));
+members.Add("FarTexture0", FarTexture0_Element.ToLinkReference(context));
+members.Add("NearTexture0", NearTexture0_Element.ToLinkReference(context));
+members.Add("FarTexture1", FarTexture1_Element.ToLinkReference(context));
+members.Add("NearTexture1", NearTexture1_Element.ToLinkReference(context));
+members.Add("NormalMap0", NormalMap0_Element.ToLinkReference(context));
+members.Add("NormalMap1", NormalMap1_Element.ToLinkReference(context));
+members.Add("BlendMode", BlendMode_Element.ToLinkField(context));
+members.Add("Sidedness", Sidedness_Element.ToLinkField(context));
+members.Add("ZWrite", ZWrite_Element.ToLinkField(context));
+members.Add("OffsetFactor", OffsetFactor_Element.ToLinkField(context));
+members.Add("OffsetUnits", OffsetUnits_Element.ToLinkField(context));
+members.Add("RenderQueue", RenderQueue_Element.ToLinkField(context));
 }
 
 }

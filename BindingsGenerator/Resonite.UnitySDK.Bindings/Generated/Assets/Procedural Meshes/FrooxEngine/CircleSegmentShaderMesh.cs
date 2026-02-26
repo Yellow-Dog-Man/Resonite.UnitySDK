@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.CircleSegmentShaderMesh
-// Generated on: čtvrtek 26. února 2026 10:03:35
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:26:50
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -41,14 +41,14 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("RadiusStart", RadiusStart_Element.Data.ToResoniteLinkField());
-members.Add("Thickness", Thickness_Element.Data.ToResoniteLinkField());
-members.Add("AngleStart", AngleStart_Element.Data.ToResoniteLinkField());
-members.Add("ArcLength", ArcLength_Element.Data.ToResoniteLinkField());
-members.Add("FillColor", FillColor_Element.Data.ToResoniteLinkField());
-members.Add("BorderColor", BorderColor_Element.Data.ToResoniteLinkField());
-members.Add("BorderSize", BorderSize_Element.Data.ToResoniteLinkField());
-members.Add("RoundedCornerRadius", RoundedCornerRadius_Element.Data.ToResoniteLinkField());
+members.Add("RadiusStart", RadiusStart_Element.ToLinkField(context));
+members.Add("Thickness", Thickness_Element.ToLinkField(context));
+members.Add("AngleStart", AngleStart_Element.ToLinkField(context));
+members.Add("ArcLength", ArcLength_Element.ToLinkField(context));
+members.Add("FillColor", FillColor_Element.ToLinkField(context));
+members.Add("BorderColor", BorderColor_Element.ToLinkField(context));
+members.Add("BorderSize", BorderSize_Element.ToLinkField(context));
+members.Add("RoundedCornerRadius", RoundedCornerRadius_Element.ToLinkField(context));
 }
 
 }

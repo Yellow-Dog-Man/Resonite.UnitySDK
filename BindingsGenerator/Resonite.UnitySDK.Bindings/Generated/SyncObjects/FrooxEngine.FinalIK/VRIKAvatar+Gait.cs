@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.FinalIK.VRIKAvatar+Gait
-// Generated on: čtvrtek 26. února 2026 10:04:45
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:28:11
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -53,19 +53,19 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("MinimumVelocity", MinimumVelocity_Element.Data.ToResoniteLinkField());
-members.Add("FeetRange", FeetRange_Element.Data.ToResoniteLinkField());
-members.Add("CycleHeightBias", CycleHeightBias_Element.Data.ToResoniteLinkField());
-members.Add("CycleFeetSeparation", CycleFeetSeparation_Element.Data.ToResoniteLinkField());
-members.Add("CycleGroundRatio", CycleGroundRatio_Element.Data.ToResoniteLinkField());
-members.Add("FootRaiseBeginHeight", FootRaiseBeginHeight_Element.Data.ToResoniteLinkField());
-members.Add("FootRaiseEndHeight", FootRaiseEndHeight_Element.Data.ToResoniteLinkField());
-members.Add("FootRestAngle", FootRestAngle_Element.Data.ToResoniteLinkField());
-members.Add("FootRaiseAngle", FootRaiseAngle_Element.Data.ToResoniteLinkField());
-members.Add("FeetAlignmentOffset", FeetAlignmentOffset_Element.Data.ToResoniteLinkField());
-members.Add("SpeedRatio", SpeedRatio_Element.Data.ToResoniteLinkField());
-members.Add("FeetSlipRatio", FeetSlipRatio_Element.Data.ToResoniteLinkField());
-members.Add("ForwardOffset", ForwardOffset_Element.Data.ToResoniteLinkField());
+members.Add("MinimumVelocity", MinimumVelocity_Element.ToLinkField(context));
+members.Add("FeetRange", FeetRange_Element.ToLinkField(context));
+members.Add("CycleHeightBias", CycleHeightBias_Element.ToLinkField(context));
+members.Add("CycleFeetSeparation", CycleFeetSeparation_Element.ToLinkField(context));
+members.Add("CycleGroundRatio", CycleGroundRatio_Element.ToLinkField(context));
+members.Add("FootRaiseBeginHeight", FootRaiseBeginHeight_Element.ToLinkField(context));
+members.Add("FootRaiseEndHeight", FootRaiseEndHeight_Element.ToLinkField(context));
+members.Add("FootRestAngle", FootRestAngle_Element.ToLinkField(context));
+members.Add("FootRaiseAngle", FootRaiseAngle_Element.ToLinkField(context));
+members.Add("FeetAlignmentOffset", FeetAlignmentOffset_Element.ToLinkField(context));
+members.Add("SpeedRatio", SpeedRatio_Element.ToLinkField(context));
+members.Add("FeetSlipRatio", FeetSlipRatio_Element.ToLinkField(context));
+members.Add("ForwardOffset", ForwardOffset_Element.ToLinkField(context));
 }
 
 }

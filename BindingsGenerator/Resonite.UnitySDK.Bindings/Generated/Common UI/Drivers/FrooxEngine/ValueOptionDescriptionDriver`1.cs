@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.ValueOptionDescriptionDriver<>
-// Generated on: čtvrtek 26. února 2026 10:03:38
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:26:53
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -44,19 +44,16 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Value", Value_Element.Data.ToResoniteReference(context));
-members.Add("ForceDeselected", ForceDeselected_Element.Data.ToResoniteLinkField());
-members.Add("Label", Label_Element.Data.ToResoniteReference(context));
-members.Add("Color", Color_Element.Data.ToResoniteReference(context));
-members.Add("Sprite", Sprite_Element.Data.ToResoniteReference(context));
-members.Add("SpriteURL", SpriteURL_Element.Data.ToResoniteReference(context));
-members.Add("SpriteTint", SpriteTint_Element.Data.ToResoniteReference(context));
-members.Add("DefaultOption", new ResoniteLink.SyncObject() { Members = DefaultOption.CollectMembers(context) });
-members.Add("Options", new ResoniteLink.SyncList()
-{
-    Elements = Options.Data.ConvertList(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers(context) })
-});
-members.Add("SpriteTintBase", SpriteTintBase_Element.Data.ToResoniteLinkField());
+members.Add("Value", Value_Element.ToLinkReference(context));
+members.Add("ForceDeselected", ForceDeselected_Element.ToLinkField(context));
+members.Add("Label", Label_Element.ToLinkReference(context));
+members.Add("Color", Color_Element.ToLinkReference(context));
+members.Add("Sprite", Sprite_Element.ToLinkReference(context));
+members.Add("SpriteURL", SpriteURL_Element.ToLinkReference(context));
+members.Add("SpriteTint", SpriteTint_Element.ToLinkReference(context));
+members.Add("DefaultOption", DefaultOption.ToLinkSyncObject(context));
+members.Add("Options", Options.ToLinkList(context, m => m.ToLinkSyncObject(context)));
+members.Add("SpriteTintBase", SpriteTintBase_Element.ToLinkField(context));
 }
 
 }

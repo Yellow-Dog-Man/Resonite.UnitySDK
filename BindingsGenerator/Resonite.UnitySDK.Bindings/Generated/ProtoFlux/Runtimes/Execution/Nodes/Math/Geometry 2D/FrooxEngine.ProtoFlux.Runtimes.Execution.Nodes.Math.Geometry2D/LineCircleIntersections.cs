@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [ProtoFluxBindings]FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.Math.Geometry2D.LineCircleIntersections
-// Generated on: čtvrtek 26. února 2026 10:04:18
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:27:39
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -36,13 +36,13 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Center", Center_Element.Data.ToResoniteReference(context));
-members.Add("Radius", Radius_Element.Data.ToResoniteReference(context));
-members.Add("LinePoint0", LinePoint0_Element.Data.ToResoniteReference(context));
-members.Add("LinePoint1", LinePoint1_Element.Data.ToResoniteReference(context));
-members.Add("IntersectionCount", new ResoniteLink.EmptyElement());
-members.Add("Intersection0", new ResoniteLink.EmptyElement());
-members.Add("Intersection1", new ResoniteLink.EmptyElement());
+members.Add("Center", Center_Element.ToLinkReference(context));
+members.Add("Radius", Radius_Element.ToLinkReference(context));
+members.Add("LinePoint0", LinePoint0_Element.ToLinkReference(context));
+members.Add("LinePoint1", LinePoint1_Element.ToLinkReference(context));
+members.Add("IntersectionCount", IntersectionCount.ToLinkEmpty(context));
+members.Add("Intersection0", Intersection0.ToLinkEmpty(context));
+members.Add("Intersection1", Intersection1.ToLinkEmpty(context));
 }
 
 }

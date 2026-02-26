@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [ProtoFluxBindings]FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Time.Stopwatch
-// Generated on: čtvrtek 26. února 2026 10:04:31
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:27:56
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -36,14 +36,14 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Time", new ResoniteLink.EmptyElement());
-members.Add("IsRunning", new ResoniteLink.EmptyElement());
-members.Add("Start", new ResoniteLink.EmptyElement());
-members.Add("Stop", new ResoniteLink.EmptyElement());
-members.Add("Reset", new ResoniteLink.EmptyElement());
-members.Add("OnStart", OnStart_Element.Data.ToResoniteReference(context));
-members.Add("OnStop", OnStop_Element.Data.ToResoniteReference(context));
-members.Add("OnReset", OnReset_Element.Data.ToResoniteReference(context));
+members.Add("Time", Time.ToLinkEmpty(context));
+members.Add("IsRunning", IsRunning.ToLinkEmpty(context));
+members.Add("Start", Start.ToLinkEmpty(context));
+members.Add("Stop", Stop.ToLinkEmpty(context));
+members.Add("Reset", Reset.ToLinkEmpty(context));
+members.Add("OnStart", OnStart_Element.ToLinkReference(context));
+members.Add("OnStop", OnStop_Element.ToLinkReference(context));
+members.Add("OnReset", OnReset_Element.ToLinkReference(context));
 }
 
 }

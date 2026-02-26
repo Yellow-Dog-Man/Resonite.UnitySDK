@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.ProtoFlux.ProtoFluxNodeVisual
-// Generated on: čtvrtek 26. února 2026 10:04:39
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:28:06
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -49,18 +49,18 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Node", Node_Element.Data.ToResoniteReference(context));
-members.Add("IsSelected", IsSelected_Element.Data.ToResoniteLinkField());
-members.Add("IsHighlighted", IsHighlighted_Element.Data.ToResoniteLinkField());
-members.Add("_nodeHoverArea", _nodeHoverArea_Element.Data.ToResoniteReference(context));
-members.Add("_bgImage", _bgImage_Element.Data.ToResoniteReference(context));
-members.Add("_inputsRoot", _inputsRoot_Element.Data.ToResoniteReference(context));
-members.Add("_outputsRoot", _outputsRoot_Element.Data.ToResoniteReference(context));
-members.Add("_referencesRoot", _referencesRoot_Element.Data.ToResoniteReference(context));
-members.Add("_overviewVisual", _overviewVisual_Element.Data.ToResoniteReference(context));
-members.Add("_overviewBg", _overviewBg_Element.Data.ToResoniteReference(context));
-members.Add("_labelBg", _labelBg_Element.Data.ToResoniteReference(context));
-members.Add("_labelText", _labelText_Element.Data.ToResoniteReference(context));
+members.Add("Node", Node_Element.ToLinkReference(context));
+members.Add("IsSelected", IsSelected_Element.ToLinkField(context));
+members.Add("IsHighlighted", IsHighlighted_Element.ToLinkField(context));
+members.Add("_nodeHoverArea", _nodeHoverArea_Element.ToLinkReference(context));
+members.Add("_bgImage", _bgImage_Element.ToLinkReference(context));
+members.Add("_inputsRoot", _inputsRoot_Element.ToLinkReference(context));
+members.Add("_outputsRoot", _outputsRoot_Element.ToLinkReference(context));
+members.Add("_referencesRoot", _referencesRoot_Element.ToLinkReference(context));
+members.Add("_overviewVisual", _overviewVisual_Element.ToLinkReference(context));
+members.Add("_overviewBg", _overviewBg_Element.ToLinkReference(context));
+members.Add("_labelBg", _labelBg_Element.ToLinkReference(context));
+members.Add("_labelText", _labelText_Element.ToLinkReference(context));
 }
 
 }

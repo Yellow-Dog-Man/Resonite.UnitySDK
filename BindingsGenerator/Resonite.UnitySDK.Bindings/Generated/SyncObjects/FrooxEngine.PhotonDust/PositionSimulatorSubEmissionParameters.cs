@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.PhotonDust.PositionSimulatorSubEmissionParameters
-// Generated on: čtvrtek 26. února 2026 10:04:38
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:28:05
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -35,11 +35,11 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("InheritLifetime", InheritLifetime_Element.Data.ToResoniteLinkField());
-members.Add("VelocityInheritanceMode", VelocityInheritanceMode_Element.Data.ToResoniteLinkField());
-members.Add("RandomDirectionWeight", RandomDirectionWeight_Element.Data.ToResoniteLinkField());
-members.Add("CollisionEmissionMin", CollisionEmissionMin_Element.Data.ToResoniteLinkField());
-members.Add("CollisionEmissionMax", CollisionEmissionMax_Element.Data.ToResoniteLinkField());
+members.Add("InheritLifetime", InheritLifetime_Element.ToLinkField(context));
+members.Add("VelocityInheritanceMode", VelocityInheritanceMode_Element.ToLinkField(context));
+members.Add("RandomDirectionWeight", RandomDirectionWeight_Element.ToLinkField(context));
+members.Add("CollisionEmissionMin", CollisionEmissionMin_Element.ToLinkField(context));
+members.Add("CollisionEmissionMax", CollisionEmissionMax_Element.ToLinkField(context));
 }
 
 }

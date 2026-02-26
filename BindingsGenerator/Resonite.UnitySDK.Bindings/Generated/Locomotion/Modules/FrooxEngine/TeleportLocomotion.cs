@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.TeleportLocomotion
-// Generated on: čtvrtek 26. února 2026 10:03:40
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:26:56
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -60,24 +60,24 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Turn", new ResoniteLink.SyncObject() { Members = Turn.CollectMembers(context) });
-members.Add("BackstepDistance", BackstepDistance_Element.Data.ToResoniteLinkField());
-members.Add("ActivationTime", ActivationTime_Element.Data.ToResoniteLinkField());
-members.Add("HeightInputMax", HeightInputMax_Element.Data.ToResoniteLinkField());
-members.Add("HeightInputMin", HeightInputMin_Element.Data.ToResoniteLinkField());
-members.Add("InitialForceMin", InitialForceMin_Element.Data.ToResoniteLinkField());
-members.Add("InitialForceMax", InitialForceMax_Element.Data.ToResoniteLinkField());
-members.Add("RangeExp", RangeExp_Element.Data.ToResoniteLinkField());
-members.Add("StepUnit", StepUnit_Element.Data.ToResoniteLinkField());
-members.Add("Drag", Drag_Element.Data.ToResoniteLinkField());
-members.Add("MaxSmallObjectSize", MaxSmallObjectSize_Element.Data.ToResoniteLinkField());
-members.Add("WallDistance", WallDistance_Element.Data.ToResoniteLinkField());
-members.Add("_pathMesh", _pathMesh_Element.Data.ToResoniteReference(context));
-members.Add("_pathMaterial", _pathMaterial_Element.Data.ToResoniteReference(context));
-members.Add("_pathRenderer", _pathRenderer_Element.Data.ToResoniteReference(context));
-members.Add("_pathVisual", _pathVisual_Element.Data.ToResoniteReference(context));
-members.Add("_targetPointVisual", _targetPointVisual_Element.Data.ToResoniteReference(context));
-members.Add("_characterController", _characterController_Element.Data.ToResoniteReference(context));
+members.Add("Turn", Turn.ToLinkSyncObject(context));
+members.Add("BackstepDistance", BackstepDistance_Element.ToLinkField(context));
+members.Add("ActivationTime", ActivationTime_Element.ToLinkField(context));
+members.Add("HeightInputMax", HeightInputMax_Element.ToLinkField(context));
+members.Add("HeightInputMin", HeightInputMin_Element.ToLinkField(context));
+members.Add("InitialForceMin", InitialForceMin_Element.ToLinkField(context));
+members.Add("InitialForceMax", InitialForceMax_Element.ToLinkField(context));
+members.Add("RangeExp", RangeExp_Element.ToLinkField(context));
+members.Add("StepUnit", StepUnit_Element.ToLinkField(context));
+members.Add("Drag", Drag_Element.ToLinkField(context));
+members.Add("MaxSmallObjectSize", MaxSmallObjectSize_Element.ToLinkField(context));
+members.Add("WallDistance", WallDistance_Element.ToLinkField(context));
+members.Add("_pathMesh", _pathMesh_Element.ToLinkReference(context));
+members.Add("_pathMaterial", _pathMaterial_Element.ToLinkReference(context));
+members.Add("_pathRenderer", _pathRenderer_Element.ToLinkReference(context));
+members.Add("_pathVisual", _pathVisual_Element.ToLinkReference(context));
+members.Add("_targetPointVisual", _targetPointVisual_Element.ToLinkReference(context));
+members.Add("_characterController", _characterController_Element.ToLinkReference(context));
 }
 
 }

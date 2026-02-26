@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.QuantityTextEditorParser<,>
-// Generated on: čtvrtek 26. února 2026 10:03:38
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:26:53
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -50,21 +50,18 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("MinValue", MinValue_Element.Data.ToResoniteLinkField());
-members.Add("MaxValue", MaxValue_Element.Data.ToResoniteLinkField());
-members.Add("IgnoreOutOfRange", IgnoreOutOfRange_Element.Data.ToResoniteLinkField());
-members.Add("DefaultUnit", DefaultUnit_Element.Data.ToResoniteLinkField());
-members.Add("FormatUnit", FormatUnit_Element.Data.ToResoniteLinkField());
-members.Add("FormatNumber", FormatNumber_Element.Data.ToResoniteLinkField());
-members.Add("CompoundFormatUnits", new ResoniteLink.SyncList()
-{
-    Elements = CompoundFormatUnits.Data.ConvertList(m => m.Data.ToResoniteLinkField())
-});
-members.Add("CompoundUseLongNames", CompoundUseLongNames_Element.Data.ToResoniteLinkField());
-members.Add("CompoundOverrideNames", CompoundOverrideNames_Element.Data.ToResoniteLinkField());
-members.Add("CompoundDiscardLastFraction", CompoundDiscardLastFraction_Element.Data.ToResoniteLinkField());
-members.Add("CompoundSeparator", CompoundSeparator_Element.Data.ToResoniteLinkField());
-members.Add("CompoundZeroHandling", CompoundZeroHandling_Element.Data.ToResoniteLinkField());
+members.Add("MinValue", MinValue_Element.ToLinkField(context));
+members.Add("MaxValue", MaxValue_Element.ToLinkField(context));
+members.Add("IgnoreOutOfRange", IgnoreOutOfRange_Element.ToLinkField(context));
+members.Add("DefaultUnit", DefaultUnit_Element.ToLinkField(context));
+members.Add("FormatUnit", FormatUnit_Element.ToLinkField(context));
+members.Add("FormatNumber", FormatNumber_Element.ToLinkField(context));
+members.Add("CompoundFormatUnits", CompoundFormatUnits.ToLinkList(context, m => m.ToLinkField(context)));
+members.Add("CompoundUseLongNames", CompoundUseLongNames_Element.ToLinkField(context));
+members.Add("CompoundOverrideNames", CompoundOverrideNames_Element.ToLinkField(context));
+members.Add("CompoundDiscardLastFraction", CompoundDiscardLastFraction_Element.ToLinkField(context));
+members.Add("CompoundSeparator", CompoundSeparator_Element.ToLinkField(context));
+members.Add("CompoundZeroHandling", CompoundZeroHandling_Element.ToLinkField(context));
 }
 
 }

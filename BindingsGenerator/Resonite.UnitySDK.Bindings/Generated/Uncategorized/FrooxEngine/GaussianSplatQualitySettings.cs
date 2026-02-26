@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.GaussianSplatQualitySettings
-// Generated on: čtvrtek 26. února 2026 10:04:45
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:28:11
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -41,14 +41,14 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("QualityPreset", QualityPreset_Element.Data.ToResoniteLinkField());
-members.Add("MinLocalQuality", MinLocalQuality_Element.Data.ToResoniteLinkField());
-members.Add("AdvancedQuality", AdvancedQuality_Element.Data.ToResoniteLinkField());
-members.Add("PositionFormat", PositionFormat_Element.Data.ToResoniteLinkField());
-members.Add("ScaleFormat", ScaleFormat_Element.Data.ToResoniteLinkField());
-members.Add("ColorFormat", ColorFormat_Element.Data.ToResoniteLinkField());
-members.Add("SphericalHarmonicsFormat", SphericalHarmonicsFormat_Element.Data.ToResoniteLinkField());
-members.Add("SortMegaOperationsPerCamera", SortMegaOperationsPerCamera_Element.Data.ToResoniteLinkField());
+members.Add("QualityPreset", QualityPreset_Element.ToLinkField(context));
+members.Add("MinLocalQuality", MinLocalQuality_Element.ToLinkField(context));
+members.Add("AdvancedQuality", AdvancedQuality_Element.ToLinkField(context));
+members.Add("PositionFormat", PositionFormat_Element.ToLinkField(context));
+members.Add("ScaleFormat", ScaleFormat_Element.ToLinkField(context));
+members.Add("ColorFormat", ColorFormat_Element.ToLinkField(context));
+members.Add("SphericalHarmonicsFormat", SphericalHarmonicsFormat_Element.ToLinkField(context));
+members.Add("SortMegaOperationsPerCamera", SortMegaOperationsPerCamera_Element.ToLinkField(context));
 }
 
 }

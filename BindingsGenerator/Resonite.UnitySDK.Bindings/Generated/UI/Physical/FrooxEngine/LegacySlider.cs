@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.LegacySlider
-// Generated on: čtvrtek 26. února 2026 10:04:42
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:28:08
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -93,40 +93,40 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("IsEnabledField", IsEnabledField_Element.Data.ToResoniteLinkField());
-members.Add("DriveField", DriveField_Element.Data.ToResoniteReference(context));
-members.Add("AllowWriteBack", AllowWriteBack_Element.Data.ToResoniteLinkField());
-members.Add("CreateUndoStep", CreateUndoStep_Element.Data.ToResoniteLinkField());
-members.Add("Value", Value_Element.Data.ToResoniteLinkField());
-members.Add("Min", Min_Element.Data.ToResoniteLinkField());
-members.Add("Max", Max_Element.Data.ToResoniteLinkField());
-members.Add("Increment", Increment_Element.Data.ToResoniteLinkField());
-members.Add("IntegerOnly", IntegerOnly_Element.Data.ToResoniteLinkField());
-members.Add("ColorField", ColorField_Element.Data.ToResoniteLinkField());
-members.Add("SymmetricalField", SymmetricalField_Element.Data.ToResoniteLinkField());
-members.Add("WidthField", WidthField_Element.Data.ToResoniteLinkField());
-members.Add("HeightField", HeightField_Element.Data.ToResoniteLinkField());
-members.Add("CursorRatioField", CursorRatioField_Element.Data.ToResoniteLinkField());
-members.Add("ThicknessField", ThicknessField_Element.Data.ToResoniteLinkField());
-members.Add("SlantField", SlantField_Element.Data.ToResoniteLinkField());
-members.Add("SpacingRatioField", SpacingRatioField_Element.Data.ToResoniteLinkField());
-members.Add("TrackRatioField", TrackRatioField_Element.Data.ToResoniteLinkField());
-members.Add("ButtonRatioField", ButtonRatioField_Element.Data.ToResoniteLinkField());
-members.Add("_trackMesh", _trackMesh_Element.Data.ToResoniteReference(context));
-members.Add("_leftMesh", _leftMesh_Element.Data.ToResoniteReference(context));
-members.Add("_rightMesh", _rightMesh_Element.Data.ToResoniteReference(context));
-members.Add("_cursorMesh", _cursorMesh_Element.Data.ToResoniteReference(context));
-members.Add("_trackMaterial", _trackMaterial_Element.Data.ToResoniteReference(context));
-members.Add("_leftMaterial", _leftMaterial_Element.Data.ToResoniteReference(context));
-members.Add("_rightMaterial", _rightMaterial_Element.Data.ToResoniteReference(context));
-members.Add("_cursorMaterial", _cursorMaterial_Element.Data.ToResoniteReference(context));
-members.Add("_leftPosition", _leftPosition_Element.Data.ToResoniteReference(context));
-members.Add("_rightPosition", _rightPosition_Element.Data.ToResoniteReference(context));
-members.Add("_cursorPosition", _cursorPosition_Element.Data.ToResoniteReference(context));
-members.Add("_leftColliderSize", _leftColliderSize_Element.Data.ToResoniteReference(context));
-members.Add("_rightColliderSize", _rightColliderSize_Element.Data.ToResoniteReference(context));
-members.Add("_trackColliderSize", _trackColliderSize_Element.Data.ToResoniteReference(context));
-members.Add("_cursorColliderSize", _cursorColliderSize_Element.Data.ToResoniteReference(context));
+members.Add("IsEnabledField", IsEnabledField_Element.ToLinkField(context));
+members.Add("DriveField", DriveField_Element.ToLinkReference(context));
+members.Add("AllowWriteBack", AllowWriteBack_Element.ToLinkField(context));
+members.Add("CreateUndoStep", CreateUndoStep_Element.ToLinkField(context));
+members.Add("Value", Value_Element.ToLinkField(context));
+members.Add("Min", Min_Element.ToLinkField(context));
+members.Add("Max", Max_Element.ToLinkField(context));
+members.Add("Increment", Increment_Element.ToLinkField(context));
+members.Add("IntegerOnly", IntegerOnly_Element.ToLinkField(context));
+members.Add("ColorField", ColorField_Element.ToLinkField(context));
+members.Add("SymmetricalField", SymmetricalField_Element.ToLinkField(context));
+members.Add("WidthField", WidthField_Element.ToLinkField(context));
+members.Add("HeightField", HeightField_Element.ToLinkField(context));
+members.Add("CursorRatioField", CursorRatioField_Element.ToLinkField(context));
+members.Add("ThicknessField", ThicknessField_Element.ToLinkField(context));
+members.Add("SlantField", SlantField_Element.ToLinkField(context));
+members.Add("SpacingRatioField", SpacingRatioField_Element.ToLinkField(context));
+members.Add("TrackRatioField", TrackRatioField_Element.ToLinkField(context));
+members.Add("ButtonRatioField", ButtonRatioField_Element.ToLinkField(context));
+members.Add("_trackMesh", _trackMesh_Element.ToLinkReference(context));
+members.Add("_leftMesh", _leftMesh_Element.ToLinkReference(context));
+members.Add("_rightMesh", _rightMesh_Element.ToLinkReference(context));
+members.Add("_cursorMesh", _cursorMesh_Element.ToLinkReference(context));
+members.Add("_trackMaterial", _trackMaterial_Element.ToLinkReference(context));
+members.Add("_leftMaterial", _leftMaterial_Element.ToLinkReference(context));
+members.Add("_rightMaterial", _rightMaterial_Element.ToLinkReference(context));
+members.Add("_cursorMaterial", _cursorMaterial_Element.ToLinkReference(context));
+members.Add("_leftPosition", _leftPosition_Element.ToLinkReference(context));
+members.Add("_rightPosition", _rightPosition_Element.ToLinkReference(context));
+members.Add("_cursorPosition", _cursorPosition_Element.ToLinkReference(context));
+members.Add("_leftColliderSize", _leftColliderSize_Element.ToLinkReference(context));
+members.Add("_rightColliderSize", _rightColliderSize_Element.ToLinkReference(context));
+members.Add("_trackColliderSize", _trackColliderSize_Element.ToLinkReference(context));
+members.Add("_cursorColliderSize", _cursorColliderSize_Element.ToLinkReference(context));
 }
 
 }

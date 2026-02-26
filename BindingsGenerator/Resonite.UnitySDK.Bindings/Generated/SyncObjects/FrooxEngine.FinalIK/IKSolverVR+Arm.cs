@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.FinalIK.IKSolverVR+Arm
-// Generated on: čtvrtek 26. února 2026 10:04:45
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:28:11
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -74,30 +74,30 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Target", Target_Element.Data.ToResoniteReference(context));
-members.Add("BendGoal", BendGoal_Element.Data.ToResoniteReference(context));
-members.Add("PositionWeight", PositionWeight_Element.Data.ToResoniteLinkField());
-members.Add("RotationWeight", RotationWeight_Element.Data.ToResoniteLinkField());
-members.Add("ShoulderRotationModeSetting", ShoulderRotationModeSetting_Element.Data.ToResoniteLinkField());
-members.Add("ShoulderRotationWeight", ShoulderRotationWeight_Element.Data.ToResoniteLinkField());
-members.Add("BendGoalWeight", BendGoalWeight_Element.Data.ToResoniteLinkField());
-members.Add("SwivelOffset", SwivelOffset_Element.Data.ToResoniteLinkField());
-members.Add("WristToPalmAxis", WristToPalmAxis_Element.Data.ToResoniteLinkField());
-members.Add("PalmToThumbAxis", PalmToThumbAxis_Element.Data.ToResoniteLinkField());
-members.Add("ArmLengthMlp", ArmLengthMlp_Element.Data.ToResoniteLinkField());
-members.Add("StretchCurve", StretchCurve.Data.ToResoniteLinkArray());
-members.Add("IKPosition", IKPosition_Element.Data.ToResoniteLinkField());
-members.Add("IKRotation", IKRotation_Element.Data.ToResoniteLinkField());
-members.Add("BendGoalPosition", BendGoalPosition_Element.Data.ToResoniteLinkField());
-members.Add("TwistRelaxWeight", TwistRelaxWeight_Element.Data.ToResoniteLinkField());
-members.Add("TwistCrossfade", TwistCrossfade_Element.Data.ToResoniteLinkField());
-members.Add("TwistAngleOffset", TwistAngleOffset_Element.Data.ToResoniteLinkField());
-members.Add("chestForwardAxis", chestForwardAxis_Element.Data.ToResoniteLinkField());
-members.Add("chestUpAxis", chestUpAxis_Element.Data.ToResoniteLinkField());
-members.Add("forearmTwistAxis", forearmTwistAxis_Element.Data.ToResoniteLinkField());
-members.Add("forearmAxis", forearmAxis_Element.Data.ToResoniteLinkField());
-members.Add("axisRelativeToUpperArm", axisRelativeToUpperArm_Element.Data.ToResoniteLinkField());
-members.Add("axisRelativeToHand", axisRelativeToHand_Element.Data.ToResoniteLinkField());
+members.Add("Target", Target_Element.ToLinkReference(context));
+members.Add("BendGoal", BendGoal_Element.ToLinkReference(context));
+members.Add("PositionWeight", PositionWeight_Element.ToLinkField(context));
+members.Add("RotationWeight", RotationWeight_Element.ToLinkField(context));
+members.Add("ShoulderRotationModeSetting", ShoulderRotationModeSetting_Element.ToLinkField(context));
+members.Add("ShoulderRotationWeight", ShoulderRotationWeight_Element.ToLinkField(context));
+members.Add("BendGoalWeight", BendGoalWeight_Element.ToLinkField(context));
+members.Add("SwivelOffset", SwivelOffset_Element.ToLinkField(context));
+members.Add("WristToPalmAxis", WristToPalmAxis_Element.ToLinkField(context));
+members.Add("PalmToThumbAxis", PalmToThumbAxis_Element.ToLinkField(context));
+members.Add("ArmLengthMlp", ArmLengthMlp_Element.ToLinkField(context));
+members.Add("StretchCurve", StretchCurve.ToLinkArray(context));
+members.Add("IKPosition", IKPosition_Element.ToLinkField(context));
+members.Add("IKRotation", IKRotation_Element.ToLinkField(context));
+members.Add("BendGoalPosition", BendGoalPosition_Element.ToLinkField(context));
+members.Add("TwistRelaxWeight", TwistRelaxWeight_Element.ToLinkField(context));
+members.Add("TwistCrossfade", TwistCrossfade_Element.ToLinkField(context));
+members.Add("TwistAngleOffset", TwistAngleOffset_Element.ToLinkField(context));
+members.Add("chestForwardAxis", chestForwardAxis_Element.ToLinkField(context));
+members.Add("chestUpAxis", chestUpAxis_Element.ToLinkField(context));
+members.Add("forearmTwistAxis", forearmTwistAxis_Element.ToLinkField(context));
+members.Add("forearmAxis", forearmAxis_Element.ToLinkField(context));
+members.Add("axisRelativeToUpperArm", axisRelativeToUpperArm_Element.ToLinkField(context));
+members.Add("axisRelativeToHand", axisRelativeToHand_Element.ToLinkField(context));
 }
 
 }

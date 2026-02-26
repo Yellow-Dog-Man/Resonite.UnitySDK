@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.OSC_Handler
-// Generated on: čtvrtek 26. února 2026 10:03:40
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:26:57
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -28,8 +28,8 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("HandlingUser", new ResoniteLink.SyncObject() { Members = HandlingUser.CollectMembers(context) });
-members.Add("AccessReason", AccessReason_Element.Data.ToResoniteLinkField());
+members.Add("HandlingUser", HandlingUser.ToLinkSyncObject(context));
+members.Add("AccessReason", AccessReason_Element.ToLinkField(context));
 }
 
 }

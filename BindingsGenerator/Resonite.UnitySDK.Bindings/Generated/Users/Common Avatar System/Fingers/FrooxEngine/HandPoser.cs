@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.HandPoser
-// Generated on: čtvrtek 26. února 2026 10:04:50
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:28:15
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -46,19 +46,19 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("PoseSource", PoseSource_Element.Data.ToResoniteReference(context));
-members.Add("Side", Side_Element.Data.ToResoniteLinkField());
-members.Add("PoseMetacarpals", PoseMetacarpals_Element.Data.ToResoniteLinkField());
-members.Add("HandRoot", HandRoot_Element.Data.ToResoniteReference(context));
-members.Add("HandForward", HandForward_Element.Data.ToResoniteLinkField());
-members.Add("HandUp", HandUp_Element.Data.ToResoniteLinkField());
-members.Add("HandRight", HandRight_Element.Data.ToResoniteLinkField());
-members.Add("Thumb", new ResoniteLink.SyncObject() { Members = Thumb.CollectMembers(context) });
-members.Add("Index", new ResoniteLink.SyncObject() { Members = Index.CollectMembers(context) });
-members.Add("Middle", new ResoniteLink.SyncObject() { Members = Middle.CollectMembers(context) });
-members.Add("Ring", new ResoniteLink.SyncObject() { Members = Ring.CollectMembers(context) });
-members.Add("Pinky", new ResoniteLink.SyncObject() { Members = Pinky.CollectMembers(context) });
-members.Add("DebugFingers", DebugFingers_Element.Data.ToResoniteLinkField());
+members.Add("PoseSource", PoseSource_Element.ToLinkReference(context));
+members.Add("Side", Side_Element.ToLinkField(context));
+members.Add("PoseMetacarpals", PoseMetacarpals_Element.ToLinkField(context));
+members.Add("HandRoot", HandRoot_Element.ToLinkReference(context));
+members.Add("HandForward", HandForward_Element.ToLinkField(context));
+members.Add("HandUp", HandUp_Element.ToLinkField(context));
+members.Add("HandRight", HandRight_Element.ToLinkField(context));
+members.Add("Thumb", Thumb.ToLinkSyncObject(context));
+members.Add("Index", Index.ToLinkSyncObject(context));
+members.Add("Middle", Middle.ToLinkSyncObject(context));
+members.Add("Ring", Ring.ToLinkSyncObject(context));
+members.Add("Pinky", Pinky.ToLinkSyncObject(context));
+members.Add("DebugFingers", DebugFingers_Element.ToLinkField(context));
 }
 
 }

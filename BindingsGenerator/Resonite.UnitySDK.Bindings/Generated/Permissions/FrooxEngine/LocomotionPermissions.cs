@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.LocomotionPermissions
-// Generated on: čtvrtek 26. února 2026 10:03:41
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:26:57
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -36,15 +36,12 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("LocomotionListMode", LocomotionListMode_Element.Data.ToResoniteLinkField());
-members.Add("Locomotions", new ResoniteLink.SyncList()
-{
-    Elements = Locomotions.Data.ConvertList(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers(context) })
-});
-members.Add("Scaling", Scaling_Element.Data.ToResoniteLinkField());
-members.Add("MinScale", MinScale_Element.Data.ToResoniteLinkField());
-members.Add("MaxScale", MaxScale_Element.Data.ToResoniteLinkField());
-members.Add("JumpToUser", JumpToUser_Element.Data.ToResoniteLinkField());
+members.Add("LocomotionListMode", LocomotionListMode_Element.ToLinkField(context));
+members.Add("Locomotions", Locomotions.ToLinkList(context, m => m.ToLinkSyncObject(context)));
+members.Add("Scaling", Scaling_Element.ToLinkField(context));
+members.Add("MinScale", MinScale_Element.ToLinkField(context));
+members.Add("MaxScale", MaxScale_Element.ToLinkField(context));
+members.Add("JumpToUser", JumpToUser_Element.ToLinkField(context));
 }
 
 }

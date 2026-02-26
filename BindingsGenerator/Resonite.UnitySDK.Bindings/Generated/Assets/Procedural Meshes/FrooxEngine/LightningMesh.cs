@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.LightningMesh
-// Generated on: čtvrtek 26. února 2026 10:03:36
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:26:50
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -42,18 +42,15 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Seed", Seed_Element.Data.ToResoniteLinkField());
-members.Add("Points", Points_Element.Data.ToResoniteLinkField());
-members.Add("Topology", Topology_Element.Data.ToResoniteLinkField());
-members.Add("Shading", Shading_Element.Data.ToResoniteLinkField());
-members.Add("Ends", Ends_Element.Data.ToResoniteLinkField());
-members.Add("DualSided", DualSided_Element.Data.ToResoniteLinkField());
-members.Add("Point0", Point0_Element.Data.ToResoniteLinkField());
-members.Add("Point1", Point1_Element.Data.ToResoniteLinkField());
-members.Add("StrikeLevels", new ResoniteLink.SyncList()
-{
-    Elements = StrikeLevels.Data.ConvertList(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers(context) })
-});
+members.Add("Seed", Seed_Element.ToLinkField(context));
+members.Add("Points", Points_Element.ToLinkField(context));
+members.Add("Topology", Topology_Element.ToLinkField(context));
+members.Add("Shading", Shading_Element.ToLinkField(context));
+members.Add("Ends", Ends_Element.ToLinkField(context));
+members.Add("DualSided", DualSided_Element.ToLinkField(context));
+members.Add("Point0", Point0_Element.ToLinkField(context));
+members.Add("Point1", Point1_Element.ToLinkField(context));
+members.Add("StrikeLevels", StrikeLevels.ToLinkList(context, m => m.ToLinkSyncObject(context)));
 }
 
 }

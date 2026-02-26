@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.UIX.ProgressBar
-// Generated on: čtvrtek 26. února 2026 10:04:43
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:28:08
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -37,12 +37,12 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Progress", Progress_Element.Data.ToResoniteLinkField());
-members.Add("AnchorMinOffset", AnchorMinOffset_Element.Data.ToResoniteLinkField());
-members.Add("AnchorMaxOffset", AnchorMaxOffset_Element.Data.ToResoniteLinkField());
-members.Add("AnchorMin", AnchorMin_Element.Data.ToResoniteReference(context));
-members.Add("AnchorMax", AnchorMax_Element.Data.ToResoniteReference(context));
-members.Add("Power", Power_Element.Data.ToResoniteLinkField());
+members.Add("Progress", Progress_Element.ToLinkField(context));
+members.Add("AnchorMinOffset", AnchorMinOffset_Element.ToLinkField(context));
+members.Add("AnchorMaxOffset", AnchorMaxOffset_Element.ToLinkField(context));
+members.Add("AnchorMin", AnchorMin_Element.ToLinkReference(context));
+members.Add("AnchorMax", AnchorMax_Element.ToLinkReference(context));
+members.Add("Power", Power_Element.ToLinkField(context));
 }
 
 }

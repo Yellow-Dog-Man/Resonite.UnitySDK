@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.LegacyPanel+TitleButton
-// Generated on: čtvrtek 26. února 2026 10:04:46
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:28:11
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -47,16 +47,16 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("ItemColor", ItemColor_Element.Data.ToResoniteLinkField());
-members.Add("Enabled", Enabled_Element.Data.ToResoniteLinkField());
-members.Add("_material", _material_Element.Data.ToResoniteReference(context));
-members.Add("_iconMaterial", _iconMaterial_Element.Data.ToResoniteReference(context));
-members.Add("_iconTexture", _iconTexture_Element.Data.ToResoniteReference(context));
-members.Add("_itemRoot", _itemRoot_Element.Data.ToResoniteReference(context));
-members.Add("_position", _position_Element.Data.ToResoniteReference(context));
-members.Add("_colliderSize", _colliderSize_Element.Data.ToResoniteReference(context));
-members.Add("_iconSize", _iconSize_Element.Data.ToResoniteReference(context));
-members.Add("_iconOffset", _iconOffset_Element.Data.ToResoniteReference(context));
+members.Add("ItemColor", ItemColor_Element.ToLinkField(context));
+members.Add("Enabled", Enabled_Element.ToLinkField(context));
+members.Add("_material", _material_Element.ToLinkReference(context));
+members.Add("_iconMaterial", _iconMaterial_Element.ToLinkReference(context));
+members.Add("_iconTexture", _iconTexture_Element.ToLinkReference(context));
+members.Add("_itemRoot", _itemRoot_Element.ToLinkReference(context));
+members.Add("_position", _position_Element.ToLinkReference(context));
+members.Add("_colliderSize", _colliderSize_Element.ToLinkReference(context));
+members.Add("_iconSize", _iconSize_Element.ToLinkReference(context));
+members.Add("_iconOffset", _iconOffset_Element.ToLinkReference(context));
 }
 
 }

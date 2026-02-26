@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.UnlitMaterial
-// Generated on: čtvrtek 26. února 2026 10:03:35
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:26:49
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -93,40 +93,40 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("TintColor", TintColor_Element.Data.ToResoniteLinkField());
-members.Add("Texture", Texture_Element.Data.ToResoniteReference(context));
-members.Add("TextureScale", TextureScale_Element.Data.ToResoniteLinkField());
-members.Add("TextureOffset", TextureOffset_Element.Data.ToResoniteLinkField());
-members.Add("MaskTexture", MaskTexture_Element.Data.ToResoniteReference(context));
-members.Add("MaskScale", MaskScale_Element.Data.ToResoniteLinkField());
-members.Add("MaskOffset", MaskOffset_Element.Data.ToResoniteLinkField());
-members.Add("MaskMode", MaskMode_Element.Data.ToResoniteLinkField());
-members.Add("BlendMode", BlendMode_Element.Data.ToResoniteLinkField());
-members.Add("AlphaCutoff", AlphaCutoff_Element.Data.ToResoniteLinkField());
-members.Add("UseVertexColors", UseVertexColors_Element.Data.ToResoniteLinkField());
-members.Add("VertexColorInterpolationSpace", VertexColorInterpolationSpace_Element.Data.ToResoniteLinkField());
-members.Add("Sidedness", Sidedness_Element.Data.ToResoniteLinkField());
-members.Add("ZWrite", ZWrite_Element.Data.ToResoniteLinkField());
-members.Add("OffsetTexture", OffsetTexture_Element.Data.ToResoniteReference(context));
-members.Add("OffsetMagnitude", OffsetMagnitude_Element.Data.ToResoniteLinkField());
-members.Add("OffsetTextureScale", OffsetTextureScale_Element.Data.ToResoniteLinkField());
-members.Add("OffsetTextureOffset", OffsetTextureOffset_Element.Data.ToResoniteLinkField());
-members.Add("PolarUVmapping", PolarUVmapping_Element.Data.ToResoniteLinkField());
-members.Add("PolarPower", PolarPower_Element.Data.ToResoniteLinkField());
-members.Add("StereoTextureTransform", StereoTextureTransform_Element.Data.ToResoniteLinkField());
-members.Add("RightEyeTextureScale", RightEyeTextureScale_Element.Data.ToResoniteLinkField());
-members.Add("RightEyeTextureOffset", RightEyeTextureOffset_Element.Data.ToResoniteLinkField());
-members.Add("DecodeAsNormalMap", DecodeAsNormalMap_Element.Data.ToResoniteLinkField());
-members.Add("UseBillboardGeometry", UseBillboardGeometry_Element.Data.ToResoniteLinkField());
-members.Add("UsePerBillboardScale", UsePerBillboardScale_Element.Data.ToResoniteLinkField());
-members.Add("UsePerBillboardRotation", UsePerBillboardRotation_Element.Data.ToResoniteLinkField());
-members.Add("UsePerBillboardUV", UsePerBillboardUV_Element.Data.ToResoniteLinkField());
-members.Add("BillboardSize", BillboardSize_Element.Data.ToResoniteLinkField());
-members.Add("OffsetFactor", OffsetFactor_Element.Data.ToResoniteLinkField());
-members.Add("OffsetUnits", OffsetUnits_Element.Data.ToResoniteLinkField());
-members.Add("RenderQueue", RenderQueue_Element.Data.ToResoniteLinkField());
-members.Add("_unlit", _unlit_Element.Data.ToResoniteReference(context));
-members.Add("_unlitBillboard", _unlitBillboard_Element.Data.ToResoniteReference(context));
+members.Add("TintColor", TintColor_Element.ToLinkField(context));
+members.Add("Texture", Texture_Element.ToLinkReference(context));
+members.Add("TextureScale", TextureScale_Element.ToLinkField(context));
+members.Add("TextureOffset", TextureOffset_Element.ToLinkField(context));
+members.Add("MaskTexture", MaskTexture_Element.ToLinkReference(context));
+members.Add("MaskScale", MaskScale_Element.ToLinkField(context));
+members.Add("MaskOffset", MaskOffset_Element.ToLinkField(context));
+members.Add("MaskMode", MaskMode_Element.ToLinkField(context));
+members.Add("BlendMode", BlendMode_Element.ToLinkField(context));
+members.Add("AlphaCutoff", AlphaCutoff_Element.ToLinkField(context));
+members.Add("UseVertexColors", UseVertexColors_Element.ToLinkField(context));
+members.Add("VertexColorInterpolationSpace", VertexColorInterpolationSpace_Element.ToLinkField(context));
+members.Add("Sidedness", Sidedness_Element.ToLinkField(context));
+members.Add("ZWrite", ZWrite_Element.ToLinkField(context));
+members.Add("OffsetTexture", OffsetTexture_Element.ToLinkReference(context));
+members.Add("OffsetMagnitude", OffsetMagnitude_Element.ToLinkField(context));
+members.Add("OffsetTextureScale", OffsetTextureScale_Element.ToLinkField(context));
+members.Add("OffsetTextureOffset", OffsetTextureOffset_Element.ToLinkField(context));
+members.Add("PolarUVmapping", PolarUVmapping_Element.ToLinkField(context));
+members.Add("PolarPower", PolarPower_Element.ToLinkField(context));
+members.Add("StereoTextureTransform", StereoTextureTransform_Element.ToLinkField(context));
+members.Add("RightEyeTextureScale", RightEyeTextureScale_Element.ToLinkField(context));
+members.Add("RightEyeTextureOffset", RightEyeTextureOffset_Element.ToLinkField(context));
+members.Add("DecodeAsNormalMap", DecodeAsNormalMap_Element.ToLinkField(context));
+members.Add("UseBillboardGeometry", UseBillboardGeometry_Element.ToLinkField(context));
+members.Add("UsePerBillboardScale", UsePerBillboardScale_Element.ToLinkField(context));
+members.Add("UsePerBillboardRotation", UsePerBillboardRotation_Element.ToLinkField(context));
+members.Add("UsePerBillboardUV", UsePerBillboardUV_Element.ToLinkField(context));
+members.Add("BillboardSize", BillboardSize_Element.ToLinkField(context));
+members.Add("OffsetFactor", OffsetFactor_Element.ToLinkField(context));
+members.Add("OffsetUnits", OffsetUnits_Element.ToLinkField(context));
+members.Add("RenderQueue", RenderQueue_Element.ToLinkField(context));
+members.Add("_unlit", _unlit_Element.ToLinkReference(context));
+members.Add("_unlitBillboard", _unlitBillboard_Element.ToLinkReference(context));
 }
 
 }

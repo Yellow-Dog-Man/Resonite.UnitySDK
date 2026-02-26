@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [ProtoFluxBindings]FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Audio.ConstructZitaParameters
-// Generated on: čtvrtek 26. února 2026 10:04:06
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:27:26
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -47,17 +47,17 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("InDelay", InDelay_Element.Data.ToResoniteReference(context));
-members.Add("Crossover", Crossover_Element.Data.ToResoniteReference(context));
-members.Add("RT60Low", RT60Low_Element.Data.ToResoniteReference(context));
-members.Add("RT60Mid", RT60Mid_Element.Data.ToResoniteReference(context));
-members.Add("HighFrequencyDamping", HighFrequencyDamping_Element.Data.ToResoniteReference(context));
-members.Add("EQ1Frequency", EQ1Frequency_Element.Data.ToResoniteReference(context));
-members.Add("EQ1Level", EQ1Level_Element.Data.ToResoniteReference(context));
-members.Add("EQ2Frequency", EQ2Frequency_Element.Data.ToResoniteReference(context));
-members.Add("EQ2Level", EQ2Level_Element.Data.ToResoniteReference(context));
-members.Add("Mix", Mix_Element.Data.ToResoniteReference(context));
-members.Add("Level", Level_Element.Data.ToResoniteReference(context));
+members.Add("InDelay", InDelay_Element.ToLinkReference(context));
+members.Add("Crossover", Crossover_Element.ToLinkReference(context));
+members.Add("RT60Low", RT60Low_Element.ToLinkReference(context));
+members.Add("RT60Mid", RT60Mid_Element.ToLinkReference(context));
+members.Add("HighFrequencyDamping", HighFrequencyDamping_Element.ToLinkReference(context));
+members.Add("EQ1Frequency", EQ1Frequency_Element.ToLinkReference(context));
+members.Add("EQ1Level", EQ1Level_Element.ToLinkReference(context));
+members.Add("EQ2Frequency", EQ2Frequency_Element.ToLinkReference(context));
+members.Add("EQ2Level", EQ2Level_Element.ToLinkReference(context));
+members.Add("Mix", Mix_Element.ToLinkReference(context));
+members.Add("Level", Level_Element.ToLinkReference(context));
 }
 
 }

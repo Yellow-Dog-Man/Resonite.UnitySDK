@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [ProtoFluxBindings]FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.Binary.ComposeBits_ulong
-// Generated on: čtvrtek 26. února 2026 10:04:34
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:27:59
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -153,70 +153,70 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Bit0", Bit0_Element.Data.ToResoniteReference(context));
-members.Add("Bit1", Bit1_Element.Data.ToResoniteReference(context));
-members.Add("Bit2", Bit2_Element.Data.ToResoniteReference(context));
-members.Add("Bit3", Bit3_Element.Data.ToResoniteReference(context));
-members.Add("Bit4", Bit4_Element.Data.ToResoniteReference(context));
-members.Add("Bit5", Bit5_Element.Data.ToResoniteReference(context));
-members.Add("Bit6", Bit6_Element.Data.ToResoniteReference(context));
-members.Add("Bit7", Bit7_Element.Data.ToResoniteReference(context));
-members.Add("Bit8", Bit8_Element.Data.ToResoniteReference(context));
-members.Add("Bit9", Bit9_Element.Data.ToResoniteReference(context));
-members.Add("Bit10", Bit10_Element.Data.ToResoniteReference(context));
-members.Add("Bit11", Bit11_Element.Data.ToResoniteReference(context));
-members.Add("Bit12", Bit12_Element.Data.ToResoniteReference(context));
-members.Add("Bit13", Bit13_Element.Data.ToResoniteReference(context));
-members.Add("Bit14", Bit14_Element.Data.ToResoniteReference(context));
-members.Add("Bit15", Bit15_Element.Data.ToResoniteReference(context));
-members.Add("Bit16", Bit16_Element.Data.ToResoniteReference(context));
-members.Add("Bit17", Bit17_Element.Data.ToResoniteReference(context));
-members.Add("Bit18", Bit18_Element.Data.ToResoniteReference(context));
-members.Add("Bit19", Bit19_Element.Data.ToResoniteReference(context));
-members.Add("Bit20", Bit20_Element.Data.ToResoniteReference(context));
-members.Add("Bit21", Bit21_Element.Data.ToResoniteReference(context));
-members.Add("Bit22", Bit22_Element.Data.ToResoniteReference(context));
-members.Add("Bit23", Bit23_Element.Data.ToResoniteReference(context));
-members.Add("Bit24", Bit24_Element.Data.ToResoniteReference(context));
-members.Add("Bit25", Bit25_Element.Data.ToResoniteReference(context));
-members.Add("Bit26", Bit26_Element.Data.ToResoniteReference(context));
-members.Add("Bit27", Bit27_Element.Data.ToResoniteReference(context));
-members.Add("Bit28", Bit28_Element.Data.ToResoniteReference(context));
-members.Add("Bit29", Bit29_Element.Data.ToResoniteReference(context));
-members.Add("Bit30", Bit30_Element.Data.ToResoniteReference(context));
-members.Add("Bit31", Bit31_Element.Data.ToResoniteReference(context));
-members.Add("Bit32", Bit32_Element.Data.ToResoniteReference(context));
-members.Add("Bit33", Bit33_Element.Data.ToResoniteReference(context));
-members.Add("Bit34", Bit34_Element.Data.ToResoniteReference(context));
-members.Add("Bit35", Bit35_Element.Data.ToResoniteReference(context));
-members.Add("Bit36", Bit36_Element.Data.ToResoniteReference(context));
-members.Add("Bit37", Bit37_Element.Data.ToResoniteReference(context));
-members.Add("Bit38", Bit38_Element.Data.ToResoniteReference(context));
-members.Add("Bit39", Bit39_Element.Data.ToResoniteReference(context));
-members.Add("Bit40", Bit40_Element.Data.ToResoniteReference(context));
-members.Add("Bit41", Bit41_Element.Data.ToResoniteReference(context));
-members.Add("Bit42", Bit42_Element.Data.ToResoniteReference(context));
-members.Add("Bit43", Bit43_Element.Data.ToResoniteReference(context));
-members.Add("Bit44", Bit44_Element.Data.ToResoniteReference(context));
-members.Add("Bit45", Bit45_Element.Data.ToResoniteReference(context));
-members.Add("Bit46", Bit46_Element.Data.ToResoniteReference(context));
-members.Add("Bit47", Bit47_Element.Data.ToResoniteReference(context));
-members.Add("Bit48", Bit48_Element.Data.ToResoniteReference(context));
-members.Add("Bit49", Bit49_Element.Data.ToResoniteReference(context));
-members.Add("Bit50", Bit50_Element.Data.ToResoniteReference(context));
-members.Add("Bit51", Bit51_Element.Data.ToResoniteReference(context));
-members.Add("Bit52", Bit52_Element.Data.ToResoniteReference(context));
-members.Add("Bit53", Bit53_Element.Data.ToResoniteReference(context));
-members.Add("Bit54", Bit54_Element.Data.ToResoniteReference(context));
-members.Add("Bit55", Bit55_Element.Data.ToResoniteReference(context));
-members.Add("Bit56", Bit56_Element.Data.ToResoniteReference(context));
-members.Add("Bit57", Bit57_Element.Data.ToResoniteReference(context));
-members.Add("Bit58", Bit58_Element.Data.ToResoniteReference(context));
-members.Add("Bit59", Bit59_Element.Data.ToResoniteReference(context));
-members.Add("Bit60", Bit60_Element.Data.ToResoniteReference(context));
-members.Add("Bit61", Bit61_Element.Data.ToResoniteReference(context));
-members.Add("Bit62", Bit62_Element.Data.ToResoniteReference(context));
-members.Add("Bit63", Bit63_Element.Data.ToResoniteReference(context));
+members.Add("Bit0", Bit0_Element.ToLinkReference(context));
+members.Add("Bit1", Bit1_Element.ToLinkReference(context));
+members.Add("Bit2", Bit2_Element.ToLinkReference(context));
+members.Add("Bit3", Bit3_Element.ToLinkReference(context));
+members.Add("Bit4", Bit4_Element.ToLinkReference(context));
+members.Add("Bit5", Bit5_Element.ToLinkReference(context));
+members.Add("Bit6", Bit6_Element.ToLinkReference(context));
+members.Add("Bit7", Bit7_Element.ToLinkReference(context));
+members.Add("Bit8", Bit8_Element.ToLinkReference(context));
+members.Add("Bit9", Bit9_Element.ToLinkReference(context));
+members.Add("Bit10", Bit10_Element.ToLinkReference(context));
+members.Add("Bit11", Bit11_Element.ToLinkReference(context));
+members.Add("Bit12", Bit12_Element.ToLinkReference(context));
+members.Add("Bit13", Bit13_Element.ToLinkReference(context));
+members.Add("Bit14", Bit14_Element.ToLinkReference(context));
+members.Add("Bit15", Bit15_Element.ToLinkReference(context));
+members.Add("Bit16", Bit16_Element.ToLinkReference(context));
+members.Add("Bit17", Bit17_Element.ToLinkReference(context));
+members.Add("Bit18", Bit18_Element.ToLinkReference(context));
+members.Add("Bit19", Bit19_Element.ToLinkReference(context));
+members.Add("Bit20", Bit20_Element.ToLinkReference(context));
+members.Add("Bit21", Bit21_Element.ToLinkReference(context));
+members.Add("Bit22", Bit22_Element.ToLinkReference(context));
+members.Add("Bit23", Bit23_Element.ToLinkReference(context));
+members.Add("Bit24", Bit24_Element.ToLinkReference(context));
+members.Add("Bit25", Bit25_Element.ToLinkReference(context));
+members.Add("Bit26", Bit26_Element.ToLinkReference(context));
+members.Add("Bit27", Bit27_Element.ToLinkReference(context));
+members.Add("Bit28", Bit28_Element.ToLinkReference(context));
+members.Add("Bit29", Bit29_Element.ToLinkReference(context));
+members.Add("Bit30", Bit30_Element.ToLinkReference(context));
+members.Add("Bit31", Bit31_Element.ToLinkReference(context));
+members.Add("Bit32", Bit32_Element.ToLinkReference(context));
+members.Add("Bit33", Bit33_Element.ToLinkReference(context));
+members.Add("Bit34", Bit34_Element.ToLinkReference(context));
+members.Add("Bit35", Bit35_Element.ToLinkReference(context));
+members.Add("Bit36", Bit36_Element.ToLinkReference(context));
+members.Add("Bit37", Bit37_Element.ToLinkReference(context));
+members.Add("Bit38", Bit38_Element.ToLinkReference(context));
+members.Add("Bit39", Bit39_Element.ToLinkReference(context));
+members.Add("Bit40", Bit40_Element.ToLinkReference(context));
+members.Add("Bit41", Bit41_Element.ToLinkReference(context));
+members.Add("Bit42", Bit42_Element.ToLinkReference(context));
+members.Add("Bit43", Bit43_Element.ToLinkReference(context));
+members.Add("Bit44", Bit44_Element.ToLinkReference(context));
+members.Add("Bit45", Bit45_Element.ToLinkReference(context));
+members.Add("Bit46", Bit46_Element.ToLinkReference(context));
+members.Add("Bit47", Bit47_Element.ToLinkReference(context));
+members.Add("Bit48", Bit48_Element.ToLinkReference(context));
+members.Add("Bit49", Bit49_Element.ToLinkReference(context));
+members.Add("Bit50", Bit50_Element.ToLinkReference(context));
+members.Add("Bit51", Bit51_Element.ToLinkReference(context));
+members.Add("Bit52", Bit52_Element.ToLinkReference(context));
+members.Add("Bit53", Bit53_Element.ToLinkReference(context));
+members.Add("Bit54", Bit54_Element.ToLinkReference(context));
+members.Add("Bit55", Bit55_Element.ToLinkReference(context));
+members.Add("Bit56", Bit56_Element.ToLinkReference(context));
+members.Add("Bit57", Bit57_Element.ToLinkReference(context));
+members.Add("Bit58", Bit58_Element.ToLinkReference(context));
+members.Add("Bit59", Bit59_Element.ToLinkReference(context));
+members.Add("Bit60", Bit60_Element.ToLinkReference(context));
+members.Add("Bit61", Bit61_Element.ToLinkReference(context));
+members.Add("Bit62", Bit62_Element.ToLinkReference(context));
+members.Add("Bit63", Bit63_Element.ToLinkReference(context));
 }
 
 }

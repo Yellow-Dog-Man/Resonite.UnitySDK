@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.UniverseStatus
-// Generated on: čtvrtek 26. února 2026 10:03:37
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:26:52
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -33,10 +33,10 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("UniverseId", UniverseId_Element.Data.ToResoniteLinkField());
-members.Add("UniverseName", UniverseName_Element.Data.ToResoniteLinkField());
-members.Add("PrimaryGroupId", PrimaryGroupId_Element.Data.ToResoniteLinkField());
-members.Add("InUniverse", InUniverse_Element.Data.ToResoniteLinkField());
+members.Add("UniverseId", UniverseId_Element.ToLinkField(context));
+members.Add("UniverseName", UniverseName_Element.ToLinkField(context));
+members.Add("PrimaryGroupId", PrimaryGroupId_Element.ToLinkField(context));
+members.Add("InUniverse", InUniverse_Element.ToLinkField(context));
 }
 
 }

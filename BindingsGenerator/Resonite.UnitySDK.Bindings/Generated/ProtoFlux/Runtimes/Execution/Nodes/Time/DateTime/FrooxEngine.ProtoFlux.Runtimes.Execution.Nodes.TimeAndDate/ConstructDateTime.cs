@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [ProtoFluxBindings]FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.TimeAndDate.ConstructDateTime
-// Generated on: čtvrtek 26. února 2026 10:04:32
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:27:56
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -41,14 +41,14 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Year", Year_Element.Data.ToResoniteReference(context));
-members.Add("Month", Month_Element.Data.ToResoniteReference(context));
-members.Add("Day", Day_Element.Data.ToResoniteReference(context));
-members.Add("Hour", Hour_Element.Data.ToResoniteReference(context));
-members.Add("Minute", Minute_Element.Data.ToResoniteReference(context));
-members.Add("Second", Second_Element.Data.ToResoniteReference(context));
-members.Add("Millisecond", Millisecond_Element.Data.ToResoniteReference(context));
-members.Add("Kind", Kind_Element.Data.ToResoniteReference(context));
+members.Add("Year", Year_Element.ToLinkReference(context));
+members.Add("Month", Month_Element.ToLinkReference(context));
+members.Add("Day", Day_Element.ToLinkReference(context));
+members.Add("Hour", Hour_Element.ToLinkReference(context));
+members.Add("Minute", Minute_Element.ToLinkReference(context));
+members.Add("Second", Second_Element.ToLinkReference(context));
+members.Add("Millisecond", Millisecond_Element.ToLinkReference(context));
+members.Add("Kind", Kind_Element.ToLinkReference(context));
 }
 
 }

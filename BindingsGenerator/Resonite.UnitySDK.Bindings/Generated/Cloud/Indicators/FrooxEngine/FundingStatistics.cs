@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.FundingStatistics
-// Generated on: čtvrtek 26. února 2026 10:03:37
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:26:52
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -30,10 +30,10 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Timestamp", Timestamp_Element.Data.ToResoniteLinkField());
-members.Add("Aggregate", new ResoniteLink.SyncObject() { Members = Aggregate.CollectMembers(context) });
-members.Add("Patreon", new ResoniteLink.SyncObject() { Members = Patreon.CollectMembers(context) });
-members.Add("Stripe", new ResoniteLink.SyncObject() { Members = Stripe.CollectMembers(context) });
+members.Add("Timestamp", Timestamp_Element.ToLinkField(context));
+members.Add("Aggregate", Aggregate.ToLinkSyncObject(context));
+members.Add("Patreon", Patreon.ToLinkSyncObject(context));
+members.Add("Stripe", Stripe.ToLinkSyncObject(context));
 }
 
 }

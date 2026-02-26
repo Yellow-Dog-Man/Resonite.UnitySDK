@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.PBS_DisplaceMaterial
-// Generated on: čtvrtek 26. února 2026 10:03:34
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:26:47
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -85,36 +85,36 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("TextureScale", TextureScale_Element.Data.ToResoniteLinkField());
-members.Add("TextureOffset", TextureOffset_Element.Data.ToResoniteLinkField());
-members.Add("AlbedoColor", AlbedoColor_Element.Data.ToResoniteLinkField());
-members.Add("AlbedoTexture", AlbedoTexture_Element.Data.ToResoniteReference(context));
-members.Add("EmissiveColor", EmissiveColor_Element.Data.ToResoniteLinkField());
-members.Add("EmissiveMap", EmissiveMap_Element.Data.ToResoniteReference(context));
-members.Add("NormalMap", NormalMap_Element.Data.ToResoniteReference(context));
-members.Add("NormalScale", NormalScale_Element.Data.ToResoniteLinkField());
-members.Add("OcclusionMap", OcclusionMap_Element.Data.ToResoniteReference(context));
-members.Add("VertexDisplaceMap", VertexDisplaceMap_Element.Data.ToResoniteReference(context));
-members.Add("VertexDisplaceMagnitude", VertexDisplaceMagnitude_Element.Data.ToResoniteLinkField());
-members.Add("VertexDisplaceBias", VertexDisplaceBias_Element.Data.ToResoniteLinkField());
-members.Add("VertexDisplaceMapScale", VertexDisplaceMapScale_Element.Data.ToResoniteLinkField());
-members.Add("VertexDisplaceMapOffset", VertexDisplaceMapOffset_Element.Data.ToResoniteLinkField());
-members.Add("UVDisplaceMap", UVDisplaceMap_Element.Data.ToResoniteReference(context));
-members.Add("UVDisplaceMagnitude", UVDisplaceMagnitude_Element.Data.ToResoniteLinkField());
-members.Add("UVDisplaceBias", UVDisplaceBias_Element.Data.ToResoniteLinkField());
-members.Add("UVDisplaceMapScale", UVDisplaceMapScale_Element.Data.ToResoniteLinkField());
-members.Add("UVDisplaceMapOffset", UVDisplaceMapOffset_Element.Data.ToResoniteLinkField());
-members.Add("WorldspaceVertexOffsetMap", WorldspaceVertexOffsetMap_Element.Data.ToResoniteReference(context));
-members.Add("WorldspaceOffsetMagnitude", WorldspaceOffsetMagnitude_Element.Data.ToResoniteLinkField());
-members.Add("WorldspaceVertexOffsetMapScale", WorldspaceVertexOffsetMapScale_Element.Data.ToResoniteLinkField());
-members.Add("WorldspaceVertexOffsetMapOffset", WorldspaceVertexOffsetMapOffset_Element.Data.ToResoniteLinkField());
-members.Add("WorldspaceOffsetPerVertex", WorldspaceOffsetPerVertex_Element.Data.ToResoniteLinkField());
-members.Add("Culling", Culling_Element.Data.ToResoniteLinkField());
-members.Add("AlphaHandling", AlphaHandling_Element.Data.ToResoniteLinkField());
-members.Add("AlphaClip", AlphaClip_Element.Data.ToResoniteLinkField());
-members.Add("OffsetFactor", OffsetFactor_Element.Data.ToResoniteLinkField());
-members.Add("OffsetUnits", OffsetUnits_Element.Data.ToResoniteLinkField());
-members.Add("RenderQueue", RenderQueue_Element.Data.ToResoniteLinkField());
+members.Add("TextureScale", TextureScale_Element.ToLinkField(context));
+members.Add("TextureOffset", TextureOffset_Element.ToLinkField(context));
+members.Add("AlbedoColor", AlbedoColor_Element.ToLinkField(context));
+members.Add("AlbedoTexture", AlbedoTexture_Element.ToLinkReference(context));
+members.Add("EmissiveColor", EmissiveColor_Element.ToLinkField(context));
+members.Add("EmissiveMap", EmissiveMap_Element.ToLinkReference(context));
+members.Add("NormalMap", NormalMap_Element.ToLinkReference(context));
+members.Add("NormalScale", NormalScale_Element.ToLinkField(context));
+members.Add("OcclusionMap", OcclusionMap_Element.ToLinkReference(context));
+members.Add("VertexDisplaceMap", VertexDisplaceMap_Element.ToLinkReference(context));
+members.Add("VertexDisplaceMagnitude", VertexDisplaceMagnitude_Element.ToLinkField(context));
+members.Add("VertexDisplaceBias", VertexDisplaceBias_Element.ToLinkField(context));
+members.Add("VertexDisplaceMapScale", VertexDisplaceMapScale_Element.ToLinkField(context));
+members.Add("VertexDisplaceMapOffset", VertexDisplaceMapOffset_Element.ToLinkField(context));
+members.Add("UVDisplaceMap", UVDisplaceMap_Element.ToLinkReference(context));
+members.Add("UVDisplaceMagnitude", UVDisplaceMagnitude_Element.ToLinkField(context));
+members.Add("UVDisplaceBias", UVDisplaceBias_Element.ToLinkField(context));
+members.Add("UVDisplaceMapScale", UVDisplaceMapScale_Element.ToLinkField(context));
+members.Add("UVDisplaceMapOffset", UVDisplaceMapOffset_Element.ToLinkField(context));
+members.Add("WorldspaceVertexOffsetMap", WorldspaceVertexOffsetMap_Element.ToLinkReference(context));
+members.Add("WorldspaceOffsetMagnitude", WorldspaceOffsetMagnitude_Element.ToLinkField(context));
+members.Add("WorldspaceVertexOffsetMapScale", WorldspaceVertexOffsetMapScale_Element.ToLinkField(context));
+members.Add("WorldspaceVertexOffsetMapOffset", WorldspaceVertexOffsetMapOffset_Element.ToLinkField(context));
+members.Add("WorldspaceOffsetPerVertex", WorldspaceOffsetPerVertex_Element.ToLinkField(context));
+members.Add("Culling", Culling_Element.ToLinkField(context));
+members.Add("AlphaHandling", AlphaHandling_Element.ToLinkField(context));
+members.Add("AlphaClip", AlphaClip_Element.ToLinkField(context));
+members.Add("OffsetFactor", OffsetFactor_Element.ToLinkField(context));
+members.Add("OffsetUnits", OffsetUnits_Element.ToLinkField(context));
+members.Add("RenderQueue", RenderQueue_Element.ToLinkField(context));
 }
 
 }

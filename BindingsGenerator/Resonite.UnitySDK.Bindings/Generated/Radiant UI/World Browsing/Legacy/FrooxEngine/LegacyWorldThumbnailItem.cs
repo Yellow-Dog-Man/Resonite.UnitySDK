@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.LegacyWorldThumbnailItem
-// Generated on: čtvrtek 26. února 2026 10:04:36
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:28:02
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -51,19 +51,19 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("_thumbnailGraphic", _thumbnailGraphic_Element.Data.ToResoniteReference(context));
-members.Add("_thumbnailTexture", _thumbnailTexture_Element.Data.ToResoniteReference(context));
-members.Add("_nameRoot", _nameRoot_Element.Data.ToResoniteReference(context));
-members.Add("_detailRoot", _detailRoot_Element.Data.ToResoniteReference(context));
-members.Add("_visitedRoot", _visitedRoot_Element.Data.ToResoniteReference(context));
-members.Add("_counterRoot", _counterRoot_Element.Data.ToResoniteReference(context));
-members.Add("_iconsRoot", _iconsRoot_Element.Data.ToResoniteReference(context));
-members.Add("_closeButton", _closeButton_Element.Data.ToResoniteReference(context));
-members.Add("_nameText", _nameText_Element.Data.ToResoniteReference(context));
-members.Add("_detailText", _detailText_Element.Data.ToResoniteReference(context));
-members.Add("_counterText", _counterText_Element.Data.ToResoniteReference(context));
-members.Add("_borderOverlay", _borderOverlay_Element.Data.ToResoniteReference(context));
-members.Add("_borderColor", _borderColor_Element.Data.ToResoniteLinkField());
+members.Add("_thumbnailGraphic", _thumbnailGraphic_Element.ToLinkReference(context));
+members.Add("_thumbnailTexture", _thumbnailTexture_Element.ToLinkReference(context));
+members.Add("_nameRoot", _nameRoot_Element.ToLinkReference(context));
+members.Add("_detailRoot", _detailRoot_Element.ToLinkReference(context));
+members.Add("_visitedRoot", _visitedRoot_Element.ToLinkReference(context));
+members.Add("_counterRoot", _counterRoot_Element.ToLinkReference(context));
+members.Add("_iconsRoot", _iconsRoot_Element.ToLinkReference(context));
+members.Add("_closeButton", _closeButton_Element.ToLinkReference(context));
+members.Add("_nameText", _nameText_Element.ToLinkReference(context));
+members.Add("_detailText", _detailText_Element.ToLinkReference(context));
+members.Add("_counterText", _counterText_Element.ToLinkReference(context));
+members.Add("_borderOverlay", _borderOverlay_Element.ToLinkReference(context));
+members.Add("_borderColor", _borderColor_Element.ToLinkField(context));
 }
 
 }

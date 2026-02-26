@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.OverlayUnlitMaterial
-// Generated on: čtvrtek 26. února 2026 10:03:35
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:26:49
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -63,25 +63,25 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("BehindTintColor", BehindTintColor_Element.Data.ToResoniteLinkField());
-members.Add("FrontTintColor", FrontTintColor_Element.Data.ToResoniteLinkField());
-members.Add("BehindTexture", BehindTexture_Element.Data.ToResoniteReference(context));
-members.Add("BehindTextureScale", BehindTextureScale_Element.Data.ToResoniteLinkField());
-members.Add("BehindTextureOffset", BehindTextureOffset_Element.Data.ToResoniteLinkField());
-members.Add("FrontTexture", FrontTexture_Element.Data.ToResoniteReference(context));
-members.Add("FrontTextureScale", FrontTextureScale_Element.Data.ToResoniteLinkField());
-members.Add("FrontTextureOffset", FrontTextureOffset_Element.Data.ToResoniteLinkField());
-members.Add("BlendMode", BlendMode_Element.Data.ToResoniteLinkField());
-members.Add("AlphaCutoff", AlphaCutoff_Element.Data.ToResoniteLinkField());
-members.Add("UseVertexColors", UseVertexColors_Element.Data.ToResoniteLinkField());
-members.Add("VertexColorInterpolationSpace", VertexColorInterpolationSpace_Element.Data.ToResoniteLinkField());
-members.Add("Sidedness", Sidedness_Element.Data.ToResoniteLinkField());
-members.Add("ZWrite", ZWrite_Element.Data.ToResoniteLinkField());
-members.Add("PolarUVmapping", PolarUVmapping_Element.Data.ToResoniteLinkField());
-members.Add("PolarPower", PolarPower_Element.Data.ToResoniteLinkField());
-members.Add("OffsetFactor", OffsetFactor_Element.Data.ToResoniteLinkField());
-members.Add("OffsetUnits", OffsetUnits_Element.Data.ToResoniteLinkField());
-members.Add("RenderQueue", RenderQueue_Element.Data.ToResoniteLinkField());
+members.Add("BehindTintColor", BehindTintColor_Element.ToLinkField(context));
+members.Add("FrontTintColor", FrontTintColor_Element.ToLinkField(context));
+members.Add("BehindTexture", BehindTexture_Element.ToLinkReference(context));
+members.Add("BehindTextureScale", BehindTextureScale_Element.ToLinkField(context));
+members.Add("BehindTextureOffset", BehindTextureOffset_Element.ToLinkField(context));
+members.Add("FrontTexture", FrontTexture_Element.ToLinkReference(context));
+members.Add("FrontTextureScale", FrontTextureScale_Element.ToLinkField(context));
+members.Add("FrontTextureOffset", FrontTextureOffset_Element.ToLinkField(context));
+members.Add("BlendMode", BlendMode_Element.ToLinkField(context));
+members.Add("AlphaCutoff", AlphaCutoff_Element.ToLinkField(context));
+members.Add("UseVertexColors", UseVertexColors_Element.ToLinkField(context));
+members.Add("VertexColorInterpolationSpace", VertexColorInterpolationSpace_Element.ToLinkField(context));
+members.Add("Sidedness", Sidedness_Element.ToLinkField(context));
+members.Add("ZWrite", ZWrite_Element.ToLinkField(context));
+members.Add("PolarUVmapping", PolarUVmapping_Element.ToLinkField(context));
+members.Add("PolarPower", PolarPower_Element.ToLinkField(context));
+members.Add("OffsetFactor", OffsetFactor_Element.ToLinkField(context));
+members.Add("OffsetUnits", OffsetUnits_Element.ToLinkField(context));
+members.Add("RenderQueue", RenderQueue_Element.ToLinkField(context));
 }
 
 }

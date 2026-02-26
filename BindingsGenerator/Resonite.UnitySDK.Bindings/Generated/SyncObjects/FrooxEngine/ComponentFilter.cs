@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.ComponentFilter
-// Generated on: čtvrtek 26. února 2026 10:03:41
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:26:57
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -27,14 +27,8 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("BlockedTypes", new ResoniteLink.SyncList()
-{
-    Elements = BlockedTypes.Data.ConvertList(m => m.Data.ToResoniteLinkField())
-});
-members.Add("RequiredTypes", new ResoniteLink.SyncList()
-{
-    Elements = RequiredTypes.Data.ConvertList(m => m.Data.ToResoniteLinkField())
-});
+members.Add("BlockedTypes", BlockedTypes.ToLinkList(context, m => m.ToLinkField(context)));
+members.Add("RequiredTypes", RequiredTypes.ToLinkList(context, m => m.ToLinkField(context)));
 }
 
 }

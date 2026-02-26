@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.LegacyCheckbox
-// Generated on: čtvrtek 26. února 2026 10:04:42
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:28:08
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -59,23 +59,23 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("IsChecked", IsChecked_Element.Data.ToResoniteLinkField());
-members.Add("IsEnabled", IsEnabled_Element.Data.ToResoniteLinkField());
-members.Add("DriveField", DriveField_Element.Data.ToResoniteReference(context));
-members.Add("AllowWriteBack", AllowWriteBack_Element.Data.ToResoniteLinkField());
-members.Add("Size", Size_Element.Data.ToResoniteLinkField());
-members.Add("BevelPercent", BevelPercent_Element.Data.ToResoniteLinkField());
-members.Add("Color", Color_Element.Data.ToResoniteLinkField());
-members.Add("_shellMesh", _shellMesh_Element.Data.ToResoniteReference(context));
-members.Add("_checkMesh", _checkMesh_Element.Data.ToResoniteReference(context));
-members.Add("_titleBar", _titleBar_Element.Data.ToResoniteReference(context));
-members.Add("_shellSize", _shellSize_Element.Data.ToResoniteReference(context));
-members.Add("_shellBevel", _shellBevel_Element.Data.ToResoniteReference(context));
-members.Add("_checkSize", _checkSize_Element.Data.ToResoniteReference(context));
-members.Add("_checkBevel", _checkBevel_Element.Data.ToResoniteReference(context));
-members.Add("_colliderSize", _colliderSize_Element.Data.ToResoniteReference(context));
-members.Add("_shellMaterial", _shellMaterial_Element.Data.ToResoniteReference(context));
-members.Add("_checkMaterial", _checkMaterial_Element.Data.ToResoniteReference(context));
+members.Add("IsChecked", IsChecked_Element.ToLinkField(context));
+members.Add("IsEnabled", IsEnabled_Element.ToLinkField(context));
+members.Add("DriveField", DriveField_Element.ToLinkReference(context));
+members.Add("AllowWriteBack", AllowWriteBack_Element.ToLinkField(context));
+members.Add("Size", Size_Element.ToLinkField(context));
+members.Add("BevelPercent", BevelPercent_Element.ToLinkField(context));
+members.Add("Color", Color_Element.ToLinkField(context));
+members.Add("_shellMesh", _shellMesh_Element.ToLinkReference(context));
+members.Add("_checkMesh", _checkMesh_Element.ToLinkReference(context));
+members.Add("_titleBar", _titleBar_Element.ToLinkReference(context));
+members.Add("_shellSize", _shellSize_Element.ToLinkReference(context));
+members.Add("_shellBevel", _shellBevel_Element.ToLinkReference(context));
+members.Add("_checkSize", _checkSize_Element.ToLinkReference(context));
+members.Add("_checkBevel", _checkBevel_Element.ToLinkReference(context));
+members.Add("_colliderSize", _colliderSize_Element.ToLinkReference(context));
+members.Add("_shellMaterial", _shellMaterial_Element.ToLinkReference(context));
+members.Add("_checkMaterial", _checkMaterial_Element.ToLinkReference(context));
 }
 
 }

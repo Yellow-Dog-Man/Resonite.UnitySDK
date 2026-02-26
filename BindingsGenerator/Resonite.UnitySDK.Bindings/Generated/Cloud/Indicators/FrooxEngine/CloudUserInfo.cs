@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.CloudUserInfo
-// Generated on: čtvrtek 26. února 2026 10:03:37
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:26:52
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -41,14 +41,14 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("UserId", UserId_Element.Data.ToResoniteLinkField());
-members.Add("IsLoaded", IsLoaded_Element.Data.ToResoniteLinkField());
-members.Add("Username", Username_Element.Data.ToResoniteLinkField());
-members.Add("RegistrationDate", RegistrationDate_Element.Data.ToResoniteLinkField());
-members.Add("OriginalRegistrationDate", OriginalRegistrationDate_Element.Data.ToResoniteLinkField());
-members.Add("IconURL", IconURL_Element.Data.ToResoniteLinkField());
-members.Add("IsContact", IsContact_Element.Data.ToResoniteLinkField());
-members.Add("_loadedUserId", _loadedUserId_Element.Data.ToResoniteLinkField());
+members.Add("UserId", UserId_Element.ToLinkField(context));
+members.Add("IsLoaded", IsLoaded_Element.ToLinkField(context));
+members.Add("Username", Username_Element.ToLinkField(context));
+members.Add("RegistrationDate", RegistrationDate_Element.ToLinkField(context));
+members.Add("OriginalRegistrationDate", OriginalRegistrationDate_Element.ToLinkField(context));
+members.Add("IconURL", IconURL_Element.ToLinkField(context));
+members.Add("IsContact", IsContact_Element.ToLinkField(context));
+members.Add("_loadedUserId", _loadedUserId_Element.ToLinkField(context));
 }
 
 }

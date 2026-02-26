@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.MeshRenderer
-// Generated on: čtvrtek 26. února 2026 10:03:36
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:26:51
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -35,18 +35,12 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Mesh", Mesh_Element.Data.ToResoniteReference(context));
-members.Add("Materials", new ResoniteLink.SyncList()
-{
-    Elements = Materials.Data.ConvertList(m => m.Data.ToResoniteReference(context))
-});
-members.Add("MaterialPropertyBlocks", new ResoniteLink.SyncList()
-{
-    Elements = MaterialPropertyBlocks.Data.ConvertList(m => m.Data.ToResoniteReference(context))
-});
-members.Add("ShadowCastMode", ShadowCastMode_Element.Data.ToResoniteLinkField());
-members.Add("MotionVectorMode", MotionVectorMode_Element.Data.ToResoniteLinkField());
-members.Add("SortingOrder", SortingOrder_Element.Data.ToResoniteLinkField());
+members.Add("Mesh", Mesh_Element.ToLinkReference(context));
+members.Add("Materials", Materials.ToLinkList(context, m => m.ToLinkReference(context)));
+members.Add("MaterialPropertyBlocks", MaterialPropertyBlocks.ToLinkList(context, m => m.ToLinkReference(context)));
+members.Add("ShadowCastMode", ShadowCastMode_Element.ToLinkField(context));
+members.Add("MotionVectorMode", MotionVectorMode_Element.ToLinkField(context));
+members.Add("SortingOrder", SortingOrder_Element.ToLinkField(context));
 }
 
 }

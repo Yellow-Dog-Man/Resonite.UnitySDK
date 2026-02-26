@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.WorldsDataFeed
-// Generated on: čtvrtek 26. února 2026 10:04:35
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:28:01
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -51,19 +51,19 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("ListOpenedWorlds", ListOpenedWorlds_Element.Data.ToResoniteLinkField());
-members.Add("ListSessions", ListSessions_Element.Data.ToResoniteLinkField());
-members.Add("MergeByWorldId", MergeByWorldId_Element.Data.ToResoniteLinkField());
-members.Add("MergeBySessionId", MergeBySessionId_Element.Data.ToResoniteLinkField());
-members.Add("IncompatibleSessions", IncompatibleSessions_Element.Data.ToResoniteLinkField());
-members.Add("HeadlessHosts", HeadlessHosts_Element.Data.ToResoniteLinkField());
-members.Add("UserHosts", UserHosts_Element.Data.ToResoniteLinkField());
-members.Add("MinimumTotalUsers", MinimumTotalUsers_Element.Data.ToResoniteLinkField());
-members.Add("MinimumTotalContacts", MinimumTotalContacts_Element.Data.ToResoniteLinkField());
-members.Add("MinSessionAccessLevel", MinSessionAccessLevel_Element.Data.ToResoniteLinkField());
-members.Add("MaxSessionAccessLevel", MaxSessionAccessLevel_Element.Data.ToResoniteLinkField());
-members.Add("MinUptime", MinUptime_Element.Data.ToResoniteLinkField());
-members.Add("MaxUptime", MaxUptime_Element.Data.ToResoniteLinkField());
+members.Add("ListOpenedWorlds", ListOpenedWorlds_Element.ToLinkField(context));
+members.Add("ListSessions", ListSessions_Element.ToLinkField(context));
+members.Add("MergeByWorldId", MergeByWorldId_Element.ToLinkField(context));
+members.Add("MergeBySessionId", MergeBySessionId_Element.ToLinkField(context));
+members.Add("IncompatibleSessions", IncompatibleSessions_Element.ToLinkField(context));
+members.Add("HeadlessHosts", HeadlessHosts_Element.ToLinkField(context));
+members.Add("UserHosts", UserHosts_Element.ToLinkField(context));
+members.Add("MinimumTotalUsers", MinimumTotalUsers_Element.ToLinkField(context));
+members.Add("MinimumTotalContacts", MinimumTotalContacts_Element.ToLinkField(context));
+members.Add("MinSessionAccessLevel", MinSessionAccessLevel_Element.ToLinkField(context));
+members.Add("MaxSessionAccessLevel", MaxSessionAccessLevel_Element.ToLinkField(context));
+members.Add("MinUptime", MinUptime_Element.ToLinkField(context));
+members.Add("MaxUptime", MaxUptime_Element.ToLinkField(context));
 }
 
 }

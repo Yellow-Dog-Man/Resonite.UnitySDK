@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.VirtualShift
-// Generated on: čtvrtek 26. února 2026 10:04:50
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:28:15
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -33,10 +33,10 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Keyboard", Keyboard_Element.Data.ToResoniteReference(context));
-members.Add("HoldPressInterval", HoldPressInterval_Element.Data.ToResoniteLinkField());
-members.Add("AlwaysHold", AlwaysHold_Element.Data.ToResoniteLinkField());
-members.Add("_lastPress", _lastPress_Element.Data.ToResoniteLinkField());
+members.Add("Keyboard", Keyboard_Element.ToLinkReference(context));
+members.Add("HoldPressInterval", HoldPressInterval_Element.ToLinkField(context));
+members.Add("AlwaysHold", AlwaysHold_Element.ToLinkField(context));
+members.Add("_lastPress", _lastPress_Element.ToLinkField(context));
 }
 
 }

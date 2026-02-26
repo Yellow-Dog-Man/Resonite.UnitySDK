@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.LocomotionAnimationFeetMetrics
-// Generated on: čtvrtek 26. února 2026 10:04:49
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:28:15
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -37,12 +37,12 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Space", Space_Element.Data.ToResoniteLinkField());
-members.Add("FeetSeparation", FeetSeparation_Element.Data.ToResoniteLinkField());
-members.Add("FeetBackwardsOffset", FeetBackwardsOffset_Element.Data.ToResoniteLinkField());
-members.Add("FootHeight", FootHeight_Element.Data.ToResoniteLinkField());
-members.Add("FootFrontOffset", FootFrontOffset_Element.Data.ToResoniteLinkField());
-members.Add("FootBackOffset", FootBackOffset_Element.Data.ToResoniteLinkField());
+members.Add("Space", Space_Element.ToLinkField(context));
+members.Add("FeetSeparation", FeetSeparation_Element.ToLinkField(context));
+members.Add("FeetBackwardsOffset", FeetBackwardsOffset_Element.ToLinkField(context));
+members.Add("FootHeight", FootHeight_Element.ToLinkField(context));
+members.Add("FootFrontOffset", FootFrontOffset_Element.ToLinkField(context));
+members.Add("FootBackOffset", FootBackOffset_Element.ToLinkField(context));
 }
 
 }

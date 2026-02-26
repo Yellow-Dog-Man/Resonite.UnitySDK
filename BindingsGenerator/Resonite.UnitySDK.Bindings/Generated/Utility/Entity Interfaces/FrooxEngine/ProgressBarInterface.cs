@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.ProgressBarInterface
-// Generated on: čtvrtek 26. února 2026 10:04:49
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:28:14
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -53,20 +53,20 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("ProgressKnown", ProgressKnown_Element.Data.ToResoniteReference(context));
-members.Add("Progress", Progress_Element.Data.ToResoniteReference(context));
-members.Add("ProcessedCountKnown", ProcessedCountKnown_Element.Data.ToResoniteReference(context));
-members.Add("ProcessedItemCount", ProcessedItemCount_Element.Data.ToResoniteReference(context));
-members.Add("TotalItemCountKnown", TotalItemCountKnown_Element.Data.ToResoniteReference(context));
-members.Add("TotalItemCount", TotalItemCount_Element.Data.ToResoniteReference(context));
-members.Add("PhaseName", PhaseName_Element.Data.ToResoniteReference(context));
-members.Add("SubPhaseName", SubPhaseName_Element.Data.ToResoniteReference(context));
-members.Add("Stage", Stage_Element.Data.ToResoniteReference(context));
-members.Add("HasCompleted", HasCompleted_Element.Data.ToResoniteReference(context));
-members.Add("HasFailed", HasFailed_Element.Data.ToResoniteReference(context));
-members.Add("CompletionMessage", CompletionMessage_Element.Data.ToResoniteReference(context));
-members.Add("FailureReason", FailureReason_Element.Data.ToResoniteReference(context));
-members.Add("CanBeHidden", CanBeHidden_Element.Data.ToResoniteReference(context));
+members.Add("ProgressKnown", ProgressKnown_Element.ToLinkReference(context));
+members.Add("Progress", Progress_Element.ToLinkReference(context));
+members.Add("ProcessedCountKnown", ProcessedCountKnown_Element.ToLinkReference(context));
+members.Add("ProcessedItemCount", ProcessedItemCount_Element.ToLinkReference(context));
+members.Add("TotalItemCountKnown", TotalItemCountKnown_Element.ToLinkReference(context));
+members.Add("TotalItemCount", TotalItemCount_Element.ToLinkReference(context));
+members.Add("PhaseName", PhaseName_Element.ToLinkReference(context));
+members.Add("SubPhaseName", SubPhaseName_Element.ToLinkReference(context));
+members.Add("Stage", Stage_Element.ToLinkReference(context));
+members.Add("HasCompleted", HasCompleted_Element.ToLinkReference(context));
+members.Add("HasFailed", HasFailed_Element.ToLinkReference(context));
+members.Add("CompletionMessage", CompletionMessage_Element.ToLinkReference(context));
+members.Add("FailureReason", FailureReason_Element.ToLinkReference(context));
+members.Add("CanBeHidden", CanBeHidden_Element.ToLinkReference(context));
 }
 
 }

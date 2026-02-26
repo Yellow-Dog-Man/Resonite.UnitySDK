@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [ProtoFluxBindings]FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Input.Controllers.CosmosController
-// Generated on: čtvrtek 26. února 2026 10:04:13
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:27:33
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -36,17 +36,17 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Menu", new ResoniteLink.EmptyElement());
-members.Add("ButtonBY", new ResoniteLink.EmptyElement());
-members.Add("ButtonAX", new ResoniteLink.EmptyElement());
-members.Add("GripClick", new ResoniteLink.EmptyElement());
-members.Add("Bumper", new ResoniteLink.EmptyElement());
-members.Add("Joystick", new ResoniteLink.EmptyElement());
-members.Add("JoystickTouch", new ResoniteLink.EmptyElement());
-members.Add("JoystickClick", new ResoniteLink.EmptyElement());
-members.Add("Trigger", new ResoniteLink.EmptyElement());
-members.Add("TriggerTouch", new ResoniteLink.EmptyElement());
-members.Add("TriggerClick", new ResoniteLink.EmptyElement());
+members.Add("Menu", Menu.ToLinkEmpty(context));
+members.Add("ButtonBY", ButtonBY.ToLinkEmpty(context));
+members.Add("ButtonAX", ButtonAX.ToLinkEmpty(context));
+members.Add("GripClick", GripClick.ToLinkEmpty(context));
+members.Add("Bumper", Bumper.ToLinkEmpty(context));
+members.Add("Joystick", Joystick.ToLinkEmpty(context));
+members.Add("JoystickTouch", JoystickTouch.ToLinkEmpty(context));
+members.Add("JoystickClick", JoystickClick.ToLinkEmpty(context));
+members.Add("Trigger", Trigger.ToLinkEmpty(context));
+members.Add("TriggerTouch", TriggerTouch.ToLinkEmpty(context));
+members.Add("TriggerClick", TriggerClick.ToLinkEmpty(context));
 }
 
 }

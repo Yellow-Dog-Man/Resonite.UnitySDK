@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.InventoryBrowser
-// Generated on: čtvrtek 26. února 2026 10:04:46
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:28:11
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -48,18 +48,18 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("_user", new ResoniteLink.SyncObject() { Members = _user.CollectMembers(context) });
-members.Add("_autoReinitialize", _autoReinitialize_Element.Data.ToResoniteLinkField());
-members.Add("_currentPath", _currentPath_Element.Data.ToResoniteLinkField());
-members.Add("_currentOwnerId", _currentOwnerId_Element.Data.ToResoniteLinkField());
-members.Add("_addNewButton", _addNewButton_Element.Data.ToResoniteReference(context));
-members.Add("_deleteButton", _deleteButton_Element.Data.ToResoniteReference(context));
-members.Add("_inventoriesButton", _inventoriesButton_Element.Data.ToResoniteReference(context));
-members.Add("_shareButton", _shareButton_Element.Data.ToResoniteReference(context));
-members.Add("_unshareButton", _unshareButton_Element.Data.ToResoniteReference(context));
-members.Add("_copyLink", _copyLink_Element.Data.ToResoniteReference(context));
-members.Add("_addCurrentAvatar", _addCurrentAvatar_Element.Data.ToResoniteReference(context));
-members.Add("_lastSpecialItemType", _lastSpecialItemType_Element.Data.ToResoniteLinkField());
+members.Add("_user", _user.ToLinkSyncObject(context));
+members.Add("_autoReinitialize", _autoReinitialize_Element.ToLinkField(context));
+members.Add("_currentPath", _currentPath_Element.ToLinkField(context));
+members.Add("_currentOwnerId", _currentOwnerId_Element.ToLinkField(context));
+members.Add("_addNewButton", _addNewButton_Element.ToLinkReference(context));
+members.Add("_deleteButton", _deleteButton_Element.ToLinkReference(context));
+members.Add("_inventoriesButton", _inventoriesButton_Element.ToLinkReference(context));
+members.Add("_shareButton", _shareButton_Element.ToLinkReference(context));
+members.Add("_unshareButton", _unshareButton_Element.ToLinkReference(context));
+members.Add("_copyLink", _copyLink_Element.ToLinkReference(context));
+members.Add("_addCurrentAvatar", _addCurrentAvatar_Element.ToLinkReference(context));
+members.Add("_lastSpecialItemType", _lastSpecialItemType_Element.ToLinkField(context));
 }
 
 }

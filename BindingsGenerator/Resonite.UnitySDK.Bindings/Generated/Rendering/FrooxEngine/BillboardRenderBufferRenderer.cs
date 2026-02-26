@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.BillboardRenderBufferRenderer
-// Generated on: čtvrtek 26. února 2026 10:04:37
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:28:03
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -37,12 +37,12 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Buffer", Buffer_Element.Data.ToResoniteReference(context));
-members.Add("Material", Material_Element.Data.ToResoniteReference(context));
-members.Add("Alignment", Alignment_Element.Data.ToResoniteLinkField());
-members.Add("MotionVectorMode", MotionVectorMode_Element.Data.ToResoniteLinkField());
-members.Add("MinBillboardScreenSize", MinBillboardScreenSize_Element.Data.ToResoniteLinkField());
-members.Add("MaxBillboardScreenSize", MaxBillboardScreenSize_Element.Data.ToResoniteLinkField());
+members.Add("Buffer", Buffer_Element.ToLinkReference(context));
+members.Add("Material", Material_Element.ToLinkReference(context));
+members.Add("Alignment", Alignment_Element.ToLinkField(context));
+members.Add("MotionVectorMode", MotionVectorMode_Element.ToLinkField(context));
+members.Add("MinBillboardScreenSize", MinBillboardScreenSize_Element.ToLinkField(context));
+members.Add("MaxBillboardScreenSize", MaxBillboardScreenSize_Element.ToLinkField(context));
 }
 
 }

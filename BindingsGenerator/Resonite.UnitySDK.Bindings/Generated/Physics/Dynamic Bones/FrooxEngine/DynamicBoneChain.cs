@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.DynamicBoneChain
-// Generated on: čtvrtek 26. února 2026 10:03:41
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:26:58
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -109,56 +109,50 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Inertia", Inertia_Element.Data.ToResoniteLinkField());
-members.Add("InertiaForce", InertiaForce_Element.Data.ToResoniteLinkField());
-members.Add("Damping", Damping_Element.Data.ToResoniteLinkField());
-members.Add("Elasticity", Elasticity_Element.Data.ToResoniteLinkField());
-members.Add("Stiffness", Stiffness_Element.Data.ToResoniteLinkField());
-members.Add("SimulateTerminalBones", SimulateTerminalBones_Element.Data.ToResoniteLinkField());
-members.Add("BaseBoneRadius", BaseBoneRadius_Element.Data.ToResoniteLinkField());
-members.Add("DynamicPlayerCollision", DynamicPlayerCollision_Element.Data.ToResoniteLinkField());
-members.Add("CollideWithOwnBody", CollideWithOwnBody_Element.Data.ToResoniteLinkField());
-members.Add("HandCollisionVibration", HandCollisionVibration_Element.Data.ToResoniteLinkField());
-members.Add("CollideWithHead", CollideWithHead_Element.Data.ToResoniteLinkField());
-members.Add("CollideWithBody", CollideWithBody_Element.Data.ToResoniteLinkField());
-members.Add("CollideWithLeftHand", CollideWithLeftHand_Element.Data.ToResoniteLinkField());
-members.Add("CollideWithRightHand", CollideWithRightHand_Element.Data.ToResoniteLinkField());
-members.Add("Gravity", Gravity_Element.Data.ToResoniteLinkField());
-members.Add("GravitySpace", new ResoniteLink.SyncObject() { Members = GravitySpace.CollectMembers(context) });
-members.Add("UseUserGravityDirection", UseUserGravityDirection_Element.Data.ToResoniteLinkField());
-members.Add("LocalForce", LocalForce_Element.Data.ToResoniteLinkField());
-members.Add("GlobalStretch", GlobalStretch_Element.Data.ToResoniteLinkField());
-members.Add("MaxStretchRatio", MaxStretchRatio_Element.Data.ToResoniteLinkField());
-members.Add("CurrentStretchRatio", CurrentStretchRatio_Element.Data.ToResoniteLinkField());
-members.Add("StretchRestoreSpeed", StretchRestoreSpeed_Element.Data.ToResoniteLinkField());
-members.Add("UseLocalUserSpace", UseLocalUserSpace_Element.Data.ToResoniteLinkField());
-members.Add("SimulationSpace", new ResoniteLink.SyncObject() { Members = SimulationSpace.CollectMembers(context) });
-members.Add("StaticColliders", new ResoniteLink.SyncList()
-{
-    Elements = StaticColliders.Data.ConvertList(m => m.Data.ToResoniteReference(context))
-});
-members.Add("VisualizeColliders", VisualizeColliders_Element.Data.ToResoniteLinkField());
-members.Add("VisualizeBones", VisualizeBones_Element.Data.ToResoniteLinkField());
-members.Add("IsGrabbable", IsGrabbable_Element.Data.ToResoniteLinkField());
-members.Add("ActiveUserRootOnly", ActiveUserRootOnly_Element.Data.ToResoniteLinkField());
-members.Add("AllowSteal", AllowSteal_Element.Data.ToResoniteLinkField());
-members.Add("GrabPriority", GrabPriority_Element.Data.ToResoniteLinkField());
-members.Add("IgnoreGrabOnFirstBone", IgnoreGrabOnFirstBone_Element.Data.ToResoniteLinkField());
-members.Add("GrabRadiusTolerance", GrabRadiusTolerance_Element.Data.ToResoniteLinkField());
-members.Add("GrabReleaseDistance", GrabReleaseDistance_Element.Data.ToResoniteLinkField());
-members.Add("GrabSlipping", GrabSlipping_Element.Data.ToResoniteLinkField());
-members.Add("GrabTerminalBones", GrabTerminalBones_Element.Data.ToResoniteLinkField());
-members.Add("GrabVibration", GrabVibration_Element.Data.ToResoniteLinkField());
-members.Add("IgnoreOwnLeftHand", IgnoreOwnLeftHand_Element.Data.ToResoniteLinkField());
-members.Add("IgnoreOwnRightHand", IgnoreOwnRightHand_Element.Data.ToResoniteLinkField());
-members.Add("EffectorTarget", EffectorTarget_Element.Data.ToResoniteReference(context));
-members.Add("EffectorBoneIndex", EffectorBoneIndex_Element.Data.ToResoniteLinkField());
-members.Add("EffectorBoneOffset", EffectorBoneOffset_Element.Data.ToResoniteLinkField());
-members.Add("_activeGrabber", _activeGrabber_Element.Data.ToResoniteReference(context));
-members.Add("Bones", new ResoniteLink.SyncList()
-{
-    Elements = Bones.Data.ConvertList(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers(context) })
-});
+members.Add("Inertia", Inertia_Element.ToLinkField(context));
+members.Add("InertiaForce", InertiaForce_Element.ToLinkField(context));
+members.Add("Damping", Damping_Element.ToLinkField(context));
+members.Add("Elasticity", Elasticity_Element.ToLinkField(context));
+members.Add("Stiffness", Stiffness_Element.ToLinkField(context));
+members.Add("SimulateTerminalBones", SimulateTerminalBones_Element.ToLinkField(context));
+members.Add("BaseBoneRadius", BaseBoneRadius_Element.ToLinkField(context));
+members.Add("DynamicPlayerCollision", DynamicPlayerCollision_Element.ToLinkField(context));
+members.Add("CollideWithOwnBody", CollideWithOwnBody_Element.ToLinkField(context));
+members.Add("HandCollisionVibration", HandCollisionVibration_Element.ToLinkField(context));
+members.Add("CollideWithHead", CollideWithHead_Element.ToLinkField(context));
+members.Add("CollideWithBody", CollideWithBody_Element.ToLinkField(context));
+members.Add("CollideWithLeftHand", CollideWithLeftHand_Element.ToLinkField(context));
+members.Add("CollideWithRightHand", CollideWithRightHand_Element.ToLinkField(context));
+members.Add("Gravity", Gravity_Element.ToLinkField(context));
+members.Add("GravitySpace", GravitySpace.ToLinkSyncObject(context));
+members.Add("UseUserGravityDirection", UseUserGravityDirection_Element.ToLinkField(context));
+members.Add("LocalForce", LocalForce_Element.ToLinkField(context));
+members.Add("GlobalStretch", GlobalStretch_Element.ToLinkField(context));
+members.Add("MaxStretchRatio", MaxStretchRatio_Element.ToLinkField(context));
+members.Add("CurrentStretchRatio", CurrentStretchRatio_Element.ToLinkField(context));
+members.Add("StretchRestoreSpeed", StretchRestoreSpeed_Element.ToLinkField(context));
+members.Add("UseLocalUserSpace", UseLocalUserSpace_Element.ToLinkField(context));
+members.Add("SimulationSpace", SimulationSpace.ToLinkSyncObject(context));
+members.Add("StaticColliders", StaticColliders.ToLinkList(context, m => m.ToLinkReference(context)));
+members.Add("VisualizeColliders", VisualizeColliders_Element.ToLinkField(context));
+members.Add("VisualizeBones", VisualizeBones_Element.ToLinkField(context));
+members.Add("IsGrabbable", IsGrabbable_Element.ToLinkField(context));
+members.Add("ActiveUserRootOnly", ActiveUserRootOnly_Element.ToLinkField(context));
+members.Add("AllowSteal", AllowSteal_Element.ToLinkField(context));
+members.Add("GrabPriority", GrabPriority_Element.ToLinkField(context));
+members.Add("IgnoreGrabOnFirstBone", IgnoreGrabOnFirstBone_Element.ToLinkField(context));
+members.Add("GrabRadiusTolerance", GrabRadiusTolerance_Element.ToLinkField(context));
+members.Add("GrabReleaseDistance", GrabReleaseDistance_Element.ToLinkField(context));
+members.Add("GrabSlipping", GrabSlipping_Element.ToLinkField(context));
+members.Add("GrabTerminalBones", GrabTerminalBones_Element.ToLinkField(context));
+members.Add("GrabVibration", GrabVibration_Element.ToLinkField(context));
+members.Add("IgnoreOwnLeftHand", IgnoreOwnLeftHand_Element.ToLinkField(context));
+members.Add("IgnoreOwnRightHand", IgnoreOwnRightHand_Element.ToLinkField(context));
+members.Add("EffectorTarget", EffectorTarget_Element.ToLinkReference(context));
+members.Add("EffectorBoneIndex", EffectorBoneIndex_Element.ToLinkField(context));
+members.Add("EffectorBoneOffset", EffectorBoneOffset_Element.ToLinkField(context));
+members.Add("_activeGrabber", _activeGrabber_Element.ToLinkReference(context));
+members.Add("Bones", Bones.ToLinkList(context, m => m.ToLinkSyncObject(context)));
 }
 
 }

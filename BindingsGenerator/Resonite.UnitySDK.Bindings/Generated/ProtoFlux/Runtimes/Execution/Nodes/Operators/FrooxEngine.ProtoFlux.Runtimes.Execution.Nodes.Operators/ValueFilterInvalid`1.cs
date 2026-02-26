@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [ProtoFluxBindings]FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.Operators.ValueFilterInvalid<>
-// Generated on: čtvrtek 26. února 2026 10:04:24
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:27:49
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -30,8 +30,8 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Value", Value_Element.Data.ToResoniteReference(context));
-members.Add("Fallback", Fallback_Element.Data.ToResoniteReference(context));
+members.Add("Value", Value_Element.ToLinkReference(context));
+members.Add("Fallback", Fallback_Element.ToLinkReference(context));
 }
 
 }

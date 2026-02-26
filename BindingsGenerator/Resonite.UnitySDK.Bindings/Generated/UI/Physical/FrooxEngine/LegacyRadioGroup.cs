@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.LegacyRadioGroup
-// Generated on: čtvrtek 26. února 2026 10:04:42
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:28:08
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -39,13 +39,13 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("IsEnabled", IsEnabled_Element.Data.ToResoniteLinkField());
-members.Add("_selectedOption", _selectedOption_Element.Data.ToResoniteReference(context));
-members.Add("_choiceVisual", _choiceVisual_Element.Data.ToResoniteReference(context));
-members.Add("_choicePosition", _choicePosition_Element.Data.ToResoniteReference(context));
-members.Add("_choiceRotation", _choiceRotation_Element.Data.ToResoniteReference(context));
-members.Add("_choiceScale", _choiceScale_Element.Data.ToResoniteReference(context));
-members.Add("_choiceMaterial", _choiceMaterial_Element.Data.ToResoniteReference(context));
+members.Add("IsEnabled", IsEnabled_Element.ToLinkField(context));
+members.Add("_selectedOption", _selectedOption_Element.ToLinkReference(context));
+members.Add("_choiceVisual", _choiceVisual_Element.ToLinkReference(context));
+members.Add("_choicePosition", _choicePosition_Element.ToLinkReference(context));
+members.Add("_choiceRotation", _choiceRotation_Element.ToLinkReference(context));
+members.Add("_choiceScale", _choiceScale_Element.ToLinkReference(context));
+members.Add("_choiceMaterial", _choiceMaterial_Element.ToLinkReference(context));
 }
 
 }

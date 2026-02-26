@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.HandPoser+Finger
-// Generated on: čtvrtek 26. února 2026 10:04:50
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:28:15
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -31,10 +31,10 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Metacarpal", new ResoniteLink.SyncObject() { Members = Metacarpal.CollectMembers(context) });
-members.Add("Proximal", new ResoniteLink.SyncObject() { Members = Proximal.CollectMembers(context) });
-members.Add("Intermediate", new ResoniteLink.SyncObject() { Members = Intermediate.CollectMembers(context) });
-members.Add("Distal", new ResoniteLink.SyncObject() { Members = Distal.CollectMembers(context) });
+members.Add("Metacarpal", Metacarpal.ToLinkSyncObject(context));
+members.Add("Proximal", Proximal.ToLinkSyncObject(context));
+members.Add("Intermediate", Intermediate.ToLinkSyncObject(context));
+members.Add("Distal", Distal.ToLinkSyncObject(context));
 }
 
 }

@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.TexturePackingWizard
-// Generated on: čtvrtek 26. února 2026 10:04:51
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:28:16
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -69,28 +69,28 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("RTexture", RTexture_Element.Data.ToResoniteReference(context));
-members.Add("RFallbackValue", RFallbackValue_Element.Data.ToResoniteLinkField());
-members.Add("RColorChannel", RColorChannel_Element.Data.ToResoniteLinkField());
-members.Add("RInvert", RInvert_Element.Data.ToResoniteLinkField());
-members.Add("GTexture", GTexture_Element.Data.ToResoniteReference(context));
-members.Add("GFallbackValue", GFallbackValue_Element.Data.ToResoniteLinkField());
-members.Add("GColorChannel", GColorChannel_Element.Data.ToResoniteLinkField());
-members.Add("GInvert", GInvert_Element.Data.ToResoniteLinkField());
-members.Add("BTexture", BTexture_Element.Data.ToResoniteReference(context));
-members.Add("BFallbackValue", BFallbackValue_Element.Data.ToResoniteLinkField());
-members.Add("BColorChannel", BColorChannel_Element.Data.ToResoniteLinkField());
-members.Add("BInvert", BInvert_Element.Data.ToResoniteLinkField());
-members.Add("ATexture", ATexture_Element.Data.ToResoniteReference(context));
-members.Add("AFallbackValue", AFallbackValue_Element.Data.ToResoniteLinkField());
-members.Add("AColorChannel", AColorChannel_Element.Data.ToResoniteLinkField());
-members.Add("AInvert", AInvert_Element.Data.ToResoniteLinkField());
-members.Add("ResolutionOverride", ResolutionOverride_Element.Data.ToResoniteLinkField());
-members.Add("ResolutionSizing", ResolutionSizing_Element.Data.ToResoniteLinkField());
-members.Add("EmptyFallbackResolution", EmptyFallbackResolution_Element.Data.ToResoniteLinkField());
-members.Add("GenerateMips", GenerateMips_Element.Data.ToResoniteLinkField());
-members.Add("OutputTexture", OutputTexture_Element.Data.ToResoniteReference(context));
-members.Add("IsProcessing", IsProcessing_Element.Data.ToResoniteLinkField());
+members.Add("RTexture", RTexture_Element.ToLinkReference(context));
+members.Add("RFallbackValue", RFallbackValue_Element.ToLinkField(context));
+members.Add("RColorChannel", RColorChannel_Element.ToLinkField(context));
+members.Add("RInvert", RInvert_Element.ToLinkField(context));
+members.Add("GTexture", GTexture_Element.ToLinkReference(context));
+members.Add("GFallbackValue", GFallbackValue_Element.ToLinkField(context));
+members.Add("GColorChannel", GColorChannel_Element.ToLinkField(context));
+members.Add("GInvert", GInvert_Element.ToLinkField(context));
+members.Add("BTexture", BTexture_Element.ToLinkReference(context));
+members.Add("BFallbackValue", BFallbackValue_Element.ToLinkField(context));
+members.Add("BColorChannel", BColorChannel_Element.ToLinkField(context));
+members.Add("BInvert", BInvert_Element.ToLinkField(context));
+members.Add("ATexture", ATexture_Element.ToLinkReference(context));
+members.Add("AFallbackValue", AFallbackValue_Element.ToLinkField(context));
+members.Add("AColorChannel", AColorChannel_Element.ToLinkField(context));
+members.Add("AInvert", AInvert_Element.ToLinkField(context));
+members.Add("ResolutionOverride", ResolutionOverride_Element.ToLinkField(context));
+members.Add("ResolutionSizing", ResolutionSizing_Element.ToLinkField(context));
+members.Add("EmptyFallbackResolution", EmptyFallbackResolution_Element.ToLinkField(context));
+members.Add("GenerateMips", GenerateMips_Element.ToLinkField(context));
+members.Add("OutputTexture", OutputTexture_Element.ToLinkReference(context));
+members.Add("IsProcessing", IsProcessing_Element.ToLinkField(context));
 }
 
 }

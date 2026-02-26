@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.CameraPortal
-// Generated on: čtvrtek 26. února 2026 10:04:37
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:28:03
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -49,18 +49,18 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Renderer", Renderer_Element.Data.ToResoniteReference(context));
-members.Add("ReflectionTexture", ReflectionTexture_Element.Data.ToResoniteReference(context));
-members.Add("PlaneOffset", PlaneOffset_Element.Data.ToResoniteLinkField());
-members.Add("PlaneNormal", PlaneNormal_Element.Data.ToResoniteLinkField());
-members.Add("RenderMode", RenderMode_Element.Data.ToResoniteLinkField());
-members.Add("PortalTarget", PortalTarget_Element.Data.ToResoniteReference(context));
-members.Add("OverrideClear", OverrideClear_Element.Data.ToResoniteLinkField());
-members.Add("ClearColor", ClearColor_Element.Data.ToResoniteLinkField());
-members.Add("DisablePerPixelLights", DisablePerPixelLights_Element.Data.ToResoniteLinkField());
-members.Add("DisableShadows", DisableShadows_Element.Data.ToResoniteLinkField());
-members.Add("OverrideFarClip", OverrideFarClip_Element.Data.ToResoniteLinkField());
-members.Add("OverrideNearClip", OverrideNearClip_Element.Data.ToResoniteLinkField());
+members.Add("Renderer", Renderer_Element.ToLinkReference(context));
+members.Add("ReflectionTexture", ReflectionTexture_Element.ToLinkReference(context));
+members.Add("PlaneOffset", PlaneOffset_Element.ToLinkField(context));
+members.Add("PlaneNormal", PlaneNormal_Element.ToLinkField(context));
+members.Add("RenderMode", RenderMode_Element.ToLinkField(context));
+members.Add("PortalTarget", PortalTarget_Element.ToLinkReference(context));
+members.Add("OverrideClear", OverrideClear_Element.ToLinkField(context));
+members.Add("ClearColor", ClearColor_Element.ToLinkField(context));
+members.Add("DisablePerPixelLights", DisablePerPixelLights_Element.ToLinkField(context));
+members.Add("DisableShadows", DisableShadows_Element.ToLinkField(context));
+members.Add("OverrideFarClip", OverrideFarClip_Element.ToLinkField(context));
+members.Add("OverrideNearClip", OverrideNearClip_Element.ToLinkField(context));
 }
 
 }

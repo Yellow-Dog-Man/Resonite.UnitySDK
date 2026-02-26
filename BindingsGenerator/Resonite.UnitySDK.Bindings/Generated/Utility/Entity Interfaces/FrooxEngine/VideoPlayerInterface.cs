@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.VideoPlayerInterface
-// Generated on: čtvrtek 26. února 2026 10:04:51
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:28:16
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -61,24 +61,24 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("URL", URL_Element.Data.ToResoniteReference(context));
-members.Add("Stream", Stream_Element.Data.ToResoniteReference(context));
-members.Add("VideoClip", VideoClip_Element.Data.ToResoniteReference(context));
-members.Add("VideoClipTexture", VideoClipTexture_Element.Data.ToResoniteReference(context));
-members.Add("AspectRatio", AspectRatio_Element.Data.ToResoniteReference(context));
-members.Add("DefaultVideoClip", DefaultVideoClip_Element.Data.ToResoniteReference(context));
-members.Add("StereoRenderingEnabled", StereoRenderingEnabled_Element.Data.ToResoniteReference(context));
-members.Add("StereoLayout", StereoLayout_Element.Data.ToResoniteReference(context));
-members.Add("StereoTransformLeft", StereoTransformLeft_Element.Data.ToResoniteReference(context));
-members.Add("StereoTransformRight", StereoTransformRight_Element.Data.ToResoniteReference(context));
-members.Add("StereoTransformScaleLeft", StereoTransformScaleLeft_Element.Data.ToResoniteReference(context));
-members.Add("StereoTransformOffsetLeft", StereoTransformOffsetLeft_Element.Data.ToResoniteReference(context));
-members.Add("StereoTransformScaleRight", StereoTransformScaleRight_Element.Data.ToResoniteReference(context));
-members.Add("StereoTransformOffsetRight", StereoTransformOffsetRight_Element.Data.ToResoniteReference(context));
-members.Add("PanoramicRenderingEnabled", PanoramicRenderingEnabled_Element.Data.ToResoniteReference(context));
-members.Add("PanoramicHorizontalFOV", PanoramicHorizontalFOV_Element.Data.ToResoniteReference(context));
-members.Add("PanoramicVerticalFOV", PanoramicVerticalFOV_Element.Data.ToResoniteReference(context));
-members.Add("PanoramicProjection", PanoramicProjection_Element.Data.ToResoniteReference(context));
+members.Add("URL", URL_Element.ToLinkReference(context));
+members.Add("Stream", Stream_Element.ToLinkReference(context));
+members.Add("VideoClip", VideoClip_Element.ToLinkReference(context));
+members.Add("VideoClipTexture", VideoClipTexture_Element.ToLinkReference(context));
+members.Add("AspectRatio", AspectRatio_Element.ToLinkReference(context));
+members.Add("DefaultVideoClip", DefaultVideoClip_Element.ToLinkReference(context));
+members.Add("StereoRenderingEnabled", StereoRenderingEnabled_Element.ToLinkReference(context));
+members.Add("StereoLayout", StereoLayout_Element.ToLinkReference(context));
+members.Add("StereoTransformLeft", StereoTransformLeft_Element.ToLinkReference(context));
+members.Add("StereoTransformRight", StereoTransformRight_Element.ToLinkReference(context));
+members.Add("StereoTransformScaleLeft", StereoTransformScaleLeft_Element.ToLinkReference(context));
+members.Add("StereoTransformOffsetLeft", StereoTransformOffsetLeft_Element.ToLinkReference(context));
+members.Add("StereoTransformScaleRight", StereoTransformScaleRight_Element.ToLinkReference(context));
+members.Add("StereoTransformOffsetRight", StereoTransformOffsetRight_Element.ToLinkReference(context));
+members.Add("PanoramicRenderingEnabled", PanoramicRenderingEnabled_Element.ToLinkReference(context));
+members.Add("PanoramicHorizontalFOV", PanoramicHorizontalFOV_Element.ToLinkReference(context));
+members.Add("PanoramicVerticalFOV", PanoramicVerticalFOV_Element.ToLinkReference(context));
+members.Add("PanoramicProjection", PanoramicProjection_Element.ToLinkReference(context));
 }
 
 }

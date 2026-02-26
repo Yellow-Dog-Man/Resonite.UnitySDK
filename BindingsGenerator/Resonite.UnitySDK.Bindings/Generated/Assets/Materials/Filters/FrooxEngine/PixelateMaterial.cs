@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.PixelateMaterial
-// Generated on: čtvrtek 26. února 2026 10:03:34
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:26:47
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -47,17 +47,17 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("PerObject", PerObject_Element.Data.ToResoniteLinkField());
-members.Add("Resolution", Resolution_Element.Data.ToResoniteLinkField());
-members.Add("ResolutionMagnitudeTexture", ResolutionMagnitudeTexture_Element.Data.ToResoniteReference(context));
-members.Add("ResolutionTextureScale", ResolutionTextureScale_Element.Data.ToResoniteLinkField());
-members.Add("ResolutionTextureOffset", ResolutionTextureOffset_Element.Data.ToResoniteLinkField());
-members.Add("BlendMode", BlendMode_Element.Data.ToResoniteLinkField());
-members.Add("Sidedness", Sidedness_Element.Data.ToResoniteLinkField());
-members.Add("ZWrite", ZWrite_Element.Data.ToResoniteLinkField());
-members.Add("ZTest", ZTest_Element.Data.ToResoniteLinkField());
-members.Add("_global", _global_Element.Data.ToResoniteReference(context));
-members.Add("_perObject", _perObject_Element.Data.ToResoniteReference(context));
+members.Add("PerObject", PerObject_Element.ToLinkField(context));
+members.Add("Resolution", Resolution_Element.ToLinkField(context));
+members.Add("ResolutionMagnitudeTexture", ResolutionMagnitudeTexture_Element.ToLinkReference(context));
+members.Add("ResolutionTextureScale", ResolutionTextureScale_Element.ToLinkField(context));
+members.Add("ResolutionTextureOffset", ResolutionTextureOffset_Element.ToLinkField(context));
+members.Add("BlendMode", BlendMode_Element.ToLinkField(context));
+members.Add("Sidedness", Sidedness_Element.ToLinkField(context));
+members.Add("ZWrite", ZWrite_Element.ToLinkField(context));
+members.Add("ZTest", ZTest_Element.ToLinkField(context));
+members.Add("_global", _global_Element.ToLinkReference(context));
+members.Add("_perObject", _perObject_Element.ToLinkReference(context));
 }
 
 }

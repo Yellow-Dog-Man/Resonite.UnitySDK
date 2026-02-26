@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.PhotonDust.BoxEmitter
-// Generated on: čtvrtek 26. února 2026 10:04:37
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:28:03
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -55,21 +55,21 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Size", Size_Element.Data.ToResoniteLinkField());
-members.Add("EmitFromShell", EmitFromShell_Element.Data.ToResoniteLinkField());
-members.Add("DirectionMode", DirectionMode_Element.Data.ToResoniteLinkField());
-members.Add("Direction", Direction_Element.Data.ToResoniteLinkField());
-members.Add("DirectionTransformMode", DirectionTransformMode_Element.Data.ToResoniteLinkField());
-members.Add("RandomDirectionWeight", RandomDirectionWeight_Element.Data.ToResoniteLinkField());
-members.Add("DirectionPostTransform", DirectionPostTransform_Element.Data.ToResoniteLinkField());
-members.Add("Color0", Color0_Element.Data.ToResoniteLinkField());
-members.Add("Color1", Color1_Element.Data.ToResoniteLinkField());
-members.Add("Color2", Color2_Element.Data.ToResoniteLinkField());
-members.Add("Color3", Color3_Element.Data.ToResoniteLinkField());
-members.Add("Color4", Color4_Element.Data.ToResoniteLinkField());
-members.Add("Color5", Color5_Element.Data.ToResoniteLinkField());
-members.Add("Color6", Color6_Element.Data.ToResoniteLinkField());
-members.Add("Color7", Color7_Element.Data.ToResoniteLinkField());
+members.Add("Size", Size_Element.ToLinkField(context));
+members.Add("EmitFromShell", EmitFromShell_Element.ToLinkField(context));
+members.Add("DirectionMode", DirectionMode_Element.ToLinkField(context));
+members.Add("Direction", Direction_Element.ToLinkField(context));
+members.Add("DirectionTransformMode", DirectionTransformMode_Element.ToLinkField(context));
+members.Add("RandomDirectionWeight", RandomDirectionWeight_Element.ToLinkField(context));
+members.Add("DirectionPostTransform", DirectionPostTransform_Element.ToLinkField(context));
+members.Add("Color0", Color0_Element.ToLinkField(context));
+members.Add("Color1", Color1_Element.ToLinkField(context));
+members.Add("Color2", Color2_Element.ToLinkField(context));
+members.Add("Color3", Color3_Element.ToLinkField(context));
+members.Add("Color4", Color4_Element.ToLinkField(context));
+members.Add("Color5", Color5_Element.ToLinkField(context));
+members.Add("Color6", Color6_Element.ToLinkField(context));
+members.Add("Color7", Color7_Element.ToLinkField(context));
 }
 
 }

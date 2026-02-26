@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.RenderTextureProvider
-// Generated on: čtvrtek 26. února 2026 10:03:32
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:26:46
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -37,12 +37,12 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Size", Size_Element.Data.ToResoniteLinkField());
-members.Add("Depth", Depth_Element.Data.ToResoniteLinkField());
-members.Add("FilterMode", FilterMode_Element.Data.ToResoniteLinkField());
-members.Add("AnisotropicLevel", AnisotropicLevel_Element.Data.ToResoniteLinkField());
-members.Add("WrapModeU", WrapModeU_Element.Data.ToResoniteLinkField());
-members.Add("WrapModeV", WrapModeV_Element.Data.ToResoniteLinkField());
+members.Add("Size", Size_Element.ToLinkField(context));
+members.Add("Depth", Depth_Element.ToLinkField(context));
+members.Add("FilterMode", FilterMode_Element.ToLinkField(context));
+members.Add("AnisotropicLevel", AnisotropicLevel_Element.ToLinkField(context));
+members.Add("WrapModeU", WrapModeU_Element.ToLinkField(context));
+members.Add("WrapModeV", WrapModeV_Element.ToLinkField(context));
 }
 
 }

@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.Texture2DAssetMetadata
-// Generated on: čtvrtek 26. února 2026 10:03:36
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:26:52
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -47,17 +47,17 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Texture", Texture_Element.Data.ToResoniteReference(context));
-members.Add("Size", Size_Element.Data.ToResoniteLinkField());
-members.Add("Width", Width_Element.Data.ToResoniteLinkField());
-members.Add("Height", Height_Element.Data.ToResoniteLinkField());
-members.Add("HasMipMaps", HasMipMaps_Element.Data.ToResoniteLinkField());
-members.Add("MipMapCount", MipMapCount_Element.Data.ToResoniteLinkField());
-members.Add("MemoryBytes", MemoryBytes_Element.Data.ToResoniteLinkField());
-members.Add("FormattedMemoryBytes", FormattedMemoryBytes_Element.Data.ToResoniteLinkField());
-members.Add("Format", Format_Element.Data.ToResoniteLinkField());
-members.Add("ActualLoadedVariant", ActualLoadedVariant_Element.Data.ToResoniteLinkField());
-members.Add("Profile", Profile_Element.Data.ToResoniteLinkField());
+members.Add("Texture", Texture_Element.ToLinkReference(context));
+members.Add("Size", Size_Element.ToLinkField(context));
+members.Add("Width", Width_Element.ToLinkField(context));
+members.Add("Height", Height_Element.ToLinkField(context));
+members.Add("HasMipMaps", HasMipMaps_Element.ToLinkField(context));
+members.Add("MipMapCount", MipMapCount_Element.ToLinkField(context));
+members.Add("MemoryBytes", MemoryBytes_Element.ToLinkField(context));
+members.Add("FormattedMemoryBytes", FormattedMemoryBytes_Element.ToLinkField(context));
+members.Add("Format", Format_Element.ToLinkField(context));
+members.Add("ActualLoadedVariant", ActualLoadedVariant_Element.ToLinkField(context));
+members.Add("Profile", Profile_Element.ToLinkField(context));
 }
 
 }

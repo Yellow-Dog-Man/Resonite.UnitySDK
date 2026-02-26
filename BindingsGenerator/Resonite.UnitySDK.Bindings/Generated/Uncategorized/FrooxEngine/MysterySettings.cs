@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.MysterySettings
-// Generated on: čtvrtek 26. února 2026 10:04:47
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:28:12
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -63,25 +63,25 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Difficulty", Difficulty_Element.Data.ToResoniteLinkField());
-members.Add("Loooong", Loooong_Element.Data.ToResoniteLinkField());
-members.Add("TheTruth", TheTruth_Element.Data.ToResoniteLinkField());
-members.Add("MirrorMirrors", MirrorMirrors_Element.Data.ToResoniteLinkField());
-members.Add("PhantomSense", PhantomSense_Element.Data.ToResoniteLinkField());
-members.Add("Expressiveness", Expressiveness_Element.Data.ToResoniteLinkField());
-members.Add("Ghosts", Ghosts_Element.Data.ToResoniteLinkField());
-members.Add("MoreFPS", MoreFPS_Element.Data.ToResoniteLinkField());
-members.Add("PreciousToggle", PreciousToggle_Element.Data.ToResoniteLinkField());
-members.Add("ToggleToggle", ToggleToggle_Element.Data.ToResoniteLinkField());
-members.Add("ToggleToggleToggle", ToggleToggleToggle_Element.Data.ToResoniteLinkField());
-members.Add("ToggleToggleToggleToggle", ToggleToggleToggleToggle_Element.Data.ToResoniteLinkField());
-members.Add("ToggleToggleToggleToggleToggle", ToggleToggleToggleToggleToggle_Element.Data.ToResoniteLinkField());
-members.Add("ToggleToggleToggleToggleToggleToggle", ToggleToggleToggleToggleToggleToggle_Element.Data.ToResoniteLinkField());
-members.Add("ToggleToggleToggleToggleToggleToggleToggle", ToggleToggleToggleToggleToggleToggleToggle_Element.Data.ToResoniteLinkField());
-members.Add("ToggleToggleToggleToggleToggleToggleToggleToggle", ToggleToggleToggleToggleToggleToggleToggleToggle_Element.Data.ToResoniteLinkField());
-members.Add("PreciousToggleStart", PreciousToggleStart_Element.Data.ToResoniteLinkField());
-members.Add("PreciousToggleDuration", PreciousToggleDuration_Element.Data.ToResoniteLinkField());
-members.Add("MysteriousMessage", MysteriousMessage_Element.Data.ToResoniteLinkField());
+members.Add("Difficulty", Difficulty_Element.ToLinkField(context));
+members.Add("Loooong", Loooong_Element.ToLinkField(context));
+members.Add("TheTruth", TheTruth_Element.ToLinkField(context));
+members.Add("MirrorMirrors", MirrorMirrors_Element.ToLinkField(context));
+members.Add("PhantomSense", PhantomSense_Element.ToLinkField(context));
+members.Add("Expressiveness", Expressiveness_Element.ToLinkField(context));
+members.Add("Ghosts", Ghosts_Element.ToLinkField(context));
+members.Add("MoreFPS", MoreFPS_Element.ToLinkField(context));
+members.Add("PreciousToggle", PreciousToggle_Element.ToLinkField(context));
+members.Add("ToggleToggle", ToggleToggle_Element.ToLinkField(context));
+members.Add("ToggleToggleToggle", ToggleToggleToggle_Element.ToLinkField(context));
+members.Add("ToggleToggleToggleToggle", ToggleToggleToggleToggle_Element.ToLinkField(context));
+members.Add("ToggleToggleToggleToggleToggle", ToggleToggleToggleToggleToggle_Element.ToLinkField(context));
+members.Add("ToggleToggleToggleToggleToggleToggle", ToggleToggleToggleToggleToggleToggle_Element.ToLinkField(context));
+members.Add("ToggleToggleToggleToggleToggleToggleToggle", ToggleToggleToggleToggleToggleToggleToggle_Element.ToLinkField(context));
+members.Add("ToggleToggleToggleToggleToggleToggleToggleToggle", ToggleToggleToggleToggleToggleToggleToggleToggle_Element.ToLinkField(context));
+members.Add("PreciousToggleStart", PreciousToggleStart_Element.ToLinkField(context));
+members.Add("PreciousToggleDuration", PreciousToggleDuration_Element.ToLinkField(context));
+members.Add("MysteriousMessage", MysteriousMessage_Element.ToLinkField(context));
 }
 
 }

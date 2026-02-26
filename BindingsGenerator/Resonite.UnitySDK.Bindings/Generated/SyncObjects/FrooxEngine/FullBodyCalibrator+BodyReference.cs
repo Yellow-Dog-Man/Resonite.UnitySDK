@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.FullBodyCalibrator+BodyReference
-// Generated on: čtvrtek 26. února 2026 10:04:45
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:28:11
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -97,41 +97,41 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("_vrIkAvatar", _vrIkAvatar_Element.Data.ToResoniteReference(context));
-members.Add("_head", _head_Element.Data.ToResoniteReference(context));
-members.Add("_hips", _hips_Element.Data.ToResoniteReference(context));
-members.Add("_chest", _chest_Element.Data.ToResoniteReference(context));
-members.Add("_leftHand", _leftHand_Element.Data.ToResoniteReference(context));
-members.Add("_rightHand", _rightHand_Element.Data.ToResoniteReference(context));
-members.Add("_leftElbow", _leftElbow_Element.Data.ToResoniteReference(context));
-members.Add("_rightElbow", _rightElbow_Element.Data.ToResoniteReference(context));
-members.Add("_leftFoot", _leftFoot_Element.Data.ToResoniteReference(context));
-members.Add("_rightFoot", _rightFoot_Element.Data.ToResoniteReference(context));
-members.Add("_leftKnee", _leftKnee_Element.Data.ToResoniteReference(context));
-members.Add("_rightKnee", _rightKnee_Element.Data.ToResoniteReference(context));
-members.Add("_headPos", _headPos_Element.Data.ToResoniteReference(context));
-members.Add("_headRot", _headRot_Element.Data.ToResoniteReference(context));
-members.Add("_leftHandPos", _leftHandPos_Element.Data.ToResoniteReference(context));
-members.Add("_leftHandRot", _leftHandRot_Element.Data.ToResoniteReference(context));
-members.Add("_rightHandPos", _rightHandPos_Element.Data.ToResoniteReference(context));
-members.Add("_rightHandRot", _rightHandRot_Element.Data.ToResoniteReference(context));
-members.Add("_hipsPos", _hipsPos_Element.Data.ToResoniteReference(context));
-members.Add("_hipsRot", _hipsRot_Element.Data.ToResoniteReference(context));
-members.Add("_chestPos", _chestPos_Element.Data.ToResoniteReference(context));
-members.Add("_chestRot", _chestRot_Element.Data.ToResoniteReference(context));
-members.Add("_leftFootPos", _leftFootPos_Element.Data.ToResoniteReference(context));
-members.Add("_leftFootRot", _leftFootRot_Element.Data.ToResoniteReference(context));
-members.Add("_rightFootPos", _rightFootPos_Element.Data.ToResoniteReference(context));
-members.Add("_rightFootRot", _rightFootRot_Element.Data.ToResoniteReference(context));
-members.Add("_leftKneePos", _leftKneePos_Element.Data.ToResoniteReference(context));
-members.Add("_leftKneeRot", _leftKneeRot_Element.Data.ToResoniteReference(context));
-members.Add("_rightKneePos", _rightKneePos_Element.Data.ToResoniteReference(context));
-members.Add("_rightKneeRot", _rightKneeRot_Element.Data.ToResoniteReference(context));
-members.Add("_leftElbowPos", _leftElbowPos_Element.Data.ToResoniteReference(context));
-members.Add("_leftElbowRot", _leftElbowRot_Element.Data.ToResoniteReference(context));
-members.Add("_rightElbowPos", _rightElbowPos_Element.Data.ToResoniteReference(context));
-members.Add("_rightElbowRot", _rightElbowRot_Element.Data.ToResoniteReference(context));
-members.Add("_ikWeight", _ikWeight_Element.Data.ToResoniteReference(context));
+members.Add("_vrIkAvatar", _vrIkAvatar_Element.ToLinkReference(context));
+members.Add("_head", _head_Element.ToLinkReference(context));
+members.Add("_hips", _hips_Element.ToLinkReference(context));
+members.Add("_chest", _chest_Element.ToLinkReference(context));
+members.Add("_leftHand", _leftHand_Element.ToLinkReference(context));
+members.Add("_rightHand", _rightHand_Element.ToLinkReference(context));
+members.Add("_leftElbow", _leftElbow_Element.ToLinkReference(context));
+members.Add("_rightElbow", _rightElbow_Element.ToLinkReference(context));
+members.Add("_leftFoot", _leftFoot_Element.ToLinkReference(context));
+members.Add("_rightFoot", _rightFoot_Element.ToLinkReference(context));
+members.Add("_leftKnee", _leftKnee_Element.ToLinkReference(context));
+members.Add("_rightKnee", _rightKnee_Element.ToLinkReference(context));
+members.Add("_headPos", _headPos_Element.ToLinkReference(context));
+members.Add("_headRot", _headRot_Element.ToLinkReference(context));
+members.Add("_leftHandPos", _leftHandPos_Element.ToLinkReference(context));
+members.Add("_leftHandRot", _leftHandRot_Element.ToLinkReference(context));
+members.Add("_rightHandPos", _rightHandPos_Element.ToLinkReference(context));
+members.Add("_rightHandRot", _rightHandRot_Element.ToLinkReference(context));
+members.Add("_hipsPos", _hipsPos_Element.ToLinkReference(context));
+members.Add("_hipsRot", _hipsRot_Element.ToLinkReference(context));
+members.Add("_chestPos", _chestPos_Element.ToLinkReference(context));
+members.Add("_chestRot", _chestRot_Element.ToLinkReference(context));
+members.Add("_leftFootPos", _leftFootPos_Element.ToLinkReference(context));
+members.Add("_leftFootRot", _leftFootRot_Element.ToLinkReference(context));
+members.Add("_rightFootPos", _rightFootPos_Element.ToLinkReference(context));
+members.Add("_rightFootRot", _rightFootRot_Element.ToLinkReference(context));
+members.Add("_leftKneePos", _leftKneePos_Element.ToLinkReference(context));
+members.Add("_leftKneeRot", _leftKneeRot_Element.ToLinkReference(context));
+members.Add("_rightKneePos", _rightKneePos_Element.ToLinkReference(context));
+members.Add("_rightKneeRot", _rightKneeRot_Element.ToLinkReference(context));
+members.Add("_leftElbowPos", _leftElbowPos_Element.ToLinkReference(context));
+members.Add("_leftElbowRot", _leftElbowRot_Element.ToLinkReference(context));
+members.Add("_rightElbowPos", _rightElbowPos_Element.ToLinkReference(context));
+members.Add("_rightElbowRot", _rightElbowRot_Element.ToLinkReference(context));
+members.Add("_ikWeight", _ikWeight_Element.ToLinkReference(context));
 }
 
 }

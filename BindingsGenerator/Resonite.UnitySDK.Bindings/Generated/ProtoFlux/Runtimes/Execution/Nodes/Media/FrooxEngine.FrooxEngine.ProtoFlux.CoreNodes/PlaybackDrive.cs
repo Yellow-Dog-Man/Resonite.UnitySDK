@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [ProtoFluxBindings]FrooxEngine.FrooxEngine.ProtoFlux.CoreNodes.PlaybackDrive
-// Generated on: čtvrtek 26. února 2026 10:04:21
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:27:44
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -47,19 +47,19 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Target", Target_Element.Data.ToResoniteReference(context));
-members.Add("NormalizedPosition", NormalizedPosition_Element.Data.ToResoniteReference(context));
-members.Add("MaximumPositionError", MaximumPositionError_Element.Data.ToResoniteReference(context));
-members.Add("Speed", Speed_Element.Data.ToResoniteReference(context));
-members.Add("Play", Play_Element.Data.ToResoniteReference(context));
-members.Add("Loop", Loop_Element.Data.ToResoniteReference(context));
-members.Add("IsDriving", new ResoniteLink.EmptyElement());
-members.Add("StartDrive", new ResoniteLink.EmptyElement());
-members.Add("StopDrive", new ResoniteLink.EmptyElement());
-members.Add("ForceResync", new ResoniteLink.EmptyElement());
-members.Add("OnStartDrive", OnStartDrive_Element.Data.ToResoniteReference(context));
-members.Add("OnStopDrive", OnStopDrive_Element.Data.ToResoniteReference(context));
-members.Add("OnResync", OnResync_Element.Data.ToResoniteReference(context));
+members.Add("Target", Target_Element.ToLinkReference(context));
+members.Add("NormalizedPosition", NormalizedPosition_Element.ToLinkReference(context));
+members.Add("MaximumPositionError", MaximumPositionError_Element.ToLinkReference(context));
+members.Add("Speed", Speed_Element.ToLinkReference(context));
+members.Add("Play", Play_Element.ToLinkReference(context));
+members.Add("Loop", Loop_Element.ToLinkReference(context));
+members.Add("IsDriving", IsDriving.ToLinkEmpty(context));
+members.Add("StartDrive", StartDrive.ToLinkEmpty(context));
+members.Add("StopDrive", StopDrive.ToLinkEmpty(context));
+members.Add("ForceResync", ForceResync.ToLinkEmpty(context));
+members.Add("OnStartDrive", OnStartDrive_Element.ToLinkReference(context));
+members.Add("OnStopDrive", OnStopDrive_Element.ToLinkReference(context));
+members.Add("OnResync", OnResync_Element.ToLinkReference(context));
 }
 
 }

@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.RadiantSearchBar
-// Generated on: čtvrtek 26. února 2026 10:04:36
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:28:01
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -49,18 +49,18 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("SearchTerm", SearchTerm_Element.Data.ToResoniteLinkField());
-members.Add("IsSearching", IsSearching_Element.Data.ToResoniteLinkField());
-members.Add("SearchAnimTileSpeed", SearchAnimTileSpeed_Element.Data.ToResoniteLinkField());
-members.Add("SearchAnimColor", SearchAnimColor_Element.Data.ToResoniteLinkField());
-members.Add("_textField", _textField_Element.Data.ToResoniteReference(context));
-members.Add("_searchText", _searchText_Element.Data.ToResoniteReference(context));
-members.Add("_defaultText", _defaultText_Element.Data.ToResoniteReference(context));
-members.Add("_searchingVisual", _searchingVisual_Element.Data.ToResoniteReference(context));
-members.Add("_cancelButton", _cancelButton_Element.Data.ToResoniteReference(context));
-members.Add("_defaultVisible", _defaultVisible_Element.Data.ToResoniteReference(context));
-members.Add("_searchingAnimationColor", _searchingAnimationColor_Element.Data.ToResoniteReference(context));
-members.Add("_searchingTextureOffset", _searchingTextureOffset_Element.Data.ToResoniteReference(context));
+members.Add("SearchTerm", SearchTerm_Element.ToLinkField(context));
+members.Add("IsSearching", IsSearching_Element.ToLinkField(context));
+members.Add("SearchAnimTileSpeed", SearchAnimTileSpeed_Element.ToLinkField(context));
+members.Add("SearchAnimColor", SearchAnimColor_Element.ToLinkField(context));
+members.Add("_textField", _textField_Element.ToLinkReference(context));
+members.Add("_searchText", _searchText_Element.ToLinkReference(context));
+members.Add("_defaultText", _defaultText_Element.ToLinkReference(context));
+members.Add("_searchingVisual", _searchingVisual_Element.ToLinkReference(context));
+members.Add("_cancelButton", _cancelButton_Element.ToLinkReference(context));
+members.Add("_defaultVisible", _defaultVisible_Element.ToLinkReference(context));
+members.Add("_searchingAnimationColor", _searchingAnimationColor_Element.ToLinkReference(context));
+members.Add("_searchingTextureOffset", _searchingTextureOffset_Element.ToLinkReference(context));
 }
 
 }

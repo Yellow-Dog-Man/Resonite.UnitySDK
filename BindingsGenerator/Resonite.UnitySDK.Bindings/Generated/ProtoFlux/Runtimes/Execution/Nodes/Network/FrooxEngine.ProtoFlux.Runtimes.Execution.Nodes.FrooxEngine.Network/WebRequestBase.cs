@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [ProtoFluxBindings]FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Network.WebRequestBase
-// Generated on: čtvrtek 26. února 2026 10:04:21
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:27:44
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -36,12 +36,12 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("URL", URL_Element.Data.ToResoniteReference(context));
-members.Add("StatusCode", new ResoniteLink.EmptyElement());
-members.Add("OnSent", OnSent_Element.Data.ToResoniteReference(context));
-members.Add("OnResponse", OnResponse_Element.Data.ToResoniteReference(context));
-members.Add("OnError", OnError_Element.Data.ToResoniteReference(context));
-members.Add("OnDenied", OnDenied_Element.Data.ToResoniteReference(context));
+members.Add("URL", URL_Element.ToLinkReference(context));
+members.Add("StatusCode", StatusCode.ToLinkEmpty(context));
+members.Add("OnSent", OnSent_Element.ToLinkReference(context));
+members.Add("OnResponse", OnResponse_Element.ToLinkReference(context));
+members.Add("OnError", OnError_Element.ToLinkReference(context));
+members.Add("OnDenied", OnDenied_Element.ToLinkReference(context));
 }
 
 }

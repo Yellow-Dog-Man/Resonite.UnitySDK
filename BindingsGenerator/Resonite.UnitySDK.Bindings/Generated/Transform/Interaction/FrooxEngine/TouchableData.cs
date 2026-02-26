@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.TouchableData
-// Generated on: čtvrtek 26. února 2026 10:04:42
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:28:08
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -51,19 +51,19 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Hovering", Hovering_Element.Data.ToResoniteLinkField());
-members.Add("Touching", Touching_Element.Data.ToResoniteLinkField());
-members.Add("AcceptOutOfSightTouch", AcceptOutOfSightTouch_Element.Data.ToResoniteLinkField());
-members.Add("AcceptPhysicalTouch", AcceptPhysicalTouch_Element.Data.ToResoniteLinkField());
-members.Add("AcceptRemoteTouch", AcceptRemoteTouch_Element.Data.ToResoniteLinkField());
-members.Add("OnHoverStartVibrate", OnHoverStartVibrate_Element.Data.ToResoniteLinkField());
-members.Add("OnHoverStayVibrate", OnHoverStayVibrate_Element.Data.ToResoniteLinkField());
-members.Add("OnHoverEndVibrate", OnHoverEndVibrate_Element.Data.ToResoniteLinkField());
-members.Add("OnTouchStartVibrate", OnTouchStartVibrate_Element.Data.ToResoniteLinkField());
-members.Add("OnTouchStayVibrate", OnTouchStayVibrate_Element.Data.ToResoniteLinkField());
-members.Add("OnTouchEndVibrate", OnTouchEndVibrate_Element.Data.ToResoniteLinkField());
-members.Add("EditModeOnly", EditModeOnly_Element.Data.ToResoniteLinkField());
-members.Add("ActiveUserFilter", ActiveUserFilter_Element.Data.ToResoniteLinkField());
+members.Add("Hovering", Hovering_Element.ToLinkField(context));
+members.Add("Touching", Touching_Element.ToLinkField(context));
+members.Add("AcceptOutOfSightTouch", AcceptOutOfSightTouch_Element.ToLinkField(context));
+members.Add("AcceptPhysicalTouch", AcceptPhysicalTouch_Element.ToLinkField(context));
+members.Add("AcceptRemoteTouch", AcceptRemoteTouch_Element.ToLinkField(context));
+members.Add("OnHoverStartVibrate", OnHoverStartVibrate_Element.ToLinkField(context));
+members.Add("OnHoverStayVibrate", OnHoverStayVibrate_Element.ToLinkField(context));
+members.Add("OnHoverEndVibrate", OnHoverEndVibrate_Element.ToLinkField(context));
+members.Add("OnTouchStartVibrate", OnTouchStartVibrate_Element.ToLinkField(context));
+members.Add("OnTouchStayVibrate", OnTouchStayVibrate_Element.ToLinkField(context));
+members.Add("OnTouchEndVibrate", OnTouchEndVibrate_Element.ToLinkField(context));
+members.Add("EditModeOnly", EditModeOnly_Element.ToLinkField(context));
+members.Add("ActiveUserFilter", ActiveUserFilter_Element.ToLinkField(context));
 }
 
 }

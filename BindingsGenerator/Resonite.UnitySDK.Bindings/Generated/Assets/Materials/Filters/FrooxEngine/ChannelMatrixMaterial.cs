@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.ChannelMatrixMaterial
-// Generated on: čtvrtek 26. února 2026 10:03:34
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:26:47
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -69,28 +69,28 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("RedFromRed", RedFromRed_Element.Data.ToResoniteLinkField());
-members.Add("RedFromGreen", RedFromGreen_Element.Data.ToResoniteLinkField());
-members.Add("RedFromBlue", RedFromBlue_Element.Data.ToResoniteLinkField());
-members.Add("RedOffset", RedOffset_Element.Data.ToResoniteLinkField());
-members.Add("GreenFromRed", GreenFromRed_Element.Data.ToResoniteLinkField());
-members.Add("GreenFromGreen", GreenFromGreen_Element.Data.ToResoniteLinkField());
-members.Add("GreenFromBlue", GreenFromBlue_Element.Data.ToResoniteLinkField());
-members.Add("GreenOffset", GreenOffset_Element.Data.ToResoniteLinkField());
-members.Add("BlueFromRed", BlueFromRed_Element.Data.ToResoniteLinkField());
-members.Add("BlueFromGreen", BlueFromGreen_Element.Data.ToResoniteLinkField());
-members.Add("BlueFromBlue", BlueFromBlue_Element.Data.ToResoniteLinkField());
-members.Add("BlueOffset", BlueOffset_Element.Data.ToResoniteLinkField());
-members.Add("ClampRedMin", ClampRedMin_Element.Data.ToResoniteLinkField());
-members.Add("ClampGreenMin", ClampGreenMin_Element.Data.ToResoniteLinkField());
-members.Add("ClampBlueMin", ClampBlueMin_Element.Data.ToResoniteLinkField());
-members.Add("ClampRedMax", ClampRedMax_Element.Data.ToResoniteLinkField());
-members.Add("ClampGreenMax", ClampGreenMax_Element.Data.ToResoniteLinkField());
-members.Add("ClampBlueMax", ClampBlueMax_Element.Data.ToResoniteLinkField());
-members.Add("BlendMode", BlendMode_Element.Data.ToResoniteLinkField());
-members.Add("Sidedness", Sidedness_Element.Data.ToResoniteLinkField());
-members.Add("ZWrite", ZWrite_Element.Data.ToResoniteLinkField());
-members.Add("ZTest", ZTest_Element.Data.ToResoniteLinkField());
+members.Add("RedFromRed", RedFromRed_Element.ToLinkField(context));
+members.Add("RedFromGreen", RedFromGreen_Element.ToLinkField(context));
+members.Add("RedFromBlue", RedFromBlue_Element.ToLinkField(context));
+members.Add("RedOffset", RedOffset_Element.ToLinkField(context));
+members.Add("GreenFromRed", GreenFromRed_Element.ToLinkField(context));
+members.Add("GreenFromGreen", GreenFromGreen_Element.ToLinkField(context));
+members.Add("GreenFromBlue", GreenFromBlue_Element.ToLinkField(context));
+members.Add("GreenOffset", GreenOffset_Element.ToLinkField(context));
+members.Add("BlueFromRed", BlueFromRed_Element.ToLinkField(context));
+members.Add("BlueFromGreen", BlueFromGreen_Element.ToLinkField(context));
+members.Add("BlueFromBlue", BlueFromBlue_Element.ToLinkField(context));
+members.Add("BlueOffset", BlueOffset_Element.ToLinkField(context));
+members.Add("ClampRedMin", ClampRedMin_Element.ToLinkField(context));
+members.Add("ClampGreenMin", ClampGreenMin_Element.ToLinkField(context));
+members.Add("ClampBlueMin", ClampBlueMin_Element.ToLinkField(context));
+members.Add("ClampRedMax", ClampRedMax_Element.ToLinkField(context));
+members.Add("ClampGreenMax", ClampGreenMax_Element.ToLinkField(context));
+members.Add("ClampBlueMax", ClampBlueMax_Element.ToLinkField(context));
+members.Add("BlendMode", BlendMode_Element.ToLinkField(context));
+members.Add("Sidedness", Sidedness_Element.ToLinkField(context));
+members.Add("ZWrite", ZWrite_Element.ToLinkField(context));
+members.Add("ZTest", ZTest_Element.ToLinkField(context));
 }
 
 }

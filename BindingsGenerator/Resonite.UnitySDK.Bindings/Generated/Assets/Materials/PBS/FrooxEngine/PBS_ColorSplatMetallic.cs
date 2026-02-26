@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.PBS_ColorSplatMetallic
-// Generated on: čtvrtek 26. února 2026 10:03:34
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:26:47
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -45,16 +45,16 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Metallic0", Metallic0_Element.Data.ToResoniteLinkField());
-members.Add("Metallic1", Metallic1_Element.Data.ToResoniteLinkField());
-members.Add("Metallic2", Metallic2_Element.Data.ToResoniteLinkField());
-members.Add("Metallic3", Metallic3_Element.Data.ToResoniteLinkField());
-members.Add("Smoothness0", Smoothness0_Element.Data.ToResoniteLinkField());
-members.Add("Smoothness1", Smoothness1_Element.Data.ToResoniteLinkField());
-members.Add("Smoothness2", Smoothness2_Element.Data.ToResoniteLinkField());
-members.Add("Smoothness3", Smoothness3_Element.Data.ToResoniteLinkField());
-members.Add("MetallicMap01", MetallicMap01_Element.Data.ToResoniteReference(context));
-members.Add("MetallicMap23", MetallicMap23_Element.Data.ToResoniteReference(context));
+members.Add("Metallic0", Metallic0_Element.ToLinkField(context));
+members.Add("Metallic1", Metallic1_Element.ToLinkField(context));
+members.Add("Metallic2", Metallic2_Element.ToLinkField(context));
+members.Add("Metallic3", Metallic3_Element.ToLinkField(context));
+members.Add("Smoothness0", Smoothness0_Element.ToLinkField(context));
+members.Add("Smoothness1", Smoothness1_Element.ToLinkField(context));
+members.Add("Smoothness2", Smoothness2_Element.ToLinkField(context));
+members.Add("Smoothness3", Smoothness3_Element.ToLinkField(context));
+members.Add("MetallicMap01", MetallicMap01_Element.ToLinkReference(context));
+members.Add("MetallicMap23", MetallicMap23_Element.ToLinkReference(context));
 }
 
 }

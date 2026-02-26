@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.InteractiveCameraControl
-// Generated on: čtvrtek 26. února 2026 10:04:46
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:28:11
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -164,86 +164,77 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("FieldOfView", FieldOfView_Element.Data.ToResoniteLinkField());
-members.Add("AnglePosition", AnglePosition_Element.Data.ToResoniteLinkField());
-members.Add("Distance", Distance_Element.Data.ToResoniteLinkField());
-members.Add("HeightOffset", HeightOffset_Element.Data.ToResoniteLinkField());
-members.Add("FirstPersonPitch", FirstPersonPitch_Element.Data.ToResoniteLinkField());
-members.Add("FirstPersonRoll", FirstPersonRoll_Element.Data.ToResoniteLinkField());
-members.Add("FirstPersonOffset", FirstPersonOffset_Element.Data.ToResoniteLinkField());
-members.Add("FramingViewportPosition", FramingViewportPosition_Element.Data.ToResoniteLinkField());
-members.Add("Mirror", Mirror_Element.Data.ToResoniteLinkField());
-members.Add("GroupDetectionRadius", GroupDetectionRadius_Element.Data.ToResoniteLinkField());
-members.Add("GroupLeaveBoundary", GroupLeaveBoundary_Element.Data.ToResoniteLinkField());
-members.Add("PositionSmoothSpeed", PositionSmoothSpeed_Element.Data.ToResoniteLinkField());
-members.Add("AngleSmoothSpeed", AngleSmoothSpeed_Element.Data.ToResoniteLinkField());
-members.Add("FramingSmoothSpeed", FramingSmoothSpeed_Element.Data.ToResoniteLinkField());
-members.Add("InterpolateBetweenAnchors", InterpolateBetweenAnchors_Element.Data.ToResoniteLinkField());
-members.Add("AnchorInterpolationSpeed", AnchorInterpolationSpeed_Element.Data.ToResoniteLinkField());
-members.Add("AnchorLinearInterpolation", AnchorLinearInterpolation_Element.Data.ToResoniteLinkField());
-members.Add("Mode", Mode_Element.Data.ToResoniteLinkField());
-members.Add("FramingTargetOverride", FramingTargetOverride_Element.Data.ToResoniteLinkField());
-members.Add("CameraOperators", new ResoniteLink.SyncList()
-{
-    Elements = CameraOperators.Data.ConvertList(m => m.Data.ToResoniteLinkField())
-});
-members.Add("GroupIncludeUsers", new ResoniteLink.SyncList()
-{
-    Elements = GroupIncludeUsers.Data.ConvertList(m => m.Data.ToResoniteLinkField())
-});
-members.Add("GroupExcludeUsers", new ResoniteLink.SyncList()
-{
-    Elements = GroupExcludeUsers.Data.ConvertList(m => m.Data.ToResoniteLinkField())
-});
-members.Add("RenderForEveryone", RenderForEveryone_Element.Data.ToResoniteLinkField());
-members.Add("AnyoneCanInteract", AnyoneCanInteract_Element.Data.ToResoniteLinkField());
-members.Add("RenderPrivateUI", RenderPrivateUI_Element.Data.ToResoniteLinkField());
-members.Add("MotionBlur", MotionBlur_Element.Data.ToResoniteLinkField());
-members.Add("ScreenSpaceReflections", ScreenSpaceReflections_Element.Data.ToResoniteLinkField());
-members.Add("SpawnPhotoInWorld", SpawnPhotoInWorld_Element.Data.ToResoniteLinkField());
-members.Add("FlipPreview", FlipPreview_Element.Data.ToResoniteLinkField());
-members.Add("_renderTextureProxy", _renderTextureProxy_Element.Data.ToResoniteReference(context));
-members.Add("_framingReticle", _framingReticle_Element.Data.ToResoniteReference(context));
-members.Add("_mirrorMessage", _mirrorMessage_Element.Data.ToResoniteReference(context));
-members.Add("_smoothFirstPersonButton", _smoothFirstPersonButton_Element.Data.ToResoniteReference(context));
-members.Add("_thirdPersonButton", _thirdPersonButton_Element.Data.ToResoniteReference(context));
-members.Add("_groupButton", _groupButton_Element.Data.ToResoniteReference(context));
-members.Add("_worldButton", _worldButton_Element.Data.ToResoniteReference(context));
-members.Add("_manualButton", _manualButton_Element.Data.ToResoniteReference(context));
-members.Add("_mirrorButton", _mirrorButton_Element.Data.ToResoniteReference(context));
-members.Add("_usersButton", _usersButton_Element.Data.ToResoniteReference(context));
-members.Add("_angleIncreaseButton", _angleIncreaseButton_Element.Data.ToResoniteReference(context));
-members.Add("_angleDecreaseButton", _angleDecreaseButton_Element.Data.ToResoniteReference(context));
-members.Add("_heightIncreaseButton", _heightIncreaseButton_Element.Data.ToResoniteReference(context));
-members.Add("_heightDecreaseButton", _heightDecreaseButton_Element.Data.ToResoniteReference(context));
-members.Add("_distanceIncreaseButton", _distanceIncreaseButton_Element.Data.ToResoniteReference(context));
-members.Add("_distanceDecreaseButton", _distanceDecreaseButton_Element.Data.ToResoniteReference(context));
-members.Add("_resetButton", _resetButton_Element.Data.ToResoniteReference(context));
-members.Add("_fovSlider", _fovSlider_Element.Data.ToResoniteReference(context));
-members.Add("_avoidOcclusion", _avoidOcclusion_Element.Data.ToResoniteReference(context));
-members.Add("_keepInWorldSpace", _keepInWorldSpace_Element.Data.ToResoniteReference(context));
-members.Add("_movementWobble", _movementWobble_Element.Data.ToResoniteReference(context));
-members.Add("_aimInFrontOfHead", _aimInFrontOfHead_Element.Data.ToResoniteReference(context));
-members.Add("_forceEyesOnCamera", _forceEyesOnCamera_Element.Data.ToResoniteReference(context));
-members.Add("_hideCamera", _hideCamera_Element.Data.ToResoniteReference(context));
-members.Add("_hideBadge", _hideBadge_Element.Data.ToResoniteReference(context));
-members.Add("_hideLasers", _hideLasers_Element.Data.ToResoniteReference(context));
-members.Add("_showFrustum", _showFrustum_Element.Data.ToResoniteReference(context));
-members.Add("_timer", _timer_Element.Data.ToResoniteReference(context));
-members.Add("_forceLive", _forceLive_Element.Data.ToResoniteReference(context));
-members.Add("_audioFromCameraViewpoint", _audioFromCameraViewpoint_Element.Data.ToResoniteReference(context));
-members.Add("_userControl", _userControl_Element.Data.ToResoniteReference(context));
-members.Add("_settingsDialog", _settingsDialog_Element.Data.ToResoniteReference(context));
-members.Add("_positioningDialog", _positioningDialog_Element.Data.ToResoniteReference(context));
-members.Add("_anchorsDialog", _anchorsDialog_Element.Data.ToResoniteReference(context));
-members.Add("_OBS_Dialog", _OBS_Dialog_Element.Data.ToResoniteReference(context));
-members.Add("_twitchDialog", _twitchDialog_Element.Data.ToResoniteReference(context));
-members.Add("_settingsButton", _settingsButton_Element.Data.ToResoniteReference(context));
-members.Add("_positioningButton", _positioningButton_Element.Data.ToResoniteReference(context));
-members.Add("_anchorsButton", _anchorsButton_Element.Data.ToResoniteReference(context));
-members.Add("_OBS_Button", _OBS_Button_Element.Data.ToResoniteReference(context));
-members.Add("_twitchButton", _twitchButton_Element.Data.ToResoniteReference(context));
-members.Add("_previewMaterial", _previewMaterial_Element.Data.ToResoniteReference(context));
+members.Add("FieldOfView", FieldOfView_Element.ToLinkField(context));
+members.Add("AnglePosition", AnglePosition_Element.ToLinkField(context));
+members.Add("Distance", Distance_Element.ToLinkField(context));
+members.Add("HeightOffset", HeightOffset_Element.ToLinkField(context));
+members.Add("FirstPersonPitch", FirstPersonPitch_Element.ToLinkField(context));
+members.Add("FirstPersonRoll", FirstPersonRoll_Element.ToLinkField(context));
+members.Add("FirstPersonOffset", FirstPersonOffset_Element.ToLinkField(context));
+members.Add("FramingViewportPosition", FramingViewportPosition_Element.ToLinkField(context));
+members.Add("Mirror", Mirror_Element.ToLinkField(context));
+members.Add("GroupDetectionRadius", GroupDetectionRadius_Element.ToLinkField(context));
+members.Add("GroupLeaveBoundary", GroupLeaveBoundary_Element.ToLinkField(context));
+members.Add("PositionSmoothSpeed", PositionSmoothSpeed_Element.ToLinkField(context));
+members.Add("AngleSmoothSpeed", AngleSmoothSpeed_Element.ToLinkField(context));
+members.Add("FramingSmoothSpeed", FramingSmoothSpeed_Element.ToLinkField(context));
+members.Add("InterpolateBetweenAnchors", InterpolateBetweenAnchors_Element.ToLinkField(context));
+members.Add("AnchorInterpolationSpeed", AnchorInterpolationSpeed_Element.ToLinkField(context));
+members.Add("AnchorLinearInterpolation", AnchorLinearInterpolation_Element.ToLinkField(context));
+members.Add("Mode", Mode_Element.ToLinkField(context));
+members.Add("FramingTargetOverride", FramingTargetOverride_Element.ToLinkField(context));
+members.Add("CameraOperators", CameraOperators.ToLinkList(context, m => m.ToLinkField(context)));
+members.Add("GroupIncludeUsers", GroupIncludeUsers.ToLinkList(context, m => m.ToLinkField(context)));
+members.Add("GroupExcludeUsers", GroupExcludeUsers.ToLinkList(context, m => m.ToLinkField(context)));
+members.Add("RenderForEveryone", RenderForEveryone_Element.ToLinkField(context));
+members.Add("AnyoneCanInteract", AnyoneCanInteract_Element.ToLinkField(context));
+members.Add("RenderPrivateUI", RenderPrivateUI_Element.ToLinkField(context));
+members.Add("MotionBlur", MotionBlur_Element.ToLinkField(context));
+members.Add("ScreenSpaceReflections", ScreenSpaceReflections_Element.ToLinkField(context));
+members.Add("SpawnPhotoInWorld", SpawnPhotoInWorld_Element.ToLinkField(context));
+members.Add("FlipPreview", FlipPreview_Element.ToLinkField(context));
+members.Add("_renderTextureProxy", _renderTextureProxy_Element.ToLinkReference(context));
+members.Add("_framingReticle", _framingReticle_Element.ToLinkReference(context));
+members.Add("_mirrorMessage", _mirrorMessage_Element.ToLinkReference(context));
+members.Add("_smoothFirstPersonButton", _smoothFirstPersonButton_Element.ToLinkReference(context));
+members.Add("_thirdPersonButton", _thirdPersonButton_Element.ToLinkReference(context));
+members.Add("_groupButton", _groupButton_Element.ToLinkReference(context));
+members.Add("_worldButton", _worldButton_Element.ToLinkReference(context));
+members.Add("_manualButton", _manualButton_Element.ToLinkReference(context));
+members.Add("_mirrorButton", _mirrorButton_Element.ToLinkReference(context));
+members.Add("_usersButton", _usersButton_Element.ToLinkReference(context));
+members.Add("_angleIncreaseButton", _angleIncreaseButton_Element.ToLinkReference(context));
+members.Add("_angleDecreaseButton", _angleDecreaseButton_Element.ToLinkReference(context));
+members.Add("_heightIncreaseButton", _heightIncreaseButton_Element.ToLinkReference(context));
+members.Add("_heightDecreaseButton", _heightDecreaseButton_Element.ToLinkReference(context));
+members.Add("_distanceIncreaseButton", _distanceIncreaseButton_Element.ToLinkReference(context));
+members.Add("_distanceDecreaseButton", _distanceDecreaseButton_Element.ToLinkReference(context));
+members.Add("_resetButton", _resetButton_Element.ToLinkReference(context));
+members.Add("_fovSlider", _fovSlider_Element.ToLinkReference(context));
+members.Add("_avoidOcclusion", _avoidOcclusion_Element.ToLinkReference(context));
+members.Add("_keepInWorldSpace", _keepInWorldSpace_Element.ToLinkReference(context));
+members.Add("_movementWobble", _movementWobble_Element.ToLinkReference(context));
+members.Add("_aimInFrontOfHead", _aimInFrontOfHead_Element.ToLinkReference(context));
+members.Add("_forceEyesOnCamera", _forceEyesOnCamera_Element.ToLinkReference(context));
+members.Add("_hideCamera", _hideCamera_Element.ToLinkReference(context));
+members.Add("_hideBadge", _hideBadge_Element.ToLinkReference(context));
+members.Add("_hideLasers", _hideLasers_Element.ToLinkReference(context));
+members.Add("_showFrustum", _showFrustum_Element.ToLinkReference(context));
+members.Add("_timer", _timer_Element.ToLinkReference(context));
+members.Add("_forceLive", _forceLive_Element.ToLinkReference(context));
+members.Add("_audioFromCameraViewpoint", _audioFromCameraViewpoint_Element.ToLinkReference(context));
+members.Add("_userControl", _userControl_Element.ToLinkReference(context));
+members.Add("_settingsDialog", _settingsDialog_Element.ToLinkReference(context));
+members.Add("_positioningDialog", _positioningDialog_Element.ToLinkReference(context));
+members.Add("_anchorsDialog", _anchorsDialog_Element.ToLinkReference(context));
+members.Add("_OBS_Dialog", _OBS_Dialog_Element.ToLinkReference(context));
+members.Add("_twitchDialog", _twitchDialog_Element.ToLinkReference(context));
+members.Add("_settingsButton", _settingsButton_Element.ToLinkReference(context));
+members.Add("_positioningButton", _positioningButton_Element.ToLinkReference(context));
+members.Add("_anchorsButton", _anchorsButton_Element.ToLinkReference(context));
+members.Add("_OBS_Button", _OBS_Button_Element.ToLinkReference(context));
+members.Add("_twitchButton", _twitchButton_Element.ToLinkReference(context));
+members.Add("_previewMaterial", _previewMaterial_Element.ToLinkReference(context));
 }
 
 }

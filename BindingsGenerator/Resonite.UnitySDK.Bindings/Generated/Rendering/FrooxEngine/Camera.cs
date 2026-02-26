@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.Camera
-// Generated on: čtvrtek 26. února 2026 10:03:40
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:26:57
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -61,31 +61,25 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("DoubleBuffered", DoubleBuffered_Element.Data.ToResoniteLinkField());
-members.Add("ForwardOnly", ForwardOnly_Element.Data.ToResoniteLinkField());
-members.Add("Projection", Projection_Element.Data.ToResoniteLinkField());
-members.Add("OrthographicSize", OrthographicSize_Element.Data.ToResoniteLinkField());
-members.Add("FieldOfView", FieldOfView_Element.Data.ToResoniteLinkField());
-members.Add("NearClipping", NearClipping_Element.Data.ToResoniteLinkField());
-members.Add("FarClipping", FarClipping_Element.Data.ToResoniteLinkField());
-members.Add("UseTransformScale", UseTransformScale_Element.Data.ToResoniteLinkField());
-members.Add("Clear", Clear_Element.Data.ToResoniteLinkField());
-members.Add("ClearColor", ClearColor_Element.Data.ToResoniteLinkField());
-members.Add("Viewport", Viewport_Element.Data.ToResoniteLinkField());
-members.Add("Depth", Depth_Element.Data.ToResoniteLinkField());
-members.Add("RenderTexture", RenderTexture_Element.Data.ToResoniteReference(context));
-members.Add("Postprocessing", Postprocessing_Element.Data.ToResoniteLinkField());
-members.Add("ScreenSpaceReflections", ScreenSpaceReflections_Element.Data.ToResoniteLinkField());
-members.Add("MotionBlur", MotionBlur_Element.Data.ToResoniteLinkField());
-members.Add("RenderShadows", RenderShadows_Element.Data.ToResoniteLinkField());
-members.Add("SelectiveRender", new ResoniteLink.SyncList()
-{
-    Elements = SelectiveRender.Data.ConvertList(m => m.Data.ToResoniteReference(context))
-});
-members.Add("ExcludeRender", new ResoniteLink.SyncList()
-{
-    Elements = ExcludeRender.Data.ConvertList(m => m.Data.ToResoniteReference(context))
-});
+members.Add("DoubleBuffered", DoubleBuffered_Element.ToLinkField(context));
+members.Add("ForwardOnly", ForwardOnly_Element.ToLinkField(context));
+members.Add("Projection", Projection_Element.ToLinkField(context));
+members.Add("OrthographicSize", OrthographicSize_Element.ToLinkField(context));
+members.Add("FieldOfView", FieldOfView_Element.ToLinkField(context));
+members.Add("NearClipping", NearClipping_Element.ToLinkField(context));
+members.Add("FarClipping", FarClipping_Element.ToLinkField(context));
+members.Add("UseTransformScale", UseTransformScale_Element.ToLinkField(context));
+members.Add("Clear", Clear_Element.ToLinkField(context));
+members.Add("ClearColor", ClearColor_Element.ToLinkField(context));
+members.Add("Viewport", Viewport_Element.ToLinkField(context));
+members.Add("Depth", Depth_Element.ToLinkField(context));
+members.Add("RenderTexture", RenderTexture_Element.ToLinkReference(context));
+members.Add("Postprocessing", Postprocessing_Element.ToLinkField(context));
+members.Add("ScreenSpaceReflections", ScreenSpaceReflections_Element.ToLinkField(context));
+members.Add("MotionBlur", MotionBlur_Element.ToLinkField(context));
+members.Add("RenderShadows", RenderShadows_Element.ToLinkField(context));
+members.Add("SelectiveRender", SelectiveRender.ToLinkList(context, m => m.ToLinkReference(context)));
+members.Add("ExcludeRender", ExcludeRender.ToLinkList(context, m => m.ToLinkReference(context)));
 }
 
 }

@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.StaticTexture2D
-// Generated on: čtvrtek 26. února 2026 10:03:33
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:26:46
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -47,17 +47,17 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("IsNormalMap", IsNormalMap_Element.Data.ToResoniteLinkField());
-members.Add("WrapModeU", WrapModeU_Element.Data.ToResoniteLinkField());
-members.Add("WrapModeV", WrapModeV_Element.Data.ToResoniteLinkField());
-members.Add("PowerOfTwoAlignThreshold", PowerOfTwoAlignThreshold_Element.Data.ToResoniteLinkField());
-members.Add("CrunchCompressed", CrunchCompressed_Element.Data.ToResoniteLinkField());
-members.Add("MinSize", MinSize_Element.Data.ToResoniteLinkField());
-members.Add("MaxSize", MaxSize_Element.Data.ToResoniteLinkField());
-members.Add("MipMaps", MipMaps_Element.Data.ToResoniteLinkField());
-members.Add("KeepOriginalMipMaps", KeepOriginalMipMaps_Element.Data.ToResoniteLinkField());
-members.Add("MipMapFilter", MipMapFilter_Element.Data.ToResoniteLinkField());
-members.Add("Readable", Readable_Element.Data.ToResoniteLinkField());
+members.Add("IsNormalMap", IsNormalMap_Element.ToLinkField(context));
+members.Add("WrapModeU", WrapModeU_Element.ToLinkField(context));
+members.Add("WrapModeV", WrapModeV_Element.ToLinkField(context));
+members.Add("PowerOfTwoAlignThreshold", PowerOfTwoAlignThreshold_Element.ToLinkField(context));
+members.Add("CrunchCompressed", CrunchCompressed_Element.ToLinkField(context));
+members.Add("MinSize", MinSize_Element.ToLinkField(context));
+members.Add("MaxSize", MaxSize_Element.ToLinkField(context));
+members.Add("MipMaps", MipMaps_Element.ToLinkField(context));
+members.Add("KeepOriginalMipMaps", KeepOriginalMipMaps_Element.ToLinkField(context));
+members.Add("MipMapFilter", MipMapFilter_Element.ToLinkField(context));
+members.Add("Readable", Readable_Element.ToLinkField(context));
 }
 
 }

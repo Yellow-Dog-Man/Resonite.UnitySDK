@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.FocusedWorldStatus
-// Generated on: čtvrtek 26. února 2026 10:04:51
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:28:16
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -57,22 +57,22 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("WorldName", WorldName_Element.Data.ToResoniteLinkField());
-members.Add("RawWorldName", RawWorldName_Element.Data.ToResoniteLinkField());
-members.Add("SessionId", SessionId_Element.Data.ToResoniteLinkField());
-members.Add("IsHost", IsHost_Element.Data.ToResoniteLinkField());
-members.Add("CanSave", CanSave_Element.Data.ToResoniteLinkField());
-members.Add("ShouldSave", ShouldSave_Element.Data.ToResoniteLinkField());
-members.Add("CanClose", CanClose_Element.Data.ToResoniteLinkField());
-members.Add("RoleName", RoleName_Element.Data.ToResoniteLinkField());
-members.Add("UserCount", UserCount_Element.Data.ToResoniteLinkField());
-members.Add("ActiveUserCount", ActiveUserCount_Element.Data.ToResoniteLinkField());
-members.Add("MaxUserCount", MaxUserCount_Element.Data.ToResoniteLinkField());
-members.Add("AccessLevel", AccessLevel_Element.Data.ToResoniteLinkField());
-members.Add("HideFromListing", HideFromListing_Element.Data.ToResoniteLinkField());
-members.Add("AwayKickEnabled", AwayKickEnabled_Element.Data.ToResoniteLinkField());
-members.Add("AwayKickMinutes", AwayKickMinutes_Element.Data.ToResoniteLinkField());
-members.Add("UnsafeMode", UnsafeMode_Element.Data.ToResoniteLinkField());
+members.Add("WorldName", WorldName_Element.ToLinkField(context));
+members.Add("RawWorldName", RawWorldName_Element.ToLinkField(context));
+members.Add("SessionId", SessionId_Element.ToLinkField(context));
+members.Add("IsHost", IsHost_Element.ToLinkField(context));
+members.Add("CanSave", CanSave_Element.ToLinkField(context));
+members.Add("ShouldSave", ShouldSave_Element.ToLinkField(context));
+members.Add("CanClose", CanClose_Element.ToLinkField(context));
+members.Add("RoleName", RoleName_Element.ToLinkField(context));
+members.Add("UserCount", UserCount_Element.ToLinkField(context));
+members.Add("ActiveUserCount", ActiveUserCount_Element.ToLinkField(context));
+members.Add("MaxUserCount", MaxUserCount_Element.ToLinkField(context));
+members.Add("AccessLevel", AccessLevel_Element.ToLinkField(context));
+members.Add("HideFromListing", HideFromListing_Element.ToLinkField(context));
+members.Add("AwayKickEnabled", AwayKickEnabled_Element.ToLinkField(context));
+members.Add("AwayKickMinutes", AwayKickMinutes_Element.ToLinkField(context));
+members.Add("UnsafeMode", UnsafeMode_Element.ToLinkField(context));
 }
 
 }

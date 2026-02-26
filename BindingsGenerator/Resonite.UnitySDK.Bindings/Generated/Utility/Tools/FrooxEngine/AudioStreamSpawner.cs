@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.AudioStreamSpawner
-// Generated on: čtvrtek 26. února 2026 10:04:51
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:28:16
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -31,9 +31,9 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("BitrateKbps", BitrateKbps_Element.Data.ToResoniteLinkField());
-members.Add("DeviceID", DeviceID_Element.Data.ToResoniteLinkField());
-members.Add("_bitrateString", _bitrateString_Element.Data.ToResoniteLinkField());
+members.Add("BitrateKbps", BitrateKbps_Element.ToLinkField(context));
+members.Add("DeviceID", DeviceID_Element.ToLinkField(context));
+members.Add("_bitrateString", _bitrateString_Element.ToLinkField(context));
 }
 
 }

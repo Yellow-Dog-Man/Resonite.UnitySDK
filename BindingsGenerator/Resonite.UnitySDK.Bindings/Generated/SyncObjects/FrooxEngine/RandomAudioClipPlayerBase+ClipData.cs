@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.RandomAudioClipPlayerBase+ClipData
-// Generated on: čtvrtek 26. února 2026 10:03:38
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:26:53
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -53,19 +53,19 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Clip", Clip_Element.Data.ToResoniteReference(context));
-members.Add("Weight", Weight_Element.Data.ToResoniteLinkField());
-members.Add("MinVolume", MinVolume_Element.Data.ToResoniteLinkField());
-members.Add("MaxVolume", MaxVolume_Element.Data.ToResoniteLinkField());
-members.Add("MinSpeed", MinSpeed_Element.Data.ToResoniteLinkField());
-members.Add("MaxSpeed", MaxSpeed_Element.Data.ToResoniteLinkField());
-members.Add("Spatialize", Spatialize_Element.Data.ToResoniteLinkField());
-members.Add("SpatialBlend", SpatialBlend_Element.Data.ToResoniteLinkField());
-members.Add("IgnoreAudioEffects", IgnoreAudioEffects_Element.Data.ToResoniteLinkField());
-members.Add("Global", Global_Element.Data.ToResoniteLinkField());
-members.Add("MinDistance", MinDistance_Element.Data.ToResoniteLinkField());
-members.Add("MaxDistance", MaxDistance_Element.Data.ToResoniteLinkField());
-members.Add("RolloffMode", RolloffMode_Element.Data.ToResoniteLinkField());
+members.Add("Clip", Clip_Element.ToLinkReference(context));
+members.Add("Weight", Weight_Element.ToLinkField(context));
+members.Add("MinVolume", MinVolume_Element.ToLinkField(context));
+members.Add("MaxVolume", MaxVolume_Element.ToLinkField(context));
+members.Add("MinSpeed", MinSpeed_Element.ToLinkField(context));
+members.Add("MaxSpeed", MaxSpeed_Element.ToLinkField(context));
+members.Add("Spatialize", Spatialize_Element.ToLinkField(context));
+members.Add("SpatialBlend", SpatialBlend_Element.ToLinkField(context));
+members.Add("IgnoreAudioEffects", IgnoreAudioEffects_Element.ToLinkField(context));
+members.Add("Global", Global_Element.ToLinkField(context));
+members.Add("MinDistance", MinDistance_Element.ToLinkField(context));
+members.Add("MaxDistance", MaxDistance_Element.ToLinkField(context));
+members.Add("RolloffMode", RolloffMode_Element.ToLinkField(context));
 }
 
 }

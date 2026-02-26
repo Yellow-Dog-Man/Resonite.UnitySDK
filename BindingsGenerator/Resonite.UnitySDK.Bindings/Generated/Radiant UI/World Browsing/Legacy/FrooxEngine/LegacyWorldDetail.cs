@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.LegacyWorldDetail
-// Generated on: čtvrtek 26. února 2026 10:04:36
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:28:02
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -115,51 +115,51 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Expanded", Expanded_Element.Data.ToResoniteLinkField());
-members.Add("CompactDetailExpanded", CompactDetailExpanded_Element.Data.ToResoniteLinkField());
-members.Add("CompactDetailCategory", CompactDetailCategory_Element.Data.ToResoniteLinkField());
-members.Add("ModalCompactSize", ModalCompactSize_Element.Data.ToResoniteLinkField());
-members.Add("ModalExpandedSize", ModalExpandedSize_Element.Data.ToResoniteLinkField());
-members.Add("_hostText", _hostText_Element.Data.ToResoniteReference(context));
-members.Add("_sessionItemsRoot", _sessionItemsRoot_Element.Data.ToResoniteReference(context));
-members.Add("_thumbnailGraphic", _thumbnailGraphic_Element.Data.ToResoniteReference(context));
-members.Add("_thumbnailTexture", _thumbnailTexture_Element.Data.ToResoniteReference(context));
-members.Add("_detailImageRoot", _detailImageRoot_Element.Data.ToResoniteReference(context));
-members.Add("_compactRoot", _compactRoot_Element.Data.ToResoniteReference(context));
-members.Add("_compactHeaderRoot", _compactHeaderRoot_Element.Data.ToResoniteReference(context));
-members.Add("_detailHeaderRoot", _detailHeaderRoot_Element.Data.ToResoniteReference(context));
-members.Add("_compactMaskEnabled", _compactMaskEnabled_Element.Data.ToResoniteReference(context));
-members.Add("_compactMaskRootEnabled", _compactMaskRootEnabled_Element.Data.ToResoniteReference(context));
-members.Add("_openButton", _openButton_Element.Data.ToResoniteReference(context));
-members.Add("_scrollRect", _scrollRect_Element.Data.ToResoniteReference(context));
-members.Add("_expandButton", _expandButton_Element.Data.ToResoniteReference(context));
-members.Add("_expandIcon", _expandIcon_Element.Data.ToResoniteReference(context));
-members.Add("_expandSprite", _expandSprite_Element.Data.ToResoniteReference(context));
-members.Add("_compactSprite", _compactSprite_Element.Data.ToResoniteReference(context));
-members.Add("_description", _description_Element.Data.ToResoniteReference(context));
-members.Add("_leftDetailsRoot", _leftDetailsRoot_Element.Data.ToResoniteReference(context));
-members.Add("_rightDetailsRoot", _rightDetailsRoot_Element.Data.ToResoniteReference(context));
-members.Add("_detailsText", _detailsText_Element.Data.ToResoniteReference(context));
-members.Add("_cycleLeftButton", _cycleLeftButton_Element.Data.ToResoniteReference(context));
-members.Add("_cycleRightButton", _cycleRightButton_Element.Data.ToResoniteReference(context));
-members.Add("_compactParent", _compactParent_Element.Data.ToResoniteReference(context));
-members.Add("_compactHeaderParent", _compactHeaderParent_Element.Data.ToResoniteReference(context));
-members.Add("_sidebarActive", _sidebarActive_Element.Data.ToResoniteReference(context));
-members.Add("_sidebarAnchorMin", _sidebarAnchorMin_Element.Data.ToResoniteReference(context));
-members.Add("_sidebarAnchorMax", _sidebarAnchorMax_Element.Data.ToResoniteReference(context));
-members.Add("_contentAnchorMin", _contentAnchorMin_Element.Data.ToResoniteReference(context));
-members.Add("_contentAnchorMax", _contentAnchorMax_Element.Data.ToResoniteReference(context));
-members.Add("_rectTransformLerp", _rectTransformLerp_Element.Data.ToResoniteReference(context));
-members.Add("_modalAnchorMin", _modalAnchorMin_Element.Data.ToResoniteReference(context));
-members.Add("_modalAnchorMax", _modalAnchorMax_Element.Data.ToResoniteReference(context));
-members.Add("_compactButtonsActive", _compactButtonsActive_Element.Data.ToResoniteReference(context));
-members.Add("_compactButtonsAnchorMin", _compactButtonsAnchorMin_Element.Data.ToResoniteReference(context));
-members.Add("_compactButtonsAnchorMax", _compactButtonsAnchorMax_Element.Data.ToResoniteReference(context));
-members.Add("_compactDetailRect", _compactDetailRect_Element.Data.ToResoniteReference(context));
-members.Add("_compactDetailButtonRect", _compactDetailButtonRect_Element.Data.ToResoniteReference(context));
-members.Add("_compactDetailText", _compactDetailText_Element.Data.ToResoniteReference(context));
-members.Add("_compactDetailExpandButton", _compactDetailExpandButton_Element.Data.ToResoniteReference(context));
-members.Add("_newSessionItemRoot", _newSessionItemRoot_Element.Data.ToResoniteReference(context));
+members.Add("Expanded", Expanded_Element.ToLinkField(context));
+members.Add("CompactDetailExpanded", CompactDetailExpanded_Element.ToLinkField(context));
+members.Add("CompactDetailCategory", CompactDetailCategory_Element.ToLinkField(context));
+members.Add("ModalCompactSize", ModalCompactSize_Element.ToLinkField(context));
+members.Add("ModalExpandedSize", ModalExpandedSize_Element.ToLinkField(context));
+members.Add("_hostText", _hostText_Element.ToLinkReference(context));
+members.Add("_sessionItemsRoot", _sessionItemsRoot_Element.ToLinkReference(context));
+members.Add("_thumbnailGraphic", _thumbnailGraphic_Element.ToLinkReference(context));
+members.Add("_thumbnailTexture", _thumbnailTexture_Element.ToLinkReference(context));
+members.Add("_detailImageRoot", _detailImageRoot_Element.ToLinkReference(context));
+members.Add("_compactRoot", _compactRoot_Element.ToLinkReference(context));
+members.Add("_compactHeaderRoot", _compactHeaderRoot_Element.ToLinkReference(context));
+members.Add("_detailHeaderRoot", _detailHeaderRoot_Element.ToLinkReference(context));
+members.Add("_compactMaskEnabled", _compactMaskEnabled_Element.ToLinkReference(context));
+members.Add("_compactMaskRootEnabled", _compactMaskRootEnabled_Element.ToLinkReference(context));
+members.Add("_openButton", _openButton_Element.ToLinkReference(context));
+members.Add("_scrollRect", _scrollRect_Element.ToLinkReference(context));
+members.Add("_expandButton", _expandButton_Element.ToLinkReference(context));
+members.Add("_expandIcon", _expandIcon_Element.ToLinkReference(context));
+members.Add("_expandSprite", _expandSprite_Element.ToLinkReference(context));
+members.Add("_compactSprite", _compactSprite_Element.ToLinkReference(context));
+members.Add("_description", _description_Element.ToLinkReference(context));
+members.Add("_leftDetailsRoot", _leftDetailsRoot_Element.ToLinkReference(context));
+members.Add("_rightDetailsRoot", _rightDetailsRoot_Element.ToLinkReference(context));
+members.Add("_detailsText", _detailsText_Element.ToLinkReference(context));
+members.Add("_cycleLeftButton", _cycleLeftButton_Element.ToLinkReference(context));
+members.Add("_cycleRightButton", _cycleRightButton_Element.ToLinkReference(context));
+members.Add("_compactParent", _compactParent_Element.ToLinkReference(context));
+members.Add("_compactHeaderParent", _compactHeaderParent_Element.ToLinkReference(context));
+members.Add("_sidebarActive", _sidebarActive_Element.ToLinkReference(context));
+members.Add("_sidebarAnchorMin", _sidebarAnchorMin_Element.ToLinkReference(context));
+members.Add("_sidebarAnchorMax", _sidebarAnchorMax_Element.ToLinkReference(context));
+members.Add("_contentAnchorMin", _contentAnchorMin_Element.ToLinkReference(context));
+members.Add("_contentAnchorMax", _contentAnchorMax_Element.ToLinkReference(context));
+members.Add("_rectTransformLerp", _rectTransformLerp_Element.ToLinkReference(context));
+members.Add("_modalAnchorMin", _modalAnchorMin_Element.ToLinkReference(context));
+members.Add("_modalAnchorMax", _modalAnchorMax_Element.ToLinkReference(context));
+members.Add("_compactButtonsActive", _compactButtonsActive_Element.ToLinkReference(context));
+members.Add("_compactButtonsAnchorMin", _compactButtonsAnchorMin_Element.ToLinkReference(context));
+members.Add("_compactButtonsAnchorMax", _compactButtonsAnchorMax_Element.ToLinkReference(context));
+members.Add("_compactDetailRect", _compactDetailRect_Element.ToLinkReference(context));
+members.Add("_compactDetailButtonRect", _compactDetailButtonRect_Element.ToLinkReference(context));
+members.Add("_compactDetailText", _compactDetailText_Element.ToLinkReference(context));
+members.Add("_compactDetailExpandButton", _compactDetailExpandButton_Element.ToLinkReference(context));
+members.Add("_newSessionItemRoot", _newSessionItemRoot_Element.ToLinkReference(context));
 }
 
 }

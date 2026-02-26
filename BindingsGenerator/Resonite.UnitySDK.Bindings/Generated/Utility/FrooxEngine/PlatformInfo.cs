@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.PlatformInfo
-// Generated on: čtvrtek 26. února 2026 10:04:50
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:28:16
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -57,22 +57,22 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("PlatformName", PlatformName_Element.Data.ToResoniteLinkField());
-members.Add("ShortNamePrefix", ShortNamePrefix_Element.Data.ToResoniteLinkField());
-members.Add("Abbreviation", Abbreviation_Element.Data.ToResoniteLinkField());
-members.Add("Domain", Domain_Element.Data.ToResoniteLinkField());
-members.Add("Email", Email_Element.Data.ToResoniteLinkField());
-members.Add("DiscordInviteUrl", DiscordInviteUrl_Element.Data.ToResoniteLinkField());
-members.Add("PoliciesPage", PoliciesPage_Element.Data.ToResoniteLinkField());
-members.Add("PatreonUrl", PatreonUrl_Element.Data.ToResoniteLinkField());
-members.Add("GitHubProfile", GitHubProfile_Element.Data.ToResoniteLinkField());
-members.Add("GitHubIssuesRepository", GitHubIssuesRepository_Element.Data.ToResoniteLinkField());
-members.Add("AuthScheme", AuthScheme_Element.Data.ToResoniteLinkField());
-members.Add("AppScheme", AppScheme_Element.Data.ToResoniteLinkField());
-members.Add("DBScheme", DBScheme_Element.Data.ToResoniteLinkField());
-members.Add("SessionScheme", SessionScheme_Element.Data.ToResoniteLinkField());
-members.Add("RecordScheme", RecordScheme_Element.Data.ToResoniteLinkField());
-members.Add("UserSessionScheme", UserSessionScheme_Element.Data.ToResoniteLinkField());
+members.Add("PlatformName", PlatformName_Element.ToLinkField(context));
+members.Add("ShortNamePrefix", ShortNamePrefix_Element.ToLinkField(context));
+members.Add("Abbreviation", Abbreviation_Element.ToLinkField(context));
+members.Add("Domain", Domain_Element.ToLinkField(context));
+members.Add("Email", Email_Element.ToLinkField(context));
+members.Add("DiscordInviteUrl", DiscordInviteUrl_Element.ToLinkField(context));
+members.Add("PoliciesPage", PoliciesPage_Element.ToLinkField(context));
+members.Add("PatreonUrl", PatreonUrl_Element.ToLinkField(context));
+members.Add("GitHubProfile", GitHubProfile_Element.ToLinkField(context));
+members.Add("GitHubIssuesRepository", GitHubIssuesRepository_Element.ToLinkField(context));
+members.Add("AuthScheme", AuthScheme_Element.ToLinkField(context));
+members.Add("AppScheme", AppScheme_Element.ToLinkField(context));
+members.Add("DBScheme", DBScheme_Element.ToLinkField(context));
+members.Add("SessionScheme", SessionScheme_Element.ToLinkField(context));
+members.Add("RecordScheme", RecordScheme_Element.ToLinkField(context));
+members.Add("UserSessionScheme", UserSessionScheme_Element.ToLinkField(context));
 }
 
 }

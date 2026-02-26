@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.PBSLerpMaterial
-// Generated on: čtvrtek 26. února 2026 10:03:34
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:26:48
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -87,37 +87,37 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Lerp", Lerp_Element.Data.ToResoniteLinkField());
-members.Add("LerpTexture", LerpTexture_Element.Data.ToResoniteReference(context));
-members.Add("LerpTextureScale", LerpTextureScale_Element.Data.ToResoniteLinkField());
-members.Add("LerpTextureOffset", LerpTextureOffset_Element.Data.ToResoniteLinkField());
-members.Add("Texture0Scale", Texture0Scale_Element.Data.ToResoniteLinkField());
-members.Add("Texture0Offset", Texture0Offset_Element.Data.ToResoniteLinkField());
-members.Add("Texture1Scale", Texture1Scale_Element.Data.ToResoniteLinkField());
-members.Add("Texture1Offset", Texture1Offset_Element.Data.ToResoniteLinkField());
-members.Add("AlbedoColor0", AlbedoColor0_Element.Data.ToResoniteLinkField());
-members.Add("AlbedoColor1", AlbedoColor1_Element.Data.ToResoniteLinkField());
-members.Add("AlbedoTexture0", AlbedoTexture0_Element.Data.ToResoniteReference(context));
-members.Add("AlbedoTexture1", AlbedoTexture1_Element.Data.ToResoniteReference(context));
-members.Add("EmissiveColor0", EmissiveColor0_Element.Data.ToResoniteLinkField());
-members.Add("EmissiveColor1", EmissiveColor1_Element.Data.ToResoniteLinkField());
-members.Add("EmissiveMap0", EmissiveMap0_Element.Data.ToResoniteReference(context));
-members.Add("EmissiveMap1", EmissiveMap1_Element.Data.ToResoniteReference(context));
-members.Add("NormalMap0", NormalMap0_Element.Data.ToResoniteReference(context));
-members.Add("NormalMap1", NormalMap1_Element.Data.ToResoniteReference(context));
-members.Add("NormalScale0", NormalScale0_Element.Data.ToResoniteLinkField());
-members.Add("NormalScale1", NormalScale1_Element.Data.ToResoniteLinkField());
-members.Add("MultiValue", MultiValue_Element.Data.ToResoniteLinkField());
-members.Add("OcclusionMap0", OcclusionMap0_Element.Data.ToResoniteReference(context));
-members.Add("OcclusionMap1", OcclusionMap1_Element.Data.ToResoniteReference(context));
-members.Add("BlendMode", BlendMode_Element.Data.ToResoniteLinkField());
-members.Add("AlphaCutoff", AlphaCutoff_Element.Data.ToResoniteLinkField());
-members.Add("ZWrite", ZWrite_Element.Data.ToResoniteLinkField());
-members.Add("ZTest", ZTest_Element.Data.ToResoniteLinkField());
-members.Add("Culling", Culling_Element.Data.ToResoniteLinkField());
-members.Add("OffsetFactor", OffsetFactor_Element.Data.ToResoniteLinkField());
-members.Add("OffsetUnits", OffsetUnits_Element.Data.ToResoniteLinkField());
-members.Add("RenderQueue", RenderQueue_Element.Data.ToResoniteLinkField());
+members.Add("Lerp", Lerp_Element.ToLinkField(context));
+members.Add("LerpTexture", LerpTexture_Element.ToLinkReference(context));
+members.Add("LerpTextureScale", LerpTextureScale_Element.ToLinkField(context));
+members.Add("LerpTextureOffset", LerpTextureOffset_Element.ToLinkField(context));
+members.Add("Texture0Scale", Texture0Scale_Element.ToLinkField(context));
+members.Add("Texture0Offset", Texture0Offset_Element.ToLinkField(context));
+members.Add("Texture1Scale", Texture1Scale_Element.ToLinkField(context));
+members.Add("Texture1Offset", Texture1Offset_Element.ToLinkField(context));
+members.Add("AlbedoColor0", AlbedoColor0_Element.ToLinkField(context));
+members.Add("AlbedoColor1", AlbedoColor1_Element.ToLinkField(context));
+members.Add("AlbedoTexture0", AlbedoTexture0_Element.ToLinkReference(context));
+members.Add("AlbedoTexture1", AlbedoTexture1_Element.ToLinkReference(context));
+members.Add("EmissiveColor0", EmissiveColor0_Element.ToLinkField(context));
+members.Add("EmissiveColor1", EmissiveColor1_Element.ToLinkField(context));
+members.Add("EmissiveMap0", EmissiveMap0_Element.ToLinkReference(context));
+members.Add("EmissiveMap1", EmissiveMap1_Element.ToLinkReference(context));
+members.Add("NormalMap0", NormalMap0_Element.ToLinkReference(context));
+members.Add("NormalMap1", NormalMap1_Element.ToLinkReference(context));
+members.Add("NormalScale0", NormalScale0_Element.ToLinkField(context));
+members.Add("NormalScale1", NormalScale1_Element.ToLinkField(context));
+members.Add("MultiValue", MultiValue_Element.ToLinkField(context));
+members.Add("OcclusionMap0", OcclusionMap0_Element.ToLinkReference(context));
+members.Add("OcclusionMap1", OcclusionMap1_Element.ToLinkReference(context));
+members.Add("BlendMode", BlendMode_Element.ToLinkField(context));
+members.Add("AlphaCutoff", AlphaCutoff_Element.ToLinkField(context));
+members.Add("ZWrite", ZWrite_Element.ToLinkField(context));
+members.Add("ZTest", ZTest_Element.ToLinkField(context));
+members.Add("Culling", Culling_Element.ToLinkField(context));
+members.Add("OffsetFactor", OffsetFactor_Element.ToLinkField(context));
+members.Add("OffsetUnits", OffsetUnits_Element.ToLinkField(context));
+members.Add("RenderQueue", RenderQueue_Element.ToLinkField(context));
 }
 
 }

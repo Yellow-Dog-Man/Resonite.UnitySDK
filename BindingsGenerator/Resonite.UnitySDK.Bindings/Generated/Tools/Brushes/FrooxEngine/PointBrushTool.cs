@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.PointBrushTool
-// Generated on: čtvrtek 26. února 2026 10:04:39
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:28:06
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -49,18 +49,18 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("MinColor", MinColor_Element.Data.ToResoniteLinkField());
-members.Add("MaxColor", MaxColor_Element.Data.ToResoniteLinkField());
-members.Add("Profile", Profile_Element.Data.ToResoniteLinkField());
-members.Add("ColorGap", ColorGap_Element.Data.ToResoniteLinkField());
-members.Add("MinSize", MinSize_Element.Data.ToResoniteLinkField());
-members.Add("MaxSize", MaxSize_Element.Data.ToResoniteLinkField());
-members.Add("SizeGap", SizeGap_Element.Data.ToResoniteLinkField());
-members.Add("AtlasInfo", AtlasInfo_Element.Data.ToResoniteReference(context));
-members.Add("PressureAffectsSize", PressureAffectsSize_Element.Data.ToResoniteLinkField());
-members.Add("PressureAffectsAlpha", PressureAffectsAlpha_Element.Data.ToResoniteLinkField());
-members.Add("PressureAffectsIntensity", PressureAffectsIntensity_Element.Data.ToResoniteLinkField());
-members.Add("UseColor", UseColor_Element.Data.ToResoniteLinkField());
+members.Add("MinColor", MinColor_Element.ToLinkField(context));
+members.Add("MaxColor", MaxColor_Element.ToLinkField(context));
+members.Add("Profile", Profile_Element.ToLinkField(context));
+members.Add("ColorGap", ColorGap_Element.ToLinkField(context));
+members.Add("MinSize", MinSize_Element.ToLinkField(context));
+members.Add("MaxSize", MaxSize_Element.ToLinkField(context));
+members.Add("SizeGap", SizeGap_Element.ToLinkField(context));
+members.Add("AtlasInfo", AtlasInfo_Element.ToLinkReference(context));
+members.Add("PressureAffectsSize", PressureAffectsSize_Element.ToLinkField(context));
+members.Add("PressureAffectsAlpha", PressureAffectsAlpha_Element.ToLinkField(context));
+members.Add("PressureAffectsIntensity", PressureAffectsIntensity_Element.ToLinkField(context));
+members.Add("UseColor", UseColor_Element.ToLinkField(context));
 }
 
 }

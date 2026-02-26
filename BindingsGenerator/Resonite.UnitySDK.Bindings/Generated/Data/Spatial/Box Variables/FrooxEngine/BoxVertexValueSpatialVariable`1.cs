@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.BoxVertexValueSpatialVariable<>
-// Generated on: čtvrtek 26. února 2026 10:03:38
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:26:54
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -42,14 +42,14 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Value0", Value0_Element.Data.ToResoniteLinkField());
-members.Add("Value1", Value1_Element.Data.ToResoniteLinkField());
-members.Add("Value2", Value2_Element.Data.ToResoniteLinkField());
-members.Add("Value3", Value3_Element.Data.ToResoniteLinkField());
-members.Add("Value4", Value4_Element.Data.ToResoniteLinkField());
-members.Add("Value5", Value5_Element.Data.ToResoniteLinkField());
-members.Add("Value6", Value6_Element.Data.ToResoniteLinkField());
-members.Add("Value7", Value7_Element.Data.ToResoniteLinkField());
+members.Add("Value0", Value0_Element.ToLinkField(context));
+members.Add("Value1", Value1_Element.ToLinkField(context));
+members.Add("Value2", Value2_Element.ToLinkField(context));
+members.Add("Value3", Value3_Element.ToLinkField(context));
+members.Add("Value4", Value4_Element.ToLinkField(context));
+members.Add("Value5", Value5_Element.ToLinkField(context));
+members.Add("Value6", Value6_Element.ToLinkField(context));
+members.Add("Value7", Value7_Element.ToLinkField(context));
 }
 
 }

@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.ProceduralAssetMetadata<>
-// Generated on: čtvrtek 26. února 2026 10:03:36
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:26:52
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -32,9 +32,9 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Asset", Asset_Element.Data.ToResoniteReference(context));
-members.Add("UpdateCount", UpdateCount_Element.Data.ToResoniteLinkField());
-members.Add("Error", Error_Element.Data.ToResoniteLinkField());
+members.Add("Asset", Asset_Element.ToLinkReference(context));
+members.Add("UpdateCount", UpdateCount_Element.ToLinkField(context));
+members.Add("Error", Error_Element.ToLinkField(context));
 }
 
 }

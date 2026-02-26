@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.OnlineStatistics
-// Generated on: čtvrtek 26. února 2026 10:03:37
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:26:52
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -75,33 +75,33 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Timestamp", Timestamp_Element.Data.ToResoniteLinkField());
-members.Add("VisibleSessions", new ResoniteLink.SyncObject() { Members = VisibleSessions.CollectMembers(context) });
-members.Add("HiddenSessions", new ResoniteLink.SyncObject() { Members = HiddenSessions.CollectMembers(context) });
-members.Add("ActiveVisibleSessions", new ResoniteLink.SyncObject() { Members = ActiveVisibleSessions.CollectMembers(context) });
-members.Add("ActiveHiddenSessions", new ResoniteLink.SyncObject() { Members = ActiveHiddenSessions.CollectMembers(context) });
-members.Add("RegisteredOnlineUsers", RegisteredOnlineUsers_Element.Data.ToResoniteLinkField());
-members.Add("TotalOnlineUsers", TotalOnlineUsers_Element.Data.ToResoniteLinkField());
-members.Add("PresentUsers", PresentUsers_Element.Data.ToResoniteLinkField());
-members.Add("AwayUsers", AwayUsers_Element.Data.ToResoniteLinkField());
-members.Add("UsersInVR", UsersInVR_Element.Data.ToResoniteLinkField());
-members.Add("UsersInScreen", UsersInScreen_Element.Data.ToResoniteLinkField());
-members.Add("UsersOnDesktop", UsersOnDesktop_Element.Data.ToResoniteLinkField());
-members.Add("UsersOnMobile", UsersOnMobile_Element.Data.ToResoniteLinkField());
-members.Add("UsersInVisiblePublicSessions", UsersInVisiblePublicSessions_Element.Data.ToResoniteLinkField());
-members.Add("UsersInVisibleSemiAccessibleSessions", UsersInVisibleSemiAccessibleSessions_Element.Data.ToResoniteLinkField());
-members.Add("UsersInHiddenSessions", UsersInHiddenSessions_Element.Data.ToResoniteLinkField());
-members.Add("UsersInPrivateSessions", UsersInPrivateSessions_Element.Data.ToResoniteLinkField());
-members.Add("UsersInPrivate", UsersInPrivate_Element.Data.ToResoniteLinkField());
-members.Add("UsersInLAN", UsersInLAN_Element.Data.ToResoniteLinkField());
-members.Add("UsersInContacts", UsersInContacts_Element.Data.ToResoniteLinkField());
-members.Add("UsersInContactsPlus", UsersInContactsPlus_Element.Data.ToResoniteLinkField());
-members.Add("UsersInRegistered", UsersInRegistered_Element.Data.ToResoniteLinkField());
-members.Add("UsersInPublic", UsersInPublic_Element.Data.ToResoniteLinkField());
-members.Add("GraphicalClientUsers", GraphicalClientUsers_Element.Data.ToResoniteLinkField());
-members.Add("ChatClientUsers", ChatClientUsers_Element.Data.ToResoniteLinkField());
-members.Add("HeadlessUsers", HeadlessUsers_Element.Data.ToResoniteLinkField());
-members.Add("BotUsers", BotUsers_Element.Data.ToResoniteLinkField());
+members.Add("Timestamp", Timestamp_Element.ToLinkField(context));
+members.Add("VisibleSessions", VisibleSessions.ToLinkSyncObject(context));
+members.Add("HiddenSessions", HiddenSessions.ToLinkSyncObject(context));
+members.Add("ActiveVisibleSessions", ActiveVisibleSessions.ToLinkSyncObject(context));
+members.Add("ActiveHiddenSessions", ActiveHiddenSessions.ToLinkSyncObject(context));
+members.Add("RegisteredOnlineUsers", RegisteredOnlineUsers_Element.ToLinkField(context));
+members.Add("TotalOnlineUsers", TotalOnlineUsers_Element.ToLinkField(context));
+members.Add("PresentUsers", PresentUsers_Element.ToLinkField(context));
+members.Add("AwayUsers", AwayUsers_Element.ToLinkField(context));
+members.Add("UsersInVR", UsersInVR_Element.ToLinkField(context));
+members.Add("UsersInScreen", UsersInScreen_Element.ToLinkField(context));
+members.Add("UsersOnDesktop", UsersOnDesktop_Element.ToLinkField(context));
+members.Add("UsersOnMobile", UsersOnMobile_Element.ToLinkField(context));
+members.Add("UsersInVisiblePublicSessions", UsersInVisiblePublicSessions_Element.ToLinkField(context));
+members.Add("UsersInVisibleSemiAccessibleSessions", UsersInVisibleSemiAccessibleSessions_Element.ToLinkField(context));
+members.Add("UsersInHiddenSessions", UsersInHiddenSessions_Element.ToLinkField(context));
+members.Add("UsersInPrivateSessions", UsersInPrivateSessions_Element.ToLinkField(context));
+members.Add("UsersInPrivate", UsersInPrivate_Element.ToLinkField(context));
+members.Add("UsersInLAN", UsersInLAN_Element.ToLinkField(context));
+members.Add("UsersInContacts", UsersInContacts_Element.ToLinkField(context));
+members.Add("UsersInContactsPlus", UsersInContactsPlus_Element.ToLinkField(context));
+members.Add("UsersInRegistered", UsersInRegistered_Element.ToLinkField(context));
+members.Add("UsersInPublic", UsersInPublic_Element.ToLinkField(context));
+members.Add("GraphicalClientUsers", GraphicalClientUsers_Element.ToLinkField(context));
+members.Add("ChatClientUsers", ChatClientUsers_Element.ToLinkField(context));
+members.Add("HeadlessUsers", HeadlessUsers_Element.ToLinkField(context));
+members.Add("BotUsers", BotUsers_Element.ToLinkField(context));
 }
 
 }

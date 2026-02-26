@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.InteractiveCameraAnchor
-// Generated on: čtvrtek 26. února 2026 10:03:40
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:26:57
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -33,10 +33,10 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("OverrideRoot", OverrideRoot_Element.Data.ToResoniteReference(context));
-members.Add("FieldOfView", FieldOfView_Element.Data.ToResoniteLinkField());
-members.Add("Highlighted", Highlighted_Element.Data.ToResoniteLinkField());
-members.Add("InUse", InUse_Element.Data.ToResoniteLinkField());
+members.Add("OverrideRoot", OverrideRoot_Element.ToLinkReference(context));
+members.Add("FieldOfView", FieldOfView_Element.ToLinkField(context));
+members.Add("Highlighted", Highlighted_Element.ToLinkField(context));
+members.Add("InUse", InUse_Element.ToLinkField(context));
 }
 
 }

@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.LegacyHorizontalChoiceBar+Item
-// Generated on: čtvrtek 26. února 2026 10:04:42
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:28:08
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -49,17 +49,17 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("OverrideColor", OverrideColor_Element.Data.ToResoniteLinkField());
-members.Add("Highlight", Highlight_Element.Data.ToResoniteLinkField());
-members.Add("_slot", _slot_Element.Data.ToResoniteReference(context));
-members.Add("_text", _text_Element.Data.ToResoniteReference(context));
-members.Add("_position", _position_Element.Data.ToResoniteReference(context));
-members.Add("_textPosition", _textPosition_Element.Data.ToResoniteReference(context));
-members.Add("_textBounds", _textBounds_Element.Data.ToResoniteReference(context));
-members.Add("_colliderSize", _colliderSize_Element.Data.ToResoniteReference(context));
-members.Add("_colliderOffset", _colliderOffset_Element.Data.ToResoniteReference(context));
-members.Add("_mesh", _mesh_Element.Data.ToResoniteReference(context));
-members.Add("_material", _material_Element.Data.ToResoniteReference(context));
+members.Add("OverrideColor", OverrideColor_Element.ToLinkField(context));
+members.Add("Highlight", Highlight_Element.ToLinkField(context));
+members.Add("_slot", _slot_Element.ToLinkReference(context));
+members.Add("_text", _text_Element.ToLinkReference(context));
+members.Add("_position", _position_Element.ToLinkReference(context));
+members.Add("_textPosition", _textPosition_Element.ToLinkReference(context));
+members.Add("_textBounds", _textBounds_Element.ToLinkReference(context));
+members.Add("_colliderSize", _colliderSize_Element.ToLinkReference(context));
+members.Add("_colliderOffset", _colliderOffset_Element.ToLinkReference(context));
+members.Add("_mesh", _mesh_Element.ToLinkReference(context));
+members.Add("_material", _material_Element.ToLinkReference(context));
 }
 
 }

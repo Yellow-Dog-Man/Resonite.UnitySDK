@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.RawDataTool
-// Generated on: čtvrtek 26. února 2026 10:04:32
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:27:57
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -71,29 +71,29 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("LocalTipOffset", LocalTipOffset_Element.Data.ToResoniteLinkField());
-members.Add("LocalTipReference", LocalTipReference_Element.Data.ToResoniteReference(context));
-members.Add("UseLaser", UseLaser_Element.Data.ToResoniteLinkField());
-members.Add("BlockPrimaryWhenTouching", BlockPrimaryWhenTouching_Element.Data.ToResoniteLinkField());
-members.Add("UseSecondary", UseSecondary_Element.Data.ToResoniteLinkField());
-members.Add("AllowUseWhenHolding", AllowUseWhenHolding_Element.Data.ToResoniteLinkField());
-members.Add("Equipped", Equipped_Element.Data.ToResoniteLinkField());
-members.Add("ControllerType", ControllerType_Element.Data.ToResoniteLinkField());
-members.Add("ControllerSide", ControllerSide_Element.Data.ToResoniteLinkField());
-members.Add("PrimaryStrength", PrimaryStrength_Element.Data.ToResoniteLinkField());
-members.Add("SecondaryAxis", SecondaryAxis_Element.Data.ToResoniteLinkField());
-members.Add("Primary", Primary_Element.Data.ToResoniteLinkField());
-members.Add("Secondary", Secondary_Element.Data.ToResoniteLinkField());
-members.Add("_primaryStrengthStream", _primaryStrengthStream_Element.Data.ToResoniteReference(context));
-members.Add("_secondaryAxisStream", _secondaryAxisStream_Element.Data.ToResoniteReference(context));
-members.Add("_primaryStream", _primaryStream_Element.Data.ToResoniteReference(context));
-members.Add("_secondaryStream", _secondaryStream_Element.Data.ToResoniteReference(context));
-members.Add("_rawStrength", _rawStrength_Element.Data.ToResoniteLinkField());
-members.Add("_rawAxis", _rawAxis_Element.Data.ToResoniteLinkField());
-members.Add("_rawPrimary", _rawPrimary_Element.Data.ToResoniteLinkField());
-members.Add("_rawSecondary", _rawSecondary_Element.Data.ToResoniteLinkField());
-members.Add("PrimaryActionDescription", PrimaryActionDescription_Element.Data.ToResoniteLinkField());
-members.Add("SecondaryActionDescription", SecondaryActionDescription_Element.Data.ToResoniteLinkField());
+members.Add("LocalTipOffset", LocalTipOffset_Element.ToLinkField(context));
+members.Add("LocalTipReference", LocalTipReference_Element.ToLinkReference(context));
+members.Add("UseLaser", UseLaser_Element.ToLinkField(context));
+members.Add("BlockPrimaryWhenTouching", BlockPrimaryWhenTouching_Element.ToLinkField(context));
+members.Add("UseSecondary", UseSecondary_Element.ToLinkField(context));
+members.Add("AllowUseWhenHolding", AllowUseWhenHolding_Element.ToLinkField(context));
+members.Add("Equipped", Equipped_Element.ToLinkField(context));
+members.Add("ControllerType", ControllerType_Element.ToLinkField(context));
+members.Add("ControllerSide", ControllerSide_Element.ToLinkField(context));
+members.Add("PrimaryStrength", PrimaryStrength_Element.ToLinkField(context));
+members.Add("SecondaryAxis", SecondaryAxis_Element.ToLinkField(context));
+members.Add("Primary", Primary_Element.ToLinkField(context));
+members.Add("Secondary", Secondary_Element.ToLinkField(context));
+members.Add("_primaryStrengthStream", _primaryStrengthStream_Element.ToLinkReference(context));
+members.Add("_secondaryAxisStream", _secondaryAxisStream_Element.ToLinkReference(context));
+members.Add("_primaryStream", _primaryStream_Element.ToLinkReference(context));
+members.Add("_secondaryStream", _secondaryStream_Element.ToLinkReference(context));
+members.Add("_rawStrength", _rawStrength_Element.ToLinkField(context));
+members.Add("_rawAxis", _rawAxis_Element.ToLinkField(context));
+members.Add("_rawPrimary", _rawPrimary_Element.ToLinkField(context));
+members.Add("_rawSecondary", _rawSecondary_Element.ToLinkField(context));
+members.Add("PrimaryActionDescription", PrimaryActionDescription_Element.ToLinkField(context));
+members.Add("SecondaryActionDescription", SecondaryActionDescription_Element.ToLinkField(context));
 }
 
 }

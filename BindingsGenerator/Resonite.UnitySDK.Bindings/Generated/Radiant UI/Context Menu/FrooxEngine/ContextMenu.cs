@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.ContextMenu
-// Generated on: čtvrtek 26. února 2026 10:04:32
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:27:57
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -113,50 +113,50 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Owner", Owner_Element.Data.ToResoniteReference(context));
-members.Add("Pointer", Pointer_Element.Data.ToResoniteReference(context));
-members.Add("Separation", Separation_Element.Data.ToResoniteLinkField());
-members.Add("LabelSize", LabelSize_Element.Data.ToResoniteLinkField());
-members.Add("RadiusRatio", RadiusRatio_Element.Data.ToResoniteLinkField());
-members.Add("_currentSummoner", _currentSummoner_Element.Data.ToResoniteReference(context));
-members.Add("_canvas", _canvas_Element.Data.ToResoniteReference(context));
-members.Add("_arcLayout", _arcLayout_Element.Data.ToResoniteReference(context));
-members.Add("_canvasActive", _canvasActive_Element.Data.ToResoniteReference(context));
-members.Add("_colliderEnabled", _colliderEnabled_Element.Data.ToResoniteReference(context));
-members.Add("_iconImage", _iconImage_Element.Data.ToResoniteReference(context));
-members.Add("_separation", _separation_Element.Data.ToResoniteReference(context));
-members.Add("_offsetMin", _offsetMin_Element.Data.ToResoniteReference(context));
-members.Add("_offsetMax", _offsetMax_Element.Data.ToResoniteReference(context));
-members.Add("_innerCircle", _innerCircle_Element.Data.ToResoniteReference(context));
-members.Add("_innerCircleButton", _innerCircleButton_Element.Data.ToResoniteReference(context));
-members.Add("_innerCircleAnchorMin", _innerCircleAnchorMin_Element.Data.ToResoniteReference(context));
-members.Add("_innerCircleAnchorMax", _innerCircleAnchorMax_Element.Data.ToResoniteReference(context));
-members.Add("_itemsRoot", _itemsRoot_Element.Data.ToResoniteReference(context));
-members.Add("_arcMaterial", _arcMaterial_Element.Data.ToResoniteReference(context));
-members.Add("_fontMaterial", _fontMaterial_Element.Data.ToResoniteReference(context));
-members.Add("_spriteMaterial", _spriteMaterial_Element.Data.ToResoniteReference(context));
-members.Add("_arcOverlay", _arcOverlay_Element.Data.ToResoniteReference(context));
-members.Add("_fontOverlay", _fontOverlay_Element.Data.ToResoniteReference(context));
-members.Add("_spriteOverlay", _spriteOverlay_Element.Data.ToResoniteReference(context));
-members.Add("_arcZTest", _arcZTest_Element.Data.ToResoniteReference(context));
-members.Add("_fontZTest", _fontZTest_Element.Data.ToResoniteReference(context));
-members.Add("_spriteZTest", _spriteZTest_Element.Data.ToResoniteReference(context));
-members.Add("_zwriteArc", _zwriteArc_Element.Data.ToResoniteReference(context));
-members.Add("_zwriteText", _zwriteText_Element.Data.ToResoniteReference(context));
-members.Add("_arcRenderQueue", _arcRenderQueue_Element.Data.ToResoniteReference(context));
-members.Add("_fontRenderQueue", _fontRenderQueue_Element.Data.ToResoniteReference(context));
-members.Add("_spriteRenderQueue", _spriteRenderQueue_Element.Data.ToResoniteReference(context));
-members.Add("_canvasOffset", _canvasOffset_Element.Data.ToResoniteReference(context));
-members.Add("_fillFade", _fillFade_Element.Data.ToResoniteReference(context));
-members.Add("_outlineFade", _outlineFade_Element.Data.ToResoniteReference(context));
-members.Add("_textFade", _textFade_Element.Data.ToResoniteReference(context));
-members.Add("_iconFade", _iconFade_Element.Data.ToResoniteReference(context));
-members.Add("_lerp", _lerp_Element.Data.ToResoniteLinkField());
-members.Add("_state", _state_Element.Data.ToResoniteLinkField());
-members.Add("_flickModeActive", _flickModeActive_Element.Data.ToResoniteLinkField());
-members.Add("_flickEnabled", _flickEnabled_Element.Data.ToResoniteLinkField());
-members.Add("_hidden", _hidden_Element.Data.ToResoniteLinkField());
-members.Add("_selectedItem", _selectedItem_Element.Data.ToResoniteReference(context));
+members.Add("Owner", Owner_Element.ToLinkReference(context));
+members.Add("Pointer", Pointer_Element.ToLinkReference(context));
+members.Add("Separation", Separation_Element.ToLinkField(context));
+members.Add("LabelSize", LabelSize_Element.ToLinkField(context));
+members.Add("RadiusRatio", RadiusRatio_Element.ToLinkField(context));
+members.Add("_currentSummoner", _currentSummoner_Element.ToLinkReference(context));
+members.Add("_canvas", _canvas_Element.ToLinkReference(context));
+members.Add("_arcLayout", _arcLayout_Element.ToLinkReference(context));
+members.Add("_canvasActive", _canvasActive_Element.ToLinkReference(context));
+members.Add("_colliderEnabled", _colliderEnabled_Element.ToLinkReference(context));
+members.Add("_iconImage", _iconImage_Element.ToLinkReference(context));
+members.Add("_separation", _separation_Element.ToLinkReference(context));
+members.Add("_offsetMin", _offsetMin_Element.ToLinkReference(context));
+members.Add("_offsetMax", _offsetMax_Element.ToLinkReference(context));
+members.Add("_innerCircle", _innerCircle_Element.ToLinkReference(context));
+members.Add("_innerCircleButton", _innerCircleButton_Element.ToLinkReference(context));
+members.Add("_innerCircleAnchorMin", _innerCircleAnchorMin_Element.ToLinkReference(context));
+members.Add("_innerCircleAnchorMax", _innerCircleAnchorMax_Element.ToLinkReference(context));
+members.Add("_itemsRoot", _itemsRoot_Element.ToLinkReference(context));
+members.Add("_arcMaterial", _arcMaterial_Element.ToLinkReference(context));
+members.Add("_fontMaterial", _fontMaterial_Element.ToLinkReference(context));
+members.Add("_spriteMaterial", _spriteMaterial_Element.ToLinkReference(context));
+members.Add("_arcOverlay", _arcOverlay_Element.ToLinkReference(context));
+members.Add("_fontOverlay", _fontOverlay_Element.ToLinkReference(context));
+members.Add("_spriteOverlay", _spriteOverlay_Element.ToLinkReference(context));
+members.Add("_arcZTest", _arcZTest_Element.ToLinkReference(context));
+members.Add("_fontZTest", _fontZTest_Element.ToLinkReference(context));
+members.Add("_spriteZTest", _spriteZTest_Element.ToLinkReference(context));
+members.Add("_zwriteArc", _zwriteArc_Element.ToLinkReference(context));
+members.Add("_zwriteText", _zwriteText_Element.ToLinkReference(context));
+members.Add("_arcRenderQueue", _arcRenderQueue_Element.ToLinkReference(context));
+members.Add("_fontRenderQueue", _fontRenderQueue_Element.ToLinkReference(context));
+members.Add("_spriteRenderQueue", _spriteRenderQueue_Element.ToLinkReference(context));
+members.Add("_canvasOffset", _canvasOffset_Element.ToLinkReference(context));
+members.Add("_fillFade", _fillFade_Element.ToLinkReference(context));
+members.Add("_outlineFade", _outlineFade_Element.ToLinkReference(context));
+members.Add("_textFade", _textFade_Element.ToLinkReference(context));
+members.Add("_iconFade", _iconFade_Element.ToLinkReference(context));
+members.Add("_lerp", _lerp_Element.ToLinkField(context));
+members.Add("_state", _state_Element.ToLinkField(context));
+members.Add("_flickModeActive", _flickModeActive_Element.ToLinkField(context));
+members.Add("_flickEnabled", _flickEnabled_Element.ToLinkField(context));
+members.Add("_hidden", _hidden_Element.ToLinkField(context));
+members.Add("_selectedItem", _selectedItem_Element.ToLinkReference(context));
 }
 
 }

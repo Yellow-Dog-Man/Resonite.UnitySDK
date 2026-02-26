@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.BlitToDisplay
-// Generated on: čtvrtek 26. února 2026 10:04:37
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:28:03
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -36,12 +36,12 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("TargetUser", new ResoniteLink.SyncObject() { Members = TargetUser.CollectMembers(context) });
-members.Add("Texture", Texture_Element.Data.ToResoniteReference(context));
-members.Add("DisplayIndex", DisplayIndex_Element.Data.ToResoniteLinkField());
-members.Add("BackgroundColor", BackgroundColor_Element.Data.ToResoniteLinkField());
-members.Add("FlipHorizontally", FlipHorizontally_Element.Data.ToResoniteLinkField());
-members.Add("FlipVertically", FlipVertically_Element.Data.ToResoniteLinkField());
+members.Add("TargetUser", TargetUser.ToLinkSyncObject(context));
+members.Add("Texture", Texture_Element.ToLinkReference(context));
+members.Add("DisplayIndex", DisplayIndex_Element.ToLinkField(context));
+members.Add("BackgroundColor", BackgroundColor_Element.ToLinkField(context));
+members.Add("FlipHorizontally", FlipHorizontally_Element.ToLinkField(context));
+members.Add("FlipVertically", FlipVertically_Element.ToLinkField(context));
 }
 
 }

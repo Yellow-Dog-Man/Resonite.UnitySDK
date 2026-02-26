@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.MaterialAssetMetadata
-// Generated on: čtvrtek 26. února 2026 10:03:36
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:26:52
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -37,12 +37,12 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Material", Material_Element.Data.ToResoniteReference(context));
-members.Add("VariantIndex", VariantIndex_Element.Data.ToResoniteLinkField());
-members.Add("RawVariantIndex", RawVariantIndex_Element.Data.ToResoniteLinkField());
-members.Add("VariantID", VariantID_Element.Data.ToResoniteLinkField());
-members.Add("RawVariantID", RawVariantID_Element.Data.ToResoniteLinkField());
-members.Add("WaitingForApply", WaitingForApply_Element.Data.ToResoniteLinkField());
+members.Add("Material", Material_Element.ToLinkReference(context));
+members.Add("VariantIndex", VariantIndex_Element.ToLinkField(context));
+members.Add("RawVariantIndex", RawVariantIndex_Element.ToLinkField(context));
+members.Add("VariantID", VariantID_Element.ToLinkField(context));
+members.Add("RawVariantID", RawVariantID_Element.ToLinkField(context));
+members.Add("WaitingForApply", WaitingForApply_Element.ToLinkField(context));
 }
 
 }

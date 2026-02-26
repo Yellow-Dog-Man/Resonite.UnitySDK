@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.FinalIK.VRIKAvatar
-// Generated on: čtvrtek 26. února 2026 10:04:45
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:28:11
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -238,123 +238,114 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("IK", IK_Element.Data.ToResoniteReference(context));
-members.Add("HeightCompensation", HeightCompensation_Element.Data.ToResoniteLinkField());
-members.Add("AvatarHeight", AvatarHeight_Element.Data.ToResoniteLinkField());
-members.Add("UserResizeThreshold", UserResizeThreshold_Element.Data.ToResoniteLinkField());
-members.Add("FeetIgnoreOtherPlayers", FeetIgnoreOtherPlayers_Element.Data.ToResoniteLinkField());
-members.Add("FeetCollisionListMode", FeetCollisionListMode_Element.Data.ToResoniteLinkField());
-members.Add("FeetCollisionList", new ResoniteLink.SyncList()
-{
-    Elements = FeetCollisionList.Data.ConvertList(m => m.Data.ToResoniteReference(context))
-});
-members.Add("HeadMaxFixDistance", HeadMaxFixDistance_Element.Data.ToResoniteLinkField());
-members.Add("ForceUseFeetProxies", ForceUseFeetProxies_Element.Data.ToResoniteLinkField());
-members.Add("ForceUsePelvisProxy", ForceUsePelvisProxy_Element.Data.ToResoniteLinkField());
-members.Add("ForceUseChestProxy", ForceUseChestProxy_Element.Data.ToResoniteLinkField());
-members.Add("ForceUseElbowProxies", ForceUseElbowProxies_Element.Data.ToResoniteLinkField());
-members.Add("ForceUseKneeProxies", ForceUseKneeProxies_Element.Data.ToResoniteLinkField());
-members.Add("FeetCalibrated", FeetCalibrated_Element.Data.ToResoniteLinkField());
-members.Add("PelvisCalibrated", PelvisCalibrated_Element.Data.ToResoniteLinkField());
-members.Add("GroundCheckHeightRatio", GroundCheckHeightRatio_Element.Data.ToResoniteLinkField());
-members.Add("FeetHoverHeight", FeetHoverHeight_Element.Data.ToResoniteLinkField());
-members.Add("FeetHoverSmoothSpeed", FeetHoverSmoothSpeed_Element.Data.ToResoniteLinkField());
-members.Add("MinFeetTransitionSpeed", MinFeetTransitionSpeed_Element.Data.ToResoniteLinkField());
-members.Add("MaxFeetTransitionSpeed", MaxFeetTransitionSpeed_Element.Data.ToResoniteLinkField());
-members.Add("GaitFeetTransitionSpeedMultiplier", GaitFeetTransitionSpeedMultiplier_Element.Data.ToResoniteLinkField());
-members.Add("FeetHoverTilt", FeetHoverTilt_Element.Data.ToResoniteLinkField());
-members.Add("LeftFootFloatOffset", LeftFootFloatOffset_Element.Data.ToResoniteLinkField());
-members.Add("RightFootFloatOffset", RightFootFloatOffset_Element.Data.ToResoniteLinkField());
-members.Add("LeftFootRootHeight", LeftFootRootHeight_Element.Data.ToResoniteLinkField());
-members.Add("RightFootRootHeight", RightFootRootHeight_Element.Data.ToResoniteLinkField());
-members.Add("FootFloatSpeed", FootFloatSpeed_Element.Data.ToResoniteLinkField());
-members.Add("FootFloatAngleMagnitude", FootFloatAngleMagnitude_Element.Data.ToResoniteLinkField());
-members.Add("FootFloatOffsetMagnitude", FootFloatOffsetMagnitude_Element.Data.ToResoniteLinkField());
-members.Add("FeetFloatVelocityForce", FeetFloatVelocityForce_Element.Data.ToResoniteLinkField());
-members.Add("FeetFloatVelocityDampeningSpeed", FeetFloatVelocityDampeningSpeed_Element.Data.ToResoniteLinkField());
-members.Add("MaxFeetVelocityOffset", MaxFeetVelocityOffset_Element.Data.ToResoniteLinkField());
-members.Add("VelocityAverageRate", VelocityAverageRate_Element.Data.ToResoniteLinkField());
-members.Add("HoverVelocityThreshold", HoverVelocityThreshold_Element.Data.ToResoniteLinkField());
-members.Add("HorizontalBodyAngle", HorizontalBodyAngle_Element.Data.ToResoniteLinkField());
-members.Add("SupressWalkAnimationWhenHorizontal", SupressWalkAnimationWhenHorizontal_Element.Data.ToResoniteLinkField());
-members.Add("AlwaysUseTrackersWhenHorizontal", AlwaysUseTrackersWhenHorizontal_Element.Data.ToResoniteLinkField());
-members.Add("Gaits", new ResoniteLink.SyncList()
-{
-    Elements = Gaits.Data.ConvertList(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers(context) })
-});
-members.Add("GaitTransitionSpeed", GaitTransitionSpeed_Element.Data.ToResoniteLinkField());
-members.Add("GaitMovementDirectionSmoothSpeed", GaitMovementDirectionSmoothSpeed_Element.Data.ToResoniteLinkField());
-members.Add("RigCollidersRadiusRatio", RigCollidersRadiusRatio_Element.Data.ToResoniteLinkField());
-members.Add("LeftHandRotationOffset", LeftHandRotationOffset_Element.Data.ToResoniteLinkField());
-members.Add("RightHandRotationOffset", RightHandRotationOffset_Element.Data.ToResoniteLinkField());
-members.Add("CurrentAverageVelocity", CurrentAverageVelocity_Element.Data.ToResoniteLinkField());
-members.Add("CurrentOnGround", CurrentOnGround_Element.Data.ToResoniteLinkField());
-members.Add("CurrentGaitIndex", CurrentGaitIndex_Element.Data.ToResoniteLinkField());
-members.Add("_locomotionController", _locomotionController_Element.Data.ToResoniteReference(context));
-members.Add("_leftHandNode", _leftHandNode_Element.Data.ToResoniteReference(context));
-members.Add("_rightHandNode", _rightHandNode_Element.Data.ToResoniteReference(context));
-members.Add("_leftElbowNode", _leftElbowNode_Element.Data.ToResoniteReference(context));
-members.Add("_rightElbowNode", _rightElbowNode_Element.Data.ToResoniteReference(context));
-members.Add("_leftFootNode", _leftFootNode_Element.Data.ToResoniteReference(context));
-members.Add("_rightFootNode", _rightFootNode_Element.Data.ToResoniteReference(context));
-members.Add("_leftKneeNode", _leftKneeNode_Element.Data.ToResoniteReference(context));
-members.Add("_rightKneeNode", _rightKneeNode_Element.Data.ToResoniteReference(context));
-members.Add("_headNode", _headNode_Element.Data.ToResoniteReference(context));
-members.Add("_pelvisNode", _pelvisNode_Element.Data.ToResoniteReference(context));
-members.Add("_chestNode", _chestNode_Element.Data.ToResoniteReference(context));
-members.Add("_headProxy", _headProxy_Element.Data.ToResoniteReference(context));
-members.Add("_pelvisProxy", _pelvisProxy_Element.Data.ToResoniteReference(context));
-members.Add("_chestProxy", _chestProxy_Element.Data.ToResoniteReference(context));
-members.Add("_leftHandProxy", _leftHandProxy_Element.Data.ToResoniteReference(context));
-members.Add("_rightHandProxy", _rightHandProxy_Element.Data.ToResoniteReference(context));
-members.Add("_leftElbowProxy", _leftElbowProxy_Element.Data.ToResoniteReference(context));
-members.Add("_rightElbowProxy", _rightElbowProxy_Element.Data.ToResoniteReference(context));
-members.Add("_leftFootProxy", _leftFootProxy_Element.Data.ToResoniteReference(context));
-members.Add("_rightFootProxy", _rightFootProxy_Element.Data.ToResoniteReference(context));
-members.Add("_leftKneeProxy", _leftKneeProxy_Element.Data.ToResoniteReference(context));
-members.Add("_rightKneeProxy", _rightKneeProxy_Element.Data.ToResoniteReference(context));
-members.Add("_leftKneeDefaultProxy", _leftKneeDefaultProxy_Element.Data.ToResoniteReference(context));
-members.Add("_rightKneeDefaultProxy", _rightKneeDefaultProxy_Element.Data.ToResoniteReference(context));
-members.Add("_headTargetPos", _headTargetPos_Element.Data.ToResoniteReference(context));
-members.Add("_headTargetRot", _headTargetRot_Element.Data.ToResoniteReference(context));
-members.Add("_pelvisTargetPos", _pelvisTargetPos_Element.Data.ToResoniteReference(context));
-members.Add("_pelvisTargetRot", _pelvisTargetRot_Element.Data.ToResoniteReference(context));
-members.Add("_chestTargetPos", _chestTargetPos_Element.Data.ToResoniteReference(context));
-members.Add("_leftHandTargetPos", _leftHandTargetPos_Element.Data.ToResoniteReference(context));
-members.Add("_leftHandTargetRot", _leftHandTargetRot_Element.Data.ToResoniteReference(context));
-members.Add("_rightHandTargetPos", _rightHandTargetPos_Element.Data.ToResoniteReference(context));
-members.Add("_rightHandTargetRot", _rightHandTargetRot_Element.Data.ToResoniteReference(context));
-members.Add("_leftElbowTargetPos", _leftElbowTargetPos_Element.Data.ToResoniteReference(context));
-members.Add("_rightElbowTargetPos", _rightElbowTargetPos_Element.Data.ToResoniteReference(context));
-members.Add("_leftFootTargetPos", _leftFootTargetPos_Element.Data.ToResoniteReference(context));
-members.Add("_leftFootTargetRot", _leftFootTargetRot_Element.Data.ToResoniteReference(context));
-members.Add("_rightFootTargetPos", _rightFootTargetPos_Element.Data.ToResoniteReference(context));
-members.Add("_rightFootTargetRot", _rightFootTargetRot_Element.Data.ToResoniteReference(context));
-members.Add("_leftKneeTargetPos", _leftKneeTargetPos_Element.Data.ToResoniteReference(context));
-members.Add("_rightKneeTargetPos", _rightKneeTargetPos_Element.Data.ToResoniteReference(context));
-members.Add("_pelvisPositionWeight", _pelvisPositionWeight_Element.Data.ToResoniteReference(context));
-members.Add("_pelvisRotationWeight", _pelvisRotationWeight_Element.Data.ToResoniteReference(context));
-members.Add("_chestWeight", _chestWeight_Element.Data.ToResoniteReference(context));
-members.Add("_locomotionWeight", _locomotionWeight_Element.Data.ToResoniteReference(context));
-members.Add("_leftLegPositionWeight", _leftLegPositionWeight_Element.Data.ToResoniteReference(context));
-members.Add("_leftLegRotationWeight", _leftLegRotationWeight_Element.Data.ToResoniteReference(context));
-members.Add("_rightLegPositionWeight", _rightLegPositionWeight_Element.Data.ToResoniteReference(context));
-members.Add("_rightLegRotationWeight", _rightLegRotationWeight_Element.Data.ToResoniteReference(context));
-members.Add("_leftKneeBendWeight", _leftKneeBendWeight_Element.Data.ToResoniteReference(context));
-members.Add("_rightKneeBendWeight", _rightKneeBendWeight_Element.Data.ToResoniteReference(context));
-members.Add("_leftElbowBendWeight", _leftElbowBendWeight_Element.Data.ToResoniteReference(context));
-members.Add("_rightElbowBendWeight", _rightElbowBendWeight_Element.Data.ToResoniteReference(context));
-members.Add("_leftFootOffset", _leftFootOffset_Element.Data.ToResoniteReference(context));
-members.Add("_rightFootOffset", _rightFootOffset_Element.Data.ToResoniteReference(context));
-members.Add("_leftFootRelativeToRoot", _leftFootRelativeToRoot_Element.Data.ToResoniteLinkField());
-members.Add("_rightFootRelativeToRoot", _rightFootRelativeToRoot_Element.Data.ToResoniteLinkField());
-members.Add("_locomotionOffset", _locomotionOffset_Element.Data.ToResoniteReference(context));
-members.Add("_simplifiedColliderEnabled", _simplifiedColliderEnabled_Element.Data.ToResoniteReference(context));
-members.Add("_rigCollidersEnabledStates", new ResoniteLink.SyncList()
-{
-    Elements = _rigCollidersEnabledStates.Data.ConvertList(m => m.Data.ToResoniteReference(context))
-});
-members.Add("_horizontalTrackingLocked", _horizontalTrackingLocked_Element.Data.ToResoniteLinkField());
+members.Add("IK", IK_Element.ToLinkReference(context));
+members.Add("HeightCompensation", HeightCompensation_Element.ToLinkField(context));
+members.Add("AvatarHeight", AvatarHeight_Element.ToLinkField(context));
+members.Add("UserResizeThreshold", UserResizeThreshold_Element.ToLinkField(context));
+members.Add("FeetIgnoreOtherPlayers", FeetIgnoreOtherPlayers_Element.ToLinkField(context));
+members.Add("FeetCollisionListMode", FeetCollisionListMode_Element.ToLinkField(context));
+members.Add("FeetCollisionList", FeetCollisionList.ToLinkList(context, m => m.ToLinkReference(context)));
+members.Add("HeadMaxFixDistance", HeadMaxFixDistance_Element.ToLinkField(context));
+members.Add("ForceUseFeetProxies", ForceUseFeetProxies_Element.ToLinkField(context));
+members.Add("ForceUsePelvisProxy", ForceUsePelvisProxy_Element.ToLinkField(context));
+members.Add("ForceUseChestProxy", ForceUseChestProxy_Element.ToLinkField(context));
+members.Add("ForceUseElbowProxies", ForceUseElbowProxies_Element.ToLinkField(context));
+members.Add("ForceUseKneeProxies", ForceUseKneeProxies_Element.ToLinkField(context));
+members.Add("FeetCalibrated", FeetCalibrated_Element.ToLinkField(context));
+members.Add("PelvisCalibrated", PelvisCalibrated_Element.ToLinkField(context));
+members.Add("GroundCheckHeightRatio", GroundCheckHeightRatio_Element.ToLinkField(context));
+members.Add("FeetHoverHeight", FeetHoverHeight_Element.ToLinkField(context));
+members.Add("FeetHoverSmoothSpeed", FeetHoverSmoothSpeed_Element.ToLinkField(context));
+members.Add("MinFeetTransitionSpeed", MinFeetTransitionSpeed_Element.ToLinkField(context));
+members.Add("MaxFeetTransitionSpeed", MaxFeetTransitionSpeed_Element.ToLinkField(context));
+members.Add("GaitFeetTransitionSpeedMultiplier", GaitFeetTransitionSpeedMultiplier_Element.ToLinkField(context));
+members.Add("FeetHoverTilt", FeetHoverTilt_Element.ToLinkField(context));
+members.Add("LeftFootFloatOffset", LeftFootFloatOffset_Element.ToLinkField(context));
+members.Add("RightFootFloatOffset", RightFootFloatOffset_Element.ToLinkField(context));
+members.Add("LeftFootRootHeight", LeftFootRootHeight_Element.ToLinkField(context));
+members.Add("RightFootRootHeight", RightFootRootHeight_Element.ToLinkField(context));
+members.Add("FootFloatSpeed", FootFloatSpeed_Element.ToLinkField(context));
+members.Add("FootFloatAngleMagnitude", FootFloatAngleMagnitude_Element.ToLinkField(context));
+members.Add("FootFloatOffsetMagnitude", FootFloatOffsetMagnitude_Element.ToLinkField(context));
+members.Add("FeetFloatVelocityForce", FeetFloatVelocityForce_Element.ToLinkField(context));
+members.Add("FeetFloatVelocityDampeningSpeed", FeetFloatVelocityDampeningSpeed_Element.ToLinkField(context));
+members.Add("MaxFeetVelocityOffset", MaxFeetVelocityOffset_Element.ToLinkField(context));
+members.Add("VelocityAverageRate", VelocityAverageRate_Element.ToLinkField(context));
+members.Add("HoverVelocityThreshold", HoverVelocityThreshold_Element.ToLinkField(context));
+members.Add("HorizontalBodyAngle", HorizontalBodyAngle_Element.ToLinkField(context));
+members.Add("SupressWalkAnimationWhenHorizontal", SupressWalkAnimationWhenHorizontal_Element.ToLinkField(context));
+members.Add("AlwaysUseTrackersWhenHorizontal", AlwaysUseTrackersWhenHorizontal_Element.ToLinkField(context));
+members.Add("Gaits", Gaits.ToLinkList(context, m => m.ToLinkSyncObject(context)));
+members.Add("GaitTransitionSpeed", GaitTransitionSpeed_Element.ToLinkField(context));
+members.Add("GaitMovementDirectionSmoothSpeed", GaitMovementDirectionSmoothSpeed_Element.ToLinkField(context));
+members.Add("RigCollidersRadiusRatio", RigCollidersRadiusRatio_Element.ToLinkField(context));
+members.Add("LeftHandRotationOffset", LeftHandRotationOffset_Element.ToLinkField(context));
+members.Add("RightHandRotationOffset", RightHandRotationOffset_Element.ToLinkField(context));
+members.Add("CurrentAverageVelocity", CurrentAverageVelocity_Element.ToLinkField(context));
+members.Add("CurrentOnGround", CurrentOnGround_Element.ToLinkField(context));
+members.Add("CurrentGaitIndex", CurrentGaitIndex_Element.ToLinkField(context));
+members.Add("_locomotionController", _locomotionController_Element.ToLinkReference(context));
+members.Add("_leftHandNode", _leftHandNode_Element.ToLinkReference(context));
+members.Add("_rightHandNode", _rightHandNode_Element.ToLinkReference(context));
+members.Add("_leftElbowNode", _leftElbowNode_Element.ToLinkReference(context));
+members.Add("_rightElbowNode", _rightElbowNode_Element.ToLinkReference(context));
+members.Add("_leftFootNode", _leftFootNode_Element.ToLinkReference(context));
+members.Add("_rightFootNode", _rightFootNode_Element.ToLinkReference(context));
+members.Add("_leftKneeNode", _leftKneeNode_Element.ToLinkReference(context));
+members.Add("_rightKneeNode", _rightKneeNode_Element.ToLinkReference(context));
+members.Add("_headNode", _headNode_Element.ToLinkReference(context));
+members.Add("_pelvisNode", _pelvisNode_Element.ToLinkReference(context));
+members.Add("_chestNode", _chestNode_Element.ToLinkReference(context));
+members.Add("_headProxy", _headProxy_Element.ToLinkReference(context));
+members.Add("_pelvisProxy", _pelvisProxy_Element.ToLinkReference(context));
+members.Add("_chestProxy", _chestProxy_Element.ToLinkReference(context));
+members.Add("_leftHandProxy", _leftHandProxy_Element.ToLinkReference(context));
+members.Add("_rightHandProxy", _rightHandProxy_Element.ToLinkReference(context));
+members.Add("_leftElbowProxy", _leftElbowProxy_Element.ToLinkReference(context));
+members.Add("_rightElbowProxy", _rightElbowProxy_Element.ToLinkReference(context));
+members.Add("_leftFootProxy", _leftFootProxy_Element.ToLinkReference(context));
+members.Add("_rightFootProxy", _rightFootProxy_Element.ToLinkReference(context));
+members.Add("_leftKneeProxy", _leftKneeProxy_Element.ToLinkReference(context));
+members.Add("_rightKneeProxy", _rightKneeProxy_Element.ToLinkReference(context));
+members.Add("_leftKneeDefaultProxy", _leftKneeDefaultProxy_Element.ToLinkReference(context));
+members.Add("_rightKneeDefaultProxy", _rightKneeDefaultProxy_Element.ToLinkReference(context));
+members.Add("_headTargetPos", _headTargetPos_Element.ToLinkReference(context));
+members.Add("_headTargetRot", _headTargetRot_Element.ToLinkReference(context));
+members.Add("_pelvisTargetPos", _pelvisTargetPos_Element.ToLinkReference(context));
+members.Add("_pelvisTargetRot", _pelvisTargetRot_Element.ToLinkReference(context));
+members.Add("_chestTargetPos", _chestTargetPos_Element.ToLinkReference(context));
+members.Add("_leftHandTargetPos", _leftHandTargetPos_Element.ToLinkReference(context));
+members.Add("_leftHandTargetRot", _leftHandTargetRot_Element.ToLinkReference(context));
+members.Add("_rightHandTargetPos", _rightHandTargetPos_Element.ToLinkReference(context));
+members.Add("_rightHandTargetRot", _rightHandTargetRot_Element.ToLinkReference(context));
+members.Add("_leftElbowTargetPos", _leftElbowTargetPos_Element.ToLinkReference(context));
+members.Add("_rightElbowTargetPos", _rightElbowTargetPos_Element.ToLinkReference(context));
+members.Add("_leftFootTargetPos", _leftFootTargetPos_Element.ToLinkReference(context));
+members.Add("_leftFootTargetRot", _leftFootTargetRot_Element.ToLinkReference(context));
+members.Add("_rightFootTargetPos", _rightFootTargetPos_Element.ToLinkReference(context));
+members.Add("_rightFootTargetRot", _rightFootTargetRot_Element.ToLinkReference(context));
+members.Add("_leftKneeTargetPos", _leftKneeTargetPos_Element.ToLinkReference(context));
+members.Add("_rightKneeTargetPos", _rightKneeTargetPos_Element.ToLinkReference(context));
+members.Add("_pelvisPositionWeight", _pelvisPositionWeight_Element.ToLinkReference(context));
+members.Add("_pelvisRotationWeight", _pelvisRotationWeight_Element.ToLinkReference(context));
+members.Add("_chestWeight", _chestWeight_Element.ToLinkReference(context));
+members.Add("_locomotionWeight", _locomotionWeight_Element.ToLinkReference(context));
+members.Add("_leftLegPositionWeight", _leftLegPositionWeight_Element.ToLinkReference(context));
+members.Add("_leftLegRotationWeight", _leftLegRotationWeight_Element.ToLinkReference(context));
+members.Add("_rightLegPositionWeight", _rightLegPositionWeight_Element.ToLinkReference(context));
+members.Add("_rightLegRotationWeight", _rightLegRotationWeight_Element.ToLinkReference(context));
+members.Add("_leftKneeBendWeight", _leftKneeBendWeight_Element.ToLinkReference(context));
+members.Add("_rightKneeBendWeight", _rightKneeBendWeight_Element.ToLinkReference(context));
+members.Add("_leftElbowBendWeight", _leftElbowBendWeight_Element.ToLinkReference(context));
+members.Add("_rightElbowBendWeight", _rightElbowBendWeight_Element.ToLinkReference(context));
+members.Add("_leftFootOffset", _leftFootOffset_Element.ToLinkReference(context));
+members.Add("_rightFootOffset", _rightFootOffset_Element.ToLinkReference(context));
+members.Add("_leftFootRelativeToRoot", _leftFootRelativeToRoot_Element.ToLinkField(context));
+members.Add("_rightFootRelativeToRoot", _rightFootRelativeToRoot_Element.ToLinkField(context));
+members.Add("_locomotionOffset", _locomotionOffset_Element.ToLinkReference(context));
+members.Add("_simplifiedColliderEnabled", _simplifiedColliderEnabled_Element.ToLinkReference(context));
+members.Add("_rigCollidersEnabledStates", _rigCollidersEnabledStates.ToLinkList(context, m => m.ToLinkReference(context)));
+members.Add("_horizontalTrackingLocked", _horizontalTrackingLocked_Element.ToLinkField(context));
 }
 
 }

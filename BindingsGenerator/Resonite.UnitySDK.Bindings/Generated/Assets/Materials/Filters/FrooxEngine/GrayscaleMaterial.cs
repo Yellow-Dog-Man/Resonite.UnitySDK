@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.GrayscaleMaterial
-// Generated on: čtvrtek 26. února 2026 10:03:34
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:26:47
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -43,15 +43,15 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("RatioRed", RatioRed_Element.Data.ToResoniteLinkField());
-members.Add("RatioGreen", RatioGreen_Element.Data.ToResoniteLinkField());
-members.Add("RatioBlue", RatioBlue_Element.Data.ToResoniteLinkField());
-members.Add("Lerp", Lerp_Element.Data.ToResoniteLinkField());
-members.Add("Gradient", Gradient_Element.Data.ToResoniteReference(context));
-members.Add("BlendMode", BlendMode_Element.Data.ToResoniteLinkField());
-members.Add("Sidedness", Sidedness_Element.Data.ToResoniteLinkField());
-members.Add("ZWrite", ZWrite_Element.Data.ToResoniteLinkField());
-members.Add("ZTest", ZTest_Element.Data.ToResoniteLinkField());
+members.Add("RatioRed", RatioRed_Element.ToLinkField(context));
+members.Add("RatioGreen", RatioGreen_Element.ToLinkField(context));
+members.Add("RatioBlue", RatioBlue_Element.ToLinkField(context));
+members.Add("Lerp", Lerp_Element.ToLinkField(context));
+members.Add("Gradient", Gradient_Element.ToLinkReference(context));
+members.Add("BlendMode", BlendMode_Element.ToLinkField(context));
+members.Add("Sidedness", Sidedness_Element.ToLinkField(context));
+members.Add("ZWrite", ZWrite_Element.ToLinkField(context));
+members.Add("ZTest", ZTest_Element.ToLinkField(context));
 }
 
 }

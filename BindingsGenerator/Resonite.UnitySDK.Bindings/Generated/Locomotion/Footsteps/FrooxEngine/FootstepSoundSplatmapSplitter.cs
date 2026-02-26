@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.FootstepSoundSplatmapSplitter
-// Generated on: čtvrtek 26. února 2026 10:03:40
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:26:56
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -47,17 +47,17 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("SplatMap", SplatMap_Element.Data.ToResoniteReference(context));
-members.Add("R_SoundMaterial", R_SoundMaterial_Element.Data.ToResoniteReference(context));
-members.Add("G_SoundMaterial", G_SoundMaterial_Element.Data.ToResoniteReference(context));
-members.Add("B_SoundMaterial", B_SoundMaterial_Element.Data.ToResoniteReference(context));
-members.Add("A_SoundMaterial", A_SoundMaterial_Element.Data.ToResoniteReference(context));
-members.Add("BlendSounds", BlendSounds_Element.Data.ToResoniteLinkField());
-members.Add("MinimumThreshold", MinimumThreshold_Element.Data.ToResoniteLinkField());
-members.Add("R_Weight", R_Weight_Element.Data.ToResoniteLinkField());
-members.Add("G_Weight", G_Weight_Element.Data.ToResoniteLinkField());
-members.Add("B_Weight", B_Weight_Element.Data.ToResoniteLinkField());
-members.Add("A_Weight", A_Weight_Element.Data.ToResoniteLinkField());
+members.Add("SplatMap", SplatMap_Element.ToLinkReference(context));
+members.Add("R_SoundMaterial", R_SoundMaterial_Element.ToLinkReference(context));
+members.Add("G_SoundMaterial", G_SoundMaterial_Element.ToLinkReference(context));
+members.Add("B_SoundMaterial", B_SoundMaterial_Element.ToLinkReference(context));
+members.Add("A_SoundMaterial", A_SoundMaterial_Element.ToLinkReference(context));
+members.Add("BlendSounds", BlendSounds_Element.ToLinkField(context));
+members.Add("MinimumThreshold", MinimumThreshold_Element.ToLinkField(context));
+members.Add("R_Weight", R_Weight_Element.ToLinkField(context));
+members.Add("G_Weight", G_Weight_Element.ToLinkField(context));
+members.Add("B_Weight", B_Weight_Element.ToLinkField(context));
+members.Add("A_Weight", A_Weight_Element.ToLinkField(context));
 }
 
 }

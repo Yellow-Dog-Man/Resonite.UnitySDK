@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.MeshUVRaycastPortal
-// Generated on: čtvrtek 26. února 2026 10:03:41
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:26:58
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -39,13 +39,13 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Offset", Offset_Element.Data.ToResoniteLinkField());
-members.Add("RayExit", RayExit_Element.Data.ToResoniteReference(context));
-members.Add("UVOffset", UVOffset_Element.Data.ToResoniteLinkField());
-members.Add("UVScale", UVScale_Element.Data.ToResoniteLinkField());
-members.Add("RepeatUV", RepeatUV_Element.Data.ToResoniteLinkField());
-members.Add("OverrideHitTriggers", OverrideHitTriggers_Element.Data.ToResoniteLinkField());
-members.Add("FilterMode", FilterMode_Element.Data.ToResoniteLinkField());
+members.Add("Offset", Offset_Element.ToLinkField(context));
+members.Add("RayExit", RayExit_Element.ToLinkReference(context));
+members.Add("UVOffset", UVOffset_Element.ToLinkField(context));
+members.Add("UVScale", UVScale_Element.ToLinkField(context));
+members.Add("RepeatUV", RepeatUV_Element.ToLinkField(context));
+members.Add("OverrideHitTriggers", OverrideHitTriggers_Element.ToLinkField(context));
+members.Add("FilterMode", FilterMode_Element.ToLinkField(context));
 }
 
 }

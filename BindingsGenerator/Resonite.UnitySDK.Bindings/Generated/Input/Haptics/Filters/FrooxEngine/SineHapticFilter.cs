@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.SineHapticFilter
-// Generated on: čtvrtek 26. února 2026 10:03:39
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:26:55
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -37,12 +37,12 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("UseGlobalTime", UseGlobalTime_Element.Data.ToResoniteLinkField());
-members.Add("DistanceScale", DistanceScale_Element.Data.ToResoniteLinkField());
-members.Add("AxisScale", AxisScale_Element.Data.ToResoniteLinkField());
-members.Add("MinIntensity", MinIntensity_Element.Data.ToResoniteLinkField());
-members.Add("MaxIntensity", MaxIntensity_Element.Data.ToResoniteLinkField());
-members.Add("Frequency", Frequency_Element.Data.ToResoniteLinkField());
+members.Add("UseGlobalTime", UseGlobalTime_Element.ToLinkField(context));
+members.Add("DistanceScale", DistanceScale_Element.ToLinkField(context));
+members.Add("AxisScale", AxisScale_Element.ToLinkField(context));
+members.Add("MinIntensity", MinIntensity_Element.ToLinkField(context));
+members.Add("MaxIntensity", MaxIntensity_Element.ToLinkField(context));
+members.Add("Frequency", Frequency_Element.ToLinkField(context));
 }
 
 }

@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.PhotonDust.TextureSheetAnimator
-// Generated on: čtvrtek 26. února 2026 10:04:38
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:28:05
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -37,12 +37,12 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("TileGridSize", TileGridSize_Element.Data.ToResoniteLinkField());
-members.Add("AnimationCycleCount", AnimationCycleCount_Element.Data.ToResoniteLinkField());
-members.Add("AnimationType", AnimationType_Element.Data.ToResoniteLinkField());
-members.Add("RowIndex", RowIndex_Element.Data.ToResoniteLinkField());
-members.Add("UseRandomRow", UseRandomRow_Element.Data.ToResoniteLinkField());
-members.Add("StartWithRandomOffset", StartWithRandomOffset_Element.Data.ToResoniteLinkField());
+members.Add("TileGridSize", TileGridSize_Element.ToLinkField(context));
+members.Add("AnimationCycleCount", AnimationCycleCount_Element.ToLinkField(context));
+members.Add("AnimationType", AnimationType_Element.ToLinkField(context));
+members.Add("RowIndex", RowIndex_Element.ToLinkField(context));
+members.Add("UseRandomRow", UseRandomRow_Element.ToLinkField(context));
+members.Add("StartWithRandomOffset", StartWithRandomOffset_Element.ToLinkField(context));
 }
 
 }

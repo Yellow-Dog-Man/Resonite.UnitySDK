@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [ProtoFluxBindings]FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Rendering.RenderToTextureAsset
-// Generated on: čtvrtek 26. února 2026 10:04:29
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:27:54
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -40,14 +40,14 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Camera", Camera_Element.Data.ToResoniteReference(context));
-members.Add("Resolution", Resolution_Element.Data.ToResoniteReference(context));
-members.Add("Format", Format_Element.Data.ToResoniteReference(context));
-members.Add("Quality", Quality_Element.Data.ToResoniteReference(context));
-members.Add("OnRenderStarted", OnRenderStarted_Element.Data.ToResoniteReference(context));
-members.Add("OnRendered", OnRendered_Element.Data.ToResoniteReference(context));
-members.Add("OnFailed", OnFailed_Element.Data.ToResoniteReference(context));
-members.Add("RenderedAssetURL", new ResoniteLink.EmptyElement());
+members.Add("Camera", Camera_Element.ToLinkReference(context));
+members.Add("Resolution", Resolution_Element.ToLinkReference(context));
+members.Add("Format", Format_Element.ToLinkReference(context));
+members.Add("Quality", Quality_Element.ToLinkReference(context));
+members.Add("OnRenderStarted", OnRenderStarted_Element.ToLinkReference(context));
+members.Add("OnRendered", OnRendered_Element.ToLinkReference(context));
+members.Add("OnFailed", OnFailed_Element.ToLinkReference(context));
+members.Add("RenderedAssetURL", RenderedAssetURL.ToLinkEmpty(context));
 }
 
 }

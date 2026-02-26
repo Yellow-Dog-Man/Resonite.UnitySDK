@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.LightTool
-// Generated on: čtvrtek 26. února 2026 10:04:39
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:28:06
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -58,26 +58,23 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("LightMode", LightMode_Element.Data.ToResoniteLinkField());
-members.Add("Color", Color_Element.Data.ToResoniteLinkField());
-members.Add("Intensity", Intensity_Element.Data.ToResoniteLinkField());
-members.Add("ShadowType", ShadowType_Element.Data.ToResoniteLinkField());
-members.Add("ShadowStrength", ShadowStrength_Element.Data.ToResoniteLinkField());
-members.Add("Range", Range_Element.Data.ToResoniteLinkField());
-members.Add("SpotAngle", SpotAngle_Element.Data.ToResoniteLinkField());
-members.Add("PointLightVisual", PointLightVisual_Element.Data.ToResoniteReference(context));
-members.Add("SpotlightVisual", SpotlightVisual_Element.Data.ToResoniteReference(context));
-members.Add("DirectionalLightVisual", DirectionalLightVisual_Element.Data.ToResoniteReference(context));
-members.Add("ColorIndicators", new ResoniteLink.SyncList()
-{
-    Elements = ColorIndicators.Data.ConvertList(m => m.Data.ToResoniteReference(context))
-});
-members.Add("ShowGizmo", ShowGizmo_Element.Data.ToResoniteLinkField());
-members.Add("_pointLightItem", _pointLightItem_Element.Data.ToResoniteReference(context));
-members.Add("_spotLightItem", _spotLightItem_Element.Data.ToResoniteReference(context));
-members.Add("_directionalLightItem", _directionalLightItem_Element.Data.ToResoniteReference(context));
-members.Add("_shadowsItem", _shadowsItem_Element.Data.ToResoniteReference(context));
-members.Add("_colorPicker", _colorPicker_Element.Data.ToResoniteReference(context));
+members.Add("LightMode", LightMode_Element.ToLinkField(context));
+members.Add("Color", Color_Element.ToLinkField(context));
+members.Add("Intensity", Intensity_Element.ToLinkField(context));
+members.Add("ShadowType", ShadowType_Element.ToLinkField(context));
+members.Add("ShadowStrength", ShadowStrength_Element.ToLinkField(context));
+members.Add("Range", Range_Element.ToLinkField(context));
+members.Add("SpotAngle", SpotAngle_Element.ToLinkField(context));
+members.Add("PointLightVisual", PointLightVisual_Element.ToLinkReference(context));
+members.Add("SpotlightVisual", SpotlightVisual_Element.ToLinkReference(context));
+members.Add("DirectionalLightVisual", DirectionalLightVisual_Element.ToLinkReference(context));
+members.Add("ColorIndicators", ColorIndicators.ToLinkList(context, m => m.ToLinkReference(context)));
+members.Add("ShowGizmo", ShowGizmo_Element.ToLinkField(context));
+members.Add("_pointLightItem", _pointLightItem_Element.ToLinkReference(context));
+members.Add("_spotLightItem", _spotLightItem_Element.ToLinkReference(context));
+members.Add("_directionalLightItem", _directionalLightItem_Element.ToLinkReference(context));
+members.Add("_shadowsItem", _shadowsItem_Element.ToLinkReference(context));
+members.Add("_colorPicker", _colorPicker_Element.ToLinkReference(context));
 }
 
 }

@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.TouchButton
-// Generated on: čtvrtek 26. února 2026 10:04:42
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:28:08
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -47,17 +47,17 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("IsPressed", IsPressed_Element.Data.ToResoniteLinkField());
-members.Add("IsHovering", IsHovering_Element.Data.ToResoniteLinkField());
-members.Add("AcceptPhysicalTouch", AcceptPhysicalTouch_Element.Data.ToResoniteLinkField());
-members.Add("AcceptRemoteTouch", AcceptRemoteTouch_Element.Data.ToResoniteLinkField());
-members.Add("AcceptOutOfSightTouch", AcceptOutOfSightTouch_Element.Data.ToResoniteLinkField());
-members.Add("EditModeOnly", EditModeOnly_Element.Data.ToResoniteLinkField());
-members.Add("ActiveUserFilter", ActiveUserFilter_Element.Data.ToResoniteLinkField());
-members.Add("BeginPressVibration", BeginPressVibration_Element.Data.ToResoniteLinkField());
-members.Add("PressVibration", PressVibration_Element.Data.ToResoniteLinkField());
-members.Add("HoverVibration", HoverVibration_Element.Data.ToResoniteLinkField());
-members.Add("Label", Label_Element.Data.ToResoniteReference(context));
+members.Add("IsPressed", IsPressed_Element.ToLinkField(context));
+members.Add("IsHovering", IsHovering_Element.ToLinkField(context));
+members.Add("AcceptPhysicalTouch", AcceptPhysicalTouch_Element.ToLinkField(context));
+members.Add("AcceptRemoteTouch", AcceptRemoteTouch_Element.ToLinkField(context));
+members.Add("AcceptOutOfSightTouch", AcceptOutOfSightTouch_Element.ToLinkField(context));
+members.Add("EditModeOnly", EditModeOnly_Element.ToLinkField(context));
+members.Add("ActiveUserFilter", ActiveUserFilter_Element.ToLinkField(context));
+members.Add("BeginPressVibration", BeginPressVibration_Element.ToLinkField(context));
+members.Add("PressVibration", PressVibration_Element.ToLinkField(context));
+members.Add("HoverVibration", HoverVibration_Element.ToLinkField(context));
+members.Add("Label", Label_Element.ToLinkReference(context));
 }
 
 }

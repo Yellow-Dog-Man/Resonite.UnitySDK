@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.Light
-// Generated on: čtvrtek 26. února 2026 10:03:34
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:26:48
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -49,18 +49,18 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("LightType", LightType_Element.Data.ToResoniteLinkField());
-members.Add("Intensity", Intensity_Element.Data.ToResoniteLinkField());
-members.Add("Color", Color_Element.Data.ToResoniteLinkField());
-members.Add("ShadowType", ShadowType_Element.Data.ToResoniteLinkField());
-members.Add("ShadowStrength", ShadowStrength_Element.Data.ToResoniteLinkField());
-members.Add("ShadowNearPlane", ShadowNearPlane_Element.Data.ToResoniteLinkField());
-members.Add("ShadowMapResolution", ShadowMapResolution_Element.Data.ToResoniteLinkField());
-members.Add("ShadowBias", ShadowBias_Element.Data.ToResoniteLinkField());
-members.Add("ShadowNormalBias", ShadowNormalBias_Element.Data.ToResoniteLinkField());
-members.Add("Range", Range_Element.Data.ToResoniteLinkField());
-members.Add("SpotAngle", SpotAngle_Element.Data.ToResoniteLinkField());
-members.Add("Cookie", Cookie_Element.Data.ToResoniteReference(context));
+members.Add("LightType", LightType_Element.ToLinkField(context));
+members.Add("Intensity", Intensity_Element.ToLinkField(context));
+members.Add("Color", Color_Element.ToLinkField(context));
+members.Add("ShadowType", ShadowType_Element.ToLinkField(context));
+members.Add("ShadowStrength", ShadowStrength_Element.ToLinkField(context));
+members.Add("ShadowNearPlane", ShadowNearPlane_Element.ToLinkField(context));
+members.Add("ShadowMapResolution", ShadowMapResolution_Element.ToLinkField(context));
+members.Add("ShadowBias", ShadowBias_Element.ToLinkField(context));
+members.Add("ShadowNormalBias", ShadowNormalBias_Element.ToLinkField(context));
+members.Add("Range", Range_Element.ToLinkField(context));
+members.Add("SpotAngle", SpotAngle_Element.ToLinkField(context));
+members.Add("Cookie", Cookie_Element.ToLinkReference(context));
 }
 
 }

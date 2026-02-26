@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.MigrationDialog
-// Generated on: čtvrtek 26. února 2026 10:04:47
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:28:12
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -57,22 +57,22 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("_usernameField", _usernameField_Element.Data.ToResoniteReference(context));
-members.Add("_passwordField", _passwordField_Element.Data.ToResoniteReference(context));
-members.Add("_migrateFavorites", _migrateFavorites_Element.Data.ToResoniteLinkField());
-members.Add("_overwriteFavorites", _overwriteFavorites_Element.Data.ToResoniteLinkField());
-members.Add("_preserveOldHome", _preserveOldHome_Element.Data.ToResoniteLinkField());
-members.Add("_migrateContacts", _migrateContacts_Element.Data.ToResoniteLinkField());
-members.Add("_migrateMessageHistory", _migrateMessageHistory_Element.Data.ToResoniteLinkField());
-members.Add("_migrateRecords", _migrateRecords_Element.Data.ToResoniteLinkField());
-members.Add("_migrateCloudVariables", _migrateCloudVariables_Element.Data.ToResoniteLinkField());
-members.Add("_migratedCloudVariableDefinitions", _migratedCloudVariableDefinitions_Element.Data.ToResoniteLinkField());
-members.Add("_migrateGroups", _migrateGroups_Element.Data.ToResoniteLinkField());
-members.Add("_groupsRoot", _groupsRoot_Element.Data.ToResoniteReference(context));
-members.Add("_groupsMessage", _groupsMessage_Element.Data.ToResoniteReference(context));
-members.Add("_loadGroupsButton", _loadGroupsButton_Element.Data.ToResoniteReference(context));
-members.Add("CurrentState", CurrentState_Element.Data.ToResoniteLinkField());
-members.Add("_swapRegion", _swapRegion_Element.Data.ToResoniteReference(context));
+members.Add("_usernameField", _usernameField_Element.ToLinkReference(context));
+members.Add("_passwordField", _passwordField_Element.ToLinkReference(context));
+members.Add("_migrateFavorites", _migrateFavorites_Element.ToLinkField(context));
+members.Add("_overwriteFavorites", _overwriteFavorites_Element.ToLinkField(context));
+members.Add("_preserveOldHome", _preserveOldHome_Element.ToLinkField(context));
+members.Add("_migrateContacts", _migrateContacts_Element.ToLinkField(context));
+members.Add("_migrateMessageHistory", _migrateMessageHistory_Element.ToLinkField(context));
+members.Add("_migrateRecords", _migrateRecords_Element.ToLinkField(context));
+members.Add("_migrateCloudVariables", _migrateCloudVariables_Element.ToLinkField(context));
+members.Add("_migratedCloudVariableDefinitions", _migratedCloudVariableDefinitions_Element.ToLinkField(context));
+members.Add("_migrateGroups", _migrateGroups_Element.ToLinkField(context));
+members.Add("_groupsRoot", _groupsRoot_Element.ToLinkReference(context));
+members.Add("_groupsMessage", _groupsMessage_Element.ToLinkReference(context));
+members.Add("_loadGroupsButton", _loadGroupsButton_Element.ToLinkReference(context));
+members.Add("CurrentState", CurrentState_Element.ToLinkField(context));
+members.Add("_swapRegion", _swapRegion_Element.ToLinkReference(context));
 }
 
 }

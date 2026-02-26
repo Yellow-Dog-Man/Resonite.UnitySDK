@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.FeedItemInterface
-// Generated on: čtvrtek 26. února 2026 10:04:35
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:28:01
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -52,23 +52,20 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("HasData", HasData_Element.Data.ToResoniteLinkField());
-members.Add("ItemName", ItemName_Element.Data.ToResoniteReference(context));
-members.Add("ItemKey", ItemKey_Element.Data.ToResoniteReference(context));
-members.Add("ItemDescription", ItemDescription_Element.Data.ToResoniteReference(context));
-members.Add("HasDescription", HasDescription_Element.Data.ToResoniteReference(context));
-members.Add("DescriptionCleanup", DescriptionCleanup_Element.Data.ToResoniteReference(context));
-members.Add("ItemIcon", ItemIcon_Element.Data.ToResoniteReference(context));
-members.Add("HasIcon", HasIcon_Element.Data.ToResoniteReference(context));
-members.Add("IconCleanup", IconCleanup_Element.Data.ToResoniteReference(context));
-members.Add("View", View_Element.Data.ToResoniteReference(context));
-members.Add("ParentContainer", ParentContainer_Element.Data.ToResoniteReference(context));
-members.Add("ChildContainer", ChildContainer_Element.Data.ToResoniteReference(context));
-members.Add("NestedItems", new ResoniteLink.SyncList()
-{
-    Elements = NestedItems.Data.ConvertList(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers(context) })
-});
-members.Add("EnabledState", EnabledState_Element.Data.ToResoniteReference(context));
+members.Add("HasData", HasData_Element.ToLinkField(context));
+members.Add("ItemName", ItemName_Element.ToLinkReference(context));
+members.Add("ItemKey", ItemKey_Element.ToLinkReference(context));
+members.Add("ItemDescription", ItemDescription_Element.ToLinkReference(context));
+members.Add("HasDescription", HasDescription_Element.ToLinkReference(context));
+members.Add("DescriptionCleanup", DescriptionCleanup_Element.ToLinkReference(context));
+members.Add("ItemIcon", ItemIcon_Element.ToLinkReference(context));
+members.Add("HasIcon", HasIcon_Element.ToLinkReference(context));
+members.Add("IconCleanup", IconCleanup_Element.ToLinkReference(context));
+members.Add("View", View_Element.ToLinkReference(context));
+members.Add("ParentContainer", ParentContainer_Element.ToLinkReference(context));
+members.Add("ChildContainer", ChildContainer_Element.ToLinkReference(context));
+members.Add("NestedItems", NestedItems.ToLinkList(context, m => m.ToLinkSyncObject(context)));
+members.Add("EnabledState", EnabledState_Element.ToLinkReference(context));
 }
 
 }

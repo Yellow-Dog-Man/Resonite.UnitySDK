@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.UserLoginManager
-// Generated on: čtvrtek 26. února 2026 10:03:37
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:26:52
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -41,14 +41,14 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("IsLoggedIn", IsLoggedIn_Element.Data.ToResoniteLinkField());
-members.Add("IsLoggingOut", IsLoggingOut_Element.Data.ToResoniteLinkField());
-members.Add("CurrentUsername", CurrentUsername_Element.Data.ToResoniteLinkField());
-members.Add("CurrentUserId", CurrentUserId_Element.Data.ToResoniteLinkField());
-members.Add("CurrentAccountType", CurrentAccountType_Element.Data.ToResoniteLinkField());
-members.Add("CurrentAccountColorOverride", CurrentAccountColorOverride_Element.Data.ToResoniteLinkField());
-members.Add("CurrentProfileIcon", CurrentProfileIcon_Element.Data.ToResoniteLinkField());
-members.Add("LoginLogoutButton", LoginLogoutButton_Element.Data.ToResoniteReference(context));
+members.Add("IsLoggedIn", IsLoggedIn_Element.ToLinkField(context));
+members.Add("IsLoggingOut", IsLoggingOut_Element.ToLinkField(context));
+members.Add("CurrentUsername", CurrentUsername_Element.ToLinkField(context));
+members.Add("CurrentUserId", CurrentUserId_Element.ToLinkField(context));
+members.Add("CurrentAccountType", CurrentAccountType_Element.ToLinkField(context));
+members.Add("CurrentAccountColorOverride", CurrentAccountColorOverride_Element.ToLinkField(context));
+members.Add("CurrentProfileIcon", CurrentProfileIcon_Element.ToLinkField(context));
+members.Add("LoginLogoutButton", LoginLogoutButton_Element.ToLinkReference(context));
 }
 
 }

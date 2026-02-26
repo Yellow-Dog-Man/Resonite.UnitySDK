@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.LocomotionController
-// Generated on: čtvrtek 26. února 2026 10:03:40
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:26:56
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -41,28 +41,16 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("ScalingEnabled", ScalingEnabled_Element.Data.ToResoniteLinkField());
-members.Add("SupressSources", new ResoniteLink.SyncList()
-{
-    Elements = SupressSources.Data.ConvertList(m => m.Data.ToResoniteReference(context))
-});
-members.Add("InputSupressSources", new ResoniteLink.SyncList()
-{
-    Elements = InputSupressSources.Data.ConvertList(m => m.Data.ToResoniteReference(context))
-});
-members.Add("LocomotionModules", new ResoniteLink.SyncList()
-{
-    Elements = LocomotionModules.Data.ConvertList(m => m.Data.ToResoniteReference(context))
-});
-members.Add("ActiveModuleIndex", ActiveModuleIndex_Element.Data.ToResoniteLinkField());
-members.Add("FindUserPreferredModule", FindUserPreferredModule_Element.Data.ToResoniteLinkField());
-members.Add("_currentGroundCollider", _currentGroundCollider_Element.Data.ToResoniteReference(context));
-members.Add("_lastGroundCollider", _lastGroundCollider_Element.Data.ToResoniteReference(context));
-members.Add("_parentHierarchy", new ResoniteLink.SyncList()
-{
-    Elements = _parentHierarchy.Data.ConvertList(m => m.Data.ToResoniteReference(context))
-});
-members.Add("_dummyCharacterController", _dummyCharacterController_Element.Data.ToResoniteReference(context));
+members.Add("ScalingEnabled", ScalingEnabled_Element.ToLinkField(context));
+members.Add("SupressSources", SupressSources.ToLinkList(context, m => m.ToLinkReference(context)));
+members.Add("InputSupressSources", InputSupressSources.ToLinkList(context, m => m.ToLinkReference(context)));
+members.Add("LocomotionModules", LocomotionModules.ToLinkList(context, m => m.ToLinkReference(context)));
+members.Add("ActiveModuleIndex", ActiveModuleIndex_Element.ToLinkField(context));
+members.Add("FindUserPreferredModule", FindUserPreferredModule_Element.ToLinkField(context));
+members.Add("_currentGroundCollider", _currentGroundCollider_Element.ToLinkReference(context));
+members.Add("_lastGroundCollider", _lastGroundCollider_Element.ToLinkReference(context));
+members.Add("_parentHierarchy", _parentHierarchy.ToLinkList(context, m => m.ToLinkReference(context)));
+members.Add("_dummyCharacterController", _dummyCharacterController_Element.ToLinkReference(context));
 }
 
 }

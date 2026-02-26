@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.CommonAvatar.AvatarNameTagAssigner
-// Generated on: čtvrtek 26. února 2026 10:04:50
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:28:15
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -32,27 +32,12 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("LabelTargets", new ResoniteLink.SyncList()
-{
-    Elements = LabelTargets.Data.ConvertList(m => m.Data.ToResoniteReference(context))
-});
-members.Add("UserIdTargets", new ResoniteLink.SyncList()
-{
-    Elements = UserIdTargets.Data.ConvertList(m => m.Data.ToResoniteReference(context))
-});
-members.Add("ColorTargets", new ResoniteLink.SyncList()
-{
-    Elements = ColorTargets.Data.ConvertList(m => m.Data.ToResoniteReference(context))
-});
-members.Add("OutlineTargets", new ResoniteLink.SyncList()
-{
-    Elements = OutlineTargets.Data.ConvertList(m => m.Data.ToResoniteReference(context))
-});
-members.Add("BackgroundTargets", new ResoniteLink.SyncList()
-{
-    Elements = BackgroundTargets.Data.ConvertList(m => m.Data.ToResoniteReference(context))
-});
-members.Add("DequippedLabel", DequippedLabel_Element.Data.ToResoniteLinkField());
+members.Add("LabelTargets", LabelTargets.ToLinkList(context, m => m.ToLinkReference(context)));
+members.Add("UserIdTargets", UserIdTargets.ToLinkList(context, m => m.ToLinkReference(context)));
+members.Add("ColorTargets", ColorTargets.ToLinkList(context, m => m.ToLinkReference(context)));
+members.Add("OutlineTargets", OutlineTargets.ToLinkList(context, m => m.ToLinkReference(context)));
+members.Add("BackgroundTargets", BackgroundTargets.ToLinkList(context, m => m.ToLinkReference(context)));
+members.Add("DequippedLabel", DequippedLabel_Element.ToLinkField(context));
 }
 
 }

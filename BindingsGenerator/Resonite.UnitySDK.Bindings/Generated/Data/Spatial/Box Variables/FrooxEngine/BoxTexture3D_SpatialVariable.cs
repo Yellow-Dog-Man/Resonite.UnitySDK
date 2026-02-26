@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.BoxTexture3D_SpatialVariable
-// Generated on: čtvrtek 26. února 2026 10:03:38
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:26:54
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -39,13 +39,13 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Texture", Texture_Element.Data.ToResoniteReference(context));
-members.Add("UseNormalizedCoordinates", UseNormalizedCoordinates_Element.Data.ToResoniteLinkField());
-members.Add("Scale", Scale_Element.Data.ToResoniteLinkField());
-members.Add("Offset", Offset_Element.Data.ToResoniteLinkField());
-members.Add("WrapU", WrapU_Element.Data.ToResoniteLinkField());
-members.Add("WrapV", WrapV_Element.Data.ToResoniteLinkField());
-members.Add("WrapW", WrapW_Element.Data.ToResoniteLinkField());
+members.Add("Texture", Texture_Element.ToLinkReference(context));
+members.Add("UseNormalizedCoordinates", UseNormalizedCoordinates_Element.ToLinkField(context));
+members.Add("Scale", Scale_Element.ToLinkField(context));
+members.Add("Offset", Offset_Element.ToLinkField(context));
+members.Add("WrapU", WrapU_Element.ToLinkField(context));
+members.Add("WrapV", WrapV_Element.ToLinkField(context));
+members.Add("WrapW", WrapW_Element.ToLinkField(context));
 }
 
 }

@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.UI_UnlitMaterial
-// Generated on: čtvrtek 26. února 2026 10:03:34
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:26:48
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -63,25 +63,25 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Texture", Texture_Element.Data.ToResoniteReference(context));
-members.Add("TextureScale", TextureScale_Element.Data.ToResoniteLinkField());
-members.Add("TextureOffset", TextureOffset_Element.Data.ToResoniteLinkField());
-members.Add("Tint", Tint_Element.Data.ToResoniteLinkField());
-members.Add("Overlay", Overlay_Element.Data.ToResoniteLinkField());
-members.Add("OverlayTint", OverlayTint_Element.Data.ToResoniteLinkField());
-members.Add("AlphaCutoff", AlphaCutoff_Element.Data.ToResoniteLinkField());
-members.Add("AlphaClip", AlphaClip_Element.Data.ToResoniteLinkField());
-members.Add("TextureMode", TextureMode_Element.Data.ToResoniteLinkField());
-members.Add("MaskTexture", MaskTexture_Element.Data.ToResoniteReference(context));
-members.Add("MaskScale", MaskScale_Element.Data.ToResoniteLinkField());
-members.Add("MaskOffset", MaskOffset_Element.Data.ToResoniteLinkField());
-members.Add("MaskMode", MaskMode_Element.Data.ToResoniteLinkField());
-members.Add("BlendMode", BlendMode_Element.Data.ToResoniteLinkField());
-members.Add("Sidedness", Sidedness_Element.Data.ToResoniteLinkField());
-members.Add("ZWrite", ZWrite_Element.Data.ToResoniteLinkField());
-members.Add("ZTest", ZTest_Element.Data.ToResoniteLinkField());
-members.Add("OffsetFactor", OffsetFactor_Element.Data.ToResoniteLinkField());
-members.Add("OffsetUnits", OffsetUnits_Element.Data.ToResoniteLinkField());
+members.Add("Texture", Texture_Element.ToLinkReference(context));
+members.Add("TextureScale", TextureScale_Element.ToLinkField(context));
+members.Add("TextureOffset", TextureOffset_Element.ToLinkField(context));
+members.Add("Tint", Tint_Element.ToLinkField(context));
+members.Add("Overlay", Overlay_Element.ToLinkField(context));
+members.Add("OverlayTint", OverlayTint_Element.ToLinkField(context));
+members.Add("AlphaCutoff", AlphaCutoff_Element.ToLinkField(context));
+members.Add("AlphaClip", AlphaClip_Element.ToLinkField(context));
+members.Add("TextureMode", TextureMode_Element.ToLinkField(context));
+members.Add("MaskTexture", MaskTexture_Element.ToLinkReference(context));
+members.Add("MaskScale", MaskScale_Element.ToLinkField(context));
+members.Add("MaskOffset", MaskOffset_Element.ToLinkField(context));
+members.Add("MaskMode", MaskMode_Element.ToLinkField(context));
+members.Add("BlendMode", BlendMode_Element.ToLinkField(context));
+members.Add("Sidedness", Sidedness_Element.ToLinkField(context));
+members.Add("ZWrite", ZWrite_Element.ToLinkField(context));
+members.Add("ZTest", ZTest_Element.ToLinkField(context));
+members.Add("OffsetFactor", OffsetFactor_Element.ToLinkField(context));
+members.Add("OffsetUnits", OffsetUnits_Element.ToLinkField(context));
 }
 
 }

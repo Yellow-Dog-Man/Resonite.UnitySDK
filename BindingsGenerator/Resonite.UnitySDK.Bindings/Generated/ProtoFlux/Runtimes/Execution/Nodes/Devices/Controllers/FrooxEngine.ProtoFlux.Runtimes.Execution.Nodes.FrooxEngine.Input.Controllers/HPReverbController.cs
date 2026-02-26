@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [ProtoFluxBindings]FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Input.Controllers.HPReverbController
-// Generated on: čtvrtek 26. února 2026 10:04:13
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:27:33
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -35,16 +35,16 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("AppMenu", new ResoniteLink.EmptyElement());
-members.Add("ButtonYB", new ResoniteLink.EmptyElement());
-members.Add("ButtonXA", new ResoniteLink.EmptyElement());
-members.Add("Grip", new ResoniteLink.EmptyElement());
-members.Add("GripTouch", new ResoniteLink.EmptyElement());
-members.Add("GripClick", new ResoniteLink.EmptyElement());
-members.Add("Joystick", new ResoniteLink.EmptyElement());
-members.Add("JoystickClick", new ResoniteLink.EmptyElement());
-members.Add("Trigger", new ResoniteLink.EmptyElement());
-members.Add("TriggerClick", new ResoniteLink.EmptyElement());
+members.Add("AppMenu", AppMenu.ToLinkEmpty(context));
+members.Add("ButtonYB", ButtonYB.ToLinkEmpty(context));
+members.Add("ButtonXA", ButtonXA.ToLinkEmpty(context));
+members.Add("Grip", Grip.ToLinkEmpty(context));
+members.Add("GripTouch", GripTouch.ToLinkEmpty(context));
+members.Add("GripClick", GripClick.ToLinkEmpty(context));
+members.Add("Joystick", Joystick.ToLinkEmpty(context));
+members.Add("JoystickClick", JoystickClick.ToLinkEmpty(context));
+members.Add("Trigger", Trigger.ToLinkEmpty(context));
+members.Add("TriggerClick", TriggerClick.ToLinkEmpty(context));
 }
 
 }

@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.UI_TextUnlitMaterial
-// Generated on: čtvrtek 26. února 2026 10:03:34
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:26:48
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -45,16 +45,16 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Overlay", Overlay_Element.Data.ToResoniteLinkField());
-members.Add("OverlayTint", OverlayTint_Element.Data.ToResoniteLinkField());
-members.Add("Rect", Rect_Element.Data.ToResoniteLinkField());
-members.Add("RectClip", RectClip_Element.Data.ToResoniteLinkField());
-members.Add("ColorMask", ColorMask_Element.Data.ToResoniteLinkField());
-members.Add("StencilComparison", StencilComparison_Element.Data.ToResoniteLinkField());
-members.Add("StencilOperation", StencilOperation_Element.Data.ToResoniteLinkField());
-members.Add("StencilID", StencilID_Element.Data.ToResoniteLinkField());
-members.Add("StencilWriteMask", StencilWriteMask_Element.Data.ToResoniteLinkField());
-members.Add("StencilReadMask", StencilReadMask_Element.Data.ToResoniteLinkField());
+members.Add("Overlay", Overlay_Element.ToLinkField(context));
+members.Add("OverlayTint", OverlayTint_Element.ToLinkField(context));
+members.Add("Rect", Rect_Element.ToLinkField(context));
+members.Add("RectClip", RectClip_Element.ToLinkField(context));
+members.Add("ColorMask", ColorMask_Element.ToLinkField(context));
+members.Add("StencilComparison", StencilComparison_Element.ToLinkField(context));
+members.Add("StencilOperation", StencilOperation_Element.ToLinkField(context));
+members.Add("StencilID", StencilID_Element.ToLinkField(context));
+members.Add("StencilWriteMask", StencilWriteMask_Element.ToLinkField(context));
+members.Add("StencilReadMask", StencilReadMask_Element.ToLinkField(context));
 }
 
 }

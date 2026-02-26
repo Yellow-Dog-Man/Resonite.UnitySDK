@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.LocomotionAnimationHandMetrics
-// Generated on: čtvrtek 26. února 2026 10:04:49
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:28:15
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -39,13 +39,13 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Space", Space_Element.Data.ToResoniteLinkField());
-members.Add("ShoulderSeparation", ShoulderSeparation_Element.Data.ToResoniteLinkField());
-members.Add("ShoulderHeight", ShoulderHeight_Element.Data.ToResoniteLinkField());
-members.Add("ShoulderOffset", ShoulderOffset_Element.Data.ToResoniteLinkField());
-members.Add("HandOffset", HandOffset_Element.Data.ToResoniteLinkField());
-members.Add("ArmLength", ArmLength_Element.Data.ToResoniteLinkField());
-members.Add("HandPalmDistance", HandPalmDistance_Element.Data.ToResoniteLinkField());
+members.Add("Space", Space_Element.ToLinkField(context));
+members.Add("ShoulderSeparation", ShoulderSeparation_Element.ToLinkField(context));
+members.Add("ShoulderHeight", ShoulderHeight_Element.ToLinkField(context));
+members.Add("ShoulderOffset", ShoulderOffset_Element.ToLinkField(context));
+members.Add("HandOffset", HandOffset_Element.ToLinkField(context));
+members.Add("ArmLength", ArmLength_Element.ToLinkField(context));
+members.Add("HandPalmDistance", HandPalmDistance_Element.ToLinkField(context));
 }
 
 }

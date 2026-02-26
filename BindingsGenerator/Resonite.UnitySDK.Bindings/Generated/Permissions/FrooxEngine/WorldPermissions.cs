@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.WorldPermissions
-// Generated on: čtvrtek 26. února 2026 10:03:41
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:26:57
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -35,11 +35,11 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("AllowSavingItems", AllowSavingItems_Element.Data.ToResoniteLinkField());
-members.Add("AllowTransferingObjectsOut", AllowTransferingObjectsOut_Element.Data.ToResoniteLinkField());
-members.Add("AllowSpawningObjects", AllowSpawningObjects_Element.Data.ToResoniteLinkField());
-members.Add("AllowSwappingAvatars", AllowSwappingAvatars_Element.Data.ToResoniteLinkField());
-members.Add("SaveCopyPermission", SaveCopyPermission_Element.Data.ToResoniteLinkField());
+members.Add("AllowSavingItems", AllowSavingItems_Element.ToLinkField(context));
+members.Add("AllowTransferingObjectsOut", AllowTransferingObjectsOut_Element.ToLinkField(context));
+members.Add("AllowSpawningObjects", AllowSpawningObjects_Element.ToLinkField(context));
+members.Add("AllowSwappingAvatars", AllowSwappingAvatars_Element.ToLinkField(context));
+members.Add("SaveCopyPermission", SaveCopyPermission_Element.ToLinkField(context));
 }
 
 }

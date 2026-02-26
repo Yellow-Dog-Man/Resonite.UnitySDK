@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.Undo.UpdateTransform
-// Generated on: čtvrtek 26. února 2026 10:04:48
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:28:14
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -67,27 +67,27 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Target", Target_Element.Data.ToResoniteReference(context));
-members.Add("RestoreParent", RestoreParent_Element.Data.ToResoniteLinkField());
-members.Add("RestorePosition", RestorePosition_Element.Data.ToResoniteLinkField());
-members.Add("RestoreRotation", RestoreRotation_Element.Data.ToResoniteLinkField());
-members.Add("RestoreScale", RestoreScale_Element.Data.ToResoniteLinkField());
-members.Add("ParentBefore", ParentBefore_Element.Data.ToResoniteReference(context));
-members.Add("ParentAfter", ParentAfter_Element.Data.ToResoniteReference(context));
-members.Add("LocalPositionBefore", LocalPositionBefore_Element.Data.ToResoniteLinkField());
-members.Add("LocalRotationBefore", LocalRotationBefore_Element.Data.ToResoniteLinkField());
-members.Add("LocalScaleBefore", LocalScaleBefore_Element.Data.ToResoniteLinkField());
-members.Add("GlobalPositionBefore", GlobalPositionBefore_Element.Data.ToResoniteLinkField());
-members.Add("GlobalRotationBefore", GlobalRotationBefore_Element.Data.ToResoniteLinkField());
-members.Add("GlobalScaleBefore", GlobalScaleBefore_Element.Data.ToResoniteLinkField());
-members.Add("LocalPositionAfter", LocalPositionAfter_Element.Data.ToResoniteLinkField());
-members.Add("LocalRotationAfter", LocalRotationAfter_Element.Data.ToResoniteLinkField());
-members.Add("LocalScaleAfter", LocalScaleAfter_Element.Data.ToResoniteLinkField());
-members.Add("GlobalPositionAfter", GlobalPositionAfter_Element.Data.ToResoniteLinkField());
-members.Add("GlobalRotationAfter", GlobalRotationAfter_Element.Data.ToResoniteLinkField());
-members.Add("GlobalScaleAfter", GlobalScaleAfter_Element.Data.ToResoniteLinkField());
-members.Add("_performed", _performed_Element.Data.ToResoniteLinkField());
-members.Add("_description", _description_Element.Data.ToResoniteLinkField());
+members.Add("Target", Target_Element.ToLinkReference(context));
+members.Add("RestoreParent", RestoreParent_Element.ToLinkField(context));
+members.Add("RestorePosition", RestorePosition_Element.ToLinkField(context));
+members.Add("RestoreRotation", RestoreRotation_Element.ToLinkField(context));
+members.Add("RestoreScale", RestoreScale_Element.ToLinkField(context));
+members.Add("ParentBefore", ParentBefore_Element.ToLinkReference(context));
+members.Add("ParentAfter", ParentAfter_Element.ToLinkReference(context));
+members.Add("LocalPositionBefore", LocalPositionBefore_Element.ToLinkField(context));
+members.Add("LocalRotationBefore", LocalRotationBefore_Element.ToLinkField(context));
+members.Add("LocalScaleBefore", LocalScaleBefore_Element.ToLinkField(context));
+members.Add("GlobalPositionBefore", GlobalPositionBefore_Element.ToLinkField(context));
+members.Add("GlobalRotationBefore", GlobalRotationBefore_Element.ToLinkField(context));
+members.Add("GlobalScaleBefore", GlobalScaleBefore_Element.ToLinkField(context));
+members.Add("LocalPositionAfter", LocalPositionAfter_Element.ToLinkField(context));
+members.Add("LocalRotationAfter", LocalRotationAfter_Element.ToLinkField(context));
+members.Add("LocalScaleAfter", LocalScaleAfter_Element.ToLinkField(context));
+members.Add("GlobalPositionAfter", GlobalPositionAfter_Element.ToLinkField(context));
+members.Add("GlobalRotationAfter", GlobalRotationAfter_Element.ToLinkField(context));
+members.Add("GlobalScaleAfter", GlobalScaleAfter_Element.ToLinkField(context));
+members.Add("_performed", _performed_Element.ToLinkField(context));
+members.Add("_description", _description_Element.ToLinkField(context));
 }
 
 }

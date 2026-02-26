@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.AssetFrameSlot<>
-// Generated on: čtvrtek 26. února 2026 10:04:42
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:28:07
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -41,17 +41,14 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("FrameSize", FrameSize_Element.Data.ToResoniteLinkField());
-members.Add("FrameAnimSpeed", FrameAnimSpeed_Element.Data.ToResoniteLinkField());
-members.Add("SnapAnimTime", SnapAnimTime_Element.Data.ToResoniteLinkField());
-members.Add("Targets", new ResoniteLink.SyncList()
-{
-    Elements = Targets.Data.ConvertList(m => m.Data.ToResoniteReference(context))
-});
-members.Add("_current", _current_Element.Data.ToResoniteReference(context));
-members.Add("_currentRatio", _currentRatio_Element.Data.ToResoniteLinkField());
-members.Add("_frameSize", _frameSize_Element.Data.ToResoniteReference(context));
-members.Add("_collider", _collider_Element.Data.ToResoniteReference(context));
+members.Add("FrameSize", FrameSize_Element.ToLinkField(context));
+members.Add("FrameAnimSpeed", FrameAnimSpeed_Element.ToLinkField(context));
+members.Add("SnapAnimTime", SnapAnimTime_Element.ToLinkField(context));
+members.Add("Targets", Targets.ToLinkList(context, m => m.ToLinkReference(context)));
+members.Add("_current", _current_Element.ToLinkReference(context));
+members.Add("_currentRatio", _currentRatio_Element.ToLinkField(context));
+members.Add("_frameSize", _frameSize_Element.ToLinkReference(context));
+members.Add("_collider", _collider_Element.ToLinkReference(context));
 }
 
 }

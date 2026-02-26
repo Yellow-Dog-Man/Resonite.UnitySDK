@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.LegacyCloudStorageSpaceIndicator
-// Generated on: čtvrtek 26. února 2026 10:03:37
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:26:52
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -51,19 +51,19 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Source", Source_Element.Data.ToResoniteReference(context));
-members.Add("ContainerColor", ContainerColor_Element.Data.ToResoniteLinkField());
-members.Add("UsedColor", UsedColor_Element.Data.ToResoniteLinkField());
-members.Add("LowSpaceColor", LowSpaceColor_Element.Data.ToResoniteLinkField());
-members.Add("CriticalSpaceColor", CriticalSpaceColor_Element.Data.ToResoniteLinkField());
-members.Add("LowSpaceThreshold", LowSpaceThreshold_Element.Data.ToResoniteLinkField());
-members.Add("CriticalSpaceThreshold", CriticalSpaceThreshold_Element.Data.ToResoniteLinkField());
-members.Add("_ownerLabel", _ownerLabel_Element.Data.ToResoniteReference(context));
-members.Add("_usageLabel", _usageLabel_Element.Data.ToResoniteReference(context));
-members.Add("_percentLabel", _percentLabel_Element.Data.ToResoniteReference(context));
-members.Add("_progressBar", _progressBar_Element.Data.ToResoniteReference(context));
-members.Add("__legacyOwnerId", __legacyOwnerId_Element.Data.ToResoniteLinkField());
-members.Add("__legacyMemberQuota", __legacyMemberQuota_Element.Data.ToResoniteLinkField());
+members.Add("Source", Source_Element.ToLinkReference(context));
+members.Add("ContainerColor", ContainerColor_Element.ToLinkField(context));
+members.Add("UsedColor", UsedColor_Element.ToLinkField(context));
+members.Add("LowSpaceColor", LowSpaceColor_Element.ToLinkField(context));
+members.Add("CriticalSpaceColor", CriticalSpaceColor_Element.ToLinkField(context));
+members.Add("LowSpaceThreshold", LowSpaceThreshold_Element.ToLinkField(context));
+members.Add("CriticalSpaceThreshold", CriticalSpaceThreshold_Element.ToLinkField(context));
+members.Add("_ownerLabel", _ownerLabel_Element.ToLinkReference(context));
+members.Add("_usageLabel", _usageLabel_Element.ToLinkReference(context));
+members.Add("_percentLabel", _percentLabel_Element.ToLinkReference(context));
+members.Add("_progressBar", _progressBar_Element.ToLinkReference(context));
+members.Add("__legacyOwnerId", __legacyOwnerId_Element.ToLinkField(context));
+members.Add("__legacyMemberQuota", __legacyMemberQuota_Element.ToLinkField(context));
 }
 
 }

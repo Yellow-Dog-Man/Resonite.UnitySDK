@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.DebugMaterial
-// Generated on: čtvrtek 26. února 2026 10:03:34
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:26:48
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -35,11 +35,11 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Scale", Scale_Element.Data.ToResoniteLinkField());
-members.Add("Offset", Offset_Element.Data.ToResoniteLinkField());
-members.Add("Visualize", Visualize_Element.Data.ToResoniteLinkField());
-members.Add("Normalize", Normalize_Element.Data.ToResoniteLinkField());
-members.Add("RenderQueue", RenderQueue_Element.Data.ToResoniteLinkField());
+members.Add("Scale", Scale_Element.ToLinkField(context));
+members.Add("Offset", Offset_Element.ToLinkField(context));
+members.Add("Visualize", Visualize_Element.ToLinkField(context));
+members.Add("Normalize", Normalize_Element.ToLinkField(context));
+members.Add("RenderQueue", RenderQueue_Element.ToLinkField(context));
 }
 
 }

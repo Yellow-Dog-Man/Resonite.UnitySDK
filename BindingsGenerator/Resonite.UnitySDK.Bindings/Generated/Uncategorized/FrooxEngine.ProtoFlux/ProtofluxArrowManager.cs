@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.ProtoFlux.ProtofluxArrowManager
-// Generated on: čtvrtek 26. února 2026 10:04:47
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:28:12
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -37,12 +37,12 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("ConnectNode", ConnectNode_Element.Data.ToResoniteReference(context));
-members.Add("TargetSize", TargetSize_Element.Data.ToResoniteReference(context));
-members.Add("TargetOffset", TargetOffset_Element.Data.ToResoniteReference(context));
-members.Add("_arrowMesh", _arrowMesh_Element.Data.ToResoniteReference(context));
-members.Add("_renderer", _renderer_Element.Data.ToResoniteReference(context));
-members.Add("_targetVector", _targetVector_Element.Data.ToResoniteReference(context));
+members.Add("ConnectNode", ConnectNode_Element.ToLinkReference(context));
+members.Add("TargetSize", TargetSize_Element.ToLinkReference(context));
+members.Add("TargetOffset", TargetOffset_Element.ToLinkReference(context));
+members.Add("_arrowMesh", _arrowMesh_Element.ToLinkReference(context));
+members.Add("_renderer", _renderer_Element.ToLinkReference(context));
+members.Add("_targetVector", _targetVector_Element.ToLinkReference(context));
 }
 
 }

@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.StaticTextureProvider<,,,>
-// Generated on: čtvrtek 26. února 2026 10:03:33
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:26:46
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -45,14 +45,14 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("FilterMode", FilterMode_Element.Data.ToResoniteLinkField());
-members.Add("AnisotropicLevel", AnisotropicLevel_Element.Data.ToResoniteLinkField());
-members.Add("Uncompressed", Uncompressed_Element.Data.ToResoniteLinkField());
-members.Add("DirectLoad", DirectLoad_Element.Data.ToResoniteLinkField());
-members.Add("ForceExactVariant", ForceExactVariant_Element.Data.ToResoniteLinkField());
-members.Add("PreferredFormat", PreferredFormat_Element.Data.ToResoniteLinkField());
-members.Add("PreferredProfile", PreferredProfile_Element.Data.ToResoniteLinkField());
-members.Add("MipMapBias", MipMapBias_Element.Data.ToResoniteLinkField());
+members.Add("FilterMode", FilterMode_Element.ToLinkField(context));
+members.Add("AnisotropicLevel", AnisotropicLevel_Element.ToLinkField(context));
+members.Add("Uncompressed", Uncompressed_Element.ToLinkField(context));
+members.Add("DirectLoad", DirectLoad_Element.ToLinkField(context));
+members.Add("ForceExactVariant", ForceExactVariant_Element.ToLinkField(context));
+members.Add("PreferredFormat", PreferredFormat_Element.ToLinkField(context));
+members.Add("PreferredProfile", PreferredProfile_Element.ToLinkField(context));
+members.Add("MipMapBias", MipMapBias_Element.ToLinkField(context));
 }
 
 }

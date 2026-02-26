@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.UIX.TiledRawImage
-// Generated on: čtvrtek 26. února 2026 10:04:36
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:28:01
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -39,13 +39,13 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Texture", Texture_Element.Data.ToResoniteReference(context));
-members.Add("Material", Material_Element.Data.ToResoniteReference(context));
-members.Add("Tint", Tint_Element.Data.ToResoniteLinkField());
-members.Add("SizeBasis", SizeBasis_Element.Data.ToResoniteLinkField());
-members.Add("TileSize", TileSize_Element.Data.ToResoniteLinkField());
-members.Add("TileOffset", TileOffset_Element.Data.ToResoniteLinkField());
-members.Add("InteractionTarget", InteractionTarget_Element.Data.ToResoniteLinkField());
+members.Add("Texture", Texture_Element.ToLinkReference(context));
+members.Add("Material", Material_Element.ToLinkReference(context));
+members.Add("Tint", Tint_Element.ToLinkField(context));
+members.Add("SizeBasis", SizeBasis_Element.ToLinkField(context));
+members.Add("TileSize", TileSize_Element.ToLinkField(context));
+members.Add("TileOffset", TileOffset_Element.ToLinkField(context));
+members.Add("InteractionTarget", InteractionTarget_Element.ToLinkField(context));
 }
 
 }

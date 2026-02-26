@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [ProtoFluxBindings]FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.Binary.ExtractBits_long
-// Generated on: čtvrtek 26. února 2026 10:04:34
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:27:59
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -91,71 +91,71 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Integer", Integer_Element.Data.ToResoniteReference(context));
-members.Add("Bit0", new ResoniteLink.EmptyElement());
-members.Add("Bit1", new ResoniteLink.EmptyElement());
-members.Add("Bit2", new ResoniteLink.EmptyElement());
-members.Add("Bit3", new ResoniteLink.EmptyElement());
-members.Add("Bit4", new ResoniteLink.EmptyElement());
-members.Add("Bit5", new ResoniteLink.EmptyElement());
-members.Add("Bit6", new ResoniteLink.EmptyElement());
-members.Add("Bit7", new ResoniteLink.EmptyElement());
-members.Add("Bit8", new ResoniteLink.EmptyElement());
-members.Add("Bit9", new ResoniteLink.EmptyElement());
-members.Add("Bit10", new ResoniteLink.EmptyElement());
-members.Add("Bit11", new ResoniteLink.EmptyElement());
-members.Add("Bit12", new ResoniteLink.EmptyElement());
-members.Add("Bit13", new ResoniteLink.EmptyElement());
-members.Add("Bit14", new ResoniteLink.EmptyElement());
-members.Add("Bit15", new ResoniteLink.EmptyElement());
-members.Add("Bit16", new ResoniteLink.EmptyElement());
-members.Add("Bit17", new ResoniteLink.EmptyElement());
-members.Add("Bit18", new ResoniteLink.EmptyElement());
-members.Add("Bit19", new ResoniteLink.EmptyElement());
-members.Add("Bit20", new ResoniteLink.EmptyElement());
-members.Add("Bit21", new ResoniteLink.EmptyElement());
-members.Add("Bit22", new ResoniteLink.EmptyElement());
-members.Add("Bit23", new ResoniteLink.EmptyElement());
-members.Add("Bit24", new ResoniteLink.EmptyElement());
-members.Add("Bit25", new ResoniteLink.EmptyElement());
-members.Add("Bit26", new ResoniteLink.EmptyElement());
-members.Add("Bit27", new ResoniteLink.EmptyElement());
-members.Add("Bit28", new ResoniteLink.EmptyElement());
-members.Add("Bit29", new ResoniteLink.EmptyElement());
-members.Add("Bit30", new ResoniteLink.EmptyElement());
-members.Add("Bit31", new ResoniteLink.EmptyElement());
-members.Add("Bit32", new ResoniteLink.EmptyElement());
-members.Add("Bit33", new ResoniteLink.EmptyElement());
-members.Add("Bit34", new ResoniteLink.EmptyElement());
-members.Add("Bit35", new ResoniteLink.EmptyElement());
-members.Add("Bit36", new ResoniteLink.EmptyElement());
-members.Add("Bit37", new ResoniteLink.EmptyElement());
-members.Add("Bit38", new ResoniteLink.EmptyElement());
-members.Add("Bit39", new ResoniteLink.EmptyElement());
-members.Add("Bit40", new ResoniteLink.EmptyElement());
-members.Add("Bit41", new ResoniteLink.EmptyElement());
-members.Add("Bit42", new ResoniteLink.EmptyElement());
-members.Add("Bit43", new ResoniteLink.EmptyElement());
-members.Add("Bit44", new ResoniteLink.EmptyElement());
-members.Add("Bit45", new ResoniteLink.EmptyElement());
-members.Add("Bit46", new ResoniteLink.EmptyElement());
-members.Add("Bit47", new ResoniteLink.EmptyElement());
-members.Add("Bit48", new ResoniteLink.EmptyElement());
-members.Add("Bit49", new ResoniteLink.EmptyElement());
-members.Add("Bit50", new ResoniteLink.EmptyElement());
-members.Add("Bit51", new ResoniteLink.EmptyElement());
-members.Add("Bit52", new ResoniteLink.EmptyElement());
-members.Add("Bit53", new ResoniteLink.EmptyElement());
-members.Add("Bit54", new ResoniteLink.EmptyElement());
-members.Add("Bit55", new ResoniteLink.EmptyElement());
-members.Add("Bit56", new ResoniteLink.EmptyElement());
-members.Add("Bit57", new ResoniteLink.EmptyElement());
-members.Add("Bit58", new ResoniteLink.EmptyElement());
-members.Add("Bit59", new ResoniteLink.EmptyElement());
-members.Add("Bit60", new ResoniteLink.EmptyElement());
-members.Add("Bit61", new ResoniteLink.EmptyElement());
-members.Add("Bit62", new ResoniteLink.EmptyElement());
-members.Add("Bit63", new ResoniteLink.EmptyElement());
+members.Add("Integer", Integer_Element.ToLinkReference(context));
+members.Add("Bit0", Bit0.ToLinkEmpty(context));
+members.Add("Bit1", Bit1.ToLinkEmpty(context));
+members.Add("Bit2", Bit2.ToLinkEmpty(context));
+members.Add("Bit3", Bit3.ToLinkEmpty(context));
+members.Add("Bit4", Bit4.ToLinkEmpty(context));
+members.Add("Bit5", Bit5.ToLinkEmpty(context));
+members.Add("Bit6", Bit6.ToLinkEmpty(context));
+members.Add("Bit7", Bit7.ToLinkEmpty(context));
+members.Add("Bit8", Bit8.ToLinkEmpty(context));
+members.Add("Bit9", Bit9.ToLinkEmpty(context));
+members.Add("Bit10", Bit10.ToLinkEmpty(context));
+members.Add("Bit11", Bit11.ToLinkEmpty(context));
+members.Add("Bit12", Bit12.ToLinkEmpty(context));
+members.Add("Bit13", Bit13.ToLinkEmpty(context));
+members.Add("Bit14", Bit14.ToLinkEmpty(context));
+members.Add("Bit15", Bit15.ToLinkEmpty(context));
+members.Add("Bit16", Bit16.ToLinkEmpty(context));
+members.Add("Bit17", Bit17.ToLinkEmpty(context));
+members.Add("Bit18", Bit18.ToLinkEmpty(context));
+members.Add("Bit19", Bit19.ToLinkEmpty(context));
+members.Add("Bit20", Bit20.ToLinkEmpty(context));
+members.Add("Bit21", Bit21.ToLinkEmpty(context));
+members.Add("Bit22", Bit22.ToLinkEmpty(context));
+members.Add("Bit23", Bit23.ToLinkEmpty(context));
+members.Add("Bit24", Bit24.ToLinkEmpty(context));
+members.Add("Bit25", Bit25.ToLinkEmpty(context));
+members.Add("Bit26", Bit26.ToLinkEmpty(context));
+members.Add("Bit27", Bit27.ToLinkEmpty(context));
+members.Add("Bit28", Bit28.ToLinkEmpty(context));
+members.Add("Bit29", Bit29.ToLinkEmpty(context));
+members.Add("Bit30", Bit30.ToLinkEmpty(context));
+members.Add("Bit31", Bit31.ToLinkEmpty(context));
+members.Add("Bit32", Bit32.ToLinkEmpty(context));
+members.Add("Bit33", Bit33.ToLinkEmpty(context));
+members.Add("Bit34", Bit34.ToLinkEmpty(context));
+members.Add("Bit35", Bit35.ToLinkEmpty(context));
+members.Add("Bit36", Bit36.ToLinkEmpty(context));
+members.Add("Bit37", Bit37.ToLinkEmpty(context));
+members.Add("Bit38", Bit38.ToLinkEmpty(context));
+members.Add("Bit39", Bit39.ToLinkEmpty(context));
+members.Add("Bit40", Bit40.ToLinkEmpty(context));
+members.Add("Bit41", Bit41.ToLinkEmpty(context));
+members.Add("Bit42", Bit42.ToLinkEmpty(context));
+members.Add("Bit43", Bit43.ToLinkEmpty(context));
+members.Add("Bit44", Bit44.ToLinkEmpty(context));
+members.Add("Bit45", Bit45.ToLinkEmpty(context));
+members.Add("Bit46", Bit46.ToLinkEmpty(context));
+members.Add("Bit47", Bit47.ToLinkEmpty(context));
+members.Add("Bit48", Bit48.ToLinkEmpty(context));
+members.Add("Bit49", Bit49.ToLinkEmpty(context));
+members.Add("Bit50", Bit50.ToLinkEmpty(context));
+members.Add("Bit51", Bit51.ToLinkEmpty(context));
+members.Add("Bit52", Bit52.ToLinkEmpty(context));
+members.Add("Bit53", Bit53.ToLinkEmpty(context));
+members.Add("Bit54", Bit54.ToLinkEmpty(context));
+members.Add("Bit55", Bit55.ToLinkEmpty(context));
+members.Add("Bit56", Bit56.ToLinkEmpty(context));
+members.Add("Bit57", Bit57.ToLinkEmpty(context));
+members.Add("Bit58", Bit58.ToLinkEmpty(context));
+members.Add("Bit59", Bit59.ToLinkEmpty(context));
+members.Add("Bit60", Bit60.ToLinkEmpty(context));
+members.Add("Bit61", Bit61.ToLinkEmpty(context));
+members.Add("Bit62", Bit62.ToLinkEmpty(context));
+members.Add("Bit63", Bit63.ToLinkEmpty(context));
 }
 
 }

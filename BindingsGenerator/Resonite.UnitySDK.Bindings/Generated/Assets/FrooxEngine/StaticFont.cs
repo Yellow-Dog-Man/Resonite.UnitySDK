@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.StaticFont
-// Generated on: čtvrtek 26. února 2026 10:03:33
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:26:46
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -37,12 +37,12 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Padding", Padding_Element.Data.ToResoniteLinkField());
-members.Add("PixelRange", PixelRange_Element.Data.ToResoniteLinkField());
-members.Add("GlyphEmSize", GlyphEmSize_Element.Data.ToResoniteLinkField());
-members.Add("MipMaps", MipMaps_Element.Data.ToResoniteLinkField());
-members.Add("MipMapFiltering", MipMapFiltering_Element.Data.ToResoniteLinkField());
-members.Add("LODBias", LODBias_Element.Data.ToResoniteLinkField());
+members.Add("Padding", Padding_Element.ToLinkField(context));
+members.Add("PixelRange", PixelRange_Element.ToLinkField(context));
+members.Add("GlyphEmSize", GlyphEmSize_Element.ToLinkField(context));
+members.Add("MipMaps", MipMaps_Element.ToLinkField(context));
+members.Add("MipMapFiltering", MipMapFiltering_Element.ToLinkField(context));
+members.Add("LODBias", LODBias_Element.ToLinkField(context));
 }
 
 }

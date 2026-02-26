@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.UIX.RawGraphic
-// Generated on: čtvrtek 26. února 2026 10:04:36
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:28:02
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -47,17 +47,17 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Material", Material_Element.Data.ToResoniteReference(context));
-members.Add("PropertyBlock", PropertyBlock_Element.Data.ToResoniteReference(context));
-members.Add("FillRect", FillRect_Element.Data.ToResoniteLinkField());
-members.Add("Color", Color_Element.Data.ToResoniteLinkField());
-members.Add("UVRect", UVRect_Element.Data.ToResoniteLinkField());
-members.Add("Orientation", Orientation_Element.Data.ToResoniteLinkField());
-members.Add("Normal", Normal_Element.Data.ToResoniteLinkField());
-members.Add("Tangent", Tangent_Element.Data.ToResoniteLinkField());
-members.Add("HideWithNoMaterial", HideWithNoMaterial_Element.Data.ToResoniteLinkField());
-members.Add("PreserveUVAspectRatio", PreserveUVAspectRatio_Element.Data.ToResoniteLinkField());
-members.Add("InteractionTarget", InteractionTarget_Element.Data.ToResoniteLinkField());
+members.Add("Material", Material_Element.ToLinkReference(context));
+members.Add("PropertyBlock", PropertyBlock_Element.ToLinkReference(context));
+members.Add("FillRect", FillRect_Element.ToLinkField(context));
+members.Add("Color", Color_Element.ToLinkField(context));
+members.Add("UVRect", UVRect_Element.ToLinkField(context));
+members.Add("Orientation", Orientation_Element.ToLinkField(context));
+members.Add("Normal", Normal_Element.ToLinkField(context));
+members.Add("Tangent", Tangent_Element.ToLinkField(context));
+members.Add("HideWithNoMaterial", HideWithNoMaterial_Element.ToLinkField(context));
+members.Add("PreserveUVAspectRatio", PreserveUVAspectRatio_Element.ToLinkField(context));
+members.Add("InteractionTarget", InteractionTarget_Element.ToLinkField(context));
 }
 
 }

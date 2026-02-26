@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.GaussianSplatAssetMetadata
-// Generated on: čtvrtek 26. února 2026 10:03:36
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:26:52
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -35,11 +35,11 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Splat", Splat_Element.Data.ToResoniteReference(context));
-members.Add("SplatCount", SplatCount_Element.Data.ToResoniteLinkField());
-members.Add("MemoryBytes", MemoryBytes_Element.Data.ToResoniteLinkField());
-members.Add("FormattedMemoryBytes", FormattedMemoryBytes_Element.Data.ToResoniteLinkField());
-members.Add("ActualLoadedVariant", ActualLoadedVariant_Element.Data.ToResoniteLinkField());
+members.Add("Splat", Splat_Element.ToLinkReference(context));
+members.Add("SplatCount", SplatCount_Element.ToLinkField(context));
+members.Add("MemoryBytes", MemoryBytes_Element.ToLinkField(context));
+members.Add("FormattedMemoryBytes", FormattedMemoryBytes_Element.ToLinkField(context));
+members.Add("ActualLoadedVariant", ActualLoadedVariant_Element.ToLinkField(context));
 }
 
 }

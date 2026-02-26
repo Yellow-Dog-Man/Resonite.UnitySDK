@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.DesktopDisplayLayout
-// Generated on: čtvrtek 26. února 2026 10:03:39
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:26:55
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -28,8 +28,8 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("User", new ResoniteLink.SyncObject() { Members = User.CollectMembers(context) });
-members.Add("DisplayTemplate", DisplayTemplate_Element.Data.ToResoniteReference(context));
+members.Add("User", User.ToLinkSyncObject(context));
+members.Add("DisplayTemplate", DisplayTemplate_Element.ToLinkReference(context));
 }
 
 }

@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.AudioZitaReverb
-// Generated on: čtvrtek 26. února 2026 10:03:37
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:26:52
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -47,17 +47,17 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("InDelay", InDelay_Element.Data.ToResoniteLinkField());
-members.Add("Crossover", Crossover_Element.Data.ToResoniteLinkField());
-members.Add("RT60Low", RT60Low_Element.Data.ToResoniteLinkField());
-members.Add("RT60Mid", RT60Mid_Element.Data.ToResoniteLinkField());
-members.Add("HighFrequencyDamping", HighFrequencyDamping_Element.Data.ToResoniteLinkField());
-members.Add("EQ1Frequency", EQ1Frequency_Element.Data.ToResoniteLinkField());
-members.Add("EQ1Level", EQ1Level_Element.Data.ToResoniteLinkField());
-members.Add("EQ2Frequency", EQ2Frequency_Element.Data.ToResoniteLinkField());
-members.Add("EQ2Level", EQ2Level_Element.Data.ToResoniteLinkField());
-members.Add("Mix", Mix_Element.Data.ToResoniteLinkField());
-members.Add("Level", Level_Element.Data.ToResoniteLinkField());
+members.Add("InDelay", InDelay_Element.ToLinkField(context));
+members.Add("Crossover", Crossover_Element.ToLinkField(context));
+members.Add("RT60Low", RT60Low_Element.ToLinkField(context));
+members.Add("RT60Mid", RT60Mid_Element.ToLinkField(context));
+members.Add("HighFrequencyDamping", HighFrequencyDamping_Element.ToLinkField(context));
+members.Add("EQ1Frequency", EQ1Frequency_Element.ToLinkField(context));
+members.Add("EQ1Level", EQ1Level_Element.ToLinkField(context));
+members.Add("EQ2Frequency", EQ2Frequency_Element.ToLinkField(context));
+members.Add("EQ2Level", EQ2Level_Element.ToLinkField(context));
+members.Add("Mix", Mix_Element.ToLinkField(context));
+members.Add("Level", Level_Element.ToLinkField(context));
 }
 
 }

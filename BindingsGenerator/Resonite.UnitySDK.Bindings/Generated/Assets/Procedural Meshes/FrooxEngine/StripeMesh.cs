@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.StripeMesh
-// Generated on: čtvrtek 26. února 2026 10:03:36
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:26:51
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -30,9 +30,9 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Points", Points.Data.ToResoniteLinkArray());
-members.Add("SegmentPoints", SegmentPoints_Element.Data.ToResoniteLinkField());
-members.Add("DualSided", DualSided_Element.Data.ToResoniteLinkField());
+members.Add("Points", Points.ToLinkArray(context));
+members.Add("SegmentPoints", SegmentPoints_Element.ToLinkField(context));
+members.Add("DualSided", DualSided_Element.ToLinkField(context));
 }
 
 }

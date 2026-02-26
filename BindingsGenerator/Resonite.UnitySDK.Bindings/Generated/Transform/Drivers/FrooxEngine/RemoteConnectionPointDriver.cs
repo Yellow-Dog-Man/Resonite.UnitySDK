@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.RemoteConnectionPointDriver
-// Generated on: čtvrtek 26. února 2026 10:04:41
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:28:07
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -43,15 +43,15 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("FilterThreshold", FilterThreshold_Element.Data.ToResoniteLinkField());
-members.Add("TargetPoint", TargetPoint_Element.Data.ToResoniteReference(context));
-members.Add("TargetVector", TargetVector_Element.Data.ToResoniteLinkField());
-members.Add("TargetSize", TargetSize_Element.Data.ToResoniteLinkField());
-members.Add("TargetOrientation", TargetOrientation_Element.Data.ToResoniteLinkField());
-members.Add("LocalPoint", LocalPoint_Element.Data.ToResoniteReference(context));
-members.Add("LocalVector", LocalVector_Element.Data.ToResoniteReference(context));
-members.Add("LocalOrientation", LocalOrientation_Element.Data.ToResoniteReference(context));
-members.Add("LocalSize", LocalSize_Element.Data.ToResoniteReference(context));
+members.Add("FilterThreshold", FilterThreshold_Element.ToLinkField(context));
+members.Add("TargetPoint", TargetPoint_Element.ToLinkReference(context));
+members.Add("TargetVector", TargetVector_Element.ToLinkField(context));
+members.Add("TargetSize", TargetSize_Element.ToLinkField(context));
+members.Add("TargetOrientation", TargetOrientation_Element.ToLinkField(context));
+members.Add("LocalPoint", LocalPoint_Element.ToLinkReference(context));
+members.Add("LocalVector", LocalVector_Element.ToLinkReference(context));
+members.Add("LocalOrientation", LocalOrientation_Element.ToLinkReference(context));
+members.Add("LocalSize", LocalSize_Element.ToLinkReference(context));
 }
 
 }

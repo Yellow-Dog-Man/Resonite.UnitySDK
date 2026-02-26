@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.FogBoxVolumeMaterial
-// Generated on: čtvrtek 26. února 2026 10:03:35
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:26:49
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -55,21 +55,21 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("BaseColor", BaseColor_Element.Data.ToResoniteLinkField());
-members.Add("AccumulationColor", AccumulationColor_Element.Data.ToResoniteLinkField());
-members.Add("AccumulationColorBottom", AccumulationColorBottom_Element.Data.ToResoniteLinkField());
-members.Add("AccumulationColorTop", AccumulationColorTop_Element.Data.ToResoniteLinkField());
-members.Add("FogStart", FogStart_Element.Data.ToResoniteLinkField());
-members.Add("FogEnd", FogEnd_Element.Data.ToResoniteLinkField());
-members.Add("FogDensity", FogDensity_Element.Data.ToResoniteLinkField());
-members.Add("GammaCurve", GammaCurve_Element.Data.ToResoniteLinkField());
-members.Add("WorldSpace", WorldSpace_Element.Data.ToResoniteLinkField());
-members.Add("ColorMode", ColorMode_Element.Data.ToResoniteLinkField());
-members.Add("SaturationMode", SaturationMode_Element.Data.ToResoniteLinkField());
-members.Add("AccumulationMode", AccumulationMode_Element.Data.ToResoniteLinkField());
-members.Add("AccumulationRate", AccumulationRate_Element.Data.ToResoniteLinkField());
-members.Add("BlendMode", BlendMode_Element.Data.ToResoniteLinkField());
-members.Add("RenderQueue", RenderQueue_Element.Data.ToResoniteLinkField());
+members.Add("BaseColor", BaseColor_Element.ToLinkField(context));
+members.Add("AccumulationColor", AccumulationColor_Element.ToLinkField(context));
+members.Add("AccumulationColorBottom", AccumulationColorBottom_Element.ToLinkField(context));
+members.Add("AccumulationColorTop", AccumulationColorTop_Element.ToLinkField(context));
+members.Add("FogStart", FogStart_Element.ToLinkField(context));
+members.Add("FogEnd", FogEnd_Element.ToLinkField(context));
+members.Add("FogDensity", FogDensity_Element.ToLinkField(context));
+members.Add("GammaCurve", GammaCurve_Element.ToLinkField(context));
+members.Add("WorldSpace", WorldSpace_Element.ToLinkField(context));
+members.Add("ColorMode", ColorMode_Element.ToLinkField(context));
+members.Add("SaturationMode", SaturationMode_Element.ToLinkField(context));
+members.Add("AccumulationMode", AccumulationMode_Element.ToLinkField(context));
+members.Add("AccumulationRate", AccumulationRate_Element.ToLinkField(context));
+members.Add("BlendMode", BlendMode_Element.ToLinkField(context));
+members.Add("RenderQueue", RenderQueue_Element.ToLinkField(context));
 }
 
 }

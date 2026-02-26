@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.ContactItem
-// Generated on: čtvrtek 26. února 2026 10:04:44
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:28:09
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -36,15 +36,12 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("_username", _username_Element.Data.ToResoniteReference(context));
-members.Add("_status", _status_Element.Data.ToResoniteReference(context));
-members.Add("_unreadCount", _unreadCount_Element.Data.ToResoniteReference(context));
-members.Add("_joinButton", _joinButton_Element.Data.ToResoniteReference(context));
-members.Add("_rawUsername", _rawUsername_Element.Data.ToResoniteLinkField());
-members.Add("_alternateNames", new ResoniteLink.SyncList()
-{
-    Elements = _alternateNames.Data.ConvertList(m => m.Data.ToResoniteLinkField())
-});
+members.Add("_username", _username_Element.ToLinkReference(context));
+members.Add("_status", _status_Element.ToLinkReference(context));
+members.Add("_unreadCount", _unreadCount_Element.ToLinkReference(context));
+members.Add("_joinButton", _joinButton_Element.ToLinkReference(context));
+members.Add("_rawUsername", _rawUsername_Element.ToLinkField(context));
+members.Add("_alternateNames", _alternateNames.ToLinkList(context, m => m.ToLinkField(context)));
 }
 
 }

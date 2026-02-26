@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.LegacySegmentCircleMenuController+Item
-// Generated on: čtvrtek 26. února 2026 10:04:39
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:28:06
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -79,32 +79,32 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Enabled", Enabled_Element.Data.ToResoniteLinkField());
-members.Add("AngleStart", AngleStart_Element.Data.ToResoniteLinkField());
-members.Add("RadiusStart", RadiusStart_Element.Data.ToResoniteLinkField());
-members.Add("ArcLength", ArcLength_Element.Data.ToResoniteLinkField());
-members.Add("Thickness", Thickness_Element.Data.ToResoniteLinkField());
-members.Add("Label", Label_Element.Data.ToResoniteReference(context));
-members.Add("LabelColor", LabelColor_Element.Data.ToResoniteLinkField());
-members.Add("OutlineColor", OutlineColor_Element.Data.ToResoniteLinkField());
-members.Add("FillColor", FillColor_Element.Data.ToResoniteLinkField());
-members.Add("IconMaterial", IconMaterial_Element.Data.ToResoniteReference(context));
-members.Add("IconTexture", IconTexture_Element.Data.ToResoniteReference(context));
-members.Add("RotateIcon", RotateIcon_Element.Data.ToResoniteLinkField());
-members.Add("IconRoot", IconRoot_Element.Data.ToResoniteReference(context));
-members.Add("Highlight", Highlight_Element.Data.ToResoniteLinkField());
-members.Add("IconPosition", IconPosition_Element.Data.ToResoniteReference(context));
-members.Add("IconRotation", IconRotation_Element.Data.ToResoniteReference(context));
-members.Add("IconScale", IconScale_Element.Data.ToResoniteReference(context));
-members.Add("ColliderRoot", ColliderRoot_Element.Data.ToResoniteReference(context));
-members.Add("ColliderPosition", ColliderPosition_Element.Data.ToResoniteReference(context));
-members.Add("ColliderScale", ColliderScale_Element.Data.ToResoniteReference(context));
-members.Add("ColliderRotation", ColliderRotation_Element.Data.ToResoniteReference(context));
-members.Add("LastPress", LastPress_Element.Data.ToResoniteLinkField());
-members.Add("LabelRoot", LabelRoot_Element.Data.ToResoniteReference(context));
-members.Add("LabelPosition", LabelPosition_Element.Data.ToResoniteReference(context));
-members.Add("LabelScale", LabelScale_Element.Data.ToResoniteReference(context));
-members.Add("LabelColorDrive", LabelColorDrive_Element.Data.ToResoniteReference(context));
+members.Add("Enabled", Enabled_Element.ToLinkField(context));
+members.Add("AngleStart", AngleStart_Element.ToLinkField(context));
+members.Add("RadiusStart", RadiusStart_Element.ToLinkField(context));
+members.Add("ArcLength", ArcLength_Element.ToLinkField(context));
+members.Add("Thickness", Thickness_Element.ToLinkField(context));
+members.Add("Label", Label_Element.ToLinkReference(context));
+members.Add("LabelColor", LabelColor_Element.ToLinkField(context));
+members.Add("OutlineColor", OutlineColor_Element.ToLinkField(context));
+members.Add("FillColor", FillColor_Element.ToLinkField(context));
+members.Add("IconMaterial", IconMaterial_Element.ToLinkReference(context));
+members.Add("IconTexture", IconTexture_Element.ToLinkReference(context));
+members.Add("RotateIcon", RotateIcon_Element.ToLinkField(context));
+members.Add("IconRoot", IconRoot_Element.ToLinkReference(context));
+members.Add("Highlight", Highlight_Element.ToLinkField(context));
+members.Add("IconPosition", IconPosition_Element.ToLinkReference(context));
+members.Add("IconRotation", IconRotation_Element.ToLinkReference(context));
+members.Add("IconScale", IconScale_Element.ToLinkReference(context));
+members.Add("ColliderRoot", ColliderRoot_Element.ToLinkReference(context));
+members.Add("ColliderPosition", ColliderPosition_Element.ToLinkReference(context));
+members.Add("ColliderScale", ColliderScale_Element.ToLinkReference(context));
+members.Add("ColliderRotation", ColliderRotation_Element.ToLinkReference(context));
+members.Add("LastPress", LastPress_Element.ToLinkField(context));
+members.Add("LabelRoot", LabelRoot_Element.ToLinkReference(context));
+members.Add("LabelPosition", LabelPosition_Element.ToLinkReference(context));
+members.Add("LabelScale", LabelScale_Element.ToLinkReference(context));
+members.Add("LabelColorDrive", LabelColorDrive_Element.ToLinkReference(context));
 }
 
 }

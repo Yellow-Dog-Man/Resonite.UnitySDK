@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.CommonAvatar.EyeManager
-// Generated on: čtvrtek 26. února 2026 10:04:44
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:28:10
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -164,79 +164,76 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("TargetPoint", TargetPoint_Element.Data.ToResoniteLinkField());
-members.Add("LeftEyeTargetPoint", LeftEyeTargetPoint_Element.Data.ToResoniteLinkField());
-members.Add("RightEyeTargetPoint", RightEyeTargetPoint_Element.Data.ToResoniteLinkField());
-members.Add("LeftEyeClose", LeftEyeClose_Element.Data.ToResoniteLinkField());
-members.Add("RightEyeClose", RightEyeClose_Element.Data.ToResoniteLinkField());
-members.Add("CombinedEyeClose", CombinedEyeClose_Element.Data.ToResoniteLinkField());
-members.Add("LeftEyePupilSizeMillimeters", LeftEyePupilSizeMillimeters_Element.Data.ToResoniteLinkField());
-members.Add("RightEyePupilSizeMillimeters", RightEyePupilSizeMillimeters_Element.Data.ToResoniteLinkField());
-members.Add("CombinedEyePupilSizeMillimeters", CombinedEyePupilSizeMillimeters_Element.Data.ToResoniteLinkField());
-members.Add("LeftEyeWiden", LeftEyeWiden_Element.Data.ToResoniteLinkField());
-members.Add("RightEyeWiden", RightEyeWiden_Element.Data.ToResoniteLinkField());
-members.Add("CombinedEyeWiden", CombinedEyeWiden_Element.Data.ToResoniteLinkField());
-members.Add("LeftEyeSqueeze", LeftEyeSqueeze_Element.Data.ToResoniteLinkField());
-members.Add("RightEyeSqueeze", RightEyeSqueeze_Element.Data.ToResoniteLinkField());
-members.Add("CombinedEyeSqueeze", CombinedEyeSqueeze_Element.Data.ToResoniteLinkField());
-members.Add("LeftEyeFrown", LeftEyeFrown_Element.Data.ToResoniteLinkField());
-members.Add("RightEyeFrown", RightEyeFrown_Element.Data.ToResoniteLinkField());
-members.Add("CombinedEyeFrown", CombinedEyeFrown_Element.Data.ToResoniteLinkField());
-members.Add("LeftEyeInnerBrowVertical", LeftEyeInnerBrowVertical_Element.Data.ToResoniteLinkField());
-members.Add("RightEyeInnerBrowVertical", RightEyeInnerBrowVertical_Element.Data.ToResoniteLinkField());
-members.Add("CombinedEyeInnerBrowVertical", CombinedEyeInnerBrowVertical_Element.Data.ToResoniteLinkField());
-members.Add("LeftEyeOuterBrowVertical", LeftEyeOuterBrowVertical_Element.Data.ToResoniteLinkField());
-members.Add("RightEyeOuterBrowVertical", RightEyeOuterBrowVertical_Element.Data.ToResoniteLinkField());
-members.Add("CombinedEyeOuterBrowVertical", CombinedEyeOuterBrowVertical_Element.Data.ToResoniteLinkField());
-members.Add("EyeDataSource", EyeDataSource_Element.Data.ToResoniteReference(context));
-members.Add("SimulatingUser", SimulatingUser_Element.Data.ToResoniteReference(context));
-members.Add("SimulateOnHost", SimulateOnHost_Element.Data.ToResoniteLinkField());
-members.Add("IgnoreLocalUserHead", IgnoreLocalUserHead_Element.Data.ToResoniteLinkField());
-members.Add("UserHeadWeight", UserHeadWeight_Element.Data.ToResoniteLinkField());
-members.Add("UserHandWeight", UserHandWeight_Element.Data.ToResoniteLinkField());
-members.Add("GrippingHandWeight", GrippingHandWeight_Element.Data.ToResoniteLinkField());
-members.Add("CameraWeight", CameraWeight_Element.Data.ToResoniteLinkField());
-members.Add("ForcedCameraWeight", ForcedCameraWeight_Element.Data.ToResoniteLinkField());
-members.Add("EyeReference", EyeReference_Element.Data.ToResoniteReference(context));
-members.Add("EyeSeparation", EyeSeparation_Element.Data.ToResoniteLinkField());
-members.Add("SaccadeSpeed", SaccadeSpeed_Element.Data.ToResoniteLinkField());
-members.Add("LookTargetRoot", LookTargetRoot_Element.Data.ToResoniteReference(context));
-members.Add("LookTargetLocalPoint", LookTargetLocalPoint_Element.Data.ToResoniteLinkField());
-members.Add("LeftEyeTargetOffset", LeftEyeTargetOffset_Element.Data.ToResoniteLinkField());
-members.Add("RightEyeTargetOffset", RightEyeTargetOffset_Element.Data.ToResoniteLinkField());
-members.Add("LookTargetOffset", LookTargetOffset_Element.Data.ToResoniteLinkField());
-members.Add("MinRandomSaccadeInterval", MinRandomSaccadeInterval_Element.Data.ToResoniteLinkField());
-members.Add("MaxRandomSaccadeInterval", MaxRandomSaccadeInterval_Element.Data.ToResoniteLinkField());
-members.Add("MinTargetSaccadeInterval", MinTargetSaccadeInterval_Element.Data.ToResoniteLinkField());
-members.Add("MaxTargetSaccadeInterval", MaxTargetSaccadeInterval_Element.Data.ToResoniteLinkField());
-members.Add("MaxRandomSaccadeOffset", MaxRandomSaccadeOffset_Element.Data.ToResoniteLinkField());
-members.Add("DefaultAcceptAngle", DefaultAcceptAngle_Element.Data.ToResoniteLinkField());
-members.Add("DefaultBreakAngle", DefaultBreakAngle_Element.Data.ToResoniteLinkField());
-members.Add("HeadAcceptAngle", HeadAcceptAngle_Element.Data.ToResoniteLinkField());
-members.Add("HeadBreakAngle", HeadBreakAngle_Element.Data.ToResoniteLinkField());
-members.Add("CameraAcceptAngle", CameraAcceptAngle_Element.Data.ToResoniteLinkField());
-members.Add("CameraBreakAngle", CameraBreakAngle_Element.Data.ToResoniteLinkField());
-members.Add("HandAcceptAngle", HandAcceptAngle_Element.Data.ToResoniteLinkField());
-members.Add("HandBreakAngle", HandBreakAngle_Element.Data.ToResoniteLinkField());
-members.Add("DistanceCompensationExp", DistanceCompensationExp_Element.Data.ToResoniteLinkField());
-members.Add("LeftEyeCloseOverride", LeftEyeCloseOverride_Element.Data.ToResoniteLinkField());
-members.Add("RightEyeCloseOverride", RightEyeCloseOverride_Element.Data.ToResoniteLinkField());
-members.Add("MinBlinkInterval", MinBlinkInterval_Element.Data.ToResoniteLinkField());
-members.Add("MaxBlinkInterval", MaxBlinkInterval_Element.Data.ToResoniteLinkField());
-members.Add("BlinkMinSpeed", BlinkMinSpeed_Element.Data.ToResoniteLinkField());
-members.Add("BlinkMaxSpeed", BlinkMaxSpeed_Element.Data.ToResoniteLinkField());
-members.Add("BlinkSpeedSpread", BlinkSpeedSpread_Element.Data.ToResoniteLinkField());
-members.Add("MinPupilSize", MinPupilSize_Element.Data.ToResoniteLinkField());
-members.Add("MaxPupilSize", MaxPupilSize_Element.Data.ToResoniteLinkField());
-members.Add("PupilSizeNoiseSpeed", PupilSizeNoiseSpeed_Element.Data.ToResoniteLinkField());
-members.Add("PupilSizeNoiseOffset", PupilSizeNoiseOffset_Element.Data.ToResoniteLinkField());
-members.Add("EyeTrackingPupilSizeSmoothSpeed", EyeTrackingPupilSizeSmoothSpeed_Element.Data.ToResoniteLinkField());
-members.Add("MiniExpressionProbability", MiniExpressionProbability_Element.Data.ToResoniteLinkField());
-members.Add("MiniExpressionInterval", MiniExpressionInterval_Element.Data.ToResoniteLinkField());
-members.Add("MiniExpressions", new ResoniteLink.SyncList()
-{
-    Elements = MiniExpressions.Data.ConvertList(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers(context) })
-});
+members.Add("TargetPoint", TargetPoint_Element.ToLinkField(context));
+members.Add("LeftEyeTargetPoint", LeftEyeTargetPoint_Element.ToLinkField(context));
+members.Add("RightEyeTargetPoint", RightEyeTargetPoint_Element.ToLinkField(context));
+members.Add("LeftEyeClose", LeftEyeClose_Element.ToLinkField(context));
+members.Add("RightEyeClose", RightEyeClose_Element.ToLinkField(context));
+members.Add("CombinedEyeClose", CombinedEyeClose_Element.ToLinkField(context));
+members.Add("LeftEyePupilSizeMillimeters", LeftEyePupilSizeMillimeters_Element.ToLinkField(context));
+members.Add("RightEyePupilSizeMillimeters", RightEyePupilSizeMillimeters_Element.ToLinkField(context));
+members.Add("CombinedEyePupilSizeMillimeters", CombinedEyePupilSizeMillimeters_Element.ToLinkField(context));
+members.Add("LeftEyeWiden", LeftEyeWiden_Element.ToLinkField(context));
+members.Add("RightEyeWiden", RightEyeWiden_Element.ToLinkField(context));
+members.Add("CombinedEyeWiden", CombinedEyeWiden_Element.ToLinkField(context));
+members.Add("LeftEyeSqueeze", LeftEyeSqueeze_Element.ToLinkField(context));
+members.Add("RightEyeSqueeze", RightEyeSqueeze_Element.ToLinkField(context));
+members.Add("CombinedEyeSqueeze", CombinedEyeSqueeze_Element.ToLinkField(context));
+members.Add("LeftEyeFrown", LeftEyeFrown_Element.ToLinkField(context));
+members.Add("RightEyeFrown", RightEyeFrown_Element.ToLinkField(context));
+members.Add("CombinedEyeFrown", CombinedEyeFrown_Element.ToLinkField(context));
+members.Add("LeftEyeInnerBrowVertical", LeftEyeInnerBrowVertical_Element.ToLinkField(context));
+members.Add("RightEyeInnerBrowVertical", RightEyeInnerBrowVertical_Element.ToLinkField(context));
+members.Add("CombinedEyeInnerBrowVertical", CombinedEyeInnerBrowVertical_Element.ToLinkField(context));
+members.Add("LeftEyeOuterBrowVertical", LeftEyeOuterBrowVertical_Element.ToLinkField(context));
+members.Add("RightEyeOuterBrowVertical", RightEyeOuterBrowVertical_Element.ToLinkField(context));
+members.Add("CombinedEyeOuterBrowVertical", CombinedEyeOuterBrowVertical_Element.ToLinkField(context));
+members.Add("EyeDataSource", EyeDataSource_Element.ToLinkReference(context));
+members.Add("SimulatingUser", SimulatingUser_Element.ToLinkReference(context));
+members.Add("SimulateOnHost", SimulateOnHost_Element.ToLinkField(context));
+members.Add("IgnoreLocalUserHead", IgnoreLocalUserHead_Element.ToLinkField(context));
+members.Add("UserHeadWeight", UserHeadWeight_Element.ToLinkField(context));
+members.Add("UserHandWeight", UserHandWeight_Element.ToLinkField(context));
+members.Add("GrippingHandWeight", GrippingHandWeight_Element.ToLinkField(context));
+members.Add("CameraWeight", CameraWeight_Element.ToLinkField(context));
+members.Add("ForcedCameraWeight", ForcedCameraWeight_Element.ToLinkField(context));
+members.Add("EyeReference", EyeReference_Element.ToLinkReference(context));
+members.Add("EyeSeparation", EyeSeparation_Element.ToLinkField(context));
+members.Add("SaccadeSpeed", SaccadeSpeed_Element.ToLinkField(context));
+members.Add("LookTargetRoot", LookTargetRoot_Element.ToLinkReference(context));
+members.Add("LookTargetLocalPoint", LookTargetLocalPoint_Element.ToLinkField(context));
+members.Add("LeftEyeTargetOffset", LeftEyeTargetOffset_Element.ToLinkField(context));
+members.Add("RightEyeTargetOffset", RightEyeTargetOffset_Element.ToLinkField(context));
+members.Add("LookTargetOffset", LookTargetOffset_Element.ToLinkField(context));
+members.Add("MinRandomSaccadeInterval", MinRandomSaccadeInterval_Element.ToLinkField(context));
+members.Add("MaxRandomSaccadeInterval", MaxRandomSaccadeInterval_Element.ToLinkField(context));
+members.Add("MinTargetSaccadeInterval", MinTargetSaccadeInterval_Element.ToLinkField(context));
+members.Add("MaxTargetSaccadeInterval", MaxTargetSaccadeInterval_Element.ToLinkField(context));
+members.Add("MaxRandomSaccadeOffset", MaxRandomSaccadeOffset_Element.ToLinkField(context));
+members.Add("DefaultAcceptAngle", DefaultAcceptAngle_Element.ToLinkField(context));
+members.Add("DefaultBreakAngle", DefaultBreakAngle_Element.ToLinkField(context));
+members.Add("HeadAcceptAngle", HeadAcceptAngle_Element.ToLinkField(context));
+members.Add("HeadBreakAngle", HeadBreakAngle_Element.ToLinkField(context));
+members.Add("CameraAcceptAngle", CameraAcceptAngle_Element.ToLinkField(context));
+members.Add("CameraBreakAngle", CameraBreakAngle_Element.ToLinkField(context));
+members.Add("HandAcceptAngle", HandAcceptAngle_Element.ToLinkField(context));
+members.Add("HandBreakAngle", HandBreakAngle_Element.ToLinkField(context));
+members.Add("DistanceCompensationExp", DistanceCompensationExp_Element.ToLinkField(context));
+members.Add("LeftEyeCloseOverride", LeftEyeCloseOverride_Element.ToLinkField(context));
+members.Add("RightEyeCloseOverride", RightEyeCloseOverride_Element.ToLinkField(context));
+members.Add("MinBlinkInterval", MinBlinkInterval_Element.ToLinkField(context));
+members.Add("MaxBlinkInterval", MaxBlinkInterval_Element.ToLinkField(context));
+members.Add("BlinkMinSpeed", BlinkMinSpeed_Element.ToLinkField(context));
+members.Add("BlinkMaxSpeed", BlinkMaxSpeed_Element.ToLinkField(context));
+members.Add("BlinkSpeedSpread", BlinkSpeedSpread_Element.ToLinkField(context));
+members.Add("MinPupilSize", MinPupilSize_Element.ToLinkField(context));
+members.Add("MaxPupilSize", MaxPupilSize_Element.ToLinkField(context));
+members.Add("PupilSizeNoiseSpeed", PupilSizeNoiseSpeed_Element.ToLinkField(context));
+members.Add("PupilSizeNoiseOffset", PupilSizeNoiseOffset_Element.ToLinkField(context));
+members.Add("EyeTrackingPupilSizeSmoothSpeed", EyeTrackingPupilSizeSmoothSpeed_Element.ToLinkField(context));
+members.Add("MiniExpressionProbability", MiniExpressionProbability_Element.ToLinkField(context));
+members.Add("MiniExpressionInterval", MiniExpressionInterval_Element.ToLinkField(context));
+members.Add("MiniExpressions", MiniExpressions.ToLinkList(context, m => m.ToLinkSyncObject(context)));
 }
 
 }

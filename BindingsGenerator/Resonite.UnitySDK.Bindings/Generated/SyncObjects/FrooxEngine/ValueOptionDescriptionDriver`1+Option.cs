@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.ValueOptionDescriptionDriver<>+Option
-// Generated on: čtvrtek 26. února 2026 10:03:38
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:26:53
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -37,11 +37,11 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("ReferenceValue", ReferenceValue_Element.Data.ToResoniteLinkField());
-members.Add("Label", Label_Element.Data.ToResoniteLinkField());
-members.Add("Color", Color_Element.Data.ToResoniteLinkField());
-members.Add("Sprite", Sprite_Element.Data.ToResoniteReference(context));
-members.Add("SpriteTint", SpriteTint_Element.Data.ToResoniteLinkField());
+members.Add("ReferenceValue", ReferenceValue_Element.ToLinkField(context));
+members.Add("Label", Label_Element.ToLinkField(context));
+members.Add("Color", Color_Element.ToLinkField(context));
+members.Add("Sprite", Sprite_Element.ToLinkReference(context));
+members.Add("SpriteTint", SpriteTint_Element.ToLinkField(context));
 }
 
 }

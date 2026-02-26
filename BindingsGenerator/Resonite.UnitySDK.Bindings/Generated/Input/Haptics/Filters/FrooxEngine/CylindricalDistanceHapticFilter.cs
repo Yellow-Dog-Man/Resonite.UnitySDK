@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.CylindricalDistanceHapticFilter
-// Generated on: čtvrtek 26. února 2026 10:03:39
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:26:55
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -45,16 +45,16 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("StartRadius", StartRadius_Element.Data.ToResoniteLinkField());
-members.Add("EndRadius", EndRadius_Element.Data.ToResoniteLinkField());
-members.Add("StartRadiusIntensity", StartRadiusIntensity_Element.Data.ToResoniteLinkField());
-members.Add("EndRadiusIntensity", EndRadiusIntensity_Element.Data.ToResoniteLinkField());
-members.Add("RadiusPower", RadiusPower_Element.Data.ToResoniteLinkField());
-members.Add("StartAxisOffset", StartAxisOffset_Element.Data.ToResoniteLinkField());
-members.Add("EndAxisOffset", EndAxisOffset_Element.Data.ToResoniteLinkField());
-members.Add("StartAxisIntensity", StartAxisIntensity_Element.Data.ToResoniteLinkField());
-members.Add("EndAxisIntensity", EndAxisIntensity_Element.Data.ToResoniteLinkField());
-members.Add("AxisPower", AxisPower_Element.Data.ToResoniteLinkField());
+members.Add("StartRadius", StartRadius_Element.ToLinkField(context));
+members.Add("EndRadius", EndRadius_Element.ToLinkField(context));
+members.Add("StartRadiusIntensity", StartRadiusIntensity_Element.ToLinkField(context));
+members.Add("EndRadiusIntensity", EndRadiusIntensity_Element.ToLinkField(context));
+members.Add("RadiusPower", RadiusPower_Element.ToLinkField(context));
+members.Add("StartAxisOffset", StartAxisOffset_Element.ToLinkField(context));
+members.Add("EndAxisOffset", EndAxisOffset_Element.ToLinkField(context));
+members.Add("StartAxisIntensity", StartAxisIntensity_Element.ToLinkField(context));
+members.Add("EndAxisIntensity", EndAxisIntensity_Element.ToLinkField(context));
+members.Add("AxisPower", AxisPower_Element.ToLinkField(context));
 }
 
 }

@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.PBS_TriplanarMaterial
-// Generated on: čtvrtek 26. února 2026 10:03:34
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:26:48
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -57,22 +57,22 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("TextureScale", TextureScale_Element.Data.ToResoniteLinkField());
-members.Add("TextureOffset", TextureOffset_Element.Data.ToResoniteLinkField());
-members.Add("AlbedoColor", AlbedoColor_Element.Data.ToResoniteLinkField());
-members.Add("AlbedoTexture", AlbedoTexture_Element.Data.ToResoniteReference(context));
-members.Add("EmissiveColor", EmissiveColor_Element.Data.ToResoniteLinkField());
-members.Add("EmissiveMap", EmissiveMap_Element.Data.ToResoniteReference(context));
-members.Add("NormalMap", NormalMap_Element.Data.ToResoniteReference(context));
-members.Add("NormalScale", NormalScale_Element.Data.ToResoniteLinkField());
-members.Add("OcclusionMap", OcclusionMap_Element.Data.ToResoniteReference(context));
-members.Add("TriplanarBlendPower", TriplanarBlendPower_Element.Data.ToResoniteLinkField());
-members.Add("ObjectSpace", ObjectSpace_Element.Data.ToResoniteLinkField());
-members.Add("OffsetFactor", OffsetFactor_Element.Data.ToResoniteLinkField());
-members.Add("OffsetUnits", OffsetUnits_Element.Data.ToResoniteLinkField());
-members.Add("Culling", Culling_Element.Data.ToResoniteLinkField());
-members.Add("Transparent", Transparent_Element.Data.ToResoniteLinkField());
-members.Add("RenderQueue", RenderQueue_Element.Data.ToResoniteLinkField());
+members.Add("TextureScale", TextureScale_Element.ToLinkField(context));
+members.Add("TextureOffset", TextureOffset_Element.ToLinkField(context));
+members.Add("AlbedoColor", AlbedoColor_Element.ToLinkField(context));
+members.Add("AlbedoTexture", AlbedoTexture_Element.ToLinkReference(context));
+members.Add("EmissiveColor", EmissiveColor_Element.ToLinkField(context));
+members.Add("EmissiveMap", EmissiveMap_Element.ToLinkReference(context));
+members.Add("NormalMap", NormalMap_Element.ToLinkReference(context));
+members.Add("NormalScale", NormalScale_Element.ToLinkField(context));
+members.Add("OcclusionMap", OcclusionMap_Element.ToLinkReference(context));
+members.Add("TriplanarBlendPower", TriplanarBlendPower_Element.ToLinkField(context));
+members.Add("ObjectSpace", ObjectSpace_Element.ToLinkField(context));
+members.Add("OffsetFactor", OffsetFactor_Element.ToLinkField(context));
+members.Add("OffsetUnits", OffsetUnits_Element.ToLinkField(context));
+members.Add("Culling", Culling_Element.ToLinkField(context));
+members.Add("Transparent", Transparent_Element.ToLinkField(context));
+members.Add("RenderQueue", RenderQueue_Element.ToLinkField(context));
 }
 
 }

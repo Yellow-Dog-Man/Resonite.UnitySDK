@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.CheckerboardCubemap
-// Generated on: čtvrtek 26. února 2026 10:03:35
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:26:50
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -51,19 +51,19 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("CheckerSize", CheckerSize_Element.Data.ToResoniteLinkField());
-members.Add("PosX_Color0", PosX_Color0_Element.Data.ToResoniteLinkField());
-members.Add("PosX_Color1", PosX_Color1_Element.Data.ToResoniteLinkField());
-members.Add("NegX_Color0", NegX_Color0_Element.Data.ToResoniteLinkField());
-members.Add("NegX_Color1", NegX_Color1_Element.Data.ToResoniteLinkField());
-members.Add("PosY_Color0", PosY_Color0_Element.Data.ToResoniteLinkField());
-members.Add("PosY_Color1", PosY_Color1_Element.Data.ToResoniteLinkField());
-members.Add("NegY_Color0", NegY_Color0_Element.Data.ToResoniteLinkField());
-members.Add("NegY_Color1", NegY_Color1_Element.Data.ToResoniteLinkField());
-members.Add("PosZ_Color0", PosZ_Color0_Element.Data.ToResoniteLinkField());
-members.Add("PosZ_Color1", PosZ_Color1_Element.Data.ToResoniteLinkField());
-members.Add("NegZ_Color0", NegZ_Color0_Element.Data.ToResoniteLinkField());
-members.Add("NegZ_Color1", NegZ_Color1_Element.Data.ToResoniteLinkField());
+members.Add("CheckerSize", CheckerSize_Element.ToLinkField(context));
+members.Add("PosX_Color0", PosX_Color0_Element.ToLinkField(context));
+members.Add("PosX_Color1", PosX_Color1_Element.ToLinkField(context));
+members.Add("NegX_Color0", NegX_Color0_Element.ToLinkField(context));
+members.Add("NegX_Color1", NegX_Color1_Element.ToLinkField(context));
+members.Add("PosY_Color0", PosY_Color0_Element.ToLinkField(context));
+members.Add("PosY_Color1", PosY_Color1_Element.ToLinkField(context));
+members.Add("NegY_Color0", NegY_Color0_Element.ToLinkField(context));
+members.Add("NegY_Color1", NegY_Color1_Element.ToLinkField(context));
+members.Add("PosZ_Color0", PosZ_Color0_Element.ToLinkField(context));
+members.Add("PosZ_Color1", PosZ_Color1_Element.ToLinkField(context));
+members.Add("NegZ_Color0", NegZ_Color0_Element.ToLinkField(context));
+members.Add("NegZ_Color1", NegZ_Color1_Element.ToLinkField(context));
 }
 
 }

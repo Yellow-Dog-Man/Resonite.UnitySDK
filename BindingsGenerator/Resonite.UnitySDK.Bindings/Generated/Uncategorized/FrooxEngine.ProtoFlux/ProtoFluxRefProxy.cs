@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.ProtoFlux.ProtoFluxRefProxy
-// Generated on: čtvrtek 26. února 2026 10:04:47
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:28:12
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -37,12 +37,12 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Node", Node_Element.Data.ToResoniteReference(context));
-members.Add("ElementName", ElementName_Element.Data.ToResoniteLinkField());
-members.Add("ValueType", ValueType_Element.Data.ToResoniteLinkField());
-members.Add("_label", _label_Element.Data.ToResoniteReference(context));
-members.Add("_proxyVisual", _proxyVisual_Element.Data.ToResoniteReference(context));
-members.Add("_refProxySource", _refProxySource_Element.Data.ToResoniteReference(context));
+members.Add("Node", Node_Element.ToLinkReference(context));
+members.Add("ElementName", ElementName_Element.ToLinkField(context));
+members.Add("ValueType", ValueType_Element.ToLinkField(context));
+members.Add("_label", _label_Element.ToLinkReference(context));
+members.Add("_proxyVisual", _proxyVisual_Element.ToLinkReference(context));
+members.Add("_refProxySource", _refProxySource_Element.ToLinkReference(context));
 }
 
 }

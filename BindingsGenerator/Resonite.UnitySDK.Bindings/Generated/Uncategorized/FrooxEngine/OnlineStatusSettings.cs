@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.OnlineStatusSettings
-// Generated on: čtvrtek 26. února 2026 10:04:47
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:28:12
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -43,15 +43,15 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("DefaultStatus", DefaultStatus_Element.Data.ToResoniteLinkField());
-members.Add("RememberMode", RememberMode_Element.Data.ToResoniteLinkField());
-members.Add("RememberTimespan", RememberTimespan_Element.Data.ToResoniteLinkField());
-members.Add("InvisibleRememberMode", InvisibleRememberMode_Element.Data.ToResoniteLinkField());
-members.Add("InvisibleRememberTimespan", InvisibleRememberTimespan_Element.Data.ToResoniteLinkField());
-members.Add("AutoAwayTimespan", AutoAwayTimespan_Element.Data.ToResoniteLinkField());
-members.Add("EnableDefaultStatus", EnableDefaultStatus_Element.Data.ToResoniteLinkField());
-members.Add("ShowRememberTimespan", ShowRememberTimespan_Element.Data.ToResoniteLinkField());
-members.Add("ShowInvisibleRememberTimespan", ShowInvisibleRememberTimespan_Element.Data.ToResoniteLinkField());
+members.Add("DefaultStatus", DefaultStatus_Element.ToLinkField(context));
+members.Add("RememberMode", RememberMode_Element.ToLinkField(context));
+members.Add("RememberTimespan", RememberTimespan_Element.ToLinkField(context));
+members.Add("InvisibleRememberMode", InvisibleRememberMode_Element.ToLinkField(context));
+members.Add("InvisibleRememberTimespan", InvisibleRememberTimespan_Element.ToLinkField(context));
+members.Add("AutoAwayTimespan", AutoAwayTimespan_Element.ToLinkField(context));
+members.Add("EnableDefaultStatus", EnableDefaultStatus_Element.ToLinkField(context));
+members.Add("ShowRememberTimespan", ShowRememberTimespan_Element.ToLinkField(context));
+members.Add("ShowInvisibleRememberTimespan", ShowInvisibleRememberTimespan_Element.ToLinkField(context));
 }
 
 }

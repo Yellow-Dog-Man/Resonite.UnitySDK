@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.MergedWorldDataItemInterface
-// Generated on: čtvrtek 26. února 2026 10:04:35
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:28:01
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -43,16 +43,16 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("IsMerged", IsMerged_Element.Data.ToResoniteReference(context));
-members.Add("SessionCount", SessionCount_Element.Data.ToResoniteReference(context));
-members.Add("WorldCount", WorldCount_Element.Data.ToResoniteReference(context));
-members.Add("MainName", MainName_Element.Data.ToResoniteReference(context));
-members.Add("MainThumbnail", MainThumbnail_Element.Data.ToResoniteReference(context));
-members.Add("WorldOrSessionId", WorldOrSessionId_Element.Data.ToResoniteReference(context));
-members.Add("TotalAggregateActiveUsers", TotalAggregateActiveUsers_Element.Data.ToResoniteReference(context));
-members.Add("TotalAggregateContacts", TotalAggregateContacts_Element.Data.ToResoniteReference(context));
-members.Add("Sessions", new ResoniteLink.SyncObject() { Members = Sessions.CollectMembers(context) });
-members.Add("Worlds", new ResoniteLink.SyncObject() { Members = Worlds.CollectMembers(context) });
+members.Add("IsMerged", IsMerged_Element.ToLinkReference(context));
+members.Add("SessionCount", SessionCount_Element.ToLinkReference(context));
+members.Add("WorldCount", WorldCount_Element.ToLinkReference(context));
+members.Add("MainName", MainName_Element.ToLinkReference(context));
+members.Add("MainThumbnail", MainThumbnail_Element.ToLinkReference(context));
+members.Add("WorldOrSessionId", WorldOrSessionId_Element.ToLinkReference(context));
+members.Add("TotalAggregateActiveUsers", TotalAggregateActiveUsers_Element.ToLinkReference(context));
+members.Add("TotalAggregateContacts", TotalAggregateContacts_Element.ToLinkReference(context));
+members.Add("Sessions", Sessions.ToLinkSyncObject(context));
+members.Add("Worlds", Worlds.ToLinkSyncObject(context));
 }
 
 }

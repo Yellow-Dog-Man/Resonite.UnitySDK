@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.LegacyRadio
-// Generated on: čtvrtek 26. února 2026 10:04:42
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:28:08
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -43,15 +43,15 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("IsEnabled", IsEnabled_Element.Data.ToResoniteLinkField());
-members.Add("Radius", Radius_Element.Data.ToResoniteLinkField());
-members.Add("Color", Color_Element.Data.ToResoniteLinkField());
-members.Add("Selected", Selected_Element.Data.ToResoniteLinkField());
-members.Add("_colliderRadius", _colliderRadius_Element.Data.ToResoniteReference(context));
-members.Add("_icosphere", _icosphere_Element.Data.ToResoniteReference(context));
-members.Add("_material", _material_Element.Data.ToResoniteReference(context));
-members.Add("_group", _group_Element.Data.ToResoniteReference(context));
-members.Add("_orderNumber", _orderNumber_Element.Data.ToResoniteLinkField());
+members.Add("IsEnabled", IsEnabled_Element.ToLinkField(context));
+members.Add("Radius", Radius_Element.ToLinkField(context));
+members.Add("Color", Color_Element.ToLinkField(context));
+members.Add("Selected", Selected_Element.ToLinkField(context));
+members.Add("_colliderRadius", _colliderRadius_Element.ToLinkReference(context));
+members.Add("_icosphere", _icosphere_Element.ToLinkReference(context));
+members.Add("_material", _material_Element.ToLinkReference(context));
+members.Add("_group", _group_Element.ToLinkReference(context));
+members.Add("_orderNumber", _orderNumber_Element.ToLinkField(context));
 }
 
 }

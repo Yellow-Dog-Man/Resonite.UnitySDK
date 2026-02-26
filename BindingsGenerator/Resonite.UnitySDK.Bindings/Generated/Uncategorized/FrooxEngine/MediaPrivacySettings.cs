@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.MediaPrivacySettings
-// Generated on: čtvrtek 26. února 2026 10:04:47
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:28:12
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -31,9 +31,9 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("MediaMetadataOptOut", MediaMetadataOptOut_Element.Data.ToResoniteLinkField());
-members.Add("HideInScreenshots", HideInScreenshots_Element.Data.ToResoniteLinkField());
-members.Add("StripImageFileMetadata", StripImageFileMetadata_Element.Data.ToResoniteLinkField());
+members.Add("MediaMetadataOptOut", MediaMetadataOptOut_Element.ToLinkField(context));
+members.Add("HideInScreenshots", HideInScreenshots_Element.ToLinkField(context));
+members.Add("StripImageFileMetadata", StripImageFileMetadata_Element.ToLinkField(context));
 }
 
 }

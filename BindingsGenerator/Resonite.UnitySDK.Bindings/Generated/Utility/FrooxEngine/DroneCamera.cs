@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.DroneCamera
-// Generated on: čtvrtek 26. února 2026 10:04:50
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:28:16
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -118,53 +118,53 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("CameraUser", new ResoniteLink.SyncObject() { Members = CameraUser.CollectMembers(context) });
-members.Add("SimulateOnHost", SimulateOnHost_Element.Data.ToResoniteLinkField());
-members.Add("ManualControl", ManualControl_Element.Data.ToResoniteLinkField());
-members.Add("SlowSpeed", SlowSpeed_Element.Data.ToResoniteLinkField());
-members.Add("Speed", Speed_Element.Data.ToResoniteLinkField());
-members.Add("FastSpeed", FastSpeed_Element.Data.ToResoniteLinkField());
-members.Add("MouseSensitivity", MouseSensitivity_Element.Data.ToResoniteLinkField());
-members.Add("FieldOfViewSource", FieldOfViewSource_Element.Data.ToResoniteReference(context));
-members.Add("FieldOfView", FieldOfView_Element.Data.ToResoniteLinkField());
-members.Add("AspectRatioSource", AspectRatioSource_Element.Data.ToResoniteReference(context));
-members.Add("AspectRatio", AspectRatio_Element.Data.ToResoniteLinkField());
-members.Add("FollowUser", FollowUser_Element.Data.ToResoniteReference(context));
-members.Add("ControllerRejectDistance", ControllerRejectDistance_Element.Data.ToResoniteLinkField());
-members.Add("GroupSearchRadius", GroupSearchRadius_Element.Data.ToResoniteLinkField());
-members.Add("BiggestGroupSearchInterval", BiggestGroupSearchInterval_Element.Data.ToResoniteLinkField());
-members.Add("IgnoreOtherCameras", IgnoreOtherCameras_Element.Data.ToResoniteLinkField());
-members.Add("HeadForwardPointDistance", HeadForwardPointDistance_Element.Data.ToResoniteLinkField());
-members.Add("HeadBackwardPointDistance", HeadBackwardPointDistance_Element.Data.ToResoniteLinkField());
-members.Add("HeadUpPointDistance", HeadUpPointDistance_Element.Data.ToResoniteLinkField());
-members.Add("HeadDownPointDistance", HeadDownPointDistance_Element.Data.ToResoniteLinkField());
-members.Add("HeightOffset", HeightOffset_Element.Data.ToResoniteLinkField());
-members.Add("CircleOffset", CircleOffset_Element.Data.ToResoniteLinkField());
-members.Add("DistanceOffset", DistanceOffset_Element.Data.ToResoniteLinkField());
-members.Add("CircleSpeed", CircleSpeed_Element.Data.ToResoniteLinkField());
-members.Add("PositionSpeed", PositionSpeed_Element.Data.ToResoniteLinkField());
-members.Add("LookSpeed", LookSpeed_Element.Data.ToResoniteLinkField());
-members.Add("DistanceSpeed", DistanceSpeed_Element.Data.ToResoniteLinkField());
-members.Add("UserInfluenceSpeed", UserInfluenceSpeed_Element.Data.ToResoniteLinkField());
-members.Add("HeightAmplitude", HeightAmplitude_Element.Data.ToResoniteLinkField());
-members.Add("DistanceAmplitude", DistanceAmplitude_Element.Data.ToResoniteLinkField());
-members.Add("CircleAmplitude", CircleAmplitude_Element.Data.ToResoniteLinkField());
-members.Add("HeightPeriod", HeightPeriod_Element.Data.ToResoniteLinkField());
-members.Add("DistancePeriod", DistancePeriod_Element.Data.ToResoniteLinkField());
-members.Add("CirclePeriod", CirclePeriod_Element.Data.ToResoniteLinkField());
-members.Add("CirclePeriodNoiseSpeed", CirclePeriodNoiseSpeed_Element.Data.ToResoniteLinkField());
-members.Add("CirclePeriodNoiseInfluence", CirclePeriodNoiseInfluence_Element.Data.ToResoniteLinkField());
-members.Add("CheckOcclusion", CheckOcclusion_Element.Data.ToResoniteLinkField());
-members.Add("AdjustHeightOnOcclusion", AdjustHeightOnOcclusion_Element.Data.ToResoniteLinkField());
-members.Add("TeleportWaitTime", TeleportWaitTime_Element.Data.ToResoniteLinkField());
-members.Add("TeleportTriggerRelativeDistance", TeleportTriggerRelativeDistance_Element.Data.ToResoniteLinkField());
-members.Add("TeleportTriggerAngle", TeleportTriggerAngle_Element.Data.ToResoniteLinkField());
-members.Add("MinRandomizeFovInterval", MinRandomizeFovInterval_Element.Data.ToResoniteLinkField());
-members.Add("MaxRandomizeFovInterval", MaxRandomizeFovInterval_Element.Data.ToResoniteLinkField());
-members.Add("MinFov", MinFov_Element.Data.ToResoniteLinkField());
-members.Add("MaxFov", MaxFov_Element.Data.ToResoniteLinkField());
-members.Add("MinChangeFovTime", MinChangeFovTime_Element.Data.ToResoniteLinkField());
-members.Add("MaxChangeFovTime", MaxChangeFovTime_Element.Data.ToResoniteLinkField());
+members.Add("CameraUser", CameraUser.ToLinkSyncObject(context));
+members.Add("SimulateOnHost", SimulateOnHost_Element.ToLinkField(context));
+members.Add("ManualControl", ManualControl_Element.ToLinkField(context));
+members.Add("SlowSpeed", SlowSpeed_Element.ToLinkField(context));
+members.Add("Speed", Speed_Element.ToLinkField(context));
+members.Add("FastSpeed", FastSpeed_Element.ToLinkField(context));
+members.Add("MouseSensitivity", MouseSensitivity_Element.ToLinkField(context));
+members.Add("FieldOfViewSource", FieldOfViewSource_Element.ToLinkReference(context));
+members.Add("FieldOfView", FieldOfView_Element.ToLinkField(context));
+members.Add("AspectRatioSource", AspectRatioSource_Element.ToLinkReference(context));
+members.Add("AspectRatio", AspectRatio_Element.ToLinkField(context));
+members.Add("FollowUser", FollowUser_Element.ToLinkReference(context));
+members.Add("ControllerRejectDistance", ControllerRejectDistance_Element.ToLinkField(context));
+members.Add("GroupSearchRadius", GroupSearchRadius_Element.ToLinkField(context));
+members.Add("BiggestGroupSearchInterval", BiggestGroupSearchInterval_Element.ToLinkField(context));
+members.Add("IgnoreOtherCameras", IgnoreOtherCameras_Element.ToLinkField(context));
+members.Add("HeadForwardPointDistance", HeadForwardPointDistance_Element.ToLinkField(context));
+members.Add("HeadBackwardPointDistance", HeadBackwardPointDistance_Element.ToLinkField(context));
+members.Add("HeadUpPointDistance", HeadUpPointDistance_Element.ToLinkField(context));
+members.Add("HeadDownPointDistance", HeadDownPointDistance_Element.ToLinkField(context));
+members.Add("HeightOffset", HeightOffset_Element.ToLinkField(context));
+members.Add("CircleOffset", CircleOffset_Element.ToLinkField(context));
+members.Add("DistanceOffset", DistanceOffset_Element.ToLinkField(context));
+members.Add("CircleSpeed", CircleSpeed_Element.ToLinkField(context));
+members.Add("PositionSpeed", PositionSpeed_Element.ToLinkField(context));
+members.Add("LookSpeed", LookSpeed_Element.ToLinkField(context));
+members.Add("DistanceSpeed", DistanceSpeed_Element.ToLinkField(context));
+members.Add("UserInfluenceSpeed", UserInfluenceSpeed_Element.ToLinkField(context));
+members.Add("HeightAmplitude", HeightAmplitude_Element.ToLinkField(context));
+members.Add("DistanceAmplitude", DistanceAmplitude_Element.ToLinkField(context));
+members.Add("CircleAmplitude", CircleAmplitude_Element.ToLinkField(context));
+members.Add("HeightPeriod", HeightPeriod_Element.ToLinkField(context));
+members.Add("DistancePeriod", DistancePeriod_Element.ToLinkField(context));
+members.Add("CirclePeriod", CirclePeriod_Element.ToLinkField(context));
+members.Add("CirclePeriodNoiseSpeed", CirclePeriodNoiseSpeed_Element.ToLinkField(context));
+members.Add("CirclePeriodNoiseInfluence", CirclePeriodNoiseInfluence_Element.ToLinkField(context));
+members.Add("CheckOcclusion", CheckOcclusion_Element.ToLinkField(context));
+members.Add("AdjustHeightOnOcclusion", AdjustHeightOnOcclusion_Element.ToLinkField(context));
+members.Add("TeleportWaitTime", TeleportWaitTime_Element.ToLinkField(context));
+members.Add("TeleportTriggerRelativeDistance", TeleportTriggerRelativeDistance_Element.ToLinkField(context));
+members.Add("TeleportTriggerAngle", TeleportTriggerAngle_Element.ToLinkField(context));
+members.Add("MinRandomizeFovInterval", MinRandomizeFovInterval_Element.ToLinkField(context));
+members.Add("MaxRandomizeFovInterval", MaxRandomizeFovInterval_Element.ToLinkField(context));
+members.Add("MinFov", MinFov_Element.ToLinkField(context));
+members.Add("MaxFov", MaxFov_Element.ToLinkField(context));
+members.Add("MinChangeFovTime", MinChangeFovTime_Element.ToLinkField(context));
+members.Add("MaxChangeFovTime", MaxChangeFovTime_Element.ToLinkField(context));
 }
 
 }

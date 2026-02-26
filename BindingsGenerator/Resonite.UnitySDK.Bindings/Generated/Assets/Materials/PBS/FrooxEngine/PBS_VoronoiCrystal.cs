@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.PBS_VoronoiCrystal
-// Generated on: čtvrtek 26. února 2026 10:03:34
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:26:48
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -63,25 +63,25 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("NoiseScale", NoiseScale_Element.Data.ToResoniteLinkField());
-members.Add("NoiseAnimationOffset", NoiseAnimationOffset_Element.Data.ToResoniteLinkField());
-members.Add("CellColorTint", CellColorTint_Element.Data.ToResoniteLinkField());
-members.Add("ColorGradient", ColorGradient_Element.Data.ToResoniteReference(context));
-members.Add("EmissionColor", EmissionColor_Element.Data.ToResoniteLinkField());
-members.Add("EmissionGradient", EmissionGradient_Element.Data.ToResoniteReference(context));
-members.Add("SmoothnessGradient", SmoothnessGradient_Element.Data.ToResoniteReference(context));
-members.Add("CellSmoothness", CellSmoothness_Element.Data.ToResoniteLinkField());
-members.Add("CellMetallic", CellMetallic_Element.Data.ToResoniteLinkField());
-members.Add("NormalMap", NormalMap_Element.Data.ToResoniteReference(context));
-members.Add("NormalStrength", NormalStrength_Element.Data.ToResoniteLinkField());
-members.Add("NormalTextureScale", NormalTextureScale_Element.Data.ToResoniteLinkField());
-members.Add("NormalTextureOffset", NormalTextureOffset_Element.Data.ToResoniteLinkField());
-members.Add("EdgeThickness", EdgeThickness_Element.Data.ToResoniteLinkField());
-members.Add("EdgeColor", EdgeColor_Element.Data.ToResoniteLinkField());
-members.Add("EdgeEmission", EdgeEmission_Element.Data.ToResoniteLinkField());
-members.Add("EdgeSmoothness", EdgeSmoothness_Element.Data.ToResoniteLinkField());
-members.Add("EdgeMetallic", EdgeMetallic_Element.Data.ToResoniteLinkField());
-members.Add("EdgeNormalStrength", EdgeNormalStrength_Element.Data.ToResoniteLinkField());
+members.Add("NoiseScale", NoiseScale_Element.ToLinkField(context));
+members.Add("NoiseAnimationOffset", NoiseAnimationOffset_Element.ToLinkField(context));
+members.Add("CellColorTint", CellColorTint_Element.ToLinkField(context));
+members.Add("ColorGradient", ColorGradient_Element.ToLinkReference(context));
+members.Add("EmissionColor", EmissionColor_Element.ToLinkField(context));
+members.Add("EmissionGradient", EmissionGradient_Element.ToLinkReference(context));
+members.Add("SmoothnessGradient", SmoothnessGradient_Element.ToLinkReference(context));
+members.Add("CellSmoothness", CellSmoothness_Element.ToLinkField(context));
+members.Add("CellMetallic", CellMetallic_Element.ToLinkField(context));
+members.Add("NormalMap", NormalMap_Element.ToLinkReference(context));
+members.Add("NormalStrength", NormalStrength_Element.ToLinkField(context));
+members.Add("NormalTextureScale", NormalTextureScale_Element.ToLinkField(context));
+members.Add("NormalTextureOffset", NormalTextureOffset_Element.ToLinkField(context));
+members.Add("EdgeThickness", EdgeThickness_Element.ToLinkField(context));
+members.Add("EdgeColor", EdgeColor_Element.ToLinkField(context));
+members.Add("EdgeEmission", EdgeEmission_Element.ToLinkField(context));
+members.Add("EdgeSmoothness", EdgeSmoothness_Element.ToLinkField(context));
+members.Add("EdgeMetallic", EdgeMetallic_Element.ToLinkField(context));
+members.Add("EdgeNormalStrength", EdgeNormalStrength_Element.ToLinkField(context));
 }
 
 }

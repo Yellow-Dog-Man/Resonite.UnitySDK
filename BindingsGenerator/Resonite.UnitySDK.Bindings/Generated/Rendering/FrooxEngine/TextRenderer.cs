@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.TextRenderer
-// Generated on: čtvrtek 26. února 2026 10:03:37
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:26:52
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -70,32 +70,29 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Font", Font_Element.Data.ToResoniteReference(context));
-members.Add("Text", Text_Element.Data.ToResoniteLinkField());
-members.Add("ParseRichText", ParseRichText_Element.Data.ToResoniteLinkField());
-members.Add("NullText", NullText_Element.Data.ToResoniteLinkField());
-members.Add("Size", Size_Element.Data.ToResoniteLinkField());
-members.Add("HorizontalAlign", HorizontalAlign_Element.Data.ToResoniteLinkField());
-members.Add("VerticalAlign", VerticalAlign_Element.Data.ToResoniteLinkField());
-members.Add("AlignmentMode", AlignmentMode_Element.Data.ToResoniteLinkField());
-members.Add("Color", Color_Element.Data.ToResoniteLinkField());
-members.Add("Materials", new ResoniteLink.SyncList()
-{
-    Elements = Materials.Data.ConvertList(m => m.Data.ToResoniteReference(context))
-});
-members.Add("LineHeight", LineHeight_Element.Data.ToResoniteLinkField());
-members.Add("Bounded", Bounded_Element.Data.ToResoniteLinkField());
-members.Add("BoundsSize", BoundsSize_Element.Data.ToResoniteLinkField());
-members.Add("BoundsAlignment", BoundsAlignment_Element.Data.ToResoniteLinkField());
-members.Add("MaskPattern", MaskPattern_Element.Data.ToResoniteLinkField());
-members.Add("HorizontalAutoSize", HorizontalAutoSize_Element.Data.ToResoniteLinkField());
-members.Add("VerticalAutoSize", VerticalAutoSize_Element.Data.ToResoniteLinkField());
-members.Add("CaretPosition", CaretPosition_Element.Data.ToResoniteLinkField());
-members.Add("SelectionStart", SelectionStart_Element.Data.ToResoniteLinkField());
-members.Add("CaretColor", CaretColor_Element.Data.ToResoniteLinkField());
-members.Add("SelectionColor", SelectionColor_Element.Data.ToResoniteLinkField());
-members.Add("_legacyFontMaterial", _legacyFontMaterial_Element.Data.ToResoniteReference(context));
-members.Add("_legacyAlign", _legacyAlign_Element.Data.ToResoniteLinkField());
+members.Add("Font", Font_Element.ToLinkReference(context));
+members.Add("Text", Text_Element.ToLinkField(context));
+members.Add("ParseRichText", ParseRichText_Element.ToLinkField(context));
+members.Add("NullText", NullText_Element.ToLinkField(context));
+members.Add("Size", Size_Element.ToLinkField(context));
+members.Add("HorizontalAlign", HorizontalAlign_Element.ToLinkField(context));
+members.Add("VerticalAlign", VerticalAlign_Element.ToLinkField(context));
+members.Add("AlignmentMode", AlignmentMode_Element.ToLinkField(context));
+members.Add("Color", Color_Element.ToLinkField(context));
+members.Add("Materials", Materials.ToLinkList(context, m => m.ToLinkReference(context)));
+members.Add("LineHeight", LineHeight_Element.ToLinkField(context));
+members.Add("Bounded", Bounded_Element.ToLinkField(context));
+members.Add("BoundsSize", BoundsSize_Element.ToLinkField(context));
+members.Add("BoundsAlignment", BoundsAlignment_Element.ToLinkField(context));
+members.Add("MaskPattern", MaskPattern_Element.ToLinkField(context));
+members.Add("HorizontalAutoSize", HorizontalAutoSize_Element.ToLinkField(context));
+members.Add("VerticalAutoSize", VerticalAutoSize_Element.ToLinkField(context));
+members.Add("CaretPosition", CaretPosition_Element.ToLinkField(context));
+members.Add("SelectionStart", SelectionStart_Element.ToLinkField(context));
+members.Add("CaretColor", CaretColor_Element.ToLinkField(context));
+members.Add("SelectionColor", SelectionColor_Element.ToLinkField(context));
+members.Add("_legacyFontMaterial", _legacyFontMaterial_Element.ToLinkReference(context));
+members.Add("_legacyAlign", _legacyAlign_Element.ToLinkField(context));
 }
 
 }

@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [ProtoFluxBindings]FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.Math.Geometry3D.DistanceFromSphericalSector
-// Generated on: čtvrtek 26. února 2026 10:04:18
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:27:39
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -35,11 +35,11 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Center", Center_Element.Data.ToResoniteReference(context));
-members.Add("Direction", Direction_Element.Data.ToResoniteReference(context));
-members.Add("Radius", Radius_Element.Data.ToResoniteReference(context));
-members.Add("Angle", Angle_Element.Data.ToResoniteReference(context));
-members.Add("Point", Point_Element.Data.ToResoniteReference(context));
+members.Add("Center", Center_Element.ToLinkReference(context));
+members.Add("Direction", Direction_Element.ToLinkReference(context));
+members.Add("Radius", Radius_Element.ToLinkReference(context));
+members.Add("Angle", Angle_Element.ToLinkReference(context));
+members.Add("Point", Point_Element.ToLinkReference(context));
 }
 
 }

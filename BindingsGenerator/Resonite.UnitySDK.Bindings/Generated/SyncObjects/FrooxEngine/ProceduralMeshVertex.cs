@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.ProceduralMeshVertex
-// Generated on: čtvrtek 26. února 2026 10:03:35
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:26:50
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -41,14 +41,14 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Position", Position_Element.Data.ToResoniteLinkField());
-members.Add("UV0", UV0_Element.Data.ToResoniteLinkField());
-members.Add("UV1", UV1_Element.Data.ToResoniteLinkField());
-members.Add("UV2", UV2_Element.Data.ToResoniteLinkField());
-members.Add("UV3", UV3_Element.Data.ToResoniteLinkField());
-members.Add("Color", Color_Element.Data.ToResoniteLinkField());
-members.Add("Normal", Normal_Element.Data.ToResoniteLinkField());
-members.Add("Tangent", Tangent_Element.Data.ToResoniteLinkField());
+members.Add("Position", Position_Element.ToLinkField(context));
+members.Add("UV0", UV0_Element.ToLinkField(context));
+members.Add("UV1", UV1_Element.ToLinkField(context));
+members.Add("UV2", UV2_Element.ToLinkField(context));
+members.Add("UV3", UV3_Element.ToLinkField(context));
+members.Add("Color", Color_Element.ToLinkField(context));
+members.Add("Normal", Normal_Element.ToLinkField(context));
+members.Add("Tangent", Tangent_Element.ToLinkField(context));
 }
 
 }

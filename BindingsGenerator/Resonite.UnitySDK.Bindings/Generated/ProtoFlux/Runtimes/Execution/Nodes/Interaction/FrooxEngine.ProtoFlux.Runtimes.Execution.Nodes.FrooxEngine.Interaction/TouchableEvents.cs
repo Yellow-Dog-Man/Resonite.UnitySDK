@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [ProtoFluxBindings]FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Interaction.TouchableEvents
-// Generated on: čtvrtek 26. února 2026 10:04:15
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:27:35
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -35,14 +35,14 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("EventSource", EventSource_Element.Data.ToResoniteReference(context));
-members.Add("OnEvent", OnEvent_Element.Data.ToResoniteReference(context));
-members.Add("Hover", new ResoniteLink.EmptyElement());
-members.Add("Touch", new ResoniteLink.EmptyElement());
-members.Add("Point", new ResoniteLink.EmptyElement());
-members.Add("Tip", new ResoniteLink.EmptyElement());
-members.Add("Type", new ResoniteLink.EmptyElement());
-members.Add("Source", new ResoniteLink.EmptyElement());
+members.Add("EventSource", EventSource_Element.ToLinkReference(context));
+members.Add("OnEvent", OnEvent_Element.ToLinkReference(context));
+members.Add("Hover", Hover.ToLinkEmpty(context));
+members.Add("Touch", Touch.ToLinkEmpty(context));
+members.Add("Point", Point.ToLinkEmpty(context));
+members.Add("Tip", Tip.ToLinkEmpty(context));
+members.Add("Type", Type.ToLinkEmpty(context));
+members.Add("Source", Source.ToLinkEmpty(context));
 }
 
 }

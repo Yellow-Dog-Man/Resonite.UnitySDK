@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.AxisRotationGizmo
-// Generated on: čtvrtek 26. února 2026 10:04:43
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:28:09
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -53,21 +53,21 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Axis", Axis_Element.Data.ToResoniteLinkField());
-members.Add("AxisSpace", new ResoniteLink.SyncObject() { Members = AxisSpace.CollectMembers(context) });
-members.Add("RotationSpace", new ResoniteLink.SyncObject() { Members = RotationSpace.CollectMembers(context) });
-members.Add("TargetRotation", TargetRotation_Element.Data.ToResoniteReference(context));
-members.Add("TargetValue", TargetValue_Element.Data.ToResoniteReference(context));
-members.Add("CircleRadius", CircleRadius_Element.Data.ToResoniteLinkField());
-members.Add("CircleThickness", CircleThickness_Element.Data.ToResoniteLinkField());
-members.Add("_visualRoot", _visualRoot_Element.Data.ToResoniteReference(context));
-members.Add("_visualRot", _visualRot_Element.Data.ToResoniteReference(context));
-members.Add("_circle", _circle_Element.Data.ToResoniteReference(context));
-members.Add("_circleColliderMesh", _circleColliderMesh_Element.Data.ToResoniteReference(context));
-members.Add("_referenceLine", _referenceLine_Element.Data.ToResoniteReference(context));
-members.Add("_linesRoot", _linesRoot_Element.Data.ToResoniteReference(context));
-members.Add("_line0", _line0_Element.Data.ToResoniteReference(context));
-members.Add("_line1", _line1_Element.Data.ToResoniteReference(context));
+members.Add("Axis", Axis_Element.ToLinkField(context));
+members.Add("AxisSpace", AxisSpace.ToLinkSyncObject(context));
+members.Add("RotationSpace", RotationSpace.ToLinkSyncObject(context));
+members.Add("TargetRotation", TargetRotation_Element.ToLinkReference(context));
+members.Add("TargetValue", TargetValue_Element.ToLinkReference(context));
+members.Add("CircleRadius", CircleRadius_Element.ToLinkField(context));
+members.Add("CircleThickness", CircleThickness_Element.ToLinkField(context));
+members.Add("_visualRoot", _visualRoot_Element.ToLinkReference(context));
+members.Add("_visualRot", _visualRot_Element.ToLinkReference(context));
+members.Add("_circle", _circle_Element.ToLinkReference(context));
+members.Add("_circleColliderMesh", _circleColliderMesh_Element.ToLinkReference(context));
+members.Add("_referenceLine", _referenceLine_Element.ToLinkReference(context));
+members.Add("_linesRoot", _linesRoot_Element.ToLinkReference(context));
+members.Add("_line0", _line0_Element.ToLinkReference(context));
+members.Add("_line1", _line1_Element.ToLinkReference(context));
 }
 
 }

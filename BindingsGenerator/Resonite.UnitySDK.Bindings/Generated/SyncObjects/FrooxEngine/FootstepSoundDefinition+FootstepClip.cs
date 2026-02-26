@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.FootstepSoundDefinition+FootstepClip
-// Generated on: čtvrtek 26. února 2026 10:03:39
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:26:56
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -67,26 +67,26 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Clip", Clip_Element.Data.ToResoniteReference(context));
-members.Add("Weight", Weight_Element.Data.ToResoniteLinkField());
-members.Add("MinVelocity", MinVelocity_Element.Data.ToResoniteLinkField());
-members.Add("MaxVelocity", MaxVelocity_Element.Data.ToResoniteLinkField());
-members.Add("PlayForWalking", PlayForWalking_Element.Data.ToResoniteLinkField());
-members.Add("PlayForLanding", PlayForLanding_Element.Data.ToResoniteLinkField());
-members.Add("PlayForLeftFoot", PlayForLeftFoot_Element.Data.ToResoniteLinkField());
-members.Add("PlayForRightFoot", PlayForRightFoot_Element.Data.ToResoniteLinkField());
-members.Add("VelocityMinPitch", VelocityMinPitch_Element.Data.ToResoniteLinkField());
-members.Add("VelocityMaxPitch", VelocityMaxPitch_Element.Data.ToResoniteLinkField());
-members.Add("PitchMinVelocityReference", PitchMinVelocityReference_Element.Data.ToResoniteLinkField());
-members.Add("PitchMaxVelocityReference", PitchMaxVelocityReference_Element.Data.ToResoniteLinkField());
-members.Add("MinPitchVariation", MinPitchVariation_Element.Data.ToResoniteLinkField());
-members.Add("MaxPitchVariation", MaxPitchVariation_Element.Data.ToResoniteLinkField());
-members.Add("VelocityMinVolume", VelocityMinVolume_Element.Data.ToResoniteLinkField());
-members.Add("VelocityMaxVolume", VelocityMaxVolume_Element.Data.ToResoniteLinkField());
-members.Add("VolumeMinVelocityReference", VolumeMinVelocityReference_Element.Data.ToResoniteLinkField());
-members.Add("VolumeMaxVelocityReference", VolumeMaxVelocityReference_Element.Data.ToResoniteLinkField());
-members.Add("MinVolumeVariation", MinVolumeVariation_Element.Data.ToResoniteLinkField());
-members.Add("MaxVolumeVariation", MaxVolumeVariation_Element.Data.ToResoniteLinkField());
+members.Add("Clip", Clip_Element.ToLinkReference(context));
+members.Add("Weight", Weight_Element.ToLinkField(context));
+members.Add("MinVelocity", MinVelocity_Element.ToLinkField(context));
+members.Add("MaxVelocity", MaxVelocity_Element.ToLinkField(context));
+members.Add("PlayForWalking", PlayForWalking_Element.ToLinkField(context));
+members.Add("PlayForLanding", PlayForLanding_Element.ToLinkField(context));
+members.Add("PlayForLeftFoot", PlayForLeftFoot_Element.ToLinkField(context));
+members.Add("PlayForRightFoot", PlayForRightFoot_Element.ToLinkField(context));
+members.Add("VelocityMinPitch", VelocityMinPitch_Element.ToLinkField(context));
+members.Add("VelocityMaxPitch", VelocityMaxPitch_Element.ToLinkField(context));
+members.Add("PitchMinVelocityReference", PitchMinVelocityReference_Element.ToLinkField(context));
+members.Add("PitchMaxVelocityReference", PitchMaxVelocityReference_Element.ToLinkField(context));
+members.Add("MinPitchVariation", MinPitchVariation_Element.ToLinkField(context));
+members.Add("MaxPitchVariation", MaxPitchVariation_Element.ToLinkField(context));
+members.Add("VelocityMinVolume", VelocityMinVolume_Element.ToLinkField(context));
+members.Add("VelocityMaxVolume", VelocityMaxVolume_Element.ToLinkField(context));
+members.Add("VolumeMinVelocityReference", VolumeMinVelocityReference_Element.ToLinkField(context));
+members.Add("VolumeMaxVelocityReference", VolumeMaxVelocityReference_Element.ToLinkField(context));
+members.Add("MinVolumeVariation", MinVolumeVariation_Element.ToLinkField(context));
+members.Add("MaxVolumeVariation", MaxVolumeVariation_Element.ToLinkField(context));
 }
 
 }

@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.Grabbable
-// Generated on: čtvrtek 26. února 2026 10:04:42
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:28:08
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -58,26 +58,23 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("ReparentOnRelease", ReparentOnRelease_Element.Data.ToResoniteLinkField());
-members.Add("PreserveUserSpace", PreserveUserSpace_Element.Data.ToResoniteLinkField());
-members.Add("DestroyOnRelease", DestroyOnRelease_Element.Data.ToResoniteLinkField());
-members.Add("GrabPriority", GrabPriority_Element.Data.ToResoniteLinkField());
-members.Add("GrabPriorityWhenGrabbed", GrabPriorityWhenGrabbed_Element.Data.ToResoniteLinkField());
-members.Add("EditModeOnly", EditModeOnly_Element.Data.ToResoniteLinkField());
-members.Add("AllowSteal", AllowSteal_Element.Data.ToResoniteLinkField());
-members.Add("DropOnDisable", DropOnDisable_Element.Data.ToResoniteLinkField());
-members.Add("ActiveUserFilter", ActiveUserFilter_Element.Data.ToResoniteLinkField());
-members.Add("OnlyUsers", new ResoniteLink.SyncList()
-{
-    Elements = OnlyUsers.Data.ConvertList(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers(context) })
-});
-members.Add("Scalable", Scalable_Element.Data.ToResoniteLinkField());
-members.Add("Receivable", Receivable_Element.Data.ToResoniteLinkField());
-members.Add("AllowOnlyPhysicalGrab", AllowOnlyPhysicalGrab_Element.Data.ToResoniteLinkField());
-members.Add("_grabber", _grabber_Element.Data.ToResoniteReference(context));
-members.Add("_lastParent", _lastParent_Element.Data.ToResoniteReference(context));
-members.Add("_lastParentIsUserSpace", _lastParentIsUserSpace_Element.Data.ToResoniteLinkField());
-members.Add("__legacyActiveUserRootOnly", __legacyActiveUserRootOnly_Element.Data.ToResoniteLinkField());
+members.Add("ReparentOnRelease", ReparentOnRelease_Element.ToLinkField(context));
+members.Add("PreserveUserSpace", PreserveUserSpace_Element.ToLinkField(context));
+members.Add("DestroyOnRelease", DestroyOnRelease_Element.ToLinkField(context));
+members.Add("GrabPriority", GrabPriority_Element.ToLinkField(context));
+members.Add("GrabPriorityWhenGrabbed", GrabPriorityWhenGrabbed_Element.ToLinkField(context));
+members.Add("EditModeOnly", EditModeOnly_Element.ToLinkField(context));
+members.Add("AllowSteal", AllowSteal_Element.ToLinkField(context));
+members.Add("DropOnDisable", DropOnDisable_Element.ToLinkField(context));
+members.Add("ActiveUserFilter", ActiveUserFilter_Element.ToLinkField(context));
+members.Add("OnlyUsers", OnlyUsers.ToLinkList(context, m => m.ToLinkSyncObject(context)));
+members.Add("Scalable", Scalable_Element.ToLinkField(context));
+members.Add("Receivable", Receivable_Element.ToLinkField(context));
+members.Add("AllowOnlyPhysicalGrab", AllowOnlyPhysicalGrab_Element.ToLinkField(context));
+members.Add("_grabber", _grabber_Element.ToLinkReference(context));
+members.Add("_lastParent", _lastParent_Element.ToLinkReference(context));
+members.Add("_lastParentIsUserSpace", _lastParentIsUserSpace_Element.ToLinkField(context));
+members.Add("__legacyActiveUserRootOnly", __legacyActiveUserRootOnly_Element.ToLinkField(context));
 }
 
 }

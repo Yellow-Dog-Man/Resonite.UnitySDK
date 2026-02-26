@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.UIX.Canvas
-// Generated on: čtvrtek 26. února 2026 10:04:32
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:27:57
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -61,24 +61,24 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Size", Size_Element.Data.ToResoniteLinkField());
-members.Add("EditModeOnly", EditModeOnly_Element.Data.ToResoniteLinkField());
-members.Add("AcceptRemoteTouch", AcceptRemoteTouch_Element.Data.ToResoniteLinkField());
-members.Add("AcceptPhysicalTouch", AcceptPhysicalTouch_Element.Data.ToResoniteLinkField());
-members.Add("AcceptExistingTouch", AcceptExistingTouch_Element.Data.ToResoniteLinkField());
-members.Add("HighPriorityIntegration", HighPriorityIntegration_Element.Data.ToResoniteLinkField());
-members.Add("IgnoreTouchesFromBehind", IgnoreTouchesFromBehind_Element.Data.ToResoniteLinkField());
-members.Add("BlockAllInteractions", BlockAllInteractions_Element.Data.ToResoniteLinkField());
-members.Add("LaserPassThrough", LaserPassThrough_Element.Data.ToResoniteLinkField());
-members.Add("PixelScale", PixelScale_Element.Data.ToResoniteLinkField());
-members.Add("UnitScale", UnitScale_Element.Data.ToResoniteLinkField());
-members.Add("_rootRect", _rootRect_Element.Data.ToResoniteReference(context));
-members.Add("Collider", Collider_Element.Data.ToResoniteReference(context));
-members.Add("DefaultCulling", DefaultCulling_Element.Data.ToResoniteLinkField());
-members.Add("_colliderSize", _colliderSize_Element.Data.ToResoniteReference(context));
-members.Add("_colliderOffset", _colliderOffset_Element.Data.ToResoniteReference(context));
-members.Add("StartingOffset", StartingOffset_Element.Data.ToResoniteLinkField());
-members.Add("StartingMaskDepth", StartingMaskDepth_Element.Data.ToResoniteLinkField());
+members.Add("Size", Size_Element.ToLinkField(context));
+members.Add("EditModeOnly", EditModeOnly_Element.ToLinkField(context));
+members.Add("AcceptRemoteTouch", AcceptRemoteTouch_Element.ToLinkField(context));
+members.Add("AcceptPhysicalTouch", AcceptPhysicalTouch_Element.ToLinkField(context));
+members.Add("AcceptExistingTouch", AcceptExistingTouch_Element.ToLinkField(context));
+members.Add("HighPriorityIntegration", HighPriorityIntegration_Element.ToLinkField(context));
+members.Add("IgnoreTouchesFromBehind", IgnoreTouchesFromBehind_Element.ToLinkField(context));
+members.Add("BlockAllInteractions", BlockAllInteractions_Element.ToLinkField(context));
+members.Add("LaserPassThrough", LaserPassThrough_Element.ToLinkField(context));
+members.Add("PixelScale", PixelScale_Element.ToLinkField(context));
+members.Add("UnitScale", UnitScale_Element.ToLinkField(context));
+members.Add("_rootRect", _rootRect_Element.ToLinkReference(context));
+members.Add("Collider", Collider_Element.ToLinkReference(context));
+members.Add("DefaultCulling", DefaultCulling_Element.ToLinkField(context));
+members.Add("_colliderSize", _colliderSize_Element.ToLinkReference(context));
+members.Add("_colliderOffset", _colliderOffset_Element.ToLinkReference(context));
+members.Add("StartingOffset", StartingOffset_Element.ToLinkField(context));
+members.Add("StartingMaskDepth", StartingMaskDepth_Element.ToLinkField(context));
 }
 
 }

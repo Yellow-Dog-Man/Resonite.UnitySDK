@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.TrackerSettings+Tracker
-// Generated on: čtvrtek 26. února 2026 10:04:48
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:28:14
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -51,18 +51,18 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("UseTracker", UseTracker_Element.Data.ToResoniteLinkField());
-members.Add("FreezeTracking", FreezeTracking_Element.Data.ToResoniteLinkField());
-members.Add("IsConnected", IsConnected_Element.Data.ToResoniteLinkField());
-members.Add("CustomName", CustomName_Element.Data.ToResoniteLinkField());
-members.Add("MappedBodyNode", MappedBodyNode_Element.Data.ToResoniteLinkField());
-members.Add("MappedPosition", MappedPosition_Element.Data.ToResoniteLinkField());
-members.Add("MappedRotation", MappedRotation_Element.Data.ToResoniteLinkField());
-members.Add("UseInVR", UseInVR_Element.Data.ToResoniteLinkField());
-members.Add("UseInDesktop", UseInDesktop_Element.Data.ToResoniteLinkField());
-members.Add("TrackerID", TrackerID_Element.Data.ToResoniteLinkField());
-members.Add("TrackerBattery", TrackerBattery_Element.Data.ToResoniteLinkField());
-members.Add("TrackerIsCharging", TrackerIsCharging_Element.Data.ToResoniteLinkField());
+members.Add("UseTracker", UseTracker_Element.ToLinkField(context));
+members.Add("FreezeTracking", FreezeTracking_Element.ToLinkField(context));
+members.Add("IsConnected", IsConnected_Element.ToLinkField(context));
+members.Add("CustomName", CustomName_Element.ToLinkField(context));
+members.Add("MappedBodyNode", MappedBodyNode_Element.ToLinkField(context));
+members.Add("MappedPosition", MappedPosition_Element.ToLinkField(context));
+members.Add("MappedRotation", MappedRotation_Element.ToLinkField(context));
+members.Add("UseInVR", UseInVR_Element.ToLinkField(context));
+members.Add("UseInDesktop", UseInDesktop_Element.ToLinkField(context));
+members.Add("TrackerID", TrackerID_Element.ToLinkField(context));
+members.Add("TrackerBattery", TrackerBattery_Element.ToLinkField(context));
+members.Add("TrackerIsCharging", TrackerIsCharging_Element.ToLinkField(context));
 }
 
 }

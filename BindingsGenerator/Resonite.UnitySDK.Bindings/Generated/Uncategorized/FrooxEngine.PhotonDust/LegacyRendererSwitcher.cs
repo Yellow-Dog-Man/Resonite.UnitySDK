@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.PhotonDust.LegacyRendererSwitcher
-// Generated on: čtvrtek 26. února 2026 10:04:46
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:28:12
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -33,10 +33,10 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("ParticleMesh", ParticleMesh_Element.Data.ToResoniteReference(context));
-members.Add("BillboardRenderer", BillboardRenderer_Element.Data.ToResoniteReference(context));
-members.Add("MeshRenderer", MeshRenderer_Element.Data.ToResoniteReference(context));
-members.Add("RendererDrive", RendererDrive_Element.Data.ToResoniteReference(context));
+members.Add("ParticleMesh", ParticleMesh_Element.ToLinkReference(context));
+members.Add("BillboardRenderer", BillboardRenderer_Element.ToLinkReference(context));
+members.Add("MeshRenderer", MeshRenderer_Element.ToLinkReference(context));
+members.Add("RendererDrive", RendererDrive_Element.ToLinkReference(context));
 }
 
 }

@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.PBS_MultiUV_Material
-// Generated on: čtvrtek 26. února 2026 10:03:34
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:26:47
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -93,40 +93,40 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("AlbedoScale", AlbedoScale_Element.Data.ToResoniteLinkField());
-members.Add("AlbedoOffset", AlbedoOffset_Element.Data.ToResoniteLinkField());
-members.Add("AlbedoUV", AlbedoUV_Element.Data.ToResoniteLinkField());
-members.Add("EmissionMapScale", EmissionMapScale_Element.Data.ToResoniteLinkField());
-members.Add("EmissionMapOffset", EmissionMapOffset_Element.Data.ToResoniteLinkField());
-members.Add("EmissionMapUV", EmissionMapUV_Element.Data.ToResoniteLinkField());
-members.Add("NormalMapScale", NormalMapScale_Element.Data.ToResoniteLinkField());
-members.Add("NormalMapOffset", NormalMapOffset_Element.Data.ToResoniteLinkField());
-members.Add("NormalMapUV", NormalMapUV_Element.Data.ToResoniteLinkField());
-members.Add("OcclusionMapScale", OcclusionMapScale_Element.Data.ToResoniteLinkField());
-members.Add("OcclusionMapOffset", OcclusionMapOffset_Element.Data.ToResoniteLinkField());
-members.Add("OcclusionMapUV", OcclusionMapUV_Element.Data.ToResoniteLinkField());
-members.Add("SecondaryAlbedoScale", SecondaryAlbedoScale_Element.Data.ToResoniteLinkField());
-members.Add("SecondaryAlbedoOffset", SecondaryAlbedoOffset_Element.Data.ToResoniteLinkField());
-members.Add("SecondaryAlbedoUV", SecondaryAlbedoUV_Element.Data.ToResoniteLinkField());
-members.Add("SecondaryEmissionMapScale", SecondaryEmissionMapScale_Element.Data.ToResoniteLinkField());
-members.Add("SecondaryEmissionMapOffset", SecondaryEmissionMapOffset_Element.Data.ToResoniteLinkField());
-members.Add("SecondaryEmissionMapUV", SecondaryEmissionMapUV_Element.Data.ToResoniteLinkField());
-members.Add("AlbedoColor", AlbedoColor_Element.Data.ToResoniteLinkField());
-members.Add("AlbedoTexture", AlbedoTexture_Element.Data.ToResoniteReference(context));
-members.Add("EmissiveColor", EmissiveColor_Element.Data.ToResoniteLinkField());
-members.Add("EmissiveMap", EmissiveMap_Element.Data.ToResoniteReference(context));
-members.Add("NormalMap", NormalMap_Element.Data.ToResoniteReference(context));
-members.Add("NormalScale", NormalScale_Element.Data.ToResoniteLinkField());
-members.Add("OcclusionMap", OcclusionMap_Element.Data.ToResoniteReference(context));
-members.Add("SecondaryAlbedoTexture", SecondaryAlbedoTexture_Element.Data.ToResoniteReference(context));
-members.Add("SecondaryEmissiveColor", SecondaryEmissiveColor_Element.Data.ToResoniteLinkField());
-members.Add("SecondaryEmissiveMap", SecondaryEmissiveMap_Element.Data.ToResoniteReference(context));
-members.Add("Culling", Culling_Element.Data.ToResoniteLinkField());
-members.Add("AlphaHandling", AlphaHandling_Element.Data.ToResoniteLinkField());
-members.Add("AlphaClip", AlphaClip_Element.Data.ToResoniteLinkField());
-members.Add("OffsetFactor", OffsetFactor_Element.Data.ToResoniteLinkField());
-members.Add("OffsetUnits", OffsetUnits_Element.Data.ToResoniteLinkField());
-members.Add("RenderQueue", RenderQueue_Element.Data.ToResoniteLinkField());
+members.Add("AlbedoScale", AlbedoScale_Element.ToLinkField(context));
+members.Add("AlbedoOffset", AlbedoOffset_Element.ToLinkField(context));
+members.Add("AlbedoUV", AlbedoUV_Element.ToLinkField(context));
+members.Add("EmissionMapScale", EmissionMapScale_Element.ToLinkField(context));
+members.Add("EmissionMapOffset", EmissionMapOffset_Element.ToLinkField(context));
+members.Add("EmissionMapUV", EmissionMapUV_Element.ToLinkField(context));
+members.Add("NormalMapScale", NormalMapScale_Element.ToLinkField(context));
+members.Add("NormalMapOffset", NormalMapOffset_Element.ToLinkField(context));
+members.Add("NormalMapUV", NormalMapUV_Element.ToLinkField(context));
+members.Add("OcclusionMapScale", OcclusionMapScale_Element.ToLinkField(context));
+members.Add("OcclusionMapOffset", OcclusionMapOffset_Element.ToLinkField(context));
+members.Add("OcclusionMapUV", OcclusionMapUV_Element.ToLinkField(context));
+members.Add("SecondaryAlbedoScale", SecondaryAlbedoScale_Element.ToLinkField(context));
+members.Add("SecondaryAlbedoOffset", SecondaryAlbedoOffset_Element.ToLinkField(context));
+members.Add("SecondaryAlbedoUV", SecondaryAlbedoUV_Element.ToLinkField(context));
+members.Add("SecondaryEmissionMapScale", SecondaryEmissionMapScale_Element.ToLinkField(context));
+members.Add("SecondaryEmissionMapOffset", SecondaryEmissionMapOffset_Element.ToLinkField(context));
+members.Add("SecondaryEmissionMapUV", SecondaryEmissionMapUV_Element.ToLinkField(context));
+members.Add("AlbedoColor", AlbedoColor_Element.ToLinkField(context));
+members.Add("AlbedoTexture", AlbedoTexture_Element.ToLinkReference(context));
+members.Add("EmissiveColor", EmissiveColor_Element.ToLinkField(context));
+members.Add("EmissiveMap", EmissiveMap_Element.ToLinkReference(context));
+members.Add("NormalMap", NormalMap_Element.ToLinkReference(context));
+members.Add("NormalScale", NormalScale_Element.ToLinkField(context));
+members.Add("OcclusionMap", OcclusionMap_Element.ToLinkReference(context));
+members.Add("SecondaryAlbedoTexture", SecondaryAlbedoTexture_Element.ToLinkReference(context));
+members.Add("SecondaryEmissiveColor", SecondaryEmissiveColor_Element.ToLinkField(context));
+members.Add("SecondaryEmissiveMap", SecondaryEmissiveMap_Element.ToLinkReference(context));
+members.Add("Culling", Culling_Element.ToLinkField(context));
+members.Add("AlphaHandling", AlphaHandling_Element.ToLinkField(context));
+members.Add("AlphaClip", AlphaClip_Element.ToLinkField(context));
+members.Add("OffsetFactor", OffsetFactor_Element.ToLinkField(context));
+members.Add("OffsetUnits", OffsetUnits_Element.ToLinkField(context));
+members.Add("RenderQueue", RenderQueue_Element.ToLinkField(context));
 }
 
 }

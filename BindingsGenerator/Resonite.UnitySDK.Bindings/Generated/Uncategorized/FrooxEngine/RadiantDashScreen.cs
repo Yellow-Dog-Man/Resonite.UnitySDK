@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.RadiantDashScreen
-// Generated on: čtvrtek 26. února 2026 10:04:44
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:28:10
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -45,16 +45,16 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Icon", Icon_Element.Data.ToResoniteLinkField());
-members.Add("ActiveColor", ActiveColor_Element.Data.ToResoniteLinkField());
-members.Add("Label", Label_Element.Data.ToResoniteLinkField());
-members.Add("ScreenEnabled", ScreenEnabled_Element.Data.ToResoniteLinkField());
-members.Add("BaseResolution", BaseResolution_Element.Data.ToResoniteLinkField());
-members.Add("_screenRoot", _screenRoot_Element.Data.ToResoniteReference(context));
-members.Add("_screenCanvas", _screenCanvas_Element.Data.ToResoniteReference(context));
-members.Add("_modalOverlayManager", _modalOverlayManager_Element.Data.ToResoniteReference(context));
-members.Add("_button", _button_Element.Data.ToResoniteReference(context));
-members.Add("_iconTexture", _iconTexture_Element.Data.ToResoniteReference(context));
+members.Add("Icon", Icon_Element.ToLinkField(context));
+members.Add("ActiveColor", ActiveColor_Element.ToLinkField(context));
+members.Add("Label", Label_Element.ToLinkField(context));
+members.Add("ScreenEnabled", ScreenEnabled_Element.ToLinkField(context));
+members.Add("BaseResolution", BaseResolution_Element.ToLinkField(context));
+members.Add("_screenRoot", _screenRoot_Element.ToLinkReference(context));
+members.Add("_screenCanvas", _screenCanvas_Element.ToLinkReference(context));
+members.Add("_modalOverlayManager", _modalOverlayManager_Element.ToLinkReference(context));
+members.Add("_button", _button_Element.ToLinkReference(context));
+members.Add("_iconTexture", _iconTexture_Element.ToLinkReference(context));
 }
 
 }

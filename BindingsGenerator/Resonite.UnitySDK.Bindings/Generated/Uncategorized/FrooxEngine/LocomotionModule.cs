@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.LocomotionModule
-// Generated on: čtvrtek 26. února 2026 10:03:40
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:26:56
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -35,11 +35,11 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Icon", Icon_Element.Data.ToResoniteReference(context));
-members.Add("Color", Color_Element.Data.ToResoniteLinkField());
-members.Add("_currentController", _currentController_Element.Data.ToResoniteReference(context));
-members.Add("_lastDefaultIcon", _lastDefaultIcon_Element.Data.ToResoniteLinkField());
-members.Add("_lastDefaultColor", _lastDefaultColor_Element.Data.ToResoniteLinkField());
+members.Add("Icon", Icon_Element.ToLinkReference(context));
+members.Add("Color", Color_Element.ToLinkField(context));
+members.Add("_currentController", _currentController_Element.ToLinkReference(context));
+members.Add("_lastDefaultIcon", _lastDefaultIcon_Element.ToLinkField(context));
+members.Add("_lastDefaultColor", _lastDefaultColor_Element.ToLinkField(context));
 }
 
 }

@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.ButtonAudioClipPlayer
-// Generated on: čtvrtek 26. února 2026 10:03:38
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:26:53
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -29,22 +29,10 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("PressedClips", new ResoniteLink.SyncList()
-{
-    Elements = PressedClips.Data.ConvertList(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers(context) })
-});
-members.Add("ReleasedClips", new ResoniteLink.SyncList()
-{
-    Elements = ReleasedClips.Data.ConvertList(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers(context) })
-});
-members.Add("HoverEnterClips", new ResoniteLink.SyncList()
-{
-    Elements = HoverEnterClips.Data.ConvertList(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers(context) })
-});
-members.Add("HoverLeaveClips", new ResoniteLink.SyncList()
-{
-    Elements = HoverLeaveClips.Data.ConvertList(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers(context) })
-});
+members.Add("PressedClips", PressedClips.ToLinkList(context, m => m.ToLinkSyncObject(context)));
+members.Add("ReleasedClips", ReleasedClips.ToLinkList(context, m => m.ToLinkSyncObject(context)));
+members.Add("HoverEnterClips", HoverEnterClips.ToLinkList(context, m => m.ToLinkSyncObject(context)));
+members.Add("HoverLeaveClips", HoverLeaveClips.ToLinkList(context, m => m.ToLinkSyncObject(context)));
 }
 
 }

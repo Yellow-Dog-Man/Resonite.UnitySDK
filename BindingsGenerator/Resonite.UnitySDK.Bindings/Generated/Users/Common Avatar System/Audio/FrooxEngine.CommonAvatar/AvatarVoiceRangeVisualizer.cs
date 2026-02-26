@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.CommonAvatar.AvatarVoiceRangeVisualizer
-// Generated on: čtvrtek 26. února 2026 10:04:50
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:28:15
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -43,15 +43,15 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("VolumeSource", VolumeSource_Element.Data.ToResoniteReference(context));
-members.Add("AudioOutput", AudioOutput_Element.Data.ToResoniteReference(context));
-members.Add("WhisperColorMin", WhisperColorMin_Element.Data.ToResoniteLinkField());
-members.Add("WhisperColorMax", WhisperColorMax_Element.Data.ToResoniteLinkField());
-members.Add("WhisperColorRecordingMessage", WhisperColorRecordingMessage_Element.Data.ToResoniteLinkField());
-members.Add("VisualRoot", VisualRoot_Element.Data.ToResoniteReference(context));
-members.Add("_activeUser", _activeUser_Element.Data.ToResoniteReference(context));
-members.Add("_visualSize", _visualSize_Element.Data.ToResoniteReference(context));
-members.Add("_visualColor", _visualColor_Element.Data.ToResoniteReference(context));
+members.Add("VolumeSource", VolumeSource_Element.ToLinkReference(context));
+members.Add("AudioOutput", AudioOutput_Element.ToLinkReference(context));
+members.Add("WhisperColorMin", WhisperColorMin_Element.ToLinkField(context));
+members.Add("WhisperColorMax", WhisperColorMax_Element.ToLinkField(context));
+members.Add("WhisperColorRecordingMessage", WhisperColorRecordingMessage_Element.ToLinkField(context));
+members.Add("VisualRoot", VisualRoot_Element.ToLinkReference(context));
+members.Add("_activeUser", _activeUser_Element.ToLinkReference(context));
+members.Add("_visualSize", _visualSize_Element.ToLinkReference(context));
+members.Add("_visualColor", _visualColor_Element.ToLinkReference(context));
 }
 
 }

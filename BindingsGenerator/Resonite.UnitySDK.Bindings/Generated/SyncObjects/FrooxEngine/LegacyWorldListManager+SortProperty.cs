@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.LegacyWorldListManager+SortProperty
-// Generated on: čtvrtek 26. února 2026 10:04:36
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:28:02
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -31,8 +31,8 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Parameter", Parameter_Element.Data.ToResoniteLinkField());
-members.Add("Direction", Direction_Element.Data.ToResoniteLinkField());
+members.Add("Parameter", Parameter_Element.ToLinkField(context));
+members.Add("Direction", Direction_Element.ToLinkField(context));
 }
 
 }

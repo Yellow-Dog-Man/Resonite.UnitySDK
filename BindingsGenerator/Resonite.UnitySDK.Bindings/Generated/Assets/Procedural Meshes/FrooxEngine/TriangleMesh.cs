@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.TriangleMesh
-// Generated on: čtvrtek 26. února 2026 10:03:36
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:26:51
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -34,12 +34,12 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Vertex0", new ResoniteLink.SyncObject() { Members = Vertex0.CollectMembers(context) });
-members.Add("Vertex1", new ResoniteLink.SyncObject() { Members = Vertex1.CollectMembers(context) });
-members.Add("Vertex2", new ResoniteLink.SyncObject() { Members = Vertex2.CollectMembers(context) });
-members.Add("AutoNormals", AutoNormals_Element.Data.ToResoniteLinkField());
-members.Add("AutoTangents", AutoTangents_Element.Data.ToResoniteLinkField());
-members.Add("DualSided", DualSided_Element.Data.ToResoniteLinkField());
+members.Add("Vertex0", Vertex0.ToLinkSyncObject(context));
+members.Add("Vertex1", Vertex1.ToLinkSyncObject(context));
+members.Add("Vertex2", Vertex2.ToLinkSyncObject(context));
+members.Add("AutoNormals", AutoNormals_Element.ToLinkField(context));
+members.Add("AutoTangents", AutoTangents_Element.ToLinkField(context));
+members.Add("DualSided", DualSided_Element.ToLinkField(context));
 }
 
 }

@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.VideoTextureProvider
-// Generated on: čtvrtek 26. února 2026 10:03:33
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:26:46
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -59,23 +59,23 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Playback", Playback_Element.Data.ToResoniteLink());
-members.Add("URL", URL_Element.Data.ToResoniteLinkField());
-members.Add("Stream", Stream_Element.Data.ToResoniteLinkField());
-members.Add("Volume", Volume_Element.Data.ToResoniteLinkField());
-members.Add("ForcePlaybackEngine", ForcePlaybackEngine_Element.Data.ToResoniteLinkField());
-members.Add("ForceVideoStreamingServiceParsing", ForceVideoStreamingServiceParsing_Element.Data.ToResoniteLinkField());
-members.Add("VideoTitle", VideoTitle_Element.Data.ToResoniteLinkField());
-members.Add("CurrentPlaybackEngine", CurrentPlaybackEngine_Element.Data.ToResoniteLinkField());
-members.Add("CurrentClockError", CurrentClockError_Element.Data.ToResoniteLinkField());
-members.Add("FilterMode", FilterMode_Element.Data.ToResoniteLinkField());
-members.Add("AnisotropicLevel", AnisotropicLevel_Element.Data.ToResoniteLinkField());
-members.Add("WrapModeU", WrapModeU_Element.Data.ToResoniteLinkField());
-members.Add("WrapModeV", WrapModeV_Element.Data.ToResoniteLinkField());
-members.Add("AudioTrackIndex", AudioTrackIndex_Element.Data.ToResoniteLinkField());
-members.Add("PreferAudioOnly", PreferAudioOnly_Element.Data.ToResoniteLinkField());
-members.Add("MaxWidth", MaxWidth_Element.Data.ToResoniteLinkField());
-members.Add("MaxHeight", MaxHeight_Element.Data.ToResoniteLinkField());
+members.Add("Playback", Playback_Element.ToLinkPlayback(context));
+members.Add("URL", URL_Element.ToLinkField(context));
+members.Add("Stream", Stream_Element.ToLinkField(context));
+members.Add("Volume", Volume_Element.ToLinkField(context));
+members.Add("ForcePlaybackEngine", ForcePlaybackEngine_Element.ToLinkField(context));
+members.Add("ForceVideoStreamingServiceParsing", ForceVideoStreamingServiceParsing_Element.ToLinkField(context));
+members.Add("VideoTitle", VideoTitle_Element.ToLinkField(context));
+members.Add("CurrentPlaybackEngine", CurrentPlaybackEngine_Element.ToLinkField(context));
+members.Add("CurrentClockError", CurrentClockError_Element.ToLinkField(context));
+members.Add("FilterMode", FilterMode_Element.ToLinkField(context));
+members.Add("AnisotropicLevel", AnisotropicLevel_Element.ToLinkField(context));
+members.Add("WrapModeU", WrapModeU_Element.ToLinkField(context));
+members.Add("WrapModeV", WrapModeV_Element.ToLinkField(context));
+members.Add("AudioTrackIndex", AudioTrackIndex_Element.ToLinkField(context));
+members.Add("PreferAudioOnly", PreferAudioOnly_Element.ToLinkField(context));
+members.Add("MaxWidth", MaxWidth_Element.ToLinkField(context));
+members.Add("MaxHeight", MaxHeight_Element.ToLinkField(context));
 }
 
 }

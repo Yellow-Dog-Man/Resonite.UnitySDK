@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.MazeGenerator
-// Generated on: čtvrtek 26. února 2026 10:03:39
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:26:55
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -39,13 +39,13 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Seed", Seed_Element.Data.ToResoniteLinkField());
-members.Add("Cells", Cells_Element.Data.ToResoniteLinkField());
-members.Add("WallSize", WallSize_Element.Data.ToResoniteLinkField());
-members.Add("Point0", Point0_Element.Data.ToResoniteLinkField());
-members.Add("Point1", Point1_Element.Data.ToResoniteLinkField());
-members.Add("Material", Material_Element.Data.ToResoniteReference(context));
-members.Add("Bake", Bake_Element.Data.ToResoniteLinkField());
+members.Add("Seed", Seed_Element.ToLinkField(context));
+members.Add("Cells", Cells_Element.ToLinkField(context));
+members.Add("WallSize", WallSize_Element.ToLinkField(context));
+members.Add("Point0", Point0_Element.ToLinkField(context));
+members.Add("Point1", Point1_Element.ToLinkField(context));
+members.Add("Material", Material_Element.ToLinkReference(context));
+members.Add("Bake", Bake_Element.ToLinkField(context));
 }
 
 }

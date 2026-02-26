@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.ConvexHullBrushTool
-// Generated on: čtvrtek 26. února 2026 10:04:39
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:28:06
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -40,17 +40,14 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("MinHullPointDistance", MinHullPointDistance_Element.Data.ToResoniteLinkField());
-members.Add("FlatShading", FlatShading_Element.Data.ToResoniteLinkField());
-members.Add("PointSpread", PointSpread_Element.Data.ToResoniteLinkField());
-members.Add("TipAnchor", TipAnchor_Element.Data.ToResoniteReference(context));
-members.Add("MaterialPreviews", new ResoniteLink.SyncList()
-{
-    Elements = MaterialPreviews.Data.ConvertList(m => m.Data.ToResoniteReference(context))
-});
-members.Add("_currentHull", _currentHull_Element.Data.ToResoniteReference(context));
-members.Add("_previewMesh", _previewMesh_Element.Data.ToResoniteReference(context));
-members.Add("_previewMeshOffset", _previewMeshOffset_Element.Data.ToResoniteReference(context));
+members.Add("MinHullPointDistance", MinHullPointDistance_Element.ToLinkField(context));
+members.Add("FlatShading", FlatShading_Element.ToLinkField(context));
+members.Add("PointSpread", PointSpread_Element.ToLinkField(context));
+members.Add("TipAnchor", TipAnchor_Element.ToLinkReference(context));
+members.Add("MaterialPreviews", MaterialPreviews.ToLinkList(context, m => m.ToLinkReference(context)));
+members.Add("_currentHull", _currentHull_Element.ToLinkReference(context));
+members.Add("_previewMesh", _previewMesh_Element.ToLinkReference(context));
+members.Add("_previewMeshOffset", _previewMeshOffset_Element.ToLinkReference(context));
 }
 
 }

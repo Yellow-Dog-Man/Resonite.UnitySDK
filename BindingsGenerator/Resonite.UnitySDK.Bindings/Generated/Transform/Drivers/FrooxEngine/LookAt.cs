@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.LookAt
-// Generated on: čtvrtek 26. února 2026 10:04:41
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:28:07
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -44,16 +44,16 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Target", Target_Element.Data.ToResoniteReference(context));
-members.Add("TargetPoint", TargetPoint_Element.Data.ToResoniteLinkField());
-members.Add("TargetPointSpace", new ResoniteLink.SyncObject() { Members = TargetPointSpace.CollectMembers(context) });
-members.Add("Up", Up_Element.Data.ToResoniteLinkField());
-members.Add("RotationOffset", RotationOffset_Element.Data.ToResoniteLinkField());
-members.Add("SwingReference", SwingReference_Element.Data.ToResoniteLinkField());
-members.Add("TwistReference", TwistReference_Element.Data.ToResoniteLinkField());
-members.Add("MaxSwing", MaxSwing_Element.Data.ToResoniteLinkField());
-members.Add("MaxTwist", MaxTwist_Element.Data.ToResoniteLinkField());
-members.Add("_target", _target_Element.Data.ToResoniteReference(context));
+members.Add("Target", Target_Element.ToLinkReference(context));
+members.Add("TargetPoint", TargetPoint_Element.ToLinkField(context));
+members.Add("TargetPointSpace", TargetPointSpace.ToLinkSyncObject(context));
+members.Add("Up", Up_Element.ToLinkField(context));
+members.Add("RotationOffset", RotationOffset_Element.ToLinkField(context));
+members.Add("SwingReference", SwingReference_Element.ToLinkField(context));
+members.Add("TwistReference", TwistReference_Element.ToLinkField(context));
+members.Add("MaxSwing", MaxSwing_Element.ToLinkField(context));
+members.Add("MaxTwist", MaxTwist_Element.ToLinkField(context));
+members.Add("_target", _target_Element.ToLinkReference(context));
 }
 
 }

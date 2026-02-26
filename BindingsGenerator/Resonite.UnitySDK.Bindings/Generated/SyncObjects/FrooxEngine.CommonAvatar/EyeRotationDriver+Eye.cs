@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.CommonAvatar.EyeRotationDriver+Eye
-// Generated on: čtvrtek 26. února 2026 10:04:44
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:28:10
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -37,11 +37,11 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Side", Side_Element.Data.ToResoniteLinkField());
-members.Add("Root", Root_Element.Data.ToResoniteReference(context));
-members.Add("Up", Up_Element.Data.ToResoniteLinkField());
-members.Add("ForwardDirection", ForwardDirection_Element.Data.ToResoniteLinkField());
-members.Add("Rotation", Rotation_Element.Data.ToResoniteReference(context));
+members.Add("Side", Side_Element.ToLinkField(context));
+members.Add("Root", Root_Element.ToLinkReference(context));
+members.Add("Up", Up_Element.ToLinkField(context));
+members.Add("ForwardDirection", ForwardDirection_Element.ToLinkField(context));
+members.Add("Rotation", Rotation_Element.ToLinkReference(context));
 }
 
 }

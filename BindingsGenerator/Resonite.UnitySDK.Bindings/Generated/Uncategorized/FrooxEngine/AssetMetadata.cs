@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.AssetMetadata
-// Generated on: čtvrtek 26. února 2026 10:03:38
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:26:54
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -47,25 +47,19 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("LocationName", LocationName_Element.Data.ToResoniteLinkField());
-members.Add("LocationURL", LocationURL_Element.Data.ToResoniteLinkField());
-members.Add("LocationHost", new ResoniteLink.SyncObject() { Members = LocationHost.CollectMembers(context) });
-members.Add("LocationAccessLevel", LocationAccessLevel_Element.Data.ToResoniteLinkField());
-members.Add("LocationHiddenFromListing", LocationHiddenFromListing_Element.Data.ToResoniteLinkField());
-members.Add("TimeTaken", TimeTaken_Element.Data.ToResoniteLinkField());
-members.Add("TakenBy", new ResoniteLink.SyncObject() { Members = TakenBy.CollectMembers(context) });
-members.Add("TakenGlobalPosition", TakenGlobalPosition_Element.Data.ToResoniteLinkField());
-members.Add("TakenGlobalRotation", TakenGlobalRotation_Element.Data.ToResoniteLinkField());
-members.Add("TakenGlobalScale", TakenGlobalScale_Element.Data.ToResoniteLinkField());
-members.Add("AppVersion", AppVersion_Element.Data.ToResoniteLinkField());
-members.Add("UserInfos", new ResoniteLink.SyncList()
-{
-    Elements = UserInfos.Data.ConvertList(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers(context) })
-});
-members.Add("__legacyPresentUsers", new ResoniteLink.SyncList()
-{
-    Elements = __legacyPresentUsers.Data.ConvertList(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers(context) })
-});
+members.Add("LocationName", LocationName_Element.ToLinkField(context));
+members.Add("LocationURL", LocationURL_Element.ToLinkField(context));
+members.Add("LocationHost", LocationHost.ToLinkSyncObject(context));
+members.Add("LocationAccessLevel", LocationAccessLevel_Element.ToLinkField(context));
+members.Add("LocationHiddenFromListing", LocationHiddenFromListing_Element.ToLinkField(context));
+members.Add("TimeTaken", TimeTaken_Element.ToLinkField(context));
+members.Add("TakenBy", TakenBy.ToLinkSyncObject(context));
+members.Add("TakenGlobalPosition", TakenGlobalPosition_Element.ToLinkField(context));
+members.Add("TakenGlobalRotation", TakenGlobalRotation_Element.ToLinkField(context));
+members.Add("TakenGlobalScale", TakenGlobalScale_Element.ToLinkField(context));
+members.Add("AppVersion", AppVersion_Element.ToLinkField(context));
+members.Add("UserInfos", UserInfos.ToLinkList(context, m => m.ToLinkSyncObject(context)));
+members.Add("__legacyPresentUsers", __legacyPresentUsers.ToLinkList(context, m => m.ToLinkSyncObject(context)));
 }
 
 }

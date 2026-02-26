@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.BevelPlaneMesh
-// Generated on: čtvrtek 26. února 2026 10:03:36
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:26:51
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -37,12 +37,12 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Width", Width_Element.Data.ToResoniteLinkField());
-members.Add("Height", Height_Element.Data.ToResoniteLinkField());
-members.Add("Thickness", Thickness_Element.Data.ToResoniteLinkField());
-members.Add("TopLeftCut", TopLeftCut_Element.Data.ToResoniteLinkField());
-members.Add("BottomRightCut", BottomRightCut_Element.Data.ToResoniteLinkField());
-members.Add("Relief", Relief_Element.Data.ToResoniteLinkField());
+members.Add("Width", Width_Element.ToLinkField(context));
+members.Add("Height", Height_Element.ToLinkField(context));
+members.Add("Thickness", Thickness_Element.ToLinkField(context));
+members.Add("TopLeftCut", TopLeftCut_Element.ToLinkField(context));
+members.Add("BottomRightCut", BottomRightCut_Element.ToLinkField(context));
+members.Add("Relief", Relief_Element.ToLinkField(context));
 }
 
 }

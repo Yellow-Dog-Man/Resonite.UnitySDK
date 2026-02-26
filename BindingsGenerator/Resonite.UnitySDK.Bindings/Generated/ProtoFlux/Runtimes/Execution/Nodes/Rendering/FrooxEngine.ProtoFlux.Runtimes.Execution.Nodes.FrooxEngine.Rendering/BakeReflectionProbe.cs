@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [ProtoFluxBindings]FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Rendering.BakeReflectionProbe
-// Generated on: čtvrtek 26. února 2026 10:04:29
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:27:54
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -34,11 +34,11 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Probe", Probe_Element.Data.ToResoniteReference(context));
-members.Add("OnBakeStart", OnBakeStart_Element.Data.ToResoniteReference(context));
-members.Add("OnBakeFail", OnBakeFail_Element.Data.ToResoniteReference(context));
-members.Add("OnBakeComplete", OnBakeComplete_Element.Data.ToResoniteReference(context));
-members.Add("BakedCubemapURL", new ResoniteLink.EmptyElement());
+members.Add("Probe", Probe_Element.ToLinkReference(context));
+members.Add("OnBakeStart", OnBakeStart_Element.ToLinkReference(context));
+members.Add("OnBakeFail", OnBakeFail_Element.ToLinkReference(context));
+members.Add("OnBakeComplete", OnBakeComplete_Element.ToLinkReference(context));
+members.Add("BakedCubemapURL", BakedCubemapURL.ToLinkEmpty(context));
 }
 
 }

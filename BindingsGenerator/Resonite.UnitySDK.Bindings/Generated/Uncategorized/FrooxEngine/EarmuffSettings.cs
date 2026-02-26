@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.EarmuffSettings
-// Generated on: čtvrtek 26. února 2026 10:04:44
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:28:10
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -39,13 +39,13 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("EarmuffEnabled", EarmuffEnabled_Element.Data.ToResoniteLinkField());
-members.Add("VolumeAttenuation", VolumeAttenuation_Element.Data.ToResoniteLinkField());
-members.Add("Directionality", Directionality_Element.Data.ToResoniteLinkField());
-members.Add("Distance", Distance_Element.Data.ToResoniteLinkField());
-members.Add("Angle", Angle_Element.Data.ToResoniteLinkField());
-members.Add("TransitionStart", TransitionStart_Element.Data.ToResoniteLinkField());
-members.Add("TransitionLength", TransitionLength_Element.Data.ToResoniteLinkField());
+members.Add("EarmuffEnabled", EarmuffEnabled_Element.ToLinkField(context));
+members.Add("VolumeAttenuation", VolumeAttenuation_Element.ToLinkField(context));
+members.Add("Directionality", Directionality_Element.ToLinkField(context));
+members.Add("Distance", Distance_Element.ToLinkField(context));
+members.Add("Angle", Angle_Element.ToLinkField(context));
+members.Add("TransitionStart", TransitionStart_Element.ToLinkField(context));
+members.Add("TransitionLength", TransitionLength_Element.ToLinkField(context));
 }
 
 }

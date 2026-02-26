@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.DisplayInfo
-// Generated on: čtvrtek 26. února 2026 10:03:39
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:26:55
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -39,13 +39,13 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("DisplayIndex", DisplayIndex_Element.Data.ToResoniteLinkField());
-members.Add("Resolution", Resolution_Element.Data.ToResoniteLinkField());
-members.Add("Offset", Offset_Element.Data.ToResoniteLinkField());
-members.Add("DPI", DPI_Element.Data.ToResoniteLinkField());
-members.Add("RefreshRate", RefreshRate_Element.Data.ToResoniteLinkField());
-members.Add("Orientation", Orientation_Element.Data.ToResoniteLinkField());
-members.Add("IsPrimary", IsPrimary_Element.Data.ToResoniteLinkField());
+members.Add("DisplayIndex", DisplayIndex_Element.ToLinkField(context));
+members.Add("Resolution", Resolution_Element.ToLinkField(context));
+members.Add("Offset", Offset_Element.ToLinkField(context));
+members.Add("DPI", DPI_Element.ToLinkField(context));
+members.Add("RefreshRate", RefreshRate_Element.ToLinkField(context));
+members.Add("Orientation", Orientation_Element.ToLinkField(context));
+members.Add("IsPrimary", IsPrimary_Element.ToLinkField(context));
 }
 
 }

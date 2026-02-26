@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.UserspaceRadiantDash
-// Generated on: čtvrtek 26. února 2026 10:04:47
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:28:12
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -59,23 +59,23 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("BlockOpenClose", BlockOpenClose_Element.Data.ToResoniteLinkField());
-members.Add("Freeform", Freeform_Element.Data.ToResoniteLinkField());
-members.Add("_dash", _dash_Element.Data.ToResoniteReference(context));
-members.Add("_dashVisualRoot", _dashVisualRoot_Element.Data.ToResoniteReference(context));
-members.Add("_positioner", _positioner_Element.Data.ToResoniteReference(context));
-members.Add("_modalOverlay", _modalOverlay_Element.Data.ToResoniteReference(context));
-members.Add("_legacyInventoryPanel", _legacyInventoryPanel_Element.Data.ToResoniteReference(context));
-members.Add("_legacyInventory", _legacyInventory_Element.Data.ToResoniteReference(context));
-members.Add("_slider", _slider_Element.Data.ToResoniteReference(context));
-members.Add("_lookat", _lookat_Element.Data.ToResoniteReference(context));
-members.Add("_uiEditModeToggle", _uiEditModeToggle_Element.Data.ToResoniteReference(context));
-members.Add("_alwaysOnFacetRoot", _alwaysOnFacetRoot_Element.Data.ToResoniteReference(context));
-members.Add("_screensWorkspace", _screensWorkspace_Element.Data.ToResoniteReference(context));
-members.Add("_topWorkspace", _topWorkspace_Element.Data.ToResoniteReference(context));
-members.Add("_notifications", _notifications_Element.Data.ToResoniteReference(context));
-members.Add("_notificationsRoot", _notificationsRoot_Element.Data.ToResoniteReference(context));
-members.Add("_notificationsHolder", _notificationsHolder_Element.Data.ToResoniteReference(context));
+members.Add("BlockOpenClose", BlockOpenClose_Element.ToLinkField(context));
+members.Add("Freeform", Freeform_Element.ToLinkField(context));
+members.Add("_dash", _dash_Element.ToLinkReference(context));
+members.Add("_dashVisualRoot", _dashVisualRoot_Element.ToLinkReference(context));
+members.Add("_positioner", _positioner_Element.ToLinkReference(context));
+members.Add("_modalOverlay", _modalOverlay_Element.ToLinkReference(context));
+members.Add("_legacyInventoryPanel", _legacyInventoryPanel_Element.ToLinkReference(context));
+members.Add("_legacyInventory", _legacyInventory_Element.ToLinkReference(context));
+members.Add("_slider", _slider_Element.ToLinkReference(context));
+members.Add("_lookat", _lookat_Element.ToLinkReference(context));
+members.Add("_uiEditModeToggle", _uiEditModeToggle_Element.ToLinkReference(context));
+members.Add("_alwaysOnFacetRoot", _alwaysOnFacetRoot_Element.ToLinkReference(context));
+members.Add("_screensWorkspace", _screensWorkspace_Element.ToLinkReference(context));
+members.Add("_topWorkspace", _topWorkspace_Element.ToLinkReference(context));
+members.Add("_notifications", _notifications_Element.ToLinkReference(context));
+members.Add("_notificationsRoot", _notificationsRoot_Element.ToLinkReference(context));
+members.Add("_notificationsHolder", _notificationsHolder_Element.ToLinkReference(context));
 }
 
 }

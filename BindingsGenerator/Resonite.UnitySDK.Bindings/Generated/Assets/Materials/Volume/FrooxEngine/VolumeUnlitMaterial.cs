@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.VolumeUnlitMaterial
-// Generated on: čtvrtek 26. února 2026 10:03:35
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:26:49
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -51,26 +51,20 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Mode", Mode_Element.Data.ToResoniteLinkField());
-members.Add("BlendMode", BlendMode_Element.Data.ToResoniteLinkField());
-members.Add("RenderQueue", RenderQueue_Element.Data.ToResoniteLinkField());
-members.Add("Volume", Volume_Element.Data.ToResoniteReference(context));
-members.Add("StepSize", StepSize_Element.Data.ToResoniteLinkField());
-members.Add("Gain", Gain_Element.Data.ToResoniteLinkField());
-members.Add("Exp", Exp_Element.Data.ToResoniteLinkField());
-members.Add("AccumulationCutoff", AccumulationCutoff_Element.Data.ToResoniteLinkField());
-members.Add("HitThreshold", HitThreshold_Element.Data.ToResoniteLinkField());
-members.Add("InputRange", InputRange_Element.Data.ToResoniteLinkField());
-members.Add("InputOffset", InputOffset_Element.Data.ToResoniteLinkField());
-members.Add("UseAlphaChannel", UseAlphaChannel_Element.Data.ToResoniteLinkField());
-members.Add("Slices", new ResoniteLink.SyncList()
-{
-    Elements = Slices.Data.ConvertList(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers(context) })
-});
-members.Add("Highlights", new ResoniteLink.SyncList()
-{
-    Elements = Highlights.Data.ConvertList(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers(context) })
-});
+members.Add("Mode", Mode_Element.ToLinkField(context));
+members.Add("BlendMode", BlendMode_Element.ToLinkField(context));
+members.Add("RenderQueue", RenderQueue_Element.ToLinkField(context));
+members.Add("Volume", Volume_Element.ToLinkReference(context));
+members.Add("StepSize", StepSize_Element.ToLinkField(context));
+members.Add("Gain", Gain_Element.ToLinkField(context));
+members.Add("Exp", Exp_Element.ToLinkField(context));
+members.Add("AccumulationCutoff", AccumulationCutoff_Element.ToLinkField(context));
+members.Add("HitThreshold", HitThreshold_Element.ToLinkField(context));
+members.Add("InputRange", InputRange_Element.ToLinkField(context));
+members.Add("InputOffset", InputOffset_Element.ToLinkField(context));
+members.Add("UseAlphaChannel", UseAlphaChannel_Element.ToLinkField(context));
+members.Add("Slices", Slices.ToLinkList(context, m => m.ToLinkSyncObject(context)));
+members.Add("Highlights", Highlights.ToLinkList(context, m => m.ToLinkSyncObject(context)));
 }
 
 }

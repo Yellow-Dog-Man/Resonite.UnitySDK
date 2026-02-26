@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.FresnelMaterial
-// Generated on: čtvrtek 26. února 2026 10:03:34
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:26:49
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -81,34 +81,34 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Exponent", Exponent_Element.Data.ToResoniteLinkField());
-members.Add("GammaCurve", GammaCurve_Element.Data.ToResoniteLinkField());
-members.Add("FarColor", FarColor_Element.Data.ToResoniteLinkField());
-members.Add("NearColor", NearColor_Element.Data.ToResoniteLinkField());
-members.Add("FarTexture", FarTexture_Element.Data.ToResoniteReference(context));
-members.Add("NearTexture", NearTexture_Element.Data.ToResoniteReference(context));
-members.Add("FarTextureScale", FarTextureScale_Element.Data.ToResoniteLinkField());
-members.Add("FarTextureOffset", FarTextureOffset_Element.Data.ToResoniteLinkField());
-members.Add("NearTextureScale", NearTextureScale_Element.Data.ToResoniteLinkField());
-members.Add("NearTextureOffset", NearTextureOffset_Element.Data.ToResoniteLinkField());
-members.Add("NormalMap", NormalMap_Element.Data.ToResoniteReference(context));
-members.Add("NormalScale", NormalScale_Element.Data.ToResoniteLinkField());
-members.Add("UseVertexColors", UseVertexColors_Element.Data.ToResoniteLinkField());
-members.Add("VertexColorInterpolationSpace", VertexColorInterpolationSpace_Element.Data.ToResoniteLinkField());
-members.Add("BlendMode", BlendMode_Element.Data.ToResoniteLinkField());
-members.Add("AlphaCutoff", AlphaCutoff_Element.Data.ToResoniteLinkField());
-members.Add("MaskTexture", MaskTexture_Element.Data.ToResoniteReference(context));
-members.Add("MaskScale", MaskScale_Element.Data.ToResoniteLinkField());
-members.Add("MaskOffset", MaskOffset_Element.Data.ToResoniteLinkField());
-members.Add("MaskMode", MaskMode_Element.Data.ToResoniteLinkField());
-members.Add("Sidedness", Sidedness_Element.Data.ToResoniteLinkField());
-members.Add("ZWrite", ZWrite_Element.Data.ToResoniteLinkField());
-members.Add("ZTest", ZTest_Element.Data.ToResoniteLinkField());
-members.Add("OffsetFactor", OffsetFactor_Element.Data.ToResoniteLinkField());
-members.Add("OffsetUnits", OffsetUnits_Element.Data.ToResoniteLinkField());
-members.Add("RenderQueue", RenderQueue_Element.Data.ToResoniteLinkField());
-members.Add("PolarUVmapping", PolarUVmapping_Element.Data.ToResoniteLinkField());
-members.Add("PolarPower", PolarPower_Element.Data.ToResoniteLinkField());
+members.Add("Exponent", Exponent_Element.ToLinkField(context));
+members.Add("GammaCurve", GammaCurve_Element.ToLinkField(context));
+members.Add("FarColor", FarColor_Element.ToLinkField(context));
+members.Add("NearColor", NearColor_Element.ToLinkField(context));
+members.Add("FarTexture", FarTexture_Element.ToLinkReference(context));
+members.Add("NearTexture", NearTexture_Element.ToLinkReference(context));
+members.Add("FarTextureScale", FarTextureScale_Element.ToLinkField(context));
+members.Add("FarTextureOffset", FarTextureOffset_Element.ToLinkField(context));
+members.Add("NearTextureScale", NearTextureScale_Element.ToLinkField(context));
+members.Add("NearTextureOffset", NearTextureOffset_Element.ToLinkField(context));
+members.Add("NormalMap", NormalMap_Element.ToLinkReference(context));
+members.Add("NormalScale", NormalScale_Element.ToLinkField(context));
+members.Add("UseVertexColors", UseVertexColors_Element.ToLinkField(context));
+members.Add("VertexColorInterpolationSpace", VertexColorInterpolationSpace_Element.ToLinkField(context));
+members.Add("BlendMode", BlendMode_Element.ToLinkField(context));
+members.Add("AlphaCutoff", AlphaCutoff_Element.ToLinkField(context));
+members.Add("MaskTexture", MaskTexture_Element.ToLinkReference(context));
+members.Add("MaskScale", MaskScale_Element.ToLinkField(context));
+members.Add("MaskOffset", MaskOffset_Element.ToLinkField(context));
+members.Add("MaskMode", MaskMode_Element.ToLinkField(context));
+members.Add("Sidedness", Sidedness_Element.ToLinkField(context));
+members.Add("ZWrite", ZWrite_Element.ToLinkField(context));
+members.Add("ZTest", ZTest_Element.ToLinkField(context));
+members.Add("OffsetFactor", OffsetFactor_Element.ToLinkField(context));
+members.Add("OffsetUnits", OffsetUnits_Element.ToLinkField(context));
+members.Add("RenderQueue", RenderQueue_Element.ToLinkField(context));
+members.Add("PolarUVmapping", PolarUVmapping_Element.ToLinkField(context));
+members.Add("PolarPower", PolarPower_Element.ToLinkField(context));
 }
 
 }

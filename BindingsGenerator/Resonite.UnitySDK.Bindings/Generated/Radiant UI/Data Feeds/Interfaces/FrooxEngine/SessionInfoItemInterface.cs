@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.SessionInfoItemInterface
-// Generated on: čtvrtek 26. února 2026 10:04:35
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:28:01
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -75,31 +75,31 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("SessionName", SessionName_Element.Data.ToResoniteReference(context));
-members.Add("Description", Description_Element.Data.ToResoniteReference(context));
-members.Add("ThumbnailUrl", ThumbnailUrl_Element.Data.ToResoniteReference(context));
-members.Add("SessionId", SessionId_Element.Data.ToResoniteReference(context));
-members.Add("SessionURLs", SessionURLs_Element.Data.ToResoniteReference(context));
-members.Add("HostUserId", HostUserId_Element.Data.ToResoniteReference(context));
-members.Add("HostUserSessionId", HostUserSessionId_Element.Data.ToResoniteReference(context));
-members.Add("HostMachineId", HostMachineId_Element.Data.ToResoniteReference(context));
-members.Add("HostUsername", HostUsername_Element.Data.ToResoniteReference(context));
-members.Add("CompatibilityHash", CompatibilityHash_Element.Data.ToResoniteReference(context));
-members.Add("UniverseId", UniverseId_Element.Data.ToResoniteReference(context));
-members.Add("AppVersion", AppVersion_Element.Data.ToResoniteReference(context));
-members.Add("IsHeadlessHost", IsHeadlessHost_Element.Data.ToResoniteReference(context));
-members.Add("IsOnLAN", IsOnLAN_Element.Data.ToResoniteReference(context));
-members.Add("JoinedUsers", JoinedUsers_Element.Data.ToResoniteReference(context));
-members.Add("ActiveUsers", ActiveUsers_Element.Data.ToResoniteReference(context));
-members.Add("TotalJoinedUsers", TotalJoinedUsers_Element.Data.ToResoniteReference(context));
-members.Add("TotalActiveUsers", TotalActiveUsers_Element.Data.ToResoniteReference(context));
-members.Add("MaximumUsers", MaximumUsers_Element.Data.ToResoniteReference(context));
-members.Add("SessionBeginTime", SessionBeginTime_Element.Data.ToResoniteReference(context));
-members.Add("LastUpdate", LastUpdate_Element.Data.ToResoniteReference(context));
-members.Add("AccessLevel", AccessLevel_Element.Data.ToResoniteReference(context));
-members.Add("HideFromListing", HideFromListing_Element.Data.ToResoniteReference(context));
-members.Add("AwayKickEnabled", AwayKickEnabled_Element.Data.ToResoniteReference(context));
-members.Add("AwayKickInterval", AwayKickInterval_Element.Data.ToResoniteReference(context));
+members.Add("SessionName", SessionName_Element.ToLinkReference(context));
+members.Add("Description", Description_Element.ToLinkReference(context));
+members.Add("ThumbnailUrl", ThumbnailUrl_Element.ToLinkReference(context));
+members.Add("SessionId", SessionId_Element.ToLinkReference(context));
+members.Add("SessionURLs", SessionURLs_Element.ToLinkReference(context));
+members.Add("HostUserId", HostUserId_Element.ToLinkReference(context));
+members.Add("HostUserSessionId", HostUserSessionId_Element.ToLinkReference(context));
+members.Add("HostMachineId", HostMachineId_Element.ToLinkReference(context));
+members.Add("HostUsername", HostUsername_Element.ToLinkReference(context));
+members.Add("CompatibilityHash", CompatibilityHash_Element.ToLinkReference(context));
+members.Add("UniverseId", UniverseId_Element.ToLinkReference(context));
+members.Add("AppVersion", AppVersion_Element.ToLinkReference(context));
+members.Add("IsHeadlessHost", IsHeadlessHost_Element.ToLinkReference(context));
+members.Add("IsOnLAN", IsOnLAN_Element.ToLinkReference(context));
+members.Add("JoinedUsers", JoinedUsers_Element.ToLinkReference(context));
+members.Add("ActiveUsers", ActiveUsers_Element.ToLinkReference(context));
+members.Add("TotalJoinedUsers", TotalJoinedUsers_Element.ToLinkReference(context));
+members.Add("TotalActiveUsers", TotalActiveUsers_Element.ToLinkReference(context));
+members.Add("MaximumUsers", MaximumUsers_Element.ToLinkReference(context));
+members.Add("SessionBeginTime", SessionBeginTime_Element.ToLinkReference(context));
+members.Add("LastUpdate", LastUpdate_Element.ToLinkReference(context));
+members.Add("AccessLevel", AccessLevel_Element.ToLinkReference(context));
+members.Add("HideFromListing", HideFromListing_Element.ToLinkReference(context));
+members.Add("AwayKickEnabled", AwayKickEnabled_Element.ToLinkReference(context));
+members.Add("AwayKickInterval", AwayKickInterval_Element.ToLinkReference(context));
 }
 
 }

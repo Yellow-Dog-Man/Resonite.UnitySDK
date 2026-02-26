@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [ProtoFluxBindings]FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Rendering.SampleColorX
-// Generated on: čtvrtek 26. února 2026 10:04:29
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:27:54
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -40,14 +40,14 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Point", Point_Element.Data.ToResoniteReference(context));
-members.Add("Direction", Direction_Element.Data.ToResoniteReference(context));
-members.Add("Reference", Reference_Element.Data.ToResoniteReference(context));
-members.Add("NearClip", NearClip_Element.Data.ToResoniteReference(context));
-members.Add("FarClip", FarClip_Element.Data.ToResoniteReference(context));
-members.Add("OnSampleStart", OnSampleStart_Element.Data.ToResoniteReference(context));
-members.Add("OnSampled", OnSampled_Element.Data.ToResoniteReference(context));
-members.Add("SampledColor", new ResoniteLink.EmptyElement());
+members.Add("Point", Point_Element.ToLinkReference(context));
+members.Add("Direction", Direction_Element.ToLinkReference(context));
+members.Add("Reference", Reference_Element.ToLinkReference(context));
+members.Add("NearClip", NearClip_Element.ToLinkReference(context));
+members.Add("FarClip", FarClip_Element.ToLinkReference(context));
+members.Add("OnSampleStart", OnSampleStart_Element.ToLinkReference(context));
+members.Add("OnSampled", OnSampled_Element.ToLinkReference(context));
+members.Add("SampledColor", SampledColor.ToLinkEmpty(context));
 }
 
 }

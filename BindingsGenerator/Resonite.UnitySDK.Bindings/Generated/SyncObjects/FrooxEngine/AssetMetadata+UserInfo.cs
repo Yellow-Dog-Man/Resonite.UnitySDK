@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.AssetMetadata+UserInfo
-// Generated on: čtvrtek 26. února 2026 10:03:38
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:26:54
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -38,12 +38,12 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("User", new ResoniteLink.SyncObject() { Members = User.CollectMembers(context) });
-members.Add("IsInVR", IsInVR_Element.Data.ToResoniteLinkField());
-members.Add("IsPresent", IsPresent_Element.Data.ToResoniteLinkField());
-members.Add("HeadPosition", HeadPosition_Element.Data.ToResoniteLinkField());
-members.Add("HeadOrientation", HeadOrientation_Element.Data.ToResoniteLinkField());
-members.Add("SessionJoinTimestamp", SessionJoinTimestamp_Element.Data.ToResoniteLinkField());
+members.Add("User", User.ToLinkSyncObject(context));
+members.Add("IsInVR", IsInVR_Element.ToLinkField(context));
+members.Add("IsPresent", IsPresent_Element.ToLinkField(context));
+members.Add("HeadPosition", HeadPosition_Element.ToLinkField(context));
+members.Add("HeadOrientation", HeadOrientation_Element.ToLinkField(context));
+members.Add("SessionJoinTimestamp", SessionJoinTimestamp_Element.ToLinkField(context));
 }
 
 }

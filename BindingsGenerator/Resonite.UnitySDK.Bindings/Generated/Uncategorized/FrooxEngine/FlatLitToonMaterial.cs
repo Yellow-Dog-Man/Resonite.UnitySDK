@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.FlatLitToonMaterial
-// Generated on: čtvrtek 26. února 2026 10:04:44
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:28:10
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -75,31 +75,31 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("MainTexture", MainTexture_Element.Data.ToResoniteReference(context));
-members.Add("ColorMask", ColorMask_Element.Data.ToResoniteReference(context));
-members.Add("EmissionMap", EmissionMap_Element.Data.ToResoniteReference(context));
-members.Add("NormalMap", NormalMap_Element.Data.ToResoniteReference(context));
-members.Add("MainTextureScale", MainTextureScale_Element.Data.ToResoniteLinkField());
-members.Add("MainTextureOffset", MainTextureOffset_Element.Data.ToResoniteLinkField());
-members.Add("ColorMaskScale", ColorMaskScale_Element.Data.ToResoniteLinkField());
-members.Add("ColorMaskOffset", ColorMaskOffset_Element.Data.ToResoniteLinkField());
-members.Add("EmissionMapScale", EmissionMapScale_Element.Data.ToResoniteLinkField());
-members.Add("EmissionMapOffset", EmissionMapOffset_Element.Data.ToResoniteLinkField());
-members.Add("NormalMapScale", NormalMapScale_Element.Data.ToResoniteLinkField());
-members.Add("NormalMapOffset", NormalMapOffset_Element.Data.ToResoniteLinkField());
-members.Add("AlphaCutoff", AlphaCutoff_Element.Data.ToResoniteLinkField());
-members.Add("Color", Color_Element.Data.ToResoniteLinkField());
-members.Add("EmissionColor", EmissionColor_Element.Data.ToResoniteLinkField());
-members.Add("BlendMode", BlendMode_Element.Data.ToResoniteLinkField());
-members.Add("ZWrite", ZWrite_Element.Data.ToResoniteLinkField());
-members.Add("Shadow", Shadow_Element.Data.ToResoniteLinkField());
-members.Add("Outline", Outline_Element.Data.ToResoniteLinkField());
-members.Add("OutlineWidth", OutlineWidth_Element.Data.ToResoniteLinkField());
-members.Add("OutlineColor", OutlineColor_Element.Data.ToResoniteLinkField());
-members.Add("OutlineTint", OutlineTint_Element.Data.ToResoniteLinkField());
-members.Add("OffsetFactor", OffsetFactor_Element.Data.ToResoniteLinkField());
-members.Add("OffsetUnits", OffsetUnits_Element.Data.ToResoniteLinkField());
-members.Add("RenderQueue", RenderQueue_Element.Data.ToResoniteLinkField());
+members.Add("MainTexture", MainTexture_Element.ToLinkReference(context));
+members.Add("ColorMask", ColorMask_Element.ToLinkReference(context));
+members.Add("EmissionMap", EmissionMap_Element.ToLinkReference(context));
+members.Add("NormalMap", NormalMap_Element.ToLinkReference(context));
+members.Add("MainTextureScale", MainTextureScale_Element.ToLinkField(context));
+members.Add("MainTextureOffset", MainTextureOffset_Element.ToLinkField(context));
+members.Add("ColorMaskScale", ColorMaskScale_Element.ToLinkField(context));
+members.Add("ColorMaskOffset", ColorMaskOffset_Element.ToLinkField(context));
+members.Add("EmissionMapScale", EmissionMapScale_Element.ToLinkField(context));
+members.Add("EmissionMapOffset", EmissionMapOffset_Element.ToLinkField(context));
+members.Add("NormalMapScale", NormalMapScale_Element.ToLinkField(context));
+members.Add("NormalMapOffset", NormalMapOffset_Element.ToLinkField(context));
+members.Add("AlphaCutoff", AlphaCutoff_Element.ToLinkField(context));
+members.Add("Color", Color_Element.ToLinkField(context));
+members.Add("EmissionColor", EmissionColor_Element.ToLinkField(context));
+members.Add("BlendMode", BlendMode_Element.ToLinkField(context));
+members.Add("ZWrite", ZWrite_Element.ToLinkField(context));
+members.Add("Shadow", Shadow_Element.ToLinkField(context));
+members.Add("Outline", Outline_Element.ToLinkField(context));
+members.Add("OutlineWidth", OutlineWidth_Element.ToLinkField(context));
+members.Add("OutlineColor", OutlineColor_Element.ToLinkField(context));
+members.Add("OutlineTint", OutlineTint_Element.ToLinkField(context));
+members.Add("OffsetFactor", OffsetFactor_Element.ToLinkField(context));
+members.Add("OffsetUnits", OffsetUnits_Element.ToLinkField(context));
+members.Add("RenderQueue", RenderQueue_Element.ToLinkField(context));
 }
 
 }

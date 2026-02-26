@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.PointClusterMesh
-// Generated on: čtvrtek 26. února 2026 10:03:36
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:26:51
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -75,31 +75,31 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Distribution", Distribution_Element.Data.ToResoniteLinkField());
-members.Add("Colors", Colors_Element.Data.ToResoniteLinkField());
-members.Add("TextureColorSource", TextureColorSource_Element.Data.ToResoniteReference(context));
-members.Add("HeightScaleSource", HeightScaleSource_Element.Data.ToResoniteReference(context));
-members.Add("TextureIntensityClip", TextureIntensityClip_Element.Data.ToResoniteLinkField());
-members.Add("TextureAlphaClip", TextureAlphaClip_Element.Data.ToResoniteLinkField());
-members.Add("MaxClipAttempts", MaxClipAttempts_Element.Data.ToResoniteLinkField());
-members.Add("HeightmapExp", HeightmapExp_Element.Data.ToResoniteLinkField());
-members.Add("Seed", Seed_Element.Data.ToResoniteLinkField());
-members.Add("Points", Points_Element.Data.ToResoniteLinkField());
-members.Add("Atlas", Atlas_Element.Data.ToResoniteReference(context));
-members.Add("Scale", Scale_Element.Data.ToResoniteLinkField());
-members.Add("RangeExp", RangeExp_Element.Data.ToResoniteLinkField());
-members.Add("JitterRange", JitterRange_Element.Data.ToResoniteLinkField());
-members.Add("Color0", Color0_Element.Data.ToResoniteLinkField());
-members.Add("Color1", Color1_Element.Data.ToResoniteLinkField());
-members.Add("ColorLerpScale", ColorLerpScale_Element.Data.ToResoniteLinkField());
-members.Add("ColorGap", ColorGap_Element.Data.ToResoniteLinkField());
-members.Add("SimplexNoiseScale", SimplexNoiseScale_Element.Data.ToResoniteLinkField());
-members.Add("SimplexNoiseOffset", SimplexNoiseOffset_Element.Data.ToResoniteLinkField());
-members.Add("UniformSize", UniformSize_Element.Data.ToResoniteLinkField());
-members.Add("MinSize", MinSize_Element.Data.ToResoniteLinkField());
-members.Add("MaxSize", MaxSize_Element.Data.ToResoniteLinkField());
-members.Add("MinRotation", MinRotation_Element.Data.ToResoniteLinkField());
-members.Add("MaxRotation", MaxRotation_Element.Data.ToResoniteLinkField());
+members.Add("Distribution", Distribution_Element.ToLinkField(context));
+members.Add("Colors", Colors_Element.ToLinkField(context));
+members.Add("TextureColorSource", TextureColorSource_Element.ToLinkReference(context));
+members.Add("HeightScaleSource", HeightScaleSource_Element.ToLinkReference(context));
+members.Add("TextureIntensityClip", TextureIntensityClip_Element.ToLinkField(context));
+members.Add("TextureAlphaClip", TextureAlphaClip_Element.ToLinkField(context));
+members.Add("MaxClipAttempts", MaxClipAttempts_Element.ToLinkField(context));
+members.Add("HeightmapExp", HeightmapExp_Element.ToLinkField(context));
+members.Add("Seed", Seed_Element.ToLinkField(context));
+members.Add("Points", Points_Element.ToLinkField(context));
+members.Add("Atlas", Atlas_Element.ToLinkReference(context));
+members.Add("Scale", Scale_Element.ToLinkField(context));
+members.Add("RangeExp", RangeExp_Element.ToLinkField(context));
+members.Add("JitterRange", JitterRange_Element.ToLinkField(context));
+members.Add("Color0", Color0_Element.ToLinkField(context));
+members.Add("Color1", Color1_Element.ToLinkField(context));
+members.Add("ColorLerpScale", ColorLerpScale_Element.ToLinkField(context));
+members.Add("ColorGap", ColorGap_Element.ToLinkField(context));
+members.Add("SimplexNoiseScale", SimplexNoiseScale_Element.ToLinkField(context));
+members.Add("SimplexNoiseOffset", SimplexNoiseOffset_Element.ToLinkField(context));
+members.Add("UniformSize", UniformSize_Element.ToLinkField(context));
+members.Add("MinSize", MinSize_Element.ToLinkField(context));
+members.Add("MaxSize", MaxSize_Element.ToLinkField(context));
+members.Add("MinRotation", MinRotation_Element.ToLinkField(context));
+members.Add("MaxRotation", MaxRotation_Element.ToLinkField(context));
 }
 
 }

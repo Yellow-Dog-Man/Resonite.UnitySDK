@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.UIX.Button
-// Generated on: čtvrtek 26. února 2026 10:03:37
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:26:52
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -43,15 +43,15 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("HoverVibrate", HoverVibrate_Element.Data.ToResoniteLinkField());
-members.Add("PressVibrate", PressVibrate_Element.Data.ToResoniteLinkField());
-members.Add("ClearFocusOnPress", ClearFocusOnPress_Element.Data.ToResoniteLinkField());
-members.Add("PassThroughHorizontalMovement", PassThroughHorizontalMovement_Element.Data.ToResoniteLinkField());
-members.Add("PassThroughVerticalMovement", PassThroughVerticalMovement_Element.Data.ToResoniteLinkField());
-members.Add("RequireLockInToPress", RequireLockInToPress_Element.Data.ToResoniteLinkField());
-members.Add("RequireInitialPress", RequireInitialPress_Element.Data.ToResoniteLinkField());
-members.Add("PressPoint", PressPoint_Element.Data.ToResoniteLinkField());
-members.Add("SendSlotEvents", SendSlotEvents_Element.Data.ToResoniteLinkField());
+members.Add("HoverVibrate", HoverVibrate_Element.ToLinkField(context));
+members.Add("PressVibrate", PressVibrate_Element.ToLinkField(context));
+members.Add("ClearFocusOnPress", ClearFocusOnPress_Element.ToLinkField(context));
+members.Add("PassThroughHorizontalMovement", PassThroughHorizontalMovement_Element.ToLinkField(context));
+members.Add("PassThroughVerticalMovement", PassThroughVerticalMovement_Element.ToLinkField(context));
+members.Add("RequireLockInToPress", RequireLockInToPress_Element.ToLinkField(context));
+members.Add("RequireInitialPress", RequireInitialPress_Element.ToLinkField(context));
+members.Add("PressPoint", PressPoint_Element.ToLinkField(context));
+members.Add("SendSlotEvents", SendSlotEvents_Element.ToLinkField(context));
 }
 
 }

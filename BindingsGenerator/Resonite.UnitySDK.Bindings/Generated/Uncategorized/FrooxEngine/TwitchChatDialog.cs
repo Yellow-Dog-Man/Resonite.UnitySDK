@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.TwitchChatDialog
-// Generated on: čtvrtek 26. února 2026 10:04:46
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:28:11
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -45,16 +45,16 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("MaxMessages", MaxMessages_Element.Data.ToResoniteLinkField());
-members.Add("Interface", Interface_Element.Data.ToResoniteReference(context));
-members.Add("_channelName", _channelName_Element.Data.ToResoniteReference(context));
-members.Add("_viewerCount", _viewerCount_Element.Data.ToResoniteReference(context));
-members.Add("_messagesRoot", _messagesRoot_Element.Data.ToResoniteReference(context));
-members.Add("_messagesScrollRect", _messagesScrollRect_Element.Data.ToResoniteReference(context));
-members.Add("_highlightPanel", _highlightPanel_Element.Data.ToResoniteReference(context));
-members.Add("_highlightText", _highlightText_Element.Data.ToResoniteReference(context));
-members.Add("_spriteSheet", _spriteSheet_Element.Data.ToResoniteReference(context));
-members.Add("_fontCollection", _fontCollection_Element.Data.ToResoniteReference(context));
+members.Add("MaxMessages", MaxMessages_Element.ToLinkField(context));
+members.Add("Interface", Interface_Element.ToLinkReference(context));
+members.Add("_channelName", _channelName_Element.ToLinkReference(context));
+members.Add("_viewerCount", _viewerCount_Element.ToLinkReference(context));
+members.Add("_messagesRoot", _messagesRoot_Element.ToLinkReference(context));
+members.Add("_messagesScrollRect", _messagesScrollRect_Element.ToLinkReference(context));
+members.Add("_highlightPanel", _highlightPanel_Element.ToLinkReference(context));
+members.Add("_highlightText", _highlightText_Element.ToLinkReference(context));
+members.Add("_spriteSheet", _spriteSheet_Element.ToLinkReference(context));
+members.Add("_fontCollection", _fontCollection_Element.ToLinkReference(context));
 }
 
 }

@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.PerformanceMetrics
-// Generated on: čtvrtek 26. února 2026 10:04:50
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:28:16
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -34,11 +34,11 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("User", new ResoniteLink.SyncObject() { Members = User.CollectMembers(context) });
-members.Add("FPS", FPS_Element.Data.ToResoniteLinkField());
-members.Add("ImmediateFPS", ImmediateFPS_Element.Data.ToResoniteLinkField());
-members.Add("RenderTime", RenderTime_Element.Data.ToResoniteLinkField());
-members.Add("TotalEngineUpdateTime", TotalEngineUpdateTime_Element.Data.ToResoniteLinkField());
+members.Add("User", User.ToLinkSyncObject(context));
+members.Add("FPS", FPS_Element.ToLinkField(context));
+members.Add("ImmediateFPS", ImmediateFPS_Element.ToLinkField(context));
+members.Add("RenderTime", RenderTime_Element.ToLinkField(context));
+members.Add("TotalEngineUpdateTime", TotalEngineUpdateTime_Element.ToLinkField(context));
 }
 
 }

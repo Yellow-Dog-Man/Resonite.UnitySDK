@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.TubeSpiralMesh
-// Generated on: čtvrtek 26. února 2026 10:03:36
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:26:51
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -63,25 +63,25 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Steps", Steps_Element.Data.ToResoniteLinkField());
-members.Add("MaximumDistanceBetweenRings", MaximumDistanceBetweenRings_Element.Data.ToResoniteLinkField());
-members.Add("RadiusIndependentStepScaling", RadiusIndependentStepScaling_Element.Data.ToResoniteLinkField());
-members.Add("CoilCount", CoilCount_Element.Data.ToResoniteLinkField());
-members.Add("ScaleCoilCountByLength", ScaleCoilCountByLength_Element.Data.ToResoniteLinkField());
-members.Add("CoilPhase", CoilPhase_Element.Data.ToResoniteLinkField());
-members.Add("StartPoint", StartPoint_Element.Data.ToResoniteLinkField());
-members.Add("StartTangent", StartTangent_Element.Data.ToResoniteLinkField());
-members.Add("EndPoint", EndPoint_Element.Data.ToResoniteLinkField());
-members.Add("EndTangent", EndTangent_Element.Data.ToResoniteLinkField());
-members.Add("StartSpiralRadius", StartSpiralRadius_Element.Data.ToResoniteLinkField());
-members.Add("EndSpiralRadius", EndSpiralRadius_Element.Data.ToResoniteLinkField());
-members.Add("StartSpiralOrientation", StartSpiralOrientation_Element.Data.ToResoniteLinkField());
-members.Add("EndSpiralOrientation", EndSpiralOrientation_Element.Data.ToResoniteLinkField());
-members.Add("Ends", Ends_Element.Data.ToResoniteLinkField());
-members.Add("Shading", Shading_Element.Data.ToResoniteLinkField());
-members.Add("StartTubeRadius", StartTubeRadius_Element.Data.ToResoniteLinkField());
-members.Add("EndTubeRadius", EndTubeRadius_Element.Data.ToResoniteLinkField());
-members.Add("TubePoints", TubePoints_Element.Data.ToResoniteLinkField());
+members.Add("Steps", Steps_Element.ToLinkField(context));
+members.Add("MaximumDistanceBetweenRings", MaximumDistanceBetweenRings_Element.ToLinkField(context));
+members.Add("RadiusIndependentStepScaling", RadiusIndependentStepScaling_Element.ToLinkField(context));
+members.Add("CoilCount", CoilCount_Element.ToLinkField(context));
+members.Add("ScaleCoilCountByLength", ScaleCoilCountByLength_Element.ToLinkField(context));
+members.Add("CoilPhase", CoilPhase_Element.ToLinkField(context));
+members.Add("StartPoint", StartPoint_Element.ToLinkField(context));
+members.Add("StartTangent", StartTangent_Element.ToLinkField(context));
+members.Add("EndPoint", EndPoint_Element.ToLinkField(context));
+members.Add("EndTangent", EndTangent_Element.ToLinkField(context));
+members.Add("StartSpiralRadius", StartSpiralRadius_Element.ToLinkField(context));
+members.Add("EndSpiralRadius", EndSpiralRadius_Element.ToLinkField(context));
+members.Add("StartSpiralOrientation", StartSpiralOrientation_Element.ToLinkField(context));
+members.Add("EndSpiralOrientation", EndSpiralOrientation_Element.ToLinkField(context));
+members.Add("Ends", Ends_Element.ToLinkField(context));
+members.Add("Shading", Shading_Element.ToLinkField(context));
+members.Add("StartTubeRadius", StartTubeRadius_Element.ToLinkField(context));
+members.Add("EndTubeRadius", EndTubeRadius_Element.ToLinkField(context));
+members.Add("TubePoints", TubePoints_Element.ToLinkField(context));
 }
 
 }

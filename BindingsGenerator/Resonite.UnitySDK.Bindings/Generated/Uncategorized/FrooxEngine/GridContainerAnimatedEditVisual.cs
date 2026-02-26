@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.GridContainerAnimatedEditVisual
-// Generated on: čtvrtek 26. února 2026 10:04:45
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:28:11
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -35,11 +35,11 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Grid", Grid_Element.Data.ToResoniteReference(context));
-members.Add("_tiledImage", _tiledImage_Element.Data.ToResoniteReference(context));
-members.Add("_tiling", _tiling_Element.Data.ToResoniteReference(context));
-members.Add("_offset", _offset_Element.Data.ToResoniteReference(context));
-members.Add("_tint", _tint_Element.Data.ToResoniteReference(context));
+members.Add("Grid", Grid_Element.ToLinkReference(context));
+members.Add("_tiledImage", _tiledImage_Element.ToLinkReference(context));
+members.Add("_tiling", _tiling_Element.ToLinkReference(context));
+members.Add("_offset", _offset_Element.ToLinkReference(context));
+members.Add("_tint", _tint_Element.ToLinkReference(context));
 }
 
 }

@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.Projection360Material
-// Generated on: čtvrtek 26. února 2026 10:03:35
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:26:49
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -121,54 +121,54 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Texture", Texture_Element.Data.ToResoniteReference(context));
-members.Add("SecondaryTexture", SecondaryTexture_Element.Data.ToResoniteReference(context));
-members.Add("Cubemap", Cubemap_Element.Data.ToResoniteReference(context));
-members.Add("SecondaryCubemap", SecondaryCubemap_Element.Data.ToResoniteReference(context));
-members.Add("CubemapLOD", CubemapLOD_Element.Data.ToResoniteLinkField());
-members.Add("TextureLerp", TextureLerp_Element.Data.ToResoniteLinkField());
-members.Add("Projection", Projection_Element.Data.ToResoniteLinkField());
-members.Add("FieldOfView", FieldOfView_Element.Data.ToResoniteLinkField());
-members.Add("AngleOffset", AngleOffset_Element.Data.ToResoniteLinkField());
-members.Add("PerspectiveFieldOfView", PerspectiveFieldOfView_Element.Data.ToResoniteLinkField());
-members.Add("PerspectiveAngleOffset", PerspectiveAngleOffset_Element.Data.ToResoniteLinkField());
-members.Add("Tint", Tint_Element.Data.ToResoniteLinkField());
-members.Add("Exposure", Exposure_Element.Data.ToResoniteLinkField());
-members.Add("Gamma", Gamma_Element.Data.ToResoniteLinkField());
-members.Add("TintTexture", TintTexture_Element.Data.ToResoniteReference(context));
-members.Add("TintTextureScale", TintTextureScale_Element.Data.ToResoniteLinkField());
-members.Add("TintTextureOffset", TintTextureOffset_Element.Data.ToResoniteLinkField());
-members.Add("TintTextureMode", TintTextureMode_Element.Data.ToResoniteLinkField());
-members.Add("Tint0", Tint0_Element.Data.ToResoniteLinkField());
-members.Add("Tint1", Tint1_Element.Data.ToResoniteLinkField());
-members.Add("OutsideMode", OutsideMode_Element.Data.ToResoniteLinkField());
-members.Add("OutsideColor", OutsideColor_Element.Data.ToResoniteLinkField());
-members.Add("TextureOffset", TextureOffset_Element.Data.ToResoniteLinkField());
-members.Add("TextureScale", TextureScale_Element.Data.ToResoniteLinkField());
-members.Add("StereoTextureTransform", StereoTextureTransform_Element.Data.ToResoniteLinkField());
-members.Add("RightEyeTextureOffset", RightEyeTextureOffset_Element.Data.ToResoniteLinkField());
-members.Add("RightEyeTextureScale", RightEyeTextureScale_Element.Data.ToResoniteLinkField());
-members.Add("Sidedness", Sidedness_Element.Data.ToResoniteLinkField());
-members.Add("ZWrite", ZWrite_Element.Data.ToResoniteLinkField());
-members.Add("ZTest", ZTest_Element.Data.ToResoniteLinkField());
-members.Add("BlendMode", BlendMode_Element.Data.ToResoniteLinkField());
-members.Add("OffsetFactor", OffsetFactor_Element.Data.ToResoniteLinkField());
-members.Add("OffsetUnits", OffsetUnits_Element.Data.ToResoniteLinkField());
-members.Add("MaxIntensity", MaxIntensity_Element.Data.ToResoniteLinkField());
-members.Add("Rect", Rect_Element.Data.ToResoniteLinkField());
-members.Add("RectClip", RectClip_Element.Data.ToResoniteLinkField());
-members.Add("ColorMask", ColorMask_Element.Data.ToResoniteLinkField());
-members.Add("OffsetTexture", OffsetTexture_Element.Data.ToResoniteReference(context));
-members.Add("OffsetMask", OffsetMask_Element.Data.ToResoniteReference(context));
-members.Add("OffsetTextureOffset", OffsetTextureOffset_Element.Data.ToResoniteLinkField());
-members.Add("OffsetTextureScale", OffsetTextureScale_Element.Data.ToResoniteLinkField());
-members.Add("OffsetMagnitude", OffsetMagnitude_Element.Data.ToResoniteLinkField());
-members.Add("StencilComparison", StencilComparison_Element.Data.ToResoniteLinkField());
-members.Add("StencilOperation", StencilOperation_Element.Data.ToResoniteLinkField());
-members.Add("StencilID", StencilID_Element.Data.ToResoniteLinkField());
-members.Add("StencilWriteMask", StencilWriteMask_Element.Data.ToResoniteLinkField());
-members.Add("StencilReadMask", StencilReadMask_Element.Data.ToResoniteLinkField());
-members.Add("RenderQueue", RenderQueue_Element.Data.ToResoniteLinkField());
+members.Add("Texture", Texture_Element.ToLinkReference(context));
+members.Add("SecondaryTexture", SecondaryTexture_Element.ToLinkReference(context));
+members.Add("Cubemap", Cubemap_Element.ToLinkReference(context));
+members.Add("SecondaryCubemap", SecondaryCubemap_Element.ToLinkReference(context));
+members.Add("CubemapLOD", CubemapLOD_Element.ToLinkField(context));
+members.Add("TextureLerp", TextureLerp_Element.ToLinkField(context));
+members.Add("Projection", Projection_Element.ToLinkField(context));
+members.Add("FieldOfView", FieldOfView_Element.ToLinkField(context));
+members.Add("AngleOffset", AngleOffset_Element.ToLinkField(context));
+members.Add("PerspectiveFieldOfView", PerspectiveFieldOfView_Element.ToLinkField(context));
+members.Add("PerspectiveAngleOffset", PerspectiveAngleOffset_Element.ToLinkField(context));
+members.Add("Tint", Tint_Element.ToLinkField(context));
+members.Add("Exposure", Exposure_Element.ToLinkField(context));
+members.Add("Gamma", Gamma_Element.ToLinkField(context));
+members.Add("TintTexture", TintTexture_Element.ToLinkReference(context));
+members.Add("TintTextureScale", TintTextureScale_Element.ToLinkField(context));
+members.Add("TintTextureOffset", TintTextureOffset_Element.ToLinkField(context));
+members.Add("TintTextureMode", TintTextureMode_Element.ToLinkField(context));
+members.Add("Tint0", Tint0_Element.ToLinkField(context));
+members.Add("Tint1", Tint1_Element.ToLinkField(context));
+members.Add("OutsideMode", OutsideMode_Element.ToLinkField(context));
+members.Add("OutsideColor", OutsideColor_Element.ToLinkField(context));
+members.Add("TextureOffset", TextureOffset_Element.ToLinkField(context));
+members.Add("TextureScale", TextureScale_Element.ToLinkField(context));
+members.Add("StereoTextureTransform", StereoTextureTransform_Element.ToLinkField(context));
+members.Add("RightEyeTextureOffset", RightEyeTextureOffset_Element.ToLinkField(context));
+members.Add("RightEyeTextureScale", RightEyeTextureScale_Element.ToLinkField(context));
+members.Add("Sidedness", Sidedness_Element.ToLinkField(context));
+members.Add("ZWrite", ZWrite_Element.ToLinkField(context));
+members.Add("ZTest", ZTest_Element.ToLinkField(context));
+members.Add("BlendMode", BlendMode_Element.ToLinkField(context));
+members.Add("OffsetFactor", OffsetFactor_Element.ToLinkField(context));
+members.Add("OffsetUnits", OffsetUnits_Element.ToLinkField(context));
+members.Add("MaxIntensity", MaxIntensity_Element.ToLinkField(context));
+members.Add("Rect", Rect_Element.ToLinkField(context));
+members.Add("RectClip", RectClip_Element.ToLinkField(context));
+members.Add("ColorMask", ColorMask_Element.ToLinkField(context));
+members.Add("OffsetTexture", OffsetTexture_Element.ToLinkReference(context));
+members.Add("OffsetMask", OffsetMask_Element.ToLinkReference(context));
+members.Add("OffsetTextureOffset", OffsetTextureOffset_Element.ToLinkField(context));
+members.Add("OffsetTextureScale", OffsetTextureScale_Element.ToLinkField(context));
+members.Add("OffsetMagnitude", OffsetMagnitude_Element.ToLinkField(context));
+members.Add("StencilComparison", StencilComparison_Element.ToLinkField(context));
+members.Add("StencilOperation", StencilOperation_Element.ToLinkField(context));
+members.Add("StencilID", StencilID_Element.ToLinkField(context));
+members.Add("StencilWriteMask", StencilWriteMask_Element.ToLinkField(context));
+members.Add("StencilReadMask", StencilReadMask_Element.ToLinkField(context));
+members.Add("RenderQueue", RenderQueue_Element.ToLinkField(context));
 }
 
 }

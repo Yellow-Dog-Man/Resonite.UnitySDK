@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.FinalIK.IKSolverVR+Spine
-// Generated on: čtvrtek 26. února 2026 10:04:45
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:28:11
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -85,35 +85,35 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("HeadTarget", HeadTarget_Element.Data.ToResoniteReference(context));
-members.Add("PelvisTarget", PelvisTarget_Element.Data.ToResoniteReference(context));
-members.Add("PositionWeight", PositionWeight_Element.Data.ToResoniteLinkField());
-members.Add("RotationWeight", RotationWeight_Element.Data.ToResoniteLinkField());
-members.Add("PelvisPositionWeight", PelvisPositionWeight_Element.Data.ToResoniteLinkField());
-members.Add("PelvisRotationWeight", PelvisRotationWeight_Element.Data.ToResoniteLinkField());
-members.Add("ChestGoal", ChestGoal_Element.Data.ToResoniteReference(context));
-members.Add("ChestGoalWeight", ChestGoalWeight_Element.Data.ToResoniteLinkField());
-members.Add("MinHeadHeight", MinHeadHeight_Element.Data.ToResoniteLinkField());
-members.Add("BodyPosStiffness", BodyPosStiffness_Element.Data.ToResoniteLinkField());
-members.Add("BodyRotStiffness", BodyRotStiffness_Element.Data.ToResoniteLinkField());
-members.Add("NeckStiffness", NeckStiffness_Element.Data.ToResoniteLinkField());
-members.Add("RotateChestByHands", RotateChestByHands_Element.Data.ToResoniteLinkField());
-members.Add("ChestClampWeight", ChestClampWeight_Element.Data.ToResoniteLinkField());
-members.Add("HeadClampWeight", HeadClampWeight_Element.Data.ToResoniteLinkField());
-members.Add("MoveBodyBackWhenCrouching", MoveBodyBackWhenCrouching_Element.Data.ToResoniteLinkField());
-members.Add("MaintainPelvisPosition", MaintainPelvisPosition_Element.Data.ToResoniteLinkField());
-members.Add("MaxRootAngle", MaxRootAngle_Element.Data.ToResoniteLinkField());
-members.Add("IKPositionHead", IKPositionHead_Element.Data.ToResoniteLinkField());
-members.Add("IKRotationHead", IKRotationHead_Element.Data.ToResoniteLinkField());
-members.Add("IKPositionPelvis", IKPositionPelvis_Element.Data.ToResoniteLinkField());
-members.Add("IKRotationPelvis", IKRotationPelvis_Element.Data.ToResoniteLinkField());
-members.Add("GoalPositionChest", GoalPositionChest_Element.Data.ToResoniteLinkField());
-members.Add("headHeight", headHeight_Element.Data.ToResoniteLinkField());
-members.Add("anchorRelativeToHead", anchorRelativeToHead_Element.Data.ToResoniteLinkField());
-members.Add("pelvisRelativeRotation", pelvisRelativeRotation_Element.Data.ToResoniteLinkField());
-members.Add("chestRelativeRotation", chestRelativeRotation_Element.Data.ToResoniteLinkField());
-members.Add("chestForward", chestForward_Element.Data.ToResoniteLinkField());
-members.Add("pelvisForward", pelvisForward_Element.Data.ToResoniteLinkField());
+members.Add("HeadTarget", HeadTarget_Element.ToLinkReference(context));
+members.Add("PelvisTarget", PelvisTarget_Element.ToLinkReference(context));
+members.Add("PositionWeight", PositionWeight_Element.ToLinkField(context));
+members.Add("RotationWeight", RotationWeight_Element.ToLinkField(context));
+members.Add("PelvisPositionWeight", PelvisPositionWeight_Element.ToLinkField(context));
+members.Add("PelvisRotationWeight", PelvisRotationWeight_Element.ToLinkField(context));
+members.Add("ChestGoal", ChestGoal_Element.ToLinkReference(context));
+members.Add("ChestGoalWeight", ChestGoalWeight_Element.ToLinkField(context));
+members.Add("MinHeadHeight", MinHeadHeight_Element.ToLinkField(context));
+members.Add("BodyPosStiffness", BodyPosStiffness_Element.ToLinkField(context));
+members.Add("BodyRotStiffness", BodyRotStiffness_Element.ToLinkField(context));
+members.Add("NeckStiffness", NeckStiffness_Element.ToLinkField(context));
+members.Add("RotateChestByHands", RotateChestByHands_Element.ToLinkField(context));
+members.Add("ChestClampWeight", ChestClampWeight_Element.ToLinkField(context));
+members.Add("HeadClampWeight", HeadClampWeight_Element.ToLinkField(context));
+members.Add("MoveBodyBackWhenCrouching", MoveBodyBackWhenCrouching_Element.ToLinkField(context));
+members.Add("MaintainPelvisPosition", MaintainPelvisPosition_Element.ToLinkField(context));
+members.Add("MaxRootAngle", MaxRootAngle_Element.ToLinkField(context));
+members.Add("IKPositionHead", IKPositionHead_Element.ToLinkField(context));
+members.Add("IKRotationHead", IKRotationHead_Element.ToLinkField(context));
+members.Add("IKPositionPelvis", IKPositionPelvis_Element.ToLinkField(context));
+members.Add("IKRotationPelvis", IKRotationPelvis_Element.ToLinkField(context));
+members.Add("GoalPositionChest", GoalPositionChest_Element.ToLinkField(context));
+members.Add("headHeight", headHeight_Element.ToLinkField(context));
+members.Add("anchorRelativeToHead", anchorRelativeToHead_Element.ToLinkField(context));
+members.Add("pelvisRelativeRotation", pelvisRelativeRotation_Element.ToLinkField(context));
+members.Add("chestRelativeRotation", chestRelativeRotation_Element.ToLinkField(context));
+members.Add("chestForward", chestForward_Element.ToLinkField(context));
+members.Add("pelvisForward", pelvisForward_Element.ToLinkField(context));
 }
 
 }

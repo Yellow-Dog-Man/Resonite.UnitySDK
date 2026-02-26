@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.ColorDialogInterface
-// Generated on: čtvrtek 26. února 2026 10:03:37
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:26:53
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -33,10 +33,10 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("TargetColor", TargetColor_Element.Data.ToResoniteReference(context));
-members.Add("Continuous", Continuous_Element.Data.ToResoniteReference(context));
-members.Add("AllowAlpha", AllowAlpha_Element.Data.ToResoniteReference(context));
-members.Add("AllowHDR", AllowHDR_Element.Data.ToResoniteReference(context));
+members.Add("TargetColor", TargetColor_Element.ToLinkReference(context));
+members.Add("Continuous", Continuous_Element.ToLinkReference(context));
+members.Add("AllowAlpha", AllowAlpha_Element.ToLinkReference(context));
+members.Add("AllowHDR", AllowHDR_Element.ToLinkReference(context));
 }
 
 }

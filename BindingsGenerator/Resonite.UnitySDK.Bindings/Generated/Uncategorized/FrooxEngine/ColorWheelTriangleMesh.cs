@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.ColorWheelTriangleMesh
-// Generated on: čtvrtek 26. února 2026 10:04:42
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:28:08
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -45,16 +45,16 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Hue", Hue_Element.Data.ToResoniteLinkField());
-members.Add("OuterRadius", OuterRadius_Element.Data.ToResoniteLinkField());
-members.Add("InnerRadius", InnerRadius_Element.Data.ToResoniteLinkField());
-members.Add("RingSegments", RingSegments_Element.Data.ToResoniteLinkField());
-members.Add("CursorPosition", CursorPosition_Element.Data.ToResoniteLinkField());
-members.Add("CursorSegments", CursorSegments_Element.Data.ToResoniteLinkField());
-members.Add("CursorColor", CursorColor_Element.Data.ToResoniteLinkField());
-members.Add("CursorOuterRadius", CursorOuterRadius_Element.Data.ToResoniteLinkField());
-members.Add("CursorInnerRadius", CursorInnerRadius_Element.Data.ToResoniteLinkField());
-members.Add("CursorZOffset", CursorZOffset_Element.Data.ToResoniteLinkField());
+members.Add("Hue", Hue_Element.ToLinkField(context));
+members.Add("OuterRadius", OuterRadius_Element.ToLinkField(context));
+members.Add("InnerRadius", InnerRadius_Element.ToLinkField(context));
+members.Add("RingSegments", RingSegments_Element.ToLinkField(context));
+members.Add("CursorPosition", CursorPosition_Element.ToLinkField(context));
+members.Add("CursorSegments", CursorSegments_Element.ToLinkField(context));
+members.Add("CursorColor", CursorColor_Element.ToLinkField(context));
+members.Add("CursorOuterRadius", CursorOuterRadius_Element.ToLinkField(context));
+members.Add("CursorInnerRadius", CursorInnerRadius_Element.ToLinkField(context));
+members.Add("CursorZOffset", CursorZOffset_Element.ToLinkField(context));
 }
 
 }

@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.UserRestrictionsSettings+Entry
-// Generated on: čtvrtek 26. února 2026 10:04:48
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:28:14
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -37,18 +37,12 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("BlockType", BlockType_Element.Data.ToResoniteLinkField());
-members.Add("IsFullyBanned", IsFullyBanned_Element.Data.ToResoniteLinkField());
-members.Add("Username", Username_Element.Data.ToResoniteLinkField());
-members.Add("UserId", UserId_Element.Data.ToResoniteLinkField());
-members.Add("MachineIDs", new ResoniteLink.SyncList()
-{
-    Elements = MachineIDs.Data.ConvertList(m => m.Data.ToResoniteLinkField())
-});
-members.Add("BannedWorldList", new ResoniteLink.SyncList()
-{
-    Elements = BannedWorldList.Data.ConvertList(m => m.Data.ToResoniteLinkField())
-});
+members.Add("BlockType", BlockType_Element.ToLinkField(context));
+members.Add("IsFullyBanned", IsFullyBanned_Element.ToLinkField(context));
+members.Add("Username", Username_Element.ToLinkField(context));
+members.Add("UserId", UserId_Element.ToLinkField(context));
+members.Add("MachineIDs", MachineIDs.ToLinkList(context, m => m.ToLinkField(context)));
+members.Add("BannedWorldList", BannedWorldList.ToLinkList(context, m => m.ToLinkField(context)));
 }
 
 }

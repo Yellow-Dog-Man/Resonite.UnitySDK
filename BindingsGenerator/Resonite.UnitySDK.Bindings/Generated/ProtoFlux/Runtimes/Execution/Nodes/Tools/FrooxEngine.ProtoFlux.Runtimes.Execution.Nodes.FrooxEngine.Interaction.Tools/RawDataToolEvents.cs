@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [ProtoFluxBindings]FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Interaction.Tools.RawDataToolEvents
-// Generated on: čtvrtek 26. února 2026 10:04:32
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:27:57
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -45,16 +45,16 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Tool", Tool_Element.Data.ToResoniteReference(context));
-members.Add("Equipped", Equipped_Element.Data.ToResoniteReference(context));
-members.Add("Dequipped", Dequipped_Element.Data.ToResoniteReference(context));
-members.Add("ToolUpdate", ToolUpdate_Element.Data.ToResoniteReference(context));
-members.Add("PrimaryPressed", PrimaryPressed_Element.Data.ToResoniteReference(context));
-members.Add("PrimaryHeld", PrimaryHeld_Element.Data.ToResoniteReference(context));
-members.Add("PrimaryReleased", PrimaryReleased_Element.Data.ToResoniteReference(context));
-members.Add("SecondaryPressed", SecondaryPressed_Element.Data.ToResoniteReference(context));
-members.Add("SecondaryHeld", SecondaryHeld_Element.Data.ToResoniteReference(context));
-members.Add("SecondaryReleased", SecondaryReleased_Element.Data.ToResoniteReference(context));
+members.Add("Tool", Tool_Element.ToLinkReference(context));
+members.Add("Equipped", Equipped_Element.ToLinkReference(context));
+members.Add("Dequipped", Dequipped_Element.ToLinkReference(context));
+members.Add("ToolUpdate", ToolUpdate_Element.ToLinkReference(context));
+members.Add("PrimaryPressed", PrimaryPressed_Element.ToLinkReference(context));
+members.Add("PrimaryHeld", PrimaryHeld_Element.ToLinkReference(context));
+members.Add("PrimaryReleased", PrimaryReleased_Element.ToLinkReference(context));
+members.Add("SecondaryPressed", SecondaryPressed_Element.ToLinkReference(context));
+members.Add("SecondaryHeld", SecondaryHeld_Element.ToLinkReference(context));
+members.Add("SecondaryReleased", SecondaryReleased_Element.ToLinkReference(context));
 }
 
 }

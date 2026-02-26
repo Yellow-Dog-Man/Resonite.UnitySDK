@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.PhotonDust.ParticleSystem
-// Generated on: čtvrtek 26. února 2026 10:04:37
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:28:03
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -30,9 +30,9 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("MaxParticleCount", MaxParticleCount_Element.Data.ToResoniteLinkField());
-members.Add("Style", Style_Element.Data.ToResoniteReference(context));
-members.Add("SimulationSpace", new ResoniteLink.SyncObject() { Members = SimulationSpace.CollectMembers(context) });
+members.Add("MaxParticleCount", MaxParticleCount_Element.ToLinkField(context));
+members.Add("Style", Style_Element.ToLinkReference(context));
+members.Add("SimulationSpace", SimulationSpace.ToLinkSyncObject(context));
 }
 
 }

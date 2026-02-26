@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.HapticManager
-// Generated on: čtvrtek 26. února 2026 10:04:45
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:28:11
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -39,13 +39,13 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("InjectedBodyPartIntensity", InjectedBodyPartIntensity_Element.Data.ToResoniteLinkField());
-members.Add("InjectedHandIntensity", InjectedHandIntensity_Element.Data.ToResoniteLinkField());
-members.Add("InjectedHeadIntensity", InjectedHeadIntensity_Element.Data.ToResoniteLinkField());
-members.Add("InjectedRadiusStartRatio", InjectedRadiusStartRatio_Element.Data.ToResoniteLinkField());
-members.Add("InjectedRadiusEndRatio", InjectedRadiusEndRatio_Element.Data.ToResoniteLinkField());
-members.Add("InjectedRadiusPower", InjectedRadiusPower_Element.Data.ToResoniteLinkField());
-members.Add("ShowDebugVisuals", ShowDebugVisuals_Element.Data.ToResoniteLinkField());
+members.Add("InjectedBodyPartIntensity", InjectedBodyPartIntensity_Element.ToLinkField(context));
+members.Add("InjectedHandIntensity", InjectedHandIntensity_Element.ToLinkField(context));
+members.Add("InjectedHeadIntensity", InjectedHeadIntensity_Element.ToLinkField(context));
+members.Add("InjectedRadiusStartRatio", InjectedRadiusStartRatio_Element.ToLinkField(context));
+members.Add("InjectedRadiusEndRatio", InjectedRadiusEndRatio_Element.ToLinkField(context));
+members.Add("InjectedRadiusPower", InjectedRadiusPower_Element.ToLinkField(context));
+members.Add("ShowDebugVisuals", ShowDebugVisuals_Element.ToLinkField(context));
 }
 
 }

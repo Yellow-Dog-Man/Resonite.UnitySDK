@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.LightGizmo
-// Generated on: čtvrtek 26. února 2026 10:04:46
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:28:12
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -49,18 +49,18 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Active", Active_Element.Data.ToResoniteLinkField());
-members.Add("_target", _target_Element.Data.ToResoniteReference(context));
-members.Add("_pointIconActive", _pointIconActive_Element.Data.ToResoniteReference(context));
-members.Add("_spotIconActive", _spotIconActive_Element.Data.ToResoniteReference(context));
-members.Add("_directionalIconActive", _directionalIconActive_Element.Data.ToResoniteReference(context));
-members.Add("_pointActive", _pointActive_Element.Data.ToResoniteReference(context));
-members.Add("_spotActive", _spotActive_Element.Data.ToResoniteReference(context));
-members.Add("_directionalActive", _directionalActive_Element.Data.ToResoniteReference(context));
-members.Add("_pointGizmo", _pointGizmo_Element.Data.ToResoniteReference(context));
-members.Add("_spotGizmo", _spotGizmo_Element.Data.ToResoniteReference(context));
-members.Add("_dirGizmo", _dirGizmo_Element.Data.ToResoniteReference(context));
-members.Add("_iconMaterial", _iconMaterial_Element.Data.ToResoniteReference(context));
+members.Add("Active", Active_Element.ToLinkField(context));
+members.Add("_target", _target_Element.ToLinkReference(context));
+members.Add("_pointIconActive", _pointIconActive_Element.ToLinkReference(context));
+members.Add("_spotIconActive", _spotIconActive_Element.ToLinkReference(context));
+members.Add("_directionalIconActive", _directionalIconActive_Element.ToLinkReference(context));
+members.Add("_pointActive", _pointActive_Element.ToLinkReference(context));
+members.Add("_spotActive", _spotActive_Element.ToLinkReference(context));
+members.Add("_directionalActive", _directionalActive_Element.ToLinkReference(context));
+members.Add("_pointGizmo", _pointGizmo_Element.ToLinkReference(context));
+members.Add("_spotGizmo", _spotGizmo_Element.ToLinkReference(context));
+members.Add("_dirGizmo", _dirGizmo_Element.ToLinkReference(context));
+members.Add("_iconMaterial", _iconMaterial_Element.ToLinkReference(context));
 }
 
 }

@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.ProceduralTextureBase
-// Generated on: čtvrtek 26. února 2026 10:03:36
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:26:51
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -37,12 +37,12 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("FilterMode", FilterMode_Element.Data.ToResoniteLinkField());
-members.Add("AnisotropicLevel", AnisotropicLevel_Element.Data.ToResoniteLinkField());
-members.Add("WrapModeU", WrapModeU_Element.Data.ToResoniteLinkField());
-members.Add("WrapModeV", WrapModeV_Element.Data.ToResoniteLinkField());
-members.Add("MipmapBias", MipmapBias_Element.Data.ToResoniteLinkField());
-members.Add("Profile", Profile_Element.Data.ToResoniteLinkField());
+members.Add("FilterMode", FilterMode_Element.ToLinkField(context));
+members.Add("AnisotropicLevel", AnisotropicLevel_Element.ToLinkField(context));
+members.Add("WrapModeU", WrapModeU_Element.ToLinkField(context));
+members.Add("WrapModeV", WrapModeV_Element.ToLinkField(context));
+members.Add("MipmapBias", MipmapBias_Element.ToLinkField(context));
+members.Add("Profile", Profile_Element.ToLinkField(context));
 }
 
 }

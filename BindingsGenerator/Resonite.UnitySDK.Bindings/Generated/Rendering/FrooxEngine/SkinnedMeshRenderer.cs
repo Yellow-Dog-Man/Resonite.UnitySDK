@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.SkinnedMeshRenderer
-// Generated on: čtvrtek 26. února 2026 10:04:37
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:28:03
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -33,17 +33,11 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("BoundsComputeMethod", BoundsComputeMethod_Element.Data.ToResoniteLinkField());
-members.Add("ProxyBoundsSource", ProxyBoundsSource_Element.Data.ToResoniteReference(context));
-members.Add("ExplicitLocalBounds", ExplicitLocalBounds_Element.Data.ToResoniteLinkField());
-members.Add("Bones", new ResoniteLink.SyncList()
-{
-    Elements = Bones.Data.ConvertList(m => m.Data.ToResoniteReference(context))
-});
-members.Add("BlendShapeWeights", new ResoniteLink.SyncList()
-{
-    Elements = BlendShapeWeights.Data.ConvertList(m => m.Data.ToResoniteLinkField())
-});
+members.Add("BoundsComputeMethod", BoundsComputeMethod_Element.ToLinkField(context));
+members.Add("ProxyBoundsSource", ProxyBoundsSource_Element.ToLinkReference(context));
+members.Add("ExplicitLocalBounds", ExplicitLocalBounds_Element.ToLinkField(context));
+members.Add("Bones", Bones.ToLinkList(context, m => m.ToLinkReference(context)));
+members.Add("BlendShapeWeights", BlendShapeWeights.ToLinkList(context, m => m.ToLinkField(context)));
 }
 
 }

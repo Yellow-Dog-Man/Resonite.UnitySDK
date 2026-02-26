@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.TransformStreamDriver
-// Generated on: čtvrtek 26. února 2026 10:04:49
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:28:14
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -51,19 +51,19 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("PositionStream", PositionStream_Element.Data.ToResoniteReference(context));
-members.Add("RotationStream", RotationStream_Element.Data.ToResoniteReference(context));
-members.Add("ScaleStream", ScaleStream_Element.Data.ToResoniteReference(context));
-members.Add("RootSpaceStream", RootSpaceStream_Element.Data.ToResoniteReference(context));
-members.Add("Position", Position_Element.Data.ToResoniteReference(context));
-members.Add("Rotation", Rotation_Element.Data.ToResoniteReference(context));
-members.Add("Scale", Scale_Element.Data.ToResoniteReference(context));
-members.Add("AllowOffsets", AllowOffsets_Element.Data.ToResoniteLinkField());
-members.Add("ResetStreamsOnDestroy", ResetStreamsOnDestroy_Element.Data.ToResoniteLinkField());
-members.Add("PositionOffset", PositionOffset_Element.Data.ToResoniteLinkField());
-members.Add("RotationOffset", RotationOffset_Element.Data.ToResoniteLinkField());
-members.Add("ScaleOffset", ScaleOffset_Element.Data.ToResoniteLinkField());
-members.Add("RunBeforePhysics", RunBeforePhysics_Element.Data.ToResoniteLinkField());
+members.Add("PositionStream", PositionStream_Element.ToLinkReference(context));
+members.Add("RotationStream", RotationStream_Element.ToLinkReference(context));
+members.Add("ScaleStream", ScaleStream_Element.ToLinkReference(context));
+members.Add("RootSpaceStream", RootSpaceStream_Element.ToLinkReference(context));
+members.Add("Position", Position_Element.ToLinkReference(context));
+members.Add("Rotation", Rotation_Element.ToLinkReference(context));
+members.Add("Scale", Scale_Element.ToLinkReference(context));
+members.Add("AllowOffsets", AllowOffsets_Element.ToLinkField(context));
+members.Add("ResetStreamsOnDestroy", ResetStreamsOnDestroy_Element.ToLinkField(context));
+members.Add("PositionOffset", PositionOffset_Element.ToLinkField(context));
+members.Add("RotationOffset", RotationOffset_Element.ToLinkField(context));
+members.Add("ScaleOffset", ScaleOffset_Element.ToLinkField(context));
+members.Add("RunBeforePhysics", RunBeforePhysics_Element.ToLinkField(context));
 }
 
 }

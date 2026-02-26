@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.LegacyVideoPlayer
-// Generated on: čtvrtek 26. února 2026 10:04:46
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:28:12
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -91,39 +91,39 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("StereoLayout", StereoLayout_Element.Data.ToResoniteLinkField());
-members.Add("SizeCompensation", SizeCompensation_Element.Data.ToResoniteLinkField());
-members.Add("videoProvider", videoProvider_Element.Data.ToResoniteReference(context));
-members.Add("_style", _style_Element.Data.ToResoniteReference(context));
-members.Add("_indicatorTextureUrl", _indicatorTextureUrl_Element.Data.ToResoniteReference(context));
-members.Add("_indicatorTint", _indicatorTint_Element.Data.ToResoniteReference(context));
-members.Add("_colliderSize", _colliderSize_Element.Data.ToResoniteReference(context));
-members.Add("_frameWidth", _frameWidth_Element.Data.ToResoniteReference(context));
-members.Add("_frameHeight", _frameHeight_Element.Data.ToResoniteReference(context));
-members.Add("_frameMaterial", _frameMaterial_Element.Data.ToResoniteReference(context));
-members.Add("_displayMaterial", _displayMaterial_Element.Data.ToResoniteReference(context));
-members.Add("_displayMaterialTexture", _displayMaterialTexture_Element.Data.ToResoniteReference(context));
-members.Add("_displaySize", _displaySize_Element.Data.ToResoniteReference(context));
-members.Add("_mainAudioOutput", _mainAudioOutput_Element.Data.ToResoniteReference(context));
-members.Add("_timelineSlider", _timelineSlider_Element.Data.ToResoniteReference(context));
-members.Add("_timelinePosition", _timelinePosition_Element.Data.ToResoniteReference(context));
-members.Add("_timelineWidth", _timelineWidth_Element.Data.ToResoniteReference(context));
-members.Add("_positionDrive", _positionDrive_Element.Data.ToResoniteReference(context));
-members.Add("_volumeSlider", _volumeSlider_Element.Data.ToResoniteReference(context));
-members.Add("_volumePosition", _volumePosition_Element.Data.ToResoniteReference(context));
-members.Add("_volumeWidth", _volumeWidth_Element.Data.ToResoniteReference(context));
-members.Add("_volumeDrive", _volumeDrive_Element.Data.ToResoniteReference(context));
-members.Add("_buttonsWidth", _buttonsWidth_Element.Data.ToResoniteReference(context));
-members.Add("_buttonsHeight", _buttonsHeight_Element.Data.ToResoniteReference(context));
-members.Add("_buttonsPosition", _buttonsPosition_Element.Data.ToResoniteReference(context));
-members.Add("_playButtonColor", _playButtonColor_Element.Data.ToResoniteReference(context));
-members.Add("_pauseButtonColor", _pauseButtonColor_Element.Data.ToResoniteReference(context));
-members.Add("_stopButtonColor", _stopButtonColor_Element.Data.ToResoniteReference(context));
-members.Add("_loopButtonColor", _loopButtonColor_Element.Data.ToResoniteReference(context));
-members.Add("_audio3DButtonColor", _audio3DButtonColor_Element.Data.ToResoniteReference(context));
-members.Add("_exportable", _exportable_Element.Data.ToResoniteReference(context));
-members.Add("_assetProxy", _assetProxy_Element.Data.ToResoniteReference(context));
-members.Add("_referenceProxy", _referenceProxy_Element.Data.ToResoniteReference(context));
+members.Add("StereoLayout", StereoLayout_Element.ToLinkField(context));
+members.Add("SizeCompensation", SizeCompensation_Element.ToLinkField(context));
+members.Add("videoProvider", videoProvider_Element.ToLinkReference(context));
+members.Add("_style", _style_Element.ToLinkReference(context));
+members.Add("_indicatorTextureUrl", _indicatorTextureUrl_Element.ToLinkReference(context));
+members.Add("_indicatorTint", _indicatorTint_Element.ToLinkReference(context));
+members.Add("_colliderSize", _colliderSize_Element.ToLinkReference(context));
+members.Add("_frameWidth", _frameWidth_Element.ToLinkReference(context));
+members.Add("_frameHeight", _frameHeight_Element.ToLinkReference(context));
+members.Add("_frameMaterial", _frameMaterial_Element.ToLinkReference(context));
+members.Add("_displayMaterial", _displayMaterial_Element.ToLinkReference(context));
+members.Add("_displayMaterialTexture", _displayMaterialTexture_Element.ToLinkReference(context));
+members.Add("_displaySize", _displaySize_Element.ToLinkReference(context));
+members.Add("_mainAudioOutput", _mainAudioOutput_Element.ToLinkReference(context));
+members.Add("_timelineSlider", _timelineSlider_Element.ToLinkReference(context));
+members.Add("_timelinePosition", _timelinePosition_Element.ToLinkReference(context));
+members.Add("_timelineWidth", _timelineWidth_Element.ToLinkReference(context));
+members.Add("_positionDrive", _positionDrive_Element.ToLinkReference(context));
+members.Add("_volumeSlider", _volumeSlider_Element.ToLinkReference(context));
+members.Add("_volumePosition", _volumePosition_Element.ToLinkReference(context));
+members.Add("_volumeWidth", _volumeWidth_Element.ToLinkReference(context));
+members.Add("_volumeDrive", _volumeDrive_Element.ToLinkReference(context));
+members.Add("_buttonsWidth", _buttonsWidth_Element.ToLinkReference(context));
+members.Add("_buttonsHeight", _buttonsHeight_Element.ToLinkReference(context));
+members.Add("_buttonsPosition", _buttonsPosition_Element.ToLinkReference(context));
+members.Add("_playButtonColor", _playButtonColor_Element.ToLinkReference(context));
+members.Add("_pauseButtonColor", _pauseButtonColor_Element.ToLinkReference(context));
+members.Add("_stopButtonColor", _stopButtonColor_Element.ToLinkReference(context));
+members.Add("_loopButtonColor", _loopButtonColor_Element.ToLinkReference(context));
+members.Add("_audio3DButtonColor", _audio3DButtonColor_Element.ToLinkReference(context));
+members.Add("_exportable", _exportable_Element.ToLinkReference(context));
+members.Add("_assetProxy", _assetProxy_Element.ToLinkReference(context));
+members.Add("_referenceProxy", _referenceProxy_Element.ToLinkReference(context));
 }
 
 }

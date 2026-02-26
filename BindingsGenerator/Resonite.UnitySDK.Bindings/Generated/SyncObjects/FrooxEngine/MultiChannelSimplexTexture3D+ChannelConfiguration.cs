@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.MultiChannelSimplexTexture3D+ChannelConfiguration
-// Generated on: čtvrtek 26. února 2026 10:03:36
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:26:51
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -41,13 +41,13 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Offset", Offset_Element.Data.ToResoniteLinkField());
-members.Add("Scale", Scale_Element.Data.ToResoniteLinkField());
-members.Add("Use4D", Use4D_Element.Data.ToResoniteLinkField());
-members.Add("WOffset", WOffset_Element.Data.ToResoniteLinkField());
-members.Add("Min", Min_Element.Data.ToResoniteLinkField());
-members.Add("Max", Max_Element.Data.ToResoniteLinkField());
-members.Add("Exp", Exp_Element.Data.ToResoniteLinkField());
+members.Add("Offset", Offset_Element.ToLinkField(context));
+members.Add("Scale", Scale_Element.ToLinkField(context));
+members.Add("Use4D", Use4D_Element.ToLinkField(context));
+members.Add("WOffset", WOffset_Element.ToLinkField(context));
+members.Add("Min", Min_Element.ToLinkField(context));
+members.Add("Max", Max_Element.ToLinkField(context));
+members.Add("Exp", Exp_Element.ToLinkField(context));
 }
 
 }

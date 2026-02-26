@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.RingMesh
-// Generated on: čtvrtek 26. února 2026 10:03:36
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:26:51
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -37,12 +37,12 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Rotation", Rotation_Element.Data.ToResoniteLinkField());
-members.Add("Segments", Segments_Element.Data.ToResoniteLinkField());
-members.Add("Arc", Arc_Element.Data.ToResoniteLinkField());
-members.Add("InnerRadius", InnerRadius_Element.Data.ToResoniteLinkField());
-members.Add("OuterRadius", OuterRadius_Element.Data.ToResoniteLinkField());
-members.Add("UVScale", UVScale_Element.Data.ToResoniteLinkField());
+members.Add("Rotation", Rotation_Element.ToLinkField(context));
+members.Add("Segments", Segments_Element.ToLinkField(context));
+members.Add("Arc", Arc_Element.ToLinkField(context));
+members.Add("InnerRadius", InnerRadius_Element.ToLinkField(context));
+members.Add("OuterRadius", OuterRadius_Element.ToLinkField(context));
+members.Add("UVScale", UVScale_Element.ToLinkField(context));
 }
 
 }

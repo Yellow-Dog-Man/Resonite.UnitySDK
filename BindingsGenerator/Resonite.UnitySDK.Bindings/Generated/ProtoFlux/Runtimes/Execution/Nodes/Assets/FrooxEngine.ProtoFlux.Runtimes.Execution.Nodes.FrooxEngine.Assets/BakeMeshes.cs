@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [ProtoFluxBindings]FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Assets.BakeMeshes
-// Generated on: čtvrtek 26. února 2026 10:04:06
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:27:25
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -46,17 +46,17 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Root", Root_Element.Data.ToResoniteReference(context));
-members.Add("SkinnedMeshMode", SkinnedMeshMode_Element.Data.ToResoniteReference(context));
-members.Add("IncludeInactive", IncludeInactive_Element.Data.ToResoniteReference(context));
-members.Add("DestroyOriginal", DestroyOriginal_Element.Data.ToResoniteReference(context));
-members.Add("AssetsSlot", AssetsSlot_Element.Data.ToResoniteReference(context));
-members.Add("GrabbableHandling", GrabbableHandling_Element.Data.ToResoniteReference(context));
-members.Add("ColliderHandling", ColliderHandling_Element.Data.ToResoniteReference(context));
-members.Add("Undoable", Undoable_Element.Data.ToResoniteReference(context));
-members.Add("BakedRoot", new ResoniteLink.EmptyElement());
-members.Add("OnBakeStarted", OnBakeStarted_Element.Data.ToResoniteReference(context));
-members.Add("OnBaked", OnBaked_Element.Data.ToResoniteReference(context));
+members.Add("Root", Root_Element.ToLinkReference(context));
+members.Add("SkinnedMeshMode", SkinnedMeshMode_Element.ToLinkReference(context));
+members.Add("IncludeInactive", IncludeInactive_Element.ToLinkReference(context));
+members.Add("DestroyOriginal", DestroyOriginal_Element.ToLinkReference(context));
+members.Add("AssetsSlot", AssetsSlot_Element.ToLinkReference(context));
+members.Add("GrabbableHandling", GrabbableHandling_Element.ToLinkReference(context));
+members.Add("ColliderHandling", ColliderHandling_Element.ToLinkReference(context));
+members.Add("Undoable", Undoable_Element.ToLinkReference(context));
+members.Add("BakedRoot", BakedRoot.ToLinkEmpty(context));
+members.Add("OnBakeStarted", OnBakeStarted_Element.ToLinkReference(context));
+members.Add("OnBaked", OnBaked_Element.ToLinkReference(context));
 }
 
 }

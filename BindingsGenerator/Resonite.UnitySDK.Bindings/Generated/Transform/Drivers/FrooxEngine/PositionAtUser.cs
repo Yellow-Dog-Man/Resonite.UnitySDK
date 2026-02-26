@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.PositionAtUser
-// Generated on: čtvrtek 26. února 2026 10:04:41
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:28:07
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -47,17 +47,17 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("TargetUser", TargetUser_Element.Data.ToResoniteReference(context));
-members.Add("PositionAtLocalUser", PositionAtLocalUser_Element.Data.ToResoniteLinkField());
-members.Add("TargetPositionOffset", TargetPositionOffset_Element.Data.ToResoniteLinkField());
-members.Add("TargetRotationOffset", TargetRotationOffset_Element.Data.ToResoniteLinkField());
-members.Add("PositionOffset", PositionOffset_Element.Data.ToResoniteLinkField());
-members.Add("RotationOffset", RotationOffset_Element.Data.ToResoniteLinkField());
-members.Add("PositionSource", PositionSource_Element.Data.ToResoniteLinkField());
-members.Add("RotationSource", RotationSource_Element.Data.ToResoniteLinkField());
-members.Add("PositionDrive", PositionDrive_Element.Data.ToResoniteReference(context));
-members.Add("RotationDrive", RotationDrive_Element.Data.ToResoniteReference(context));
-members.Add("RunAfterFinalPoseUpdate", RunAfterFinalPoseUpdate_Element.Data.ToResoniteLinkField());
+members.Add("TargetUser", TargetUser_Element.ToLinkReference(context));
+members.Add("PositionAtLocalUser", PositionAtLocalUser_Element.ToLinkField(context));
+members.Add("TargetPositionOffset", TargetPositionOffset_Element.ToLinkField(context));
+members.Add("TargetRotationOffset", TargetRotationOffset_Element.ToLinkField(context));
+members.Add("PositionOffset", PositionOffset_Element.ToLinkField(context));
+members.Add("RotationOffset", RotationOffset_Element.ToLinkField(context));
+members.Add("PositionSource", PositionSource_Element.ToLinkField(context));
+members.Add("RotationSource", RotationSource_Element.ToLinkField(context));
+members.Add("PositionDrive", PositionDrive_Element.ToLinkReference(context));
+members.Add("RotationDrive", RotationDrive_Element.ToLinkReference(context));
+members.Add("RunAfterFinalPoseUpdate", RunAfterFinalPoseUpdate_Element.ToLinkField(context));
 }
 
 }

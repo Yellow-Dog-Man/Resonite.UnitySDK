@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.CommonAvatar.AvatarAudioOutputManager
-// Generated on: čtvrtek 26. února 2026 10:04:50
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:28:15
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -77,34 +77,34 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("AudioOutput", AudioOutput_Element.Data.ToResoniteReference(context));
-members.Add("IsViewVoice", IsViewVoice_Element.Data.ToResoniteLinkField());
-members.Add("WhisperConfig", new ResoniteLink.SyncObject() { Members = WhisperConfig.CollectMembers(context) });
-members.Add("NormalConfig", new ResoniteLink.SyncObject() { Members = NormalConfig.CollectMembers(context) });
-members.Add("ShoutConfig", new ResoniteLink.SyncObject() { Members = ShoutConfig.CollectMembers(context) });
-members.Add("BroadcastConfig", new ResoniteLink.SyncObject() { Members = BroadcastConfig.CollectMembers(context) });
-members.Add("__legacyWhisperVolume", __legacyWhisperVolume_Element.Data.ToResoniteLinkField());
-members.Add("__legacyNormalVolume", __legacyNormalVolume_Element.Data.ToResoniteLinkField());
-members.Add("__legacyShoutVolume", __legacyShoutVolume_Element.Data.ToResoniteLinkField());
-members.Add("__legacyBroadcastVolume", __legacyBroadcastVolume_Element.Data.ToResoniteLinkField());
-members.Add("__legacyNormalDopplerLevel", __legacyNormalDopplerLevel_Element.Data.ToResoniteLinkField());
-members.Add("__legacyShoutDopplerLevel", __legacyShoutDopplerLevel_Element.Data.ToResoniteLinkField());
-members.Add("__legacyWhisperRange", __legacyWhisperRange_Element.Data.ToResoniteLinkField());
-members.Add("_activeUser", _activeUser_Element.Data.ToResoniteReference(context));
-members.Add("_enabled", _enabled_Element.Data.ToResoniteReference(context));
-members.Add("_volume", _volume_Element.Data.ToResoniteReference(context));
-members.Add("_doppler", _doppler_Element.Data.ToResoniteReference(context));
-members.Add("_spatialize", _spatialize_Element.Data.ToResoniteReference(context));
-members.Add("_spatialBlend", _spatialBlend_Element.Data.ToResoniteReference(context));
-members.Add("_ignoreAudioEffects", _ignoreAudioEffects_Element.Data.ToResoniteReference(context));
-members.Add("_minDistance", _minDistance_Element.Data.ToResoniteReference(context));
-members.Add("_maxDistance", _maxDistance_Element.Data.ToResoniteReference(context));
-members.Add("_rollOffMode", _rollOffMode_Element.Data.ToResoniteReference(context));
-members.Add("_distanceSpace", _distanceSpace_Element.Data.ToResoniteReference(context));
-members.Add("_minScale", _minScale_Element.Data.ToResoniteReference(context));
-members.Add("_maxScale", _maxScale_Element.Data.ToResoniteReference(context));
-members.Add("_scaleCompensation", _scaleCompensation_Element.Data.ToResoniteLinkField());
-members.Add("_audioConfiguration", _audioConfiguration_Element.Data.ToResoniteReference(context));
+members.Add("AudioOutput", AudioOutput_Element.ToLinkReference(context));
+members.Add("IsViewVoice", IsViewVoice_Element.ToLinkField(context));
+members.Add("WhisperConfig", WhisperConfig.ToLinkSyncObject(context));
+members.Add("NormalConfig", NormalConfig.ToLinkSyncObject(context));
+members.Add("ShoutConfig", ShoutConfig.ToLinkSyncObject(context));
+members.Add("BroadcastConfig", BroadcastConfig.ToLinkSyncObject(context));
+members.Add("__legacyWhisperVolume", __legacyWhisperVolume_Element.ToLinkField(context));
+members.Add("__legacyNormalVolume", __legacyNormalVolume_Element.ToLinkField(context));
+members.Add("__legacyShoutVolume", __legacyShoutVolume_Element.ToLinkField(context));
+members.Add("__legacyBroadcastVolume", __legacyBroadcastVolume_Element.ToLinkField(context));
+members.Add("__legacyNormalDopplerLevel", __legacyNormalDopplerLevel_Element.ToLinkField(context));
+members.Add("__legacyShoutDopplerLevel", __legacyShoutDopplerLevel_Element.ToLinkField(context));
+members.Add("__legacyWhisperRange", __legacyWhisperRange_Element.ToLinkField(context));
+members.Add("_activeUser", _activeUser_Element.ToLinkReference(context));
+members.Add("_enabled", _enabled_Element.ToLinkReference(context));
+members.Add("_volume", _volume_Element.ToLinkReference(context));
+members.Add("_doppler", _doppler_Element.ToLinkReference(context));
+members.Add("_spatialize", _spatialize_Element.ToLinkReference(context));
+members.Add("_spatialBlend", _spatialBlend_Element.ToLinkReference(context));
+members.Add("_ignoreAudioEffects", _ignoreAudioEffects_Element.ToLinkReference(context));
+members.Add("_minDistance", _minDistance_Element.ToLinkReference(context));
+members.Add("_maxDistance", _maxDistance_Element.ToLinkReference(context));
+members.Add("_rollOffMode", _rollOffMode_Element.ToLinkReference(context));
+members.Add("_distanceSpace", _distanceSpace_Element.ToLinkReference(context));
+members.Add("_minScale", _minScale_Element.ToLinkReference(context));
+members.Add("_maxScale", _maxScale_Element.ToLinkReference(context));
+members.Add("_scaleCompensation", _scaleCompensation_Element.ToLinkField(context));
+members.Add("_audioConfiguration", _audioConfiguration_Element.ToLinkReference(context));
 }
 
 }

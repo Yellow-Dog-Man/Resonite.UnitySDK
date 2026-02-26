@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.CommonAvatar.AvatarPoseNode
-// Generated on: čtvrtek 26. února 2026 10:04:45
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:28:11
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -52,23 +52,20 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Node", Node_Element.Data.ToResoniteLinkField());
-members.Add("EquipOrderPriority", EquipOrderPriority_Element.Data.ToResoniteLinkField());
-members.Add("RunAfterInputUpdate", RunAfterInputUpdate_Element.Data.ToResoniteLinkField());
-members.Add("MutuallyExclusiveNodes", new ResoniteLink.SyncList()
-{
-    Elements = MutuallyExclusiveNodes.Data.ConvertList(m => m.Data.ToResoniteLinkField())
-});
-members.Add("IsTracking", IsTracking_Element.Data.ToResoniteLinkField());
-members.Add("SourceIsTracking", SourceIsTracking_Element.Data.ToResoniteLinkField());
-members.Add("SourceIsActive", SourceIsActive_Element.Data.ToResoniteLinkField());
-members.Add("SourceIsSimulated", SourceIsSimulated_Element.Data.ToResoniteLinkField());
-members.Add("_objectSlot", _objectSlot_Element.Data.ToResoniteReference(context));
-members.Add("_source", _source_Element.Data.ToResoniteReference(context));
-members.Add("_position", _position_Element.Data.ToResoniteReference(context));
-members.Add("_rotation", _rotation_Element.Data.ToResoniteReference(context));
-members.Add("_scale", _scale_Element.Data.ToResoniteReference(context));
-members.Add("_active", _active_Element.Data.ToResoniteReference(context));
+members.Add("Node", Node_Element.ToLinkField(context));
+members.Add("EquipOrderPriority", EquipOrderPriority_Element.ToLinkField(context));
+members.Add("RunAfterInputUpdate", RunAfterInputUpdate_Element.ToLinkField(context));
+members.Add("MutuallyExclusiveNodes", MutuallyExclusiveNodes.ToLinkList(context, m => m.ToLinkField(context)));
+members.Add("IsTracking", IsTracking_Element.ToLinkField(context));
+members.Add("SourceIsTracking", SourceIsTracking_Element.ToLinkField(context));
+members.Add("SourceIsActive", SourceIsActive_Element.ToLinkField(context));
+members.Add("SourceIsSimulated", SourceIsSimulated_Element.ToLinkField(context));
+members.Add("_objectSlot", _objectSlot_Element.ToLinkReference(context));
+members.Add("_source", _source_Element.ToLinkReference(context));
+members.Add("_position", _position_Element.ToLinkReference(context));
+members.Add("_rotation", _rotation_Element.ToLinkReference(context));
+members.Add("_scale", _scale_Element.ToLinkReference(context));
+members.Add("_active", _active_Element.ToLinkReference(context));
 }
 
 }

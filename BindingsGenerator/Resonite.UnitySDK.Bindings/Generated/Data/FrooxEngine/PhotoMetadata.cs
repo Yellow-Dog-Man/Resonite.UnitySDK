@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.PhotoMetadata
-// Generated on: čtvrtek 26. února 2026 10:03:38
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:26:54
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -35,11 +35,11 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("CameraManufacturer", CameraManufacturer_Element.Data.ToResoniteLinkField());
-members.Add("CameraModel", CameraModel_Element.Data.ToResoniteLinkField());
-members.Add("CameraFOV", CameraFOV_Element.Data.ToResoniteLinkField());
-members.Add("Is360", Is360_Element.Data.ToResoniteLinkField());
-members.Add("StereoLayout", StereoLayout_Element.Data.ToResoniteLinkField());
+members.Add("CameraManufacturer", CameraManufacturer_Element.ToLinkField(context));
+members.Add("CameraModel", CameraModel_Element.ToLinkField(context));
+members.Add("CameraFOV", CameraFOV_Element.ToLinkField(context));
+members.Add("Is360", Is360_Element.ToLinkField(context));
+members.Add("StereoLayout", StereoLayout_Element.ToLinkField(context));
 }
 
 }

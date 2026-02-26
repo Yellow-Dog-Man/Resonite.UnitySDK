@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [ProtoFluxBindings]FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.Math.SphericalHarmonics.PackSH4<>
-// Generated on: čtvrtek 26. února 2026 10:04:20
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:27:42
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -76,31 +76,31 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("SH0", SH0_Element.Data.ToResoniteReference(context));
-members.Add("SH1", SH1_Element.Data.ToResoniteReference(context));
-members.Add("SH2", SH2_Element.Data.ToResoniteReference(context));
-members.Add("SH3", SH3_Element.Data.ToResoniteReference(context));
-members.Add("SH4", SH4_Element.Data.ToResoniteReference(context));
-members.Add("SH5", SH5_Element.Data.ToResoniteReference(context));
-members.Add("SH6", SH6_Element.Data.ToResoniteReference(context));
-members.Add("SH7", SH7_Element.Data.ToResoniteReference(context));
-members.Add("SH8", SH8_Element.Data.ToResoniteReference(context));
-members.Add("SH9", SH9_Element.Data.ToResoniteReference(context));
-members.Add("SH10", SH10_Element.Data.ToResoniteReference(context));
-members.Add("SH11", SH11_Element.Data.ToResoniteReference(context));
-members.Add("SH12", SH12_Element.Data.ToResoniteReference(context));
-members.Add("SH13", SH13_Element.Data.ToResoniteReference(context));
-members.Add("SH14", SH14_Element.Data.ToResoniteReference(context));
-members.Add("SH15", SH15_Element.Data.ToResoniteReference(context));
-members.Add("SH16", SH16_Element.Data.ToResoniteReference(context));
-members.Add("SH17", SH17_Element.Data.ToResoniteReference(context));
-members.Add("SH18", SH18_Element.Data.ToResoniteReference(context));
-members.Add("SH19", SH19_Element.Data.ToResoniteReference(context));
-members.Add("SH20", SH20_Element.Data.ToResoniteReference(context));
-members.Add("SH21", SH21_Element.Data.ToResoniteReference(context));
-members.Add("SH22", SH22_Element.Data.ToResoniteReference(context));
-members.Add("SH23", SH23_Element.Data.ToResoniteReference(context));
-members.Add("SH24", SH24_Element.Data.ToResoniteReference(context));
+members.Add("SH0", SH0_Element.ToLinkReference(context));
+members.Add("SH1", SH1_Element.ToLinkReference(context));
+members.Add("SH2", SH2_Element.ToLinkReference(context));
+members.Add("SH3", SH3_Element.ToLinkReference(context));
+members.Add("SH4", SH4_Element.ToLinkReference(context));
+members.Add("SH5", SH5_Element.ToLinkReference(context));
+members.Add("SH6", SH6_Element.ToLinkReference(context));
+members.Add("SH7", SH7_Element.ToLinkReference(context));
+members.Add("SH8", SH8_Element.ToLinkReference(context));
+members.Add("SH9", SH9_Element.ToLinkReference(context));
+members.Add("SH10", SH10_Element.ToLinkReference(context));
+members.Add("SH11", SH11_Element.ToLinkReference(context));
+members.Add("SH12", SH12_Element.ToLinkReference(context));
+members.Add("SH13", SH13_Element.ToLinkReference(context));
+members.Add("SH14", SH14_Element.ToLinkReference(context));
+members.Add("SH15", SH15_Element.ToLinkReference(context));
+members.Add("SH16", SH16_Element.ToLinkReference(context));
+members.Add("SH17", SH17_Element.ToLinkReference(context));
+members.Add("SH18", SH18_Element.ToLinkReference(context));
+members.Add("SH19", SH19_Element.ToLinkReference(context));
+members.Add("SH20", SH20_Element.ToLinkReference(context));
+members.Add("SH21", SH21_Element.ToLinkReference(context));
+members.Add("SH22", SH22_Element.ToLinkReference(context));
+members.Add("SH23", SH23_Element.ToLinkReference(context));
+members.Add("SH24", SH24_Element.ToLinkReference(context));
 }
 
 }

@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.SingleShapeCharacterControllerManager
-// Generated on: čtvrtek 26. února 2026 10:03:41
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:26:58
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -47,17 +47,17 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("UseUserHeadHeightWhenAvailable", UseUserHeadHeightWhenAvailable_Element.Data.ToResoniteLinkField());
-members.Add("HeadHeightOffset", HeadHeightOffset_Element.Data.ToResoniteLinkField());
-members.Add("CrouchTargetWidth", CrouchTargetWidth_Element.Data.ToResoniteLinkField());
-members.Add("CrouchStart", CrouchStart_Element.Data.ToResoniteLinkField());
-members.Add("CrouchEnd", CrouchEnd_Element.Data.ToResoniteLinkField());
-members.Add("DefaultHeight", DefaultHeight_Element.Data.ToResoniteLinkField());
-members.Add("DefaultWidth", DefaultWidth_Element.Data.ToResoniteLinkField());
-members.Add("RootAtBottom", RootAtBottom_Element.Data.ToResoniteLinkField());
-members.Add("TargetHeight", TargetHeight_Element.Data.ToResoniteReference(context));
-members.Add("TargetWidth", TargetWidth_Element.Data.ToResoniteReference(context));
-members.Add("TargetOffset", TargetOffset_Element.Data.ToResoniteReference(context));
+members.Add("UseUserHeadHeightWhenAvailable", UseUserHeadHeightWhenAvailable_Element.ToLinkField(context));
+members.Add("HeadHeightOffset", HeadHeightOffset_Element.ToLinkField(context));
+members.Add("CrouchTargetWidth", CrouchTargetWidth_Element.ToLinkField(context));
+members.Add("CrouchStart", CrouchStart_Element.ToLinkField(context));
+members.Add("CrouchEnd", CrouchEnd_Element.ToLinkField(context));
+members.Add("DefaultHeight", DefaultHeight_Element.ToLinkField(context));
+members.Add("DefaultWidth", DefaultWidth_Element.ToLinkField(context));
+members.Add("RootAtBottom", RootAtBottom_Element.ToLinkField(context));
+members.Add("TargetHeight", TargetHeight_Element.ToLinkReference(context));
+members.Add("TargetWidth", TargetWidth_Element.ToLinkReference(context));
+members.Add("TargetOffset", TargetOffset_Element.ToLinkReference(context));
 }
 
 }

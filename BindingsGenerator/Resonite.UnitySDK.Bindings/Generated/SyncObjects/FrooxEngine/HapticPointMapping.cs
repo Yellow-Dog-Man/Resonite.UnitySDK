@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.HapticPointMapping
-// Generated on: čtvrtek 26. února 2026 10:04:45
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:28:11
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -69,28 +69,28 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("MappingTarget", MappingTarget_Element.Data.ToResoniteLinkField());
-members.Add("PointRadius", PointRadius_Element.Data.ToResoniteLinkField());
-members.Add("TorsoSide", TorsoSide_Element.Data.ToResoniteLinkField());
-members.Add("TorsoHorizontalPosition", TorsoHorizontalPosition_Element.Data.ToResoniteLinkField());
-members.Add("TorsoVerticalPosition", TorsoVerticalPosition_Element.Data.ToResoniteLinkField());
-members.Add("HeadPitchAngle", HeadPitchAngle_Element.Data.ToResoniteLinkField());
-members.Add("HeadYawAngle", HeadYawAngle_Element.Data.ToResoniteLinkField());
-members.Add("ArmSide", ArmSide_Element.Data.ToResoniteLinkField());
-members.Add("ArmPositionAlong", ArmPositionAlong_Element.Data.ToResoniteLinkField());
-members.Add("ArmAngleAround", ArmAngleAround_Element.Data.ToResoniteLinkField());
-members.Add("LegSide", LegSide_Element.Data.ToResoniteLinkField());
-members.Add("LegPositionAlong", LegPositionAlong_Element.Data.ToResoniteLinkField());
-members.Add("LegAngleAround", LegAngleAround_Element.Data.ToResoniteLinkField());
-members.Add("ControllerSide", ControllerSide_Element.Data.ToResoniteLinkField());
-members.Add("Tag", Tag_Element.Data.ToResoniteLinkField());
-members.Add("ShowAnyOptions", ShowAnyOptions_Element.Data.ToResoniteLinkField());
-members.Add("ShowTorsoOptions", ShowTorsoOptions_Element.Data.ToResoniteLinkField());
-members.Add("ShowHeadOptions", ShowHeadOptions_Element.Data.ToResoniteLinkField());
-members.Add("ShowArmOptions", ShowArmOptions_Element.Data.ToResoniteLinkField());
-members.Add("ShowLegOptions", ShowLegOptions_Element.Data.ToResoniteLinkField());
-members.Add("ShowControllerOptions", ShowControllerOptions_Element.Data.ToResoniteLinkField());
-members.Add("ShowTagPositions", ShowTagPositions_Element.Data.ToResoniteLinkField());
+members.Add("MappingTarget", MappingTarget_Element.ToLinkField(context));
+members.Add("PointRadius", PointRadius_Element.ToLinkField(context));
+members.Add("TorsoSide", TorsoSide_Element.ToLinkField(context));
+members.Add("TorsoHorizontalPosition", TorsoHorizontalPosition_Element.ToLinkField(context));
+members.Add("TorsoVerticalPosition", TorsoVerticalPosition_Element.ToLinkField(context));
+members.Add("HeadPitchAngle", HeadPitchAngle_Element.ToLinkField(context));
+members.Add("HeadYawAngle", HeadYawAngle_Element.ToLinkField(context));
+members.Add("ArmSide", ArmSide_Element.ToLinkField(context));
+members.Add("ArmPositionAlong", ArmPositionAlong_Element.ToLinkField(context));
+members.Add("ArmAngleAround", ArmAngleAround_Element.ToLinkField(context));
+members.Add("LegSide", LegSide_Element.ToLinkField(context));
+members.Add("LegPositionAlong", LegPositionAlong_Element.ToLinkField(context));
+members.Add("LegAngleAround", LegAngleAround_Element.ToLinkField(context));
+members.Add("ControllerSide", ControllerSide_Element.ToLinkField(context));
+members.Add("Tag", Tag_Element.ToLinkField(context));
+members.Add("ShowAnyOptions", ShowAnyOptions_Element.ToLinkField(context));
+members.Add("ShowTorsoOptions", ShowTorsoOptions_Element.ToLinkField(context));
+members.Add("ShowHeadOptions", ShowHeadOptions_Element.ToLinkField(context));
+members.Add("ShowArmOptions", ShowArmOptions_Element.ToLinkField(context));
+members.Add("ShowLegOptions", ShowLegOptions_Element.ToLinkField(context));
+members.Add("ShowControllerOptions", ShowControllerOptions_Element.ToLinkField(context));
+members.Add("ShowTagPositions", ShowTagPositions_Element.ToLinkField(context));
 }
 
 }

@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.VisemeAnalyzer
-// Generated on: čtvrtek 26. února 2026 10:03:40
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:26:57
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -65,26 +65,26 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Source", Source_Element.Data.ToResoniteReference(context));
-members.Add("RemoteSource", RemoteSource_Element.Data.ToResoniteReference(context));
-members.Add("PreferredAnalyzer", PreferredAnalyzer_Element.Data.ToResoniteLinkField());
-members.Add("Smoothing", Smoothing_Element.Data.ToResoniteLinkField());
-members.Add("Silence", Silence_Element.Data.ToResoniteLinkField());
-members.Add("PP", PP_Element.Data.ToResoniteLinkField());
-members.Add("FF", FF_Element.Data.ToResoniteLinkField());
-members.Add("TH", TH_Element.Data.ToResoniteLinkField());
-members.Add("DD", DD_Element.Data.ToResoniteLinkField());
-members.Add("kk", kk_Element.Data.ToResoniteLinkField());
-members.Add("CH", CH_Element.Data.ToResoniteLinkField());
-members.Add("SS", SS_Element.Data.ToResoniteLinkField());
-members.Add("nn", nn_Element.Data.ToResoniteLinkField());
-members.Add("RR", RR_Element.Data.ToResoniteLinkField());
-members.Add("aa", aa_Element.Data.ToResoniteLinkField());
-members.Add("E", E_Element.Data.ToResoniteLinkField());
-members.Add("ih", ih_Element.Data.ToResoniteLinkField());
-members.Add("oh", oh_Element.Data.ToResoniteLinkField());
-members.Add("ou", ou_Element.Data.ToResoniteLinkField());
-members.Add("LaughterProbability", LaughterProbability_Element.Data.ToResoniteLinkField());
+members.Add("Source", Source_Element.ToLinkReference(context));
+members.Add("RemoteSource", RemoteSource_Element.ToLinkReference(context));
+members.Add("PreferredAnalyzer", PreferredAnalyzer_Element.ToLinkField(context));
+members.Add("Smoothing", Smoothing_Element.ToLinkField(context));
+members.Add("Silence", Silence_Element.ToLinkField(context));
+members.Add("PP", PP_Element.ToLinkField(context));
+members.Add("FF", FF_Element.ToLinkField(context));
+members.Add("TH", TH_Element.ToLinkField(context));
+members.Add("DD", DD_Element.ToLinkField(context));
+members.Add("kk", kk_Element.ToLinkField(context));
+members.Add("CH", CH_Element.ToLinkField(context));
+members.Add("SS", SS_Element.ToLinkField(context));
+members.Add("nn", nn_Element.ToLinkField(context));
+members.Add("RR", RR_Element.ToLinkField(context));
+members.Add("aa", aa_Element.ToLinkField(context));
+members.Add("E", E_Element.ToLinkField(context));
+members.Add("ih", ih_Element.ToLinkField(context));
+members.Add("oh", oh_Element.ToLinkField(context));
+members.Add("ou", ou_Element.ToLinkField(context));
+members.Add("LaughterProbability", LaughterProbability_Element.ToLinkField(context));
 }
 
 }

@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.ScaleGroup
-// Generated on: čtvrtek 26. února 2026 10:04:42
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:28:08
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -35,11 +35,11 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("SelectedElement", SelectedElement_Element.Data.ToResoniteReference(context));
-members.Add("IdleScale", IdleScale_Element.Data.ToResoniteLinkField());
-members.Add("BackgroundScale", BackgroundScale_Element.Data.ToResoniteLinkField());
-members.Add("SelectedScale", SelectedScale_Element.Data.ToResoniteLinkField());
-members.Add("SmoothSpeed", SmoothSpeed_Element.Data.ToResoniteLinkField());
+members.Add("SelectedElement", SelectedElement_Element.ToLinkReference(context));
+members.Add("IdleScale", IdleScale_Element.ToLinkField(context));
+members.Add("BackgroundScale", BackgroundScale_Element.ToLinkField(context));
+members.Add("SelectedScale", SelectedScale_Element.ToLinkField(context));
+members.Add("SmoothSpeed", SmoothSpeed_Element.ToLinkField(context));
 }
 
 }

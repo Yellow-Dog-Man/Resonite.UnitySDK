@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.BoneChainHapticPointMapper
-// Generated on: čtvrtek 26. února 2026 10:03:39
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:26:55
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -30,12 +30,9 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("BoneChain", new ResoniteLink.SyncList()
-{
-    Elements = BoneChain.Data.ConvertList(m => m.Data.ToResoniteReference(context))
-});
-members.Add("NormalizedStart", NormalizedStart_Element.Data.ToResoniteLinkField());
-members.Add("NormalizedEnd", NormalizedEnd_Element.Data.ToResoniteLinkField());
+members.Add("BoneChain", BoneChain.ToLinkList(context, m => m.ToLinkReference(context)));
+members.Add("NormalizedStart", NormalizedStart_Element.ToLinkField(context));
+members.Add("NormalizedEnd", NormalizedEnd_Element.ToLinkField(context));
 }
 
 }

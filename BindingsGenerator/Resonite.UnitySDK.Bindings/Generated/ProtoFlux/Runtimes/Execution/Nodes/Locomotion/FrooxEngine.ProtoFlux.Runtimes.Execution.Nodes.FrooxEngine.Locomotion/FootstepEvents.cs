@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [ProtoFluxBindings]FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Locomotion.FootstepEvents
-// Generated on: čtvrtek 26. února 2026 10:04:15
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:27:35
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -36,15 +36,15 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Source", Source_Element.Data.ToResoniteReference(context));
-members.Add("Footstep", Footstep_Element.Data.ToResoniteReference(context));
-members.Add("Side", new ResoniteLink.EmptyElement());
-members.Add("Position", new ResoniteLink.EmptyElement());
-members.Add("Rotation", new ResoniteLink.EmptyElement());
-members.Add("ImpactVelocity", new ResoniteLink.EmptyElement());
-members.Add("HasLanded", new ResoniteLink.EmptyElement());
-members.Add("HitCollider", new ResoniteLink.EmptyElement());
-members.Add("HitTriangleIndex", new ResoniteLink.EmptyElement());
+members.Add("Source", Source_Element.ToLinkReference(context));
+members.Add("Footstep", Footstep_Element.ToLinkReference(context));
+members.Add("Side", Side.ToLinkEmpty(context));
+members.Add("Position", Position.ToLinkEmpty(context));
+members.Add("Rotation", Rotation.ToLinkEmpty(context));
+members.Add("ImpactVelocity", ImpactVelocity.ToLinkEmpty(context));
+members.Add("HasLanded", HasLanded.ToLinkEmpty(context));
+members.Add("HitCollider", HitCollider.ToLinkEmpty(context));
+members.Add("HitTriangleIndex", HitTriangleIndex.ToLinkEmpty(context));
 }
 
 }

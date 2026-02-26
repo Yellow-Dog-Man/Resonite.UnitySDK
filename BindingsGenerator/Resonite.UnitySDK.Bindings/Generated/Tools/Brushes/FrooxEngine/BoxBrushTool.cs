@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.BoxBrushTool
-// Generated on: čtvrtek 26. února 2026 10:04:39
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:28:06
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -64,26 +64,26 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Pivot", Pivot_Element.Data.ToResoniteLinkField());
-members.Add("MinColor", MinColor_Element.Data.ToResoniteLinkField());
-members.Add("MaxColor", MaxColor_Element.Data.ToResoniteLinkField());
-members.Add("ColorGap", ColorGap_Element.Data.ToResoniteLinkField());
-members.Add("UniformSize", UniformSize_Element.Data.ToResoniteLinkField());
-members.Add("MinSize", MinSize_Element.Data.ToResoniteLinkField());
-members.Add("MaxSize", MaxSize_Element.Data.ToResoniteLinkField());
-members.Add("SizeGap", SizeGap_Element.Data.ToResoniteLinkField());
-members.Add("MinRotation", MinRotation_Element.Data.ToResoniteLinkField());
-members.Add("MaxRotation", MaxRotation_Element.Data.ToResoniteLinkField());
-members.Add("MinUVScale", MinUVScale_Element.Data.ToResoniteLinkField());
-members.Add("MaxUVScale", MaxUVScale_Element.Data.ToResoniteLinkField());
-members.Add("UVScaleGap", UVScaleGap_Element.Data.ToResoniteLinkField());
-members.Add("RotationSpace", new ResoniteLink.SyncObject() { Members = RotationSpace.CollectMembers(context) });
-members.Add("UseColor", UseColor_Element.Data.ToResoniteLinkField());
-members.Add("ScaleUVWithSize", ScaleUVWithSize_Element.Data.ToResoniteLinkField());
-members.Add("_previewRenderer", _previewRenderer_Element.Data.ToResoniteReference(context));
-members.Add("_previewMesh", _previewMesh_Element.Data.ToResoniteReference(context));
-members.Add("_previewMeshOffset", _previewMeshOffset_Element.Data.ToResoniteReference(context));
-members.Add("_previewMeshRotation", _previewMeshRotation_Element.Data.ToResoniteReference(context));
+members.Add("Pivot", Pivot_Element.ToLinkField(context));
+members.Add("MinColor", MinColor_Element.ToLinkField(context));
+members.Add("MaxColor", MaxColor_Element.ToLinkField(context));
+members.Add("ColorGap", ColorGap_Element.ToLinkField(context));
+members.Add("UniformSize", UniformSize_Element.ToLinkField(context));
+members.Add("MinSize", MinSize_Element.ToLinkField(context));
+members.Add("MaxSize", MaxSize_Element.ToLinkField(context));
+members.Add("SizeGap", SizeGap_Element.ToLinkField(context));
+members.Add("MinRotation", MinRotation_Element.ToLinkField(context));
+members.Add("MaxRotation", MaxRotation_Element.ToLinkField(context));
+members.Add("MinUVScale", MinUVScale_Element.ToLinkField(context));
+members.Add("MaxUVScale", MaxUVScale_Element.ToLinkField(context));
+members.Add("UVScaleGap", UVScaleGap_Element.ToLinkField(context));
+members.Add("RotationSpace", RotationSpace.ToLinkSyncObject(context));
+members.Add("UseColor", UseColor_Element.ToLinkField(context));
+members.Add("ScaleUVWithSize", ScaleUVWithSize_Element.ToLinkField(context));
+members.Add("_previewRenderer", _previewRenderer_Element.ToLinkReference(context));
+members.Add("_previewMesh", _previewMesh_Element.ToLinkReference(context));
+members.Add("_previewMeshOffset", _previewMeshOffset_Element.ToLinkReference(context));
+members.Add("_previewMeshRotation", _previewMeshRotation_Element.ToLinkReference(context));
 }
 
 }

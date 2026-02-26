@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.ConeGizmo
-// Generated on: čtvrtek 26. února 2026 10:04:44
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:28:09
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -61,28 +61,25 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("TargetAngle", TargetAngle_Element.Data.ToResoniteReference(context));
-members.Add("TargetRadius", TargetRadius_Element.Data.ToResoniteReference(context));
-members.Add("TargetHeight", TargetHeight_Element.Data.ToResoniteReference(context));
-members.Add("TargetDirection", TargetDirection_Element.Data.ToResoniteReference(context));
-members.Add("TargetRotation", TargetRotation_Element.Data.ToResoniteReference(context));
-members.Add("DirectionSpace", new ResoniteLink.SyncObject() { Members = DirectionSpace.CollectMembers(context) });
-members.Add("FixedAngle", FixedAngle_Element.Data.ToResoniteLinkField());
-members.Add("FixedHeight", FixedHeight_Element.Data.ToResoniteLinkField());
-members.Add("FixedDirection", FixedDirection_Element.Data.ToResoniteLinkField());
-members.Add("LineThickness", LineThickness_Element.Data.ToResoniteLinkField());
-members.Add("MinHeight", MinHeight_Element.Data.ToResoniteLinkField());
-members.Add("MaxHeight", MaxHeight_Element.Data.ToResoniteLinkField());
-members.Add("MinAngle", MinAngle_Element.Data.ToResoniteLinkField());
-members.Add("MaxAngle", MaxAngle_Element.Data.ToResoniteLinkField());
-members.Add("_visualRoot", _visualRoot_Element.Data.ToResoniteReference(context));
-members.Add("_visualRot", _visualRot_Element.Data.ToResoniteReference(context));
-members.Add("_handles", new ResoniteLink.SyncList()
-{
-    Elements = _handles.Data.ConvertList(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers(context) })
-});
-members.Add("_heightMesh", _heightMesh_Element.Data.ToResoniteReference(context));
-members.Add("_coneLineMesh", _coneLineMesh_Element.Data.ToResoniteReference(context));
+members.Add("TargetAngle", TargetAngle_Element.ToLinkReference(context));
+members.Add("TargetRadius", TargetRadius_Element.ToLinkReference(context));
+members.Add("TargetHeight", TargetHeight_Element.ToLinkReference(context));
+members.Add("TargetDirection", TargetDirection_Element.ToLinkReference(context));
+members.Add("TargetRotation", TargetRotation_Element.ToLinkReference(context));
+members.Add("DirectionSpace", DirectionSpace.ToLinkSyncObject(context));
+members.Add("FixedAngle", FixedAngle_Element.ToLinkField(context));
+members.Add("FixedHeight", FixedHeight_Element.ToLinkField(context));
+members.Add("FixedDirection", FixedDirection_Element.ToLinkField(context));
+members.Add("LineThickness", LineThickness_Element.ToLinkField(context));
+members.Add("MinHeight", MinHeight_Element.ToLinkField(context));
+members.Add("MaxHeight", MaxHeight_Element.ToLinkField(context));
+members.Add("MinAngle", MinAngle_Element.ToLinkField(context));
+members.Add("MaxAngle", MaxAngle_Element.ToLinkField(context));
+members.Add("_visualRoot", _visualRoot_Element.ToLinkReference(context));
+members.Add("_visualRot", _visualRot_Element.ToLinkReference(context));
+members.Add("_handles", _handles.ToLinkList(context, m => m.ToLinkSyncObject(context)));
+members.Add("_heightMesh", _heightMesh_Element.ToLinkReference(context));
+members.Add("_coneLineMesh", _coneLineMesh_Element.ToLinkReference(context));
 }
 
 }

@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.UserInterfacePositioner
-// Generated on: čtvrtek 26. února 2026 10:04:41
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:28:07
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -50,19 +50,19 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("TargetUser", new ResoniteLink.SyncObject() { Members = TargetUser.CollectMembers(context) });
-members.Add("UseHead", UseHead_Element.Data.ToResoniteLinkField());
-members.Add("RotateVerticalOnly", RotateVerticalOnly_Element.Data.ToResoniteLinkField());
-members.Add("PositionSpeed", PositionSpeed_Element.Data.ToResoniteLinkField());
-members.Add("RotationSpeed", RotationSpeed_Element.Data.ToResoniteLinkField());
-members.Add("ActivationDistance", ActivationDistance_Element.Data.ToResoniteLinkField());
-members.Add("ActivationAngle", ActivationAngle_Element.Data.ToResoniteLinkField());
-members.Add("DeactivationDistance", DeactivationDistance_Element.Data.ToResoniteLinkField());
-members.Add("DeactivationAngle", DeactivationAngle_Element.Data.ToResoniteLinkField());
-members.Add("TargetPosition", TargetPosition_Element.Data.ToResoniteLinkField());
-members.Add("TargetRotation", TargetRotation_Element.Data.ToResoniteLinkField());
-members.Add("_position", _position_Element.Data.ToResoniteReference(context));
-members.Add("_rotation", _rotation_Element.Data.ToResoniteReference(context));
+members.Add("TargetUser", TargetUser.ToLinkSyncObject(context));
+members.Add("UseHead", UseHead_Element.ToLinkField(context));
+members.Add("RotateVerticalOnly", RotateVerticalOnly_Element.ToLinkField(context));
+members.Add("PositionSpeed", PositionSpeed_Element.ToLinkField(context));
+members.Add("RotationSpeed", RotationSpeed_Element.ToLinkField(context));
+members.Add("ActivationDistance", ActivationDistance_Element.ToLinkField(context));
+members.Add("ActivationAngle", ActivationAngle_Element.ToLinkField(context));
+members.Add("DeactivationDistance", DeactivationDistance_Element.ToLinkField(context));
+members.Add("DeactivationAngle", DeactivationAngle_Element.ToLinkField(context));
+members.Add("TargetPosition", TargetPosition_Element.ToLinkField(context));
+members.Add("TargetRotation", TargetRotation_Element.ToLinkField(context));
+members.Add("_position", _position_Element.ToLinkReference(context));
+members.Add("_rotation", _rotation_Element.ToLinkReference(context));
 }
 
 }

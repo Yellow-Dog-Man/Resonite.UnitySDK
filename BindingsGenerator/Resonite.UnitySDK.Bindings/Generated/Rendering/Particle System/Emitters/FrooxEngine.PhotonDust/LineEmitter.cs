@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.PhotonDust.LineEmitter
-// Generated on: čtvrtek 26. února 2026 10:04:38
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:28:04
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -45,16 +45,16 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Point0", Point0_Element.Data.ToResoniteLinkField());
-members.Add("Point1", Point1_Element.Data.ToResoniteLinkField());
-members.Add("Color0", Color0_Element.Data.ToResoniteLinkField());
-members.Add("Color1", Color1_Element.Data.ToResoniteLinkField());
-members.Add("DirectionMode", DirectionMode_Element.Data.ToResoniteLinkField());
-members.Add("Direction0", Direction0_Element.Data.ToResoniteLinkField());
-members.Add("Direction1", Direction1_Element.Data.ToResoniteLinkField());
-members.Add("UpDirection", UpDirection_Element.Data.ToResoniteLinkField());
-members.Add("RandomDirectionWeight", RandomDirectionWeight_Element.Data.ToResoniteLinkField());
-members.Add("DirectionPostTransform", DirectionPostTransform_Element.Data.ToResoniteLinkField());
+members.Add("Point0", Point0_Element.ToLinkField(context));
+members.Add("Point1", Point1_Element.ToLinkField(context));
+members.Add("Color0", Color0_Element.ToLinkField(context));
+members.Add("Color1", Color1_Element.ToLinkField(context));
+members.Add("DirectionMode", DirectionMode_Element.ToLinkField(context));
+members.Add("Direction0", Direction0_Element.ToLinkField(context));
+members.Add("Direction1", Direction1_Element.ToLinkField(context));
+members.Add("UpDirection", UpDirection_Element.ToLinkField(context));
+members.Add("RandomDirectionWeight", RandomDirectionWeight_Element.ToLinkField(context));
+members.Add("DirectionPostTransform", DirectionPostTransform_Element.ToLinkField(context));
 }
 
 }

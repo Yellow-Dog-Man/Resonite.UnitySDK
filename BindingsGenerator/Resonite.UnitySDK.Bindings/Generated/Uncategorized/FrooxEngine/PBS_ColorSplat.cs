@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.PBS_ColorSplat
-// Generated on: čtvrtek 26. února 2026 10:03:34
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:26:47
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -95,41 +95,41 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("MultiValue", MultiValue_Element.Data.ToResoniteLinkField());
-members.Add("ColorMap", ColorMap_Element.Data.ToResoniteReference(context));
-members.Add("ColorMapScale", ColorMapScale_Element.Data.ToResoniteLinkField());
-members.Add("ColorMapOffset", ColorMapOffset_Element.Data.ToResoniteLinkField());
-members.Add("PackedHeightMap", PackedHeightMap_Element.Data.ToResoniteReference(context));
-members.Add("HeightTransitionRange", HeightTransitionRange_Element.Data.ToResoniteLinkField());
-members.Add("TextureScale", TextureScale_Element.Data.ToResoniteLinkField());
-members.Add("TextureOffset", TextureOffset_Element.Data.ToResoniteLinkField());
-members.Add("AlbedoColor0", AlbedoColor0_Element.Data.ToResoniteLinkField());
-members.Add("AlbedoColor1", AlbedoColor1_Element.Data.ToResoniteLinkField());
-members.Add("AlbedoColor2", AlbedoColor2_Element.Data.ToResoniteLinkField());
-members.Add("AlbedoColor3", AlbedoColor3_Element.Data.ToResoniteLinkField());
-members.Add("AlbedoTexture0", AlbedoTexture0_Element.Data.ToResoniteReference(context));
-members.Add("AlbedoTexture1", AlbedoTexture1_Element.Data.ToResoniteReference(context));
-members.Add("AlbedoTexture2", AlbedoTexture2_Element.Data.ToResoniteReference(context));
-members.Add("AlbedoTexture3", AlbedoTexture3_Element.Data.ToResoniteReference(context));
-members.Add("EmissiveColor0", EmissiveColor0_Element.Data.ToResoniteLinkField());
-members.Add("EmissiveColor1", EmissiveColor1_Element.Data.ToResoniteLinkField());
-members.Add("EmissiveColor2", EmissiveColor2_Element.Data.ToResoniteLinkField());
-members.Add("EmissiveColor3", EmissiveColor3_Element.Data.ToResoniteLinkField());
-members.Add("EmissiveMap0", EmissiveMap0_Element.Data.ToResoniteReference(context));
-members.Add("EmissiveMap1", EmissiveMap1_Element.Data.ToResoniteReference(context));
-members.Add("EmissiveMap2", EmissiveMap2_Element.Data.ToResoniteReference(context));
-members.Add("EmissiveMap3", EmissiveMap3_Element.Data.ToResoniteReference(context));
-members.Add("PackedEmissionMap", PackedEmissionMap_Element.Data.ToResoniteReference(context));
-members.Add("PackedNormalMap01", PackedNormalMap01_Element.Data.ToResoniteReference(context));
-members.Add("PackedNormalMap23", PackedNormalMap23_Element.Data.ToResoniteReference(context));
-members.Add("NormalScale0", NormalScale0_Element.Data.ToResoniteLinkField());
-members.Add("NormalScale1", NormalScale1_Element.Data.ToResoniteLinkField());
-members.Add("NormalScale2", NormalScale2_Element.Data.ToResoniteLinkField());
-members.Add("NormalScale3", NormalScale3_Element.Data.ToResoniteLinkField());
-members.Add("AlphaClip", AlphaClip_Element.Data.ToResoniteLinkField());
-members.Add("OffsetFactor", OffsetFactor_Element.Data.ToResoniteLinkField());
-members.Add("OffsetUnits", OffsetUnits_Element.Data.ToResoniteLinkField());
-members.Add("RenderQueue", RenderQueue_Element.Data.ToResoniteLinkField());
+members.Add("MultiValue", MultiValue_Element.ToLinkField(context));
+members.Add("ColorMap", ColorMap_Element.ToLinkReference(context));
+members.Add("ColorMapScale", ColorMapScale_Element.ToLinkField(context));
+members.Add("ColorMapOffset", ColorMapOffset_Element.ToLinkField(context));
+members.Add("PackedHeightMap", PackedHeightMap_Element.ToLinkReference(context));
+members.Add("HeightTransitionRange", HeightTransitionRange_Element.ToLinkField(context));
+members.Add("TextureScale", TextureScale_Element.ToLinkField(context));
+members.Add("TextureOffset", TextureOffset_Element.ToLinkField(context));
+members.Add("AlbedoColor0", AlbedoColor0_Element.ToLinkField(context));
+members.Add("AlbedoColor1", AlbedoColor1_Element.ToLinkField(context));
+members.Add("AlbedoColor2", AlbedoColor2_Element.ToLinkField(context));
+members.Add("AlbedoColor3", AlbedoColor3_Element.ToLinkField(context));
+members.Add("AlbedoTexture0", AlbedoTexture0_Element.ToLinkReference(context));
+members.Add("AlbedoTexture1", AlbedoTexture1_Element.ToLinkReference(context));
+members.Add("AlbedoTexture2", AlbedoTexture2_Element.ToLinkReference(context));
+members.Add("AlbedoTexture3", AlbedoTexture3_Element.ToLinkReference(context));
+members.Add("EmissiveColor0", EmissiveColor0_Element.ToLinkField(context));
+members.Add("EmissiveColor1", EmissiveColor1_Element.ToLinkField(context));
+members.Add("EmissiveColor2", EmissiveColor2_Element.ToLinkField(context));
+members.Add("EmissiveColor3", EmissiveColor3_Element.ToLinkField(context));
+members.Add("EmissiveMap0", EmissiveMap0_Element.ToLinkReference(context));
+members.Add("EmissiveMap1", EmissiveMap1_Element.ToLinkReference(context));
+members.Add("EmissiveMap2", EmissiveMap2_Element.ToLinkReference(context));
+members.Add("EmissiveMap3", EmissiveMap3_Element.ToLinkReference(context));
+members.Add("PackedEmissionMap", PackedEmissionMap_Element.ToLinkReference(context));
+members.Add("PackedNormalMap01", PackedNormalMap01_Element.ToLinkReference(context));
+members.Add("PackedNormalMap23", PackedNormalMap23_Element.ToLinkReference(context));
+members.Add("NormalScale0", NormalScale0_Element.ToLinkField(context));
+members.Add("NormalScale1", NormalScale1_Element.ToLinkField(context));
+members.Add("NormalScale2", NormalScale2_Element.ToLinkField(context));
+members.Add("NormalScale3", NormalScale3_Element.ToLinkField(context));
+members.Add("AlphaClip", AlphaClip_Element.ToLinkField(context));
+members.Add("OffsetFactor", OffsetFactor_Element.ToLinkField(context));
+members.Add("OffsetUnits", OffsetUnits_Element.ToLinkField(context));
+members.Add("RenderQueue", RenderQueue_Element.ToLinkField(context));
 }
 
 }

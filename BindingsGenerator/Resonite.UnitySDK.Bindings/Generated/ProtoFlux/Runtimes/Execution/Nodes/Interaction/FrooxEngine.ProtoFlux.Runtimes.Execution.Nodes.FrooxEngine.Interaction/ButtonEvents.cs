@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [ProtoFluxBindings]FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Interaction.ButtonEvents
-// Generated on: čtvrtek 26. února 2026 10:04:15
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:27:35
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -43,17 +43,17 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Button", Button_Element.Data.ToResoniteReference(context));
-members.Add("Pressed", Pressed_Element.Data.ToResoniteReference(context));
-members.Add("Pressing", Pressing_Element.Data.ToResoniteReference(context));
-members.Add("Released", Released_Element.Data.ToResoniteReference(context));
-members.Add("HoverEnter", HoverEnter_Element.Data.ToResoniteReference(context));
-members.Add("HoverStay", HoverStay_Element.Data.ToResoniteReference(context));
-members.Add("HoverLeave", HoverLeave_Element.Data.ToResoniteReference(context));
-members.Add("Source", new ResoniteLink.EmptyElement());
-members.Add("GlobalPoint", new ResoniteLink.EmptyElement());
-members.Add("LocalPoint", new ResoniteLink.EmptyElement());
-members.Add("NormalizedPoint", new ResoniteLink.EmptyElement());
+members.Add("Button", Button_Element.ToLinkReference(context));
+members.Add("Pressed", Pressed_Element.ToLinkReference(context));
+members.Add("Pressing", Pressing_Element.ToLinkReference(context));
+members.Add("Released", Released_Element.ToLinkReference(context));
+members.Add("HoverEnter", HoverEnter_Element.ToLinkReference(context));
+members.Add("HoverStay", HoverStay_Element.ToLinkReference(context));
+members.Add("HoverLeave", HoverLeave_Element.ToLinkReference(context));
+members.Add("Source", Source.ToLinkEmpty(context));
+members.Add("GlobalPoint", GlobalPoint.ToLinkEmpty(context));
+members.Add("LocalPoint", LocalPoint.ToLinkEmpty(context));
+members.Add("NormalizedPoint", NormalizedPoint.ToLinkEmpty(context));
 }
 
 }

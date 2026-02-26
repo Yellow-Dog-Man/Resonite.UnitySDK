@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.DirectTagHapticSource
-// Generated on: čtvrtek 26. února 2026 10:03:39
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:26:55
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -35,11 +35,11 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("HapticTag", HapticTag_Element.Data.ToResoniteLinkField());
-members.Add("Force", Force_Element.Data.ToResoniteLinkField());
-members.Add("Temperature", Temperature_Element.Data.ToResoniteLinkField());
-members.Add("Pain", Pain_Element.Data.ToResoniteLinkField());
-members.Add("Vibration", Vibration_Element.Data.ToResoniteLinkField());
+members.Add("HapticTag", HapticTag_Element.ToLinkField(context));
+members.Add("Force", Force_Element.ToLinkField(context));
+members.Add("Temperature", Temperature_Element.ToLinkField(context));
+members.Add("Pain", Pain_Element.ToLinkField(context));
+members.Add("Vibration", Vibration_Element.ToLinkField(context));
 }
 
 }

@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.CommonAvatarBuilder
-// Generated on: čtvrtek 26. února 2026 10:04:49
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:28:15
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -66,30 +66,27 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("LoadCloudAvatars", LoadCloudAvatars_Element.Data.ToResoniteLinkField());
-members.Add("CustomAvatarTemplates", new ResoniteLink.SyncList()
-{
-    Elements = CustomAvatarTemplates.Data.ConvertList(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers(context) })
-});
-members.Add("AutoInject", AutoInject_Element.Data.ToResoniteReference(context));
-members.Add("SetupNameBadges", SetupNameBadges_Element.Data.ToResoniteLinkField());
-members.Add("SetupIconBadges", SetupIconBadges_Element.Data.ToResoniteLinkField());
-members.Add("SetupServerVoice", SetupServerVoice_Element.Data.ToResoniteLinkField());
-members.Add("SetupClientVoice", SetupClientVoice_Element.Data.ToResoniteLinkField());
-members.Add("SetupServerTools", SetupServerTools_Element.Data.ToResoniteLinkField());
-members.Add("SetupClientTools", SetupClientTools_Element.Data.ToResoniteLinkField());
-members.Add("SetupLocomotion", SetupLocomotion_Element.Data.ToResoniteLinkField());
-members.Add("AllowLocomotion", AllowLocomotion_Element.Data.ToResoniteLinkField());
-members.Add("DefaultHostSilenced", DefaultHostSilenced_Element.Data.ToResoniteLinkField());
-members.Add("DefaultClientSilenced", DefaultClientSilenced_Element.Data.ToResoniteLinkField());
-members.Add("LocomotionModules", LocomotionModules_Element.Data.ToResoniteReference(context));
-members.Add("ForceDefaultLocomotionModule", ForceDefaultLocomotionModule_Element.Data.ToResoniteReference(context));
-members.Add("FindUserPreferredModule", FindUserPreferredModule_Element.Data.ToResoniteLinkField());
-members.Add("SetupItemShelves", SetupItemShelves_Element.Data.ToResoniteLinkField());
-members.Add("ParentClientsToServer", ParentClientsToServer_Element.Data.ToResoniteLinkField());
-members.Add("AlignTracking", AlignTracking_Element.Data.ToResoniteLinkField());
-members.Add("EmptyAvatarSlotHandler", EmptyAvatarSlotHandler_Element.Data.ToResoniteReference(context));
-members.Add("FillEmptySlots", FillEmptySlots_Element.Data.ToResoniteLinkField());
+members.Add("LoadCloudAvatars", LoadCloudAvatars_Element.ToLinkField(context));
+members.Add("CustomAvatarTemplates", CustomAvatarTemplates.ToLinkList(context, m => m.ToLinkSyncObject(context)));
+members.Add("AutoInject", AutoInject_Element.ToLinkReference(context));
+members.Add("SetupNameBadges", SetupNameBadges_Element.ToLinkField(context));
+members.Add("SetupIconBadges", SetupIconBadges_Element.ToLinkField(context));
+members.Add("SetupServerVoice", SetupServerVoice_Element.ToLinkField(context));
+members.Add("SetupClientVoice", SetupClientVoice_Element.ToLinkField(context));
+members.Add("SetupServerTools", SetupServerTools_Element.ToLinkField(context));
+members.Add("SetupClientTools", SetupClientTools_Element.ToLinkField(context));
+members.Add("SetupLocomotion", SetupLocomotion_Element.ToLinkField(context));
+members.Add("AllowLocomotion", AllowLocomotion_Element.ToLinkField(context));
+members.Add("DefaultHostSilenced", DefaultHostSilenced_Element.ToLinkField(context));
+members.Add("DefaultClientSilenced", DefaultClientSilenced_Element.ToLinkField(context));
+members.Add("LocomotionModules", LocomotionModules_Element.ToLinkReference(context));
+members.Add("ForceDefaultLocomotionModule", ForceDefaultLocomotionModule_Element.ToLinkReference(context));
+members.Add("FindUserPreferredModule", FindUserPreferredModule_Element.ToLinkField(context));
+members.Add("SetupItemShelves", SetupItemShelves_Element.ToLinkField(context));
+members.Add("ParentClientsToServer", ParentClientsToServer_Element.ToLinkField(context));
+members.Add("AlignTracking", AlignTracking_Element.ToLinkField(context));
+members.Add("EmptyAvatarSlotHandler", EmptyAvatarSlotHandler_Element.ToLinkReference(context));
+members.Add("FillEmptySlots", FillEmptySlots_Element.ToLinkField(context));
 }
 
 }

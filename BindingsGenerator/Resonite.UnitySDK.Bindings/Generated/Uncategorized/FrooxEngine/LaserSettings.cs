@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.LaserSettings
-// Generated on: čtvrtek 26. února 2026 10:04:46
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:28:11
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -39,13 +39,13 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("SmoothSpeed", SmoothSpeed_Element.Data.ToResoniteLinkField());
-members.Add("ModulateStartAngle", ModulateStartAngle_Element.Data.ToResoniteLinkField());
-members.Add("ModulateEndAngle", ModulateEndAngle_Element.Data.ToResoniteLinkField());
-members.Add("ModulateExponent", ModulateExponent_Element.Data.ToResoniteLinkField());
-members.Add("ModulateSpeedMultiplier", ModulateSpeedMultiplier_Element.Data.ToResoniteLinkField());
-members.Add("StickThreshold", StickThreshold_Element.Data.ToResoniteLinkField());
-members.Add("ShowInDesktop", ShowInDesktop_Element.Data.ToResoniteLinkField());
+members.Add("SmoothSpeed", SmoothSpeed_Element.ToLinkField(context));
+members.Add("ModulateStartAngle", ModulateStartAngle_Element.ToLinkField(context));
+members.Add("ModulateEndAngle", ModulateEndAngle_Element.ToLinkField(context));
+members.Add("ModulateExponent", ModulateExponent_Element.ToLinkField(context));
+members.Add("ModulateSpeedMultiplier", ModulateSpeedMultiplier_Element.ToLinkField(context));
+members.Add("StickThreshold", StickThreshold_Element.ToLinkField(context));
+members.Add("ShowInDesktop", ShowInDesktop_Element.ToLinkField(context));
 }
 
 }

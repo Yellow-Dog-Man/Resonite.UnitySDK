@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.TouchEventRelay
-// Generated on: čtvrtek 26. února 2026 10:04:15
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:27:35
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -28,11 +28,8 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("AcceptOutOfSightTouch", AcceptOutOfSightTouch_Element.Data.ToResoniteLinkField());
-members.Add("TouchableTargets", new ResoniteLink.SyncList()
-{
-    Elements = TouchableTargets.Data.ConvertList(m => m.Data.ToResoniteReference(context))
-});
+members.Add("AcceptOutOfSightTouch", AcceptOutOfSightTouch_Element.ToLinkField(context));
+members.Add("TouchableTargets", TouchableTargets.ToLinkList(context, m => m.ToLinkReference(context)));
 }
 
 }

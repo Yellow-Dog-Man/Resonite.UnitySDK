@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.BrushTool
-// Generated on: čtvrtek 26. února 2026 10:04:39
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:28:06
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -110,56 +110,50 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("FixedMinimumPointDistance", FixedMinimumPointDistance_Element.Data.ToResoniteLinkField());
-members.Add("PositionSmoothing", PositionSmoothing_Element.Data.ToResoniteLinkField());
-members.Add("RotationSmoothing", RotationSmoothing_Element.Data.ToResoniteLinkField());
-members.Add("PressureSmoothing", PressureSmoothing_Element.Data.ToResoniteLinkField());
-members.Add("MaxStrokeLength", MaxStrokeLength_Element.Data.ToResoniteLinkField());
-members.Add("StrokeFadeInLength", StrokeFadeInLength_Element.Data.ToResoniteLinkField());
-members.Add("StrokeFadeOutLength", StrokeFadeOutLength_Element.Data.ToResoniteLinkField());
-members.Add("StrokeGroupFinishWaitTime", StrokeGroupFinishWaitTime_Element.Data.ToResoniteLinkField());
-members.Add("ActivationThreshold", ActivationThreshold_Element.Data.ToResoniteLinkField());
-members.Add("DeactivationThresholdRatio", DeactivationThresholdRatio_Element.Data.ToResoniteLinkField());
-members.Add("MenuSizeChange", MenuSizeChange_Element.Data.ToResoniteLinkField());
-members.Add("SnapTip", SnapTip_Element.Data.ToResoniteLinkField());
-members.Add("SnapLine", SnapLine_Element.Data.ToResoniteLinkField());
-members.Add("StrokesSpace", new ResoniteLink.SyncObject() { Members = StrokesSpace.CollectMembers(context) });
-members.Add("MakeStrokesGrabbable", MakeStrokesGrabbable_Element.Data.ToResoniteLinkField());
-members.Add("PositionStrokesToTip", PositionStrokesToTip_Element.Data.ToResoniteLinkField());
-members.Add("OrientStrokesToTip", OrientStrokesToTip_Element.Data.ToResoniteLinkField());
-members.Add("ScaleStrokesToUser", ScaleStrokesToUser_Element.Data.ToResoniteLinkField());
-members.Add("PickMaterials", PickMaterials_Element.Data.ToResoniteLinkField());
-members.Add("PickColors", PickColors_Element.Data.ToResoniteLinkField());
-members.Add("CurrentMaterial", CurrentMaterial_Element.Data.ToResoniteReference(context));
-members.Add("ColorMappings", new ResoniteLink.SyncList()
-{
-    Elements = ColorMappings.Data.ConvertList(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers(context) })
-});
-members.Add("ParticleSystem", ParticleSystem_Element.Data.ToResoniteReference(context));
-members.Add("MeshEmitterTemplate", MeshEmitterTemplate_Element.Data.ToResoniteReference(context));
-members.Add("ParticleTemplateHandling", ParticleTemplateHandling_Element.Data.ToResoniteLinkField());
-members.Add("EmissionRatePerUnitLength", EmissionRatePerUnitLength_Element.Data.ToResoniteLinkField());
-members.Add("_colorPicker", _colorPicker_Element.Data.ToResoniteReference(context));
-members.Add("_pickedColor", _pickedColor_Element.Data.ToResoniteLinkField());
-members.Add("_hideOnStroke", new ResoniteLink.SyncList()
-{
-    Elements = _hideOnStroke.Data.ConvertList(m => m.Data.ToResoniteReference(context))
-});
-members.Add("_lastUsedMaterial", _lastUsedMaterial_Element.Data.ToResoniteReference(context));
-members.Add("_lastCreatedMaterial", _lastCreatedMaterial_Element.Data.ToResoniteReference(context));
-members.Add("Pressure", Pressure_Element.Data.ToResoniteLinkField());
-members.Add("Position", Position_Element.Data.ToResoniteLinkField());
-members.Add("Rotation", Rotation_Element.Data.ToResoniteLinkField());
-members.Add("LastPointDelta", LastPointDelta_Element.Data.ToResoniteLinkField());
-members.Add("Velocity", Velocity_Element.Data.ToResoniteLinkField());
-members.Add("RawDelta", RawDelta_Element.Data.ToResoniteLinkField());
-members.Add("RawVelocity", RawVelocity_Element.Data.ToResoniteLinkField());
-members.Add("RawStrokeLength", RawStrokeLength_Element.Data.ToResoniteLinkField());
-members.Add("StrokeLength", StrokeLength_Element.Data.ToResoniteLinkField());
-members.Add("NormalizedStrokeLength", NormalizedStrokeLength_Element.Data.ToResoniteLinkField());
-members.Add("StrokeFadeMultiplier", StrokeFadeMultiplier_Element.Data.ToResoniteLinkField());
-members.Add("StrokeGroupIndex", StrokeGroupIndex_Element.Data.ToResoniteLinkField());
-members.Add("StrokeGroupActive", StrokeGroupActive_Element.Data.ToResoniteLinkField());
+members.Add("FixedMinimumPointDistance", FixedMinimumPointDistance_Element.ToLinkField(context));
+members.Add("PositionSmoothing", PositionSmoothing_Element.ToLinkField(context));
+members.Add("RotationSmoothing", RotationSmoothing_Element.ToLinkField(context));
+members.Add("PressureSmoothing", PressureSmoothing_Element.ToLinkField(context));
+members.Add("MaxStrokeLength", MaxStrokeLength_Element.ToLinkField(context));
+members.Add("StrokeFadeInLength", StrokeFadeInLength_Element.ToLinkField(context));
+members.Add("StrokeFadeOutLength", StrokeFadeOutLength_Element.ToLinkField(context));
+members.Add("StrokeGroupFinishWaitTime", StrokeGroupFinishWaitTime_Element.ToLinkField(context));
+members.Add("ActivationThreshold", ActivationThreshold_Element.ToLinkField(context));
+members.Add("DeactivationThresholdRatio", DeactivationThresholdRatio_Element.ToLinkField(context));
+members.Add("MenuSizeChange", MenuSizeChange_Element.ToLinkField(context));
+members.Add("SnapTip", SnapTip_Element.ToLinkField(context));
+members.Add("SnapLine", SnapLine_Element.ToLinkField(context));
+members.Add("StrokesSpace", StrokesSpace.ToLinkSyncObject(context));
+members.Add("MakeStrokesGrabbable", MakeStrokesGrabbable_Element.ToLinkField(context));
+members.Add("PositionStrokesToTip", PositionStrokesToTip_Element.ToLinkField(context));
+members.Add("OrientStrokesToTip", OrientStrokesToTip_Element.ToLinkField(context));
+members.Add("ScaleStrokesToUser", ScaleStrokesToUser_Element.ToLinkField(context));
+members.Add("PickMaterials", PickMaterials_Element.ToLinkField(context));
+members.Add("PickColors", PickColors_Element.ToLinkField(context));
+members.Add("CurrentMaterial", CurrentMaterial_Element.ToLinkReference(context));
+members.Add("ColorMappings", ColorMappings.ToLinkList(context, m => m.ToLinkSyncObject(context)));
+members.Add("ParticleSystem", ParticleSystem_Element.ToLinkReference(context));
+members.Add("MeshEmitterTemplate", MeshEmitterTemplate_Element.ToLinkReference(context));
+members.Add("ParticleTemplateHandling", ParticleTemplateHandling_Element.ToLinkField(context));
+members.Add("EmissionRatePerUnitLength", EmissionRatePerUnitLength_Element.ToLinkField(context));
+members.Add("_colorPicker", _colorPicker_Element.ToLinkReference(context));
+members.Add("_pickedColor", _pickedColor_Element.ToLinkField(context));
+members.Add("_hideOnStroke", _hideOnStroke.ToLinkList(context, m => m.ToLinkReference(context)));
+members.Add("_lastUsedMaterial", _lastUsedMaterial_Element.ToLinkReference(context));
+members.Add("_lastCreatedMaterial", _lastCreatedMaterial_Element.ToLinkReference(context));
+members.Add("Pressure", Pressure_Element.ToLinkField(context));
+members.Add("Position", Position_Element.ToLinkField(context));
+members.Add("Rotation", Rotation_Element.ToLinkField(context));
+members.Add("LastPointDelta", LastPointDelta_Element.ToLinkField(context));
+members.Add("Velocity", Velocity_Element.ToLinkField(context));
+members.Add("RawDelta", RawDelta_Element.ToLinkField(context));
+members.Add("RawVelocity", RawVelocity_Element.ToLinkField(context));
+members.Add("RawStrokeLength", RawStrokeLength_Element.ToLinkField(context));
+members.Add("StrokeLength", StrokeLength_Element.ToLinkField(context));
+members.Add("NormalizedStrokeLength", NormalizedStrokeLength_Element.ToLinkField(context));
+members.Add("StrokeFadeMultiplier", StrokeFadeMultiplier_Element.ToLinkField(context));
+members.Add("StrokeGroupIndex", StrokeGroupIndex_Element.ToLinkField(context));
+members.Add("StrokeGroupActive", StrokeGroupActive_Element.ToLinkField(context));
 }
 
 }

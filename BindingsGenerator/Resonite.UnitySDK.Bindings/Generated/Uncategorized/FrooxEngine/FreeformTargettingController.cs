@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.FreeformTargettingController
-// Generated on: čtvrtek 26. února 2026 10:04:06
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:27:26
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -29,8 +29,8 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("FocusTarget", FocusTarget_Element.Data.ToResoniteReference(context));
-members.Add("FocusCenterPoint", FocusCenterPoint_Element.Data.ToResoniteLinkField());
+members.Add("FocusTarget", FocusTarget_Element.ToLinkReference(context));
+members.Add("FocusCenterPoint", FocusCenterPoint_Element.ToLinkField(context));
 }
 
 }

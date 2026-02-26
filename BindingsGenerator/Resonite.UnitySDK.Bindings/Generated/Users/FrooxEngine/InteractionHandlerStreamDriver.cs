@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.InteractionHandlerStreamDriver
-// Generated on: čtvrtek 26. února 2026 10:04:32
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:27:57
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -39,13 +39,13 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Side", Side_Element.Data.ToResoniteLinkField());
-members.Add("PrimaryBlockedStream", PrimaryBlockedStream_Element.Data.ToResoniteReference(context));
-members.Add("SecondaryBlockedStream", SecondaryBlockedStream_Element.Data.ToResoniteReference(context));
-members.Add("LaserActiveStream", LaserActiveStream_Element.Data.ToResoniteReference(context));
-members.Add("ShowLaserToOthersStream", ShowLaserToOthersStream_Element.Data.ToResoniteReference(context));
-members.Add("LaserTargetStream", LaserTargetStream_Element.Data.ToResoniteReference(context));
-members.Add("GrabDistanceStream", GrabDistanceStream_Element.Data.ToResoniteReference(context));
+members.Add("Side", Side_Element.ToLinkField(context));
+members.Add("PrimaryBlockedStream", PrimaryBlockedStream_Element.ToLinkReference(context));
+members.Add("SecondaryBlockedStream", SecondaryBlockedStream_Element.ToLinkReference(context));
+members.Add("LaserActiveStream", LaserActiveStream_Element.ToLinkReference(context));
+members.Add("ShowLaserToOthersStream", ShowLaserToOthersStream_Element.ToLinkReference(context));
+members.Add("LaserTargetStream", LaserTargetStream_Element.ToLinkReference(context));
+members.Add("GrabDistanceStream", GrabDistanceStream_Element.ToLinkReference(context));
 }
 
 }

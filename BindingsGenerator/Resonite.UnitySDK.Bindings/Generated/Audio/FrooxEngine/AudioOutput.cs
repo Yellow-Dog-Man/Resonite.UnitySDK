@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.AudioOutput
-// Generated on: čtvrtek 26. února 2026 10:03:37
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:26:52
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -63,32 +63,26 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Volume", Volume_Element.Data.ToResoniteLinkField());
-members.Add("Source", Source_Element.Data.ToResoniteReference(context));
-members.Add("SpatialBlend", SpatialBlend_Element.Data.ToResoniteLinkField());
-members.Add("Spatialize", Spatialize_Element.Data.ToResoniteLinkField());
-members.Add("SpatializationStartDistance", SpatializationStartDistance_Element.Data.ToResoniteLinkField());
-members.Add("SpatializationTransitionRange", SpatializationTransitionRange_Element.Data.ToResoniteLinkField());
-members.Add("DopplerLevel", DopplerLevel_Element.Data.ToResoniteLinkField());
-members.Add("Pitch", Pitch_Element.Data.ToResoniteLinkField());
-members.Add("Global", Global_Element.Data.ToResoniteLinkField());
-members.Add("RolloffMode", RolloffMode_Element.Data.ToResoniteLinkField());
-members.Add("MinDistance", MinDistance_Element.Data.ToResoniteLinkField());
-members.Add("MaxDistance", MaxDistance_Element.Data.ToResoniteLinkField());
-members.Add("Priority", Priority_Element.Data.ToResoniteLinkField());
-members.Add("AudioTypeGroup", AudioTypeGroup_Element.Data.ToResoniteLinkField());
-members.Add("DistanceSpace", DistanceSpace_Element.Data.ToResoniteLinkField());
-members.Add("MinScale", MinScale_Element.Data.ToResoniteLinkField());
-members.Add("MaxScale", MaxScale_Element.Data.ToResoniteLinkField());
-members.Add("IgnoreAudioEffects", IgnoreAudioEffects_Element.Data.ToResoniteLinkField());
-members.Add("ExcludedListeners", new ResoniteLink.SyncList()
-{
-    Elements = ExcludedListeners.Data.ConvertList(m => m.Data.ToResoniteReference(context))
-});
-members.Add("excludedUsers", new ResoniteLink.SyncList()
-{
-    Elements = excludedUsers.Data.ConvertList(m => m.Data.ToResoniteReference(context))
-});
+members.Add("Volume", Volume_Element.ToLinkField(context));
+members.Add("Source", Source_Element.ToLinkReference(context));
+members.Add("SpatialBlend", SpatialBlend_Element.ToLinkField(context));
+members.Add("Spatialize", Spatialize_Element.ToLinkField(context));
+members.Add("SpatializationStartDistance", SpatializationStartDistance_Element.ToLinkField(context));
+members.Add("SpatializationTransitionRange", SpatializationTransitionRange_Element.ToLinkField(context));
+members.Add("DopplerLevel", DopplerLevel_Element.ToLinkField(context));
+members.Add("Pitch", Pitch_Element.ToLinkField(context));
+members.Add("Global", Global_Element.ToLinkField(context));
+members.Add("RolloffMode", RolloffMode_Element.ToLinkField(context));
+members.Add("MinDistance", MinDistance_Element.ToLinkField(context));
+members.Add("MaxDistance", MaxDistance_Element.ToLinkField(context));
+members.Add("Priority", Priority_Element.ToLinkField(context));
+members.Add("AudioTypeGroup", AudioTypeGroup_Element.ToLinkField(context));
+members.Add("DistanceSpace", DistanceSpace_Element.ToLinkField(context));
+members.Add("MinScale", MinScale_Element.ToLinkField(context));
+members.Add("MaxScale", MaxScale_Element.ToLinkField(context));
+members.Add("IgnoreAudioEffects", IgnoreAudioEffects_Element.ToLinkField(context));
+members.Add("ExcludedListeners", ExcludedListeners.ToLinkList(context, m => m.ToLinkReference(context)));
+members.Add("excludedUsers", excludedUsers.ToLinkList(context, m => m.ToLinkReference(context)));
 }
 
 }

@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.ContextMenuItem
-// Generated on: čtvrtek 26. února 2026 10:04:32
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:27:57
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -45,16 +45,16 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Highlight", Highlight_Element.Data.ToResoniteLinkField());
-members.Add("Icon", Icon_Element.Data.ToResoniteReference(context));
-members.Add("Sprite", Sprite_Element.Data.ToResoniteReference(context));
-members.Add("Label", Label_Element.Data.ToResoniteReference(context));
-members.Add("Color", Color_Element.Data.ToResoniteLinkField());
-members.Add("_menu", _menu_Element.Data.ToResoniteReference(context));
-members.Add("_highlighted", _highlighted_Element.Data.ToResoniteLinkField());
-members.Add("_arc", _arc_Element.Data.ToResoniteReference(context));
-members.Add("_outerRadius", _outerRadius_Element.Data.ToResoniteReference(context));
-members.Add("_button", _button_Element.Data.ToResoniteReference(context));
+members.Add("Highlight", Highlight_Element.ToLinkField(context));
+members.Add("Icon", Icon_Element.ToLinkReference(context));
+members.Add("Sprite", Sprite_Element.ToLinkReference(context));
+members.Add("Label", Label_Element.ToLinkReference(context));
+members.Add("Color", Color_Element.ToLinkField(context));
+members.Add("_menu", _menu_Element.ToLinkReference(context));
+members.Add("_highlighted", _highlighted_Element.ToLinkField(context));
+members.Add("_arc", _arc_Element.ToLinkReference(context));
+members.Add("_outerRadius", _outerRadius_Element.ToLinkReference(context));
+members.Add("_button", _button_Element.ToLinkReference(context));
 }
 
 }

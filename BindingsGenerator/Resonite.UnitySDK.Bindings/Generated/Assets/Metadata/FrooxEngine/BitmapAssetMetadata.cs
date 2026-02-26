@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.BitmapAssetMetadata
-// Generated on: čtvrtek 26. února 2026 10:03:35
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:26:49
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -51,19 +51,19 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Asset", Asset_Element.Data.ToResoniteReference(context));
-members.Add("Width", Width_Element.Data.ToResoniteLinkField());
-members.Add("Height", Height_Element.Data.ToResoniteLinkField());
-members.Add("BaseFormat", BaseFormat_Element.Data.ToResoniteLinkField());
-members.Add("ColorData", ColorData_Element.Data.ToResoniteLinkField());
-members.Add("AlphaData", AlphaData_Element.Data.ToResoniteLinkField());
-members.Add("BitsPerPixel", BitsPerPixel_Element.Data.ToResoniteLinkField());
-members.Add("ChannelCount", ChannelCount_Element.Data.ToResoniteLinkField());
-members.Add("AverageColor", AverageColor_Element.Data.ToResoniteLinkField());
-members.Add("AverageVisibleColor", AverageVisibleColor_Element.Data.ToResoniteLinkField());
-members.Add("AverageHSV", AverageHSV_Element.Data.ToResoniteLinkField());
-members.Add("AverageVisibleHSV", AverageVisibleHSV_Element.Data.ToResoniteLinkField());
-members.Add("InvalidPixelCount", InvalidPixelCount_Element.Data.ToResoniteLinkField());
+members.Add("Asset", Asset_Element.ToLinkReference(context));
+members.Add("Width", Width_Element.ToLinkField(context));
+members.Add("Height", Height_Element.ToLinkField(context));
+members.Add("BaseFormat", BaseFormat_Element.ToLinkField(context));
+members.Add("ColorData", ColorData_Element.ToLinkField(context));
+members.Add("AlphaData", AlphaData_Element.ToLinkField(context));
+members.Add("BitsPerPixel", BitsPerPixel_Element.ToLinkField(context));
+members.Add("ChannelCount", ChannelCount_Element.ToLinkField(context));
+members.Add("AverageColor", AverageColor_Element.ToLinkField(context));
+members.Add("AverageVisibleColor", AverageVisibleColor_Element.ToLinkField(context));
+members.Add("AverageHSV", AverageHSV_Element.ToLinkField(context));
+members.Add("AverageVisibleHSV", AverageVisibleHSV_Element.ToLinkField(context));
+members.Add("InvalidPixelCount", InvalidPixelCount_Element.ToLinkField(context));
 }
 
 }

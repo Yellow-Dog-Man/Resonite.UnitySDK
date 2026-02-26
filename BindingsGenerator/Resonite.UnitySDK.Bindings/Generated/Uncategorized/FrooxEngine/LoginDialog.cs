@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.LoginDialog
-// Generated on: čtvrtek 26. února 2026 10:04:47
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:28:12
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -59,23 +59,23 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("RegisterOnly", RegisterOnly_Element.Data.ToResoniteLinkField());
-members.Add("_interactionEnabled", _interactionEnabled_Element.Data.ToResoniteLinkField());
-members.Add("_swapRegion", _swapRegion_Element.Data.ToResoniteReference(context));
-members.Add("_username", _username_Element.Data.ToResoniteReference(context));
-members.Add("_email", _email_Element.Data.ToResoniteReference(context));
-members.Add("_emailRepeat", _emailRepeat_Element.Data.ToResoniteReference(context));
-members.Add("_password", _password_Element.Data.ToResoniteReference(context));
-members.Add("_passwordRepeat", _passwordRepeat_Element.Data.ToResoniteReference(context));
-members.Add("_recoveryCode", _recoveryCode_Element.Data.ToResoniteReference(context));
-members.Add("_birthMonth", _birthMonth_Element.Data.ToResoniteReference(context));
-members.Add("_birthDay", _birthDay_Element.Data.ToResoniteReference(context));
-members.Add("_birthYear", _birthYear_Element.Data.ToResoniteReference(context));
-members.Add("_rememberLogin", _rememberLogin_Element.Data.ToResoniteReference(context));
-members.Add("_resetUserId", _resetUserId_Element.Data.ToResoniteReference(context));
-members.Add("_policies", _policies_Element.Data.ToResoniteReference(context));
-members.Add("_registerButton", _registerButton_Element.Data.ToResoniteReference(context));
-members.Add("_loginEmail", _loginEmail_Element.Data.ToResoniteLinkField());
+members.Add("RegisterOnly", RegisterOnly_Element.ToLinkField(context));
+members.Add("_interactionEnabled", _interactionEnabled_Element.ToLinkField(context));
+members.Add("_swapRegion", _swapRegion_Element.ToLinkReference(context));
+members.Add("_username", _username_Element.ToLinkReference(context));
+members.Add("_email", _email_Element.ToLinkReference(context));
+members.Add("_emailRepeat", _emailRepeat_Element.ToLinkReference(context));
+members.Add("_password", _password_Element.ToLinkReference(context));
+members.Add("_passwordRepeat", _passwordRepeat_Element.ToLinkReference(context));
+members.Add("_recoveryCode", _recoveryCode_Element.ToLinkReference(context));
+members.Add("_birthMonth", _birthMonth_Element.ToLinkReference(context));
+members.Add("_birthDay", _birthDay_Element.ToLinkReference(context));
+members.Add("_birthYear", _birthYear_Element.ToLinkReference(context));
+members.Add("_rememberLogin", _rememberLogin_Element.ToLinkReference(context));
+members.Add("_resetUserId", _resetUserId_Element.ToLinkReference(context));
+members.Add("_policies", _policies_Element.ToLinkReference(context));
+members.Add("_registerButton", _registerButton_Element.ToLinkReference(context));
+members.Add("_loginEmail", _loginEmail_Element.ToLinkField(context));
 }
 
 }

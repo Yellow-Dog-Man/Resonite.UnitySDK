@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.MultiTextureFader<>
-// Generated on: čtvrtek 26. února 2026 10:04:50
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:28:16
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -35,14 +35,11 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("FirstTexture", FirstTexture_Element.Data.ToResoniteReference(context));
-members.Add("SecondTexture", SecondTexture_Element.Data.ToResoniteReference(context));
-members.Add("Lerp", Lerp_Element.Data.ToResoniteReference(context));
-members.Add("Position", Position_Element.Data.ToResoniteLinkField());
-members.Add("Textures", new ResoniteLink.SyncList()
-{
-    Elements = Textures.Data.ConvertList(m => m.Data.ToResoniteReference(context))
-});
+members.Add("FirstTexture", FirstTexture_Element.ToLinkReference(context));
+members.Add("SecondTexture", SecondTexture_Element.ToLinkReference(context));
+members.Add("Lerp", Lerp_Element.ToLinkReference(context));
+members.Add("Position", Position_Element.ToLinkField(context));
+members.Add("Textures", Textures.ToLinkList(context, m => m.ToLinkReference(context)));
 }
 
 }

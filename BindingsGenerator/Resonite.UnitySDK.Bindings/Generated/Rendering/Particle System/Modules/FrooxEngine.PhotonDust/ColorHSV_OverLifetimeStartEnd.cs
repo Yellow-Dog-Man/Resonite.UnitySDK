@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.PhotonDust.ColorHSV_OverLifetimeStartEnd
-// Generated on: čtvrtek 26. února 2026 10:04:38
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:28:04
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -37,12 +37,12 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("StartHue", StartHue_Element.Data.ToResoniteLinkField());
-members.Add("StartSaturation", StartSaturation_Element.Data.ToResoniteLinkField());
-members.Add("StartValue", StartValue_Element.Data.ToResoniteLinkField());
-members.Add("EndHue", EndHue_Element.Data.ToResoniteLinkField());
-members.Add("EndSaturation", EndSaturation_Element.Data.ToResoniteLinkField());
-members.Add("EndValue", EndValue_Element.Data.ToResoniteLinkField());
+members.Add("StartHue", StartHue_Element.ToLinkField(context));
+members.Add("StartSaturation", StartSaturation_Element.ToLinkField(context));
+members.Add("StartValue", StartValue_Element.ToLinkField(context));
+members.Add("EndHue", EndHue_Element.ToLinkField(context));
+members.Add("EndSaturation", EndSaturation_Element.ToLinkField(context));
+members.Add("EndValue", EndValue_Element.ToLinkField(context));
 }
 
 }

@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.PBS_DistanceLerpMaterial
-// Generated on: čtvrtek 26. února 2026 10:03:34
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:26:47
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -78,36 +78,33 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("TextureScale", TextureScale_Element.Data.ToResoniteLinkField());
-members.Add("TextureOffset", TextureOffset_Element.Data.ToResoniteLinkField());
-members.Add("AlbedoColor", AlbedoColor_Element.Data.ToResoniteLinkField());
-members.Add("AlbedoTexture", AlbedoTexture_Element.Data.ToResoniteReference(context));
-members.Add("EmissiveColor", EmissiveColor_Element.Data.ToResoniteLinkField());
-members.Add("EmissiveMap", EmissiveMap_Element.Data.ToResoniteReference(context));
-members.Add("NormalMap", NormalMap_Element.Data.ToResoniteReference(context));
-members.Add("NormalScale", NormalScale_Element.Data.ToResoniteLinkField());
-members.Add("OcclusionMap", OcclusionMap_Element.Data.ToResoniteReference(context));
-members.Add("GridSize", GridSize_Element.Data.ToResoniteLinkField());
-members.Add("GridOffset", GridOffset_Element.Data.ToResoniteLinkField());
-members.Add("DisplaceFrom", DisplaceFrom_Element.Data.ToResoniteLinkField());
-members.Add("DisplaceTo", DisplaceTo_Element.Data.ToResoniteLinkField());
-members.Add("DisplaceMagnitudeFrom", DisplaceMagnitudeFrom_Element.Data.ToResoniteLinkField());
-members.Add("DisplaceMagnitudeTo", DisplaceMagnitudeTo_Element.Data.ToResoniteLinkField());
-members.Add("EmissionFrom", EmissionFrom_Element.Data.ToResoniteLinkField());
-members.Add("EmissionTo", EmissionTo_Element.Data.ToResoniteLinkField());
-members.Add("EmissionColorFrom", EmissionColorFrom_Element.Data.ToResoniteLinkField());
-members.Add("EmissionColorTo", EmissionColorTo_Element.Data.ToResoniteLinkField());
-members.Add("OverrideDisplacementDirection", OverrideDisplacementDirection_Element.Data.ToResoniteLinkField());
-members.Add("LocalSpace", LocalSpace_Element.Data.ToResoniteLinkField());
-members.Add("Points", new ResoniteLink.SyncList()
-{
-    Elements = Points.Data.ConvertList(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers(context) })
-});
-members.Add("Culling", Culling_Element.Data.ToResoniteLinkField());
-members.Add("Transparent", Transparent_Element.Data.ToResoniteLinkField());
-members.Add("OffsetFactor", OffsetFactor_Element.Data.ToResoniteLinkField());
-members.Add("OffsetUnits", OffsetUnits_Element.Data.ToResoniteLinkField());
-members.Add("RenderQueue", RenderQueue_Element.Data.ToResoniteLinkField());
+members.Add("TextureScale", TextureScale_Element.ToLinkField(context));
+members.Add("TextureOffset", TextureOffset_Element.ToLinkField(context));
+members.Add("AlbedoColor", AlbedoColor_Element.ToLinkField(context));
+members.Add("AlbedoTexture", AlbedoTexture_Element.ToLinkReference(context));
+members.Add("EmissiveColor", EmissiveColor_Element.ToLinkField(context));
+members.Add("EmissiveMap", EmissiveMap_Element.ToLinkReference(context));
+members.Add("NormalMap", NormalMap_Element.ToLinkReference(context));
+members.Add("NormalScale", NormalScale_Element.ToLinkField(context));
+members.Add("OcclusionMap", OcclusionMap_Element.ToLinkReference(context));
+members.Add("GridSize", GridSize_Element.ToLinkField(context));
+members.Add("GridOffset", GridOffset_Element.ToLinkField(context));
+members.Add("DisplaceFrom", DisplaceFrom_Element.ToLinkField(context));
+members.Add("DisplaceTo", DisplaceTo_Element.ToLinkField(context));
+members.Add("DisplaceMagnitudeFrom", DisplaceMagnitudeFrom_Element.ToLinkField(context));
+members.Add("DisplaceMagnitudeTo", DisplaceMagnitudeTo_Element.ToLinkField(context));
+members.Add("EmissionFrom", EmissionFrom_Element.ToLinkField(context));
+members.Add("EmissionTo", EmissionTo_Element.ToLinkField(context));
+members.Add("EmissionColorFrom", EmissionColorFrom_Element.ToLinkField(context));
+members.Add("EmissionColorTo", EmissionColorTo_Element.ToLinkField(context));
+members.Add("OverrideDisplacementDirection", OverrideDisplacementDirection_Element.ToLinkField(context));
+members.Add("LocalSpace", LocalSpace_Element.ToLinkField(context));
+members.Add("Points", Points.ToLinkList(context, m => m.ToLinkSyncObject(context)));
+members.Add("Culling", Culling_Element.ToLinkField(context));
+members.Add("Transparent", Transparent_Element.ToLinkField(context));
+members.Add("OffsetFactor", OffsetFactor_Element.ToLinkField(context));
+members.Add("OffsetUnits", OffsetUnits_Element.ToLinkField(context));
+members.Add("RenderQueue", RenderQueue_Element.ToLinkField(context));
 }
 
 }

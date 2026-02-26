@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.Draggable
-// Generated on: čtvrtek 26. února 2026 10:04:42
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:28:08
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -51,19 +51,19 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("EditModeOnly", EditModeOnly_Element.Data.ToResoniteLinkField());
-members.Add("AllowSteal", AllowSteal_Element.Data.ToResoniteLinkField());
-members.Add("DropOnDisable", DropOnDisable_Element.Data.ToResoniteLinkField());
-members.Add("DontDrive", DontDrive_Element.Data.ToResoniteLinkField());
-members.Add("AllowOnlyPhysicalGrab", AllowOnlyPhysicalGrab_Element.Data.ToResoniteLinkField());
-members.Add("ActiveUserFilter", ActiveUserFilter_Element.Data.ToResoniteLinkField());
-members.Add("_grabber", _grabber_Element.Data.ToResoniteReference(context));
-members.Add("_holdSlot", _holdSlot_Element.Data.ToResoniteReference(context));
-members.Add("_pos", _pos_Element.Data.ToResoniteReference(context));
-members.Add("_rot", _rot_Element.Data.ToResoniteReference(context));
-members.Add("_scl", _scl_Element.Data.ToResoniteReference(context));
-members.Add("__legacyActiveUserRootOnly", __legacyActiveUserRootOnly_Element.Data.ToResoniteLinkField());
-members.Add("GrabPriority", GrabPriority_Element.Data.ToResoniteLinkField());
+members.Add("EditModeOnly", EditModeOnly_Element.ToLinkField(context));
+members.Add("AllowSteal", AllowSteal_Element.ToLinkField(context));
+members.Add("DropOnDisable", DropOnDisable_Element.ToLinkField(context));
+members.Add("DontDrive", DontDrive_Element.ToLinkField(context));
+members.Add("AllowOnlyPhysicalGrab", AllowOnlyPhysicalGrab_Element.ToLinkField(context));
+members.Add("ActiveUserFilter", ActiveUserFilter_Element.ToLinkField(context));
+members.Add("_grabber", _grabber_Element.ToLinkReference(context));
+members.Add("_holdSlot", _holdSlot_Element.ToLinkReference(context));
+members.Add("_pos", _pos_Element.ToLinkReference(context));
+members.Add("_rot", _rot_Element.ToLinkReference(context));
+members.Add("_scl", _scl_Element.ToLinkReference(context));
+members.Add("__legacyActiveUserRootOnly", __legacyActiveUserRootOnly_Element.ToLinkField(context));
+members.Add("GrabPriority", GrabPriority_Element.ToLinkField(context));
 }
 
 }

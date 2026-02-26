@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.AudioInputDeviceSelection
-// Generated on: čtvrtek 26. února 2026 10:04:43
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:28:09
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -41,14 +41,14 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("SelectedDeviceIndex", SelectedDeviceIndex_Element.Data.ToResoniteLinkField());
-members.Add("SelectedDeviceName", SelectedDeviceName_Element.Data.ToResoniteLinkField());
-members.Add("UseFilteredData", UseFilteredData_Element.Data.ToResoniteLinkField());
-members.Add("_deviceButtonRoot", _deviceButtonRoot_Element.Data.ToResoniteReference(context));
-members.Add("_audioStream", _audioStream_Element.Data.ToResoniteReference(context));
-members.Add("_audioOutput", _audioOutput_Element.Data.ToResoniteReference(context));
-members.Add("_deviceVolume", _deviceVolume_Element.Data.ToResoniteReference(context));
-members.Add("_volumeBar", _volumeBar_Element.Data.ToResoniteReference(context));
+members.Add("SelectedDeviceIndex", SelectedDeviceIndex_Element.ToLinkField(context));
+members.Add("SelectedDeviceName", SelectedDeviceName_Element.ToLinkField(context));
+members.Add("UseFilteredData", UseFilteredData_Element.ToLinkField(context));
+members.Add("_deviceButtonRoot", _deviceButtonRoot_Element.ToLinkReference(context));
+members.Add("_audioStream", _audioStream_Element.ToLinkReference(context));
+members.Add("_audioOutput", _audioOutput_Element.ToLinkReference(context));
+members.Add("_deviceVolume", _deviceVolume_Element.ToLinkReference(context));
+members.Add("_volumeBar", _volumeBar_Element.ToLinkReference(context));
 }
 
 }

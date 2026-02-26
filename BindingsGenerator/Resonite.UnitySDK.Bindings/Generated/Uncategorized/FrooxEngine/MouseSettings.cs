@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.MouseSettings
-// Generated on: čtvrtek 26. února 2026 10:04:47
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:28:12
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -37,12 +37,12 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("MouseSensitivity", MouseSensitivity_Element.Data.ToResoniteLinkField());
-members.Add("ScrollWheelGrabMoveSpeed", ScrollWheelGrabMoveSpeed_Element.Data.ToResoniteLinkField());
-members.Add("MouseLookSpeed", MouseLookSpeed_Element.Data.ToResoniteLinkField());
-members.Add("MousePanSpeed", MousePanSpeed_Element.Data.ToResoniteLinkField());
-members.Add("MouseRotateSpeed", MouseRotateSpeed_Element.Data.ToResoniteLinkField());
-members.Add("MouseFreeformRotateSpeed", MouseFreeformRotateSpeed_Element.Data.ToResoniteLinkField());
+members.Add("MouseSensitivity", MouseSensitivity_Element.ToLinkField(context));
+members.Add("ScrollWheelGrabMoveSpeed", ScrollWheelGrabMoveSpeed_Element.ToLinkField(context));
+members.Add("MouseLookSpeed", MouseLookSpeed_Element.ToLinkField(context));
+members.Add("MousePanSpeed", MousePanSpeed_Element.ToLinkField(context));
+members.Add("MouseRotateSpeed", MouseRotateSpeed_Element.ToLinkField(context));
+members.Add("MouseFreeformRotateSpeed", MouseFreeformRotateSpeed_Element.ToLinkField(context));
 }
 
 }

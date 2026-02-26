@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.FootstepSoundDefinition
-// Generated on: čtvrtek 26. února 2026 10:03:39
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:26:56
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -34,14 +34,11 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("ParentUnder", ParentUnder_Element.Data.ToResoniteReference(context));
-members.Add("MinDistance", MinDistance_Element.Data.ToResoniteLinkField());
-members.Add("MaxDistance", MaxDistance_Element.Data.ToResoniteLinkField());
-members.Add("RolloffMode", RolloffMode_Element.Data.ToResoniteLinkField());
-members.Add("Clips", new ResoniteLink.SyncList()
-{
-    Elements = Clips.Data.ConvertList(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers(context) })
-});
+members.Add("ParentUnder", ParentUnder_Element.ToLinkReference(context));
+members.Add("MinDistance", MinDistance_Element.ToLinkField(context));
+members.Add("MaxDistance", MaxDistance_Element.ToLinkField(context));
+members.Add("RolloffMode", RolloffMode_Element.ToLinkField(context));
+members.Add("Clips", Clips.ToLinkList(context, m => m.ToLinkSyncObject(context)));
 }
 
 }

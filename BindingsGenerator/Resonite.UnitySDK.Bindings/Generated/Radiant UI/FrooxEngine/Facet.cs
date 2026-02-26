@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.Facet
-// Generated on: čtvrtek 26. února 2026 10:04:35
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:28:01
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -41,21 +41,15 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("MinWidth", MinWidth_Element.Data.ToResoniteLinkField());
-members.Add("MaxWidth", MaxWidth_Element.Data.ToResoniteLinkField());
-members.Add("MinHeight", MinHeight_Element.Data.ToResoniteLinkField());
-members.Add("MaxHeight", MaxHeight_Element.Data.ToResoniteLinkField());
-members.Add("LastPlacedSize", LastPlacedSize_Element.Data.ToResoniteLinkField());
-members.Add("PreferredSizes", new ResoniteLink.SyncList()
-{
-    Elements = PreferredSizes.Data.ConvertList(m => m.Data.ToResoniteLinkField())
-});
-members.Add("AllowedAspectRatios", new ResoniteLink.SyncList()
-{
-    Elements = AllowedAspectRatios.Data.ConvertList(m => m.Data.ToResoniteLinkField())
-});
-members.Add("IsStandalone", IsStandalone_Element.Data.ToResoniteLinkField());
-members.Add("Canvas", Canvas_Element.Data.ToResoniteReference(context));
+members.Add("MinWidth", MinWidth_Element.ToLinkField(context));
+members.Add("MaxWidth", MaxWidth_Element.ToLinkField(context));
+members.Add("MinHeight", MinHeight_Element.ToLinkField(context));
+members.Add("MaxHeight", MaxHeight_Element.ToLinkField(context));
+members.Add("LastPlacedSize", LastPlacedSize_Element.ToLinkField(context));
+members.Add("PreferredSizes", PreferredSizes.ToLinkList(context, m => m.ToLinkField(context)));
+members.Add("AllowedAspectRatios", AllowedAspectRatios.ToLinkList(context, m => m.ToLinkField(context)));
+members.Add("IsStandalone", IsStandalone_Element.ToLinkField(context));
+members.Add("Canvas", Canvas_Element.ToLinkReference(context));
 }
 
 }

@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.SphereStartEndValueSpatialVariable<>
-// Generated on: čtvrtek 26. února 2026 10:03:39
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:26:55
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -36,11 +36,11 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("StartValue", StartValue_Element.Data.ToResoniteLinkField());
-members.Add("EndValue", EndValue_Element.Data.ToResoniteLinkField());
-members.Add("StartDistance", StartDistance_Element.Data.ToResoniteLinkField());
-members.Add("EndDistance", EndDistance_Element.Data.ToResoniteLinkField());
-members.Add("Mode", Mode_Element.Data.ToResoniteLinkField());
+members.Add("StartValue", StartValue_Element.ToLinkField(context));
+members.Add("EndValue", EndValue_Element.ToLinkField(context));
+members.Add("StartDistance", StartDistance_Element.ToLinkField(context));
+members.Add("EndDistance", EndDistance_Element.ToLinkField(context));
+members.Add("Mode", Mode_Element.ToLinkField(context));
 }
 
 }

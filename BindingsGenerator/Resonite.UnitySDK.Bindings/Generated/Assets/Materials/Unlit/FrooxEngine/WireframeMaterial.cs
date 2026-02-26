@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.WireframeMaterial
-// Generated on: čtvrtek 26. února 2026 10:03:35
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:26:49
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -65,26 +65,26 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Thickness", Thickness_Element.Data.ToResoniteLinkField());
-members.Add("ScreenSpace", ScreenSpace_Element.Data.ToResoniteLinkField());
-members.Add("LineColor", LineColor_Element.Data.ToResoniteLinkField());
-members.Add("FillColor", FillColor_Element.Data.ToResoniteLinkField());
-members.Add("InnerLineColor", InnerLineColor_Element.Data.ToResoniteLinkField());
-members.Add("InnerFillColor", InnerFillColor_Element.Data.ToResoniteLinkField());
-members.Add("UseFresnel", UseFresnel_Element.Data.ToResoniteLinkField());
-members.Add("LineFarColor", LineFarColor_Element.Data.ToResoniteLinkField());
-members.Add("FillFarColor", FillFarColor_Element.Data.ToResoniteLinkField());
-members.Add("InnerLineFarColor", InnerLineFarColor_Element.Data.ToResoniteLinkField());
-members.Add("InnerFillFarColor", InnerFillFarColor_Element.Data.ToResoniteLinkField());
-members.Add("Exp", Exp_Element.Data.ToResoniteLinkField());
-members.Add("Texture", Texture_Element.Data.ToResoniteReference(context));
-members.Add("ZWrite", ZWrite_Element.Data.ToResoniteLinkField());
-members.Add("DoubleSided", DoubleSided_Element.Data.ToResoniteLinkField());
-members.Add("OffsetFactor", OffsetFactor_Element.Data.ToResoniteLinkField());
-members.Add("OffsetUnits", OffsetUnits_Element.Data.ToResoniteLinkField());
-members.Add("RenderQueue", RenderQueue_Element.Data.ToResoniteLinkField());
-members.Add("_regular", _regular_Element.Data.ToResoniteReference(context));
-members.Add("_regularDoubleSided", _regularDoubleSided_Element.Data.ToResoniteReference(context));
+members.Add("Thickness", Thickness_Element.ToLinkField(context));
+members.Add("ScreenSpace", ScreenSpace_Element.ToLinkField(context));
+members.Add("LineColor", LineColor_Element.ToLinkField(context));
+members.Add("FillColor", FillColor_Element.ToLinkField(context));
+members.Add("InnerLineColor", InnerLineColor_Element.ToLinkField(context));
+members.Add("InnerFillColor", InnerFillColor_Element.ToLinkField(context));
+members.Add("UseFresnel", UseFresnel_Element.ToLinkField(context));
+members.Add("LineFarColor", LineFarColor_Element.ToLinkField(context));
+members.Add("FillFarColor", FillFarColor_Element.ToLinkField(context));
+members.Add("InnerLineFarColor", InnerLineFarColor_Element.ToLinkField(context));
+members.Add("InnerFillFarColor", InnerFillFarColor_Element.ToLinkField(context));
+members.Add("Exp", Exp_Element.ToLinkField(context));
+members.Add("Texture", Texture_Element.ToLinkReference(context));
+members.Add("ZWrite", ZWrite_Element.ToLinkField(context));
+members.Add("DoubleSided", DoubleSided_Element.ToLinkField(context));
+members.Add("OffsetFactor", OffsetFactor_Element.ToLinkField(context));
+members.Add("OffsetUnits", OffsetUnits_Element.ToLinkField(context));
+members.Add("RenderQueue", RenderQueue_Element.ToLinkField(context));
+members.Add("_regular", _regular_Element.ToLinkReference(context));
+members.Add("_regularDoubleSided", _regularDoubleSided_Element.ToLinkReference(context));
 }
 
 }

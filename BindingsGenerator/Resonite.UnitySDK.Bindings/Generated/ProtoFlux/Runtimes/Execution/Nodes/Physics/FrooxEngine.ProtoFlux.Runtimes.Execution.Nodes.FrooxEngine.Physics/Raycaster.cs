@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [ProtoFluxBindings]FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Physics.Raycaster
-// Generated on: čtvrtek 26. února 2026 10:04:29
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:27:53
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -43,18 +43,18 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Origin", Origin_Element.Data.ToResoniteReference(context));
-members.Add("Direction", Direction_Element.Data.ToResoniteReference(context));
-members.Add("MaxDistance", MaxDistance_Element.Data.ToResoniteReference(context));
-members.Add("HitTriggers", HitTriggers_Element.Data.ToResoniteReference(context));
-members.Add("UsersOnly", UsersOnly_Element.Data.ToResoniteReference(context));
-members.Add("Root", Root_Element.Data.ToResoniteReference(context));
-members.Add("HasHit", new ResoniteLink.EmptyElement());
-members.Add("HitCollider", new ResoniteLink.EmptyElement());
-members.Add("HitDistance", new ResoniteLink.EmptyElement());
-members.Add("HitPoint", new ResoniteLink.EmptyElement());
-members.Add("HitNormal", new ResoniteLink.EmptyElement());
-members.Add("HitTriangleIndex", new ResoniteLink.EmptyElement());
+members.Add("Origin", Origin_Element.ToLinkReference(context));
+members.Add("Direction", Direction_Element.ToLinkReference(context));
+members.Add("MaxDistance", MaxDistance_Element.ToLinkReference(context));
+members.Add("HitTriggers", HitTriggers_Element.ToLinkReference(context));
+members.Add("UsersOnly", UsersOnly_Element.ToLinkReference(context));
+members.Add("Root", Root_Element.ToLinkReference(context));
+members.Add("HasHit", HasHit.ToLinkEmpty(context));
+members.Add("HitCollider", HitCollider.ToLinkEmpty(context));
+members.Add("HitDistance", HitDistance.ToLinkEmpty(context));
+members.Add("HitPoint", HitPoint.ToLinkEmpty(context));
+members.Add("HitNormal", HitNormal.ToLinkEmpty(context));
+members.Add("HitTriangleIndex", HitTriangleIndex.ToLinkEmpty(context));
 }
 
 }

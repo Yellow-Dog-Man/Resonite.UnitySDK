@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.AccountMigrationStatus
-// Generated on: čtvrtek 26. února 2026 10:03:37
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:26:52
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -73,30 +73,30 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("TaskId", TaskId_Element.Data.ToResoniteLinkField());
-members.Add("Exists", Exists_Element.Data.ToResoniteLinkField());
-members.Add("Name", Name_Element.Data.ToResoniteLinkField());
-members.Add("Description", Description_Element.Data.ToResoniteLinkField());
-members.Add("State", State_Element.Data.ToResoniteLinkField());
-members.Add("EstimatedQueuePosition", EstimatedQueuePosition_Element.Data.ToResoniteLinkField());
-members.Add("StartCount", StartCount_Element.Data.ToResoniteLinkField());
-members.Add("CreatedOn", CreatedOn_Element.Data.ToResoniteLinkField());
-members.Add("StartedOn", StartedOn_Element.Data.ToResoniteLinkField());
-members.Add("CompletedOn", CompletedOn_Element.Data.ToResoniteLinkField());
-members.Add("RecordsPerMinute", RecordsPerMinute_Element.Data.ToResoniteLinkField());
-members.Add("CurrentlyMigrating", CurrentlyMigrating_Element.Data.ToResoniteLinkField());
-members.Add("CurrentItem", CurrentItem_Element.Data.ToResoniteLinkField());
-members.Add("TotalRecordCount", TotalRecordCount_Element.Data.ToResoniteLinkField());
-members.Add("TotalMigratedRecordCount", TotalMigratedRecordCount_Element.Data.ToResoniteLinkField());
-members.Add("TotalFailedRecordCount", TotalFailedRecordCount_Element.Data.ToResoniteLinkField());
-members.Add("TotalMigratedVariableCount", TotalMigratedVariableCount_Element.Data.ToResoniteLinkField());
-members.Add("TotalMigratedVariableDefinitionCount", TotalMigratedVariableDefinitionCount_Element.Data.ToResoniteLinkField());
-members.Add("TotalContactCount", TotalContactCount_Element.Data.ToResoniteLinkField());
-members.Add("MigratedContactCount", MigratedContactCount_Element.Data.ToResoniteLinkField());
-members.Add("MigratedMessageCount", MigratedMessageCount_Element.Data.ToResoniteLinkField());
-members.Add("TotalGroupCount", TotalGroupCount_Element.Data.ToResoniteLinkField());
-members.Add("MigratedGroupCount", MigratedGroupCount_Element.Data.ToResoniteLinkField());
-members.Add("TotalMigratedMemberCount", TotalMigratedMemberCount_Element.Data.ToResoniteLinkField());
+members.Add("TaskId", TaskId_Element.ToLinkField(context));
+members.Add("Exists", Exists_Element.ToLinkField(context));
+members.Add("Name", Name_Element.ToLinkField(context));
+members.Add("Description", Description_Element.ToLinkField(context));
+members.Add("State", State_Element.ToLinkField(context));
+members.Add("EstimatedQueuePosition", EstimatedQueuePosition_Element.ToLinkField(context));
+members.Add("StartCount", StartCount_Element.ToLinkField(context));
+members.Add("CreatedOn", CreatedOn_Element.ToLinkField(context));
+members.Add("StartedOn", StartedOn_Element.ToLinkField(context));
+members.Add("CompletedOn", CompletedOn_Element.ToLinkField(context));
+members.Add("RecordsPerMinute", RecordsPerMinute_Element.ToLinkField(context));
+members.Add("CurrentlyMigrating", CurrentlyMigrating_Element.ToLinkField(context));
+members.Add("CurrentItem", CurrentItem_Element.ToLinkField(context));
+members.Add("TotalRecordCount", TotalRecordCount_Element.ToLinkField(context));
+members.Add("TotalMigratedRecordCount", TotalMigratedRecordCount_Element.ToLinkField(context));
+members.Add("TotalFailedRecordCount", TotalFailedRecordCount_Element.ToLinkField(context));
+members.Add("TotalMigratedVariableCount", TotalMigratedVariableCount_Element.ToLinkField(context));
+members.Add("TotalMigratedVariableDefinitionCount", TotalMigratedVariableDefinitionCount_Element.ToLinkField(context));
+members.Add("TotalContactCount", TotalContactCount_Element.ToLinkField(context));
+members.Add("MigratedContactCount", MigratedContactCount_Element.ToLinkField(context));
+members.Add("MigratedMessageCount", MigratedMessageCount_Element.ToLinkField(context));
+members.Add("TotalGroupCount", TotalGroupCount_Element.ToLinkField(context));
+members.Add("MigratedGroupCount", MigratedGroupCount_Element.ToLinkField(context));
+members.Add("TotalMigratedMemberCount", TotalMigratedMemberCount_Element.ToLinkField(context));
 }
 
 }

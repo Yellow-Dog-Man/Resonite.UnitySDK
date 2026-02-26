@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.MeshAssetMetadata
-// Generated on: čtvrtek 26. února 2026 10:03:36
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:26:52
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -53,20 +53,20 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Mesh", Mesh_Element.Data.ToResoniteReference(context));
-members.Add("VertexCount", VertexCount_Element.Data.ToResoniteLinkField());
-members.Add("TriangleCount", TriangleCount_Element.Data.ToResoniteLinkField());
-members.Add("PointCount", PointCount_Element.Data.ToResoniteLinkField());
-members.Add("SubmeshCount", SubmeshCount_Element.Data.ToResoniteLinkField());
-members.Add("BoneCount", BoneCount_Element.Data.ToResoniteLinkField());
-members.Add("BlendshapeCount", BlendshapeCount_Element.Data.ToResoniteLinkField());
-members.Add("HasNormals", HasNormals_Element.Data.ToResoniteLinkField());
-members.Add("HasTangents", HasTangents_Element.Data.ToResoniteLinkField());
-members.Add("HasVertexColors", HasVertexColors_Element.Data.ToResoniteLinkField());
-members.Add("HasUV0s", HasUV0s_Element.Data.ToResoniteLinkField());
-members.Add("HasUV1s", HasUV1s_Element.Data.ToResoniteLinkField());
-members.Add("HasUV2s", HasUV2s_Element.Data.ToResoniteLinkField());
-members.Add("HasUV3s", HasUV3s_Element.Data.ToResoniteLinkField());
+members.Add("Mesh", Mesh_Element.ToLinkReference(context));
+members.Add("VertexCount", VertexCount_Element.ToLinkField(context));
+members.Add("TriangleCount", TriangleCount_Element.ToLinkField(context));
+members.Add("PointCount", PointCount_Element.ToLinkField(context));
+members.Add("SubmeshCount", SubmeshCount_Element.ToLinkField(context));
+members.Add("BoneCount", BoneCount_Element.ToLinkField(context));
+members.Add("BlendshapeCount", BlendshapeCount_Element.ToLinkField(context));
+members.Add("HasNormals", HasNormals_Element.ToLinkField(context));
+members.Add("HasTangents", HasTangents_Element.ToLinkField(context));
+members.Add("HasVertexColors", HasVertexColors_Element.ToLinkField(context));
+members.Add("HasUV0s", HasUV0s_Element.ToLinkField(context));
+members.Add("HasUV1s", HasUV1s_Element.ToLinkField(context));
+members.Add("HasUV2s", HasUV2s_Element.ToLinkField(context));
+members.Add("HasUV3s", HasUV3s_Element.ToLinkField(context));
 }
 
 }

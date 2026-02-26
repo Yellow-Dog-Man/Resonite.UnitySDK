@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.PhotonDust.LegacyAlignmentSizingAdapter
-// Generated on: čtvrtek 26. února 2026 10:04:46
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:28:11
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -59,23 +59,23 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("LengthScale", LengthScale_Element.Data.ToResoniteLinkField());
-members.Add("VelocityScale", VelocityScale_Element.Data.ToResoniteLinkField());
-members.Add("Alignment", Alignment_Element.Data.ToResoniteLinkField());
-members.Add("ParticleMesh", ParticleMesh_Element.Data.ToResoniteReference(context));
-members.Add("UsingStretch", UsingStretch_Element.Data.ToResoniteLinkField());
-members.Add("RotationSimulator", RotationSimulator_Element.Data.ToResoniteReference(context));
-members.Add("OrientByVelocity", OrientByVelocity_Element.Data.ToResoniteReference(context));
-members.Add("PivotModule", PivotModule_Element.Data.ToResoniteReference(context));
-members.Add("UseLocalRotation", UseLocalRotation_Element.Data.ToResoniteReference(context));
-members.Add("SizeModifierEnabled", SizeModifierEnabled_Element.Data.ToResoniteReference(context));
-members.Add("SizeOffsetByvelocityEnabled", SizeOffsetByvelocityEnabled_Element.Data.ToResoniteReference(context));
-members.Add("OrientUp", OrientUp_Element.Data.ToResoniteReference(context));
-members.Add("LengthSizeMultiplier", LengthSizeMultiplier_Element.Data.ToResoniteReference(context));
-members.Add("VelocitySizeMultiplier", VelocitySizeMultiplier_Element.Data.ToResoniteReference(context));
-members.Add("PivotMultiplier", PivotMultiplier_Element.Data.ToResoniteReference(context));
-members.Add("BillboardAlignment", BillboardAlignment_Element.Data.ToResoniteReference(context));
-members.Add("MeshAlignment", MeshAlignment_Element.Data.ToResoniteReference(context));
+members.Add("LengthScale", LengthScale_Element.ToLinkField(context));
+members.Add("VelocityScale", VelocityScale_Element.ToLinkField(context));
+members.Add("Alignment", Alignment_Element.ToLinkField(context));
+members.Add("ParticleMesh", ParticleMesh_Element.ToLinkReference(context));
+members.Add("UsingStretch", UsingStretch_Element.ToLinkField(context));
+members.Add("RotationSimulator", RotationSimulator_Element.ToLinkReference(context));
+members.Add("OrientByVelocity", OrientByVelocity_Element.ToLinkReference(context));
+members.Add("PivotModule", PivotModule_Element.ToLinkReference(context));
+members.Add("UseLocalRotation", UseLocalRotation_Element.ToLinkReference(context));
+members.Add("SizeModifierEnabled", SizeModifierEnabled_Element.ToLinkReference(context));
+members.Add("SizeOffsetByvelocityEnabled", SizeOffsetByvelocityEnabled_Element.ToLinkReference(context));
+members.Add("OrientUp", OrientUp_Element.ToLinkReference(context));
+members.Add("LengthSizeMultiplier", LengthSizeMultiplier_Element.ToLinkReference(context));
+members.Add("VelocitySizeMultiplier", VelocitySizeMultiplier_Element.ToLinkReference(context));
+members.Add("PivotMultiplier", PivotMultiplier_Element.ToLinkReference(context));
+members.Add("BillboardAlignment", BillboardAlignment_Element.ToLinkReference(context));
+members.Add("MeshAlignment", MeshAlignment_Element.ToLinkReference(context));
 }
 
 }

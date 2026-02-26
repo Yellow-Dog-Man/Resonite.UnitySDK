@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [ProtoFluxBindings]FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.Binary.ComposeBits_sbyte
-// Generated on: čtvrtek 26. února 2026 10:04:34
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:27:59
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -41,14 +41,14 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Bit0", Bit0_Element.Data.ToResoniteReference(context));
-members.Add("Bit1", Bit1_Element.Data.ToResoniteReference(context));
-members.Add("Bit2", Bit2_Element.Data.ToResoniteReference(context));
-members.Add("Bit3", Bit3_Element.Data.ToResoniteReference(context));
-members.Add("Bit4", Bit4_Element.Data.ToResoniteReference(context));
-members.Add("Bit5", Bit5_Element.Data.ToResoniteReference(context));
-members.Add("Bit6", Bit6_Element.Data.ToResoniteReference(context));
-members.Add("Bit7", Bit7_Element.Data.ToResoniteReference(context));
+members.Add("Bit0", Bit0_Element.ToLinkReference(context));
+members.Add("Bit1", Bit1_Element.ToLinkReference(context));
+members.Add("Bit2", Bit2_Element.ToLinkReference(context));
+members.Add("Bit3", Bit3_Element.ToLinkReference(context));
+members.Add("Bit4", Bit4_Element.ToLinkReference(context));
+members.Add("Bit5", Bit5_Element.ToLinkReference(context));
+members.Add("Bit6", Bit6_Element.ToLinkReference(context));
+members.Add("Bit7", Bit7_Element.ToLinkReference(context));
 }
 
 }

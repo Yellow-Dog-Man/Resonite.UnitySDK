@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.ReflectionProbe
-// Generated on: čtvrtek 26. února 2026 10:04:29
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:27:54
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -62,28 +62,25 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("ProbeType", ProbeType_Element.Data.ToResoniteLinkField());
-members.Add("Importance", Importance_Element.Data.ToResoniteLinkField());
-members.Add("Intensity", Intensity_Element.Data.ToResoniteLinkField());
-members.Add("BlendDistance", BlendDistance_Element.Data.ToResoniteLinkField());
-members.Add("BoxSize", BoxSize_Element.Data.ToResoniteLinkField());
-members.Add("BoxProjection", BoxProjection_Element.Data.ToResoniteLinkField());
-members.Add("BakedCubemap", BakedCubemap_Element.Data.ToResoniteReference(context));
-members.Add("ChangesSources", new ResoniteLink.SyncList()
-{
-    Elements = ChangesSources.Data.ConvertList(m => m.Data.ToResoniteReference(context))
-});
-members.Add("TimeSlicing", TimeSlicing_Element.Data.ToResoniteLinkField());
-members.Add("Resolution", Resolution_Element.Data.ToResoniteLinkField());
-members.Add("HDR", HDR_Element.Data.ToResoniteLinkField());
-members.Add("ShadowDistance", ShadowDistance_Element.Data.ToResoniteLinkField());
-members.Add("ClearFlags", ClearFlags_Element.Data.ToResoniteLinkField());
-members.Add("BackgroundColor", BackgroundColor_Element.Data.ToResoniteLinkField());
-members.Add("NearClip", NearClip_Element.Data.ToResoniteLinkField());
-members.Add("FarClip", FarClip_Element.Data.ToResoniteLinkField());
-members.Add("SkyboxOnly", SkyboxOnly_Element.Data.ToResoniteLinkField());
-members.Add("ShowDebugVisuals", ShowDebugVisuals_Element.Data.ToResoniteLinkField());
-members.Add("_debugVisual", _debugVisual_Element.Data.ToResoniteReference(context));
+members.Add("ProbeType", ProbeType_Element.ToLinkField(context));
+members.Add("Importance", Importance_Element.ToLinkField(context));
+members.Add("Intensity", Intensity_Element.ToLinkField(context));
+members.Add("BlendDistance", BlendDistance_Element.ToLinkField(context));
+members.Add("BoxSize", BoxSize_Element.ToLinkField(context));
+members.Add("BoxProjection", BoxProjection_Element.ToLinkField(context));
+members.Add("BakedCubemap", BakedCubemap_Element.ToLinkReference(context));
+members.Add("ChangesSources", ChangesSources.ToLinkList(context, m => m.ToLinkReference(context)));
+members.Add("TimeSlicing", TimeSlicing_Element.ToLinkField(context));
+members.Add("Resolution", Resolution_Element.ToLinkField(context));
+members.Add("HDR", HDR_Element.ToLinkField(context));
+members.Add("ShadowDistance", ShadowDistance_Element.ToLinkField(context));
+members.Add("ClearFlags", ClearFlags_Element.ToLinkField(context));
+members.Add("BackgroundColor", BackgroundColor_Element.ToLinkField(context));
+members.Add("NearClip", NearClip_Element.ToLinkField(context));
+members.Add("FarClip", FarClip_Element.ToLinkField(context));
+members.Add("SkyboxOnly", SkyboxOnly_Element.ToLinkField(context));
+members.Add("ShowDebugVisuals", ShowDebugVisuals_Element.ToLinkField(context));
+members.Add("_debugVisual", _debugVisual_Element.ToLinkReference(context));
 }
 
 }

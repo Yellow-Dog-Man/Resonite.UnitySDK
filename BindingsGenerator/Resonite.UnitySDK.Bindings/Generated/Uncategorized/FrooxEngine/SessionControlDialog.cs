@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.SessionControlDialog
-// Generated on: čtvrtek 26. února 2026 10:04:48
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:28:13
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -140,74 +140,65 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("ActiveTab", ActiveTab_Element.Data.ToResoniteLinkField());
-members.Add("_contentRoot", _contentRoot_Element.Data.ToResoniteReference(context));
-members.Add("_worldName", _worldName_Element.Data.ToResoniteReference(context));
-members.Add("_maxUsers", _maxUsers_Element.Data.ToResoniteReference(context));
-members.Add("_awayKickEnabled", _awayKickEnabled_Element.Data.ToResoniteReference(context));
-members.Add("_awayKickMinutes", _awayKickMinutes_Element.Data.ToResoniteReference(context));
-members.Add("_autosaveEnabled", _autosaveEnabled_Element.Data.ToResoniteReference(context));
-members.Add("_autosaveMinutes", _autosaveMinutes_Element.Data.ToResoniteReference(context));
-members.Add("_autocleanEnabled", _autocleanEnabled_Element.Data.ToResoniteReference(context));
-members.Add("_autocleanMinutes", _autocleanMinutes_Element.Data.ToResoniteReference(context));
-members.Add("_mobileFriendly", _mobileFriendly_Element.Data.ToResoniteReference(context));
-members.Add("_hideFromListing", _hideFromListing_Element.Data.ToResoniteReference(context));
-members.Add("_description", _description_Element.Data.ToResoniteReference(context));
-members.Add("_worldNameButton", _worldNameButton_Element.Data.ToResoniteReference(context));
-members.Add("_descriptionButton", _descriptionButton_Element.Data.ToResoniteReference(context));
-members.Add("_maxUsersButton", _maxUsersButton_Element.Data.ToResoniteReference(context));
-members.Add("_awayKickEnabledButton", _awayKickEnabledButton_Element.Data.ToResoniteReference(context));
-members.Add("_awayKickMinutesButton", _awayKickMinutesButton_Element.Data.ToResoniteReference(context));
-members.Add("_autosaveEnabledButton", _autosaveEnabledButton_Element.Data.ToResoniteReference(context));
-members.Add("_autosaveMinutesButton", _autosaveMinutesButton_Element.Data.ToResoniteReference(context));
-members.Add("_autocleanEnabledButton", _autocleanEnabledButton_Element.Data.ToResoniteReference(context));
-members.Add("_autocleanMinutesButton", _autocleanMinutesButton_Element.Data.ToResoniteReference(context));
-members.Add("_mobileFriendlyButton", _mobileFriendlyButton_Element.Data.ToResoniteReference(context));
-members.Add("_hideFromListingButton", _hideFromListingButton_Element.Data.ToResoniteReference(context));
-members.Add("_permissionOverridesIndicator", _permissionOverridesIndicator_Element.Data.ToResoniteReference(context));
-members.Add("_permissionOverridesButton", _permissionOverridesButton_Element.Data.ToResoniteReference(context));
-members.Add("_getSessionOrb", _getSessionOrb_Element.Data.ToResoniteReference(context));
-members.Add("_getWorldOrb", _getWorldOrb_Element.Data.ToResoniteReference(context));
-members.Add("_editMode", _editMode_Element.Data.ToResoniteReference(context));
-members.Add("_copySessionURL", _copySessionURL_Element.Data.ToResoniteReference(context));
-members.Add("_copyWorldURL", _copyWorldURL_Element.Data.ToResoniteReference(context));
-members.Add("_copyRecordURL", _copyRecordURL_Element.Data.ToResoniteReference(context));
-members.Add("_accessLevelRadios", new ResoniteLink.SyncList()
-{
-    Elements = _accessLevelRadios.Data.ConvertList(m => m.Data.ToResoniteReference(context))
-});
-members.Add("_accessLevelRadiosButtons", new ResoniteLink.SyncList()
-{
-    Elements = _accessLevelRadiosButtons.Data.ConvertList(m => m.Data.ToResoniteReference(context))
-});
-members.Add("_worldNameSync", _worldNameSync_Element.Data.ToResoniteReference(context));
-members.Add("_descriptionSync", _descriptionSync_Element.Data.ToResoniteReference(context));
-members.Add("_maxUsersSync", _maxUsersSync_Element.Data.ToResoniteReference(context));
-members.Add("_awayKickEnabledSync", _awayKickEnabledSync_Element.Data.ToResoniteReference(context));
-members.Add("_awayKickMinutesSync", _awayKickMinutesSync_Element.Data.ToResoniteReference(context));
-members.Add("_autosaveEnabledSync", _autosaveEnabledSync_Element.Data.ToResoniteReference(context));
-members.Add("_autosaveMinutesSync", _autosaveMinutesSync_Element.Data.ToResoniteReference(context));
-members.Add("_autocleanEnabledSync", _autocleanEnabledSync_Element.Data.ToResoniteReference(context));
-members.Add("_autocleanSecondsSync", _autocleanSecondsSync_Element.Data.ToResoniteReference(context));
-members.Add("_mobileFriendlySync", _mobileFriendlySync_Element.Data.ToResoniteReference(context));
-members.Add("_hideFromListingSync", _hideFromListingSync_Element.Data.ToResoniteReference(context));
-members.Add("_editModeSync", _editModeSync_Element.Data.ToResoniteReference(context));
-members.Add("_accessLevelSync", _accessLevelSync_Element.Data.ToResoniteReference(context));
-members.Add("_customVerifierLabel", _customVerifierLabel_Element.Data.ToResoniteReference(context));
-members.Add("_customVerifierCheckbox", _customVerifierCheckbox_Element.Data.ToResoniteReference(context));
-members.Add("_customVerifierButton", _customVerifierButton_Element.Data.ToResoniteReference(context));
-members.Add("_customVerifierSync", _customVerifierSync_Element.Data.ToResoniteReference(context));
-members.Add("_uiContentRoot", _uiContentRoot_Element.Data.ToResoniteReference(context));
-members.Add("_slideSwap", _slideSwap_Element.Data.ToResoniteReference(context));
-members.Add("_saveWorld", _saveWorld_Element.Data.ToResoniteReference(context));
-members.Add("_saveWorldAs", _saveWorldAs_Element.Data.ToResoniteReference(context));
-members.Add("_saveWorldCopy", _saveWorldCopy_Element.Data.ToResoniteReference(context));
-members.Add("_enableResoniteLink", _enableResoniteLink_Element.Data.ToResoniteReference(context));
-members.Add("_resoniteLinkPort", _resoniteLinkPort_Element.Data.ToResoniteReference(context));
-members.Add("_tabButtons", new ResoniteLink.SyncList()
-{
-    Elements = _tabButtons.Data.ConvertList(m => m.Data.ToResoniteReference(context))
-});
+members.Add("ActiveTab", ActiveTab_Element.ToLinkField(context));
+members.Add("_contentRoot", _contentRoot_Element.ToLinkReference(context));
+members.Add("_worldName", _worldName_Element.ToLinkReference(context));
+members.Add("_maxUsers", _maxUsers_Element.ToLinkReference(context));
+members.Add("_awayKickEnabled", _awayKickEnabled_Element.ToLinkReference(context));
+members.Add("_awayKickMinutes", _awayKickMinutes_Element.ToLinkReference(context));
+members.Add("_autosaveEnabled", _autosaveEnabled_Element.ToLinkReference(context));
+members.Add("_autosaveMinutes", _autosaveMinutes_Element.ToLinkReference(context));
+members.Add("_autocleanEnabled", _autocleanEnabled_Element.ToLinkReference(context));
+members.Add("_autocleanMinutes", _autocleanMinutes_Element.ToLinkReference(context));
+members.Add("_mobileFriendly", _mobileFriendly_Element.ToLinkReference(context));
+members.Add("_hideFromListing", _hideFromListing_Element.ToLinkReference(context));
+members.Add("_description", _description_Element.ToLinkReference(context));
+members.Add("_worldNameButton", _worldNameButton_Element.ToLinkReference(context));
+members.Add("_descriptionButton", _descriptionButton_Element.ToLinkReference(context));
+members.Add("_maxUsersButton", _maxUsersButton_Element.ToLinkReference(context));
+members.Add("_awayKickEnabledButton", _awayKickEnabledButton_Element.ToLinkReference(context));
+members.Add("_awayKickMinutesButton", _awayKickMinutesButton_Element.ToLinkReference(context));
+members.Add("_autosaveEnabledButton", _autosaveEnabledButton_Element.ToLinkReference(context));
+members.Add("_autosaveMinutesButton", _autosaveMinutesButton_Element.ToLinkReference(context));
+members.Add("_autocleanEnabledButton", _autocleanEnabledButton_Element.ToLinkReference(context));
+members.Add("_autocleanMinutesButton", _autocleanMinutesButton_Element.ToLinkReference(context));
+members.Add("_mobileFriendlyButton", _mobileFriendlyButton_Element.ToLinkReference(context));
+members.Add("_hideFromListingButton", _hideFromListingButton_Element.ToLinkReference(context));
+members.Add("_permissionOverridesIndicator", _permissionOverridesIndicator_Element.ToLinkReference(context));
+members.Add("_permissionOverridesButton", _permissionOverridesButton_Element.ToLinkReference(context));
+members.Add("_getSessionOrb", _getSessionOrb_Element.ToLinkReference(context));
+members.Add("_getWorldOrb", _getWorldOrb_Element.ToLinkReference(context));
+members.Add("_editMode", _editMode_Element.ToLinkReference(context));
+members.Add("_copySessionURL", _copySessionURL_Element.ToLinkReference(context));
+members.Add("_copyWorldURL", _copyWorldURL_Element.ToLinkReference(context));
+members.Add("_copyRecordURL", _copyRecordURL_Element.ToLinkReference(context));
+members.Add("_accessLevelRadios", _accessLevelRadios.ToLinkList(context, m => m.ToLinkReference(context)));
+members.Add("_accessLevelRadiosButtons", _accessLevelRadiosButtons.ToLinkList(context, m => m.ToLinkReference(context)));
+members.Add("_worldNameSync", _worldNameSync_Element.ToLinkReference(context));
+members.Add("_descriptionSync", _descriptionSync_Element.ToLinkReference(context));
+members.Add("_maxUsersSync", _maxUsersSync_Element.ToLinkReference(context));
+members.Add("_awayKickEnabledSync", _awayKickEnabledSync_Element.ToLinkReference(context));
+members.Add("_awayKickMinutesSync", _awayKickMinutesSync_Element.ToLinkReference(context));
+members.Add("_autosaveEnabledSync", _autosaveEnabledSync_Element.ToLinkReference(context));
+members.Add("_autosaveMinutesSync", _autosaveMinutesSync_Element.ToLinkReference(context));
+members.Add("_autocleanEnabledSync", _autocleanEnabledSync_Element.ToLinkReference(context));
+members.Add("_autocleanSecondsSync", _autocleanSecondsSync_Element.ToLinkReference(context));
+members.Add("_mobileFriendlySync", _mobileFriendlySync_Element.ToLinkReference(context));
+members.Add("_hideFromListingSync", _hideFromListingSync_Element.ToLinkReference(context));
+members.Add("_editModeSync", _editModeSync_Element.ToLinkReference(context));
+members.Add("_accessLevelSync", _accessLevelSync_Element.ToLinkReference(context));
+members.Add("_customVerifierLabel", _customVerifierLabel_Element.ToLinkReference(context));
+members.Add("_customVerifierCheckbox", _customVerifierCheckbox_Element.ToLinkReference(context));
+members.Add("_customVerifierButton", _customVerifierButton_Element.ToLinkReference(context));
+members.Add("_customVerifierSync", _customVerifierSync_Element.ToLinkReference(context));
+members.Add("_uiContentRoot", _uiContentRoot_Element.ToLinkReference(context));
+members.Add("_slideSwap", _slideSwap_Element.ToLinkReference(context));
+members.Add("_saveWorld", _saveWorld_Element.ToLinkReference(context));
+members.Add("_saveWorldAs", _saveWorldAs_Element.ToLinkReference(context));
+members.Add("_saveWorldCopy", _saveWorldCopy_Element.ToLinkReference(context));
+members.Add("_enableResoniteLink", _enableResoniteLink_Element.ToLinkReference(context));
+members.Add("_resoniteLinkPort", _resoniteLinkPort_Element.ToLinkReference(context));
+members.Add("_tabButtons", _tabButtons.ToLinkList(context, m => m.ToLinkReference(context)));
 }
 
 }

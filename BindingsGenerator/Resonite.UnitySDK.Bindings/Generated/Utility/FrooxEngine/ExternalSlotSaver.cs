@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.ExternalSlotSaver
-// Generated on: čtvrtek 26. února 2026 10:04:50
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:28:16
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -37,12 +37,12 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("TargetSlot", TargetSlot_Element.Data.ToResoniteReference(context));
-members.Add("SaveActiveSelfOverride", SaveActiveSelfOverride_Element.Data.ToResoniteLinkField());
-members.Add("SaveLocalPositionOverride", SaveLocalPositionOverride_Element.Data.ToResoniteLinkField());
-members.Add("SaveLocalRotationOverride", SaveLocalRotationOverride_Element.Data.ToResoniteLinkField());
-members.Add("SaveLocalScaleOverride", SaveLocalScaleOverride_Element.Data.ToResoniteLinkField());
-members.Add("IgnoreWhenNonPersistentSelf", IgnoreWhenNonPersistentSelf_Element.Data.ToResoniteLinkField());
+members.Add("TargetSlot", TargetSlot_Element.ToLinkReference(context));
+members.Add("SaveActiveSelfOverride", SaveActiveSelfOverride_Element.ToLinkField(context));
+members.Add("SaveLocalPositionOverride", SaveLocalPositionOverride_Element.ToLinkField(context));
+members.Add("SaveLocalRotationOverride", SaveLocalRotationOverride_Element.ToLinkField(context));
+members.Add("SaveLocalScaleOverride", SaveLocalScaleOverride_Element.ToLinkField(context));
+members.Add("IgnoreWhenNonPersistentSelf", IgnoreWhenNonPersistentSelf_Element.ToLinkField(context));
 }
 
 }

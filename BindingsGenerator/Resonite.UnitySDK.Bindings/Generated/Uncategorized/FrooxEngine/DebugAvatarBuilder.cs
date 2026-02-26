@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.DebugAvatarBuilder
-// Generated on: čtvrtek 26. února 2026 10:04:44
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:28:10
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -37,12 +37,12 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("SetupServerVoice", SetupServerVoice_Element.Data.ToResoniteLinkField());
-members.Add("SetupClientVoice", SetupClientVoice_Element.Data.ToResoniteLinkField());
-members.Add("SetupServerTools", SetupServerTools_Element.Data.ToResoniteLinkField());
-members.Add("SetupClientTools", SetupClientTools_Element.Data.ToResoniteLinkField());
-members.Add("ParentClientsToServer", ParentClientsToServer_Element.Data.ToResoniteLinkField());
-members.Add("AlignTracking", AlignTracking_Element.Data.ToResoniteLinkField());
+members.Add("SetupServerVoice", SetupServerVoice_Element.ToLinkField(context));
+members.Add("SetupClientVoice", SetupClientVoice_Element.ToLinkField(context));
+members.Add("SetupServerTools", SetupServerTools_Element.ToLinkField(context));
+members.Add("SetupClientTools", SetupClientTools_Element.ToLinkField(context));
+members.Add("ParentClientsToServer", ParentClientsToServer_Element.ToLinkField(context));
+members.Add("AlignTracking", AlignTracking_Element.ToLinkField(context));
 }
 
 }

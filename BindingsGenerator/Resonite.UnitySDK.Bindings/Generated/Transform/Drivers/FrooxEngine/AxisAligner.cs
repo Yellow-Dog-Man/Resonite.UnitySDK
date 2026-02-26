@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.AxisAligner
-// Generated on: čtvrtek 26. února 2026 10:04:41
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:28:07
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -43,22 +43,16 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Direction", Direction_Element.Data.ToResoniteLinkField());
-members.Add("GlobalAxisXAlign", GlobalAxisXAlign_Element.Data.ToResoniteLinkField());
-members.Add("GlobalAxisYAlign", GlobalAxisYAlign_Element.Data.ToResoniteLinkField());
-members.Add("GlobalAxisZAlign", GlobalAxisZAlign_Element.Data.ToResoniteLinkField());
-members.Add("ElementAxisXAlign", ElementAxisXAlign_Element.Data.ToResoniteLinkField());
-members.Add("ElementAxisYAlign", ElementAxisYAlign_Element.Data.ToResoniteLinkField());
-members.Add("ElementAxisZAlign", ElementAxisZAlign_Element.Data.ToResoniteLinkField());
-members.Add("Separation", Separation_Element.Data.ToResoniteLinkField());
-members.Add("ExcludeList", new ResoniteLink.SyncList()
-{
-    Elements = ExcludeList.Data.ConvertList(m => m.Data.ToResoniteReference(context))
-});
-members.Add("_targets", new ResoniteLink.SyncList()
-{
-    Elements = _targets.Data.ConvertList(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers(context) })
-});
+members.Add("Direction", Direction_Element.ToLinkField(context));
+members.Add("GlobalAxisXAlign", GlobalAxisXAlign_Element.ToLinkField(context));
+members.Add("GlobalAxisYAlign", GlobalAxisYAlign_Element.ToLinkField(context));
+members.Add("GlobalAxisZAlign", GlobalAxisZAlign_Element.ToLinkField(context));
+members.Add("ElementAxisXAlign", ElementAxisXAlign_Element.ToLinkField(context));
+members.Add("ElementAxisYAlign", ElementAxisYAlign_Element.ToLinkField(context));
+members.Add("ElementAxisZAlign", ElementAxisZAlign_Element.ToLinkField(context));
+members.Add("Separation", Separation_Element.ToLinkField(context));
+members.Add("ExcludeList", ExcludeList.ToLinkList(context, m => m.ToLinkReference(context)));
+members.Add("_targets", _targets.ToLinkList(context, m => m.ToLinkSyncObject(context)));
 }
 
 }

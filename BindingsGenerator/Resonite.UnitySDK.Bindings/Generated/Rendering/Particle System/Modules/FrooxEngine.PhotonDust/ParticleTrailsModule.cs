@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.PhotonDust.ParticleTrailsModule
-// Generated on: čtvrtek 26. února 2026 10:04:38
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:28:04
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -42,15 +42,15 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("TrailsRatio", TrailsRatio_Element.Data.ToResoniteLinkField());
-members.Add("Distribution", Distribution_Element.Data.ToResoniteLinkField());
-members.Add("MaxTrails", MaxTrails_Element.Data.ToResoniteLinkField());
-members.Add("SimulationSpace", new ResoniteLink.SyncObject() { Members = SimulationSpace.CollectMembers(context) });
-members.Add("MinVertexDistance", MinVertexDistance_Element.Data.ToResoniteLinkField());
-members.Add("TrailDiesWithParticle", TrailDiesWithParticle_Element.Data.ToResoniteLinkField());
-members.Add("ParticleColorInheritance", ParticleColorInheritance_Element.Data.ToResoniteLinkField());
-members.Add("ParticleSizeInheritance", ParticleSizeInheritance_Element.Data.ToResoniteLinkField());
-members.Add("SizeInheritanceMode", SizeInheritanceMode_Element.Data.ToResoniteLinkField());
+members.Add("TrailsRatio", TrailsRatio_Element.ToLinkField(context));
+members.Add("Distribution", Distribution_Element.ToLinkField(context));
+members.Add("MaxTrails", MaxTrails_Element.ToLinkField(context));
+members.Add("SimulationSpace", SimulationSpace.ToLinkSyncObject(context));
+members.Add("MinVertexDistance", MinVertexDistance_Element.ToLinkField(context));
+members.Add("TrailDiesWithParticle", TrailDiesWithParticle_Element.ToLinkField(context));
+members.Add("ParticleColorInheritance", ParticleColorInheritance_Element.ToLinkField(context));
+members.Add("ParticleSizeInheritance", ParticleSizeInheritance_Element.ToLinkField(context));
+members.Add("SizeInheritanceMode", SizeInheritanceMode_Element.ToLinkField(context));
 }
 
 }

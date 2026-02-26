@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.ProtoFlux.ProtoFluxWireManager
-// Generated on: čtvrtek 26. února 2026 10:04:47
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:28:13
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -51,19 +51,19 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("ConnectPoint", ConnectPoint_Element.Data.ToResoniteReference(context));
-members.Add("Type", Type_Element.Data.ToResoniteLinkField());
-members.Add("Width", Width_Element.Data.ToResoniteLinkField());
-members.Add("StartColor", StartColor_Element.Data.ToResoniteLinkField());
-members.Add("EndColor", EndColor_Element.Data.ToResoniteLinkField());
-members.Add("DeleteHighlight", DeleteHighlight_Element.Data.ToResoniteLinkField());
-members.Add("_wireMesh", _wireMesh_Element.Data.ToResoniteReference(context));
-members.Add("_renderer", _renderer_Element.Data.ToResoniteReference(context));
-members.Add("_collider", _collider_Element.Data.ToResoniteReference(context));
-members.Add("_targetPosition", _targetPosition_Element.Data.ToResoniteReference(context));
-members.Add("_targetTangent", _targetTangent_Element.Data.ToResoniteReference(context));
-members.Add("_targetOrientation", _targetOrientation_Element.Data.ToResoniteReference(context));
-members.Add("_targetWidth", _targetWidth_Element.Data.ToResoniteReference(context));
+members.Add("ConnectPoint", ConnectPoint_Element.ToLinkReference(context));
+members.Add("Type", Type_Element.ToLinkField(context));
+members.Add("Width", Width_Element.ToLinkField(context));
+members.Add("StartColor", StartColor_Element.ToLinkField(context));
+members.Add("EndColor", EndColor_Element.ToLinkField(context));
+members.Add("DeleteHighlight", DeleteHighlight_Element.ToLinkField(context));
+members.Add("_wireMesh", _wireMesh_Element.ToLinkReference(context));
+members.Add("_renderer", _renderer_Element.ToLinkReference(context));
+members.Add("_collider", _collider_Element.ToLinkReference(context));
+members.Add("_targetPosition", _targetPosition_Element.ToLinkReference(context));
+members.Add("_targetTangent", _targetTangent_Element.ToLinkReference(context));
+members.Add("_targetOrientation", _targetOrientation_Element.ToLinkReference(context));
+members.Add("_targetWidth", _targetWidth_Element.ToLinkReference(context));
 }
 
 }

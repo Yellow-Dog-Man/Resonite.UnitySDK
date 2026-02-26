@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.DevTool
-// Generated on: čtvrtek 26. února 2026 10:04:39
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:28:05
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -39,13 +39,13 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("SelectionMode", SelectionMode_Element.Data.ToResoniteLinkField());
-members.Add("InteractionMode", InteractionMode_Element.Data.ToResoniteLinkField());
-members.Add("_selectedAnchor", _selectedAnchor_Element.Data.ToResoniteReference(context));
-members.Add("_selectedAnchorHighlight", _selectedAnchorHighlight_Element.Data.ToResoniteReference(context));
-members.Add("_material", _material_Element.Data.ToResoniteReference(context));
-members.Add("_currentGizmo", _currentGizmo_Element.Data.ToResoniteReference(context));
-members.Add("_previousGizmo", _previousGizmo_Element.Data.ToResoniteReference(context));
+members.Add("SelectionMode", SelectionMode_Element.ToLinkField(context));
+members.Add("InteractionMode", InteractionMode_Element.ToLinkField(context));
+members.Add("_selectedAnchor", _selectedAnchor_Element.ToLinkReference(context));
+members.Add("_selectedAnchorHighlight", _selectedAnchorHighlight_Element.ToLinkReference(context));
+members.Add("_material", _material_Element.ToLinkReference(context));
+members.Add("_currentGizmo", _currentGizmo_Element.ToLinkReference(context));
+members.Add("_previousGizmo", _previousGizmo_Element.ToLinkReference(context));
 }
 
 }

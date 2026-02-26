@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.PhotonDust.LegacyTrailsRibbonAdapter
-// Generated on: čtvrtek 26. února 2026 10:04:46
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:28:12
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -47,17 +47,17 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("TrailsMode", TrailsMode_Element.Data.ToResoniteLinkField());
-members.Add("ParticleSizeAffectsTrailWidth", ParticleSizeAffectsTrailWidth_Element.Data.ToResoniteLinkField());
-members.Add("InheritTrailColorFromParticle", InheritTrailColorFromParticle_Element.Data.ToResoniteLinkField());
-members.Add("TrailWorldSpace", TrailWorldSpace_Element.Data.ToResoniteLinkField());
-members.Add("TrailsModule", TrailsModule_Element.Data.ToResoniteReference(context));
-members.Add("RibbonModule", RibbonModule_Element.Data.ToResoniteReference(context));
-members.Add("RibbonUseParticleSize", RibbonUseParticleSize_Element.Data.ToResoniteReference(context));
-members.Add("RibbonUseParticleColor", RibbonUseParticleColor_Element.Data.ToResoniteReference(context));
-members.Add("TrailSizeInheritance", TrailSizeInheritance_Element.Data.ToResoniteReference(context));
-members.Add("TrailColorInheritance", TrailColorInheritance_Element.Data.ToResoniteReference(context));
-members.Add("TrailsSpace", TrailsSpace_Element.Data.ToResoniteReference(context));
+members.Add("TrailsMode", TrailsMode_Element.ToLinkField(context));
+members.Add("ParticleSizeAffectsTrailWidth", ParticleSizeAffectsTrailWidth_Element.ToLinkField(context));
+members.Add("InheritTrailColorFromParticle", InheritTrailColorFromParticle_Element.ToLinkField(context));
+members.Add("TrailWorldSpace", TrailWorldSpace_Element.ToLinkField(context));
+members.Add("TrailsModule", TrailsModule_Element.ToLinkReference(context));
+members.Add("RibbonModule", RibbonModule_Element.ToLinkReference(context));
+members.Add("RibbonUseParticleSize", RibbonUseParticleSize_Element.ToLinkReference(context));
+members.Add("RibbonUseParticleColor", RibbonUseParticleColor_Element.ToLinkReference(context));
+members.Add("TrailSizeInheritance", TrailSizeInheritance_Element.ToLinkReference(context));
+members.Add("TrailColorInheritance", TrailColorInheritance_Element.ToLinkReference(context));
+members.Add("TrailsSpace", TrailsSpace_Element.ToLinkReference(context));
 }
 
 }

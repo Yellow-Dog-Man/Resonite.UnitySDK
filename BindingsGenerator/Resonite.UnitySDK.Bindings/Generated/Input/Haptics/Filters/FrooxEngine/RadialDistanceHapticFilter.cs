@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.RadialDistanceHapticFilter
-// Generated on: čtvrtek 26. února 2026 10:03:39
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:26:55
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -35,11 +35,11 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("StartRadius", StartRadius_Element.Data.ToResoniteLinkField());
-members.Add("EndRadius", EndRadius_Element.Data.ToResoniteLinkField());
-members.Add("StartIntensity", StartIntensity_Element.Data.ToResoniteLinkField());
-members.Add("EndIntensity", EndIntensity_Element.Data.ToResoniteLinkField());
-members.Add("Power", Power_Element.Data.ToResoniteLinkField());
+members.Add("StartRadius", StartRadius_Element.ToLinkField(context));
+members.Add("EndRadius", EndRadius_Element.ToLinkField(context));
+members.Add("StartIntensity", StartIntensity_Element.ToLinkField(context));
+members.Add("EndIntensity", EndIntensity_Element.ToLinkField(context));
+members.Add("Power", Power_Element.ToLinkField(context));
 }
 
 }

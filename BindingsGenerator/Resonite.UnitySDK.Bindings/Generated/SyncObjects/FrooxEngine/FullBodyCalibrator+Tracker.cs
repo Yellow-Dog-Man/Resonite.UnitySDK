@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.FullBodyCalibrator+Tracker
-// Generated on: čtvrtek 26. února 2026 10:04:45
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:28:11
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -47,16 +47,16 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("VisualRoot", VisualRoot_Element.Data.ToResoniteReference(context));
-members.Add("TrackingReference", TrackingReference_Element.Data.ToResoniteReference(context));
-members.Add("TrackedDevice", TrackedDevice_Element.Data.ToResoniteReference(context));
-members.Add("Material", Material_Element.Data.ToResoniteReference(context));
-members.Add("Label", Label_Element.Data.ToResoniteReference(context));
-members.Add("CalibrationReference", CalibrationReference_Element.Data.ToResoniteReference(context));
-members.Add("_position", _position_Element.Data.ToResoniteReference(context));
-members.Add("_rotation", _rotation_Element.Data.ToResoniteReference(context));
-members.Add("_labelPosition", _labelPosition_Element.Data.ToResoniteReference(context));
-members.Add("_labelRotation", _labelRotation_Element.Data.ToResoniteReference(context));
+members.Add("VisualRoot", VisualRoot_Element.ToLinkReference(context));
+members.Add("TrackingReference", TrackingReference_Element.ToLinkReference(context));
+members.Add("TrackedDevice", TrackedDevice_Element.ToLinkReference(context));
+members.Add("Material", Material_Element.ToLinkReference(context));
+members.Add("Label", Label_Element.ToLinkReference(context));
+members.Add("CalibrationReference", CalibrationReference_Element.ToLinkReference(context));
+members.Add("_position", _position_Element.ToLinkReference(context));
+members.Add("_rotation", _rotation_Element.ToLinkReference(context));
+members.Add("_labelPosition", _labelPosition_Element.ToLinkReference(context));
+members.Add("_labelRotation", _labelRotation_Element.ToLinkReference(context));
 }
 
 }

@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.InteractiveCameraUserItem
-// Generated on: čtvrtek 26. února 2026 10:04:46
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:28:11
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -49,18 +49,18 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Control", Control_Element.Data.ToResoniteReference(context));
-members.Add("_username", _username_Element.Data.ToResoniteReference(context));
-members.Add("_voiceDefault", _voiceDefault_Element.Data.ToResoniteReference(context));
-members.Add("_voiceMute", _voiceMute_Element.Data.ToResoniteReference(context));
-members.Add("_voiceShout", _voiceShout_Element.Data.ToResoniteReference(context));
-members.Add("_voiceBroadcast", _voiceBroadcast_Element.Data.ToResoniteReference(context));
-members.Add("_groupAuto", _groupAuto_Element.Data.ToResoniteReference(context));
-members.Add("_groupExclude", _groupExclude_Element.Data.ToResoniteReference(context));
-members.Add("_groupInclude", _groupInclude_Element.Data.ToResoniteReference(context));
-members.Add("_cameraOperator", _cameraOperator_Element.Data.ToResoniteReference(context));
-members.Add("_framingTarget", _framingTarget_Element.Data.ToResoniteReference(context));
-members.Add("_volumeSlider", _volumeSlider_Element.Data.ToResoniteReference(context));
+members.Add("Control", Control_Element.ToLinkReference(context));
+members.Add("_username", _username_Element.ToLinkReference(context));
+members.Add("_voiceDefault", _voiceDefault_Element.ToLinkReference(context));
+members.Add("_voiceMute", _voiceMute_Element.ToLinkReference(context));
+members.Add("_voiceShout", _voiceShout_Element.ToLinkReference(context));
+members.Add("_voiceBroadcast", _voiceBroadcast_Element.ToLinkReference(context));
+members.Add("_groupAuto", _groupAuto_Element.ToLinkReference(context));
+members.Add("_groupExclude", _groupExclude_Element.ToLinkReference(context));
+members.Add("_groupInclude", _groupInclude_Element.ToLinkReference(context));
+members.Add("_cameraOperator", _cameraOperator_Element.ToLinkReference(context));
+members.Add("_framingTarget", _framingTarget_Element.ToLinkReference(context));
+members.Add("_volumeSlider", _volumeSlider_Element.ToLinkReference(context));
 }
 
 }

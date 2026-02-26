@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.BallisticPathMesh
-// Generated on: čtvrtek 26. února 2026 10:03:35
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:26:50
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -59,23 +59,23 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("InitialPosition", InitialPosition_Element.Data.ToResoniteLinkField());
-members.Add("InitialVelocity", InitialVelocity_Element.Data.ToResoniteLinkField());
-members.Add("Gravity", Gravity_Element.Data.ToResoniteLinkField());
-members.Add("Drag", Drag_Element.Data.ToResoniteLinkField());
-members.Add("Mode", Mode_Element.Data.ToResoniteLinkField());
-members.Add("StepSize", StepSize_Element.Data.ToResoniteLinkField());
-members.Add("TotalUnits", TotalUnits_Element.Data.ToResoniteLinkField());
-members.Add("Shape", Shape_Element.Data.ToResoniteLinkField());
-members.Add("Size", Size_Element.Data.ToResoniteLinkField());
-members.Add("Points", Points_Element.Data.ToResoniteLinkField());
-members.Add("DualSided", DualSided_Element.Data.ToResoniteLinkField());
-members.Add("Up", Up_Element.Data.ToResoniteLinkField());
-members.Add("DistanceSizeGrowth", DistanceSizeGrowth_Element.Data.ToResoniteLinkField());
-members.Add("MinGrownSize", MinGrownSize_Element.Data.ToResoniteLinkField());
-members.Add("MaxGrownSize", MaxGrownSize_Element.Data.ToResoniteLinkField());
-members.Add("UseLastSegment", UseLastSegment_Element.Data.ToResoniteLinkField());
-members.Add("LastSegmentPosition", LastSegmentPosition_Element.Data.ToResoniteLinkField());
+members.Add("InitialPosition", InitialPosition_Element.ToLinkField(context));
+members.Add("InitialVelocity", InitialVelocity_Element.ToLinkField(context));
+members.Add("Gravity", Gravity_Element.ToLinkField(context));
+members.Add("Drag", Drag_Element.ToLinkField(context));
+members.Add("Mode", Mode_Element.ToLinkField(context));
+members.Add("StepSize", StepSize_Element.ToLinkField(context));
+members.Add("TotalUnits", TotalUnits_Element.ToLinkField(context));
+members.Add("Shape", Shape_Element.ToLinkField(context));
+members.Add("Size", Size_Element.ToLinkField(context));
+members.Add("Points", Points_Element.ToLinkField(context));
+members.Add("DualSided", DualSided_Element.ToLinkField(context));
+members.Add("Up", Up_Element.ToLinkField(context));
+members.Add("DistanceSizeGrowth", DistanceSizeGrowth_Element.ToLinkField(context));
+members.Add("MinGrownSize", MinGrownSize_Element.ToLinkField(context));
+members.Add("MaxGrownSize", MaxGrownSize_Element.ToLinkField(context));
+members.Add("UseLastSegment", UseLastSegment_Element.ToLinkField(context));
+members.Add("LastSegmentPosition", LastSegmentPosition_Element.ToLinkField(context));
 }
 
 }

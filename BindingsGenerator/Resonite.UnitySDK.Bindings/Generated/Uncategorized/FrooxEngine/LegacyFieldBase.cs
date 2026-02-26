@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.LegacyFieldBase
-// Generated on: čtvrtek 26. února 2026 10:04:42
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:28:08
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -73,30 +73,30 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Color", Color_Element.Data.ToResoniteLinkField());
-members.Add("Width", Width_Element.Data.ToResoniteLinkField());
-members.Add("Height", Height_Element.Data.ToResoniteLinkField());
-members.Add("Thickness", Thickness_Element.Data.ToResoniteLinkField());
-members.Add("Slant", Slant_Element.Data.ToResoniteLinkField());
-members.Add("_textSlot", _textSlot_Element.Data.ToResoniteReference(context));
-members.Add("_textRenderer", _textRenderer_Element.Data.ToResoniteReference(context));
-members.Add("_textEditor", _textEditor_Element.Data.ToResoniteReference(context));
-members.Add("_material", _material_Element.Data.ToResoniteReference(context));
-members.Add("_mesh", _mesh_Element.Data.ToResoniteReference(context));
-members.Add("_textBounds", _textBounds_Element.Data.ToResoniteReference(context));
-members.Add("_colliderSize", _colliderSize_Element.Data.ToResoniteReference(context));
-members.Add("_meshLeft", _meshLeft_Element.Data.ToResoniteReference(context));
-members.Add("_meshRight", _meshRight_Element.Data.ToResoniteReference(context));
-members.Add("_textLeftBounds", _textLeftBounds_Element.Data.ToResoniteReference(context));
-members.Add("_textRightBounds", _textRightBounds_Element.Data.ToResoniteReference(context));
-members.Add("_leftTextRenderer", _leftTextRenderer_Element.Data.ToResoniteReference(context));
-members.Add("_rightTextRenderer", _rightTextRenderer_Element.Data.ToResoniteReference(context));
-members.Add("_colliderLeftSize", _colliderLeftSize_Element.Data.ToResoniteReference(context));
-members.Add("_colliderRightSize", _colliderRightSize_Element.Data.ToResoniteReference(context));
-members.Add("_leftOffset", _leftOffset_Element.Data.ToResoniteReference(context));
-members.Add("_rightOffset", _rightOffset_Element.Data.ToResoniteReference(context));
-members.Add("_leftTextPosition", _leftTextPosition_Element.Data.ToResoniteReference(context));
-members.Add("_rightTextPosition", _rightTextPosition_Element.Data.ToResoniteReference(context));
+members.Add("Color", Color_Element.ToLinkField(context));
+members.Add("Width", Width_Element.ToLinkField(context));
+members.Add("Height", Height_Element.ToLinkField(context));
+members.Add("Thickness", Thickness_Element.ToLinkField(context));
+members.Add("Slant", Slant_Element.ToLinkField(context));
+members.Add("_textSlot", _textSlot_Element.ToLinkReference(context));
+members.Add("_textRenderer", _textRenderer_Element.ToLinkReference(context));
+members.Add("_textEditor", _textEditor_Element.ToLinkReference(context));
+members.Add("_material", _material_Element.ToLinkReference(context));
+members.Add("_mesh", _mesh_Element.ToLinkReference(context));
+members.Add("_textBounds", _textBounds_Element.ToLinkReference(context));
+members.Add("_colliderSize", _colliderSize_Element.ToLinkReference(context));
+members.Add("_meshLeft", _meshLeft_Element.ToLinkReference(context));
+members.Add("_meshRight", _meshRight_Element.ToLinkReference(context));
+members.Add("_textLeftBounds", _textLeftBounds_Element.ToLinkReference(context));
+members.Add("_textRightBounds", _textRightBounds_Element.ToLinkReference(context));
+members.Add("_leftTextRenderer", _leftTextRenderer_Element.ToLinkReference(context));
+members.Add("_rightTextRenderer", _rightTextRenderer_Element.ToLinkReference(context));
+members.Add("_colliderLeftSize", _colliderLeftSize_Element.ToLinkReference(context));
+members.Add("_colliderRightSize", _colliderRightSize_Element.ToLinkReference(context));
+members.Add("_leftOffset", _leftOffset_Element.ToLinkReference(context));
+members.Add("_rightOffset", _rightOffset_Element.ToLinkReference(context));
+members.Add("_leftTextPosition", _leftTextPosition_Element.ToLinkReference(context));
+members.Add("_rightTextPosition", _rightTextPosition_Element.ToLinkReference(context));
 }
 
 }

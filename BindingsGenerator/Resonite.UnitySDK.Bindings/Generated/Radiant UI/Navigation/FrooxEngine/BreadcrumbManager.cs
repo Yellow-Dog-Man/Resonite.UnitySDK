@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.BreadcrumbManager
-// Generated on: čtvrtek 26. února 2026 10:04:36
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:28:02
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -33,10 +33,10 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Path", Path_Element.Data.ToResoniteReference(context));
-members.Add("UI_Root", UI_Root_Element.Data.ToResoniteReference(context));
-members.Add("BreadcrumbTemplate", BreadcrumbTemplate_Element.Data.ToResoniteReference(context));
-members.Add("SeparatorTemplate", SeparatorTemplate_Element.Data.ToResoniteReference(context));
+members.Add("Path", Path_Element.ToLinkReference(context));
+members.Add("UI_Root", UI_Root_Element.ToLinkReference(context));
+members.Add("BreadcrumbTemplate", BreadcrumbTemplate_Element.ToLinkReference(context));
+members.Add("SeparatorTemplate", SeparatorTemplate_Element.ToLinkReference(context));
 }
 
 }

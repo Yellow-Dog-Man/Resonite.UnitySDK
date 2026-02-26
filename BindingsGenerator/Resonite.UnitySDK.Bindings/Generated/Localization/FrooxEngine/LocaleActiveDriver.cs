@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.LocaleActiveDriver
-// Generated on: čtvrtek 26. února 2026 10:03:39
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:26:56
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -31,9 +31,9 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Target", Target_Element.Data.ToResoniteReference(context));
-members.Add("LocaleCode", LocaleCode_Element.Data.ToResoniteLinkField());
-members.Add("MatchMainLanguage", MatchMainLanguage_Element.Data.ToResoniteLinkField());
+members.Add("Target", Target_Element.ToLinkReference(context));
+members.Add("LocaleCode", LocaleCode_Element.ToLinkField(context));
+members.Add("MatchMainLanguage", MatchMainLanguage_Element.ToLinkField(context));
 }
 
 }

@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.PhotoCaptureManager
-// Generated on: čtvrtek 26. února 2026 10:04:47
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:28:12
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -101,44 +101,44 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("FingerGestureEnabled", FingerGestureEnabled_Element.Data.ToResoniteLinkField());
-members.Add("MinDistance", MinDistance_Element.Data.ToResoniteLinkField());
-members.Add("MaxDistance", MaxDistance_Element.Data.ToResoniteLinkField());
-members.Add("MinFOV", MinFOV_Element.Data.ToResoniteLinkField());
-members.Add("MaxFOV", MaxFOV_Element.Data.ToResoniteLinkField());
-members.Add("PreviewResolution", PreviewResolution_Element.Data.ToResoniteLinkField());
-members.Add("NormalResolution", NormalResolution_Element.Data.ToResoniteLinkField());
-members.Add("TimerResolution", TimerResolution_Element.Data.ToResoniteLinkField());
-members.Add("CaptureStereo", CaptureStereo_Element.Data.ToResoniteLinkField());
-members.Add("StereoSeparation", StereoSeparation_Element.Data.ToResoniteLinkField());
-members.Add("TimerSeconds", TimerSeconds_Element.Data.ToResoniteLinkField());
-members.Add("HideAllNameplates", HideAllNameplates_Element.Data.ToResoniteLinkField());
-members.Add("EncodeFormat", EncodeFormat_Element.Data.ToResoniteLinkField());
-members.Add("DebugGesture", DebugGesture_Element.Data.ToResoniteLinkField());
-members.Add("_timerActive", _timerActive_Element.Data.ToResoniteLinkField());
-members.Add("_originalParent", _originalParent_Element.Data.ToResoniteReference(context));
-members.Add("_originalPosition", _originalPosition_Element.Data.ToResoniteLinkField());
-members.Add("_originalRotation", _originalRotation_Element.Data.ToResoniteLinkField());
-members.Add("_originalScale", _originalScale_Element.Data.ToResoniteLinkField());
-members.Add("_root", _root_Element.Data.ToResoniteReference(context));
-members.Add("_previewRoot", _previewRoot_Element.Data.ToResoniteReference(context));
-members.Add("_renderTex", _renderTex_Element.Data.ToResoniteReference(context));
-members.Add("_quad", _quad_Element.Data.ToResoniteReference(context));
-members.Add("_frame", _frame_Element.Data.ToResoniteReference(context));
-members.Add("_cameraRoot", _cameraRoot_Element.Data.ToResoniteReference(context));
-members.Add("_cameraPos", _cameraPos_Element.Data.ToResoniteReference(context));
-members.Add("_cameraRot", _cameraRot_Element.Data.ToResoniteReference(context));
-members.Add("_camera", _camera_Element.Data.ToResoniteReference(context));
-members.Add("_frameMaterial", _frameMaterial_Element.Data.ToResoniteReference(context));
-members.Add("_timerTextRoot", _timerTextRoot_Element.Data.ToResoniteReference(context));
-members.Add("_timerText", _timerText_Element.Data.ToResoniteReference(context));
-members.Add("_shutterClip", _shutterClip_Element.Data.ToResoniteReference(context));
-members.Add("_timerStartClip", _timerStartClip_Element.Data.ToResoniteReference(context));
-members.Add("_timerCountdownSlowPlayer", _timerCountdownSlowPlayer_Element.Data.ToResoniteReference(context));
-members.Add("_timerCountdownFastPlayer", _timerCountdownFastPlayer_Element.Data.ToResoniteReference(context));
-members.Add("_timerCountdownSlowOutput", _timerCountdownSlowOutput_Element.Data.ToResoniteReference(context));
-members.Add("_timerCountdownFastOutput", _timerCountdownFastOutput_Element.Data.ToResoniteReference(context));
-members.Add("_timerRoot", _timerRoot_Element.Data.ToResoniteReference(context));
+members.Add("FingerGestureEnabled", FingerGestureEnabled_Element.ToLinkField(context));
+members.Add("MinDistance", MinDistance_Element.ToLinkField(context));
+members.Add("MaxDistance", MaxDistance_Element.ToLinkField(context));
+members.Add("MinFOV", MinFOV_Element.ToLinkField(context));
+members.Add("MaxFOV", MaxFOV_Element.ToLinkField(context));
+members.Add("PreviewResolution", PreviewResolution_Element.ToLinkField(context));
+members.Add("NormalResolution", NormalResolution_Element.ToLinkField(context));
+members.Add("TimerResolution", TimerResolution_Element.ToLinkField(context));
+members.Add("CaptureStereo", CaptureStereo_Element.ToLinkField(context));
+members.Add("StereoSeparation", StereoSeparation_Element.ToLinkField(context));
+members.Add("TimerSeconds", TimerSeconds_Element.ToLinkField(context));
+members.Add("HideAllNameplates", HideAllNameplates_Element.ToLinkField(context));
+members.Add("EncodeFormat", EncodeFormat_Element.ToLinkField(context));
+members.Add("DebugGesture", DebugGesture_Element.ToLinkField(context));
+members.Add("_timerActive", _timerActive_Element.ToLinkField(context));
+members.Add("_originalParent", _originalParent_Element.ToLinkReference(context));
+members.Add("_originalPosition", _originalPosition_Element.ToLinkField(context));
+members.Add("_originalRotation", _originalRotation_Element.ToLinkField(context));
+members.Add("_originalScale", _originalScale_Element.ToLinkField(context));
+members.Add("_root", _root_Element.ToLinkReference(context));
+members.Add("_previewRoot", _previewRoot_Element.ToLinkReference(context));
+members.Add("_renderTex", _renderTex_Element.ToLinkReference(context));
+members.Add("_quad", _quad_Element.ToLinkReference(context));
+members.Add("_frame", _frame_Element.ToLinkReference(context));
+members.Add("_cameraRoot", _cameraRoot_Element.ToLinkReference(context));
+members.Add("_cameraPos", _cameraPos_Element.ToLinkReference(context));
+members.Add("_cameraRot", _cameraRot_Element.ToLinkReference(context));
+members.Add("_camera", _camera_Element.ToLinkReference(context));
+members.Add("_frameMaterial", _frameMaterial_Element.ToLinkReference(context));
+members.Add("_timerTextRoot", _timerTextRoot_Element.ToLinkReference(context));
+members.Add("_timerText", _timerText_Element.ToLinkReference(context));
+members.Add("_shutterClip", _shutterClip_Element.ToLinkReference(context));
+members.Add("_timerStartClip", _timerStartClip_Element.ToLinkReference(context));
+members.Add("_timerCountdownSlowPlayer", _timerCountdownSlowPlayer_Element.ToLinkReference(context));
+members.Add("_timerCountdownFastPlayer", _timerCountdownFastPlayer_Element.ToLinkReference(context));
+members.Add("_timerCountdownSlowOutput", _timerCountdownSlowOutput_Element.ToLinkReference(context));
+members.Add("_timerCountdownFastOutput", _timerCountdownFastOutput_Element.ToLinkReference(context));
+members.Add("_timerRoot", _timerRoot_Element.ToLinkReference(context));
 }
 
 }

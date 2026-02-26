@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [ProtoFluxBindings]FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.Math.Quantity.ParseQuantity<>
-// Generated on: čtvrtek 26. února 2026 10:04:20
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:27:41
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -32,10 +32,10 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Str", Str_Element.Data.ToResoniteReference(context));
-members.Add("DefaultUnit", DefaultUnit_Element.Data.ToResoniteReference(context));
-members.Add("Value", new ResoniteLink.EmptyElement());
-members.Add("IsParsed", new ResoniteLink.EmptyElement());
+members.Add("Str", Str_Element.ToLinkReference(context));
+members.Add("DefaultUnit", DefaultUnit_Element.ToLinkReference(context));
+members.Add("Value", Value.ToLinkEmpty(context));
+members.Add("IsParsed", IsParsed.ToLinkEmpty(context));
 }
 
 }

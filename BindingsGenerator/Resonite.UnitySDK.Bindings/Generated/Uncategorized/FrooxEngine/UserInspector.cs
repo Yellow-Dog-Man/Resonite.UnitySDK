@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.UserInspector
-// Generated on: čtvrtek 26. února 2026 10:04:48
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:28:14
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -43,15 +43,15 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("ViewUser", ViewUser_Element.Data.ToResoniteReference(context));
-members.Add("ViewGroup", ViewGroup_Element.Data.ToResoniteLinkField());
-members.Add("ViewStreamGroup", ViewStreamGroup_Element.Data.ToResoniteLinkField());
-members.Add("_currentUser", _currentUser_Element.Data.ToResoniteReference(context));
-members.Add("_currentViewGroup", _currentViewGroup_Element.Data.ToResoniteLinkField());
-members.Add("_currentStreamGroup", _currentStreamGroup_Element.Data.ToResoniteLinkField());
-members.Add("_userListContentRoot", _userListContentRoot_Element.Data.ToResoniteReference(context));
-members.Add("_workersContentRoot", _workersContentRoot_Element.Data.ToResoniteReference(context));
-members.Add("_userText", _userText_Element.Data.ToResoniteReference(context));
+members.Add("ViewUser", ViewUser_Element.ToLinkReference(context));
+members.Add("ViewGroup", ViewGroup_Element.ToLinkField(context));
+members.Add("ViewStreamGroup", ViewStreamGroup_Element.ToLinkField(context));
+members.Add("_currentUser", _currentUser_Element.ToLinkReference(context));
+members.Add("_currentViewGroup", _currentViewGroup_Element.ToLinkField(context));
+members.Add("_currentStreamGroup", _currentStreamGroup_Element.ToLinkField(context));
+members.Add("_userListContentRoot", _userListContentRoot_Element.ToLinkReference(context));
+members.Add("_workersContentRoot", _workersContentRoot_Element.ToLinkReference(context));
+members.Add("_userText", _userText_Element.ToLinkReference(context));
 }
 
 }

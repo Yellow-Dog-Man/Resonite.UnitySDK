@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.UIX.GradientImage
-// Generated on: čtvrtek 26. února 2026 10:04:42
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:28:08
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -33,10 +33,10 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("TintTopLeft", TintTopLeft_Element.Data.ToResoniteLinkField());
-members.Add("TintTopRight", TintTopRight_Element.Data.ToResoniteLinkField());
-members.Add("TintBottomRight", TintBottomRight_Element.Data.ToResoniteLinkField());
-members.Add("TintBottomLeft", TintBottomLeft_Element.Data.ToResoniteLinkField());
+members.Add("TintTopLeft", TintTopLeft_Element.ToLinkField(context));
+members.Add("TintTopRight", TintTopRight_Element.ToLinkField(context));
+members.Add("TintBottomRight", TintBottomRight_Element.ToLinkField(context));
+members.Add("TintBottomLeft", TintBottomLeft_Element.ToLinkField(context));
 }
 
 }

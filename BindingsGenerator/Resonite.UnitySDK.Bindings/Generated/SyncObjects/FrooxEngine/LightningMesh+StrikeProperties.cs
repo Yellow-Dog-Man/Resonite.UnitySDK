@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.LightningMesh+StrikeProperties
-// Generated on: čtvrtek 26. února 2026 10:03:36
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:26:50
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -47,16 +47,16 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Segments", Segments_Element.Data.ToResoniteLinkField());
-members.Add("StartWidth", StartWidth_Element.Data.ToResoniteLinkField());
-members.Add("EndWidth", EndWidth_Element.Data.ToResoniteLinkField());
-members.Add("MinOffset", MinOffset_Element.Data.ToResoniteLinkField());
-members.Add("MaxOffset", MaxOffset_Element.Data.ToResoniteLinkField());
-members.Add("ChildCount", ChildCount_Element.Data.ToResoniteLinkField());
-members.Add("MinChildTargetDistanceRatio", MinChildTargetDistanceRatio_Element.Data.ToResoniteLinkField());
-members.Add("MaxChildTargetDistanceRatio", MaxChildTargetDistanceRatio_Element.Data.ToResoniteLinkField());
-members.Add("MinChildTargetOffset", MinChildTargetOffset_Element.Data.ToResoniteLinkField());
-members.Add("MaxChildTargetOffset", MaxChildTargetOffset_Element.Data.ToResoniteLinkField());
+members.Add("Segments", Segments_Element.ToLinkField(context));
+members.Add("StartWidth", StartWidth_Element.ToLinkField(context));
+members.Add("EndWidth", EndWidth_Element.ToLinkField(context));
+members.Add("MinOffset", MinOffset_Element.ToLinkField(context));
+members.Add("MaxOffset", MaxOffset_Element.ToLinkField(context));
+members.Add("ChildCount", ChildCount_Element.ToLinkField(context));
+members.Add("MinChildTargetDistanceRatio", MinChildTargetDistanceRatio_Element.ToLinkField(context));
+members.Add("MaxChildTargetDistanceRatio", MaxChildTargetDistanceRatio_Element.ToLinkField(context));
+members.Add("MinChildTargetOffset", MinChildTargetOffset_Element.ToLinkField(context));
+members.Add("MaxChildTargetOffset", MaxChildTargetOffset_Element.ToLinkField(context));
 }
 
 }

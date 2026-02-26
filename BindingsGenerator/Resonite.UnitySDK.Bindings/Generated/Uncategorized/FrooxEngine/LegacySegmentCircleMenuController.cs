@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.LegacySegmentCircleMenuController
-// Generated on: čtvrtek 26. února 2026 10:04:39
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:28:06
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -48,28 +48,19 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("DefaultFontMaterial", DefaultFontMaterial_Element.Data.ToResoniteReference(context));
-members.Add("DisabledOutlineColor", DisabledOutlineColor_Element.Data.ToResoniteLinkField());
-members.Add("DisabledFillColor", DisabledFillColor_Element.Data.ToResoniteLinkField());
-members.Add("LogoCircle", LogoCircle_Element.Data.ToResoniteLinkField());
-members.Add("GenerateColliders", GenerateColliders_Element.Data.ToResoniteLinkField());
-members.Add("HighlightRadiusOffset", HighlightRadiusOffset_Element.Data.ToResoniteLinkField());
-members.Add("logoMenuMesh", logoMenuMesh_Element.Data.ToResoniteReference(context));
-members.Add("circleMenuItems", new ResoniteLink.SyncList()
-{
-    Elements = circleMenuItems.Data.ConvertList(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers(context) })
-});
-members.Add("independentMenuItems", new ResoniteLink.SyncList()
-{
-    Elements = independentMenuItems.Data.ConvertList(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers(context) })
-});
-members.Add("itemsArcs", new ResoniteLink.SyncList()
-{
-    Elements = itemsArcs.Data.ConvertList(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers(context) })
-});
-members.Add("_overridesDrive", _overridesDrive_Element.Data.ToResoniteReference(context));
-members.Add("_independentDrive", _independentDrive_Element.Data.ToResoniteReference(context));
-members.Add("menuItemsSlot", menuItemsSlot_Element.Data.ToResoniteReference(context));
+members.Add("DefaultFontMaterial", DefaultFontMaterial_Element.ToLinkReference(context));
+members.Add("DisabledOutlineColor", DisabledOutlineColor_Element.ToLinkField(context));
+members.Add("DisabledFillColor", DisabledFillColor_Element.ToLinkField(context));
+members.Add("LogoCircle", LogoCircle_Element.ToLinkField(context));
+members.Add("GenerateColliders", GenerateColliders_Element.ToLinkField(context));
+members.Add("HighlightRadiusOffset", HighlightRadiusOffset_Element.ToLinkField(context));
+members.Add("logoMenuMesh", logoMenuMesh_Element.ToLinkReference(context));
+members.Add("circleMenuItems", circleMenuItems.ToLinkList(context, m => m.ToLinkSyncObject(context)));
+members.Add("independentMenuItems", independentMenuItems.ToLinkList(context, m => m.ToLinkSyncObject(context)));
+members.Add("itemsArcs", itemsArcs.ToLinkList(context, m => m.ToLinkSyncObject(context)));
+members.Add("_overridesDrive", _overridesDrive_Element.ToLinkReference(context));
+members.Add("_independentDrive", _independentDrive_Element.ToLinkReference(context));
+members.Add("menuItemsSlot", menuItemsSlot_Element.ToLinkReference(context));
 }
 
 }

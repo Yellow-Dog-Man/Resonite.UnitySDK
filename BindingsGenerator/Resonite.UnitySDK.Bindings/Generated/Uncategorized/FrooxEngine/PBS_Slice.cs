@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.PBS_Slice
-// Generated on: čtvrtek 26. února 2026 10:03:34
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:26:47
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -80,37 +80,34 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("TextureScale", TextureScale_Element.Data.ToResoniteLinkField());
-members.Add("TextureOffset", TextureOffset_Element.Data.ToResoniteLinkField());
-members.Add("AlbedoColor", AlbedoColor_Element.Data.ToResoniteLinkField());
-members.Add("EdgeColor", EdgeColor_Element.Data.ToResoniteLinkField());
-members.Add("AlbedoTexture", AlbedoTexture_Element.Data.ToResoniteReference(context));
-members.Add("EmissiveColor", EmissiveColor_Element.Data.ToResoniteLinkField());
-members.Add("EdgeEmissiveColor", EdgeEmissiveColor_Element.Data.ToResoniteLinkField());
-members.Add("EmissiveMap", EmissiveMap_Element.Data.ToResoniteReference(context));
-members.Add("NormalMap", NormalMap_Element.Data.ToResoniteReference(context));
-members.Add("NormalScale", NormalScale_Element.Data.ToResoniteLinkField());
-members.Add("OcclusionMap", OcclusionMap_Element.Data.ToResoniteReference(context));
-members.Add("DetailTextureScale", DetailTextureScale_Element.Data.ToResoniteLinkField());
-members.Add("DetailTextureOffset", DetailTextureOffset_Element.Data.ToResoniteLinkField());
-members.Add("DetailAlbedoTexture", DetailAlbedoTexture_Element.Data.ToResoniteReference(context));
-members.Add("DetailNormalMap", DetailNormalMap_Element.Data.ToResoniteReference(context));
-members.Add("DetailNormalScale", DetailNormalScale_Element.Data.ToResoniteLinkField());
-members.Add("Culling", Culling_Element.Data.ToResoniteLinkField());
-members.Add("HideSlicers", HideSlicers_Element.Data.ToResoniteLinkField());
-members.Add("Slicers", new ResoniteLink.SyncList()
-{
-    Elements = Slicers.Data.ConvertList(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers(context) })
-});
-members.Add("LocalSpace", LocalSpace_Element.Data.ToResoniteLinkField());
-members.Add("EdgeTransitionStart", EdgeTransitionStart_Element.Data.ToResoniteLinkField());
-members.Add("EdgeTransitionEnd", EdgeTransitionEnd_Element.Data.ToResoniteLinkField());
-members.Add("AlphaHandling", AlphaHandling_Element.Data.ToResoniteLinkField());
-members.Add("_useAlphaClip", _useAlphaClip_Element.Data.ToResoniteLinkField());
-members.Add("AlphaClip", AlphaClip_Element.Data.ToResoniteLinkField());
-members.Add("OffsetFactor", OffsetFactor_Element.Data.ToResoniteLinkField());
-members.Add("OffsetUnits", OffsetUnits_Element.Data.ToResoniteLinkField());
-members.Add("RenderQueue", RenderQueue_Element.Data.ToResoniteLinkField());
+members.Add("TextureScale", TextureScale_Element.ToLinkField(context));
+members.Add("TextureOffset", TextureOffset_Element.ToLinkField(context));
+members.Add("AlbedoColor", AlbedoColor_Element.ToLinkField(context));
+members.Add("EdgeColor", EdgeColor_Element.ToLinkField(context));
+members.Add("AlbedoTexture", AlbedoTexture_Element.ToLinkReference(context));
+members.Add("EmissiveColor", EmissiveColor_Element.ToLinkField(context));
+members.Add("EdgeEmissiveColor", EdgeEmissiveColor_Element.ToLinkField(context));
+members.Add("EmissiveMap", EmissiveMap_Element.ToLinkReference(context));
+members.Add("NormalMap", NormalMap_Element.ToLinkReference(context));
+members.Add("NormalScale", NormalScale_Element.ToLinkField(context));
+members.Add("OcclusionMap", OcclusionMap_Element.ToLinkReference(context));
+members.Add("DetailTextureScale", DetailTextureScale_Element.ToLinkField(context));
+members.Add("DetailTextureOffset", DetailTextureOffset_Element.ToLinkField(context));
+members.Add("DetailAlbedoTexture", DetailAlbedoTexture_Element.ToLinkReference(context));
+members.Add("DetailNormalMap", DetailNormalMap_Element.ToLinkReference(context));
+members.Add("DetailNormalScale", DetailNormalScale_Element.ToLinkField(context));
+members.Add("Culling", Culling_Element.ToLinkField(context));
+members.Add("HideSlicers", HideSlicers_Element.ToLinkField(context));
+members.Add("Slicers", Slicers.ToLinkList(context, m => m.ToLinkSyncObject(context)));
+members.Add("LocalSpace", LocalSpace_Element.ToLinkField(context));
+members.Add("EdgeTransitionStart", EdgeTransitionStart_Element.ToLinkField(context));
+members.Add("EdgeTransitionEnd", EdgeTransitionEnd_Element.ToLinkField(context));
+members.Add("AlphaHandling", AlphaHandling_Element.ToLinkField(context));
+members.Add("_useAlphaClip", _useAlphaClip_Element.ToLinkField(context));
+members.Add("AlphaClip", AlphaClip_Element.ToLinkField(context));
+members.Add("OffsetFactor", OffsetFactor_Element.ToLinkField(context));
+members.Add("OffsetUnits", OffsetUnits_Element.ToLinkField(context));
+members.Add("RenderQueue", RenderQueue_Element.ToLinkField(context));
 }
 
 }

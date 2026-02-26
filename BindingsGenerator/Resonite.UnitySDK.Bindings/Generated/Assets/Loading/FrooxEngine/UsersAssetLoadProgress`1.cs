@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.UsersAssetLoadProgress<>
-// Generated on: čtvrtek 26. února 2026 10:03:33
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:26:47
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -41,17 +41,14 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Asset", Asset_Element.Data.ToResoniteReference(context));
-members.Add("ProgressInfo", new ResoniteLink.SyncList()
-{
-    Elements = ProgressInfo.Data.ConvertList(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers(context) })
-});
-members.Add("TotalUsers", TotalUsers_Element.Data.ToResoniteLinkField());
-members.Add("UsersNotLoaded", UsersNotLoaded_Element.Data.ToResoniteLinkField());
-members.Add("UsersLoading", UsersLoading_Element.Data.ToResoniteLinkField());
-members.Add("UsersPartiallyLoaded", UsersPartiallyLoaded_Element.Data.ToResoniteLinkField());
-members.Add("UsersFullyLoaded", UsersFullyLoaded_Element.Data.ToResoniteLinkField());
-members.Add("UsersFailedToLoad", UsersFailedToLoad_Element.Data.ToResoniteLinkField());
+members.Add("Asset", Asset_Element.ToLinkReference(context));
+members.Add("ProgressInfo", ProgressInfo.ToLinkList(context, m => m.ToLinkSyncObject(context)));
+members.Add("TotalUsers", TotalUsers_Element.ToLinkField(context));
+members.Add("UsersNotLoaded", UsersNotLoaded_Element.ToLinkField(context));
+members.Add("UsersLoading", UsersLoading_Element.ToLinkField(context));
+members.Add("UsersPartiallyLoaded", UsersPartiallyLoaded_Element.ToLinkField(context));
+members.Add("UsersFullyLoaded", UsersFullyLoaded_Element.ToLinkField(context));
+members.Add("UsersFailedToLoad", UsersFailedToLoad_Element.ToLinkField(context));
 }
 
 }

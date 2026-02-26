@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.CommonAvatar.AvatarPoseSmoothLerp
-// Generated on: čtvrtek 26. února 2026 10:04:06
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:27:26
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -31,9 +31,9 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("PositionSmoothSpeed", PositionSmoothSpeed_Element.Data.ToResoniteLinkField());
-members.Add("RotationSmoothSpeed", RotationSmoothSpeed_Element.Data.ToResoniteLinkField());
-members.Add("SmoothSimulatedPoses", SmoothSimulatedPoses_Element.Data.ToResoniteLinkField());
+members.Add("PositionSmoothSpeed", PositionSmoothSpeed_Element.ToLinkField(context));
+members.Add("RotationSmoothSpeed", RotationSmoothSpeed_Element.ToLinkField(context));
+members.Add("SmoothSimulatedPoses", SmoothSimulatedPoses_Element.ToLinkField(context));
 }
 
 }

@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.DistanceMeter
-// Generated on: čtvrtek 26. února 2026 10:04:39
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:28:06
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -48,25 +48,19 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Anchors", new ResoniteLink.SyncList()
-{
-    Elements = Anchors.Data.ConvertList(m => m.Data.ToResoniteReference(context))
-});
-members.Add("_legacyAnchor0", _legacyAnchor0_Element.Data.ToResoniteReference(context));
-members.Add("_legacyAnchor1", _legacyAnchor1_Element.Data.ToResoniteReference(context));
-members.Add("FormatUnit", FormatUnit_Element.Data.ToResoniteLinkField());
-members.Add("FormatNumber", FormatNumber_Element.Data.ToResoniteLinkField());
-members.Add("CompoundFormatUnits", new ResoniteLink.SyncList()
-{
-    Elements = CompoundFormatUnits.Data.ConvertList(m => m.Data.ToResoniteLinkField())
-});
-members.Add("CompoundUseLongNames", CompoundUseLongNames_Element.Data.ToResoniteLinkField());
-members.Add("CompoundOverrideNames", CompoundOverrideNames_Element.Data.ToResoniteLinkField());
-members.Add("CompoundDiscardLastFraction", CompoundDiscardLastFraction_Element.Data.ToResoniteLinkField());
-members.Add("CompoundSeparator", CompoundSeparator_Element.Data.ToResoniteLinkField());
-members.Add("CompoundZeroHandling", CompoundZeroHandling_Element.Data.ToResoniteLinkField());
-members.Add("MeasurementSpace", new ResoniteLink.SyncObject() { Members = MeasurementSpace.CollectMembers(context) });
-members.Add("DistanceText", DistanceText_Element.Data.ToResoniteReference(context));
+members.Add("Anchors", Anchors.ToLinkList(context, m => m.ToLinkReference(context)));
+members.Add("_legacyAnchor0", _legacyAnchor0_Element.ToLinkReference(context));
+members.Add("_legacyAnchor1", _legacyAnchor1_Element.ToLinkReference(context));
+members.Add("FormatUnit", FormatUnit_Element.ToLinkField(context));
+members.Add("FormatNumber", FormatNumber_Element.ToLinkField(context));
+members.Add("CompoundFormatUnits", CompoundFormatUnits.ToLinkList(context, m => m.ToLinkField(context)));
+members.Add("CompoundUseLongNames", CompoundUseLongNames_Element.ToLinkField(context));
+members.Add("CompoundOverrideNames", CompoundOverrideNames_Element.ToLinkField(context));
+members.Add("CompoundDiscardLastFraction", CompoundDiscardLastFraction_Element.ToLinkField(context));
+members.Add("CompoundSeparator", CompoundSeparator_Element.ToLinkField(context));
+members.Add("CompoundZeroHandling", CompoundZeroHandling_Element.ToLinkField(context));
+members.Add("MeasurementSpace", MeasurementSpace.ToLinkSyncObject(context));
+members.Add("DistanceText", DistanceText_Element.ToLinkReference(context));
 }
 
 }

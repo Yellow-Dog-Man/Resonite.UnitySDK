@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [ProtoFluxBindings]FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Cloud.Twitch.TwitchChatMessageEvent
-// Generated on: čtvrtek 26. února 2026 10:04:21
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:27:45
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -43,23 +43,23 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("OnMessage", OnMessage_Element.Data.ToResoniteReference(context));
-members.Add("Message", new ResoniteLink.EmptyElement());
-members.Add("UserId", new ResoniteLink.EmptyElement());
-members.Add("DisplayName", new ResoniteLink.EmptyElement());
-members.Add("Color", new ResoniteLink.EmptyElement());
-members.Add("IsHighlighted", new ResoniteLink.EmptyElement());
-members.Add("IsSubscriber", new ResoniteLink.EmptyElement());
-members.Add("IsModerator", new ResoniteLink.EmptyElement());
-members.Add("IsBroadcaster", new ResoniteLink.EmptyElement());
-members.Add("IsTurbo", new ResoniteLink.EmptyElement());
-members.Add("IsVIP", new ResoniteLink.EmptyElement());
-members.Add("CheerBadge", new ResoniteLink.EmptyElement());
-members.Add("CheerAmount", new ResoniteLink.EmptyElement());
-members.Add("Bits", new ResoniteLink.EmptyElement());
-members.Add("BitsDollars", new ResoniteLink.EmptyElement());
-members.Add("SubscribedMonthCount", new ResoniteLink.EmptyElement());
-members.Add("CustomRewardId", new ResoniteLink.EmptyElement());
+members.Add("OnMessage", OnMessage_Element.ToLinkReference(context));
+members.Add("Message", Message.ToLinkEmpty(context));
+members.Add("UserId", UserId.ToLinkEmpty(context));
+members.Add("DisplayName", DisplayName.ToLinkEmpty(context));
+members.Add("Color", Color.ToLinkEmpty(context));
+members.Add("IsHighlighted", IsHighlighted.ToLinkEmpty(context));
+members.Add("IsSubscriber", IsSubscriber.ToLinkEmpty(context));
+members.Add("IsModerator", IsModerator.ToLinkEmpty(context));
+members.Add("IsBroadcaster", IsBroadcaster.ToLinkEmpty(context));
+members.Add("IsTurbo", IsTurbo.ToLinkEmpty(context));
+members.Add("IsVIP", IsVIP.ToLinkEmpty(context));
+members.Add("CheerBadge", CheerBadge.ToLinkEmpty(context));
+members.Add("CheerAmount", CheerAmount.ToLinkEmpty(context));
+members.Add("Bits", Bits.ToLinkEmpty(context));
+members.Add("BitsDollars", BitsDollars.ToLinkEmpty(context));
+members.Add("SubscribedMonthCount", SubscribedMonthCount.ToLinkEmpty(context));
+members.Add("CustomRewardId", CustomRewardId.ToLinkEmpty(context));
 }
 
 }

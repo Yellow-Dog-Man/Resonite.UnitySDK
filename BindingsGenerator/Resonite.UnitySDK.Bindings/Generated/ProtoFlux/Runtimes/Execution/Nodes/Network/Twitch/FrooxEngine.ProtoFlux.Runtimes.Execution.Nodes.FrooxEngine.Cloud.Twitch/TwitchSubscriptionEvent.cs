@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [ProtoFluxBindings]FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Cloud.Twitch.TwitchSubscriptionEvent
-// Generated on: čtvrtek 26. února 2026 10:04:21
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:27:45
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -36,16 +36,16 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("OnSubscription", OnSubscription_Element.Data.ToResoniteReference(context));
-members.Add("UserId", new ResoniteLink.EmptyElement());
-members.Add("DisplayName", new ResoniteLink.EmptyElement());
-members.Add("Message", new ResoniteLink.EmptyElement());
-members.Add("Months", new ResoniteLink.EmptyElement());
-members.Add("Plan", new ResoniteLink.EmptyElement());
-members.Add("IsResub", new ResoniteLink.EmptyElement());
-members.Add("IsGifted", new ResoniteLink.EmptyElement());
-members.Add("GiftedBy", new ResoniteLink.EmptyElement());
-members.Add("IsAnonymous", new ResoniteLink.EmptyElement());
+members.Add("OnSubscription", OnSubscription_Element.ToLinkReference(context));
+members.Add("UserId", UserId.ToLinkEmpty(context));
+members.Add("DisplayName", DisplayName.ToLinkEmpty(context));
+members.Add("Message", Message.ToLinkEmpty(context));
+members.Add("Months", Months.ToLinkEmpty(context));
+members.Add("Plan", Plan.ToLinkEmpty(context));
+members.Add("IsResub", IsResub.ToLinkEmpty(context));
+members.Add("IsGifted", IsGifted.ToLinkEmpty(context));
+members.Add("GiftedBy", GiftedBy.ToLinkEmpty(context));
+members.Add("IsAnonymous", IsAnonymous.ToLinkEmpty(context));
 }
 
 }

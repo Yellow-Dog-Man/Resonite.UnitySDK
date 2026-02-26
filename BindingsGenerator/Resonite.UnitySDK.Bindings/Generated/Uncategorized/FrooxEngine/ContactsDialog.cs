@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.ContactsDialog
-// Generated on: čtvrtek 26. února 2026 10:04:44
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:28:09
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -63,25 +63,25 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("_searchBar", _searchBar_Element.Data.ToResoniteReference(context));
-members.Add("_listRoot", _listRoot_Element.Data.ToResoniteReference(context));
-members.Add("_sessionsRoot", _sessionsRoot_Element.Data.ToResoniteReference(context));
-members.Add("_messagesRoot", _messagesRoot_Element.Data.ToResoniteReference(context));
-members.Add("_status", _status_Element.Data.ToResoniteReference(context));
-members.Add("_avatar", _avatar_Element.Data.ToResoniteReference(context));
-members.Add("_username", _username_Element.Data.ToResoniteReference(context));
-members.Add("_userActionsRoot", _userActionsRoot_Element.Data.ToResoniteReference(context));
-members.Add("_sendMessageButton", _sendMessageButton_Element.Data.ToResoniteReference(context));
-members.Add("_sendVoiceMessageButton", _sendVoiceMessageButton_Element.Data.ToResoniteReference(context));
-members.Add("_sendMessageTextField", _sendMessageTextField_Element.Data.ToResoniteReference(context));
-members.Add("_messagesScrollRect", _messagesScrollRect_Element.Data.ToResoniteReference(context));
-members.Add("_inviteButton", _inviteButton_Element.Data.ToResoniteReference(context));
-members.Add("_requestInviteButton", _requestInviteButton_Element.Data.ToResoniteReference(context));
-members.Add("_banAllButton", _banAllButton_Element.Data.ToResoniteReference(context));
-members.Add("_banSessionButton", _banSessionButton_Element.Data.ToResoniteReference(context));
-members.Add("_unblockedButton", _unblockedButton_Element.Data.ToResoniteReference(context));
-members.Add("_avatarBlockButton", _avatarBlockButton_Element.Data.ToResoniteReference(context));
-members.Add("_mutualBlockButton", _mutualBlockButton_Element.Data.ToResoniteReference(context));
+members.Add("_searchBar", _searchBar_Element.ToLinkReference(context));
+members.Add("_listRoot", _listRoot_Element.ToLinkReference(context));
+members.Add("_sessionsRoot", _sessionsRoot_Element.ToLinkReference(context));
+members.Add("_messagesRoot", _messagesRoot_Element.ToLinkReference(context));
+members.Add("_status", _status_Element.ToLinkReference(context));
+members.Add("_avatar", _avatar_Element.ToLinkReference(context));
+members.Add("_username", _username_Element.ToLinkReference(context));
+members.Add("_userActionsRoot", _userActionsRoot_Element.ToLinkReference(context));
+members.Add("_sendMessageButton", _sendMessageButton_Element.ToLinkReference(context));
+members.Add("_sendVoiceMessageButton", _sendVoiceMessageButton_Element.ToLinkReference(context));
+members.Add("_sendMessageTextField", _sendMessageTextField_Element.ToLinkReference(context));
+members.Add("_messagesScrollRect", _messagesScrollRect_Element.ToLinkReference(context));
+members.Add("_inviteButton", _inviteButton_Element.ToLinkReference(context));
+members.Add("_requestInviteButton", _requestInviteButton_Element.ToLinkReference(context));
+members.Add("_banAllButton", _banAllButton_Element.ToLinkReference(context));
+members.Add("_banSessionButton", _banSessionButton_Element.ToLinkReference(context));
+members.Add("_unblockedButton", _unblockedButton_Element.ToLinkReference(context));
+members.Add("_avatarBlockButton", _avatarBlockButton_Element.ToLinkReference(context));
+members.Add("_mutualBlockButton", _mutualBlockButton_Element.ToLinkReference(context));
 }
 
 }

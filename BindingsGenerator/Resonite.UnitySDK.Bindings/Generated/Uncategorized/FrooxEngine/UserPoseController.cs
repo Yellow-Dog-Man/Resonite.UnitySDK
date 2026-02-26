@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.UserPoseController
-// Generated on: čtvrtek 26. února 2026 10:04:45
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:28:10
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -41,14 +41,14 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("ScreenController", ScreenController_Element.Data.ToResoniteReference(context));
-members.Add("BodyHorizontalAngle", BodyHorizontalAngle_Element.Data.ToResoniteLinkField());
-members.Add("RenderDebugVisuals", RenderDebugVisuals_Element.Data.ToResoniteLinkField());
-members.Add("PauseLocomotionAnimation", PauseLocomotionAnimation_Element.Data.ToResoniteLinkField());
-members.Add("OverrideLocomotionVelocity", OverrideLocomotionVelocity_Element.Data.ToResoniteLinkField());
-members.Add("OverrideLocomotionAngularVelocity", OverrideLocomotionAngularVelocity_Element.Data.ToResoniteLinkField());
-members.Add("SimulationSpeedRatio", SimulationSpeedRatio_Element.Data.ToResoniteLinkField());
-members.Add("_defaultConfig", _defaultConfig_Element.Data.ToResoniteReference(context));
+members.Add("ScreenController", ScreenController_Element.ToLinkReference(context));
+members.Add("BodyHorizontalAngle", BodyHorizontalAngle_Element.ToLinkField(context));
+members.Add("RenderDebugVisuals", RenderDebugVisuals_Element.ToLinkField(context));
+members.Add("PauseLocomotionAnimation", PauseLocomotionAnimation_Element.ToLinkField(context));
+members.Add("OverrideLocomotionVelocity", OverrideLocomotionVelocity_Element.ToLinkField(context));
+members.Add("OverrideLocomotionAngularVelocity", OverrideLocomotionAngularVelocity_Element.ToLinkField(context));
+members.Add("SimulationSpeedRatio", SimulationSpeedRatio_Element.ToLinkField(context));
+members.Add("_defaultConfig", _defaultConfig_Element.ToLinkReference(context));
 }
 
 }

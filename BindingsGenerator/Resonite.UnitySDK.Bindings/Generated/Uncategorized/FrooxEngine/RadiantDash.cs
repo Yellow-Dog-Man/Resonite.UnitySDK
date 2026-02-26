@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.RadiantDash
-// Generated on: čtvrtek 26. února 2026 10:04:44
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:28:10
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -97,42 +97,42 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("CurrentScreen", CurrentScreen_Element.Data.ToResoniteReference(context));
-members.Add("Open", Open_Element.Data.ToResoniteLinkField());
-members.Add("AnimationSpeed", AnimationSpeed_Element.Data.ToResoniteLinkField());
-members.Add("ScreenProjection", ScreenProjection_Element.Data.ToResoniteLinkField());
-members.Add("Curvature", Curvature_Element.Data.ToResoniteLinkField());
-members.Add("AspectRatioCompensation", AspectRatioCompensation_Element.Data.ToResoniteLinkField());
-members.Add("ScreenSwitchingEnabled", ScreenSwitchingEnabled_Element.Data.ToResoniteLinkField());
-members.Add("_screensContainer", _screensContainer_Element.Data.ToResoniteReference(context));
-members.Add("_camera", _camera_Element.Data.ToResoniteReference(context));
-members.Add("_renderTexture", _renderTexture_Element.Data.ToResoniteReference(context));
-members.Add("_topContainer", _topContainer_Element.Data.ToResoniteReference(context));
-members.Add("_topMesh", _topMesh_Element.Data.ToResoniteReference(context));
-members.Add("_screenMesh", _screenMesh_Element.Data.ToResoniteReference(context));
-members.Add("_buttonsMesh", _buttonsMesh_Element.Data.ToResoniteReference(context));
-members.Add("_topMaterial", _topMaterial_Element.Data.ToResoniteReference(context));
-members.Add("_screenMaterial", _screenMaterial_Element.Data.ToResoniteReference(context));
-members.Add("_buttonsMaterial", _buttonsMaterial_Element.Data.ToResoniteReference(context));
-members.Add("_overlayEffectMaterial", _overlayEffectMaterial_Element.Data.ToResoniteReference(context));
-members.Add("_topBorderMaterial", _topBorderMaterial_Element.Data.ToResoniteReference(context));
-members.Add("_screenBorderMaterial", _screenBorderMaterial_Element.Data.ToResoniteReference(context));
-members.Add("_buttonsBorderMaterial", _buttonsBorderMaterial_Element.Data.ToResoniteReference(context));
-members.Add("_renderRoot", _renderRoot_Element.Data.ToResoniteReference(context));
-members.Add("_topRoot", _topRoot_Element.Data.ToResoniteReference(context));
-members.Add("_screenRoot", _screenRoot_Element.Data.ToResoniteReference(context));
-members.Add("_buttonsRoot", _buttonsRoot_Element.Data.ToResoniteReference(context));
-members.Add("_visualsRoot", _visualsRoot_Element.Data.ToResoniteReference(context));
-members.Add("_effectRoot", _effectRoot_Element.Data.ToResoniteReference(context));
-members.Add("_topCanvas", _topCanvas_Element.Data.ToResoniteReference(context));
-members.Add("_buttonsUIroot", _buttonsUIroot_Element.Data.ToResoniteReference(context));
-members.Add("_buttonsCanvas", _buttonsCanvas_Element.Data.ToResoniteReference(context));
-members.Add("_style", _style_Element.Data.ToResoniteReference(context));
-members.Add("_particleColors", _particleColors_Element.Data.ToResoniteReference(context));
-members.Add("_emitter", _emitter_Element.Data.ToResoniteReference(context));
-members.Add("_topCollider", _topCollider_Element.Data.ToResoniteReference(context));
-members.Add("_screenCollider", _screenCollider_Element.Data.ToResoniteReference(context));
-members.Add("_buttonsCollider", _buttonsCollider_Element.Data.ToResoniteReference(context));
+members.Add("CurrentScreen", CurrentScreen_Element.ToLinkReference(context));
+members.Add("Open", Open_Element.ToLinkField(context));
+members.Add("AnimationSpeed", AnimationSpeed_Element.ToLinkField(context));
+members.Add("ScreenProjection", ScreenProjection_Element.ToLinkField(context));
+members.Add("Curvature", Curvature_Element.ToLinkField(context));
+members.Add("AspectRatioCompensation", AspectRatioCompensation_Element.ToLinkField(context));
+members.Add("ScreenSwitchingEnabled", ScreenSwitchingEnabled_Element.ToLinkField(context));
+members.Add("_screensContainer", _screensContainer_Element.ToLinkReference(context));
+members.Add("_camera", _camera_Element.ToLinkReference(context));
+members.Add("_renderTexture", _renderTexture_Element.ToLinkReference(context));
+members.Add("_topContainer", _topContainer_Element.ToLinkReference(context));
+members.Add("_topMesh", _topMesh_Element.ToLinkReference(context));
+members.Add("_screenMesh", _screenMesh_Element.ToLinkReference(context));
+members.Add("_buttonsMesh", _buttonsMesh_Element.ToLinkReference(context));
+members.Add("_topMaterial", _topMaterial_Element.ToLinkReference(context));
+members.Add("_screenMaterial", _screenMaterial_Element.ToLinkReference(context));
+members.Add("_buttonsMaterial", _buttonsMaterial_Element.ToLinkReference(context));
+members.Add("_overlayEffectMaterial", _overlayEffectMaterial_Element.ToLinkReference(context));
+members.Add("_topBorderMaterial", _topBorderMaterial_Element.ToLinkReference(context));
+members.Add("_screenBorderMaterial", _screenBorderMaterial_Element.ToLinkReference(context));
+members.Add("_buttonsBorderMaterial", _buttonsBorderMaterial_Element.ToLinkReference(context));
+members.Add("_renderRoot", _renderRoot_Element.ToLinkReference(context));
+members.Add("_topRoot", _topRoot_Element.ToLinkReference(context));
+members.Add("_screenRoot", _screenRoot_Element.ToLinkReference(context));
+members.Add("_buttonsRoot", _buttonsRoot_Element.ToLinkReference(context));
+members.Add("_visualsRoot", _visualsRoot_Element.ToLinkReference(context));
+members.Add("_effectRoot", _effectRoot_Element.ToLinkReference(context));
+members.Add("_topCanvas", _topCanvas_Element.ToLinkReference(context));
+members.Add("_buttonsUIroot", _buttonsUIroot_Element.ToLinkReference(context));
+members.Add("_buttonsCanvas", _buttonsCanvas_Element.ToLinkReference(context));
+members.Add("_style", _style_Element.ToLinkReference(context));
+members.Add("_particleColors", _particleColors_Element.ToLinkReference(context));
+members.Add("_emitter", _emitter_Element.ToLinkReference(context));
+members.Add("_topCollider", _topCollider_Element.ToLinkReference(context));
+members.Add("_screenCollider", _screenCollider_Element.ToLinkReference(context));
+members.Add("_buttonsCollider", _buttonsCollider_Element.ToLinkReference(context));
 }
 
 }

@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.FingerPoseModifier
-// Generated on: čtvrtek 26. února 2026 10:04:50
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:28:15
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -29,9 +29,9 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Source", Source_Element.Data.ToResoniteReference(context));
-members.Add("LeftOffsets", new ResoniteLink.SyncObject() { Members = LeftOffsets.CollectMembers(context) });
-members.Add("RightOffsets", new ResoniteLink.SyncObject() { Members = RightOffsets.CollectMembers(context) });
+members.Add("Source", Source_Element.ToLinkReference(context));
+members.Add("LeftOffsets", LeftOffsets.ToLinkSyncObject(context));
+members.Add("RightOffsets", RightOffsets.ToLinkSyncObject(context));
 }
 
 }

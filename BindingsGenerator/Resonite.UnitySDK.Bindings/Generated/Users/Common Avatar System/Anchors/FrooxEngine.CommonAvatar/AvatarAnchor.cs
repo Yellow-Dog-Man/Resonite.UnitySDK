@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.CommonAvatar.AvatarAnchor
-// Generated on: čtvrtek 26. února 2026 10:04:06
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:27:26
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -63,36 +63,27 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Highlight", Highlight_Element.Data.ToResoniteLinkField());
-members.Add("ParentSpace", new ResoniteLink.SyncObject() { Members = ParentSpace.CollectMembers(context) });
-members.Add("MinScale", MinScale_Element.Data.ToResoniteLinkField());
-members.Add("MaxScale", MaxScale_Element.Data.ToResoniteLinkField());
-members.Add("PositionNode", PositionNode_Element.Data.ToResoniteLinkField());
-members.Add("PositionReference", PositionReference_Element.Data.ToResoniteReference(context));
-members.Add("RotationNode", RotationNode_Element.Data.ToResoniteLinkField());
-members.Add("RotationReference", RotationReference_Element.Data.ToResoniteReference(context));
-members.Add("PreserveUpOnEnter", PreserveUpOnEnter_Element.Data.ToResoniteLinkField());
-members.Add("PreserveUpOnExit", PreserveUpOnExit_Element.Data.ToResoniteLinkField());
-members.Add("UnparentEverythingOnDestroy", UnparentEverythingOnDestroy_Element.Data.ToResoniteLinkField());
-members.Add("TransformRestoreMode", TransformRestoreMode_Element.Data.ToResoniteLinkField());
-members.Add("RestoreNode", RestoreNode_Element.Data.ToResoniteLinkField());
-members.Add("RestoreReference", RestoreReference_Element.Data.ToResoniteReference(context));
-members.Add("Filters", new ResoniteLink.SyncList()
-{
-    Elements = Filters.Data.ConvertList(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers(context) })
-});
-members.Add("UserFilters", new ResoniteLink.SyncList()
-{
-    Elements = UserFilters.Data.ConvertList(m => m.Data.ToResoniteReference(context))
-});
-members.Add("_originalSpace", _originalSpace_Element.Data.ToResoniteReference(context));
-members.Add("_originalPosition", _originalPosition_Element.Data.ToResoniteLinkField());
-members.Add("_originalRotation", _originalRotation_Element.Data.ToResoniteLinkField());
-members.Add("_originalScale", _originalScale_Element.Data.ToResoniteLinkField());
-members.Add("_dummyObjectSlots", new ResoniteLink.SyncList()
-{
-    Elements = _dummyObjectSlots.Data.ConvertList(m => m.Data.ToResoniteReference(context))
-});
+members.Add("Highlight", Highlight_Element.ToLinkField(context));
+members.Add("ParentSpace", ParentSpace.ToLinkSyncObject(context));
+members.Add("MinScale", MinScale_Element.ToLinkField(context));
+members.Add("MaxScale", MaxScale_Element.ToLinkField(context));
+members.Add("PositionNode", PositionNode_Element.ToLinkField(context));
+members.Add("PositionReference", PositionReference_Element.ToLinkReference(context));
+members.Add("RotationNode", RotationNode_Element.ToLinkField(context));
+members.Add("RotationReference", RotationReference_Element.ToLinkReference(context));
+members.Add("PreserveUpOnEnter", PreserveUpOnEnter_Element.ToLinkField(context));
+members.Add("PreserveUpOnExit", PreserveUpOnExit_Element.ToLinkField(context));
+members.Add("UnparentEverythingOnDestroy", UnparentEverythingOnDestroy_Element.ToLinkField(context));
+members.Add("TransformRestoreMode", TransformRestoreMode_Element.ToLinkField(context));
+members.Add("RestoreNode", RestoreNode_Element.ToLinkField(context));
+members.Add("RestoreReference", RestoreReference_Element.ToLinkReference(context));
+members.Add("Filters", Filters.ToLinkList(context, m => m.ToLinkSyncObject(context)));
+members.Add("UserFilters", UserFilters.ToLinkList(context, m => m.ToLinkReference(context)));
+members.Add("_originalSpace", _originalSpace_Element.ToLinkReference(context));
+members.Add("_originalPosition", _originalPosition_Element.ToLinkField(context));
+members.Add("_originalRotation", _originalRotation_Element.ToLinkField(context));
+members.Add("_originalScale", _originalScale_Element.ToLinkField(context));
+members.Add("_dummyObjectSlots", _dummyObjectSlots.ToLinkList(context, m => m.ToLinkReference(context)));
 }
 
 }

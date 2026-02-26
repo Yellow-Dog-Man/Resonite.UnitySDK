@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.CharacterController
-// Generated on: čtvrtek 26. února 2026 10:03:40
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:26:56
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -96,42 +96,42 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("SimulatingUser", SimulatingUser_Element.Data.ToResoniteReference(context));
-members.Add("CharacterRoot", CharacterRoot_Element.Data.ToResoniteReference(context));
-members.Add("HeadReference", HeadReference_Element.Data.ToResoniteReference(context));
-members.Add("SimulateRotation", SimulateRotation_Element.Data.ToResoniteLinkField());
-members.Add("MassScaling", MassScaling_Element.Data.ToResoniteLinkField());
-members.Add("ForceScaling", ForceScaling_Element.Data.ToResoniteLinkField());
-members.Add("SpeedScaling", SpeedScaling_Element.Data.ToResoniteLinkField());
-members.Add("JumpScaling", JumpScaling_Element.Data.ToResoniteLinkField());
-members.Add("GravityScaling", GravityScaling_Element.Data.ToResoniteLinkField());
-members.Add("LinearDamping", LinearDamping_Element.Data.ToResoniteLinkField());
-members.Add("AngularDamping", AngularDamping_Element.Data.ToResoniteLinkField());
-members.Add("Margin", Margin_Element.Data.ToResoniteLinkField());
-members.Add("StepUpHeight", StepUpHeight_Element.Data.ToResoniteLinkField());
-members.Add("StepUpCheckDistance", StepUpCheckDistance_Element.Data.ToResoniteLinkField());
-members.Add("KillVerticalVelocityAfterStepUp", KillVerticalVelocityAfterStepUp_Element.Data.ToResoniteLinkField());
-members.Add("EdgeDetectionDepth", EdgeDetectionDepth_Element.Data.ToResoniteLinkField());
-members.Add("Speed", Speed_Element.Data.ToResoniteLinkField());
-members.Add("SlidingSpeed", SlidingSpeed_Element.Data.ToResoniteLinkField());
-members.Add("AirSpeed", AirSpeed_Element.Data.ToResoniteLinkField());
-members.Add("TractionForce", TractionForce_Element.Data.ToResoniteLinkField());
-members.Add("SlidingForce", SlidingForce_Element.Data.ToResoniteLinkField());
-members.Add("AirForce", AirForce_Element.Data.ToResoniteLinkField());
-members.Add("MaximumGlueForce", MaximumGlueForce_Element.Data.ToResoniteLinkField());
-members.Add("MaximumTractionSlope", MaximumTractionSlope_Element.Data.ToResoniteLinkField());
-members.Add("MaximumSupportSlope", MaximumSupportSlope_Element.Data.ToResoniteLinkField());
-members.Add("JumpSpeed", JumpSpeed_Element.Data.ToResoniteLinkField());
-members.Add("SlidingJumpSpeed", SlidingJumpSpeed_Element.Data.ToResoniteLinkField());
-members.Add("Gravity", Gravity_Element.Data.ToResoniteLinkField());
-members.Add("GravitySpace", new ResoniteLink.SyncObject() { Members = GravitySpace.CollectMembers(context) });
-members.Add("DebugVisualDuration", DebugVisualDuration_Element.Data.ToResoniteLinkField());
-members.Add("__height", __height_Element.Data.ToResoniteLinkField());
-members.Add("__radius", __radius_Element.Data.ToResoniteLinkField());
-members.Add("__mass", __mass_Element.Data.ToResoniteLinkField());
-members.Add("__collideWithOtherCharacters", __collideWithOtherCharacters_Element.Data.ToResoniteLinkField());
-members.Add("__ignoreRaycasts", __ignoreRaycasts_Element.Data.ToResoniteLinkField());
-members.Add("__rootAtBottom", __rootAtBottom_Element.Data.ToResoniteLinkField());
+members.Add("SimulatingUser", SimulatingUser_Element.ToLinkReference(context));
+members.Add("CharacterRoot", CharacterRoot_Element.ToLinkReference(context));
+members.Add("HeadReference", HeadReference_Element.ToLinkReference(context));
+members.Add("SimulateRotation", SimulateRotation_Element.ToLinkField(context));
+members.Add("MassScaling", MassScaling_Element.ToLinkField(context));
+members.Add("ForceScaling", ForceScaling_Element.ToLinkField(context));
+members.Add("SpeedScaling", SpeedScaling_Element.ToLinkField(context));
+members.Add("JumpScaling", JumpScaling_Element.ToLinkField(context));
+members.Add("GravityScaling", GravityScaling_Element.ToLinkField(context));
+members.Add("LinearDamping", LinearDamping_Element.ToLinkField(context));
+members.Add("AngularDamping", AngularDamping_Element.ToLinkField(context));
+members.Add("Margin", Margin_Element.ToLinkField(context));
+members.Add("StepUpHeight", StepUpHeight_Element.ToLinkField(context));
+members.Add("StepUpCheckDistance", StepUpCheckDistance_Element.ToLinkField(context));
+members.Add("KillVerticalVelocityAfterStepUp", KillVerticalVelocityAfterStepUp_Element.ToLinkField(context));
+members.Add("EdgeDetectionDepth", EdgeDetectionDepth_Element.ToLinkField(context));
+members.Add("Speed", Speed_Element.ToLinkField(context));
+members.Add("SlidingSpeed", SlidingSpeed_Element.ToLinkField(context));
+members.Add("AirSpeed", AirSpeed_Element.ToLinkField(context));
+members.Add("TractionForce", TractionForce_Element.ToLinkField(context));
+members.Add("SlidingForce", SlidingForce_Element.ToLinkField(context));
+members.Add("AirForce", AirForce_Element.ToLinkField(context));
+members.Add("MaximumGlueForce", MaximumGlueForce_Element.ToLinkField(context));
+members.Add("MaximumTractionSlope", MaximumTractionSlope_Element.ToLinkField(context));
+members.Add("MaximumSupportSlope", MaximumSupportSlope_Element.ToLinkField(context));
+members.Add("JumpSpeed", JumpSpeed_Element.ToLinkField(context));
+members.Add("SlidingJumpSpeed", SlidingJumpSpeed_Element.ToLinkField(context));
+members.Add("Gravity", Gravity_Element.ToLinkField(context));
+members.Add("GravitySpace", GravitySpace.ToLinkSyncObject(context));
+members.Add("DebugVisualDuration", DebugVisualDuration_Element.ToLinkField(context));
+members.Add("__height", __height_Element.ToLinkField(context));
+members.Add("__radius", __radius_Element.ToLinkField(context));
+members.Add("__mass", __mass_Element.ToLinkField(context));
+members.Add("__collideWithOtherCharacters", __collideWithOtherCharacters_Element.ToLinkField(context));
+members.Add("__ignoreRaycasts", __ignoreRaycasts_Element.ToLinkField(context));
+members.Add("__rootAtBottom", __rootAtBottom_Element.ToLinkField(context));
 }
 
 }

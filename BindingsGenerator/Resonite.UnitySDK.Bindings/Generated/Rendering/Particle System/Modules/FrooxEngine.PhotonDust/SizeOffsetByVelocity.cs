@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.PhotonDust.SizeOffsetByVelocity
-// Generated on: čtvrtek 26. února 2026 10:04:38
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:28:05
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -35,11 +35,11 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("VelocityMultiplier", VelocityMultiplier_Element.Data.ToResoniteLinkField());
-members.Add("OffsetClampMin", OffsetClampMin_Element.Data.ToResoniteLinkField());
-members.Add("OffsetClampMax", OffsetClampMax_Element.Data.ToResoniteLinkField());
-members.Add("ResultClampMin", ResultClampMin_Element.Data.ToResoniteLinkField());
-members.Add("ResultClampMax", ResultClampMax_Element.Data.ToResoniteLinkField());
+members.Add("VelocityMultiplier", VelocityMultiplier_Element.ToLinkField(context));
+members.Add("OffsetClampMin", OffsetClampMin_Element.ToLinkField(context));
+members.Add("OffsetClampMax", OffsetClampMax_Element.ToLinkField(context));
+members.Add("ResultClampMin", ResultClampMin_Element.ToLinkField(context));
+members.Add("ResultClampMax", ResultClampMax_Element.ToLinkField(context));
 }
 
 }

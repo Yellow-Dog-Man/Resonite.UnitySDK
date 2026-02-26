@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.Slider
-// Generated on: čtvrtek 26. února 2026 10:04:42
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:28:08
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -56,25 +56,22 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Rotatable", Rotatable_Element.Data.ToResoniteLinkField());
-members.Add("Scalable", Scalable_Element.Data.ToResoniteLinkField());
-members.Add("Range", Range_Element.Data.ToResoniteLinkField());
-members.Add("Origin", Origin_Element.Data.ToResoniteLinkField());
-members.Add("MinScale", MinScale_Element.Data.ToResoniteLinkField());
-members.Add("MaxScale", MaxScale_Element.Data.ToResoniteLinkField());
-members.Add("VibrationOffset", VibrationOffset_Element.Data.ToResoniteLinkField());
-members.Add("VibrationPreset", VibrationPreset_Element.Data.ToResoniteLinkField());
-members.Add("SnapIncrement", SnapIncrement_Element.Data.ToResoniteLinkField());
-members.Add("SnapTime", SnapTime_Element.Data.ToResoniteLinkField());
-members.Add("SnapOnRelease", SnapOnRelease_Element.Data.ToResoniteLinkField());
-members.Add("SnapPositions", new ResoniteLink.SyncList()
-{
-    Elements = SnapPositions.Data.ConvertList(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers(context) })
-});
-members.Add("posOffset", posOffset_Element.Data.ToResoniteLinkField());
-members.Add("rotOffset", rotOffset_Element.Data.ToResoniteLinkField());
-members.Add("scaleReference", scaleReference_Element.Data.ToResoniteLinkField());
-members.Add("referenceParent", referenceParent_Element.Data.ToResoniteReference(context));
+members.Add("Rotatable", Rotatable_Element.ToLinkField(context));
+members.Add("Scalable", Scalable_Element.ToLinkField(context));
+members.Add("Range", Range_Element.ToLinkField(context));
+members.Add("Origin", Origin_Element.ToLinkField(context));
+members.Add("MinScale", MinScale_Element.ToLinkField(context));
+members.Add("MaxScale", MaxScale_Element.ToLinkField(context));
+members.Add("VibrationOffset", VibrationOffset_Element.ToLinkField(context));
+members.Add("VibrationPreset", VibrationPreset_Element.ToLinkField(context));
+members.Add("SnapIncrement", SnapIncrement_Element.ToLinkField(context));
+members.Add("SnapTime", SnapTime_Element.ToLinkField(context));
+members.Add("SnapOnRelease", SnapOnRelease_Element.ToLinkField(context));
+members.Add("SnapPositions", SnapPositions.ToLinkList(context, m => m.ToLinkSyncObject(context)));
+members.Add("posOffset", posOffset_Element.ToLinkField(context));
+members.Add("rotOffset", rotOffset_Element.ToLinkField(context));
+members.Add("scaleReference", scaleReference_Element.ToLinkField(context));
+members.Add("referenceParent", referenceParent_Element.ToLinkReference(context));
 }
 
 }

@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.BillboardBrushTool
-// Generated on: čtvrtek 26. února 2026 10:04:39
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:28:06
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -43,15 +43,15 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("MinRotation", MinRotation_Element.Data.ToResoniteLinkField());
-members.Add("MaxRotation", MaxRotation_Element.Data.ToResoniteLinkField());
-members.Add("RotationGap", RotationGap_Element.Data.ToResoniteLinkField());
-members.Add("UseRotation", UseRotation_Element.Data.ToResoniteLinkField());
-members.Add("UseSize", UseSize_Element.Data.ToResoniteLinkField());
-members.Add("UseUV", UseUV_Element.Data.ToResoniteLinkField());
-members.Add("_previewRenderer", _previewRenderer_Element.Data.ToResoniteReference(context));
-members.Add("_previewMesh", _previewMesh_Element.Data.ToResoniteReference(context));
-members.Add("_previewMeshOffset", _previewMeshOffset_Element.Data.ToResoniteReference(context));
+members.Add("MinRotation", MinRotation_Element.ToLinkField(context));
+members.Add("MaxRotation", MaxRotation_Element.ToLinkField(context));
+members.Add("RotationGap", RotationGap_Element.ToLinkField(context));
+members.Add("UseRotation", UseRotation_Element.ToLinkField(context));
+members.Add("UseSize", UseSize_Element.ToLinkField(context));
+members.Add("UseUV", UseUV_Element.ToLinkField(context));
+members.Add("_previewRenderer", _previewRenderer_Element.ToLinkReference(context));
+members.Add("_previewMesh", _previewMesh_Element.ToLinkReference(context));
+members.Add("_previewMeshOffset", _previewMeshOffset_Element.ToLinkReference(context));
 }
 
 }

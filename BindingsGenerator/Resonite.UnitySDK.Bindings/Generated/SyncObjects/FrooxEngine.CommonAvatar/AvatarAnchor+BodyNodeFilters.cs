@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.CommonAvatar.AvatarAnchor+BodyNodeFilters
-// Generated on: čtvrtek 26. února 2026 10:04:06
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:27:26
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -32,12 +32,9 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Node", Node_Element.Data.ToResoniteLinkField());
-members.Add("Required", Required_Element.Data.ToResoniteLinkField());
-members.Add("Filters", new ResoniteLink.SyncList()
-{
-    Elements = Filters.Data.ConvertList(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers(context) })
-});
+members.Add("Node", Node_Element.ToLinkField(context));
+members.Add("Required", Required_Element.ToLinkField(context));
+members.Add("Filters", Filters.ToLinkList(context, m => m.ToLinkSyncObject(context)));
 }
 
 }

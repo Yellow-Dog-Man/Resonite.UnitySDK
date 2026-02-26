@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [ProtoFluxBindings]FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Rendering.BakeReflectionProbes
-// Generated on: čtvrtek 26. února 2026 10:04:29
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:27:54
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -44,17 +44,17 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Root", Root_Element.Data.ToResoniteReference(context));
-members.Add("BakeInactive", BakeInactive_Element.Data.ToResoniteReference(context));
-members.Add("FilterWithTag", FilterWithTag_Element.Data.ToResoniteReference(context));
-members.Add("DelayBeforeBake", DelayBeforeBake_Element.Data.ToResoniteReference(context));
-members.Add("Probe", new ResoniteLink.EmptyElement());
-members.Add("ProbeIndex", new ResoniteLink.EmptyElement());
-members.Add("ProbeCount", new ResoniteLink.EmptyElement());
-members.Add("OnBakeBatchStart", OnBakeBatchStart_Element.Data.ToResoniteReference(context));
-members.Add("OnBeforeProbeBake", OnBeforeProbeBake_Element.Data.ToResoniteReference(context));
-members.Add("OnProbeBaked", OnProbeBaked_Element.Data.ToResoniteReference(context));
-members.Add("OnBakeBatchFinished", OnBakeBatchFinished_Element.Data.ToResoniteReference(context));
+members.Add("Root", Root_Element.ToLinkReference(context));
+members.Add("BakeInactive", BakeInactive_Element.ToLinkReference(context));
+members.Add("FilterWithTag", FilterWithTag_Element.ToLinkReference(context));
+members.Add("DelayBeforeBake", DelayBeforeBake_Element.ToLinkReference(context));
+members.Add("Probe", Probe.ToLinkEmpty(context));
+members.Add("ProbeIndex", ProbeIndex.ToLinkEmpty(context));
+members.Add("ProbeCount", ProbeCount.ToLinkEmpty(context));
+members.Add("OnBakeBatchStart", OnBakeBatchStart_Element.ToLinkReference(context));
+members.Add("OnBeforeProbeBake", OnBeforeProbeBake_Element.ToLinkReference(context));
+members.Add("OnProbeBaked", OnProbeBaked_Element.ToLinkReference(context));
+members.Add("OnBakeBatchFinished", OnBakeBatchFinished_Element.ToLinkReference(context));
 }
 
 }

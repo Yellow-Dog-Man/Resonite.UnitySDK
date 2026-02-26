@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.CommonAvatar.AvatarObjectSlot
-// Generated on: čtvrtek 26. února 2026 10:04:06
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:27:26
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -46,17 +46,17 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Priority", Priority_Element.Data.ToResoniteLinkField());
-members.Add("Equipped", Equipped_Element.Data.ToResoniteReference(context));
-members.Add("Node", Node_Element.Data.ToResoniteLinkField());
-members.Add("IsTracking", IsTracking_Element.Data.ToResoniteLinkField());
-members.Add("IsActive", IsActive_Element.Data.ToResoniteLinkField());
-members.Add("IsSimulated", IsSimulated_Element.Data.ToResoniteLinkField());
-members.Add("DriveActive", DriveActive_Element.Data.ToResoniteLinkField());
-members.Add("DriveScale", DriveScale_Element.Data.ToResoniteLinkField());
-members.Add("DoNotSimulate", DoNotSimulate_Element.Data.ToResoniteLinkField());
-members.Add("Filters", new ResoniteLink.SyncObject() { Members = Filters.CollectMembers(context) });
-members.Add("_autoSmoothing", _autoSmoothing_Element.Data.ToResoniteReference(context));
+members.Add("Priority", Priority_Element.ToLinkField(context));
+members.Add("Equipped", Equipped_Element.ToLinkReference(context));
+members.Add("Node", Node_Element.ToLinkField(context));
+members.Add("IsTracking", IsTracking_Element.ToLinkField(context));
+members.Add("IsActive", IsActive_Element.ToLinkField(context));
+members.Add("IsSimulated", IsSimulated_Element.ToLinkField(context));
+members.Add("DriveActive", DriveActive_Element.ToLinkField(context));
+members.Add("DriveScale", DriveScale_Element.ToLinkField(context));
+members.Add("DoNotSimulate", DoNotSimulate_Element.ToLinkField(context));
+members.Add("Filters", Filters.ToLinkSyncObject(context));
+members.Add("_autoSmoothing", _autoSmoothing_Element.ToLinkReference(context));
 }
 
 }

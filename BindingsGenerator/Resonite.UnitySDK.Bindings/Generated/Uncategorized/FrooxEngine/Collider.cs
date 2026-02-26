@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.Collider
-// Generated on: čtvrtek 26. února 2026 10:03:41
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:26:58
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -35,11 +35,11 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Offset", Offset_Element.Data.ToResoniteLinkField());
-members.Add("Type", Type_Element.Data.ToResoniteLinkField());
-members.Add("Mass", Mass_Element.Data.ToResoniteLinkField());
-members.Add("CharacterCollider", CharacterCollider_Element.Data.ToResoniteLinkField());
-members.Add("IgnoreRaycasts", IgnoreRaycasts_Element.Data.ToResoniteLinkField());
+members.Add("Offset", Offset_Element.ToLinkField(context));
+members.Add("Type", Type_Element.ToLinkField(context));
+members.Add("Mass", Mass_Element.ToLinkField(context));
+members.Add("CharacterCollider", CharacterCollider_Element.ToLinkField(context));
+members.Add("IgnoreRaycasts", IgnoreRaycasts_Element.ToLinkField(context));
 }
 
 }

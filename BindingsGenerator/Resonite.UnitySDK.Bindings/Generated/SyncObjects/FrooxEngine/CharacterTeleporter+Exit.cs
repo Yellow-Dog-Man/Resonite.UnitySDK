@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.CharacterTeleporter+Exit
-// Generated on: čtvrtek 26. února 2026 10:03:40
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:26:56
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -43,14 +43,14 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Weight", Weight_Element.Data.ToResoniteLinkField());
-members.Add("TeleportExit", TeleportExit_Element.Data.ToResoniteReference(context));
-members.Add("ParentAfterTeleport", ParentAfterTeleport_Element.Data.ToResoniteReference(context));
-members.Add("TransformRotation", TransformRotation_Element.Data.ToResoniteLinkField());
-members.Add("TransformScale", TransformScale_Element.Data.ToResoniteLinkField());
-members.Add("RelativeExitPoint", RelativeExitPoint_Element.Data.ToResoniteLinkField());
-members.Add("RandomExitPointGenerator", RandomExitPointGenerator_Element.Data.ToResoniteReference(context));
-members.Add("TeleportExitVelocity", TeleportExitVelocity_Element.Data.ToResoniteLinkField());
+members.Add("Weight", Weight_Element.ToLinkField(context));
+members.Add("TeleportExit", TeleportExit_Element.ToLinkReference(context));
+members.Add("ParentAfterTeleport", ParentAfterTeleport_Element.ToLinkReference(context));
+members.Add("TransformRotation", TransformRotation_Element.ToLinkField(context));
+members.Add("TransformScale", TransformScale_Element.ToLinkField(context));
+members.Add("RelativeExitPoint", RelativeExitPoint_Element.ToLinkField(context));
+members.Add("RandomExitPointGenerator", RandomExitPointGenerator_Element.ToLinkReference(context));
+members.Add("TeleportExitVelocity", TeleportExitVelocity_Element.ToLinkField(context));
 }
 
 }

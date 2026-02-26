@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.PlaybackStateDriver
-// Generated on: čtvrtek 26. února 2026 10:03:40
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:26:57
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -35,11 +35,11 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Source", Source_Element.Data.ToResoniteReference(context));
-members.Add("IsPlaying", IsPlaying_Element.Data.ToResoniteReference(context));
-members.Add("IsNotPlaying", IsNotPlaying_Element.Data.ToResoniteReference(context));
-members.Add("IsPaused", IsPaused_Element.Data.ToResoniteReference(context));
-members.Add("IsStopped", IsStopped_Element.Data.ToResoniteReference(context));
+members.Add("Source", Source_Element.ToLinkReference(context));
+members.Add("IsPlaying", IsPlaying_Element.ToLinkReference(context));
+members.Add("IsNotPlaying", IsNotPlaying_Element.ToLinkReference(context));
+members.Add("IsPaused", IsPaused_Element.ToLinkReference(context));
+members.Add("IsStopped", IsStopped_Element.ToLinkReference(context));
 }
 
 }

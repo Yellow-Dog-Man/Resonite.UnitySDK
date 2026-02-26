@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.CommonAvatar.AvatarManager
-// Generated on: čtvrtek 26. února 2026 10:04:49
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:28:15
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -56,25 +56,22 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("_objectGroups", new ResoniteLink.SyncList()
-{
-    Elements = _objectGroups.Data.ConvertList(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers(context) })
-});
-members.Add("_currentAnchor", _currentAnchor_Element.Data.ToResoniteReference(context));
-members.Add("AutoAddNameBadge", AutoAddNameBadge_Element.Data.ToResoniteLinkField());
-members.Add("AutoAddIconBadge", AutoAddIconBadge_Element.Data.ToResoniteLinkField());
-members.Add("AutoAddLiveIndicator", AutoAddLiveIndicator_Element.Data.ToResoniteLinkField());
-members.Add("EmptySlotHandler", EmptySlotHandler_Element.Data.ToResoniteReference(context));
-members.Add("DefaultScale", DefaultScale_Element.Data.ToResoniteLinkField());
-members.Add("NameTagText", NameTagText_Element.Data.ToResoniteLinkField());
-members.Add("NameTagColor", NameTagColor_Element.Data.ToResoniteLinkField());
-members.Add("NameTagOutline", NameTagOutline_Element.Data.ToResoniteLinkField());
-members.Add("NameTagBackground", NameTagBackground_Element.Data.ToResoniteLinkField());
-members.Add("_badgeTemplates", _badgeTemplates_Element.Data.ToResoniteReference(context));
-members.Add("_autoNameBadge", _autoNameBadge_Element.Data.ToResoniteReference(context));
-members.Add("_autoIconBadge", _autoIconBadge_Element.Data.ToResoniteReference(context));
-members.Add("_autoLiveIndicator", _autoLiveIndicator_Element.Data.ToResoniteReference(context));
-members.Add("_updateVersion", _updateVersion_Element.Data.ToResoniteLinkField());
+members.Add("_objectGroups", _objectGroups.ToLinkList(context, m => m.ToLinkSyncObject(context)));
+members.Add("_currentAnchor", _currentAnchor_Element.ToLinkReference(context));
+members.Add("AutoAddNameBadge", AutoAddNameBadge_Element.ToLinkField(context));
+members.Add("AutoAddIconBadge", AutoAddIconBadge_Element.ToLinkField(context));
+members.Add("AutoAddLiveIndicator", AutoAddLiveIndicator_Element.ToLinkField(context));
+members.Add("EmptySlotHandler", EmptySlotHandler_Element.ToLinkReference(context));
+members.Add("DefaultScale", DefaultScale_Element.ToLinkField(context));
+members.Add("NameTagText", NameTagText_Element.ToLinkField(context));
+members.Add("NameTagColor", NameTagColor_Element.ToLinkField(context));
+members.Add("NameTagOutline", NameTagOutline_Element.ToLinkField(context));
+members.Add("NameTagBackground", NameTagBackground_Element.ToLinkField(context));
+members.Add("_badgeTemplates", _badgeTemplates_Element.ToLinkReference(context));
+members.Add("_autoNameBadge", _autoNameBadge_Element.ToLinkReference(context));
+members.Add("_autoIconBadge", _autoIconBadge_Element.ToLinkReference(context));
+members.Add("_autoLiveIndicator", _autoLiveIndicator_Element.ToLinkReference(context));
+members.Add("_updateVersion", _updateVersion_Element.ToLinkField(context));
 }
 
 }

@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [ProtoFluxBindings]FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.Math.SphericalHarmonics.UnpackSH3<>
-// Generated on: čtvrtek 26. února 2026 10:04:20
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:27:42
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -44,23 +44,23 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("SH", SH_Element.Data.ToResoniteReference(context));
-members.Add("SH0", new ResoniteLink.EmptyElement());
-members.Add("SH1", new ResoniteLink.EmptyElement());
-members.Add("SH2", new ResoniteLink.EmptyElement());
-members.Add("SH3", new ResoniteLink.EmptyElement());
-members.Add("SH4", new ResoniteLink.EmptyElement());
-members.Add("SH5", new ResoniteLink.EmptyElement());
-members.Add("SH6", new ResoniteLink.EmptyElement());
-members.Add("SH7", new ResoniteLink.EmptyElement());
-members.Add("SH8", new ResoniteLink.EmptyElement());
-members.Add("SH9", new ResoniteLink.EmptyElement());
-members.Add("SH10", new ResoniteLink.EmptyElement());
-members.Add("SH11", new ResoniteLink.EmptyElement());
-members.Add("SH12", new ResoniteLink.EmptyElement());
-members.Add("SH13", new ResoniteLink.EmptyElement());
-members.Add("SH14", new ResoniteLink.EmptyElement());
-members.Add("SH15", new ResoniteLink.EmptyElement());
+members.Add("SH", SH_Element.ToLinkReference(context));
+members.Add("SH0", SH0.ToLinkEmpty(context));
+members.Add("SH1", SH1.ToLinkEmpty(context));
+members.Add("SH2", SH2.ToLinkEmpty(context));
+members.Add("SH3", SH3.ToLinkEmpty(context));
+members.Add("SH4", SH4.ToLinkEmpty(context));
+members.Add("SH5", SH5.ToLinkEmpty(context));
+members.Add("SH6", SH6.ToLinkEmpty(context));
+members.Add("SH7", SH7.ToLinkEmpty(context));
+members.Add("SH8", SH8.ToLinkEmpty(context));
+members.Add("SH9", SH9.ToLinkEmpty(context));
+members.Add("SH10", SH10.ToLinkEmpty(context));
+members.Add("SH11", SH11.ToLinkEmpty(context));
+members.Add("SH12", SH12.ToLinkEmpty(context));
+members.Add("SH13", SH13.ToLinkEmpty(context));
+members.Add("SH14", SH14.ToLinkEmpty(context));
+members.Add("SH15", SH15.ToLinkEmpty(context));
 }
 
 }

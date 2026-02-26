@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.MovementSettings
-// Generated on: čtvrtek 26. února 2026 10:04:47
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:28:12
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -47,17 +47,17 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("LeftSidewaysMode", LeftSidewaysMode_Element.Data.ToResoniteLinkField());
-members.Add("RightSidewaysMode", RightSidewaysMode_Element.Data.ToResoniteLinkField());
-members.Add("UseHeadDirectionForMovement", UseHeadDirectionForMovement_Element.Data.ToResoniteLinkField());
-members.Add("UseSmoothTurn", UseSmoothTurn_Element.Data.ToResoniteLinkField());
-members.Add("SmoothTurnExclusiveMode", SmoothTurnExclusiveMode_Element.Data.ToResoniteLinkField());
-members.Add("SmoothTurnSpeed", SmoothTurnSpeed_Element.Data.ToResoniteLinkField());
-members.Add("SnapTurnAngle", SnapTurnAngle_Element.Data.ToResoniteLinkField());
-members.Add("NoClipSpeed", NoClipSpeed_Element.Data.ToResoniteLinkField());
-members.Add("MovementDeadzone", MovementDeadzone_Element.Data.ToResoniteLinkField());
-members.Add("TurningDeadzone", TurningDeadzone_Element.Data.ToResoniteLinkField());
-members.Add("MovementExponent", MovementExponent_Element.Data.ToResoniteLinkField());
+members.Add("LeftSidewaysMode", LeftSidewaysMode_Element.ToLinkField(context));
+members.Add("RightSidewaysMode", RightSidewaysMode_Element.ToLinkField(context));
+members.Add("UseHeadDirectionForMovement", UseHeadDirectionForMovement_Element.ToLinkField(context));
+members.Add("UseSmoothTurn", UseSmoothTurn_Element.ToLinkField(context));
+members.Add("SmoothTurnExclusiveMode", SmoothTurnExclusiveMode_Element.ToLinkField(context));
+members.Add("SmoothTurnSpeed", SmoothTurnSpeed_Element.ToLinkField(context));
+members.Add("SnapTurnAngle", SnapTurnAngle_Element.ToLinkField(context));
+members.Add("NoClipSpeed", NoClipSpeed_Element.ToLinkField(context));
+members.Add("MovementDeadzone", MovementDeadzone_Element.ToLinkField(context));
+members.Add("TurningDeadzone", TurningDeadzone_Element.ToLinkField(context));
+members.Add("MovementExponent", MovementExponent_Element.ToLinkField(context));
 }
 
 }

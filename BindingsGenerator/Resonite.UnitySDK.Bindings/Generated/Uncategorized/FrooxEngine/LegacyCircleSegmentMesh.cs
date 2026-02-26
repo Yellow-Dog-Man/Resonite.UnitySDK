@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.LegacyCircleSegmentMesh
-// Generated on: čtvrtek 26. února 2026 10:04:39
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:28:06
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -53,27 +53,21 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("ExpandLerp", ExpandLerp_Element.Data.ToResoniteLinkField());
-members.Add("InnerCircle", InnerCircle_Element.Data.ToResoniteLinkField());
-members.Add("RadiusStart", RadiusStart_Element.Data.ToResoniteLinkField());
-members.Add("Thickness", Thickness_Element.Data.ToResoniteLinkField());
-members.Add("MainSegmentArc", MainSegmentArc_Element.Data.ToResoniteLinkField());
-members.Add("SeparationAngle", SeparationAngle_Element.Data.ToResoniteLinkField());
-members.Add("MenuMainSegmentArc", MenuMainSegmentArc_Element.Data.ToResoniteLinkField());
-members.Add("CircleItemCount", CircleItemCount_Element.Data.ToResoniteLinkField());
-members.Add("MenuRadiusStart", MenuRadiusStart_Element.Data.ToResoniteLinkField());
-members.Add("MenuThickness", MenuThickness_Element.Data.ToResoniteLinkField());
-members.Add("FillColor", FillColor_Element.Data.ToResoniteLinkField());
-members.Add("OutlineColor", OutlineColor_Element.Data.ToResoniteLinkField());
-members.Add("CircleItemOverrides", new ResoniteLink.SyncList()
-{
-    Elements = CircleItemOverrides.Data.ConvertList(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers(context) })
-});
-members.Add("IndependentSegments", new ResoniteLink.SyncList()
-{
-    Elements = IndependentSegments.Data.ConvertList(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers(context) })
-});
-members.Add("OutlineWidth", OutlineWidth_Element.Data.ToResoniteLinkField());
+members.Add("ExpandLerp", ExpandLerp_Element.ToLinkField(context));
+members.Add("InnerCircle", InnerCircle_Element.ToLinkField(context));
+members.Add("RadiusStart", RadiusStart_Element.ToLinkField(context));
+members.Add("Thickness", Thickness_Element.ToLinkField(context));
+members.Add("MainSegmentArc", MainSegmentArc_Element.ToLinkField(context));
+members.Add("SeparationAngle", SeparationAngle_Element.ToLinkField(context));
+members.Add("MenuMainSegmentArc", MenuMainSegmentArc_Element.ToLinkField(context));
+members.Add("CircleItemCount", CircleItemCount_Element.ToLinkField(context));
+members.Add("MenuRadiusStart", MenuRadiusStart_Element.ToLinkField(context));
+members.Add("MenuThickness", MenuThickness_Element.ToLinkField(context));
+members.Add("FillColor", FillColor_Element.ToLinkField(context));
+members.Add("OutlineColor", OutlineColor_Element.ToLinkField(context));
+members.Add("CircleItemOverrides", CircleItemOverrides.ToLinkList(context, m => m.ToLinkSyncObject(context)));
+members.Add("IndependentSegments", IndependentSegments.ToLinkList(context, m => m.ToLinkSyncObject(context)));
+members.Add("OutlineWidth", OutlineWidth_Element.ToLinkField(context));
 }
 
 }

@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.Perspective360Panner
-// Generated on: čtvrtek 26. února 2026 10:03:38
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:26:53
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -43,15 +43,15 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("IdleFOV", IdleFOV_Element.Data.ToResoniteLinkField());
-members.Add("HoverFOV", HoverFOV_Element.Data.ToResoniteLinkField());
-members.Add("FOVSpeed", FOVSpeed_Element.Data.ToResoniteLinkField());
-members.Add("HorizontalPanningAcceleration", HorizontalPanningAcceleration_Element.Data.ToResoniteLinkField());
-members.Add("HorizontalPanningSpeed", HorizontalPanningSpeed_Element.Data.ToResoniteLinkField());
-members.Add("VerticalPanningSpeed", VerticalPanningSpeed_Element.Data.ToResoniteLinkField());
-members.Add("VerticalRange", VerticalRange_Element.Data.ToResoniteLinkField());
-members.Add("AngleOffset", AngleOffset_Element.Data.ToResoniteLinkField());
-members.Add("FOV", FOV_Element.Data.ToResoniteLinkField());
+members.Add("IdleFOV", IdleFOV_Element.ToLinkField(context));
+members.Add("HoverFOV", HoverFOV_Element.ToLinkField(context));
+members.Add("FOVSpeed", FOVSpeed_Element.ToLinkField(context));
+members.Add("HorizontalPanningAcceleration", HorizontalPanningAcceleration_Element.ToLinkField(context));
+members.Add("HorizontalPanningSpeed", HorizontalPanningSpeed_Element.ToLinkField(context));
+members.Add("VerticalPanningSpeed", VerticalPanningSpeed_Element.ToLinkField(context));
+members.Add("VerticalRange", VerticalRange_Element.ToLinkField(context));
+members.Add("AngleOffset", AngleOffset_Element.ToLinkField(context));
+members.Add("FOV", FOV_Element.ToLinkField(context));
 }
 
 }

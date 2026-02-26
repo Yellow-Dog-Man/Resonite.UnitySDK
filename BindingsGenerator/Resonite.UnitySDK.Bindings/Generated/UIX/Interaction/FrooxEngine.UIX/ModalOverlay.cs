@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.UIX.ModalOverlay
-// Generated on: čtvrtek 26. února 2026 10:04:42
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:28:08
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -37,12 +37,12 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("ShowLerp", ShowLerp_Element.Data.ToResoniteLinkField());
-members.Add("AnimationTime", AnimationTime_Element.Data.ToResoniteLinkField());
-members.Add("SizeRoot", SizeRoot_Element.Data.ToResoniteReference(context));
-members.Add("ContentRoot", ContentRoot_Element.Data.ToResoniteReference(context));
-members.Add("CloseOnContextMenuAction", CloseOnContextMenuAction_Element.Data.ToResoniteLinkField());
-members.Add("CloseOnClick", CloseOnClick_Element.Data.ToResoniteLinkField());
+members.Add("ShowLerp", ShowLerp_Element.ToLinkField(context));
+members.Add("AnimationTime", AnimationTime_Element.ToLinkField(context));
+members.Add("SizeRoot", SizeRoot_Element.ToLinkReference(context));
+members.Add("ContentRoot", ContentRoot_Element.ToLinkReference(context));
+members.Add("CloseOnContextMenuAction", CloseOnContextMenuAction_Element.ToLinkField(context));
+members.Add("CloseOnClick", CloseOnClick_Element.ToLinkField(context));
 }
 
 }

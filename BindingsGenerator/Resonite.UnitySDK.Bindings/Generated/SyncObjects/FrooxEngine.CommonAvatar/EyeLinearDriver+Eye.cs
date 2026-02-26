@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.CommonAvatar.EyeLinearDriver+Eye
-// Generated on: čtvrtek 26. února 2026 10:04:50
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:28:15
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -135,60 +135,60 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Side", Side_Element.Data.ToResoniteLinkField());
-members.Add("ProjectionPlanePoint", ProjectionPlanePoint_Element.Data.ToResoniteReference(context));
-members.Add("PositionOffset", PositionOffset_Element.Data.ToResoniteReference(context));
-members.Add("LookLeft", LookLeft_Element.Data.ToResoniteReference(context));
-members.Add("LookUp", LookUp_Element.Data.ToResoniteReference(context));
-members.Add("LookRight", LookRight_Element.Data.ToResoniteReference(context));
-members.Add("LookDown", LookDown_Element.Data.ToResoniteReference(context));
-members.Add("OpenCloseTarget", OpenCloseTarget_Element.Data.ToResoniteReference(context));
-members.Add("PupilSizeTarget", PupilSizeTarget_Element.Data.ToResoniteReference(context));
-members.Add("WidenTarget", WidenTarget_Element.Data.ToResoniteReference(context));
-members.Add("SqueezeTarget", SqueezeTarget_Element.Data.ToResoniteReference(context));
-members.Add("FrownTarget", FrownTarget_Element.Data.ToResoniteReference(context));
-members.Add("InnerBrowRaiseTarget", InnerBrowRaiseTarget_Element.Data.ToResoniteReference(context));
-members.Add("InnerBrowLowerTarget", InnerBrowLowerTarget_Element.Data.ToResoniteReference(context));
-members.Add("OuterBrowRaiseTarget", OuterBrowRaiseTarget_Element.Data.ToResoniteReference(context));
-members.Add("OuterBrowLowerTarget", OuterBrowLowerTarget_Element.Data.ToResoniteReference(context));
-members.Add("MinInputCloseness", MinInputCloseness_Element.Data.ToResoniteLinkField());
-members.Add("MaxInputCloseness", MaxInputCloseness_Element.Data.ToResoniteLinkField());
-members.Add("OpenState", OpenState_Element.Data.ToResoniteLinkField());
-members.Add("ClosedState", ClosedState_Element.Data.ToResoniteLinkField());
-members.Add("MinInputPupilSize", MinInputPupilSize_Element.Data.ToResoniteLinkField());
-members.Add("MaxInputPupilSize", MaxInputPupilSize_Element.Data.ToResoniteLinkField());
-members.Add("MinOutputPupilSize", MinOutputPupilSize_Element.Data.ToResoniteLinkField());
-members.Add("MaxOutputPupilSize", MaxOutputPupilSize_Element.Data.ToResoniteLinkField());
-members.Add("MinInputWiden", MinInputWiden_Element.Data.ToResoniteLinkField());
-members.Add("MaxInputWiden", MaxInputWiden_Element.Data.ToResoniteLinkField());
-members.Add("MinOutputWiden", MinOutputWiden_Element.Data.ToResoniteLinkField());
-members.Add("MaxOutputWiden", MaxOutputWiden_Element.Data.ToResoniteLinkField());
-members.Add("MinInputSqueeze", MinInputSqueeze_Element.Data.ToResoniteLinkField());
-members.Add("MaxInputSqueeze", MaxInputSqueeze_Element.Data.ToResoniteLinkField());
-members.Add("MinOutputSqueeze", MinOutputSqueeze_Element.Data.ToResoniteLinkField());
-members.Add("MaxOutputSqueeze", MaxOutputSqueeze_Element.Data.ToResoniteLinkField());
-members.Add("MinInputFrown", MinInputFrown_Element.Data.ToResoniteLinkField());
-members.Add("MaxInputFrown", MaxInputFrown_Element.Data.ToResoniteLinkField());
-members.Add("MinOutputFrown", MinOutputFrown_Element.Data.ToResoniteLinkField());
-members.Add("MaxOutputFrown", MaxOutputFrown_Element.Data.ToResoniteLinkField());
-members.Add("MinInputInnerBrowRaise", MinInputInnerBrowRaise_Element.Data.ToResoniteLinkField());
-members.Add("MaxInputInnerBrowRaise", MaxInputInnerBrowRaise_Element.Data.ToResoniteLinkField());
-members.Add("MinOutputInnerBrowRaise", MinOutputInnerBrowRaise_Element.Data.ToResoniteLinkField());
-members.Add("MaxOutputInnerBrowRaise", MaxOutputInnerBrowRaise_Element.Data.ToResoniteLinkField());
-members.Add("MinInputInnerBrowLower", MinInputInnerBrowLower_Element.Data.ToResoniteLinkField());
-members.Add("MaxInputInnerBrowLower", MaxInputInnerBrowLower_Element.Data.ToResoniteLinkField());
-members.Add("MinOutputInnerBrowLower", MinOutputInnerBrowLower_Element.Data.ToResoniteLinkField());
-members.Add("MaxOutputInnerBrowLower", MaxOutputInnerBrowLower_Element.Data.ToResoniteLinkField());
-members.Add("MinInputOuterBrowRaise", MinInputOuterBrowRaise_Element.Data.ToResoniteLinkField());
-members.Add("MaxInputOuterBrowRaise", MaxInputOuterBrowRaise_Element.Data.ToResoniteLinkField());
-members.Add("MinOutputOuterBrowRaise", MinOutputOuterBrowRaise_Element.Data.ToResoniteLinkField());
-members.Add("MaxOutputOuterBrowRaise", MaxOutputOuterBrowRaise_Element.Data.ToResoniteLinkField());
-members.Add("MinInputOuterBrowLower", MinInputOuterBrowLower_Element.Data.ToResoniteLinkField());
-members.Add("MaxInputOuterBrowLower", MaxInputOuterBrowLower_Element.Data.ToResoniteLinkField());
-members.Add("MinOutputOuterBrowLower", MinOutputOuterBrowLower_Element.Data.ToResoniteLinkField());
-members.Add("MaxOutputOuterBrowLower", MaxOutputOuterBrowLower_Element.Data.ToResoniteLinkField());
-members.Add("LookMultiply", LookMultiply_Element.Data.ToResoniteLinkField());
-members.Add("LookPower", LookPower_Element.Data.ToResoniteLinkField());
+members.Add("Side", Side_Element.ToLinkField(context));
+members.Add("ProjectionPlanePoint", ProjectionPlanePoint_Element.ToLinkReference(context));
+members.Add("PositionOffset", PositionOffset_Element.ToLinkReference(context));
+members.Add("LookLeft", LookLeft_Element.ToLinkReference(context));
+members.Add("LookUp", LookUp_Element.ToLinkReference(context));
+members.Add("LookRight", LookRight_Element.ToLinkReference(context));
+members.Add("LookDown", LookDown_Element.ToLinkReference(context));
+members.Add("OpenCloseTarget", OpenCloseTarget_Element.ToLinkReference(context));
+members.Add("PupilSizeTarget", PupilSizeTarget_Element.ToLinkReference(context));
+members.Add("WidenTarget", WidenTarget_Element.ToLinkReference(context));
+members.Add("SqueezeTarget", SqueezeTarget_Element.ToLinkReference(context));
+members.Add("FrownTarget", FrownTarget_Element.ToLinkReference(context));
+members.Add("InnerBrowRaiseTarget", InnerBrowRaiseTarget_Element.ToLinkReference(context));
+members.Add("InnerBrowLowerTarget", InnerBrowLowerTarget_Element.ToLinkReference(context));
+members.Add("OuterBrowRaiseTarget", OuterBrowRaiseTarget_Element.ToLinkReference(context));
+members.Add("OuterBrowLowerTarget", OuterBrowLowerTarget_Element.ToLinkReference(context));
+members.Add("MinInputCloseness", MinInputCloseness_Element.ToLinkField(context));
+members.Add("MaxInputCloseness", MaxInputCloseness_Element.ToLinkField(context));
+members.Add("OpenState", OpenState_Element.ToLinkField(context));
+members.Add("ClosedState", ClosedState_Element.ToLinkField(context));
+members.Add("MinInputPupilSize", MinInputPupilSize_Element.ToLinkField(context));
+members.Add("MaxInputPupilSize", MaxInputPupilSize_Element.ToLinkField(context));
+members.Add("MinOutputPupilSize", MinOutputPupilSize_Element.ToLinkField(context));
+members.Add("MaxOutputPupilSize", MaxOutputPupilSize_Element.ToLinkField(context));
+members.Add("MinInputWiden", MinInputWiden_Element.ToLinkField(context));
+members.Add("MaxInputWiden", MaxInputWiden_Element.ToLinkField(context));
+members.Add("MinOutputWiden", MinOutputWiden_Element.ToLinkField(context));
+members.Add("MaxOutputWiden", MaxOutputWiden_Element.ToLinkField(context));
+members.Add("MinInputSqueeze", MinInputSqueeze_Element.ToLinkField(context));
+members.Add("MaxInputSqueeze", MaxInputSqueeze_Element.ToLinkField(context));
+members.Add("MinOutputSqueeze", MinOutputSqueeze_Element.ToLinkField(context));
+members.Add("MaxOutputSqueeze", MaxOutputSqueeze_Element.ToLinkField(context));
+members.Add("MinInputFrown", MinInputFrown_Element.ToLinkField(context));
+members.Add("MaxInputFrown", MaxInputFrown_Element.ToLinkField(context));
+members.Add("MinOutputFrown", MinOutputFrown_Element.ToLinkField(context));
+members.Add("MaxOutputFrown", MaxOutputFrown_Element.ToLinkField(context));
+members.Add("MinInputInnerBrowRaise", MinInputInnerBrowRaise_Element.ToLinkField(context));
+members.Add("MaxInputInnerBrowRaise", MaxInputInnerBrowRaise_Element.ToLinkField(context));
+members.Add("MinOutputInnerBrowRaise", MinOutputInnerBrowRaise_Element.ToLinkField(context));
+members.Add("MaxOutputInnerBrowRaise", MaxOutputInnerBrowRaise_Element.ToLinkField(context));
+members.Add("MinInputInnerBrowLower", MinInputInnerBrowLower_Element.ToLinkField(context));
+members.Add("MaxInputInnerBrowLower", MaxInputInnerBrowLower_Element.ToLinkField(context));
+members.Add("MinOutputInnerBrowLower", MinOutputInnerBrowLower_Element.ToLinkField(context));
+members.Add("MaxOutputInnerBrowLower", MaxOutputInnerBrowLower_Element.ToLinkField(context));
+members.Add("MinInputOuterBrowRaise", MinInputOuterBrowRaise_Element.ToLinkField(context));
+members.Add("MaxInputOuterBrowRaise", MaxInputOuterBrowRaise_Element.ToLinkField(context));
+members.Add("MinOutputOuterBrowRaise", MinOutputOuterBrowRaise_Element.ToLinkField(context));
+members.Add("MaxOutputOuterBrowRaise", MaxOutputOuterBrowRaise_Element.ToLinkField(context));
+members.Add("MinInputOuterBrowLower", MinInputOuterBrowLower_Element.ToLinkField(context));
+members.Add("MaxInputOuterBrowLower", MaxInputOuterBrowLower_Element.ToLinkField(context));
+members.Add("MinOutputOuterBrowLower", MinOutputOuterBrowLower_Element.ToLinkField(context));
+members.Add("MaxOutputOuterBrowLower", MaxOutputOuterBrowLower_Element.ToLinkField(context));
+members.Add("LookMultiply", LookMultiply_Element.ToLinkField(context));
+members.Add("LookPower", LookPower_Element.ToLinkField(context));
 }
 
 }

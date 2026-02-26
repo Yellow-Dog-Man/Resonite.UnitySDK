@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.CommonAvatar.AvatarRawEyeData
-// Generated on: čtvrtek 26. února 2026 10:04:50
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:28:15
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -34,12 +34,12 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("LeftEye", new ResoniteLink.SyncObject() { Members = LeftEye.CollectMembers(context) });
-members.Add("RightEye", new ResoniteLink.SyncObject() { Members = RightEye.CollectMembers(context) });
-members.Add("CombinedEye", new ResoniteLink.SyncObject() { Members = CombinedEye.CollectMembers(context) });
-members.Add("ConvergenceDistance", ConvergenceDistance_Element.Data.ToResoniteLinkField());
-members.Add("Timestamp", Timestamp_Element.Data.ToResoniteLinkField());
-members.Add("_activeUser", _activeUser_Element.Data.ToResoniteReference(context));
+members.Add("LeftEye", LeftEye.ToLinkSyncObject(context));
+members.Add("RightEye", RightEye.ToLinkSyncObject(context));
+members.Add("CombinedEye", CombinedEye.ToLinkSyncObject(context));
+members.Add("ConvergenceDistance", ConvergenceDistance_Element.ToLinkField(context));
+members.Add("Timestamp", Timestamp_Element.ToLinkField(context));
+members.Add("_activeUser", _activeUser_Element.ToLinkReference(context));
 }
 
 }

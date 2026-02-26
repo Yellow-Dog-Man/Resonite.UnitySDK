@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.NoiseTexture
-// Generated on: čtvrtek 26. února 2026 10:03:36
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:26:51
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -39,13 +39,13 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Seed", Seed_Element.Data.ToResoniteLinkField());
-members.Add("Monochrome", Monochrome_Element.Data.ToResoniteLinkField());
-members.Add("MonochromeMax", MonochromeMax_Element.Data.ToResoniteLinkField());
-members.Add("MonochromeMin", MonochromeMin_Element.Data.ToResoniteLinkField());
-members.Add("Bias", Bias_Element.Data.ToResoniteLinkField());
-members.Add("Gain", Gain_Element.Data.ToResoniteLinkField());
-members.Add("Clamp", Clamp_Element.Data.ToResoniteLinkField());
+members.Add("Seed", Seed_Element.ToLinkField(context));
+members.Add("Monochrome", Monochrome_Element.ToLinkField(context));
+members.Add("MonochromeMax", MonochromeMax_Element.ToLinkField(context));
+members.Add("MonochromeMin", MonochromeMin_Element.ToLinkField(context));
+members.Add("Bias", Bias_Element.ToLinkField(context));
+members.Add("Gain", Gain_Element.ToLinkField(context));
+members.Add("Clamp", Clamp_Element.ToLinkField(context));
 }
 
 }

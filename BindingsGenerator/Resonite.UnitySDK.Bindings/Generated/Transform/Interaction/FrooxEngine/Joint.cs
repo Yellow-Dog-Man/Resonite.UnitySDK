@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.Joint
-// Generated on: čtvrtek 26. února 2026 10:04:42
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:28:08
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -56,25 +56,22 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("MaxSwing", MaxSwing_Element.Data.ToResoniteLinkField());
-members.Add("MaxTwist", MaxTwist_Element.Data.ToResoniteLinkField());
-members.Add("Axis", Axis_Element.Data.ToResoniteLinkField());
-members.Add("TwistReferenceAxis", TwistReferenceAxis_Element.Data.ToResoniteLinkField());
-members.Add("PositionTwistThresholdAngle", PositionTwistThresholdAngle_Element.Data.ToResoniteLinkField());
-members.Add("VibrationAngle", VibrationAngle_Element.Data.ToResoniteLinkField());
-members.Add("VibrationPreset", VibrationPreset_Element.Data.ToResoniteLinkField());
-members.Add("SnapIncrement", SnapIncrement_Element.Data.ToResoniteLinkField());
-members.Add("SnapTime", SnapTime_Element.Data.ToResoniteLinkField());
-members.Add("SnapOnRelease", SnapOnRelease_Element.Data.ToResoniteLinkField());
-members.Add("SnapOrientations", new ResoniteLink.SyncList()
-{
-    Elements = SnapOrientations.Data.ConvertList(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers(context) })
-});
-members.Add("origRotation", origRotation_Element.Data.ToResoniteLinkField());
-members.Add("rotReference", rotReference_Element.Data.ToResoniteLinkField());
-members.Add("dirReference", dirReference_Element.Data.ToResoniteLinkField());
-members.Add("twistReference", twistReference_Element.Data.ToResoniteLinkField());
-members.Add("usePositionTwist", usePositionTwist_Element.Data.ToResoniteLinkField());
+members.Add("MaxSwing", MaxSwing_Element.ToLinkField(context));
+members.Add("MaxTwist", MaxTwist_Element.ToLinkField(context));
+members.Add("Axis", Axis_Element.ToLinkField(context));
+members.Add("TwistReferenceAxis", TwistReferenceAxis_Element.ToLinkField(context));
+members.Add("PositionTwistThresholdAngle", PositionTwistThresholdAngle_Element.ToLinkField(context));
+members.Add("VibrationAngle", VibrationAngle_Element.ToLinkField(context));
+members.Add("VibrationPreset", VibrationPreset_Element.ToLinkField(context));
+members.Add("SnapIncrement", SnapIncrement_Element.ToLinkField(context));
+members.Add("SnapTime", SnapTime_Element.ToLinkField(context));
+members.Add("SnapOnRelease", SnapOnRelease_Element.ToLinkField(context));
+members.Add("SnapOrientations", SnapOrientations.ToLinkList(context, m => m.ToLinkSyncObject(context)));
+members.Add("origRotation", origRotation_Element.ToLinkField(context));
+members.Add("rotReference", rotReference_Element.ToLinkField(context));
+members.Add("dirReference", dirReference_Element.ToLinkField(context));
+members.Add("twistReference", twistReference_Element.ToLinkField(context));
+members.Add("usePositionTwist", usePositionTwist_Element.ToLinkField(context));
 }
 
 }

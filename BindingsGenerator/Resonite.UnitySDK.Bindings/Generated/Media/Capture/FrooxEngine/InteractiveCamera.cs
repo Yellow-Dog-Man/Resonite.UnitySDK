@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.InteractiveCamera
-// Generated on: čtvrtek 26. února 2026 10:03:40
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:26:57
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -193,116 +193,95 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("CameraMode", CameraMode_Element.Data.ToResoniteLinkField());
-members.Add("PreviewWidth", PreviewWidth_Element.Data.ToResoniteLinkField());
-members.Add("PreviewHeight", PreviewHeight_Element.Data.ToResoniteLinkField());
-members.Add("RenderWidth", RenderWidth_Element.Data.ToResoniteLinkField());
-members.Add("StereoSeparation", StereoSeparation_Element.Data.ToResoniteLinkField());
-members.Add("TimerInterval", TimerInterval_Element.Data.ToResoniteLinkField());
-members.Add("TimerEnabled", TimerEnabled_Element.Data.ToResoniteLinkField());
-members.Add("TimerCountIndicator", TimerCountIndicator_Element.Data.ToResoniteReference(context));
-members.Add("TimerColorIndicator", TimerColorIndicator_Element.Data.ToResoniteReference(context));
-members.Add("_timerUser", _timerUser_Element.Data.ToResoniteReference(context));
-members.Add("MainCamera", MainCamera_Element.Data.ToResoniteReference(context));
-members.Add("SecondaryCamera", SecondaryCamera_Element.Data.ToResoniteReference(context));
-members.Add("PreviewTexture", PreviewTexture_Element.Data.ToResoniteReference(context));
-members.Add("DisplayMaterial", DisplayMaterial_Element.Data.ToResoniteReference(context));
-members.Add("Format", Format_Element.Data.ToResoniteLinkField());
-members.Add("Quality", Quality_Element.Data.ToResoniteLinkField());
-members.Add("SpawnPhotoInWorld", SpawnPhotoInWorld_Element.Data.ToResoniteLinkField());
-members.Add("PhotoSpawnPoint", PhotoSpawnPoint_Element.Data.ToResoniteReference(context));
-members.Add("PhotoSpawnSize", PhotoSpawnSize_Element.Data.ToResoniteLinkField());
-members.Add("PanoramaIndicator", PanoramaIndicator_Element.Data.ToResoniteReference(context));
-members.Add("PanoramaIndicatorSize", PanoramaIndicatorSize_Element.Data.ToResoniteReference(context));
-members.Add("ObjectTargetSource", ObjectTargetSource_Element.Data.ToResoniteReference(context));
-members.Add("ObjectTargetSourceActive", ObjectTargetSourceActive_Element.Data.ToResoniteReference(context));
-members.Add("ObjectAutoPose", ObjectAutoPose_Element.Data.ToResoniteLinkField());
-members.Add("HideLasersOnCapture", HideLasersOnCapture_Element.Data.ToResoniteLinkField());
-members.Add("CaptureSound", CaptureSound_Element.Data.ToResoniteReference(context));
-members.Add("TimerStartSound", TimerStartSound_Element.Data.ToResoniteReference(context));
-members.Add("TimerCountdownSlowPlayer", TimerCountdownSlowPlayer_Element.Data.ToResoniteReference(context));
-members.Add("TimerCountdownFastPlayer", TimerCountdownFastPlayer_Element.Data.ToResoniteReference(context));
-members.Add("TimerCountdownSlowOutput", TimerCountdownSlowOutput_Element.Data.ToResoniteReference(context));
-members.Add("TimerCountdownFastOutput", TimerCountdownFastOutput_Element.Data.ToResoniteReference(context));
-members.Add("PreviewScale", PreviewScale_Element.Data.ToResoniteLinkField());
-members.Add("CameraModelOverride", CameraModelOverride_Element.Data.ToResoniteLinkField());
-members.Add("FrustumVisual", FrustumVisual_Element.Data.ToResoniteReference(context));
-members.Add("DefaultNearClip", DefaultNearClip_Element.Data.ToResoniteLinkField());
-members.Add("DefaultFarClip", DefaultFarClip_Element.Data.ToResoniteLinkField());
-members.Add("_frustumPosition", _frustumPosition_Element.Data.ToResoniteReference(context));
-members.Add("_frustumRotation", _frustumRotation_Element.Data.ToResoniteReference(context));
-members.Add("_frustumVerticalFOV", _frustumVerticalFOV_Element.Data.ToResoniteReference(context));
-members.Add("_frustumHorizontalFOV", _frustumHorizontalFOV_Element.Data.ToResoniteReference(context));
-members.Add("_frustumNear", _frustumNear_Element.Data.ToResoniteReference(context));
-members.Add("_frustumFar", _frustumFar_Element.Data.ToResoniteReference(context));
-members.Add("_leftCamOffset", _leftCamOffset_Element.Data.ToResoniteReference(context));
-members.Add("_rightCamOffset", _rightCamOffset_Element.Data.ToResoniteReference(context));
-members.Add("_leftCamOrientation", _leftCamOrientation_Element.Data.ToResoniteReference(context));
-members.Add("_rightCamOrientation", _rightCamOrientation_Element.Data.ToResoniteReference(context));
-members.Add("_cameraRendering", _cameraRendering_Element.Data.ToResoniteReference(context));
-members.Add("_secondaryCameraRendering", _secondaryCameraRendering_Element.Data.ToResoniteReference(context));
-members.Add("ExclusiveOperators", new ResoniteLink.SyncList()
-{
-    Elements = ExclusiveOperators.Data.ConvertList(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers(context) })
-});
-members.Add("ControlActiveFields", new ResoniteLink.SyncList()
-{
-    Elements = ControlActiveFields.Data.ConvertList(m => m.Data.ToResoniteReference(context))
-});
-members.Add("RenderOnlyForUsers", new ResoniteLink.SyncList()
-{
-    Elements = RenderOnlyForUsers.Data.ConvertList(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers(context) })
-});
-members.Add("ForceVisualsOff", ForceVisualsOff_Element.Data.ToResoniteLinkField());
-members.Add("VisualActiveFields", new ResoniteLink.SyncList()
-{
-    Elements = VisualActiveFields.Data.ConvertList(m => m.Data.ToResoniteReference(context))
-});
-members.Add("AutoHideProximity", AutoHideProximity_Element.Data.ToResoniteLinkField());
-members.Add("ForceEyeAttentionUsers", new ResoniteLink.SyncList()
-{
-    Elements = ForceEyeAttentionUsers.Data.ConvertList(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers(context) })
-});
-members.Add("SimulatingUser", new ResoniteLink.SyncObject() { Members = SimulatingUser.CollectMembers(context) });
-members.Add("DestroyOnUserLeave", new ResoniteLink.SyncObject() { Members = DestroyOnUserLeave.CollectMembers(context) });
-members.Add("PositioningMode", PositioningMode_Element.Data.ToResoniteLinkField());
-members.Add("ActiveAnchor", ActiveAnchor_Element.Data.ToResoniteReference(context));
-members.Add("AnchorInterpolationSpeed", AnchorInterpolationSpeed_Element.Data.ToResoniteLinkField());
-members.Add("AnchorLinearInterpolation", AnchorLinearInterpolation_Element.Data.ToResoniteLinkField());
-members.Add("FrameTargetUser", new ResoniteLink.SyncObject() { Members = FrameTargetUser.CollectMembers(context) });
-members.Add("HeadPointOffset", HeadPointOffset_Element.Data.ToResoniteLinkField());
-members.Add("AnglePosition", AnglePosition_Element.Data.ToResoniteLinkField());
-members.Add("Distance", Distance_Element.Data.ToResoniteLinkField());
-members.Add("HeightOffset", HeightOffset_Element.Data.ToResoniteLinkField());
-members.Add("FirstPersonPitch", FirstPersonPitch_Element.Data.ToResoniteLinkField());
-members.Add("FirstPersonRoll", FirstPersonRoll_Element.Data.ToResoniteLinkField());
-members.Add("FirstPersonOffset", FirstPersonOffset_Element.Data.ToResoniteLinkField());
-members.Add("GroupIncludeRadius", GroupIncludeRadius_Element.Data.ToResoniteLinkField());
-members.Add("GroupExcludeRadius", GroupExcludeRadius_Element.Data.ToResoniteLinkField());
-members.Add("ForceGroupInclude", new ResoniteLink.SyncList()
-{
-    Elements = ForceGroupInclude.Data.ConvertList(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers(context) })
-});
-members.Add("ForceGroupExclude", new ResoniteLink.SyncList()
-{
-    Elements = ForceGroupExclude.Data.ConvertList(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers(context) })
-});
-members.Add("PositionSmoothSpeed", PositionSmoothSpeed_Element.Data.ToResoniteLinkField());
-members.Add("AnglePositionSmoothSpeed", AnglePositionSmoothSpeed_Element.Data.ToResoniteLinkField());
-members.Add("FramingSmoothSpeed", FramingSmoothSpeed_Element.Data.ToResoniteLinkField());
-members.Add("WobbleMagnitude", WobbleMagnitude_Element.Data.ToResoniteLinkField());
-members.Add("WobbleSeed", WobbleSeed_Element.Data.ToResoniteLinkField());
-members.Add("WobbleSpeed", WobbleSpeed_Element.Data.ToResoniteLinkField());
-members.Add("FramingViewportPosition", FramingViewportPosition_Element.Data.ToResoniteLinkField());
-members.Add("AvoidOcclusion", AvoidOcclusion_Element.Data.ToResoniteLinkField());
-members.Add("OcclusionIncludePlayers", OcclusionIncludePlayers_Element.Data.ToResoniteLinkField());
-members.Add("OcclusionIncludeAnyColliders", OcclusionIncludeAnyColliders_Element.Data.ToResoniteLinkField());
-members.Add("_positionStream", _positionStream_Element.Data.ToResoniteReference(context));
-members.Add("_rotationStream", _rotationStream_Element.Data.ToResoniteReference(context));
-members.Add("_positionDrive", _positionDrive_Element.Data.ToResoniteReference(context));
-members.Add("_rotationDrive", _rotationDrive_Element.Data.ToResoniteReference(context));
-members.Add("_releasePosition", _releasePosition_Element.Data.ToResoniteLinkField());
-members.Add("_releaseRotation", _releaseRotation_Element.Data.ToResoniteLinkField());
+members.Add("CameraMode", CameraMode_Element.ToLinkField(context));
+members.Add("PreviewWidth", PreviewWidth_Element.ToLinkField(context));
+members.Add("PreviewHeight", PreviewHeight_Element.ToLinkField(context));
+members.Add("RenderWidth", RenderWidth_Element.ToLinkField(context));
+members.Add("StereoSeparation", StereoSeparation_Element.ToLinkField(context));
+members.Add("TimerInterval", TimerInterval_Element.ToLinkField(context));
+members.Add("TimerEnabled", TimerEnabled_Element.ToLinkField(context));
+members.Add("TimerCountIndicator", TimerCountIndicator_Element.ToLinkReference(context));
+members.Add("TimerColorIndicator", TimerColorIndicator_Element.ToLinkReference(context));
+members.Add("_timerUser", _timerUser_Element.ToLinkReference(context));
+members.Add("MainCamera", MainCamera_Element.ToLinkReference(context));
+members.Add("SecondaryCamera", SecondaryCamera_Element.ToLinkReference(context));
+members.Add("PreviewTexture", PreviewTexture_Element.ToLinkReference(context));
+members.Add("DisplayMaterial", DisplayMaterial_Element.ToLinkReference(context));
+members.Add("Format", Format_Element.ToLinkField(context));
+members.Add("Quality", Quality_Element.ToLinkField(context));
+members.Add("SpawnPhotoInWorld", SpawnPhotoInWorld_Element.ToLinkField(context));
+members.Add("PhotoSpawnPoint", PhotoSpawnPoint_Element.ToLinkReference(context));
+members.Add("PhotoSpawnSize", PhotoSpawnSize_Element.ToLinkField(context));
+members.Add("PanoramaIndicator", PanoramaIndicator_Element.ToLinkReference(context));
+members.Add("PanoramaIndicatorSize", PanoramaIndicatorSize_Element.ToLinkReference(context));
+members.Add("ObjectTargetSource", ObjectTargetSource_Element.ToLinkReference(context));
+members.Add("ObjectTargetSourceActive", ObjectTargetSourceActive_Element.ToLinkReference(context));
+members.Add("ObjectAutoPose", ObjectAutoPose_Element.ToLinkField(context));
+members.Add("HideLasersOnCapture", HideLasersOnCapture_Element.ToLinkField(context));
+members.Add("CaptureSound", CaptureSound_Element.ToLinkReference(context));
+members.Add("TimerStartSound", TimerStartSound_Element.ToLinkReference(context));
+members.Add("TimerCountdownSlowPlayer", TimerCountdownSlowPlayer_Element.ToLinkReference(context));
+members.Add("TimerCountdownFastPlayer", TimerCountdownFastPlayer_Element.ToLinkReference(context));
+members.Add("TimerCountdownSlowOutput", TimerCountdownSlowOutput_Element.ToLinkReference(context));
+members.Add("TimerCountdownFastOutput", TimerCountdownFastOutput_Element.ToLinkReference(context));
+members.Add("PreviewScale", PreviewScale_Element.ToLinkField(context));
+members.Add("CameraModelOverride", CameraModelOverride_Element.ToLinkField(context));
+members.Add("FrustumVisual", FrustumVisual_Element.ToLinkReference(context));
+members.Add("DefaultNearClip", DefaultNearClip_Element.ToLinkField(context));
+members.Add("DefaultFarClip", DefaultFarClip_Element.ToLinkField(context));
+members.Add("_frustumPosition", _frustumPosition_Element.ToLinkReference(context));
+members.Add("_frustumRotation", _frustumRotation_Element.ToLinkReference(context));
+members.Add("_frustumVerticalFOV", _frustumVerticalFOV_Element.ToLinkReference(context));
+members.Add("_frustumHorizontalFOV", _frustumHorizontalFOV_Element.ToLinkReference(context));
+members.Add("_frustumNear", _frustumNear_Element.ToLinkReference(context));
+members.Add("_frustumFar", _frustumFar_Element.ToLinkReference(context));
+members.Add("_leftCamOffset", _leftCamOffset_Element.ToLinkReference(context));
+members.Add("_rightCamOffset", _rightCamOffset_Element.ToLinkReference(context));
+members.Add("_leftCamOrientation", _leftCamOrientation_Element.ToLinkReference(context));
+members.Add("_rightCamOrientation", _rightCamOrientation_Element.ToLinkReference(context));
+members.Add("_cameraRendering", _cameraRendering_Element.ToLinkReference(context));
+members.Add("_secondaryCameraRendering", _secondaryCameraRendering_Element.ToLinkReference(context));
+members.Add("ExclusiveOperators", ExclusiveOperators.ToLinkList(context, m => m.ToLinkSyncObject(context)));
+members.Add("ControlActiveFields", ControlActiveFields.ToLinkList(context, m => m.ToLinkReference(context)));
+members.Add("RenderOnlyForUsers", RenderOnlyForUsers.ToLinkList(context, m => m.ToLinkSyncObject(context)));
+members.Add("ForceVisualsOff", ForceVisualsOff_Element.ToLinkField(context));
+members.Add("VisualActiveFields", VisualActiveFields.ToLinkList(context, m => m.ToLinkReference(context)));
+members.Add("AutoHideProximity", AutoHideProximity_Element.ToLinkField(context));
+members.Add("ForceEyeAttentionUsers", ForceEyeAttentionUsers.ToLinkList(context, m => m.ToLinkSyncObject(context)));
+members.Add("SimulatingUser", SimulatingUser.ToLinkSyncObject(context));
+members.Add("DestroyOnUserLeave", DestroyOnUserLeave.ToLinkSyncObject(context));
+members.Add("PositioningMode", PositioningMode_Element.ToLinkField(context));
+members.Add("ActiveAnchor", ActiveAnchor_Element.ToLinkReference(context));
+members.Add("AnchorInterpolationSpeed", AnchorInterpolationSpeed_Element.ToLinkField(context));
+members.Add("AnchorLinearInterpolation", AnchorLinearInterpolation_Element.ToLinkField(context));
+members.Add("FrameTargetUser", FrameTargetUser.ToLinkSyncObject(context));
+members.Add("HeadPointOffset", HeadPointOffset_Element.ToLinkField(context));
+members.Add("AnglePosition", AnglePosition_Element.ToLinkField(context));
+members.Add("Distance", Distance_Element.ToLinkField(context));
+members.Add("HeightOffset", HeightOffset_Element.ToLinkField(context));
+members.Add("FirstPersonPitch", FirstPersonPitch_Element.ToLinkField(context));
+members.Add("FirstPersonRoll", FirstPersonRoll_Element.ToLinkField(context));
+members.Add("FirstPersonOffset", FirstPersonOffset_Element.ToLinkField(context));
+members.Add("GroupIncludeRadius", GroupIncludeRadius_Element.ToLinkField(context));
+members.Add("GroupExcludeRadius", GroupExcludeRadius_Element.ToLinkField(context));
+members.Add("ForceGroupInclude", ForceGroupInclude.ToLinkList(context, m => m.ToLinkSyncObject(context)));
+members.Add("ForceGroupExclude", ForceGroupExclude.ToLinkList(context, m => m.ToLinkSyncObject(context)));
+members.Add("PositionSmoothSpeed", PositionSmoothSpeed_Element.ToLinkField(context));
+members.Add("AnglePositionSmoothSpeed", AnglePositionSmoothSpeed_Element.ToLinkField(context));
+members.Add("FramingSmoothSpeed", FramingSmoothSpeed_Element.ToLinkField(context));
+members.Add("WobbleMagnitude", WobbleMagnitude_Element.ToLinkField(context));
+members.Add("WobbleSeed", WobbleSeed_Element.ToLinkField(context));
+members.Add("WobbleSpeed", WobbleSpeed_Element.ToLinkField(context));
+members.Add("FramingViewportPosition", FramingViewportPosition_Element.ToLinkField(context));
+members.Add("AvoidOcclusion", AvoidOcclusion_Element.ToLinkField(context));
+members.Add("OcclusionIncludePlayers", OcclusionIncludePlayers_Element.ToLinkField(context));
+members.Add("OcclusionIncludeAnyColliders", OcclusionIncludeAnyColliders_Element.ToLinkField(context));
+members.Add("_positionStream", _positionStream_Element.ToLinkReference(context));
+members.Add("_rotationStream", _rotationStream_Element.ToLinkReference(context));
+members.Add("_positionDrive", _positionDrive_Element.ToLinkReference(context));
+members.Add("_rotationDrive", _rotationDrive_Element.ToLinkReference(context));
+members.Add("_releasePosition", _releasePosition_Element.ToLinkField(context));
+members.Add("_releaseRotation", _releaseRotation_Element.ToLinkField(context));
 }
 
 }

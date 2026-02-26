@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.LineSegment
-// Generated on: čtvrtek 26. února 2026 10:04:46
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:28:12
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -47,17 +47,17 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Radius", Radius_Element.Data.ToResoniteLinkField());
-members.Add("Sides", Sides_Element.Data.ToResoniteLinkField());
-members.Add("Point0", Point0_Element.Data.ToResoniteLinkField());
-members.Add("Point1", Point1_Element.Data.ToResoniteLinkField());
-members.Add("Anchor0", Anchor0_Element.Data.ToResoniteReference(context));
-members.Add("Anchor1", Anchor1_Element.Data.ToResoniteReference(context));
-members.Add("_cylinder", _cylinder_Element.Data.ToResoniteReference(context));
-members.Add("_collider", _collider_Element.Data.ToResoniteReference(context));
-members.Add("_offset", _offset_Element.Data.ToResoniteReference(context));
-members.Add("_rotation", _rotation_Element.Data.ToResoniteReference(context));
-members.Add("_visualScale", _visualScale_Element.Data.ToResoniteReference(context));
+members.Add("Radius", Radius_Element.ToLinkField(context));
+members.Add("Sides", Sides_Element.ToLinkField(context));
+members.Add("Point0", Point0_Element.ToLinkField(context));
+members.Add("Point1", Point1_Element.ToLinkField(context));
+members.Add("Anchor0", Anchor0_Element.ToLinkReference(context));
+members.Add("Anchor1", Anchor1_Element.ToLinkReference(context));
+members.Add("_cylinder", _cylinder_Element.ToLinkReference(context));
+members.Add("_collider", _collider_Element.ToLinkReference(context));
+members.Add("_offset", _offset_Element.ToLinkReference(context));
+members.Add("_rotation", _rotation_Element.ToLinkReference(context));
+members.Add("_visualScale", _visualScale_Element.ToLinkReference(context));
 }
 
 }

@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.DynamicVisemeDriver+VisemeSource
-// Generated on: čtvrtek 26. února 2026 10:04:37
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:28:03
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -31,8 +31,8 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Viseme", Viseme_Element.Data.ToResoniteLinkField());
-members.Add("Influence", Influence_Element.Data.ToResoniteLinkField());
+members.Add("Viseme", Viseme_Element.ToLinkField(context));
+members.Add("Influence", Influence_Element.ToLinkField(context));
 }
 
 }

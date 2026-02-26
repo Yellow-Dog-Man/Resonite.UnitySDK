@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.RecordEditForm
-// Generated on: čtvrtek 26. února 2026 10:04:47
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:28:13
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -42,15 +42,15 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("_worldOrb", _worldOrb_Element.Data.ToResoniteReference(context));
-members.Add("_name", _name_Element.Data.ToResoniteReference(context));
-members.Add("_description", _description_Element.Data.ToResoniteReference(context));
-members.Add("_path", _path_Element.Data.ToResoniteReference(context));
-members.Add("_tags", _tags_Element.Data.ToResoniteReference(context));
-members.Add("_publicSetting", _publicSetting_Element.Data.ToResoniteLinkField());
-members.Add("_readonly", _readonly_Element.Data.ToResoniteReference(context));
-members.Add("_ownerUser", new ResoniteLink.SyncObject() { Members = _ownerUser.CollectMembers(context) });
-members.Add("_privateOptionText", _privateOptionText_Element.Data.ToResoniteReference(context));
+members.Add("_worldOrb", _worldOrb_Element.ToLinkReference(context));
+members.Add("_name", _name_Element.ToLinkReference(context));
+members.Add("_description", _description_Element.ToLinkReference(context));
+members.Add("_path", _path_Element.ToLinkReference(context));
+members.Add("_tags", _tags_Element.ToLinkReference(context));
+members.Add("_publicSetting", _publicSetting_Element.ToLinkField(context));
+members.Add("_readonly", _readonly_Element.ToLinkReference(context));
+members.Add("_ownerUser", _ownerUser.ToLinkSyncObject(context));
+members.Add("_privateOptionText", _privateOptionText_Element.ToLinkReference(context));
 }
 
 }

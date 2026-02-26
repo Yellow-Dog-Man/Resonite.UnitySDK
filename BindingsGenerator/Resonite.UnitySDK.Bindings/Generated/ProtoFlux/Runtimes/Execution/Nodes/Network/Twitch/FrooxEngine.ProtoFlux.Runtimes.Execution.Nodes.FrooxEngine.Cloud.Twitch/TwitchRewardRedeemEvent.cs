@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [ProtoFluxBindings]FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Cloud.Twitch.TwitchRewardRedeemEvent
-// Generated on: čtvrtek 26. února 2026 10:04:21
-// Resonite version: 2026.2.25.455
+// Generated on: čtvrtek 26. února 2026 12:27:45
+// Resonite version: 2026.2.26.702
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
 
@@ -35,15 +35,15 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("OnRedeem", OnRedeem_Element.Data.ToResoniteReference(context));
-members.Add("DisplayName", new ResoniteLink.EmptyElement());
-members.Add("Message", new ResoniteLink.EmptyElement());
-members.Add("TimeStamp", new ResoniteLink.EmptyElement());
-members.Add("RewardId", new ResoniteLink.EmptyElement());
-members.Add("RewardTitle", new ResoniteLink.EmptyElement());
-members.Add("RewardPrompt", new ResoniteLink.EmptyElement());
-members.Add("Status", new ResoniteLink.EmptyElement());
-members.Add("RewardCost", new ResoniteLink.EmptyElement());
+members.Add("OnRedeem", OnRedeem_Element.ToLinkReference(context));
+members.Add("DisplayName", DisplayName.ToLinkEmpty(context));
+members.Add("Message", Message.ToLinkEmpty(context));
+members.Add("TimeStamp", TimeStamp.ToLinkEmpty(context));
+members.Add("RewardId", RewardId.ToLinkEmpty(context));
+members.Add("RewardTitle", RewardTitle.ToLinkEmpty(context));
+members.Add("RewardPrompt", RewardPrompt.ToLinkEmpty(context));
+members.Add("Status", Status.ToLinkEmpty(context));
+members.Add("RewardCost", RewardCost.ToLinkEmpty(context));
 }
 
 }
