@@ -195,8 +195,10 @@ public static class FieldArrayConverter
             if(value is UnityEngine.<#=type#> value_<#=type#>)
                 return value_<#=type#>.ToResoniteLink().ToResoniteLinkField();
             if(type == typeof(UnityEngine.<#=type#>?))
-                return (value as UnityEngine.<#=type#>?)?.ToResoniteLink().ToResoniteLinkField();
-
+            {
+                var convertedValue = (value as UnityEngine.<#=type#>?)?.ToResoniteLink();
+                return convertedValue.ToResoniteLinkField();
+            }
             <#
         }
         #>

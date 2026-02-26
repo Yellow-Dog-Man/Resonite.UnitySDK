@@ -33,233 +33,325 @@ public static class FieldArrayConverter
                     if(value is UnityEngine.Vector2 value_Vector2)
                 return value_Vector2.ToResoniteLink().ToResoniteLinkField();
             if(type == typeof(UnityEngine.Vector2?))
-                return (value as UnityEngine.Vector2?)?.ToResoniteLink().ToResoniteLinkField();
-
+            {
+                var convertedValue = (value as UnityEngine.Vector2?)?.ToResoniteLink();
+                return convertedValue.ToResoniteLinkField();
+            }
                         if(value is UnityEngine.Vector3 value_Vector3)
                 return value_Vector3.ToResoniteLink().ToResoniteLinkField();
             if(type == typeof(UnityEngine.Vector3?))
-                return (value as UnityEngine.Vector3?)?.ToResoniteLink().ToResoniteLinkField();
-
+            {
+                var convertedValue = (value as UnityEngine.Vector3?)?.ToResoniteLink();
+                return convertedValue.ToResoniteLinkField();
+            }
                         if(value is UnityEngine.Vector4 value_Vector4)
                 return value_Vector4.ToResoniteLink().ToResoniteLinkField();
             if(type == typeof(UnityEngine.Vector4?))
-                return (value as UnityEngine.Vector4?)?.ToResoniteLink().ToResoniteLinkField();
-
+            {
+                var convertedValue = (value as UnityEngine.Vector4?)?.ToResoniteLink();
+                return convertedValue.ToResoniteLinkField();
+            }
                         if(value is UnityEngine.Quaternion value_Quaternion)
                 return value_Quaternion.ToResoniteLink().ToResoniteLinkField();
             if(type == typeof(UnityEngine.Quaternion?))
-                return (value as UnityEngine.Quaternion?)?.ToResoniteLink().ToResoniteLinkField();
-
+            {
+                var convertedValue = (value as UnityEngine.Quaternion?)?.ToResoniteLink();
+                return convertedValue.ToResoniteLinkField();
+            }
                         if(value is UnityEngine.Vector2Int value_Vector2Int)
                 return value_Vector2Int.ToResoniteLink().ToResoniteLinkField();
             if(type == typeof(UnityEngine.Vector2Int?))
-                return (value as UnityEngine.Vector2Int?)?.ToResoniteLink().ToResoniteLinkField();
-
+            {
+                var convertedValue = (value as UnityEngine.Vector2Int?)?.ToResoniteLink();
+                return convertedValue.ToResoniteLinkField();
+            }
                         if(value is UnityEngine.Vector3Int value_Vector3Int)
                 return value_Vector3Int.ToResoniteLink().ToResoniteLinkField();
             if(type == typeof(UnityEngine.Vector3Int?))
-                return (value as UnityEngine.Vector3Int?)?.ToResoniteLink().ToResoniteLinkField();
-
+            {
+                var convertedValue = (value as UnityEngine.Vector3Int?)?.ToResoniteLink();
+                return convertedValue.ToResoniteLinkField();
+            }
                         if(value is UnityEngine.Matrix4x4 value_Matrix4x4)
                 return value_Matrix4x4.ToResoniteLink().ToResoniteLinkField();
             if(type == typeof(UnityEngine.Matrix4x4?))
-                return (value as UnityEngine.Matrix4x4?)?.ToResoniteLink().ToResoniteLinkField();
-
+            {
+                var convertedValue = (value as UnityEngine.Matrix4x4?)?.ToResoniteLink();
+                return convertedValue.ToResoniteLinkField();
+            }
                         if(value is UnityEngine.Color value_Color)
                 return value_Color.ToResoniteLink().ToResoniteLinkField();
             if(type == typeof(UnityEngine.Color?))
-                return (value as UnityEngine.Color?)?.ToResoniteLink().ToResoniteLinkField();
-
+            {
+                var convertedValue = (value as UnityEngine.Color?)?.ToResoniteLink();
+                return convertedValue.ToResoniteLinkField();
+            }
                         if(value is UnityEngine.Color32 value_Color32)
                 return value_Color32.ToResoniteLink().ToResoniteLinkField();
             if(type == typeof(UnityEngine.Color32?))
-                return (value as UnityEngine.Color32?)?.ToResoniteLink().ToResoniteLinkField();
-
+            {
+                var convertedValue = (value as UnityEngine.Color32?)?.ToResoniteLink();
+                return convertedValue.ToResoniteLinkField();
+            }
                         if(value is UnityEngine.Rect value_Rect)
                 return value_Rect.ToResoniteLink().ToResoniteLinkField();
             if(type == typeof(UnityEngine.Rect?))
-                return (value as UnityEngine.Rect?)?.ToResoniteLink().ToResoniteLinkField();
-
+            {
+                var convertedValue = (value as UnityEngine.Rect?)?.ToResoniteLink();
+                return convertedValue.ToResoniteLinkField();
+            }
                         if(value is UnityEngine.RectInt value_RectInt)
                 return value_RectInt.ToResoniteLink().ToResoniteLinkField();
             if(type == typeof(UnityEngine.RectInt?))
-                return (value as UnityEngine.RectInt?)?.ToResoniteLink().ToResoniteLinkField();
-
+            {
+                var convertedValue = (value as UnityEngine.RectInt?)?.ToResoniteLink();
+                return convertedValue.ToResoniteLinkField();
+            }
                         if(value is UnityEngine.Bounds value_Bounds)
                 return value_Bounds.ToResoniteLink().ToResoniteLinkField();
             if(type == typeof(UnityEngine.Bounds?))
-                return (value as UnityEngine.Bounds?)?.ToResoniteLink().ToResoniteLinkField();
-
+            {
+                var convertedValue = (value as UnityEngine.Bounds?)?.ToResoniteLink();
+                return convertedValue.ToResoniteLinkField();
+            }
                         if(value is UnityEngine.QuaternionDouble value_QuaternionDouble)
                 return value_QuaternionDouble.ToResoniteLink().ToResoniteLinkField();
             if(type == typeof(UnityEngine.QuaternionDouble?))
-                return (value as UnityEngine.QuaternionDouble?)?.ToResoniteLink().ToResoniteLinkField();
-
+            {
+                var convertedValue = (value as UnityEngine.QuaternionDouble?)?.ToResoniteLink();
+                return convertedValue.ToResoniteLinkField();
+            }
                         if(value is UnityEngine.ColorX value_ColorX)
                 return value_ColorX.ToResoniteLink().ToResoniteLinkField();
             if(type == typeof(UnityEngine.ColorX?))
-                return (value as UnityEngine.ColorX?)?.ToResoniteLink().ToResoniteLinkField();
-
+            {
+                var convertedValue = (value as UnityEngine.ColorX?)?.ToResoniteLink();
+                return convertedValue.ToResoniteLinkField();
+            }
                         if(value is UnityEngine.Vector2Bool value_Vector2Bool)
                 return value_Vector2Bool.ToResoniteLink().ToResoniteLinkField();
             if(type == typeof(UnityEngine.Vector2Bool?))
-                return (value as UnityEngine.Vector2Bool?)?.ToResoniteLink().ToResoniteLinkField();
-
+            {
+                var convertedValue = (value as UnityEngine.Vector2Bool?)?.ToResoniteLink();
+                return convertedValue.ToResoniteLinkField();
+            }
                         if(value is UnityEngine.Vector3Bool value_Vector3Bool)
                 return value_Vector3Bool.ToResoniteLink().ToResoniteLinkField();
             if(type == typeof(UnityEngine.Vector3Bool?))
-                return (value as UnityEngine.Vector3Bool?)?.ToResoniteLink().ToResoniteLinkField();
-
+            {
+                var convertedValue = (value as UnityEngine.Vector3Bool?)?.ToResoniteLink();
+                return convertedValue.ToResoniteLinkField();
+            }
                         if(value is UnityEngine.Vector4Bool value_Vector4Bool)
                 return value_Vector4Bool.ToResoniteLink().ToResoniteLinkField();
             if(type == typeof(UnityEngine.Vector4Bool?))
-                return (value as UnityEngine.Vector4Bool?)?.ToResoniteLink().ToResoniteLinkField();
-
+            {
+                var convertedValue = (value as UnityEngine.Vector4Bool?)?.ToResoniteLink();
+                return convertedValue.ToResoniteLinkField();
+            }
                         if(value is UnityEngine.Vector2Byte value_Vector2Byte)
                 return value_Vector2Byte.ToResoniteLink().ToResoniteLinkField();
             if(type == typeof(UnityEngine.Vector2Byte?))
-                return (value as UnityEngine.Vector2Byte?)?.ToResoniteLink().ToResoniteLinkField();
-
+            {
+                var convertedValue = (value as UnityEngine.Vector2Byte?)?.ToResoniteLink();
+                return convertedValue.ToResoniteLinkField();
+            }
                         if(value is UnityEngine.Vector3Byte value_Vector3Byte)
                 return value_Vector3Byte.ToResoniteLink().ToResoniteLinkField();
             if(type == typeof(UnityEngine.Vector3Byte?))
-                return (value as UnityEngine.Vector3Byte?)?.ToResoniteLink().ToResoniteLinkField();
-
+            {
+                var convertedValue = (value as UnityEngine.Vector3Byte?)?.ToResoniteLink();
+                return convertedValue.ToResoniteLinkField();
+            }
                         if(value is UnityEngine.Vector4Byte value_Vector4Byte)
                 return value_Vector4Byte.ToResoniteLink().ToResoniteLinkField();
             if(type == typeof(UnityEngine.Vector4Byte?))
-                return (value as UnityEngine.Vector4Byte?)?.ToResoniteLink().ToResoniteLinkField();
-
+            {
+                var convertedValue = (value as UnityEngine.Vector4Byte?)?.ToResoniteLink();
+                return convertedValue.ToResoniteLinkField();
+            }
                         if(value is UnityEngine.Vector2Ushort value_Vector2Ushort)
                 return value_Vector2Ushort.ToResoniteLink().ToResoniteLinkField();
             if(type == typeof(UnityEngine.Vector2Ushort?))
-                return (value as UnityEngine.Vector2Ushort?)?.ToResoniteLink().ToResoniteLinkField();
-
+            {
+                var convertedValue = (value as UnityEngine.Vector2Ushort?)?.ToResoniteLink();
+                return convertedValue.ToResoniteLinkField();
+            }
                         if(value is UnityEngine.Vector3Ushort value_Vector3Ushort)
                 return value_Vector3Ushort.ToResoniteLink().ToResoniteLinkField();
             if(type == typeof(UnityEngine.Vector3Ushort?))
-                return (value as UnityEngine.Vector3Ushort?)?.ToResoniteLink().ToResoniteLinkField();
-
+            {
+                var convertedValue = (value as UnityEngine.Vector3Ushort?)?.ToResoniteLink();
+                return convertedValue.ToResoniteLinkField();
+            }
                         if(value is UnityEngine.Vector4Ushort value_Vector4Ushort)
                 return value_Vector4Ushort.ToResoniteLink().ToResoniteLinkField();
             if(type == typeof(UnityEngine.Vector4Ushort?))
-                return (value as UnityEngine.Vector4Ushort?)?.ToResoniteLink().ToResoniteLinkField();
-
+            {
+                var convertedValue = (value as UnityEngine.Vector4Ushort?)?.ToResoniteLink();
+                return convertedValue.ToResoniteLinkField();
+            }
                         if(value is UnityEngine.Vector2Uint value_Vector2Uint)
                 return value_Vector2Uint.ToResoniteLink().ToResoniteLinkField();
             if(type == typeof(UnityEngine.Vector2Uint?))
-                return (value as UnityEngine.Vector2Uint?)?.ToResoniteLink().ToResoniteLinkField();
-
+            {
+                var convertedValue = (value as UnityEngine.Vector2Uint?)?.ToResoniteLink();
+                return convertedValue.ToResoniteLinkField();
+            }
                         if(value is UnityEngine.Vector3Uint value_Vector3Uint)
                 return value_Vector3Uint.ToResoniteLink().ToResoniteLinkField();
             if(type == typeof(UnityEngine.Vector3Uint?))
-                return (value as UnityEngine.Vector3Uint?)?.ToResoniteLink().ToResoniteLinkField();
-
+            {
+                var convertedValue = (value as UnityEngine.Vector3Uint?)?.ToResoniteLink();
+                return convertedValue.ToResoniteLinkField();
+            }
                         if(value is UnityEngine.Vector4Uint value_Vector4Uint)
                 return value_Vector4Uint.ToResoniteLink().ToResoniteLinkField();
             if(type == typeof(UnityEngine.Vector4Uint?))
-                return (value as UnityEngine.Vector4Uint?)?.ToResoniteLink().ToResoniteLinkField();
-
+            {
+                var convertedValue = (value as UnityEngine.Vector4Uint?)?.ToResoniteLink();
+                return convertedValue.ToResoniteLinkField();
+            }
                         if(value is UnityEngine.Vector2Ulong value_Vector2Ulong)
                 return value_Vector2Ulong.ToResoniteLink().ToResoniteLinkField();
             if(type == typeof(UnityEngine.Vector2Ulong?))
-                return (value as UnityEngine.Vector2Ulong?)?.ToResoniteLink().ToResoniteLinkField();
-
+            {
+                var convertedValue = (value as UnityEngine.Vector2Ulong?)?.ToResoniteLink();
+                return convertedValue.ToResoniteLinkField();
+            }
                         if(value is UnityEngine.Vector3Ulong value_Vector3Ulong)
                 return value_Vector3Ulong.ToResoniteLink().ToResoniteLinkField();
             if(type == typeof(UnityEngine.Vector3Ulong?))
-                return (value as UnityEngine.Vector3Ulong?)?.ToResoniteLink().ToResoniteLinkField();
-
+            {
+                var convertedValue = (value as UnityEngine.Vector3Ulong?)?.ToResoniteLink();
+                return convertedValue.ToResoniteLinkField();
+            }
                         if(value is UnityEngine.Vector4Ulong value_Vector4Ulong)
                 return value_Vector4Ulong.ToResoniteLink().ToResoniteLinkField();
             if(type == typeof(UnityEngine.Vector4Ulong?))
-                return (value as UnityEngine.Vector4Ulong?)?.ToResoniteLink().ToResoniteLinkField();
-
+            {
+                var convertedValue = (value as UnityEngine.Vector4Ulong?)?.ToResoniteLink();
+                return convertedValue.ToResoniteLinkField();
+            }
                         if(value is UnityEngine.Vector2Sbyte value_Vector2Sbyte)
                 return value_Vector2Sbyte.ToResoniteLink().ToResoniteLinkField();
             if(type == typeof(UnityEngine.Vector2Sbyte?))
-                return (value as UnityEngine.Vector2Sbyte?)?.ToResoniteLink().ToResoniteLinkField();
-
+            {
+                var convertedValue = (value as UnityEngine.Vector2Sbyte?)?.ToResoniteLink();
+                return convertedValue.ToResoniteLinkField();
+            }
                         if(value is UnityEngine.Vector3Sbyte value_Vector3Sbyte)
                 return value_Vector3Sbyte.ToResoniteLink().ToResoniteLinkField();
             if(type == typeof(UnityEngine.Vector3Sbyte?))
-                return (value as UnityEngine.Vector3Sbyte?)?.ToResoniteLink().ToResoniteLinkField();
-
+            {
+                var convertedValue = (value as UnityEngine.Vector3Sbyte?)?.ToResoniteLink();
+                return convertedValue.ToResoniteLinkField();
+            }
                         if(value is UnityEngine.Vector4Sbyte value_Vector4Sbyte)
                 return value_Vector4Sbyte.ToResoniteLink().ToResoniteLinkField();
             if(type == typeof(UnityEngine.Vector4Sbyte?))
-                return (value as UnityEngine.Vector4Sbyte?)?.ToResoniteLink().ToResoniteLinkField();
-
+            {
+                var convertedValue = (value as UnityEngine.Vector4Sbyte?)?.ToResoniteLink();
+                return convertedValue.ToResoniteLinkField();
+            }
                         if(value is UnityEngine.Vector2Short value_Vector2Short)
                 return value_Vector2Short.ToResoniteLink().ToResoniteLinkField();
             if(type == typeof(UnityEngine.Vector2Short?))
-                return (value as UnityEngine.Vector2Short?)?.ToResoniteLink().ToResoniteLinkField();
-
+            {
+                var convertedValue = (value as UnityEngine.Vector2Short?)?.ToResoniteLink();
+                return convertedValue.ToResoniteLinkField();
+            }
                         if(value is UnityEngine.Vector3Short value_Vector3Short)
                 return value_Vector3Short.ToResoniteLink().ToResoniteLinkField();
             if(type == typeof(UnityEngine.Vector3Short?))
-                return (value as UnityEngine.Vector3Short?)?.ToResoniteLink().ToResoniteLinkField();
-
+            {
+                var convertedValue = (value as UnityEngine.Vector3Short?)?.ToResoniteLink();
+                return convertedValue.ToResoniteLinkField();
+            }
                         if(value is UnityEngine.Vector4Short value_Vector4Short)
                 return value_Vector4Short.ToResoniteLink().ToResoniteLinkField();
             if(type == typeof(UnityEngine.Vector4Short?))
-                return (value as UnityEngine.Vector4Short?)?.ToResoniteLink().ToResoniteLinkField();
-
+            {
+                var convertedValue = (value as UnityEngine.Vector4Short?)?.ToResoniteLink();
+                return convertedValue.ToResoniteLinkField();
+            }
                         if(value is UnityEngine.Vector2Long value_Vector2Long)
                 return value_Vector2Long.ToResoniteLink().ToResoniteLinkField();
             if(type == typeof(UnityEngine.Vector2Long?))
-                return (value as UnityEngine.Vector2Long?)?.ToResoniteLink().ToResoniteLinkField();
-
+            {
+                var convertedValue = (value as UnityEngine.Vector2Long?)?.ToResoniteLink();
+                return convertedValue.ToResoniteLinkField();
+            }
                         if(value is UnityEngine.Vector3Long value_Vector3Long)
                 return value_Vector3Long.ToResoniteLink().ToResoniteLinkField();
             if(type == typeof(UnityEngine.Vector3Long?))
-                return (value as UnityEngine.Vector3Long?)?.ToResoniteLink().ToResoniteLinkField();
-
+            {
+                var convertedValue = (value as UnityEngine.Vector3Long?)?.ToResoniteLink();
+                return convertedValue.ToResoniteLinkField();
+            }
                         if(value is UnityEngine.Vector4Long value_Vector4Long)
                 return value_Vector4Long.ToResoniteLink().ToResoniteLinkField();
             if(type == typeof(UnityEngine.Vector4Long?))
-                return (value as UnityEngine.Vector4Long?)?.ToResoniteLink().ToResoniteLinkField();
-
+            {
+                var convertedValue = (value as UnityEngine.Vector4Long?)?.ToResoniteLink();
+                return convertedValue.ToResoniteLinkField();
+            }
                         if(value is UnityEngine.Vector2Double value_Vector2Double)
                 return value_Vector2Double.ToResoniteLink().ToResoniteLinkField();
             if(type == typeof(UnityEngine.Vector2Double?))
-                return (value as UnityEngine.Vector2Double?)?.ToResoniteLink().ToResoniteLinkField();
-
+            {
+                var convertedValue = (value as UnityEngine.Vector2Double?)?.ToResoniteLink();
+                return convertedValue.ToResoniteLinkField();
+            }
                         if(value is UnityEngine.Vector3Double value_Vector3Double)
                 return value_Vector3Double.ToResoniteLink().ToResoniteLinkField();
             if(type == typeof(UnityEngine.Vector3Double?))
-                return (value as UnityEngine.Vector3Double?)?.ToResoniteLink().ToResoniteLinkField();
-
+            {
+                var convertedValue = (value as UnityEngine.Vector3Double?)?.ToResoniteLink();
+                return convertedValue.ToResoniteLinkField();
+            }
                         if(value is UnityEngine.Vector4Double value_Vector4Double)
                 return value_Vector4Double.ToResoniteLink().ToResoniteLinkField();
             if(type == typeof(UnityEngine.Vector4Double?))
-                return (value as UnityEngine.Vector4Double?)?.ToResoniteLink().ToResoniteLinkField();
-
+            {
+                var convertedValue = (value as UnityEngine.Vector4Double?)?.ToResoniteLink();
+                return convertedValue.ToResoniteLinkField();
+            }
                         if(value is UnityEngine.Matrix2x2 value_Matrix2x2)
                 return value_Matrix2x2.ToResoniteLink().ToResoniteLinkField();
             if(type == typeof(UnityEngine.Matrix2x2?))
-                return (value as UnityEngine.Matrix2x2?)?.ToResoniteLink().ToResoniteLinkField();
-
+            {
+                var convertedValue = (value as UnityEngine.Matrix2x2?)?.ToResoniteLink();
+                return convertedValue.ToResoniteLinkField();
+            }
                         if(value is UnityEngine.Matrix3x3 value_Matrix3x3)
                 return value_Matrix3x3.ToResoniteLink().ToResoniteLinkField();
             if(type == typeof(UnityEngine.Matrix3x3?))
-                return (value as UnityEngine.Matrix3x3?)?.ToResoniteLink().ToResoniteLinkField();
-
+            {
+                var convertedValue = (value as UnityEngine.Matrix3x3?)?.ToResoniteLink();
+                return convertedValue.ToResoniteLinkField();
+            }
                         if(value is UnityEngine.Matrix2x2Double value_Matrix2x2Double)
                 return value_Matrix2x2Double.ToResoniteLink().ToResoniteLinkField();
             if(type == typeof(UnityEngine.Matrix2x2Double?))
-                return (value as UnityEngine.Matrix2x2Double?)?.ToResoniteLink().ToResoniteLinkField();
-
+            {
+                var convertedValue = (value as UnityEngine.Matrix2x2Double?)?.ToResoniteLink();
+                return convertedValue.ToResoniteLinkField();
+            }
                         if(value is UnityEngine.Matrix3x3Double value_Matrix3x3Double)
                 return value_Matrix3x3Double.ToResoniteLink().ToResoniteLinkField();
             if(type == typeof(UnityEngine.Matrix3x3Double?))
-                return (value as UnityEngine.Matrix3x3Double?)?.ToResoniteLink().ToResoniteLinkField();
-
+            {
+                var convertedValue = (value as UnityEngine.Matrix3x3Double?)?.ToResoniteLink();
+                return convertedValue.ToResoniteLinkField();
+            }
                         if(value is UnityEngine.Matrix4x4Double value_Matrix4x4Double)
                 return value_Matrix4x4Double.ToResoniteLink().ToResoniteLinkField();
             if(type == typeof(UnityEngine.Matrix4x4Double?))
-                return (value as UnityEngine.Matrix4x4Double?)?.ToResoniteLink().ToResoniteLinkField();
-
+            {
+                var convertedValue = (value as UnityEngine.Matrix4x4Double?)?.ToResoniteLink();
+                return convertedValue.ToResoniteLinkField();
+            }
             
             // All other primitives
                     if(type == typeof(byte))
