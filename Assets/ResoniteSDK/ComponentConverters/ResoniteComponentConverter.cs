@@ -38,6 +38,21 @@ public abstract class ResoniteComponentConverter<T> : ResoniteComponentConverter
 
     protected virtual void Initialize(T target) {  }
     protected abstract void UpdateConversion(T target, IConversionContext context);
+
+    protected TComponent EnsureComponent<TComponent, TWrapper>(ref TWrapper wrapper, 
+        Action<TComponent> onAdded = null)
+        where TWrapper : ResoniteComponent<TComponent>
+        where TComponent : ResoniteObject, FrooxEngine.IWorldElement, new()
+    {
+        if (wrapper == null)
+            wrapper = gameObject.AddComponent<TWrapper>();
+
+        var data = wrapper.Data;
+
+        onAdded?.Invoke(data);
+
+        return data;
+    }
 }
 
 /// <summary>
