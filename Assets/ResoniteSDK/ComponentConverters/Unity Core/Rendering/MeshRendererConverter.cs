@@ -62,9 +62,6 @@ public static class MeshRendererHelper
         resonite.SortingOrder = unity.sortingOrder;
 
         // Convert materials!
-        if (resonite.Materials == null)
-            resonite.Materials = new List<FrooxEngine.IAssetProvider<FrooxEngine.Material>>();
-
         var sourceMaterials = unity.sharedMaterials;
 
         for (int i = 0; i < sourceMaterials.Length; i++)

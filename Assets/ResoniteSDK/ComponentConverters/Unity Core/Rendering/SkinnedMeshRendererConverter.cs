@@ -22,9 +22,6 @@ public static class SkinnedMeshRendererHelper
         // Blendshapes
         var blendshapeCount = mesh.blendShapeCount;
 
-        if (resonite.BlendShapeWeights == null)
-            resonite.BlendShapeWeights = new List<float>();
-
         for (int b = 0; b < blendshapeCount; b++)
         {
             var endFrameWeight = mesh.GetBlendShapeFrameWeight(b, mesh.GetBlendShapeFrameCount(b) - 1);
@@ -43,9 +40,6 @@ public static class SkinnedMeshRendererHelper
             resonite.BlendShapeWeights.RemoveAt(resonite.BlendShapeWeights.Count - 1);
 
         // Bones
-        if (resonite.Bones == null)
-            resonite.Bones = new List<FrooxEngine.Slot>();
-
         for (int b = 0; b < unity.bones.Length; b++)
         {
             var bone = unity.bones[b];

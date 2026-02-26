@@ -57,10 +57,14 @@ public static class AudioSourceHelper
 
         resonite.Clip = context.GetAudioClip(unity.clip);
 
-        resonite.playback.Position = 0;
-        resonite.playback.Playing = unity.playOnAwake;
-        resonite.playback.Loop = unity.loop;
-        resonite.playback.Speed = unity.pitch;
+        var state = new PlaybackState();
+
+        state.Position = 0;
+        state.Playing = unity.playOnAwake;
+        state.Loop = unity.loop;
+        state.Speed = unity.pitch;
+
+        resonite.playback = state;
     }
 }
 
