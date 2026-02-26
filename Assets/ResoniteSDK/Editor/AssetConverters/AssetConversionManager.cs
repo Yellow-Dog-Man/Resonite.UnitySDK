@@ -126,7 +126,7 @@ public class AssetConversionManager
 
             if(converterType == null)
             {
-                Debug.LogWarning($"Unable to convert material {material}");
+                Debug.LogWarning($"Unable to convert material {material}. Shader: {material.shader?.name}");
 
                 // Set it to null. We still want to cache null converted material so we're not doing
                 // this whole search & evaluation every single time this material is requested
