@@ -90,6 +90,9 @@ public class ResoniteLinkWindow : EditorWindow
         if (GUILayout.Button("Cleanup converters in the scene"))
             CleanupConverters();
 
+        if (GUILayout.Button("Cleanup Resonite Components in the scene"))
+            CleanupReosniteComponents();
+
         if (GUILayout.Button("Reset conversion state"))
             ResetConversionState();
     }
@@ -181,6 +184,15 @@ public class ResoniteLinkWindow : EditorWindow
         foreach (var root in roots)
             foreach (var converter in root.GetComponentsInChildren<ResoniteComponentConverter>())
                 DestroyImmediate(converter);
+    }
+
+    void CleanupReosniteComponents()
+    {
+        var roots = SceneManager.GetActiveScene().GetRootGameObjects();
+
+        foreach (var root in roots)
+            foreach (var component in root.GetComponentsInChildren<ResoniteComponent>())
+                DestroyImmediate(component);
     }
 
     void ResetConversionState()
