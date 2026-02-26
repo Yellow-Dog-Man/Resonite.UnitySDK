@@ -44,12 +44,7 @@ public class SceneConverter : IConversionContext
         if (o is FrooxEngine.Slot)
             throw new ArgumentException($"Cannot allocate ID for a Slot object! This needs to be handled through transforms");
 
-        var id = $"Unity_{UniqueSessionId}_{o?.GetType().Name}_{_idPool++:X}";
-
-        if (o != null)
-            Debug.Log($"AllocateId: {id} for {o.GetType().FullName} ({o.GetHashCode()})");
-
-        return id;
+        return $"Unity_{UniqueSessionId}_{o?.GetType().Name}_{_idPool++:X}";
     }
 
     public string GetId(IWorldElement o)
@@ -58,11 +53,7 @@ public class SceneConverter : IConversionContext
         if (o is FrooxEngine.Slot slot)
             return GetTransformSlotId(slot.Wrapper.transform);
 
-        var id = _idMap[o];
-
-        Debug.Log($"GetId: {id} for {o.GetType().FullName} ({o.GetHashCode()})");
-
-        return id;
+        return _idMap[o];
     }
     public string GetIdOrAllocate(IWorldElement o) => GetIdOrAllocate(o, out _);
     public string GetIdOrAllocate(IWorldElement o, out bool allocated)
@@ -82,16 +73,10 @@ public class SceneConverter : IConversionContext
             id = AllocateId(o);
             _idMap.Add(o, id);
 
-            Debug.Log($"AllocatedId: {id} for {o.GetType().FullName} ({o.GetHashCode()})");
-
             allocated = true;
         }
         else
-        {
-            Debug.Log($"GotId: {id} for {o.GetType().FullName} ({o.GetHashCode()})");
-
             allocated = false;
-        }
 
         return id;
     }
