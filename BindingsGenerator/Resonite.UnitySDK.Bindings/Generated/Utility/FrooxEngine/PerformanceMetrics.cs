@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.PerformanceMetrics
-// Generated on: středa 25. února 2026 16:14:46
+// Generated on: čtvrtek 26. února 2026 10:04:50
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,21 +20,25 @@ namespace FrooxEngine
 public partial class PerformanceMetrics : global::FrooxEngine.Component
 
 {
-    public global::FrooxEngine.UserRef User;
-public global::System.Single FPS;
-public global::System.Single ImmediateFPS;
-public global::System.Single RenderTime;
-public global::System.Single TotalEngineUpdateTime;
+    public global::FrooxEngine.UserRef User = new();
+public global::System.Single FPS { get => FPS_Element.Data; set => FPS_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> FPS_Element = new();
+public global::System.Single ImmediateFPS { get => ImmediateFPS_Element.Data; set => ImmediateFPS_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> ImmediateFPS_Element = new();
+public global::System.Single RenderTime { get => RenderTime_Element.Data; set => RenderTime_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> RenderTime_Element = new();
+public global::System.Single TotalEngineUpdateTime { get => TotalEngineUpdateTime_Element.Data; set => TotalEngineUpdateTime_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> TotalEngineUpdateTime_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
 members.Add("User", new ResoniteLink.SyncObject() { Members = User.CollectMembers(context) });
-members.Add("FPS", FPS.ToResoniteLinkField());
-members.Add("ImmediateFPS", ImmediateFPS.ToResoniteLinkField());
-members.Add("RenderTime", RenderTime.ToResoniteLinkField());
-members.Add("TotalEngineUpdateTime", TotalEngineUpdateTime.ToResoniteLinkField());
+members.Add("FPS", FPS_Element.Data.ToResoniteLinkField());
+members.Add("ImmediateFPS", ImmediateFPS_Element.Data.ToResoniteLinkField());
+members.Add("RenderTime", RenderTime_Element.Data.ToResoniteLinkField());
+members.Add("TotalEngineUpdateTime", TotalEngineUpdateTime_Element.Data.ToResoniteLinkField());
 }
 
 }

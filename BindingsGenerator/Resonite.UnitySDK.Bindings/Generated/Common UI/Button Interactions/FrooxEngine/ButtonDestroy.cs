@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.ButtonDestroy
-// Generated on: středa 25. února 2026 16:13:06
+// Generated on: čtvrtek 26. února 2026 10:03:37
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,15 +20,17 @@ namespace FrooxEngine
 public partial class ButtonDestroy : global::FrooxEngine.Component, global::FrooxEngine.IButtonPressReceiver
 
 {
-    public global::FrooxEngine.IDestroyable Target;
-public global::System.Boolean FindObjectRoot;
+    public global::FrooxEngine.IDestroyable Target { get => Target_Element.Data; set => Target_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.IDestroyable>, global::FrooxEngine.IDestroyable> Target_Element = new();
+public global::System.Boolean FindObjectRoot { get => FindObjectRoot_Element.Data; set => FindObjectRoot_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> FindObjectRoot_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Target", Target.ToResoniteReference(context));
-members.Add("FindObjectRoot", FindObjectRoot.ToResoniteLinkField());
+members.Add("Target", Target_Element.Data.ToResoniteReference(context));
+members.Add("FindObjectRoot", FindObjectRoot_Element.Data.ToResoniteLinkField());
 }
 
 }

@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [ProtoFluxBindings]FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.TypeObjectInput
-// Generated on: středa 25. února 2026 16:13:39
+// Generated on: čtvrtek 26. února 2026 10:04:08
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,13 +20,14 @@ namespace FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes
 public partial class TypeObjectInput : global::FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.ExternalObjectInput<global::FrooxEngine.ProtoFlux.FrooxEngineContext,System.String>, global::FrooxEngine.ProtoFlux.IInput<System.String>, global::FrooxEngine.ProtoFlux.IInput
 
 {
-    public System.String Type;
+    public System.String Type { get => Type_Element.Data; set => Type_Element.Data = value; }
+public Field<global::FrooxEngine.SyncType, System.String> Type_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Type", Type.ToResoniteLinkField());
+members.Add("Type", Type_Element.Data.ToResoniteLinkField());
 }
 
 }

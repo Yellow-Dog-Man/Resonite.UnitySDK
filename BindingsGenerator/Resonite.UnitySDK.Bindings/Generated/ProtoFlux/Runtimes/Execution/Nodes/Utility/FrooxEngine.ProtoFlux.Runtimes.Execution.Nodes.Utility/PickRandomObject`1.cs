@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [ProtoFluxBindings]FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.Utility.PickRandomObject<>
-// Generated on: středa 25. února 2026 16:14:12
+// Generated on: čtvrtek 26. února 2026 10:04:34
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -21,7 +21,7 @@ public partial class PickRandomObject<T> : global::FrooxEngine.ProtoFlux.Runtime
 	
 
 {
-    public System.Collections.Generic.List<global::FrooxEngine.ProtoFlux.INodeObjectOutput<T>> Operands;
+    public global::SyncFieldList<global::FrooxEngine.SyncRefList<global::FrooxEngine.ProtoFlux.INodeObjectOutput<T>>, global::FrooxEngine.ProtoFlux.INodeObjectOutput<T>, Field<global::FrooxEngine.SyncRef<global::FrooxEngine.ProtoFlux.INodeObjectOutput<T>>, global::FrooxEngine.ProtoFlux.INodeObjectOutput<T>>> Operands = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
@@ -29,7 +29,7 @@ public override void CollectMembers(
     base.CollectMembers(members, context);
 members.Add("Operands", new ResoniteLink.SyncList()
 {
-    Elements = Operands.ConvertList(m => m.ToResoniteReference(context))
+    Elements = Operands.Data.ConvertList(m => m.Data.ToResoniteReference(context))
 });
 }
 

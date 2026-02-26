@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.PlatformColorPalette+Colors
-// Generated on: středa 25. února 2026 16:14:47
+// Generated on: čtvrtek 26. února 2026 10:04:50
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -22,35 +22,47 @@ namespace FrooxEngine
 public partial class Colors : global::FrooxEngine.SyncObject
 
 {
-    public global::System.String YellowHex;
-public global::System.String GreenHex;
-public global::System.String RedHex;
-public global::System.String PurpleHex;
-public global::System.String CyanHex;
-public global::System.String OrangeHex;
-public UnityEngine.ColorX Yellow;
-public UnityEngine.ColorX Green;
-public UnityEngine.ColorX Red;
-public UnityEngine.ColorX Purple;
-public UnityEngine.ColorX Cyan;
-public UnityEngine.ColorX Orange;
+    public global::System.String YellowHex { get => YellowHex_Element.Data; set => YellowHex_Element.Data = value; }
+public Field<global::FrooxEngine.RawOutput<global::System.String>, global::System.String> YellowHex_Element = new();
+public global::System.String GreenHex { get => GreenHex_Element.Data; set => GreenHex_Element.Data = value; }
+public Field<global::FrooxEngine.RawOutput<global::System.String>, global::System.String> GreenHex_Element = new();
+public global::System.String RedHex { get => RedHex_Element.Data; set => RedHex_Element.Data = value; }
+public Field<global::FrooxEngine.RawOutput<global::System.String>, global::System.String> RedHex_Element = new();
+public global::System.String PurpleHex { get => PurpleHex_Element.Data; set => PurpleHex_Element.Data = value; }
+public Field<global::FrooxEngine.RawOutput<global::System.String>, global::System.String> PurpleHex_Element = new();
+public global::System.String CyanHex { get => CyanHex_Element.Data; set => CyanHex_Element.Data = value; }
+public Field<global::FrooxEngine.RawOutput<global::System.String>, global::System.String> CyanHex_Element = new();
+public global::System.String OrangeHex { get => OrangeHex_Element.Data; set => OrangeHex_Element.Data = value; }
+public Field<global::FrooxEngine.RawOutput<global::System.String>, global::System.String> OrangeHex_Element = new();
+public UnityEngine.ColorX Yellow { get => Yellow_Element.Data; set => Yellow_Element.Data = value; }
+public Field<global::FrooxEngine.RawOutput<UnityEngine.ColorX>, UnityEngine.ColorX> Yellow_Element = new();
+public UnityEngine.ColorX Green { get => Green_Element.Data; set => Green_Element.Data = value; }
+public Field<global::FrooxEngine.RawOutput<UnityEngine.ColorX>, UnityEngine.ColorX> Green_Element = new();
+public UnityEngine.ColorX Red { get => Red_Element.Data; set => Red_Element.Data = value; }
+public Field<global::FrooxEngine.RawOutput<UnityEngine.ColorX>, UnityEngine.ColorX> Red_Element = new();
+public UnityEngine.ColorX Purple { get => Purple_Element.Data; set => Purple_Element.Data = value; }
+public Field<global::FrooxEngine.RawOutput<UnityEngine.ColorX>, UnityEngine.ColorX> Purple_Element = new();
+public UnityEngine.ColorX Cyan { get => Cyan_Element.Data; set => Cyan_Element.Data = value; }
+public Field<global::FrooxEngine.RawOutput<UnityEngine.ColorX>, UnityEngine.ColorX> Cyan_Element = new();
+public UnityEngine.ColorX Orange { get => Orange_Element.Data; set => Orange_Element.Data = value; }
+public Field<global::FrooxEngine.RawOutput<UnityEngine.ColorX>, UnityEngine.ColorX> Orange_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("YellowHex", YellowHex.ToResoniteLinkField());
-members.Add("GreenHex", GreenHex.ToResoniteLinkField());
-members.Add("RedHex", RedHex.ToResoniteLinkField());
-members.Add("PurpleHex", PurpleHex.ToResoniteLinkField());
-members.Add("CyanHex", CyanHex.ToResoniteLinkField());
-members.Add("OrangeHex", OrangeHex.ToResoniteLinkField());
-members.Add("Yellow", Yellow.ToResoniteLinkField());
-members.Add("Green", Green.ToResoniteLinkField());
-members.Add("Red", Red.ToResoniteLinkField());
-members.Add("Purple", Purple.ToResoniteLinkField());
-members.Add("Cyan", Cyan.ToResoniteLinkField());
-members.Add("Orange", Orange.ToResoniteLinkField());
+members.Add("YellowHex", YellowHex_Element.Data.ToResoniteLinkField());
+members.Add("GreenHex", GreenHex_Element.Data.ToResoniteLinkField());
+members.Add("RedHex", RedHex_Element.Data.ToResoniteLinkField());
+members.Add("PurpleHex", PurpleHex_Element.Data.ToResoniteLinkField());
+members.Add("CyanHex", CyanHex_Element.Data.ToResoniteLinkField());
+members.Add("OrangeHex", OrangeHex_Element.Data.ToResoniteLinkField());
+members.Add("Yellow", Yellow_Element.Data.ToResoniteLinkField());
+members.Add("Green", Green_Element.Data.ToResoniteLinkField());
+members.Add("Red", Red_Element.Data.ToResoniteLinkField());
+members.Add("Purple", Purple_Element.Data.ToResoniteLinkField());
+members.Add("Cyan", Cyan_Element.Data.ToResoniteLinkField());
+members.Add("Orange", Orange_Element.Data.ToResoniteLinkField());
 }
 
 }

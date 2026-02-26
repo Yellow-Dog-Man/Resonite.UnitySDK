@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.ButtonValueShift<>
-// Generated on: středa 25. února 2026 16:13:07
+// Generated on: čtvrtek 26. února 2026 10:03:37
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -21,23 +21,29 @@ public partial class ButtonValueShift<T> : global::FrooxEngine.Component, global
 	
 
 {
-    public global::FrooxEngine.IField<T> TargetValue;
-public T Delta;
-public T Min;
-public T Max;
-public global::System.Boolean WrapAround;
-public global::System.Boolean MaxIsExclusive;
+    public global::FrooxEngine.IField<T> TargetValue { get => TargetValue_Element.Data; set => TargetValue_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.IField<T>>, global::FrooxEngine.IField<T>> TargetValue_Element = new();
+public T Delta { get => Delta_Element.Data; set => Delta_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<T>, T> Delta_Element = new();
+public T Min { get => Min_Element.Data; set => Min_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<T>, T> Min_Element = new();
+public T Max { get => Max_Element.Data; set => Max_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<T>, T> Max_Element = new();
+public global::System.Boolean WrapAround { get => WrapAround_Element.Data; set => WrapAround_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> WrapAround_Element = new();
+public global::System.Boolean MaxIsExclusive { get => MaxIsExclusive_Element.Data; set => MaxIsExclusive_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> MaxIsExclusive_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("TargetValue", TargetValue.ToResoniteReference(context));
-members.Add("Delta", Delta.ToResoniteLinkField());
-members.Add("Min", Min.ToResoniteLinkField());
-members.Add("Max", Max.ToResoniteLinkField());
-members.Add("WrapAround", WrapAround.ToResoniteLinkField());
-members.Add("MaxIsExclusive", MaxIsExclusive.ToResoniteLinkField());
+members.Add("TargetValue", TargetValue_Element.Data.ToResoniteReference(context));
+members.Add("Delta", Delta_Element.Data.ToResoniteLinkField());
+members.Add("Min", Min_Element.Data.ToResoniteLinkField());
+members.Add("Max", Max_Element.Data.ToResoniteLinkField());
+members.Add("WrapAround", WrapAround_Element.Data.ToResoniteLinkField());
+members.Add("MaxIsExclusive", MaxIsExclusive_Element.Data.ToResoniteLinkField());
 }
 
 }

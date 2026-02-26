@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.CommonAvatar.EyeRotationDriver+Eye
-// Generated on: středa 25. února 2026 16:14:38
+// Generated on: čtvrtek 26. února 2026 10:04:44
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -22,21 +22,26 @@ namespace FrooxEngine.CommonAvatar
 public partial class Eye : global::FrooxEngine.SyncObject, global::FrooxEngine.ICustomInspector
 
 {
-    public global::FrooxEngine.EyeSide Side;
-public global::FrooxEngine.Slot Root;
-public UnityEngine.Vector3 Up;
-public UnityEngine.Vector3 ForwardDirection;
-public global::FrooxEngine.IField<UnityEngine.Quaternion> Rotation;
+    public global::FrooxEngine.EyeSide Side { get => Side_Element.Data; set => Side_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::FrooxEngine.EyeSide>, global::FrooxEngine.EyeSide> Side_Element = new();
+public global::FrooxEngine.Slot Root { get => Root_Element.Data; set => Root_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> Root_Element = new();
+public UnityEngine.Vector3 Up { get => Up_Element.Data; set => Up_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.Vector3>, UnityEngine.Vector3> Up_Element = new();
+public UnityEngine.Vector3 ForwardDirection { get => ForwardDirection_Element.Data; set => ForwardDirection_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.Vector3>, UnityEngine.Vector3> ForwardDirection_Element = new();
+public global::FrooxEngine.IField<UnityEngine.Quaternion> Rotation { get => Rotation_Element.Data; set => Rotation_Element.Data = value; }
+public Field<global::FrooxEngine.FieldDrive<UnityEngine.Quaternion>, global::FrooxEngine.IField<UnityEngine.Quaternion>> Rotation_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Side", Side.ToResoniteLinkField());
-members.Add("Root", Root.ToResoniteReference(context));
-members.Add("Up", Up.ToResoniteLinkField());
-members.Add("ForwardDirection", ForwardDirection.ToResoniteLinkField());
-members.Add("Rotation", Rotation.ToResoniteReference(context));
+members.Add("Side", Side_Element.Data.ToResoniteLinkField());
+members.Add("Root", Root_Element.Data.ToResoniteReference(context));
+members.Add("Up", Up_Element.Data.ToResoniteLinkField());
+members.Add("ForwardDirection", ForwardDirection_Element.Data.ToResoniteLinkField());
+members.Add("Rotation", Rotation_Element.Data.ToResoniteReference(context));
 }
 
 }

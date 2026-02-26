@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.AxisAligner
-// Generated on: středa 25. února 2026 16:14:28
+// Generated on: čtvrtek 26. února 2026 10:04:41
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,36 +20,44 @@ namespace FrooxEngine
 public partial class AxisAligner : global::FrooxEngine.AutoAddChildrenBase
 
 {
-    public global::FrooxEngine.AxisAligner.AxisDir Direction;
-public global::FrooxEngine.AxisAligner.Align GlobalAxisXAlign;
-public global::FrooxEngine.AxisAligner.Align GlobalAxisYAlign;
-public global::FrooxEngine.AxisAligner.Align GlobalAxisZAlign;
-public global::FrooxEngine.AxisAligner.Align ElementAxisXAlign;
-public global::FrooxEngine.AxisAligner.Align ElementAxisYAlign;
-public global::FrooxEngine.AxisAligner.Align ElementAxisZAlign;
-public global::System.Single Separation;
-public System.Collections.Generic.List<global::FrooxEngine.IBounded> ExcludeList;
-public System.Collections.Generic.List<global::FrooxEngine.AxisAligner.Target> _targets;
+    public global::FrooxEngine.AxisAligner.AxisDir Direction { get => Direction_Element.Data; set => Direction_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::FrooxEngine.AxisAligner.AxisDir>, global::FrooxEngine.AxisAligner.AxisDir> Direction_Element = new();
+public global::FrooxEngine.AxisAligner.Align GlobalAxisXAlign { get => GlobalAxisXAlign_Element.Data; set => GlobalAxisXAlign_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::FrooxEngine.AxisAligner.Align>, global::FrooxEngine.AxisAligner.Align> GlobalAxisXAlign_Element = new();
+public global::FrooxEngine.AxisAligner.Align GlobalAxisYAlign { get => GlobalAxisYAlign_Element.Data; set => GlobalAxisYAlign_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::FrooxEngine.AxisAligner.Align>, global::FrooxEngine.AxisAligner.Align> GlobalAxisYAlign_Element = new();
+public global::FrooxEngine.AxisAligner.Align GlobalAxisZAlign { get => GlobalAxisZAlign_Element.Data; set => GlobalAxisZAlign_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::FrooxEngine.AxisAligner.Align>, global::FrooxEngine.AxisAligner.Align> GlobalAxisZAlign_Element = new();
+public global::FrooxEngine.AxisAligner.Align ElementAxisXAlign { get => ElementAxisXAlign_Element.Data; set => ElementAxisXAlign_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::FrooxEngine.AxisAligner.Align>, global::FrooxEngine.AxisAligner.Align> ElementAxisXAlign_Element = new();
+public global::FrooxEngine.AxisAligner.Align ElementAxisYAlign { get => ElementAxisYAlign_Element.Data; set => ElementAxisYAlign_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::FrooxEngine.AxisAligner.Align>, global::FrooxEngine.AxisAligner.Align> ElementAxisYAlign_Element = new();
+public global::FrooxEngine.AxisAligner.Align ElementAxisZAlign { get => ElementAxisZAlign_Element.Data; set => ElementAxisZAlign_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::FrooxEngine.AxisAligner.Align>, global::FrooxEngine.AxisAligner.Align> ElementAxisZAlign_Element = new();
+public global::System.Single Separation { get => Separation_Element.Data; set => Separation_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> Separation_Element = new();
+public global::SyncFieldList<global::FrooxEngine.SyncRefList<global::FrooxEngine.IBounded>, global::FrooxEngine.IBounded, Field<global::FrooxEngine.SyncRef<global::FrooxEngine.IBounded>, global::FrooxEngine.IBounded>> ExcludeList = new();
+public global::SyncList<global::FrooxEngine.SyncList<global::FrooxEngine.AxisAligner.Target>, global::FrooxEngine.AxisAligner.Target> _targets = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Direction", Direction.ToResoniteLinkField());
-members.Add("GlobalAxisXAlign", GlobalAxisXAlign.ToResoniteLinkField());
-members.Add("GlobalAxisYAlign", GlobalAxisYAlign.ToResoniteLinkField());
-members.Add("GlobalAxisZAlign", GlobalAxisZAlign.ToResoniteLinkField());
-members.Add("ElementAxisXAlign", ElementAxisXAlign.ToResoniteLinkField());
-members.Add("ElementAxisYAlign", ElementAxisYAlign.ToResoniteLinkField());
-members.Add("ElementAxisZAlign", ElementAxisZAlign.ToResoniteLinkField());
-members.Add("Separation", Separation.ToResoniteLinkField());
+members.Add("Direction", Direction_Element.Data.ToResoniteLinkField());
+members.Add("GlobalAxisXAlign", GlobalAxisXAlign_Element.Data.ToResoniteLinkField());
+members.Add("GlobalAxisYAlign", GlobalAxisYAlign_Element.Data.ToResoniteLinkField());
+members.Add("GlobalAxisZAlign", GlobalAxisZAlign_Element.Data.ToResoniteLinkField());
+members.Add("ElementAxisXAlign", ElementAxisXAlign_Element.Data.ToResoniteLinkField());
+members.Add("ElementAxisYAlign", ElementAxisYAlign_Element.Data.ToResoniteLinkField());
+members.Add("ElementAxisZAlign", ElementAxisZAlign_Element.Data.ToResoniteLinkField());
+members.Add("Separation", Separation_Element.Data.ToResoniteLinkField());
 members.Add("ExcludeList", new ResoniteLink.SyncList()
 {
-    Elements = ExcludeList.ConvertList(m => m.ToResoniteReference(context))
+    Elements = ExcludeList.Data.ConvertList(m => m.Data.ToResoniteReference(context))
 });
 members.Add("_targets", new ResoniteLink.SyncList()
 {
-    Elements = _targets.ConvertList(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers(context) })
+    Elements = _targets.Data.ConvertList(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers(context) })
 });
 }
 

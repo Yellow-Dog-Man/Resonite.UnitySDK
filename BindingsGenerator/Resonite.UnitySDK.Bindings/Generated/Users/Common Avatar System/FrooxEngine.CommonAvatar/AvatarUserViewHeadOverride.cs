@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.CommonAvatar.AvatarUserViewHeadOverride
-// Generated on: středa 25. února 2026 16:14:45
+// Generated on: čtvrtek 26. února 2026 10:04:49
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,21 +20,26 @@ namespace FrooxEngine.CommonAvatar
 public partial class AvatarUserViewHeadOverride : global::FrooxEngine.Component, global::FrooxEngine.CommonAvatar.IAvatarObjectComponent
 
 {
-    public global::FrooxEngine.RenderTransformOverride RenderTransformOverride;
-public global::FrooxEngine.IField<global::System.Boolean> _overrideEnabled;
-public global::FrooxEngine.IField<global::System.Nullable<UnityEngine.Vector3>> _posOverride;
-public global::FrooxEngine.IField<global::System.Nullable<UnityEngine.Quaternion>> _rotOverride;
-public global::FrooxEngine.CommonAvatar.AvatarObjectSlot _equippingSlot;
+    public global::FrooxEngine.RenderTransformOverride RenderTransformOverride { get => RenderTransformOverride_Element.Data; set => RenderTransformOverride_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.RenderTransformOverride>, global::FrooxEngine.RenderTransformOverride> RenderTransformOverride_Element = new();
+public global::FrooxEngine.IField<global::System.Boolean> _overrideEnabled { get => _overrideEnabled_Element.Data; set => _overrideEnabled_Element.Data = value; }
+public Field<global::FrooxEngine.FieldDrive<global::System.Boolean>, global::FrooxEngine.IField<global::System.Boolean>> _overrideEnabled_Element = new();
+public global::FrooxEngine.IField<global::System.Nullable<UnityEngine.Vector3>> _posOverride { get => _posOverride_Element.Data; set => _posOverride_Element.Data = value; }
+public Field<global::FrooxEngine.FieldDrive<global::System.Nullable<UnityEngine.Vector3>>, global::FrooxEngine.IField<global::System.Nullable<UnityEngine.Vector3>>> _posOverride_Element = new();
+public global::FrooxEngine.IField<global::System.Nullable<UnityEngine.Quaternion>> _rotOverride { get => _rotOverride_Element.Data; set => _rotOverride_Element.Data = value; }
+public Field<global::FrooxEngine.FieldDrive<global::System.Nullable<UnityEngine.Quaternion>>, global::FrooxEngine.IField<global::System.Nullable<UnityEngine.Quaternion>>> _rotOverride_Element = new();
+public global::FrooxEngine.CommonAvatar.AvatarObjectSlot _equippingSlot { get => _equippingSlot_Element.Data; set => _equippingSlot_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.CommonAvatar.AvatarObjectSlot>, global::FrooxEngine.CommonAvatar.AvatarObjectSlot> _equippingSlot_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("RenderTransformOverride", RenderTransformOverride.ToResoniteReference(context));
-members.Add("_overrideEnabled", _overrideEnabled.ToResoniteReference(context));
-members.Add("_posOverride", _posOverride.ToResoniteReference(context));
-members.Add("_rotOverride", _rotOverride.ToResoniteReference(context));
-members.Add("_equippingSlot", _equippingSlot.ToResoniteReference(context));
+members.Add("RenderTransformOverride", RenderTransformOverride_Element.Data.ToResoniteReference(context));
+members.Add("_overrideEnabled", _overrideEnabled_Element.Data.ToResoniteReference(context));
+members.Add("_posOverride", _posOverride_Element.Data.ToResoniteReference(context));
+members.Add("_rotOverride", _rotOverride_Element.Data.ToResoniteReference(context));
+members.Add("_equippingSlot", _equippingSlot_Element.Data.ToResoniteReference(context));
 }
 
 }

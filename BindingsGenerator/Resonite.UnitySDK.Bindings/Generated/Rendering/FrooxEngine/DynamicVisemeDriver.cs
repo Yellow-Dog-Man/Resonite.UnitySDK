@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.DynamicVisemeDriver
-// Generated on: středa 25. února 2026 16:14:16
+// Generated on: čtvrtek 26. února 2026 10:04:37
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,23 +20,27 @@ namespace FrooxEngine
 public partial class DynamicVisemeDriver : global::FrooxEngine.Component
 
 {
-    public global::FrooxEngine.VisemeAnalyzer Source;
-public global::FrooxEngine.IMouthTrackingSourceComponent MouthTrackingSource;
-public global::System.Single StrengthMultiplier;
-public global::System.Single VoiceMouthSupressWeight;
-public System.Collections.Generic.List<global::FrooxEngine.DynamicVisemeDriver.TargetDriver> Drivers;
+    public global::FrooxEngine.VisemeAnalyzer Source { get => Source_Element.Data; set => Source_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.VisemeAnalyzer>, global::FrooxEngine.VisemeAnalyzer> Source_Element = new();
+public global::FrooxEngine.IMouthTrackingSourceComponent MouthTrackingSource { get => MouthTrackingSource_Element.Data; set => MouthTrackingSource_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.IMouthTrackingSourceComponent>, global::FrooxEngine.IMouthTrackingSourceComponent> MouthTrackingSource_Element = new();
+public global::System.Single StrengthMultiplier { get => StrengthMultiplier_Element.Data; set => StrengthMultiplier_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> StrengthMultiplier_Element = new();
+public global::System.Single VoiceMouthSupressWeight { get => VoiceMouthSupressWeight_Element.Data; set => VoiceMouthSupressWeight_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> VoiceMouthSupressWeight_Element = new();
+public global::SyncList<global::FrooxEngine.SyncList<global::FrooxEngine.DynamicVisemeDriver.TargetDriver>, global::FrooxEngine.DynamicVisemeDriver.TargetDriver> Drivers = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Source", Source.ToResoniteReference(context));
-members.Add("MouthTrackingSource", MouthTrackingSource.ToResoniteReference(context));
-members.Add("StrengthMultiplier", StrengthMultiplier.ToResoniteLinkField());
-members.Add("VoiceMouthSupressWeight", VoiceMouthSupressWeight.ToResoniteLinkField());
+members.Add("Source", Source_Element.Data.ToResoniteReference(context));
+members.Add("MouthTrackingSource", MouthTrackingSource_Element.Data.ToResoniteReference(context));
+members.Add("StrengthMultiplier", StrengthMultiplier_Element.Data.ToResoniteLinkField());
+members.Add("VoiceMouthSupressWeight", VoiceMouthSupressWeight_Element.Data.ToResoniteLinkField());
 members.Add("Drivers", new ResoniteLink.SyncList()
 {
-    Elements = Drivers.ConvertList(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers(context) })
+    Elements = Drivers.Data.ConvertList(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers(context) })
 });
 }
 

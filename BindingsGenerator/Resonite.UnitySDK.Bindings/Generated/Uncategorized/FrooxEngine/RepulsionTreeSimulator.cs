@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.RepulsionTreeSimulator
-// Generated on: středa 25. února 2026 16:14:42
+// Generated on: čtvrtek 26. února 2026 10:04:48
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,17 +20,20 @@ namespace FrooxEngine
 public partial class RepulsionTreeSimulator : global::FrooxEngine.Component, global::FrooxEngine.IRepulsionTreeNode
 
 {
-    public global::System.Single FalloffPower;
-public global::System.Single Radius;
-public global::System.Single Force;
+    public global::System.Single FalloffPower { get => FalloffPower_Element.Data; set => FalloffPower_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> FalloffPower_Element = new();
+public global::System.Single Radius { get => Radius_Element.Data; set => Radius_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> Radius_Element = new();
+public global::System.Single Force { get => Force_Element.Data; set => Force_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> Force_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("FalloffPower", FalloffPower.ToResoniteLinkField());
-members.Add("Radius", Radius.ToResoniteLinkField());
-members.Add("Force", Force.ToResoniteLinkField());
+members.Add("FalloffPower", FalloffPower_Element.Data.ToResoniteLinkField());
+members.Add("Radius", Radius_Element.Data.ToResoniteLinkField());
+members.Add("Force", Force_Element.Data.ToResoniteLinkField());
 }
 
 }

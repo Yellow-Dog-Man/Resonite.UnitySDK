@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.RadiantModalOverlay
-// Generated on: středa 25. února 2026 16:14:33
+// Generated on: čtvrtek 26. února 2026 10:04:43
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,49 +20,68 @@ namespace FrooxEngine
 public partial class RadiantModalOverlay : global::FrooxEngine.UIX.ModalOverlay
 
 {
-    public global::System.Single BlurSpread;
-public UnityEngine.ColorX BackgroundColor;
-public global::System.Single ContentAnimationScaleOffset;
-public global::System.Single HeaderSize;
-public global::System.Single Padding;
-public global::FrooxEngine.UIX.Text _title;
-public global::FrooxEngine.BlurMaterial _blur;
-public global::FrooxEngine.UIX.RawGraphic _blurGraphic;
-public global::FrooxEngine.IField<UnityEngine.Vector2> _blurSpread;
-public global::FrooxEngine.IField<UnityEngine.ColorX> _backgroundColor;
-public global::FrooxEngine.IField<UnityEngine.Rect> _maskRect;
-public global::FrooxEngine.IField<UnityEngine.Vector2> _headerOffsetMin;
-public global::FrooxEngine.IField<UnityEngine.Vector2> _headerOffsetMax;
-public global::FrooxEngine.IField<UnityEngine.Vector2> _contentOffsetMin;
-public global::FrooxEngine.IField<UnityEngine.Vector2> _contentOffsetMax;
-public global::FrooxEngine.IField<UnityEngine.Vector2> _titleOffsetMin;
-public global::FrooxEngine.IField<UnityEngine.Vector2> _titleOffsetMax;
-public global::FrooxEngine.IField<UnityEngine.Vector2> _closeOffsetMin;
-public global::FrooxEngine.IField<UnityEngine.Vector2> _closeOffsetMax;
+    public global::System.Single BlurSpread { get => BlurSpread_Element.Data; set => BlurSpread_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> BlurSpread_Element = new();
+public UnityEngine.ColorX BackgroundColor { get => BackgroundColor_Element.Data; set => BackgroundColor_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.ColorX>, UnityEngine.ColorX> BackgroundColor_Element = new();
+public global::System.Single ContentAnimationScaleOffset { get => ContentAnimationScaleOffset_Element.Data; set => ContentAnimationScaleOffset_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> ContentAnimationScaleOffset_Element = new();
+public global::System.Single HeaderSize { get => HeaderSize_Element.Data; set => HeaderSize_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> HeaderSize_Element = new();
+public global::System.Single Padding { get => Padding_Element.Data; set => Padding_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> Padding_Element = new();
+public global::FrooxEngine.UIX.Text _title { get => _title_Element.Data; set => _title_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.UIX.Text>, global::FrooxEngine.UIX.Text> _title_Element = new();
+public global::FrooxEngine.BlurMaterial _blur { get => _blur_Element.Data; set => _blur_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.BlurMaterial>, global::FrooxEngine.BlurMaterial> _blur_Element = new();
+public global::FrooxEngine.UIX.RawGraphic _blurGraphic { get => _blurGraphic_Element.Data; set => _blurGraphic_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.UIX.RawGraphic>, global::FrooxEngine.UIX.RawGraphic> _blurGraphic_Element = new();
+public global::FrooxEngine.IField<UnityEngine.Vector2> _blurSpread { get => _blurSpread_Element.Data; set => _blurSpread_Element.Data = value; }
+public Field<global::FrooxEngine.FieldDrive<UnityEngine.Vector2>, global::FrooxEngine.IField<UnityEngine.Vector2>> _blurSpread_Element = new();
+public global::FrooxEngine.IField<UnityEngine.ColorX> _backgroundColor { get => _backgroundColor_Element.Data; set => _backgroundColor_Element.Data = value; }
+public Field<global::FrooxEngine.FieldDrive<UnityEngine.ColorX>, global::FrooxEngine.IField<UnityEngine.ColorX>> _backgroundColor_Element = new();
+public global::FrooxEngine.IField<UnityEngine.Rect> _maskRect { get => _maskRect_Element.Data; set => _maskRect_Element.Data = value; }
+public Field<global::FrooxEngine.FieldDrive<UnityEngine.Rect>, global::FrooxEngine.IField<UnityEngine.Rect>> _maskRect_Element = new();
+public global::FrooxEngine.IField<UnityEngine.Vector2> _headerOffsetMin { get => _headerOffsetMin_Element.Data; set => _headerOffsetMin_Element.Data = value; }
+public Field<global::FrooxEngine.FieldDrive<UnityEngine.Vector2>, global::FrooxEngine.IField<UnityEngine.Vector2>> _headerOffsetMin_Element = new();
+public global::FrooxEngine.IField<UnityEngine.Vector2> _headerOffsetMax { get => _headerOffsetMax_Element.Data; set => _headerOffsetMax_Element.Data = value; }
+public Field<global::FrooxEngine.FieldDrive<UnityEngine.Vector2>, global::FrooxEngine.IField<UnityEngine.Vector2>> _headerOffsetMax_Element = new();
+public global::FrooxEngine.IField<UnityEngine.Vector2> _contentOffsetMin { get => _contentOffsetMin_Element.Data; set => _contentOffsetMin_Element.Data = value; }
+public Field<global::FrooxEngine.FieldDrive<UnityEngine.Vector2>, global::FrooxEngine.IField<UnityEngine.Vector2>> _contentOffsetMin_Element = new();
+public global::FrooxEngine.IField<UnityEngine.Vector2> _contentOffsetMax { get => _contentOffsetMax_Element.Data; set => _contentOffsetMax_Element.Data = value; }
+public Field<global::FrooxEngine.FieldDrive<UnityEngine.Vector2>, global::FrooxEngine.IField<UnityEngine.Vector2>> _contentOffsetMax_Element = new();
+public global::FrooxEngine.IField<UnityEngine.Vector2> _titleOffsetMin { get => _titleOffsetMin_Element.Data; set => _titleOffsetMin_Element.Data = value; }
+public Field<global::FrooxEngine.FieldDrive<UnityEngine.Vector2>, global::FrooxEngine.IField<UnityEngine.Vector2>> _titleOffsetMin_Element = new();
+public global::FrooxEngine.IField<UnityEngine.Vector2> _titleOffsetMax { get => _titleOffsetMax_Element.Data; set => _titleOffsetMax_Element.Data = value; }
+public Field<global::FrooxEngine.FieldDrive<UnityEngine.Vector2>, global::FrooxEngine.IField<UnityEngine.Vector2>> _titleOffsetMax_Element = new();
+public global::FrooxEngine.IField<UnityEngine.Vector2> _closeOffsetMin { get => _closeOffsetMin_Element.Data; set => _closeOffsetMin_Element.Data = value; }
+public Field<global::FrooxEngine.FieldDrive<UnityEngine.Vector2>, global::FrooxEngine.IField<UnityEngine.Vector2>> _closeOffsetMin_Element = new();
+public global::FrooxEngine.IField<UnityEngine.Vector2> _closeOffsetMax { get => _closeOffsetMax_Element.Data; set => _closeOffsetMax_Element.Data = value; }
+public Field<global::FrooxEngine.FieldDrive<UnityEngine.Vector2>, global::FrooxEngine.IField<UnityEngine.Vector2>> _closeOffsetMax_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("BlurSpread", BlurSpread.ToResoniteLinkField());
-members.Add("BackgroundColor", BackgroundColor.ToResoniteLinkField());
-members.Add("ContentAnimationScaleOffset", ContentAnimationScaleOffset.ToResoniteLinkField());
-members.Add("HeaderSize", HeaderSize.ToResoniteLinkField());
-members.Add("Padding", Padding.ToResoniteLinkField());
-members.Add("_title", _title.ToResoniteReference(context));
-members.Add("_blur", _blur.ToResoniteReference(context));
-members.Add("_blurGraphic", _blurGraphic.ToResoniteReference(context));
-members.Add("_blurSpread", _blurSpread.ToResoniteReference(context));
-members.Add("_backgroundColor", _backgroundColor.ToResoniteReference(context));
-members.Add("_maskRect", _maskRect.ToResoniteReference(context));
-members.Add("_headerOffsetMin", _headerOffsetMin.ToResoniteReference(context));
-members.Add("_headerOffsetMax", _headerOffsetMax.ToResoniteReference(context));
-members.Add("_contentOffsetMin", _contentOffsetMin.ToResoniteReference(context));
-members.Add("_contentOffsetMax", _contentOffsetMax.ToResoniteReference(context));
-members.Add("_titleOffsetMin", _titleOffsetMin.ToResoniteReference(context));
-members.Add("_titleOffsetMax", _titleOffsetMax.ToResoniteReference(context));
-members.Add("_closeOffsetMin", _closeOffsetMin.ToResoniteReference(context));
-members.Add("_closeOffsetMax", _closeOffsetMax.ToResoniteReference(context));
+members.Add("BlurSpread", BlurSpread_Element.Data.ToResoniteLinkField());
+members.Add("BackgroundColor", BackgroundColor_Element.Data.ToResoniteLinkField());
+members.Add("ContentAnimationScaleOffset", ContentAnimationScaleOffset_Element.Data.ToResoniteLinkField());
+members.Add("HeaderSize", HeaderSize_Element.Data.ToResoniteLinkField());
+members.Add("Padding", Padding_Element.Data.ToResoniteLinkField());
+members.Add("_title", _title_Element.Data.ToResoniteReference(context));
+members.Add("_blur", _blur_Element.Data.ToResoniteReference(context));
+members.Add("_blurGraphic", _blurGraphic_Element.Data.ToResoniteReference(context));
+members.Add("_blurSpread", _blurSpread_Element.Data.ToResoniteReference(context));
+members.Add("_backgroundColor", _backgroundColor_Element.Data.ToResoniteReference(context));
+members.Add("_maskRect", _maskRect_Element.Data.ToResoniteReference(context));
+members.Add("_headerOffsetMin", _headerOffsetMin_Element.Data.ToResoniteReference(context));
+members.Add("_headerOffsetMax", _headerOffsetMax_Element.Data.ToResoniteReference(context));
+members.Add("_contentOffsetMin", _contentOffsetMin_Element.Data.ToResoniteReference(context));
+members.Add("_contentOffsetMax", _contentOffsetMax_Element.Data.ToResoniteReference(context));
+members.Add("_titleOffsetMin", _titleOffsetMin_Element.Data.ToResoniteReference(context));
+members.Add("_titleOffsetMax", _titleOffsetMax_Element.Data.ToResoniteReference(context));
+members.Add("_closeOffsetMin", _closeOffsetMin_Element.Data.ToResoniteReference(context));
+members.Add("_closeOffsetMax", _closeOffsetMax_Element.Data.ToResoniteReference(context));
 }
 
 }

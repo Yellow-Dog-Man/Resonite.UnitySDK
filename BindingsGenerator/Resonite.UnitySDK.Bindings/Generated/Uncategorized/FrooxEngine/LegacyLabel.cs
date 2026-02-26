@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.LegacyLabel
-// Generated on: středa 25. února 2026 16:14:40
+// Generated on: čtvrtek 26. února 2026 10:04:46
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,25 +20,32 @@ namespace FrooxEngine
 public partial class LegacyLabel : global::FrooxEngine.Component
 
 {
-    public global::FrooxEngine.TextRenderer TextRenderer;
-public UnityEngine.ColorX BaseColor;
-public global::FrooxEngine.ILegacyUIElement BaseColorElement;
-public global::System.Single Brightness;
-public global::System.Single LerpRatio;
-public UnityEngine.ColorX LerpColor;
-public global::FrooxEngine.IField<UnityEngine.ColorX> _textColor;
+    public global::FrooxEngine.TextRenderer TextRenderer { get => TextRenderer_Element.Data; set => TextRenderer_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.TextRenderer>, global::FrooxEngine.TextRenderer> TextRenderer_Element = new();
+public UnityEngine.ColorX BaseColor { get => BaseColor_Element.Data; set => BaseColor_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.ColorX>, UnityEngine.ColorX> BaseColor_Element = new();
+public global::FrooxEngine.ILegacyUIElement BaseColorElement { get => BaseColorElement_Element.Data; set => BaseColorElement_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.ILegacyUIElement>, global::FrooxEngine.ILegacyUIElement> BaseColorElement_Element = new();
+public global::System.Single Brightness { get => Brightness_Element.Data; set => Brightness_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> Brightness_Element = new();
+public global::System.Single LerpRatio { get => LerpRatio_Element.Data; set => LerpRatio_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> LerpRatio_Element = new();
+public UnityEngine.ColorX LerpColor { get => LerpColor_Element.Data; set => LerpColor_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.ColorX>, UnityEngine.ColorX> LerpColor_Element = new();
+public global::FrooxEngine.IField<UnityEngine.ColorX> _textColor { get => _textColor_Element.Data; set => _textColor_Element.Data = value; }
+public Field<global::FrooxEngine.FieldDrive<UnityEngine.ColorX>, global::FrooxEngine.IField<UnityEngine.ColorX>> _textColor_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("TextRenderer", TextRenderer.ToResoniteReference(context));
-members.Add("BaseColor", BaseColor.ToResoniteLinkField());
-members.Add("BaseColorElement", BaseColorElement.ToResoniteReference(context));
-members.Add("Brightness", Brightness.ToResoniteLinkField());
-members.Add("LerpRatio", LerpRatio.ToResoniteLinkField());
-members.Add("LerpColor", LerpColor.ToResoniteLinkField());
-members.Add("_textColor", _textColor.ToResoniteReference(context));
+members.Add("TextRenderer", TextRenderer_Element.Data.ToResoniteReference(context));
+members.Add("BaseColor", BaseColor_Element.Data.ToResoniteLinkField());
+members.Add("BaseColorElement", BaseColorElement_Element.Data.ToResoniteReference(context));
+members.Add("Brightness", Brightness_Element.Data.ToResoniteLinkField());
+members.Add("LerpRatio", LerpRatio_Element.Data.ToResoniteLinkField());
+members.Add("LerpColor", LerpColor_Element.Data.ToResoniteLinkField());
+members.Add("_textColor", _textColor_Element.Data.ToResoniteReference(context));
 }
 
 }

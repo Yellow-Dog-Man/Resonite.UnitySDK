@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.DynamicVisemeDriver+VisemeSource
-// Generated on: středa 25. února 2026 16:14:16
+// Generated on: čtvrtek 26. února 2026 10:04:37
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -22,15 +22,17 @@ namespace FrooxEngine
 public partial class VisemeSource : global::FrooxEngine.SyncObject
 
 {
-    public global::FrooxEngine.Viseme Viseme;
-public global::System.Single Influence;
+    public global::FrooxEngine.Viseme Viseme { get => Viseme_Element.Data; set => Viseme_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::FrooxEngine.Viseme>, global::FrooxEngine.Viseme> Viseme_Element = new();
+public global::System.Single Influence { get => Influence_Element.Data; set => Influence_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> Influence_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Viseme", Viseme.ToResoniteLinkField());
-members.Add("Influence", Influence.ToResoniteLinkField());
+members.Add("Viseme", Viseme_Element.Data.ToResoniteLinkField());
+members.Add("Influence", Influence_Element.Data.ToResoniteLinkField());
 }
 
 }

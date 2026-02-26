@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [ProtoFluxBindings]FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Network.RequestHostAccessBase
-// Generated on: středa 25. února 2026 16:13:55
+// Generated on: čtvrtek 26. února 2026 10:04:21
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,17 +20,20 @@ namespace FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Network
 public abstract partial class RequestHostAccessBase : global::FrooxEngine.ProtoFlux.Runtimes.Execution.AsyncActionNode<global::FrooxEngine.ProtoFlux.FrooxEngineContext>
 
 {
-    public global::FrooxEngine.ProtoFlux.INodeOperation OnGranted;
-public global::FrooxEngine.ProtoFlux.INodeOperation OnDenied;
-public global::FrooxEngine.ProtoFlux.INodeOperation OnIgnored;
+    public global::FrooxEngine.ProtoFlux.INodeOperation OnGranted { get => OnGranted_Element.Data; set => OnGranted_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.ProtoFlux.INodeOperation>, global::FrooxEngine.ProtoFlux.INodeOperation> OnGranted_Element = new();
+public global::FrooxEngine.ProtoFlux.INodeOperation OnDenied { get => OnDenied_Element.Data; set => OnDenied_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.ProtoFlux.INodeOperation>, global::FrooxEngine.ProtoFlux.INodeOperation> OnDenied_Element = new();
+public global::FrooxEngine.ProtoFlux.INodeOperation OnIgnored { get => OnIgnored_Element.Data; set => OnIgnored_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.ProtoFlux.INodeOperation>, global::FrooxEngine.ProtoFlux.INodeOperation> OnIgnored_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("OnGranted", OnGranted.ToResoniteReference(context));
-members.Add("OnDenied", OnDenied.ToResoniteReference(context));
-members.Add("OnIgnored", OnIgnored.ToResoniteReference(context));
+members.Add("OnGranted", OnGranted_Element.Data.ToResoniteReference(context));
+members.Add("OnDenied", OnDenied_Element.Data.ToResoniteReference(context));
+members.Add("OnIgnored", OnIgnored_Element.Data.ToResoniteReference(context));
 }
 
 }

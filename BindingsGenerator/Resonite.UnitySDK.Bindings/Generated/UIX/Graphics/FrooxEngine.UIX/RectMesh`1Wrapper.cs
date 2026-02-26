@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.UIX.RectMesh<>
-// Generated on: středa 25. února 2026 16:14:33
+// Generated on: čtvrtek 26. února 2026 10:04:42
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -19,7 +19,7 @@ namespace FrooxEngine.UIX
 
 [ResoniteTypeName("[FrooxEngine]FrooxEngine.UIX.RectMesh<>")]
 public partial class RectMeshWrapper<M> : ResoniteComponent<global::FrooxEngine.UIX.RectMesh<M>>
-	where M : global::FrooxEngine.RectMeshSource
+	where M : global::FrooxEngine.RectMeshSource, new()
 
 {
     

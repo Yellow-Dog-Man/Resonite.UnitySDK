@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.MultiBoolConditionDriver
-// Generated on: středa 25. února 2026 16:14:30
+// Generated on: čtvrtek 26. února 2026 10:04:41
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,19 +20,21 @@ namespace FrooxEngine
 public partial class MultiBoolConditionDriver : global::FrooxEngine.Component
 
 {
-    public global::FrooxEngine.IField<global::System.Boolean> Target;
-public global::FrooxEngine.MultiBoolConditionDriver.ConditionMode Mode;
-public System.Collections.Generic.List<global::FrooxEngine.MultiBoolConditionDriver.Condition> Conditions;
+    public global::FrooxEngine.IField<global::System.Boolean> Target { get => Target_Element.Data; set => Target_Element.Data = value; }
+public Field<global::FrooxEngine.FieldDrive<global::System.Boolean>, global::FrooxEngine.IField<global::System.Boolean>> Target_Element = new();
+public global::FrooxEngine.MultiBoolConditionDriver.ConditionMode Mode { get => Mode_Element.Data; set => Mode_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::FrooxEngine.MultiBoolConditionDriver.ConditionMode>, global::FrooxEngine.MultiBoolConditionDriver.ConditionMode> Mode_Element = new();
+public global::SyncList<global::FrooxEngine.SyncList<global::FrooxEngine.MultiBoolConditionDriver.Condition>, global::FrooxEngine.MultiBoolConditionDriver.Condition> Conditions = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Target", Target.ToResoniteReference(context));
-members.Add("Mode", Mode.ToResoniteLinkField());
+members.Add("Target", Target_Element.Data.ToResoniteReference(context));
+members.Add("Mode", Mode_Element.Data.ToResoniteLinkField());
 members.Add("Conditions", new ResoniteLink.SyncList()
 {
-    Elements = Conditions.ConvertList(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers(context) })
+    Elements = Conditions.Data.ConvertList(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers(context) })
 });
 }
 

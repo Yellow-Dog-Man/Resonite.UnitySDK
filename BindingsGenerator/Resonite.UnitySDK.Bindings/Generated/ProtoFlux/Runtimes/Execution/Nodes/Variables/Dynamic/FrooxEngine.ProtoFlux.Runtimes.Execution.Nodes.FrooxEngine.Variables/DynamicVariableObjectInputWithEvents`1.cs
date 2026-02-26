@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [ProtoFluxBindings]FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Variables.DynamicVariableObjectInputWithEvents<>
-// Generated on: středa 25. února 2026 16:14:13
+// Generated on: čtvrtek 26. února 2026 10:04:34
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -21,8 +21,8 @@ public partial class DynamicVariableObjectInputWithEvents<T> : global::FrooxEngi
 	
 
 {
-    public global::FrooxEngine.ProtoFlux.NodeObjectOutput<T> Value;
-public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Boolean> HasValue;
+    public global::FrooxEngine.ProtoFlux.NodeObjectOutput<T> Value = new();
+public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Boolean> HasValue = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)

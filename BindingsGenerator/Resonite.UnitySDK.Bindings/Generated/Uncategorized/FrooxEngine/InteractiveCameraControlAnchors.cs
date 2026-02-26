@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.InteractiveCameraControlAnchors
-// Generated on: středa 25. února 2026 16:14:40
+// Generated on: čtvrtek 26. února 2026 10:04:46
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,17 +20,20 @@ namespace FrooxEngine
 public partial class InteractiveCameraControlAnchors : global::FrooxEngine.LegacyCanvasPanel
 
 {
-    public global::FrooxEngine.Slot _uiRoot;
-public global::FrooxEngine.InteractiveCameraControl _cameraControl;
-public global::FrooxEngine.UIX.Text _noAnchorMessage;
+    public global::FrooxEngine.Slot _uiRoot { get => _uiRoot_Element.Data; set => _uiRoot_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> _uiRoot_Element = new();
+public global::FrooxEngine.InteractiveCameraControl _cameraControl { get => _cameraControl_Element.Data; set => _cameraControl_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.InteractiveCameraControl>, global::FrooxEngine.InteractiveCameraControl> _cameraControl_Element = new();
+public global::FrooxEngine.UIX.Text _noAnchorMessage { get => _noAnchorMessage_Element.Data; set => _noAnchorMessage_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.UIX.Text>, global::FrooxEngine.UIX.Text> _noAnchorMessage_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("_uiRoot", _uiRoot.ToResoniteReference(context));
-members.Add("_cameraControl", _cameraControl.ToResoniteReference(context));
-members.Add("_noAnchorMessage", _noAnchorMessage.ToResoniteReference(context));
+members.Add("_uiRoot", _uiRoot_Element.Data.ToResoniteReference(context));
+members.Add("_cameraControl", _cameraControl_Element.Data.ToResoniteReference(context));
+members.Add("_noAnchorMessage", _noAnchorMessage_Element.Data.ToResoniteReference(context));
 }
 
 }

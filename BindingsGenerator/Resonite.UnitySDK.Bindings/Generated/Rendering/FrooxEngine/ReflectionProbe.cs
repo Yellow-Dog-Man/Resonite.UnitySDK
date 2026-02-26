@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.ReflectionProbe
-// Generated on: středa 25. února 2026 16:14:04
+// Generated on: čtvrtek 26. února 2026 10:04:29
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,52 +20,70 @@ namespace FrooxEngine
 public partial class ReflectionProbe : global::FrooxEngine.ChangeHandlingRenderableComponent
 
 {
-    public global::Renderite.Shared.ReflectionProbeType ProbeType;
-public global::System.Int32 Importance;
-public global::System.Single Intensity;
-public global::System.Single BlendDistance;
-public UnityEngine.Vector3 BoxSize;
-public global::System.Boolean BoxProjection;
-public global::FrooxEngine.IAssetProvider<global::FrooxEngine.Cubemap> BakedCubemap;
-public System.Collections.Generic.List<global::FrooxEngine.IChangeable> ChangesSources;
-public global::Renderite.Shared.ReflectionProbeTimeSlicingMode TimeSlicing;
-public global::System.Int32 Resolution;
-public global::System.Boolean HDR;
-public global::System.Single ShadowDistance;
-public global::Renderite.Shared.ReflectionProbeClear ClearFlags;
-public UnityEngine.ColorX BackgroundColor;
-public global::System.Single NearClip;
-public global::System.Single FarClip;
-public global::System.Boolean SkyboxOnly;
-public global::System.Boolean ShowDebugVisuals;
-public global::FrooxEngine.Slot _debugVisual;
+    public global::Renderite.Shared.ReflectionProbeType ProbeType { get => ProbeType_Element.Data; set => ProbeType_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::Renderite.Shared.ReflectionProbeType>, global::Renderite.Shared.ReflectionProbeType> ProbeType_Element = new();
+public global::System.Int32 Importance { get => Importance_Element.Data; set => Importance_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Int32>, global::System.Int32> Importance_Element = new();
+public global::System.Single Intensity { get => Intensity_Element.Data; set => Intensity_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> Intensity_Element = new();
+public global::System.Single BlendDistance { get => BlendDistance_Element.Data; set => BlendDistance_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> BlendDistance_Element = new();
+public UnityEngine.Vector3 BoxSize { get => BoxSize_Element.Data; set => BoxSize_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.Vector3>, UnityEngine.Vector3> BoxSize_Element = new();
+public global::System.Boolean BoxProjection { get => BoxProjection_Element.Data; set => BoxProjection_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> BoxProjection_Element = new();
+public global::FrooxEngine.IAssetProvider<global::FrooxEngine.Cubemap> BakedCubemap { get => BakedCubemap_Element.Data; set => BakedCubemap_Element.Data = value; }
+public Field<global::FrooxEngine.AssetRef<global::FrooxEngine.Cubemap>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.Cubemap>> BakedCubemap_Element = new();
+public global::SyncFieldList<global::FrooxEngine.SyncList<global::FrooxEngine.RelayEventRef<global::FrooxEngine.IChangeable>>, global::FrooxEngine.IChangeable, Field<global::FrooxEngine.RelayEventRef<global::FrooxEngine.IChangeable>, global::FrooxEngine.IChangeable>> ChangesSources = new();
+public global::Renderite.Shared.ReflectionProbeTimeSlicingMode TimeSlicing { get => TimeSlicing_Element.Data; set => TimeSlicing_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::Renderite.Shared.ReflectionProbeTimeSlicingMode>, global::Renderite.Shared.ReflectionProbeTimeSlicingMode> TimeSlicing_Element = new();
+public global::System.Int32 Resolution { get => Resolution_Element.Data; set => Resolution_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Int32>, global::System.Int32> Resolution_Element = new();
+public global::System.Boolean HDR { get => HDR_Element.Data; set => HDR_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> HDR_Element = new();
+public global::System.Single ShadowDistance { get => ShadowDistance_Element.Data; set => ShadowDistance_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> ShadowDistance_Element = new();
+public global::Renderite.Shared.ReflectionProbeClear ClearFlags { get => ClearFlags_Element.Data; set => ClearFlags_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::Renderite.Shared.ReflectionProbeClear>, global::Renderite.Shared.ReflectionProbeClear> ClearFlags_Element = new();
+public UnityEngine.ColorX BackgroundColor { get => BackgroundColor_Element.Data; set => BackgroundColor_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.ColorX>, UnityEngine.ColorX> BackgroundColor_Element = new();
+public global::System.Single NearClip { get => NearClip_Element.Data; set => NearClip_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> NearClip_Element = new();
+public global::System.Single FarClip { get => FarClip_Element.Data; set => FarClip_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> FarClip_Element = new();
+public global::System.Boolean SkyboxOnly { get => SkyboxOnly_Element.Data; set => SkyboxOnly_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> SkyboxOnly_Element = new();
+public global::System.Boolean ShowDebugVisuals { get => ShowDebugVisuals_Element.Data; set => ShowDebugVisuals_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> ShowDebugVisuals_Element = new();
+public global::FrooxEngine.Slot _debugVisual { get => _debugVisual_Element.Data; set => _debugVisual_Element.Data = value; }
+public Field<global::FrooxEngine.SlotCleanupRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> _debugVisual_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("ProbeType", ProbeType.ToResoniteLinkField());
-members.Add("Importance", Importance.ToResoniteLinkField());
-members.Add("Intensity", Intensity.ToResoniteLinkField());
-members.Add("BlendDistance", BlendDistance.ToResoniteLinkField());
-members.Add("BoxSize", BoxSize.ToResoniteLinkField());
-members.Add("BoxProjection", BoxProjection.ToResoniteLinkField());
-members.Add("BakedCubemap", BakedCubemap.ToResoniteReference(context));
+members.Add("ProbeType", ProbeType_Element.Data.ToResoniteLinkField());
+members.Add("Importance", Importance_Element.Data.ToResoniteLinkField());
+members.Add("Intensity", Intensity_Element.Data.ToResoniteLinkField());
+members.Add("BlendDistance", BlendDistance_Element.Data.ToResoniteLinkField());
+members.Add("BoxSize", BoxSize_Element.Data.ToResoniteLinkField());
+members.Add("BoxProjection", BoxProjection_Element.Data.ToResoniteLinkField());
+members.Add("BakedCubemap", BakedCubemap_Element.Data.ToResoniteReference(context));
 members.Add("ChangesSources", new ResoniteLink.SyncList()
 {
-    Elements = ChangesSources.ConvertList(m => m.ToResoniteReference(context))
+    Elements = ChangesSources.Data.ConvertList(m => m.Data.ToResoniteReference(context))
 });
-members.Add("TimeSlicing", TimeSlicing.ToResoniteLinkField());
-members.Add("Resolution", Resolution.ToResoniteLinkField());
-members.Add("HDR", HDR.ToResoniteLinkField());
-members.Add("ShadowDistance", ShadowDistance.ToResoniteLinkField());
-members.Add("ClearFlags", ClearFlags.ToResoniteLinkField());
-members.Add("BackgroundColor", BackgroundColor.ToResoniteLinkField());
-members.Add("NearClip", NearClip.ToResoniteLinkField());
-members.Add("FarClip", FarClip.ToResoniteLinkField());
-members.Add("SkyboxOnly", SkyboxOnly.ToResoniteLinkField());
-members.Add("ShowDebugVisuals", ShowDebugVisuals.ToResoniteLinkField());
-members.Add("_debugVisual", _debugVisual.ToResoniteReference(context));
+members.Add("TimeSlicing", TimeSlicing_Element.Data.ToResoniteLinkField());
+members.Add("Resolution", Resolution_Element.Data.ToResoniteLinkField());
+members.Add("HDR", HDR_Element.Data.ToResoniteLinkField());
+members.Add("ShadowDistance", ShadowDistance_Element.Data.ToResoniteLinkField());
+members.Add("ClearFlags", ClearFlags_Element.Data.ToResoniteLinkField());
+members.Add("BackgroundColor", BackgroundColor_Element.Data.ToResoniteLinkField());
+members.Add("NearClip", NearClip_Element.Data.ToResoniteLinkField());
+members.Add("FarClip", FarClip_Element.Data.ToResoniteLinkField());
+members.Add("SkyboxOnly", SkyboxOnly_Element.Data.ToResoniteLinkField());
+members.Add("ShowDebugVisuals", ShowDebugVisuals_Element.Data.ToResoniteLinkField());
+members.Add("_debugVisual", _debugVisual_Element.Data.ToResoniteReference(context));
 }
 
 }

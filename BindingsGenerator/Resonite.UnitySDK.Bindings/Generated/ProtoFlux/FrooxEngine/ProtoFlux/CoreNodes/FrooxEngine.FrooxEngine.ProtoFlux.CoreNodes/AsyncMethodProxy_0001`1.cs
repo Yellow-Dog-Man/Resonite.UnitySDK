@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [ProtoFluxBindings]FrooxEngine.FrooxEngine.ProtoFlux.CoreNodes.AsyncMethodProxy_0001<>
-// Generated on: středa 25. února 2026 16:13:12
+// Generated on: čtvrtek 26. února 2026 10:03:41
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -21,13 +21,14 @@ public partial class AsyncMethodProxy_0001<T0> : global::FrooxEngine.FrooxEngine
 	
 
 {
-    public global::FrooxEngine.ProtoFlux.INodeObjectOutput<T0> Arg0;
+    public global::FrooxEngine.ProtoFlux.INodeObjectOutput<T0> Arg0 { get => Arg0_Element.Data; set => Arg0_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.ProtoFlux.INodeObjectOutput<T0>>, global::FrooxEngine.ProtoFlux.INodeObjectOutput<T0>> Arg0_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Arg0", Arg0.ToResoniteReference(context));
+members.Add("Arg0", Arg0_Element.Data.ToResoniteReference(context));
 }
 
 }

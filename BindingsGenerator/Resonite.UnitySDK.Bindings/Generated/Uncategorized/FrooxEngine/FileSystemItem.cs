@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.FileSystemItem
-// Generated on: středa 25. února 2026 16:14:38
+// Generated on: čtvrtek 26. února 2026 10:04:44
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,17 +20,20 @@ namespace FrooxEngine
 public partial class FileSystemItem : global::FrooxEngine.BrowserItem
 
 {
-    public global::System.String Name;
-public global::System.String BasePath;
-public global::FrooxEngine.FileSystemItem.EntryType Type;
+    public global::System.String Name { get => Name_Element.Data; set => Name_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.String>, global::System.String> Name_Element = new();
+public global::System.String BasePath { get => BasePath_Element.Data; set => BasePath_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.String>, global::System.String> BasePath_Element = new();
+public global::FrooxEngine.FileSystemItem.EntryType Type { get => Type_Element.Data; set => Type_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::FrooxEngine.FileSystemItem.EntryType>, global::FrooxEngine.FileSystemItem.EntryType> Type_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Name", Name.ToResoniteLinkField());
-members.Add("BasePath", BasePath.ToResoniteLinkField());
-members.Add("Type", Type.ToResoniteLinkField());
+members.Add("Name", Name_Element.Data.ToResoniteLinkField());
+members.Add("BasePath", BasePath_Element.Data.ToResoniteLinkField());
+members.Add("Type", Type_Element.Data.ToResoniteLinkField());
 }
 
 }

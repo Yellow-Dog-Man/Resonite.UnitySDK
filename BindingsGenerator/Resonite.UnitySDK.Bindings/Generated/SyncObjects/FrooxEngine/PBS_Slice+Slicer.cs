@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.PBS_Slice+Slicer
-// Generated on: středa 25. února 2026 16:13:03
+// Generated on: čtvrtek 26. února 2026 10:03:34
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -22,15 +22,17 @@ namespace FrooxEngine
 public partial class Slicer : global::FrooxEngine.SyncObject
 
 {
-    public UnityEngine.Vector3 Position;
-public UnityEngine.Vector3 Normal;
+    public UnityEngine.Vector3 Position { get => Position_Element.Data; set => Position_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.Vector3>, UnityEngine.Vector3> Position_Element = new();
+public UnityEngine.Vector3 Normal { get => Normal_Element.Data; set => Normal_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.Vector3>, UnityEngine.Vector3> Normal_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Position", Position.ToResoniteLinkField());
-members.Add("Normal", Normal.ToResoniteLinkField());
+members.Add("Position", Position_Element.Data.ToResoniteLinkField());
+members.Add("Normal", Normal_Element.Data.ToResoniteLinkField());
 }
 
 }

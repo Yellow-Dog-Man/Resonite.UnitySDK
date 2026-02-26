@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.Grabbable
-// Generated on: středa 25. února 2026 16:14:31
+// Generated on: čtvrtek 26. února 2026 10:04:42
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,48 +20,64 @@ namespace FrooxEngine
 public partial class Grabbable : global::FrooxEngine.Component, global::FrooxEngine.IGrabbable, global::FrooxEngine.IInteractionTarget, global::FrooxEngine.IObjectRoot
 
 {
-    public global::System.Boolean ReparentOnRelease;
-public global::System.Boolean PreserveUserSpace;
-public global::System.Boolean DestroyOnRelease;
-public global::System.Int32 GrabPriority;
-public global::System.Nullable<global::System.Int32> GrabPriorityWhenGrabbed;
-public global::System.Boolean EditModeOnly;
-public global::System.Boolean AllowSteal;
-public global::System.Boolean DropOnDisable;
-public global::FrooxEngine.ActiveUserHandling ActiveUserFilter;
-public System.Collections.Generic.List<global::FrooxEngine.UserRef> OnlyUsers;
-public global::System.Boolean Scalable;
-public global::System.Boolean Receivable;
-public global::System.Boolean AllowOnlyPhysicalGrab;
-public global::FrooxEngine.Grabber _grabber;
-public global::FrooxEngine.Slot _lastParent;
-public global::System.Boolean _lastParentIsUserSpace;
-public global::System.Boolean __legacyActiveUserRootOnly;
+    public global::System.Boolean ReparentOnRelease { get => ReparentOnRelease_Element.Data; set => ReparentOnRelease_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> ReparentOnRelease_Element = new();
+public global::System.Boolean PreserveUserSpace { get => PreserveUserSpace_Element.Data; set => PreserveUserSpace_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> PreserveUserSpace_Element = new();
+public global::System.Boolean DestroyOnRelease { get => DestroyOnRelease_Element.Data; set => DestroyOnRelease_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> DestroyOnRelease_Element = new();
+public global::System.Int32 GrabPriority { get => GrabPriority_Element.Data; set => GrabPriority_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Int32>, global::System.Int32> GrabPriority_Element = new();
+public global::System.Nullable<global::System.Int32> GrabPriorityWhenGrabbed { get => GrabPriorityWhenGrabbed_Element.Data; set => GrabPriorityWhenGrabbed_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Nullable<global::System.Int32>>, global::System.Nullable<global::System.Int32>> GrabPriorityWhenGrabbed_Element = new();
+public global::System.Boolean EditModeOnly { get => EditModeOnly_Element.Data; set => EditModeOnly_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> EditModeOnly_Element = new();
+public global::System.Boolean AllowSteal { get => AllowSteal_Element.Data; set => AllowSteal_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> AllowSteal_Element = new();
+public global::System.Boolean DropOnDisable { get => DropOnDisable_Element.Data; set => DropOnDisable_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> DropOnDisable_Element = new();
+public global::FrooxEngine.ActiveUserHandling ActiveUserFilter { get => ActiveUserFilter_Element.Data; set => ActiveUserFilter_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::FrooxEngine.ActiveUserHandling>, global::FrooxEngine.ActiveUserHandling> ActiveUserFilter_Element = new();
+public global::SyncList<global::FrooxEngine.SyncList<global::FrooxEngine.UserRef>, global::FrooxEngine.UserRef> OnlyUsers = new();
+public global::System.Boolean Scalable { get => Scalable_Element.Data; set => Scalable_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> Scalable_Element = new();
+public global::System.Boolean Receivable { get => Receivable_Element.Data; set => Receivable_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> Receivable_Element = new();
+public global::System.Boolean AllowOnlyPhysicalGrab { get => AllowOnlyPhysicalGrab_Element.Data; set => AllowOnlyPhysicalGrab_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> AllowOnlyPhysicalGrab_Element = new();
+public global::FrooxEngine.Grabber _grabber { get => _grabber_Element.Data; set => _grabber_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.Grabber>, global::FrooxEngine.Grabber> _grabber_Element = new();
+public global::FrooxEngine.Slot _lastParent { get => _lastParent_Element.Data; set => _lastParent_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> _lastParent_Element = new();
+public global::System.Boolean _lastParentIsUserSpace { get => _lastParentIsUserSpace_Element.Data; set => _lastParentIsUserSpace_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> _lastParentIsUserSpace_Element = new();
+public global::System.Boolean __legacyActiveUserRootOnly { get => __legacyActiveUserRootOnly_Element.Data; set => __legacyActiveUserRootOnly_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> __legacyActiveUserRootOnly_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("ReparentOnRelease", ReparentOnRelease.ToResoniteLinkField());
-members.Add("PreserveUserSpace", PreserveUserSpace.ToResoniteLinkField());
-members.Add("DestroyOnRelease", DestroyOnRelease.ToResoniteLinkField());
-members.Add("GrabPriority", GrabPriority.ToResoniteLinkField());
-members.Add("GrabPriorityWhenGrabbed", GrabPriorityWhenGrabbed.ToResoniteLinkField());
-members.Add("EditModeOnly", EditModeOnly.ToResoniteLinkField());
-members.Add("AllowSteal", AllowSteal.ToResoniteLinkField());
-members.Add("DropOnDisable", DropOnDisable.ToResoniteLinkField());
-members.Add("ActiveUserFilter", ActiveUserFilter.ToResoniteLinkField());
+members.Add("ReparentOnRelease", ReparentOnRelease_Element.Data.ToResoniteLinkField());
+members.Add("PreserveUserSpace", PreserveUserSpace_Element.Data.ToResoniteLinkField());
+members.Add("DestroyOnRelease", DestroyOnRelease_Element.Data.ToResoniteLinkField());
+members.Add("GrabPriority", GrabPriority_Element.Data.ToResoniteLinkField());
+members.Add("GrabPriorityWhenGrabbed", GrabPriorityWhenGrabbed_Element.Data.ToResoniteLinkField());
+members.Add("EditModeOnly", EditModeOnly_Element.Data.ToResoniteLinkField());
+members.Add("AllowSteal", AllowSteal_Element.Data.ToResoniteLinkField());
+members.Add("DropOnDisable", DropOnDisable_Element.Data.ToResoniteLinkField());
+members.Add("ActiveUserFilter", ActiveUserFilter_Element.Data.ToResoniteLinkField());
 members.Add("OnlyUsers", new ResoniteLink.SyncList()
 {
-    Elements = OnlyUsers.ConvertList(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers(context) })
+    Elements = OnlyUsers.Data.ConvertList(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers(context) })
 });
-members.Add("Scalable", Scalable.ToResoniteLinkField());
-members.Add("Receivable", Receivable.ToResoniteLinkField());
-members.Add("AllowOnlyPhysicalGrab", AllowOnlyPhysicalGrab.ToResoniteLinkField());
-members.Add("_grabber", _grabber.ToResoniteReference(context));
-members.Add("_lastParent", _lastParent.ToResoniteReference(context));
-members.Add("_lastParentIsUserSpace", _lastParentIsUserSpace.ToResoniteLinkField());
-members.Add("__legacyActiveUserRootOnly", __legacyActiveUserRootOnly.ToResoniteLinkField());
+members.Add("Scalable", Scalable_Element.Data.ToResoniteLinkField());
+members.Add("Receivable", Receivable_Element.Data.ToResoniteLinkField());
+members.Add("AllowOnlyPhysicalGrab", AllowOnlyPhysicalGrab_Element.Data.ToResoniteLinkField());
+members.Add("_grabber", _grabber_Element.Data.ToResoniteReference(context));
+members.Add("_lastParent", _lastParent_Element.Data.ToResoniteReference(context));
+members.Add("_lastParentIsUserSpace", _lastParentIsUserSpace_Element.Data.ToResoniteLinkField());
+members.Add("__legacyActiveUserRootOnly", __legacyActiveUserRootOnly_Element.Data.ToResoniteLinkField());
 }
 
 }

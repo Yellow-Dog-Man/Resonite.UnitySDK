@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.SlotGizmo+AnchorInfo
-// Generated on: středa 25. února 2026 16:14:43
+// Generated on: čtvrtek 26. února 2026 10:04:48
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -22,17 +22,20 @@ namespace FrooxEngine
 public partial class AnchorInfo : global::FrooxEngine.SyncObject
 
 {
-    public global::FrooxEngine.PointAnchor anchor;
-public global::FrooxEngine.IField<UnityEngine.Vector3> posDrive;
-public global::FrooxEngine.IField<UnityEngine.Vector3> scaleDrive;
+    public global::FrooxEngine.PointAnchor anchor { get => anchor_Element.Data; set => anchor_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.PointAnchor>, global::FrooxEngine.PointAnchor> anchor_Element = new();
+public global::FrooxEngine.IField<UnityEngine.Vector3> posDrive { get => posDrive_Element.Data; set => posDrive_Element.Data = value; }
+public Field<global::FrooxEngine.FieldDrive<UnityEngine.Vector3>, global::FrooxEngine.IField<UnityEngine.Vector3>> posDrive_Element = new();
+public global::FrooxEngine.IField<UnityEngine.Vector3> scaleDrive { get => scaleDrive_Element.Data; set => scaleDrive_Element.Data = value; }
+public Field<global::FrooxEngine.FieldDrive<UnityEngine.Vector3>, global::FrooxEngine.IField<UnityEngine.Vector3>> scaleDrive_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("anchor", anchor.ToResoniteReference(context));
-members.Add("posDrive", posDrive.ToResoniteReference(context));
-members.Add("scaleDrive", scaleDrive.ToResoniteReference(context));
+members.Add("anchor", anchor_Element.Data.ToResoniteReference(context));
+members.Add("posDrive", posDrive_Element.Data.ToResoniteReference(context));
+members.Add("scaleDrive", scaleDrive_Element.Data.ToResoniteReference(context));
 }
 
 }

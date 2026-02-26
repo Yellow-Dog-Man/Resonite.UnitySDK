@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.SessionInfoSource
-// Generated on: středa 25. února 2026 16:14:47
+// Generated on: čtvrtek 26. února 2026 10:04:51
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,67 +20,90 @@ namespace FrooxEngine
 public partial class SessionInfoSource : global::FrooxEngine.Component, global::FrooxEngine.IWorldLink
 
 {
-    public global::System.String SessionId;
-public global::System.Boolean IsOpen;
-public global::System.DateTime LastUpdated;
-public global::System.String Name;
-public global::System.String Description;
-public System.Collections.Generic.List<global::System.String> Tags;
-public global::System.String CorrespondingRecordId;
-public global::System.String CorrespondingOwnerId;
-public global::System.String HostUserId;
-public global::System.String HostUsername;
-public global::System.String SanitizedHostUsername;
-public global::System.String AppVersion;
-public global::System.Boolean HeadlessHost;
-public System.Collections.Generic.List<global::System.String> SessionURLs;
-public global::System.String Thumbnail;
-public global::System.Int32 JoinedUsers;
-public global::System.Int32 ActiveUsers;
-public global::System.Int32 TotalJoinedUsers;
-public global::System.Int32 TotalActiveUsers;
-public global::System.Int32 MaximumUsers;
-public global::System.Boolean MobileFriendly;
-public global::SkyFrost.Base.SessionAccessLevel AccessLevel;
-public global::System.Boolean IsOnLAN;
-public global::System.Boolean AwayKickEnabled;
-public global::System.TimeSpan AwayKickInterval;
+    public global::System.String SessionId { get => SessionId_Element.Data; set => SessionId_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.String>, global::System.String> SessionId_Element = new();
+public global::System.Boolean IsOpen { get => IsOpen_Element.Data; set => IsOpen_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> IsOpen_Element = new();
+public global::System.DateTime LastUpdated { get => LastUpdated_Element.Data; set => LastUpdated_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.DateTime>, global::System.DateTime> LastUpdated_Element = new();
+public global::System.String Name { get => Name_Element.Data; set => Name_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.String>, global::System.String> Name_Element = new();
+public global::System.String Description { get => Description_Element.Data; set => Description_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.String>, global::System.String> Description_Element = new();
+public global::SyncFieldList<global::FrooxEngine.SyncFieldList<global::System.String>, global::System.String, Field<global::FrooxEngine.Sync<global::System.String>, global::System.String>> Tags = new();
+public global::System.String CorrespondingRecordId { get => CorrespondingRecordId_Element.Data; set => CorrespondingRecordId_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.String>, global::System.String> CorrespondingRecordId_Element = new();
+public global::System.String CorrespondingOwnerId { get => CorrespondingOwnerId_Element.Data; set => CorrespondingOwnerId_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.String>, global::System.String> CorrespondingOwnerId_Element = new();
+public global::System.String HostUserId { get => HostUserId_Element.Data; set => HostUserId_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.String>, global::System.String> HostUserId_Element = new();
+public global::System.String HostUsername { get => HostUsername_Element.Data; set => HostUsername_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.String>, global::System.String> HostUsername_Element = new();
+public global::System.String SanitizedHostUsername { get => SanitizedHostUsername_Element.Data; set => SanitizedHostUsername_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.String>, global::System.String> SanitizedHostUsername_Element = new();
+public global::System.String AppVersion { get => AppVersion_Element.Data; set => AppVersion_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.String>, global::System.String> AppVersion_Element = new();
+public global::System.Boolean HeadlessHost { get => HeadlessHost_Element.Data; set => HeadlessHost_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> HeadlessHost_Element = new();
+public global::SyncFieldList<global::FrooxEngine.SyncFieldList<global::System.String>, global::System.String, Field<global::FrooxEngine.Sync<global::System.String>, global::System.String>> SessionURLs = new();
+public global::System.String Thumbnail { get => Thumbnail_Element.Data; set => Thumbnail_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.String>, global::System.String> Thumbnail_Element = new();
+public global::System.Int32 JoinedUsers { get => JoinedUsers_Element.Data; set => JoinedUsers_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Int32>, global::System.Int32> JoinedUsers_Element = new();
+public global::System.Int32 ActiveUsers { get => ActiveUsers_Element.Data; set => ActiveUsers_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Int32>, global::System.Int32> ActiveUsers_Element = new();
+public global::System.Int32 TotalJoinedUsers { get => TotalJoinedUsers_Element.Data; set => TotalJoinedUsers_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Int32>, global::System.Int32> TotalJoinedUsers_Element = new();
+public global::System.Int32 TotalActiveUsers { get => TotalActiveUsers_Element.Data; set => TotalActiveUsers_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Int32>, global::System.Int32> TotalActiveUsers_Element = new();
+public global::System.Int32 MaximumUsers { get => MaximumUsers_Element.Data; set => MaximumUsers_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Int32>, global::System.Int32> MaximumUsers_Element = new();
+public global::System.Boolean MobileFriendly { get => MobileFriendly_Element.Data; set => MobileFriendly_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> MobileFriendly_Element = new();
+public global::SkyFrost.Base.SessionAccessLevel AccessLevel { get => AccessLevel_Element.Data; set => AccessLevel_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::SkyFrost.Base.SessionAccessLevel>, global::SkyFrost.Base.SessionAccessLevel> AccessLevel_Element = new();
+public global::System.Boolean IsOnLAN { get => IsOnLAN_Element.Data; set => IsOnLAN_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> IsOnLAN_Element = new();
+public global::System.Boolean AwayKickEnabled { get => AwayKickEnabled_Element.Data; set => AwayKickEnabled_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> AwayKickEnabled_Element = new();
+public global::System.TimeSpan AwayKickInterval { get => AwayKickInterval_Element.Data; set => AwayKickInterval_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.TimeSpan>, global::System.TimeSpan> AwayKickInterval_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("SessionId", SessionId.ToResoniteLinkField());
-members.Add("IsOpen", IsOpen.ToResoniteLinkField());
-members.Add("LastUpdated", LastUpdated.ToResoniteLinkField());
-members.Add("Name", Name.ToResoniteLinkField());
-members.Add("Description", Description.ToResoniteLinkField());
+members.Add("SessionId", SessionId_Element.Data.ToResoniteLinkField());
+members.Add("IsOpen", IsOpen_Element.Data.ToResoniteLinkField());
+members.Add("LastUpdated", LastUpdated_Element.Data.ToResoniteLinkField());
+members.Add("Name", Name_Element.Data.ToResoniteLinkField());
+members.Add("Description", Description_Element.Data.ToResoniteLinkField());
 members.Add("Tags", new ResoniteLink.SyncList()
 {
-    Elements = Tags.ConvertList(m => m.ToResoniteLinkField())
+    Elements = Tags.Data.ConvertList(m => m.Data.ToResoniteLinkField())
 });
-members.Add("CorrespondingRecordId", CorrespondingRecordId.ToResoniteLinkField());
-members.Add("CorrespondingOwnerId", CorrespondingOwnerId.ToResoniteLinkField());
-members.Add("HostUserId", HostUserId.ToResoniteLinkField());
-members.Add("HostUsername", HostUsername.ToResoniteLinkField());
-members.Add("SanitizedHostUsername", SanitizedHostUsername.ToResoniteLinkField());
-members.Add("AppVersion", AppVersion.ToResoniteLinkField());
-members.Add("HeadlessHost", HeadlessHost.ToResoniteLinkField());
+members.Add("CorrespondingRecordId", CorrespondingRecordId_Element.Data.ToResoniteLinkField());
+members.Add("CorrespondingOwnerId", CorrespondingOwnerId_Element.Data.ToResoniteLinkField());
+members.Add("HostUserId", HostUserId_Element.Data.ToResoniteLinkField());
+members.Add("HostUsername", HostUsername_Element.Data.ToResoniteLinkField());
+members.Add("SanitizedHostUsername", SanitizedHostUsername_Element.Data.ToResoniteLinkField());
+members.Add("AppVersion", AppVersion_Element.Data.ToResoniteLinkField());
+members.Add("HeadlessHost", HeadlessHost_Element.Data.ToResoniteLinkField());
 members.Add("SessionURLs", new ResoniteLink.SyncList()
 {
-    Elements = SessionURLs.ConvertList(m => m.ToResoniteLinkField())
+    Elements = SessionURLs.Data.ConvertList(m => m.Data.ToResoniteLinkField())
 });
-members.Add("Thumbnail", Thumbnail.ToResoniteLinkField());
-members.Add("JoinedUsers", JoinedUsers.ToResoniteLinkField());
-members.Add("ActiveUsers", ActiveUsers.ToResoniteLinkField());
-members.Add("TotalJoinedUsers", TotalJoinedUsers.ToResoniteLinkField());
-members.Add("TotalActiveUsers", TotalActiveUsers.ToResoniteLinkField());
-members.Add("MaximumUsers", MaximumUsers.ToResoniteLinkField());
-members.Add("MobileFriendly", MobileFriendly.ToResoniteLinkField());
-members.Add("AccessLevel", AccessLevel.ToResoniteLinkField());
-members.Add("IsOnLAN", IsOnLAN.ToResoniteLinkField());
-members.Add("AwayKickEnabled", AwayKickEnabled.ToResoniteLinkField());
-members.Add("AwayKickInterval", AwayKickInterval.ToResoniteLinkField());
+members.Add("Thumbnail", Thumbnail_Element.Data.ToResoniteLinkField());
+members.Add("JoinedUsers", JoinedUsers_Element.Data.ToResoniteLinkField());
+members.Add("ActiveUsers", ActiveUsers_Element.Data.ToResoniteLinkField());
+members.Add("TotalJoinedUsers", TotalJoinedUsers_Element.Data.ToResoniteLinkField());
+members.Add("TotalActiveUsers", TotalActiveUsers_Element.Data.ToResoniteLinkField());
+members.Add("MaximumUsers", MaximumUsers_Element.Data.ToResoniteLinkField());
+members.Add("MobileFriendly", MobileFriendly_Element.Data.ToResoniteLinkField());
+members.Add("AccessLevel", AccessLevel_Element.Data.ToResoniteLinkField());
+members.Add("IsOnLAN", IsOnLAN_Element.Data.ToResoniteLinkField());
+members.Add("AwayKickEnabled", AwayKickEnabled_Element.Data.ToResoniteLinkField());
+members.Add("AwayKickInterval", AwayKickInterval_Element.Data.ToResoniteLinkField());
 }
 
 }

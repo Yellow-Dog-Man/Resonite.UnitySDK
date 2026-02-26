@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.LocomotionAnimationFeetMetrics
-// Generated on: středa 25. února 2026 16:14:45
+// Generated on: čtvrtek 26. února 2026 10:04:49
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,23 +20,29 @@ namespace FrooxEngine
 public partial class LocomotionAnimationFeetMetrics : global::FrooxEngine.LocomotionAnimationParametersBase
 
 {
-    public global::FrooxEngine.LocomotionMetricsSpace Space;
-public global::System.Nullable<global::System.Single> FeetSeparation;
-public global::System.Nullable<global::System.Single> FeetBackwardsOffset;
-public global::System.Nullable<global::System.Single> FootHeight;
-public global::System.Nullable<global::System.Single> FootFrontOffset;
-public global::System.Nullable<global::System.Single> FootBackOffset;
+    public global::FrooxEngine.LocomotionMetricsSpace Space { get => Space_Element.Data; set => Space_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::FrooxEngine.LocomotionMetricsSpace>, global::FrooxEngine.LocomotionMetricsSpace> Space_Element = new();
+public global::System.Nullable<global::System.Single> FeetSeparation { get => FeetSeparation_Element.Data; set => FeetSeparation_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Nullable<global::System.Single>>, global::System.Nullable<global::System.Single>> FeetSeparation_Element = new();
+public global::System.Nullable<global::System.Single> FeetBackwardsOffset { get => FeetBackwardsOffset_Element.Data; set => FeetBackwardsOffset_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Nullable<global::System.Single>>, global::System.Nullable<global::System.Single>> FeetBackwardsOffset_Element = new();
+public global::System.Nullable<global::System.Single> FootHeight { get => FootHeight_Element.Data; set => FootHeight_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Nullable<global::System.Single>>, global::System.Nullable<global::System.Single>> FootHeight_Element = new();
+public global::System.Nullable<global::System.Single> FootFrontOffset { get => FootFrontOffset_Element.Data; set => FootFrontOffset_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Nullable<global::System.Single>>, global::System.Nullable<global::System.Single>> FootFrontOffset_Element = new();
+public global::System.Nullable<global::System.Single> FootBackOffset { get => FootBackOffset_Element.Data; set => FootBackOffset_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Nullable<global::System.Single>>, global::System.Nullable<global::System.Single>> FootBackOffset_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Space", Space.ToResoniteLinkField());
-members.Add("FeetSeparation", FeetSeparation.ToResoniteLinkField());
-members.Add("FeetBackwardsOffset", FeetBackwardsOffset.ToResoniteLinkField());
-members.Add("FootHeight", FootHeight.ToResoniteLinkField());
-members.Add("FootFrontOffset", FootFrontOffset.ToResoniteLinkField());
-members.Add("FootBackOffset", FootBackOffset.ToResoniteLinkField());
+members.Add("Space", Space_Element.Data.ToResoniteLinkField());
+members.Add("FeetSeparation", FeetSeparation_Element.Data.ToResoniteLinkField());
+members.Add("FeetBackwardsOffset", FeetBackwardsOffset_Element.Data.ToResoniteLinkField());
+members.Add("FootHeight", FootHeight_Element.Data.ToResoniteLinkField());
+members.Add("FootFrontOffset", FootFrontOffset_Element.Data.ToResoniteLinkField());
+members.Add("FootBackOffset", FootBackOffset_Element.Data.ToResoniteLinkField());
 }
 
 }

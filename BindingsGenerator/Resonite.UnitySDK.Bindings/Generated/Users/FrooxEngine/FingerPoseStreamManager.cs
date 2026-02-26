@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.FingerPoseStreamManager
-// Generated on: středa 25. února 2026 16:14:44
+// Generated on: čtvrtek 26. února 2026 10:04:49
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,23 +20,29 @@ namespace FrooxEngine
 public partial class FingerPoseStreamManager : global::FrooxEngine.UserRootComponent, global::FrooxEngine.IFingerPoseSourceComponent
 
 {
-    public global::FrooxEngine.User User;
-public global::FrooxEngine.ValueStream<global::System.Boolean> LeftIsTracking;
-public global::FrooxEngine.ValueStream<global::System.Boolean> RightIsTracking;
-public global::FrooxEngine.MultiValueStream<UnityEngine.Quaternion> Stream;
-public global::System.Boolean TracksMetacarpals;
-public global::FrooxEngine.UserPoseController PoseController;
+    public global::FrooxEngine.User User { get => User_Element.Data; set => User_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.User>, global::FrooxEngine.User> User_Element = new();
+public global::FrooxEngine.ValueStream<global::System.Boolean> LeftIsTracking { get => LeftIsTracking_Element.Data; set => LeftIsTracking_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.ValueStream<global::System.Boolean>>, global::FrooxEngine.ValueStream<global::System.Boolean>> LeftIsTracking_Element = new();
+public global::FrooxEngine.ValueStream<global::System.Boolean> RightIsTracking { get => RightIsTracking_Element.Data; set => RightIsTracking_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.ValueStream<global::System.Boolean>>, global::FrooxEngine.ValueStream<global::System.Boolean>> RightIsTracking_Element = new();
+public global::FrooxEngine.MultiValueStream<UnityEngine.Quaternion> Stream { get => Stream_Element.Data; set => Stream_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.MultiValueStream<UnityEngine.Quaternion>>, global::FrooxEngine.MultiValueStream<UnityEngine.Quaternion>> Stream_Element = new();
+public global::System.Boolean TracksMetacarpals { get => TracksMetacarpals_Element.Data; set => TracksMetacarpals_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> TracksMetacarpals_Element = new();
+public global::FrooxEngine.UserPoseController PoseController { get => PoseController_Element.Data; set => PoseController_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.UserPoseController>, global::FrooxEngine.UserPoseController> PoseController_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("User", User.ToResoniteReference(context));
-members.Add("LeftIsTracking", LeftIsTracking.ToResoniteReference(context));
-members.Add("RightIsTracking", RightIsTracking.ToResoniteReference(context));
-members.Add("Stream", Stream.ToResoniteReference(context));
-members.Add("TracksMetacarpals", TracksMetacarpals.ToResoniteLinkField());
-members.Add("PoseController", PoseController.ToResoniteReference(context));
+members.Add("User", User_Element.Data.ToResoniteReference(context));
+members.Add("LeftIsTracking", LeftIsTracking_Element.Data.ToResoniteReference(context));
+members.Add("RightIsTracking", RightIsTracking_Element.Data.ToResoniteReference(context));
+members.Add("Stream", Stream_Element.Data.ToResoniteReference(context));
+members.Add("TracksMetacarpals", TracksMetacarpals_Element.Data.ToResoniteLinkField());
+members.Add("PoseController", PoseController_Element.Data.ToResoniteReference(context));
 }
 
 }

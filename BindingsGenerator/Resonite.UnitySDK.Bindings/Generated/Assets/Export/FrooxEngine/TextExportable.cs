@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.TextExportable
-// Generated on: středa 25. února 2026 16:13:02
+// Generated on: čtvrtek 26. února 2026 10:03:33
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,17 +20,20 @@ namespace FrooxEngine
 public partial class TextExportable : global::FrooxEngine.Component, global::FrooxEngine.IExportable
 
 {
-    public global::FrooxEngine.IValue<global::System.String> TextSource;
-public global::System.String Extension;
-public global::System.String Description;
+    public global::FrooxEngine.IValue<global::System.String> TextSource { get => TextSource_Element.Data; set => TextSource_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.IValue<global::System.String>>, global::FrooxEngine.IValue<global::System.String>> TextSource_Element = new();
+public global::System.String Extension { get => Extension_Element.Data; set => Extension_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.String>, global::System.String> Extension_Element = new();
+public global::System.String Description { get => Description_Element.Data; set => Description_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.String>, global::System.String> Description_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("TextSource", TextSource.ToResoniteReference(context));
-members.Add("Extension", Extension.ToResoniteLinkField());
-members.Add("Description", Description.ToResoniteLinkField());
+members.Add("TextSource", TextSource_Element.Data.ToResoniteReference(context));
+members.Add("Extension", Extension_Element.Data.ToResoniteLinkField());
+members.Add("Description", Description_Element.Data.ToResoniteLinkField());
 }
 
 }

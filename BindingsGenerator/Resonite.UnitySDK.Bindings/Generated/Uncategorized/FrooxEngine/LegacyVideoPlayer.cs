@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.LegacyVideoPlayer
-// Generated on: středa 25. února 2026 16:14:41
+// Generated on: čtvrtek 26. února 2026 10:04:46
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,77 +20,110 @@ namespace FrooxEngine
 public partial class LegacyVideoPlayer : global::FrooxEngine.Component, global::FrooxEngine.IMaterialSource, global::FrooxEngine.IMaterialApplyPolicy, global::FrooxEngine.IPlayable, global::FrooxEngine.IItemMetadataSource, global::FrooxEngine.IUIInterface
 
 {
-    public global::Elements.Core.StereoLayout StereoLayout;
-public UnityEngine.Vector2 SizeCompensation;
-public global::FrooxEngine.IAssetProvider<global::FrooxEngine.VideoTexture> videoProvider;
-public global::FrooxEngine.LegacyUIStyle _style;
-public global::FrooxEngine.IField<System.Uri> _indicatorTextureUrl;
-public global::FrooxEngine.IField<UnityEngine.ColorX> _indicatorTint;
-public global::FrooxEngine.IField<UnityEngine.Vector3> _colliderSize;
-public global::FrooxEngine.IField<global::System.Single> _frameWidth;
-public global::FrooxEngine.IField<global::System.Single> _frameHeight;
-public global::FrooxEngine.PBS_RimMetallic _frameMaterial;
-public global::FrooxEngine.UnlitMaterial _displayMaterial;
-public global::FrooxEngine.AssetRef<global::FrooxEngine.ITexture2D> _displayMaterialTexture;
-public global::FrooxEngine.IField<UnityEngine.Vector2> _displaySize;
-public global::FrooxEngine.AudioOutput _mainAudioOutput;
-public global::FrooxEngine.LegacySlider _timelineSlider;
-public global::FrooxEngine.IField<UnityEngine.Vector3> _timelinePosition;
-public global::FrooxEngine.IField<global::System.Single> _timelineWidth;
-public global::FrooxEngine.IField<global::System.Single> _positionDrive;
-public global::FrooxEngine.LegacySlider _volumeSlider;
-public global::FrooxEngine.IField<UnityEngine.Vector3> _volumePosition;
-public global::FrooxEngine.IField<global::System.Single> _volumeWidth;
-public global::FrooxEngine.IField<global::System.Single> _volumeDrive;
-public global::FrooxEngine.IField<global::System.Single> _buttonsWidth;
-public global::FrooxEngine.IField<global::System.Single> _buttonsHeight;
-public global::FrooxEngine.IField<UnityEngine.Vector3> _buttonsPosition;
-public global::FrooxEngine.IField<UnityEngine.ColorX> _playButtonColor;
-public global::FrooxEngine.IField<UnityEngine.ColorX> _pauseButtonColor;
-public global::FrooxEngine.IField<UnityEngine.ColorX> _stopButtonColor;
-public global::FrooxEngine.IField<UnityEngine.ColorX> _loopButtonColor;
-public global::FrooxEngine.IField<UnityEngine.ColorX> _audio3DButtonColor;
-public global::FrooxEngine.VideoExportable _exportable;
-public global::FrooxEngine.AssetProxy<global::FrooxEngine.VideoTexture> _assetProxy;
-public global::FrooxEngine.ReferenceProxy _referenceProxy;
+    public global::Elements.Core.StereoLayout StereoLayout { get => StereoLayout_Element.Data; set => StereoLayout_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::Elements.Core.StereoLayout>, global::Elements.Core.StereoLayout> StereoLayout_Element = new();
+public UnityEngine.Vector2 SizeCompensation { get => SizeCompensation_Element.Data; set => SizeCompensation_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.Vector2>, UnityEngine.Vector2> SizeCompensation_Element = new();
+public global::FrooxEngine.IAssetProvider<global::FrooxEngine.VideoTexture> videoProvider { get => videoProvider_Element.Data; set => videoProvider_Element.Data = value; }
+public Field<global::FrooxEngine.AssetRef<global::FrooxEngine.VideoTexture>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.VideoTexture>> videoProvider_Element = new();
+public global::FrooxEngine.LegacyUIStyle _style { get => _style_Element.Data; set => _style_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.LegacyUIStyle>, global::FrooxEngine.LegacyUIStyle> _style_Element = new();
+public global::FrooxEngine.IField<System.Uri> _indicatorTextureUrl { get => _indicatorTextureUrl_Element.Data; set => _indicatorTextureUrl_Element.Data = value; }
+public Field<global::FrooxEngine.FieldDrive<System.Uri>, global::FrooxEngine.IField<System.Uri>> _indicatorTextureUrl_Element = new();
+public global::FrooxEngine.IField<UnityEngine.ColorX> _indicatorTint { get => _indicatorTint_Element.Data; set => _indicatorTint_Element.Data = value; }
+public Field<global::FrooxEngine.FieldDrive<UnityEngine.ColorX>, global::FrooxEngine.IField<UnityEngine.ColorX>> _indicatorTint_Element = new();
+public global::FrooxEngine.IField<UnityEngine.Vector3> _colliderSize { get => _colliderSize_Element.Data; set => _colliderSize_Element.Data = value; }
+public Field<global::FrooxEngine.FieldDrive<UnityEngine.Vector3>, global::FrooxEngine.IField<UnityEngine.Vector3>> _colliderSize_Element = new();
+public global::FrooxEngine.IField<global::System.Single> _frameWidth { get => _frameWidth_Element.Data; set => _frameWidth_Element.Data = value; }
+public Field<global::FrooxEngine.FieldDrive<global::System.Single>, global::FrooxEngine.IField<global::System.Single>> _frameWidth_Element = new();
+public global::FrooxEngine.IField<global::System.Single> _frameHeight { get => _frameHeight_Element.Data; set => _frameHeight_Element.Data = value; }
+public Field<global::FrooxEngine.FieldDrive<global::System.Single>, global::FrooxEngine.IField<global::System.Single>> _frameHeight_Element = new();
+public global::FrooxEngine.PBS_RimMetallic _frameMaterial { get => _frameMaterial_Element.Data; set => _frameMaterial_Element.Data = value; }
+public Field<global::FrooxEngine.DriveRef<global::FrooxEngine.PBS_RimMetallic>, global::FrooxEngine.PBS_RimMetallic> _frameMaterial_Element = new();
+public global::FrooxEngine.UnlitMaterial _displayMaterial { get => _displayMaterial_Element.Data; set => _displayMaterial_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.UnlitMaterial>, global::FrooxEngine.UnlitMaterial> _displayMaterial_Element = new();
+public global::FrooxEngine.AssetRef<global::FrooxEngine.ITexture2D> _displayMaterialTexture { get => _displayMaterialTexture_Element.Data; set => _displayMaterialTexture_Element.Data = value; }
+public Field<global::FrooxEngine.DriveRef<global::FrooxEngine.AssetRef<global::FrooxEngine.ITexture2D>>, global::FrooxEngine.AssetRef<global::FrooxEngine.ITexture2D>> _displayMaterialTexture_Element = new();
+public global::FrooxEngine.IField<UnityEngine.Vector2> _displaySize { get => _displaySize_Element.Data; set => _displaySize_Element.Data = value; }
+public Field<global::FrooxEngine.FieldDrive<UnityEngine.Vector2>, global::FrooxEngine.IField<UnityEngine.Vector2>> _displaySize_Element = new();
+public global::FrooxEngine.AudioOutput _mainAudioOutput { get => _mainAudioOutput_Element.Data; set => _mainAudioOutput_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.AudioOutput>, global::FrooxEngine.AudioOutput> _mainAudioOutput_Element = new();
+public global::FrooxEngine.LegacySlider _timelineSlider { get => _timelineSlider_Element.Data; set => _timelineSlider_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.LegacySlider>, global::FrooxEngine.LegacySlider> _timelineSlider_Element = new();
+public global::FrooxEngine.IField<UnityEngine.Vector3> _timelinePosition { get => _timelinePosition_Element.Data; set => _timelinePosition_Element.Data = value; }
+public Field<global::FrooxEngine.FieldDrive<UnityEngine.Vector3>, global::FrooxEngine.IField<UnityEngine.Vector3>> _timelinePosition_Element = new();
+public global::FrooxEngine.IField<global::System.Single> _timelineWidth { get => _timelineWidth_Element.Data; set => _timelineWidth_Element.Data = value; }
+public Field<global::FrooxEngine.FieldDrive<global::System.Single>, global::FrooxEngine.IField<global::System.Single>> _timelineWidth_Element = new();
+public global::FrooxEngine.IField<global::System.Single> _positionDrive { get => _positionDrive_Element.Data; set => _positionDrive_Element.Data = value; }
+public Field<global::FrooxEngine.FieldDrive<global::System.Single>, global::FrooxEngine.IField<global::System.Single>> _positionDrive_Element = new();
+public global::FrooxEngine.LegacySlider _volumeSlider { get => _volumeSlider_Element.Data; set => _volumeSlider_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.LegacySlider>, global::FrooxEngine.LegacySlider> _volumeSlider_Element = new();
+public global::FrooxEngine.IField<UnityEngine.Vector3> _volumePosition { get => _volumePosition_Element.Data; set => _volumePosition_Element.Data = value; }
+public Field<global::FrooxEngine.FieldDrive<UnityEngine.Vector3>, global::FrooxEngine.IField<UnityEngine.Vector3>> _volumePosition_Element = new();
+public global::FrooxEngine.IField<global::System.Single> _volumeWidth { get => _volumeWidth_Element.Data; set => _volumeWidth_Element.Data = value; }
+public Field<global::FrooxEngine.FieldDrive<global::System.Single>, global::FrooxEngine.IField<global::System.Single>> _volumeWidth_Element = new();
+public global::FrooxEngine.IField<global::System.Single> _volumeDrive { get => _volumeDrive_Element.Data; set => _volumeDrive_Element.Data = value; }
+public Field<global::FrooxEngine.FieldDrive<global::System.Single>, global::FrooxEngine.IField<global::System.Single>> _volumeDrive_Element = new();
+public global::FrooxEngine.IField<global::System.Single> _buttonsWidth { get => _buttonsWidth_Element.Data; set => _buttonsWidth_Element.Data = value; }
+public Field<global::FrooxEngine.FieldDrive<global::System.Single>, global::FrooxEngine.IField<global::System.Single>> _buttonsWidth_Element = new();
+public global::FrooxEngine.IField<global::System.Single> _buttonsHeight { get => _buttonsHeight_Element.Data; set => _buttonsHeight_Element.Data = value; }
+public Field<global::FrooxEngine.FieldDrive<global::System.Single>, global::FrooxEngine.IField<global::System.Single>> _buttonsHeight_Element = new();
+public global::FrooxEngine.IField<UnityEngine.Vector3> _buttonsPosition { get => _buttonsPosition_Element.Data; set => _buttonsPosition_Element.Data = value; }
+public Field<global::FrooxEngine.FieldDrive<UnityEngine.Vector3>, global::FrooxEngine.IField<UnityEngine.Vector3>> _buttonsPosition_Element = new();
+public global::FrooxEngine.IField<UnityEngine.ColorX> _playButtonColor { get => _playButtonColor_Element.Data; set => _playButtonColor_Element.Data = value; }
+public Field<global::FrooxEngine.FieldDrive<UnityEngine.ColorX>, global::FrooxEngine.IField<UnityEngine.ColorX>> _playButtonColor_Element = new();
+public global::FrooxEngine.IField<UnityEngine.ColorX> _pauseButtonColor { get => _pauseButtonColor_Element.Data; set => _pauseButtonColor_Element.Data = value; }
+public Field<global::FrooxEngine.FieldDrive<UnityEngine.ColorX>, global::FrooxEngine.IField<UnityEngine.ColorX>> _pauseButtonColor_Element = new();
+public global::FrooxEngine.IField<UnityEngine.ColorX> _stopButtonColor { get => _stopButtonColor_Element.Data; set => _stopButtonColor_Element.Data = value; }
+public Field<global::FrooxEngine.FieldDrive<UnityEngine.ColorX>, global::FrooxEngine.IField<UnityEngine.ColorX>> _stopButtonColor_Element = new();
+public global::FrooxEngine.IField<UnityEngine.ColorX> _loopButtonColor { get => _loopButtonColor_Element.Data; set => _loopButtonColor_Element.Data = value; }
+public Field<global::FrooxEngine.FieldDrive<UnityEngine.ColorX>, global::FrooxEngine.IField<UnityEngine.ColorX>> _loopButtonColor_Element = new();
+public global::FrooxEngine.IField<UnityEngine.ColorX> _audio3DButtonColor { get => _audio3DButtonColor_Element.Data; set => _audio3DButtonColor_Element.Data = value; }
+public Field<global::FrooxEngine.FieldDrive<UnityEngine.ColorX>, global::FrooxEngine.IField<UnityEngine.ColorX>> _audio3DButtonColor_Element = new();
+public global::FrooxEngine.VideoExportable _exportable { get => _exportable_Element.Data; set => _exportable_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.VideoExportable>, global::FrooxEngine.VideoExportable> _exportable_Element = new();
+public global::FrooxEngine.AssetProxy<global::FrooxEngine.VideoTexture> _assetProxy { get => _assetProxy_Element.Data; set => _assetProxy_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.AssetProxy<global::FrooxEngine.VideoTexture>>, global::FrooxEngine.AssetProxy<global::FrooxEngine.VideoTexture>> _assetProxy_Element = new();
+public global::FrooxEngine.ReferenceProxy _referenceProxy { get => _referenceProxy_Element.Data; set => _referenceProxy_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.ReferenceProxy>, global::FrooxEngine.ReferenceProxy> _referenceProxy_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("StereoLayout", StereoLayout.ToResoniteLinkField());
-members.Add("SizeCompensation", SizeCompensation.ToResoniteLinkField());
-members.Add("videoProvider", videoProvider.ToResoniteReference(context));
-members.Add("_style", _style.ToResoniteReference(context));
-members.Add("_indicatorTextureUrl", _indicatorTextureUrl.ToResoniteReference(context));
-members.Add("_indicatorTint", _indicatorTint.ToResoniteReference(context));
-members.Add("_colliderSize", _colliderSize.ToResoniteReference(context));
-members.Add("_frameWidth", _frameWidth.ToResoniteReference(context));
-members.Add("_frameHeight", _frameHeight.ToResoniteReference(context));
-members.Add("_frameMaterial", _frameMaterial.ToResoniteReference(context));
-members.Add("_displayMaterial", _displayMaterial.ToResoniteReference(context));
-members.Add("_displayMaterialTexture", _displayMaterialTexture.ToResoniteReference(context));
-members.Add("_displaySize", _displaySize.ToResoniteReference(context));
-members.Add("_mainAudioOutput", _mainAudioOutput.ToResoniteReference(context));
-members.Add("_timelineSlider", _timelineSlider.ToResoniteReference(context));
-members.Add("_timelinePosition", _timelinePosition.ToResoniteReference(context));
-members.Add("_timelineWidth", _timelineWidth.ToResoniteReference(context));
-members.Add("_positionDrive", _positionDrive.ToResoniteReference(context));
-members.Add("_volumeSlider", _volumeSlider.ToResoniteReference(context));
-members.Add("_volumePosition", _volumePosition.ToResoniteReference(context));
-members.Add("_volumeWidth", _volumeWidth.ToResoniteReference(context));
-members.Add("_volumeDrive", _volumeDrive.ToResoniteReference(context));
-members.Add("_buttonsWidth", _buttonsWidth.ToResoniteReference(context));
-members.Add("_buttonsHeight", _buttonsHeight.ToResoniteReference(context));
-members.Add("_buttonsPosition", _buttonsPosition.ToResoniteReference(context));
-members.Add("_playButtonColor", _playButtonColor.ToResoniteReference(context));
-members.Add("_pauseButtonColor", _pauseButtonColor.ToResoniteReference(context));
-members.Add("_stopButtonColor", _stopButtonColor.ToResoniteReference(context));
-members.Add("_loopButtonColor", _loopButtonColor.ToResoniteReference(context));
-members.Add("_audio3DButtonColor", _audio3DButtonColor.ToResoniteReference(context));
-members.Add("_exportable", _exportable.ToResoniteReference(context));
-members.Add("_assetProxy", _assetProxy.ToResoniteReference(context));
-members.Add("_referenceProxy", _referenceProxy.ToResoniteReference(context));
+members.Add("StereoLayout", StereoLayout_Element.Data.ToResoniteLinkField());
+members.Add("SizeCompensation", SizeCompensation_Element.Data.ToResoniteLinkField());
+members.Add("videoProvider", videoProvider_Element.Data.ToResoniteReference(context));
+members.Add("_style", _style_Element.Data.ToResoniteReference(context));
+members.Add("_indicatorTextureUrl", _indicatorTextureUrl_Element.Data.ToResoniteReference(context));
+members.Add("_indicatorTint", _indicatorTint_Element.Data.ToResoniteReference(context));
+members.Add("_colliderSize", _colliderSize_Element.Data.ToResoniteReference(context));
+members.Add("_frameWidth", _frameWidth_Element.Data.ToResoniteReference(context));
+members.Add("_frameHeight", _frameHeight_Element.Data.ToResoniteReference(context));
+members.Add("_frameMaterial", _frameMaterial_Element.Data.ToResoniteReference(context));
+members.Add("_displayMaterial", _displayMaterial_Element.Data.ToResoniteReference(context));
+members.Add("_displayMaterialTexture", _displayMaterialTexture_Element.Data.ToResoniteReference(context));
+members.Add("_displaySize", _displaySize_Element.Data.ToResoniteReference(context));
+members.Add("_mainAudioOutput", _mainAudioOutput_Element.Data.ToResoniteReference(context));
+members.Add("_timelineSlider", _timelineSlider_Element.Data.ToResoniteReference(context));
+members.Add("_timelinePosition", _timelinePosition_Element.Data.ToResoniteReference(context));
+members.Add("_timelineWidth", _timelineWidth_Element.Data.ToResoniteReference(context));
+members.Add("_positionDrive", _positionDrive_Element.Data.ToResoniteReference(context));
+members.Add("_volumeSlider", _volumeSlider_Element.Data.ToResoniteReference(context));
+members.Add("_volumePosition", _volumePosition_Element.Data.ToResoniteReference(context));
+members.Add("_volumeWidth", _volumeWidth_Element.Data.ToResoniteReference(context));
+members.Add("_volumeDrive", _volumeDrive_Element.Data.ToResoniteReference(context));
+members.Add("_buttonsWidth", _buttonsWidth_Element.Data.ToResoniteReference(context));
+members.Add("_buttonsHeight", _buttonsHeight_Element.Data.ToResoniteReference(context));
+members.Add("_buttonsPosition", _buttonsPosition_Element.Data.ToResoniteReference(context));
+members.Add("_playButtonColor", _playButtonColor_Element.Data.ToResoniteReference(context));
+members.Add("_pauseButtonColor", _pauseButtonColor_Element.Data.ToResoniteReference(context));
+members.Add("_stopButtonColor", _stopButtonColor_Element.Data.ToResoniteReference(context));
+members.Add("_loopButtonColor", _loopButtonColor_Element.Data.ToResoniteReference(context));
+members.Add("_audio3DButtonColor", _audio3DButtonColor_Element.Data.ToResoniteReference(context));
+members.Add("_exportable", _exportable_Element.Data.ToResoniteReference(context));
+members.Add("_assetProxy", _assetProxy_Element.Data.ToResoniteReference(context));
+members.Add("_referenceProxy", _referenceProxy_Element.Data.ToResoniteReference(context));
 }
 
 }

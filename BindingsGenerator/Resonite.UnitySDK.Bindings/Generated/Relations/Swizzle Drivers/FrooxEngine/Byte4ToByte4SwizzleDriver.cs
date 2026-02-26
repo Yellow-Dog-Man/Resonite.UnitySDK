@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.Byte4ToByte4SwizzleDriver
-// Generated on: středa 25. února 2026 16:14:15
+// Generated on: čtvrtek 26. února 2026 10:04:36
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,23 +20,29 @@ namespace FrooxEngine
 public partial class Byte4ToByte4SwizzleDriver : global::FrooxEngine.Component
 
 {
-    public global::FrooxEngine.IField<UnityEngine.Vector4Byte> Source;
-public global::FrooxEngine.IField<UnityEngine.Vector4Byte> Target;
-public global::System.Int32 X;
-public global::System.Int32 Y;
-public global::System.Int32 Z;
-public global::System.Int32 W;
+    public global::FrooxEngine.IField<UnityEngine.Vector4Byte> Source { get => Source_Element.Data; set => Source_Element.Data = value; }
+public Field<global::FrooxEngine.RelayRef<global::FrooxEngine.IField<UnityEngine.Vector4Byte>>, global::FrooxEngine.IField<UnityEngine.Vector4Byte>> Source_Element = new();
+public global::FrooxEngine.IField<UnityEngine.Vector4Byte> Target { get => Target_Element.Data; set => Target_Element.Data = value; }
+public Field<global::FrooxEngine.FieldDrive<UnityEngine.Vector4Byte>, global::FrooxEngine.IField<UnityEngine.Vector4Byte>> Target_Element = new();
+public global::System.Int32 X { get => X_Element.Data; set => X_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Int32>, global::System.Int32> X_Element = new();
+public global::System.Int32 Y { get => Y_Element.Data; set => Y_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Int32>, global::System.Int32> Y_Element = new();
+public global::System.Int32 Z { get => Z_Element.Data; set => Z_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Int32>, global::System.Int32> Z_Element = new();
+public global::System.Int32 W { get => W_Element.Data; set => W_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Int32>, global::System.Int32> W_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Source", Source.ToResoniteReference(context));
-members.Add("Target", Target.ToResoniteReference(context));
-members.Add("X", X.ToResoniteLinkField());
-members.Add("Y", Y.ToResoniteLinkField());
-members.Add("Z", Z.ToResoniteLinkField());
-members.Add("W", W.ToResoniteLinkField());
+members.Add("Source", Source_Element.Data.ToResoniteReference(context));
+members.Add("Target", Target_Element.Data.ToResoniteReference(context));
+members.Add("X", X_Element.Data.ToResoniteLinkField());
+members.Add("Y", Y_Element.Data.ToResoniteLinkField());
+members.Add("Z", Z_Element.Data.ToResoniteLinkField());
+members.Add("W", W_Element.Data.ToResoniteLinkField());
 }
 
 }

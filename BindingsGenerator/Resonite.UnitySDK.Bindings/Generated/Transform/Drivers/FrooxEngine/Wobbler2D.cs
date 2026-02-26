@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.Wobbler2D
-// Generated on: středa 25. února 2026 16:14:31
+// Generated on: čtvrtek 26. února 2026 10:04:42
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,21 +20,26 @@ namespace FrooxEngine
 public partial class Wobbler2D : global::FrooxEngine.Component
 
 {
-    public global::FrooxEngine.IField<UnityEngine.Vector2> Target;
-public UnityEngine.Vector2 Offset;
-public UnityEngine.Vector2 Speed;
-public UnityEngine.Vector2 Magnitude;
-public UnityEngine.Vector2 Seed;
+    public global::FrooxEngine.IField<UnityEngine.Vector2> Target { get => Target_Element.Data; set => Target_Element.Data = value; }
+public Field<global::FrooxEngine.FieldDrive<UnityEngine.Vector2>, global::FrooxEngine.IField<UnityEngine.Vector2>> Target_Element = new();
+public UnityEngine.Vector2 Offset { get => Offset_Element.Data; set => Offset_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.Vector2>, UnityEngine.Vector2> Offset_Element = new();
+public UnityEngine.Vector2 Speed { get => Speed_Element.Data; set => Speed_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.Vector2>, UnityEngine.Vector2> Speed_Element = new();
+public UnityEngine.Vector2 Magnitude { get => Magnitude_Element.Data; set => Magnitude_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.Vector2>, UnityEngine.Vector2> Magnitude_Element = new();
+public UnityEngine.Vector2 Seed { get => Seed_Element.Data; set => Seed_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.Vector2>, UnityEngine.Vector2> Seed_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Target", Target.ToResoniteReference(context));
-members.Add("Offset", Offset.ToResoniteLinkField());
-members.Add("Speed", Speed.ToResoniteLinkField());
-members.Add("Magnitude", Magnitude.ToResoniteLinkField());
-members.Add("Seed", Seed.ToResoniteLinkField());
+members.Add("Target", Target_Element.Data.ToResoniteReference(context));
+members.Add("Offset", Offset_Element.Data.ToResoniteLinkField());
+members.Add("Speed", Speed_Element.Data.ToResoniteLinkField());
+members.Add("Magnitude", Magnitude_Element.Data.ToResoniteLinkField());
+members.Add("Seed", Seed_Element.Data.ToResoniteLinkField());
 }
 
 }

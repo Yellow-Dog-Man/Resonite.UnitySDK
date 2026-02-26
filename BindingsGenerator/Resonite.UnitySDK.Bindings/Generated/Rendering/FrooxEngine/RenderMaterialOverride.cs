@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.RenderMaterialOverride
-// Generated on: středa 25. února 2026 16:14:17
+// Generated on: čtvrtek 26. února 2026 10:04:37
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,17 +20,18 @@ namespace FrooxEngine
 public partial class RenderMaterialOverride : global::FrooxEngine.RenderContextOverride
 
 {
-    public global::FrooxEngine.MeshRenderer Renderer;
-public System.Collections.Generic.List<global::FrooxEngine.RenderMaterialOverride.MaterialOverride> Overrides;
+    public global::FrooxEngine.MeshRenderer Renderer { get => Renderer_Element.Data; set => Renderer_Element.Data = value; }
+public Field<global::FrooxEngine.RelayRef<global::FrooxEngine.MeshRenderer>, global::FrooxEngine.MeshRenderer> Renderer_Element = new();
+public global::SyncList<global::FrooxEngine.SyncList<global::FrooxEngine.RenderMaterialOverride.MaterialOverride>, global::FrooxEngine.RenderMaterialOverride.MaterialOverride> Overrides = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Renderer", Renderer.ToResoniteReference(context));
+members.Add("Renderer", Renderer_Element.Data.ToResoniteReference(context));
 members.Add("Overrides", new ResoniteLink.SyncList()
 {
-    Elements = Overrides.ConvertList(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers(context) })
+    Elements = Overrides.Data.ConvertList(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers(context) })
 });
 }
 

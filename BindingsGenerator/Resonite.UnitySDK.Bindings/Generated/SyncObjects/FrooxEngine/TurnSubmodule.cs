@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.TurnSubmodule
-// Generated on: středa 25. února 2026 16:13:10
+// Generated on: čtvrtek 26. února 2026 10:03:40
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,15 +20,17 @@ namespace FrooxEngine
 public partial class TurnSubmodule : global::FrooxEngine.SyncObject
 
 {
-    public global::System.Boolean ThreeAxisRotation;
-public global::FrooxEngine.LocomotionController _controller;
+    public global::System.Boolean ThreeAxisRotation { get => ThreeAxisRotation_Element.Data; set => ThreeAxisRotation_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> ThreeAxisRotation_Element = new();
+public global::FrooxEngine.LocomotionController _controller { get => _controller_Element.Data; set => _controller_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.LocomotionController>, global::FrooxEngine.LocomotionController> _controller_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("ThreeAxisRotation", ThreeAxisRotation.ToResoniteLinkField());
-members.Add("_controller", _controller.ToResoniteReference(context));
+members.Add("ThreeAxisRotation", ThreeAxisRotation_Element.Data.ToResoniteLinkField());
+members.Add("_controller", _controller_Element.Data.ToResoniteReference(context));
 }
 
 }

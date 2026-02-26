@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [ProtoFluxBindings]FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.Strings.ConcatenateMultiString
-// Generated on: středa 25. února 2026 16:14:05
+// Generated on: čtvrtek 26. února 2026 10:04:30
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,7 +20,7 @@ namespace FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.Strings
 public partial class ConcatenateMultiString : global::FrooxEngine.ProtoFlux.Runtimes.Execution.ObjectFunctionNode<global::ProtoFlux.Runtimes.Execution.ExecutionContext,global::System.String>
 
 {
-    public System.Collections.Generic.List<global::FrooxEngine.ProtoFlux.INodeObjectOutput<global::System.String>> Inputs;
+    public global::SyncFieldList<global::FrooxEngine.SyncRefList<global::FrooxEngine.ProtoFlux.INodeObjectOutput<global::System.String>>, global::FrooxEngine.ProtoFlux.INodeObjectOutput<global::System.String>, Field<global::FrooxEngine.SyncRef<global::FrooxEngine.ProtoFlux.INodeObjectOutput<global::System.String>>, global::FrooxEngine.ProtoFlux.INodeObjectOutput<global::System.String>>> Inputs = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
@@ -28,7 +28,7 @@ public override void CollectMembers(
     base.CollectMembers(members, context);
 members.Add("Inputs", new ResoniteLink.SyncList()
 {
-    Elements = Inputs.ConvertList(m => m.ToResoniteReference(context))
+    Elements = Inputs.Data.ConvertList(m => m.Data.ToResoniteReference(context))
 });
 }
 

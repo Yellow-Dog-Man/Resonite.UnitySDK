@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.SessionItem
-// Generated on: středa 25. února 2026 16:14:43
+// Generated on: čtvrtek 26. února 2026 10:04:48
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,19 +20,23 @@ namespace FrooxEngine
 public partial class SessionItem : global::FrooxEngine.CircleThumbnailItem
 
 {
-    public global::FrooxEngine.UIX.Text _sessionName;
-public global::FrooxEngine.UIX.Text _sessionHost;
-public global::FrooxEngine.UIX.Text _userCount;
-public global::FrooxEngine.UIX.Button _joinButton;
+    public global::FrooxEngine.UIX.Text _sessionName { get => _sessionName_Element.Data; set => _sessionName_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.UIX.Text>, global::FrooxEngine.UIX.Text> _sessionName_Element = new();
+public global::FrooxEngine.UIX.Text _sessionHost { get => _sessionHost_Element.Data; set => _sessionHost_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.UIX.Text>, global::FrooxEngine.UIX.Text> _sessionHost_Element = new();
+public global::FrooxEngine.UIX.Text _userCount { get => _userCount_Element.Data; set => _userCount_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.UIX.Text>, global::FrooxEngine.UIX.Text> _userCount_Element = new();
+public global::FrooxEngine.UIX.Button _joinButton { get => _joinButton_Element.Data; set => _joinButton_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.UIX.Button>, global::FrooxEngine.UIX.Button> _joinButton_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("_sessionName", _sessionName.ToResoniteReference(context));
-members.Add("_sessionHost", _sessionHost.ToResoniteReference(context));
-members.Add("_userCount", _userCount.ToResoniteReference(context));
-members.Add("_joinButton", _joinButton.ToResoniteReference(context));
+members.Add("_sessionName", _sessionName_Element.Data.ToResoniteReference(context));
+members.Add("_sessionHost", _sessionHost_Element.Data.ToResoniteReference(context));
+members.Add("_userCount", _userCount_Element.Data.ToResoniteReference(context));
+members.Add("_joinButton", _joinButton_Element.Data.ToResoniteReference(context));
 }
 
 }

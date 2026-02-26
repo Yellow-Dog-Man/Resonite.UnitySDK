@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.AppVersion
-// Generated on: středa 25. února 2026 16:14:46
+// Generated on: čtvrtek 26. února 2026 10:04:50
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,25 +20,32 @@ namespace FrooxEngine
 public partial class AppVersion : global::FrooxEngine.Component
 
 {
-    public global::System.String VersionNumber;
-public global::System.String VersionName;
-public global::System.String FullVersionString;
-public global::System.Int32 BuildYear;
-public global::System.Int32 BuildMonth;
-public global::System.Int32 BuildDay;
-public global::System.Int32 BuildTimeOfDay;
+    public global::System.String VersionNumber { get => VersionNumber_Element.Data; set => VersionNumber_Element.Data = value; }
+public Field<global::FrooxEngine.RawOutput<global::System.String>, global::System.String> VersionNumber_Element = new();
+public global::System.String VersionName { get => VersionName_Element.Data; set => VersionName_Element.Data = value; }
+public Field<global::FrooxEngine.RawOutput<global::System.String>, global::System.String> VersionName_Element = new();
+public global::System.String FullVersionString { get => FullVersionString_Element.Data; set => FullVersionString_Element.Data = value; }
+public Field<global::FrooxEngine.RawOutput<global::System.String>, global::System.String> FullVersionString_Element = new();
+public global::System.Int32 BuildYear { get => BuildYear_Element.Data; set => BuildYear_Element.Data = value; }
+public Field<global::FrooxEngine.RawOutput<global::System.Int32>, global::System.Int32> BuildYear_Element = new();
+public global::System.Int32 BuildMonth { get => BuildMonth_Element.Data; set => BuildMonth_Element.Data = value; }
+public Field<global::FrooxEngine.RawOutput<global::System.Int32>, global::System.Int32> BuildMonth_Element = new();
+public global::System.Int32 BuildDay { get => BuildDay_Element.Data; set => BuildDay_Element.Data = value; }
+public Field<global::FrooxEngine.RawOutput<global::System.Int32>, global::System.Int32> BuildDay_Element = new();
+public global::System.Int32 BuildTimeOfDay { get => BuildTimeOfDay_Element.Data; set => BuildTimeOfDay_Element.Data = value; }
+public Field<global::FrooxEngine.RawOutput<global::System.Int32>, global::System.Int32> BuildTimeOfDay_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("VersionNumber", VersionNumber.ToResoniteLinkField());
-members.Add("VersionName", VersionName.ToResoniteLinkField());
-members.Add("FullVersionString", FullVersionString.ToResoniteLinkField());
-members.Add("BuildYear", BuildYear.ToResoniteLinkField());
-members.Add("BuildMonth", BuildMonth.ToResoniteLinkField());
-members.Add("BuildDay", BuildDay.ToResoniteLinkField());
-members.Add("BuildTimeOfDay", BuildTimeOfDay.ToResoniteLinkField());
+members.Add("VersionNumber", VersionNumber_Element.Data.ToResoniteLinkField());
+members.Add("VersionName", VersionName_Element.Data.ToResoniteLinkField());
+members.Add("FullVersionString", FullVersionString_Element.Data.ToResoniteLinkField());
+members.Add("BuildYear", BuildYear_Element.Data.ToResoniteLinkField());
+members.Add("BuildMonth", BuildMonth_Element.Data.ToResoniteLinkField());
+members.Add("BuildDay", BuildDay_Element.Data.ToResoniteLinkField());
+members.Add("BuildTimeOfDay", BuildTimeOfDay_Element.Data.ToResoniteLinkField());
 }
 
 }

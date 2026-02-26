@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.AudioListener
-// Generated on: středa 25. února 2026 16:13:05
+// Generated on: čtvrtek 26. února 2026 10:03:36
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,19 +20,21 @@ namespace FrooxEngine
 public partial class AudioListener : global::FrooxEngine.Component, global::FrooxEngine.IWorldAudioDataSource
 
 {
-    public global::FrooxEngine.User ActiveUser;
-public global::FrooxEngine.AudioListener.ListenerTarget TargetOutput;
-public System.Collections.Generic.List<global::FrooxEngine.AudioDSP_Effect> Effects;
+    public global::FrooxEngine.User ActiveUser { get => ActiveUser_Element.Data; set => ActiveUser_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.User>, global::FrooxEngine.User> ActiveUser_Element = new();
+public global::FrooxEngine.AudioListener.ListenerTarget TargetOutput { get => TargetOutput_Element.Data; set => TargetOutput_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::FrooxEngine.AudioListener.ListenerTarget>, global::FrooxEngine.AudioListener.ListenerTarget> TargetOutput_Element = new();
+public global::SyncFieldList<global::FrooxEngine.AutoSyncRefList<global::FrooxEngine.AudioDSP_Effect>, global::FrooxEngine.AudioDSP_Effect, Field<global::FrooxEngine.AutoSyncRef<global::FrooxEngine.AudioDSP_Effect>, global::FrooxEngine.AudioDSP_Effect>> Effects = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("ActiveUser", ActiveUser.ToResoniteReference(context));
-members.Add("TargetOutput", TargetOutput.ToResoniteLinkField());
+members.Add("ActiveUser", ActiveUser_Element.Data.ToResoniteReference(context));
+members.Add("TargetOutput", TargetOutput_Element.Data.ToResoniteLinkField());
 members.Add("Effects", new ResoniteLink.SyncList()
 {
-    Elements = Effects.ConvertList(m => m.ToResoniteReference(context))
+    Elements = Effects.Data.ConvertList(m => m.Data.ToResoniteReference(context))
 });
 }
 

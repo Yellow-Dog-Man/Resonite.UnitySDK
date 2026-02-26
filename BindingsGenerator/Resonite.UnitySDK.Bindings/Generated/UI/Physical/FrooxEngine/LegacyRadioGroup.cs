@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.LegacyRadioGroup
-// Generated on: středa 25. února 2026 16:14:33
+// Generated on: čtvrtek 26. února 2026 10:04:42
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,25 +20,32 @@ namespace FrooxEngine
 public partial class LegacyRadioGroup : global::FrooxEngine.LegacyUIElement, global::FrooxEngine.IRadioGroup, global::FrooxEngine.ILegacyUIElement
 
 {
-    public global::System.Boolean IsEnabled;
-public global::FrooxEngine.LegacyRadio _selectedOption;
-public global::FrooxEngine.Slot _choiceVisual;
-public global::FrooxEngine.IField<UnityEngine.Vector3> _choicePosition;
-public global::FrooxEngine.IField<UnityEngine.Quaternion> _choiceRotation;
-public global::FrooxEngine.IField<UnityEngine.Vector3> _choiceScale;
-public global::FrooxEngine.PBS_RimMetallic _choiceMaterial;
+    public global::System.Boolean IsEnabled { get => IsEnabled_Element.Data; set => IsEnabled_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> IsEnabled_Element = new();
+public global::FrooxEngine.LegacyRadio _selectedOption { get => _selectedOption_Element.Data; set => _selectedOption_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.LegacyRadio>, global::FrooxEngine.LegacyRadio> _selectedOption_Element = new();
+public global::FrooxEngine.Slot _choiceVisual { get => _choiceVisual_Element.Data; set => _choiceVisual_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> _choiceVisual_Element = new();
+public global::FrooxEngine.IField<UnityEngine.Vector3> _choicePosition { get => _choicePosition_Element.Data; set => _choicePosition_Element.Data = value; }
+public Field<global::FrooxEngine.FieldDrive<UnityEngine.Vector3>, global::FrooxEngine.IField<UnityEngine.Vector3>> _choicePosition_Element = new();
+public global::FrooxEngine.IField<UnityEngine.Quaternion> _choiceRotation { get => _choiceRotation_Element.Data; set => _choiceRotation_Element.Data = value; }
+public Field<global::FrooxEngine.FieldDrive<UnityEngine.Quaternion>, global::FrooxEngine.IField<UnityEngine.Quaternion>> _choiceRotation_Element = new();
+public global::FrooxEngine.IField<UnityEngine.Vector3> _choiceScale { get => _choiceScale_Element.Data; set => _choiceScale_Element.Data = value; }
+public Field<global::FrooxEngine.FieldDrive<UnityEngine.Vector3>, global::FrooxEngine.IField<UnityEngine.Vector3>> _choiceScale_Element = new();
+public global::FrooxEngine.PBS_RimMetallic _choiceMaterial { get => _choiceMaterial_Element.Data; set => _choiceMaterial_Element.Data = value; }
+public Field<global::FrooxEngine.DriveRef<global::FrooxEngine.PBS_RimMetallic>, global::FrooxEngine.PBS_RimMetallic> _choiceMaterial_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("IsEnabled", IsEnabled.ToResoniteLinkField());
-members.Add("_selectedOption", _selectedOption.ToResoniteReference(context));
-members.Add("_choiceVisual", _choiceVisual.ToResoniteReference(context));
-members.Add("_choicePosition", _choicePosition.ToResoniteReference(context));
-members.Add("_choiceRotation", _choiceRotation.ToResoniteReference(context));
-members.Add("_choiceScale", _choiceScale.ToResoniteReference(context));
-members.Add("_choiceMaterial", _choiceMaterial.ToResoniteReference(context));
+members.Add("IsEnabled", IsEnabled_Element.Data.ToResoniteLinkField());
+members.Add("_selectedOption", _selectedOption_Element.Data.ToResoniteReference(context));
+members.Add("_choiceVisual", _choiceVisual_Element.Data.ToResoniteReference(context));
+members.Add("_choicePosition", _choicePosition_Element.Data.ToResoniteReference(context));
+members.Add("_choiceRotation", _choiceRotation_Element.Data.ToResoniteReference(context));
+members.Add("_choiceScale", _choiceScale_Element.Data.ToResoniteReference(context));
+members.Add("_choiceMaterial", _choiceMaterial_Element.Data.ToResoniteReference(context));
 }
 
 }

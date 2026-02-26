@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.VirtualParent
-// Generated on: středa 25. února 2026 16:14:31
+// Generated on: čtvrtek 26. února 2026 10:04:42
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,25 +20,32 @@ namespace FrooxEngine
 public partial class VirtualParent : global::FrooxEngine.Component
 
 {
-    public global::FrooxEngine.Slot OverrideParent;
-public global::FrooxEngine.IField<UnityEngine.Vector3> _targetPos;
-public global::FrooxEngine.IField<UnityEngine.Quaternion> _targetRot;
-public global::FrooxEngine.IField<UnityEngine.Vector3> _targetScl;
-public UnityEngine.Vector3 LocalPosition;
-public UnityEngine.Quaternion LocalRotation;
-public UnityEngine.Vector3 LocalScale;
+    public global::FrooxEngine.Slot OverrideParent { get => OverrideParent_Element.Data; set => OverrideParent_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> OverrideParent_Element = new();
+public global::FrooxEngine.IField<UnityEngine.Vector3> _targetPos { get => _targetPos_Element.Data; set => _targetPos_Element.Data = value; }
+public Field<global::FrooxEngine.FieldDrive<UnityEngine.Vector3>, global::FrooxEngine.IField<UnityEngine.Vector3>> _targetPos_Element = new();
+public global::FrooxEngine.IField<UnityEngine.Quaternion> _targetRot { get => _targetRot_Element.Data; set => _targetRot_Element.Data = value; }
+public Field<global::FrooxEngine.FieldDrive<UnityEngine.Quaternion>, global::FrooxEngine.IField<UnityEngine.Quaternion>> _targetRot_Element = new();
+public global::FrooxEngine.IField<UnityEngine.Vector3> _targetScl { get => _targetScl_Element.Data; set => _targetScl_Element.Data = value; }
+public Field<global::FrooxEngine.FieldDrive<UnityEngine.Vector3>, global::FrooxEngine.IField<UnityEngine.Vector3>> _targetScl_Element = new();
+public UnityEngine.Vector3 LocalPosition { get => LocalPosition_Element.Data; set => LocalPosition_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.Vector3>, UnityEngine.Vector3> LocalPosition_Element = new();
+public UnityEngine.Quaternion LocalRotation { get => LocalRotation_Element.Data; set => LocalRotation_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.Quaternion>, UnityEngine.Quaternion> LocalRotation_Element = new();
+public UnityEngine.Vector3 LocalScale { get => LocalScale_Element.Data; set => LocalScale_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.Vector3>, UnityEngine.Vector3> LocalScale_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("OverrideParent", OverrideParent.ToResoniteReference(context));
-members.Add("_targetPos", _targetPos.ToResoniteReference(context));
-members.Add("_targetRot", _targetRot.ToResoniteReference(context));
-members.Add("_targetScl", _targetScl.ToResoniteReference(context));
-members.Add("LocalPosition", LocalPosition.ToResoniteLinkField());
-members.Add("LocalRotation", LocalRotation.ToResoniteLinkField());
-members.Add("LocalScale", LocalScale.ToResoniteLinkField());
+members.Add("OverrideParent", OverrideParent_Element.Data.ToResoniteReference(context));
+members.Add("_targetPos", _targetPos_Element.Data.ToResoniteReference(context));
+members.Add("_targetRot", _targetRot_Element.Data.ToResoniteReference(context));
+members.Add("_targetScl", _targetScl_Element.Data.ToResoniteReference(context));
+members.Add("LocalPosition", LocalPosition_Element.Data.ToResoniteLinkField());
+members.Add("LocalRotation", LocalRotation_Element.Data.ToResoniteLinkField());
+members.Add("LocalScale", LocalScale_Element.Data.ToResoniteLinkField());
 }
 
 }

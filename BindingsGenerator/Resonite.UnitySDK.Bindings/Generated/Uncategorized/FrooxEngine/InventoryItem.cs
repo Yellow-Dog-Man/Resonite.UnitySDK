@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.InventoryItem
-// Generated on: středa 25. února 2026 16:14:40
+// Generated on: čtvrtek 26. února 2026 10:04:46
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,17 +20,20 @@ namespace FrooxEngine
 public partial class InventoryItem : global::FrooxEngine.Component
 
 {
-    public global::System.Boolean RelativeToUserRoot;
-public UnityEngine.Quaternion SavedRotation;
-public UnityEngine.Vector3 SavedScale;
+    public global::System.Boolean RelativeToUserRoot { get => RelativeToUserRoot_Element.Data; set => RelativeToUserRoot_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> RelativeToUserRoot_Element = new();
+public UnityEngine.Quaternion SavedRotation { get => SavedRotation_Element.Data; set => SavedRotation_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.Quaternion>, UnityEngine.Quaternion> SavedRotation_Element = new();
+public UnityEngine.Vector3 SavedScale { get => SavedScale_Element.Data; set => SavedScale_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.Vector3>, UnityEngine.Vector3> SavedScale_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("RelativeToUserRoot", RelativeToUserRoot.ToResoniteLinkField());
-members.Add("SavedRotation", SavedRotation.ToResoniteLinkField());
-members.Add("SavedScale", SavedScale.ToResoniteLinkField());
+members.Add("RelativeToUserRoot", RelativeToUserRoot_Element.Data.ToResoniteLinkField());
+members.Add("SavedRotation", SavedRotation_Element.Data.ToResoniteLinkField());
+members.Add("SavedScale", SavedScale_Element.Data.ToResoniteLinkField());
 }
 
 }

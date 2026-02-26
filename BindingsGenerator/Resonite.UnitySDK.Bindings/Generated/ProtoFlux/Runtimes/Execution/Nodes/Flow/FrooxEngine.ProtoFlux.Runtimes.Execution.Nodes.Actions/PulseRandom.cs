@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [ProtoFluxBindings]FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.Actions.PulseRandom
-// Generated on: středa 25. února 2026 16:13:46
+// Generated on: čtvrtek 26. února 2026 10:04:14
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,7 +20,7 @@ namespace FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.Actions
 public partial class PulseRandom : global::FrooxEngine.ProtoFlux.Runtimes.Execution.ActionNode<global::ProtoFlux.Runtimes.Execution.ExecutionContext>
 
 {
-    public System.Collections.Generic.List<global::FrooxEngine.ProtoFlux.INodeOperation> Impulses;
+    public global::SyncFieldList<global::FrooxEngine.SyncRefList<global::FrooxEngine.ProtoFlux.INodeOperation>, global::FrooxEngine.ProtoFlux.INodeOperation, Field<global::FrooxEngine.SyncRef<global::FrooxEngine.ProtoFlux.INodeOperation>, global::FrooxEngine.ProtoFlux.INodeOperation>> Impulses = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
@@ -28,7 +28,7 @@ public override void CollectMembers(
     base.CollectMembers(members, context);
 members.Add("Impulses", new ResoniteLink.SyncList()
 {
-    Elements = Impulses.ConvertList(m => m.ToResoniteReference(context))
+    Elements = Impulses.Data.ConvertList(m => m.Data.ToResoniteReference(context))
 });
 }
 

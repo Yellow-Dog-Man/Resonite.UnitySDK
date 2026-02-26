@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.VolumeTranslationGizmo
-// Generated on: středa 25. února 2026 16:14:43
+// Generated on: čtvrtek 26. února 2026 10:04:48
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,29 +20,37 @@ namespace FrooxEngine
 public partial class VolumeTranslationGizmo : global::FrooxEngine.Gizmo
 
 {
-    public global::FrooxEngine.RootSpace PointSpace;
-public global::FrooxEngine.IField<UnityEngine.Vector3> TargetPoint;
-public global::System.Boolean UseCustomVisual;
-public global::FrooxEngine.Slot _customVisualRoot;
-public global::FrooxEngine.Slot _visualRoot;
-public global::System.Single CubeSize;
-public global::System.Boolean CreateUndoSteps;
-public global::FrooxEngine.IField<UnityEngine.Vector3> _cubeSize;
-public global::FrooxEngine.IField<UnityEngine.Vector3> _colliderSize;
+    public global::FrooxEngine.RootSpace PointSpace = new();
+public global::FrooxEngine.IField<UnityEngine.Vector3> TargetPoint { get => TargetPoint_Element.Data; set => TargetPoint_Element.Data = value; }
+public Field<global::FrooxEngine.RelayRef<global::FrooxEngine.IField<UnityEngine.Vector3>>, global::FrooxEngine.IField<UnityEngine.Vector3>> TargetPoint_Element = new();
+public global::System.Boolean UseCustomVisual { get => UseCustomVisual_Element.Data; set => UseCustomVisual_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> UseCustomVisual_Element = new();
+public global::FrooxEngine.Slot _customVisualRoot { get => _customVisualRoot_Element.Data; set => _customVisualRoot_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> _customVisualRoot_Element = new();
+public global::FrooxEngine.Slot _visualRoot { get => _visualRoot_Element.Data; set => _visualRoot_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> _visualRoot_Element = new();
+public global::System.Single CubeSize { get => CubeSize_Element.Data; set => CubeSize_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> CubeSize_Element = new();
+public global::System.Boolean CreateUndoSteps { get => CreateUndoSteps_Element.Data; set => CreateUndoSteps_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> CreateUndoSteps_Element = new();
+public global::FrooxEngine.IField<UnityEngine.Vector3> _cubeSize { get => _cubeSize_Element.Data; set => _cubeSize_Element.Data = value; }
+public Field<global::FrooxEngine.FieldDrive<UnityEngine.Vector3>, global::FrooxEngine.IField<UnityEngine.Vector3>> _cubeSize_Element = new();
+public global::FrooxEngine.IField<UnityEngine.Vector3> _colliderSize { get => _colliderSize_Element.Data; set => _colliderSize_Element.Data = value; }
+public Field<global::FrooxEngine.FieldDrive<UnityEngine.Vector3>, global::FrooxEngine.IField<UnityEngine.Vector3>> _colliderSize_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
 members.Add("PointSpace", new ResoniteLink.SyncObject() { Members = PointSpace.CollectMembers(context) });
-members.Add("TargetPoint", TargetPoint.ToResoniteReference(context));
-members.Add("UseCustomVisual", UseCustomVisual.ToResoniteLinkField());
-members.Add("_customVisualRoot", _customVisualRoot.ToResoniteReference(context));
-members.Add("_visualRoot", _visualRoot.ToResoniteReference(context));
-members.Add("CubeSize", CubeSize.ToResoniteLinkField());
-members.Add("CreateUndoSteps", CreateUndoSteps.ToResoniteLinkField());
-members.Add("_cubeSize", _cubeSize.ToResoniteReference(context));
-members.Add("_colliderSize", _colliderSize.ToResoniteReference(context));
+members.Add("TargetPoint", TargetPoint_Element.Data.ToResoniteReference(context));
+members.Add("UseCustomVisual", UseCustomVisual_Element.Data.ToResoniteLinkField());
+members.Add("_customVisualRoot", _customVisualRoot_Element.Data.ToResoniteReference(context));
+members.Add("_visualRoot", _visualRoot_Element.Data.ToResoniteReference(context));
+members.Add("CubeSize", CubeSize_Element.Data.ToResoniteLinkField());
+members.Add("CreateUndoSteps", CreateUndoSteps_Element.Data.ToResoniteLinkField());
+members.Add("_cubeSize", _cubeSize_Element.Data.ToResoniteReference(context));
+members.Add("_colliderSize", _colliderSize_Element.Data.ToResoniteReference(context));
 }
 
 }

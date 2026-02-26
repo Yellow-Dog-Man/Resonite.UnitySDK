@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.Light
-// Generated on: středa 25. února 2026 16:13:03
+// Generated on: čtvrtek 26. února 2026 10:03:34
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,35 +20,47 @@ namespace FrooxEngine
 public partial class Light : global::FrooxEngine.ChangeHandlingRenderableComponent, global::FrooxEngine.IRenderable
 
 {
-    public global::Renderite.Shared.LightType LightType;
-public global::System.Single Intensity;
-public UnityEngine.ColorX Color;
-public global::Renderite.Shared.ShadowType ShadowType;
-public global::System.Single ShadowStrength;
-public global::System.Single ShadowNearPlane;
-public global::System.Int32 ShadowMapResolution;
-public global::System.Single ShadowBias;
-public global::System.Single ShadowNormalBias;
-public global::System.Single Range;
-public global::System.Single SpotAngle;
-public global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture> Cookie;
+    public global::Renderite.Shared.LightType LightType { get => LightType_Element.Data; set => LightType_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::Renderite.Shared.LightType>, global::Renderite.Shared.LightType> LightType_Element = new();
+public global::System.Single Intensity { get => Intensity_Element.Data; set => Intensity_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> Intensity_Element = new();
+public UnityEngine.ColorX Color { get => Color_Element.Data; set => Color_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.ColorX>, UnityEngine.ColorX> Color_Element = new();
+public global::Renderite.Shared.ShadowType ShadowType { get => ShadowType_Element.Data; set => ShadowType_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::Renderite.Shared.ShadowType>, global::Renderite.Shared.ShadowType> ShadowType_Element = new();
+public global::System.Single ShadowStrength { get => ShadowStrength_Element.Data; set => ShadowStrength_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> ShadowStrength_Element = new();
+public global::System.Single ShadowNearPlane { get => ShadowNearPlane_Element.Data; set => ShadowNearPlane_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> ShadowNearPlane_Element = new();
+public global::System.Int32 ShadowMapResolution { get => ShadowMapResolution_Element.Data; set => ShadowMapResolution_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Int32>, global::System.Int32> ShadowMapResolution_Element = new();
+public global::System.Single ShadowBias { get => ShadowBias_Element.Data; set => ShadowBias_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> ShadowBias_Element = new();
+public global::System.Single ShadowNormalBias { get => ShadowNormalBias_Element.Data; set => ShadowNormalBias_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> ShadowNormalBias_Element = new();
+public global::System.Single Range { get => Range_Element.Data; set => Range_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> Range_Element = new();
+public global::System.Single SpotAngle { get => SpotAngle_Element.Data; set => SpotAngle_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> SpotAngle_Element = new();
+public global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture> Cookie { get => Cookie_Element.Data; set => Cookie_Element.Data = value; }
+public Field<global::FrooxEngine.AssetRef<global::FrooxEngine.ITexture>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture>> Cookie_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("LightType", LightType.ToResoniteLinkField());
-members.Add("Intensity", Intensity.ToResoniteLinkField());
-members.Add("Color", Color.ToResoniteLinkField());
-members.Add("ShadowType", ShadowType.ToResoniteLinkField());
-members.Add("ShadowStrength", ShadowStrength.ToResoniteLinkField());
-members.Add("ShadowNearPlane", ShadowNearPlane.ToResoniteLinkField());
-members.Add("ShadowMapResolution", ShadowMapResolution.ToResoniteLinkField());
-members.Add("ShadowBias", ShadowBias.ToResoniteLinkField());
-members.Add("ShadowNormalBias", ShadowNormalBias.ToResoniteLinkField());
-members.Add("Range", Range.ToResoniteLinkField());
-members.Add("SpotAngle", SpotAngle.ToResoniteLinkField());
-members.Add("Cookie", Cookie.ToResoniteReference(context));
+members.Add("LightType", LightType_Element.Data.ToResoniteLinkField());
+members.Add("Intensity", Intensity_Element.Data.ToResoniteLinkField());
+members.Add("Color", Color_Element.Data.ToResoniteLinkField());
+members.Add("ShadowType", ShadowType_Element.Data.ToResoniteLinkField());
+members.Add("ShadowStrength", ShadowStrength_Element.Data.ToResoniteLinkField());
+members.Add("ShadowNearPlane", ShadowNearPlane_Element.Data.ToResoniteLinkField());
+members.Add("ShadowMapResolution", ShadowMapResolution_Element.Data.ToResoniteLinkField());
+members.Add("ShadowBias", ShadowBias_Element.Data.ToResoniteLinkField());
+members.Add("ShadowNormalBias", ShadowNormalBias_Element.Data.ToResoniteLinkField());
+members.Add("Range", Range_Element.Data.ToResoniteLinkField());
+members.Add("SpotAngle", SpotAngle_Element.Data.ToResoniteLinkField());
+members.Add("Cookie", Cookie_Element.Data.ToResoniteReference(context));
 }
 
 }

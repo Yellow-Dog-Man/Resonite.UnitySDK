@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.ConstantCharacterControllerModifier
-// Generated on: středa 25. února 2026 16:13:10
+// Generated on: čtvrtek 26. února 2026 10:03:40
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,13 +20,14 @@ namespace FrooxEngine
 public partial class ConstantCharacterControllerModifier : global::FrooxEngine.CharacterControllerModifier
 
 {
-    public global::System.Single Value;
+    public global::System.Single Value { get => Value_Element.Data; set => Value_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> Value_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Value", Value.ToResoniteLinkField());
+members.Add("Value", Value_Element.Data.ToResoniteLinkField());
 }
 
 }

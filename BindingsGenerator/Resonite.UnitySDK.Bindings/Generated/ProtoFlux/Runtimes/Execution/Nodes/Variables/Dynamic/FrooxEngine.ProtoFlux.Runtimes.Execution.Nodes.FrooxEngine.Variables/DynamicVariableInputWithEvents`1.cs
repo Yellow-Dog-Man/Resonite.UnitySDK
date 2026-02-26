@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [ProtoFluxBindings]FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Variables.DynamicVariableInputWithEvents<>
-// Generated on: středa 25. února 2026 16:14:13
+// Generated on: čtvrtek 26. února 2026 10:04:34
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -21,17 +21,20 @@ public abstract partial class DynamicVariableInputWithEvents<T> : global::FrooxE
 	
 
 {
-    public global::FrooxEngine.ProtoFlux.INodeObjectOutput<global::FrooxEngine.User> DetectingUser;
-public global::FrooxEngine.ProtoFlux.ISyncNodeOperation OnSpaceLinked;
-public global::FrooxEngine.ProtoFlux.ISyncNodeOperation OnSpaceUnlinked;
+    public global::FrooxEngine.ProtoFlux.INodeObjectOutput<global::FrooxEngine.User> DetectingUser { get => DetectingUser_Element.Data; set => DetectingUser_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.ProtoFlux.INodeObjectOutput<global::FrooxEngine.User>>, global::FrooxEngine.ProtoFlux.INodeObjectOutput<global::FrooxEngine.User>> DetectingUser_Element = new();
+public global::FrooxEngine.ProtoFlux.ISyncNodeOperation OnSpaceLinked { get => OnSpaceLinked_Element.Data; set => OnSpaceLinked_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.ProtoFlux.ISyncNodeOperation>, global::FrooxEngine.ProtoFlux.ISyncNodeOperation> OnSpaceLinked_Element = new();
+public global::FrooxEngine.ProtoFlux.ISyncNodeOperation OnSpaceUnlinked { get => OnSpaceUnlinked_Element.Data; set => OnSpaceUnlinked_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.ProtoFlux.ISyncNodeOperation>, global::FrooxEngine.ProtoFlux.ISyncNodeOperation> OnSpaceUnlinked_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("DetectingUser", DetectingUser.ToResoniteReference(context));
-members.Add("OnSpaceLinked", OnSpaceLinked.ToResoniteReference(context));
-members.Add("OnSpaceUnlinked", OnSpaceUnlinked.ToResoniteReference(context));
+members.Add("DetectingUser", DetectingUser_Element.Data.ToResoniteReference(context));
+members.Add("OnSpaceLinked", OnSpaceLinked_Element.Data.ToResoniteReference(context));
+members.Add("OnSpaceUnlinked", OnSpaceUnlinked_Element.Data.ToResoniteReference(context));
 }
 
 }

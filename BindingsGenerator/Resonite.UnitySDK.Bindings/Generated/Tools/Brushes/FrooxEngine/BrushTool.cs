@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.BrushTool
-// Generated on: středa 25. února 2026 16:14:27
+// Generated on: čtvrtek 26. února 2026 10:04:39
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,105 +20,146 @@ namespace FrooxEngine
 public abstract partial class BrushTool : global::FrooxEngine.Tool
 
 {
-    public global::System.Single FixedMinimumPointDistance;
-public global::System.Single PositionSmoothing;
-public global::System.Single RotationSmoothing;
-public global::System.Single PressureSmoothing;
-public global::System.Single MaxStrokeLength;
-public global::System.Single StrokeFadeInLength;
-public global::System.Single StrokeFadeOutLength;
-public global::System.Single StrokeGroupFinishWaitTime;
-public global::System.Single ActivationThreshold;
-public global::System.Single DeactivationThresholdRatio;
-public global::System.Single MenuSizeChange;
-public global::System.Boolean SnapTip;
-public global::System.Boolean SnapLine;
-public global::FrooxEngine.RootSpace StrokesSpace;
-public global::System.Boolean MakeStrokesGrabbable;
-public global::System.Boolean PositionStrokesToTip;
-public global::System.Boolean OrientStrokesToTip;
-public global::System.Boolean ScaleStrokesToUser;
-public global::System.Boolean PickMaterials;
-public global::System.Boolean PickColors;
-public global::FrooxEngine.IAssetProvider<global::FrooxEngine.Material> CurrentMaterial;
-public System.Collections.Generic.List<global::FrooxEngine.BrushTool.ColorMapping> ColorMappings;
-public global::FrooxEngine.PhotonDust.ParticleSystem ParticleSystem;
-public global::FrooxEngine.PhotonDust.MeshEmitter MeshEmitterTemplate;
-public global::FrooxEngine.BrushTool.TemplateHandling ParticleTemplateHandling;
-public global::System.Nullable<global::System.Single> EmissionRatePerUnitLength;
-public global::FrooxEngine.ColorDialogInterface _colorPicker;
-public UnityEngine.ColorX _pickedColor;
-public System.Collections.Generic.List<global::FrooxEngine.Slot> _hideOnStroke;
-public global::FrooxEngine.IAssetProvider<global::FrooxEngine.Material> _lastUsedMaterial;
-public global::FrooxEngine.IAssetProvider<global::FrooxEngine.Material> _lastCreatedMaterial;
-public global::System.Single Pressure;
-public UnityEngine.Vector3 Position;
-public UnityEngine.Quaternion Rotation;
-public UnityEngine.Vector3 LastPointDelta;
-public UnityEngine.Vector3 Velocity;
-public UnityEngine.Vector3 RawDelta;
-public UnityEngine.Vector3 RawVelocity;
-public global::System.Single RawStrokeLength;
-public global::System.Single StrokeLength;
-public global::System.Single NormalizedStrokeLength;
-public global::System.Single StrokeFadeMultiplier;
-public global::System.Int32 StrokeGroupIndex;
-public global::System.Boolean StrokeGroupActive;
+    public global::System.Single FixedMinimumPointDistance { get => FixedMinimumPointDistance_Element.Data; set => FixedMinimumPointDistance_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> FixedMinimumPointDistance_Element = new();
+public global::System.Single PositionSmoothing { get => PositionSmoothing_Element.Data; set => PositionSmoothing_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> PositionSmoothing_Element = new();
+public global::System.Single RotationSmoothing { get => RotationSmoothing_Element.Data; set => RotationSmoothing_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> RotationSmoothing_Element = new();
+public global::System.Single PressureSmoothing { get => PressureSmoothing_Element.Data; set => PressureSmoothing_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> PressureSmoothing_Element = new();
+public global::System.Single MaxStrokeLength { get => MaxStrokeLength_Element.Data; set => MaxStrokeLength_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> MaxStrokeLength_Element = new();
+public global::System.Single StrokeFadeInLength { get => StrokeFadeInLength_Element.Data; set => StrokeFadeInLength_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> StrokeFadeInLength_Element = new();
+public global::System.Single StrokeFadeOutLength { get => StrokeFadeOutLength_Element.Data; set => StrokeFadeOutLength_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> StrokeFadeOutLength_Element = new();
+public global::System.Single StrokeGroupFinishWaitTime { get => StrokeGroupFinishWaitTime_Element.Data; set => StrokeGroupFinishWaitTime_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> StrokeGroupFinishWaitTime_Element = new();
+public global::System.Single ActivationThreshold { get => ActivationThreshold_Element.Data; set => ActivationThreshold_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> ActivationThreshold_Element = new();
+public global::System.Single DeactivationThresholdRatio { get => DeactivationThresholdRatio_Element.Data; set => DeactivationThresholdRatio_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> DeactivationThresholdRatio_Element = new();
+public global::System.Single MenuSizeChange { get => MenuSizeChange_Element.Data; set => MenuSizeChange_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> MenuSizeChange_Element = new();
+public global::System.Boolean SnapTip { get => SnapTip_Element.Data; set => SnapTip_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> SnapTip_Element = new();
+public global::System.Boolean SnapLine { get => SnapLine_Element.Data; set => SnapLine_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> SnapLine_Element = new();
+public global::FrooxEngine.RootSpace StrokesSpace = new();
+public global::System.Boolean MakeStrokesGrabbable { get => MakeStrokesGrabbable_Element.Data; set => MakeStrokesGrabbable_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> MakeStrokesGrabbable_Element = new();
+public global::System.Boolean PositionStrokesToTip { get => PositionStrokesToTip_Element.Data; set => PositionStrokesToTip_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> PositionStrokesToTip_Element = new();
+public global::System.Boolean OrientStrokesToTip { get => OrientStrokesToTip_Element.Data; set => OrientStrokesToTip_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> OrientStrokesToTip_Element = new();
+public global::System.Boolean ScaleStrokesToUser { get => ScaleStrokesToUser_Element.Data; set => ScaleStrokesToUser_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> ScaleStrokesToUser_Element = new();
+public global::System.Boolean PickMaterials { get => PickMaterials_Element.Data; set => PickMaterials_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> PickMaterials_Element = new();
+public global::System.Boolean PickColors { get => PickColors_Element.Data; set => PickColors_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> PickColors_Element = new();
+public global::FrooxEngine.IAssetProvider<global::FrooxEngine.Material> CurrentMaterial { get => CurrentMaterial_Element.Data; set => CurrentMaterial_Element.Data = value; }
+public Field<global::FrooxEngine.AssetRef<global::FrooxEngine.Material>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.Material>> CurrentMaterial_Element = new();
+public global::SyncList<global::FrooxEngine.SyncList<global::FrooxEngine.BrushTool.ColorMapping>, global::FrooxEngine.BrushTool.ColorMapping> ColorMappings = new();
+public global::FrooxEngine.PhotonDust.ParticleSystem ParticleSystem { get => ParticleSystem_Element.Data; set => ParticleSystem_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.PhotonDust.ParticleSystem>, global::FrooxEngine.PhotonDust.ParticleSystem> ParticleSystem_Element = new();
+public global::FrooxEngine.PhotonDust.MeshEmitter MeshEmitterTemplate { get => MeshEmitterTemplate_Element.Data; set => MeshEmitterTemplate_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.PhotonDust.MeshEmitter>, global::FrooxEngine.PhotonDust.MeshEmitter> MeshEmitterTemplate_Element = new();
+public global::FrooxEngine.BrushTool.TemplateHandling ParticleTemplateHandling { get => ParticleTemplateHandling_Element.Data; set => ParticleTemplateHandling_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::FrooxEngine.BrushTool.TemplateHandling>, global::FrooxEngine.BrushTool.TemplateHandling> ParticleTemplateHandling_Element = new();
+public global::System.Nullable<global::System.Single> EmissionRatePerUnitLength { get => EmissionRatePerUnitLength_Element.Data; set => EmissionRatePerUnitLength_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Nullable<global::System.Single>>, global::System.Nullable<global::System.Single>> EmissionRatePerUnitLength_Element = new();
+public global::FrooxEngine.ColorDialogInterface _colorPicker { get => _colorPicker_Element.Data; set => _colorPicker_Element.Data = value; }
+public Field<global::FrooxEngine.SlotCleanupRef<global::FrooxEngine.ColorDialogInterface>, global::FrooxEngine.ColorDialogInterface> _colorPicker_Element = new();
+public UnityEngine.ColorX _pickedColor { get => _pickedColor_Element.Data; set => _pickedColor_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.ColorX>, UnityEngine.ColorX> _pickedColor_Element = new();
+public global::SyncFieldList<global::FrooxEngine.SyncRefList<global::FrooxEngine.Slot>, global::FrooxEngine.Slot, Field<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot>> _hideOnStroke = new();
+public global::FrooxEngine.IAssetProvider<global::FrooxEngine.Material> _lastUsedMaterial { get => _lastUsedMaterial_Element.Data; set => _lastUsedMaterial_Element.Data = value; }
+public Field<global::FrooxEngine.AssetRef<global::FrooxEngine.Material>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.Material>> _lastUsedMaterial_Element = new();
+public global::FrooxEngine.IAssetProvider<global::FrooxEngine.Material> _lastCreatedMaterial { get => _lastCreatedMaterial_Element.Data; set => _lastCreatedMaterial_Element.Data = value; }
+public Field<global::FrooxEngine.AssetRef<global::FrooxEngine.Material>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.Material>> _lastCreatedMaterial_Element = new();
+public global::System.Single Pressure { get => Pressure_Element.Data; set => Pressure_Element.Data = value; }
+public Field<global::FrooxEngine.RawOutput<global::System.Single>, global::System.Single> Pressure_Element = new();
+public UnityEngine.Vector3 Position { get => Position_Element.Data; set => Position_Element.Data = value; }
+public Field<global::FrooxEngine.RawOutput<UnityEngine.Vector3>, UnityEngine.Vector3> Position_Element = new();
+public UnityEngine.Quaternion Rotation { get => Rotation_Element.Data; set => Rotation_Element.Data = value; }
+public Field<global::FrooxEngine.RawOutput<UnityEngine.Quaternion>, UnityEngine.Quaternion> Rotation_Element = new();
+public UnityEngine.Vector3 LastPointDelta { get => LastPointDelta_Element.Data; set => LastPointDelta_Element.Data = value; }
+public Field<global::FrooxEngine.RawOutput<UnityEngine.Vector3>, UnityEngine.Vector3> LastPointDelta_Element = new();
+public UnityEngine.Vector3 Velocity { get => Velocity_Element.Data; set => Velocity_Element.Data = value; }
+public Field<global::FrooxEngine.RawOutput<UnityEngine.Vector3>, UnityEngine.Vector3> Velocity_Element = new();
+public UnityEngine.Vector3 RawDelta { get => RawDelta_Element.Data; set => RawDelta_Element.Data = value; }
+public Field<global::FrooxEngine.RawOutput<UnityEngine.Vector3>, UnityEngine.Vector3> RawDelta_Element = new();
+public UnityEngine.Vector3 RawVelocity { get => RawVelocity_Element.Data; set => RawVelocity_Element.Data = value; }
+public Field<global::FrooxEngine.RawOutput<UnityEngine.Vector3>, UnityEngine.Vector3> RawVelocity_Element = new();
+public global::System.Single RawStrokeLength { get => RawStrokeLength_Element.Data; set => RawStrokeLength_Element.Data = value; }
+public Field<global::FrooxEngine.RawOutput<global::System.Single>, global::System.Single> RawStrokeLength_Element = new();
+public global::System.Single StrokeLength { get => StrokeLength_Element.Data; set => StrokeLength_Element.Data = value; }
+public Field<global::FrooxEngine.RawOutput<global::System.Single>, global::System.Single> StrokeLength_Element = new();
+public global::System.Single NormalizedStrokeLength { get => NormalizedStrokeLength_Element.Data; set => NormalizedStrokeLength_Element.Data = value; }
+public Field<global::FrooxEngine.RawOutput<global::System.Single>, global::System.Single> NormalizedStrokeLength_Element = new();
+public global::System.Single StrokeFadeMultiplier { get => StrokeFadeMultiplier_Element.Data; set => StrokeFadeMultiplier_Element.Data = value; }
+public Field<global::FrooxEngine.RawOutput<global::System.Single>, global::System.Single> StrokeFadeMultiplier_Element = new();
+public global::System.Int32 StrokeGroupIndex { get => StrokeGroupIndex_Element.Data; set => StrokeGroupIndex_Element.Data = value; }
+public Field<global::FrooxEngine.RawOutput<global::System.Int32>, global::System.Int32> StrokeGroupIndex_Element = new();
+public global::System.Boolean StrokeGroupActive { get => StrokeGroupActive_Element.Data; set => StrokeGroupActive_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> StrokeGroupActive_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("FixedMinimumPointDistance", FixedMinimumPointDistance.ToResoniteLinkField());
-members.Add("PositionSmoothing", PositionSmoothing.ToResoniteLinkField());
-members.Add("RotationSmoothing", RotationSmoothing.ToResoniteLinkField());
-members.Add("PressureSmoothing", PressureSmoothing.ToResoniteLinkField());
-members.Add("MaxStrokeLength", MaxStrokeLength.ToResoniteLinkField());
-members.Add("StrokeFadeInLength", StrokeFadeInLength.ToResoniteLinkField());
-members.Add("StrokeFadeOutLength", StrokeFadeOutLength.ToResoniteLinkField());
-members.Add("StrokeGroupFinishWaitTime", StrokeGroupFinishWaitTime.ToResoniteLinkField());
-members.Add("ActivationThreshold", ActivationThreshold.ToResoniteLinkField());
-members.Add("DeactivationThresholdRatio", DeactivationThresholdRatio.ToResoniteLinkField());
-members.Add("MenuSizeChange", MenuSizeChange.ToResoniteLinkField());
-members.Add("SnapTip", SnapTip.ToResoniteLinkField());
-members.Add("SnapLine", SnapLine.ToResoniteLinkField());
+members.Add("FixedMinimumPointDistance", FixedMinimumPointDistance_Element.Data.ToResoniteLinkField());
+members.Add("PositionSmoothing", PositionSmoothing_Element.Data.ToResoniteLinkField());
+members.Add("RotationSmoothing", RotationSmoothing_Element.Data.ToResoniteLinkField());
+members.Add("PressureSmoothing", PressureSmoothing_Element.Data.ToResoniteLinkField());
+members.Add("MaxStrokeLength", MaxStrokeLength_Element.Data.ToResoniteLinkField());
+members.Add("StrokeFadeInLength", StrokeFadeInLength_Element.Data.ToResoniteLinkField());
+members.Add("StrokeFadeOutLength", StrokeFadeOutLength_Element.Data.ToResoniteLinkField());
+members.Add("StrokeGroupFinishWaitTime", StrokeGroupFinishWaitTime_Element.Data.ToResoniteLinkField());
+members.Add("ActivationThreshold", ActivationThreshold_Element.Data.ToResoniteLinkField());
+members.Add("DeactivationThresholdRatio", DeactivationThresholdRatio_Element.Data.ToResoniteLinkField());
+members.Add("MenuSizeChange", MenuSizeChange_Element.Data.ToResoniteLinkField());
+members.Add("SnapTip", SnapTip_Element.Data.ToResoniteLinkField());
+members.Add("SnapLine", SnapLine_Element.Data.ToResoniteLinkField());
 members.Add("StrokesSpace", new ResoniteLink.SyncObject() { Members = StrokesSpace.CollectMembers(context) });
-members.Add("MakeStrokesGrabbable", MakeStrokesGrabbable.ToResoniteLinkField());
-members.Add("PositionStrokesToTip", PositionStrokesToTip.ToResoniteLinkField());
-members.Add("OrientStrokesToTip", OrientStrokesToTip.ToResoniteLinkField());
-members.Add("ScaleStrokesToUser", ScaleStrokesToUser.ToResoniteLinkField());
-members.Add("PickMaterials", PickMaterials.ToResoniteLinkField());
-members.Add("PickColors", PickColors.ToResoniteLinkField());
-members.Add("CurrentMaterial", CurrentMaterial.ToResoniteReference(context));
+members.Add("MakeStrokesGrabbable", MakeStrokesGrabbable_Element.Data.ToResoniteLinkField());
+members.Add("PositionStrokesToTip", PositionStrokesToTip_Element.Data.ToResoniteLinkField());
+members.Add("OrientStrokesToTip", OrientStrokesToTip_Element.Data.ToResoniteLinkField());
+members.Add("ScaleStrokesToUser", ScaleStrokesToUser_Element.Data.ToResoniteLinkField());
+members.Add("PickMaterials", PickMaterials_Element.Data.ToResoniteLinkField());
+members.Add("PickColors", PickColors_Element.Data.ToResoniteLinkField());
+members.Add("CurrentMaterial", CurrentMaterial_Element.Data.ToResoniteReference(context));
 members.Add("ColorMappings", new ResoniteLink.SyncList()
 {
-    Elements = ColorMappings.ConvertList(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers(context) })
+    Elements = ColorMappings.Data.ConvertList(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers(context) })
 });
-members.Add("ParticleSystem", ParticleSystem.ToResoniteReference(context));
-members.Add("MeshEmitterTemplate", MeshEmitterTemplate.ToResoniteReference(context));
-members.Add("ParticleTemplateHandling", ParticleTemplateHandling.ToResoniteLinkField());
-members.Add("EmissionRatePerUnitLength", EmissionRatePerUnitLength.ToResoniteLinkField());
-members.Add("_colorPicker", _colorPicker.ToResoniteReference(context));
-members.Add("_pickedColor", _pickedColor.ToResoniteLinkField());
+members.Add("ParticleSystem", ParticleSystem_Element.Data.ToResoniteReference(context));
+members.Add("MeshEmitterTemplate", MeshEmitterTemplate_Element.Data.ToResoniteReference(context));
+members.Add("ParticleTemplateHandling", ParticleTemplateHandling_Element.Data.ToResoniteLinkField());
+members.Add("EmissionRatePerUnitLength", EmissionRatePerUnitLength_Element.Data.ToResoniteLinkField());
+members.Add("_colorPicker", _colorPicker_Element.Data.ToResoniteReference(context));
+members.Add("_pickedColor", _pickedColor_Element.Data.ToResoniteLinkField());
 members.Add("_hideOnStroke", new ResoniteLink.SyncList()
 {
-    Elements = _hideOnStroke.ConvertList(m => m.ToResoniteReference(context))
+    Elements = _hideOnStroke.Data.ConvertList(m => m.Data.ToResoniteReference(context))
 });
-members.Add("_lastUsedMaterial", _lastUsedMaterial.ToResoniteReference(context));
-members.Add("_lastCreatedMaterial", _lastCreatedMaterial.ToResoniteReference(context));
-members.Add("Pressure", Pressure.ToResoniteLinkField());
-members.Add("Position", Position.ToResoniteLinkField());
-members.Add("Rotation", Rotation.ToResoniteLinkField());
-members.Add("LastPointDelta", LastPointDelta.ToResoniteLinkField());
-members.Add("Velocity", Velocity.ToResoniteLinkField());
-members.Add("RawDelta", RawDelta.ToResoniteLinkField());
-members.Add("RawVelocity", RawVelocity.ToResoniteLinkField());
-members.Add("RawStrokeLength", RawStrokeLength.ToResoniteLinkField());
-members.Add("StrokeLength", StrokeLength.ToResoniteLinkField());
-members.Add("NormalizedStrokeLength", NormalizedStrokeLength.ToResoniteLinkField());
-members.Add("StrokeFadeMultiplier", StrokeFadeMultiplier.ToResoniteLinkField());
-members.Add("StrokeGroupIndex", StrokeGroupIndex.ToResoniteLinkField());
-members.Add("StrokeGroupActive", StrokeGroupActive.ToResoniteLinkField());
+members.Add("_lastUsedMaterial", _lastUsedMaterial_Element.Data.ToResoniteReference(context));
+members.Add("_lastCreatedMaterial", _lastCreatedMaterial_Element.Data.ToResoniteReference(context));
+members.Add("Pressure", Pressure_Element.Data.ToResoniteLinkField());
+members.Add("Position", Position_Element.Data.ToResoniteLinkField());
+members.Add("Rotation", Rotation_Element.Data.ToResoniteLinkField());
+members.Add("LastPointDelta", LastPointDelta_Element.Data.ToResoniteLinkField());
+members.Add("Velocity", Velocity_Element.Data.ToResoniteLinkField());
+members.Add("RawDelta", RawDelta_Element.Data.ToResoniteLinkField());
+members.Add("RawVelocity", RawVelocity_Element.Data.ToResoniteLinkField());
+members.Add("RawStrokeLength", RawStrokeLength_Element.Data.ToResoniteLinkField());
+members.Add("StrokeLength", StrokeLength_Element.Data.ToResoniteLinkField());
+members.Add("NormalizedStrokeLength", NormalizedStrokeLength_Element.Data.ToResoniteLinkField());
+members.Add("StrokeFadeMultiplier", StrokeFadeMultiplier_Element.Data.ToResoniteLinkField());
+members.Add("StrokeGroupIndex", StrokeGroupIndex_Element.Data.ToResoniteLinkField());
+members.Add("StrokeGroupActive", StrokeGroupActive_Element.Data.ToResoniteLinkField());
 }
 
 }

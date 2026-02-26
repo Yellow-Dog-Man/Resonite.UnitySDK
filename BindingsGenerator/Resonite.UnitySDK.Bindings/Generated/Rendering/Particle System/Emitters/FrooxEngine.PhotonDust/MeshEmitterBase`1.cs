@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.PhotonDust.MeshEmitterBase<>
-// Generated on: středa 25. února 2026 16:14:17
+// Generated on: čtvrtek 26. února 2026 10:04:38
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -21,33 +21,44 @@ public abstract partial class MeshEmitterBase<E> : global::FrooxEngine.PhotonDus
 	
 
 {
-    public global::PhotonDust.MeshEmissionSource EmitFrom;
-public global::System.Boolean UseVertexColors;
-public global::System.Boolean UniformDistribution;
-public global::PhotonDust.MeshEmitterDirection DirectionMode;
-public UnityEngine.Vector3 Direction;
-public global::System.Single RandomDirectionWeight;
-public global::FrooxEngine.IAssetProvider<global::FrooxEngine.Texture2D> ColorTexture;
-public global::Elements.Assets.WrapMode WrapMode;
-public UnityEngine.Vector2 UVOffset;
-public UnityEngine.Vector2 UVScale;
-public global::System.Nullable<UnityEngine.Rect> ClipRect;
+    public global::PhotonDust.MeshEmissionSource EmitFrom { get => EmitFrom_Element.Data; set => EmitFrom_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::PhotonDust.MeshEmissionSource>, global::PhotonDust.MeshEmissionSource> EmitFrom_Element = new();
+public global::System.Boolean UseVertexColors { get => UseVertexColors_Element.Data; set => UseVertexColors_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> UseVertexColors_Element = new();
+public global::System.Boolean UniformDistribution { get => UniformDistribution_Element.Data; set => UniformDistribution_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> UniformDistribution_Element = new();
+public global::PhotonDust.MeshEmitterDirection DirectionMode { get => DirectionMode_Element.Data; set => DirectionMode_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::PhotonDust.MeshEmitterDirection>, global::PhotonDust.MeshEmitterDirection> DirectionMode_Element = new();
+public UnityEngine.Vector3 Direction { get => Direction_Element.Data; set => Direction_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.Vector3>, UnityEngine.Vector3> Direction_Element = new();
+public global::System.Single RandomDirectionWeight { get => RandomDirectionWeight_Element.Data; set => RandomDirectionWeight_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> RandomDirectionWeight_Element = new();
+public global::FrooxEngine.IAssetProvider<global::FrooxEngine.Texture2D> ColorTexture { get => ColorTexture_Element.Data; set => ColorTexture_Element.Data = value; }
+public Field<global::FrooxEngine.AssetRef<global::FrooxEngine.Texture2D>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.Texture2D>> ColorTexture_Element = new();
+public global::Elements.Assets.WrapMode WrapMode { get => WrapMode_Element.Data; set => WrapMode_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::Elements.Assets.WrapMode>, global::Elements.Assets.WrapMode> WrapMode_Element = new();
+public UnityEngine.Vector2 UVOffset { get => UVOffset_Element.Data; set => UVOffset_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.Vector2>, UnityEngine.Vector2> UVOffset_Element = new();
+public UnityEngine.Vector2 UVScale { get => UVScale_Element.Data; set => UVScale_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.Vector2>, UnityEngine.Vector2> UVScale_Element = new();
+public global::System.Nullable<UnityEngine.Rect> ClipRect { get => ClipRect_Element.Data; set => ClipRect_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Nullable<UnityEngine.Rect>>, global::System.Nullable<UnityEngine.Rect>> ClipRect_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("EmitFrom", EmitFrom.ToResoniteLinkField());
-members.Add("UseVertexColors", UseVertexColors.ToResoniteLinkField());
-members.Add("UniformDistribution", UniformDistribution.ToResoniteLinkField());
-members.Add("DirectionMode", DirectionMode.ToResoniteLinkField());
-members.Add("Direction", Direction.ToResoniteLinkField());
-members.Add("RandomDirectionWeight", RandomDirectionWeight.ToResoniteLinkField());
-members.Add("ColorTexture", ColorTexture.ToResoniteReference(context));
-members.Add("WrapMode", WrapMode.ToResoniteLinkField());
-members.Add("UVOffset", UVOffset.ToResoniteLinkField());
-members.Add("UVScale", UVScale.ToResoniteLinkField());
-members.Add("ClipRect", ClipRect.ToResoniteLinkField());
+members.Add("EmitFrom", EmitFrom_Element.Data.ToResoniteLinkField());
+members.Add("UseVertexColors", UseVertexColors_Element.Data.ToResoniteLinkField());
+members.Add("UniformDistribution", UniformDistribution_Element.Data.ToResoniteLinkField());
+members.Add("DirectionMode", DirectionMode_Element.Data.ToResoniteLinkField());
+members.Add("Direction", Direction_Element.Data.ToResoniteLinkField());
+members.Add("RandomDirectionWeight", RandomDirectionWeight_Element.Data.ToResoniteLinkField());
+members.Add("ColorTexture", ColorTexture_Element.Data.ToResoniteReference(context));
+members.Add("WrapMode", WrapMode_Element.Data.ToResoniteLinkField());
+members.Add("UVOffset", UVOffset_Element.Data.ToResoniteLinkField());
+members.Add("UVScale", UVScale_Element.Data.ToResoniteLinkField());
+members.Add("ClipRect", ClipRect_Element.Data.ToResoniteLinkField());
 }
 
 }

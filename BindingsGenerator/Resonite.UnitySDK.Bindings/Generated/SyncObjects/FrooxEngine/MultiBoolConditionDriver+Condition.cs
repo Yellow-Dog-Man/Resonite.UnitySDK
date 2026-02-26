@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.MultiBoolConditionDriver+Condition
-// Generated on: středa 25. února 2026 16:14:30
+// Generated on: čtvrtek 26. února 2026 10:04:41
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -22,15 +22,17 @@ namespace FrooxEngine
 public partial class Condition : global::FrooxEngine.SyncObject
 
 {
-    public global::FrooxEngine.IField<global::System.Boolean> Field;
-public global::System.Boolean Invert;
+    public global::FrooxEngine.IField<global::System.Boolean> Field { get => Field_Element.Data; set => Field_Element.Data = value; }
+public Field<global::FrooxEngine.RelayRef<global::FrooxEngine.IField<global::System.Boolean>>, global::FrooxEngine.IField<global::System.Boolean>> Field_Element = new();
+public global::System.Boolean Invert { get => Invert_Element.Data; set => Invert_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> Invert_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Field", Field.ToResoniteReference(context));
-members.Add("Invert", Invert.ToResoniteLinkField());
+members.Add("Field", Field_Element.Data.ToResoniteReference(context));
+members.Add("Invert", Invert_Element.Data.ToResoniteLinkField());
 }
 
 }

@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.UserspaceFacetAnchorsManager
-// Generated on: středa 25. února 2026 16:14:44
+// Generated on: čtvrtek 26. února 2026 10:04:48
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,27 +20,33 @@ namespace FrooxEngine
 public partial class UserspaceFacetAnchorsManager : global::FrooxEngine.Component
 
 {
-    public global::System.Boolean Open;
-public global::System.Boolean UseFacetAnchors;
-public global::Renderite.Shared.Chirality Toggle;
-public global::System.Single AnimSpeed;
-public global::FrooxEngine.UserspaceRadiantDash Dash;
-public global::System.String ProfileName;
-public System.Collections.Generic.List<global::FrooxEngine.UserspaceFacetAnchorsManager.Data> Anchors;
+    public global::System.Boolean Open { get => Open_Element.Data; set => Open_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> Open_Element = new();
+public global::System.Boolean UseFacetAnchors { get => UseFacetAnchors_Element.Data; set => UseFacetAnchors_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> UseFacetAnchors_Element = new();
+public global::Renderite.Shared.Chirality Toggle { get => Toggle_Element.Data; set => Toggle_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::Renderite.Shared.Chirality>, global::Renderite.Shared.Chirality> Toggle_Element = new();
+public global::System.Single AnimSpeed { get => AnimSpeed_Element.Data; set => AnimSpeed_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> AnimSpeed_Element = new();
+public global::FrooxEngine.UserspaceRadiantDash Dash { get => Dash_Element.Data; set => Dash_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.UserspaceRadiantDash>, global::FrooxEngine.UserspaceRadiantDash> Dash_Element = new();
+public global::System.String ProfileName { get => ProfileName_Element.Data; set => ProfileName_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.String>, global::System.String> ProfileName_Element = new();
+public global::SyncList<global::FrooxEngine.SyncList<global::FrooxEngine.UserspaceFacetAnchorsManager.Data>, global::FrooxEngine.UserspaceFacetAnchorsManager.Data> Anchors = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Open", Open.ToResoniteLinkField());
-members.Add("UseFacetAnchors", UseFacetAnchors.ToResoniteLinkField());
-members.Add("Toggle", Toggle.ToResoniteLinkField());
-members.Add("AnimSpeed", AnimSpeed.ToResoniteLinkField());
-members.Add("Dash", Dash.ToResoniteReference(context));
-members.Add("ProfileName", ProfileName.ToResoniteLinkField());
+members.Add("Open", Open_Element.Data.ToResoniteLinkField());
+members.Add("UseFacetAnchors", UseFacetAnchors_Element.Data.ToResoniteLinkField());
+members.Add("Toggle", Toggle_Element.Data.ToResoniteLinkField());
+members.Add("AnimSpeed", AnimSpeed_Element.Data.ToResoniteLinkField());
+members.Add("Dash", Dash_Element.Data.ToResoniteReference(context));
+members.Add("ProfileName", ProfileName_Element.Data.ToResoniteLinkField());
 members.Add("Anchors", new ResoniteLink.SyncList()
 {
-    Elements = Anchors.ConvertList(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers(context) })
+    Elements = Anchors.Data.ConvertList(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers(context) })
 });
 }
 

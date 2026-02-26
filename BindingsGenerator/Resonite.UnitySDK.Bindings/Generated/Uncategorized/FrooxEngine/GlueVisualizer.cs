@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.GlueVisualizer
-// Generated on: středa 25. února 2026 16:14:39
+// Generated on: čtvrtek 26. února 2026 10:04:45
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,19 +20,23 @@ namespace FrooxEngine
 public partial class GlueVisualizer : global::FrooxEngine.Component
 
 {
-    public global::FrooxEngine.FresnelMaterial Material;
-public global::FrooxEngine.Glue Glue;
-public global::FrooxEngine.IField<UnityEngine.Vector3> Scale;
-public UnityEngine.Vector3 BaseScale;
+    public global::FrooxEngine.FresnelMaterial Material { get => Material_Element.Data; set => Material_Element.Data = value; }
+public Field<global::FrooxEngine.DriveRef<global::FrooxEngine.FresnelMaterial>, global::FrooxEngine.FresnelMaterial> Material_Element = new();
+public global::FrooxEngine.Glue Glue { get => Glue_Element.Data; set => Glue_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.Glue>, global::FrooxEngine.Glue> Glue_Element = new();
+public global::FrooxEngine.IField<UnityEngine.Vector3> Scale { get => Scale_Element.Data; set => Scale_Element.Data = value; }
+public Field<global::FrooxEngine.FieldHook<UnityEngine.Vector3>, global::FrooxEngine.IField<UnityEngine.Vector3>> Scale_Element = new();
+public UnityEngine.Vector3 BaseScale { get => BaseScale_Element.Data; set => BaseScale_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.Vector3>, UnityEngine.Vector3> BaseScale_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Material", Material.ToResoniteReference(context));
-members.Add("Glue", Glue.ToResoniteReference(context));
-members.Add("Scale", Scale.ToResoniteReference(context));
-members.Add("BaseScale", BaseScale.ToResoniteLinkField());
+members.Add("Material", Material_Element.Data.ToResoniteReference(context));
+members.Add("Glue", Glue_Element.Data.ToResoniteReference(context));
+members.Add("Scale", Scale_Element.Data.ToResoniteReference(context));
+members.Add("BaseScale", BaseScale_Element.Data.ToResoniteLinkField());
 }
 
 }

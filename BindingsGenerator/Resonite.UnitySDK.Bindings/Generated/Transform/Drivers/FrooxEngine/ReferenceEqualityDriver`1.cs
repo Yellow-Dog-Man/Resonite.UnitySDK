@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.ReferenceEqualityDriver<>
-// Generated on: středa 25. února 2026 16:14:30
+// Generated on: čtvrtek 26. února 2026 10:04:41
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -21,19 +21,23 @@ public partial class ReferenceEqualityDriver<T> : global::FrooxEngine.Component
 	where T : class, global::FrooxEngine.IWorldElement
 
 {
-    public global::FrooxEngine.SyncRef<T> TargetReference;
-public T Reference;
-public global::FrooxEngine.IField<global::System.Boolean> Target;
-public global::System.Boolean Invert;
+    public global::FrooxEngine.SyncRef<T> TargetReference { get => TargetReference_Element.Data; set => TargetReference_Element.Data = value; }
+public Field<global::FrooxEngine.RelayRef<global::FrooxEngine.SyncRef<T>>, global::FrooxEngine.SyncRef<T>> TargetReference_Element = new();
+public T Reference { get => Reference_Element.Data; set => Reference_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<T>, T> Reference_Element = new();
+public global::FrooxEngine.IField<global::System.Boolean> Target { get => Target_Element.Data; set => Target_Element.Data = value; }
+public Field<global::FrooxEngine.FieldDrive<global::System.Boolean>, global::FrooxEngine.IField<global::System.Boolean>> Target_Element = new();
+public global::System.Boolean Invert { get => Invert_Element.Data; set => Invert_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> Invert_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("TargetReference", TargetReference.ToResoniteReference(context));
-members.Add("Reference", Reference.ToResoniteReference(context));
-members.Add("Target", Target.ToResoniteReference(context));
-members.Add("Invert", Invert.ToResoniteLinkField());
+members.Add("TargetReference", TargetReference_Element.Data.ToResoniteReference(context));
+members.Add("Reference", Reference_Element.Data.ToResoniteReference(context));
+members.Add("Target", Target_Element.Data.ToResoniteReference(context));
+members.Add("Invert", Invert_Element.Data.ToResoniteLinkField());
 }
 
 }

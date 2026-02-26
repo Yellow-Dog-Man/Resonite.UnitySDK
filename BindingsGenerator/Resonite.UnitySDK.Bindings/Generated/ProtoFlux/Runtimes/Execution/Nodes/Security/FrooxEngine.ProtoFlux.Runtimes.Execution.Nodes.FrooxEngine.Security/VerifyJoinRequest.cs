@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [ProtoFluxBindings]FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Security.VerifyJoinRequest
-// Generated on: středa 25. února 2026 16:14:05
+// Generated on: čtvrtek 26. února 2026 10:04:29
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,25 +20,26 @@ namespace FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Security
 public partial class VerifyJoinRequest : global::FrooxEngine.FrooxEngine.ProtoFlux.ProxyVoidNode<global::FrooxEngine.ProtoFlux.FrooxEngineContext,global::ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Security.VerifyJoinRequest.Proxy>
 
 {
-    public global::FrooxEngine.ProtoFlux.INodeOperation Verify;
-public global::FrooxEngine.ProtoFlux.NodeObjectOutput<global::System.String> UserId;
-public global::FrooxEngine.ProtoFlux.NodeObjectOutput<global::System.String> UserSessionId;
-public global::FrooxEngine.ProtoFlux.NodeObjectOutput<global::System.String> MachineId;
-public global::FrooxEngine.ProtoFlux.NodeObjectOutput<global::System.String> Username;
-public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::Renderite.Shared.HeadOutputDevice> HeadOutputDevice;
-public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::FrooxEngine.Platform> Platform;
-public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Boolean> IsInvited;
-public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Boolean> IsContact;
-public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Boolean> IsInKioskMode;
-public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Boolean> IsSpectatorBanned;
-public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Boolean> IsMuteBanned;
-public global::FrooxEngine.ProtoFlux.NodeObjectOutput<global::ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Security.JoinRequestHandle> Handle;
+    public global::FrooxEngine.ProtoFlux.INodeOperation Verify { get => Verify_Element.Data; set => Verify_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.ProtoFlux.INodeOperation>, global::FrooxEngine.ProtoFlux.INodeOperation> Verify_Element = new();
+public global::FrooxEngine.ProtoFlux.NodeObjectOutput<global::System.String> UserId = new();
+public global::FrooxEngine.ProtoFlux.NodeObjectOutput<global::System.String> UserSessionId = new();
+public global::FrooxEngine.ProtoFlux.NodeObjectOutput<global::System.String> MachineId = new();
+public global::FrooxEngine.ProtoFlux.NodeObjectOutput<global::System.String> Username = new();
+public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::Renderite.Shared.HeadOutputDevice> HeadOutputDevice = new();
+public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::FrooxEngine.Platform> Platform = new();
+public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Boolean> IsInvited = new();
+public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Boolean> IsContact = new();
+public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Boolean> IsInKioskMode = new();
+public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Boolean> IsSpectatorBanned = new();
+public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Boolean> IsMuteBanned = new();
+public global::FrooxEngine.ProtoFlux.NodeObjectOutput<global::ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Security.JoinRequestHandle> Handle = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Verify", Verify.ToResoniteReference(context));
+members.Add("Verify", Verify_Element.Data.ToResoniteReference(context));
 members.Add("UserId", new ResoniteLink.EmptyElement());
 members.Add("UserSessionId", new ResoniteLink.EmptyElement());
 members.Add("MachineId", new ResoniteLink.EmptyElement());

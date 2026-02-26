@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.ObjectGridAligner
-// Generated on: středa 25. února 2026 16:14:30
+// Generated on: čtvrtek 26. února 2026 10:04:41
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,29 +20,36 @@ namespace FrooxEngine
 public partial class ObjectGridAligner : global::FrooxEngine.AutoAddChildrenBase
 
 {
-    public global::System.Int32 ItemsPerRow;
-public UnityEngine.Vector2 CellSize;
-public global::System.Single LerpSpeed;
-public global::FrooxEngine.ObjectGridAligner.Align HorizontalAlignment;
-public global::FrooxEngine.ObjectGridAligner.Align VerticalAlignment;
-public global::FrooxEngine.ObjectGridAligner.AxisDir RowAxis;
-public global::FrooxEngine.ObjectGridAligner.AxisDir ColumnAxis;
-public System.Collections.Generic.List<global::FrooxEngine.ObjectGridAligner.Item> Items;
+    public global::System.Int32 ItemsPerRow { get => ItemsPerRow_Element.Data; set => ItemsPerRow_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Int32>, global::System.Int32> ItemsPerRow_Element = new();
+public UnityEngine.Vector2 CellSize { get => CellSize_Element.Data; set => CellSize_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.Vector2>, UnityEngine.Vector2> CellSize_Element = new();
+public global::System.Single LerpSpeed { get => LerpSpeed_Element.Data; set => LerpSpeed_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> LerpSpeed_Element = new();
+public global::FrooxEngine.ObjectGridAligner.Align HorizontalAlignment { get => HorizontalAlignment_Element.Data; set => HorizontalAlignment_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::FrooxEngine.ObjectGridAligner.Align>, global::FrooxEngine.ObjectGridAligner.Align> HorizontalAlignment_Element = new();
+public global::FrooxEngine.ObjectGridAligner.Align VerticalAlignment { get => VerticalAlignment_Element.Data; set => VerticalAlignment_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::FrooxEngine.ObjectGridAligner.Align>, global::FrooxEngine.ObjectGridAligner.Align> VerticalAlignment_Element = new();
+public global::FrooxEngine.ObjectGridAligner.AxisDir RowAxis { get => RowAxis_Element.Data; set => RowAxis_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::FrooxEngine.ObjectGridAligner.AxisDir>, global::FrooxEngine.ObjectGridAligner.AxisDir> RowAxis_Element = new();
+public global::FrooxEngine.ObjectGridAligner.AxisDir ColumnAxis { get => ColumnAxis_Element.Data; set => ColumnAxis_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::FrooxEngine.ObjectGridAligner.AxisDir>, global::FrooxEngine.ObjectGridAligner.AxisDir> ColumnAxis_Element = new();
+public global::SyncList<global::FrooxEngine.SyncList<global::FrooxEngine.ObjectGridAligner.Item>, global::FrooxEngine.ObjectGridAligner.Item> Items = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("ItemsPerRow", ItemsPerRow.ToResoniteLinkField());
-members.Add("CellSize", CellSize.ToResoniteLinkField());
-members.Add("LerpSpeed", LerpSpeed.ToResoniteLinkField());
-members.Add("HorizontalAlignment", HorizontalAlignment.ToResoniteLinkField());
-members.Add("VerticalAlignment", VerticalAlignment.ToResoniteLinkField());
-members.Add("RowAxis", RowAxis.ToResoniteLinkField());
-members.Add("ColumnAxis", ColumnAxis.ToResoniteLinkField());
+members.Add("ItemsPerRow", ItemsPerRow_Element.Data.ToResoniteLinkField());
+members.Add("CellSize", CellSize_Element.Data.ToResoniteLinkField());
+members.Add("LerpSpeed", LerpSpeed_Element.Data.ToResoniteLinkField());
+members.Add("HorizontalAlignment", HorizontalAlignment_Element.Data.ToResoniteLinkField());
+members.Add("VerticalAlignment", VerticalAlignment_Element.Data.ToResoniteLinkField());
+members.Add("RowAxis", RowAxis_Element.Data.ToResoniteLinkField());
+members.Add("ColumnAxis", ColumnAxis_Element.Data.ToResoniteLinkField());
 members.Add("Items", new ResoniteLink.SyncList()
 {
-    Elements = Items.ConvertList(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers(context) })
+    Elements = Items.Data.ConvertList(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers(context) })
 });
 }
 

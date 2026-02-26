@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.ValueFieldProxySource<>
-// Generated on: středa 25. února 2026 16:14:34
+// Generated on: čtvrtek 26. února 2026 10:04:43
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -21,13 +21,14 @@ public partial class ValueFieldProxySource<T> : global::FrooxEngine.Component, g
 	
 
 {
-    public global::FrooxEngine.IField<T> Field;
+    public global::FrooxEngine.IField<T> Field { get => Field_Element.Data; set => Field_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.IField<T>>, global::FrooxEngine.IField<T>> Field_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Field", Field.ToResoniteReference(context));
+members.Add("Field", Field_Element.Data.ToResoniteReference(context));
 }
 
 }

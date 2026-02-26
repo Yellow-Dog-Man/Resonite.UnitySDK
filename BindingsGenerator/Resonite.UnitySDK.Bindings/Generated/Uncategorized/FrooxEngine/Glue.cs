@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.Glue
-// Generated on: středa 25. února 2026 16:14:22
+// Generated on: čtvrtek 26. února 2026 10:04:39
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,27 +20,35 @@ namespace FrooxEngine
 public partial class Glue : global::FrooxEngine.Component
 
 {
-    public global::FrooxEngine.Glue.Mode GlueMode;
-public global::System.Boolean Active;
-public global::System.Single DryTime;
-public global::System.Double Expire;
-public global::FrooxEngine.User GluingUser;
-public global::System.Boolean _forceDry;
-public global::System.Boolean isDrying;
-public global::System.Double dryStartTime;
+    public global::FrooxEngine.Glue.Mode GlueMode { get => GlueMode_Element.Data; set => GlueMode_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::FrooxEngine.Glue.Mode>, global::FrooxEngine.Glue.Mode> GlueMode_Element = new();
+public global::System.Boolean Active { get => Active_Element.Data; set => Active_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> Active_Element = new();
+public global::System.Single DryTime { get => DryTime_Element.Data; set => DryTime_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> DryTime_Element = new();
+public global::System.Double Expire { get => Expire_Element.Data; set => Expire_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Double>, global::System.Double> Expire_Element = new();
+public global::FrooxEngine.User GluingUser { get => GluingUser_Element.Data; set => GluingUser_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.User>, global::FrooxEngine.User> GluingUser_Element = new();
+public global::System.Boolean _forceDry { get => _forceDry_Element.Data; set => _forceDry_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> _forceDry_Element = new();
+public global::System.Boolean isDrying { get => isDrying_Element.Data; set => isDrying_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> isDrying_Element = new();
+public global::System.Double dryStartTime { get => dryStartTime_Element.Data; set => dryStartTime_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Double>, global::System.Double> dryStartTime_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("GlueMode", GlueMode.ToResoniteLinkField());
-members.Add("Active", Active.ToResoniteLinkField());
-members.Add("DryTime", DryTime.ToResoniteLinkField());
-members.Add("Expire", Expire.ToResoniteLinkField());
-members.Add("GluingUser", GluingUser.ToResoniteReference(context));
-members.Add("_forceDry", _forceDry.ToResoniteLinkField());
-members.Add("isDrying", isDrying.ToResoniteLinkField());
-members.Add("dryStartTime", dryStartTime.ToResoniteLinkField());
+members.Add("GlueMode", GlueMode_Element.Data.ToResoniteLinkField());
+members.Add("Active", Active_Element.Data.ToResoniteLinkField());
+members.Add("DryTime", DryTime_Element.Data.ToResoniteLinkField());
+members.Add("Expire", Expire_Element.Data.ToResoniteLinkField());
+members.Add("GluingUser", GluingUser_Element.Data.ToResoniteReference(context));
+members.Add("_forceDry", _forceDry_Element.Data.ToResoniteLinkField());
+members.Add("isDrying", isDrying_Element.Data.ToResoniteLinkField());
+members.Add("dryStartTime", dryStartTime_Element.Data.ToResoniteLinkField());
 }
 
 }

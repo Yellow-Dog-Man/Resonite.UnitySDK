@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.CommonAvatar.EyeLinearDriver+Eye
-// Generated on: středa 25. února 2026 16:14:46
+// Generated on: čtvrtek 26. února 2026 10:04:50
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -22,119 +22,173 @@ namespace FrooxEngine.CommonAvatar
 public partial class Eye : global::FrooxEngine.SyncObject
 
 {
-    public global::FrooxEngine.EyeSide Side;
-public global::FrooxEngine.Slot ProjectionPlanePoint;
-public global::FrooxEngine.IField<UnityEngine.Vector2> PositionOffset;
-public global::FrooxEngine.IField<global::System.Single> LookLeft;
-public global::FrooxEngine.IField<global::System.Single> LookUp;
-public global::FrooxEngine.IField<global::System.Single> LookRight;
-public global::FrooxEngine.IField<global::System.Single> LookDown;
-public global::FrooxEngine.IField<global::System.Single> OpenCloseTarget;
-public global::FrooxEngine.IField<global::System.Single> PupilSizeTarget;
-public global::FrooxEngine.IField<global::System.Single> WidenTarget;
-public global::FrooxEngine.IField<global::System.Single> SqueezeTarget;
-public global::FrooxEngine.IField<global::System.Single> FrownTarget;
-public global::FrooxEngine.IField<global::System.Single> InnerBrowRaiseTarget;
-public global::FrooxEngine.IField<global::System.Single> InnerBrowLowerTarget;
-public global::FrooxEngine.IField<global::System.Single> OuterBrowRaiseTarget;
-public global::FrooxEngine.IField<global::System.Single> OuterBrowLowerTarget;
-public global::System.Single MinInputCloseness;
-public global::System.Single MaxInputCloseness;
-public global::System.Single OpenState;
-public global::System.Single ClosedState;
-public global::System.Single MinInputPupilSize;
-public global::System.Single MaxInputPupilSize;
-public global::System.Single MinOutputPupilSize;
-public global::System.Single MaxOutputPupilSize;
-public global::System.Single MinInputWiden;
-public global::System.Single MaxInputWiden;
-public global::System.Single MinOutputWiden;
-public global::System.Single MaxOutputWiden;
-public global::System.Single MinInputSqueeze;
-public global::System.Single MaxInputSqueeze;
-public global::System.Single MinOutputSqueeze;
-public global::System.Single MaxOutputSqueeze;
-public global::System.Single MinInputFrown;
-public global::System.Single MaxInputFrown;
-public global::System.Single MinOutputFrown;
-public global::System.Single MaxOutputFrown;
-public global::System.Single MinInputInnerBrowRaise;
-public global::System.Single MaxInputInnerBrowRaise;
-public global::System.Single MinOutputInnerBrowRaise;
-public global::System.Single MaxOutputInnerBrowRaise;
-public global::System.Single MinInputInnerBrowLower;
-public global::System.Single MaxInputInnerBrowLower;
-public global::System.Single MinOutputInnerBrowLower;
-public global::System.Single MaxOutputInnerBrowLower;
-public global::System.Single MinInputOuterBrowRaise;
-public global::System.Single MaxInputOuterBrowRaise;
-public global::System.Single MinOutputOuterBrowRaise;
-public global::System.Single MaxOutputOuterBrowRaise;
-public global::System.Single MinInputOuterBrowLower;
-public global::System.Single MaxInputOuterBrowLower;
-public global::System.Single MinOutputOuterBrowLower;
-public global::System.Single MaxOutputOuterBrowLower;
-public global::System.Single LookMultiply;
-public global::System.Single LookPower;
+    public global::FrooxEngine.EyeSide Side { get => Side_Element.Data; set => Side_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::FrooxEngine.EyeSide>, global::FrooxEngine.EyeSide> Side_Element = new();
+public global::FrooxEngine.Slot ProjectionPlanePoint { get => ProjectionPlanePoint_Element.Data; set => ProjectionPlanePoint_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> ProjectionPlanePoint_Element = new();
+public global::FrooxEngine.IField<UnityEngine.Vector2> PositionOffset { get => PositionOffset_Element.Data; set => PositionOffset_Element.Data = value; }
+public Field<global::FrooxEngine.FieldDrive<UnityEngine.Vector2>, global::FrooxEngine.IField<UnityEngine.Vector2>> PositionOffset_Element = new();
+public global::FrooxEngine.IField<global::System.Single> LookLeft { get => LookLeft_Element.Data; set => LookLeft_Element.Data = value; }
+public Field<global::FrooxEngine.FieldDrive<global::System.Single>, global::FrooxEngine.IField<global::System.Single>> LookLeft_Element = new();
+public global::FrooxEngine.IField<global::System.Single> LookUp { get => LookUp_Element.Data; set => LookUp_Element.Data = value; }
+public Field<global::FrooxEngine.FieldDrive<global::System.Single>, global::FrooxEngine.IField<global::System.Single>> LookUp_Element = new();
+public global::FrooxEngine.IField<global::System.Single> LookRight { get => LookRight_Element.Data; set => LookRight_Element.Data = value; }
+public Field<global::FrooxEngine.FieldDrive<global::System.Single>, global::FrooxEngine.IField<global::System.Single>> LookRight_Element = new();
+public global::FrooxEngine.IField<global::System.Single> LookDown { get => LookDown_Element.Data; set => LookDown_Element.Data = value; }
+public Field<global::FrooxEngine.FieldDrive<global::System.Single>, global::FrooxEngine.IField<global::System.Single>> LookDown_Element = new();
+public global::FrooxEngine.IField<global::System.Single> OpenCloseTarget { get => OpenCloseTarget_Element.Data; set => OpenCloseTarget_Element.Data = value; }
+public Field<global::FrooxEngine.FieldDrive<global::System.Single>, global::FrooxEngine.IField<global::System.Single>> OpenCloseTarget_Element = new();
+public global::FrooxEngine.IField<global::System.Single> PupilSizeTarget { get => PupilSizeTarget_Element.Data; set => PupilSizeTarget_Element.Data = value; }
+public Field<global::FrooxEngine.FieldDrive<global::System.Single>, global::FrooxEngine.IField<global::System.Single>> PupilSizeTarget_Element = new();
+public global::FrooxEngine.IField<global::System.Single> WidenTarget { get => WidenTarget_Element.Data; set => WidenTarget_Element.Data = value; }
+public Field<global::FrooxEngine.FieldDrive<global::System.Single>, global::FrooxEngine.IField<global::System.Single>> WidenTarget_Element = new();
+public global::FrooxEngine.IField<global::System.Single> SqueezeTarget { get => SqueezeTarget_Element.Data; set => SqueezeTarget_Element.Data = value; }
+public Field<global::FrooxEngine.FieldDrive<global::System.Single>, global::FrooxEngine.IField<global::System.Single>> SqueezeTarget_Element = new();
+public global::FrooxEngine.IField<global::System.Single> FrownTarget { get => FrownTarget_Element.Data; set => FrownTarget_Element.Data = value; }
+public Field<global::FrooxEngine.FieldDrive<global::System.Single>, global::FrooxEngine.IField<global::System.Single>> FrownTarget_Element = new();
+public global::FrooxEngine.IField<global::System.Single> InnerBrowRaiseTarget { get => InnerBrowRaiseTarget_Element.Data; set => InnerBrowRaiseTarget_Element.Data = value; }
+public Field<global::FrooxEngine.FieldDrive<global::System.Single>, global::FrooxEngine.IField<global::System.Single>> InnerBrowRaiseTarget_Element = new();
+public global::FrooxEngine.IField<global::System.Single> InnerBrowLowerTarget { get => InnerBrowLowerTarget_Element.Data; set => InnerBrowLowerTarget_Element.Data = value; }
+public Field<global::FrooxEngine.FieldDrive<global::System.Single>, global::FrooxEngine.IField<global::System.Single>> InnerBrowLowerTarget_Element = new();
+public global::FrooxEngine.IField<global::System.Single> OuterBrowRaiseTarget { get => OuterBrowRaiseTarget_Element.Data; set => OuterBrowRaiseTarget_Element.Data = value; }
+public Field<global::FrooxEngine.FieldDrive<global::System.Single>, global::FrooxEngine.IField<global::System.Single>> OuterBrowRaiseTarget_Element = new();
+public global::FrooxEngine.IField<global::System.Single> OuterBrowLowerTarget { get => OuterBrowLowerTarget_Element.Data; set => OuterBrowLowerTarget_Element.Data = value; }
+public Field<global::FrooxEngine.FieldDrive<global::System.Single>, global::FrooxEngine.IField<global::System.Single>> OuterBrowLowerTarget_Element = new();
+public global::System.Single MinInputCloseness { get => MinInputCloseness_Element.Data; set => MinInputCloseness_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> MinInputCloseness_Element = new();
+public global::System.Single MaxInputCloseness { get => MaxInputCloseness_Element.Data; set => MaxInputCloseness_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> MaxInputCloseness_Element = new();
+public global::System.Single OpenState { get => OpenState_Element.Data; set => OpenState_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> OpenState_Element = new();
+public global::System.Single ClosedState { get => ClosedState_Element.Data; set => ClosedState_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> ClosedState_Element = new();
+public global::System.Single MinInputPupilSize { get => MinInputPupilSize_Element.Data; set => MinInputPupilSize_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> MinInputPupilSize_Element = new();
+public global::System.Single MaxInputPupilSize { get => MaxInputPupilSize_Element.Data; set => MaxInputPupilSize_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> MaxInputPupilSize_Element = new();
+public global::System.Single MinOutputPupilSize { get => MinOutputPupilSize_Element.Data; set => MinOutputPupilSize_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> MinOutputPupilSize_Element = new();
+public global::System.Single MaxOutputPupilSize { get => MaxOutputPupilSize_Element.Data; set => MaxOutputPupilSize_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> MaxOutputPupilSize_Element = new();
+public global::System.Single MinInputWiden { get => MinInputWiden_Element.Data; set => MinInputWiden_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> MinInputWiden_Element = new();
+public global::System.Single MaxInputWiden { get => MaxInputWiden_Element.Data; set => MaxInputWiden_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> MaxInputWiden_Element = new();
+public global::System.Single MinOutputWiden { get => MinOutputWiden_Element.Data; set => MinOutputWiden_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> MinOutputWiden_Element = new();
+public global::System.Single MaxOutputWiden { get => MaxOutputWiden_Element.Data; set => MaxOutputWiden_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> MaxOutputWiden_Element = new();
+public global::System.Single MinInputSqueeze { get => MinInputSqueeze_Element.Data; set => MinInputSqueeze_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> MinInputSqueeze_Element = new();
+public global::System.Single MaxInputSqueeze { get => MaxInputSqueeze_Element.Data; set => MaxInputSqueeze_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> MaxInputSqueeze_Element = new();
+public global::System.Single MinOutputSqueeze { get => MinOutputSqueeze_Element.Data; set => MinOutputSqueeze_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> MinOutputSqueeze_Element = new();
+public global::System.Single MaxOutputSqueeze { get => MaxOutputSqueeze_Element.Data; set => MaxOutputSqueeze_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> MaxOutputSqueeze_Element = new();
+public global::System.Single MinInputFrown { get => MinInputFrown_Element.Data; set => MinInputFrown_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> MinInputFrown_Element = new();
+public global::System.Single MaxInputFrown { get => MaxInputFrown_Element.Data; set => MaxInputFrown_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> MaxInputFrown_Element = new();
+public global::System.Single MinOutputFrown { get => MinOutputFrown_Element.Data; set => MinOutputFrown_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> MinOutputFrown_Element = new();
+public global::System.Single MaxOutputFrown { get => MaxOutputFrown_Element.Data; set => MaxOutputFrown_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> MaxOutputFrown_Element = new();
+public global::System.Single MinInputInnerBrowRaise { get => MinInputInnerBrowRaise_Element.Data; set => MinInputInnerBrowRaise_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> MinInputInnerBrowRaise_Element = new();
+public global::System.Single MaxInputInnerBrowRaise { get => MaxInputInnerBrowRaise_Element.Data; set => MaxInputInnerBrowRaise_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> MaxInputInnerBrowRaise_Element = new();
+public global::System.Single MinOutputInnerBrowRaise { get => MinOutputInnerBrowRaise_Element.Data; set => MinOutputInnerBrowRaise_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> MinOutputInnerBrowRaise_Element = new();
+public global::System.Single MaxOutputInnerBrowRaise { get => MaxOutputInnerBrowRaise_Element.Data; set => MaxOutputInnerBrowRaise_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> MaxOutputInnerBrowRaise_Element = new();
+public global::System.Single MinInputInnerBrowLower { get => MinInputInnerBrowLower_Element.Data; set => MinInputInnerBrowLower_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> MinInputInnerBrowLower_Element = new();
+public global::System.Single MaxInputInnerBrowLower { get => MaxInputInnerBrowLower_Element.Data; set => MaxInputInnerBrowLower_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> MaxInputInnerBrowLower_Element = new();
+public global::System.Single MinOutputInnerBrowLower { get => MinOutputInnerBrowLower_Element.Data; set => MinOutputInnerBrowLower_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> MinOutputInnerBrowLower_Element = new();
+public global::System.Single MaxOutputInnerBrowLower { get => MaxOutputInnerBrowLower_Element.Data; set => MaxOutputInnerBrowLower_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> MaxOutputInnerBrowLower_Element = new();
+public global::System.Single MinInputOuterBrowRaise { get => MinInputOuterBrowRaise_Element.Data; set => MinInputOuterBrowRaise_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> MinInputOuterBrowRaise_Element = new();
+public global::System.Single MaxInputOuterBrowRaise { get => MaxInputOuterBrowRaise_Element.Data; set => MaxInputOuterBrowRaise_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> MaxInputOuterBrowRaise_Element = new();
+public global::System.Single MinOutputOuterBrowRaise { get => MinOutputOuterBrowRaise_Element.Data; set => MinOutputOuterBrowRaise_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> MinOutputOuterBrowRaise_Element = new();
+public global::System.Single MaxOutputOuterBrowRaise { get => MaxOutputOuterBrowRaise_Element.Data; set => MaxOutputOuterBrowRaise_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> MaxOutputOuterBrowRaise_Element = new();
+public global::System.Single MinInputOuterBrowLower { get => MinInputOuterBrowLower_Element.Data; set => MinInputOuterBrowLower_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> MinInputOuterBrowLower_Element = new();
+public global::System.Single MaxInputOuterBrowLower { get => MaxInputOuterBrowLower_Element.Data; set => MaxInputOuterBrowLower_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> MaxInputOuterBrowLower_Element = new();
+public global::System.Single MinOutputOuterBrowLower { get => MinOutputOuterBrowLower_Element.Data; set => MinOutputOuterBrowLower_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> MinOutputOuterBrowLower_Element = new();
+public global::System.Single MaxOutputOuterBrowLower { get => MaxOutputOuterBrowLower_Element.Data; set => MaxOutputOuterBrowLower_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> MaxOutputOuterBrowLower_Element = new();
+public global::System.Single LookMultiply { get => LookMultiply_Element.Data; set => LookMultiply_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> LookMultiply_Element = new();
+public global::System.Single LookPower { get => LookPower_Element.Data; set => LookPower_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> LookPower_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Side", Side.ToResoniteLinkField());
-members.Add("ProjectionPlanePoint", ProjectionPlanePoint.ToResoniteReference(context));
-members.Add("PositionOffset", PositionOffset.ToResoniteReference(context));
-members.Add("LookLeft", LookLeft.ToResoniteReference(context));
-members.Add("LookUp", LookUp.ToResoniteReference(context));
-members.Add("LookRight", LookRight.ToResoniteReference(context));
-members.Add("LookDown", LookDown.ToResoniteReference(context));
-members.Add("OpenCloseTarget", OpenCloseTarget.ToResoniteReference(context));
-members.Add("PupilSizeTarget", PupilSizeTarget.ToResoniteReference(context));
-members.Add("WidenTarget", WidenTarget.ToResoniteReference(context));
-members.Add("SqueezeTarget", SqueezeTarget.ToResoniteReference(context));
-members.Add("FrownTarget", FrownTarget.ToResoniteReference(context));
-members.Add("InnerBrowRaiseTarget", InnerBrowRaiseTarget.ToResoniteReference(context));
-members.Add("InnerBrowLowerTarget", InnerBrowLowerTarget.ToResoniteReference(context));
-members.Add("OuterBrowRaiseTarget", OuterBrowRaiseTarget.ToResoniteReference(context));
-members.Add("OuterBrowLowerTarget", OuterBrowLowerTarget.ToResoniteReference(context));
-members.Add("MinInputCloseness", MinInputCloseness.ToResoniteLinkField());
-members.Add("MaxInputCloseness", MaxInputCloseness.ToResoniteLinkField());
-members.Add("OpenState", OpenState.ToResoniteLinkField());
-members.Add("ClosedState", ClosedState.ToResoniteLinkField());
-members.Add("MinInputPupilSize", MinInputPupilSize.ToResoniteLinkField());
-members.Add("MaxInputPupilSize", MaxInputPupilSize.ToResoniteLinkField());
-members.Add("MinOutputPupilSize", MinOutputPupilSize.ToResoniteLinkField());
-members.Add("MaxOutputPupilSize", MaxOutputPupilSize.ToResoniteLinkField());
-members.Add("MinInputWiden", MinInputWiden.ToResoniteLinkField());
-members.Add("MaxInputWiden", MaxInputWiden.ToResoniteLinkField());
-members.Add("MinOutputWiden", MinOutputWiden.ToResoniteLinkField());
-members.Add("MaxOutputWiden", MaxOutputWiden.ToResoniteLinkField());
-members.Add("MinInputSqueeze", MinInputSqueeze.ToResoniteLinkField());
-members.Add("MaxInputSqueeze", MaxInputSqueeze.ToResoniteLinkField());
-members.Add("MinOutputSqueeze", MinOutputSqueeze.ToResoniteLinkField());
-members.Add("MaxOutputSqueeze", MaxOutputSqueeze.ToResoniteLinkField());
-members.Add("MinInputFrown", MinInputFrown.ToResoniteLinkField());
-members.Add("MaxInputFrown", MaxInputFrown.ToResoniteLinkField());
-members.Add("MinOutputFrown", MinOutputFrown.ToResoniteLinkField());
-members.Add("MaxOutputFrown", MaxOutputFrown.ToResoniteLinkField());
-members.Add("MinInputInnerBrowRaise", MinInputInnerBrowRaise.ToResoniteLinkField());
-members.Add("MaxInputInnerBrowRaise", MaxInputInnerBrowRaise.ToResoniteLinkField());
-members.Add("MinOutputInnerBrowRaise", MinOutputInnerBrowRaise.ToResoniteLinkField());
-members.Add("MaxOutputInnerBrowRaise", MaxOutputInnerBrowRaise.ToResoniteLinkField());
-members.Add("MinInputInnerBrowLower", MinInputInnerBrowLower.ToResoniteLinkField());
-members.Add("MaxInputInnerBrowLower", MaxInputInnerBrowLower.ToResoniteLinkField());
-members.Add("MinOutputInnerBrowLower", MinOutputInnerBrowLower.ToResoniteLinkField());
-members.Add("MaxOutputInnerBrowLower", MaxOutputInnerBrowLower.ToResoniteLinkField());
-members.Add("MinInputOuterBrowRaise", MinInputOuterBrowRaise.ToResoniteLinkField());
-members.Add("MaxInputOuterBrowRaise", MaxInputOuterBrowRaise.ToResoniteLinkField());
-members.Add("MinOutputOuterBrowRaise", MinOutputOuterBrowRaise.ToResoniteLinkField());
-members.Add("MaxOutputOuterBrowRaise", MaxOutputOuterBrowRaise.ToResoniteLinkField());
-members.Add("MinInputOuterBrowLower", MinInputOuterBrowLower.ToResoniteLinkField());
-members.Add("MaxInputOuterBrowLower", MaxInputOuterBrowLower.ToResoniteLinkField());
-members.Add("MinOutputOuterBrowLower", MinOutputOuterBrowLower.ToResoniteLinkField());
-members.Add("MaxOutputOuterBrowLower", MaxOutputOuterBrowLower.ToResoniteLinkField());
-members.Add("LookMultiply", LookMultiply.ToResoniteLinkField());
-members.Add("LookPower", LookPower.ToResoniteLinkField());
+members.Add("Side", Side_Element.Data.ToResoniteLinkField());
+members.Add("ProjectionPlanePoint", ProjectionPlanePoint_Element.Data.ToResoniteReference(context));
+members.Add("PositionOffset", PositionOffset_Element.Data.ToResoniteReference(context));
+members.Add("LookLeft", LookLeft_Element.Data.ToResoniteReference(context));
+members.Add("LookUp", LookUp_Element.Data.ToResoniteReference(context));
+members.Add("LookRight", LookRight_Element.Data.ToResoniteReference(context));
+members.Add("LookDown", LookDown_Element.Data.ToResoniteReference(context));
+members.Add("OpenCloseTarget", OpenCloseTarget_Element.Data.ToResoniteReference(context));
+members.Add("PupilSizeTarget", PupilSizeTarget_Element.Data.ToResoniteReference(context));
+members.Add("WidenTarget", WidenTarget_Element.Data.ToResoniteReference(context));
+members.Add("SqueezeTarget", SqueezeTarget_Element.Data.ToResoniteReference(context));
+members.Add("FrownTarget", FrownTarget_Element.Data.ToResoniteReference(context));
+members.Add("InnerBrowRaiseTarget", InnerBrowRaiseTarget_Element.Data.ToResoniteReference(context));
+members.Add("InnerBrowLowerTarget", InnerBrowLowerTarget_Element.Data.ToResoniteReference(context));
+members.Add("OuterBrowRaiseTarget", OuterBrowRaiseTarget_Element.Data.ToResoniteReference(context));
+members.Add("OuterBrowLowerTarget", OuterBrowLowerTarget_Element.Data.ToResoniteReference(context));
+members.Add("MinInputCloseness", MinInputCloseness_Element.Data.ToResoniteLinkField());
+members.Add("MaxInputCloseness", MaxInputCloseness_Element.Data.ToResoniteLinkField());
+members.Add("OpenState", OpenState_Element.Data.ToResoniteLinkField());
+members.Add("ClosedState", ClosedState_Element.Data.ToResoniteLinkField());
+members.Add("MinInputPupilSize", MinInputPupilSize_Element.Data.ToResoniteLinkField());
+members.Add("MaxInputPupilSize", MaxInputPupilSize_Element.Data.ToResoniteLinkField());
+members.Add("MinOutputPupilSize", MinOutputPupilSize_Element.Data.ToResoniteLinkField());
+members.Add("MaxOutputPupilSize", MaxOutputPupilSize_Element.Data.ToResoniteLinkField());
+members.Add("MinInputWiden", MinInputWiden_Element.Data.ToResoniteLinkField());
+members.Add("MaxInputWiden", MaxInputWiden_Element.Data.ToResoniteLinkField());
+members.Add("MinOutputWiden", MinOutputWiden_Element.Data.ToResoniteLinkField());
+members.Add("MaxOutputWiden", MaxOutputWiden_Element.Data.ToResoniteLinkField());
+members.Add("MinInputSqueeze", MinInputSqueeze_Element.Data.ToResoniteLinkField());
+members.Add("MaxInputSqueeze", MaxInputSqueeze_Element.Data.ToResoniteLinkField());
+members.Add("MinOutputSqueeze", MinOutputSqueeze_Element.Data.ToResoniteLinkField());
+members.Add("MaxOutputSqueeze", MaxOutputSqueeze_Element.Data.ToResoniteLinkField());
+members.Add("MinInputFrown", MinInputFrown_Element.Data.ToResoniteLinkField());
+members.Add("MaxInputFrown", MaxInputFrown_Element.Data.ToResoniteLinkField());
+members.Add("MinOutputFrown", MinOutputFrown_Element.Data.ToResoniteLinkField());
+members.Add("MaxOutputFrown", MaxOutputFrown_Element.Data.ToResoniteLinkField());
+members.Add("MinInputInnerBrowRaise", MinInputInnerBrowRaise_Element.Data.ToResoniteLinkField());
+members.Add("MaxInputInnerBrowRaise", MaxInputInnerBrowRaise_Element.Data.ToResoniteLinkField());
+members.Add("MinOutputInnerBrowRaise", MinOutputInnerBrowRaise_Element.Data.ToResoniteLinkField());
+members.Add("MaxOutputInnerBrowRaise", MaxOutputInnerBrowRaise_Element.Data.ToResoniteLinkField());
+members.Add("MinInputInnerBrowLower", MinInputInnerBrowLower_Element.Data.ToResoniteLinkField());
+members.Add("MaxInputInnerBrowLower", MaxInputInnerBrowLower_Element.Data.ToResoniteLinkField());
+members.Add("MinOutputInnerBrowLower", MinOutputInnerBrowLower_Element.Data.ToResoniteLinkField());
+members.Add("MaxOutputInnerBrowLower", MaxOutputInnerBrowLower_Element.Data.ToResoniteLinkField());
+members.Add("MinInputOuterBrowRaise", MinInputOuterBrowRaise_Element.Data.ToResoniteLinkField());
+members.Add("MaxInputOuterBrowRaise", MaxInputOuterBrowRaise_Element.Data.ToResoniteLinkField());
+members.Add("MinOutputOuterBrowRaise", MinOutputOuterBrowRaise_Element.Data.ToResoniteLinkField());
+members.Add("MaxOutputOuterBrowRaise", MaxOutputOuterBrowRaise_Element.Data.ToResoniteLinkField());
+members.Add("MinInputOuterBrowLower", MinInputOuterBrowLower_Element.Data.ToResoniteLinkField());
+members.Add("MaxInputOuterBrowLower", MaxInputOuterBrowLower_Element.Data.ToResoniteLinkField());
+members.Add("MinOutputOuterBrowLower", MinOutputOuterBrowLower_Element.Data.ToResoniteLinkField());
+members.Add("MaxOutputOuterBrowLower", MaxOutputOuterBrowLower_Element.Data.ToResoniteLinkField());
+members.Add("LookMultiply", LookMultiply_Element.Data.ToResoniteLinkField());
+members.Add("LookPower", LookPower_Element.Data.ToResoniteLinkField());
 }
 
 }

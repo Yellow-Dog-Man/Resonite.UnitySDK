@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [ProtoFluxBindings]FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.TimeAndDate.FromUnixMilliseconds
-// Generated on: středa 25. února 2026 16:14:08
+// Generated on: čtvrtek 26. února 2026 10:04:31
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,15 +20,17 @@ namespace FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.TimeAndDate
 public partial class FromUnixMilliseconds : global::FrooxEngine.ProtoFlux.Runtimes.Execution.ValueFunctionNode<global::ProtoFlux.Runtimes.Execution.ExecutionContext,global::System.DateTime>
 
 {
-    public global::FrooxEngine.ProtoFlux.INodeValueOutput<global::System.Int64> UnixMiliseconds;
-public global::FrooxEngine.ProtoFlux.INodeValueOutput<global::System.Boolean> IsLocal;
+    public global::FrooxEngine.ProtoFlux.INodeValueOutput<global::System.Int64> UnixMiliseconds { get => UnixMiliseconds_Element.Data; set => UnixMiliseconds_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.ProtoFlux.INodeValueOutput<global::System.Int64>>, global::FrooxEngine.ProtoFlux.INodeValueOutput<global::System.Int64>> UnixMiliseconds_Element = new();
+public global::FrooxEngine.ProtoFlux.INodeValueOutput<global::System.Boolean> IsLocal { get => IsLocal_Element.Data; set => IsLocal_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.ProtoFlux.INodeValueOutput<global::System.Boolean>>, global::FrooxEngine.ProtoFlux.INodeValueOutput<global::System.Boolean>> IsLocal_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("UnixMiliseconds", UnixMiliseconds.ToResoniteReference(context));
-members.Add("IsLocal", IsLocal.ToResoniteReference(context));
+members.Add("UnixMiliseconds", UnixMiliseconds_Element.Data.ToResoniteReference(context));
+members.Add("IsLocal", IsLocal_Element.Data.ToResoniteReference(context));
 }
 
 }

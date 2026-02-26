@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.UserspaceFacetAnchor
-// Generated on: středa 25. února 2026 16:14:44
+// Generated on: čtvrtek 26. února 2026 10:04:48
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,17 +20,20 @@ namespace FrooxEngine
 public partial class UserspaceFacetAnchor : global::FrooxEngine.Component
 
 {
-    public global::FrooxEngine.FacetAnchorPoint Point;
-public global::FrooxEngine.UIX.Image BackgroundImage;
-public global::FrooxEngine.UI_UnlitMaterial BackgroundMaterial;
+    public global::FrooxEngine.FacetAnchorPoint Point { get => Point_Element.Data; set => Point_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::FrooxEngine.FacetAnchorPoint>, global::FrooxEngine.FacetAnchorPoint> Point_Element = new();
+public global::FrooxEngine.UIX.Image BackgroundImage { get => BackgroundImage_Element.Data; set => BackgroundImage_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.UIX.Image>, global::FrooxEngine.UIX.Image> BackgroundImage_Element = new();
+public global::FrooxEngine.UI_UnlitMaterial BackgroundMaterial { get => BackgroundMaterial_Element.Data; set => BackgroundMaterial_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.UI_UnlitMaterial>, global::FrooxEngine.UI_UnlitMaterial> BackgroundMaterial_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Point", Point.ToResoniteLinkField());
-members.Add("BackgroundImage", BackgroundImage.ToResoniteReference(context));
-members.Add("BackgroundMaterial", BackgroundMaterial.ToResoniteReference(context));
+members.Add("Point", Point_Element.Data.ToResoniteLinkField());
+members.Add("BackgroundImage", BackgroundImage_Element.Data.ToResoniteReference(context));
+members.Add("BackgroundMaterial", BackgroundMaterial_Element.Data.ToResoniteReference(context));
 }
 
 }

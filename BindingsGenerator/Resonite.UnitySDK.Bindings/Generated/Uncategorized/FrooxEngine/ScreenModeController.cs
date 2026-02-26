@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.ScreenModeController
-// Generated on: středa 25. února 2026 16:14:43
+// Generated on: čtvrtek 26. února 2026 10:04:48
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,21 +20,26 @@ namespace FrooxEngine
 public partial class ScreenModeController : global::FrooxEngine.Component
 
 {
-    public global::FrooxEngine.UserspaceRadiantDash _dash;
-public global::FrooxEngine.IAssetProvider<global::FrooxEngine.AudioClip> _muteSound;
-public global::FrooxEngine.IAssetProvider<global::FrooxEngine.AudioClip> _unmuteSound;
-public global::FrooxEngine.IAssetProvider<global::FrooxEngine.AudioClip> _startTalkSound;
-public global::FrooxEngine.IAssetProvider<global::FrooxEngine.AudioClip> _stopTalkSound;
+    public global::FrooxEngine.UserspaceRadiantDash _dash { get => _dash_Element.Data; set => _dash_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.UserspaceRadiantDash>, global::FrooxEngine.UserspaceRadiantDash> _dash_Element = new();
+public global::FrooxEngine.IAssetProvider<global::FrooxEngine.AudioClip> _muteSound { get => _muteSound_Element.Data; set => _muteSound_Element.Data = value; }
+public Field<global::FrooxEngine.AssetRef<global::FrooxEngine.AudioClip>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.AudioClip>> _muteSound_Element = new();
+public global::FrooxEngine.IAssetProvider<global::FrooxEngine.AudioClip> _unmuteSound { get => _unmuteSound_Element.Data; set => _unmuteSound_Element.Data = value; }
+public Field<global::FrooxEngine.AssetRef<global::FrooxEngine.AudioClip>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.AudioClip>> _unmuteSound_Element = new();
+public global::FrooxEngine.IAssetProvider<global::FrooxEngine.AudioClip> _startTalkSound { get => _startTalkSound_Element.Data; set => _startTalkSound_Element.Data = value; }
+public Field<global::FrooxEngine.AssetRef<global::FrooxEngine.AudioClip>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.AudioClip>> _startTalkSound_Element = new();
+public global::FrooxEngine.IAssetProvider<global::FrooxEngine.AudioClip> _stopTalkSound { get => _stopTalkSound_Element.Data; set => _stopTalkSound_Element.Data = value; }
+public Field<global::FrooxEngine.AssetRef<global::FrooxEngine.AudioClip>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.AudioClip>> _stopTalkSound_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("_dash", _dash.ToResoniteReference(context));
-members.Add("_muteSound", _muteSound.ToResoniteReference(context));
-members.Add("_unmuteSound", _unmuteSound.ToResoniteReference(context));
-members.Add("_startTalkSound", _startTalkSound.ToResoniteReference(context));
-members.Add("_stopTalkSound", _stopTalkSound.ToResoniteReference(context));
+members.Add("_dash", _dash_Element.Data.ToResoniteReference(context));
+members.Add("_muteSound", _muteSound_Element.Data.ToResoniteReference(context));
+members.Add("_unmuteSound", _unmuteSound_Element.Data.ToResoniteReference(context));
+members.Add("_startTalkSound", _startTalkSound_Element.Data.ToResoniteReference(context));
+members.Add("_stopTalkSound", _stopTalkSound_Element.Data.ToResoniteReference(context));
 }
 
 }

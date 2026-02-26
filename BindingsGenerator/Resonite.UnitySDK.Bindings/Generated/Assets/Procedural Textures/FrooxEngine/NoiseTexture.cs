@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.NoiseTexture
-// Generated on: středa 25. února 2026 16:13:05
+// Generated on: čtvrtek 26. února 2026 10:03:36
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,25 +20,32 @@ namespace FrooxEngine
 public partial class NoiseTexture : global::FrooxEngine.ProceduralTexture
 
 {
-    public global::System.Int32 Seed;
-public global::System.Boolean Monochrome;
-public UnityEngine.ColorX MonochromeMax;
-public UnityEngine.ColorX MonochromeMin;
-public global::System.Single Bias;
-public global::System.Single Gain;
-public global::System.Boolean Clamp;
+    public global::System.Int32 Seed { get => Seed_Element.Data; set => Seed_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Int32>, global::System.Int32> Seed_Element = new();
+public global::System.Boolean Monochrome { get => Monochrome_Element.Data; set => Monochrome_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> Monochrome_Element = new();
+public UnityEngine.ColorX MonochromeMax { get => MonochromeMax_Element.Data; set => MonochromeMax_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.ColorX>, UnityEngine.ColorX> MonochromeMax_Element = new();
+public UnityEngine.ColorX MonochromeMin { get => MonochromeMin_Element.Data; set => MonochromeMin_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.ColorX>, UnityEngine.ColorX> MonochromeMin_Element = new();
+public global::System.Single Bias { get => Bias_Element.Data; set => Bias_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> Bias_Element = new();
+public global::System.Single Gain { get => Gain_Element.Data; set => Gain_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> Gain_Element = new();
+public global::System.Boolean Clamp { get => Clamp_Element.Data; set => Clamp_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> Clamp_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Seed", Seed.ToResoniteLinkField());
-members.Add("Monochrome", Monochrome.ToResoniteLinkField());
-members.Add("MonochromeMax", MonochromeMax.ToResoniteLinkField());
-members.Add("MonochromeMin", MonochromeMin.ToResoniteLinkField());
-members.Add("Bias", Bias.ToResoniteLinkField());
-members.Add("Gain", Gain.ToResoniteLinkField());
-members.Add("Clamp", Clamp.ToResoniteLinkField());
+members.Add("Seed", Seed_Element.Data.ToResoniteLinkField());
+members.Add("Monochrome", Monochrome_Element.Data.ToResoniteLinkField());
+members.Add("MonochromeMax", MonochromeMax_Element.Data.ToResoniteLinkField());
+members.Add("MonochromeMin", MonochromeMin_Element.Data.ToResoniteLinkField());
+members.Add("Bias", Bias_Element.Data.ToResoniteLinkField());
+members.Add("Gain", Gain_Element.Data.ToResoniteLinkField());
+members.Add("Clamp", Clamp_Element.Data.ToResoniteLinkField());
 }
 
 }

@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.PhotonDust.SkinnedMeshEmitter
-// Generated on: středa 25. února 2026 16:14:17
+// Generated on: čtvrtek 26. února 2026 10:04:38
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,13 +20,14 @@ namespace FrooxEngine.PhotonDust
 public partial class SkinnedMeshEmitter : global::FrooxEngine.PhotonDust.MeshEmitterBase<global::System.Object>
 
 {
-    public global::FrooxEngine.SkinnedMeshRenderer Skin;
+    public global::FrooxEngine.SkinnedMeshRenderer Skin { get => Skin_Element.Data; set => Skin_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.SkinnedMeshRenderer>, global::FrooxEngine.SkinnedMeshRenderer> Skin_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Skin", Skin.ToResoniteReference(context));
+members.Add("Skin", Skin_Element.Data.ToResoniteReference(context));
 }
 
 }

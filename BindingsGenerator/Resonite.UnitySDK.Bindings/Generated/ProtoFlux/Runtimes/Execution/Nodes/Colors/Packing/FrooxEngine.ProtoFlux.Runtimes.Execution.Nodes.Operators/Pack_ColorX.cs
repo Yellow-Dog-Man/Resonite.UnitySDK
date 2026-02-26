@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [ProtoFluxBindings]FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.Operators.Pack_ColorX
-// Generated on: středa 25. února 2026 16:13:39
+// Generated on: čtvrtek 26. února 2026 10:04:07
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,21 +20,26 @@ namespace FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.Operators
 public partial class Pack_ColorX : global::FrooxEngine.ProtoFlux.Runtimes.Execution.ValueFunctionNode<global::ProtoFlux.Runtimes.Execution.ExecutionContext,UnityEngine.ColorX>
 
 {
-    public global::FrooxEngine.ProtoFlux.INodeValueOutput<global::System.Single> R;
-public global::FrooxEngine.ProtoFlux.INodeValueOutput<global::System.Single> G;
-public global::FrooxEngine.ProtoFlux.INodeValueOutput<global::System.Single> B;
-public global::FrooxEngine.ProtoFlux.INodeValueOutput<global::System.Single> A;
-public global::FrooxEngine.ProtoFlux.INodeValueOutput<global::Renderite.Shared.ColorProfile> Profile;
+    public global::FrooxEngine.ProtoFlux.INodeValueOutput<global::System.Single> R { get => R_Element.Data; set => R_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.ProtoFlux.INodeValueOutput<global::System.Single>>, global::FrooxEngine.ProtoFlux.INodeValueOutput<global::System.Single>> R_Element = new();
+public global::FrooxEngine.ProtoFlux.INodeValueOutput<global::System.Single> G { get => G_Element.Data; set => G_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.ProtoFlux.INodeValueOutput<global::System.Single>>, global::FrooxEngine.ProtoFlux.INodeValueOutput<global::System.Single>> G_Element = new();
+public global::FrooxEngine.ProtoFlux.INodeValueOutput<global::System.Single> B { get => B_Element.Data; set => B_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.ProtoFlux.INodeValueOutput<global::System.Single>>, global::FrooxEngine.ProtoFlux.INodeValueOutput<global::System.Single>> B_Element = new();
+public global::FrooxEngine.ProtoFlux.INodeValueOutput<global::System.Single> A { get => A_Element.Data; set => A_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.ProtoFlux.INodeValueOutput<global::System.Single>>, global::FrooxEngine.ProtoFlux.INodeValueOutput<global::System.Single>> A_Element = new();
+public global::FrooxEngine.ProtoFlux.INodeValueOutput<global::Renderite.Shared.ColorProfile> Profile { get => Profile_Element.Data; set => Profile_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.ProtoFlux.INodeValueOutput<global::Renderite.Shared.ColorProfile>>, global::FrooxEngine.ProtoFlux.INodeValueOutput<global::Renderite.Shared.ColorProfile>> Profile_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("R", R.ToResoniteReference(context));
-members.Add("G", G.ToResoniteReference(context));
-members.Add("B", B.ToResoniteReference(context));
-members.Add("A", A.ToResoniteReference(context));
-members.Add("Profile", Profile.ToResoniteReference(context));
+members.Add("R", R_Element.Data.ToResoniteReference(context));
+members.Add("G", G_Element.Data.ToResoniteReference(context));
+members.Add("B", B_Element.Data.ToResoniteReference(context));
+members.Add("A", A_Element.Data.ToResoniteReference(context));
+members.Add("Profile", Profile_Element.Data.ToResoniteReference(context));
 }
 
 }

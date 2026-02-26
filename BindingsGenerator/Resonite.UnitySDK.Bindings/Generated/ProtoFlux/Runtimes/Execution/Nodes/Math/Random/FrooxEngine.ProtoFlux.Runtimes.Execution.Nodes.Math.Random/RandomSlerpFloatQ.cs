@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [ProtoFluxBindings]FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.Math.Random.RandomSlerpFloatQ
-// Generated on: středa 25. února 2026 16:13:53
+// Generated on: čtvrtek 26. února 2026 10:04:20
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,15 +20,17 @@ namespace FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.Math.Random
 public partial class RandomSlerpFloatQ : global::FrooxEngine.ProtoFlux.Runtimes.Execution.ValueFunctionNode<global::ProtoFlux.Runtimes.Execution.ExecutionContext,UnityEngine.Quaternion>
 
 {
-    public global::FrooxEngine.ProtoFlux.INodeValueOutput<UnityEngine.Quaternion> Min;
-public global::FrooxEngine.ProtoFlux.INodeValueOutput<UnityEngine.Quaternion> Max;
+    public global::FrooxEngine.ProtoFlux.INodeValueOutput<UnityEngine.Quaternion> Min { get => Min_Element.Data; set => Min_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.ProtoFlux.INodeValueOutput<UnityEngine.Quaternion>>, global::FrooxEngine.ProtoFlux.INodeValueOutput<UnityEngine.Quaternion>> Min_Element = new();
+public global::FrooxEngine.ProtoFlux.INodeValueOutput<UnityEngine.Quaternion> Max { get => Max_Element.Data; set => Max_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.ProtoFlux.INodeValueOutput<UnityEngine.Quaternion>>, global::FrooxEngine.ProtoFlux.INodeValueOutput<UnityEngine.Quaternion>> Max_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Min", Min.ToResoniteReference(context));
-members.Add("Max", Max.ToResoniteReference(context));
+members.Add("Min", Min_Element.Data.ToResoniteReference(context));
+members.Add("Max", Max_Element.Data.ToResoniteReference(context));
 }
 
 }

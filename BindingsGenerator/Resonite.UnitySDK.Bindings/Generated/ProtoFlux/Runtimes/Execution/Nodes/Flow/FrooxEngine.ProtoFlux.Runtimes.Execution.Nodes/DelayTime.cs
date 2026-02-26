@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [ProtoFluxBindings]FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.DelayTime
-// Generated on: středa 25. února 2026 16:13:45
+// Generated on: čtvrtek 26. února 2026 10:04:13
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,13 +20,14 @@ namespace FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes
 public abstract partial class DelayTime : global::FrooxEngine.ProtoFlux.Runtimes.Execution.AsyncActionFlowNode<global::ProtoFlux.Runtimes.Execution.ExecutionContext>
 
 {
-    public global::FrooxEngine.ProtoFlux.INodeOperation OnTriggered;
+    public global::FrooxEngine.ProtoFlux.INodeOperation OnTriggered { get => OnTriggered_Element.Data; set => OnTriggered_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.ProtoFlux.INodeOperation>, global::FrooxEngine.ProtoFlux.INodeOperation> OnTriggered_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("OnTriggered", OnTriggered.ToResoniteReference(context));
+members.Add("OnTriggered", OnTriggered_Element.Data.ToResoniteReference(context));
 }
 
 }

@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.ArrowMesh
-// Generated on: středa 25. února 2026 16:13:04
+// Generated on: čtvrtek 26. února 2026 10:03:35
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,39 +20,53 @@ namespace FrooxEngine
 public partial class ArrowMesh : global::FrooxEngine.ProceduralMesh
 
 {
-    public UnityEngine.Vector3 Vector;
-public global::System.Int32 Sides;
-public global::System.Single BodyRadius;
-public global::System.Single HeadRadius;
-public global::System.Single HeadLength;
-public global::System.Single MinimalBodyLength;
-public global::System.Boolean SphereOnZero;
-public UnityEngine.Vector2 BodyUVScale;
-public UnityEngine.Vector2 BodyUVOffset;
-public UnityEngine.Vector2 HeadUVScale;
-public UnityEngine.Vector2 HeadUVOffset;
-public UnityEngine.ColorX BaseColor;
-public UnityEngine.ColorX TopColor;
-public UnityEngine.ColorX HeadColor;
+    public UnityEngine.Vector3 Vector { get => Vector_Element.Data; set => Vector_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.Vector3>, UnityEngine.Vector3> Vector_Element = new();
+public global::System.Int32 Sides { get => Sides_Element.Data; set => Sides_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Int32>, global::System.Int32> Sides_Element = new();
+public global::System.Single BodyRadius { get => BodyRadius_Element.Data; set => BodyRadius_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> BodyRadius_Element = new();
+public global::System.Single HeadRadius { get => HeadRadius_Element.Data; set => HeadRadius_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> HeadRadius_Element = new();
+public global::System.Single HeadLength { get => HeadLength_Element.Data; set => HeadLength_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> HeadLength_Element = new();
+public global::System.Single MinimalBodyLength { get => MinimalBodyLength_Element.Data; set => MinimalBodyLength_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> MinimalBodyLength_Element = new();
+public global::System.Boolean SphereOnZero { get => SphereOnZero_Element.Data; set => SphereOnZero_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> SphereOnZero_Element = new();
+public UnityEngine.Vector2 BodyUVScale { get => BodyUVScale_Element.Data; set => BodyUVScale_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.Vector2>, UnityEngine.Vector2> BodyUVScale_Element = new();
+public UnityEngine.Vector2 BodyUVOffset { get => BodyUVOffset_Element.Data; set => BodyUVOffset_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.Vector2>, UnityEngine.Vector2> BodyUVOffset_Element = new();
+public UnityEngine.Vector2 HeadUVScale { get => HeadUVScale_Element.Data; set => HeadUVScale_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.Vector2>, UnityEngine.Vector2> HeadUVScale_Element = new();
+public UnityEngine.Vector2 HeadUVOffset { get => HeadUVOffset_Element.Data; set => HeadUVOffset_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.Vector2>, UnityEngine.Vector2> HeadUVOffset_Element = new();
+public UnityEngine.ColorX BaseColor { get => BaseColor_Element.Data; set => BaseColor_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.ColorX>, UnityEngine.ColorX> BaseColor_Element = new();
+public UnityEngine.ColorX TopColor { get => TopColor_Element.Data; set => TopColor_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.ColorX>, UnityEngine.ColorX> TopColor_Element = new();
+public UnityEngine.ColorX HeadColor { get => HeadColor_Element.Data; set => HeadColor_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.ColorX>, UnityEngine.ColorX> HeadColor_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Vector", Vector.ToResoniteLinkField());
-members.Add("Sides", Sides.ToResoniteLinkField());
-members.Add("BodyRadius", BodyRadius.ToResoniteLinkField());
-members.Add("HeadRadius", HeadRadius.ToResoniteLinkField());
-members.Add("HeadLength", HeadLength.ToResoniteLinkField());
-members.Add("MinimalBodyLength", MinimalBodyLength.ToResoniteLinkField());
-members.Add("SphereOnZero", SphereOnZero.ToResoniteLinkField());
-members.Add("BodyUVScale", BodyUVScale.ToResoniteLinkField());
-members.Add("BodyUVOffset", BodyUVOffset.ToResoniteLinkField());
-members.Add("HeadUVScale", HeadUVScale.ToResoniteLinkField());
-members.Add("HeadUVOffset", HeadUVOffset.ToResoniteLinkField());
-members.Add("BaseColor", BaseColor.ToResoniteLinkField());
-members.Add("TopColor", TopColor.ToResoniteLinkField());
-members.Add("HeadColor", HeadColor.ToResoniteLinkField());
+members.Add("Vector", Vector_Element.Data.ToResoniteLinkField());
+members.Add("Sides", Sides_Element.Data.ToResoniteLinkField());
+members.Add("BodyRadius", BodyRadius_Element.Data.ToResoniteLinkField());
+members.Add("HeadRadius", HeadRadius_Element.Data.ToResoniteLinkField());
+members.Add("HeadLength", HeadLength_Element.Data.ToResoniteLinkField());
+members.Add("MinimalBodyLength", MinimalBodyLength_Element.Data.ToResoniteLinkField());
+members.Add("SphereOnZero", SphereOnZero_Element.Data.ToResoniteLinkField());
+members.Add("BodyUVScale", BodyUVScale_Element.Data.ToResoniteLinkField());
+members.Add("BodyUVOffset", BodyUVOffset_Element.Data.ToResoniteLinkField());
+members.Add("HeadUVScale", HeadUVScale_Element.Data.ToResoniteLinkField());
+members.Add("HeadUVOffset", HeadUVOffset_Element.Data.ToResoniteLinkField());
+members.Add("BaseColor", BaseColor_Element.Data.ToResoniteLinkField());
+members.Add("TopColor", TopColor_Element.Data.ToResoniteLinkField());
+members.Add("HeadColor", HeadColor_Element.Data.ToResoniteLinkField());
 }
 
 }

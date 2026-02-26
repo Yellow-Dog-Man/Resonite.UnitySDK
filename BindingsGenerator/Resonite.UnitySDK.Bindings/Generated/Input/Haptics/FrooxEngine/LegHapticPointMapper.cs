@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.LegHapticPointMapper
-// Generated on: středa 25. února 2026 16:13:09
+// Generated on: čtvrtek 26. února 2026 10:03:39
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,17 +20,20 @@ namespace FrooxEngine
 public partial class LegHapticPointMapper : global::FrooxEngine.LimbHapticPointMapper<global::FrooxEngine.LegHapticPosition>
 
 {
-    public global::System.Single UpperLegRadius;
-public global::System.Single KneeRadius;
-public global::System.Single AnkleRadius;
+    public global::System.Single UpperLegRadius { get => UpperLegRadius_Element.Data; set => UpperLegRadius_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> UpperLegRadius_Element = new();
+public global::System.Single KneeRadius { get => KneeRadius_Element.Data; set => KneeRadius_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> KneeRadius_Element = new();
+public global::System.Single AnkleRadius { get => AnkleRadius_Element.Data; set => AnkleRadius_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> AnkleRadius_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("UpperLegRadius", UpperLegRadius.ToResoniteLinkField());
-members.Add("KneeRadius", KneeRadius.ToResoniteLinkField());
-members.Add("AnkleRadius", AnkleRadius.ToResoniteLinkField());
+members.Add("UpperLegRadius", UpperLegRadius_Element.Data.ToResoniteLinkField());
+members.Add("KneeRadius", KneeRadius_Element.Data.ToResoniteLinkField());
+members.Add("AnkleRadius", AnkleRadius_Element.Data.ToResoniteLinkField());
 }
 
 }

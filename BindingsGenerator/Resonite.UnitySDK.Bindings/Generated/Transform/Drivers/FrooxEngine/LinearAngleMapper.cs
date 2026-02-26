@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.LinearAngleMapper
-// Generated on: středa 25. února 2026 16:14:29
+// Generated on: čtvrtek 26. února 2026 10:04:41
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,27 +20,35 @@ namespace FrooxEngine
 public partial class LinearAngleMapper : global::FrooxEngine.Component
 
 {
-    public global::FrooxEngine.IValue<global::System.Single> Source;
-public global::FrooxEngine.IField<UnityEngine.Quaternion> Target;
-public global::System.Single SourceMin;
-public global::System.Single SourceMax;
-public UnityEngine.Vector3 TargetMin;
-public UnityEngine.Vector3 TargetMax;
-public global::System.Boolean AllowReverseMapping;
-public global::System.Boolean Clamp;
+    public global::FrooxEngine.IValue<global::System.Single> Source { get => Source_Element.Data; set => Source_Element.Data = value; }
+public Field<global::FrooxEngine.RelayRef<global::FrooxEngine.IValue<global::System.Single>>, global::FrooxEngine.IValue<global::System.Single>> Source_Element = new();
+public global::FrooxEngine.IField<UnityEngine.Quaternion> Target { get => Target_Element.Data; set => Target_Element.Data = value; }
+public Field<global::FrooxEngine.FieldDrive<UnityEngine.Quaternion>, global::FrooxEngine.IField<UnityEngine.Quaternion>> Target_Element = new();
+public global::System.Single SourceMin { get => SourceMin_Element.Data; set => SourceMin_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> SourceMin_Element = new();
+public global::System.Single SourceMax { get => SourceMax_Element.Data; set => SourceMax_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> SourceMax_Element = new();
+public UnityEngine.Vector3 TargetMin { get => TargetMin_Element.Data; set => TargetMin_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.Vector3>, UnityEngine.Vector3> TargetMin_Element = new();
+public UnityEngine.Vector3 TargetMax { get => TargetMax_Element.Data; set => TargetMax_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.Vector3>, UnityEngine.Vector3> TargetMax_Element = new();
+public global::System.Boolean AllowReverseMapping { get => AllowReverseMapping_Element.Data; set => AllowReverseMapping_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> AllowReverseMapping_Element = new();
+public global::System.Boolean Clamp { get => Clamp_Element.Data; set => Clamp_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> Clamp_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Source", Source.ToResoniteReference(context));
-members.Add("Target", Target.ToResoniteReference(context));
-members.Add("SourceMin", SourceMin.ToResoniteLinkField());
-members.Add("SourceMax", SourceMax.ToResoniteLinkField());
-members.Add("TargetMin", TargetMin.ToResoniteLinkField());
-members.Add("TargetMax", TargetMax.ToResoniteLinkField());
-members.Add("AllowReverseMapping", AllowReverseMapping.ToResoniteLinkField());
-members.Add("Clamp", Clamp.ToResoniteLinkField());
+members.Add("Source", Source_Element.Data.ToResoniteReference(context));
+members.Add("Target", Target_Element.Data.ToResoniteReference(context));
+members.Add("SourceMin", SourceMin_Element.Data.ToResoniteLinkField());
+members.Add("SourceMax", SourceMax_Element.Data.ToResoniteLinkField());
+members.Add("TargetMin", TargetMin_Element.Data.ToResoniteLinkField());
+members.Add("TargetMax", TargetMax_Element.Data.ToResoniteLinkField());
+members.Add("AllowReverseMapping", AllowReverseMapping_Element.Data.ToResoniteLinkField());
+members.Add("Clamp", Clamp_Element.Data.ToResoniteLinkField());
 }
 
 }

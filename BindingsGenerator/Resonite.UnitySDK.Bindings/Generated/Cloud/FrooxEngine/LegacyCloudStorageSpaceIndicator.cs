@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.LegacyCloudStorageSpaceIndicator
-// Generated on: středa 25. února 2026 16:13:06
+// Generated on: čtvrtek 26. února 2026 10:03:37
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,37 +20,50 @@ namespace FrooxEngine
 public partial class LegacyCloudStorageSpaceIndicator : global::FrooxEngine.Component
 
 {
-    public global::FrooxEngine.StorageUsageStatus Source;
-public UnityEngine.ColorX ContainerColor;
-public UnityEngine.ColorX UsedColor;
-public UnityEngine.ColorX LowSpaceColor;
-public UnityEngine.ColorX CriticalSpaceColor;
-public global::System.Single LowSpaceThreshold;
-public global::System.Single CriticalSpaceThreshold;
-public global::FrooxEngine.TextRenderer _ownerLabel;
-public global::FrooxEngine.TextRenderer _usageLabel;
-public global::FrooxEngine.TextRenderer _percentLabel;
-public global::FrooxEngine.LegacyProgressBar _progressBar;
-public global::System.String __legacyOwnerId;
-public global::System.Boolean __legacyMemberQuota;
+    public global::FrooxEngine.StorageUsageStatus Source { get => Source_Element.Data; set => Source_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.StorageUsageStatus>, global::FrooxEngine.StorageUsageStatus> Source_Element = new();
+public UnityEngine.ColorX ContainerColor { get => ContainerColor_Element.Data; set => ContainerColor_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.ColorX>, UnityEngine.ColorX> ContainerColor_Element = new();
+public UnityEngine.ColorX UsedColor { get => UsedColor_Element.Data; set => UsedColor_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.ColorX>, UnityEngine.ColorX> UsedColor_Element = new();
+public UnityEngine.ColorX LowSpaceColor { get => LowSpaceColor_Element.Data; set => LowSpaceColor_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.ColorX>, UnityEngine.ColorX> LowSpaceColor_Element = new();
+public UnityEngine.ColorX CriticalSpaceColor { get => CriticalSpaceColor_Element.Data; set => CriticalSpaceColor_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.ColorX>, UnityEngine.ColorX> CriticalSpaceColor_Element = new();
+public global::System.Single LowSpaceThreshold { get => LowSpaceThreshold_Element.Data; set => LowSpaceThreshold_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> LowSpaceThreshold_Element = new();
+public global::System.Single CriticalSpaceThreshold { get => CriticalSpaceThreshold_Element.Data; set => CriticalSpaceThreshold_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> CriticalSpaceThreshold_Element = new();
+public global::FrooxEngine.TextRenderer _ownerLabel { get => _ownerLabel_Element.Data; set => _ownerLabel_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.TextRenderer>, global::FrooxEngine.TextRenderer> _ownerLabel_Element = new();
+public global::FrooxEngine.TextRenderer _usageLabel { get => _usageLabel_Element.Data; set => _usageLabel_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.TextRenderer>, global::FrooxEngine.TextRenderer> _usageLabel_Element = new();
+public global::FrooxEngine.TextRenderer _percentLabel { get => _percentLabel_Element.Data; set => _percentLabel_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.TextRenderer>, global::FrooxEngine.TextRenderer> _percentLabel_Element = new();
+public global::FrooxEngine.LegacyProgressBar _progressBar { get => _progressBar_Element.Data; set => _progressBar_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.LegacyProgressBar>, global::FrooxEngine.LegacyProgressBar> _progressBar_Element = new();
+public global::System.String __legacyOwnerId { get => __legacyOwnerId_Element.Data; set => __legacyOwnerId_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.String>, global::System.String> __legacyOwnerId_Element = new();
+public global::System.Boolean __legacyMemberQuota { get => __legacyMemberQuota_Element.Data; set => __legacyMemberQuota_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> __legacyMemberQuota_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Source", Source.ToResoniteReference(context));
-members.Add("ContainerColor", ContainerColor.ToResoniteLinkField());
-members.Add("UsedColor", UsedColor.ToResoniteLinkField());
-members.Add("LowSpaceColor", LowSpaceColor.ToResoniteLinkField());
-members.Add("CriticalSpaceColor", CriticalSpaceColor.ToResoniteLinkField());
-members.Add("LowSpaceThreshold", LowSpaceThreshold.ToResoniteLinkField());
-members.Add("CriticalSpaceThreshold", CriticalSpaceThreshold.ToResoniteLinkField());
-members.Add("_ownerLabel", _ownerLabel.ToResoniteReference(context));
-members.Add("_usageLabel", _usageLabel.ToResoniteReference(context));
-members.Add("_percentLabel", _percentLabel.ToResoniteReference(context));
-members.Add("_progressBar", _progressBar.ToResoniteReference(context));
-members.Add("__legacyOwnerId", __legacyOwnerId.ToResoniteLinkField());
-members.Add("__legacyMemberQuota", __legacyMemberQuota.ToResoniteLinkField());
+members.Add("Source", Source_Element.Data.ToResoniteReference(context));
+members.Add("ContainerColor", ContainerColor_Element.Data.ToResoniteLinkField());
+members.Add("UsedColor", UsedColor_Element.Data.ToResoniteLinkField());
+members.Add("LowSpaceColor", LowSpaceColor_Element.Data.ToResoniteLinkField());
+members.Add("CriticalSpaceColor", CriticalSpaceColor_Element.Data.ToResoniteLinkField());
+members.Add("LowSpaceThreshold", LowSpaceThreshold_Element.Data.ToResoniteLinkField());
+members.Add("CriticalSpaceThreshold", CriticalSpaceThreshold_Element.Data.ToResoniteLinkField());
+members.Add("_ownerLabel", _ownerLabel_Element.Data.ToResoniteReference(context));
+members.Add("_usageLabel", _usageLabel_Element.Data.ToResoniteReference(context));
+members.Add("_percentLabel", _percentLabel_Element.Data.ToResoniteReference(context));
+members.Add("_progressBar", _progressBar_Element.Data.ToResoniteReference(context));
+members.Add("__legacyOwnerId", __legacyOwnerId_Element.Data.ToResoniteLinkField());
+members.Add("__legacyMemberQuota", __legacyMemberQuota_Element.Data.ToResoniteLinkField());
 }
 
 }

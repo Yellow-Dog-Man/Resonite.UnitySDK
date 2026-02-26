@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.CurrentLocaleInfo
-// Generated on: středa 25. února 2026 16:13:10
+// Generated on: čtvrtek 26. února 2026 10:03:39
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,19 +20,23 @@ namespace FrooxEngine
 public partial class CurrentLocaleInfo : global::FrooxEngine.Component
 
 {
-    public global::System.String LocaleCode;
-public global::System.String LanguageCode;
-public global::System.String NativeLocaleName;
-public global::System.String EnglishLocaleName;
+    public global::System.String LocaleCode { get => LocaleCode_Element.Data; set => LocaleCode_Element.Data = value; }
+public Field<global::FrooxEngine.RawOutput<global::System.String>, global::System.String> LocaleCode_Element = new();
+public global::System.String LanguageCode { get => LanguageCode_Element.Data; set => LanguageCode_Element.Data = value; }
+public Field<global::FrooxEngine.RawOutput<global::System.String>, global::System.String> LanguageCode_Element = new();
+public global::System.String NativeLocaleName { get => NativeLocaleName_Element.Data; set => NativeLocaleName_Element.Data = value; }
+public Field<global::FrooxEngine.RawOutput<global::System.String>, global::System.String> NativeLocaleName_Element = new();
+public global::System.String EnglishLocaleName { get => EnglishLocaleName_Element.Data; set => EnglishLocaleName_Element.Data = value; }
+public Field<global::FrooxEngine.RawOutput<global::System.String>, global::System.String> EnglishLocaleName_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("LocaleCode", LocaleCode.ToResoniteLinkField());
-members.Add("LanguageCode", LanguageCode.ToResoniteLinkField());
-members.Add("NativeLocaleName", NativeLocaleName.ToResoniteLinkField());
-members.Add("EnglishLocaleName", EnglishLocaleName.ToResoniteLinkField());
+members.Add("LocaleCode", LocaleCode_Element.Data.ToResoniteLinkField());
+members.Add("LanguageCode", LanguageCode_Element.Data.ToResoniteLinkField());
+members.Add("NativeLocaleName", NativeLocaleName_Element.Data.ToResoniteLinkField());
+members.Add("EnglishLocaleName", EnglishLocaleName_Element.Data.ToResoniteLinkField());
 }
 
 }

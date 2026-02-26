@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [ProtoFluxBindings]FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Cloud.CloudVariableRequest<>
-// Generated on: středa 25. února 2026 16:14:13
+// Generated on: čtvrtek 26. února 2026 10:04:34
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -21,21 +21,26 @@ public abstract partial class CloudVariableRequest<T> : global::FrooxEngine.Prot
 	
 
 {
-    public global::FrooxEngine.ProtoFlux.INodeObjectOutput<global::System.String> Path;
-public global::FrooxEngine.ProtoFlux.INodeObjectOutput<global::System.String> VariableOwnerId;
-public global::FrooxEngine.ProtoFlux.INodeOperation OnRequest;
-public global::FrooxEngine.ProtoFlux.INodeOperation OnDone;
-public global::FrooxEngine.ProtoFlux.INodeOperation OnFail;
+    public global::FrooxEngine.ProtoFlux.INodeObjectOutput<global::System.String> Path { get => Path_Element.Data; set => Path_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.ProtoFlux.INodeObjectOutput<global::System.String>>, global::FrooxEngine.ProtoFlux.INodeObjectOutput<global::System.String>> Path_Element = new();
+public global::FrooxEngine.ProtoFlux.INodeObjectOutput<global::System.String> VariableOwnerId { get => VariableOwnerId_Element.Data; set => VariableOwnerId_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.ProtoFlux.INodeObjectOutput<global::System.String>>, global::FrooxEngine.ProtoFlux.INodeObjectOutput<global::System.String>> VariableOwnerId_Element = new();
+public global::FrooxEngine.ProtoFlux.INodeOperation OnRequest { get => OnRequest_Element.Data; set => OnRequest_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.ProtoFlux.INodeOperation>, global::FrooxEngine.ProtoFlux.INodeOperation> OnRequest_Element = new();
+public global::FrooxEngine.ProtoFlux.INodeOperation OnDone { get => OnDone_Element.Data; set => OnDone_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.ProtoFlux.INodeOperation>, global::FrooxEngine.ProtoFlux.INodeOperation> OnDone_Element = new();
+public global::FrooxEngine.ProtoFlux.INodeOperation OnFail { get => OnFail_Element.Data; set => OnFail_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.ProtoFlux.INodeOperation>, global::FrooxEngine.ProtoFlux.INodeOperation> OnFail_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Path", Path.ToResoniteReference(context));
-members.Add("VariableOwnerId", VariableOwnerId.ToResoniteReference(context));
-members.Add("OnRequest", OnRequest.ToResoniteReference(context));
-members.Add("OnDone", OnDone.ToResoniteReference(context));
-members.Add("OnFail", OnFail.ToResoniteReference(context));
+members.Add("Path", Path_Element.Data.ToResoniteReference(context));
+members.Add("VariableOwnerId", VariableOwnerId_Element.Data.ToResoniteReference(context));
+members.Add("OnRequest", OnRequest_Element.Data.ToResoniteReference(context));
+members.Add("OnDone", OnDone_Element.Data.ToResoniteReference(context));
+members.Add("OnFail", OnFail_Element.Data.ToResoniteReference(context));
 }
 
 }

@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.HapticPointSamplerBase
-// Generated on: středa 25. února 2026 16:13:09
+// Generated on: čtvrtek 26. února 2026 10:03:39
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,17 +20,20 @@ namespace FrooxEngine
 public abstract partial class HapticPointSamplerBase : global::FrooxEngine.Component
 
 {
-    public global::System.Single Radius;
-public global::System.Boolean ShowDebugVisual;
-public global::FrooxEngine.OverlayFresnelMaterial _debugVisual;
+    public global::System.Single Radius { get => Radius_Element.Data; set => Radius_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> Radius_Element = new();
+public global::System.Boolean ShowDebugVisual { get => ShowDebugVisual_Element.Data; set => ShowDebugVisual_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> ShowDebugVisual_Element = new();
+public global::FrooxEngine.OverlayFresnelMaterial _debugVisual { get => _debugVisual_Element.Data; set => _debugVisual_Element.Data = value; }
+public Field<global::FrooxEngine.SlotCleanupRef<global::FrooxEngine.OverlayFresnelMaterial>, global::FrooxEngine.OverlayFresnelMaterial> _debugVisual_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Radius", Radius.ToResoniteLinkField());
-members.Add("ShowDebugVisual", ShowDebugVisual.ToResoniteLinkField());
-members.Add("_debugVisual", _debugVisual.ToResoniteReference(context));
+members.Add("Radius", Radius_Element.Data.ToResoniteLinkField());
+members.Add("ShowDebugVisual", ShowDebugVisual_Element.Data.ToResoniteLinkField());
+members.Add("_debugVisual", _debugVisual_Element.Data.ToResoniteReference(context));
 }
 
 }

@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.ConstrainedDelaunayMesh+Hole
-// Generated on: středa 25. února 2026 16:13:04
+// Generated on: čtvrtek 26. února 2026 10:03:35
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -22,7 +22,7 @@ namespace FrooxEngine
 public partial class Hole : global::FrooxEngine.SyncObject
 
 {
-    public System.Collections.Generic.List<global::FrooxEngine.ProceduralMeshVertex> HoleVertices;
+    public global::SyncList<global::FrooxEngine.SyncList<global::FrooxEngine.ProceduralMeshVertex>, global::FrooxEngine.ProceduralMeshVertex> HoleVertices = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
@@ -30,7 +30,7 @@ public override void CollectMembers(
     base.CollectMembers(members, context);
 members.Add("HoleVertices", new ResoniteLink.SyncList()
 {
-    Elements = HoleVertices.ConvertList(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers(context) })
+    Elements = HoleVertices.Data.ConvertList(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers(context) })
 });
 }
 

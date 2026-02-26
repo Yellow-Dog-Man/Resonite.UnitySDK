@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.CommonAvatar.AvatarPoseNode
-// Generated on: středa 25. února 2026 16:14:39
+// Generated on: čtvrtek 26. února 2026 10:04:45
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,42 +20,55 @@ namespace FrooxEngine.CommonAvatar
 public partial class AvatarPoseNode : global::FrooxEngine.Component, global::FrooxEngine.CommonAvatar.IAvatarObject, global::FrooxEngine.IInputUpdateReceiver
 
 {
-    public global::Renderite.Shared.BodyNode Node;
-public global::System.Int32 EquipOrderPriority;
-public global::System.Boolean RunAfterInputUpdate;
-public System.Collections.Generic.List<global::Renderite.Shared.BodyNode> MutuallyExclusiveNodes;
-public global::System.Boolean IsTracking;
-public global::System.Boolean SourceIsTracking;
-public global::System.Boolean SourceIsActive;
-public global::System.Boolean SourceIsSimulated;
-public global::FrooxEngine.CommonAvatar.AvatarObjectSlot _objectSlot;
-public global::FrooxEngine.Slot _source;
-public global::FrooxEngine.IField<UnityEngine.Vector3> _position;
-public global::FrooxEngine.IField<UnityEngine.Quaternion> _rotation;
-public global::FrooxEngine.IField<UnityEngine.Vector3> _scale;
-public global::FrooxEngine.IField<global::System.Boolean> _active;
+    public global::Renderite.Shared.BodyNode Node { get => Node_Element.Data; set => Node_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::Renderite.Shared.BodyNode>, global::Renderite.Shared.BodyNode> Node_Element = new();
+public global::System.Int32 EquipOrderPriority { get => EquipOrderPriority_Element.Data; set => EquipOrderPriority_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Int32>, global::System.Int32> EquipOrderPriority_Element = new();
+public global::System.Boolean RunAfterInputUpdate { get => RunAfterInputUpdate_Element.Data; set => RunAfterInputUpdate_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> RunAfterInputUpdate_Element = new();
+public global::SyncFieldList<global::FrooxEngine.SyncFieldList<global::Renderite.Shared.BodyNode>, global::Renderite.Shared.BodyNode, Field<global::FrooxEngine.Sync<global::Renderite.Shared.BodyNode>, global::Renderite.Shared.BodyNode>> MutuallyExclusiveNodes = new();
+public global::System.Boolean IsTracking { get => IsTracking_Element.Data; set => IsTracking_Element.Data = value; }
+public Field<global::FrooxEngine.RawOutput<global::System.Boolean>, global::System.Boolean> IsTracking_Element = new();
+public global::System.Boolean SourceIsTracking { get => SourceIsTracking_Element.Data; set => SourceIsTracking_Element.Data = value; }
+public Field<global::FrooxEngine.RawOutput<global::System.Boolean>, global::System.Boolean> SourceIsTracking_Element = new();
+public global::System.Boolean SourceIsActive { get => SourceIsActive_Element.Data; set => SourceIsActive_Element.Data = value; }
+public Field<global::FrooxEngine.RawOutput<global::System.Boolean>, global::System.Boolean> SourceIsActive_Element = new();
+public global::System.Boolean SourceIsSimulated { get => SourceIsSimulated_Element.Data; set => SourceIsSimulated_Element.Data = value; }
+public Field<global::FrooxEngine.RawOutput<global::System.Boolean>, global::System.Boolean> SourceIsSimulated_Element = new();
+public global::FrooxEngine.CommonAvatar.AvatarObjectSlot _objectSlot { get => _objectSlot_Element.Data; set => _objectSlot_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.CommonAvatar.AvatarObjectSlot>, global::FrooxEngine.CommonAvatar.AvatarObjectSlot> _objectSlot_Element = new();
+public global::FrooxEngine.Slot _source { get => _source_Element.Data; set => _source_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> _source_Element = new();
+public global::FrooxEngine.IField<UnityEngine.Vector3> _position { get => _position_Element.Data; set => _position_Element.Data = value; }
+public Field<global::FrooxEngine.FieldDrive<UnityEngine.Vector3>, global::FrooxEngine.IField<UnityEngine.Vector3>> _position_Element = new();
+public global::FrooxEngine.IField<UnityEngine.Quaternion> _rotation { get => _rotation_Element.Data; set => _rotation_Element.Data = value; }
+public Field<global::FrooxEngine.FieldDrive<UnityEngine.Quaternion>, global::FrooxEngine.IField<UnityEngine.Quaternion>> _rotation_Element = new();
+public global::FrooxEngine.IField<UnityEngine.Vector3> _scale { get => _scale_Element.Data; set => _scale_Element.Data = value; }
+public Field<global::FrooxEngine.FieldDrive<UnityEngine.Vector3>, global::FrooxEngine.IField<UnityEngine.Vector3>> _scale_Element = new();
+public global::FrooxEngine.IField<global::System.Boolean> _active { get => _active_Element.Data; set => _active_Element.Data = value; }
+public Field<global::FrooxEngine.FieldDrive<global::System.Boolean>, global::FrooxEngine.IField<global::System.Boolean>> _active_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Node", Node.ToResoniteLinkField());
-members.Add("EquipOrderPriority", EquipOrderPriority.ToResoniteLinkField());
-members.Add("RunAfterInputUpdate", RunAfterInputUpdate.ToResoniteLinkField());
+members.Add("Node", Node_Element.Data.ToResoniteLinkField());
+members.Add("EquipOrderPriority", EquipOrderPriority_Element.Data.ToResoniteLinkField());
+members.Add("RunAfterInputUpdate", RunAfterInputUpdate_Element.Data.ToResoniteLinkField());
 members.Add("MutuallyExclusiveNodes", new ResoniteLink.SyncList()
 {
-    Elements = MutuallyExclusiveNodes.ConvertList(m => m.ToResoniteLinkField())
+    Elements = MutuallyExclusiveNodes.Data.ConvertList(m => m.Data.ToResoniteLinkField())
 });
-members.Add("IsTracking", IsTracking.ToResoniteLinkField());
-members.Add("SourceIsTracking", SourceIsTracking.ToResoniteLinkField());
-members.Add("SourceIsActive", SourceIsActive.ToResoniteLinkField());
-members.Add("SourceIsSimulated", SourceIsSimulated.ToResoniteLinkField());
-members.Add("_objectSlot", _objectSlot.ToResoniteReference(context));
-members.Add("_source", _source.ToResoniteReference(context));
-members.Add("_position", _position.ToResoniteReference(context));
-members.Add("_rotation", _rotation.ToResoniteReference(context));
-members.Add("_scale", _scale.ToResoniteReference(context));
-members.Add("_active", _active.ToResoniteReference(context));
+members.Add("IsTracking", IsTracking_Element.Data.ToResoniteLinkField());
+members.Add("SourceIsTracking", SourceIsTracking_Element.Data.ToResoniteLinkField());
+members.Add("SourceIsActive", SourceIsActive_Element.Data.ToResoniteLinkField());
+members.Add("SourceIsSimulated", SourceIsSimulated_Element.Data.ToResoniteLinkField());
+members.Add("_objectSlot", _objectSlot_Element.Data.ToResoniteReference(context));
+members.Add("_source", _source_Element.Data.ToResoniteReference(context));
+members.Add("_position", _position_Element.Data.ToResoniteReference(context));
+members.Add("_rotation", _rotation_Element.Data.ToResoniteReference(context));
+members.Add("_scale", _scale_Element.Data.ToResoniteReference(context));
+members.Add("_active", _active_Element.Data.ToResoniteReference(context));
 }
 
 }

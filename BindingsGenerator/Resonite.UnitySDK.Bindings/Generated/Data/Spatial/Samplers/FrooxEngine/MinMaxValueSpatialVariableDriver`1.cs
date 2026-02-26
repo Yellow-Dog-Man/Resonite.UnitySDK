@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.MinMaxValueSpatialVariableDriver<>
-// Generated on: středa 25. února 2026 16:13:08
+// Generated on: čtvrtek 26. února 2026 10:03:39
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -21,17 +21,20 @@ public partial class MinMaxValueSpatialVariableDriver<T> : global::FrooxEngine.C
 	
 
 {
-    public global::FrooxEngine.IField<T> MinDrive;
-public global::FrooxEngine.IField<T> MaxDrive;
-public global::System.String VariableName;
+    public global::FrooxEngine.IField<T> MinDrive { get => MinDrive_Element.Data; set => MinDrive_Element.Data = value; }
+public Field<global::FrooxEngine.FieldDrive<T>, global::FrooxEngine.IField<T>> MinDrive_Element = new();
+public global::FrooxEngine.IField<T> MaxDrive { get => MaxDrive_Element.Data; set => MaxDrive_Element.Data = value; }
+public Field<global::FrooxEngine.FieldDrive<T>, global::FrooxEngine.IField<T>> MaxDrive_Element = new();
+public global::System.String VariableName { get => VariableName_Element.Data; set => VariableName_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.String>, global::System.String> VariableName_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("MinDrive", MinDrive.ToResoniteReference(context));
-members.Add("MaxDrive", MaxDrive.ToResoniteReference(context));
-members.Add("VariableName", VariableName.ToResoniteLinkField());
+members.Add("MinDrive", MinDrive_Element.Data.ToResoniteReference(context));
+members.Add("MaxDrive", MaxDrive_Element.Data.ToResoniteReference(context));
+members.Add("VariableName", VariableName_Element.Data.ToResoniteLinkField());
 }
 
 }

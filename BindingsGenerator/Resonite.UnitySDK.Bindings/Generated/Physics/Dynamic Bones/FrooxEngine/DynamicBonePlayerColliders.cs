@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.DynamicBonePlayerColliders
-// Generated on: středa 25. února 2026 16:13:11
+// Generated on: čtvrtek 26. února 2026 10:03:41
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,25 +20,30 @@ namespace FrooxEngine
 public partial class DynamicBonePlayerColliders : global::FrooxEngine.UserRootComponent
 
 {
-    public global::System.Boolean VisualizeColliders;
-public global::System.Boolean DisableDefaultHeadColliders;
-public global::System.Boolean DisableDefaultBodyColliders;
-public global::System.Boolean DisableDefaultLeftHandColliders;
-public global::System.Boolean DisableDefaultRightHandColliders;
-public System.Collections.Generic.List<global::FrooxEngine.IDynamicBoneCollider> Colliders;
+    public global::System.Boolean VisualizeColliders { get => VisualizeColliders_Element.Data; set => VisualizeColliders_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> VisualizeColliders_Element = new();
+public global::System.Boolean DisableDefaultHeadColliders { get => DisableDefaultHeadColliders_Element.Data; set => DisableDefaultHeadColliders_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> DisableDefaultHeadColliders_Element = new();
+public global::System.Boolean DisableDefaultBodyColliders { get => DisableDefaultBodyColliders_Element.Data; set => DisableDefaultBodyColliders_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> DisableDefaultBodyColliders_Element = new();
+public global::System.Boolean DisableDefaultLeftHandColliders { get => DisableDefaultLeftHandColliders_Element.Data; set => DisableDefaultLeftHandColliders_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> DisableDefaultLeftHandColliders_Element = new();
+public global::System.Boolean DisableDefaultRightHandColliders { get => DisableDefaultRightHandColliders_Element.Data; set => DisableDefaultRightHandColliders_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> DisableDefaultRightHandColliders_Element = new();
+public global::SyncFieldList<global::FrooxEngine.SyncRefList<global::FrooxEngine.IDynamicBoneCollider>, global::FrooxEngine.IDynamicBoneCollider, Field<global::FrooxEngine.SyncRef<global::FrooxEngine.IDynamicBoneCollider>, global::FrooxEngine.IDynamicBoneCollider>> Colliders = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("VisualizeColliders", VisualizeColliders.ToResoniteLinkField());
-members.Add("DisableDefaultHeadColliders", DisableDefaultHeadColliders.ToResoniteLinkField());
-members.Add("DisableDefaultBodyColliders", DisableDefaultBodyColliders.ToResoniteLinkField());
-members.Add("DisableDefaultLeftHandColliders", DisableDefaultLeftHandColliders.ToResoniteLinkField());
-members.Add("DisableDefaultRightHandColliders", DisableDefaultRightHandColliders.ToResoniteLinkField());
+members.Add("VisualizeColliders", VisualizeColliders_Element.Data.ToResoniteLinkField());
+members.Add("DisableDefaultHeadColliders", DisableDefaultHeadColliders_Element.Data.ToResoniteLinkField());
+members.Add("DisableDefaultBodyColliders", DisableDefaultBodyColliders_Element.Data.ToResoniteLinkField());
+members.Add("DisableDefaultLeftHandColliders", DisableDefaultLeftHandColliders_Element.Data.ToResoniteLinkField());
+members.Add("DisableDefaultRightHandColliders", DisableDefaultRightHandColliders_Element.Data.ToResoniteLinkField());
 members.Add("Colliders", new ResoniteLink.SyncList()
 {
-    Elements = Colliders.ConvertList(m => m.ToResoniteReference(context))
+    Elements = Colliders.Data.ConvertList(m => m.Data.ToResoniteReference(context))
 });
 }
 

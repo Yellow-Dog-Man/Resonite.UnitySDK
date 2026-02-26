@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.LineTransform
-// Generated on: středa 25. února 2026 16:14:24
+// Generated on: čtvrtek 26. února 2026 10:04:39
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,37 +20,50 @@ namespace FrooxEngine
 public partial class LineTransform : global::FrooxEngine.Component
 
 {
-    public UnityEngine.Vector3 Point0;
-public UnityEngine.Vector3 Point1;
-public global::FrooxEngine.Slot Point0Anchor;
-public global::FrooxEngine.Slot Point1Anchor;
-public global::FrooxEngine.PositionType LinePositionType;
-public global::FrooxEngine.PositionType PlanePositionType;
-public global::System.Single LinePoint;
-public UnityEngine.Vector3 OffsetPoint;
-public UnityEngine.Quaternion RotationOffset;
-public global::FrooxEngine.IField<UnityEngine.Vector3> _position;
-public global::FrooxEngine.IField<UnityEngine.Quaternion> _rotation;
-public global::System.Boolean AllowRepositioning;
-public global::System.Boolean RepositionOffset;
+    public UnityEngine.Vector3 Point0 { get => Point0_Element.Data; set => Point0_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.Vector3>, UnityEngine.Vector3> Point0_Element = new();
+public UnityEngine.Vector3 Point1 { get => Point1_Element.Data; set => Point1_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.Vector3>, UnityEngine.Vector3> Point1_Element = new();
+public global::FrooxEngine.Slot Point0Anchor { get => Point0Anchor_Element.Data; set => Point0Anchor_Element.Data = value; }
+public Field<global::FrooxEngine.TransformRelayRef, global::FrooxEngine.Slot> Point0Anchor_Element = new();
+public global::FrooxEngine.Slot Point1Anchor { get => Point1Anchor_Element.Data; set => Point1Anchor_Element.Data = value; }
+public Field<global::FrooxEngine.TransformRelayRef, global::FrooxEngine.Slot> Point1Anchor_Element = new();
+public global::FrooxEngine.PositionType LinePositionType { get => LinePositionType_Element.Data; set => LinePositionType_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::FrooxEngine.PositionType>, global::FrooxEngine.PositionType> LinePositionType_Element = new();
+public global::FrooxEngine.PositionType PlanePositionType { get => PlanePositionType_Element.Data; set => PlanePositionType_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::FrooxEngine.PositionType>, global::FrooxEngine.PositionType> PlanePositionType_Element = new();
+public global::System.Single LinePoint { get => LinePoint_Element.Data; set => LinePoint_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> LinePoint_Element = new();
+public UnityEngine.Vector3 OffsetPoint { get => OffsetPoint_Element.Data; set => OffsetPoint_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.Vector3>, UnityEngine.Vector3> OffsetPoint_Element = new();
+public UnityEngine.Quaternion RotationOffset { get => RotationOffset_Element.Data; set => RotationOffset_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.Quaternion>, UnityEngine.Quaternion> RotationOffset_Element = new();
+public global::FrooxEngine.IField<UnityEngine.Vector3> _position { get => _position_Element.Data; set => _position_Element.Data = value; }
+public Field<global::FrooxEngine.FieldDrive<UnityEngine.Vector3>, global::FrooxEngine.IField<UnityEngine.Vector3>> _position_Element = new();
+public global::FrooxEngine.IField<UnityEngine.Quaternion> _rotation { get => _rotation_Element.Data; set => _rotation_Element.Data = value; }
+public Field<global::FrooxEngine.FieldDrive<UnityEngine.Quaternion>, global::FrooxEngine.IField<UnityEngine.Quaternion>> _rotation_Element = new();
+public global::System.Boolean AllowRepositioning { get => AllowRepositioning_Element.Data; set => AllowRepositioning_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> AllowRepositioning_Element = new();
+public global::System.Boolean RepositionOffset { get => RepositionOffset_Element.Data; set => RepositionOffset_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> RepositionOffset_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Point0", Point0.ToResoniteLinkField());
-members.Add("Point1", Point1.ToResoniteLinkField());
-members.Add("Point0Anchor", Point0Anchor.ToResoniteReference(context));
-members.Add("Point1Anchor", Point1Anchor.ToResoniteReference(context));
-members.Add("LinePositionType", LinePositionType.ToResoniteLinkField());
-members.Add("PlanePositionType", PlanePositionType.ToResoniteLinkField());
-members.Add("LinePoint", LinePoint.ToResoniteLinkField());
-members.Add("OffsetPoint", OffsetPoint.ToResoniteLinkField());
-members.Add("RotationOffset", RotationOffset.ToResoniteLinkField());
-members.Add("_position", _position.ToResoniteReference(context));
-members.Add("_rotation", _rotation.ToResoniteReference(context));
-members.Add("AllowRepositioning", AllowRepositioning.ToResoniteLinkField());
-members.Add("RepositionOffset", RepositionOffset.ToResoniteLinkField());
+members.Add("Point0", Point0_Element.Data.ToResoniteLinkField());
+members.Add("Point1", Point1_Element.Data.ToResoniteLinkField());
+members.Add("Point0Anchor", Point0Anchor_Element.Data.ToResoniteReference(context));
+members.Add("Point1Anchor", Point1Anchor_Element.Data.ToResoniteReference(context));
+members.Add("LinePositionType", LinePositionType_Element.Data.ToResoniteLinkField());
+members.Add("PlanePositionType", PlanePositionType_Element.Data.ToResoniteLinkField());
+members.Add("LinePoint", LinePoint_Element.Data.ToResoniteLinkField());
+members.Add("OffsetPoint", OffsetPoint_Element.Data.ToResoniteLinkField());
+members.Add("RotationOffset", RotationOffset_Element.Data.ToResoniteLinkField());
+members.Add("_position", _position_Element.Data.ToResoniteReference(context));
+members.Add("_rotation", _rotation_Element.Data.ToResoniteReference(context));
+members.Add("AllowRepositioning", AllowRepositioning_Element.Data.ToResoniteLinkField());
+members.Add("RepositionOffset", RepositionOffset_Element.Data.ToResoniteLinkField());
 }
 
 }

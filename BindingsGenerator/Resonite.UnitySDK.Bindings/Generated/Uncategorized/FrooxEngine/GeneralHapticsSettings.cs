@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.GeneralHapticsSettings
-// Generated on: středa 25. února 2026 16:14:39
+// Generated on: čtvrtek 26. února 2026 10:04:45
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,15 +20,17 @@ namespace FrooxEngine
 public partial class GeneralHapticsSettings : global::FrooxEngine.SettingComponent<global::FrooxEngine.GeneralHapticsSettings>
 
 {
-    public global::System.Boolean EnableControllerVibration;
-public global::System.Boolean EnableHaptics;
+    public global::System.Boolean EnableControllerVibration { get => EnableControllerVibration_Element.Data; set => EnableControllerVibration_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> EnableControllerVibration_Element = new();
+public global::System.Boolean EnableHaptics { get => EnableHaptics_Element.Data; set => EnableHaptics_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> EnableHaptics_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("EnableControllerVibration", EnableControllerVibration.ToResoniteLinkField());
-members.Add("EnableHaptics", EnableHaptics.ToResoniteLinkField());
+members.Add("EnableControllerVibration", EnableControllerVibration_Element.Data.ToResoniteLinkField());
+members.Add("EnableHaptics", EnableHaptics_Element.Data.ToResoniteLinkField());
 }
 
 }

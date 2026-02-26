@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.HandPoser+Finger
-// Generated on: středa 25. února 2026 16:14:46
+// Generated on: čtvrtek 26. února 2026 10:04:50
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -22,10 +22,10 @@ namespace FrooxEngine
 public partial class Finger : global::FrooxEngine.SyncObject
 
 {
-    public global::FrooxEngine.HandPoser.FingerSegment Metacarpal;
-public global::FrooxEngine.HandPoser.FingerSegment Proximal;
-public global::FrooxEngine.HandPoser.FingerSegment Intermediate;
-public global::FrooxEngine.HandPoser.FingerSegment Distal;
+    public global::FrooxEngine.HandPoser.FingerSegment Metacarpal = new();
+public global::FrooxEngine.HandPoser.FingerSegment Proximal = new();
+public global::FrooxEngine.HandPoser.FingerSegment Intermediate = new();
+public global::FrooxEngine.HandPoser.FingerSegment Distal = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)

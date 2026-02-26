@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.AvatarAudioConfiguration
-// Generated on: středa 25. února 2026 16:14:45
+// Generated on: čtvrtek 26. února 2026 10:04:50
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,9 +20,9 @@ namespace FrooxEngine
 public partial class AvatarAudioConfiguration : global::FrooxEngine.UserRootComponent
 
 {
-    public global::FrooxEngine.VoiceModeConfig Normal;
-public global::FrooxEngine.VoiceModeConfig Shout;
-public global::FrooxEngine.VoiceModeConfig Broadcast;
+    public global::FrooxEngine.VoiceModeConfig Normal = new();
+public global::FrooxEngine.VoiceModeConfig Shout = new();
+public global::FrooxEngine.VoiceModeConfig Broadcast = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)

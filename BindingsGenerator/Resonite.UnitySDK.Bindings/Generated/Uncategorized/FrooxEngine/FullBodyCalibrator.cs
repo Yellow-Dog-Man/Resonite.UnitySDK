@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.FullBodyCalibrator
-// Generated on: středa 25. února 2026 16:14:39
+// Generated on: čtvrtek 26. února 2026 10:04:45
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,125 +20,174 @@ namespace FrooxEngine
 public partial class FullBodyCalibrator : global::FrooxEngine.Component
 
 {
-    public global::FrooxEngine.User TargetUser;
-public global::System.Boolean UseSymmetryForTrackers;
-public global::System.Boolean UseSymmetryForAvatar;
-public global::System.Boolean ShowBodyOverlay;
-public global::System.Boolean ShowAvatarOverlay;
-public global::System.Single HeightCompensation;
-public global::System.Single AvatarHeightCompensation;
-public global::System.Boolean _calibratingPose;
-public UnityEngine.Vector3 _spaceOffset;
-public global::FrooxEngine.Grabbable _grabbable;
-public global::FrooxEngine.Slot _headReference;
-public global::FrooxEngine.Slot _leftHandReference;
-public global::FrooxEngine.Slot _rightHandReference;
-public global::FrooxEngine.TrackedDevicePositioner _hipsSource;
-public global::FrooxEngine.TrackedDevicePositioner _chestSource;
-public global::FrooxEngine.TrackedDevicePositioner _leftFootSource;
-public global::FrooxEngine.TrackedDevicePositioner _rightFootSource;
-public global::FrooxEngine.TrackedDevicePositioner _leftElbowSource;
-public global::FrooxEngine.TrackedDevicePositioner _rightElbowSource;
-public global::FrooxEngine.TrackedDevicePositioner _leftKneeSource;
-public global::FrooxEngine.TrackedDevicePositioner _rightKneeSource;
-public global::FrooxEngine.FullBodyCalibratorDialog _dialog;
-public global::FrooxEngine.FullBodyCalibrator.BodyReference _platformBody;
-public global::FrooxEngine.FullBodyCalibrator.BodyReference _userBody;
-public global::FrooxEngine.FullBodyCalibrator.BodyReference _customAvatar;
-public global::FrooxEngine.Slot _leftHandOverride;
-public global::FrooxEngine.Slot _rightHandOverride;
-public global::FrooxEngine.FinalIK.VRIKAvatar _targetCustomAvatar;
-public global::FrooxEngine.Slot _avatarHipsOffset;
-public global::FrooxEngine.Slot _avatarLeftFootOffset;
-public global::FrooxEngine.Slot _avatarRightFootOffset;
-public global::FrooxEngine.Slot _avatarLeftKneeDefaultOffset;
-public global::FrooxEngine.Slot _avatarRightKneeDefaultOffset;
-public global::FrooxEngine.Slot _avatarHipHandle;
-public global::FrooxEngine.Slot _avatarLeftFootHandle;
-public global::FrooxEngine.Slot _avatarRightFootHandle;
-public global::FrooxEngine.Slot _avatarLeftKneeHandle;
-public global::FrooxEngine.Slot _avatarRightKneeHandle;
-public global::FrooxEngine.IField<UnityEngine.Vector3> _avatarLeftKneeOffset;
-public global::FrooxEngine.IField<UnityEngine.Vector3> _avatarRightKneeOffset;
-public System.Collections.Generic.List<global::FrooxEngine.MaterialSet> _platformBodyMaterialSets;
-public global::FrooxEngine.Slot _ground;
-public System.Collections.Generic.List<global::FrooxEngine.FullBodyCalibrator.Tracker> _trackers;
-public global::FrooxEngine.Slot _visualizationRoot;
-public global::FrooxEngine.FresnelMaterial _bodyNodeMaterial;
-public global::FrooxEngine.OverlayFresnelMaterial _calibrationReferenceMaterial;
-public global::FrooxEngine.OverlayFresnelMaterial _leftHandOverrideMaterial;
-public global::FrooxEngine.OverlayFresnelMaterial _rightHandOverrideMaterial;
-public global::FrooxEngine.IField<UnityEngine.ColorX> _leftHandOverrideFrontColor;
-public global::FrooxEngine.IField<UnityEngine.ColorX> _leftHandOverrideBehindColor;
-public global::FrooxEngine.IField<UnityEngine.ColorX> _rightHandOverrideFrontColor;
-public global::FrooxEngine.IField<UnityEngine.ColorX> _rightHandOverrideBehindColor;
-public global::FrooxEngine.StaticTexture2D _patternTex;
-public global::FrooxEngine.TextRenderer _title;
+    public global::FrooxEngine.User TargetUser { get => TargetUser_Element.Data; set => TargetUser_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.User>, global::FrooxEngine.User> TargetUser_Element = new();
+public global::System.Boolean UseSymmetryForTrackers { get => UseSymmetryForTrackers_Element.Data; set => UseSymmetryForTrackers_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> UseSymmetryForTrackers_Element = new();
+public global::System.Boolean UseSymmetryForAvatar { get => UseSymmetryForAvatar_Element.Data; set => UseSymmetryForAvatar_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> UseSymmetryForAvatar_Element = new();
+public global::System.Boolean ShowBodyOverlay { get => ShowBodyOverlay_Element.Data; set => ShowBodyOverlay_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> ShowBodyOverlay_Element = new();
+public global::System.Boolean ShowAvatarOverlay { get => ShowAvatarOverlay_Element.Data; set => ShowAvatarOverlay_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> ShowAvatarOverlay_Element = new();
+public global::System.Single HeightCompensation { get => HeightCompensation_Element.Data; set => HeightCompensation_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> HeightCompensation_Element = new();
+public global::System.Single AvatarHeightCompensation { get => AvatarHeightCompensation_Element.Data; set => AvatarHeightCompensation_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> AvatarHeightCompensation_Element = new();
+public global::System.Boolean _calibratingPose { get => _calibratingPose_Element.Data; set => _calibratingPose_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> _calibratingPose_Element = new();
+public UnityEngine.Vector3 _spaceOffset { get => _spaceOffset_Element.Data; set => _spaceOffset_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.Vector3>, UnityEngine.Vector3> _spaceOffset_Element = new();
+public global::FrooxEngine.Grabbable _grabbable { get => _grabbable_Element.Data; set => _grabbable_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.Grabbable>, global::FrooxEngine.Grabbable> _grabbable_Element = new();
+public global::FrooxEngine.Slot _headReference { get => _headReference_Element.Data; set => _headReference_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> _headReference_Element = new();
+public global::FrooxEngine.Slot _leftHandReference { get => _leftHandReference_Element.Data; set => _leftHandReference_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> _leftHandReference_Element = new();
+public global::FrooxEngine.Slot _rightHandReference { get => _rightHandReference_Element.Data; set => _rightHandReference_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> _rightHandReference_Element = new();
+public global::FrooxEngine.TrackedDevicePositioner _hipsSource { get => _hipsSource_Element.Data; set => _hipsSource_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.TrackedDevicePositioner>, global::FrooxEngine.TrackedDevicePositioner> _hipsSource_Element = new();
+public global::FrooxEngine.TrackedDevicePositioner _chestSource { get => _chestSource_Element.Data; set => _chestSource_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.TrackedDevicePositioner>, global::FrooxEngine.TrackedDevicePositioner> _chestSource_Element = new();
+public global::FrooxEngine.TrackedDevicePositioner _leftFootSource { get => _leftFootSource_Element.Data; set => _leftFootSource_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.TrackedDevicePositioner>, global::FrooxEngine.TrackedDevicePositioner> _leftFootSource_Element = new();
+public global::FrooxEngine.TrackedDevicePositioner _rightFootSource { get => _rightFootSource_Element.Data; set => _rightFootSource_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.TrackedDevicePositioner>, global::FrooxEngine.TrackedDevicePositioner> _rightFootSource_Element = new();
+public global::FrooxEngine.TrackedDevicePositioner _leftElbowSource { get => _leftElbowSource_Element.Data; set => _leftElbowSource_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.TrackedDevicePositioner>, global::FrooxEngine.TrackedDevicePositioner> _leftElbowSource_Element = new();
+public global::FrooxEngine.TrackedDevicePositioner _rightElbowSource { get => _rightElbowSource_Element.Data; set => _rightElbowSource_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.TrackedDevicePositioner>, global::FrooxEngine.TrackedDevicePositioner> _rightElbowSource_Element = new();
+public global::FrooxEngine.TrackedDevicePositioner _leftKneeSource { get => _leftKneeSource_Element.Data; set => _leftKneeSource_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.TrackedDevicePositioner>, global::FrooxEngine.TrackedDevicePositioner> _leftKneeSource_Element = new();
+public global::FrooxEngine.TrackedDevicePositioner _rightKneeSource { get => _rightKneeSource_Element.Data; set => _rightKneeSource_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.TrackedDevicePositioner>, global::FrooxEngine.TrackedDevicePositioner> _rightKneeSource_Element = new();
+public global::FrooxEngine.FullBodyCalibratorDialog _dialog { get => _dialog_Element.Data; set => _dialog_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.FullBodyCalibratorDialog>, global::FrooxEngine.FullBodyCalibratorDialog> _dialog_Element = new();
+public global::FrooxEngine.FullBodyCalibrator.BodyReference _platformBody = new();
+public global::FrooxEngine.FullBodyCalibrator.BodyReference _userBody = new();
+public global::FrooxEngine.FullBodyCalibrator.BodyReference _customAvatar = new();
+public global::FrooxEngine.Slot _leftHandOverride { get => _leftHandOverride_Element.Data; set => _leftHandOverride_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> _leftHandOverride_Element = new();
+public global::FrooxEngine.Slot _rightHandOverride { get => _rightHandOverride_Element.Data; set => _rightHandOverride_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> _rightHandOverride_Element = new();
+public global::FrooxEngine.FinalIK.VRIKAvatar _targetCustomAvatar { get => _targetCustomAvatar_Element.Data; set => _targetCustomAvatar_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.FinalIK.VRIKAvatar>, global::FrooxEngine.FinalIK.VRIKAvatar> _targetCustomAvatar_Element = new();
+public global::FrooxEngine.Slot _avatarHipsOffset { get => _avatarHipsOffset_Element.Data; set => _avatarHipsOffset_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> _avatarHipsOffset_Element = new();
+public global::FrooxEngine.Slot _avatarLeftFootOffset { get => _avatarLeftFootOffset_Element.Data; set => _avatarLeftFootOffset_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> _avatarLeftFootOffset_Element = new();
+public global::FrooxEngine.Slot _avatarRightFootOffset { get => _avatarRightFootOffset_Element.Data; set => _avatarRightFootOffset_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> _avatarRightFootOffset_Element = new();
+public global::FrooxEngine.Slot _avatarLeftKneeDefaultOffset { get => _avatarLeftKneeDefaultOffset_Element.Data; set => _avatarLeftKneeDefaultOffset_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> _avatarLeftKneeDefaultOffset_Element = new();
+public global::FrooxEngine.Slot _avatarRightKneeDefaultOffset { get => _avatarRightKneeDefaultOffset_Element.Data; set => _avatarRightKneeDefaultOffset_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> _avatarRightKneeDefaultOffset_Element = new();
+public global::FrooxEngine.Slot _avatarHipHandle { get => _avatarHipHandle_Element.Data; set => _avatarHipHandle_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> _avatarHipHandle_Element = new();
+public global::FrooxEngine.Slot _avatarLeftFootHandle { get => _avatarLeftFootHandle_Element.Data; set => _avatarLeftFootHandle_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> _avatarLeftFootHandle_Element = new();
+public global::FrooxEngine.Slot _avatarRightFootHandle { get => _avatarRightFootHandle_Element.Data; set => _avatarRightFootHandle_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> _avatarRightFootHandle_Element = new();
+public global::FrooxEngine.Slot _avatarLeftKneeHandle { get => _avatarLeftKneeHandle_Element.Data; set => _avatarLeftKneeHandle_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> _avatarLeftKneeHandle_Element = new();
+public global::FrooxEngine.Slot _avatarRightKneeHandle { get => _avatarRightKneeHandle_Element.Data; set => _avatarRightKneeHandle_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> _avatarRightKneeHandle_Element = new();
+public global::FrooxEngine.IField<UnityEngine.Vector3> _avatarLeftKneeOffset { get => _avatarLeftKneeOffset_Element.Data; set => _avatarLeftKneeOffset_Element.Data = value; }
+public Field<global::FrooxEngine.FieldHook<UnityEngine.Vector3>, global::FrooxEngine.IField<UnityEngine.Vector3>> _avatarLeftKneeOffset_Element = new();
+public global::FrooxEngine.IField<UnityEngine.Vector3> _avatarRightKneeOffset { get => _avatarRightKneeOffset_Element.Data; set => _avatarRightKneeOffset_Element.Data = value; }
+public Field<global::FrooxEngine.FieldHook<UnityEngine.Vector3>, global::FrooxEngine.IField<UnityEngine.Vector3>> _avatarRightKneeOffset_Element = new();
+public global::SyncFieldList<global::FrooxEngine.SyncRefList<global::FrooxEngine.MaterialSet>, global::FrooxEngine.MaterialSet, Field<global::FrooxEngine.SyncRef<global::FrooxEngine.MaterialSet>, global::FrooxEngine.MaterialSet>> _platformBodyMaterialSets = new();
+public global::FrooxEngine.Slot _ground { get => _ground_Element.Data; set => _ground_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> _ground_Element = new();
+public global::SyncList<global::FrooxEngine.SyncList<global::FrooxEngine.FullBodyCalibrator.Tracker>, global::FrooxEngine.FullBodyCalibrator.Tracker> _trackers = new();
+public global::FrooxEngine.Slot _visualizationRoot { get => _visualizationRoot_Element.Data; set => _visualizationRoot_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> _visualizationRoot_Element = new();
+public global::FrooxEngine.FresnelMaterial _bodyNodeMaterial { get => _bodyNodeMaterial_Element.Data; set => _bodyNodeMaterial_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.FresnelMaterial>, global::FrooxEngine.FresnelMaterial> _bodyNodeMaterial_Element = new();
+public global::FrooxEngine.OverlayFresnelMaterial _calibrationReferenceMaterial { get => _calibrationReferenceMaterial_Element.Data; set => _calibrationReferenceMaterial_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.OverlayFresnelMaterial>, global::FrooxEngine.OverlayFresnelMaterial> _calibrationReferenceMaterial_Element = new();
+public global::FrooxEngine.OverlayFresnelMaterial _leftHandOverrideMaterial { get => _leftHandOverrideMaterial_Element.Data; set => _leftHandOverrideMaterial_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.OverlayFresnelMaterial>, global::FrooxEngine.OverlayFresnelMaterial> _leftHandOverrideMaterial_Element = new();
+public global::FrooxEngine.OverlayFresnelMaterial _rightHandOverrideMaterial { get => _rightHandOverrideMaterial_Element.Data; set => _rightHandOverrideMaterial_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.OverlayFresnelMaterial>, global::FrooxEngine.OverlayFresnelMaterial> _rightHandOverrideMaterial_Element = new();
+public global::FrooxEngine.IField<UnityEngine.ColorX> _leftHandOverrideFrontColor { get => _leftHandOverrideFrontColor_Element.Data; set => _leftHandOverrideFrontColor_Element.Data = value; }
+public Field<global::FrooxEngine.FieldDrive<UnityEngine.ColorX>, global::FrooxEngine.IField<UnityEngine.ColorX>> _leftHandOverrideFrontColor_Element = new();
+public global::FrooxEngine.IField<UnityEngine.ColorX> _leftHandOverrideBehindColor { get => _leftHandOverrideBehindColor_Element.Data; set => _leftHandOverrideBehindColor_Element.Data = value; }
+public Field<global::FrooxEngine.FieldDrive<UnityEngine.ColorX>, global::FrooxEngine.IField<UnityEngine.ColorX>> _leftHandOverrideBehindColor_Element = new();
+public global::FrooxEngine.IField<UnityEngine.ColorX> _rightHandOverrideFrontColor { get => _rightHandOverrideFrontColor_Element.Data; set => _rightHandOverrideFrontColor_Element.Data = value; }
+public Field<global::FrooxEngine.FieldDrive<UnityEngine.ColorX>, global::FrooxEngine.IField<UnityEngine.ColorX>> _rightHandOverrideFrontColor_Element = new();
+public global::FrooxEngine.IField<UnityEngine.ColorX> _rightHandOverrideBehindColor { get => _rightHandOverrideBehindColor_Element.Data; set => _rightHandOverrideBehindColor_Element.Data = value; }
+public Field<global::FrooxEngine.FieldDrive<UnityEngine.ColorX>, global::FrooxEngine.IField<UnityEngine.ColorX>> _rightHandOverrideBehindColor_Element = new();
+public global::FrooxEngine.StaticTexture2D _patternTex { get => _patternTex_Element.Data; set => _patternTex_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.StaticTexture2D>, global::FrooxEngine.StaticTexture2D> _patternTex_Element = new();
+public global::FrooxEngine.TextRenderer _title { get => _title_Element.Data; set => _title_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.TextRenderer>, global::FrooxEngine.TextRenderer> _title_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("TargetUser", TargetUser.ToResoniteReference(context));
-members.Add("UseSymmetryForTrackers", UseSymmetryForTrackers.ToResoniteLinkField());
-members.Add("UseSymmetryForAvatar", UseSymmetryForAvatar.ToResoniteLinkField());
-members.Add("ShowBodyOverlay", ShowBodyOverlay.ToResoniteLinkField());
-members.Add("ShowAvatarOverlay", ShowAvatarOverlay.ToResoniteLinkField());
-members.Add("HeightCompensation", HeightCompensation.ToResoniteLinkField());
-members.Add("AvatarHeightCompensation", AvatarHeightCompensation.ToResoniteLinkField());
-members.Add("_calibratingPose", _calibratingPose.ToResoniteLinkField());
-members.Add("_spaceOffset", _spaceOffset.ToResoniteLinkField());
-members.Add("_grabbable", _grabbable.ToResoniteReference(context));
-members.Add("_headReference", _headReference.ToResoniteReference(context));
-members.Add("_leftHandReference", _leftHandReference.ToResoniteReference(context));
-members.Add("_rightHandReference", _rightHandReference.ToResoniteReference(context));
-members.Add("_hipsSource", _hipsSource.ToResoniteReference(context));
-members.Add("_chestSource", _chestSource.ToResoniteReference(context));
-members.Add("_leftFootSource", _leftFootSource.ToResoniteReference(context));
-members.Add("_rightFootSource", _rightFootSource.ToResoniteReference(context));
-members.Add("_leftElbowSource", _leftElbowSource.ToResoniteReference(context));
-members.Add("_rightElbowSource", _rightElbowSource.ToResoniteReference(context));
-members.Add("_leftKneeSource", _leftKneeSource.ToResoniteReference(context));
-members.Add("_rightKneeSource", _rightKneeSource.ToResoniteReference(context));
-members.Add("_dialog", _dialog.ToResoniteReference(context));
+members.Add("TargetUser", TargetUser_Element.Data.ToResoniteReference(context));
+members.Add("UseSymmetryForTrackers", UseSymmetryForTrackers_Element.Data.ToResoniteLinkField());
+members.Add("UseSymmetryForAvatar", UseSymmetryForAvatar_Element.Data.ToResoniteLinkField());
+members.Add("ShowBodyOverlay", ShowBodyOverlay_Element.Data.ToResoniteLinkField());
+members.Add("ShowAvatarOverlay", ShowAvatarOverlay_Element.Data.ToResoniteLinkField());
+members.Add("HeightCompensation", HeightCompensation_Element.Data.ToResoniteLinkField());
+members.Add("AvatarHeightCompensation", AvatarHeightCompensation_Element.Data.ToResoniteLinkField());
+members.Add("_calibratingPose", _calibratingPose_Element.Data.ToResoniteLinkField());
+members.Add("_spaceOffset", _spaceOffset_Element.Data.ToResoniteLinkField());
+members.Add("_grabbable", _grabbable_Element.Data.ToResoniteReference(context));
+members.Add("_headReference", _headReference_Element.Data.ToResoniteReference(context));
+members.Add("_leftHandReference", _leftHandReference_Element.Data.ToResoniteReference(context));
+members.Add("_rightHandReference", _rightHandReference_Element.Data.ToResoniteReference(context));
+members.Add("_hipsSource", _hipsSource_Element.Data.ToResoniteReference(context));
+members.Add("_chestSource", _chestSource_Element.Data.ToResoniteReference(context));
+members.Add("_leftFootSource", _leftFootSource_Element.Data.ToResoniteReference(context));
+members.Add("_rightFootSource", _rightFootSource_Element.Data.ToResoniteReference(context));
+members.Add("_leftElbowSource", _leftElbowSource_Element.Data.ToResoniteReference(context));
+members.Add("_rightElbowSource", _rightElbowSource_Element.Data.ToResoniteReference(context));
+members.Add("_leftKneeSource", _leftKneeSource_Element.Data.ToResoniteReference(context));
+members.Add("_rightKneeSource", _rightKneeSource_Element.Data.ToResoniteReference(context));
+members.Add("_dialog", _dialog_Element.Data.ToResoniteReference(context));
 members.Add("_platformBody", new ResoniteLink.SyncObject() { Members = _platformBody.CollectMembers(context) });
 members.Add("_userBody", new ResoniteLink.SyncObject() { Members = _userBody.CollectMembers(context) });
 members.Add("_customAvatar", new ResoniteLink.SyncObject() { Members = _customAvatar.CollectMembers(context) });
-members.Add("_leftHandOverride", _leftHandOverride.ToResoniteReference(context));
-members.Add("_rightHandOverride", _rightHandOverride.ToResoniteReference(context));
-members.Add("_targetCustomAvatar", _targetCustomAvatar.ToResoniteReference(context));
-members.Add("_avatarHipsOffset", _avatarHipsOffset.ToResoniteReference(context));
-members.Add("_avatarLeftFootOffset", _avatarLeftFootOffset.ToResoniteReference(context));
-members.Add("_avatarRightFootOffset", _avatarRightFootOffset.ToResoniteReference(context));
-members.Add("_avatarLeftKneeDefaultOffset", _avatarLeftKneeDefaultOffset.ToResoniteReference(context));
-members.Add("_avatarRightKneeDefaultOffset", _avatarRightKneeDefaultOffset.ToResoniteReference(context));
-members.Add("_avatarHipHandle", _avatarHipHandle.ToResoniteReference(context));
-members.Add("_avatarLeftFootHandle", _avatarLeftFootHandle.ToResoniteReference(context));
-members.Add("_avatarRightFootHandle", _avatarRightFootHandle.ToResoniteReference(context));
-members.Add("_avatarLeftKneeHandle", _avatarLeftKneeHandle.ToResoniteReference(context));
-members.Add("_avatarRightKneeHandle", _avatarRightKneeHandle.ToResoniteReference(context));
-members.Add("_avatarLeftKneeOffset", _avatarLeftKneeOffset.ToResoniteReference(context));
-members.Add("_avatarRightKneeOffset", _avatarRightKneeOffset.ToResoniteReference(context));
+members.Add("_leftHandOverride", _leftHandOverride_Element.Data.ToResoniteReference(context));
+members.Add("_rightHandOverride", _rightHandOverride_Element.Data.ToResoniteReference(context));
+members.Add("_targetCustomAvatar", _targetCustomAvatar_Element.Data.ToResoniteReference(context));
+members.Add("_avatarHipsOffset", _avatarHipsOffset_Element.Data.ToResoniteReference(context));
+members.Add("_avatarLeftFootOffset", _avatarLeftFootOffset_Element.Data.ToResoniteReference(context));
+members.Add("_avatarRightFootOffset", _avatarRightFootOffset_Element.Data.ToResoniteReference(context));
+members.Add("_avatarLeftKneeDefaultOffset", _avatarLeftKneeDefaultOffset_Element.Data.ToResoniteReference(context));
+members.Add("_avatarRightKneeDefaultOffset", _avatarRightKneeDefaultOffset_Element.Data.ToResoniteReference(context));
+members.Add("_avatarHipHandle", _avatarHipHandle_Element.Data.ToResoniteReference(context));
+members.Add("_avatarLeftFootHandle", _avatarLeftFootHandle_Element.Data.ToResoniteReference(context));
+members.Add("_avatarRightFootHandle", _avatarRightFootHandle_Element.Data.ToResoniteReference(context));
+members.Add("_avatarLeftKneeHandle", _avatarLeftKneeHandle_Element.Data.ToResoniteReference(context));
+members.Add("_avatarRightKneeHandle", _avatarRightKneeHandle_Element.Data.ToResoniteReference(context));
+members.Add("_avatarLeftKneeOffset", _avatarLeftKneeOffset_Element.Data.ToResoniteReference(context));
+members.Add("_avatarRightKneeOffset", _avatarRightKneeOffset_Element.Data.ToResoniteReference(context));
 members.Add("_platformBodyMaterialSets", new ResoniteLink.SyncList()
 {
-    Elements = _platformBodyMaterialSets.ConvertList(m => m.ToResoniteReference(context))
+    Elements = _platformBodyMaterialSets.Data.ConvertList(m => m.Data.ToResoniteReference(context))
 });
-members.Add("_ground", _ground.ToResoniteReference(context));
+members.Add("_ground", _ground_Element.Data.ToResoniteReference(context));
 members.Add("_trackers", new ResoniteLink.SyncList()
 {
-    Elements = _trackers.ConvertList(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers(context) })
+    Elements = _trackers.Data.ConvertList(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers(context) })
 });
-members.Add("_visualizationRoot", _visualizationRoot.ToResoniteReference(context));
-members.Add("_bodyNodeMaterial", _bodyNodeMaterial.ToResoniteReference(context));
-members.Add("_calibrationReferenceMaterial", _calibrationReferenceMaterial.ToResoniteReference(context));
-members.Add("_leftHandOverrideMaterial", _leftHandOverrideMaterial.ToResoniteReference(context));
-members.Add("_rightHandOverrideMaterial", _rightHandOverrideMaterial.ToResoniteReference(context));
-members.Add("_leftHandOverrideFrontColor", _leftHandOverrideFrontColor.ToResoniteReference(context));
-members.Add("_leftHandOverrideBehindColor", _leftHandOverrideBehindColor.ToResoniteReference(context));
-members.Add("_rightHandOverrideFrontColor", _rightHandOverrideFrontColor.ToResoniteReference(context));
-members.Add("_rightHandOverrideBehindColor", _rightHandOverrideBehindColor.ToResoniteReference(context));
-members.Add("_patternTex", _patternTex.ToResoniteReference(context));
-members.Add("_title", _title.ToResoniteReference(context));
+members.Add("_visualizationRoot", _visualizationRoot_Element.Data.ToResoniteReference(context));
+members.Add("_bodyNodeMaterial", _bodyNodeMaterial_Element.Data.ToResoniteReference(context));
+members.Add("_calibrationReferenceMaterial", _calibrationReferenceMaterial_Element.Data.ToResoniteReference(context));
+members.Add("_leftHandOverrideMaterial", _leftHandOverrideMaterial_Element.Data.ToResoniteReference(context));
+members.Add("_rightHandOverrideMaterial", _rightHandOverrideMaterial_Element.Data.ToResoniteReference(context));
+members.Add("_leftHandOverrideFrontColor", _leftHandOverrideFrontColor_Element.Data.ToResoniteReference(context));
+members.Add("_leftHandOverrideBehindColor", _leftHandOverrideBehindColor_Element.Data.ToResoniteReference(context));
+members.Add("_rightHandOverrideFrontColor", _rightHandOverrideFrontColor_Element.Data.ToResoniteReference(context));
+members.Add("_rightHandOverrideBehindColor", _rightHandOverrideBehindColor_Element.Data.ToResoniteReference(context));
+members.Add("_patternTex", _patternTex_Element.Data.ToResoniteReference(context));
+members.Add("_title", _title_Element.Data.ToResoniteReference(context));
 }
 
 }

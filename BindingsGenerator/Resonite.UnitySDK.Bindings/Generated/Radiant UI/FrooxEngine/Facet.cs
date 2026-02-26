@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.Facet
-// Generated on: středa 25. února 2026 16:14:14
+// Generated on: čtvrtek 26. února 2026 10:04:35
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,35 +20,42 @@ namespace FrooxEngine
 public partial class Facet : global::FrooxEngine.Component, global::FrooxEngine.IGrabEventReceiver, global::FrooxEngine.IItemMetadataSource
 
 {
-    public global::System.Single MinWidth;
-public global::System.Single MaxWidth;
-public global::System.Single MinHeight;
-public global::System.Single MaxHeight;
-public global::System.Nullable<UnityEngine.Vector2> LastPlacedSize;
-public System.Collections.Generic.List<UnityEngine.Vector2> PreferredSizes;
-public System.Collections.Generic.List<UnityEngine.Vector2> AllowedAspectRatios;
-public global::System.Boolean IsStandalone;
-public global::FrooxEngine.UIX.Canvas Canvas;
+    public global::System.Single MinWidth { get => MinWidth_Element.Data; set => MinWidth_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> MinWidth_Element = new();
+public global::System.Single MaxWidth { get => MaxWidth_Element.Data; set => MaxWidth_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> MaxWidth_Element = new();
+public global::System.Single MinHeight { get => MinHeight_Element.Data; set => MinHeight_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> MinHeight_Element = new();
+public global::System.Single MaxHeight { get => MaxHeight_Element.Data; set => MaxHeight_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> MaxHeight_Element = new();
+public global::System.Nullable<UnityEngine.Vector2> LastPlacedSize { get => LastPlacedSize_Element.Data; set => LastPlacedSize_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Nullable<UnityEngine.Vector2>>, global::System.Nullable<UnityEngine.Vector2>> LastPlacedSize_Element = new();
+public global::SyncFieldList<global::FrooxEngine.SyncFieldList<UnityEngine.Vector2>, UnityEngine.Vector2, Field<global::FrooxEngine.Sync<UnityEngine.Vector2>, UnityEngine.Vector2>> PreferredSizes = new();
+public global::SyncFieldList<global::FrooxEngine.SyncFieldList<UnityEngine.Vector2>, UnityEngine.Vector2, Field<global::FrooxEngine.Sync<UnityEngine.Vector2>, UnityEngine.Vector2>> AllowedAspectRatios = new();
+public global::System.Boolean IsStandalone { get => IsStandalone_Element.Data; set => IsStandalone_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> IsStandalone_Element = new();
+public global::FrooxEngine.UIX.Canvas Canvas { get => Canvas_Element.Data; set => Canvas_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.UIX.Canvas>, global::FrooxEngine.UIX.Canvas> Canvas_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("MinWidth", MinWidth.ToResoniteLinkField());
-members.Add("MaxWidth", MaxWidth.ToResoniteLinkField());
-members.Add("MinHeight", MinHeight.ToResoniteLinkField());
-members.Add("MaxHeight", MaxHeight.ToResoniteLinkField());
-members.Add("LastPlacedSize", LastPlacedSize.ToResoniteLinkField());
+members.Add("MinWidth", MinWidth_Element.Data.ToResoniteLinkField());
+members.Add("MaxWidth", MaxWidth_Element.Data.ToResoniteLinkField());
+members.Add("MinHeight", MinHeight_Element.Data.ToResoniteLinkField());
+members.Add("MaxHeight", MaxHeight_Element.Data.ToResoniteLinkField());
+members.Add("LastPlacedSize", LastPlacedSize_Element.Data.ToResoniteLinkField());
 members.Add("PreferredSizes", new ResoniteLink.SyncList()
 {
-    Elements = PreferredSizes.ConvertList(m => m.ToResoniteLinkField())
+    Elements = PreferredSizes.Data.ConvertList(m => m.Data.ToResoniteLinkField())
 });
 members.Add("AllowedAspectRatios", new ResoniteLink.SyncList()
 {
-    Elements = AllowedAspectRatios.ConvertList(m => m.ToResoniteLinkField())
+    Elements = AllowedAspectRatios.Data.ConvertList(m => m.Data.ToResoniteLinkField())
 });
-members.Add("IsStandalone", IsStandalone.ToResoniteLinkField());
-members.Add("Canvas", Canvas.ToResoniteReference(context));
+members.Add("IsStandalone", IsStandalone_Element.Data.ToResoniteLinkField());
+members.Add("Canvas", Canvas_Element.Data.ToResoniteReference(context));
 }
 
 }

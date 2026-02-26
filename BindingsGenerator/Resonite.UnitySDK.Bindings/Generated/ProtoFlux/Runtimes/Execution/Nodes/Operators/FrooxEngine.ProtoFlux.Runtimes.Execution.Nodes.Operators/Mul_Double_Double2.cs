@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [ProtoFluxBindings]FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.Operators.Mul_Double_Double2
-// Generated on: středa 25. února 2026 16:13:57
+// Generated on: čtvrtek 26. února 2026 10:04:24
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,15 +20,17 @@ namespace FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.Operators
 public partial class Mul_Double_Double2 : global::FrooxEngine.ProtoFlux.Runtimes.Execution.ValueFunctionNode<global::ProtoFlux.Runtimes.Execution.ExecutionContext,UnityEngine.Vector2Double>
 
 {
-    public global::FrooxEngine.ProtoFlux.INodeValueOutput<global::System.Double> A;
-public global::FrooxEngine.ProtoFlux.INodeValueOutput<UnityEngine.Vector2Double> B;
+    public global::FrooxEngine.ProtoFlux.INodeValueOutput<global::System.Double> A { get => A_Element.Data; set => A_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.ProtoFlux.INodeValueOutput<global::System.Double>>, global::FrooxEngine.ProtoFlux.INodeValueOutput<global::System.Double>> A_Element = new();
+public global::FrooxEngine.ProtoFlux.INodeValueOutput<UnityEngine.Vector2Double> B { get => B_Element.Data; set => B_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.ProtoFlux.INodeValueOutput<UnityEngine.Vector2Double>>, global::FrooxEngine.ProtoFlux.INodeValueOutput<UnityEngine.Vector2Double>> B_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("A", A.ToResoniteReference(context));
-members.Add("B", B.ToResoniteReference(context));
+members.Add("A", A_Element.Data.ToResoniteReference(context));
+members.Add("B", B_Element.Data.ToResoniteReference(context));
 }
 
 }

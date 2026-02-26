@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [ProtoFluxBindings]FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.While
-// Generated on: středa 25. února 2026 16:13:46
+// Generated on: čtvrtek 26. února 2026 10:04:14
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,19 +20,23 @@ namespace FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes
 public partial class While : global::FrooxEngine.ProtoFlux.Runtimes.Execution.ActionNode<global::ProtoFlux.Runtimes.Execution.ExecutionContext>
 
 {
-    public global::FrooxEngine.ProtoFlux.INodeValueOutput<global::System.Boolean> Condition;
-public global::FrooxEngine.ProtoFlux.ISyncNodeOperation LoopStart;
-public global::FrooxEngine.ProtoFlux.ISyncNodeOperation LoopIteration;
-public global::FrooxEngine.ProtoFlux.INodeOperation LoopEnd;
+    public global::FrooxEngine.ProtoFlux.INodeValueOutput<global::System.Boolean> Condition { get => Condition_Element.Data; set => Condition_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.ProtoFlux.INodeValueOutput<global::System.Boolean>>, global::FrooxEngine.ProtoFlux.INodeValueOutput<global::System.Boolean>> Condition_Element = new();
+public global::FrooxEngine.ProtoFlux.ISyncNodeOperation LoopStart { get => LoopStart_Element.Data; set => LoopStart_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.ProtoFlux.ISyncNodeOperation>, global::FrooxEngine.ProtoFlux.ISyncNodeOperation> LoopStart_Element = new();
+public global::FrooxEngine.ProtoFlux.ISyncNodeOperation LoopIteration { get => LoopIteration_Element.Data; set => LoopIteration_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.ProtoFlux.ISyncNodeOperation>, global::FrooxEngine.ProtoFlux.ISyncNodeOperation> LoopIteration_Element = new();
+public global::FrooxEngine.ProtoFlux.INodeOperation LoopEnd { get => LoopEnd_Element.Data; set => LoopEnd_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.ProtoFlux.INodeOperation>, global::FrooxEngine.ProtoFlux.INodeOperation> LoopEnd_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Condition", Condition.ToResoniteReference(context));
-members.Add("LoopStart", LoopStart.ToResoniteReference(context));
-members.Add("LoopIteration", LoopIteration.ToResoniteReference(context));
-members.Add("LoopEnd", LoopEnd.ToResoniteReference(context));
+members.Add("Condition", Condition_Element.Data.ToResoniteReference(context));
+members.Add("LoopStart", LoopStart_Element.Data.ToResoniteReference(context));
+members.Add("LoopIteration", LoopIteration_Element.Data.ToResoniteReference(context));
+members.Add("LoopEnd", LoopEnd_Element.Data.ToResoniteReference(context));
 }
 
 }

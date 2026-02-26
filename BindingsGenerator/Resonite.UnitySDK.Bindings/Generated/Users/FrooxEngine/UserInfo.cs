@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.UserInfo
-// Generated on: středa 25. února 2026 16:14:44
+// Generated on: čtvrtek 26. února 2026 10:04:49
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,8 +20,8 @@ namespace FrooxEngine
 public partial class UserInfo : global::FrooxEngine.Component
 
 {
-    public System.Collections.Generic.List<global::FrooxEngine.Slot> Controllers;
-public System.Collections.Generic.List<global::FrooxEngine.Slot> Hands;
+    public global::SyncFieldList<global::FrooxEngine.SyncRefList<global::FrooxEngine.Slot>, global::FrooxEngine.Slot, Field<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot>> Controllers = new();
+public global::SyncFieldList<global::FrooxEngine.SyncRefList<global::FrooxEngine.Slot>, global::FrooxEngine.Slot, Field<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot>> Hands = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
@@ -29,11 +29,11 @@ public override void CollectMembers(
     base.CollectMembers(members, context);
 members.Add("Controllers", new ResoniteLink.SyncList()
 {
-    Elements = Controllers.ConvertList(m => m.ToResoniteReference(context))
+    Elements = Controllers.Data.ConvertList(m => m.Data.ToResoniteReference(context))
 });
 members.Add("Hands", new ResoniteLink.SyncList()
 {
-    Elements = Hands.ConvertList(m => m.ToResoniteReference(context))
+    Elements = Hands.Data.ConvertList(m => m.Data.ToResoniteReference(context))
 });
 }
 

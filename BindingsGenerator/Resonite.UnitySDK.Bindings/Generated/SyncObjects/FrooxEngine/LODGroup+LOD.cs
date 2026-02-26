@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.LODGroup+LOD
-// Generated on: středa 25. února 2026 16:14:17
+// Generated on: čtvrtek 26. února 2026 10:04:37
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -22,19 +22,21 @@ namespace FrooxEngine
 public partial class LOD : global::FrooxEngine.SyncObject
 
 {
-    public global::System.Single ScreenRelativeTransitionHeight;
-public global::System.Single FadeTransitionWidth;
-public System.Collections.Generic.List<global::FrooxEngine.MeshRenderer> Renderers;
+    public global::System.Single ScreenRelativeTransitionHeight { get => ScreenRelativeTransitionHeight_Element.Data; set => ScreenRelativeTransitionHeight_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> ScreenRelativeTransitionHeight_Element = new();
+public global::System.Single FadeTransitionWidth { get => FadeTransitionWidth_Element.Data; set => FadeTransitionWidth_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> FadeTransitionWidth_Element = new();
+public global::SyncFieldList<global::FrooxEngine.SyncRelayList<global::FrooxEngine.MeshRenderer>, global::FrooxEngine.MeshRenderer, Field<global::FrooxEngine.RelayRef<global::FrooxEngine.MeshRenderer>, global::FrooxEngine.MeshRenderer>> Renderers = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("ScreenRelativeTransitionHeight", ScreenRelativeTransitionHeight.ToResoniteLinkField());
-members.Add("FadeTransitionWidth", FadeTransitionWidth.ToResoniteLinkField());
+members.Add("ScreenRelativeTransitionHeight", ScreenRelativeTransitionHeight_Element.Data.ToResoniteLinkField());
+members.Add("FadeTransitionWidth", FadeTransitionWidth_Element.Data.ToResoniteLinkField());
 members.Add("Renderers", new ResoniteLink.SyncList()
 {
-    Elements = Renderers.ConvertList(m => m.ToResoniteReference(context))
+    Elements = Renderers.Data.ConvertList(m => m.Data.ToResoniteReference(context))
 });
 }
 

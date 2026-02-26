@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.SpriteProvider
-// Generated on: středa 25. února 2026 16:13:01
+// Generated on: čtvrtek 26. února 2026 10:03:32
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,21 +20,26 @@ namespace FrooxEngine
 public partial class SpriteProvider : global::FrooxEngine.DynamicAssetProvider<global::FrooxEngine.Sprite>
 
 {
-    public global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D> Texture;
-public UnityEngine.Rect Rect;
-public UnityEngine.Vector4 Borders;
-public global::System.Single Scale;
-public global::System.Single FixedSize;
+    public global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D> Texture { get => Texture_Element.Data; set => Texture_Element.Data = value; }
+public Field<global::FrooxEngine.AssetRef<global::FrooxEngine.ITexture2D>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D>> Texture_Element = new();
+public UnityEngine.Rect Rect { get => Rect_Element.Data; set => Rect_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.Rect>, UnityEngine.Rect> Rect_Element = new();
+public UnityEngine.Vector4 Borders { get => Borders_Element.Data; set => Borders_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.Vector4>, UnityEngine.Vector4> Borders_Element = new();
+public global::System.Single Scale { get => Scale_Element.Data; set => Scale_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> Scale_Element = new();
+public global::System.Single FixedSize { get => FixedSize_Element.Data; set => FixedSize_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> FixedSize_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Texture", Texture.ToResoniteReference(context));
-members.Add("Rect", Rect.ToResoniteLinkField());
-members.Add("Borders", Borders.ToResoniteLinkField());
-members.Add("Scale", Scale.ToResoniteLinkField());
-members.Add("FixedSize", FixedSize.ToResoniteLinkField());
+members.Add("Texture", Texture_Element.Data.ToResoniteReference(context));
+members.Add("Rect", Rect_Element.Data.ToResoniteLinkField());
+members.Add("Borders", Borders_Element.Data.ToResoniteLinkField());
+members.Add("Scale", Scale_Element.Data.ToResoniteLinkField());
+members.Add("FixedSize", FixedSize_Element.Data.ToResoniteLinkField());
 }
 
 }

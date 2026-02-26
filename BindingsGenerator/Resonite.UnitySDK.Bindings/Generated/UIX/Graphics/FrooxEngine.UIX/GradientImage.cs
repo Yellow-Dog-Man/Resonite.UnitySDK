@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.UIX.GradientImage
-// Generated on: středa 25. února 2026 16:14:33
+// Generated on: čtvrtek 26. února 2026 10:04:42
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,19 +20,23 @@ namespace FrooxEngine.UIX
 public partial class GradientImage : global::FrooxEngine.UIX.ImageBase
 
 {
-    public UnityEngine.ColorX TintTopLeft;
-public UnityEngine.ColorX TintTopRight;
-public UnityEngine.ColorX TintBottomRight;
-public UnityEngine.ColorX TintBottomLeft;
+    public UnityEngine.ColorX TintTopLeft { get => TintTopLeft_Element.Data; set => TintTopLeft_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.ColorX>, UnityEngine.ColorX> TintTopLeft_Element = new();
+public UnityEngine.ColorX TintTopRight { get => TintTopRight_Element.Data; set => TintTopRight_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.ColorX>, UnityEngine.ColorX> TintTopRight_Element = new();
+public UnityEngine.ColorX TintBottomRight { get => TintBottomRight_Element.Data; set => TintBottomRight_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.ColorX>, UnityEngine.ColorX> TintBottomRight_Element = new();
+public UnityEngine.ColorX TintBottomLeft { get => TintBottomLeft_Element.Data; set => TintBottomLeft_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.ColorX>, UnityEngine.ColorX> TintBottomLeft_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("TintTopLeft", TintTopLeft.ToResoniteLinkField());
-members.Add("TintTopRight", TintTopRight.ToResoniteLinkField());
-members.Add("TintBottomRight", TintBottomRight.ToResoniteLinkField());
-members.Add("TintBottomLeft", TintBottomLeft.ToResoniteLinkField());
+members.Add("TintTopLeft", TintTopLeft_Element.Data.ToResoniteLinkField());
+members.Add("TintTopRight", TintTopRight_Element.Data.ToResoniteLinkField());
+members.Add("TintBottomRight", TintBottomRight_Element.Data.ToResoniteLinkField());
+members.Add("TintBottomLeft", TintBottomLeft_Element.Data.ToResoniteLinkField());
 }
 
 }

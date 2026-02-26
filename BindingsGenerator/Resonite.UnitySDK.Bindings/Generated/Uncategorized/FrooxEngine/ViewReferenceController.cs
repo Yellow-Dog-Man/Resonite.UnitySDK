@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.ViewReferenceController
-// Generated on: středa 25. února 2026 16:14:44
+// Generated on: čtvrtek 26. února 2026 10:04:49
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,23 +20,29 @@ namespace FrooxEngine
 public partial class ViewReferenceController : global::FrooxEngine.UserRootComponent, global::FrooxEngine.IInputUpdateReceiver
 
 {
-    public global::FrooxEngine.ValueStream<UnityEngine.Vector3> PositionStream;
-public global::FrooxEngine.ValueStream<UnityEngine.Quaternion> RotationStream;
-public global::FrooxEngine.CommonAvatar.AvatarObjectSlot ObjectSlot;
-public global::System.Boolean ShouldVoiceBeActive;
-public global::FrooxEngine.IField<UnityEngine.Vector3> _objectSlotScale;
-public global::FrooxEngine.IField<global::System.Boolean> _objectSlotActive;
+    public global::FrooxEngine.ValueStream<UnityEngine.Vector3> PositionStream { get => PositionStream_Element.Data; set => PositionStream_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.ValueStream<UnityEngine.Vector3>>, global::FrooxEngine.ValueStream<UnityEngine.Vector3>> PositionStream_Element = new();
+public global::FrooxEngine.ValueStream<UnityEngine.Quaternion> RotationStream { get => RotationStream_Element.Data; set => RotationStream_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.ValueStream<UnityEngine.Quaternion>>, global::FrooxEngine.ValueStream<UnityEngine.Quaternion>> RotationStream_Element = new();
+public global::FrooxEngine.CommonAvatar.AvatarObjectSlot ObjectSlot { get => ObjectSlot_Element.Data; set => ObjectSlot_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.CommonAvatar.AvatarObjectSlot>, global::FrooxEngine.CommonAvatar.AvatarObjectSlot> ObjectSlot_Element = new();
+public global::System.Boolean ShouldVoiceBeActive { get => ShouldVoiceBeActive_Element.Data; set => ShouldVoiceBeActive_Element.Data = value; }
+public Field<global::FrooxEngine.RawOutput<global::System.Boolean>, global::System.Boolean> ShouldVoiceBeActive_Element = new();
+public global::FrooxEngine.IField<UnityEngine.Vector3> _objectSlotScale { get => _objectSlotScale_Element.Data; set => _objectSlotScale_Element.Data = value; }
+public Field<global::FrooxEngine.FieldDrive<UnityEngine.Vector3>, global::FrooxEngine.IField<UnityEngine.Vector3>> _objectSlotScale_Element = new();
+public global::FrooxEngine.IField<global::System.Boolean> _objectSlotActive { get => _objectSlotActive_Element.Data; set => _objectSlotActive_Element.Data = value; }
+public Field<global::FrooxEngine.FieldDrive<global::System.Boolean>, global::FrooxEngine.IField<global::System.Boolean>> _objectSlotActive_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("PositionStream", PositionStream.ToResoniteReference(context));
-members.Add("RotationStream", RotationStream.ToResoniteReference(context));
-members.Add("ObjectSlot", ObjectSlot.ToResoniteReference(context));
-members.Add("ShouldVoiceBeActive", ShouldVoiceBeActive.ToResoniteLinkField());
-members.Add("_objectSlotScale", _objectSlotScale.ToResoniteReference(context));
-members.Add("_objectSlotActive", _objectSlotActive.ToResoniteReference(context));
+members.Add("PositionStream", PositionStream_Element.Data.ToResoniteReference(context));
+members.Add("RotationStream", RotationStream_Element.Data.ToResoniteReference(context));
+members.Add("ObjectSlot", ObjectSlot_Element.Data.ToResoniteReference(context));
+members.Add("ShouldVoiceBeActive", ShouldVoiceBeActive_Element.Data.ToResoniteLinkField());
+members.Add("_objectSlotScale", _objectSlotScale_Element.Data.ToResoniteReference(context));
+members.Add("_objectSlotActive", _objectSlotActive_Element.Data.ToResoniteReference(context));
 }
 
 }

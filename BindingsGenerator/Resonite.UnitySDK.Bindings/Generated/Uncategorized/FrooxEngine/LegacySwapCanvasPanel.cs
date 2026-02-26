@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.LegacySwapCanvasPanel
-// Generated on: středa 25. února 2026 16:14:40
+// Generated on: čtvrtek 26. února 2026 10:04:46
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,15 +20,17 @@ namespace FrooxEngine
 public partial class LegacySwapCanvasPanel : global::FrooxEngine.LegacyCanvasPanel
 
 {
-    public global::FrooxEngine.UIX.RectTransform _currentPanel;
-public global::FrooxEngine.Slot _container;
+    public global::FrooxEngine.UIX.RectTransform _currentPanel { get => _currentPanel_Element.Data; set => _currentPanel_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.UIX.RectTransform>, global::FrooxEngine.UIX.RectTransform> _currentPanel_Element = new();
+public global::FrooxEngine.Slot _container { get => _container_Element.Data; set => _container_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> _container_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("_currentPanel", _currentPanel.ToResoniteReference(context));
-members.Add("_container", _container.ToResoniteReference(context));
+members.Add("_currentPanel", _currentPanel_Element.Data.ToResoniteReference(context));
+members.Add("_container", _container_Element.Data.ToResoniteReference(context));
 }
 
 }

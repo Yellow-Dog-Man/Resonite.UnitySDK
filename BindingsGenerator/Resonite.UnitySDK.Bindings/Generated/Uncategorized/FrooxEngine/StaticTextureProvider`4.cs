@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.StaticTextureProvider<,,,>
-// Generated on: středa 25. února 2026 16:13:02
+// Generated on: čtvrtek 26. února 2026 10:03:33
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -24,27 +24,35 @@ public abstract partial class StaticTextureProvider<A,B,M,D> : global::FrooxEngi
 	where A : global::FrooxEngine.Asset, global::FrooxEngine.ITexture
 
 {
-    public global::System.Nullable<global::Renderite.Shared.TextureFilterMode> FilterMode;
-public global::System.Nullable<global::System.Int32> AnisotropicLevel;
-public global::System.Boolean Uncompressed;
-public global::System.Boolean DirectLoad;
-public global::System.Boolean ForceExactVariant;
-public global::System.Nullable<global::Elements.Assets.TextureCompression> PreferredFormat;
-public global::System.Nullable<global::Renderite.Shared.ColorProfile> PreferredProfile;
-public global::System.Single MipMapBias;
+    public global::System.Nullable<global::Renderite.Shared.TextureFilterMode> FilterMode { get => FilterMode_Element.Data; set => FilterMode_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Nullable<global::Renderite.Shared.TextureFilterMode>>, global::System.Nullable<global::Renderite.Shared.TextureFilterMode>> FilterMode_Element = new();
+public global::System.Nullable<global::System.Int32> AnisotropicLevel { get => AnisotropicLevel_Element.Data; set => AnisotropicLevel_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Nullable<global::System.Int32>>, global::System.Nullable<global::System.Int32>> AnisotropicLevel_Element = new();
+public global::System.Boolean Uncompressed { get => Uncompressed_Element.Data; set => Uncompressed_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> Uncompressed_Element = new();
+public global::System.Boolean DirectLoad { get => DirectLoad_Element.Data; set => DirectLoad_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> DirectLoad_Element = new();
+public global::System.Boolean ForceExactVariant { get => ForceExactVariant_Element.Data; set => ForceExactVariant_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> ForceExactVariant_Element = new();
+public global::System.Nullable<global::Elements.Assets.TextureCompression> PreferredFormat { get => PreferredFormat_Element.Data; set => PreferredFormat_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Nullable<global::Elements.Assets.TextureCompression>>, global::System.Nullable<global::Elements.Assets.TextureCompression>> PreferredFormat_Element = new();
+public global::System.Nullable<global::Renderite.Shared.ColorProfile> PreferredProfile { get => PreferredProfile_Element.Data; set => PreferredProfile_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Nullable<global::Renderite.Shared.ColorProfile>>, global::System.Nullable<global::Renderite.Shared.ColorProfile>> PreferredProfile_Element = new();
+public global::System.Single MipMapBias { get => MipMapBias_Element.Data; set => MipMapBias_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> MipMapBias_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("FilterMode", FilterMode.ToResoniteLinkField());
-members.Add("AnisotropicLevel", AnisotropicLevel.ToResoniteLinkField());
-members.Add("Uncompressed", Uncompressed.ToResoniteLinkField());
-members.Add("DirectLoad", DirectLoad.ToResoniteLinkField());
-members.Add("ForceExactVariant", ForceExactVariant.ToResoniteLinkField());
-members.Add("PreferredFormat", PreferredFormat.ToResoniteLinkField());
-members.Add("PreferredProfile", PreferredProfile.ToResoniteLinkField());
-members.Add("MipMapBias", MipMapBias.ToResoniteLinkField());
+members.Add("FilterMode", FilterMode_Element.Data.ToResoniteLinkField());
+members.Add("AnisotropicLevel", AnisotropicLevel_Element.Data.ToResoniteLinkField());
+members.Add("Uncompressed", Uncompressed_Element.Data.ToResoniteLinkField());
+members.Add("DirectLoad", DirectLoad_Element.Data.ToResoniteLinkField());
+members.Add("ForceExactVariant", ForceExactVariant_Element.Data.ToResoniteLinkField());
+members.Add("PreferredFormat", PreferredFormat_Element.Data.ToResoniteLinkField());
+members.Add("PreferredProfile", PreferredProfile_Element.Data.ToResoniteLinkField());
+members.Add("MipMapBias", MipMapBias_Element.Data.ToResoniteLinkField());
 }
 
 }

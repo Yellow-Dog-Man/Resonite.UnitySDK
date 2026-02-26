@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [ProtoFluxBindings]FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Nodes.PackProtoFluxFromNode
-// Generated on: středa 25. února 2026 16:13:55
+// Generated on: čtvrtek 26. února 2026 10:04:22
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,15 +20,17 @@ namespace FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Nodes
 public partial class PackProtoFluxFromNode : global::FrooxEngine.ProtoFlux.Runtimes.Execution.ActionBreakableFlowNode<global::FrooxEngine.ProtoFlux.FrooxEngineContext>
 
 {
-    public global::FrooxEngine.ProtoFlux.INodeObjectOutput<global::FrooxEngine.ProtoFlux.ProtoFluxNode> StartNode;
-public global::FrooxEngine.ProtoFlux.INodeObjectOutput<global::FrooxEngine.Slot> Target;
+    public global::FrooxEngine.ProtoFlux.INodeObjectOutput<global::FrooxEngine.ProtoFlux.ProtoFluxNode> StartNode { get => StartNode_Element.Data; set => StartNode_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.ProtoFlux.INodeObjectOutput<global::FrooxEngine.ProtoFlux.ProtoFluxNode>>, global::FrooxEngine.ProtoFlux.INodeObjectOutput<global::FrooxEngine.ProtoFlux.ProtoFluxNode>> StartNode_Element = new();
+public global::FrooxEngine.ProtoFlux.INodeObjectOutput<global::FrooxEngine.Slot> Target { get => Target_Element.Data; set => Target_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.ProtoFlux.INodeObjectOutput<global::FrooxEngine.Slot>>, global::FrooxEngine.ProtoFlux.INodeObjectOutput<global::FrooxEngine.Slot>> Target_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("StartNode", StartNode.ToResoniteReference(context));
-members.Add("Target", Target.ToResoniteReference(context));
+members.Add("StartNode", StartNode_Element.Data.ToResoniteReference(context));
+members.Add("Target", Target_Element.Data.ToResoniteReference(context));
 }
 
 }

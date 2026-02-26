@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.ValueOverrideBase<>
-// Generated on: středa 25. února 2026 16:14:29
+// Generated on: čtvrtek 26. února 2026 10:04:41
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -21,19 +21,23 @@ public abstract partial class ValueOverrideBase<T> : global::FrooxEngine.Compone
 	
 
 {
-    public T Default;
-public global::System.Boolean CreateOverrideOnWrite;
-public global::System.Boolean PersistentOverrides;
-public global::System.Boolean ClearOnUserLeave;
+    public T Default { get => Default_Element.Data; set => Default_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<T>, T> Default_Element = new();
+public global::System.Boolean CreateOverrideOnWrite { get => CreateOverrideOnWrite_Element.Data; set => CreateOverrideOnWrite_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> CreateOverrideOnWrite_Element = new();
+public global::System.Boolean PersistentOverrides { get => PersistentOverrides_Element.Data; set => PersistentOverrides_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> PersistentOverrides_Element = new();
+public global::System.Boolean ClearOnUserLeave { get => ClearOnUserLeave_Element.Data; set => ClearOnUserLeave_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> ClearOnUserLeave_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Default", Default.ToResoniteLinkField());
-members.Add("CreateOverrideOnWrite", CreateOverrideOnWrite.ToResoniteLinkField());
-members.Add("PersistentOverrides", PersistentOverrides.ToResoniteLinkField());
-members.Add("ClearOnUserLeave", ClearOnUserLeave.ToResoniteLinkField());
+members.Add("Default", Default_Element.Data.ToResoniteLinkField());
+members.Add("CreateOverrideOnWrite", CreateOverrideOnWrite_Element.Data.ToResoniteLinkField());
+members.Add("PersistentOverrides", PersistentOverrides_Element.Data.ToResoniteLinkField());
+members.Add("ClearOnUserLeave", ClearOnUserLeave_Element.Data.ToResoniteLinkField());
 }
 
 }

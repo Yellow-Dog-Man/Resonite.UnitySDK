@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [ProtoFluxBindings]FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.Binary.ExtractBits_ulong
-// Generated on: středa 25. února 2026 16:14:13
+// Generated on: čtvrtek 26. února 2026 10:04:34
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,77 +20,78 @@ namespace FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.Binary
 public partial class ExtractBits_ulong : global::FrooxEngine.ProtoFlux.Runtimes.Execution.VoidNode<global::ProtoFlux.Runtimes.Execution.ExecutionContext>
 
 {
-    public global::FrooxEngine.ProtoFlux.INodeValueOutput<global::System.UInt64> Integer;
-public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Boolean> Bit0;
-public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Boolean> Bit1;
-public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Boolean> Bit2;
-public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Boolean> Bit3;
-public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Boolean> Bit4;
-public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Boolean> Bit5;
-public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Boolean> Bit6;
-public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Boolean> Bit7;
-public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Boolean> Bit8;
-public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Boolean> Bit9;
-public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Boolean> Bit10;
-public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Boolean> Bit11;
-public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Boolean> Bit12;
-public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Boolean> Bit13;
-public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Boolean> Bit14;
-public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Boolean> Bit15;
-public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Boolean> Bit16;
-public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Boolean> Bit17;
-public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Boolean> Bit18;
-public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Boolean> Bit19;
-public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Boolean> Bit20;
-public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Boolean> Bit21;
-public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Boolean> Bit22;
-public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Boolean> Bit23;
-public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Boolean> Bit24;
-public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Boolean> Bit25;
-public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Boolean> Bit26;
-public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Boolean> Bit27;
-public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Boolean> Bit28;
-public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Boolean> Bit29;
-public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Boolean> Bit30;
-public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Boolean> Bit31;
-public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Boolean> Bit32;
-public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Boolean> Bit33;
-public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Boolean> Bit34;
-public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Boolean> Bit35;
-public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Boolean> Bit36;
-public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Boolean> Bit37;
-public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Boolean> Bit38;
-public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Boolean> Bit39;
-public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Boolean> Bit40;
-public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Boolean> Bit41;
-public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Boolean> Bit42;
-public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Boolean> Bit43;
-public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Boolean> Bit44;
-public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Boolean> Bit45;
-public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Boolean> Bit46;
-public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Boolean> Bit47;
-public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Boolean> Bit48;
-public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Boolean> Bit49;
-public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Boolean> Bit50;
-public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Boolean> Bit51;
-public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Boolean> Bit52;
-public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Boolean> Bit53;
-public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Boolean> Bit54;
-public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Boolean> Bit55;
-public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Boolean> Bit56;
-public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Boolean> Bit57;
-public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Boolean> Bit58;
-public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Boolean> Bit59;
-public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Boolean> Bit60;
-public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Boolean> Bit61;
-public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Boolean> Bit62;
-public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Boolean> Bit63;
+    public global::FrooxEngine.ProtoFlux.INodeValueOutput<global::System.UInt64> Integer { get => Integer_Element.Data; set => Integer_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.ProtoFlux.INodeValueOutput<global::System.UInt64>>, global::FrooxEngine.ProtoFlux.INodeValueOutput<global::System.UInt64>> Integer_Element = new();
+public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Boolean> Bit0 = new();
+public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Boolean> Bit1 = new();
+public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Boolean> Bit2 = new();
+public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Boolean> Bit3 = new();
+public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Boolean> Bit4 = new();
+public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Boolean> Bit5 = new();
+public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Boolean> Bit6 = new();
+public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Boolean> Bit7 = new();
+public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Boolean> Bit8 = new();
+public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Boolean> Bit9 = new();
+public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Boolean> Bit10 = new();
+public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Boolean> Bit11 = new();
+public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Boolean> Bit12 = new();
+public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Boolean> Bit13 = new();
+public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Boolean> Bit14 = new();
+public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Boolean> Bit15 = new();
+public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Boolean> Bit16 = new();
+public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Boolean> Bit17 = new();
+public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Boolean> Bit18 = new();
+public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Boolean> Bit19 = new();
+public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Boolean> Bit20 = new();
+public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Boolean> Bit21 = new();
+public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Boolean> Bit22 = new();
+public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Boolean> Bit23 = new();
+public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Boolean> Bit24 = new();
+public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Boolean> Bit25 = new();
+public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Boolean> Bit26 = new();
+public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Boolean> Bit27 = new();
+public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Boolean> Bit28 = new();
+public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Boolean> Bit29 = new();
+public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Boolean> Bit30 = new();
+public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Boolean> Bit31 = new();
+public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Boolean> Bit32 = new();
+public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Boolean> Bit33 = new();
+public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Boolean> Bit34 = new();
+public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Boolean> Bit35 = new();
+public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Boolean> Bit36 = new();
+public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Boolean> Bit37 = new();
+public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Boolean> Bit38 = new();
+public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Boolean> Bit39 = new();
+public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Boolean> Bit40 = new();
+public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Boolean> Bit41 = new();
+public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Boolean> Bit42 = new();
+public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Boolean> Bit43 = new();
+public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Boolean> Bit44 = new();
+public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Boolean> Bit45 = new();
+public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Boolean> Bit46 = new();
+public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Boolean> Bit47 = new();
+public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Boolean> Bit48 = new();
+public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Boolean> Bit49 = new();
+public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Boolean> Bit50 = new();
+public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Boolean> Bit51 = new();
+public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Boolean> Bit52 = new();
+public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Boolean> Bit53 = new();
+public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Boolean> Bit54 = new();
+public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Boolean> Bit55 = new();
+public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Boolean> Bit56 = new();
+public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Boolean> Bit57 = new();
+public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Boolean> Bit58 = new();
+public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Boolean> Bit59 = new();
+public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Boolean> Bit60 = new();
+public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Boolean> Bit61 = new();
+public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Boolean> Bit62 = new();
+public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Boolean> Bit63 = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Integer", Integer.ToResoniteReference(context));
+members.Add("Integer", Integer_Element.Data.ToResoniteReference(context));
 members.Add("Bit0", new ResoniteLink.EmptyElement());
 members.Add("Bit1", new ResoniteLink.EmptyElement());
 members.Add("Bit2", new ResoniteLink.EmptyElement());

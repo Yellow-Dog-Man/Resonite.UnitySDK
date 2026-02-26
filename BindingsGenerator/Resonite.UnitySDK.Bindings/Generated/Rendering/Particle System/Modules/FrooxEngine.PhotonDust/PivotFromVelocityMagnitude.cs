@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.PhotonDust.PivotFromVelocityMagnitude
-// Generated on: středa 25. února 2026 16:14:18
+// Generated on: čtvrtek 26. února 2026 10:04:38
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,17 +20,20 @@ namespace FrooxEngine.PhotonDust
 public partial class PivotFromVelocityMagnitude : global::FrooxEngine.PhotonDust.ParticleSystemModule<global::System.Object>
 
 {
-    public UnityEngine.Vector3 PivotBaseOffset;
-public UnityEngine.Vector3 PivotClampMin;
-public UnityEngine.Vector3 PivotClampMax;
+    public UnityEngine.Vector3 PivotBaseOffset { get => PivotBaseOffset_Element.Data; set => PivotBaseOffset_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.Vector3>, UnityEngine.Vector3> PivotBaseOffset_Element = new();
+public UnityEngine.Vector3 PivotClampMin { get => PivotClampMin_Element.Data; set => PivotClampMin_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.Vector3>, UnityEngine.Vector3> PivotClampMin_Element = new();
+public UnityEngine.Vector3 PivotClampMax { get => PivotClampMax_Element.Data; set => PivotClampMax_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.Vector3>, UnityEngine.Vector3> PivotClampMax_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("PivotBaseOffset", PivotBaseOffset.ToResoniteLinkField());
-members.Add("PivotClampMin", PivotClampMin.ToResoniteLinkField());
-members.Add("PivotClampMax", PivotClampMax.ToResoniteLinkField());
+members.Add("PivotBaseOffset", PivotBaseOffset_Element.Data.ToResoniteLinkField());
+members.Add("PivotClampMin", PivotClampMin_Element.Data.ToResoniteLinkField());
+members.Add("PivotClampMax", PivotClampMax_Element.Data.ToResoniteLinkField());
 }
 
 }

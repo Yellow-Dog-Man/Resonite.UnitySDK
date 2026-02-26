@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.GenericUIContainer
-// Generated on: středa 25. února 2026 16:13:06
+// Generated on: čtvrtek 26. února 2026 10:03:37
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,17 +20,20 @@ namespace FrooxEngine
 public partial class GenericUIContainer : global::FrooxEngine.Component
 
 {
-    public global::FrooxEngine.IField<global::System.String> Title;
-public global::System.Boolean CloseRequest;
-public global::FrooxEngine.Slot CloseDestroyRoot;
+    public global::FrooxEngine.IField<global::System.String> Title { get => Title_Element.Data; set => Title_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.IField<global::System.String>>, global::FrooxEngine.IField<global::System.String>> Title_Element = new();
+public global::System.Boolean CloseRequest { get => CloseRequest_Element.Data; set => CloseRequest_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> CloseRequest_Element = new();
+public global::FrooxEngine.Slot CloseDestroyRoot { get => CloseDestroyRoot_Element.Data; set => CloseDestroyRoot_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> CloseDestroyRoot_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Title", Title.ToResoniteReference(context));
-members.Add("CloseRequest", CloseRequest.ToResoniteLinkField());
-members.Add("CloseDestroyRoot", CloseDestroyRoot.ToResoniteReference(context));
+members.Add("Title", Title_Element.Data.ToResoniteReference(context));
+members.Add("CloseRequest", CloseRequest_Element.Data.ToResoniteLinkField());
+members.Add("CloseDestroyRoot", CloseDestroyRoot_Element.Data.ToResoniteReference(context));
 }
 
 }

@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.ExternalSlotSaver
-// Generated on: středa 25. února 2026 16:14:46
+// Generated on: čtvrtek 26. února 2026 10:04:50
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,23 +20,29 @@ namespace FrooxEngine
 public partial class ExternalSlotSaver : global::FrooxEngine.Component, global::FrooxEngine.IItemPermissions
 
 {
-    public global::FrooxEngine.Slot TargetSlot;
-public global::System.Nullable<global::System.Boolean> SaveActiveSelfOverride;
-public global::System.Nullable<UnityEngine.Vector3> SaveLocalPositionOverride;
-public global::System.Nullable<UnityEngine.Quaternion> SaveLocalRotationOverride;
-public global::System.Nullable<UnityEngine.Vector3> SaveLocalScaleOverride;
-public global::System.Boolean IgnoreWhenNonPersistentSelf;
+    public global::FrooxEngine.Slot TargetSlot { get => TargetSlot_Element.Data; set => TargetSlot_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> TargetSlot_Element = new();
+public global::System.Nullable<global::System.Boolean> SaveActiveSelfOverride { get => SaveActiveSelfOverride_Element.Data; set => SaveActiveSelfOverride_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Nullable<global::System.Boolean>>, global::System.Nullable<global::System.Boolean>> SaveActiveSelfOverride_Element = new();
+public global::System.Nullable<UnityEngine.Vector3> SaveLocalPositionOverride { get => SaveLocalPositionOverride_Element.Data; set => SaveLocalPositionOverride_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Nullable<UnityEngine.Vector3>>, global::System.Nullable<UnityEngine.Vector3>> SaveLocalPositionOverride_Element = new();
+public global::System.Nullable<UnityEngine.Quaternion> SaveLocalRotationOverride { get => SaveLocalRotationOverride_Element.Data; set => SaveLocalRotationOverride_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Nullable<UnityEngine.Quaternion>>, global::System.Nullable<UnityEngine.Quaternion>> SaveLocalRotationOverride_Element = new();
+public global::System.Nullable<UnityEngine.Vector3> SaveLocalScaleOverride { get => SaveLocalScaleOverride_Element.Data; set => SaveLocalScaleOverride_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Nullable<UnityEngine.Vector3>>, global::System.Nullable<UnityEngine.Vector3>> SaveLocalScaleOverride_Element = new();
+public global::System.Boolean IgnoreWhenNonPersistentSelf { get => IgnoreWhenNonPersistentSelf_Element.Data; set => IgnoreWhenNonPersistentSelf_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> IgnoreWhenNonPersistentSelf_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("TargetSlot", TargetSlot.ToResoniteReference(context));
-members.Add("SaveActiveSelfOverride", SaveActiveSelfOverride.ToResoniteLinkField());
-members.Add("SaveLocalPositionOverride", SaveLocalPositionOverride.ToResoniteLinkField());
-members.Add("SaveLocalRotationOverride", SaveLocalRotationOverride.ToResoniteLinkField());
-members.Add("SaveLocalScaleOverride", SaveLocalScaleOverride.ToResoniteLinkField());
-members.Add("IgnoreWhenNonPersistentSelf", IgnoreWhenNonPersistentSelf.ToResoniteLinkField());
+members.Add("TargetSlot", TargetSlot_Element.Data.ToResoniteReference(context));
+members.Add("SaveActiveSelfOverride", SaveActiveSelfOverride_Element.Data.ToResoniteLinkField());
+members.Add("SaveLocalPositionOverride", SaveLocalPositionOverride_Element.Data.ToResoniteLinkField());
+members.Add("SaveLocalRotationOverride", SaveLocalRotationOverride_Element.Data.ToResoniteLinkField());
+members.Add("SaveLocalScaleOverride", SaveLocalScaleOverride_Element.Data.ToResoniteLinkField());
+members.Add("IgnoreWhenNonPersistentSelf", IgnoreWhenNonPersistentSelf_Element.Data.ToResoniteLinkField());
 }
 
 }

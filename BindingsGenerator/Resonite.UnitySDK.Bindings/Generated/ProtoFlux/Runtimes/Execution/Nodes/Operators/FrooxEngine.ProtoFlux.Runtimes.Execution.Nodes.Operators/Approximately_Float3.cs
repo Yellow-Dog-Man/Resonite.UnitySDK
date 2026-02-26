@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [ProtoFluxBindings]FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.Operators.Approximately_Float3
-// Generated on: středa 25. února 2026 16:13:56
+// Generated on: čtvrtek 26. února 2026 10:04:22
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,17 +20,20 @@ namespace FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.Operators
 public partial class Approximately_Float3 : global::FrooxEngine.ProtoFlux.Runtimes.Execution.ValueFunctionNode<global::ProtoFlux.Runtimes.Execution.ExecutionContext,global::System.Boolean>
 
 {
-    public global::FrooxEngine.ProtoFlux.INodeValueOutput<UnityEngine.Vector3> A;
-public global::FrooxEngine.ProtoFlux.INodeValueOutput<UnityEngine.Vector3> B;
-public global::FrooxEngine.ProtoFlux.INodeValueOutput<global::System.Single> Epsilon;
+    public global::FrooxEngine.ProtoFlux.INodeValueOutput<UnityEngine.Vector3> A { get => A_Element.Data; set => A_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.ProtoFlux.INodeValueOutput<UnityEngine.Vector3>>, global::FrooxEngine.ProtoFlux.INodeValueOutput<UnityEngine.Vector3>> A_Element = new();
+public global::FrooxEngine.ProtoFlux.INodeValueOutput<UnityEngine.Vector3> B { get => B_Element.Data; set => B_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.ProtoFlux.INodeValueOutput<UnityEngine.Vector3>>, global::FrooxEngine.ProtoFlux.INodeValueOutput<UnityEngine.Vector3>> B_Element = new();
+public global::FrooxEngine.ProtoFlux.INodeValueOutput<global::System.Single> Epsilon { get => Epsilon_Element.Data; set => Epsilon_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.ProtoFlux.INodeValueOutput<global::System.Single>>, global::FrooxEngine.ProtoFlux.INodeValueOutput<global::System.Single>> Epsilon_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("A", A.ToResoniteReference(context));
-members.Add("B", B.ToResoniteReference(context));
-members.Add("Epsilon", Epsilon.ToResoniteReference(context));
+members.Add("A", A_Element.Data.ToResoniteReference(context));
+members.Add("B", B_Element.Data.ToResoniteReference(context));
+members.Add("Epsilon", Epsilon_Element.Data.ToResoniteReference(context));
 }
 
 }

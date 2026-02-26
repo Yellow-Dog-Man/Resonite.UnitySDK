@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.LegacyUIStyle
-// Generated on: středa 25. února 2026 16:13:06
+// Generated on: čtvrtek 26. února 2026 10:03:37
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,17 +20,20 @@ namespace FrooxEngine
 public partial class LegacyUIStyle : global::FrooxEngine.Component
 
 {
-    public UnityEngine.ColorX Color;
-public UnityEngine.ColorX UserParentedColor;
-public UnityEngine.ColorX PrivateColor;
+    public UnityEngine.ColorX Color { get => Color_Element.Data; set => Color_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.ColorX>, UnityEngine.ColorX> Color_Element = new();
+public UnityEngine.ColorX UserParentedColor { get => UserParentedColor_Element.Data; set => UserParentedColor_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.ColorX>, UnityEngine.ColorX> UserParentedColor_Element = new();
+public UnityEngine.ColorX PrivateColor { get => PrivateColor_Element.Data; set => PrivateColor_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.ColorX>, UnityEngine.ColorX> PrivateColor_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Color", Color.ToResoniteLinkField());
-members.Add("UserParentedColor", UserParentedColor.ToResoniteLinkField());
-members.Add("PrivateColor", PrivateColor.ToResoniteLinkField());
+members.Add("Color", Color_Element.Data.ToResoniteLinkField());
+members.Add("UserParentedColor", UserParentedColor_Element.Data.ToResoniteLinkField());
+members.Add("PrivateColor", PrivateColor_Element.Data.ToResoniteLinkField());
 }
 
 }

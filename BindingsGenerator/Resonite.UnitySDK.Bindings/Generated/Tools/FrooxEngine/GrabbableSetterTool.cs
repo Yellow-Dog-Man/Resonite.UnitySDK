@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.GrabbableSetterTool
-// Generated on: středa 25. února 2026 16:14:22
+// Generated on: čtvrtek 26. února 2026 10:04:39
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,15 +20,17 @@ namespace FrooxEngine
 public partial class GrabbableSetterTool : global::FrooxEngine.BuilderActionTool
 
 {
-    public global::System.Boolean SetScalable;
-public global::FrooxEngine.IField<UnityEngine.ColorX> _indicatorColor;
+    public global::System.Boolean SetScalable { get => SetScalable_Element.Data; set => SetScalable_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> SetScalable_Element = new();
+public global::FrooxEngine.IField<UnityEngine.ColorX> _indicatorColor { get => _indicatorColor_Element.Data; set => _indicatorColor_Element.Data = value; }
+public Field<global::FrooxEngine.FieldDrive<UnityEngine.ColorX>, global::FrooxEngine.IField<UnityEngine.ColorX>> _indicatorColor_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("SetScalable", SetScalable.ToResoniteLinkField());
-members.Add("_indicatorColor", _indicatorColor.ToResoniteReference(context));
+members.Add("SetScalable", SetScalable_Element.Data.ToResoniteLinkField());
+members.Add("_indicatorColor", _indicatorColor_Element.Data.ToResoniteReference(context));
 }
 
 }

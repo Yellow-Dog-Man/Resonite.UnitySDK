@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.FootstepSoundDefinition+FootstepClip
-// Generated on: středa 25. února 2026 16:13:10
+// Generated on: čtvrtek 26. února 2026 10:03:39
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -22,51 +22,71 @@ namespace FrooxEngine
 public partial class FootstepClip : global::FrooxEngine.SyncObject
 
 {
-    public global::FrooxEngine.IAssetProvider<global::FrooxEngine.AudioClip> Clip;
-public global::System.Single Weight;
-public global::System.Single MinVelocity;
-public global::System.Single MaxVelocity;
-public global::System.Boolean PlayForWalking;
-public global::System.Boolean PlayForLanding;
-public global::System.Boolean PlayForLeftFoot;
-public global::System.Boolean PlayForRightFoot;
-public global::System.Single VelocityMinPitch;
-public global::System.Single VelocityMaxPitch;
-public global::System.Single PitchMinVelocityReference;
-public global::System.Single PitchMaxVelocityReference;
-public global::System.Single MinPitchVariation;
-public global::System.Single MaxPitchVariation;
-public global::System.Single VelocityMinVolume;
-public global::System.Single VelocityMaxVolume;
-public global::System.Single VolumeMinVelocityReference;
-public global::System.Single VolumeMaxVelocityReference;
-public global::System.Single MinVolumeVariation;
-public global::System.Single MaxVolumeVariation;
+    public global::FrooxEngine.IAssetProvider<global::FrooxEngine.AudioClip> Clip { get => Clip_Element.Data; set => Clip_Element.Data = value; }
+public Field<global::FrooxEngine.AssetRef<global::FrooxEngine.AudioClip>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.AudioClip>> Clip_Element = new();
+public global::System.Single Weight { get => Weight_Element.Data; set => Weight_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> Weight_Element = new();
+public global::System.Single MinVelocity { get => MinVelocity_Element.Data; set => MinVelocity_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> MinVelocity_Element = new();
+public global::System.Single MaxVelocity { get => MaxVelocity_Element.Data; set => MaxVelocity_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> MaxVelocity_Element = new();
+public global::System.Boolean PlayForWalking { get => PlayForWalking_Element.Data; set => PlayForWalking_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> PlayForWalking_Element = new();
+public global::System.Boolean PlayForLanding { get => PlayForLanding_Element.Data; set => PlayForLanding_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> PlayForLanding_Element = new();
+public global::System.Boolean PlayForLeftFoot { get => PlayForLeftFoot_Element.Data; set => PlayForLeftFoot_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> PlayForLeftFoot_Element = new();
+public global::System.Boolean PlayForRightFoot { get => PlayForRightFoot_Element.Data; set => PlayForRightFoot_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> PlayForRightFoot_Element = new();
+public global::System.Single VelocityMinPitch { get => VelocityMinPitch_Element.Data; set => VelocityMinPitch_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> VelocityMinPitch_Element = new();
+public global::System.Single VelocityMaxPitch { get => VelocityMaxPitch_Element.Data; set => VelocityMaxPitch_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> VelocityMaxPitch_Element = new();
+public global::System.Single PitchMinVelocityReference { get => PitchMinVelocityReference_Element.Data; set => PitchMinVelocityReference_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> PitchMinVelocityReference_Element = new();
+public global::System.Single PitchMaxVelocityReference { get => PitchMaxVelocityReference_Element.Data; set => PitchMaxVelocityReference_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> PitchMaxVelocityReference_Element = new();
+public global::System.Single MinPitchVariation { get => MinPitchVariation_Element.Data; set => MinPitchVariation_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> MinPitchVariation_Element = new();
+public global::System.Single MaxPitchVariation { get => MaxPitchVariation_Element.Data; set => MaxPitchVariation_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> MaxPitchVariation_Element = new();
+public global::System.Single VelocityMinVolume { get => VelocityMinVolume_Element.Data; set => VelocityMinVolume_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> VelocityMinVolume_Element = new();
+public global::System.Single VelocityMaxVolume { get => VelocityMaxVolume_Element.Data; set => VelocityMaxVolume_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> VelocityMaxVolume_Element = new();
+public global::System.Single VolumeMinVelocityReference { get => VolumeMinVelocityReference_Element.Data; set => VolumeMinVelocityReference_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> VolumeMinVelocityReference_Element = new();
+public global::System.Single VolumeMaxVelocityReference { get => VolumeMaxVelocityReference_Element.Data; set => VolumeMaxVelocityReference_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> VolumeMaxVelocityReference_Element = new();
+public global::System.Single MinVolumeVariation { get => MinVolumeVariation_Element.Data; set => MinVolumeVariation_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> MinVolumeVariation_Element = new();
+public global::System.Single MaxVolumeVariation { get => MaxVolumeVariation_Element.Data; set => MaxVolumeVariation_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> MaxVolumeVariation_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Clip", Clip.ToResoniteReference(context));
-members.Add("Weight", Weight.ToResoniteLinkField());
-members.Add("MinVelocity", MinVelocity.ToResoniteLinkField());
-members.Add("MaxVelocity", MaxVelocity.ToResoniteLinkField());
-members.Add("PlayForWalking", PlayForWalking.ToResoniteLinkField());
-members.Add("PlayForLanding", PlayForLanding.ToResoniteLinkField());
-members.Add("PlayForLeftFoot", PlayForLeftFoot.ToResoniteLinkField());
-members.Add("PlayForRightFoot", PlayForRightFoot.ToResoniteLinkField());
-members.Add("VelocityMinPitch", VelocityMinPitch.ToResoniteLinkField());
-members.Add("VelocityMaxPitch", VelocityMaxPitch.ToResoniteLinkField());
-members.Add("PitchMinVelocityReference", PitchMinVelocityReference.ToResoniteLinkField());
-members.Add("PitchMaxVelocityReference", PitchMaxVelocityReference.ToResoniteLinkField());
-members.Add("MinPitchVariation", MinPitchVariation.ToResoniteLinkField());
-members.Add("MaxPitchVariation", MaxPitchVariation.ToResoniteLinkField());
-members.Add("VelocityMinVolume", VelocityMinVolume.ToResoniteLinkField());
-members.Add("VelocityMaxVolume", VelocityMaxVolume.ToResoniteLinkField());
-members.Add("VolumeMinVelocityReference", VolumeMinVelocityReference.ToResoniteLinkField());
-members.Add("VolumeMaxVelocityReference", VolumeMaxVelocityReference.ToResoniteLinkField());
-members.Add("MinVolumeVariation", MinVolumeVariation.ToResoniteLinkField());
-members.Add("MaxVolumeVariation", MaxVolumeVariation.ToResoniteLinkField());
+members.Add("Clip", Clip_Element.Data.ToResoniteReference(context));
+members.Add("Weight", Weight_Element.Data.ToResoniteLinkField());
+members.Add("MinVelocity", MinVelocity_Element.Data.ToResoniteLinkField());
+members.Add("MaxVelocity", MaxVelocity_Element.Data.ToResoniteLinkField());
+members.Add("PlayForWalking", PlayForWalking_Element.Data.ToResoniteLinkField());
+members.Add("PlayForLanding", PlayForLanding_Element.Data.ToResoniteLinkField());
+members.Add("PlayForLeftFoot", PlayForLeftFoot_Element.Data.ToResoniteLinkField());
+members.Add("PlayForRightFoot", PlayForRightFoot_Element.Data.ToResoniteLinkField());
+members.Add("VelocityMinPitch", VelocityMinPitch_Element.Data.ToResoniteLinkField());
+members.Add("VelocityMaxPitch", VelocityMaxPitch_Element.Data.ToResoniteLinkField());
+members.Add("PitchMinVelocityReference", PitchMinVelocityReference_Element.Data.ToResoniteLinkField());
+members.Add("PitchMaxVelocityReference", PitchMaxVelocityReference_Element.Data.ToResoniteLinkField());
+members.Add("MinPitchVariation", MinPitchVariation_Element.Data.ToResoniteLinkField());
+members.Add("MaxPitchVariation", MaxPitchVariation_Element.Data.ToResoniteLinkField());
+members.Add("VelocityMinVolume", VelocityMinVolume_Element.Data.ToResoniteLinkField());
+members.Add("VelocityMaxVolume", VelocityMaxVolume_Element.Data.ToResoniteLinkField());
+members.Add("VolumeMinVelocityReference", VolumeMinVelocityReference_Element.Data.ToResoniteLinkField());
+members.Add("VolumeMaxVelocityReference", VolumeMaxVelocityReference_Element.Data.ToResoniteLinkField());
+members.Add("MinVolumeVariation", MinVolumeVariation_Element.Data.ToResoniteLinkField());
+members.Add("MaxVolumeVariation", MaxVolumeVariation_Element.Data.ToResoniteLinkField());
 }
 
 }

@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.TextureQualitySettings
-// Generated on: středa 25. února 2026 16:14:43
+// Generated on: čtvrtek 26. února 2026 10:04:48
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,23 +20,29 @@ namespace FrooxEngine
 public partial class TextureQualitySettings : global::FrooxEngine.SettingComponent<global::FrooxEngine.TextureQualitySettings>
 
 {
-    public global::FrooxEngine.TextureSizeRatio TextureSizeRatio;
-public global::FrooxEngine.TextureSizeLimit TextureSizeLimit;
-public global::System.Int32 MinimumTextureSize;
-public global::Renderite.Shared.TextureFilterMode DefaultFilterMode;
-public global::System.Int32 AnisotropicLevel;
-public global::System.Boolean UseAnisotropicLevel;
+    public global::FrooxEngine.TextureSizeRatio TextureSizeRatio { get => TextureSizeRatio_Element.Data; set => TextureSizeRatio_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::FrooxEngine.TextureSizeRatio>, global::FrooxEngine.TextureSizeRatio> TextureSizeRatio_Element = new();
+public global::FrooxEngine.TextureSizeLimit TextureSizeLimit { get => TextureSizeLimit_Element.Data; set => TextureSizeLimit_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::FrooxEngine.TextureSizeLimit>, global::FrooxEngine.TextureSizeLimit> TextureSizeLimit_Element = new();
+public global::System.Int32 MinimumTextureSize { get => MinimumTextureSize_Element.Data; set => MinimumTextureSize_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Int32>, global::System.Int32> MinimumTextureSize_Element = new();
+public global::Renderite.Shared.TextureFilterMode DefaultFilterMode { get => DefaultFilterMode_Element.Data; set => DefaultFilterMode_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::Renderite.Shared.TextureFilterMode>, global::Renderite.Shared.TextureFilterMode> DefaultFilterMode_Element = new();
+public global::System.Int32 AnisotropicLevel { get => AnisotropicLevel_Element.Data; set => AnisotropicLevel_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Int32>, global::System.Int32> AnisotropicLevel_Element = new();
+public global::System.Boolean UseAnisotropicLevel { get => UseAnisotropicLevel_Element.Data; set => UseAnisotropicLevel_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> UseAnisotropicLevel_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("TextureSizeRatio", TextureSizeRatio.ToResoniteLinkField());
-members.Add("TextureSizeLimit", TextureSizeLimit.ToResoniteLinkField());
-members.Add("MinimumTextureSize", MinimumTextureSize.ToResoniteLinkField());
-members.Add("DefaultFilterMode", DefaultFilterMode.ToResoniteLinkField());
-members.Add("AnisotropicLevel", AnisotropicLevel.ToResoniteLinkField());
-members.Add("UseAnisotropicLevel", UseAnisotropicLevel.ToResoniteLinkField());
+members.Add("TextureSizeRatio", TextureSizeRatio_Element.Data.ToResoniteLinkField());
+members.Add("TextureSizeLimit", TextureSizeLimit_Element.Data.ToResoniteLinkField());
+members.Add("MinimumTextureSize", MinimumTextureSize_Element.Data.ToResoniteLinkField());
+members.Add("DefaultFilterMode", DefaultFilterMode_Element.Data.ToResoniteLinkField());
+members.Add("AnisotropicLevel", AnisotropicLevel_Element.Data.ToResoniteLinkField());
+members.Add("UseAnisotropicLevel", UseAnisotropicLevel_Element.Data.ToResoniteLinkField());
 }
 
 }

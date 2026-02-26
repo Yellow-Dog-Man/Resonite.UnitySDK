@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.ImageColorDistributionGraph
-// Generated on: středa 25. února 2026 16:13:04
+// Generated on: čtvrtek 26. února 2026 10:03:35
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,27 +20,35 @@ namespace FrooxEngine
 public partial class ImageColorDistributionGraph : global::FrooxEngine.ProceduralMesh
 
 {
-    public global::FrooxEngine.IAssetProvider<global::FrooxEngine.Texture2D> Texture;
-public global::FrooxEngine.ImageColorDistributionGraph.Space ColorSpace;
-public global::System.Int32 MaxTextureSize;
-public global::System.Single BaseSize;
-public global::System.Single AccumulateSize;
-public global::System.Single MaxSize;
-public UnityEngine.Vector3 Scale;
-public global::System.Single AlphaThreshold;
+    public global::FrooxEngine.IAssetProvider<global::FrooxEngine.Texture2D> Texture { get => Texture_Element.Data; set => Texture_Element.Data = value; }
+public Field<global::FrooxEngine.AssetRef<global::FrooxEngine.Texture2D>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.Texture2D>> Texture_Element = new();
+public global::FrooxEngine.ImageColorDistributionGraph.Space ColorSpace { get => ColorSpace_Element.Data; set => ColorSpace_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::FrooxEngine.ImageColorDistributionGraph.Space>, global::FrooxEngine.ImageColorDistributionGraph.Space> ColorSpace_Element = new();
+public global::System.Int32 MaxTextureSize { get => MaxTextureSize_Element.Data; set => MaxTextureSize_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Int32>, global::System.Int32> MaxTextureSize_Element = new();
+public global::System.Single BaseSize { get => BaseSize_Element.Data; set => BaseSize_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> BaseSize_Element = new();
+public global::System.Single AccumulateSize { get => AccumulateSize_Element.Data; set => AccumulateSize_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> AccumulateSize_Element = new();
+public global::System.Single MaxSize { get => MaxSize_Element.Data; set => MaxSize_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> MaxSize_Element = new();
+public UnityEngine.Vector3 Scale { get => Scale_Element.Data; set => Scale_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.Vector3>, UnityEngine.Vector3> Scale_Element = new();
+public global::System.Single AlphaThreshold { get => AlphaThreshold_Element.Data; set => AlphaThreshold_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> AlphaThreshold_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Texture", Texture.ToResoniteReference(context));
-members.Add("ColorSpace", ColorSpace.ToResoniteLinkField());
-members.Add("MaxTextureSize", MaxTextureSize.ToResoniteLinkField());
-members.Add("BaseSize", BaseSize.ToResoniteLinkField());
-members.Add("AccumulateSize", AccumulateSize.ToResoniteLinkField());
-members.Add("MaxSize", MaxSize.ToResoniteLinkField());
-members.Add("Scale", Scale.ToResoniteLinkField());
-members.Add("AlphaThreshold", AlphaThreshold.ToResoniteLinkField());
+members.Add("Texture", Texture_Element.Data.ToResoniteReference(context));
+members.Add("ColorSpace", ColorSpace_Element.Data.ToResoniteLinkField());
+members.Add("MaxTextureSize", MaxTextureSize_Element.Data.ToResoniteLinkField());
+members.Add("BaseSize", BaseSize_Element.Data.ToResoniteLinkField());
+members.Add("AccumulateSize", AccumulateSize_Element.Data.ToResoniteLinkField());
+members.Add("MaxSize", MaxSize_Element.Data.ToResoniteLinkField());
+members.Add("Scale", Scale_Element.Data.ToResoniteLinkField());
+members.Add("AlphaThreshold", AlphaThreshold_Element.Data.ToResoniteLinkField());
 }
 
 }

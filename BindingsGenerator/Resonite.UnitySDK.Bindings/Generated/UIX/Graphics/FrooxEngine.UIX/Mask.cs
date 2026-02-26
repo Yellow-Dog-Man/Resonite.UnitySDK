@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.UIX.Mask
-// Generated on: středa 25. února 2026 16:14:33
+// Generated on: čtvrtek 26. února 2026 10:04:42
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,13 +20,14 @@ namespace FrooxEngine.UIX
 public partial class Mask : global::FrooxEngine.UIX.UIComputeComponent
 
 {
-    public global::System.Boolean ShowMaskGraphic;
+    public global::System.Boolean ShowMaskGraphic { get => ShowMaskGraphic_Element.Data; set => ShowMaskGraphic_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> ShowMaskGraphic_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("ShowMaskGraphic", ShowMaskGraphic.ToResoniteLinkField());
+members.Add("ShowMaskGraphic", ShowMaskGraphic_Element.Data.ToResoniteLinkField());
 }
 
 }

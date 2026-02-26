@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.UIX.RectTransform
-// Generated on: středa 25. února 2026 16:13:08
+// Generated on: čtvrtek 26. února 2026 10:03:39
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,21 +20,26 @@ namespace FrooxEngine.UIX
 public partial class RectTransform : global::FrooxEngine.Component, global::FrooxEngine.ICustomInspector
 
 {
-    public UnityEngine.Vector2 AnchorMin;
-public UnityEngine.Vector2 AnchorMax;
-public UnityEngine.Vector2 OffsetMin;
-public UnityEngine.Vector2 OffsetMax;
-public UnityEngine.Vector2 Pivot;
+    public UnityEngine.Vector2 AnchorMin { get => AnchorMin_Element.Data; set => AnchorMin_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.Vector2>, UnityEngine.Vector2> AnchorMin_Element = new();
+public UnityEngine.Vector2 AnchorMax { get => AnchorMax_Element.Data; set => AnchorMax_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.Vector2>, UnityEngine.Vector2> AnchorMax_Element = new();
+public UnityEngine.Vector2 OffsetMin { get => OffsetMin_Element.Data; set => OffsetMin_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.Vector2>, UnityEngine.Vector2> OffsetMin_Element = new();
+public UnityEngine.Vector2 OffsetMax { get => OffsetMax_Element.Data; set => OffsetMax_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.Vector2>, UnityEngine.Vector2> OffsetMax_Element = new();
+public UnityEngine.Vector2 Pivot { get => Pivot_Element.Data; set => Pivot_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.Vector2>, UnityEngine.Vector2> Pivot_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("AnchorMin", AnchorMin.ToResoniteLinkField());
-members.Add("AnchorMax", AnchorMax.ToResoniteLinkField());
-members.Add("OffsetMin", OffsetMin.ToResoniteLinkField());
-members.Add("OffsetMax", OffsetMax.ToResoniteLinkField());
-members.Add("Pivot", Pivot.ToResoniteLinkField());
+members.Add("AnchorMin", AnchorMin_Element.Data.ToResoniteLinkField());
+members.Add("AnchorMax", AnchorMax_Element.Data.ToResoniteLinkField());
+members.Add("OffsetMin", OffsetMin_Element.Data.ToResoniteLinkField());
+members.Add("OffsetMax", OffsetMax_Element.Data.ToResoniteLinkField());
+members.Add("Pivot", Pivot_Element.Data.ToResoniteLinkField());
 }
 
 }

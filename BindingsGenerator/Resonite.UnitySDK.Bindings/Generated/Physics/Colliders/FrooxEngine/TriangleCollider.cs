@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.TriangleCollider
-// Generated on: středa 25. února 2026 16:13:11
+// Generated on: čtvrtek 26. února 2026 10:03:41
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,17 +20,20 @@ namespace FrooxEngine
 public partial class TriangleCollider : global::FrooxEngine.PrimitiveShapeCollider<global::BepuPhysics.Collidables.Triangle>
 
 {
-    public UnityEngine.Vector3 A;
-public UnityEngine.Vector3 B;
-public UnityEngine.Vector3 C;
+    public UnityEngine.Vector3 A { get => A_Element.Data; set => A_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.Vector3>, UnityEngine.Vector3> A_Element = new();
+public UnityEngine.Vector3 B { get => B_Element.Data; set => B_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.Vector3>, UnityEngine.Vector3> B_Element = new();
+public UnityEngine.Vector3 C { get => C_Element.Data; set => C_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.Vector3>, UnityEngine.Vector3> C_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("A", A.ToResoniteLinkField());
-members.Add("B", B.ToResoniteLinkField());
-members.Add("C", C.ToResoniteLinkField());
+members.Add("A", A_Element.Data.ToResoniteLinkField());
+members.Add("B", B_Element.Data.ToResoniteLinkField());
+members.Add("C", C_Element.Data.ToResoniteLinkField());
 }
 
 }

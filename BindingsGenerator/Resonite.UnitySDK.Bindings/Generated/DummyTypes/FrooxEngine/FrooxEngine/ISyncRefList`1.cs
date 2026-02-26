@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.ISyncRefList<>
-// Generated on: středa 25. února 2026 16:13:08
+// Generated on: čtvrtek 26. února 2026 10:03:36
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -22,6 +22,6 @@ public interface ISyncRefList<T> : global::FrooxEngine.IWorldElement, global::Fr
 
 {
     // Dummy class, there's no body
-// Generated as dependency for: [FrooxEngine]FrooxEngine.CloningReferenceSpatialVariableCollector<>
+// Generated as dependency for: [FrooxEngine]FrooxEngine.SyncRefList<>
 }
 }

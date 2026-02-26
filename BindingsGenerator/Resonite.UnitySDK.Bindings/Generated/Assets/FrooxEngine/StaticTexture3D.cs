@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.StaticTexture3D
-// Generated on: středa 25. února 2026 16:13:02
+// Generated on: čtvrtek 26. února 2026 10:03:33
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,19 +20,23 @@ namespace FrooxEngine
 public partial class StaticTexture3D : global::FrooxEngine.StaticTextureProvider<global::FrooxEngine.Texture3D,global::Elements.Assets.Bitmap3D,global::Elements.Assets.VolumeMetadata,global::FrooxEngine.Texture3DVariantDescriptor>, global::FrooxEngine.ITexture3DProvider
 
 {
-    public global::Renderite.Shared.TextureWrapMode WrapModeU;
-public global::Renderite.Shared.TextureWrapMode WrapModeV;
-public global::Renderite.Shared.TextureWrapMode WrapModeW;
-public global::System.Boolean Readable;
+    public global::Renderite.Shared.TextureWrapMode WrapModeU { get => WrapModeU_Element.Data; set => WrapModeU_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::Renderite.Shared.TextureWrapMode>, global::Renderite.Shared.TextureWrapMode> WrapModeU_Element = new();
+public global::Renderite.Shared.TextureWrapMode WrapModeV { get => WrapModeV_Element.Data; set => WrapModeV_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::Renderite.Shared.TextureWrapMode>, global::Renderite.Shared.TextureWrapMode> WrapModeV_Element = new();
+public global::Renderite.Shared.TextureWrapMode WrapModeW { get => WrapModeW_Element.Data; set => WrapModeW_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::Renderite.Shared.TextureWrapMode>, global::Renderite.Shared.TextureWrapMode> WrapModeW_Element = new();
+public global::System.Boolean Readable { get => Readable_Element.Data; set => Readable_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> Readable_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("WrapModeU", WrapModeU.ToResoniteLinkField());
-members.Add("WrapModeV", WrapModeV.ToResoniteLinkField());
-members.Add("WrapModeW", WrapModeW.ToResoniteLinkField());
-members.Add("Readable", Readable.ToResoniteLinkField());
+members.Add("WrapModeU", WrapModeU_Element.Data.ToResoniteLinkField());
+members.Add("WrapModeV", WrapModeV_Element.Data.ToResoniteLinkField());
+members.Add("WrapModeW", WrapModeW_Element.Data.ToResoniteLinkField());
+members.Add("Readable", Readable_Element.Data.ToResoniteLinkField());
 }
 
 }

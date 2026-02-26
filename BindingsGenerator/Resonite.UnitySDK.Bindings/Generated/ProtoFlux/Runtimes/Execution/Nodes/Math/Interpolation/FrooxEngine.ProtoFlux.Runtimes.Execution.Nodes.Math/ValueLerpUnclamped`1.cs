@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [ProtoFluxBindings]FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.Math.ValueLerpUnclamped<>
-// Generated on: středa 25. února 2026 16:13:53
+// Generated on: čtvrtek 26. února 2026 10:04:20
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -21,17 +21,20 @@ public partial class ValueLerpUnclamped<T> : global::FrooxEngine.ProtoFlux.Runti
 	where T : struct
 
 {
-    public global::FrooxEngine.ProtoFlux.INodeValueOutput<T> From;
-public global::FrooxEngine.ProtoFlux.INodeValueOutput<T> To;
-public global::FrooxEngine.ProtoFlux.INodeValueOutput<global::System.Single> Lerp;
+    public global::FrooxEngine.ProtoFlux.INodeValueOutput<T> From { get => From_Element.Data; set => From_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.ProtoFlux.INodeValueOutput<T>>, global::FrooxEngine.ProtoFlux.INodeValueOutput<T>> From_Element = new();
+public global::FrooxEngine.ProtoFlux.INodeValueOutput<T> To { get => To_Element.Data; set => To_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.ProtoFlux.INodeValueOutput<T>>, global::FrooxEngine.ProtoFlux.INodeValueOutput<T>> To_Element = new();
+public global::FrooxEngine.ProtoFlux.INodeValueOutput<global::System.Single> Lerp { get => Lerp_Element.Data; set => Lerp_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.ProtoFlux.INodeValueOutput<global::System.Single>>, global::FrooxEngine.ProtoFlux.INodeValueOutput<global::System.Single>> Lerp_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("From", From.ToResoniteReference(context));
-members.Add("To", To.ToResoniteReference(context));
-members.Add("Lerp", Lerp.ToResoniteReference(context));
+members.Add("From", From_Element.Data.ToResoniteReference(context));
+members.Add("To", To_Element.Data.ToResoniteReference(context));
+members.Add("Lerp", Lerp_Element.Data.ToResoniteReference(context));
 }
 
 }

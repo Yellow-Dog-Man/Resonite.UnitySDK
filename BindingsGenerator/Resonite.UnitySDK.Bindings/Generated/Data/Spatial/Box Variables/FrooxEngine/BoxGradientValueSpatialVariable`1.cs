@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.BoxGradientValueSpatialVariable<>
-// Generated on: středa 25. února 2026 16:13:08
+// Generated on: čtvrtek 26. února 2026 10:03:38
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -21,17 +21,20 @@ public partial class BoxGradientValueSpatialVariable<T> : global::FrooxEngine.Bo
 	
 
 {
-    public T StartValue;
-public T EndValue;
-public UnityEngine.Vector3 GradientDirection;
+    public T StartValue { get => StartValue_Element.Data; set => StartValue_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<T>, T> StartValue_Element = new();
+public T EndValue { get => EndValue_Element.Data; set => EndValue_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<T>, T> EndValue_Element = new();
+public UnityEngine.Vector3 GradientDirection { get => GradientDirection_Element.Data; set => GradientDirection_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.Vector3>, UnityEngine.Vector3> GradientDirection_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("StartValue", StartValue.ToResoniteLinkField());
-members.Add("EndValue", EndValue.ToResoniteLinkField());
-members.Add("GradientDirection", GradientDirection.ToResoniteLinkField());
+members.Add("StartValue", StartValue_Element.Data.ToResoniteLinkField());
+members.Add("EndValue", EndValue_Element.Data.ToResoniteLinkField());
+members.Add("GradientDirection", GradientDirection_Element.Data.ToResoniteLinkField());
 }
 
 }

@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.UI_TextUnlitMaterial
-// Generated on: středa 25. února 2026 16:13:03
+// Generated on: čtvrtek 26. února 2026 10:03:34
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,31 +20,41 @@ namespace FrooxEngine
 public partial class UI_TextUnlitMaterial : global::FrooxEngine.TextUnlitMaterial, global::FrooxEngine.IUIX_Material
 
 {
-    public global::System.Boolean Overlay;
-public UnityEngine.ColorX OverlayTint;
-public UnityEngine.Rect Rect;
-public global::System.Boolean RectClip;
-public global::FrooxEngine.ColorMask ColorMask;
-public global::FrooxEngine.StencilComparison StencilComparison;
-public global::FrooxEngine.StencilOperation StencilOperation;
-public global::System.Byte StencilID;
-public global::System.Byte StencilWriteMask;
-public global::System.Byte StencilReadMask;
+    public global::System.Boolean Overlay { get => Overlay_Element.Data; set => Overlay_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> Overlay_Element = new();
+public UnityEngine.ColorX OverlayTint { get => OverlayTint_Element.Data; set => OverlayTint_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.ColorX>, UnityEngine.ColorX> OverlayTint_Element = new();
+public UnityEngine.Rect Rect { get => Rect_Element.Data; set => Rect_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.Rect>, UnityEngine.Rect> Rect_Element = new();
+public global::System.Boolean RectClip { get => RectClip_Element.Data; set => RectClip_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> RectClip_Element = new();
+public global::FrooxEngine.ColorMask ColorMask { get => ColorMask_Element.Data; set => ColorMask_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::FrooxEngine.ColorMask>, global::FrooxEngine.ColorMask> ColorMask_Element = new();
+public global::FrooxEngine.StencilComparison StencilComparison { get => StencilComparison_Element.Data; set => StencilComparison_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::FrooxEngine.StencilComparison>, global::FrooxEngine.StencilComparison> StencilComparison_Element = new();
+public global::FrooxEngine.StencilOperation StencilOperation { get => StencilOperation_Element.Data; set => StencilOperation_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::FrooxEngine.StencilOperation>, global::FrooxEngine.StencilOperation> StencilOperation_Element = new();
+public global::System.Byte StencilID { get => StencilID_Element.Data; set => StencilID_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Byte>, global::System.Byte> StencilID_Element = new();
+public global::System.Byte StencilWriteMask { get => StencilWriteMask_Element.Data; set => StencilWriteMask_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Byte>, global::System.Byte> StencilWriteMask_Element = new();
+public global::System.Byte StencilReadMask { get => StencilReadMask_Element.Data; set => StencilReadMask_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Byte>, global::System.Byte> StencilReadMask_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Overlay", Overlay.ToResoniteLinkField());
-members.Add("OverlayTint", OverlayTint.ToResoniteLinkField());
-members.Add("Rect", Rect.ToResoniteLinkField());
-members.Add("RectClip", RectClip.ToResoniteLinkField());
-members.Add("ColorMask", ColorMask.ToResoniteLinkField());
-members.Add("StencilComparison", StencilComparison.ToResoniteLinkField());
-members.Add("StencilOperation", StencilOperation.ToResoniteLinkField());
-members.Add("StencilID", StencilID.ToResoniteLinkField());
-members.Add("StencilWriteMask", StencilWriteMask.ToResoniteLinkField());
-members.Add("StencilReadMask", StencilReadMask.ToResoniteLinkField());
+members.Add("Overlay", Overlay_Element.Data.ToResoniteLinkField());
+members.Add("OverlayTint", OverlayTint_Element.Data.ToResoniteLinkField());
+members.Add("Rect", Rect_Element.Data.ToResoniteLinkField());
+members.Add("RectClip", RectClip_Element.Data.ToResoniteLinkField());
+members.Add("ColorMask", ColorMask_Element.Data.ToResoniteLinkField());
+members.Add("StencilComparison", StencilComparison_Element.Data.ToResoniteLinkField());
+members.Add("StencilOperation", StencilOperation_Element.Data.ToResoniteLinkField());
+members.Add("StencilID", StencilID_Element.Data.ToResoniteLinkField());
+members.Add("StencilWriteMask", StencilWriteMask_Element.Data.ToResoniteLinkField());
+members.Add("StencilReadMask", StencilReadMask_Element.Data.ToResoniteLinkField());
 }
 
 }

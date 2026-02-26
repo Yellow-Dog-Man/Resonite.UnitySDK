@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.BoxMeshGizmo
-// Generated on: středa 25. února 2026 16:14:35
+// Generated on: čtvrtek 26. února 2026 10:04:43
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,15 +20,17 @@ namespace FrooxEngine
 public partial class BoxMeshGizmo : global::FrooxEngine.Component, global::FrooxEngine.IComponentGizmo
 
 {
-    public global::FrooxEngine.BoxMesh _target;
-public global::FrooxEngine.BoxGizmo _cubeGizmo;
+    public global::FrooxEngine.BoxMesh _target { get => _target_Element.Data; set => _target_Element.Data = value; }
+public Field<global::FrooxEngine.RelayRef<global::FrooxEngine.BoxMesh>, global::FrooxEngine.BoxMesh> _target_Element = new();
+public global::FrooxEngine.BoxGizmo _cubeGizmo { get => _cubeGizmo_Element.Data; set => _cubeGizmo_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.BoxGizmo>, global::FrooxEngine.BoxGizmo> _cubeGizmo_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("_target", _target.ToResoniteReference(context));
-members.Add("_cubeGizmo", _cubeGizmo.ToResoniteReference(context));
+members.Add("_target", _target_Element.Data.ToResoniteReference(context));
+members.Add("_cubeGizmo", _cubeGizmo_Element.Data.ToResoniteReference(context));
 }
 
 }

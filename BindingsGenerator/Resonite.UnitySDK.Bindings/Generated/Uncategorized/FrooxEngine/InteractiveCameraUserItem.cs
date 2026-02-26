@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.InteractiveCameraUserItem
-// Generated on: středa 25. února 2026 16:14:40
+// Generated on: čtvrtek 26. února 2026 10:04:46
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,35 +20,47 @@ namespace FrooxEngine
 public partial class InteractiveCameraUserItem : global::FrooxEngine.Component
 
 {
-    public global::FrooxEngine.InteractiveCameraControl Control;
-public global::FrooxEngine.UIX.Text _username;
-public global::FrooxEngine.UIX.Button _voiceDefault;
-public global::FrooxEngine.UIX.Button _voiceMute;
-public global::FrooxEngine.UIX.Button _voiceShout;
-public global::FrooxEngine.UIX.Button _voiceBroadcast;
-public global::FrooxEngine.UIX.Button _groupAuto;
-public global::FrooxEngine.UIX.Button _groupExclude;
-public global::FrooxEngine.UIX.Button _groupInclude;
-public global::FrooxEngine.UIX.Button _cameraOperator;
-public global::FrooxEngine.UIX.Button _framingTarget;
-public global::FrooxEngine.UIX.Slider<global::System.Single> _volumeSlider;
+    public global::FrooxEngine.InteractiveCameraControl Control { get => Control_Element.Data; set => Control_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.InteractiveCameraControl>, global::FrooxEngine.InteractiveCameraControl> Control_Element = new();
+public global::FrooxEngine.UIX.Text _username { get => _username_Element.Data; set => _username_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.UIX.Text>, global::FrooxEngine.UIX.Text> _username_Element = new();
+public global::FrooxEngine.UIX.Button _voiceDefault { get => _voiceDefault_Element.Data; set => _voiceDefault_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.UIX.Button>, global::FrooxEngine.UIX.Button> _voiceDefault_Element = new();
+public global::FrooxEngine.UIX.Button _voiceMute { get => _voiceMute_Element.Data; set => _voiceMute_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.UIX.Button>, global::FrooxEngine.UIX.Button> _voiceMute_Element = new();
+public global::FrooxEngine.UIX.Button _voiceShout { get => _voiceShout_Element.Data; set => _voiceShout_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.UIX.Button>, global::FrooxEngine.UIX.Button> _voiceShout_Element = new();
+public global::FrooxEngine.UIX.Button _voiceBroadcast { get => _voiceBroadcast_Element.Data; set => _voiceBroadcast_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.UIX.Button>, global::FrooxEngine.UIX.Button> _voiceBroadcast_Element = new();
+public global::FrooxEngine.UIX.Button _groupAuto { get => _groupAuto_Element.Data; set => _groupAuto_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.UIX.Button>, global::FrooxEngine.UIX.Button> _groupAuto_Element = new();
+public global::FrooxEngine.UIX.Button _groupExclude { get => _groupExclude_Element.Data; set => _groupExclude_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.UIX.Button>, global::FrooxEngine.UIX.Button> _groupExclude_Element = new();
+public global::FrooxEngine.UIX.Button _groupInclude { get => _groupInclude_Element.Data; set => _groupInclude_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.UIX.Button>, global::FrooxEngine.UIX.Button> _groupInclude_Element = new();
+public global::FrooxEngine.UIX.Button _cameraOperator { get => _cameraOperator_Element.Data; set => _cameraOperator_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.UIX.Button>, global::FrooxEngine.UIX.Button> _cameraOperator_Element = new();
+public global::FrooxEngine.UIX.Button _framingTarget { get => _framingTarget_Element.Data; set => _framingTarget_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.UIX.Button>, global::FrooxEngine.UIX.Button> _framingTarget_Element = new();
+public global::FrooxEngine.UIX.Slider<global::System.Single> _volumeSlider { get => _volumeSlider_Element.Data; set => _volumeSlider_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.UIX.Slider<global::System.Single>>, global::FrooxEngine.UIX.Slider<global::System.Single>> _volumeSlider_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Control", Control.ToResoniteReference(context));
-members.Add("_username", _username.ToResoniteReference(context));
-members.Add("_voiceDefault", _voiceDefault.ToResoniteReference(context));
-members.Add("_voiceMute", _voiceMute.ToResoniteReference(context));
-members.Add("_voiceShout", _voiceShout.ToResoniteReference(context));
-members.Add("_voiceBroadcast", _voiceBroadcast.ToResoniteReference(context));
-members.Add("_groupAuto", _groupAuto.ToResoniteReference(context));
-members.Add("_groupExclude", _groupExclude.ToResoniteReference(context));
-members.Add("_groupInclude", _groupInclude.ToResoniteReference(context));
-members.Add("_cameraOperator", _cameraOperator.ToResoniteReference(context));
-members.Add("_framingTarget", _framingTarget.ToResoniteReference(context));
-members.Add("_volumeSlider", _volumeSlider.ToResoniteReference(context));
+members.Add("Control", Control_Element.Data.ToResoniteReference(context));
+members.Add("_username", _username_Element.Data.ToResoniteReference(context));
+members.Add("_voiceDefault", _voiceDefault_Element.Data.ToResoniteReference(context));
+members.Add("_voiceMute", _voiceMute_Element.Data.ToResoniteReference(context));
+members.Add("_voiceShout", _voiceShout_Element.Data.ToResoniteReference(context));
+members.Add("_voiceBroadcast", _voiceBroadcast_Element.Data.ToResoniteReference(context));
+members.Add("_groupAuto", _groupAuto_Element.Data.ToResoniteReference(context));
+members.Add("_groupExclude", _groupExclude_Element.Data.ToResoniteReference(context));
+members.Add("_groupInclude", _groupInclude_Element.Data.ToResoniteReference(context));
+members.Add("_cameraOperator", _cameraOperator_Element.Data.ToResoniteReference(context));
+members.Add("_framingTarget", _framingTarget_Element.Data.ToResoniteReference(context));
+members.Add("_volumeSlider", _volumeSlider_Element.Data.ToResoniteReference(context));
 }
 
 }

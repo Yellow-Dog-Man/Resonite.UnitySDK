@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.PBS_Intersect
-// Generated on: středa 25. února 2026 16:13:03
+// Generated on: čtvrtek 26. února 2026 10:03:34
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,49 +20,68 @@ namespace FrooxEngine
 public abstract partial class PBS_Intersect : global::FrooxEngine.SingleShaderMaterialProvider, global::FrooxEngine.IPBS_Material, global::FrooxEngine.ICullingMaterial
 
 {
-    public global::System.Single BeginTransitionStart;
-public global::System.Single BeginTransitionEnd;
-public global::System.Single EndTransitionStart;
-public global::System.Single EndTransitionEnd;
-public UnityEngine.Vector2 TextureScale;
-public UnityEngine.Vector2 TextureOffset;
-public UnityEngine.ColorX AlbedoColor;
-public UnityEngine.ColorX IntersectAlbedoColor;
-public global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D> AlbedoTexture;
-public UnityEngine.ColorX EmissiveColor;
-public UnityEngine.ColorX IntersectEmissiveColor;
-public global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D> EmissiveMap;
-public global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D> NormalMap;
-public global::System.Single NormalScale;
-public global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D> OcclusionMap;
-public global::FrooxEngine.Culling Culling;
-public global::System.Single OffsetFactor;
-public global::System.Single OffsetUnits;
-public global::System.Int32 RenderQueue;
+    public global::System.Single BeginTransitionStart { get => BeginTransitionStart_Element.Data; set => BeginTransitionStart_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> BeginTransitionStart_Element = new();
+public global::System.Single BeginTransitionEnd { get => BeginTransitionEnd_Element.Data; set => BeginTransitionEnd_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> BeginTransitionEnd_Element = new();
+public global::System.Single EndTransitionStart { get => EndTransitionStart_Element.Data; set => EndTransitionStart_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> EndTransitionStart_Element = new();
+public global::System.Single EndTransitionEnd { get => EndTransitionEnd_Element.Data; set => EndTransitionEnd_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> EndTransitionEnd_Element = new();
+public UnityEngine.Vector2 TextureScale { get => TextureScale_Element.Data; set => TextureScale_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.Vector2>, UnityEngine.Vector2> TextureScale_Element = new();
+public UnityEngine.Vector2 TextureOffset { get => TextureOffset_Element.Data; set => TextureOffset_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.Vector2>, UnityEngine.Vector2> TextureOffset_Element = new();
+public UnityEngine.ColorX AlbedoColor { get => AlbedoColor_Element.Data; set => AlbedoColor_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.ColorX>, UnityEngine.ColorX> AlbedoColor_Element = new();
+public UnityEngine.ColorX IntersectAlbedoColor { get => IntersectAlbedoColor_Element.Data; set => IntersectAlbedoColor_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.ColorX>, UnityEngine.ColorX> IntersectAlbedoColor_Element = new();
+public global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D> AlbedoTexture { get => AlbedoTexture_Element.Data; set => AlbedoTexture_Element.Data = value; }
+public Field<global::FrooxEngine.AssetRef<global::FrooxEngine.ITexture2D>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D>> AlbedoTexture_Element = new();
+public UnityEngine.ColorX EmissiveColor { get => EmissiveColor_Element.Data; set => EmissiveColor_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.ColorX>, UnityEngine.ColorX> EmissiveColor_Element = new();
+public UnityEngine.ColorX IntersectEmissiveColor { get => IntersectEmissiveColor_Element.Data; set => IntersectEmissiveColor_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.ColorX>, UnityEngine.ColorX> IntersectEmissiveColor_Element = new();
+public global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D> EmissiveMap { get => EmissiveMap_Element.Data; set => EmissiveMap_Element.Data = value; }
+public Field<global::FrooxEngine.AssetRef<global::FrooxEngine.ITexture2D>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D>> EmissiveMap_Element = new();
+public global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D> NormalMap { get => NormalMap_Element.Data; set => NormalMap_Element.Data = value; }
+public Field<global::FrooxEngine.AssetRef<global::FrooxEngine.ITexture2D>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D>> NormalMap_Element = new();
+public global::System.Single NormalScale { get => NormalScale_Element.Data; set => NormalScale_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> NormalScale_Element = new();
+public global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D> OcclusionMap { get => OcclusionMap_Element.Data; set => OcclusionMap_Element.Data = value; }
+public Field<global::FrooxEngine.AssetRef<global::FrooxEngine.ITexture2D>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D>> OcclusionMap_Element = new();
+public global::FrooxEngine.Culling Culling { get => Culling_Element.Data; set => Culling_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::FrooxEngine.Culling>, global::FrooxEngine.Culling> Culling_Element = new();
+public global::System.Single OffsetFactor { get => OffsetFactor_Element.Data; set => OffsetFactor_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> OffsetFactor_Element = new();
+public global::System.Single OffsetUnits { get => OffsetUnits_Element.Data; set => OffsetUnits_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> OffsetUnits_Element = new();
+public global::System.Int32 RenderQueue { get => RenderQueue_Element.Data; set => RenderQueue_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Int32>, global::System.Int32> RenderQueue_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("BeginTransitionStart", BeginTransitionStart.ToResoniteLinkField());
-members.Add("BeginTransitionEnd", BeginTransitionEnd.ToResoniteLinkField());
-members.Add("EndTransitionStart", EndTransitionStart.ToResoniteLinkField());
-members.Add("EndTransitionEnd", EndTransitionEnd.ToResoniteLinkField());
-members.Add("TextureScale", TextureScale.ToResoniteLinkField());
-members.Add("TextureOffset", TextureOffset.ToResoniteLinkField());
-members.Add("AlbedoColor", AlbedoColor.ToResoniteLinkField());
-members.Add("IntersectAlbedoColor", IntersectAlbedoColor.ToResoniteLinkField());
-members.Add("AlbedoTexture", AlbedoTexture.ToResoniteReference(context));
-members.Add("EmissiveColor", EmissiveColor.ToResoniteLinkField());
-members.Add("IntersectEmissiveColor", IntersectEmissiveColor.ToResoniteLinkField());
-members.Add("EmissiveMap", EmissiveMap.ToResoniteReference(context));
-members.Add("NormalMap", NormalMap.ToResoniteReference(context));
-members.Add("NormalScale", NormalScale.ToResoniteLinkField());
-members.Add("OcclusionMap", OcclusionMap.ToResoniteReference(context));
-members.Add("Culling", Culling.ToResoniteLinkField());
-members.Add("OffsetFactor", OffsetFactor.ToResoniteLinkField());
-members.Add("OffsetUnits", OffsetUnits.ToResoniteLinkField());
-members.Add("RenderQueue", RenderQueue.ToResoniteLinkField());
+members.Add("BeginTransitionStart", BeginTransitionStart_Element.Data.ToResoniteLinkField());
+members.Add("BeginTransitionEnd", BeginTransitionEnd_Element.Data.ToResoniteLinkField());
+members.Add("EndTransitionStart", EndTransitionStart_Element.Data.ToResoniteLinkField());
+members.Add("EndTransitionEnd", EndTransitionEnd_Element.Data.ToResoniteLinkField());
+members.Add("TextureScale", TextureScale_Element.Data.ToResoniteLinkField());
+members.Add("TextureOffset", TextureOffset_Element.Data.ToResoniteLinkField());
+members.Add("AlbedoColor", AlbedoColor_Element.Data.ToResoniteLinkField());
+members.Add("IntersectAlbedoColor", IntersectAlbedoColor_Element.Data.ToResoniteLinkField());
+members.Add("AlbedoTexture", AlbedoTexture_Element.Data.ToResoniteReference(context));
+members.Add("EmissiveColor", EmissiveColor_Element.Data.ToResoniteLinkField());
+members.Add("IntersectEmissiveColor", IntersectEmissiveColor_Element.Data.ToResoniteLinkField());
+members.Add("EmissiveMap", EmissiveMap_Element.Data.ToResoniteReference(context));
+members.Add("NormalMap", NormalMap_Element.Data.ToResoniteReference(context));
+members.Add("NormalScale", NormalScale_Element.Data.ToResoniteLinkField());
+members.Add("OcclusionMap", OcclusionMap_Element.Data.ToResoniteReference(context));
+members.Add("Culling", Culling_Element.Data.ToResoniteLinkField());
+members.Add("OffsetFactor", OffsetFactor_Element.Data.ToResoniteLinkField());
+members.Add("OffsetUnits", OffsetUnits_Element.Data.ToResoniteLinkField());
+members.Add("RenderQueue", RenderQueue_Element.Data.ToResoniteLinkField());
 }
 
 }

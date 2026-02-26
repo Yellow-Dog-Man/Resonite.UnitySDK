@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.ColorDialogInterface
-// Generated on: středa 25. února 2026 16:13:06
+// Generated on: čtvrtek 26. února 2026 10:03:37
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,19 +20,23 @@ namespace FrooxEngine
 public partial class ColorDialogInterface : global::FrooxEngine.EntityInterface
 
 {
-    public global::FrooxEngine.SyncRef<global::FrooxEngine.IField<UnityEngine.ColorX>> TargetColor;
-public global::FrooxEngine.IField<global::System.Boolean> Continuous;
-public global::FrooxEngine.IField<global::System.Boolean> AllowAlpha;
-public global::FrooxEngine.IField<global::System.Boolean> AllowHDR;
+    public global::FrooxEngine.SyncRef<global::FrooxEngine.IField<UnityEngine.ColorX>> TargetColor { get => TargetColor_Element.Data; set => TargetColor_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.SyncRef<global::FrooxEngine.IField<UnityEngine.ColorX>>>, global::FrooxEngine.SyncRef<global::FrooxEngine.IField<UnityEngine.ColorX>>> TargetColor_Element = new();
+public global::FrooxEngine.IField<global::System.Boolean> Continuous { get => Continuous_Element.Data; set => Continuous_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.IField<global::System.Boolean>>, global::FrooxEngine.IField<global::System.Boolean>> Continuous_Element = new();
+public global::FrooxEngine.IField<global::System.Boolean> AllowAlpha { get => AllowAlpha_Element.Data; set => AllowAlpha_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.IField<global::System.Boolean>>, global::FrooxEngine.IField<global::System.Boolean>> AllowAlpha_Element = new();
+public global::FrooxEngine.IField<global::System.Boolean> AllowHDR { get => AllowHDR_Element.Data; set => AllowHDR_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.IField<global::System.Boolean>>, global::FrooxEngine.IField<global::System.Boolean>> AllowHDR_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("TargetColor", TargetColor.ToResoniteReference(context));
-members.Add("Continuous", Continuous.ToResoniteReference(context));
-members.Add("AllowAlpha", AllowAlpha.ToResoniteReference(context));
-members.Add("AllowHDR", AllowHDR.ToResoniteReference(context));
+members.Add("TargetColor", TargetColor_Element.Data.ToResoniteReference(context));
+members.Add("Continuous", Continuous_Element.Data.ToResoniteReference(context));
+members.Add("AllowAlpha", AllowAlpha_Element.Data.ToResoniteReference(context));
+members.Add("AllowHDR", AllowHDR_Element.Data.ToResoniteReference(context));
 }
 
 }

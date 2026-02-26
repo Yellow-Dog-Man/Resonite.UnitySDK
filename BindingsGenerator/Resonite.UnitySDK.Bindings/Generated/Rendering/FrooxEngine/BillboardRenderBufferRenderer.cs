@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.BillboardRenderBufferRenderer
-// Generated on: středa 25. února 2026 16:14:16
+// Generated on: čtvrtek 26. února 2026 10:04:37
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,23 +20,29 @@ namespace FrooxEngine
 public partial class BillboardRenderBufferRenderer : global::FrooxEngine.ChangeHandlingRenderableComponent
 
 {
-    public global::FrooxEngine.IAssetProvider<global::FrooxEngine.PointRenderBuffer> Buffer;
-public global::FrooxEngine.IAssetProvider<global::FrooxEngine.Material> Material;
-public global::Renderite.Shared.BillboardAlignment Alignment;
-public global::Renderite.Shared.MotionVectorMode MotionVectorMode;
-public global::System.Single MinBillboardScreenSize;
-public global::System.Single MaxBillboardScreenSize;
+    public global::FrooxEngine.IAssetProvider<global::FrooxEngine.PointRenderBuffer> Buffer { get => Buffer_Element.Data; set => Buffer_Element.Data = value; }
+public Field<global::FrooxEngine.AssetRef<global::FrooxEngine.PointRenderBuffer>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.PointRenderBuffer>> Buffer_Element = new();
+public global::FrooxEngine.IAssetProvider<global::FrooxEngine.Material> Material { get => Material_Element.Data; set => Material_Element.Data = value; }
+public Field<global::FrooxEngine.AssetRef<global::FrooxEngine.Material>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.Material>> Material_Element = new();
+public global::Renderite.Shared.BillboardAlignment Alignment { get => Alignment_Element.Data; set => Alignment_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::Renderite.Shared.BillboardAlignment>, global::Renderite.Shared.BillboardAlignment> Alignment_Element = new();
+public global::Renderite.Shared.MotionVectorMode MotionVectorMode { get => MotionVectorMode_Element.Data; set => MotionVectorMode_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::Renderite.Shared.MotionVectorMode>, global::Renderite.Shared.MotionVectorMode> MotionVectorMode_Element = new();
+public global::System.Single MinBillboardScreenSize { get => MinBillboardScreenSize_Element.Data; set => MinBillboardScreenSize_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> MinBillboardScreenSize_Element = new();
+public global::System.Single MaxBillboardScreenSize { get => MaxBillboardScreenSize_Element.Data; set => MaxBillboardScreenSize_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> MaxBillboardScreenSize_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Buffer", Buffer.ToResoniteReference(context));
-members.Add("Material", Material.ToResoniteReference(context));
-members.Add("Alignment", Alignment.ToResoniteLinkField());
-members.Add("MotionVectorMode", MotionVectorMode.ToResoniteLinkField());
-members.Add("MinBillboardScreenSize", MinBillboardScreenSize.ToResoniteLinkField());
-members.Add("MaxBillboardScreenSize", MaxBillboardScreenSize.ToResoniteLinkField());
+members.Add("Buffer", Buffer_Element.Data.ToResoniteReference(context));
+members.Add("Material", Material_Element.Data.ToResoniteReference(context));
+members.Add("Alignment", Alignment_Element.Data.ToResoniteLinkField());
+members.Add("MotionVectorMode", MotionVectorMode_Element.Data.ToResoniteLinkField());
+members.Add("MinBillboardScreenSize", MinBillboardScreenSize_Element.Data.ToResoniteLinkField());
+members.Add("MaxBillboardScreenSize", MaxBillboardScreenSize_Element.Data.ToResoniteLinkField());
 }
 
 }

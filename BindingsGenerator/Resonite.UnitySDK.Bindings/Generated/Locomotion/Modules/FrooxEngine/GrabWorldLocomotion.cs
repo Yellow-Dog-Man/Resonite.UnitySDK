@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.GrabWorldLocomotion
-// Generated on: středa 25. února 2026 16:13:10
+// Generated on: čtvrtek 26. února 2026 10:03:40
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,23 +20,28 @@ namespace FrooxEngine
 public partial class GrabWorldLocomotion : global::FrooxEngine.LocomotionModule
 
 {
-    public global::FrooxEngine.TurnSubmodule Turn;
-public global::System.Single ActivationThreshold;
-public global::System.Single DeactivationThreshold;
-public global::FrooxEngine.Slot _visual;
-public global::FrooxEngine.CrossMesh _crossMesh;
-public global::FrooxEngine.PBS_RimMetallic _material;
+    public global::FrooxEngine.TurnSubmodule Turn = new();
+public global::System.Single ActivationThreshold { get => ActivationThreshold_Element.Data; set => ActivationThreshold_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> ActivationThreshold_Element = new();
+public global::System.Single DeactivationThreshold { get => DeactivationThreshold_Element.Data; set => DeactivationThreshold_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> DeactivationThreshold_Element = new();
+public global::FrooxEngine.Slot _visual { get => _visual_Element.Data; set => _visual_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> _visual_Element = new();
+public global::FrooxEngine.CrossMesh _crossMesh { get => _crossMesh_Element.Data; set => _crossMesh_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.CrossMesh>, global::FrooxEngine.CrossMesh> _crossMesh_Element = new();
+public global::FrooxEngine.PBS_RimMetallic _material { get => _material_Element.Data; set => _material_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.PBS_RimMetallic>, global::FrooxEngine.PBS_RimMetallic> _material_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
 members.Add("Turn", new ResoniteLink.SyncObject() { Members = Turn.CollectMembers(context) });
-members.Add("ActivationThreshold", ActivationThreshold.ToResoniteLinkField());
-members.Add("DeactivationThreshold", DeactivationThreshold.ToResoniteLinkField());
-members.Add("_visual", _visual.ToResoniteReference(context));
-members.Add("_crossMesh", _crossMesh.ToResoniteReference(context));
-members.Add("_material", _material.ToResoniteReference(context));
+members.Add("ActivationThreshold", ActivationThreshold_Element.Data.ToResoniteLinkField());
+members.Add("DeactivationThreshold", DeactivationThreshold_Element.Data.ToResoniteLinkField());
+members.Add("_visual", _visual_Element.Data.ToResoniteReference(context));
+members.Add("_crossMesh", _crossMesh_Element.Data.ToResoniteReference(context));
+members.Add("_material", _material_Element.Data.ToResoniteReference(context));
 }
 
 }

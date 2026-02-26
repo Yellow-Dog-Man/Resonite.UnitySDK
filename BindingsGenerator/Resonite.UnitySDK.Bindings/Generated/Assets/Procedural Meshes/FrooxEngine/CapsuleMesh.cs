@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.CapsuleMesh
-// Generated on: středa 25. února 2026 16:13:04
+// Generated on: čtvrtek 26. února 2026 10:03:35
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,25 +20,32 @@ namespace FrooxEngine
 public partial class CapsuleMesh : global::FrooxEngine.ProceduralMesh
 
 {
-    public global::System.Single Radius;
-public global::System.Single Height;
-public global::System.Int32 Segments;
-public global::System.Int32 Rings;
-public global::Elements.Assets.UVSphereCapsule.Shading Shading;
-public UnityEngine.Vector2 UVScale;
-public global::System.Boolean DualSided;
+    public global::System.Single Radius { get => Radius_Element.Data; set => Radius_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> Radius_Element = new();
+public global::System.Single Height { get => Height_Element.Data; set => Height_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> Height_Element = new();
+public global::System.Int32 Segments { get => Segments_Element.Data; set => Segments_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Int32>, global::System.Int32> Segments_Element = new();
+public global::System.Int32 Rings { get => Rings_Element.Data; set => Rings_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Int32>, global::System.Int32> Rings_Element = new();
+public global::Elements.Assets.UVSphereCapsule.Shading Shading { get => Shading_Element.Data; set => Shading_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::Elements.Assets.UVSphereCapsule.Shading>, global::Elements.Assets.UVSphereCapsule.Shading> Shading_Element = new();
+public UnityEngine.Vector2 UVScale { get => UVScale_Element.Data; set => UVScale_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.Vector2>, UnityEngine.Vector2> UVScale_Element = new();
+public global::System.Boolean DualSided { get => DualSided_Element.Data; set => DualSided_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> DualSided_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Radius", Radius.ToResoniteLinkField());
-members.Add("Height", Height.ToResoniteLinkField());
-members.Add("Segments", Segments.ToResoniteLinkField());
-members.Add("Rings", Rings.ToResoniteLinkField());
-members.Add("Shading", Shading.ToResoniteLinkField());
-members.Add("UVScale", UVScale.ToResoniteLinkField());
-members.Add("DualSided", DualSided.ToResoniteLinkField());
+members.Add("Radius", Radius_Element.Data.ToResoniteLinkField());
+members.Add("Height", Height_Element.Data.ToResoniteLinkField());
+members.Add("Segments", Segments_Element.Data.ToResoniteLinkField());
+members.Add("Rings", Rings_Element.Data.ToResoniteLinkField());
+members.Add("Shading", Shading_Element.Data.ToResoniteLinkField());
+members.Add("UVScale", UVScale_Element.Data.ToResoniteLinkField());
+members.Add("DualSided", DualSided_Element.Data.ToResoniteLinkField());
 }
 
 }

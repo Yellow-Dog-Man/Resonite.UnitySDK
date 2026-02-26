@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.BooleanSpatialVariableDriver
-// Generated on: středa 25. února 2026 16:13:08
+// Generated on: čtvrtek 26. února 2026 10:03:38
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,19 +20,23 @@ namespace FrooxEngine
 public partial class BooleanSpatialVariableDriver : global::FrooxEngine.Component
 
 {
-    public global::FrooxEngine.IField<global::System.Boolean> Drive;
-public global::System.String VariableName;
-public global::FrooxEngine.BooleanSpatialVariableMode Mode;
-public global::System.Boolean DefaultValue;
+    public global::FrooxEngine.IField<global::System.Boolean> Drive { get => Drive_Element.Data; set => Drive_Element.Data = value; }
+public Field<global::FrooxEngine.FieldDrive<global::System.Boolean>, global::FrooxEngine.IField<global::System.Boolean>> Drive_Element = new();
+public global::System.String VariableName { get => VariableName_Element.Data; set => VariableName_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.String>, global::System.String> VariableName_Element = new();
+public global::FrooxEngine.BooleanSpatialVariableMode Mode { get => Mode_Element.Data; set => Mode_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::FrooxEngine.BooleanSpatialVariableMode>, global::FrooxEngine.BooleanSpatialVariableMode> Mode_Element = new();
+public global::System.Boolean DefaultValue { get => DefaultValue_Element.Data; set => DefaultValue_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> DefaultValue_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Drive", Drive.ToResoniteReference(context));
-members.Add("VariableName", VariableName.ToResoniteLinkField());
-members.Add("Mode", Mode.ToResoniteLinkField());
-members.Add("DefaultValue", DefaultValue.ToResoniteLinkField());
+members.Add("Drive", Drive_Element.Data.ToResoniteReference(context));
+members.Add("VariableName", VariableName_Element.Data.ToResoniteLinkField());
+members.Add("Mode", Mode_Element.Data.ToResoniteLinkField());
+members.Add("DefaultValue", DefaultValue_Element.Data.ToResoniteLinkField());
 }
 
 }

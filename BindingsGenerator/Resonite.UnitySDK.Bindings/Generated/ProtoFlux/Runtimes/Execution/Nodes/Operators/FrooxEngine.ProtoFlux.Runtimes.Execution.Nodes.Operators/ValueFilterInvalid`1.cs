@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [ProtoFluxBindings]FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.Operators.ValueFilterInvalid<>
-// Generated on: středa 25. února 2026 16:13:58
+// Generated on: čtvrtek 26. února 2026 10:04:24
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -21,15 +21,17 @@ public partial class ValueFilterInvalid<T> : global::FrooxEngine.ProtoFlux.Runti
 	where T : struct
 
 {
-    public global::FrooxEngine.ProtoFlux.INodeValueOutput<T> Value;
-public global::FrooxEngine.ProtoFlux.INodeValueOutput<T> Fallback;
+    public global::FrooxEngine.ProtoFlux.INodeValueOutput<T> Value { get => Value_Element.Data; set => Value_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.ProtoFlux.INodeValueOutput<T>>, global::FrooxEngine.ProtoFlux.INodeValueOutput<T>> Value_Element = new();
+public global::FrooxEngine.ProtoFlux.INodeValueOutput<T> Fallback { get => Fallback_Element.Data; set => Fallback_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.ProtoFlux.INodeValueOutput<T>>, global::FrooxEngine.ProtoFlux.INodeValueOutput<T>> Fallback_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Value", Value.ToResoniteReference(context));
-members.Add("Fallback", Fallback.ToResoniteReference(context));
+members.Add("Value", Value_Element.Data.ToResoniteReference(context));
+members.Add("Fallback", Fallback_Element.Data.ToResoniteReference(context));
 }
 
 }

@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.PhotonDust.ColorByVelocityDirection
-// Generated on: středa 25. února 2026 16:14:18
+// Generated on: čtvrtek 26. února 2026 10:04:38
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,19 +20,23 @@ namespace FrooxEngine.PhotonDust
 public partial class ColorByVelocityDirection : global::FrooxEngine.PhotonDust.ParticleSystemModule<global::System.Object>
 
 {
-    public UnityEngine.Vector3 ReferenceDirection;
-public UnityEngine.ColorX AlignedColor;
-public UnityEngine.ColorX OrthogonalColor;
-public UnityEngine.ColorX OppositeColor;
+    public UnityEngine.Vector3 ReferenceDirection { get => ReferenceDirection_Element.Data; set => ReferenceDirection_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.Vector3>, UnityEngine.Vector3> ReferenceDirection_Element = new();
+public UnityEngine.ColorX AlignedColor { get => AlignedColor_Element.Data; set => AlignedColor_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.ColorX>, UnityEngine.ColorX> AlignedColor_Element = new();
+public UnityEngine.ColorX OrthogonalColor { get => OrthogonalColor_Element.Data; set => OrthogonalColor_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.ColorX>, UnityEngine.ColorX> OrthogonalColor_Element = new();
+public UnityEngine.ColorX OppositeColor { get => OppositeColor_Element.Data; set => OppositeColor_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.ColorX>, UnityEngine.ColorX> OppositeColor_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("ReferenceDirection", ReferenceDirection.ToResoniteLinkField());
-members.Add("AlignedColor", AlignedColor.ToResoniteLinkField());
-members.Add("OrthogonalColor", OrthogonalColor.ToResoniteLinkField());
-members.Add("OppositeColor", OppositeColor.ToResoniteLinkField());
+members.Add("ReferenceDirection", ReferenceDirection_Element.Data.ToResoniteLinkField());
+members.Add("AlignedColor", AlignedColor_Element.Data.ToResoniteLinkField());
+members.Add("OrthogonalColor", OrthogonalColor_Element.Data.ToResoniteLinkField());
+members.Add("OppositeColor", OppositeColor_Element.Data.ToResoniteLinkField());
 }
 
 }

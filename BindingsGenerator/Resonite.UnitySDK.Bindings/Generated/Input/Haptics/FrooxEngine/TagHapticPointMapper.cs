@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.TagHapticPointMapper
-// Generated on: středa 25. února 2026 16:13:09
+// Generated on: čtvrtek 26. února 2026 10:03:39
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,7 +20,7 @@ namespace FrooxEngine
 public partial class TagHapticPointMapper : global::FrooxEngine.HapticPointMapper
 
 {
-    public System.Collections.Generic.List<global::FrooxEngine.TagHapticPointMapper.TaggedHapticPoint> HapticPoints;
+    public global::SyncList<global::FrooxEngine.SyncList<global::FrooxEngine.TagHapticPointMapper.TaggedHapticPoint>, global::FrooxEngine.TagHapticPointMapper.TaggedHapticPoint> HapticPoints = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
@@ -28,7 +28,7 @@ public override void CollectMembers(
     base.CollectMembers(members, context);
 members.Add("HapticPoints", new ResoniteLink.SyncList()
 {
-    Elements = HapticPoints.ConvertList(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers(context) })
+    Elements = HapticPoints.Data.ConvertList(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers(context) })
 });
 }
 

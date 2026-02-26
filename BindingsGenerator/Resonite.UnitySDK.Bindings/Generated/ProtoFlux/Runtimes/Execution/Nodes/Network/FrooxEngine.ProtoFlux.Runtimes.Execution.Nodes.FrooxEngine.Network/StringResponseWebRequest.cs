@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [ProtoFluxBindings]FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Network.StringResponseWebRequest
-// Generated on: středa 25. února 2026 16:13:55
+// Generated on: čtvrtek 26. února 2026 10:04:21
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,7 +20,7 @@ namespace FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Network
 public abstract partial class StringResponseWebRequest : global::FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Network.WebRequestBase
 
 {
-    public global::FrooxEngine.ProtoFlux.NodeObjectOutput<global::System.String> Content;
+    public global::FrooxEngine.ProtoFlux.NodeObjectOutput<global::System.String> Content = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)

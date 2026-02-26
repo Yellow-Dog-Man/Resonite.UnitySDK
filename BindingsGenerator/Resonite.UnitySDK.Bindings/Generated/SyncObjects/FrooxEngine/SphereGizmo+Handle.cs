@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.SphereGizmo+Handle
-// Generated on: středa 25. února 2026 16:14:37
+// Generated on: čtvrtek 26. února 2026 10:04:44
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -22,17 +22,20 @@ namespace FrooxEngine
 public partial class Handle : global::FrooxEngine.SyncObject
 
 {
-    public global::System.Single RelativeRadius;
-public global::FrooxEngine.Slot root;
-public global::FrooxEngine.TorusMesh mesh;
+    public global::System.Single RelativeRadius { get => RelativeRadius_Element.Data; set => RelativeRadius_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> RelativeRadius_Element = new();
+public global::FrooxEngine.Slot root { get => root_Element.Data; set => root_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> root_Element = new();
+public global::FrooxEngine.TorusMesh mesh { get => mesh_Element.Data; set => mesh_Element.Data = value; }
+public Field<global::FrooxEngine.DriveRef<global::FrooxEngine.TorusMesh>, global::FrooxEngine.TorusMesh> mesh_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("RelativeRadius", RelativeRadius.ToResoniteLinkField());
-members.Add("root", root.ToResoniteReference(context));
-members.Add("mesh", mesh.ToResoniteReference(context));
+members.Add("RelativeRadius", RelativeRadius_Element.Data.ToResoniteLinkField());
+members.Add("root", root_Element.Data.ToResoniteReference(context));
+members.Add("mesh", mesh_Element.Data.ToResoniteReference(context));
 }
 
 }

@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.GrabbableReceiverSurface
-// Generated on: středa 25. února 2026 16:13:47
+// Generated on: čtvrtek 26. února 2026 10:04:15
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,28 +20,34 @@ namespace FrooxEngine
 public partial class GrabbableReceiverSurface : global::FrooxEngine.Component, global::FrooxEngine.IGrabbableReceiver, global::FrooxEngine.IGrabbableReparentBlock, global::FrooxEngine.IInteractionBlock
 
 {
-    public global::System.Boolean ParentPlaced;
-public global::FrooxEngine.Slot OverrideParent;
-public global::System.Single TweenTime;
-public global::System.Single MaxDistance;
-public global::System.Single Offset;
-public global::System.Single CheckOffset;
-public System.Collections.Generic.List<UnityEngine.Vector3> Directions;
-public global::FrooxEngine.TagFilter TagFilter;
+    public global::System.Boolean ParentPlaced { get => ParentPlaced_Element.Data; set => ParentPlaced_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> ParentPlaced_Element = new();
+public global::FrooxEngine.Slot OverrideParent { get => OverrideParent_Element.Data; set => OverrideParent_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> OverrideParent_Element = new();
+public global::System.Single TweenTime { get => TweenTime_Element.Data; set => TweenTime_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> TweenTime_Element = new();
+public global::System.Single MaxDistance { get => MaxDistance_Element.Data; set => MaxDistance_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> MaxDistance_Element = new();
+public global::System.Single Offset { get => Offset_Element.Data; set => Offset_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> Offset_Element = new();
+public global::System.Single CheckOffset { get => CheckOffset_Element.Data; set => CheckOffset_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> CheckOffset_Element = new();
+public global::SyncFieldList<global::FrooxEngine.SyncFieldList<UnityEngine.Vector3>, UnityEngine.Vector3, Field<global::FrooxEngine.Sync<UnityEngine.Vector3>, UnityEngine.Vector3>> Directions = new();
+public global::FrooxEngine.TagFilter TagFilter = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("ParentPlaced", ParentPlaced.ToResoniteLinkField());
-members.Add("OverrideParent", OverrideParent.ToResoniteReference(context));
-members.Add("TweenTime", TweenTime.ToResoniteLinkField());
-members.Add("MaxDistance", MaxDistance.ToResoniteLinkField());
-members.Add("Offset", Offset.ToResoniteLinkField());
-members.Add("CheckOffset", CheckOffset.ToResoniteLinkField());
+members.Add("ParentPlaced", ParentPlaced_Element.Data.ToResoniteLinkField());
+members.Add("OverrideParent", OverrideParent_Element.Data.ToResoniteReference(context));
+members.Add("TweenTime", TweenTime_Element.Data.ToResoniteLinkField());
+members.Add("MaxDistance", MaxDistance_Element.Data.ToResoniteLinkField());
+members.Add("Offset", Offset_Element.Data.ToResoniteLinkField());
+members.Add("CheckOffset", CheckOffset_Element.Data.ToResoniteLinkField());
 members.Add("Directions", new ResoniteLink.SyncList()
 {
-    Elements = Directions.ConvertList(m => m.ToResoniteLinkField())
+    Elements = Directions.Data.ConvertList(m => m.Data.ToResoniteLinkField())
 });
 members.Add("TagFilter", new ResoniteLink.SyncObject() { Members = TagFilter.CollectMembers(context) });
 }

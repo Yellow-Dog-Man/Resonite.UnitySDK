@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [ProtoFluxBindings]FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Avatar.Anchors.AnchorLocomotionData
-// Generated on: středa 25. února 2026 16:13:38
+// Generated on: čtvrtek 26. února 2026 10:04:06
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,19 +20,20 @@ namespace FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Avatar.Anch
 public partial class AnchorLocomotionData : global::FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Avatar.Anchors.AnchorEventsBase, global::FrooxEngine.FrooxEngine.ProtoFlux.IMappableNode, global::FrooxEngine.ProtoFlux.IProtoFluxNode<global::FrooxEngine.ProtoFlux.IMappableNode>
 
 {
-    public global::FrooxEngine.ProtoFlux.ISyncNodeOperation OnLocomotionUpdate;
-public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Boolean> HasPrimary;
-public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Boolean> HasSecondary;
-public global::FrooxEngine.ProtoFlux.NodeValueOutput<UnityEngine.Vector2> PrimaryAxis;
-public global::FrooxEngine.ProtoFlux.NodeValueOutput<UnityEngine.Vector2> SecondaryAxis;
-public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Boolean> PrimaryAction;
-public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Boolean> SecondaryAction;
+    public global::FrooxEngine.ProtoFlux.ISyncNodeOperation OnLocomotionUpdate { get => OnLocomotionUpdate_Element.Data; set => OnLocomotionUpdate_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.ProtoFlux.ISyncNodeOperation>, global::FrooxEngine.ProtoFlux.ISyncNodeOperation> OnLocomotionUpdate_Element = new();
+public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Boolean> HasPrimary = new();
+public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Boolean> HasSecondary = new();
+public global::FrooxEngine.ProtoFlux.NodeValueOutput<UnityEngine.Vector2> PrimaryAxis = new();
+public global::FrooxEngine.ProtoFlux.NodeValueOutput<UnityEngine.Vector2> SecondaryAxis = new();
+public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Boolean> PrimaryAction = new();
+public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Boolean> SecondaryAction = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("OnLocomotionUpdate", OnLocomotionUpdate.ToResoniteReference(context));
+members.Add("OnLocomotionUpdate", OnLocomotionUpdate_Element.Data.ToResoniteReference(context));
 members.Add("HasPrimary", new ResoniteLink.EmptyElement());
 members.Add("HasSecondary", new ResoniteLink.EmptyElement());
 members.Add("PrimaryAxis", new ResoniteLink.EmptyElement());

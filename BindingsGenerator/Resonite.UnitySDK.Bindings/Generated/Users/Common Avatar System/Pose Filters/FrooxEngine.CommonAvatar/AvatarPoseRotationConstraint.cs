@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.CommonAvatar.AvatarPoseRotationConstraint
-// Generated on: středa 25. února 2026 16:14:46
+// Generated on: čtvrtek 26. února 2026 10:04:50
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,19 +20,23 @@ namespace FrooxEngine.CommonAvatar
 public partial class AvatarPoseRotationConstraint : global::FrooxEngine.Component, global::FrooxEngine.CommonAvatar.IAvatarPoseFilter
 
 {
-    public global::System.Single MaxTwist;
-public global::System.Single MaxSwing;
-public UnityEngine.Vector3 Axis;
-public UnityEngine.Vector3 TwistReferenceAxis;
+    public global::System.Single MaxTwist { get => MaxTwist_Element.Data; set => MaxTwist_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> MaxTwist_Element = new();
+public global::System.Single MaxSwing { get => MaxSwing_Element.Data; set => MaxSwing_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> MaxSwing_Element = new();
+public UnityEngine.Vector3 Axis { get => Axis_Element.Data; set => Axis_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.Vector3>, UnityEngine.Vector3> Axis_Element = new();
+public UnityEngine.Vector3 TwistReferenceAxis { get => TwistReferenceAxis_Element.Data; set => TwistReferenceAxis_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.Vector3>, UnityEngine.Vector3> TwistReferenceAxis_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("MaxTwist", MaxTwist.ToResoniteLinkField());
-members.Add("MaxSwing", MaxSwing.ToResoniteLinkField());
-members.Add("Axis", Axis.ToResoniteLinkField());
-members.Add("TwistReferenceAxis", TwistReferenceAxis.ToResoniteLinkField());
+members.Add("MaxTwist", MaxTwist_Element.Data.ToResoniteLinkField());
+members.Add("MaxSwing", MaxSwing_Element.Data.ToResoniteLinkField());
+members.Add("Axis", Axis_Element.Data.ToResoniteLinkField());
+members.Add("TwistReferenceAxis", TwistReferenceAxis_Element.Data.ToResoniteLinkField());
 }
 
 }

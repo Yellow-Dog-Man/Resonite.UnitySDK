@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.AssetMetadata+UserInfo
-// Generated on: středa 25. února 2026 16:13:07
+// Generated on: čtvrtek 26. února 2026 10:03:38
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -22,23 +22,28 @@ namespace FrooxEngine
 public partial class UserInfo : global::FrooxEngine.SyncObject
 
 {
-    public global::FrooxEngine.UserRef User;
-public global::System.Boolean IsInVR;
-public global::System.Boolean IsPresent;
-public UnityEngine.Vector3 HeadPosition;
-public UnityEngine.Quaternion HeadOrientation;
-public global::System.DateTime SessionJoinTimestamp;
+    public global::FrooxEngine.UserRef User = new();
+public global::System.Boolean IsInVR { get => IsInVR_Element.Data; set => IsInVR_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> IsInVR_Element = new();
+public global::System.Boolean IsPresent { get => IsPresent_Element.Data; set => IsPresent_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> IsPresent_Element = new();
+public UnityEngine.Vector3 HeadPosition { get => HeadPosition_Element.Data; set => HeadPosition_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.Vector3>, UnityEngine.Vector3> HeadPosition_Element = new();
+public UnityEngine.Quaternion HeadOrientation { get => HeadOrientation_Element.Data; set => HeadOrientation_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.Quaternion>, UnityEngine.Quaternion> HeadOrientation_Element = new();
+public global::System.DateTime SessionJoinTimestamp { get => SessionJoinTimestamp_Element.Data; set => SessionJoinTimestamp_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.DateTime>, global::System.DateTime> SessionJoinTimestamp_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
 members.Add("User", new ResoniteLink.SyncObject() { Members = User.CollectMembers(context) });
-members.Add("IsInVR", IsInVR.ToResoniteLinkField());
-members.Add("IsPresent", IsPresent.ToResoniteLinkField());
-members.Add("HeadPosition", HeadPosition.ToResoniteLinkField());
-members.Add("HeadOrientation", HeadOrientation.ToResoniteLinkField());
-members.Add("SessionJoinTimestamp", SessionJoinTimestamp.ToResoniteLinkField());
+members.Add("IsInVR", IsInVR_Element.Data.ToResoniteLinkField());
+members.Add("IsPresent", IsPresent_Element.Data.ToResoniteLinkField());
+members.Add("HeadPosition", HeadPosition_Element.Data.ToResoniteLinkField());
+members.Add("HeadOrientation", HeadOrientation_Element.Data.ToResoniteLinkField());
+members.Add("SessionJoinTimestamp", SessionJoinTimestamp_Element.Data.ToResoniteLinkField());
 }
 
 }

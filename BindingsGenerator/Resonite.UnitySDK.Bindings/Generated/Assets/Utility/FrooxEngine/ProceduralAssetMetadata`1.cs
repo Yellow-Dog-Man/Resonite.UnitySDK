@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.ProceduralAssetMetadata<>
-// Generated on: středa 25. února 2026 16:13:05
+// Generated on: čtvrtek 26. února 2026 10:03:36
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -21,17 +21,20 @@ public partial class ProceduralAssetMetadata<A> : global::FrooxEngine.Component
 	where A : global::FrooxEngine.Asset
 
 {
-    public global::FrooxEngine.ProceduralAssetProvider<A> Asset;
-public global::System.Int32 UpdateCount;
-public global::System.Boolean Error;
+    public global::FrooxEngine.ProceduralAssetProvider<A> Asset { get => Asset_Element.Data; set => Asset_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.ProceduralAssetProvider<A>>, global::FrooxEngine.ProceduralAssetProvider<A>> Asset_Element = new();
+public global::System.Int32 UpdateCount { get => UpdateCount_Element.Data; set => UpdateCount_Element.Data = value; }
+public Field<global::FrooxEngine.RawOutput<global::System.Int32>, global::System.Int32> UpdateCount_Element = new();
+public global::System.Boolean Error { get => Error_Element.Data; set => Error_Element.Data = value; }
+public Field<global::FrooxEngine.RawOutput<global::System.Boolean>, global::System.Boolean> Error_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Asset", Asset.ToResoniteReference(context));
-members.Add("UpdateCount", UpdateCount.ToResoniteLinkField());
-members.Add("Error", Error.ToResoniteLinkField());
+members.Add("Asset", Asset_Element.Data.ToResoniteReference(context));
+members.Add("UpdateCount", UpdateCount_Element.Data.ToResoniteLinkField());
+members.Add("Error", Error_Element.Data.ToResoniteLinkField());
 }
 
 }

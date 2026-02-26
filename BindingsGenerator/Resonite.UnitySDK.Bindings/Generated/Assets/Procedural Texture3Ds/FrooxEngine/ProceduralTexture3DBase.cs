@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.ProceduralTexture3DBase
-// Generated on: středa 25. února 2026 16:13:05
+// Generated on: čtvrtek 26. února 2026 10:03:36
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,23 +20,29 @@ namespace FrooxEngine
 public abstract partial class ProceduralTexture3DBase : global::FrooxEngine.ProceduralAssetProvider<global::FrooxEngine.Texture3D>, global::FrooxEngine.ITextureProvider, global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture>
 
 {
-    public global::Renderite.Shared.TextureFilterMode FilterMode;
-public global::System.Int32 AnisotropicLevel;
-public global::Renderite.Shared.TextureWrapMode WrapModeU;
-public global::Renderite.Shared.TextureWrapMode WrapModeV;
-public global::Renderite.Shared.TextureWrapMode WrapModeW;
-public global::Renderite.Shared.ColorProfile Profile;
+    public global::Renderite.Shared.TextureFilterMode FilterMode { get => FilterMode_Element.Data; set => FilterMode_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::Renderite.Shared.TextureFilterMode>, global::Renderite.Shared.TextureFilterMode> FilterMode_Element = new();
+public global::System.Int32 AnisotropicLevel { get => AnisotropicLevel_Element.Data; set => AnisotropicLevel_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Int32>, global::System.Int32> AnisotropicLevel_Element = new();
+public global::Renderite.Shared.TextureWrapMode WrapModeU { get => WrapModeU_Element.Data; set => WrapModeU_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::Renderite.Shared.TextureWrapMode>, global::Renderite.Shared.TextureWrapMode> WrapModeU_Element = new();
+public global::Renderite.Shared.TextureWrapMode WrapModeV { get => WrapModeV_Element.Data; set => WrapModeV_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::Renderite.Shared.TextureWrapMode>, global::Renderite.Shared.TextureWrapMode> WrapModeV_Element = new();
+public global::Renderite.Shared.TextureWrapMode WrapModeW { get => WrapModeW_Element.Data; set => WrapModeW_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::Renderite.Shared.TextureWrapMode>, global::Renderite.Shared.TextureWrapMode> WrapModeW_Element = new();
+public global::Renderite.Shared.ColorProfile Profile { get => Profile_Element.Data; set => Profile_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::Renderite.Shared.ColorProfile>, global::Renderite.Shared.ColorProfile> Profile_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("FilterMode", FilterMode.ToResoniteLinkField());
-members.Add("AnisotropicLevel", AnisotropicLevel.ToResoniteLinkField());
-members.Add("WrapModeU", WrapModeU.ToResoniteLinkField());
-members.Add("WrapModeV", WrapModeV.ToResoniteLinkField());
-members.Add("WrapModeW", WrapModeW.ToResoniteLinkField());
-members.Add("Profile", Profile.ToResoniteLinkField());
+members.Add("FilterMode", FilterMode_Element.Data.ToResoniteLinkField());
+members.Add("AnisotropicLevel", AnisotropicLevel_Element.Data.ToResoniteLinkField());
+members.Add("WrapModeU", WrapModeU_Element.Data.ToResoniteLinkField());
+members.Add("WrapModeV", WrapModeV_Element.Data.ToResoniteLinkField());
+members.Add("WrapModeW", WrapModeW_Element.Data.ToResoniteLinkField());
+members.Add("Profile", Profile_Element.Data.ToResoniteLinkField());
 }
 
 }

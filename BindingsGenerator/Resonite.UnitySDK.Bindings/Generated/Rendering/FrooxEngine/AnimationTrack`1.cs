@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.AnimationTrack<>
-// Generated on: středa 25. února 2026 16:14:16
+// Generated on: čtvrtek 26. února 2026 10:04:37
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -21,19 +21,22 @@ public partial class AnimationTrack<T> : global::FrooxEngine.Component, global::
 	
 
 {
-    public global::System.String _node;
-public global::System.String _component;
-public global::System.String _property;
-public global::FrooxEngine.LinearKey<T>[] Data;
+    public global::System.String _node { get => _node_Element.Data; set => _node_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.String>, global::System.String> _node_Element = new();
+public global::System.String _component { get => _component_Element.Data; set => _component_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.String>, global::System.String> _component_Element = new();
+public global::System.String _property { get => _property_Element.Data; set => _property_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.String>, global::System.String> _property_Element = new();
+public global::SyncArray<global::FrooxEngine.SyncLinear<T>, global::FrooxEngine.LinearKey<T>> Data = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("_node", _node.ToResoniteLinkField());
-members.Add("_component", _component.ToResoniteLinkField());
-members.Add("_property", _property.ToResoniteLinkField());
-members.Add("Data", Data.ToResoniteLinkArray());
+members.Add("_node", _node_Element.Data.ToResoniteLinkField());
+members.Add("_component", _component_Element.Data.ToResoniteLinkField());
+members.Add("_property", _property_Element.Data.ToResoniteLinkField());
+members.Add("Data", Data.Data.ToResoniteLinkArray());
 }
 
 }

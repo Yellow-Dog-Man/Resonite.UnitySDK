@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.StorageUsageStatus
-// Generated on: středa 25. února 2026 16:13:06
+// Generated on: čtvrtek 26. února 2026 10:03:37
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,41 +20,56 @@ namespace FrooxEngine
 public partial class StorageUsageStatus : global::FrooxEngine.Component
 
 {
-    public global::System.String OwnerId;
-public global::System.Boolean GroupMemberQuota;
-public global::System.Boolean HasValidData;
-public global::System.Int64 StorageBytes;
-public global::System.Int64 FullStorageBytes;
-public global::System.Int64 ShareableStorageBytes;
-public global::System.Int64 SharedStorageBytes;
-public global::System.Int64 UsageBytes;
-public global::System.Single UsageRatio;
-public global::System.String StorageString;
-public global::System.String FullStorageString;
-public global::System.String ShareableStorageString;
-public global::System.String SharedStorageString;
-public global::System.String UsageString;
-public global::System.String RatioString;
+    public global::System.String OwnerId { get => OwnerId_Element.Data; set => OwnerId_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.String>, global::System.String> OwnerId_Element = new();
+public global::System.Boolean GroupMemberQuota { get => GroupMemberQuota_Element.Data; set => GroupMemberQuota_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> GroupMemberQuota_Element = new();
+public global::System.Boolean HasValidData { get => HasValidData_Element.Data; set => HasValidData_Element.Data = value; }
+public Field<global::FrooxEngine.RawOutput<global::System.Boolean>, global::System.Boolean> HasValidData_Element = new();
+public global::System.Int64 StorageBytes { get => StorageBytes_Element.Data; set => StorageBytes_Element.Data = value; }
+public Field<global::FrooxEngine.RawOutput<global::System.Int64>, global::System.Int64> StorageBytes_Element = new();
+public global::System.Int64 FullStorageBytes { get => FullStorageBytes_Element.Data; set => FullStorageBytes_Element.Data = value; }
+public Field<global::FrooxEngine.RawOutput<global::System.Int64>, global::System.Int64> FullStorageBytes_Element = new();
+public global::System.Int64 ShareableStorageBytes { get => ShareableStorageBytes_Element.Data; set => ShareableStorageBytes_Element.Data = value; }
+public Field<global::FrooxEngine.RawOutput<global::System.Int64>, global::System.Int64> ShareableStorageBytes_Element = new();
+public global::System.Int64 SharedStorageBytes { get => SharedStorageBytes_Element.Data; set => SharedStorageBytes_Element.Data = value; }
+public Field<global::FrooxEngine.RawOutput<global::System.Int64>, global::System.Int64> SharedStorageBytes_Element = new();
+public global::System.Int64 UsageBytes { get => UsageBytes_Element.Data; set => UsageBytes_Element.Data = value; }
+public Field<global::FrooxEngine.RawOutput<global::System.Int64>, global::System.Int64> UsageBytes_Element = new();
+public global::System.Single UsageRatio { get => UsageRatio_Element.Data; set => UsageRatio_Element.Data = value; }
+public Field<global::FrooxEngine.RawOutput<global::System.Single>, global::System.Single> UsageRatio_Element = new();
+public global::System.String StorageString { get => StorageString_Element.Data; set => StorageString_Element.Data = value; }
+public Field<global::FrooxEngine.RawOutput<global::System.String>, global::System.String> StorageString_Element = new();
+public global::System.String FullStorageString { get => FullStorageString_Element.Data; set => FullStorageString_Element.Data = value; }
+public Field<global::FrooxEngine.RawOutput<global::System.String>, global::System.String> FullStorageString_Element = new();
+public global::System.String ShareableStorageString { get => ShareableStorageString_Element.Data; set => ShareableStorageString_Element.Data = value; }
+public Field<global::FrooxEngine.RawOutput<global::System.String>, global::System.String> ShareableStorageString_Element = new();
+public global::System.String SharedStorageString { get => SharedStorageString_Element.Data; set => SharedStorageString_Element.Data = value; }
+public Field<global::FrooxEngine.RawOutput<global::System.String>, global::System.String> SharedStorageString_Element = new();
+public global::System.String UsageString { get => UsageString_Element.Data; set => UsageString_Element.Data = value; }
+public Field<global::FrooxEngine.RawOutput<global::System.String>, global::System.String> UsageString_Element = new();
+public global::System.String RatioString { get => RatioString_Element.Data; set => RatioString_Element.Data = value; }
+public Field<global::FrooxEngine.RawOutput<global::System.String>, global::System.String> RatioString_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("OwnerId", OwnerId.ToResoniteLinkField());
-members.Add("GroupMemberQuota", GroupMemberQuota.ToResoniteLinkField());
-members.Add("HasValidData", HasValidData.ToResoniteLinkField());
-members.Add("StorageBytes", StorageBytes.ToResoniteLinkField());
-members.Add("FullStorageBytes", FullStorageBytes.ToResoniteLinkField());
-members.Add("ShareableStorageBytes", ShareableStorageBytes.ToResoniteLinkField());
-members.Add("SharedStorageBytes", SharedStorageBytes.ToResoniteLinkField());
-members.Add("UsageBytes", UsageBytes.ToResoniteLinkField());
-members.Add("UsageRatio", UsageRatio.ToResoniteLinkField());
-members.Add("StorageString", StorageString.ToResoniteLinkField());
-members.Add("FullStorageString", FullStorageString.ToResoniteLinkField());
-members.Add("ShareableStorageString", ShareableStorageString.ToResoniteLinkField());
-members.Add("SharedStorageString", SharedStorageString.ToResoniteLinkField());
-members.Add("UsageString", UsageString.ToResoniteLinkField());
-members.Add("RatioString", RatioString.ToResoniteLinkField());
+members.Add("OwnerId", OwnerId_Element.Data.ToResoniteLinkField());
+members.Add("GroupMemberQuota", GroupMemberQuota_Element.Data.ToResoniteLinkField());
+members.Add("HasValidData", HasValidData_Element.Data.ToResoniteLinkField());
+members.Add("StorageBytes", StorageBytes_Element.Data.ToResoniteLinkField());
+members.Add("FullStorageBytes", FullStorageBytes_Element.Data.ToResoniteLinkField());
+members.Add("ShareableStorageBytes", ShareableStorageBytes_Element.Data.ToResoniteLinkField());
+members.Add("SharedStorageBytes", SharedStorageBytes_Element.Data.ToResoniteLinkField());
+members.Add("UsageBytes", UsageBytes_Element.Data.ToResoniteLinkField());
+members.Add("UsageRatio", UsageRatio_Element.Data.ToResoniteLinkField());
+members.Add("StorageString", StorageString_Element.Data.ToResoniteLinkField());
+members.Add("FullStorageString", FullStorageString_Element.Data.ToResoniteLinkField());
+members.Add("ShareableStorageString", ShareableStorageString_Element.Data.ToResoniteLinkField());
+members.Add("SharedStorageString", SharedStorageString_Element.Data.ToResoniteLinkField());
+members.Add("UsageString", UsageString_Element.Data.ToResoniteLinkField());
+members.Add("RatioString", RatioString_Element.Data.ToResoniteLinkField());
 }
 
 }

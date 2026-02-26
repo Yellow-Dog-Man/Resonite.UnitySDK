@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.ChannelVolumeMeter
-// Generated on: středa 25. února 2026 16:13:11
+// Generated on: čtvrtek 26. února 2026 10:03:40
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,20 +20,22 @@ namespace FrooxEngine
 public partial class ChannelVolumeMeter : global::FrooxEngine.VolumeMeterBase
 
 {
-    public global::System.Int32 CurrentChannels;
-public System.Collections.Generic.List<global::System.Single> ChannelVolumes;
-public global::System.Boolean DoNotRemoveExcessFields;
+    public global::System.Int32 CurrentChannels { get => CurrentChannels_Element.Data; set => CurrentChannels_Element.Data = value; }
+public Field<global::FrooxEngine.RawOutput<global::System.Int32>, global::System.Int32> CurrentChannels_Element = new();
+public global::SyncFieldList<global::FrooxEngine.SyncList<global::FrooxEngine.RawOutput<global::System.Single>>, global::System.Single, Field<global::FrooxEngine.RawOutput<global::System.Single>, global::System.Single>> ChannelVolumes = new();
+public global::System.Boolean DoNotRemoveExcessFields { get => DoNotRemoveExcessFields_Element.Data; set => DoNotRemoveExcessFields_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> DoNotRemoveExcessFields_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("CurrentChannels", CurrentChannels.ToResoniteLinkField());
+members.Add("CurrentChannels", CurrentChannels_Element.Data.ToResoniteLinkField());
 members.Add("ChannelVolumes", new ResoniteLink.SyncList()
 {
-    Elements = ChannelVolumes.ConvertList(m => m.ToResoniteLinkField())
+    Elements = ChannelVolumes.Data.ConvertList(m => m.Data.ToResoniteLinkField())
 });
-members.Add("DoNotRemoveExcessFields", DoNotRemoveExcessFields.ToResoniteLinkField());
+members.Add("DoNotRemoveExcessFields", DoNotRemoveExcessFields_Element.Data.ToResoniteLinkField());
 }
 
 }

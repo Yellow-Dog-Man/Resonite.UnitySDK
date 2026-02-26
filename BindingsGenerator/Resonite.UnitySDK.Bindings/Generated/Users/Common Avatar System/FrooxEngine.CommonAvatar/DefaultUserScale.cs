@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.CommonAvatar.DefaultUserScale
-// Generated on: středa 25. února 2026 16:14:45
+// Generated on: čtvrtek 26. února 2026 10:04:49
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,17 +20,20 @@ namespace FrooxEngine.CommonAvatar
 public partial class DefaultUserScale : global::FrooxEngine.Component, global::FrooxEngine.CommonAvatar.IAvatarObjectComponent
 
 {
-    public global::System.Boolean SetOnEquip;
-public global::System.Single DefaultScale;
-public global::FrooxEngine.User _activeUser;
+    public global::System.Boolean SetOnEquip { get => SetOnEquip_Element.Data; set => SetOnEquip_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> SetOnEquip_Element = new();
+public global::System.Single DefaultScale { get => DefaultScale_Element.Data; set => DefaultScale_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> DefaultScale_Element = new();
+public global::FrooxEngine.User _activeUser { get => _activeUser_Element.Data; set => _activeUser_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.User>, global::FrooxEngine.User> _activeUser_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("SetOnEquip", SetOnEquip.ToResoniteLinkField());
-members.Add("DefaultScale", DefaultScale.ToResoniteLinkField());
-members.Add("_activeUser", _activeUser.ToResoniteReference(context));
+members.Add("SetOnEquip", SetOnEquip_Element.Data.ToResoniteLinkField());
+members.Add("DefaultScale", DefaultScale_Element.Data.ToResoniteLinkField());
+members.Add("_activeUser", _activeUser_Element.Data.ToResoniteReference(context));
 }
 
 }

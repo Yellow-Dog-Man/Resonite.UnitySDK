@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.IcoSphereMeshSH4
-// Generated on: středa 25. února 2026 16:13:04
+// Generated on: čtvrtek 26. února 2026 10:03:35
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,17 +20,20 @@ namespace FrooxEngine
 public partial class IcoSphereMeshSH4 : global::FrooxEngine.IcoSphereMesh
 
 {
-    public global::Elements.Core.SphericalHarmonicsL4<UnityEngine.ColorX> Colors;
-public global::Elements.Core.SphericalHarmonicsL4<global::System.Single> RadiusMultiplier;
-public global::System.Boolean NegativeRadiusInvertsColor;
+    public global::Elements.Core.SphericalHarmonicsL4<UnityEngine.ColorX> Colors { get => Colors_Element.Data; set => Colors_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::Elements.Core.SphericalHarmonicsL4<UnityEngine.ColorX>>, global::Elements.Core.SphericalHarmonicsL4<UnityEngine.ColorX>> Colors_Element = new();
+public global::Elements.Core.SphericalHarmonicsL4<global::System.Single> RadiusMultiplier { get => RadiusMultiplier_Element.Data; set => RadiusMultiplier_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::Elements.Core.SphericalHarmonicsL4<global::System.Single>>, global::Elements.Core.SphericalHarmonicsL4<global::System.Single>> RadiusMultiplier_Element = new();
+public global::System.Boolean NegativeRadiusInvertsColor { get => NegativeRadiusInvertsColor_Element.Data; set => NegativeRadiusInvertsColor_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> NegativeRadiusInvertsColor_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Colors", Colors.ToResoniteLinkField());
-members.Add("RadiusMultiplier", RadiusMultiplier.ToResoniteLinkField());
-members.Add("NegativeRadiusInvertsColor", NegativeRadiusInvertsColor.ToResoniteLinkField());
+members.Add("Colors", Colors_Element.Data.ToResoniteLinkField());
+members.Add("RadiusMultiplier", RadiusMultiplier_Element.Data.ToResoniteLinkField());
+members.Add("NegativeRadiusInvertsColor", NegativeRadiusInvertsColor_Element.Data.ToResoniteLinkField());
 }
 
 }

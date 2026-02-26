@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.AssetGatherSettings
-// Generated on: středa 25. února 2026 16:14:34
+// Generated on: čtvrtek 26. února 2026 10:04:43
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,15 +20,17 @@ namespace FrooxEngine
 public partial class AssetGatherSettings : global::FrooxEngine.SettingComponent<global::FrooxEngine.AssetGatherSettings>
 
 {
-    public global::System.Int32 MaxConcurrentAssetTransfers;
-public global::System.Int32 MaxConcurrentDownloads;
+    public global::System.Int32 MaxConcurrentAssetTransfers { get => MaxConcurrentAssetTransfers_Element.Data; set => MaxConcurrentAssetTransfers_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Int32>, global::System.Int32> MaxConcurrentAssetTransfers_Element = new();
+public global::System.Int32 MaxConcurrentDownloads { get => MaxConcurrentDownloads_Element.Data; set => MaxConcurrentDownloads_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Int32>, global::System.Int32> MaxConcurrentDownloads_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("MaxConcurrentAssetTransfers", MaxConcurrentAssetTransfers.ToResoniteLinkField());
-members.Add("MaxConcurrentDownloads", MaxConcurrentDownloads.ToResoniteLinkField());
+members.Add("MaxConcurrentAssetTransfers", MaxConcurrentAssetTransfers_Element.Data.ToResoniteLinkField());
+members.Add("MaxConcurrentDownloads", MaxConcurrentDownloads_Element.Data.ToResoniteLinkField());
 }
 
 }

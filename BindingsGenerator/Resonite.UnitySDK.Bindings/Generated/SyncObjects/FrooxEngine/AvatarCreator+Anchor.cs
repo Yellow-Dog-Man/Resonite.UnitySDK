@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.AvatarCreator+Anchor
-// Generated on: středa 25. února 2026 16:14:35
+// Generated on: čtvrtek 26. února 2026 10:04:43
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -22,23 +22,29 @@ namespace FrooxEngine
 public partial class Anchor : global::FrooxEngine.SyncObject
 
 {
-    public global::FrooxEngine.IField<UnityEngine.Vector3> ScaleDrive;
-public global::System.String AnchorName;
-public global::System.Boolean IsRight;
-public global::FrooxEngine.AvatarCreator.Anchor OtherSide;
-public global::FrooxEngine.Slot Slot;
-public global::FrooxEngine.Slider Slider;
+    public global::FrooxEngine.IField<UnityEngine.Vector3> ScaleDrive { get => ScaleDrive_Element.Data; set => ScaleDrive_Element.Data = value; }
+public Field<global::FrooxEngine.FieldDrive<UnityEngine.Vector3>, global::FrooxEngine.IField<UnityEngine.Vector3>> ScaleDrive_Element = new();
+public global::System.String AnchorName { get => AnchorName_Element.Data; set => AnchorName_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.String>, global::System.String> AnchorName_Element = new();
+public global::System.Boolean IsRight { get => IsRight_Element.Data; set => IsRight_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> IsRight_Element = new();
+public global::FrooxEngine.AvatarCreator.Anchor OtherSide { get => OtherSide_Element.Data; set => OtherSide_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.AvatarCreator.Anchor>, global::FrooxEngine.AvatarCreator.Anchor> OtherSide_Element = new();
+public global::FrooxEngine.Slot Slot { get => Slot_Element.Data; set => Slot_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> Slot_Element = new();
+public global::FrooxEngine.Slider Slider { get => Slider_Element.Data; set => Slider_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.Slider>, global::FrooxEngine.Slider> Slider_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("ScaleDrive", ScaleDrive.ToResoniteReference(context));
-members.Add("AnchorName", AnchorName.ToResoniteLinkField());
-members.Add("IsRight", IsRight.ToResoniteLinkField());
-members.Add("OtherSide", OtherSide.ToResoniteReference(context));
-members.Add("Slot", Slot.ToResoniteReference(context));
-members.Add("Slider", Slider.ToResoniteReference(context));
+members.Add("ScaleDrive", ScaleDrive_Element.Data.ToResoniteReference(context));
+members.Add("AnchorName", AnchorName_Element.Data.ToResoniteLinkField());
+members.Add("IsRight", IsRight_Element.Data.ToResoniteLinkField());
+members.Add("OtherSide", OtherSide_Element.Data.ToResoniteReference(context));
+members.Add("Slot", Slot_Element.Data.ToResoniteReference(context));
+members.Add("Slider", Slider_Element.Data.ToResoniteReference(context));
 }
 
 }

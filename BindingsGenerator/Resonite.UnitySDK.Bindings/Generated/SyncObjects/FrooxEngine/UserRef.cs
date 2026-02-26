@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.UserRef
-// Generated on: středa 25. února 2026 16:13:02
+// Generated on: čtvrtek 26. února 2026 10:03:33
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,17 +20,20 @@ namespace FrooxEngine
 public partial class UserRef : global::FrooxEngine.SyncObject, global::FrooxEngine.ISyncRef<global::FrooxEngine.User>, global::FrooxEngine.ISyncRef
 
 {
-    public global::FrooxEngine.User User;
-public global::System.String _machineId;
-public global::System.String _userId;
+    public global::FrooxEngine.User User { get => User_Element.Data; set => User_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.User>, global::FrooxEngine.User> User_Element = new();
+public global::System.String _machineId { get => _machineId_Element.Data; set => _machineId_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.String>, global::System.String> _machineId_Element = new();
+public global::System.String _userId { get => _userId_Element.Data; set => _userId_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.String>, global::System.String> _userId_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("User", User.ToResoniteReference(context));
-members.Add("_machineId", _machineId.ToResoniteLinkField());
-members.Add("_userId", _userId.ToResoniteLinkField());
+members.Add("User", User_Element.Data.ToResoniteReference(context));
+members.Add("_machineId", _machineId_Element.Data.ToResoniteLinkField());
+members.Add("_userId", _userId_Element.Data.ToResoniteLinkField());
 }
 
 }

@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.CommonAvatar.AvatarHandDataAssigner
-// Generated on: středa 25. února 2026 16:14:46
+// Generated on: čtvrtek 26. února 2026 10:04:50
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,21 +20,26 @@ namespace FrooxEngine.CommonAvatar
 public partial class AvatarHandDataAssigner : global::FrooxEngine.Component, global::FrooxEngine.CommonAvatar.IAvatarObjectComponent
 
 {
-    public global::FrooxEngine.SyncRef<global::FrooxEngine.IFingerPoseSourceComponent> TargetReference;
-public global::FrooxEngine.TipTouchSource TouchSource;
-public global::FrooxEngine.VibrationDeviceRelay VibrationRelay;
-public global::Renderite.Shared.Chirality Chirality;
-public global::FrooxEngine.CommonAvatar.AvatarObjectSlot _equippingSlot;
+    public global::FrooxEngine.SyncRef<global::FrooxEngine.IFingerPoseSourceComponent> TargetReference { get => TargetReference_Element.Data; set => TargetReference_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.SyncRef<global::FrooxEngine.IFingerPoseSourceComponent>>, global::FrooxEngine.SyncRef<global::FrooxEngine.IFingerPoseSourceComponent>> TargetReference_Element = new();
+public global::FrooxEngine.TipTouchSource TouchSource { get => TouchSource_Element.Data; set => TouchSource_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.TipTouchSource>, global::FrooxEngine.TipTouchSource> TouchSource_Element = new();
+public global::FrooxEngine.VibrationDeviceRelay VibrationRelay { get => VibrationRelay_Element.Data; set => VibrationRelay_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.VibrationDeviceRelay>, global::FrooxEngine.VibrationDeviceRelay> VibrationRelay_Element = new();
+public global::Renderite.Shared.Chirality Chirality { get => Chirality_Element.Data; set => Chirality_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::Renderite.Shared.Chirality>, global::Renderite.Shared.Chirality> Chirality_Element = new();
+public global::FrooxEngine.CommonAvatar.AvatarObjectSlot _equippingSlot { get => _equippingSlot_Element.Data; set => _equippingSlot_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.CommonAvatar.AvatarObjectSlot>, global::FrooxEngine.CommonAvatar.AvatarObjectSlot> _equippingSlot_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("TargetReference", TargetReference.ToResoniteReference(context));
-members.Add("TouchSource", TouchSource.ToResoniteReference(context));
-members.Add("VibrationRelay", VibrationRelay.ToResoniteReference(context));
-members.Add("Chirality", Chirality.ToResoniteLinkField());
-members.Add("_equippingSlot", _equippingSlot.ToResoniteReference(context));
+members.Add("TargetReference", TargetReference_Element.Data.ToResoniteReference(context));
+members.Add("TouchSource", TouchSource_Element.Data.ToResoniteReference(context));
+members.Add("VibrationRelay", VibrationRelay_Element.Data.ToResoniteReference(context));
+members.Add("Chirality", Chirality_Element.Data.ToResoniteLinkField());
+members.Add("_equippingSlot", _equippingSlot_Element.Data.ToResoniteReference(context));
 }
 
 }

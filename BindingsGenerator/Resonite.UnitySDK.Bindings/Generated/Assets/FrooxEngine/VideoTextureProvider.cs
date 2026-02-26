@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.VideoTextureProvider
-// Generated on: středa 25. února 2026 16:13:02
+// Generated on: čtvrtek 26. února 2026 10:03:33
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,45 +20,62 @@ namespace FrooxEngine
 public partial class VideoTextureProvider : global::FrooxEngine.AssetProvider<global::FrooxEngine.VideoTexture>, global::FrooxEngine.ITexture2DProvider, global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D>, global::FrooxEngine.ITextureProvider, global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture>, global::FrooxEngine.IPlayable, global::FrooxEngine.IWorldAudioDataSource, global::FrooxEngine.IStaticAssetProvider
 
 {
-    public PlaybackState Playback;
-public System.Uri URL;
-public global::System.Boolean Stream;
-public global::System.Single Volume;
-public global::System.String ForcePlaybackEngine;
-public global::System.Boolean ForceVideoStreamingServiceParsing;
-public global::System.String VideoTitle;
-public global::System.String CurrentPlaybackEngine;
-public global::System.Single CurrentClockError;
-public global::Renderite.Shared.TextureFilterMode FilterMode;
-public global::System.Int32 AnisotropicLevel;
-public global::Renderite.Shared.TextureWrapMode WrapModeU;
-public global::Renderite.Shared.TextureWrapMode WrapModeV;
-public global::System.Nullable<global::System.Int32> AudioTrackIndex;
-public global::System.Boolean PreferAudioOnly;
-public global::System.Nullable<global::System.Int32> MaxWidth;
-public global::System.Nullable<global::System.Int32> MaxHeight;
+    public PlaybackState Playback { get => Playback_Element.Data; set => Playback_Element.Data = value; }
+public Field<global::FrooxEngine.SyncPlayback, PlaybackState> Playback_Element = new();
+public System.Uri URL { get => URL_Element.Data; set => URL_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<System.Uri>, System.Uri> URL_Element = new();
+public global::System.Boolean Stream { get => Stream_Element.Data; set => Stream_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> Stream_Element = new();
+public global::System.Single Volume { get => Volume_Element.Data; set => Volume_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> Volume_Element = new();
+public global::System.String ForcePlaybackEngine { get => ForcePlaybackEngine_Element.Data; set => ForcePlaybackEngine_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.String>, global::System.String> ForcePlaybackEngine_Element = new();
+public global::System.Boolean ForceVideoStreamingServiceParsing { get => ForceVideoStreamingServiceParsing_Element.Data; set => ForceVideoStreamingServiceParsing_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> ForceVideoStreamingServiceParsing_Element = new();
+public global::System.String VideoTitle { get => VideoTitle_Element.Data; set => VideoTitle_Element.Data = value; }
+public Field<global::FrooxEngine.RawOutput<global::System.String>, global::System.String> VideoTitle_Element = new();
+public global::System.String CurrentPlaybackEngine { get => CurrentPlaybackEngine_Element.Data; set => CurrentPlaybackEngine_Element.Data = value; }
+public Field<global::FrooxEngine.RawOutput<global::System.String>, global::System.String> CurrentPlaybackEngine_Element = new();
+public global::System.Single CurrentClockError { get => CurrentClockError_Element.Data; set => CurrentClockError_Element.Data = value; }
+public Field<global::FrooxEngine.RawOutput<global::System.Single>, global::System.Single> CurrentClockError_Element = new();
+public global::Renderite.Shared.TextureFilterMode FilterMode { get => FilterMode_Element.Data; set => FilterMode_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::Renderite.Shared.TextureFilterMode>, global::Renderite.Shared.TextureFilterMode> FilterMode_Element = new();
+public global::System.Int32 AnisotropicLevel { get => AnisotropicLevel_Element.Data; set => AnisotropicLevel_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Int32>, global::System.Int32> AnisotropicLevel_Element = new();
+public global::Renderite.Shared.TextureWrapMode WrapModeU { get => WrapModeU_Element.Data; set => WrapModeU_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::Renderite.Shared.TextureWrapMode>, global::Renderite.Shared.TextureWrapMode> WrapModeU_Element = new();
+public global::Renderite.Shared.TextureWrapMode WrapModeV { get => WrapModeV_Element.Data; set => WrapModeV_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::Renderite.Shared.TextureWrapMode>, global::Renderite.Shared.TextureWrapMode> WrapModeV_Element = new();
+public global::System.Nullable<global::System.Int32> AudioTrackIndex { get => AudioTrackIndex_Element.Data; set => AudioTrackIndex_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Nullable<global::System.Int32>>, global::System.Nullable<global::System.Int32>> AudioTrackIndex_Element = new();
+public global::System.Boolean PreferAudioOnly { get => PreferAudioOnly_Element.Data; set => PreferAudioOnly_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> PreferAudioOnly_Element = new();
+public global::System.Nullable<global::System.Int32> MaxWidth { get => MaxWidth_Element.Data; set => MaxWidth_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Nullable<global::System.Int32>>, global::System.Nullable<global::System.Int32>> MaxWidth_Element = new();
+public global::System.Nullable<global::System.Int32> MaxHeight { get => MaxHeight_Element.Data; set => MaxHeight_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Nullable<global::System.Int32>>, global::System.Nullable<global::System.Int32>> MaxHeight_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Playback", Playback.ToResoniteLink());
-members.Add("URL", URL.ToResoniteLinkField());
-members.Add("Stream", Stream.ToResoniteLinkField());
-members.Add("Volume", Volume.ToResoniteLinkField());
-members.Add("ForcePlaybackEngine", ForcePlaybackEngine.ToResoniteLinkField());
-members.Add("ForceVideoStreamingServiceParsing", ForceVideoStreamingServiceParsing.ToResoniteLinkField());
-members.Add("VideoTitle", VideoTitle.ToResoniteLinkField());
-members.Add("CurrentPlaybackEngine", CurrentPlaybackEngine.ToResoniteLinkField());
-members.Add("CurrentClockError", CurrentClockError.ToResoniteLinkField());
-members.Add("FilterMode", FilterMode.ToResoniteLinkField());
-members.Add("AnisotropicLevel", AnisotropicLevel.ToResoniteLinkField());
-members.Add("WrapModeU", WrapModeU.ToResoniteLinkField());
-members.Add("WrapModeV", WrapModeV.ToResoniteLinkField());
-members.Add("AudioTrackIndex", AudioTrackIndex.ToResoniteLinkField());
-members.Add("PreferAudioOnly", PreferAudioOnly.ToResoniteLinkField());
-members.Add("MaxWidth", MaxWidth.ToResoniteLinkField());
-members.Add("MaxHeight", MaxHeight.ToResoniteLinkField());
+members.Add("Playback", Playback_Element.Data.ToResoniteLink());
+members.Add("URL", URL_Element.Data.ToResoniteLinkField());
+members.Add("Stream", Stream_Element.Data.ToResoniteLinkField());
+members.Add("Volume", Volume_Element.Data.ToResoniteLinkField());
+members.Add("ForcePlaybackEngine", ForcePlaybackEngine_Element.Data.ToResoniteLinkField());
+members.Add("ForceVideoStreamingServiceParsing", ForceVideoStreamingServiceParsing_Element.Data.ToResoniteLinkField());
+members.Add("VideoTitle", VideoTitle_Element.Data.ToResoniteLinkField());
+members.Add("CurrentPlaybackEngine", CurrentPlaybackEngine_Element.Data.ToResoniteLinkField());
+members.Add("CurrentClockError", CurrentClockError_Element.Data.ToResoniteLinkField());
+members.Add("FilterMode", FilterMode_Element.Data.ToResoniteLinkField());
+members.Add("AnisotropicLevel", AnisotropicLevel_Element.Data.ToResoniteLinkField());
+members.Add("WrapModeU", WrapModeU_Element.Data.ToResoniteLinkField());
+members.Add("WrapModeV", WrapModeV_Element.Data.ToResoniteLinkField());
+members.Add("AudioTrackIndex", AudioTrackIndex_Element.Data.ToResoniteLinkField());
+members.Add("PreferAudioOnly", PreferAudioOnly_Element.Data.ToResoniteLinkField());
+members.Add("MaxWidth", MaxWidth_Element.Data.ToResoniteLinkField());
+members.Add("MaxHeight", MaxHeight_Element.Data.ToResoniteLinkField());
 }
 
 }

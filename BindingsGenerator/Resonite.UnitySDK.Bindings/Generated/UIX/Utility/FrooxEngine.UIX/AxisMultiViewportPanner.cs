@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.UIX.AxisMultiViewportPanner
-// Generated on: středa 25. února 2026 16:14:34
+// Generated on: čtvrtek 26. února 2026 10:04:43
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,21 +20,24 @@ namespace FrooxEngine.UIX
 public partial class AxisMultiViewportPanner : global::FrooxEngine.Component
 
 {
-    public global::System.Int32 ViewportIndex;
-public global::System.Single AnimationTime;
-public global::FrooxEngine.UIX.AxisMultiViewportPanner.AlignDirection Direction;
-public System.Collections.Generic.List<global::FrooxEngine.UIX.AxisMultiViewportPanner.Viewport> Viewports;
+    public global::System.Int32 ViewportIndex { get => ViewportIndex_Element.Data; set => ViewportIndex_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Int32>, global::System.Int32> ViewportIndex_Element = new();
+public global::System.Single AnimationTime { get => AnimationTime_Element.Data; set => AnimationTime_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> AnimationTime_Element = new();
+public global::FrooxEngine.UIX.AxisMultiViewportPanner.AlignDirection Direction { get => Direction_Element.Data; set => Direction_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::FrooxEngine.UIX.AxisMultiViewportPanner.AlignDirection>, global::FrooxEngine.UIX.AxisMultiViewportPanner.AlignDirection> Direction_Element = new();
+public global::SyncList<global::FrooxEngine.SyncList<global::FrooxEngine.UIX.AxisMultiViewportPanner.Viewport>, global::FrooxEngine.UIX.AxisMultiViewportPanner.Viewport> Viewports = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("ViewportIndex", ViewportIndex.ToResoniteLinkField());
-members.Add("AnimationTime", AnimationTime.ToResoniteLinkField());
-members.Add("Direction", Direction.ToResoniteLinkField());
+members.Add("ViewportIndex", ViewportIndex_Element.Data.ToResoniteLinkField());
+members.Add("AnimationTime", AnimationTime_Element.Data.ToResoniteLinkField());
+members.Add("Direction", Direction_Element.Data.ToResoniteLinkField());
 members.Add("Viewports", new ResoniteLink.SyncList()
 {
-    Elements = Viewports.ConvertList(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers(context) })
+    Elements = Viewports.Data.ConvertList(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers(context) })
 });
 }
 

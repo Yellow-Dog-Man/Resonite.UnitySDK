@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [ProtoFluxBindings]FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Slots.FindParentByTag
-// Generated on: středa 25. února 2026 16:14:05
+// Generated on: čtvrtek 26. února 2026 10:04:30
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,17 +20,20 @@ namespace FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Slots
 public partial class FindParentByTag : global::FrooxEngine.ProtoFlux.Runtimes.Execution.ObjectFunctionNode<global::FrooxEngine.ProtoFlux.FrooxEngineContext,global::FrooxEngine.Slot>
 
 {
-    public global::FrooxEngine.ProtoFlux.INodeObjectOutput<global::FrooxEngine.Slot> Instance;
-public global::FrooxEngine.ProtoFlux.INodeObjectOutput<global::System.String> Tag;
-public global::FrooxEngine.ProtoFlux.INodeValueOutput<global::System.Int32> SearchDepth;
+    public global::FrooxEngine.ProtoFlux.INodeObjectOutput<global::FrooxEngine.Slot> Instance { get => Instance_Element.Data; set => Instance_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.ProtoFlux.INodeObjectOutput<global::FrooxEngine.Slot>>, global::FrooxEngine.ProtoFlux.INodeObjectOutput<global::FrooxEngine.Slot>> Instance_Element = new();
+public global::FrooxEngine.ProtoFlux.INodeObjectOutput<global::System.String> Tag { get => Tag_Element.Data; set => Tag_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.ProtoFlux.INodeObjectOutput<global::System.String>>, global::FrooxEngine.ProtoFlux.INodeObjectOutput<global::System.String>> Tag_Element = new();
+public global::FrooxEngine.ProtoFlux.INodeValueOutput<global::System.Int32> SearchDepth { get => SearchDepth_Element.Data; set => SearchDepth_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.ProtoFlux.INodeValueOutput<global::System.Int32>>, global::FrooxEngine.ProtoFlux.INodeValueOutput<global::System.Int32>> SearchDepth_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Instance", Instance.ToResoniteReference(context));
-members.Add("Tag", Tag.ToResoniteReference(context));
-members.Add("SearchDepth", SearchDepth.ToResoniteReference(context));
+members.Add("Instance", Instance_Element.Data.ToResoniteReference(context));
+members.Add("Tag", Tag_Element.Data.ToResoniteReference(context));
+members.Add("SearchDepth", SearchDepth_Element.Data.ToResoniteReference(context));
 }
 
 }

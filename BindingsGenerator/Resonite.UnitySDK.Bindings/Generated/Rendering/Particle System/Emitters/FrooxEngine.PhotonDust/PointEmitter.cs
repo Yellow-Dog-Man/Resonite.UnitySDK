@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.PhotonDust.PointEmitter
-// Generated on: středa 25. února 2026 16:14:17
+// Generated on: čtvrtek 26. února 2026 10:04:38
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,17 +20,20 @@ namespace FrooxEngine.PhotonDust
 public partial class PointEmitter : global::FrooxEngine.PhotonDust.ParticleEmitter<global::System.Object>
 
 {
-    public UnityEngine.Vector3 Direction;
-public global::System.Single RandomDirectionWeight;
-public UnityEngine.ColorX Color;
+    public UnityEngine.Vector3 Direction { get => Direction_Element.Data; set => Direction_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.Vector3>, UnityEngine.Vector3> Direction_Element = new();
+public global::System.Single RandomDirectionWeight { get => RandomDirectionWeight_Element.Data; set => RandomDirectionWeight_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> RandomDirectionWeight_Element = new();
+public UnityEngine.ColorX Color { get => Color_Element.Data; set => Color_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.ColorX>, UnityEngine.ColorX> Color_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Direction", Direction.ToResoniteLinkField());
-members.Add("RandomDirectionWeight", RandomDirectionWeight.ToResoniteLinkField());
-members.Add("Color", Color.ToResoniteLinkField());
+members.Add("Direction", Direction_Element.Data.ToResoniteLinkField());
+members.Add("RandomDirectionWeight", RandomDirectionWeight_Element.Data.ToResoniteLinkField());
+members.Add("Color", Color_Element.Data.ToResoniteLinkField());
 }
 
 }

@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.NumericUserOverrideGather<>
-// Generated on: středa 25. února 2026 16:14:30
+// Generated on: čtvrtek 26. února 2026 10:04:41
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -21,21 +21,26 @@ public partial class NumericUserOverrideGather<T> : global::FrooxEngine.ValueUse
 	
 
 {
-    public T Min;
-public T Max;
-public T Sum;
-public T Average;
-public global::System.Boolean ExcludeHeadless;
+    public T Min { get => Min_Element.Data; set => Min_Element.Data = value; }
+public Field<global::FrooxEngine.RawOutput<T>, T> Min_Element = new();
+public T Max { get => Max_Element.Data; set => Max_Element.Data = value; }
+public Field<global::FrooxEngine.RawOutput<T>, T> Max_Element = new();
+public T Sum { get => Sum_Element.Data; set => Sum_Element.Data = value; }
+public Field<global::FrooxEngine.RawOutput<T>, T> Sum_Element = new();
+public T Average { get => Average_Element.Data; set => Average_Element.Data = value; }
+public Field<global::FrooxEngine.RawOutput<T>, T> Average_Element = new();
+public global::System.Boolean ExcludeHeadless { get => ExcludeHeadless_Element.Data; set => ExcludeHeadless_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> ExcludeHeadless_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Min", Min.ToResoniteLinkField());
-members.Add("Max", Max.ToResoniteLinkField());
-members.Add("Sum", Sum.ToResoniteLinkField());
-members.Add("Average", Average.ToResoniteLinkField());
-members.Add("ExcludeHeadless", ExcludeHeadless.ToResoniteLinkField());
+members.Add("Min", Min_Element.Data.ToResoniteLinkField());
+members.Add("Max", Max_Element.Data.ToResoniteLinkField());
+members.Add("Sum", Sum_Element.Data.ToResoniteLinkField());
+members.Add("Average", Average_Element.Data.ToResoniteLinkField());
+members.Add("ExcludeHeadless", ExcludeHeadless_Element.Data.ToResoniteLinkField());
 }
 
 }

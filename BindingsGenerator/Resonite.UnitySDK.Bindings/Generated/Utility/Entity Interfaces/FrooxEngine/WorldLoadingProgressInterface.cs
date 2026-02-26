@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.WorldLoadingProgressInterface
-// Generated on: středa 25. února 2026 16:14:44
+// Generated on: čtvrtek 26. února 2026 10:04:49
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,75 +20,107 @@ namespace FrooxEngine
 public partial class WorldLoadingProgressInterface : global::FrooxEngine.EntityInterface
 
 {
-    public global::FrooxEngine.IField<global::System.Single> Progress;
-public global::FrooxEngine.IField<global::System.String> WorldName;
-public global::FrooxEngine.IField<global::FrooxEngine.ProgressStage> Stage;
-public global::FrooxEngine.IField<global::System.String> PhaseName;
-public global::FrooxEngine.IField<global::System.String> SubPhaseName;
-public global::FrooxEngine.IField<global::System.Boolean> HasCompleted;
-public global::FrooxEngine.IField<global::System.Boolean> HasFailed;
-public global::FrooxEngine.IField<global::System.String> CompletionMessage;
-public global::FrooxEngine.IField<global::System.String> FailureReason;
-public global::FrooxEngine.IField<global::System.Boolean> LoadingAssets;
-public global::FrooxEngine.IField<global::System.Int32> LoadedAssets;
-public global::FrooxEngine.IField<global::System.Int32> TotalAssets;
-public global::FrooxEngine.IField<global::System.Int32> LoadedTextures2D;
-public global::FrooxEngine.IField<global::System.Int32> TotalTextures2D;
-public global::FrooxEngine.IField<global::System.Int32> LoadedTextures3D;
-public global::FrooxEngine.IField<global::System.Int32> TotalTextures3D;
-public global::FrooxEngine.IField<global::System.Int32> LoadedCubemaps;
-public global::FrooxEngine.IField<global::System.Int32> TotalCubemaps;
-public global::FrooxEngine.IField<global::System.Int32> LoadedVideos;
-public global::FrooxEngine.IField<global::System.Int32> TotalVideos;
-public global::FrooxEngine.IField<global::System.Int32> LoadedMeshes;
-public global::FrooxEngine.IField<global::System.Int32> TotalMeshes;
-public global::FrooxEngine.IField<global::System.Int32> LoadedAudioClips;
-public global::FrooxEngine.IField<global::System.Int32> TotalAudioClips;
-public global::FrooxEngine.IField<global::System.Int32> LoadedShaders;
-public global::FrooxEngine.IField<global::System.Int32> TotalShaders;
-public global::FrooxEngine.IField<global::System.Int32> LoadedFonts;
-public global::FrooxEngine.IField<global::System.Int32> TotalFonts;
-public global::FrooxEngine.IField<global::System.Int64> BytesDownloaded;
-public global::FrooxEngine.IField<global::System.Int64> TotalBytes;
-public global::FrooxEngine.IField<global::System.Int64> BytesPerSecond;
-public global::FrooxEngine.ProgressBarInterface ProgressBar;
+    public global::FrooxEngine.IField<global::System.Single> Progress { get => Progress_Element.Data; set => Progress_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.IField<global::System.Single>>, global::FrooxEngine.IField<global::System.Single>> Progress_Element = new();
+public global::FrooxEngine.IField<global::System.String> WorldName { get => WorldName_Element.Data; set => WorldName_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.IField<global::System.String>>, global::FrooxEngine.IField<global::System.String>> WorldName_Element = new();
+public global::FrooxEngine.IField<global::FrooxEngine.ProgressStage> Stage { get => Stage_Element.Data; set => Stage_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.IField<global::FrooxEngine.ProgressStage>>, global::FrooxEngine.IField<global::FrooxEngine.ProgressStage>> Stage_Element = new();
+public global::FrooxEngine.IField<global::System.String> PhaseName { get => PhaseName_Element.Data; set => PhaseName_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.IField<global::System.String>>, global::FrooxEngine.IField<global::System.String>> PhaseName_Element = new();
+public global::FrooxEngine.IField<global::System.String> SubPhaseName { get => SubPhaseName_Element.Data; set => SubPhaseName_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.IField<global::System.String>>, global::FrooxEngine.IField<global::System.String>> SubPhaseName_Element = new();
+public global::FrooxEngine.IField<global::System.Boolean> HasCompleted { get => HasCompleted_Element.Data; set => HasCompleted_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.IField<global::System.Boolean>>, global::FrooxEngine.IField<global::System.Boolean>> HasCompleted_Element = new();
+public global::FrooxEngine.IField<global::System.Boolean> HasFailed { get => HasFailed_Element.Data; set => HasFailed_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.IField<global::System.Boolean>>, global::FrooxEngine.IField<global::System.Boolean>> HasFailed_Element = new();
+public global::FrooxEngine.IField<global::System.String> CompletionMessage { get => CompletionMessage_Element.Data; set => CompletionMessage_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.IField<global::System.String>>, global::FrooxEngine.IField<global::System.String>> CompletionMessage_Element = new();
+public global::FrooxEngine.IField<global::System.String> FailureReason { get => FailureReason_Element.Data; set => FailureReason_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.IField<global::System.String>>, global::FrooxEngine.IField<global::System.String>> FailureReason_Element = new();
+public global::FrooxEngine.IField<global::System.Boolean> LoadingAssets { get => LoadingAssets_Element.Data; set => LoadingAssets_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.IField<global::System.Boolean>>, global::FrooxEngine.IField<global::System.Boolean>> LoadingAssets_Element = new();
+public global::FrooxEngine.IField<global::System.Int32> LoadedAssets { get => LoadedAssets_Element.Data; set => LoadedAssets_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.IField<global::System.Int32>>, global::FrooxEngine.IField<global::System.Int32>> LoadedAssets_Element = new();
+public global::FrooxEngine.IField<global::System.Int32> TotalAssets { get => TotalAssets_Element.Data; set => TotalAssets_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.IField<global::System.Int32>>, global::FrooxEngine.IField<global::System.Int32>> TotalAssets_Element = new();
+public global::FrooxEngine.IField<global::System.Int32> LoadedTextures2D { get => LoadedTextures2D_Element.Data; set => LoadedTextures2D_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.IField<global::System.Int32>>, global::FrooxEngine.IField<global::System.Int32>> LoadedTextures2D_Element = new();
+public global::FrooxEngine.IField<global::System.Int32> TotalTextures2D { get => TotalTextures2D_Element.Data; set => TotalTextures2D_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.IField<global::System.Int32>>, global::FrooxEngine.IField<global::System.Int32>> TotalTextures2D_Element = new();
+public global::FrooxEngine.IField<global::System.Int32> LoadedTextures3D { get => LoadedTextures3D_Element.Data; set => LoadedTextures3D_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.IField<global::System.Int32>>, global::FrooxEngine.IField<global::System.Int32>> LoadedTextures3D_Element = new();
+public global::FrooxEngine.IField<global::System.Int32> TotalTextures3D { get => TotalTextures3D_Element.Data; set => TotalTextures3D_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.IField<global::System.Int32>>, global::FrooxEngine.IField<global::System.Int32>> TotalTextures3D_Element = new();
+public global::FrooxEngine.IField<global::System.Int32> LoadedCubemaps { get => LoadedCubemaps_Element.Data; set => LoadedCubemaps_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.IField<global::System.Int32>>, global::FrooxEngine.IField<global::System.Int32>> LoadedCubemaps_Element = new();
+public global::FrooxEngine.IField<global::System.Int32> TotalCubemaps { get => TotalCubemaps_Element.Data; set => TotalCubemaps_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.IField<global::System.Int32>>, global::FrooxEngine.IField<global::System.Int32>> TotalCubemaps_Element = new();
+public global::FrooxEngine.IField<global::System.Int32> LoadedVideos { get => LoadedVideos_Element.Data; set => LoadedVideos_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.IField<global::System.Int32>>, global::FrooxEngine.IField<global::System.Int32>> LoadedVideos_Element = new();
+public global::FrooxEngine.IField<global::System.Int32> TotalVideos { get => TotalVideos_Element.Data; set => TotalVideos_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.IField<global::System.Int32>>, global::FrooxEngine.IField<global::System.Int32>> TotalVideos_Element = new();
+public global::FrooxEngine.IField<global::System.Int32> LoadedMeshes { get => LoadedMeshes_Element.Data; set => LoadedMeshes_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.IField<global::System.Int32>>, global::FrooxEngine.IField<global::System.Int32>> LoadedMeshes_Element = new();
+public global::FrooxEngine.IField<global::System.Int32> TotalMeshes { get => TotalMeshes_Element.Data; set => TotalMeshes_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.IField<global::System.Int32>>, global::FrooxEngine.IField<global::System.Int32>> TotalMeshes_Element = new();
+public global::FrooxEngine.IField<global::System.Int32> LoadedAudioClips { get => LoadedAudioClips_Element.Data; set => LoadedAudioClips_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.IField<global::System.Int32>>, global::FrooxEngine.IField<global::System.Int32>> LoadedAudioClips_Element = new();
+public global::FrooxEngine.IField<global::System.Int32> TotalAudioClips { get => TotalAudioClips_Element.Data; set => TotalAudioClips_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.IField<global::System.Int32>>, global::FrooxEngine.IField<global::System.Int32>> TotalAudioClips_Element = new();
+public global::FrooxEngine.IField<global::System.Int32> LoadedShaders { get => LoadedShaders_Element.Data; set => LoadedShaders_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.IField<global::System.Int32>>, global::FrooxEngine.IField<global::System.Int32>> LoadedShaders_Element = new();
+public global::FrooxEngine.IField<global::System.Int32> TotalShaders { get => TotalShaders_Element.Data; set => TotalShaders_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.IField<global::System.Int32>>, global::FrooxEngine.IField<global::System.Int32>> TotalShaders_Element = new();
+public global::FrooxEngine.IField<global::System.Int32> LoadedFonts { get => LoadedFonts_Element.Data; set => LoadedFonts_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.IField<global::System.Int32>>, global::FrooxEngine.IField<global::System.Int32>> LoadedFonts_Element = new();
+public global::FrooxEngine.IField<global::System.Int32> TotalFonts { get => TotalFonts_Element.Data; set => TotalFonts_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.IField<global::System.Int32>>, global::FrooxEngine.IField<global::System.Int32>> TotalFonts_Element = new();
+public global::FrooxEngine.IField<global::System.Int64> BytesDownloaded { get => BytesDownloaded_Element.Data; set => BytesDownloaded_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.IField<global::System.Int64>>, global::FrooxEngine.IField<global::System.Int64>> BytesDownloaded_Element = new();
+public global::FrooxEngine.IField<global::System.Int64> TotalBytes { get => TotalBytes_Element.Data; set => TotalBytes_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.IField<global::System.Int64>>, global::FrooxEngine.IField<global::System.Int64>> TotalBytes_Element = new();
+public global::FrooxEngine.IField<global::System.Int64> BytesPerSecond { get => BytesPerSecond_Element.Data; set => BytesPerSecond_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.IField<global::System.Int64>>, global::FrooxEngine.IField<global::System.Int64>> BytesPerSecond_Element = new();
+public global::FrooxEngine.ProgressBarInterface ProgressBar { get => ProgressBar_Element.Data; set => ProgressBar_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.ProgressBarInterface>, global::FrooxEngine.ProgressBarInterface> ProgressBar_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Progress", Progress.ToResoniteReference(context));
-members.Add("WorldName", WorldName.ToResoniteReference(context));
-members.Add("Stage", Stage.ToResoniteReference(context));
-members.Add("PhaseName", PhaseName.ToResoniteReference(context));
-members.Add("SubPhaseName", SubPhaseName.ToResoniteReference(context));
-members.Add("HasCompleted", HasCompleted.ToResoniteReference(context));
-members.Add("HasFailed", HasFailed.ToResoniteReference(context));
-members.Add("CompletionMessage", CompletionMessage.ToResoniteReference(context));
-members.Add("FailureReason", FailureReason.ToResoniteReference(context));
-members.Add("LoadingAssets", LoadingAssets.ToResoniteReference(context));
-members.Add("LoadedAssets", LoadedAssets.ToResoniteReference(context));
-members.Add("TotalAssets", TotalAssets.ToResoniteReference(context));
-members.Add("LoadedTextures2D", LoadedTextures2D.ToResoniteReference(context));
-members.Add("TotalTextures2D", TotalTextures2D.ToResoniteReference(context));
-members.Add("LoadedTextures3D", LoadedTextures3D.ToResoniteReference(context));
-members.Add("TotalTextures3D", TotalTextures3D.ToResoniteReference(context));
-members.Add("LoadedCubemaps", LoadedCubemaps.ToResoniteReference(context));
-members.Add("TotalCubemaps", TotalCubemaps.ToResoniteReference(context));
-members.Add("LoadedVideos", LoadedVideos.ToResoniteReference(context));
-members.Add("TotalVideos", TotalVideos.ToResoniteReference(context));
-members.Add("LoadedMeshes", LoadedMeshes.ToResoniteReference(context));
-members.Add("TotalMeshes", TotalMeshes.ToResoniteReference(context));
-members.Add("LoadedAudioClips", LoadedAudioClips.ToResoniteReference(context));
-members.Add("TotalAudioClips", TotalAudioClips.ToResoniteReference(context));
-members.Add("LoadedShaders", LoadedShaders.ToResoniteReference(context));
-members.Add("TotalShaders", TotalShaders.ToResoniteReference(context));
-members.Add("LoadedFonts", LoadedFonts.ToResoniteReference(context));
-members.Add("TotalFonts", TotalFonts.ToResoniteReference(context));
-members.Add("BytesDownloaded", BytesDownloaded.ToResoniteReference(context));
-members.Add("TotalBytes", TotalBytes.ToResoniteReference(context));
-members.Add("BytesPerSecond", BytesPerSecond.ToResoniteReference(context));
-members.Add("ProgressBar", ProgressBar.ToResoniteReference(context));
+members.Add("Progress", Progress_Element.Data.ToResoniteReference(context));
+members.Add("WorldName", WorldName_Element.Data.ToResoniteReference(context));
+members.Add("Stage", Stage_Element.Data.ToResoniteReference(context));
+members.Add("PhaseName", PhaseName_Element.Data.ToResoniteReference(context));
+members.Add("SubPhaseName", SubPhaseName_Element.Data.ToResoniteReference(context));
+members.Add("HasCompleted", HasCompleted_Element.Data.ToResoniteReference(context));
+members.Add("HasFailed", HasFailed_Element.Data.ToResoniteReference(context));
+members.Add("CompletionMessage", CompletionMessage_Element.Data.ToResoniteReference(context));
+members.Add("FailureReason", FailureReason_Element.Data.ToResoniteReference(context));
+members.Add("LoadingAssets", LoadingAssets_Element.Data.ToResoniteReference(context));
+members.Add("LoadedAssets", LoadedAssets_Element.Data.ToResoniteReference(context));
+members.Add("TotalAssets", TotalAssets_Element.Data.ToResoniteReference(context));
+members.Add("LoadedTextures2D", LoadedTextures2D_Element.Data.ToResoniteReference(context));
+members.Add("TotalTextures2D", TotalTextures2D_Element.Data.ToResoniteReference(context));
+members.Add("LoadedTextures3D", LoadedTextures3D_Element.Data.ToResoniteReference(context));
+members.Add("TotalTextures3D", TotalTextures3D_Element.Data.ToResoniteReference(context));
+members.Add("LoadedCubemaps", LoadedCubemaps_Element.Data.ToResoniteReference(context));
+members.Add("TotalCubemaps", TotalCubemaps_Element.Data.ToResoniteReference(context));
+members.Add("LoadedVideos", LoadedVideos_Element.Data.ToResoniteReference(context));
+members.Add("TotalVideos", TotalVideos_Element.Data.ToResoniteReference(context));
+members.Add("LoadedMeshes", LoadedMeshes_Element.Data.ToResoniteReference(context));
+members.Add("TotalMeshes", TotalMeshes_Element.Data.ToResoniteReference(context));
+members.Add("LoadedAudioClips", LoadedAudioClips_Element.Data.ToResoniteReference(context));
+members.Add("TotalAudioClips", TotalAudioClips_Element.Data.ToResoniteReference(context));
+members.Add("LoadedShaders", LoadedShaders_Element.Data.ToResoniteReference(context));
+members.Add("TotalShaders", TotalShaders_Element.Data.ToResoniteReference(context));
+members.Add("LoadedFonts", LoadedFonts_Element.Data.ToResoniteReference(context));
+members.Add("TotalFonts", TotalFonts_Element.Data.ToResoniteReference(context));
+members.Add("BytesDownloaded", BytesDownloaded_Element.Data.ToResoniteReference(context));
+members.Add("TotalBytes", TotalBytes_Element.Data.ToResoniteReference(context));
+members.Add("BytesPerSecond", BytesPerSecond_Element.Data.ToResoniteReference(context));
+members.Add("ProgressBar", ProgressBar_Element.Data.ToResoniteReference(context));
 }
 
 }

@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.StaticTexture2D
-// Generated on: středa 25. února 2026 16:13:02
+// Generated on: čtvrtek 26. února 2026 10:03:33
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,33 +20,44 @@ namespace FrooxEngine
 public partial class StaticTexture2D : global::FrooxEngine.StaticTextureProvider<global::FrooxEngine.Texture2D,global::Elements.Assets.Bitmap2D,global::Elements.Assets.BitmapMetadata,global::FrooxEngine.Texture2DVariantDescriptor>, global::FrooxEngine.ITexture2DProvider, global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D>
 
 {
-    public global::System.Boolean IsNormalMap;
-public global::Renderite.Shared.TextureWrapMode WrapModeU;
-public global::Renderite.Shared.TextureWrapMode WrapModeV;
-public global::System.Single PowerOfTwoAlignThreshold;
-public global::System.Boolean CrunchCompressed;
-public global::System.Nullable<global::System.Int32> MinSize;
-public global::System.Nullable<global::System.Int32> MaxSize;
-public global::System.Boolean MipMaps;
-public global::System.Boolean KeepOriginalMipMaps;
-public global::Elements.Assets.Filtering MipMapFilter;
-public global::System.Boolean Readable;
+    public global::System.Boolean IsNormalMap { get => IsNormalMap_Element.Data; set => IsNormalMap_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> IsNormalMap_Element = new();
+public global::Renderite.Shared.TextureWrapMode WrapModeU { get => WrapModeU_Element.Data; set => WrapModeU_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::Renderite.Shared.TextureWrapMode>, global::Renderite.Shared.TextureWrapMode> WrapModeU_Element = new();
+public global::Renderite.Shared.TextureWrapMode WrapModeV { get => WrapModeV_Element.Data; set => WrapModeV_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::Renderite.Shared.TextureWrapMode>, global::Renderite.Shared.TextureWrapMode> WrapModeV_Element = new();
+public global::System.Single PowerOfTwoAlignThreshold { get => PowerOfTwoAlignThreshold_Element.Data; set => PowerOfTwoAlignThreshold_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> PowerOfTwoAlignThreshold_Element = new();
+public global::System.Boolean CrunchCompressed { get => CrunchCompressed_Element.Data; set => CrunchCompressed_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> CrunchCompressed_Element = new();
+public global::System.Nullable<global::System.Int32> MinSize { get => MinSize_Element.Data; set => MinSize_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Nullable<global::System.Int32>>, global::System.Nullable<global::System.Int32>> MinSize_Element = new();
+public global::System.Nullable<global::System.Int32> MaxSize { get => MaxSize_Element.Data; set => MaxSize_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Nullable<global::System.Int32>>, global::System.Nullable<global::System.Int32>> MaxSize_Element = new();
+public global::System.Boolean MipMaps { get => MipMaps_Element.Data; set => MipMaps_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> MipMaps_Element = new();
+public global::System.Boolean KeepOriginalMipMaps { get => KeepOriginalMipMaps_Element.Data; set => KeepOriginalMipMaps_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> KeepOriginalMipMaps_Element = new();
+public global::Elements.Assets.Filtering MipMapFilter { get => MipMapFilter_Element.Data; set => MipMapFilter_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::Elements.Assets.Filtering>, global::Elements.Assets.Filtering> MipMapFilter_Element = new();
+public global::System.Boolean Readable { get => Readable_Element.Data; set => Readable_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> Readable_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("IsNormalMap", IsNormalMap.ToResoniteLinkField());
-members.Add("WrapModeU", WrapModeU.ToResoniteLinkField());
-members.Add("WrapModeV", WrapModeV.ToResoniteLinkField());
-members.Add("PowerOfTwoAlignThreshold", PowerOfTwoAlignThreshold.ToResoniteLinkField());
-members.Add("CrunchCompressed", CrunchCompressed.ToResoniteLinkField());
-members.Add("MinSize", MinSize.ToResoniteLinkField());
-members.Add("MaxSize", MaxSize.ToResoniteLinkField());
-members.Add("MipMaps", MipMaps.ToResoniteLinkField());
-members.Add("KeepOriginalMipMaps", KeepOriginalMipMaps.ToResoniteLinkField());
-members.Add("MipMapFilter", MipMapFilter.ToResoniteLinkField());
-members.Add("Readable", Readable.ToResoniteLinkField());
+members.Add("IsNormalMap", IsNormalMap_Element.Data.ToResoniteLinkField());
+members.Add("WrapModeU", WrapModeU_Element.Data.ToResoniteLinkField());
+members.Add("WrapModeV", WrapModeV_Element.Data.ToResoniteLinkField());
+members.Add("PowerOfTwoAlignThreshold", PowerOfTwoAlignThreshold_Element.Data.ToResoniteLinkField());
+members.Add("CrunchCompressed", CrunchCompressed_Element.Data.ToResoniteLinkField());
+members.Add("MinSize", MinSize_Element.Data.ToResoniteLinkField());
+members.Add("MaxSize", MaxSize_Element.Data.ToResoniteLinkField());
+members.Add("MipMaps", MipMaps_Element.Data.ToResoniteLinkField());
+members.Add("KeepOriginalMipMaps", KeepOriginalMipMaps_Element.Data.ToResoniteLinkField());
+members.Add("MipMapFilter", MipMapFilter_Element.Data.ToResoniteLinkField());
+members.Add("Readable", Readable_Element.Data.ToResoniteLinkField());
 }
 
 }

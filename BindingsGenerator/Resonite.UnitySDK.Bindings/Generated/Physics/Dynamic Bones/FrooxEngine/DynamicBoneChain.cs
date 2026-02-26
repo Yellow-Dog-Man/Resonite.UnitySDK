@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.DynamicBoneChain
-// Generated on: středa 25. února 2026 16:13:11
+// Generated on: čtvrtek 26. února 2026 10:03:41
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,104 +20,144 @@ namespace FrooxEngine
 public partial class DynamicBoneChain : global::FrooxEngine.Component, global::FrooxEngine.ICustomInspector, global::FrooxEngine.IGrabbable, global::FrooxEngine.IInteractionTarget, global::FrooxEngine.IDestroyBlock, global::FrooxEngine.IInteractionBlock, global::FrooxEngine.IDuplicateBlock
 
 {
-    public global::System.Single Inertia;
-public global::System.Single InertiaForce;
-public global::System.Single Damping;
-public global::System.Single Elasticity;
-public global::System.Single Stiffness;
-public global::System.Boolean SimulateTerminalBones;
-public global::System.Single BaseBoneRadius;
-public global::System.Boolean DynamicPlayerCollision;
-public global::System.Boolean CollideWithOwnBody;
-public global::FrooxEngine.VibratePreset HandCollisionVibration;
-public global::System.Boolean CollideWithHead;
-public global::System.Boolean CollideWithBody;
-public global::System.Boolean CollideWithLeftHand;
-public global::System.Boolean CollideWithRightHand;
-public UnityEngine.Vector3 Gravity;
-public global::FrooxEngine.RootSpace GravitySpace;
-public global::System.Boolean UseUserGravityDirection;
-public UnityEngine.Vector3 LocalForce;
-public global::System.Single GlobalStretch;
-public global::System.Single MaxStretchRatio;
-public global::System.Single CurrentStretchRatio;
-public global::System.Single StretchRestoreSpeed;
-public global::System.Boolean UseLocalUserSpace;
-public global::FrooxEngine.RootSpace SimulationSpace;
-public System.Collections.Generic.List<global::FrooxEngine.IDynamicBoneCollider> StaticColliders;
-public global::System.Boolean VisualizeColliders;
-public global::System.Boolean VisualizeBones;
-public global::System.Boolean IsGrabbable;
-public global::System.Boolean ActiveUserRootOnly;
-public global::System.Boolean AllowSteal;
-public global::System.Int32 GrabPriority;
-public global::System.Boolean IgnoreGrabOnFirstBone;
-public global::System.Single GrabRadiusTolerance;
-public global::System.Single GrabReleaseDistance;
-public global::System.Boolean GrabSlipping;
-public global::System.Boolean GrabTerminalBones;
-public global::FrooxEngine.VibratePreset GrabVibration;
-public global::System.Boolean IgnoreOwnLeftHand;
-public global::System.Boolean IgnoreOwnRightHand;
-public global::FrooxEngine.Slot EffectorTarget;
-public global::System.Int32 EffectorBoneIndex;
-public UnityEngine.Vector3 EffectorBoneOffset;
-public global::FrooxEngine.Grabber _activeGrabber;
-public System.Collections.Generic.List<global::FrooxEngine.DynamicBoneChain.Bone> Bones;
+    public global::System.Single Inertia { get => Inertia_Element.Data; set => Inertia_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> Inertia_Element = new();
+public global::System.Single InertiaForce { get => InertiaForce_Element.Data; set => InertiaForce_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> InertiaForce_Element = new();
+public global::System.Single Damping { get => Damping_Element.Data; set => Damping_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> Damping_Element = new();
+public global::System.Single Elasticity { get => Elasticity_Element.Data; set => Elasticity_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> Elasticity_Element = new();
+public global::System.Single Stiffness { get => Stiffness_Element.Data; set => Stiffness_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> Stiffness_Element = new();
+public global::System.Boolean SimulateTerminalBones { get => SimulateTerminalBones_Element.Data; set => SimulateTerminalBones_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> SimulateTerminalBones_Element = new();
+public global::System.Single BaseBoneRadius { get => BaseBoneRadius_Element.Data; set => BaseBoneRadius_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> BaseBoneRadius_Element = new();
+public global::System.Boolean DynamicPlayerCollision { get => DynamicPlayerCollision_Element.Data; set => DynamicPlayerCollision_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> DynamicPlayerCollision_Element = new();
+public global::System.Boolean CollideWithOwnBody { get => CollideWithOwnBody_Element.Data; set => CollideWithOwnBody_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> CollideWithOwnBody_Element = new();
+public global::FrooxEngine.VibratePreset HandCollisionVibration { get => HandCollisionVibration_Element.Data; set => HandCollisionVibration_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::FrooxEngine.VibratePreset>, global::FrooxEngine.VibratePreset> HandCollisionVibration_Element = new();
+public global::System.Boolean CollideWithHead { get => CollideWithHead_Element.Data; set => CollideWithHead_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> CollideWithHead_Element = new();
+public global::System.Boolean CollideWithBody { get => CollideWithBody_Element.Data; set => CollideWithBody_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> CollideWithBody_Element = new();
+public global::System.Boolean CollideWithLeftHand { get => CollideWithLeftHand_Element.Data; set => CollideWithLeftHand_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> CollideWithLeftHand_Element = new();
+public global::System.Boolean CollideWithRightHand { get => CollideWithRightHand_Element.Data; set => CollideWithRightHand_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> CollideWithRightHand_Element = new();
+public UnityEngine.Vector3 Gravity { get => Gravity_Element.Data; set => Gravity_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.Vector3>, UnityEngine.Vector3> Gravity_Element = new();
+public global::FrooxEngine.RootSpace GravitySpace = new();
+public global::System.Boolean UseUserGravityDirection { get => UseUserGravityDirection_Element.Data; set => UseUserGravityDirection_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> UseUserGravityDirection_Element = new();
+public UnityEngine.Vector3 LocalForce { get => LocalForce_Element.Data; set => LocalForce_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.Vector3>, UnityEngine.Vector3> LocalForce_Element = new();
+public global::System.Single GlobalStretch { get => GlobalStretch_Element.Data; set => GlobalStretch_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> GlobalStretch_Element = new();
+public global::System.Single MaxStretchRatio { get => MaxStretchRatio_Element.Data; set => MaxStretchRatio_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> MaxStretchRatio_Element = new();
+public global::System.Single CurrentStretchRatio { get => CurrentStretchRatio_Element.Data; set => CurrentStretchRatio_Element.Data = value; }
+public Field<global::FrooxEngine.RawOutput<global::System.Single>, global::System.Single> CurrentStretchRatio_Element = new();
+public global::System.Single StretchRestoreSpeed { get => StretchRestoreSpeed_Element.Data; set => StretchRestoreSpeed_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> StretchRestoreSpeed_Element = new();
+public global::System.Boolean UseLocalUserSpace { get => UseLocalUserSpace_Element.Data; set => UseLocalUserSpace_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> UseLocalUserSpace_Element = new();
+public global::FrooxEngine.RootSpace SimulationSpace = new();
+public global::SyncFieldList<global::FrooxEngine.SyncRefList<global::FrooxEngine.IDynamicBoneCollider>, global::FrooxEngine.IDynamicBoneCollider, Field<global::FrooxEngine.SyncRef<global::FrooxEngine.IDynamicBoneCollider>, global::FrooxEngine.IDynamicBoneCollider>> StaticColliders = new();
+public global::System.Boolean VisualizeColliders { get => VisualizeColliders_Element.Data; set => VisualizeColliders_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> VisualizeColliders_Element = new();
+public global::System.Boolean VisualizeBones { get => VisualizeBones_Element.Data; set => VisualizeBones_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> VisualizeBones_Element = new();
+public global::System.Boolean IsGrabbable { get => IsGrabbable_Element.Data; set => IsGrabbable_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> IsGrabbable_Element = new();
+public global::System.Boolean ActiveUserRootOnly { get => ActiveUserRootOnly_Element.Data; set => ActiveUserRootOnly_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> ActiveUserRootOnly_Element = new();
+public global::System.Boolean AllowSteal { get => AllowSteal_Element.Data; set => AllowSteal_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> AllowSteal_Element = new();
+public global::System.Int32 GrabPriority { get => GrabPriority_Element.Data; set => GrabPriority_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Int32>, global::System.Int32> GrabPriority_Element = new();
+public global::System.Boolean IgnoreGrabOnFirstBone { get => IgnoreGrabOnFirstBone_Element.Data; set => IgnoreGrabOnFirstBone_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> IgnoreGrabOnFirstBone_Element = new();
+public global::System.Single GrabRadiusTolerance { get => GrabRadiusTolerance_Element.Data; set => GrabRadiusTolerance_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> GrabRadiusTolerance_Element = new();
+public global::System.Single GrabReleaseDistance { get => GrabReleaseDistance_Element.Data; set => GrabReleaseDistance_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> GrabReleaseDistance_Element = new();
+public global::System.Boolean GrabSlipping { get => GrabSlipping_Element.Data; set => GrabSlipping_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> GrabSlipping_Element = new();
+public global::System.Boolean GrabTerminalBones { get => GrabTerminalBones_Element.Data; set => GrabTerminalBones_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> GrabTerminalBones_Element = new();
+public global::FrooxEngine.VibratePreset GrabVibration { get => GrabVibration_Element.Data; set => GrabVibration_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::FrooxEngine.VibratePreset>, global::FrooxEngine.VibratePreset> GrabVibration_Element = new();
+public global::System.Boolean IgnoreOwnLeftHand { get => IgnoreOwnLeftHand_Element.Data; set => IgnoreOwnLeftHand_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> IgnoreOwnLeftHand_Element = new();
+public global::System.Boolean IgnoreOwnRightHand { get => IgnoreOwnRightHand_Element.Data; set => IgnoreOwnRightHand_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> IgnoreOwnRightHand_Element = new();
+public global::FrooxEngine.Slot EffectorTarget { get => EffectorTarget_Element.Data; set => EffectorTarget_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> EffectorTarget_Element = new();
+public global::System.Int32 EffectorBoneIndex { get => EffectorBoneIndex_Element.Data; set => EffectorBoneIndex_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Int32>, global::System.Int32> EffectorBoneIndex_Element = new();
+public UnityEngine.Vector3 EffectorBoneOffset { get => EffectorBoneOffset_Element.Data; set => EffectorBoneOffset_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.Vector3>, UnityEngine.Vector3> EffectorBoneOffset_Element = new();
+public global::FrooxEngine.Grabber _activeGrabber { get => _activeGrabber_Element.Data; set => _activeGrabber_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.Grabber>, global::FrooxEngine.Grabber> _activeGrabber_Element = new();
+public global::SyncList<global::FrooxEngine.SyncList<global::FrooxEngine.DynamicBoneChain.Bone>, global::FrooxEngine.DynamicBoneChain.Bone> Bones = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Inertia", Inertia.ToResoniteLinkField());
-members.Add("InertiaForce", InertiaForce.ToResoniteLinkField());
-members.Add("Damping", Damping.ToResoniteLinkField());
-members.Add("Elasticity", Elasticity.ToResoniteLinkField());
-members.Add("Stiffness", Stiffness.ToResoniteLinkField());
-members.Add("SimulateTerminalBones", SimulateTerminalBones.ToResoniteLinkField());
-members.Add("BaseBoneRadius", BaseBoneRadius.ToResoniteLinkField());
-members.Add("DynamicPlayerCollision", DynamicPlayerCollision.ToResoniteLinkField());
-members.Add("CollideWithOwnBody", CollideWithOwnBody.ToResoniteLinkField());
-members.Add("HandCollisionVibration", HandCollisionVibration.ToResoniteLinkField());
-members.Add("CollideWithHead", CollideWithHead.ToResoniteLinkField());
-members.Add("CollideWithBody", CollideWithBody.ToResoniteLinkField());
-members.Add("CollideWithLeftHand", CollideWithLeftHand.ToResoniteLinkField());
-members.Add("CollideWithRightHand", CollideWithRightHand.ToResoniteLinkField());
-members.Add("Gravity", Gravity.ToResoniteLinkField());
+members.Add("Inertia", Inertia_Element.Data.ToResoniteLinkField());
+members.Add("InertiaForce", InertiaForce_Element.Data.ToResoniteLinkField());
+members.Add("Damping", Damping_Element.Data.ToResoniteLinkField());
+members.Add("Elasticity", Elasticity_Element.Data.ToResoniteLinkField());
+members.Add("Stiffness", Stiffness_Element.Data.ToResoniteLinkField());
+members.Add("SimulateTerminalBones", SimulateTerminalBones_Element.Data.ToResoniteLinkField());
+members.Add("BaseBoneRadius", BaseBoneRadius_Element.Data.ToResoniteLinkField());
+members.Add("DynamicPlayerCollision", DynamicPlayerCollision_Element.Data.ToResoniteLinkField());
+members.Add("CollideWithOwnBody", CollideWithOwnBody_Element.Data.ToResoniteLinkField());
+members.Add("HandCollisionVibration", HandCollisionVibration_Element.Data.ToResoniteLinkField());
+members.Add("CollideWithHead", CollideWithHead_Element.Data.ToResoniteLinkField());
+members.Add("CollideWithBody", CollideWithBody_Element.Data.ToResoniteLinkField());
+members.Add("CollideWithLeftHand", CollideWithLeftHand_Element.Data.ToResoniteLinkField());
+members.Add("CollideWithRightHand", CollideWithRightHand_Element.Data.ToResoniteLinkField());
+members.Add("Gravity", Gravity_Element.Data.ToResoniteLinkField());
 members.Add("GravitySpace", new ResoniteLink.SyncObject() { Members = GravitySpace.CollectMembers(context) });
-members.Add("UseUserGravityDirection", UseUserGravityDirection.ToResoniteLinkField());
-members.Add("LocalForce", LocalForce.ToResoniteLinkField());
-members.Add("GlobalStretch", GlobalStretch.ToResoniteLinkField());
-members.Add("MaxStretchRatio", MaxStretchRatio.ToResoniteLinkField());
-members.Add("CurrentStretchRatio", CurrentStretchRatio.ToResoniteLinkField());
-members.Add("StretchRestoreSpeed", StretchRestoreSpeed.ToResoniteLinkField());
-members.Add("UseLocalUserSpace", UseLocalUserSpace.ToResoniteLinkField());
+members.Add("UseUserGravityDirection", UseUserGravityDirection_Element.Data.ToResoniteLinkField());
+members.Add("LocalForce", LocalForce_Element.Data.ToResoniteLinkField());
+members.Add("GlobalStretch", GlobalStretch_Element.Data.ToResoniteLinkField());
+members.Add("MaxStretchRatio", MaxStretchRatio_Element.Data.ToResoniteLinkField());
+members.Add("CurrentStretchRatio", CurrentStretchRatio_Element.Data.ToResoniteLinkField());
+members.Add("StretchRestoreSpeed", StretchRestoreSpeed_Element.Data.ToResoniteLinkField());
+members.Add("UseLocalUserSpace", UseLocalUserSpace_Element.Data.ToResoniteLinkField());
 members.Add("SimulationSpace", new ResoniteLink.SyncObject() { Members = SimulationSpace.CollectMembers(context) });
 members.Add("StaticColliders", new ResoniteLink.SyncList()
 {
-    Elements = StaticColliders.ConvertList(m => m.ToResoniteReference(context))
+    Elements = StaticColliders.Data.ConvertList(m => m.Data.ToResoniteReference(context))
 });
-members.Add("VisualizeColliders", VisualizeColliders.ToResoniteLinkField());
-members.Add("VisualizeBones", VisualizeBones.ToResoniteLinkField());
-members.Add("IsGrabbable", IsGrabbable.ToResoniteLinkField());
-members.Add("ActiveUserRootOnly", ActiveUserRootOnly.ToResoniteLinkField());
-members.Add("AllowSteal", AllowSteal.ToResoniteLinkField());
-members.Add("GrabPriority", GrabPriority.ToResoniteLinkField());
-members.Add("IgnoreGrabOnFirstBone", IgnoreGrabOnFirstBone.ToResoniteLinkField());
-members.Add("GrabRadiusTolerance", GrabRadiusTolerance.ToResoniteLinkField());
-members.Add("GrabReleaseDistance", GrabReleaseDistance.ToResoniteLinkField());
-members.Add("GrabSlipping", GrabSlipping.ToResoniteLinkField());
-members.Add("GrabTerminalBones", GrabTerminalBones.ToResoniteLinkField());
-members.Add("GrabVibration", GrabVibration.ToResoniteLinkField());
-members.Add("IgnoreOwnLeftHand", IgnoreOwnLeftHand.ToResoniteLinkField());
-members.Add("IgnoreOwnRightHand", IgnoreOwnRightHand.ToResoniteLinkField());
-members.Add("EffectorTarget", EffectorTarget.ToResoniteReference(context));
-members.Add("EffectorBoneIndex", EffectorBoneIndex.ToResoniteLinkField());
-members.Add("EffectorBoneOffset", EffectorBoneOffset.ToResoniteLinkField());
-members.Add("_activeGrabber", _activeGrabber.ToResoniteReference(context));
+members.Add("VisualizeColliders", VisualizeColliders_Element.Data.ToResoniteLinkField());
+members.Add("VisualizeBones", VisualizeBones_Element.Data.ToResoniteLinkField());
+members.Add("IsGrabbable", IsGrabbable_Element.Data.ToResoniteLinkField());
+members.Add("ActiveUserRootOnly", ActiveUserRootOnly_Element.Data.ToResoniteLinkField());
+members.Add("AllowSteal", AllowSteal_Element.Data.ToResoniteLinkField());
+members.Add("GrabPriority", GrabPriority_Element.Data.ToResoniteLinkField());
+members.Add("IgnoreGrabOnFirstBone", IgnoreGrabOnFirstBone_Element.Data.ToResoniteLinkField());
+members.Add("GrabRadiusTolerance", GrabRadiusTolerance_Element.Data.ToResoniteLinkField());
+members.Add("GrabReleaseDistance", GrabReleaseDistance_Element.Data.ToResoniteLinkField());
+members.Add("GrabSlipping", GrabSlipping_Element.Data.ToResoniteLinkField());
+members.Add("GrabTerminalBones", GrabTerminalBones_Element.Data.ToResoniteLinkField());
+members.Add("GrabVibration", GrabVibration_Element.Data.ToResoniteLinkField());
+members.Add("IgnoreOwnLeftHand", IgnoreOwnLeftHand_Element.Data.ToResoniteLinkField());
+members.Add("IgnoreOwnRightHand", IgnoreOwnRightHand_Element.Data.ToResoniteLinkField());
+members.Add("EffectorTarget", EffectorTarget_Element.Data.ToResoniteReference(context));
+members.Add("EffectorBoneIndex", EffectorBoneIndex_Element.Data.ToResoniteLinkField());
+members.Add("EffectorBoneOffset", EffectorBoneOffset_Element.Data.ToResoniteLinkField());
+members.Add("_activeGrabber", _activeGrabber_Element.Data.ToResoniteReference(context));
 members.Add("Bones", new ResoniteLink.SyncList()
 {
-    Elements = Bones.ConvertList(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers(context) })
+    Elements = Bones.Data.ConvertList(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers(context) })
 });
 }
 

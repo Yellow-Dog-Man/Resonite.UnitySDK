@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.PointBrushTool
-// Generated on: středa 25. února 2026 16:14:27
+// Generated on: čtvrtek 26. února 2026 10:04:39
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,35 +20,47 @@ namespace FrooxEngine
 public abstract partial class PointBrushTool : global::FrooxEngine.ParticleBrushTool
 
 {
-    public UnityEngine.Color MinColor;
-public UnityEngine.Color MaxColor;
-public global::Renderite.Shared.ColorProfile Profile;
-public global::System.Single ColorGap;
-public UnityEngine.Vector2 MinSize;
-public UnityEngine.Vector2 MaxSize;
-public global::System.Single SizeGap;
-public global::FrooxEngine.AtlasInfo AtlasInfo;
-public global::System.Boolean PressureAffectsSize;
-public global::System.Boolean PressureAffectsAlpha;
-public global::System.Boolean PressureAffectsIntensity;
-public global::System.Boolean UseColor;
+    public UnityEngine.Color MinColor { get => MinColor_Element.Data; set => MinColor_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.Color>, UnityEngine.Color> MinColor_Element = new();
+public UnityEngine.Color MaxColor { get => MaxColor_Element.Data; set => MaxColor_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.Color>, UnityEngine.Color> MaxColor_Element = new();
+public global::Renderite.Shared.ColorProfile Profile { get => Profile_Element.Data; set => Profile_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::Renderite.Shared.ColorProfile>, global::Renderite.Shared.ColorProfile> Profile_Element = new();
+public global::System.Single ColorGap { get => ColorGap_Element.Data; set => ColorGap_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> ColorGap_Element = new();
+public UnityEngine.Vector2 MinSize { get => MinSize_Element.Data; set => MinSize_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.Vector2>, UnityEngine.Vector2> MinSize_Element = new();
+public UnityEngine.Vector2 MaxSize { get => MaxSize_Element.Data; set => MaxSize_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.Vector2>, UnityEngine.Vector2> MaxSize_Element = new();
+public global::System.Single SizeGap { get => SizeGap_Element.Data; set => SizeGap_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> SizeGap_Element = new();
+public global::FrooxEngine.AtlasInfo AtlasInfo { get => AtlasInfo_Element.Data; set => AtlasInfo_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.AtlasInfo>, global::FrooxEngine.AtlasInfo> AtlasInfo_Element = new();
+public global::System.Boolean PressureAffectsSize { get => PressureAffectsSize_Element.Data; set => PressureAffectsSize_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> PressureAffectsSize_Element = new();
+public global::System.Boolean PressureAffectsAlpha { get => PressureAffectsAlpha_Element.Data; set => PressureAffectsAlpha_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> PressureAffectsAlpha_Element = new();
+public global::System.Boolean PressureAffectsIntensity { get => PressureAffectsIntensity_Element.Data; set => PressureAffectsIntensity_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> PressureAffectsIntensity_Element = new();
+public global::System.Boolean UseColor { get => UseColor_Element.Data; set => UseColor_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> UseColor_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("MinColor", MinColor.ToResoniteLinkField());
-members.Add("MaxColor", MaxColor.ToResoniteLinkField());
-members.Add("Profile", Profile.ToResoniteLinkField());
-members.Add("ColorGap", ColorGap.ToResoniteLinkField());
-members.Add("MinSize", MinSize.ToResoniteLinkField());
-members.Add("MaxSize", MaxSize.ToResoniteLinkField());
-members.Add("SizeGap", SizeGap.ToResoniteLinkField());
-members.Add("AtlasInfo", AtlasInfo.ToResoniteReference(context));
-members.Add("PressureAffectsSize", PressureAffectsSize.ToResoniteLinkField());
-members.Add("PressureAffectsAlpha", PressureAffectsAlpha.ToResoniteLinkField());
-members.Add("PressureAffectsIntensity", PressureAffectsIntensity.ToResoniteLinkField());
-members.Add("UseColor", UseColor.ToResoniteLinkField());
+members.Add("MinColor", MinColor_Element.Data.ToResoniteLinkField());
+members.Add("MaxColor", MaxColor_Element.Data.ToResoniteLinkField());
+members.Add("Profile", Profile_Element.Data.ToResoniteLinkField());
+members.Add("ColorGap", ColorGap_Element.Data.ToResoniteLinkField());
+members.Add("MinSize", MinSize_Element.Data.ToResoniteLinkField());
+members.Add("MaxSize", MaxSize_Element.Data.ToResoniteLinkField());
+members.Add("SizeGap", SizeGap_Element.Data.ToResoniteLinkField());
+members.Add("AtlasInfo", AtlasInfo_Element.Data.ToResoniteReference(context));
+members.Add("PressureAffectsSize", PressureAffectsSize_Element.Data.ToResoniteLinkField());
+members.Add("PressureAffectsAlpha", PressureAffectsAlpha_Element.Data.ToResoniteLinkField());
+members.Add("PressureAffectsIntensity", PressureAffectsIntensity_Element.Data.ToResoniteLinkField());
+members.Add("UseColor", UseColor_Element.Data.ToResoniteLinkField());
 }
 
 }

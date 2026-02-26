@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.Undo.AddRemoveListElement<>
-// Generated on: středa 25. února 2026 16:14:34
+// Generated on: čtvrtek 26. února 2026 10:04:43
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -21,27 +21,35 @@ public partial class AddRemoveListElement<T> : global::FrooxEngine.Component, gl
 	where T : class, global::FrooxEngine.ISyncMember
 
 {
-    public global::FrooxEngine.SyncList<T> TargetList;
-public T TargetElement;
-public global::System.String _description;
-public System.Uri _savedObject;
-public global::FrooxEngine.SavedReferenceTable _referenceTable;
-public global::System.Boolean _isSaving;
-public global::FrooxEngine.Undo.AddRemoveListElement<T>.Mode _mode;
-public global::System.Boolean _performed;
+    public global::FrooxEngine.SyncList<T> TargetList { get => TargetList_Element.Data; set => TargetList_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.SyncList<T>>, global::FrooxEngine.SyncList<T>> TargetList_Element = new();
+public T TargetElement { get => TargetElement_Element.Data; set => TargetElement_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<T>, T> TargetElement_Element = new();
+public global::System.String _description { get => _description_Element.Data; set => _description_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.String>, global::System.String> _description_Element = new();
+public System.Uri _savedObject { get => _savedObject_Element.Data; set => _savedObject_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<System.Uri>, System.Uri> _savedObject_Element = new();
+public global::FrooxEngine.SavedReferenceTable _referenceTable { get => _referenceTable_Element.Data; set => _referenceTable_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.SavedReferenceTable>, global::FrooxEngine.SavedReferenceTable> _referenceTable_Element = new();
+public global::System.Boolean _isSaving { get => _isSaving_Element.Data; set => _isSaving_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> _isSaving_Element = new();
+public global::FrooxEngine.Undo.AddRemoveListElement<T>.Mode _mode { get => _mode_Element.Data; set => _mode_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::FrooxEngine.Undo.AddRemoveListElement<T>.Mode>, global::FrooxEngine.Undo.AddRemoveListElement<T>.Mode> _mode_Element = new();
+public global::System.Boolean _performed { get => _performed_Element.Data; set => _performed_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> _performed_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("TargetList", TargetList.ToResoniteReference(context));
-members.Add("TargetElement", TargetElement.ToResoniteReference(context));
-members.Add("_description", _description.ToResoniteLinkField());
-members.Add("_savedObject", _savedObject.ToResoniteLinkField());
-members.Add("_referenceTable", _referenceTable.ToResoniteReference(context));
-members.Add("_isSaving", _isSaving.ToResoniteLinkField());
-members.Add("_mode", _mode.ToResoniteLinkField());
-members.Add("_performed", _performed.ToResoniteLinkField());
+members.Add("TargetList", TargetList_Element.Data.ToResoniteReference(context));
+members.Add("TargetElement", TargetElement_Element.Data.ToResoniteReference(context));
+members.Add("_description", _description_Element.Data.ToResoniteLinkField());
+members.Add("_savedObject", _savedObject_Element.Data.ToResoniteLinkField());
+members.Add("_referenceTable", _referenceTable_Element.Data.ToResoniteReference(context));
+members.Add("_isSaving", _isSaving_Element.Data.ToResoniteLinkField());
+members.Add("_mode", _mode_Element.Data.ToResoniteLinkField());
+members.Add("_performed", _performed_Element.Data.ToResoniteLinkField());
 }
 
 }

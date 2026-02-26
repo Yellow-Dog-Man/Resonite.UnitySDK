@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.UserPermissions
-// Generated on: středa 25. února 2026 16:13:11
+// Generated on: čtvrtek 26. února 2026 10:03:41
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,25 +20,32 @@ namespace FrooxEngine
 public partial class UserPermissions : global::FrooxEngine.PermissionsComponent
 
 {
-    public global::System.Boolean AllowEnableEditMode;
-public global::System.Boolean AllowRespawn;
-public global::System.Boolean AllowSilence;
-public global::System.Boolean AllowKick;
-public global::System.Boolean AllowBan;
-public global::System.Boolean AllowAssignRoles;
-public global::System.Boolean AllowSeeOtherRoles;
+    public global::System.Boolean AllowEnableEditMode { get => AllowEnableEditMode_Element.Data; set => AllowEnableEditMode_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> AllowEnableEditMode_Element = new();
+public global::System.Boolean AllowRespawn { get => AllowRespawn_Element.Data; set => AllowRespawn_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> AllowRespawn_Element = new();
+public global::System.Boolean AllowSilence { get => AllowSilence_Element.Data; set => AllowSilence_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> AllowSilence_Element = new();
+public global::System.Boolean AllowKick { get => AllowKick_Element.Data; set => AllowKick_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> AllowKick_Element = new();
+public global::System.Boolean AllowBan { get => AllowBan_Element.Data; set => AllowBan_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> AllowBan_Element = new();
+public global::System.Boolean AllowAssignRoles { get => AllowAssignRoles_Element.Data; set => AllowAssignRoles_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> AllowAssignRoles_Element = new();
+public global::System.Boolean AllowSeeOtherRoles { get => AllowSeeOtherRoles_Element.Data; set => AllowSeeOtherRoles_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> AllowSeeOtherRoles_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("AllowEnableEditMode", AllowEnableEditMode.ToResoniteLinkField());
-members.Add("AllowRespawn", AllowRespawn.ToResoniteLinkField());
-members.Add("AllowSilence", AllowSilence.ToResoniteLinkField());
-members.Add("AllowKick", AllowKick.ToResoniteLinkField());
-members.Add("AllowBan", AllowBan.ToResoniteLinkField());
-members.Add("AllowAssignRoles", AllowAssignRoles.ToResoniteLinkField());
-members.Add("AllowSeeOtherRoles", AllowSeeOtherRoles.ToResoniteLinkField());
+members.Add("AllowEnableEditMode", AllowEnableEditMode_Element.Data.ToResoniteLinkField());
+members.Add("AllowRespawn", AllowRespawn_Element.Data.ToResoniteLinkField());
+members.Add("AllowSilence", AllowSilence_Element.Data.ToResoniteLinkField());
+members.Add("AllowKick", AllowKick_Element.Data.ToResoniteLinkField());
+members.Add("AllowBan", AllowBan_Element.Data.ToResoniteLinkField());
+members.Add("AllowAssignRoles", AllowAssignRoles_Element.Data.ToResoniteLinkField());
+members.Add("AllowSeeOtherRoles", AllowSeeOtherRoles_Element.Data.ToResoniteLinkField());
 }
 
 }

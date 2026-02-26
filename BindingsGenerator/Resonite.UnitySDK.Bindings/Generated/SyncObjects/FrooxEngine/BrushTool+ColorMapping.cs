@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.BrushTool+ColorMapping
-// Generated on: středa 25. února 2026 16:14:27
+// Generated on: čtvrtek 26. února 2026 10:04:39
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -22,21 +22,26 @@ namespace FrooxEngine
 public partial class ColorMapping : global::FrooxEngine.SyncObject
 
 {
-    public global::FrooxEngine.IField<UnityEngine.ColorX> Field;
-public global::System.Single HueOffset;
-public global::System.Single ValueOffset;
-public global::System.Single SaturationOffset;
-public global::System.Single AlphaMultiplier;
+    public global::FrooxEngine.IField<UnityEngine.ColorX> Field { get => Field_Element.Data; set => Field_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.IField<UnityEngine.ColorX>>, global::FrooxEngine.IField<UnityEngine.ColorX>> Field_Element = new();
+public global::System.Single HueOffset { get => HueOffset_Element.Data; set => HueOffset_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> HueOffset_Element = new();
+public global::System.Single ValueOffset { get => ValueOffset_Element.Data; set => ValueOffset_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> ValueOffset_Element = new();
+public global::System.Single SaturationOffset { get => SaturationOffset_Element.Data; set => SaturationOffset_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> SaturationOffset_Element = new();
+public global::System.Single AlphaMultiplier { get => AlphaMultiplier_Element.Data; set => AlphaMultiplier_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> AlphaMultiplier_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Field", Field.ToResoniteReference(context));
-members.Add("HueOffset", HueOffset.ToResoniteLinkField());
-members.Add("ValueOffset", ValueOffset.ToResoniteLinkField());
-members.Add("SaturationOffset", SaturationOffset.ToResoniteLinkField());
-members.Add("AlphaMultiplier", AlphaMultiplier.ToResoniteLinkField());
+members.Add("Field", Field_Element.Data.ToResoniteReference(context));
+members.Add("HueOffset", HueOffset_Element.Data.ToResoniteLinkField());
+members.Add("ValueOffset", ValueOffset_Element.Data.ToResoniteLinkField());
+members.Add("SaturationOffset", SaturationOffset_Element.Data.ToResoniteLinkField());
+members.Add("AlphaMultiplier", AlphaMultiplier_Element.Data.ToResoniteLinkField());
 }
 
 }

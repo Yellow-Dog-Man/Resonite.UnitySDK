@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.TrailsRenderBufferRenderer
-// Generated on: středa 25. února 2026 16:14:17
+// Generated on: čtvrtek 26. února 2026 10:04:37
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,21 +20,26 @@ namespace FrooxEngine
 public partial class TrailsRenderBufferRenderer : global::FrooxEngine.ChangeHandlingRenderableComponent
 
 {
-    public global::FrooxEngine.IAssetProvider<global::FrooxEngine.TrailsRenderBuffer> Buffer;
-public global::FrooxEngine.IAssetProvider<global::FrooxEngine.Material> Material;
-public global::Renderite.Shared.TrailTextureMode TextureMode;
-public global::Renderite.Shared.MotionVectorMode MotionVectorMode;
-public global::System.Boolean GenerateLightingData;
+    public global::FrooxEngine.IAssetProvider<global::FrooxEngine.TrailsRenderBuffer> Buffer { get => Buffer_Element.Data; set => Buffer_Element.Data = value; }
+public Field<global::FrooxEngine.AssetRef<global::FrooxEngine.TrailsRenderBuffer>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.TrailsRenderBuffer>> Buffer_Element = new();
+public global::FrooxEngine.IAssetProvider<global::FrooxEngine.Material> Material { get => Material_Element.Data; set => Material_Element.Data = value; }
+public Field<global::FrooxEngine.AssetRef<global::FrooxEngine.Material>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.Material>> Material_Element = new();
+public global::Renderite.Shared.TrailTextureMode TextureMode { get => TextureMode_Element.Data; set => TextureMode_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::Renderite.Shared.TrailTextureMode>, global::Renderite.Shared.TrailTextureMode> TextureMode_Element = new();
+public global::Renderite.Shared.MotionVectorMode MotionVectorMode { get => MotionVectorMode_Element.Data; set => MotionVectorMode_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::Renderite.Shared.MotionVectorMode>, global::Renderite.Shared.MotionVectorMode> MotionVectorMode_Element = new();
+public global::System.Boolean GenerateLightingData { get => GenerateLightingData_Element.Data; set => GenerateLightingData_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> GenerateLightingData_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Buffer", Buffer.ToResoniteReference(context));
-members.Add("Material", Material.ToResoniteReference(context));
-members.Add("TextureMode", TextureMode.ToResoniteLinkField());
-members.Add("MotionVectorMode", MotionVectorMode.ToResoniteLinkField());
-members.Add("GenerateLightingData", GenerateLightingData.ToResoniteLinkField());
+members.Add("Buffer", Buffer_Element.Data.ToResoniteReference(context));
+members.Add("Material", Material_Element.Data.ToResoniteReference(context));
+members.Add("TextureMode", TextureMode_Element.Data.ToResoniteLinkField());
+members.Add("MotionVectorMode", MotionVectorMode_Element.Data.ToResoniteLinkField());
+members.Add("GenerateLightingData", GenerateLightingData_Element.Data.ToResoniteLinkField());
 }
 
 }

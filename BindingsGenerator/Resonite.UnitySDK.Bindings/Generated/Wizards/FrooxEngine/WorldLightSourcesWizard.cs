@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.WorldLightSourcesWizard
-// Generated on: středa 25. února 2026 16:14:47
+// Generated on: čtvrtek 26. února 2026 10:04:51
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,29 +20,38 @@ namespace FrooxEngine
 public partial class WorldLightSourcesWizard : global::FrooxEngine.Component, global::FrooxEngine.IDeveloperInterface
 
 {
-    public global::FrooxEngine.Slot Root;
-public global::System.Boolean ProcessPointLights;
-public global::System.Boolean ProcessSpotLights;
-public global::System.Boolean ProcessDirectionalLights;
-public global::System.Boolean ProcessDisabled;
-public global::Renderite.Shared.ShadowType TargetShadowType;
-public global::FrooxEngine.UIX.TextField _tag;
-public global::FrooxEngine.FloatTextEditorParser _intensityField;
-public global::FrooxEngine.FloatTextEditorParser _rangeField;
+    public global::FrooxEngine.Slot Root { get => Root_Element.Data; set => Root_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> Root_Element = new();
+public global::System.Boolean ProcessPointLights { get => ProcessPointLights_Element.Data; set => ProcessPointLights_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> ProcessPointLights_Element = new();
+public global::System.Boolean ProcessSpotLights { get => ProcessSpotLights_Element.Data; set => ProcessSpotLights_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> ProcessSpotLights_Element = new();
+public global::System.Boolean ProcessDirectionalLights { get => ProcessDirectionalLights_Element.Data; set => ProcessDirectionalLights_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> ProcessDirectionalLights_Element = new();
+public global::System.Boolean ProcessDisabled { get => ProcessDisabled_Element.Data; set => ProcessDisabled_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> ProcessDisabled_Element = new();
+public global::Renderite.Shared.ShadowType TargetShadowType { get => TargetShadowType_Element.Data; set => TargetShadowType_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::Renderite.Shared.ShadowType>, global::Renderite.Shared.ShadowType> TargetShadowType_Element = new();
+public global::FrooxEngine.UIX.TextField _tag { get => _tag_Element.Data; set => _tag_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.UIX.TextField>, global::FrooxEngine.UIX.TextField> _tag_Element = new();
+public global::FrooxEngine.FloatTextEditorParser _intensityField { get => _intensityField_Element.Data; set => _intensityField_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.FloatTextEditorParser>, global::FrooxEngine.FloatTextEditorParser> _intensityField_Element = new();
+public global::FrooxEngine.FloatTextEditorParser _rangeField { get => _rangeField_Element.Data; set => _rangeField_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.FloatTextEditorParser>, global::FrooxEngine.FloatTextEditorParser> _rangeField_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Root", Root.ToResoniteReference(context));
-members.Add("ProcessPointLights", ProcessPointLights.ToResoniteLinkField());
-members.Add("ProcessSpotLights", ProcessSpotLights.ToResoniteLinkField());
-members.Add("ProcessDirectionalLights", ProcessDirectionalLights.ToResoniteLinkField());
-members.Add("ProcessDisabled", ProcessDisabled.ToResoniteLinkField());
-members.Add("TargetShadowType", TargetShadowType.ToResoniteLinkField());
-members.Add("_tag", _tag.ToResoniteReference(context));
-members.Add("_intensityField", _intensityField.ToResoniteReference(context));
-members.Add("_rangeField", _rangeField.ToResoniteReference(context));
+members.Add("Root", Root_Element.Data.ToResoniteReference(context));
+members.Add("ProcessPointLights", ProcessPointLights_Element.Data.ToResoniteLinkField());
+members.Add("ProcessSpotLights", ProcessSpotLights_Element.Data.ToResoniteLinkField());
+members.Add("ProcessDirectionalLights", ProcessDirectionalLights_Element.Data.ToResoniteLinkField());
+members.Add("ProcessDisabled", ProcessDisabled_Element.Data.ToResoniteLinkField());
+members.Add("TargetShadowType", TargetShadowType_Element.Data.ToResoniteLinkField());
+members.Add("_tag", _tag_Element.Data.ToResoniteReference(context));
+members.Add("_intensityField", _intensityField_Element.Data.ToResoniteReference(context));
+members.Add("_rangeField", _rangeField_Element.Data.ToResoniteReference(context));
 }
 
 }

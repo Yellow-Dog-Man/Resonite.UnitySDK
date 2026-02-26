@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [ProtoFluxBindings]FrooxEngine.FrooxEngine.ProtoFlux.CoreNodes.SyncValueFunctionProxy_00E0<,,,,,,,,>
-// Generated on: středa 25. února 2026 16:13:36
+// Generated on: čtvrtek 26. února 2026 10:04:05
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -29,28 +29,36 @@ public partial class SyncValueFunctionProxy_00E0<T0,T1,T2,T3,T4,T5,T6,T7,TResult
 	where T0 : struct
 
 {
-    public global::FrooxEngine.ProtoFlux.INodeValueOutput<T0> Arg0;
-public global::FrooxEngine.ProtoFlux.INodeValueOutput<T1> Arg1;
-public global::FrooxEngine.ProtoFlux.INodeValueOutput<T2> Arg2;
-public global::FrooxEngine.ProtoFlux.INodeValueOutput<T3> Arg3;
-public global::FrooxEngine.ProtoFlux.INodeValueOutput<T4> Arg4;
-public global::FrooxEngine.ProtoFlux.INodeObjectOutput<T5> Arg5;
-public global::FrooxEngine.ProtoFlux.INodeObjectOutput<T6> Arg6;
-public global::FrooxEngine.ProtoFlux.INodeObjectOutput<T7> Arg7;
-public global::FrooxEngine.ProtoFlux.NodeValueOutput<TResult> Result;
+    public global::FrooxEngine.ProtoFlux.INodeValueOutput<T0> Arg0 { get => Arg0_Element.Data; set => Arg0_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.ProtoFlux.INodeValueOutput<T0>>, global::FrooxEngine.ProtoFlux.INodeValueOutput<T0>> Arg0_Element = new();
+public global::FrooxEngine.ProtoFlux.INodeValueOutput<T1> Arg1 { get => Arg1_Element.Data; set => Arg1_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.ProtoFlux.INodeValueOutput<T1>>, global::FrooxEngine.ProtoFlux.INodeValueOutput<T1>> Arg1_Element = new();
+public global::FrooxEngine.ProtoFlux.INodeValueOutput<T2> Arg2 { get => Arg2_Element.Data; set => Arg2_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.ProtoFlux.INodeValueOutput<T2>>, global::FrooxEngine.ProtoFlux.INodeValueOutput<T2>> Arg2_Element = new();
+public global::FrooxEngine.ProtoFlux.INodeValueOutput<T3> Arg3 { get => Arg3_Element.Data; set => Arg3_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.ProtoFlux.INodeValueOutput<T3>>, global::FrooxEngine.ProtoFlux.INodeValueOutput<T3>> Arg3_Element = new();
+public global::FrooxEngine.ProtoFlux.INodeValueOutput<T4> Arg4 { get => Arg4_Element.Data; set => Arg4_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.ProtoFlux.INodeValueOutput<T4>>, global::FrooxEngine.ProtoFlux.INodeValueOutput<T4>> Arg4_Element = new();
+public global::FrooxEngine.ProtoFlux.INodeObjectOutput<T5> Arg5 { get => Arg5_Element.Data; set => Arg5_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.ProtoFlux.INodeObjectOutput<T5>>, global::FrooxEngine.ProtoFlux.INodeObjectOutput<T5>> Arg5_Element = new();
+public global::FrooxEngine.ProtoFlux.INodeObjectOutput<T6> Arg6 { get => Arg6_Element.Data; set => Arg6_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.ProtoFlux.INodeObjectOutput<T6>>, global::FrooxEngine.ProtoFlux.INodeObjectOutput<T6>> Arg6_Element = new();
+public global::FrooxEngine.ProtoFlux.INodeObjectOutput<T7> Arg7 { get => Arg7_Element.Data; set => Arg7_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.ProtoFlux.INodeObjectOutput<T7>>, global::FrooxEngine.ProtoFlux.INodeObjectOutput<T7>> Arg7_Element = new();
+public global::FrooxEngine.ProtoFlux.NodeValueOutput<TResult> Result = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Arg0", Arg0.ToResoniteReference(context));
-members.Add("Arg1", Arg1.ToResoniteReference(context));
-members.Add("Arg2", Arg2.ToResoniteReference(context));
-members.Add("Arg3", Arg3.ToResoniteReference(context));
-members.Add("Arg4", Arg4.ToResoniteReference(context));
-members.Add("Arg5", Arg5.ToResoniteReference(context));
-members.Add("Arg6", Arg6.ToResoniteReference(context));
-members.Add("Arg7", Arg7.ToResoniteReference(context));
+members.Add("Arg0", Arg0_Element.Data.ToResoniteReference(context));
+members.Add("Arg1", Arg1_Element.Data.ToResoniteReference(context));
+members.Add("Arg2", Arg2_Element.Data.ToResoniteReference(context));
+members.Add("Arg3", Arg3_Element.Data.ToResoniteReference(context));
+members.Add("Arg4", Arg4_Element.Data.ToResoniteReference(context));
+members.Add("Arg5", Arg5_Element.Data.ToResoniteReference(context));
+members.Add("Arg6", Arg6_Element.Data.ToResoniteReference(context));
+members.Add("Arg7", Arg7_Element.Data.ToResoniteReference(context));
 members.Add("Result", new ResoniteLink.EmptyElement());
 }
 

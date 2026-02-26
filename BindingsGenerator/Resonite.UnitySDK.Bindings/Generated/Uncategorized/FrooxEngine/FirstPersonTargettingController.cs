@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.FirstPersonTargettingController
-// Generated on: středa 25. února 2026 16:13:37
+// Generated on: čtvrtek 26. února 2026 10:04:06
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,15 +20,17 @@ namespace FrooxEngine
 public partial class FirstPersonTargettingController : global::FrooxEngine.TargettingControllerBase<global::FrooxEngine.ScreenCameraInputs>
 
 {
-    public global::System.Single MinVerticalAngle;
-public global::System.Single MaxVerticalAngle;
+    public global::System.Single MinVerticalAngle { get => MinVerticalAngle_Element.Data; set => MinVerticalAngle_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> MinVerticalAngle_Element = new();
+public global::System.Single MaxVerticalAngle { get => MaxVerticalAngle_Element.Data; set => MaxVerticalAngle_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> MaxVerticalAngle_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("MinVerticalAngle", MinVerticalAngle.ToResoniteLinkField());
-members.Add("MaxVerticalAngle", MaxVerticalAngle.ToResoniteLinkField());
+members.Add("MinVerticalAngle", MinVerticalAngle_Element.Data.ToResoniteLinkField());
+members.Add("MaxVerticalAngle", MaxVerticalAngle_Element.Data.ToResoniteLinkField());
 }
 
 }

@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.UIX.LayoutElement
-// Generated on: středa 25. února 2026 16:14:34
+// Generated on: čtvrtek 26. února 2026 10:04:43
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,29 +20,38 @@ namespace FrooxEngine.UIX
 public partial class LayoutElement : global::FrooxEngine.UIX.UIComputeComponent, global::FrooxEngine.UIX.ILayoutElement
 
 {
-    public global::System.Single MinWidth;
-public global::System.Single PreferredWidth;
-public global::System.Single FlexibleWidth;
-public global::System.Single MinHeight;
-public global::System.Single PreferredHeight;
-public global::System.Single FlexibleHeight;
-public global::System.Single Area;
-public global::System.Int32 Priority;
-public global::System.Boolean UseZeroMetrics;
+    public global::System.Single MinWidth { get => MinWidth_Element.Data; set => MinWidth_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> MinWidth_Element = new();
+public global::System.Single PreferredWidth { get => PreferredWidth_Element.Data; set => PreferredWidth_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> PreferredWidth_Element = new();
+public global::System.Single FlexibleWidth { get => FlexibleWidth_Element.Data; set => FlexibleWidth_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> FlexibleWidth_Element = new();
+public global::System.Single MinHeight { get => MinHeight_Element.Data; set => MinHeight_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> MinHeight_Element = new();
+public global::System.Single PreferredHeight { get => PreferredHeight_Element.Data; set => PreferredHeight_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> PreferredHeight_Element = new();
+public global::System.Single FlexibleHeight { get => FlexibleHeight_Element.Data; set => FlexibleHeight_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> FlexibleHeight_Element = new();
+public global::System.Single Area { get => Area_Element.Data; set => Area_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> Area_Element = new();
+public global::System.Int32 Priority { get => Priority_Element.Data; set => Priority_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Int32>, global::System.Int32> Priority_Element = new();
+public global::System.Boolean UseZeroMetrics { get => UseZeroMetrics_Element.Data; set => UseZeroMetrics_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> UseZeroMetrics_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("MinWidth", MinWidth.ToResoniteLinkField());
-members.Add("PreferredWidth", PreferredWidth.ToResoniteLinkField());
-members.Add("FlexibleWidth", FlexibleWidth.ToResoniteLinkField());
-members.Add("MinHeight", MinHeight.ToResoniteLinkField());
-members.Add("PreferredHeight", PreferredHeight.ToResoniteLinkField());
-members.Add("FlexibleHeight", FlexibleHeight.ToResoniteLinkField());
-members.Add("Area", Area.ToResoniteLinkField());
-members.Add("Priority", Priority.ToResoniteLinkField());
-members.Add("UseZeroMetrics", UseZeroMetrics.ToResoniteLinkField());
+members.Add("MinWidth", MinWidth_Element.Data.ToResoniteLinkField());
+members.Add("PreferredWidth", PreferredWidth_Element.Data.ToResoniteLinkField());
+members.Add("FlexibleWidth", FlexibleWidth_Element.Data.ToResoniteLinkField());
+members.Add("MinHeight", MinHeight_Element.Data.ToResoniteLinkField());
+members.Add("PreferredHeight", PreferredHeight_Element.Data.ToResoniteLinkField());
+members.Add("FlexibleHeight", FlexibleHeight_Element.Data.ToResoniteLinkField());
+members.Add("Area", Area_Element.Data.ToResoniteLinkField());
+members.Add("Priority", Priority_Element.Data.ToResoniteLinkField());
+members.Add("UseZeroMetrics", UseZeroMetrics_Element.Data.ToResoniteLinkField());
 }
 
 }

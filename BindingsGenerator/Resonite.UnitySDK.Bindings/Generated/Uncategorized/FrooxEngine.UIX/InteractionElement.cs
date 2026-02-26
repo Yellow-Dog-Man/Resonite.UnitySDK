@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.UIX.InteractionElement
-// Generated on: středa 25. února 2026 16:13:06
+// Generated on: čtvrtek 26. února 2026 10:03:37
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,34 +20,43 @@ namespace FrooxEngine.UIX
 public abstract partial class InteractionElement : global::FrooxEngine.UIX.UIController, global::FrooxEngine.UIX.IUIInteractable
 
 {
-    public UnityEngine.ColorX BaseColor;
-public System.Collections.Generic.List<global::FrooxEngine.UIX.InteractionElement.ColorDriver> ColorDrivers;
-public UnityEngine.ColorX __legacy_NormalColor;
-public UnityEngine.ColorX __legacy_HighlightColor;
-public UnityEngine.ColorX __legacy_PressColor;
-public UnityEngine.ColorX __legacy_DisabledColor;
-public global::FrooxEngine.UIX.InteractionElement.ColorMode __legacy_TintColorMode;
-public global::FrooxEngine.IField<UnityEngine.ColorX> __legacy_ColorDrive;
-public global::System.Boolean IsPressed;
-public global::System.Boolean IsHovering;
+    public UnityEngine.ColorX BaseColor { get => BaseColor_Element.Data; set => BaseColor_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.ColorX>, UnityEngine.ColorX> BaseColor_Element = new();
+public global::SyncList<global::FrooxEngine.SyncList<global::FrooxEngine.UIX.InteractionElement.ColorDriver>, global::FrooxEngine.UIX.InteractionElement.ColorDriver> ColorDrivers = new();
+public UnityEngine.ColorX __legacy_NormalColor { get => __legacy_NormalColor_Element.Data; set => __legacy_NormalColor_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.ColorX>, UnityEngine.ColorX> __legacy_NormalColor_Element = new();
+public UnityEngine.ColorX __legacy_HighlightColor { get => __legacy_HighlightColor_Element.Data; set => __legacy_HighlightColor_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.ColorX>, UnityEngine.ColorX> __legacy_HighlightColor_Element = new();
+public UnityEngine.ColorX __legacy_PressColor { get => __legacy_PressColor_Element.Data; set => __legacy_PressColor_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.ColorX>, UnityEngine.ColorX> __legacy_PressColor_Element = new();
+public UnityEngine.ColorX __legacy_DisabledColor { get => __legacy_DisabledColor_Element.Data; set => __legacy_DisabledColor_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.ColorX>, UnityEngine.ColorX> __legacy_DisabledColor_Element = new();
+public global::FrooxEngine.UIX.InteractionElement.ColorMode __legacy_TintColorMode { get => __legacy_TintColorMode_Element.Data; set => __legacy_TintColorMode_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::FrooxEngine.UIX.InteractionElement.ColorMode>, global::FrooxEngine.UIX.InteractionElement.ColorMode> __legacy_TintColorMode_Element = new();
+public global::FrooxEngine.IField<UnityEngine.ColorX> __legacy_ColorDrive { get => __legacy_ColorDrive_Element.Data; set => __legacy_ColorDrive_Element.Data = value; }
+public Field<global::FrooxEngine.FieldDrive<UnityEngine.ColorX>, global::FrooxEngine.IField<UnityEngine.ColorX>> __legacy_ColorDrive_Element = new();
+public global::System.Boolean IsPressed { get => IsPressed_Element.Data; set => IsPressed_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> IsPressed_Element = new();
+public global::System.Boolean IsHovering { get => IsHovering_Element.Data; set => IsHovering_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> IsHovering_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("BaseColor", BaseColor.ToResoniteLinkField());
+members.Add("BaseColor", BaseColor_Element.Data.ToResoniteLinkField());
 members.Add("ColorDrivers", new ResoniteLink.SyncList()
 {
-    Elements = ColorDrivers.ConvertList(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers(context) })
+    Elements = ColorDrivers.Data.ConvertList(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers(context) })
 });
-members.Add("__legacy_NormalColor", __legacy_NormalColor.ToResoniteLinkField());
-members.Add("__legacy_HighlightColor", __legacy_HighlightColor.ToResoniteLinkField());
-members.Add("__legacy_PressColor", __legacy_PressColor.ToResoniteLinkField());
-members.Add("__legacy_DisabledColor", __legacy_DisabledColor.ToResoniteLinkField());
-members.Add("__legacy_TintColorMode", __legacy_TintColorMode.ToResoniteLinkField());
-members.Add("__legacy_ColorDrive", __legacy_ColorDrive.ToResoniteReference(context));
-members.Add("IsPressed", IsPressed.ToResoniteLinkField());
-members.Add("IsHovering", IsHovering.ToResoniteLinkField());
+members.Add("__legacy_NormalColor", __legacy_NormalColor_Element.Data.ToResoniteLinkField());
+members.Add("__legacy_HighlightColor", __legacy_HighlightColor_Element.Data.ToResoniteLinkField());
+members.Add("__legacy_PressColor", __legacy_PressColor_Element.Data.ToResoniteLinkField());
+members.Add("__legacy_DisabledColor", __legacy_DisabledColor_Element.Data.ToResoniteLinkField());
+members.Add("__legacy_TintColorMode", __legacy_TintColorMode_Element.Data.ToResoniteLinkField());
+members.Add("__legacy_ColorDrive", __legacy_ColorDrive_Element.Data.ToResoniteReference(context));
+members.Add("IsPressed", IsPressed_Element.Data.ToResoniteLinkField());
+members.Add("IsHovering", IsHovering_Element.Data.ToResoniteLinkField());
 }
 
 }

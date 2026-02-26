@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.VirtualMultiKey
-// Generated on: středa 25. února 2026 16:14:46
+// Generated on: čtvrtek 26. února 2026 10:04:50
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,7 +20,7 @@ namespace FrooxEngine
 public partial class VirtualMultiKey : global::FrooxEngine.VirtualKeyBase, global::FrooxEngine.IButtonPressReceiver
 
 {
-    public System.Collections.Generic.List<global::Renderite.Shared.Key> Keys;
+    public global::SyncFieldList<global::FrooxEngine.SyncFieldList<global::Renderite.Shared.Key>, global::Renderite.Shared.Key, Field<global::FrooxEngine.Sync<global::Renderite.Shared.Key>, global::Renderite.Shared.Key>> Keys = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
@@ -28,7 +28,7 @@ public override void CollectMembers(
     base.CollectMembers(members, context);
 members.Add("Keys", new ResoniteLink.SyncList()
 {
-    Elements = Keys.ConvertList(m => m.ToResoniteLinkField())
+    Elements = Keys.Data.ConvertList(m => m.Data.ToResoniteLinkField())
 });
 }
 

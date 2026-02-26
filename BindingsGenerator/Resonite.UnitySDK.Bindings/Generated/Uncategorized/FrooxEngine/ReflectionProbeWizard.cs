@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.ReflectionProbeWizard
-// Generated on: středa 25. února 2026 16:14:42
+// Generated on: čtvrtek 26. února 2026 10:04:47
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,25 +20,32 @@ namespace FrooxEngine
 public partial class ReflectionProbeWizard : global::FrooxEngine.Component, global::FrooxEngine.IDeveloperInterface
 
 {
-    public global::FrooxEngine.Slot Root;
-public global::System.Boolean ProcessDisabled;
-public global::System.Boolean TeleportUserToProbe;
-public global::FrooxEngine.UIX.TextField _tag;
-public global::FrooxEngine.FloatTextEditorParser _delayBetweenProbes;
-public global::System.Int32 _bakeCount;
-public global::System.Int32 _bakeIndex;
+    public global::FrooxEngine.Slot Root { get => Root_Element.Data; set => Root_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> Root_Element = new();
+public global::System.Boolean ProcessDisabled { get => ProcessDisabled_Element.Data; set => ProcessDisabled_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> ProcessDisabled_Element = new();
+public global::System.Boolean TeleportUserToProbe { get => TeleportUserToProbe_Element.Data; set => TeleportUserToProbe_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> TeleportUserToProbe_Element = new();
+public global::FrooxEngine.UIX.TextField _tag { get => _tag_Element.Data; set => _tag_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.UIX.TextField>, global::FrooxEngine.UIX.TextField> _tag_Element = new();
+public global::FrooxEngine.FloatTextEditorParser _delayBetweenProbes { get => _delayBetweenProbes_Element.Data; set => _delayBetweenProbes_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.FloatTextEditorParser>, global::FrooxEngine.FloatTextEditorParser> _delayBetweenProbes_Element = new();
+public global::System.Int32 _bakeCount { get => _bakeCount_Element.Data; set => _bakeCount_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Int32>, global::System.Int32> _bakeCount_Element = new();
+public global::System.Int32 _bakeIndex { get => _bakeIndex_Element.Data; set => _bakeIndex_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Int32>, global::System.Int32> _bakeIndex_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Root", Root.ToResoniteReference(context));
-members.Add("ProcessDisabled", ProcessDisabled.ToResoniteLinkField());
-members.Add("TeleportUserToProbe", TeleportUserToProbe.ToResoniteLinkField());
-members.Add("_tag", _tag.ToResoniteReference(context));
-members.Add("_delayBetweenProbes", _delayBetweenProbes.ToResoniteReference(context));
-members.Add("_bakeCount", _bakeCount.ToResoniteLinkField());
-members.Add("_bakeIndex", _bakeIndex.ToResoniteLinkField());
+members.Add("Root", Root_Element.Data.ToResoniteReference(context));
+members.Add("ProcessDisabled", ProcessDisabled_Element.Data.ToResoniteLinkField());
+members.Add("TeleportUserToProbe", TeleportUserToProbe_Element.Data.ToResoniteLinkField());
+members.Add("_tag", _tag_Element.Data.ToResoniteReference(context));
+members.Add("_delayBetweenProbes", _delayBetweenProbes_Element.Data.ToResoniteReference(context));
+members.Add("_bakeCount", _bakeCount_Element.Data.ToResoniteLinkField());
+members.Add("_bakeIndex", _bakeIndex_Element.Data.ToResoniteLinkField());
 }
 
 }

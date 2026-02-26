@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.RenderingQualitySettings
-// Generated on: středa 25. února 2026 16:14:42
+// Generated on: čtvrtek 26. února 2026 10:04:48
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,21 +20,26 @@ namespace FrooxEngine
 public partial class RenderingQualitySettings : global::FrooxEngine.SettingComponent<global::FrooxEngine.RenderingQualitySettings>
 
 {
-    public global::System.Int32 PerPixelLights;
-public global::Renderite.Shared.ShadowCascadeMode ShadowCascades;
-public global::Renderite.Shared.ShadowResolutionMode ShadowResolution;
-public global::System.Single ShadowDistance;
-public global::Renderite.Shared.SkinWeightMode SkinWeightMode;
+    public global::System.Int32 PerPixelLights { get => PerPixelLights_Element.Data; set => PerPixelLights_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Int32>, global::System.Int32> PerPixelLights_Element = new();
+public global::Renderite.Shared.ShadowCascadeMode ShadowCascades { get => ShadowCascades_Element.Data; set => ShadowCascades_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::Renderite.Shared.ShadowCascadeMode>, global::Renderite.Shared.ShadowCascadeMode> ShadowCascades_Element = new();
+public global::Renderite.Shared.ShadowResolutionMode ShadowResolution { get => ShadowResolution_Element.Data; set => ShadowResolution_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::Renderite.Shared.ShadowResolutionMode>, global::Renderite.Shared.ShadowResolutionMode> ShadowResolution_Element = new();
+public global::System.Single ShadowDistance { get => ShadowDistance_Element.Data; set => ShadowDistance_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> ShadowDistance_Element = new();
+public global::Renderite.Shared.SkinWeightMode SkinWeightMode { get => SkinWeightMode_Element.Data; set => SkinWeightMode_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::Renderite.Shared.SkinWeightMode>, global::Renderite.Shared.SkinWeightMode> SkinWeightMode_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("PerPixelLights", PerPixelLights.ToResoniteLinkField());
-members.Add("ShadowCascades", ShadowCascades.ToResoniteLinkField());
-members.Add("ShadowResolution", ShadowResolution.ToResoniteLinkField());
-members.Add("ShadowDistance", ShadowDistance.ToResoniteLinkField());
-members.Add("SkinWeightMode", SkinWeightMode.ToResoniteLinkField());
+members.Add("PerPixelLights", PerPixelLights_Element.Data.ToResoniteLinkField());
+members.Add("ShadowCascades", ShadowCascades_Element.Data.ToResoniteLinkField());
+members.Add("ShadowResolution", ShadowResolution_Element.Data.ToResoniteLinkField());
+members.Add("ShadowDistance", ShadowDistance_Element.Data.ToResoniteLinkField());
+members.Add("SkinWeightMode", SkinWeightMode_Element.Data.ToResoniteLinkField());
 }
 
 }

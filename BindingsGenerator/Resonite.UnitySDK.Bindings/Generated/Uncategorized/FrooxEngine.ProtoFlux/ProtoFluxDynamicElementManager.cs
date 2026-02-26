@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.ProtoFlux.ProtoFluxDynamicElementManager
-// Generated on: středa 25. února 2026 16:14:42
+// Generated on: čtvrtek 26. února 2026 10:04:47
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,25 +20,30 @@ namespace FrooxEngine.ProtoFlux
 public abstract partial class ProtoFluxDynamicElementManager : global::FrooxEngine.Component
 
 {
-    public global::FrooxEngine.ProtoFlux.ProtoFluxNodeVisual Visual;
-public global::FrooxEngine.ISyncList List;
-public global::System.Int32 MinElements;
-public global::FrooxEngine.IField<global::System.Boolean> AddButtonEnabled;
-public global::FrooxEngine.IField<global::System.Boolean> RemoveButtonEnabled;
-public System.Collections.Generic.List<global::FrooxEngine.Slot> _elements;
+    public global::FrooxEngine.ProtoFlux.ProtoFluxNodeVisual Visual { get => Visual_Element.Data; set => Visual_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.ProtoFlux.ProtoFluxNodeVisual>, global::FrooxEngine.ProtoFlux.ProtoFluxNodeVisual> Visual_Element = new();
+public global::FrooxEngine.ISyncList List { get => List_Element.Data; set => List_Element.Data = value; }
+public Field<global::FrooxEngine.RelayRef<global::FrooxEngine.ISyncList>, global::FrooxEngine.ISyncList> List_Element = new();
+public global::System.Int32 MinElements { get => MinElements_Element.Data; set => MinElements_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Int32>, global::System.Int32> MinElements_Element = new();
+public global::FrooxEngine.IField<global::System.Boolean> AddButtonEnabled { get => AddButtonEnabled_Element.Data; set => AddButtonEnabled_Element.Data = value; }
+public Field<global::FrooxEngine.FieldDrive<global::System.Boolean>, global::FrooxEngine.IField<global::System.Boolean>> AddButtonEnabled_Element = new();
+public global::FrooxEngine.IField<global::System.Boolean> RemoveButtonEnabled { get => RemoveButtonEnabled_Element.Data; set => RemoveButtonEnabled_Element.Data = value; }
+public Field<global::FrooxEngine.FieldDrive<global::System.Boolean>, global::FrooxEngine.IField<global::System.Boolean>> RemoveButtonEnabled_Element = new();
+public global::SyncFieldList<global::FrooxEngine.SyncRefList<global::FrooxEngine.Slot>, global::FrooxEngine.Slot, Field<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot>> _elements = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Visual", Visual.ToResoniteReference(context));
-members.Add("List", List.ToResoniteReference(context));
-members.Add("MinElements", MinElements.ToResoniteLinkField());
-members.Add("AddButtonEnabled", AddButtonEnabled.ToResoniteReference(context));
-members.Add("RemoveButtonEnabled", RemoveButtonEnabled.ToResoniteReference(context));
+members.Add("Visual", Visual_Element.Data.ToResoniteReference(context));
+members.Add("List", List_Element.Data.ToResoniteReference(context));
+members.Add("MinElements", MinElements_Element.Data.ToResoniteLinkField());
+members.Add("AddButtonEnabled", AddButtonEnabled_Element.Data.ToResoniteReference(context));
+members.Add("RemoveButtonEnabled", RemoveButtonEnabled_Element.Data.ToResoniteReference(context));
 members.Add("_elements", new ResoniteLink.SyncList()
 {
-    Elements = _elements.ConvertList(m => m.ToResoniteReference(context))
+    Elements = _elements.Data.ConvertList(m => m.Data.ToResoniteReference(context))
 });
 }
 

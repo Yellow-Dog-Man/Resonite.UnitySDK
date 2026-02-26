@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.BooleanValueDriver<>
-// Generated on: středa 25. února 2026 16:14:29
+// Generated on: čtvrtek 26. února 2026 10:04:41
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -21,19 +21,23 @@ public partial class BooleanValueDriver<T> : global::FrooxEngine.Component
 	
 
 {
-    public global::System.Boolean State;
-public global::FrooxEngine.IField<T> TargetField;
-public T FalseValue;
-public T TrueValue;
+    public global::System.Boolean State { get => State_Element.Data; set => State_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> State_Element = new();
+public global::FrooxEngine.IField<T> TargetField { get => TargetField_Element.Data; set => TargetField_Element.Data = value; }
+public Field<global::FrooxEngine.FieldDrive<T>, global::FrooxEngine.IField<T>> TargetField_Element = new();
+public T FalseValue { get => FalseValue_Element.Data; set => FalseValue_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<T>, T> FalseValue_Element = new();
+public T TrueValue { get => TrueValue_Element.Data; set => TrueValue_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<T>, T> TrueValue_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("State", State.ToResoniteLinkField());
-members.Add("TargetField", TargetField.ToResoniteReference(context));
-members.Add("FalseValue", FalseValue.ToResoniteLinkField());
-members.Add("TrueValue", TrueValue.ToResoniteLinkField());
+members.Add("State", State_Element.Data.ToResoniteLinkField());
+members.Add("TargetField", TargetField_Element.Data.ToResoniteReference(context));
+members.Add("FalseValue", FalseValue_Element.Data.ToResoniteLinkField());
+members.Add("TrueValue", TrueValue_Element.Data.ToResoniteLinkField());
 }
 
 }

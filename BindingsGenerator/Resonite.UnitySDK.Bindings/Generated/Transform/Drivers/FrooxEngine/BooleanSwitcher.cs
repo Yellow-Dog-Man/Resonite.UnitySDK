@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.BooleanSwitcher
-// Generated on: středa 25. února 2026 16:14:29
+// Generated on: čtvrtek 26. února 2026 10:04:41
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,9 +20,11 @@ namespace FrooxEngine
 public partial class BooleanSwitcher : global::FrooxEngine.AutoAddChildrenBase, global::FrooxEngine.ICustomInspector
 
 {
-    public System.Collections.Generic.List<global::FrooxEngine.IField<global::System.Boolean>> Targets;
-public global::System.Int32 ActiveIndex;
-public global::FrooxEngine.BooleanSwitcher.Mode ActivationMode;
+    public global::SyncFieldList<global::FrooxEngine.SyncList<global::FrooxEngine.FieldDrive<global::System.Boolean>>, global::FrooxEngine.IField<global::System.Boolean>, Field<global::FrooxEngine.FieldDrive<global::System.Boolean>, global::FrooxEngine.IField<global::System.Boolean>>> Targets = new();
+public global::System.Int32 ActiveIndex { get => ActiveIndex_Element.Data; set => ActiveIndex_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Int32>, global::System.Int32> ActiveIndex_Element = new();
+public global::FrooxEngine.BooleanSwitcher.Mode ActivationMode { get => ActivationMode_Element.Data; set => ActivationMode_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::FrooxEngine.BooleanSwitcher.Mode>, global::FrooxEngine.BooleanSwitcher.Mode> ActivationMode_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
@@ -30,10 +32,10 @@ public override void CollectMembers(
     base.CollectMembers(members, context);
 members.Add("Targets", new ResoniteLink.SyncList()
 {
-    Elements = Targets.ConvertList(m => m.ToResoniteReference(context))
+    Elements = Targets.Data.ConvertList(m => m.Data.ToResoniteReference(context))
 });
-members.Add("ActiveIndex", ActiveIndex.ToResoniteLinkField());
-members.Add("ActivationMode", ActivationMode.ToResoniteLinkField());
+members.Add("ActiveIndex", ActiveIndex_Element.Data.ToResoniteLinkField());
+members.Add("ActivationMode", ActivationMode_Element.Data.ToResoniteLinkField());
 }
 
 }

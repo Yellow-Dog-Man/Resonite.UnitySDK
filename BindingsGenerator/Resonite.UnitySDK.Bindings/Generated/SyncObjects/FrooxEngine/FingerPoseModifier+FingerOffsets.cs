@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.FingerPoseModifier+FingerOffsets
-// Generated on: středa 25. února 2026 16:14:46
+// Generated on: čtvrtek 26. února 2026 10:04:50
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -22,31 +22,41 @@ namespace FrooxEngine
 public partial class FingerOffsets : global::FrooxEngine.SyncObject
 
 {
-    public global::System.Single ThumbCurlOffset;
-public global::System.Single IndexCurlOffset;
-public global::System.Single MiddleCurlOffset;
-public global::System.Single RingCurlOffset;
-public global::System.Single PinkyCurlOffset;
-public global::System.Single ThumbSplayOffset;
-public global::System.Single IndexSplayOffset;
-public global::System.Single MiddleSplayOffset;
-public global::System.Single RingSplayOffset;
-public global::System.Single PinkySplayOffset;
+    public global::System.Single ThumbCurlOffset { get => ThumbCurlOffset_Element.Data; set => ThumbCurlOffset_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> ThumbCurlOffset_Element = new();
+public global::System.Single IndexCurlOffset { get => IndexCurlOffset_Element.Data; set => IndexCurlOffset_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> IndexCurlOffset_Element = new();
+public global::System.Single MiddleCurlOffset { get => MiddleCurlOffset_Element.Data; set => MiddleCurlOffset_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> MiddleCurlOffset_Element = new();
+public global::System.Single RingCurlOffset { get => RingCurlOffset_Element.Data; set => RingCurlOffset_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> RingCurlOffset_Element = new();
+public global::System.Single PinkyCurlOffset { get => PinkyCurlOffset_Element.Data; set => PinkyCurlOffset_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> PinkyCurlOffset_Element = new();
+public global::System.Single ThumbSplayOffset { get => ThumbSplayOffset_Element.Data; set => ThumbSplayOffset_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> ThumbSplayOffset_Element = new();
+public global::System.Single IndexSplayOffset { get => IndexSplayOffset_Element.Data; set => IndexSplayOffset_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> IndexSplayOffset_Element = new();
+public global::System.Single MiddleSplayOffset { get => MiddleSplayOffset_Element.Data; set => MiddleSplayOffset_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> MiddleSplayOffset_Element = new();
+public global::System.Single RingSplayOffset { get => RingSplayOffset_Element.Data; set => RingSplayOffset_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> RingSplayOffset_Element = new();
+public global::System.Single PinkySplayOffset { get => PinkySplayOffset_Element.Data; set => PinkySplayOffset_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> PinkySplayOffset_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("ThumbCurlOffset", ThumbCurlOffset.ToResoniteLinkField());
-members.Add("IndexCurlOffset", IndexCurlOffset.ToResoniteLinkField());
-members.Add("MiddleCurlOffset", MiddleCurlOffset.ToResoniteLinkField());
-members.Add("RingCurlOffset", RingCurlOffset.ToResoniteLinkField());
-members.Add("PinkyCurlOffset", PinkyCurlOffset.ToResoniteLinkField());
-members.Add("ThumbSplayOffset", ThumbSplayOffset.ToResoniteLinkField());
-members.Add("IndexSplayOffset", IndexSplayOffset.ToResoniteLinkField());
-members.Add("MiddleSplayOffset", MiddleSplayOffset.ToResoniteLinkField());
-members.Add("RingSplayOffset", RingSplayOffset.ToResoniteLinkField());
-members.Add("PinkySplayOffset", PinkySplayOffset.ToResoniteLinkField());
+members.Add("ThumbCurlOffset", ThumbCurlOffset_Element.Data.ToResoniteLinkField());
+members.Add("IndexCurlOffset", IndexCurlOffset_Element.Data.ToResoniteLinkField());
+members.Add("MiddleCurlOffset", MiddleCurlOffset_Element.Data.ToResoniteLinkField());
+members.Add("RingCurlOffset", RingCurlOffset_Element.Data.ToResoniteLinkField());
+members.Add("PinkyCurlOffset", PinkyCurlOffset_Element.Data.ToResoniteLinkField());
+members.Add("ThumbSplayOffset", ThumbSplayOffset_Element.Data.ToResoniteLinkField());
+members.Add("IndexSplayOffset", IndexSplayOffset_Element.Data.ToResoniteLinkField());
+members.Add("MiddleSplayOffset", MiddleSplayOffset_Element.Data.ToResoniteLinkField());
+members.Add("RingSplayOffset", RingSplayOffset_Element.Data.ToResoniteLinkField());
+members.Add("PinkySplayOffset", PinkySplayOffset_Element.Data.ToResoniteLinkField());
 }
 
 }

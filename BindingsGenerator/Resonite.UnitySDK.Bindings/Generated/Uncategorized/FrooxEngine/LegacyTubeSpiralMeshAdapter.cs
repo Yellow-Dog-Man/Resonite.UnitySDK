@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.LegacyTubeSpiralMeshAdapter
-// Generated on: středa 25. února 2026 16:14:41
+// Generated on: čtvrtek 26. února 2026 10:04:46
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,19 +20,23 @@ namespace FrooxEngine
 public partial class LegacyTubeSpiralMeshAdapter : global::FrooxEngine.Component
 
 {
-    public global::System.Single UpwardTrend;
-public global::System.Single Length;
-public global::FrooxEngine.IField<UnityEngine.Vector3> EndPoint;
-public global::FrooxEngine.IField<global::System.Single> CoilCount;
+    public global::System.Single UpwardTrend { get => UpwardTrend_Element.Data; set => UpwardTrend_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> UpwardTrend_Element = new();
+public global::System.Single Length { get => Length_Element.Data; set => Length_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> Length_Element = new();
+public global::FrooxEngine.IField<UnityEngine.Vector3> EndPoint { get => EndPoint_Element.Data; set => EndPoint_Element.Data = value; }
+public Field<global::FrooxEngine.FieldDrive<UnityEngine.Vector3>, global::FrooxEngine.IField<UnityEngine.Vector3>> EndPoint_Element = new();
+public global::FrooxEngine.IField<global::System.Single> CoilCount { get => CoilCount_Element.Data; set => CoilCount_Element.Data = value; }
+public Field<global::FrooxEngine.FieldDrive<global::System.Single>, global::FrooxEngine.IField<global::System.Single>> CoilCount_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("UpwardTrend", UpwardTrend.ToResoniteLinkField());
-members.Add("Length", Length.ToResoniteLinkField());
-members.Add("EndPoint", EndPoint.ToResoniteReference(context));
-members.Add("CoilCount", CoilCount.ToResoniteReference(context));
+members.Add("UpwardTrend", UpwardTrend_Element.Data.ToResoniteLinkField());
+members.Add("Length", Length_Element.Data.ToResoniteLinkField());
+members.Add("EndPoint", EndPoint_Element.Data.ToResoniteReference(context));
+members.Add("CoilCount", CoilCount_Element.Data.ToResoniteReference(context));
 }
 
 }

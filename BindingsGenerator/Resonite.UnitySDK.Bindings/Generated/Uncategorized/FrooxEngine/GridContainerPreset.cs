@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.GridContainerPreset
-// Generated on: středa 25. února 2026 16:14:39
+// Generated on: čtvrtek 26. února 2026 10:04:45
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,17 +20,20 @@ namespace FrooxEngine
 public partial class GridContainerPreset : global::FrooxEngine.Component, global::FrooxEngine.IModifiedEventReceiver
 
 {
-    public System.String _initializer;
-public global::System.Int32 _initializedVersion;
-public global::System.Boolean _isModified;
+    public System.String _initializer { get => _initializer_Element.Data; set => _initializer_Element.Data = value; }
+public Field<global::FrooxEngine.SyncType, System.String> _initializer_Element = new();
+public global::System.Int32 _initializedVersion { get => _initializedVersion_Element.Data; set => _initializedVersion_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Int32>, global::System.Int32> _initializedVersion_Element = new();
+public global::System.Boolean _isModified { get => _isModified_Element.Data; set => _isModified_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> _isModified_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("_initializer", _initializer.ToResoniteLinkField());
-members.Add("_initializedVersion", _initializedVersion.ToResoniteLinkField());
-members.Add("_isModified", _isModified.ToResoniteLinkField());
+members.Add("_initializer", _initializer_Element.Data.ToResoniteLinkField());
+members.Add("_initializedVersion", _initializedVersion_Element.Data.ToResoniteLinkField());
+members.Add("_isModified", _isModified_Element.Data.ToResoniteLinkField());
 }
 
 }

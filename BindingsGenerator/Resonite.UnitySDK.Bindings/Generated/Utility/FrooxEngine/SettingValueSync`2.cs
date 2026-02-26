@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.SettingValueSync<,>
-// Generated on: středa 25. února 2026 16:14:47
+// Generated on: čtvrtek 26. února 2026 10:04:50
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -22,21 +22,25 @@ public partial class SettingValueSync<T,S> : global::FrooxEngine.Component
 	
 
 {
-    public global::FrooxEngine.UserRef SyncingUser;
-public global::System.String SettingName;
-public global::FrooxEngine.IField<T> TargetField;
-public global::System.String SubsettingGetter;
-public global::System.String SubsettingKey;
+    public global::FrooxEngine.UserRef SyncingUser = new();
+public global::System.String SettingName { get => SettingName_Element.Data; set => SettingName_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.String>, global::System.String> SettingName_Element = new();
+public global::FrooxEngine.IField<T> TargetField { get => TargetField_Element.Data; set => TargetField_Element.Data = value; }
+public Field<global::FrooxEngine.FieldDrive<T>, global::FrooxEngine.IField<T>> TargetField_Element = new();
+public global::System.String SubsettingGetter { get => SubsettingGetter_Element.Data; set => SubsettingGetter_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.String>, global::System.String> SubsettingGetter_Element = new();
+public global::System.String SubsettingKey { get => SubsettingKey_Element.Data; set => SubsettingKey_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.String>, global::System.String> SubsettingKey_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
 members.Add("SyncingUser", new ResoniteLink.SyncObject() { Members = SyncingUser.CollectMembers(context) });
-members.Add("SettingName", SettingName.ToResoniteLinkField());
-members.Add("TargetField", TargetField.ToResoniteReference(context));
-members.Add("SubsettingGetter", SubsettingGetter.ToResoniteLinkField());
-members.Add("SubsettingKey", SubsettingKey.ToResoniteLinkField());
+members.Add("SettingName", SettingName_Element.Data.ToResoniteLinkField());
+members.Add("TargetField", TargetField_Element.Data.ToResoniteReference(context));
+members.Add("SubsettingGetter", SubsettingGetter_Element.Data.ToResoniteLinkField());
+members.Add("SubsettingKey", SubsettingKey_Element.Data.ToResoniteLinkField());
 }
 
 }

@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.ResolutionSettings
-// Generated on: středa 25. února 2026 16:14:42
+// Generated on: čtvrtek 26. února 2026 10:04:48
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,23 +20,29 @@ namespace FrooxEngine
 public partial class ResolutionSettings : global::FrooxEngine.SettingComponent<global::FrooxEngine.ResolutionSettings>
 
 {
-    public global::System.Boolean Fullscreen;
-public UnityEngine.Vector2Int WindowResolution;
-public UnityEngine.Vector2Int FullscreenResolution;
-public UnityEngine.Vector2Int CommitedWindowResolution;
-public UnityEngine.Vector2Int CommitedFullscreenResolution;
-public global::System.Boolean NeedsToApplyResolution;
+    public global::System.Boolean Fullscreen { get => Fullscreen_Element.Data; set => Fullscreen_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> Fullscreen_Element = new();
+public UnityEngine.Vector2Int WindowResolution { get => WindowResolution_Element.Data; set => WindowResolution_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.Vector2Int>, UnityEngine.Vector2Int> WindowResolution_Element = new();
+public UnityEngine.Vector2Int FullscreenResolution { get => FullscreenResolution_Element.Data; set => FullscreenResolution_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.Vector2Int>, UnityEngine.Vector2Int> FullscreenResolution_Element = new();
+public UnityEngine.Vector2Int CommitedWindowResolution { get => CommitedWindowResolution_Element.Data; set => CommitedWindowResolution_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.Vector2Int>, UnityEngine.Vector2Int> CommitedWindowResolution_Element = new();
+public UnityEngine.Vector2Int CommitedFullscreenResolution { get => CommitedFullscreenResolution_Element.Data; set => CommitedFullscreenResolution_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.Vector2Int>, UnityEngine.Vector2Int> CommitedFullscreenResolution_Element = new();
+public global::System.Boolean NeedsToApplyResolution { get => NeedsToApplyResolution_Element.Data; set => NeedsToApplyResolution_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> NeedsToApplyResolution_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Fullscreen", Fullscreen.ToResoniteLinkField());
-members.Add("WindowResolution", WindowResolution.ToResoniteLinkField());
-members.Add("FullscreenResolution", FullscreenResolution.ToResoniteLinkField());
-members.Add("CommitedWindowResolution", CommitedWindowResolution.ToResoniteLinkField());
-members.Add("CommitedFullscreenResolution", CommitedFullscreenResolution.ToResoniteLinkField());
-members.Add("NeedsToApplyResolution", NeedsToApplyResolution.ToResoniteLinkField());
+members.Add("Fullscreen", Fullscreen_Element.Data.ToResoniteLinkField());
+members.Add("WindowResolution", WindowResolution_Element.Data.ToResoniteLinkField());
+members.Add("FullscreenResolution", FullscreenResolution_Element.Data.ToResoniteLinkField());
+members.Add("CommitedWindowResolution", CommitedWindowResolution_Element.Data.ToResoniteLinkField());
+members.Add("CommitedFullscreenResolution", CommitedFullscreenResolution_Element.Data.ToResoniteLinkField());
+members.Add("NeedsToApplyResolution", NeedsToApplyResolution_Element.Data.ToResoniteLinkField());
 }
 
 }

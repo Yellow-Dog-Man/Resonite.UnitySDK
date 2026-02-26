@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.GrayscaleMaterial
-// Generated on: středa 25. února 2026 16:13:03
+// Generated on: čtvrtek 26. února 2026 10:03:34
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,29 +20,38 @@ namespace FrooxEngine
 public partial class GrayscaleMaterial : global::FrooxEngine.SingleShaderUI_StencilMaterial
 
 {
-    public global::System.Single RatioRed;
-public global::System.Single RatioGreen;
-public global::System.Single RatioBlue;
-public global::System.Single Lerp;
-public global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D> Gradient;
-public global::FrooxEngine.BlendMode BlendMode;
-public global::FrooxEngine.Sidedness Sidedness;
-public global::FrooxEngine.ZWrite ZWrite;
-public global::FrooxEngine.ZTest ZTest;
+    public global::System.Single RatioRed { get => RatioRed_Element.Data; set => RatioRed_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> RatioRed_Element = new();
+public global::System.Single RatioGreen { get => RatioGreen_Element.Data; set => RatioGreen_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> RatioGreen_Element = new();
+public global::System.Single RatioBlue { get => RatioBlue_Element.Data; set => RatioBlue_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> RatioBlue_Element = new();
+public global::System.Single Lerp { get => Lerp_Element.Data; set => Lerp_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> Lerp_Element = new();
+public global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D> Gradient { get => Gradient_Element.Data; set => Gradient_Element.Data = value; }
+public Field<global::FrooxEngine.AssetRef<global::FrooxEngine.ITexture2D>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D>> Gradient_Element = new();
+public global::FrooxEngine.BlendMode BlendMode { get => BlendMode_Element.Data; set => BlendMode_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::FrooxEngine.BlendMode>, global::FrooxEngine.BlendMode> BlendMode_Element = new();
+public global::FrooxEngine.Sidedness Sidedness { get => Sidedness_Element.Data; set => Sidedness_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::FrooxEngine.Sidedness>, global::FrooxEngine.Sidedness> Sidedness_Element = new();
+public global::FrooxEngine.ZWrite ZWrite { get => ZWrite_Element.Data; set => ZWrite_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::FrooxEngine.ZWrite>, global::FrooxEngine.ZWrite> ZWrite_Element = new();
+public global::FrooxEngine.ZTest ZTest { get => ZTest_Element.Data; set => ZTest_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::FrooxEngine.ZTest>, global::FrooxEngine.ZTest> ZTest_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("RatioRed", RatioRed.ToResoniteLinkField());
-members.Add("RatioGreen", RatioGreen.ToResoniteLinkField());
-members.Add("RatioBlue", RatioBlue.ToResoniteLinkField());
-members.Add("Lerp", Lerp.ToResoniteLinkField());
-members.Add("Gradient", Gradient.ToResoniteReference(context));
-members.Add("BlendMode", BlendMode.ToResoniteLinkField());
-members.Add("Sidedness", Sidedness.ToResoniteLinkField());
-members.Add("ZWrite", ZWrite.ToResoniteLinkField());
-members.Add("ZTest", ZTest.ToResoniteLinkField());
+members.Add("RatioRed", RatioRed_Element.Data.ToResoniteLinkField());
+members.Add("RatioGreen", RatioGreen_Element.Data.ToResoniteLinkField());
+members.Add("RatioBlue", RatioBlue_Element.Data.ToResoniteLinkField());
+members.Add("Lerp", Lerp_Element.Data.ToResoniteLinkField());
+members.Add("Gradient", Gradient_Element.Data.ToResoniteReference(context));
+members.Add("BlendMode", BlendMode_Element.Data.ToResoniteLinkField());
+members.Add("Sidedness", Sidedness_Element.Data.ToResoniteLinkField());
+members.Add("ZWrite", ZWrite_Element.Data.ToResoniteLinkField());
+members.Add("ZTest", ZTest_Element.Data.ToResoniteLinkField());
 }
 
 }

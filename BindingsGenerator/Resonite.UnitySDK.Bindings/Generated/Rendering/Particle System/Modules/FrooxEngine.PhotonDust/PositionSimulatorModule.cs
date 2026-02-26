@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.PhotonDust.PositionSimulatorModule
-// Generated on: středa 25. února 2026 16:14:18
+// Generated on: čtvrtek 26. února 2026 10:04:38
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,18 +20,21 @@ namespace FrooxEngine.PhotonDust
 public partial class PositionSimulatorModule : global::FrooxEngine.PhotonDust.ParticleSystemModule<global::System.Object>
 
 {
-    public global::System.Boolean Collisions;
-public global::System.Single CollisionLifetimeLossRatio;
-public global::System.Single CollisionBounceRatio;
-public global::FrooxEngine.PhotonDust.PositionSimulatorSubEmissionParameters CollisionSubEmission;
+    public global::System.Boolean Collisions { get => Collisions_Element.Data; set => Collisions_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> Collisions_Element = new();
+public global::System.Single CollisionLifetimeLossRatio { get => CollisionLifetimeLossRatio_Element.Data; set => CollisionLifetimeLossRatio_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> CollisionLifetimeLossRatio_Element = new();
+public global::System.Single CollisionBounceRatio { get => CollisionBounceRatio_Element.Data; set => CollisionBounceRatio_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> CollisionBounceRatio_Element = new();
+public global::FrooxEngine.PhotonDust.PositionSimulatorSubEmissionParameters CollisionSubEmission = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Collisions", Collisions.ToResoniteLinkField());
-members.Add("CollisionLifetimeLossRatio", CollisionLifetimeLossRatio.ToResoniteLinkField());
-members.Add("CollisionBounceRatio", CollisionBounceRatio.ToResoniteLinkField());
+members.Add("Collisions", Collisions_Element.Data.ToResoniteLinkField());
+members.Add("CollisionLifetimeLossRatio", CollisionLifetimeLossRatio_Element.Data.ToResoniteLinkField());
+members.Add("CollisionBounceRatio", CollisionBounceRatio_Element.Data.ToResoniteLinkField());
 members.Add("CollisionSubEmission", new ResoniteLink.SyncObject() { Members = CollisionSubEmission.CollectMembers(context) });
 }
 

@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.OnlineStatistics+SessionStats
-// Generated on: středa 25. února 2026 16:13:06
+// Generated on: čtvrtek 26. února 2026 10:03:37
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -22,23 +22,29 @@ namespace FrooxEngine
 public partial class SessionStats : global::FrooxEngine.SyncObject
 
 {
-    public global::System.Nullable<global::System.Int32> PublicSessions;
-public global::System.Nullable<global::System.Int32> RegisteredSessions;
-public global::System.Nullable<global::System.Int32> ContactsPlusSessions;
-public global::System.Nullable<global::System.Int32> ContactsSessions;
-public global::System.Nullable<global::System.Int32> LANSessions;
-public global::System.Nullable<global::System.Int32> PrivateSessions;
+    public global::System.Nullable<global::System.Int32> PublicSessions { get => PublicSessions_Element.Data; set => PublicSessions_Element.Data = value; }
+public Field<global::FrooxEngine.RawOutput<global::System.Nullable<global::System.Int32>>, global::System.Nullable<global::System.Int32>> PublicSessions_Element = new();
+public global::System.Nullable<global::System.Int32> RegisteredSessions { get => RegisteredSessions_Element.Data; set => RegisteredSessions_Element.Data = value; }
+public Field<global::FrooxEngine.RawOutput<global::System.Nullable<global::System.Int32>>, global::System.Nullable<global::System.Int32>> RegisteredSessions_Element = new();
+public global::System.Nullable<global::System.Int32> ContactsPlusSessions { get => ContactsPlusSessions_Element.Data; set => ContactsPlusSessions_Element.Data = value; }
+public Field<global::FrooxEngine.RawOutput<global::System.Nullable<global::System.Int32>>, global::System.Nullable<global::System.Int32>> ContactsPlusSessions_Element = new();
+public global::System.Nullable<global::System.Int32> ContactsSessions { get => ContactsSessions_Element.Data; set => ContactsSessions_Element.Data = value; }
+public Field<global::FrooxEngine.RawOutput<global::System.Nullable<global::System.Int32>>, global::System.Nullable<global::System.Int32>> ContactsSessions_Element = new();
+public global::System.Nullable<global::System.Int32> LANSessions { get => LANSessions_Element.Data; set => LANSessions_Element.Data = value; }
+public Field<global::FrooxEngine.RawOutput<global::System.Nullable<global::System.Int32>>, global::System.Nullable<global::System.Int32>> LANSessions_Element = new();
+public global::System.Nullable<global::System.Int32> PrivateSessions { get => PrivateSessions_Element.Data; set => PrivateSessions_Element.Data = value; }
+public Field<global::FrooxEngine.RawOutput<global::System.Nullable<global::System.Int32>>, global::System.Nullable<global::System.Int32>> PrivateSessions_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("PublicSessions", PublicSessions.ToResoniteLinkField());
-members.Add("RegisteredSessions", RegisteredSessions.ToResoniteLinkField());
-members.Add("ContactsPlusSessions", ContactsPlusSessions.ToResoniteLinkField());
-members.Add("ContactsSessions", ContactsSessions.ToResoniteLinkField());
-members.Add("LANSessions", LANSessions.ToResoniteLinkField());
-members.Add("PrivateSessions", PrivateSessions.ToResoniteLinkField());
+members.Add("PublicSessions", PublicSessions_Element.Data.ToResoniteLinkField());
+members.Add("RegisteredSessions", RegisteredSessions_Element.Data.ToResoniteLinkField());
+members.Add("ContactsPlusSessions", ContactsPlusSessions_Element.Data.ToResoniteLinkField());
+members.Add("ContactsSessions", ContactsSessions_Element.Data.ToResoniteLinkField());
+members.Add("LANSessions", LANSessions_Element.Data.ToResoniteLinkField());
+members.Add("PrivateSessions", PrivateSessions_Element.Data.ToResoniteLinkField());
 }
 
 }

@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.PhotonDust.ParticleLightsModule
-// Generated on: středa 25. února 2026 16:14:18
+// Generated on: čtvrtek 26. února 2026 10:04:38
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,31 +20,41 @@ namespace FrooxEngine.PhotonDust
 public partial class ParticleLightsModule : global::FrooxEngine.PhotonDust.ParticleSystemRendererModule<global::PhotonDust.ParticleLightsModule,global::System.Object>
 
 {
-    public global::FrooxEngine.Light TemplateLight;
-public global::System.Single LightsRatio;
-public global::PhotonDust.ParticleFollowerDistribution Distribution;
-public global::System.Int32 MaxLights;
-public global::System.Boolean MultiplyColorByParticle;
-public global::System.Boolean MultiplyIntensityByAlpha;
-public global::System.Boolean MultiplyRangeBySize;
-public global::PhotonDust.ParticleLightsModule.AngleMultiplier AngleMultiplier;
-public global::System.Single RangeMultiplier;
-public global::System.Single IntensityMultiplier;
+    public global::FrooxEngine.Light TemplateLight { get => TemplateLight_Element.Data; set => TemplateLight_Element.Data = value; }
+public Field<global::FrooxEngine.RelayRef<global::FrooxEngine.Light>, global::FrooxEngine.Light> TemplateLight_Element = new();
+public global::System.Single LightsRatio { get => LightsRatio_Element.Data; set => LightsRatio_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> LightsRatio_Element = new();
+public global::PhotonDust.ParticleFollowerDistribution Distribution { get => Distribution_Element.Data; set => Distribution_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::PhotonDust.ParticleFollowerDistribution>, global::PhotonDust.ParticleFollowerDistribution> Distribution_Element = new();
+public global::System.Int32 MaxLights { get => MaxLights_Element.Data; set => MaxLights_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Int32>, global::System.Int32> MaxLights_Element = new();
+public global::System.Boolean MultiplyColorByParticle { get => MultiplyColorByParticle_Element.Data; set => MultiplyColorByParticle_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> MultiplyColorByParticle_Element = new();
+public global::System.Boolean MultiplyIntensityByAlpha { get => MultiplyIntensityByAlpha_Element.Data; set => MultiplyIntensityByAlpha_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> MultiplyIntensityByAlpha_Element = new();
+public global::System.Boolean MultiplyRangeBySize { get => MultiplyRangeBySize_Element.Data; set => MultiplyRangeBySize_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> MultiplyRangeBySize_Element = new();
+public global::PhotonDust.ParticleLightsModule.AngleMultiplier AngleMultiplier { get => AngleMultiplier_Element.Data; set => AngleMultiplier_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::PhotonDust.ParticleLightsModule.AngleMultiplier>, global::PhotonDust.ParticleLightsModule.AngleMultiplier> AngleMultiplier_Element = new();
+public global::System.Single RangeMultiplier { get => RangeMultiplier_Element.Data; set => RangeMultiplier_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> RangeMultiplier_Element = new();
+public global::System.Single IntensityMultiplier { get => IntensityMultiplier_Element.Data; set => IntensityMultiplier_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> IntensityMultiplier_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("TemplateLight", TemplateLight.ToResoniteReference(context));
-members.Add("LightsRatio", LightsRatio.ToResoniteLinkField());
-members.Add("Distribution", Distribution.ToResoniteLinkField());
-members.Add("MaxLights", MaxLights.ToResoniteLinkField());
-members.Add("MultiplyColorByParticle", MultiplyColorByParticle.ToResoniteLinkField());
-members.Add("MultiplyIntensityByAlpha", MultiplyIntensityByAlpha.ToResoniteLinkField());
-members.Add("MultiplyRangeBySize", MultiplyRangeBySize.ToResoniteLinkField());
-members.Add("AngleMultiplier", AngleMultiplier.ToResoniteLinkField());
-members.Add("RangeMultiplier", RangeMultiplier.ToResoniteLinkField());
-members.Add("IntensityMultiplier", IntensityMultiplier.ToResoniteLinkField());
+members.Add("TemplateLight", TemplateLight_Element.Data.ToResoniteReference(context));
+members.Add("LightsRatio", LightsRatio_Element.Data.ToResoniteLinkField());
+members.Add("Distribution", Distribution_Element.Data.ToResoniteLinkField());
+members.Add("MaxLights", MaxLights_Element.Data.ToResoniteLinkField());
+members.Add("MultiplyColorByParticle", MultiplyColorByParticle_Element.Data.ToResoniteLinkField());
+members.Add("MultiplyIntensityByAlpha", MultiplyIntensityByAlpha_Element.Data.ToResoniteLinkField());
+members.Add("MultiplyRangeBySize", MultiplyRangeBySize_Element.Data.ToResoniteLinkField());
+members.Add("AngleMultiplier", AngleMultiplier_Element.Data.ToResoniteLinkField());
+members.Add("RangeMultiplier", RangeMultiplier_Element.Data.ToResoniteLinkField());
+members.Add("IntensityMultiplier", IntensityMultiplier_Element.Data.ToResoniteLinkField());
 }
 
 }

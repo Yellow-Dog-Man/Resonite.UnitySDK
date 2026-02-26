@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.ActiveUserCloudValueBase<>
-// Generated on: středa 25. února 2026 16:13:06
+// Generated on: čtvrtek 26. února 2026 10:03:37
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -21,15 +21,17 @@ public abstract partial class ActiveUserCloudValueBase<T> : global::FrooxEngine.
 	
 
 {
-    public global::System.Boolean UpdateCloudVariable;
-public T FallbackValue;
+    public global::System.Boolean UpdateCloudVariable { get => UpdateCloudVariable_Element.Data; set => UpdateCloudVariable_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> UpdateCloudVariable_Element = new();
+public T FallbackValue { get => FallbackValue_Element.Data; set => FallbackValue_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<T>, T> FallbackValue_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("UpdateCloudVariable", UpdateCloudVariable.ToResoniteLinkField());
-members.Add("FallbackValue", FallbackValue.ToResoniteLinkField());
+members.Add("UpdateCloudVariable", UpdateCloudVariable_Element.Data.ToResoniteLinkField());
+members.Add("FallbackValue", FallbackValue_Element.Data.ToResoniteLinkField());
 }
 
 }

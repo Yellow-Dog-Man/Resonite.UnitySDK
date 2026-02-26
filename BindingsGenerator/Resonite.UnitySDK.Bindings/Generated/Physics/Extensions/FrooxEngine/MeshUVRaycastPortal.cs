@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.MeshUVRaycastPortal
-// Generated on: středa 25. února 2026 16:13:11
+// Generated on: čtvrtek 26. února 2026 10:03:41
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,25 +20,32 @@ namespace FrooxEngine
 public partial class MeshUVRaycastPortal : global::FrooxEngine.Component, global::FrooxEngine.IRaycastPortal
 
 {
-    public global::System.Single Offset;
-public global::FrooxEngine.IUVToRayConverter RayExit;
-public UnityEngine.Vector2 UVOffset;
-public UnityEngine.Vector2 UVScale;
-public global::System.Boolean RepeatUV;
-public global::System.Nullable<global::System.Boolean> OverrideHitTriggers;
-public global::FrooxEngine.FilterCombineMode FilterMode;
+    public global::System.Single Offset { get => Offset_Element.Data; set => Offset_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> Offset_Element = new();
+public global::FrooxEngine.IUVToRayConverter RayExit { get => RayExit_Element.Data; set => RayExit_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.IUVToRayConverter>, global::FrooxEngine.IUVToRayConverter> RayExit_Element = new();
+public UnityEngine.Vector2 UVOffset { get => UVOffset_Element.Data; set => UVOffset_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.Vector2>, UnityEngine.Vector2> UVOffset_Element = new();
+public UnityEngine.Vector2 UVScale { get => UVScale_Element.Data; set => UVScale_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.Vector2>, UnityEngine.Vector2> UVScale_Element = new();
+public global::System.Boolean RepeatUV { get => RepeatUV_Element.Data; set => RepeatUV_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> RepeatUV_Element = new();
+public global::System.Nullable<global::System.Boolean> OverrideHitTriggers { get => OverrideHitTriggers_Element.Data; set => OverrideHitTriggers_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Nullable<global::System.Boolean>>, global::System.Nullable<global::System.Boolean>> OverrideHitTriggers_Element = new();
+public global::FrooxEngine.FilterCombineMode FilterMode { get => FilterMode_Element.Data; set => FilterMode_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::FrooxEngine.FilterCombineMode>, global::FrooxEngine.FilterCombineMode> FilterMode_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Offset", Offset.ToResoniteLinkField());
-members.Add("RayExit", RayExit.ToResoniteReference(context));
-members.Add("UVOffset", UVOffset.ToResoniteLinkField());
-members.Add("UVScale", UVScale.ToResoniteLinkField());
-members.Add("RepeatUV", RepeatUV.ToResoniteLinkField());
-members.Add("OverrideHitTriggers", OverrideHitTriggers.ToResoniteLinkField());
-members.Add("FilterMode", FilterMode.ToResoniteLinkField());
+members.Add("Offset", Offset_Element.Data.ToResoniteLinkField());
+members.Add("RayExit", RayExit_Element.Data.ToResoniteReference(context));
+members.Add("UVOffset", UVOffset_Element.Data.ToResoniteLinkField());
+members.Add("UVScale", UVScale_Element.Data.ToResoniteLinkField());
+members.Add("RepeatUV", RepeatUV_Element.Data.ToResoniteLinkField());
+members.Add("OverrideHitTriggers", OverrideHitTriggers_Element.Data.ToResoniteLinkField());
+members.Add("FilterMode", FilterMode_Element.Data.ToResoniteLinkField());
 }
 
 }

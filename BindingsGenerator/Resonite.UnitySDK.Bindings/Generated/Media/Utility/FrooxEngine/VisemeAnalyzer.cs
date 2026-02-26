@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.VisemeAnalyzer
-// Generated on: středa 25. února 2026 16:13:11
+// Generated on: čtvrtek 26. února 2026 10:03:40
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,51 +20,71 @@ namespace FrooxEngine
 public partial class VisemeAnalyzer : global::FrooxEngine.Component
 
 {
-    public global::FrooxEngine.IWorldAudioDataSource Source;
-public global::FrooxEngine.MultiValueStream<global::System.Single> RemoteSource;
-public global::FrooxEngine.VisemeAnalyzerEngine PreferredAnalyzer;
-public global::System.Single Smoothing;
-public global::System.Single Silence;
-public global::System.Single PP;
-public global::System.Single FF;
-public global::System.Single TH;
-public global::System.Single DD;
-public global::System.Single kk;
-public global::System.Single CH;
-public global::System.Single SS;
-public global::System.Single nn;
-public global::System.Single RR;
-public global::System.Single aa;
-public global::System.Single E;
-public global::System.Single ih;
-public global::System.Single oh;
-public global::System.Single ou;
-public global::System.Single LaughterProbability;
+    public global::FrooxEngine.IWorldAudioDataSource Source { get => Source_Element.Data; set => Source_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.IWorldAudioDataSource>, global::FrooxEngine.IWorldAudioDataSource> Source_Element = new();
+public global::FrooxEngine.MultiValueStream<global::System.Single> RemoteSource { get => RemoteSource_Element.Data; set => RemoteSource_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.MultiValueStream<global::System.Single>>, global::FrooxEngine.MultiValueStream<global::System.Single>> RemoteSource_Element = new();
+public global::FrooxEngine.VisemeAnalyzerEngine PreferredAnalyzer { get => PreferredAnalyzer_Element.Data; set => PreferredAnalyzer_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::FrooxEngine.VisemeAnalyzerEngine>, global::FrooxEngine.VisemeAnalyzerEngine> PreferredAnalyzer_Element = new();
+public global::System.Single Smoothing { get => Smoothing_Element.Data; set => Smoothing_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> Smoothing_Element = new();
+public global::System.Single Silence { get => Silence_Element.Data; set => Silence_Element.Data = value; }
+public Field<global::FrooxEngine.RawOutput<global::System.Single>, global::System.Single> Silence_Element = new();
+public global::System.Single PP { get => PP_Element.Data; set => PP_Element.Data = value; }
+public Field<global::FrooxEngine.RawOutput<global::System.Single>, global::System.Single> PP_Element = new();
+public global::System.Single FF { get => FF_Element.Data; set => FF_Element.Data = value; }
+public Field<global::FrooxEngine.RawOutput<global::System.Single>, global::System.Single> FF_Element = new();
+public global::System.Single TH { get => TH_Element.Data; set => TH_Element.Data = value; }
+public Field<global::FrooxEngine.RawOutput<global::System.Single>, global::System.Single> TH_Element = new();
+public global::System.Single DD { get => DD_Element.Data; set => DD_Element.Data = value; }
+public Field<global::FrooxEngine.RawOutput<global::System.Single>, global::System.Single> DD_Element = new();
+public global::System.Single kk { get => kk_Element.Data; set => kk_Element.Data = value; }
+public Field<global::FrooxEngine.RawOutput<global::System.Single>, global::System.Single> kk_Element = new();
+public global::System.Single CH { get => CH_Element.Data; set => CH_Element.Data = value; }
+public Field<global::FrooxEngine.RawOutput<global::System.Single>, global::System.Single> CH_Element = new();
+public global::System.Single SS { get => SS_Element.Data; set => SS_Element.Data = value; }
+public Field<global::FrooxEngine.RawOutput<global::System.Single>, global::System.Single> SS_Element = new();
+public global::System.Single nn { get => nn_Element.Data; set => nn_Element.Data = value; }
+public Field<global::FrooxEngine.RawOutput<global::System.Single>, global::System.Single> nn_Element = new();
+public global::System.Single RR { get => RR_Element.Data; set => RR_Element.Data = value; }
+public Field<global::FrooxEngine.RawOutput<global::System.Single>, global::System.Single> RR_Element = new();
+public global::System.Single aa { get => aa_Element.Data; set => aa_Element.Data = value; }
+public Field<global::FrooxEngine.RawOutput<global::System.Single>, global::System.Single> aa_Element = new();
+public global::System.Single E { get => E_Element.Data; set => E_Element.Data = value; }
+public Field<global::FrooxEngine.RawOutput<global::System.Single>, global::System.Single> E_Element = new();
+public global::System.Single ih { get => ih_Element.Data; set => ih_Element.Data = value; }
+public Field<global::FrooxEngine.RawOutput<global::System.Single>, global::System.Single> ih_Element = new();
+public global::System.Single oh { get => oh_Element.Data; set => oh_Element.Data = value; }
+public Field<global::FrooxEngine.RawOutput<global::System.Single>, global::System.Single> oh_Element = new();
+public global::System.Single ou { get => ou_Element.Data; set => ou_Element.Data = value; }
+public Field<global::FrooxEngine.RawOutput<global::System.Single>, global::System.Single> ou_Element = new();
+public global::System.Single LaughterProbability { get => LaughterProbability_Element.Data; set => LaughterProbability_Element.Data = value; }
+public Field<global::FrooxEngine.RawOutput<global::System.Single>, global::System.Single> LaughterProbability_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Source", Source.ToResoniteReference(context));
-members.Add("RemoteSource", RemoteSource.ToResoniteReference(context));
-members.Add("PreferredAnalyzer", PreferredAnalyzer.ToResoniteLinkField());
-members.Add("Smoothing", Smoothing.ToResoniteLinkField());
-members.Add("Silence", Silence.ToResoniteLinkField());
-members.Add("PP", PP.ToResoniteLinkField());
-members.Add("FF", FF.ToResoniteLinkField());
-members.Add("TH", TH.ToResoniteLinkField());
-members.Add("DD", DD.ToResoniteLinkField());
-members.Add("kk", kk.ToResoniteLinkField());
-members.Add("CH", CH.ToResoniteLinkField());
-members.Add("SS", SS.ToResoniteLinkField());
-members.Add("nn", nn.ToResoniteLinkField());
-members.Add("RR", RR.ToResoniteLinkField());
-members.Add("aa", aa.ToResoniteLinkField());
-members.Add("E", E.ToResoniteLinkField());
-members.Add("ih", ih.ToResoniteLinkField());
-members.Add("oh", oh.ToResoniteLinkField());
-members.Add("ou", ou.ToResoniteLinkField());
-members.Add("LaughterProbability", LaughterProbability.ToResoniteLinkField());
+members.Add("Source", Source_Element.Data.ToResoniteReference(context));
+members.Add("RemoteSource", RemoteSource_Element.Data.ToResoniteReference(context));
+members.Add("PreferredAnalyzer", PreferredAnalyzer_Element.Data.ToResoniteLinkField());
+members.Add("Smoothing", Smoothing_Element.Data.ToResoniteLinkField());
+members.Add("Silence", Silence_Element.Data.ToResoniteLinkField());
+members.Add("PP", PP_Element.Data.ToResoniteLinkField());
+members.Add("FF", FF_Element.Data.ToResoniteLinkField());
+members.Add("TH", TH_Element.Data.ToResoniteLinkField());
+members.Add("DD", DD_Element.Data.ToResoniteLinkField());
+members.Add("kk", kk_Element.Data.ToResoniteLinkField());
+members.Add("CH", CH_Element.Data.ToResoniteLinkField());
+members.Add("SS", SS_Element.Data.ToResoniteLinkField());
+members.Add("nn", nn_Element.Data.ToResoniteLinkField());
+members.Add("RR", RR_Element.Data.ToResoniteLinkField());
+members.Add("aa", aa_Element.Data.ToResoniteLinkField());
+members.Add("E", E_Element.Data.ToResoniteLinkField());
+members.Add("ih", ih_Element.Data.ToResoniteLinkField());
+members.Add("oh", oh_Element.Data.ToResoniteLinkField());
+members.Add("ou", ou_Element.Data.ToResoniteLinkField());
+members.Add("LaughterProbability", LaughterProbability_Element.Data.ToResoniteLinkField());
 }
 
 }

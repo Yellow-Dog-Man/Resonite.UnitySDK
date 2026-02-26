@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.RefEditor
-// Generated on: středa 25. února 2026 16:14:42
+// Generated on: čtvrtek 26. února 2026 10:04:47
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,17 +20,20 @@ namespace FrooxEngine
 public partial class RefEditor : global::FrooxEngine.Component, global::FrooxEngine.UIX.IUIGrabReceiver, global::FrooxEngine.UIX.IUIGrabbable
 
 {
-    public global::FrooxEngine.ISyncRef _targetRef;
-public global::FrooxEngine.IField<global::System.String> _textDrive;
-public global::FrooxEngine.UIX.Button _button;
+    public global::FrooxEngine.ISyncRef _targetRef { get => _targetRef_Element.Data; set => _targetRef_Element.Data = value; }
+public Field<global::FrooxEngine.RelayRef<global::FrooxEngine.ISyncRef>, global::FrooxEngine.ISyncRef> _targetRef_Element = new();
+public global::FrooxEngine.IField<global::System.String> _textDrive { get => _textDrive_Element.Data; set => _textDrive_Element.Data = value; }
+public Field<global::FrooxEngine.FieldDrive<global::System.String>, global::FrooxEngine.IField<global::System.String>> _textDrive_Element = new();
+public global::FrooxEngine.UIX.Button _button { get => _button_Element.Data; set => _button_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.UIX.Button>, global::FrooxEngine.UIX.Button> _button_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("_targetRef", _targetRef.ToResoniteReference(context));
-members.Add("_textDrive", _textDrive.ToResoniteReference(context));
-members.Add("_button", _button.ToResoniteReference(context));
+members.Add("_targetRef", _targetRef_Element.Data.ToResoniteReference(context));
+members.Add("_textDrive", _textDrive_Element.Data.ToResoniteReference(context));
+members.Add("_button", _button_Element.Data.ToResoniteReference(context));
 }
 
 }

@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.PhotonDust.ColorOverLifetimeLinearGradient
-// Generated on: středa 25. února 2026 16:14:18
+// Generated on: čtvrtek 26. února 2026 10:04:38
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,13 +20,13 @@ namespace FrooxEngine.PhotonDust
 public partial class ColorOverLifetimeLinearGradient : global::FrooxEngine.PhotonDust.ParticleSystemModule<global::System.Object>, global::FrooxEngine.ICustomInspector
 
 {
-    public global::FrooxEngine.LinearKey<UnityEngine.ColorX>[] ColorOverLifetime;
+    public global::SyncArray<global::FrooxEngine.SyncLinear<UnityEngine.ColorX>, global::FrooxEngine.LinearKey<UnityEngine.ColorX>> ColorOverLifetime = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("ColorOverLifetime", ColorOverLifetime.ToResoniteLinkArray());
+members.Add("ColorOverLifetime", ColorOverLifetime.Data.ToResoniteLinkArray());
 }
 
 }

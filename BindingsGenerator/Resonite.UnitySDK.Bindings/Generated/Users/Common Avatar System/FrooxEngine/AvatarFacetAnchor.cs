@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.AvatarFacetAnchor
-// Generated on: středa 25. února 2026 16:14:45
+// Generated on: čtvrtek 26. února 2026 10:04:49
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,15 +20,17 @@ namespace FrooxEngine
 public partial class AvatarFacetAnchor : global::FrooxEngine.Component, global::FrooxEngine.CommonAvatar.IAvatarObjectComponent
 
 {
-    public global::FrooxEngine.FacetAnchorPoint FacetAnchorPoint;
-public global::System.Nullable<global::System.Boolean> OverrideState;
+    public global::FrooxEngine.FacetAnchorPoint FacetAnchorPoint { get => FacetAnchorPoint_Element.Data; set => FacetAnchorPoint_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::FrooxEngine.FacetAnchorPoint>, global::FrooxEngine.FacetAnchorPoint> FacetAnchorPoint_Element = new();
+public global::System.Nullable<global::System.Boolean> OverrideState { get => OverrideState_Element.Data; set => OverrideState_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Nullable<global::System.Boolean>>, global::System.Nullable<global::System.Boolean>> OverrideState_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("FacetAnchorPoint", FacetAnchorPoint.ToResoniteLinkField());
-members.Add("OverrideState", OverrideState.ToResoniteLinkField());
+members.Add("FacetAnchorPoint", FacetAnchorPoint_Element.Data.ToResoniteLinkField());
+members.Add("OverrideState", OverrideState_Element.Data.ToResoniteLinkField());
 }
 
 }

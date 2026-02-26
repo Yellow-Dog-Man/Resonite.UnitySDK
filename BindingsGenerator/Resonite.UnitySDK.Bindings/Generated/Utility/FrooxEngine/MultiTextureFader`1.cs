@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.MultiTextureFader<>
-// Generated on: středa 25. února 2026 16:14:46
+// Generated on: čtvrtek 26. února 2026 10:04:50
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -21,23 +21,27 @@ public partial class MultiTextureFader<A> : global::FrooxEngine.Component
 	where A : class, global::FrooxEngine.ITexture
 
 {
-    public global::FrooxEngine.AssetRef<A> FirstTexture;
-public global::FrooxEngine.AssetRef<A> SecondTexture;
-public global::FrooxEngine.IField<global::System.Single> Lerp;
-public global::System.Single Position;
-public System.Collections.Generic.List<global::FrooxEngine.IAssetProvider<A>> Textures;
+    public global::FrooxEngine.AssetRef<A> FirstTexture { get => FirstTexture_Element.Data; set => FirstTexture_Element.Data = value; }
+public Field<global::FrooxEngine.DriveRef<global::FrooxEngine.AssetRef<A>>, global::FrooxEngine.AssetRef<A>> FirstTexture_Element = new();
+public global::FrooxEngine.AssetRef<A> SecondTexture { get => SecondTexture_Element.Data; set => SecondTexture_Element.Data = value; }
+public Field<global::FrooxEngine.DriveRef<global::FrooxEngine.AssetRef<A>>, global::FrooxEngine.AssetRef<A>> SecondTexture_Element = new();
+public global::FrooxEngine.IField<global::System.Single> Lerp { get => Lerp_Element.Data; set => Lerp_Element.Data = value; }
+public Field<global::FrooxEngine.FieldDrive<global::System.Single>, global::FrooxEngine.IField<global::System.Single>> Lerp_Element = new();
+public global::System.Single Position { get => Position_Element.Data; set => Position_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> Position_Element = new();
+public global::SyncFieldList<global::FrooxEngine.SyncAssetList<A>, global::FrooxEngine.IAssetProvider<A>, Field<global::FrooxEngine.AssetRef<A>, global::FrooxEngine.IAssetProvider<A>>> Textures = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("FirstTexture", FirstTexture.ToResoniteReference(context));
-members.Add("SecondTexture", SecondTexture.ToResoniteReference(context));
-members.Add("Lerp", Lerp.ToResoniteReference(context));
-members.Add("Position", Position.ToResoniteLinkField());
+members.Add("FirstTexture", FirstTexture_Element.Data.ToResoniteReference(context));
+members.Add("SecondTexture", SecondTexture_Element.Data.ToResoniteReference(context));
+members.Add("Lerp", Lerp_Element.Data.ToResoniteReference(context));
+members.Add("Position", Position_Element.Data.ToResoniteLinkField());
 members.Add("Textures", new ResoniteLink.SyncList()
 {
-    Elements = Textures.ConvertList(m => m.ToResoniteReference(context))
+    Elements = Textures.Data.ConvertList(m => m.Data.ToResoniteReference(context))
 });
 }
 

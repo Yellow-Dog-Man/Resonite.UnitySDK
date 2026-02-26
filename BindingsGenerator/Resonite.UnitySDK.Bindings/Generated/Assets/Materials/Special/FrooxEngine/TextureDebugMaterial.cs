@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.TextureDebugMaterial
-// Generated on: středa 25. února 2026 16:13:03
+// Generated on: čtvrtek 26. února 2026 10:03:34
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,15 +20,17 @@ namespace FrooxEngine
 public partial class TextureDebugMaterial : global::FrooxEngine.SingleShaderMaterialProvider
 
 {
-    public global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D> Texture;
-public global::System.Single TextureChannel;
+    public global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D> Texture { get => Texture_Element.Data; set => Texture_Element.Data = value; }
+public Field<global::FrooxEngine.AssetRef<global::FrooxEngine.ITexture2D>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D>> Texture_Element = new();
+public global::System.Single TextureChannel { get => TextureChannel_Element.Data; set => TextureChannel_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> TextureChannel_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Texture", Texture.ToResoniteReference(context));
-members.Add("TextureChannel", TextureChannel.ToResoniteLinkField());
+members.Add("Texture", Texture_Element.Data.ToResoniteReference(context));
+members.Add("TextureChannel", TextureChannel_Element.Data.ToResoniteLinkField());
 }
 
 }

@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.UIX.ProgressBar
-// Generated on: středa 25. února 2026 16:14:33
+// Generated on: čtvrtek 26. února 2026 10:04:43
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,23 +20,29 @@ namespace FrooxEngine.UIX
 public partial class ProgressBar : global::FrooxEngine.Component
 
 {
-    public global::System.Single Progress;
-public UnityEngine.Vector2 AnchorMinOffset;
-public UnityEngine.Vector2 AnchorMaxOffset;
-public global::FrooxEngine.IField<UnityEngine.Vector2> AnchorMin;
-public global::FrooxEngine.IField<UnityEngine.Vector2> AnchorMax;
-public global::System.Single Power;
+    public global::System.Single Progress { get => Progress_Element.Data; set => Progress_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> Progress_Element = new();
+public UnityEngine.Vector2 AnchorMinOffset { get => AnchorMinOffset_Element.Data; set => AnchorMinOffset_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.Vector2>, UnityEngine.Vector2> AnchorMinOffset_Element = new();
+public UnityEngine.Vector2 AnchorMaxOffset { get => AnchorMaxOffset_Element.Data; set => AnchorMaxOffset_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.Vector2>, UnityEngine.Vector2> AnchorMaxOffset_Element = new();
+public global::FrooxEngine.IField<UnityEngine.Vector2> AnchorMin { get => AnchorMin_Element.Data; set => AnchorMin_Element.Data = value; }
+public Field<global::FrooxEngine.FieldDrive<UnityEngine.Vector2>, global::FrooxEngine.IField<UnityEngine.Vector2>> AnchorMin_Element = new();
+public global::FrooxEngine.IField<UnityEngine.Vector2> AnchorMax { get => AnchorMax_Element.Data; set => AnchorMax_Element.Data = value; }
+public Field<global::FrooxEngine.FieldDrive<UnityEngine.Vector2>, global::FrooxEngine.IField<UnityEngine.Vector2>> AnchorMax_Element = new();
+public global::System.Single Power { get => Power_Element.Data; set => Power_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> Power_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Progress", Progress.ToResoniteLinkField());
-members.Add("AnchorMinOffset", AnchorMinOffset.ToResoniteLinkField());
-members.Add("AnchorMaxOffset", AnchorMaxOffset.ToResoniteLinkField());
-members.Add("AnchorMin", AnchorMin.ToResoniteReference(context));
-members.Add("AnchorMax", AnchorMax.ToResoniteReference(context));
-members.Add("Power", Power.ToResoniteLinkField());
+members.Add("Progress", Progress_Element.Data.ToResoniteLinkField());
+members.Add("AnchorMinOffset", AnchorMinOffset_Element.Data.ToResoniteLinkField());
+members.Add("AnchorMaxOffset", AnchorMaxOffset_Element.Data.ToResoniteLinkField());
+members.Add("AnchorMin", AnchorMin_Element.Data.ToResoniteReference(context));
+members.Add("AnchorMax", AnchorMax_Element.Data.ToResoniteReference(context));
+members.Add("Power", Power_Element.Data.ToResoniteLinkField());
 }
 
 }

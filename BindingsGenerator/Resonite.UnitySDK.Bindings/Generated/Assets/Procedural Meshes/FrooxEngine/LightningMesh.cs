@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.LightningMesh
-// Generated on: středa 25. února 2026 16:13:04
+// Generated on: čtvrtek 26. února 2026 10:03:36
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,31 +20,39 @@ namespace FrooxEngine
 public partial class LightningMesh : global::FrooxEngine.ProceduralMesh
 
 {
-    public global::System.Int32 Seed;
-public global::System.Int32 Points;
-public global::Elements.Assets.SegmentedBuilder.Topology Topology;
-public global::Elements.Assets.SegmentedBuilder.Shading Shading;
-public global::Elements.Assets.SegmentedBuilder.Ends Ends;
-public global::System.Boolean DualSided;
-public UnityEngine.Vector3 Point0;
-public UnityEngine.Vector3 Point1;
-public System.Collections.Generic.List<global::FrooxEngine.LightningMesh.StrikeProperties> StrikeLevels;
+    public global::System.Int32 Seed { get => Seed_Element.Data; set => Seed_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Int32>, global::System.Int32> Seed_Element = new();
+public global::System.Int32 Points { get => Points_Element.Data; set => Points_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Int32>, global::System.Int32> Points_Element = new();
+public global::Elements.Assets.SegmentedBuilder.Topology Topology { get => Topology_Element.Data; set => Topology_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::Elements.Assets.SegmentedBuilder.Topology>, global::Elements.Assets.SegmentedBuilder.Topology> Topology_Element = new();
+public global::Elements.Assets.SegmentedBuilder.Shading Shading { get => Shading_Element.Data; set => Shading_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::Elements.Assets.SegmentedBuilder.Shading>, global::Elements.Assets.SegmentedBuilder.Shading> Shading_Element = new();
+public global::Elements.Assets.SegmentedBuilder.Ends Ends { get => Ends_Element.Data; set => Ends_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::Elements.Assets.SegmentedBuilder.Ends>, global::Elements.Assets.SegmentedBuilder.Ends> Ends_Element = new();
+public global::System.Boolean DualSided { get => DualSided_Element.Data; set => DualSided_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> DualSided_Element = new();
+public UnityEngine.Vector3 Point0 { get => Point0_Element.Data; set => Point0_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.Vector3>, UnityEngine.Vector3> Point0_Element = new();
+public UnityEngine.Vector3 Point1 { get => Point1_Element.Data; set => Point1_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.Vector3>, UnityEngine.Vector3> Point1_Element = new();
+public global::SyncList<global::FrooxEngine.SyncList<global::FrooxEngine.LightningMesh.StrikeProperties>, global::FrooxEngine.LightningMesh.StrikeProperties> StrikeLevels = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Seed", Seed.ToResoniteLinkField());
-members.Add("Points", Points.ToResoniteLinkField());
-members.Add("Topology", Topology.ToResoniteLinkField());
-members.Add("Shading", Shading.ToResoniteLinkField());
-members.Add("Ends", Ends.ToResoniteLinkField());
-members.Add("DualSided", DualSided.ToResoniteLinkField());
-members.Add("Point0", Point0.ToResoniteLinkField());
-members.Add("Point1", Point1.ToResoniteLinkField());
+members.Add("Seed", Seed_Element.Data.ToResoniteLinkField());
+members.Add("Points", Points_Element.Data.ToResoniteLinkField());
+members.Add("Topology", Topology_Element.Data.ToResoniteLinkField());
+members.Add("Shading", Shading_Element.Data.ToResoniteLinkField());
+members.Add("Ends", Ends_Element.Data.ToResoniteLinkField());
+members.Add("DualSided", DualSided_Element.Data.ToResoniteLinkField());
+members.Add("Point0", Point0_Element.Data.ToResoniteLinkField());
+members.Add("Point1", Point1_Element.Data.ToResoniteLinkField());
 members.Add("StrikeLevels", new ResoniteLink.SyncList()
 {
-    Elements = StrikeLevels.ConvertList(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers(context) })
+    Elements = StrikeLevels.Data.ConvertList(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers(context) })
 });
 }
 

@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.WorldItemInterface
-// Generated on: středa 25. února 2026 16:14:15
+// Generated on: čtvrtek 26. února 2026 10:04:35
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,27 +20,35 @@ namespace FrooxEngine
 public partial class WorldItemInterface : global::FrooxEngine.FeedItemInterface
 
 {
-    public global::FrooxEngine.IField<global::System.String> WorldName;
-public global::FrooxEngine.IField<global::System.String> Description;
-public global::FrooxEngine.IField<System.Uri> ThumbnailUrl;
-public global::FrooxEngine.IField<global::System.Int32> JoinedUsers;
-public global::FrooxEngine.IField<global::System.Int32> ActiveUsers;
-public global::FrooxEngine.IField<global::System.Boolean> IsHost;
-public global::FrooxEngine.IField<global::System.Boolean> AwayKickEnabled;
-public global::FrooxEngine.IField<global::System.TimeSpan> AwayKickInterval;
+    public global::FrooxEngine.IField<global::System.String> WorldName { get => WorldName_Element.Data; set => WorldName_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.IField<global::System.String>>, global::FrooxEngine.IField<global::System.String>> WorldName_Element = new();
+public global::FrooxEngine.IField<global::System.String> Description { get => Description_Element.Data; set => Description_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.IField<global::System.String>>, global::FrooxEngine.IField<global::System.String>> Description_Element = new();
+public global::FrooxEngine.IField<System.Uri> ThumbnailUrl { get => ThumbnailUrl_Element.Data; set => ThumbnailUrl_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.IField<System.Uri>>, global::FrooxEngine.IField<System.Uri>> ThumbnailUrl_Element = new();
+public global::FrooxEngine.IField<global::System.Int32> JoinedUsers { get => JoinedUsers_Element.Data; set => JoinedUsers_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.IField<global::System.Int32>>, global::FrooxEngine.IField<global::System.Int32>> JoinedUsers_Element = new();
+public global::FrooxEngine.IField<global::System.Int32> ActiveUsers { get => ActiveUsers_Element.Data; set => ActiveUsers_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.IField<global::System.Int32>>, global::FrooxEngine.IField<global::System.Int32>> ActiveUsers_Element = new();
+public global::FrooxEngine.IField<global::System.Boolean> IsHost { get => IsHost_Element.Data; set => IsHost_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.IField<global::System.Boolean>>, global::FrooxEngine.IField<global::System.Boolean>> IsHost_Element = new();
+public global::FrooxEngine.IField<global::System.Boolean> AwayKickEnabled { get => AwayKickEnabled_Element.Data; set => AwayKickEnabled_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.IField<global::System.Boolean>>, global::FrooxEngine.IField<global::System.Boolean>> AwayKickEnabled_Element = new();
+public global::FrooxEngine.IField<global::System.TimeSpan> AwayKickInterval { get => AwayKickInterval_Element.Data; set => AwayKickInterval_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.IField<global::System.TimeSpan>>, global::FrooxEngine.IField<global::System.TimeSpan>> AwayKickInterval_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("WorldName", WorldName.ToResoniteReference(context));
-members.Add("Description", Description.ToResoniteReference(context));
-members.Add("ThumbnailUrl", ThumbnailUrl.ToResoniteReference(context));
-members.Add("JoinedUsers", JoinedUsers.ToResoniteReference(context));
-members.Add("ActiveUsers", ActiveUsers.ToResoniteReference(context));
-members.Add("IsHost", IsHost.ToResoniteReference(context));
-members.Add("AwayKickEnabled", AwayKickEnabled.ToResoniteReference(context));
-members.Add("AwayKickInterval", AwayKickInterval.ToResoniteReference(context));
+members.Add("WorldName", WorldName_Element.Data.ToResoniteReference(context));
+members.Add("Description", Description_Element.Data.ToResoniteReference(context));
+members.Add("ThumbnailUrl", ThumbnailUrl_Element.Data.ToResoniteReference(context));
+members.Add("JoinedUsers", JoinedUsers_Element.Data.ToResoniteReference(context));
+members.Add("ActiveUsers", ActiveUsers_Element.Data.ToResoniteReference(context));
+members.Add("IsHost", IsHost_Element.Data.ToResoniteReference(context));
+members.Add("AwayKickEnabled", AwayKickEnabled_Element.Data.ToResoniteReference(context));
+members.Add("AwayKickInterval", AwayKickInterval_Element.Data.ToResoniteReference(context));
 }
 
 }

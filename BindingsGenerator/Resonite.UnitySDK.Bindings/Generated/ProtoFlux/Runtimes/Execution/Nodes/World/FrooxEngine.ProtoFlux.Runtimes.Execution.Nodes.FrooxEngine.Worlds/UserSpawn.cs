@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [ProtoFluxBindings]FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Worlds.UserSpawn
-// Generated on: středa 25. února 2026 16:14:14
+// Generated on: čtvrtek 26. února 2026 10:04:35
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,16 +20,18 @@ namespace FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Worlds
 public partial class UserSpawn : global::FrooxEngine.FrooxEngine.ProtoFlux.ProxyVoidNode<global::FrooxEngine.ProtoFlux.FrooxEngineContext,global::ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Worlds.UserSpawn.Proxy>
 
 {
-    public global::FrooxEngine.ProtoFlux.INodeValueOutput<global::System.Boolean> OnlyHost;
-public global::FrooxEngine.ProtoFlux.ISyncNodeOperation OnSpawn;
-public global::FrooxEngine.ProtoFlux.NodeObjectOutput<global::FrooxEngine.User> SpawnedUser;
+    public global::FrooxEngine.ProtoFlux.INodeValueOutput<global::System.Boolean> OnlyHost { get => OnlyHost_Element.Data; set => OnlyHost_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.ProtoFlux.INodeValueOutput<global::System.Boolean>>, global::FrooxEngine.ProtoFlux.INodeValueOutput<global::System.Boolean>> OnlyHost_Element = new();
+public global::FrooxEngine.ProtoFlux.ISyncNodeOperation OnSpawn { get => OnSpawn_Element.Data; set => OnSpawn_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.ProtoFlux.ISyncNodeOperation>, global::FrooxEngine.ProtoFlux.ISyncNodeOperation> OnSpawn_Element = new();
+public global::FrooxEngine.ProtoFlux.NodeObjectOutput<global::FrooxEngine.User> SpawnedUser = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("OnlyHost", OnlyHost.ToResoniteReference(context));
-members.Add("OnSpawn", OnSpawn.ToResoniteReference(context));
+members.Add("OnlyHost", OnlyHost_Element.Data.ToResoniteReference(context));
+members.Add("OnSpawn", OnSpawn_Element.Data.ToResoniteReference(context));
 members.Add("SpawnedUser", new ResoniteLink.EmptyElement());
 }
 

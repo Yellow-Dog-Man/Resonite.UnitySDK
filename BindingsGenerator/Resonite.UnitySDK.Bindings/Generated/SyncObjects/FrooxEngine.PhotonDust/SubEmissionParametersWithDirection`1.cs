@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.PhotonDust.SubEmissionParametersWithDirection<>
-// Generated on: středa 25. února 2026 16:14:18
+// Generated on: čtvrtek 26. února 2026 10:04:38
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -21,25 +21,32 @@ public partial class SubEmissionParametersWithDirection<P> : global::FrooxEngine
 	where P : global::PhotonDust.SubEmissionParametersWithDirection
 
 {
-    public global::FrooxEngine.PhotonDust.ParticleSystem TargetSystem;
-public global::System.Boolean InheritOrientation;
-public global::System.Boolean InheritScale;
-public global::System.Boolean InheritColor;
-public global::PhotonDust.SubEmissionParametersWithDirection.DirectionInheritanceMode DirectionInheritance;
-public UnityEngine.Vector3 Direction;
-public global::System.Single RandomDirectionWeight;
+    public global::FrooxEngine.PhotonDust.ParticleSystem TargetSystem { get => TargetSystem_Element.Data; set => TargetSystem_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.PhotonDust.ParticleSystem>, global::FrooxEngine.PhotonDust.ParticleSystem> TargetSystem_Element = new();
+public global::System.Boolean InheritOrientation { get => InheritOrientation_Element.Data; set => InheritOrientation_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> InheritOrientation_Element = new();
+public global::System.Boolean InheritScale { get => InheritScale_Element.Data; set => InheritScale_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> InheritScale_Element = new();
+public global::System.Boolean InheritColor { get => InheritColor_Element.Data; set => InheritColor_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> InheritColor_Element = new();
+public global::PhotonDust.SubEmissionParametersWithDirection.DirectionInheritanceMode DirectionInheritance { get => DirectionInheritance_Element.Data; set => DirectionInheritance_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::PhotonDust.SubEmissionParametersWithDirection.DirectionInheritanceMode>, global::PhotonDust.SubEmissionParametersWithDirection.DirectionInheritanceMode> DirectionInheritance_Element = new();
+public UnityEngine.Vector3 Direction { get => Direction_Element.Data; set => Direction_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.Vector3>, UnityEngine.Vector3> Direction_Element = new();
+public global::System.Single RandomDirectionWeight { get => RandomDirectionWeight_Element.Data; set => RandomDirectionWeight_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> RandomDirectionWeight_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("TargetSystem", TargetSystem.ToResoniteReference(context));
-members.Add("InheritOrientation", InheritOrientation.ToResoniteLinkField());
-members.Add("InheritScale", InheritScale.ToResoniteLinkField());
-members.Add("InheritColor", InheritColor.ToResoniteLinkField());
-members.Add("DirectionInheritance", DirectionInheritance.ToResoniteLinkField());
-members.Add("Direction", Direction.ToResoniteLinkField());
-members.Add("RandomDirectionWeight", RandomDirectionWeight.ToResoniteLinkField());
+members.Add("TargetSystem", TargetSystem_Element.Data.ToResoniteReference(context));
+members.Add("InheritOrientation", InheritOrientation_Element.Data.ToResoniteLinkField());
+members.Add("InheritScale", InheritScale_Element.Data.ToResoniteLinkField());
+members.Add("InheritColor", InheritColor_Element.Data.ToResoniteLinkField());
+members.Add("DirectionInheritance", DirectionInheritance_Element.Data.ToResoniteLinkField());
+members.Add("Direction", Direction_Element.Data.ToResoniteLinkField());
+members.Add("RandomDirectionWeight", RandomDirectionWeight_Element.Data.ToResoniteLinkField());
 }
 
 }

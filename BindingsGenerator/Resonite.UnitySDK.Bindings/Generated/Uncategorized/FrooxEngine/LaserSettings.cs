@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.LaserSettings
-// Generated on: středa 25. února 2026 16:14:40
+// Generated on: čtvrtek 26. února 2026 10:04:46
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,25 +20,32 @@ namespace FrooxEngine
 public partial class LaserSettings : global::FrooxEngine.SettingComponent<global::FrooxEngine.LaserSettings>
 
 {
-    public global::System.Single SmoothSpeed;
-public global::System.Single ModulateStartAngle;
-public global::System.Single ModulateEndAngle;
-public global::System.Single ModulateExponent;
-public global::System.Single ModulateSpeedMultiplier;
-public global::System.Single StickThreshold;
-public global::System.Boolean ShowInDesktop;
+    public global::System.Single SmoothSpeed { get => SmoothSpeed_Element.Data; set => SmoothSpeed_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> SmoothSpeed_Element = new();
+public global::System.Single ModulateStartAngle { get => ModulateStartAngle_Element.Data; set => ModulateStartAngle_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> ModulateStartAngle_Element = new();
+public global::System.Single ModulateEndAngle { get => ModulateEndAngle_Element.Data; set => ModulateEndAngle_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> ModulateEndAngle_Element = new();
+public global::System.Single ModulateExponent { get => ModulateExponent_Element.Data; set => ModulateExponent_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> ModulateExponent_Element = new();
+public global::System.Single ModulateSpeedMultiplier { get => ModulateSpeedMultiplier_Element.Data; set => ModulateSpeedMultiplier_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> ModulateSpeedMultiplier_Element = new();
+public global::System.Single StickThreshold { get => StickThreshold_Element.Data; set => StickThreshold_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> StickThreshold_Element = new();
+public global::System.Boolean ShowInDesktop { get => ShowInDesktop_Element.Data; set => ShowInDesktop_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> ShowInDesktop_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("SmoothSpeed", SmoothSpeed.ToResoniteLinkField());
-members.Add("ModulateStartAngle", ModulateStartAngle.ToResoniteLinkField());
-members.Add("ModulateEndAngle", ModulateEndAngle.ToResoniteLinkField());
-members.Add("ModulateExponent", ModulateExponent.ToResoniteLinkField());
-members.Add("ModulateSpeedMultiplier", ModulateSpeedMultiplier.ToResoniteLinkField());
-members.Add("StickThreshold", StickThreshold.ToResoniteLinkField());
-members.Add("ShowInDesktop", ShowInDesktop.ToResoniteLinkField());
+members.Add("SmoothSpeed", SmoothSpeed_Element.Data.ToResoniteLinkField());
+members.Add("ModulateStartAngle", ModulateStartAngle_Element.Data.ToResoniteLinkField());
+members.Add("ModulateEndAngle", ModulateEndAngle_Element.Data.ToResoniteLinkField());
+members.Add("ModulateExponent", ModulateExponent_Element.Data.ToResoniteLinkField());
+members.Add("ModulateSpeedMultiplier", ModulateSpeedMultiplier_Element.Data.ToResoniteLinkField());
+members.Add("StickThreshold", StickThreshold_Element.Data.ToResoniteLinkField());
+members.Add("ShowInDesktop", ShowInDesktop_Element.Data.ToResoniteLinkField());
 }
 
 }

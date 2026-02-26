@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.MaterialAssetMetadata
-// Generated on: středa 25. února 2026 16:13:05
+// Generated on: čtvrtek 26. února 2026 10:03:36
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,23 +20,29 @@ namespace FrooxEngine
 public partial class MaterialAssetMetadata : global::FrooxEngine.Component
 
 {
-    public global::FrooxEngine.IAssetProvider<global::FrooxEngine.Material> Material;
-public global::System.Nullable<global::System.UInt32> VariantIndex;
-public global::System.Nullable<global::System.UInt32> RawVariantIndex;
-public global::System.String VariantID;
-public global::System.String RawVariantID;
-public global::System.Boolean WaitingForApply;
+    public global::FrooxEngine.IAssetProvider<global::FrooxEngine.Material> Material { get => Material_Element.Data; set => Material_Element.Data = value; }
+public Field<global::FrooxEngine.AssetRef<global::FrooxEngine.Material>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.Material>> Material_Element = new();
+public global::System.Nullable<global::System.UInt32> VariantIndex { get => VariantIndex_Element.Data; set => VariantIndex_Element.Data = value; }
+public Field<global::FrooxEngine.RawOutput<global::System.Nullable<global::System.UInt32>>, global::System.Nullable<global::System.UInt32>> VariantIndex_Element = new();
+public global::System.Nullable<global::System.UInt32> RawVariantIndex { get => RawVariantIndex_Element.Data; set => RawVariantIndex_Element.Data = value; }
+public Field<global::FrooxEngine.RawOutput<global::System.Nullable<global::System.UInt32>>, global::System.Nullable<global::System.UInt32>> RawVariantIndex_Element = new();
+public global::System.String VariantID { get => VariantID_Element.Data; set => VariantID_Element.Data = value; }
+public Field<global::FrooxEngine.RawOutput<global::System.String>, global::System.String> VariantID_Element = new();
+public global::System.String RawVariantID { get => RawVariantID_Element.Data; set => RawVariantID_Element.Data = value; }
+public Field<global::FrooxEngine.RawOutput<global::System.String>, global::System.String> RawVariantID_Element = new();
+public global::System.Boolean WaitingForApply { get => WaitingForApply_Element.Data; set => WaitingForApply_Element.Data = value; }
+public Field<global::FrooxEngine.RawOutput<global::System.Boolean>, global::System.Boolean> WaitingForApply_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Material", Material.ToResoniteReference(context));
-members.Add("VariantIndex", VariantIndex.ToResoniteLinkField());
-members.Add("RawVariantIndex", RawVariantIndex.ToResoniteLinkField());
-members.Add("VariantID", VariantID.ToResoniteLinkField());
-members.Add("RawVariantID", RawVariantID.ToResoniteLinkField());
-members.Add("WaitingForApply", WaitingForApply.ToResoniteLinkField());
+members.Add("Material", Material_Element.Data.ToResoniteReference(context));
+members.Add("VariantIndex", VariantIndex_Element.Data.ToResoniteLinkField());
+members.Add("RawVariantIndex", RawVariantIndex_Element.Data.ToResoniteLinkField());
+members.Add("VariantID", VariantID_Element.Data.ToResoniteLinkField());
+members.Add("RawVariantID", RawVariantID_Element.Data.ToResoniteLinkField());
+members.Add("WaitingForApply", WaitingForApply_Element.Data.ToResoniteLinkField());
 }
 
 }

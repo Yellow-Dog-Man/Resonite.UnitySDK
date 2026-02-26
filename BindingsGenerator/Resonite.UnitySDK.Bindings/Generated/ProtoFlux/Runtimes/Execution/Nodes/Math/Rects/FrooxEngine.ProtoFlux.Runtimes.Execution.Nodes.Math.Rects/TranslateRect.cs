@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [ProtoFluxBindings]FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.Math.Rects.TranslateRect
-// Generated on: středa 25. února 2026 16:13:53
+// Generated on: čtvrtek 26. února 2026 10:04:20
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,15 +20,17 @@ namespace FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.Math.Rects
 public partial class TranslateRect : global::FrooxEngine.ProtoFlux.Runtimes.Execution.ValueFunctionNode<global::ProtoFlux.Runtimes.Execution.ExecutionContext,UnityEngine.Rect>
 
 {
-    public global::FrooxEngine.ProtoFlux.INodeValueOutput<UnityEngine.Rect> Rect;
-public global::FrooxEngine.ProtoFlux.INodeValueOutput<UnityEngine.Vector2> Offset;
+    public global::FrooxEngine.ProtoFlux.INodeValueOutput<UnityEngine.Rect> Rect { get => Rect_Element.Data; set => Rect_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.ProtoFlux.INodeValueOutput<UnityEngine.Rect>>, global::FrooxEngine.ProtoFlux.INodeValueOutput<UnityEngine.Rect>> Rect_Element = new();
+public global::FrooxEngine.ProtoFlux.INodeValueOutput<UnityEngine.Vector2> Offset { get => Offset_Element.Data; set => Offset_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.ProtoFlux.INodeValueOutput<UnityEngine.Vector2>>, global::FrooxEngine.ProtoFlux.INodeValueOutput<UnityEngine.Vector2>> Offset_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Rect", Rect.ToResoniteReference(context));
-members.Add("Offset", Offset.ToResoniteReference(context));
+members.Add("Rect", Rect_Element.Data.ToResoniteReference(context));
+members.Add("Offset", Offset_Element.Data.ToResoniteReference(context));
 }
 
 }

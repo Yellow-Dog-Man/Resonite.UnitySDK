@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.CharacterTeleporter+Exit
-// Generated on: středa 25. února 2026 16:13:10
+// Generated on: čtvrtek 26. února 2026 10:03:40
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -22,27 +22,35 @@ namespace FrooxEngine
 public partial class Exit : global::FrooxEngine.SyncObject
 
 {
-    public global::System.Single Weight;
-public global::FrooxEngine.Slot TeleportExit;
-public global::FrooxEngine.Slot ParentAfterTeleport;
-public global::System.Boolean TransformRotation;
-public global::System.Boolean TransformScale;
-public global::System.Boolean RelativeExitPoint;
-public global::FrooxEngine.IPointGenerator RandomExitPointGenerator;
-public global::System.Nullable<UnityEngine.Vector3> TeleportExitVelocity;
+    public global::System.Single Weight { get => Weight_Element.Data; set => Weight_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> Weight_Element = new();
+public global::FrooxEngine.Slot TeleportExit { get => TeleportExit_Element.Data; set => TeleportExit_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> TeleportExit_Element = new();
+public global::FrooxEngine.Slot ParentAfterTeleport { get => ParentAfterTeleport_Element.Data; set => ParentAfterTeleport_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> ParentAfterTeleport_Element = new();
+public global::System.Boolean TransformRotation { get => TransformRotation_Element.Data; set => TransformRotation_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> TransformRotation_Element = new();
+public global::System.Boolean TransformScale { get => TransformScale_Element.Data; set => TransformScale_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> TransformScale_Element = new();
+public global::System.Boolean RelativeExitPoint { get => RelativeExitPoint_Element.Data; set => RelativeExitPoint_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> RelativeExitPoint_Element = new();
+public global::FrooxEngine.IPointGenerator RandomExitPointGenerator { get => RandomExitPointGenerator_Element.Data; set => RandomExitPointGenerator_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.IPointGenerator>, global::FrooxEngine.IPointGenerator> RandomExitPointGenerator_Element = new();
+public global::System.Nullable<UnityEngine.Vector3> TeleportExitVelocity { get => TeleportExitVelocity_Element.Data; set => TeleportExitVelocity_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Nullable<UnityEngine.Vector3>>, global::System.Nullable<UnityEngine.Vector3>> TeleportExitVelocity_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Weight", Weight.ToResoniteLinkField());
-members.Add("TeleportExit", TeleportExit.ToResoniteReference(context));
-members.Add("ParentAfterTeleport", ParentAfterTeleport.ToResoniteReference(context));
-members.Add("TransformRotation", TransformRotation.ToResoniteLinkField());
-members.Add("TransformScale", TransformScale.ToResoniteLinkField());
-members.Add("RelativeExitPoint", RelativeExitPoint.ToResoniteLinkField());
-members.Add("RandomExitPointGenerator", RandomExitPointGenerator.ToResoniteReference(context));
-members.Add("TeleportExitVelocity", TeleportExitVelocity.ToResoniteLinkField());
+members.Add("Weight", Weight_Element.Data.ToResoniteLinkField());
+members.Add("TeleportExit", TeleportExit_Element.Data.ToResoniteReference(context));
+members.Add("ParentAfterTeleport", ParentAfterTeleport_Element.Data.ToResoniteReference(context));
+members.Add("TransformRotation", TransformRotation_Element.Data.ToResoniteLinkField());
+members.Add("TransformScale", TransformScale_Element.Data.ToResoniteLinkField());
+members.Add("RelativeExitPoint", RelativeExitPoint_Element.Data.ToResoniteLinkField());
+members.Add("RandomExitPointGenerator", RandomExitPointGenerator_Element.Data.ToResoniteReference(context));
+members.Add("TeleportExitVelocity", TeleportExitVelocity_Element.Data.ToResoniteLinkField());
 }
 
 }

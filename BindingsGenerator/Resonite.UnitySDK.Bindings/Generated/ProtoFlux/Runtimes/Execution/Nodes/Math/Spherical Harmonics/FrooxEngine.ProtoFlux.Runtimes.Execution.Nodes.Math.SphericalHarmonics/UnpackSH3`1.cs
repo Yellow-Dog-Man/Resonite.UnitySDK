@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [ProtoFluxBindings]FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.Math.SphericalHarmonics.UnpackSH3<>
-// Generated on: středa 25. února 2026 16:13:54
+// Generated on: čtvrtek 26. února 2026 10:04:20
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -21,29 +21,30 @@ public partial class UnpackSH3<T> : global::FrooxEngine.ProtoFlux.Runtimes.Execu
 	where T : struct
 
 {
-    public global::FrooxEngine.ProtoFlux.INodeValueOutput<global::Elements.Core.SphericalHarmonicsL3<T>> SH;
-public global::FrooxEngine.ProtoFlux.NodeValueOutput<T> SH0;
-public global::FrooxEngine.ProtoFlux.NodeValueOutput<T> SH1;
-public global::FrooxEngine.ProtoFlux.NodeValueOutput<T> SH2;
-public global::FrooxEngine.ProtoFlux.NodeValueOutput<T> SH3;
-public global::FrooxEngine.ProtoFlux.NodeValueOutput<T> SH4;
-public global::FrooxEngine.ProtoFlux.NodeValueOutput<T> SH5;
-public global::FrooxEngine.ProtoFlux.NodeValueOutput<T> SH6;
-public global::FrooxEngine.ProtoFlux.NodeValueOutput<T> SH7;
-public global::FrooxEngine.ProtoFlux.NodeValueOutput<T> SH8;
-public global::FrooxEngine.ProtoFlux.NodeValueOutput<T> SH9;
-public global::FrooxEngine.ProtoFlux.NodeValueOutput<T> SH10;
-public global::FrooxEngine.ProtoFlux.NodeValueOutput<T> SH11;
-public global::FrooxEngine.ProtoFlux.NodeValueOutput<T> SH12;
-public global::FrooxEngine.ProtoFlux.NodeValueOutput<T> SH13;
-public global::FrooxEngine.ProtoFlux.NodeValueOutput<T> SH14;
-public global::FrooxEngine.ProtoFlux.NodeValueOutput<T> SH15;
+    public global::FrooxEngine.ProtoFlux.INodeValueOutput<global::Elements.Core.SphericalHarmonicsL3<T>> SH { get => SH_Element.Data; set => SH_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.ProtoFlux.INodeValueOutput<global::Elements.Core.SphericalHarmonicsL3<T>>>, global::FrooxEngine.ProtoFlux.INodeValueOutput<global::Elements.Core.SphericalHarmonicsL3<T>>> SH_Element = new();
+public global::FrooxEngine.ProtoFlux.NodeValueOutput<T> SH0 = new();
+public global::FrooxEngine.ProtoFlux.NodeValueOutput<T> SH1 = new();
+public global::FrooxEngine.ProtoFlux.NodeValueOutput<T> SH2 = new();
+public global::FrooxEngine.ProtoFlux.NodeValueOutput<T> SH3 = new();
+public global::FrooxEngine.ProtoFlux.NodeValueOutput<T> SH4 = new();
+public global::FrooxEngine.ProtoFlux.NodeValueOutput<T> SH5 = new();
+public global::FrooxEngine.ProtoFlux.NodeValueOutput<T> SH6 = new();
+public global::FrooxEngine.ProtoFlux.NodeValueOutput<T> SH7 = new();
+public global::FrooxEngine.ProtoFlux.NodeValueOutput<T> SH8 = new();
+public global::FrooxEngine.ProtoFlux.NodeValueOutput<T> SH9 = new();
+public global::FrooxEngine.ProtoFlux.NodeValueOutput<T> SH10 = new();
+public global::FrooxEngine.ProtoFlux.NodeValueOutput<T> SH11 = new();
+public global::FrooxEngine.ProtoFlux.NodeValueOutput<T> SH12 = new();
+public global::FrooxEngine.ProtoFlux.NodeValueOutput<T> SH13 = new();
+public global::FrooxEngine.ProtoFlux.NodeValueOutput<T> SH14 = new();
+public global::FrooxEngine.ProtoFlux.NodeValueOutput<T> SH15 = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("SH", SH.ToResoniteReference(context));
+members.Add("SH", SH_Element.Data.ToResoniteReference(context));
 members.Add("SH0", new ResoniteLink.EmptyElement());
 members.Add("SH1", new ResoniteLink.EmptyElement());
 members.Add("SH2", new ResoniteLink.EmptyElement());

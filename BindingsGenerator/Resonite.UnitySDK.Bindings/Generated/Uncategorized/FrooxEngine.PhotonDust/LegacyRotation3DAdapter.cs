@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.PhotonDust.LegacyRotation3DAdapter
-// Generated on: středa 25. února 2026 16:14:41
+// Generated on: čtvrtek 26. února 2026 10:04:46
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,15 +20,17 @@ namespace FrooxEngine.PhotonDust
 public partial class LegacyRotation3DAdapter : global::FrooxEngine.FieldAdapter<UnityEngine.Vector3>
 
 {
-    public global::FrooxEngine.AssetRef<global::FrooxEngine.Mesh> ParticleMesh;
-public global::FrooxEngine.IField<global::System.Boolean> UsingStretch;
+    public global::FrooxEngine.AssetRef<global::FrooxEngine.Mesh> ParticleMesh { get => ParticleMesh_Element.Data; set => ParticleMesh_Element.Data = value; }
+public Field<global::FrooxEngine.RelayRef<global::FrooxEngine.AssetRef<global::FrooxEngine.Mesh>>, global::FrooxEngine.AssetRef<global::FrooxEngine.Mesh>> ParticleMesh_Element = new();
+public global::FrooxEngine.IField<global::System.Boolean> UsingStretch { get => UsingStretch_Element.Data; set => UsingStretch_Element.Data = value; }
+public Field<global::FrooxEngine.RelayRef<global::FrooxEngine.IField<global::System.Boolean>>, global::FrooxEngine.IField<global::System.Boolean>> UsingStretch_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("ParticleMesh", ParticleMesh.ToResoniteReference(context));
-members.Add("UsingStretch", UsingStretch.ToResoniteReference(context));
+members.Add("ParticleMesh", ParticleMesh_Element.Data.ToResoniteReference(context));
+members.Add("UsingStretch", UsingStretch_Element.Data.ToResoniteReference(context));
 }
 
 }

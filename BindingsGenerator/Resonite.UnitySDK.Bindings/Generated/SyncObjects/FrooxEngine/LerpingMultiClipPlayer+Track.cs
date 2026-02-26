@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.LerpingMultiClipPlayer+Track
-// Generated on: středa 25. února 2026 16:13:06
+// Generated on: čtvrtek 26. února 2026 10:03:37
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -22,25 +22,32 @@ namespace FrooxEngine
 public partial class Track : global::FrooxEngine.SyncObject
 
 {
-    public global::FrooxEngine.IAssetProvider<global::FrooxEngine.AudioClip> Clip;
-public global::System.Single StartPosition;
-public global::System.Single EndPosition;
-public global::System.Single StartSpeed;
-public global::System.Single EndSpeed;
-public global::System.Single StartVolumeTransitionRatio;
-public global::System.Single EndVolumeTransitionRatio;
+    public global::FrooxEngine.IAssetProvider<global::FrooxEngine.AudioClip> Clip { get => Clip_Element.Data; set => Clip_Element.Data = value; }
+public Field<global::FrooxEngine.AssetRef<global::FrooxEngine.AudioClip>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.AudioClip>> Clip_Element = new();
+public global::System.Single StartPosition { get => StartPosition_Element.Data; set => StartPosition_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> StartPosition_Element = new();
+public global::System.Single EndPosition { get => EndPosition_Element.Data; set => EndPosition_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> EndPosition_Element = new();
+public global::System.Single StartSpeed { get => StartSpeed_Element.Data; set => StartSpeed_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> StartSpeed_Element = new();
+public global::System.Single EndSpeed { get => EndSpeed_Element.Data; set => EndSpeed_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> EndSpeed_Element = new();
+public global::System.Single StartVolumeTransitionRatio { get => StartVolumeTransitionRatio_Element.Data; set => StartVolumeTransitionRatio_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> StartVolumeTransitionRatio_Element = new();
+public global::System.Single EndVolumeTransitionRatio { get => EndVolumeTransitionRatio_Element.Data; set => EndVolumeTransitionRatio_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> EndVolumeTransitionRatio_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Clip", Clip.ToResoniteReference(context));
-members.Add("StartPosition", StartPosition.ToResoniteLinkField());
-members.Add("EndPosition", EndPosition.ToResoniteLinkField());
-members.Add("StartSpeed", StartSpeed.ToResoniteLinkField());
-members.Add("EndSpeed", EndSpeed.ToResoniteLinkField());
-members.Add("StartVolumeTransitionRatio", StartVolumeTransitionRatio.ToResoniteLinkField());
-members.Add("EndVolumeTransitionRatio", EndVolumeTransitionRatio.ToResoniteLinkField());
+members.Add("Clip", Clip_Element.Data.ToResoniteReference(context));
+members.Add("StartPosition", StartPosition_Element.Data.ToResoniteLinkField());
+members.Add("EndPosition", EndPosition_Element.Data.ToResoniteLinkField());
+members.Add("StartSpeed", StartSpeed_Element.Data.ToResoniteLinkField());
+members.Add("EndSpeed", EndSpeed_Element.Data.ToResoniteLinkField());
+members.Add("StartVolumeTransitionRatio", StartVolumeTransitionRatio_Element.Data.ToResoniteLinkField());
+members.Add("EndVolumeTransitionRatio", EndVolumeTransitionRatio_Element.Data.ToResoniteLinkField());
 }
 
 }

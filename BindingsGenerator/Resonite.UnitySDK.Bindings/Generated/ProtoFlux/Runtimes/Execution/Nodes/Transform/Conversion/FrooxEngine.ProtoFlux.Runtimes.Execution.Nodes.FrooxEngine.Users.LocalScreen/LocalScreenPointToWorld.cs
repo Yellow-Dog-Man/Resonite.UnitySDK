@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [ProtoFluxBindings]FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Users.LocalScreen.LocalScreenPointToWorld
-// Generated on: středa 25. února 2026 16:14:11
+// Generated on: čtvrtek 26. února 2026 10:04:33
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,15 +20,17 @@ namespace FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Users.Local
 public partial class LocalScreenPointToWorld : global::FrooxEngine.ProtoFlux.Runtimes.Execution.ValueFunctionNode<global::FrooxEngine.ProtoFlux.FrooxEngineContext,UnityEngine.Vector3>
 
 {
-    public global::FrooxEngine.ProtoFlux.INodeValueOutput<UnityEngine.Vector2> NormalizedScreenPoint;
-public global::FrooxEngine.ProtoFlux.INodeValueOutput<global::System.Single> Distance;
+    public global::FrooxEngine.ProtoFlux.INodeValueOutput<UnityEngine.Vector2> NormalizedScreenPoint { get => NormalizedScreenPoint_Element.Data; set => NormalizedScreenPoint_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.ProtoFlux.INodeValueOutput<UnityEngine.Vector2>>, global::FrooxEngine.ProtoFlux.INodeValueOutput<UnityEngine.Vector2>> NormalizedScreenPoint_Element = new();
+public global::FrooxEngine.ProtoFlux.INodeValueOutput<global::System.Single> Distance { get => Distance_Element.Data; set => Distance_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.ProtoFlux.INodeValueOutput<global::System.Single>>, global::FrooxEngine.ProtoFlux.INodeValueOutput<global::System.Single>> Distance_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("NormalizedScreenPoint", NormalizedScreenPoint.ToResoniteReference(context));
-members.Add("Distance", Distance.ToResoniteReference(context));
+members.Add("NormalizedScreenPoint", NormalizedScreenPoint_Element.Data.ToResoniteReference(context));
+members.Add("Distance", Distance_Element.Data.ToResoniteReference(context));
 }
 
 }

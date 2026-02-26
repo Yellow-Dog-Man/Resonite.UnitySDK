@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [ProtoFluxBindings]FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.ImpulseDemultiplexer
-// Generated on: středa 25. února 2026 16:13:46
+// Generated on: čtvrtek 26. února 2026 10:04:14
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,9 +20,10 @@ namespace FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes
 public partial class ImpulseDemultiplexer : global::FrooxEngine.ProtoFlux.Runtimes.Execution.VoidNode<global::ProtoFlux.Runtimes.Execution.ExecutionContext>
 
 {
-    public System.Collections.Generic.List<global::FrooxEngine.ProtoFlux.SyncNodeOperation> Operations;
-public global::FrooxEngine.ProtoFlux.INodeOperation OnTriggered;
-public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Int32> Index;
+    public global::SyncList<global::FrooxEngine.SyncList<global::FrooxEngine.ProtoFlux.SyncNodeOperation>, global::FrooxEngine.ProtoFlux.SyncNodeOperation> Operations = new();
+public global::FrooxEngine.ProtoFlux.INodeOperation OnTriggered { get => OnTriggered_Element.Data; set => OnTriggered_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.ProtoFlux.INodeOperation>, global::FrooxEngine.ProtoFlux.INodeOperation> OnTriggered_Element = new();
+public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Int32> Index = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
@@ -30,9 +31,9 @@ public override void CollectMembers(
     base.CollectMembers(members, context);
 members.Add("Operations", new ResoniteLink.SyncList()
 {
-    Elements = Operations.ConvertList(m => new ResoniteLink.EmptyElement())
+    Elements = Operations.Data.ConvertList(m => new ResoniteLink.EmptyElement())
 });
-members.Add("OnTriggered", OnTriggered.ToResoniteReference(context));
+members.Add("OnTriggered", OnTriggered_Element.Data.ToResoniteReference(context));
 members.Add("Index", new ResoniteLink.EmptyElement());
 }
 

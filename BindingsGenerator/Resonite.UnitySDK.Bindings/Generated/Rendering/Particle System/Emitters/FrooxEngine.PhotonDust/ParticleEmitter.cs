@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.PhotonDust.ParticleEmitter
-// Generated on: středa 25. února 2026 16:14:17
+// Generated on: čtvrtek 26. února 2026 10:04:37
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,21 +20,26 @@ namespace FrooxEngine.PhotonDust
 public abstract partial class ParticleEmitter : global::FrooxEngine.Component, global::FrooxEngine.PhotonDust.IParticleSystemSubsystem
 
 {
-    public global::FrooxEngine.PhotonDust.ParticleSystem System;
-public global::System.Single Rate;
-public global::System.Single BurstOnActivatedMin;
-public global::System.Single BurstOnActivatedMax;
-public global::System.Boolean BurstOnStart;
+    public global::FrooxEngine.PhotonDust.ParticleSystem System { get => System_Element.Data; set => System_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.PhotonDust.ParticleSystem>, global::FrooxEngine.PhotonDust.ParticleSystem> System_Element = new();
+public global::System.Single Rate { get => Rate_Element.Data; set => Rate_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> Rate_Element = new();
+public global::System.Single BurstOnActivatedMin { get => BurstOnActivatedMin_Element.Data; set => BurstOnActivatedMin_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> BurstOnActivatedMin_Element = new();
+public global::System.Single BurstOnActivatedMax { get => BurstOnActivatedMax_Element.Data; set => BurstOnActivatedMax_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> BurstOnActivatedMax_Element = new();
+public global::System.Boolean BurstOnStart { get => BurstOnStart_Element.Data; set => BurstOnStart_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> BurstOnStart_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("System", System.ToResoniteReference(context));
-members.Add("Rate", Rate.ToResoniteLinkField());
-members.Add("BurstOnActivatedMin", BurstOnActivatedMin.ToResoniteLinkField());
-members.Add("BurstOnActivatedMax", BurstOnActivatedMax.ToResoniteLinkField());
-members.Add("BurstOnStart", BurstOnStart.ToResoniteLinkField());
+members.Add("System", System_Element.Data.ToResoniteReference(context));
+members.Add("Rate", Rate_Element.Data.ToResoniteLinkField());
+members.Add("BurstOnActivatedMin", BurstOnActivatedMin_Element.Data.ToResoniteLinkField());
+members.Add("BurstOnActivatedMax", BurstOnActivatedMax_Element.Data.ToResoniteLinkField());
+members.Add("BurstOnStart", BurstOnStart_Element.Data.ToResoniteLinkField());
 }
 
 }

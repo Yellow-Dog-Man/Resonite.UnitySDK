@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [ProtoFluxBindings]FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Slots.SlotChildrenEvents
-// Generated on: středa 25. února 2026 16:14:05
+// Generated on: čtvrtek 26. února 2026 10:04:29
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,20 +20,24 @@ namespace FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Slots
 public partial class SlotChildrenEvents : global::FrooxEngine.ProtoFlux.Runtimes.Execution.VoidNode<global::FrooxEngine.ProtoFlux.FrooxEngineContext>
 
 {
-    public global::FrooxEngine.ProtoFlux.IGlobalValueProxy<global::FrooxEngine.Slot> Instance;
-public global::FrooxEngine.ProtoFlux.INodeObjectOutput<global::FrooxEngine.User> OnUser;
-public global::FrooxEngine.ProtoFlux.ISyncNodeOperation OnChildAdded;
-public global::FrooxEngine.ProtoFlux.ISyncNodeOperation OnChildRemoved;
-public global::FrooxEngine.ProtoFlux.NodeObjectOutput<global::FrooxEngine.Slot> Child;
+    public global::FrooxEngine.ProtoFlux.IGlobalValueProxy<global::FrooxEngine.Slot> Instance { get => Instance_Element.Data; set => Instance_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.ProtoFlux.IGlobalValueProxy<global::FrooxEngine.Slot>>, global::FrooxEngine.ProtoFlux.IGlobalValueProxy<global::FrooxEngine.Slot>> Instance_Element = new();
+public global::FrooxEngine.ProtoFlux.INodeObjectOutput<global::FrooxEngine.User> OnUser { get => OnUser_Element.Data; set => OnUser_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.ProtoFlux.INodeObjectOutput<global::FrooxEngine.User>>, global::FrooxEngine.ProtoFlux.INodeObjectOutput<global::FrooxEngine.User>> OnUser_Element = new();
+public global::FrooxEngine.ProtoFlux.ISyncNodeOperation OnChildAdded { get => OnChildAdded_Element.Data; set => OnChildAdded_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.ProtoFlux.ISyncNodeOperation>, global::FrooxEngine.ProtoFlux.ISyncNodeOperation> OnChildAdded_Element = new();
+public global::FrooxEngine.ProtoFlux.ISyncNodeOperation OnChildRemoved { get => OnChildRemoved_Element.Data; set => OnChildRemoved_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.ProtoFlux.ISyncNodeOperation>, global::FrooxEngine.ProtoFlux.ISyncNodeOperation> OnChildRemoved_Element = new();
+public global::FrooxEngine.ProtoFlux.NodeObjectOutput<global::FrooxEngine.Slot> Child = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Instance", Instance.ToResoniteReference(context));
-members.Add("OnUser", OnUser.ToResoniteReference(context));
-members.Add("OnChildAdded", OnChildAdded.ToResoniteReference(context));
-members.Add("OnChildRemoved", OnChildRemoved.ToResoniteReference(context));
+members.Add("Instance", Instance_Element.Data.ToResoniteReference(context));
+members.Add("OnUser", OnUser_Element.Data.ToResoniteReference(context));
+members.Add("OnChildAdded", OnChildAdded_Element.Data.ToResoniteReference(context));
+members.Add("OnChildRemoved", OnChildRemoved_Element.Data.ToResoniteReference(context));
 members.Add("Child", new ResoniteLink.EmptyElement());
 }
 

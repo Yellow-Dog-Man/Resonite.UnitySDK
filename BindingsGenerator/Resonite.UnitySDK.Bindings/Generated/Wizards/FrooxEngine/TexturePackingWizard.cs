@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.TexturePackingWizard
-// Generated on: středa 25. února 2026 16:14:47
+// Generated on: čtvrtek 26. února 2026 10:04:51
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,55 +20,77 @@ namespace FrooxEngine
 public partial class TexturePackingWizard : global::FrooxEngine.Component, global::FrooxEngine.IDeveloperInterface, global::FrooxEngine.ICustomInspector
 
 {
-    public global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D> RTexture;
-public global::System.Single RFallbackValue;
-public global::Elements.Core.ColorChannel RColorChannel;
-public global::System.Boolean RInvert;
-public global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D> GTexture;
-public global::System.Single GFallbackValue;
-public global::Elements.Core.ColorChannel GColorChannel;
-public global::System.Boolean GInvert;
-public global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D> BTexture;
-public global::System.Single BFallbackValue;
-public global::Elements.Core.ColorChannel BColorChannel;
-public global::System.Boolean BInvert;
-public global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D> ATexture;
-public global::System.Single AFallbackValue;
-public global::Elements.Core.ColorChannel AColorChannel;
-public global::System.Boolean AInvert;
-public global::System.Nullable<UnityEngine.Vector2Int> ResolutionOverride;
-public global::FrooxEngine.TexturePackingWizard.ResolutionSizeHandling ResolutionSizing;
-public UnityEngine.Vector2Int EmptyFallbackResolution;
-public global::System.Boolean GenerateMips;
-public global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D> OutputTexture;
-public global::System.Boolean IsProcessing;
+    public global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D> RTexture { get => RTexture_Element.Data; set => RTexture_Element.Data = value; }
+public Field<global::FrooxEngine.AssetRef<global::FrooxEngine.ITexture2D>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D>> RTexture_Element = new();
+public global::System.Single RFallbackValue { get => RFallbackValue_Element.Data; set => RFallbackValue_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> RFallbackValue_Element = new();
+public global::Elements.Core.ColorChannel RColorChannel { get => RColorChannel_Element.Data; set => RColorChannel_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::Elements.Core.ColorChannel>, global::Elements.Core.ColorChannel> RColorChannel_Element = new();
+public global::System.Boolean RInvert { get => RInvert_Element.Data; set => RInvert_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> RInvert_Element = new();
+public global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D> GTexture { get => GTexture_Element.Data; set => GTexture_Element.Data = value; }
+public Field<global::FrooxEngine.AssetRef<global::FrooxEngine.ITexture2D>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D>> GTexture_Element = new();
+public global::System.Single GFallbackValue { get => GFallbackValue_Element.Data; set => GFallbackValue_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> GFallbackValue_Element = new();
+public global::Elements.Core.ColorChannel GColorChannel { get => GColorChannel_Element.Data; set => GColorChannel_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::Elements.Core.ColorChannel>, global::Elements.Core.ColorChannel> GColorChannel_Element = new();
+public global::System.Boolean GInvert { get => GInvert_Element.Data; set => GInvert_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> GInvert_Element = new();
+public global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D> BTexture { get => BTexture_Element.Data; set => BTexture_Element.Data = value; }
+public Field<global::FrooxEngine.AssetRef<global::FrooxEngine.ITexture2D>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D>> BTexture_Element = new();
+public global::System.Single BFallbackValue { get => BFallbackValue_Element.Data; set => BFallbackValue_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> BFallbackValue_Element = new();
+public global::Elements.Core.ColorChannel BColorChannel { get => BColorChannel_Element.Data; set => BColorChannel_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::Elements.Core.ColorChannel>, global::Elements.Core.ColorChannel> BColorChannel_Element = new();
+public global::System.Boolean BInvert { get => BInvert_Element.Data; set => BInvert_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> BInvert_Element = new();
+public global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D> ATexture { get => ATexture_Element.Data; set => ATexture_Element.Data = value; }
+public Field<global::FrooxEngine.AssetRef<global::FrooxEngine.ITexture2D>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D>> ATexture_Element = new();
+public global::System.Single AFallbackValue { get => AFallbackValue_Element.Data; set => AFallbackValue_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> AFallbackValue_Element = new();
+public global::Elements.Core.ColorChannel AColorChannel { get => AColorChannel_Element.Data; set => AColorChannel_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::Elements.Core.ColorChannel>, global::Elements.Core.ColorChannel> AColorChannel_Element = new();
+public global::System.Boolean AInvert { get => AInvert_Element.Data; set => AInvert_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> AInvert_Element = new();
+public global::System.Nullable<UnityEngine.Vector2Int> ResolutionOverride { get => ResolutionOverride_Element.Data; set => ResolutionOverride_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Nullable<UnityEngine.Vector2Int>>, global::System.Nullable<UnityEngine.Vector2Int>> ResolutionOverride_Element = new();
+public global::FrooxEngine.TexturePackingWizard.ResolutionSizeHandling ResolutionSizing { get => ResolutionSizing_Element.Data; set => ResolutionSizing_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::FrooxEngine.TexturePackingWizard.ResolutionSizeHandling>, global::FrooxEngine.TexturePackingWizard.ResolutionSizeHandling> ResolutionSizing_Element = new();
+public UnityEngine.Vector2Int EmptyFallbackResolution { get => EmptyFallbackResolution_Element.Data; set => EmptyFallbackResolution_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.Vector2Int>, UnityEngine.Vector2Int> EmptyFallbackResolution_Element = new();
+public global::System.Boolean GenerateMips { get => GenerateMips_Element.Data; set => GenerateMips_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> GenerateMips_Element = new();
+public global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D> OutputTexture { get => OutputTexture_Element.Data; set => OutputTexture_Element.Data = value; }
+public Field<global::FrooxEngine.AssetRef<global::FrooxEngine.ITexture2D>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D>> OutputTexture_Element = new();
+public global::System.Boolean IsProcessing { get => IsProcessing_Element.Data; set => IsProcessing_Element.Data = value; }
+public Field<global::FrooxEngine.RawOutput<global::System.Boolean>, global::System.Boolean> IsProcessing_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("RTexture", RTexture.ToResoniteReference(context));
-members.Add("RFallbackValue", RFallbackValue.ToResoniteLinkField());
-members.Add("RColorChannel", RColorChannel.ToResoniteLinkField());
-members.Add("RInvert", RInvert.ToResoniteLinkField());
-members.Add("GTexture", GTexture.ToResoniteReference(context));
-members.Add("GFallbackValue", GFallbackValue.ToResoniteLinkField());
-members.Add("GColorChannel", GColorChannel.ToResoniteLinkField());
-members.Add("GInvert", GInvert.ToResoniteLinkField());
-members.Add("BTexture", BTexture.ToResoniteReference(context));
-members.Add("BFallbackValue", BFallbackValue.ToResoniteLinkField());
-members.Add("BColorChannel", BColorChannel.ToResoniteLinkField());
-members.Add("BInvert", BInvert.ToResoniteLinkField());
-members.Add("ATexture", ATexture.ToResoniteReference(context));
-members.Add("AFallbackValue", AFallbackValue.ToResoniteLinkField());
-members.Add("AColorChannel", AColorChannel.ToResoniteLinkField());
-members.Add("AInvert", AInvert.ToResoniteLinkField());
-members.Add("ResolutionOverride", ResolutionOverride.ToResoniteLinkField());
-members.Add("ResolutionSizing", ResolutionSizing.ToResoniteLinkField());
-members.Add("EmptyFallbackResolution", EmptyFallbackResolution.ToResoniteLinkField());
-members.Add("GenerateMips", GenerateMips.ToResoniteLinkField());
-members.Add("OutputTexture", OutputTexture.ToResoniteReference(context));
-members.Add("IsProcessing", IsProcessing.ToResoniteLinkField());
+members.Add("RTexture", RTexture_Element.Data.ToResoniteReference(context));
+members.Add("RFallbackValue", RFallbackValue_Element.Data.ToResoniteLinkField());
+members.Add("RColorChannel", RColorChannel_Element.Data.ToResoniteLinkField());
+members.Add("RInvert", RInvert_Element.Data.ToResoniteLinkField());
+members.Add("GTexture", GTexture_Element.Data.ToResoniteReference(context));
+members.Add("GFallbackValue", GFallbackValue_Element.Data.ToResoniteLinkField());
+members.Add("GColorChannel", GColorChannel_Element.Data.ToResoniteLinkField());
+members.Add("GInvert", GInvert_Element.Data.ToResoniteLinkField());
+members.Add("BTexture", BTexture_Element.Data.ToResoniteReference(context));
+members.Add("BFallbackValue", BFallbackValue_Element.Data.ToResoniteLinkField());
+members.Add("BColorChannel", BColorChannel_Element.Data.ToResoniteLinkField());
+members.Add("BInvert", BInvert_Element.Data.ToResoniteLinkField());
+members.Add("ATexture", ATexture_Element.Data.ToResoniteReference(context));
+members.Add("AFallbackValue", AFallbackValue_Element.Data.ToResoniteLinkField());
+members.Add("AColorChannel", AColorChannel_Element.Data.ToResoniteLinkField());
+members.Add("AInvert", AInvert_Element.Data.ToResoniteLinkField());
+members.Add("ResolutionOverride", ResolutionOverride_Element.Data.ToResoniteLinkField());
+members.Add("ResolutionSizing", ResolutionSizing_Element.Data.ToResoniteLinkField());
+members.Add("EmptyFallbackResolution", EmptyFallbackResolution_Element.Data.ToResoniteLinkField());
+members.Add("GenerateMips", GenerateMips_Element.Data.ToResoniteLinkField());
+members.Add("OutputTexture", OutputTexture_Element.Data.ToResoniteReference(context));
+members.Add("IsProcessing", IsProcessing_Element.Data.ToResoniteLinkField());
 }
 
 }

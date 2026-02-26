@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.Collider
-// Generated on: středa 25. února 2026 16:13:11
+// Generated on: čtvrtek 26. února 2026 10:03:41
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,21 +20,26 @@ namespace FrooxEngine
 public abstract partial class Collider : global::FrooxEngine.Component, global::FrooxEngine.ICollider, global::FrooxEngine.ICollidable, global::FrooxEngine.IBounded
 
 {
-    public UnityEngine.Vector3 Offset;
-public global::FrooxEngine.ColliderType Type;
-public global::System.Single Mass;
-public global::System.Boolean CharacterCollider;
-public global::System.Boolean IgnoreRaycasts;
+    public UnityEngine.Vector3 Offset { get => Offset_Element.Data; set => Offset_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.Vector3>, UnityEngine.Vector3> Offset_Element = new();
+public global::FrooxEngine.ColliderType Type { get => Type_Element.Data; set => Type_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::FrooxEngine.ColliderType>, global::FrooxEngine.ColliderType> Type_Element = new();
+public global::System.Single Mass { get => Mass_Element.Data; set => Mass_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> Mass_Element = new();
+public global::System.Boolean CharacterCollider { get => CharacterCollider_Element.Data; set => CharacterCollider_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> CharacterCollider_Element = new();
+public global::System.Boolean IgnoreRaycasts { get => IgnoreRaycasts_Element.Data; set => IgnoreRaycasts_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> IgnoreRaycasts_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Offset", Offset.ToResoniteLinkField());
-members.Add("Type", Type.ToResoniteLinkField());
-members.Add("Mass", Mass.ToResoniteLinkField());
-members.Add("CharacterCollider", CharacterCollider.ToResoniteLinkField());
-members.Add("IgnoreRaycasts", IgnoreRaycasts.ToResoniteLinkField());
+members.Add("Offset", Offset_Element.Data.ToResoniteLinkField());
+members.Add("Type", Type_Element.Data.ToResoniteLinkField());
+members.Add("Mass", Mass_Element.Data.ToResoniteLinkField());
+members.Add("CharacterCollider", CharacterCollider_Element.Data.ToResoniteLinkField());
+members.Add("IgnoreRaycasts", IgnoreRaycasts_Element.Data.ToResoniteLinkField());
 }
 
 }

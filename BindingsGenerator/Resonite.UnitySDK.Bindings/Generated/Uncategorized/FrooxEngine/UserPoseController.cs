@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.UserPoseController
-// Generated on: středa 25. února 2026 16:14:38
+// Generated on: čtvrtek 26. února 2026 10:04:45
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,27 +20,35 @@ namespace FrooxEngine
 public partial class UserPoseController : global::FrooxEngine.UserRootComponent
 
 {
-    public global::FrooxEngine.ScreenController ScreenController;
-public global::System.Single BodyHorizontalAngle;
-public global::System.Boolean RenderDebugVisuals;
-public global::System.Boolean PauseLocomotionAnimation;
-public global::System.Nullable<UnityEngine.Vector3> OverrideLocomotionVelocity;
-public global::System.Nullable<global::System.Single> OverrideLocomotionAngularVelocity;
-public global::System.Single SimulationSpeedRatio;
-public global::FrooxEngine.LocomotionAnimationConfiguration _defaultConfig;
+    public global::FrooxEngine.ScreenController ScreenController { get => ScreenController_Element.Data; set => ScreenController_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.ScreenController>, global::FrooxEngine.ScreenController> ScreenController_Element = new();
+public global::System.Single BodyHorizontalAngle { get => BodyHorizontalAngle_Element.Data; set => BodyHorizontalAngle_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> BodyHorizontalAngle_Element = new();
+public global::System.Boolean RenderDebugVisuals { get => RenderDebugVisuals_Element.Data; set => RenderDebugVisuals_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> RenderDebugVisuals_Element = new();
+public global::System.Boolean PauseLocomotionAnimation { get => PauseLocomotionAnimation_Element.Data; set => PauseLocomotionAnimation_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> PauseLocomotionAnimation_Element = new();
+public global::System.Nullable<UnityEngine.Vector3> OverrideLocomotionVelocity { get => OverrideLocomotionVelocity_Element.Data; set => OverrideLocomotionVelocity_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Nullable<UnityEngine.Vector3>>, global::System.Nullable<UnityEngine.Vector3>> OverrideLocomotionVelocity_Element = new();
+public global::System.Nullable<global::System.Single> OverrideLocomotionAngularVelocity { get => OverrideLocomotionAngularVelocity_Element.Data; set => OverrideLocomotionAngularVelocity_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Nullable<global::System.Single>>, global::System.Nullable<global::System.Single>> OverrideLocomotionAngularVelocity_Element = new();
+public global::System.Single SimulationSpeedRatio { get => SimulationSpeedRatio_Element.Data; set => SimulationSpeedRatio_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> SimulationSpeedRatio_Element = new();
+public global::FrooxEngine.LocomotionAnimationConfiguration _defaultConfig { get => _defaultConfig_Element.Data; set => _defaultConfig_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.LocomotionAnimationConfiguration>, global::FrooxEngine.LocomotionAnimationConfiguration> _defaultConfig_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("ScreenController", ScreenController.ToResoniteReference(context));
-members.Add("BodyHorizontalAngle", BodyHorizontalAngle.ToResoniteLinkField());
-members.Add("RenderDebugVisuals", RenderDebugVisuals.ToResoniteLinkField());
-members.Add("PauseLocomotionAnimation", PauseLocomotionAnimation.ToResoniteLinkField());
-members.Add("OverrideLocomotionVelocity", OverrideLocomotionVelocity.ToResoniteLinkField());
-members.Add("OverrideLocomotionAngularVelocity", OverrideLocomotionAngularVelocity.ToResoniteLinkField());
-members.Add("SimulationSpeedRatio", SimulationSpeedRatio.ToResoniteLinkField());
-members.Add("_defaultConfig", _defaultConfig.ToResoniteReference(context));
+members.Add("ScreenController", ScreenController_Element.Data.ToResoniteReference(context));
+members.Add("BodyHorizontalAngle", BodyHorizontalAngle_Element.Data.ToResoniteLinkField());
+members.Add("RenderDebugVisuals", RenderDebugVisuals_Element.Data.ToResoniteLinkField());
+members.Add("PauseLocomotionAnimation", PauseLocomotionAnimation_Element.Data.ToResoniteLinkField());
+members.Add("OverrideLocomotionVelocity", OverrideLocomotionVelocity_Element.Data.ToResoniteLinkField());
+members.Add("OverrideLocomotionAngularVelocity", OverrideLocomotionAngularVelocity_Element.Data.ToResoniteLinkField());
+members.Add("SimulationSpeedRatio", SimulationSpeedRatio_Element.Data.ToResoniteLinkField());
+members.Add("_defaultConfig", _defaultConfig_Element.Data.ToResoniteReference(context));
 }
 
 }

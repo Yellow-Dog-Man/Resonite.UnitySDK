@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.MeshRenderer
-// Generated on: středa 25. února 2026 16:13:05
+// Generated on: čtvrtek 26. února 2026 10:03:36
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,29 +20,33 @@ namespace FrooxEngine
 public partial class MeshRenderer : global::FrooxEngine.RenderableComponent, global::FrooxEngine.IBounded, global::FrooxEngine.IHighlightable, global::FrooxEngine.IRenderable
 
 {
-    public global::FrooxEngine.IAssetProvider<global::FrooxEngine.Mesh> Mesh;
-public System.Collections.Generic.List<global::FrooxEngine.IAssetProvider<global::FrooxEngine.Material>> Materials;
-public System.Collections.Generic.List<global::FrooxEngine.IAssetProvider<global::FrooxEngine.MaterialPropertyBlock>> MaterialPropertyBlocks;
-public global::Renderite.Shared.ShadowCastMode ShadowCastMode;
-public global::Renderite.Shared.MotionVectorMode MotionVectorMode;
-public global::System.Int32 SortingOrder;
+    public global::FrooxEngine.IAssetProvider<global::FrooxEngine.Mesh> Mesh { get => Mesh_Element.Data; set => Mesh_Element.Data = value; }
+public Field<global::FrooxEngine.AssetRef<global::FrooxEngine.Mesh>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.Mesh>> Mesh_Element = new();
+public global::SyncFieldList<global::FrooxEngine.SyncAssetList<global::FrooxEngine.Material>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.Material>, Field<global::FrooxEngine.AssetRef<global::FrooxEngine.Material>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.Material>>> Materials = new();
+public global::SyncFieldList<global::FrooxEngine.SyncAssetList<global::FrooxEngine.MaterialPropertyBlock>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.MaterialPropertyBlock>, Field<global::FrooxEngine.AssetRef<global::FrooxEngine.MaterialPropertyBlock>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.MaterialPropertyBlock>>> MaterialPropertyBlocks = new();
+public global::Renderite.Shared.ShadowCastMode ShadowCastMode { get => ShadowCastMode_Element.Data; set => ShadowCastMode_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::Renderite.Shared.ShadowCastMode>, global::Renderite.Shared.ShadowCastMode> ShadowCastMode_Element = new();
+public global::Renderite.Shared.MotionVectorMode MotionVectorMode { get => MotionVectorMode_Element.Data; set => MotionVectorMode_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::Renderite.Shared.MotionVectorMode>, global::Renderite.Shared.MotionVectorMode> MotionVectorMode_Element = new();
+public global::System.Int32 SortingOrder { get => SortingOrder_Element.Data; set => SortingOrder_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Int32>, global::System.Int32> SortingOrder_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Mesh", Mesh.ToResoniteReference(context));
+members.Add("Mesh", Mesh_Element.Data.ToResoniteReference(context));
 members.Add("Materials", new ResoniteLink.SyncList()
 {
-    Elements = Materials.ConvertList(m => m.ToResoniteReference(context))
+    Elements = Materials.Data.ConvertList(m => m.Data.ToResoniteReference(context))
 });
 members.Add("MaterialPropertyBlocks", new ResoniteLink.SyncList()
 {
-    Elements = MaterialPropertyBlocks.ConvertList(m => m.ToResoniteReference(context))
+    Elements = MaterialPropertyBlocks.Data.ConvertList(m => m.Data.ToResoniteReference(context))
 });
-members.Add("ShadowCastMode", ShadowCastMode.ToResoniteLinkField());
-members.Add("MotionVectorMode", MotionVectorMode.ToResoniteLinkField());
-members.Add("SortingOrder", SortingOrder.ToResoniteLinkField());
+members.Add("ShadowCastMode", ShadowCastMode_Element.Data.ToResoniteLinkField());
+members.Add("MotionVectorMode", MotionVectorMode_Element.Data.ToResoniteLinkField());
+members.Add("SortingOrder", SortingOrder_Element.Data.ToResoniteLinkField());
 }
 
 }

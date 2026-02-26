@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.SettingActionProxyBase<,>
-// Generated on: středa 25. února 2026 16:14:43
+// Generated on: čtvrtek 26. února 2026 10:04:48
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -22,17 +22,20 @@ public abstract partial class SettingActionProxyBase<S,D> : global::FrooxEngine.
 	where S : global::FrooxEngine.SettingComponent<S>
 
 {
-    public global::System.String ActionName;
-public global::System.String SubsettingGetter;
-public global::System.String SubsettingKey;
+    public global::System.String ActionName { get => ActionName_Element.Data; set => ActionName_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.String>, global::System.String> ActionName_Element = new();
+public global::System.String SubsettingGetter { get => SubsettingGetter_Element.Data; set => SubsettingGetter_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.String>, global::System.String> SubsettingGetter_Element = new();
+public global::System.String SubsettingKey { get => SubsettingKey_Element.Data; set => SubsettingKey_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.String>, global::System.String> SubsettingKey_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("ActionName", ActionName.ToResoniteLinkField());
-members.Add("SubsettingGetter", SubsettingGetter.ToResoniteLinkField());
-members.Add("SubsettingKey", SubsettingKey.ToResoniteLinkField());
+members.Add("ActionName", ActionName_Element.Data.ToResoniteLinkField());
+members.Add("SubsettingGetter", SubsettingGetter_Element.Data.ToResoniteLinkField());
+members.Add("SubsettingKey", SubsettingKey_Element.Data.ToResoniteLinkField());
 }
 
 }

@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.ComponentFilter
-// Generated on: středa 25. února 2026 16:13:11
+// Generated on: čtvrtek 26. února 2026 10:03:41
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,8 +20,8 @@ namespace FrooxEngine
 public partial class ComponentFilter : global::FrooxEngine.SyncObject
 
 {
-    public System.Collections.Generic.List<System.String> BlockedTypes;
-public System.Collections.Generic.List<System.String> RequiredTypes;
+    public global::SyncFieldList<global::FrooxEngine.SyncTypeList, System.String, Field<global::FrooxEngine.SyncType, System.String>> BlockedTypes = new();
+public global::SyncFieldList<global::FrooxEngine.SyncTypeList, System.String, Field<global::FrooxEngine.SyncType, System.String>> RequiredTypes = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
@@ -29,11 +29,11 @@ public override void CollectMembers(
     base.CollectMembers(members, context);
 members.Add("BlockedTypes", new ResoniteLink.SyncList()
 {
-    Elements = BlockedTypes.ConvertList(m => m.ToResoniteLinkField())
+    Elements = BlockedTypes.Data.ConvertList(m => m.Data.ToResoniteLinkField())
 });
 members.Add("RequiredTypes", new ResoniteLink.SyncList()
 {
-    Elements = RequiredTypes.ConvertList(m => m.ToResoniteLinkField())
+    Elements = RequiredTypes.Data.ConvertList(m => m.Data.ToResoniteLinkField())
 });
 }
 

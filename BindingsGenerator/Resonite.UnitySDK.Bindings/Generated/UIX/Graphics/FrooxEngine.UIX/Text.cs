@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.UIX.Text
-// Generated on: středa 25. února 2026 16:13:39
+// Generated on: čtvrtek 26. února 2026 10:04:08
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,60 +20,82 @@ namespace FrooxEngine.UIX
 public partial class Text : global::FrooxEngine.UIX.Graphic, global::FrooxEngine.UIX.ILayoutElement, global::FrooxEngine.IText
 
 {
-    public global::FrooxEngine.IAssetProvider<global::FrooxEngine.FontSet> Font;
-public global::System.String Content;
-public global::System.Boolean ParseRichText;
-public global::System.String NullContent;
-public global::System.Single Size;
-public global::Elements.Assets.TextHorizontalAlignment HorizontalAlign;
-public global::Elements.Assets.TextVerticalAlignment VerticalAlign;
-public global::Elements.Assets.AlignmentMode AlignmentMode;
-public UnityEngine.ColorX Color;
-public System.Collections.Generic.List<global::FrooxEngine.IAssetProvider<global::FrooxEngine.Material>> Materials;
-public global::System.Single LineHeight;
-public global::System.String MaskPattern;
-public global::System.Boolean HorizontalAutoSize;
-public global::System.Boolean VerticalAutoSize;
-public global::System.Single AutoSizeMin;
-public global::System.Single AutoSizeMax;
-public global::System.Int32 CaretPosition;
-public global::System.Int32 SelectionStart;
-public UnityEngine.ColorX CaretColor;
-public UnityEngine.ColorX SelectionColor;
-public global::System.Boolean InteractionTarget;
-public global::FrooxEngine.FontMaterial _legacyFontMaterial;
-public global::Elements.Core.Alignment _legacyAlign;
+    public global::FrooxEngine.IAssetProvider<global::FrooxEngine.FontSet> Font { get => Font_Element.Data; set => Font_Element.Data = value; }
+public Field<global::FrooxEngine.AssetRef<global::FrooxEngine.FontSet>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.FontSet>> Font_Element = new();
+public global::System.String Content { get => Content_Element.Data; set => Content_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.String>, global::System.String> Content_Element = new();
+public global::System.Boolean ParseRichText { get => ParseRichText_Element.Data; set => ParseRichText_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> ParseRichText_Element = new();
+public global::System.String NullContent { get => NullContent_Element.Data; set => NullContent_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.String>, global::System.String> NullContent_Element = new();
+public global::System.Single Size { get => Size_Element.Data; set => Size_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> Size_Element = new();
+public global::Elements.Assets.TextHorizontalAlignment HorizontalAlign { get => HorizontalAlign_Element.Data; set => HorizontalAlign_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::Elements.Assets.TextHorizontalAlignment>, global::Elements.Assets.TextHorizontalAlignment> HorizontalAlign_Element = new();
+public global::Elements.Assets.TextVerticalAlignment VerticalAlign { get => VerticalAlign_Element.Data; set => VerticalAlign_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::Elements.Assets.TextVerticalAlignment>, global::Elements.Assets.TextVerticalAlignment> VerticalAlign_Element = new();
+public global::Elements.Assets.AlignmentMode AlignmentMode { get => AlignmentMode_Element.Data; set => AlignmentMode_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::Elements.Assets.AlignmentMode>, global::Elements.Assets.AlignmentMode> AlignmentMode_Element = new();
+public UnityEngine.ColorX Color { get => Color_Element.Data; set => Color_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.ColorX>, UnityEngine.ColorX> Color_Element = new();
+public global::SyncFieldList<global::FrooxEngine.SyncAssetList<global::FrooxEngine.Material>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.Material>, Field<global::FrooxEngine.AssetRef<global::FrooxEngine.Material>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.Material>>> Materials = new();
+public global::System.Single LineHeight { get => LineHeight_Element.Data; set => LineHeight_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> LineHeight_Element = new();
+public global::System.String MaskPattern { get => MaskPattern_Element.Data; set => MaskPattern_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.String>, global::System.String> MaskPattern_Element = new();
+public global::System.Boolean HorizontalAutoSize { get => HorizontalAutoSize_Element.Data; set => HorizontalAutoSize_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> HorizontalAutoSize_Element = new();
+public global::System.Boolean VerticalAutoSize { get => VerticalAutoSize_Element.Data; set => VerticalAutoSize_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> VerticalAutoSize_Element = new();
+public global::System.Single AutoSizeMin { get => AutoSizeMin_Element.Data; set => AutoSizeMin_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> AutoSizeMin_Element = new();
+public global::System.Single AutoSizeMax { get => AutoSizeMax_Element.Data; set => AutoSizeMax_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> AutoSizeMax_Element = new();
+public global::System.Int32 CaretPosition { get => CaretPosition_Element.Data; set => CaretPosition_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Int32>, global::System.Int32> CaretPosition_Element = new();
+public global::System.Int32 SelectionStart { get => SelectionStart_Element.Data; set => SelectionStart_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Int32>, global::System.Int32> SelectionStart_Element = new();
+public UnityEngine.ColorX CaretColor { get => CaretColor_Element.Data; set => CaretColor_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.ColorX>, UnityEngine.ColorX> CaretColor_Element = new();
+public UnityEngine.ColorX SelectionColor { get => SelectionColor_Element.Data; set => SelectionColor_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.ColorX>, UnityEngine.ColorX> SelectionColor_Element = new();
+public global::System.Boolean InteractionTarget { get => InteractionTarget_Element.Data; set => InteractionTarget_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> InteractionTarget_Element = new();
+public global::FrooxEngine.FontMaterial _legacyFontMaterial { get => _legacyFontMaterial_Element.Data; set => _legacyFontMaterial_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.FontMaterial>, global::FrooxEngine.FontMaterial> _legacyFontMaterial_Element = new();
+public global::Elements.Core.Alignment _legacyAlign { get => _legacyAlign_Element.Data; set => _legacyAlign_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::Elements.Core.Alignment>, global::Elements.Core.Alignment> _legacyAlign_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Font", Font.ToResoniteReference(context));
-members.Add("Content", Content.ToResoniteLinkField());
-members.Add("ParseRichText", ParseRichText.ToResoniteLinkField());
-members.Add("NullContent", NullContent.ToResoniteLinkField());
-members.Add("Size", Size.ToResoniteLinkField());
-members.Add("HorizontalAlign", HorizontalAlign.ToResoniteLinkField());
-members.Add("VerticalAlign", VerticalAlign.ToResoniteLinkField());
-members.Add("AlignmentMode", AlignmentMode.ToResoniteLinkField());
-members.Add("Color", Color.ToResoniteLinkField());
+members.Add("Font", Font_Element.Data.ToResoniteReference(context));
+members.Add("Content", Content_Element.Data.ToResoniteLinkField());
+members.Add("ParseRichText", ParseRichText_Element.Data.ToResoniteLinkField());
+members.Add("NullContent", NullContent_Element.Data.ToResoniteLinkField());
+members.Add("Size", Size_Element.Data.ToResoniteLinkField());
+members.Add("HorizontalAlign", HorizontalAlign_Element.Data.ToResoniteLinkField());
+members.Add("VerticalAlign", VerticalAlign_Element.Data.ToResoniteLinkField());
+members.Add("AlignmentMode", AlignmentMode_Element.Data.ToResoniteLinkField());
+members.Add("Color", Color_Element.Data.ToResoniteLinkField());
 members.Add("Materials", new ResoniteLink.SyncList()
 {
-    Elements = Materials.ConvertList(m => m.ToResoniteReference(context))
+    Elements = Materials.Data.ConvertList(m => m.Data.ToResoniteReference(context))
 });
-members.Add("LineHeight", LineHeight.ToResoniteLinkField());
-members.Add("MaskPattern", MaskPattern.ToResoniteLinkField());
-members.Add("HorizontalAutoSize", HorizontalAutoSize.ToResoniteLinkField());
-members.Add("VerticalAutoSize", VerticalAutoSize.ToResoniteLinkField());
-members.Add("AutoSizeMin", AutoSizeMin.ToResoniteLinkField());
-members.Add("AutoSizeMax", AutoSizeMax.ToResoniteLinkField());
-members.Add("CaretPosition", CaretPosition.ToResoniteLinkField());
-members.Add("SelectionStart", SelectionStart.ToResoniteLinkField());
-members.Add("CaretColor", CaretColor.ToResoniteLinkField());
-members.Add("SelectionColor", SelectionColor.ToResoniteLinkField());
-members.Add("InteractionTarget", InteractionTarget.ToResoniteLinkField());
-members.Add("_legacyFontMaterial", _legacyFontMaterial.ToResoniteReference(context));
-members.Add("_legacyAlign", _legacyAlign.ToResoniteLinkField());
+members.Add("LineHeight", LineHeight_Element.Data.ToResoniteLinkField());
+members.Add("MaskPattern", MaskPattern_Element.Data.ToResoniteLinkField());
+members.Add("HorizontalAutoSize", HorizontalAutoSize_Element.Data.ToResoniteLinkField());
+members.Add("VerticalAutoSize", VerticalAutoSize_Element.Data.ToResoniteLinkField());
+members.Add("AutoSizeMin", AutoSizeMin_Element.Data.ToResoniteLinkField());
+members.Add("AutoSizeMax", AutoSizeMax_Element.Data.ToResoniteLinkField());
+members.Add("CaretPosition", CaretPosition_Element.Data.ToResoniteLinkField());
+members.Add("SelectionStart", SelectionStart_Element.Data.ToResoniteLinkField());
+members.Add("CaretColor", CaretColor_Element.Data.ToResoniteLinkField());
+members.Add("SelectionColor", SelectionColor_Element.Data.ToResoniteLinkField());
+members.Add("InteractionTarget", InteractionTarget_Element.Data.ToResoniteLinkField());
+members.Add("_legacyFontMaterial", _legacyFontMaterial_Element.Data.ToResoniteReference(context));
+members.Add("_legacyAlign", _legacyAlign_Element.Data.ToResoniteLinkField());
 }
 
 }

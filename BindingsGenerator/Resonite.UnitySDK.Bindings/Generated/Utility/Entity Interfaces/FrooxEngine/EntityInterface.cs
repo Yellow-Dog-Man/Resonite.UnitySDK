@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.EntityInterface
-// Generated on: středa 25. února 2026 16:13:06
+// Generated on: čtvrtek 26. února 2026 10:03:37
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,19 +20,23 @@ namespace FrooxEngine
 public abstract partial class EntityInterface : global::FrooxEngine.Component, global::FrooxEngine.IItemMetadataSource
 
 {
-    public global::FrooxEngine.IField<global::System.String> ItemName;
-public global::FrooxEngine.UserRef SpawningUser;
-public global::FrooxEngine.IField<global::System.String> SpawningUserID;
-public global::System.Boolean IsInstance;
+    public global::FrooxEngine.IField<global::System.String> ItemName { get => ItemName_Element.Data; set => ItemName_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.IField<global::System.String>>, global::FrooxEngine.IField<global::System.String>> ItemName_Element = new();
+public global::FrooxEngine.UserRef SpawningUser { get => SpawningUser_Element.Data; set => SpawningUser_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.UserRef>, global::FrooxEngine.UserRef> SpawningUser_Element = new();
+public global::FrooxEngine.IField<global::System.String> SpawningUserID { get => SpawningUserID_Element.Data; set => SpawningUserID_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.IField<global::System.String>>, global::FrooxEngine.IField<global::System.String>> SpawningUserID_Element = new();
+public global::System.Boolean IsInstance { get => IsInstance_Element.Data; set => IsInstance_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> IsInstance_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("ItemName", ItemName.ToResoniteReference(context));
-members.Add("SpawningUser", SpawningUser.ToResoniteReference(context));
-members.Add("SpawningUserID", SpawningUserID.ToResoniteReference(context));
-members.Add("IsInstance", IsInstance.ToResoniteLinkField());
+members.Add("ItemName", ItemName_Element.Data.ToResoniteReference(context));
+members.Add("SpawningUser", SpawningUser_Element.Data.ToResoniteReference(context));
+members.Add("SpawningUserID", SpawningUserID_Element.Data.ToResoniteReference(context));
+members.Add("IsInstance", IsInstance_Element.Data.ToResoniteLinkField());
 }
 
 }

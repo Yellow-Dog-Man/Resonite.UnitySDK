@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [ProtoFluxBindings]FrooxEngine.FrooxEngine.ProtoFlux.CoreNodes.AsyncValueFunctionProxy<>
-// Generated on: středa 25. února 2026 16:13:24
+// Generated on: čtvrtek 26. února 2026 10:03:53
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -21,7 +21,7 @@ public partial class AsyncValueFunctionProxy<TResult> : global::FrooxEngine.Froo
 	where TResult : struct
 
 {
-    public global::FrooxEngine.ProtoFlux.NodeValueOutput<TResult> Result;
+    public global::FrooxEngine.ProtoFlux.NodeValueOutput<TResult> Result = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)

@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.AudioInputDeviceSelection
-// Generated on: středa 25. února 2026 16:14:34
+// Generated on: čtvrtek 26. února 2026 10:04:43
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,27 +20,35 @@ namespace FrooxEngine
 public partial class AudioInputDeviceSelection : global::FrooxEngine.Component
 
 {
-    public global::System.Int32 SelectedDeviceIndex;
-public global::System.String SelectedDeviceName;
-public global::System.Boolean UseFilteredData;
-public global::FrooxEngine.Slot _deviceButtonRoot;
-public global::FrooxEngine.LocalAudioDeviceStream _audioStream;
-public global::FrooxEngine.AudioOutput _audioOutput;
-public global::FrooxEngine.VolumeMeter _deviceVolume;
-public global::FrooxEngine.UIX.ProgressBar _volumeBar;
+    public global::System.Int32 SelectedDeviceIndex { get => SelectedDeviceIndex_Element.Data; set => SelectedDeviceIndex_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Int32>, global::System.Int32> SelectedDeviceIndex_Element = new();
+public global::System.String SelectedDeviceName { get => SelectedDeviceName_Element.Data; set => SelectedDeviceName_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.String>, global::System.String> SelectedDeviceName_Element = new();
+public global::System.Boolean UseFilteredData { get => UseFilteredData_Element.Data; set => UseFilteredData_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> UseFilteredData_Element = new();
+public global::FrooxEngine.Slot _deviceButtonRoot { get => _deviceButtonRoot_Element.Data; set => _deviceButtonRoot_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> _deviceButtonRoot_Element = new();
+public global::FrooxEngine.LocalAudioDeviceStream _audioStream { get => _audioStream_Element.Data; set => _audioStream_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.LocalAudioDeviceStream>, global::FrooxEngine.LocalAudioDeviceStream> _audioStream_Element = new();
+public global::FrooxEngine.AudioOutput _audioOutput { get => _audioOutput_Element.Data; set => _audioOutput_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.AudioOutput>, global::FrooxEngine.AudioOutput> _audioOutput_Element = new();
+public global::FrooxEngine.VolumeMeter _deviceVolume { get => _deviceVolume_Element.Data; set => _deviceVolume_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.VolumeMeter>, global::FrooxEngine.VolumeMeter> _deviceVolume_Element = new();
+public global::FrooxEngine.UIX.ProgressBar _volumeBar { get => _volumeBar_Element.Data; set => _volumeBar_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.UIX.ProgressBar>, global::FrooxEngine.UIX.ProgressBar> _volumeBar_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("SelectedDeviceIndex", SelectedDeviceIndex.ToResoniteLinkField());
-members.Add("SelectedDeviceName", SelectedDeviceName.ToResoniteLinkField());
-members.Add("UseFilteredData", UseFilteredData.ToResoniteLinkField());
-members.Add("_deviceButtonRoot", _deviceButtonRoot.ToResoniteReference(context));
-members.Add("_audioStream", _audioStream.ToResoniteReference(context));
-members.Add("_audioOutput", _audioOutput.ToResoniteReference(context));
-members.Add("_deviceVolume", _deviceVolume.ToResoniteReference(context));
-members.Add("_volumeBar", _volumeBar.ToResoniteReference(context));
+members.Add("SelectedDeviceIndex", SelectedDeviceIndex_Element.Data.ToResoniteLinkField());
+members.Add("SelectedDeviceName", SelectedDeviceName_Element.Data.ToResoniteLinkField());
+members.Add("UseFilteredData", UseFilteredData_Element.Data.ToResoniteLinkField());
+members.Add("_deviceButtonRoot", _deviceButtonRoot_Element.Data.ToResoniteReference(context));
+members.Add("_audioStream", _audioStream_Element.Data.ToResoniteReference(context));
+members.Add("_audioOutput", _audioOutput_Element.Data.ToResoniteReference(context));
+members.Add("_deviceVolume", _deviceVolume_Element.Data.ToResoniteReference(context));
+members.Add("_volumeBar", _volumeBar_Element.Data.ToResoniteReference(context));
 }
 
 }

@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.SimplexNoiseClip
-// Generated on: středa 25. února 2026 16:13:04
+// Generated on: čtvrtek 26. února 2026 10:03:35
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,15 +20,17 @@ namespace FrooxEngine
 public partial class SimplexNoiseClip : global::FrooxEngine.PeriodicWaveClip
 
 {
-    public global::System.Single Duration;
-public global::System.Single Offset;
+    public global::System.Single Duration { get => Duration_Element.Data; set => Duration_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> Duration_Element = new();
+public global::System.Single Offset { get => Offset_Element.Data; set => Offset_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> Offset_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Duration", Duration.ToResoniteLinkField());
-members.Add("Offset", Offset.ToResoniteLinkField());
+members.Add("Duration", Duration_Element.Data.ToResoniteLinkField());
+members.Add("Offset", Offset_Element.Data.ToResoniteLinkField());
 }
 
 }

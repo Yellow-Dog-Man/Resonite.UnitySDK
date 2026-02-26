@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [ProtoFluxBindings]FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.Math.Geometry3D.TriangleNormal
-// Generated on: středa 25. února 2026 16:13:52
+// Generated on: čtvrtek 26. února 2026 10:04:19
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,19 +20,22 @@ namespace FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.Math.Geometry3D
 public partial class TriangleNormal : global::FrooxEngine.ProtoFlux.Runtimes.Execution.VoidNode<global::ProtoFlux.Runtimes.Execution.ExecutionContext>
 
 {
-    public global::FrooxEngine.ProtoFlux.INodeValueOutput<UnityEngine.Vector3> Point0;
-public global::FrooxEngine.ProtoFlux.INodeValueOutput<UnityEngine.Vector3> Point1;
-public global::FrooxEngine.ProtoFlux.INodeValueOutput<UnityEngine.Vector3> Point2;
-public global::FrooxEngine.ProtoFlux.NodeValueOutput<UnityEngine.Vector3> Normal;
-public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Boolean> IsValid;
+    public global::FrooxEngine.ProtoFlux.INodeValueOutput<UnityEngine.Vector3> Point0 { get => Point0_Element.Data; set => Point0_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.ProtoFlux.INodeValueOutput<UnityEngine.Vector3>>, global::FrooxEngine.ProtoFlux.INodeValueOutput<UnityEngine.Vector3>> Point0_Element = new();
+public global::FrooxEngine.ProtoFlux.INodeValueOutput<UnityEngine.Vector3> Point1 { get => Point1_Element.Data; set => Point1_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.ProtoFlux.INodeValueOutput<UnityEngine.Vector3>>, global::FrooxEngine.ProtoFlux.INodeValueOutput<UnityEngine.Vector3>> Point1_Element = new();
+public global::FrooxEngine.ProtoFlux.INodeValueOutput<UnityEngine.Vector3> Point2 { get => Point2_Element.Data; set => Point2_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.ProtoFlux.INodeValueOutput<UnityEngine.Vector3>>, global::FrooxEngine.ProtoFlux.INodeValueOutput<UnityEngine.Vector3>> Point2_Element = new();
+public global::FrooxEngine.ProtoFlux.NodeValueOutput<UnityEngine.Vector3> Normal = new();
+public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Boolean> IsValid = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Point0", Point0.ToResoniteReference(context));
-members.Add("Point1", Point1.ToResoniteReference(context));
-members.Add("Point2", Point2.ToResoniteReference(context));
+members.Add("Point0", Point0_Element.Data.ToResoniteReference(context));
+members.Add("Point1", Point1_Element.Data.ToResoniteReference(context));
+members.Add("Point2", Point2_Element.Data.ToResoniteReference(context));
 members.Add("Normal", new ResoniteLink.EmptyElement());
 members.Add("IsValid", new ResoniteLink.EmptyElement());
 }

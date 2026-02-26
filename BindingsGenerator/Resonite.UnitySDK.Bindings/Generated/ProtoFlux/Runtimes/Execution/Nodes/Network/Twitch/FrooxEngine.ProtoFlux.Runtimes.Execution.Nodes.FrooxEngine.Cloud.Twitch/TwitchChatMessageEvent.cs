@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [ProtoFluxBindings]FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Cloud.Twitch.TwitchChatMessageEvent
-// Generated on: středa 25. února 2026 16:13:55
+// Generated on: čtvrtek 26. února 2026 10:04:21
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,29 +20,30 @@ namespace FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Cloud.Twitc
 public partial class TwitchChatMessageEvent : global::FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Cloud.Twitch.TwitchEventsNode
 
 {
-    public global::FrooxEngine.ProtoFlux.ISyncNodeOperation OnMessage;
-public global::FrooxEngine.ProtoFlux.NodeObjectOutput<global::System.String> Message;
-public global::FrooxEngine.ProtoFlux.NodeObjectOutput<global::System.String> UserId;
-public global::FrooxEngine.ProtoFlux.NodeObjectOutput<global::System.String> DisplayName;
-public global::FrooxEngine.ProtoFlux.NodeValueOutput<UnityEngine.ColorX> Color;
-public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Boolean> IsHighlighted;
-public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Boolean> IsSubscriber;
-public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Boolean> IsModerator;
-public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Boolean> IsBroadcaster;
-public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Boolean> IsTurbo;
-public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Boolean> IsVIP;
-public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::TwitchLib.Client.Enums.BadgeColor> CheerBadge;
-public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Int32> CheerAmount;
-public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Int32> Bits;
-public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Double> BitsDollars;
-public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Int32> SubscribedMonthCount;
-public global::FrooxEngine.ProtoFlux.NodeObjectOutput<global::System.String> CustomRewardId;
+    public global::FrooxEngine.ProtoFlux.ISyncNodeOperation OnMessage { get => OnMessage_Element.Data; set => OnMessage_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.ProtoFlux.ISyncNodeOperation>, global::FrooxEngine.ProtoFlux.ISyncNodeOperation> OnMessage_Element = new();
+public global::FrooxEngine.ProtoFlux.NodeObjectOutput<global::System.String> Message = new();
+public global::FrooxEngine.ProtoFlux.NodeObjectOutput<global::System.String> UserId = new();
+public global::FrooxEngine.ProtoFlux.NodeObjectOutput<global::System.String> DisplayName = new();
+public global::FrooxEngine.ProtoFlux.NodeValueOutput<UnityEngine.ColorX> Color = new();
+public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Boolean> IsHighlighted = new();
+public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Boolean> IsSubscriber = new();
+public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Boolean> IsModerator = new();
+public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Boolean> IsBroadcaster = new();
+public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Boolean> IsTurbo = new();
+public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Boolean> IsVIP = new();
+public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::TwitchLib.Client.Enums.BadgeColor> CheerBadge = new();
+public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Int32> CheerAmount = new();
+public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Int32> Bits = new();
+public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Double> BitsDollars = new();
+public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Int32> SubscribedMonthCount = new();
+public global::FrooxEngine.ProtoFlux.NodeObjectOutput<global::System.String> CustomRewardId = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("OnMessage", OnMessage.ToResoniteReference(context));
+members.Add("OnMessage", OnMessage_Element.Data.ToResoniteReference(context));
 members.Add("Message", new ResoniteLink.EmptyElement());
 members.Add("UserId", new ResoniteLink.EmptyElement());
 members.Add("DisplayName", new ResoniteLink.EmptyElement());

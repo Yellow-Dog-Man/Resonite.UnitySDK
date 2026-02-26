@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.RootSpace
-// Generated on: středa 25. února 2026 16:13:10
+// Generated on: čtvrtek 26. února 2026 10:03:40
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,19 +20,23 @@ namespace FrooxEngine
 public partial class RootSpace : global::FrooxEngine.SyncObject, global::FrooxEngine.ICustomInspector
 
 {
-    public global::FrooxEngine.Slot LocalSpace;
-public global::System.Boolean UseParentSpace;
-public global::FrooxEngine.RootSpace.DefaultSpace Default;
-public global::FrooxEngine.RootSpace OverrideRootSpace;
+    public global::FrooxEngine.Slot LocalSpace { get => LocalSpace_Element.Data; set => LocalSpace_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> LocalSpace_Element = new();
+public global::System.Boolean UseParentSpace { get => UseParentSpace_Element.Data; set => UseParentSpace_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> UseParentSpace_Element = new();
+public global::FrooxEngine.RootSpace.DefaultSpace Default { get => Default_Element.Data; set => Default_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::FrooxEngine.RootSpace.DefaultSpace>, global::FrooxEngine.RootSpace.DefaultSpace> Default_Element = new();
+public global::FrooxEngine.RootSpace OverrideRootSpace { get => OverrideRootSpace_Element.Data; set => OverrideRootSpace_Element.Data = value; }
+public Field<global::FrooxEngine.RelayRef<global::FrooxEngine.RootSpace>, global::FrooxEngine.RootSpace> OverrideRootSpace_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("LocalSpace", LocalSpace.ToResoniteReference(context));
-members.Add("UseParentSpace", UseParentSpace.ToResoniteLinkField());
-members.Add("Default", Default.ToResoniteLinkField());
-members.Add("OverrideRootSpace", OverrideRootSpace.ToResoniteReference(context));
+members.Add("LocalSpace", LocalSpace_Element.Data.ToResoniteReference(context));
+members.Add("UseParentSpace", UseParentSpace_Element.Data.ToResoniteLinkField());
+members.Add("Default", Default_Element.Data.ToResoniteLinkField());
+members.Add("OverrideRootSpace", OverrideRootSpace_Element.Data.ToResoniteReference(context));
 }
 
 }

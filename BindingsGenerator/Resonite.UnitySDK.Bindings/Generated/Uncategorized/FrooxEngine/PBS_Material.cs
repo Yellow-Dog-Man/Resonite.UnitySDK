@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.PBS_Material
-// Generated on: středa 25. února 2026 16:13:02
+// Generated on: čtvrtek 26. února 2026 10:03:33
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,53 +20,74 @@ namespace FrooxEngine
 public abstract partial class PBS_Material : global::FrooxEngine.SingleShaderMaterialProvider, global::FrooxEngine.ICommonMaterial, global::FrooxEngine.IPBS_Material
 
 {
-    public UnityEngine.Vector2 TextureScale;
-public UnityEngine.Vector2 TextureOffset;
-public UnityEngine.Vector2 DetailTextureScale;
-public UnityEngine.Vector2 DetailTextureOffset;
-public UnityEngine.ColorX AlbedoColor;
-public global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D> AlbedoTexture;
-public UnityEngine.ColorX EmissiveColor;
-public global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D> EmissiveMap;
-public global::System.Single NormalScale;
-public global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D> NormalMap;
-public global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D> HeightMap;
-public global::System.Single HeightScale;
-public global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D> OcclusionMap;
-public global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D> DetailAlbedoTexture;
-public global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D> DetailNormalMap;
-public global::System.Single DetailNormalScale;
-public global::FrooxEngine.BlendMode BlendMode;
-public global::System.Single AlphaCutoff;
-public global::System.Single OffsetFactor;
-public global::System.Single OffsetUnits;
-public global::System.Int32 RenderQueue;
+    public UnityEngine.Vector2 TextureScale { get => TextureScale_Element.Data; set => TextureScale_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.Vector2>, UnityEngine.Vector2> TextureScale_Element = new();
+public UnityEngine.Vector2 TextureOffset { get => TextureOffset_Element.Data; set => TextureOffset_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.Vector2>, UnityEngine.Vector2> TextureOffset_Element = new();
+public UnityEngine.Vector2 DetailTextureScale { get => DetailTextureScale_Element.Data; set => DetailTextureScale_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.Vector2>, UnityEngine.Vector2> DetailTextureScale_Element = new();
+public UnityEngine.Vector2 DetailTextureOffset { get => DetailTextureOffset_Element.Data; set => DetailTextureOffset_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.Vector2>, UnityEngine.Vector2> DetailTextureOffset_Element = new();
+public UnityEngine.ColorX AlbedoColor { get => AlbedoColor_Element.Data; set => AlbedoColor_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.ColorX>, UnityEngine.ColorX> AlbedoColor_Element = new();
+public global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D> AlbedoTexture { get => AlbedoTexture_Element.Data; set => AlbedoTexture_Element.Data = value; }
+public Field<global::FrooxEngine.AssetRef<global::FrooxEngine.ITexture2D>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D>> AlbedoTexture_Element = new();
+public UnityEngine.ColorX EmissiveColor { get => EmissiveColor_Element.Data; set => EmissiveColor_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.ColorX>, UnityEngine.ColorX> EmissiveColor_Element = new();
+public global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D> EmissiveMap { get => EmissiveMap_Element.Data; set => EmissiveMap_Element.Data = value; }
+public Field<global::FrooxEngine.AssetRef<global::FrooxEngine.ITexture2D>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D>> EmissiveMap_Element = new();
+public global::System.Single NormalScale { get => NormalScale_Element.Data; set => NormalScale_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> NormalScale_Element = new();
+public global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D> NormalMap { get => NormalMap_Element.Data; set => NormalMap_Element.Data = value; }
+public Field<global::FrooxEngine.AssetRef<global::FrooxEngine.ITexture2D>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D>> NormalMap_Element = new();
+public global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D> HeightMap { get => HeightMap_Element.Data; set => HeightMap_Element.Data = value; }
+public Field<global::FrooxEngine.AssetRef<global::FrooxEngine.ITexture2D>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D>> HeightMap_Element = new();
+public global::System.Single HeightScale { get => HeightScale_Element.Data; set => HeightScale_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> HeightScale_Element = new();
+public global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D> OcclusionMap { get => OcclusionMap_Element.Data; set => OcclusionMap_Element.Data = value; }
+public Field<global::FrooxEngine.AssetRef<global::FrooxEngine.ITexture2D>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D>> OcclusionMap_Element = new();
+public global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D> DetailAlbedoTexture { get => DetailAlbedoTexture_Element.Data; set => DetailAlbedoTexture_Element.Data = value; }
+public Field<global::FrooxEngine.AssetRef<global::FrooxEngine.ITexture2D>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D>> DetailAlbedoTexture_Element = new();
+public global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D> DetailNormalMap { get => DetailNormalMap_Element.Data; set => DetailNormalMap_Element.Data = value; }
+public Field<global::FrooxEngine.AssetRef<global::FrooxEngine.ITexture2D>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D>> DetailNormalMap_Element = new();
+public global::System.Single DetailNormalScale { get => DetailNormalScale_Element.Data; set => DetailNormalScale_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> DetailNormalScale_Element = new();
+public global::FrooxEngine.BlendMode BlendMode { get => BlendMode_Element.Data; set => BlendMode_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::FrooxEngine.BlendMode>, global::FrooxEngine.BlendMode> BlendMode_Element = new();
+public global::System.Single AlphaCutoff { get => AlphaCutoff_Element.Data; set => AlphaCutoff_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> AlphaCutoff_Element = new();
+public global::System.Single OffsetFactor { get => OffsetFactor_Element.Data; set => OffsetFactor_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> OffsetFactor_Element = new();
+public global::System.Single OffsetUnits { get => OffsetUnits_Element.Data; set => OffsetUnits_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> OffsetUnits_Element = new();
+public global::System.Int32 RenderQueue { get => RenderQueue_Element.Data; set => RenderQueue_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Int32>, global::System.Int32> RenderQueue_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("TextureScale", TextureScale.ToResoniteLinkField());
-members.Add("TextureOffset", TextureOffset.ToResoniteLinkField());
-members.Add("DetailTextureScale", DetailTextureScale.ToResoniteLinkField());
-members.Add("DetailTextureOffset", DetailTextureOffset.ToResoniteLinkField());
-members.Add("AlbedoColor", AlbedoColor.ToResoniteLinkField());
-members.Add("AlbedoTexture", AlbedoTexture.ToResoniteReference(context));
-members.Add("EmissiveColor", EmissiveColor.ToResoniteLinkField());
-members.Add("EmissiveMap", EmissiveMap.ToResoniteReference(context));
-members.Add("NormalScale", NormalScale.ToResoniteLinkField());
-members.Add("NormalMap", NormalMap.ToResoniteReference(context));
-members.Add("HeightMap", HeightMap.ToResoniteReference(context));
-members.Add("HeightScale", HeightScale.ToResoniteLinkField());
-members.Add("OcclusionMap", OcclusionMap.ToResoniteReference(context));
-members.Add("DetailAlbedoTexture", DetailAlbedoTexture.ToResoniteReference(context));
-members.Add("DetailNormalMap", DetailNormalMap.ToResoniteReference(context));
-members.Add("DetailNormalScale", DetailNormalScale.ToResoniteLinkField());
-members.Add("BlendMode", BlendMode.ToResoniteLinkField());
-members.Add("AlphaCutoff", AlphaCutoff.ToResoniteLinkField());
-members.Add("OffsetFactor", OffsetFactor.ToResoniteLinkField());
-members.Add("OffsetUnits", OffsetUnits.ToResoniteLinkField());
-members.Add("RenderQueue", RenderQueue.ToResoniteLinkField());
+members.Add("TextureScale", TextureScale_Element.Data.ToResoniteLinkField());
+members.Add("TextureOffset", TextureOffset_Element.Data.ToResoniteLinkField());
+members.Add("DetailTextureScale", DetailTextureScale_Element.Data.ToResoniteLinkField());
+members.Add("DetailTextureOffset", DetailTextureOffset_Element.Data.ToResoniteLinkField());
+members.Add("AlbedoColor", AlbedoColor_Element.Data.ToResoniteLinkField());
+members.Add("AlbedoTexture", AlbedoTexture_Element.Data.ToResoniteReference(context));
+members.Add("EmissiveColor", EmissiveColor_Element.Data.ToResoniteLinkField());
+members.Add("EmissiveMap", EmissiveMap_Element.Data.ToResoniteReference(context));
+members.Add("NormalScale", NormalScale_Element.Data.ToResoniteLinkField());
+members.Add("NormalMap", NormalMap_Element.Data.ToResoniteReference(context));
+members.Add("HeightMap", HeightMap_Element.Data.ToResoniteReference(context));
+members.Add("HeightScale", HeightScale_Element.Data.ToResoniteLinkField());
+members.Add("OcclusionMap", OcclusionMap_Element.Data.ToResoniteReference(context));
+members.Add("DetailAlbedoTexture", DetailAlbedoTexture_Element.Data.ToResoniteReference(context));
+members.Add("DetailNormalMap", DetailNormalMap_Element.Data.ToResoniteReference(context));
+members.Add("DetailNormalScale", DetailNormalScale_Element.Data.ToResoniteLinkField());
+members.Add("BlendMode", BlendMode_Element.Data.ToResoniteLinkField());
+members.Add("AlphaCutoff", AlphaCutoff_Element.Data.ToResoniteLinkField());
+members.Add("OffsetFactor", OffsetFactor_Element.Data.ToResoniteLinkField());
+members.Add("OffsetUnits", OffsetUnits_Element.Data.ToResoniteLinkField());
+members.Add("RenderQueue", RenderQueue_Element.Data.ToResoniteLinkField());
 }
 
 }

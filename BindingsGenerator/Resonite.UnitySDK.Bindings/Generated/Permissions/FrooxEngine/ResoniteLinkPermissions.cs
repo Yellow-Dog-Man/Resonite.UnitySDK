@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.ResoniteLinkPermissions
-// Generated on: středa 25. února 2026 16:13:11
+// Generated on: čtvrtek 26. února 2026 10:03:41
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,15 +20,17 @@ namespace FrooxEngine
 public partial class ResoniteLinkPermissions : global::FrooxEngine.PermissionsComponent
 
 {
-    public global::System.Boolean AllowReadAccess;
-public global::System.Boolean AllowWriteAccess;
+    public global::System.Boolean AllowReadAccess { get => AllowReadAccess_Element.Data; set => AllowReadAccess_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> AllowReadAccess_Element = new();
+public global::System.Boolean AllowWriteAccess { get => AllowWriteAccess_Element.Data; set => AllowWriteAccess_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> AllowWriteAccess_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("AllowReadAccess", AllowReadAccess.ToResoniteLinkField());
-members.Add("AllowWriteAccess", AllowWriteAccess.ToResoniteLinkField());
+members.Add("AllowReadAccess", AllowReadAccess_Element.Data.ToResoniteLinkField());
+members.Add("AllowWriteAccess", AllowWriteAccess_Element.Data.ToResoniteLinkField());
 }
 
 }

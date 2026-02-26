@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [ProtoFluxBindings]FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.Strings.ReverseString
-// Generated on: středa 25. února 2026 16:14:05
+// Generated on: čtvrtek 26. února 2026 10:04:30
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,13 +20,14 @@ namespace FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.Strings
 public partial class ReverseString : global::FrooxEngine.ProtoFlux.Runtimes.Execution.ObjectFunctionNode<global::ProtoFlux.Runtimes.Execution.ExecutionContext,global::System.String>
 
 {
-    public global::FrooxEngine.ProtoFlux.INodeObjectOutput<global::System.String> A;
+    public global::FrooxEngine.ProtoFlux.INodeObjectOutput<global::System.String> A { get => A_Element.Data; set => A_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.ProtoFlux.INodeObjectOutput<global::System.String>>, global::FrooxEngine.ProtoFlux.INodeObjectOutput<global::System.String>> A_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("A", A.ToResoniteReference(context));
+members.Add("A", A_Element.Data.ToResoniteReference(context));
 }
 
 }

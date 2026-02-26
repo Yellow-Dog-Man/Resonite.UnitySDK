@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.WorldLink
-// Generated on: středa 25. února 2026 16:13:07
+// Generated on: čtvrtek 26. února 2026 10:03:38
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,24 +20,28 @@ namespace FrooxEngine
 public partial class WorldLink : global::FrooxEngine.Component, global::FrooxEngine.IWorldLink
 
 {
-    public System.Uri URL;
-public System.Collections.Generic.List<System.Uri> ActiveSessionURLs;
-public global::FrooxEngine.Userspace.WorldRelation WorldRelation;
-public global::System.Boolean AutoFocus;
-public global::System.Boolean GetExisting;
+    public System.Uri URL { get => URL_Element.Data; set => URL_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<System.Uri>, System.Uri> URL_Element = new();
+public global::SyncFieldList<global::FrooxEngine.SyncFieldList<System.Uri>, System.Uri, Field<global::FrooxEngine.Sync<System.Uri>, System.Uri>> ActiveSessionURLs = new();
+public global::FrooxEngine.Userspace.WorldRelation WorldRelation { get => WorldRelation_Element.Data; set => WorldRelation_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::FrooxEngine.Userspace.WorldRelation>, global::FrooxEngine.Userspace.WorldRelation> WorldRelation_Element = new();
+public global::System.Boolean AutoFocus { get => AutoFocus_Element.Data; set => AutoFocus_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> AutoFocus_Element = new();
+public global::System.Boolean GetExisting { get => GetExisting_Element.Data; set => GetExisting_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> GetExisting_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("URL", URL.ToResoniteLinkField());
+members.Add("URL", URL_Element.Data.ToResoniteLinkField());
 members.Add("ActiveSessionURLs", new ResoniteLink.SyncList()
 {
-    Elements = ActiveSessionURLs.ConvertList(m => m.ToResoniteLinkField())
+    Elements = ActiveSessionURLs.Data.ConvertList(m => m.Data.ToResoniteLinkField())
 });
-members.Add("WorldRelation", WorldRelation.ToResoniteLinkField());
-members.Add("AutoFocus", AutoFocus.ToResoniteLinkField());
-members.Add("GetExisting", GetExisting.ToResoniteLinkField());
+members.Add("WorldRelation", WorldRelation_Element.Data.ToResoniteLinkField());
+members.Add("AutoFocus", AutoFocus_Element.Data.ToResoniteLinkField());
+members.Add("GetExisting", GetExisting_Element.Data.ToResoniteLinkField());
 }
 
 }

@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.LegacyProgressBar
-// Generated on: středa 25. února 2026 16:13:06
+// Generated on: čtvrtek 26. února 2026 10:03:37
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,39 +20,53 @@ namespace FrooxEngine
 public partial class LegacyProgressBar : global::FrooxEngine.LegacyUIElement
 
 {
-    public global::System.Boolean IsEnabledField;
-public global::System.Single Progress;
-public UnityEngine.ColorX BarColorField;
-public UnityEngine.ColorX ContainerColorField;
-public global::System.Single WidthField;
-public global::System.Single HeightField;
-public global::System.Single ThicknessField;
-public global::System.Single SlantField;
-public global::FrooxEngine.BevelStripeMesh _barMesh;
-public global::FrooxEngine.BevelStripeMesh _containerMesh;
-public global::FrooxEngine.PBS_RimMetallic _barMaterial;
-public global::FrooxEngine.PBS_RimMetallic _containerMaterial;
-public global::FrooxEngine.IField<UnityEngine.Vector3> _barPosition;
-public global::FrooxEngine.IField<UnityEngine.Vector3> _colliderSize;
+    public global::System.Boolean IsEnabledField { get => IsEnabledField_Element.Data; set => IsEnabledField_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> IsEnabledField_Element = new();
+public global::System.Single Progress { get => Progress_Element.Data; set => Progress_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> Progress_Element = new();
+public UnityEngine.ColorX BarColorField { get => BarColorField_Element.Data; set => BarColorField_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.ColorX>, UnityEngine.ColorX> BarColorField_Element = new();
+public UnityEngine.ColorX ContainerColorField { get => ContainerColorField_Element.Data; set => ContainerColorField_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.ColorX>, UnityEngine.ColorX> ContainerColorField_Element = new();
+public global::System.Single WidthField { get => WidthField_Element.Data; set => WidthField_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> WidthField_Element = new();
+public global::System.Single HeightField { get => HeightField_Element.Data; set => HeightField_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> HeightField_Element = new();
+public global::System.Single ThicknessField { get => ThicknessField_Element.Data; set => ThicknessField_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> ThicknessField_Element = new();
+public global::System.Single SlantField { get => SlantField_Element.Data; set => SlantField_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> SlantField_Element = new();
+public global::FrooxEngine.BevelStripeMesh _barMesh { get => _barMesh_Element.Data; set => _barMesh_Element.Data = value; }
+public Field<global::FrooxEngine.DriveRef<global::FrooxEngine.BevelStripeMesh>, global::FrooxEngine.BevelStripeMesh> _barMesh_Element = new();
+public global::FrooxEngine.BevelStripeMesh _containerMesh { get => _containerMesh_Element.Data; set => _containerMesh_Element.Data = value; }
+public Field<global::FrooxEngine.DriveRef<global::FrooxEngine.BevelStripeMesh>, global::FrooxEngine.BevelStripeMesh> _containerMesh_Element = new();
+public global::FrooxEngine.PBS_RimMetallic _barMaterial { get => _barMaterial_Element.Data; set => _barMaterial_Element.Data = value; }
+public Field<global::FrooxEngine.DriveRef<global::FrooxEngine.PBS_RimMetallic>, global::FrooxEngine.PBS_RimMetallic> _barMaterial_Element = new();
+public global::FrooxEngine.PBS_RimMetallic _containerMaterial { get => _containerMaterial_Element.Data; set => _containerMaterial_Element.Data = value; }
+public Field<global::FrooxEngine.DriveRef<global::FrooxEngine.PBS_RimMetallic>, global::FrooxEngine.PBS_RimMetallic> _containerMaterial_Element = new();
+public global::FrooxEngine.IField<UnityEngine.Vector3> _barPosition { get => _barPosition_Element.Data; set => _barPosition_Element.Data = value; }
+public Field<global::FrooxEngine.FieldDrive<UnityEngine.Vector3>, global::FrooxEngine.IField<UnityEngine.Vector3>> _barPosition_Element = new();
+public global::FrooxEngine.IField<UnityEngine.Vector3> _colliderSize { get => _colliderSize_Element.Data; set => _colliderSize_Element.Data = value; }
+public Field<global::FrooxEngine.FieldDrive<UnityEngine.Vector3>, global::FrooxEngine.IField<UnityEngine.Vector3>> _colliderSize_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("IsEnabledField", IsEnabledField.ToResoniteLinkField());
-members.Add("Progress", Progress.ToResoniteLinkField());
-members.Add("BarColorField", BarColorField.ToResoniteLinkField());
-members.Add("ContainerColorField", ContainerColorField.ToResoniteLinkField());
-members.Add("WidthField", WidthField.ToResoniteLinkField());
-members.Add("HeightField", HeightField.ToResoniteLinkField());
-members.Add("ThicknessField", ThicknessField.ToResoniteLinkField());
-members.Add("SlantField", SlantField.ToResoniteLinkField());
-members.Add("_barMesh", _barMesh.ToResoniteReference(context));
-members.Add("_containerMesh", _containerMesh.ToResoniteReference(context));
-members.Add("_barMaterial", _barMaterial.ToResoniteReference(context));
-members.Add("_containerMaterial", _containerMaterial.ToResoniteReference(context));
-members.Add("_barPosition", _barPosition.ToResoniteReference(context));
-members.Add("_colliderSize", _colliderSize.ToResoniteReference(context));
+members.Add("IsEnabledField", IsEnabledField_Element.Data.ToResoniteLinkField());
+members.Add("Progress", Progress_Element.Data.ToResoniteLinkField());
+members.Add("BarColorField", BarColorField_Element.Data.ToResoniteLinkField());
+members.Add("ContainerColorField", ContainerColorField_Element.Data.ToResoniteLinkField());
+members.Add("WidthField", WidthField_Element.Data.ToResoniteLinkField());
+members.Add("HeightField", HeightField_Element.Data.ToResoniteLinkField());
+members.Add("ThicknessField", ThicknessField_Element.Data.ToResoniteLinkField());
+members.Add("SlantField", SlantField_Element.Data.ToResoniteLinkField());
+members.Add("_barMesh", _barMesh_Element.Data.ToResoniteReference(context));
+members.Add("_containerMesh", _containerMesh_Element.Data.ToResoniteReference(context));
+members.Add("_barMaterial", _barMaterial_Element.Data.ToResoniteReference(context));
+members.Add("_containerMaterial", _containerMaterial_Element.Data.ToResoniteReference(context));
+members.Add("_barPosition", _barPosition_Element.Data.ToResoniteReference(context));
+members.Add("_colliderSize", _colliderSize_Element.Data.ToResoniteReference(context));
 }
 
 }

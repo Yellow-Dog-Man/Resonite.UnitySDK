@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [ProtoFluxBindings]FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.Color.ColorToHSV
-// Generated on: středa 25. února 2026 16:13:38
+// Generated on: čtvrtek 26. února 2026 10:04:07
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,16 +20,17 @@ namespace FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.Color
 public partial class ColorToHSV : global::FrooxEngine.ProtoFlux.Runtimes.Execution.VoidNode<global::ProtoFlux.Runtimes.Execution.ExecutionContext>
 
 {
-    public global::FrooxEngine.ProtoFlux.INodeValueOutput<UnityEngine.Color> C;
-public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Single> H;
-public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Single> S;
-public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Single> V;
+    public global::FrooxEngine.ProtoFlux.INodeValueOutput<UnityEngine.Color> C { get => C_Element.Data; set => C_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.ProtoFlux.INodeValueOutput<UnityEngine.Color>>, global::FrooxEngine.ProtoFlux.INodeValueOutput<UnityEngine.Color>> C_Element = new();
+public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Single> H = new();
+public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Single> S = new();
+public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Single> V = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("C", C.ToResoniteReference(context));
+members.Add("C", C_Element.Data.ToResoniteReference(context));
 members.Add("H", new ResoniteLink.EmptyElement());
 members.Add("S", new ResoniteLink.EmptyElement());
 members.Add("V", new ResoniteLink.EmptyElement());

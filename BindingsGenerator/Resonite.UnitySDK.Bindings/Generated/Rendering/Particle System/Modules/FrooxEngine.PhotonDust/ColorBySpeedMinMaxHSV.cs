@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.PhotonDust.ColorBySpeedMinMaxHSV
-// Generated on: středa 25. února 2026 16:14:18
+// Generated on: čtvrtek 26. února 2026 10:04:38
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,27 +20,35 @@ namespace FrooxEngine.PhotonDust
 public partial class ColorBySpeedMinMaxHSV : global::FrooxEngine.PhotonDust.ParticleSystemModule<global::System.Object>
 
 {
-    public global::System.Single MinSpeed;
-public global::System.Single MaxSpeed;
-public global::System.Single MinHue;
-public global::System.Single MaxHue;
-public global::System.Single MinSaturation;
-public global::System.Single MaxSaturation;
-public global::System.Single MinValue;
-public global::System.Single MaxValue;
+    public global::System.Single MinSpeed { get => MinSpeed_Element.Data; set => MinSpeed_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> MinSpeed_Element = new();
+public global::System.Single MaxSpeed { get => MaxSpeed_Element.Data; set => MaxSpeed_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> MaxSpeed_Element = new();
+public global::System.Single MinHue { get => MinHue_Element.Data; set => MinHue_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> MinHue_Element = new();
+public global::System.Single MaxHue { get => MaxHue_Element.Data; set => MaxHue_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> MaxHue_Element = new();
+public global::System.Single MinSaturation { get => MinSaturation_Element.Data; set => MinSaturation_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> MinSaturation_Element = new();
+public global::System.Single MaxSaturation { get => MaxSaturation_Element.Data; set => MaxSaturation_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> MaxSaturation_Element = new();
+public global::System.Single MinValue { get => MinValue_Element.Data; set => MinValue_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> MinValue_Element = new();
+public global::System.Single MaxValue { get => MaxValue_Element.Data; set => MaxValue_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> MaxValue_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("MinSpeed", MinSpeed.ToResoniteLinkField());
-members.Add("MaxSpeed", MaxSpeed.ToResoniteLinkField());
-members.Add("MinHue", MinHue.ToResoniteLinkField());
-members.Add("MaxHue", MaxHue.ToResoniteLinkField());
-members.Add("MinSaturation", MinSaturation.ToResoniteLinkField());
-members.Add("MaxSaturation", MaxSaturation.ToResoniteLinkField());
-members.Add("MinValue", MinValue.ToResoniteLinkField());
-members.Add("MaxValue", MaxValue.ToResoniteLinkField());
+members.Add("MinSpeed", MinSpeed_Element.Data.ToResoniteLinkField());
+members.Add("MaxSpeed", MaxSpeed_Element.Data.ToResoniteLinkField());
+members.Add("MinHue", MinHue_Element.Data.ToResoniteLinkField());
+members.Add("MaxHue", MaxHue_Element.Data.ToResoniteLinkField());
+members.Add("MinSaturation", MinSaturation_Element.Data.ToResoniteLinkField());
+members.Add("MaxSaturation", MaxSaturation_Element.Data.ToResoniteLinkField());
+members.Add("MinValue", MinValue_Element.Data.ToResoniteLinkField());
+members.Add("MaxValue", MaxValue_Element.Data.ToResoniteLinkField());
 }
 
 }

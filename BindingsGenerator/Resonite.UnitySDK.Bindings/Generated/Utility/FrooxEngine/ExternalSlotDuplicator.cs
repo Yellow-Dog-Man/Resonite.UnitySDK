@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.ExternalSlotDuplicator
-// Generated on: středa 25. února 2026 16:14:46
+// Generated on: čtvrtek 26. února 2026 10:04:50
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,23 +20,29 @@ namespace FrooxEngine
 public partial class ExternalSlotDuplicator : global::FrooxEngine.Component
 
 {
-    public global::FrooxEngine.Slot TargetSlot;
-public global::System.Nullable<UnityEngine.Vector3> LocalPositionOverride;
-public global::System.Nullable<UnityEngine.Quaternion> LocalRotationOverride;
-public global::System.Nullable<UnityEngine.Vector3> LocalScaleOverride;
-public global::System.Nullable<global::System.Boolean> ActiveSelfOverride;
-public global::System.Boolean DoNotRestoreOriginalTransform;
+    public global::FrooxEngine.Slot TargetSlot { get => TargetSlot_Element.Data; set => TargetSlot_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> TargetSlot_Element = new();
+public global::System.Nullable<UnityEngine.Vector3> LocalPositionOverride { get => LocalPositionOverride_Element.Data; set => LocalPositionOverride_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Nullable<UnityEngine.Vector3>>, global::System.Nullable<UnityEngine.Vector3>> LocalPositionOverride_Element = new();
+public global::System.Nullable<UnityEngine.Quaternion> LocalRotationOverride { get => LocalRotationOverride_Element.Data; set => LocalRotationOverride_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Nullable<UnityEngine.Quaternion>>, global::System.Nullable<UnityEngine.Quaternion>> LocalRotationOverride_Element = new();
+public global::System.Nullable<UnityEngine.Vector3> LocalScaleOverride { get => LocalScaleOverride_Element.Data; set => LocalScaleOverride_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Nullable<UnityEngine.Vector3>>, global::System.Nullable<UnityEngine.Vector3>> LocalScaleOverride_Element = new();
+public global::System.Nullable<global::System.Boolean> ActiveSelfOverride { get => ActiveSelfOverride_Element.Data; set => ActiveSelfOverride_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Nullable<global::System.Boolean>>, global::System.Nullable<global::System.Boolean>> ActiveSelfOverride_Element = new();
+public global::System.Boolean DoNotRestoreOriginalTransform { get => DoNotRestoreOriginalTransform_Element.Data; set => DoNotRestoreOriginalTransform_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> DoNotRestoreOriginalTransform_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("TargetSlot", TargetSlot.ToResoniteReference(context));
-members.Add("LocalPositionOverride", LocalPositionOverride.ToResoniteLinkField());
-members.Add("LocalRotationOverride", LocalRotationOverride.ToResoniteLinkField());
-members.Add("LocalScaleOverride", LocalScaleOverride.ToResoniteLinkField());
-members.Add("ActiveSelfOverride", ActiveSelfOverride.ToResoniteLinkField());
-members.Add("DoNotRestoreOriginalTransform", DoNotRestoreOriginalTransform.ToResoniteLinkField());
+members.Add("TargetSlot", TargetSlot_Element.Data.ToResoniteReference(context));
+members.Add("LocalPositionOverride", LocalPositionOverride_Element.Data.ToResoniteLinkField());
+members.Add("LocalRotationOverride", LocalRotationOverride_Element.Data.ToResoniteLinkField());
+members.Add("LocalScaleOverride", LocalScaleOverride_Element.Data.ToResoniteLinkField());
+members.Add("ActiveSelfOverride", ActiveSelfOverride_Element.Data.ToResoniteLinkField());
+members.Add("DoNotRestoreOriginalTransform", DoNotRestoreOriginalTransform_Element.Data.ToResoniteLinkField());
 }
 
 }

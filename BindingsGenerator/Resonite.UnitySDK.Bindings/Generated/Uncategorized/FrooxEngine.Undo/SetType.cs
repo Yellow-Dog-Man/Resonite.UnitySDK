@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.Undo.SetType
-// Generated on: středa 25. února 2026 16:14:43
+// Generated on: čtvrtek 26. února 2026 10:04:48
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,21 +20,26 @@ namespace FrooxEngine.Undo
 public partial class SetType : global::FrooxEngine.Component, global::FrooxEngine.Undo.IUndoable
 
 {
-    public global::FrooxEngine.SyncType Target;
-public System.String ValueBefore;
-public System.String ValueAfter;
-public global::System.Boolean _performed;
-public global::System.String _description;
+    public global::FrooxEngine.SyncType Target { get => Target_Element.Data; set => Target_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.SyncType>, global::FrooxEngine.SyncType> Target_Element = new();
+public System.String ValueBefore { get => ValueBefore_Element.Data; set => ValueBefore_Element.Data = value; }
+public Field<global::FrooxEngine.SyncType, System.String> ValueBefore_Element = new();
+public System.String ValueAfter { get => ValueAfter_Element.Data; set => ValueAfter_Element.Data = value; }
+public Field<global::FrooxEngine.SyncType, System.String> ValueAfter_Element = new();
+public global::System.Boolean _performed { get => _performed_Element.Data; set => _performed_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> _performed_Element = new();
+public global::System.String _description { get => _description_Element.Data; set => _description_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.String>, global::System.String> _description_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Target", Target.ToResoniteReference(context));
-members.Add("ValueBefore", ValueBefore.ToResoniteLinkField());
-members.Add("ValueAfter", ValueAfter.ToResoniteLinkField());
-members.Add("_performed", _performed.ToResoniteLinkField());
-members.Add("_description", _description.ToResoniteLinkField());
+members.Add("Target", Target_Element.Data.ToResoniteReference(context));
+members.Add("ValueBefore", ValueBefore_Element.Data.ToResoniteLinkField());
+members.Add("ValueAfter", ValueAfter_Element.Data.ToResoniteLinkField());
+members.Add("_performed", _performed_Element.Data.ToResoniteLinkField());
+members.Add("_description", _description_Element.Data.ToResoniteLinkField());
 }
 
 }

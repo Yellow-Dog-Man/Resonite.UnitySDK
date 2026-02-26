@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.BreadcrumbManager
-// Generated on: středa 25. února 2026 16:14:15
+// Generated on: čtvrtek 26. února 2026 10:04:36
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,19 +20,23 @@ namespace FrooxEngine
 public partial class BreadcrumbManager : global::FrooxEngine.Component, global::FrooxEngine.ICustomInspector
 
 {
-    public global::FrooxEngine.SyncFieldList<global::System.String> Path;
-public global::FrooxEngine.Slot UI_Root;
-public global::FrooxEngine.BreadcrumbInterface BreadcrumbTemplate;
-public global::FrooxEngine.Slot SeparatorTemplate;
+    public global::FrooxEngine.SyncFieldList<global::System.String> Path { get => Path_Element.Data; set => Path_Element.Data = value; }
+public Field<global::FrooxEngine.RelayRef<global::FrooxEngine.SyncFieldList<global::System.String>>, global::FrooxEngine.SyncFieldList<global::System.String>> Path_Element = new();
+public global::FrooxEngine.Slot UI_Root { get => UI_Root_Element.Data; set => UI_Root_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> UI_Root_Element = new();
+public global::FrooxEngine.BreadcrumbInterface BreadcrumbTemplate { get => BreadcrumbTemplate_Element.Data; set => BreadcrumbTemplate_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.BreadcrumbInterface>, global::FrooxEngine.BreadcrumbInterface> BreadcrumbTemplate_Element = new();
+public global::FrooxEngine.Slot SeparatorTemplate { get => SeparatorTemplate_Element.Data; set => SeparatorTemplate_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> SeparatorTemplate_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Path", Path.ToResoniteReference(context));
-members.Add("UI_Root", UI_Root.ToResoniteReference(context));
-members.Add("BreadcrumbTemplate", BreadcrumbTemplate.ToResoniteReference(context));
-members.Add("SeparatorTemplate", SeparatorTemplate.ToResoniteReference(context));
+members.Add("Path", Path_Element.Data.ToResoniteReference(context));
+members.Add("UI_Root", UI_Root_Element.Data.ToResoniteReference(context));
+members.Add("BreadcrumbTemplate", BreadcrumbTemplate_Element.Data.ToResoniteReference(context));
+members.Add("SeparatorTemplate", SeparatorTemplate_Element.Data.ToResoniteReference(context));
 }
 
 }

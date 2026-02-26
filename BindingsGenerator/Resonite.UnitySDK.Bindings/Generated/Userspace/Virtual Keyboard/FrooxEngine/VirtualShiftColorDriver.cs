@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.VirtualShiftColorDriver
-// Generated on: středa 25. února 2026 16:14:46
+// Generated on: čtvrtek 26. února 2026 10:04:50
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,21 +20,26 @@ namespace FrooxEngine
 public partial class VirtualShiftColorDriver : global::FrooxEngine.Component
 
 {
-    public global::FrooxEngine.VirtualKeyboard Keyboard;
-public global::FrooxEngine.IField<UnityEngine.ColorX> ColorTarget;
-public UnityEngine.ColorX NormalColor;
-public UnityEngine.ColorX ShiftColor;
-public UnityEngine.ColorX HoldColor;
+    public global::FrooxEngine.VirtualKeyboard Keyboard { get => Keyboard_Element.Data; set => Keyboard_Element.Data = value; }
+public Field<global::FrooxEngine.RelayRef<global::FrooxEngine.VirtualKeyboard>, global::FrooxEngine.VirtualKeyboard> Keyboard_Element = new();
+public global::FrooxEngine.IField<UnityEngine.ColorX> ColorTarget { get => ColorTarget_Element.Data; set => ColorTarget_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.IField<UnityEngine.ColorX>>, global::FrooxEngine.IField<UnityEngine.ColorX>> ColorTarget_Element = new();
+public UnityEngine.ColorX NormalColor { get => NormalColor_Element.Data; set => NormalColor_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.ColorX>, UnityEngine.ColorX> NormalColor_Element = new();
+public UnityEngine.ColorX ShiftColor { get => ShiftColor_Element.Data; set => ShiftColor_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.ColorX>, UnityEngine.ColorX> ShiftColor_Element = new();
+public UnityEngine.ColorX HoldColor { get => HoldColor_Element.Data; set => HoldColor_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.ColorX>, UnityEngine.ColorX> HoldColor_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Keyboard", Keyboard.ToResoniteReference(context));
-members.Add("ColorTarget", ColorTarget.ToResoniteReference(context));
-members.Add("NormalColor", NormalColor.ToResoniteLinkField());
-members.Add("ShiftColor", ShiftColor.ToResoniteLinkField());
-members.Add("HoldColor", HoldColor.ToResoniteLinkField());
+members.Add("Keyboard", Keyboard_Element.Data.ToResoniteReference(context));
+members.Add("ColorTarget", ColorTarget_Element.Data.ToResoniteReference(context));
+members.Add("NormalColor", NormalColor_Element.Data.ToResoniteLinkField());
+members.Add("ShiftColor", ShiftColor_Element.Data.ToResoniteLinkField());
+members.Add("HoldColor", HoldColor_Element.Data.ToResoniteLinkField());
 }
 
 }

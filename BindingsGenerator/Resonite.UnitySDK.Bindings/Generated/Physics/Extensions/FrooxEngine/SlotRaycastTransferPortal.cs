@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.SlotRaycastTransferPortal
-// Generated on: středa 25. února 2026 16:13:11
+// Generated on: čtvrtek 26. února 2026 10:03:41
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,17 +20,20 @@ namespace FrooxEngine
 public partial class SlotRaycastTransferPortal : global::FrooxEngine.Component, global::FrooxEngine.IRaycastPortal
 
 {
-    public global::FrooxEngine.Slot Exit;
-public global::System.Nullable<global::System.Boolean> OverrideHitTriggers;
-public global::FrooxEngine.FilterCombineMode FilterMode;
+    public global::FrooxEngine.Slot Exit { get => Exit_Element.Data; set => Exit_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> Exit_Element = new();
+public global::System.Nullable<global::System.Boolean> OverrideHitTriggers { get => OverrideHitTriggers_Element.Data; set => OverrideHitTriggers_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Nullable<global::System.Boolean>>, global::System.Nullable<global::System.Boolean>> OverrideHitTriggers_Element = new();
+public global::FrooxEngine.FilterCombineMode FilterMode { get => FilterMode_Element.Data; set => FilterMode_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::FrooxEngine.FilterCombineMode>, global::FrooxEngine.FilterCombineMode> FilterMode_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Exit", Exit.ToResoniteReference(context));
-members.Add("OverrideHitTriggers", OverrideHitTriggers.ToResoniteLinkField());
-members.Add("FilterMode", FilterMode.ToResoniteLinkField());
+members.Add("Exit", Exit_Element.Data.ToResoniteReference(context));
+members.Add("OverrideHitTriggers", OverrideHitTriggers_Element.Data.ToResoniteLinkField());
+members.Add("FilterMode", FilterMode_Element.Data.ToResoniteLinkField());
 }
 
 }

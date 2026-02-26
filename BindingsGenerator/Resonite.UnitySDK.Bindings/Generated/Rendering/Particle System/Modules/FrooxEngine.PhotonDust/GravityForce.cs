@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.PhotonDust.GravityForce
-// Generated on: středa 25. února 2026 16:14:18
+// Generated on: čtvrtek 26. února 2026 10:04:38
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,14 +20,15 @@ namespace FrooxEngine.PhotonDust
 public partial class GravityForce : global::FrooxEngine.PhotonDust.ParticleSystemModule<global::System.Object>
 
 {
-    public global::System.Single Gravity;
-public global::FrooxEngine.RootSpace OverrideForceSpace;
+    public global::System.Single Gravity { get => Gravity_Element.Data; set => Gravity_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> Gravity_Element = new();
+public global::FrooxEngine.RootSpace OverrideForceSpace = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Gravity", Gravity.ToResoniteLinkField());
+members.Add("Gravity", Gravity_Element.Data.ToResoniteLinkField());
 members.Add("OverrideForceSpace", new ResoniteLink.SyncObject() { Members = OverrideForceSpace.CollectMembers(context) });
 }
 

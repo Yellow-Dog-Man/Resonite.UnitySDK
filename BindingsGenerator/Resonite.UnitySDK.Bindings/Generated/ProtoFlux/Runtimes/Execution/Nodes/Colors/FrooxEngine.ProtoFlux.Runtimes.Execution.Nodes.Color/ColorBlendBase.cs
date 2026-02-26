@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [ProtoFluxBindings]FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.Color.ColorBlendBase
-// Generated on: středa 25. února 2026 16:13:38
+// Generated on: čtvrtek 26. února 2026 10:04:07
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,15 +20,17 @@ namespace FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.Color
 public abstract partial class ColorBlendBase : global::FrooxEngine.ProtoFlux.Runtimes.Execution.ValueFunctionNode<global::ProtoFlux.Runtimes.Execution.ExecutionContext,UnityEngine.Color>
 
 {
-    public global::FrooxEngine.ProtoFlux.INodeValueOutput<UnityEngine.Color> Source;
-public global::FrooxEngine.ProtoFlux.INodeValueOutput<UnityEngine.Color> Destination;
+    public global::FrooxEngine.ProtoFlux.INodeValueOutput<UnityEngine.Color> Source { get => Source_Element.Data; set => Source_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.ProtoFlux.INodeValueOutput<UnityEngine.Color>>, global::FrooxEngine.ProtoFlux.INodeValueOutput<UnityEngine.Color>> Source_Element = new();
+public global::FrooxEngine.ProtoFlux.INodeValueOutput<UnityEngine.Color> Destination { get => Destination_Element.Data; set => Destination_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.ProtoFlux.INodeValueOutput<UnityEngine.Color>>, global::FrooxEngine.ProtoFlux.INodeValueOutput<UnityEngine.Color>> Destination_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Source", Source.ToResoniteReference(context));
-members.Add("Destination", Destination.ToResoniteReference(context));
+members.Add("Source", Source_Element.Data.ToResoniteReference(context));
+members.Add("Destination", Destination_Element.Data.ToResoniteReference(context));
 }
 
 }

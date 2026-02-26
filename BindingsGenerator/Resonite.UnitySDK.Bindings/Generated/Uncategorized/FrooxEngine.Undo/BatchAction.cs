@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.Undo.BatchAction
-// Generated on: středa 25. února 2026 16:14:35
+// Generated on: čtvrtek 26. února 2026 10:04:43
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,13 +20,14 @@ namespace FrooxEngine.Undo
 public partial class BatchAction : global::FrooxEngine.Component, global::FrooxEngine.Undo.IUndoable
 
 {
-    public global::System.String _description;
+    public global::System.String _description { get => _description_Element.Data; set => _description_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.String>, global::System.String> _description_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("_description", _description.ToResoniteLinkField());
+members.Add("_description", _description_Element.Data.ToResoniteLinkField());
 }
 
 }

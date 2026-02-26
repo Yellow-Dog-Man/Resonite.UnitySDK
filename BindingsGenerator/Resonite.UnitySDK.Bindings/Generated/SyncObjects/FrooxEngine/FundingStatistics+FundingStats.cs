@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.FundingStatistics+FundingStats
-// Generated on: středa 25. února 2026 16:13:06
+// Generated on: čtvrtek 26. února 2026 10:03:37
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -22,17 +22,20 @@ namespace FrooxEngine
 public partial class FundingStats : global::FrooxEngine.SyncObject
 
 {
-    public global::System.Decimal TotalAmountUSD;
-public global::System.Decimal AverageAmountUSD;
-public global::System.Int32 TotalUniqueSupporters;
+    public global::System.Decimal TotalAmountUSD { get => TotalAmountUSD_Element.Data; set => TotalAmountUSD_Element.Data = value; }
+public Field<global::FrooxEngine.RawOutput<global::System.Decimal>, global::System.Decimal> TotalAmountUSD_Element = new();
+public global::System.Decimal AverageAmountUSD { get => AverageAmountUSD_Element.Data; set => AverageAmountUSD_Element.Data = value; }
+public Field<global::FrooxEngine.RawOutput<global::System.Decimal>, global::System.Decimal> AverageAmountUSD_Element = new();
+public global::System.Int32 TotalUniqueSupporters { get => TotalUniqueSupporters_Element.Data; set => TotalUniqueSupporters_Element.Data = value; }
+public Field<global::FrooxEngine.RawOutput<global::System.Int32>, global::System.Int32> TotalUniqueSupporters_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("TotalAmountUSD", TotalAmountUSD.ToResoniteLinkField());
-members.Add("AverageAmountUSD", AverageAmountUSD.ToResoniteLinkField());
-members.Add("TotalUniqueSupporters", TotalUniqueSupporters.ToResoniteLinkField());
+members.Add("TotalAmountUSD", TotalAmountUSD_Element.Data.ToResoniteLinkField());
+members.Add("AverageAmountUSD", AverageAmountUSD_Element.Data.ToResoniteLinkField());
+members.Add("TotalUniqueSupporters", TotalUniqueSupporters_Element.Data.ToResoniteLinkField());
 }
 
 }

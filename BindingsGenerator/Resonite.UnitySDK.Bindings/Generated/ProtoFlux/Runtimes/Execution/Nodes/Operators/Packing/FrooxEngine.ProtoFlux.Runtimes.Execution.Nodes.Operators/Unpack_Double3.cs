@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [ProtoFluxBindings]FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.Operators.Unpack_Double3
-// Generated on: středa 25. února 2026 16:14:03
+// Generated on: čtvrtek 26. února 2026 10:04:28
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,16 +20,17 @@ namespace FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.Operators
 public partial class Unpack_Double3 : global::FrooxEngine.ProtoFlux.Runtimes.Execution.VoidNode<global::ProtoFlux.Runtimes.Execution.ExecutionContext>
 
 {
-    public global::FrooxEngine.ProtoFlux.INodeValueOutput<UnityEngine.Vector3Double> V;
-public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Double> X;
-public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Double> Y;
-public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Double> Z;
+    public global::FrooxEngine.ProtoFlux.INodeValueOutput<UnityEngine.Vector3Double> V { get => V_Element.Data; set => V_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.ProtoFlux.INodeValueOutput<UnityEngine.Vector3Double>>, global::FrooxEngine.ProtoFlux.INodeValueOutput<UnityEngine.Vector3Double>> V_Element = new();
+public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Double> X = new();
+public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Double> Y = new();
+public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Double> Z = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("V", V.ToResoniteReference(context));
+members.Add("V", V_Element.Data.ToResoniteReference(context));
 members.Add("X", new ResoniteLink.EmptyElement());
 members.Add("Y", new ResoniteLink.EmptyElement());
 members.Add("Z", new ResoniteLink.EmptyElement());

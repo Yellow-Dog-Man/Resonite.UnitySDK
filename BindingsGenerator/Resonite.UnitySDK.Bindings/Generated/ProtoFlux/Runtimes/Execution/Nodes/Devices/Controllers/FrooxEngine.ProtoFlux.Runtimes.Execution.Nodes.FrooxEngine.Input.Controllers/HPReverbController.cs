@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [ProtoFluxBindings]FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Input.Controllers.HPReverbController
-// Generated on: středa 25. února 2026 16:13:44
+// Generated on: čtvrtek 26. února 2026 10:04:13
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,16 +20,16 @@ namespace FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Input.Contr
 public partial class HPReverbController : global::FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Input.Controllers.ControllerNode<global::FrooxEngine.HPReverbController,global::FrooxEngine.HPReverbControllerProxy>
 
 {
-    public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Boolean> AppMenu;
-public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Boolean> ButtonYB;
-public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Boolean> ButtonXA;
-public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Single> Grip;
-public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Boolean> GripTouch;
-public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Boolean> GripClick;
-public global::FrooxEngine.ProtoFlux.NodeValueOutput<UnityEngine.Vector2> Joystick;
-public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Boolean> JoystickClick;
-public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Single> Trigger;
-public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Boolean> TriggerClick;
+    public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Boolean> AppMenu = new();
+public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Boolean> ButtonYB = new();
+public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Boolean> ButtonXA = new();
+public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Single> Grip = new();
+public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Boolean> GripTouch = new();
+public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Boolean> GripClick = new();
+public global::FrooxEngine.ProtoFlux.NodeValueOutput<UnityEngine.Vector2> Joystick = new();
+public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Boolean> JoystickClick = new();
+public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Single> Trigger = new();
+public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Boolean> TriggerClick = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)

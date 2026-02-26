@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.RecordSyncStatus
-// Generated on: středa 25. února 2026 16:13:06
+// Generated on: čtvrtek 26. února 2026 10:03:37
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,29 +20,38 @@ namespace FrooxEngine
 public partial class RecordSyncStatus : global::FrooxEngine.Component
 
 {
-    public global::System.Int32 RecordQueueCount;
-public global::System.Int32 AssetVariantQueueCount;
-public global::System.Single CurrentTaskProgress;
-public global::System.String LastError;
-public global::System.String StatusMessage;
-public UnityEngine.ColorX FullySyncedColor;
-public UnityEngine.ColorX ErrorColor;
-public UnityEngine.ColorX SyncingRecordsColor;
-public UnityEngine.ColorX UploadingAssetVariantsColor;
+    public global::System.Int32 RecordQueueCount { get => RecordQueueCount_Element.Data; set => RecordQueueCount_Element.Data = value; }
+public Field<global::FrooxEngine.RawOutput<global::System.Int32>, global::System.Int32> RecordQueueCount_Element = new();
+public global::System.Int32 AssetVariantQueueCount { get => AssetVariantQueueCount_Element.Data; set => AssetVariantQueueCount_Element.Data = value; }
+public Field<global::FrooxEngine.RawOutput<global::System.Int32>, global::System.Int32> AssetVariantQueueCount_Element = new();
+public global::System.Single CurrentTaskProgress { get => CurrentTaskProgress_Element.Data; set => CurrentTaskProgress_Element.Data = value; }
+public Field<global::FrooxEngine.RawOutput<global::System.Single>, global::System.Single> CurrentTaskProgress_Element = new();
+public global::System.String LastError { get => LastError_Element.Data; set => LastError_Element.Data = value; }
+public Field<global::FrooxEngine.RawOutput<global::System.String>, global::System.String> LastError_Element = new();
+public global::System.String StatusMessage { get => StatusMessage_Element.Data; set => StatusMessage_Element.Data = value; }
+public Field<global::FrooxEngine.RawOutput<global::System.String>, global::System.String> StatusMessage_Element = new();
+public UnityEngine.ColorX FullySyncedColor { get => FullySyncedColor_Element.Data; set => FullySyncedColor_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.ColorX>, UnityEngine.ColorX> FullySyncedColor_Element = new();
+public UnityEngine.ColorX ErrorColor { get => ErrorColor_Element.Data; set => ErrorColor_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.ColorX>, UnityEngine.ColorX> ErrorColor_Element = new();
+public UnityEngine.ColorX SyncingRecordsColor { get => SyncingRecordsColor_Element.Data; set => SyncingRecordsColor_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.ColorX>, UnityEngine.ColorX> SyncingRecordsColor_Element = new();
+public UnityEngine.ColorX UploadingAssetVariantsColor { get => UploadingAssetVariantsColor_Element.Data; set => UploadingAssetVariantsColor_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.ColorX>, UnityEngine.ColorX> UploadingAssetVariantsColor_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("RecordQueueCount", RecordQueueCount.ToResoniteLinkField());
-members.Add("AssetVariantQueueCount", AssetVariantQueueCount.ToResoniteLinkField());
-members.Add("CurrentTaskProgress", CurrentTaskProgress.ToResoniteLinkField());
-members.Add("LastError", LastError.ToResoniteLinkField());
-members.Add("StatusMessage", StatusMessage.ToResoniteLinkField());
-members.Add("FullySyncedColor", FullySyncedColor.ToResoniteLinkField());
-members.Add("ErrorColor", ErrorColor.ToResoniteLinkField());
-members.Add("SyncingRecordsColor", SyncingRecordsColor.ToResoniteLinkField());
-members.Add("UploadingAssetVariantsColor", UploadingAssetVariantsColor.ToResoniteLinkField());
+members.Add("RecordQueueCount", RecordQueueCount_Element.Data.ToResoniteLinkField());
+members.Add("AssetVariantQueueCount", AssetVariantQueueCount_Element.Data.ToResoniteLinkField());
+members.Add("CurrentTaskProgress", CurrentTaskProgress_Element.Data.ToResoniteLinkField());
+members.Add("LastError", LastError_Element.Data.ToResoniteLinkField());
+members.Add("StatusMessage", StatusMessage_Element.Data.ToResoniteLinkField());
+members.Add("FullySyncedColor", FullySyncedColor_Element.Data.ToResoniteLinkField());
+members.Add("ErrorColor", ErrorColor_Element.Data.ToResoniteLinkField());
+members.Add("SyncingRecordsColor", SyncingRecordsColor_Element.Data.ToResoniteLinkField());
+members.Add("UploadingAssetVariantsColor", UploadingAssetVariantsColor_Element.Data.ToResoniteLinkField());
 }
 
 }

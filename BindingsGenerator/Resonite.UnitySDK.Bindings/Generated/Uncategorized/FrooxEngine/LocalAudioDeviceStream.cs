@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.LocalAudioDeviceStream
-// Generated on: středa 25. února 2026 16:14:34
+// Generated on: čtvrtek 26. února 2026 10:04:43
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,15 +20,17 @@ namespace FrooxEngine
 public partial class LocalAudioDeviceStream : global::FrooxEngine.Component, global::FrooxEngine.IWorldAudioDataSource
 
 {
-    public global::System.Int32 AudioDeviceIndex;
-public global::System.Boolean UseFilteredData;
+    public global::System.Int32 AudioDeviceIndex { get => AudioDeviceIndex_Element.Data; set => AudioDeviceIndex_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Int32>, global::System.Int32> AudioDeviceIndex_Element = new();
+public global::System.Boolean UseFilteredData { get => UseFilteredData_Element.Data; set => UseFilteredData_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> UseFilteredData_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("AudioDeviceIndex", AudioDeviceIndex.ToResoniteLinkField());
-members.Add("UseFilteredData", UseFilteredData.ToResoniteLinkField());
+members.Add("AudioDeviceIndex", AudioDeviceIndex_Element.Data.ToResoniteLinkField());
+members.Add("UseFilteredData", UseFilteredData_Element.Data.ToResoniteLinkField());
 }
 
 }

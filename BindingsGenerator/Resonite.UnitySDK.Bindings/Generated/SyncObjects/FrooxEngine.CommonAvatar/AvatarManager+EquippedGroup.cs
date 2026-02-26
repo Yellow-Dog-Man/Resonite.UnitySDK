@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.CommonAvatar.AvatarManager+EquippedGroup
-// Generated on: středa 25. února 2026 16:14:45
+// Generated on: čtvrtek 26. února 2026 10:04:49
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -22,17 +22,18 @@ namespace FrooxEngine.CommonAvatar
 public partial class EquippedGroup : global::FrooxEngine.SyncObject
 
 {
-    public global::FrooxEngine.CommonAvatar.AvatarGroup Group;
-public System.Collections.Generic.List<global::FrooxEngine.CommonAvatar.IAvatarObject> Objects;
+    public global::FrooxEngine.CommonAvatar.AvatarGroup Group { get => Group_Element.Data; set => Group_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.CommonAvatar.AvatarGroup>, global::FrooxEngine.CommonAvatar.AvatarGroup> Group_Element = new();
+public global::SyncFieldList<global::FrooxEngine.SyncRefList<global::FrooxEngine.CommonAvatar.IAvatarObject>, global::FrooxEngine.CommonAvatar.IAvatarObject, Field<global::FrooxEngine.SyncRef<global::FrooxEngine.CommonAvatar.IAvatarObject>, global::FrooxEngine.CommonAvatar.IAvatarObject>> Objects = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Group", Group.ToResoniteReference(context));
+members.Add("Group", Group_Element.Data.ToResoniteReference(context));
 members.Add("Objects", new ResoniteLink.SyncList()
 {
-    Elements = Objects.ConvertList(m => m.ToResoniteReference(context))
+    Elements = Objects.Data.ConvertList(m => m.Data.ToResoniteReference(context))
 });
 }
 

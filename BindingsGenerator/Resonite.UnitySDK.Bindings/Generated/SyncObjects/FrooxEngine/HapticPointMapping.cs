@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.HapticPointMapping
-// Generated on: středa 25. února 2026 16:14:39
+// Generated on: čtvrtek 26. února 2026 10:04:45
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,55 +20,77 @@ namespace FrooxEngine
 public partial class HapticPointMapping : global::FrooxEngine.SyncObject
 
 {
-    public global::FrooxEngine.HapticPositionType MappingTarget;
-public global::System.Single PointRadius;
-public global::FrooxEngine.TorsoSide TorsoSide;
-public global::System.Single TorsoHorizontalPosition;
-public global::System.Single TorsoVerticalPosition;
-public global::System.Single HeadPitchAngle;
-public global::System.Single HeadYawAngle;
-public global::Renderite.Shared.Chirality ArmSide;
-public global::System.Single ArmPositionAlong;
-public global::System.Single ArmAngleAround;
-public global::Renderite.Shared.Chirality LegSide;
-public global::System.Single LegPositionAlong;
-public global::System.Single LegAngleAround;
-public global::Renderite.Shared.Chirality ControllerSide;
-public global::System.String Tag;
-public global::System.Boolean ShowAnyOptions;
-public global::System.Boolean ShowTorsoOptions;
-public global::System.Boolean ShowHeadOptions;
-public global::System.Boolean ShowArmOptions;
-public global::System.Boolean ShowLegOptions;
-public global::System.Boolean ShowControllerOptions;
-public global::System.Boolean ShowTagPositions;
+    public global::FrooxEngine.HapticPositionType MappingTarget { get => MappingTarget_Element.Data; set => MappingTarget_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::FrooxEngine.HapticPositionType>, global::FrooxEngine.HapticPositionType> MappingTarget_Element = new();
+public global::System.Single PointRadius { get => PointRadius_Element.Data; set => PointRadius_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> PointRadius_Element = new();
+public global::FrooxEngine.TorsoSide TorsoSide { get => TorsoSide_Element.Data; set => TorsoSide_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::FrooxEngine.TorsoSide>, global::FrooxEngine.TorsoSide> TorsoSide_Element = new();
+public global::System.Single TorsoHorizontalPosition { get => TorsoHorizontalPosition_Element.Data; set => TorsoHorizontalPosition_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> TorsoHorizontalPosition_Element = new();
+public global::System.Single TorsoVerticalPosition { get => TorsoVerticalPosition_Element.Data; set => TorsoVerticalPosition_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> TorsoVerticalPosition_Element = new();
+public global::System.Single HeadPitchAngle { get => HeadPitchAngle_Element.Data; set => HeadPitchAngle_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> HeadPitchAngle_Element = new();
+public global::System.Single HeadYawAngle { get => HeadYawAngle_Element.Data; set => HeadYawAngle_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> HeadYawAngle_Element = new();
+public global::Renderite.Shared.Chirality ArmSide { get => ArmSide_Element.Data; set => ArmSide_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::Renderite.Shared.Chirality>, global::Renderite.Shared.Chirality> ArmSide_Element = new();
+public global::System.Single ArmPositionAlong { get => ArmPositionAlong_Element.Data; set => ArmPositionAlong_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> ArmPositionAlong_Element = new();
+public global::System.Single ArmAngleAround { get => ArmAngleAround_Element.Data; set => ArmAngleAround_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> ArmAngleAround_Element = new();
+public global::Renderite.Shared.Chirality LegSide { get => LegSide_Element.Data; set => LegSide_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::Renderite.Shared.Chirality>, global::Renderite.Shared.Chirality> LegSide_Element = new();
+public global::System.Single LegPositionAlong { get => LegPositionAlong_Element.Data; set => LegPositionAlong_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> LegPositionAlong_Element = new();
+public global::System.Single LegAngleAround { get => LegAngleAround_Element.Data; set => LegAngleAround_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> LegAngleAround_Element = new();
+public global::Renderite.Shared.Chirality ControllerSide { get => ControllerSide_Element.Data; set => ControllerSide_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::Renderite.Shared.Chirality>, global::Renderite.Shared.Chirality> ControllerSide_Element = new();
+public global::System.String Tag { get => Tag_Element.Data; set => Tag_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.String>, global::System.String> Tag_Element = new();
+public global::System.Boolean ShowAnyOptions { get => ShowAnyOptions_Element.Data; set => ShowAnyOptions_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> ShowAnyOptions_Element = new();
+public global::System.Boolean ShowTorsoOptions { get => ShowTorsoOptions_Element.Data; set => ShowTorsoOptions_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> ShowTorsoOptions_Element = new();
+public global::System.Boolean ShowHeadOptions { get => ShowHeadOptions_Element.Data; set => ShowHeadOptions_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> ShowHeadOptions_Element = new();
+public global::System.Boolean ShowArmOptions { get => ShowArmOptions_Element.Data; set => ShowArmOptions_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> ShowArmOptions_Element = new();
+public global::System.Boolean ShowLegOptions { get => ShowLegOptions_Element.Data; set => ShowLegOptions_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> ShowLegOptions_Element = new();
+public global::System.Boolean ShowControllerOptions { get => ShowControllerOptions_Element.Data; set => ShowControllerOptions_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> ShowControllerOptions_Element = new();
+public global::System.Boolean ShowTagPositions { get => ShowTagPositions_Element.Data; set => ShowTagPositions_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> ShowTagPositions_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("MappingTarget", MappingTarget.ToResoniteLinkField());
-members.Add("PointRadius", PointRadius.ToResoniteLinkField());
-members.Add("TorsoSide", TorsoSide.ToResoniteLinkField());
-members.Add("TorsoHorizontalPosition", TorsoHorizontalPosition.ToResoniteLinkField());
-members.Add("TorsoVerticalPosition", TorsoVerticalPosition.ToResoniteLinkField());
-members.Add("HeadPitchAngle", HeadPitchAngle.ToResoniteLinkField());
-members.Add("HeadYawAngle", HeadYawAngle.ToResoniteLinkField());
-members.Add("ArmSide", ArmSide.ToResoniteLinkField());
-members.Add("ArmPositionAlong", ArmPositionAlong.ToResoniteLinkField());
-members.Add("ArmAngleAround", ArmAngleAround.ToResoniteLinkField());
-members.Add("LegSide", LegSide.ToResoniteLinkField());
-members.Add("LegPositionAlong", LegPositionAlong.ToResoniteLinkField());
-members.Add("LegAngleAround", LegAngleAround.ToResoniteLinkField());
-members.Add("ControllerSide", ControllerSide.ToResoniteLinkField());
-members.Add("Tag", Tag.ToResoniteLinkField());
-members.Add("ShowAnyOptions", ShowAnyOptions.ToResoniteLinkField());
-members.Add("ShowTorsoOptions", ShowTorsoOptions.ToResoniteLinkField());
-members.Add("ShowHeadOptions", ShowHeadOptions.ToResoniteLinkField());
-members.Add("ShowArmOptions", ShowArmOptions.ToResoniteLinkField());
-members.Add("ShowLegOptions", ShowLegOptions.ToResoniteLinkField());
-members.Add("ShowControllerOptions", ShowControllerOptions.ToResoniteLinkField());
-members.Add("ShowTagPositions", ShowTagPositions.ToResoniteLinkField());
+members.Add("MappingTarget", MappingTarget_Element.Data.ToResoniteLinkField());
+members.Add("PointRadius", PointRadius_Element.Data.ToResoniteLinkField());
+members.Add("TorsoSide", TorsoSide_Element.Data.ToResoniteLinkField());
+members.Add("TorsoHorizontalPosition", TorsoHorizontalPosition_Element.Data.ToResoniteLinkField());
+members.Add("TorsoVerticalPosition", TorsoVerticalPosition_Element.Data.ToResoniteLinkField());
+members.Add("HeadPitchAngle", HeadPitchAngle_Element.Data.ToResoniteLinkField());
+members.Add("HeadYawAngle", HeadYawAngle_Element.Data.ToResoniteLinkField());
+members.Add("ArmSide", ArmSide_Element.Data.ToResoniteLinkField());
+members.Add("ArmPositionAlong", ArmPositionAlong_Element.Data.ToResoniteLinkField());
+members.Add("ArmAngleAround", ArmAngleAround_Element.Data.ToResoniteLinkField());
+members.Add("LegSide", LegSide_Element.Data.ToResoniteLinkField());
+members.Add("LegPositionAlong", LegPositionAlong_Element.Data.ToResoniteLinkField());
+members.Add("LegAngleAround", LegAngleAround_Element.Data.ToResoniteLinkField());
+members.Add("ControllerSide", ControllerSide_Element.Data.ToResoniteLinkField());
+members.Add("Tag", Tag_Element.Data.ToResoniteLinkField());
+members.Add("ShowAnyOptions", ShowAnyOptions_Element.Data.ToResoniteLinkField());
+members.Add("ShowTorsoOptions", ShowTorsoOptions_Element.Data.ToResoniteLinkField());
+members.Add("ShowHeadOptions", ShowHeadOptions_Element.Data.ToResoniteLinkField());
+members.Add("ShowArmOptions", ShowArmOptions_Element.Data.ToResoniteLinkField());
+members.Add("ShowLegOptions", ShowLegOptions_Element.Data.ToResoniteLinkField());
+members.Add("ShowControllerOptions", ShowControllerOptions_Element.Data.ToResoniteLinkField());
+members.Add("ShowTagPositions", ShowTagPositions_Element.Data.ToResoniteLinkField());
 }
 
 }

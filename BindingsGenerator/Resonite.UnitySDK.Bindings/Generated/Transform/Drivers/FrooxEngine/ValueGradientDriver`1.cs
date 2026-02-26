@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.ValueGradientDriver<>
-// Generated on: středa 25. února 2026 16:14:31
+// Generated on: čtvrtek 26. února 2026 10:04:42
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -21,21 +21,24 @@ public partial class ValueGradientDriver<T> : global::FrooxEngine.Component
 	
 
 {
-    public global::System.Single Progress;
-public global::FrooxEngine.IField<T> Target;
-public global::System.Boolean Interpolate;
-public System.Collections.Generic.List<global::FrooxEngine.ValueGradientDriver<T>.Point> Points;
+    public global::System.Single Progress { get => Progress_Element.Data; set => Progress_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> Progress_Element = new();
+public global::FrooxEngine.IField<T> Target { get => Target_Element.Data; set => Target_Element.Data = value; }
+public Field<global::FrooxEngine.FieldDrive<T>, global::FrooxEngine.IField<T>> Target_Element = new();
+public global::System.Boolean Interpolate { get => Interpolate_Element.Data; set => Interpolate_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> Interpolate_Element = new();
+public global::SyncList<global::FrooxEngine.SyncList<global::FrooxEngine.ValueGradientDriver<T>.Point>, global::FrooxEngine.ValueGradientDriver<T>.Point> Points = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Progress", Progress.ToResoniteLinkField());
-members.Add("Target", Target.ToResoniteReference(context));
-members.Add("Interpolate", Interpolate.ToResoniteLinkField());
+members.Add("Progress", Progress_Element.Data.ToResoniteLinkField());
+members.Add("Target", Target_Element.Data.ToResoniteReference(context));
+members.Add("Interpolate", Interpolate_Element.Data.ToResoniteLinkField());
 members.Add("Points", new ResoniteLink.SyncList()
 {
-    Elements = Points.ConvertList(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers(context) })
+    Elements = Points.Data.ConvertList(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers(context) })
 });
 }
 

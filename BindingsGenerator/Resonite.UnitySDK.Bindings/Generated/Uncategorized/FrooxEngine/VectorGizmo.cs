@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.VectorGizmo
-// Generated on: středa 25. února 2026 16:14:38
+// Generated on: čtvrtek 26. února 2026 10:04:44
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,31 +20,40 @@ namespace FrooxEngine
 public partial class VectorGizmo : global::FrooxEngine.Gizmo
 
 {
-    public global::FrooxEngine.RootSpace VectorSpace;
-public global::FrooxEngine.IField<UnityEngine.Vector3> TargetVector;
-public global::FrooxEngine.IField<UnityEngine.Quaternion> TargetRotation;
-public global::System.Boolean FixMagnitude;
-public global::System.Single FixedMagnitude;
-public global::System.Single VisualMagnitudeScale;
-public global::System.Single VisualThickness;
-public global::FrooxEngine.IField<UnityEngine.Quaternion> _colliderRotation;
-public global::FrooxEngine.CylinderCollider _collider;
-public global::FrooxEngine.ArrowMesh _mesh;
+    public global::FrooxEngine.RootSpace VectorSpace = new();
+public global::FrooxEngine.IField<UnityEngine.Vector3> TargetVector { get => TargetVector_Element.Data; set => TargetVector_Element.Data = value; }
+public Field<global::FrooxEngine.RelayRef<global::FrooxEngine.IField<UnityEngine.Vector3>>, global::FrooxEngine.IField<UnityEngine.Vector3>> TargetVector_Element = new();
+public global::FrooxEngine.IField<UnityEngine.Quaternion> TargetRotation { get => TargetRotation_Element.Data; set => TargetRotation_Element.Data = value; }
+public Field<global::FrooxEngine.RelayRef<global::FrooxEngine.IField<UnityEngine.Quaternion>>, global::FrooxEngine.IField<UnityEngine.Quaternion>> TargetRotation_Element = new();
+public global::System.Boolean FixMagnitude { get => FixMagnitude_Element.Data; set => FixMagnitude_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> FixMagnitude_Element = new();
+public global::System.Single FixedMagnitude { get => FixedMagnitude_Element.Data; set => FixedMagnitude_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> FixedMagnitude_Element = new();
+public global::System.Single VisualMagnitudeScale { get => VisualMagnitudeScale_Element.Data; set => VisualMagnitudeScale_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> VisualMagnitudeScale_Element = new();
+public global::System.Single VisualThickness { get => VisualThickness_Element.Data; set => VisualThickness_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> VisualThickness_Element = new();
+public global::FrooxEngine.IField<UnityEngine.Quaternion> _colliderRotation { get => _colliderRotation_Element.Data; set => _colliderRotation_Element.Data = value; }
+public Field<global::FrooxEngine.FieldDrive<UnityEngine.Quaternion>, global::FrooxEngine.IField<UnityEngine.Quaternion>> _colliderRotation_Element = new();
+public global::FrooxEngine.CylinderCollider _collider { get => _collider_Element.Data; set => _collider_Element.Data = value; }
+public Field<global::FrooxEngine.DriveRef<global::FrooxEngine.CylinderCollider>, global::FrooxEngine.CylinderCollider> _collider_Element = new();
+public global::FrooxEngine.ArrowMesh _mesh { get => _mesh_Element.Data; set => _mesh_Element.Data = value; }
+public Field<global::FrooxEngine.DriveRef<global::FrooxEngine.ArrowMesh>, global::FrooxEngine.ArrowMesh> _mesh_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
 members.Add("VectorSpace", new ResoniteLink.SyncObject() { Members = VectorSpace.CollectMembers(context) });
-members.Add("TargetVector", TargetVector.ToResoniteReference(context));
-members.Add("TargetRotation", TargetRotation.ToResoniteReference(context));
-members.Add("FixMagnitude", FixMagnitude.ToResoniteLinkField());
-members.Add("FixedMagnitude", FixedMagnitude.ToResoniteLinkField());
-members.Add("VisualMagnitudeScale", VisualMagnitudeScale.ToResoniteLinkField());
-members.Add("VisualThickness", VisualThickness.ToResoniteLinkField());
-members.Add("_colliderRotation", _colliderRotation.ToResoniteReference(context));
-members.Add("_collider", _collider.ToResoniteReference(context));
-members.Add("_mesh", _mesh.ToResoniteReference(context));
+members.Add("TargetVector", TargetVector_Element.Data.ToResoniteReference(context));
+members.Add("TargetRotation", TargetRotation_Element.Data.ToResoniteReference(context));
+members.Add("FixMagnitude", FixMagnitude_Element.Data.ToResoniteLinkField());
+members.Add("FixedMagnitude", FixedMagnitude_Element.Data.ToResoniteLinkField());
+members.Add("VisualMagnitudeScale", VisualMagnitudeScale_Element.Data.ToResoniteLinkField());
+members.Add("VisualThickness", VisualThickness_Element.Data.ToResoniteLinkField());
+members.Add("_colliderRotation", _colliderRotation_Element.Data.ToResoniteReference(context));
+members.Add("_collider", _collider_Element.Data.ToResoniteReference(context));
+members.Add("_mesh", _mesh_Element.Data.ToResoniteReference(context));
 }
 
 }

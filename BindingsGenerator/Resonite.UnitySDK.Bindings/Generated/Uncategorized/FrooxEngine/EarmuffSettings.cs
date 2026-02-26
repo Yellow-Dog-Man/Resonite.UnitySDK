@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.EarmuffSettings
-// Generated on: středa 25. února 2026 16:14:37
+// Generated on: čtvrtek 26. února 2026 10:04:44
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,25 +20,32 @@ namespace FrooxEngine
 public partial class EarmuffSettings : global::FrooxEngine.SettingComponent<global::FrooxEngine.EarmuffSettings>
 
 {
-    public global::System.Boolean EarmuffEnabled;
-public global::System.Single VolumeAttenuation;
-public global::System.Single Directionality;
-public global::System.Single Distance;
-public global::System.Single Angle;
-public global::System.Single TransitionStart;
-public global::System.Single TransitionLength;
+    public global::System.Boolean EarmuffEnabled { get => EarmuffEnabled_Element.Data; set => EarmuffEnabled_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> EarmuffEnabled_Element = new();
+public global::System.Single VolumeAttenuation { get => VolumeAttenuation_Element.Data; set => VolumeAttenuation_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> VolumeAttenuation_Element = new();
+public global::System.Single Directionality { get => Directionality_Element.Data; set => Directionality_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> Directionality_Element = new();
+public global::System.Single Distance { get => Distance_Element.Data; set => Distance_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> Distance_Element = new();
+public global::System.Single Angle { get => Angle_Element.Data; set => Angle_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> Angle_Element = new();
+public global::System.Single TransitionStart { get => TransitionStart_Element.Data; set => TransitionStart_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> TransitionStart_Element = new();
+public global::System.Single TransitionLength { get => TransitionLength_Element.Data; set => TransitionLength_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> TransitionLength_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("EarmuffEnabled", EarmuffEnabled.ToResoniteLinkField());
-members.Add("VolumeAttenuation", VolumeAttenuation.ToResoniteLinkField());
-members.Add("Directionality", Directionality.ToResoniteLinkField());
-members.Add("Distance", Distance.ToResoniteLinkField());
-members.Add("Angle", Angle.ToResoniteLinkField());
-members.Add("TransitionStart", TransitionStart.ToResoniteLinkField());
-members.Add("TransitionLength", TransitionLength.ToResoniteLinkField());
+members.Add("EarmuffEnabled", EarmuffEnabled_Element.Data.ToResoniteLinkField());
+members.Add("VolumeAttenuation", VolumeAttenuation_Element.Data.ToResoniteLinkField());
+members.Add("Directionality", Directionality_Element.Data.ToResoniteLinkField());
+members.Add("Distance", Distance_Element.Data.ToResoniteLinkField());
+members.Add("Angle", Angle_Element.Data.ToResoniteLinkField());
+members.Add("TransitionStart", TransitionStart_Element.Data.ToResoniteLinkField());
+members.Add("TransitionLength", TransitionLength_Element.Data.ToResoniteLinkField());
 }
 
 }

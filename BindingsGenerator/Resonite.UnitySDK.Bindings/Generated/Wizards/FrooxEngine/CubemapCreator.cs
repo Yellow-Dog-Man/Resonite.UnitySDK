@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.CubemapCreator
-// Generated on: středa 25. února 2026 16:14:47
+// Generated on: čtvrtek 26. února 2026 10:04:51
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,25 +20,32 @@ namespace FrooxEngine
 public partial class CubemapCreator : global::FrooxEngine.Component, global::FrooxEngine.ICustomInspector, global::FrooxEngine.IDeveloperInterface
 
 {
-    public global::FrooxEngine.CubemapCreator.Rotation TopBottomRotation;
-public global::FrooxEngine.IAssetProvider<global::FrooxEngine.Texture2D> PosX;
-public global::FrooxEngine.IAssetProvider<global::FrooxEngine.Texture2D> NegX;
-public global::FrooxEngine.IAssetProvider<global::FrooxEngine.Texture2D> PosY;
-public global::FrooxEngine.IAssetProvider<global::FrooxEngine.Texture2D> NegY;
-public global::FrooxEngine.IAssetProvider<global::FrooxEngine.Texture2D> PosZ;
-public global::FrooxEngine.IAssetProvider<global::FrooxEngine.Texture2D> NegZ;
+    public global::FrooxEngine.CubemapCreator.Rotation TopBottomRotation { get => TopBottomRotation_Element.Data; set => TopBottomRotation_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::FrooxEngine.CubemapCreator.Rotation>, global::FrooxEngine.CubemapCreator.Rotation> TopBottomRotation_Element = new();
+public global::FrooxEngine.IAssetProvider<global::FrooxEngine.Texture2D> PosX { get => PosX_Element.Data; set => PosX_Element.Data = value; }
+public Field<global::FrooxEngine.AssetRef<global::FrooxEngine.Texture2D>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.Texture2D>> PosX_Element = new();
+public global::FrooxEngine.IAssetProvider<global::FrooxEngine.Texture2D> NegX { get => NegX_Element.Data; set => NegX_Element.Data = value; }
+public Field<global::FrooxEngine.AssetRef<global::FrooxEngine.Texture2D>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.Texture2D>> NegX_Element = new();
+public global::FrooxEngine.IAssetProvider<global::FrooxEngine.Texture2D> PosY { get => PosY_Element.Data; set => PosY_Element.Data = value; }
+public Field<global::FrooxEngine.AssetRef<global::FrooxEngine.Texture2D>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.Texture2D>> PosY_Element = new();
+public global::FrooxEngine.IAssetProvider<global::FrooxEngine.Texture2D> NegY { get => NegY_Element.Data; set => NegY_Element.Data = value; }
+public Field<global::FrooxEngine.AssetRef<global::FrooxEngine.Texture2D>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.Texture2D>> NegY_Element = new();
+public global::FrooxEngine.IAssetProvider<global::FrooxEngine.Texture2D> PosZ { get => PosZ_Element.Data; set => PosZ_Element.Data = value; }
+public Field<global::FrooxEngine.AssetRef<global::FrooxEngine.Texture2D>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.Texture2D>> PosZ_Element = new();
+public global::FrooxEngine.IAssetProvider<global::FrooxEngine.Texture2D> NegZ { get => NegZ_Element.Data; set => NegZ_Element.Data = value; }
+public Field<global::FrooxEngine.AssetRef<global::FrooxEngine.Texture2D>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.Texture2D>> NegZ_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("TopBottomRotation", TopBottomRotation.ToResoniteLinkField());
-members.Add("PosX", PosX.ToResoniteReference(context));
-members.Add("NegX", NegX.ToResoniteReference(context));
-members.Add("PosY", PosY.ToResoniteReference(context));
-members.Add("NegY", NegY.ToResoniteReference(context));
-members.Add("PosZ", PosZ.ToResoniteReference(context));
-members.Add("NegZ", NegZ.ToResoniteReference(context));
+members.Add("TopBottomRotation", TopBottomRotation_Element.Data.ToResoniteLinkField());
+members.Add("PosX", PosX_Element.Data.ToResoniteReference(context));
+members.Add("NegX", NegX_Element.Data.ToResoniteReference(context));
+members.Add("PosY", PosY_Element.Data.ToResoniteReference(context));
+members.Add("NegY", NegY_Element.Data.ToResoniteReference(context));
+members.Add("PosZ", PosZ_Element.Data.ToResoniteReference(context));
+members.Add("NegZ", NegZ_Element.Data.ToResoniteReference(context));
 }
 
 }

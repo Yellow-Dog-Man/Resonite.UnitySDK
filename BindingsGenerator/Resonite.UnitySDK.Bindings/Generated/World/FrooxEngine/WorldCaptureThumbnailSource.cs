@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.WorldCaptureThumbnailSource
-// Generated on: středa 25. února 2026 16:14:47
+// Generated on: čtvrtek 26. února 2026 10:04:51
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,13 +20,14 @@ namespace FrooxEngine
 public partial class WorldCaptureThumbnailSource : global::FrooxEngine.CaptureThumbnailSource, global::FrooxEngine.IWorldThumbnailSource
 
 {
-    public global::System.Boolean ExcludeUsersInCapture;
+    public global::System.Boolean ExcludeUsersInCapture { get => ExcludeUsersInCapture_Element.Data; set => ExcludeUsersInCapture_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> ExcludeUsersInCapture_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("ExcludeUsersInCapture", ExcludeUsersInCapture.ToResoniteLinkField());
+members.Add("ExcludeUsersInCapture", ExcludeUsersInCapture_Element.Data.ToResoniteLinkField());
 }
 
 }

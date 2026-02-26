@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.ReferenceList<>
-// Generated on: středa 25. února 2026 16:13:07
+// Generated on: čtvrtek 26. února 2026 10:03:38
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -21,7 +21,7 @@ public partial class ReferenceList<T> : global::FrooxEngine.Component
 	where T : class, global::FrooxEngine.IWorldElement
 
 {
-    public System.Collections.Generic.List<T> References;
+    public global::SyncFieldList<global::FrooxEngine.SyncRefList<T>, T, Field<global::FrooxEngine.SyncRef<T>, T>> References = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
@@ -29,7 +29,7 @@ public override void CollectMembers(
     base.CollectMembers(members, context);
 members.Add("References", new ResoniteLink.SyncList()
 {
-    Elements = References.ConvertList(m => m.ToResoniteReference(context))
+    Elements = References.Data.ConvertList(m => m.Data.ToResoniteReference(context))
 });
 }
 

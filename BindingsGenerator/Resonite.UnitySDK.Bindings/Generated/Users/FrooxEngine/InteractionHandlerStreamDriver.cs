@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.InteractionHandlerStreamDriver
-// Generated on: středa 25. února 2026 16:14:09
+// Generated on: čtvrtek 26. února 2026 10:04:32
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,25 +20,32 @@ namespace FrooxEngine
 public partial class InteractionHandlerStreamDriver : global::FrooxEngine.UserRootComponent
 
 {
-    public global::Renderite.Shared.Chirality Side;
-public global::FrooxEngine.ValueStream<global::System.Boolean> PrimaryBlockedStream;
-public global::FrooxEngine.ValueStream<global::System.Boolean> SecondaryBlockedStream;
-public global::FrooxEngine.ValueStream<global::System.Boolean> LaserActiveStream;
-public global::FrooxEngine.ValueStream<global::System.Boolean> ShowLaserToOthersStream;
-public global::FrooxEngine.ValueStream<UnityEngine.Vector3> LaserTargetStream;
-public global::FrooxEngine.ValueStream<global::System.Single> GrabDistanceStream;
+    public global::Renderite.Shared.Chirality Side { get => Side_Element.Data; set => Side_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::Renderite.Shared.Chirality>, global::Renderite.Shared.Chirality> Side_Element = new();
+public global::FrooxEngine.ValueStream<global::System.Boolean> PrimaryBlockedStream { get => PrimaryBlockedStream_Element.Data; set => PrimaryBlockedStream_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.ValueStream<global::System.Boolean>>, global::FrooxEngine.ValueStream<global::System.Boolean>> PrimaryBlockedStream_Element = new();
+public global::FrooxEngine.ValueStream<global::System.Boolean> SecondaryBlockedStream { get => SecondaryBlockedStream_Element.Data; set => SecondaryBlockedStream_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.ValueStream<global::System.Boolean>>, global::FrooxEngine.ValueStream<global::System.Boolean>> SecondaryBlockedStream_Element = new();
+public global::FrooxEngine.ValueStream<global::System.Boolean> LaserActiveStream { get => LaserActiveStream_Element.Data; set => LaserActiveStream_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.ValueStream<global::System.Boolean>>, global::FrooxEngine.ValueStream<global::System.Boolean>> LaserActiveStream_Element = new();
+public global::FrooxEngine.ValueStream<global::System.Boolean> ShowLaserToOthersStream { get => ShowLaserToOthersStream_Element.Data; set => ShowLaserToOthersStream_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.ValueStream<global::System.Boolean>>, global::FrooxEngine.ValueStream<global::System.Boolean>> ShowLaserToOthersStream_Element = new();
+public global::FrooxEngine.ValueStream<UnityEngine.Vector3> LaserTargetStream { get => LaserTargetStream_Element.Data; set => LaserTargetStream_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.ValueStream<UnityEngine.Vector3>>, global::FrooxEngine.ValueStream<UnityEngine.Vector3>> LaserTargetStream_Element = new();
+public global::FrooxEngine.ValueStream<global::System.Single> GrabDistanceStream { get => GrabDistanceStream_Element.Data; set => GrabDistanceStream_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.ValueStream<global::System.Single>>, global::FrooxEngine.ValueStream<global::System.Single>> GrabDistanceStream_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Side", Side.ToResoniteLinkField());
-members.Add("PrimaryBlockedStream", PrimaryBlockedStream.ToResoniteReference(context));
-members.Add("SecondaryBlockedStream", SecondaryBlockedStream.ToResoniteReference(context));
-members.Add("LaserActiveStream", LaserActiveStream.ToResoniteReference(context));
-members.Add("ShowLaserToOthersStream", ShowLaserToOthersStream.ToResoniteReference(context));
-members.Add("LaserTargetStream", LaserTargetStream.ToResoniteReference(context));
-members.Add("GrabDistanceStream", GrabDistanceStream.ToResoniteReference(context));
+members.Add("Side", Side_Element.Data.ToResoniteLinkField());
+members.Add("PrimaryBlockedStream", PrimaryBlockedStream_Element.Data.ToResoniteReference(context));
+members.Add("SecondaryBlockedStream", SecondaryBlockedStream_Element.Data.ToResoniteReference(context));
+members.Add("LaserActiveStream", LaserActiveStream_Element.Data.ToResoniteReference(context));
+members.Add("ShowLaserToOthersStream", ShowLaserToOthersStream_Element.Data.ToResoniteReference(context));
+members.Add("LaserTargetStream", LaserTargetStream_Element.Data.ToResoniteReference(context));
+members.Add("GrabDistanceStream", GrabDistanceStream_Element.Data.ToResoniteReference(context));
 }
 
 }

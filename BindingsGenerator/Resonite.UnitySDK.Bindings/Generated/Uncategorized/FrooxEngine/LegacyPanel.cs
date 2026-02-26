@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.LegacyPanel
-// Generated on: středa 25. února 2026 16:14:40
+// Generated on: čtvrtek 26. února 2026 10:04:46
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,88 +20,118 @@ namespace FrooxEngine
 public partial class LegacyPanel : global::FrooxEngine.LegacyUIElement, global::FrooxEngine.IObjectRoot, global::FrooxEngine.IUIInterface
 
 {
-    public global::System.Boolean ShowHeader;
-public global::System.Boolean ShowHandle;
-public global::System.Single Padding;
-public global::System.Single ZPadding;
-public global::System.Single Thickness;
-public System.Collections.Generic.List<global::FrooxEngine.IBounded> WhiteList;
-public System.Collections.Generic.List<global::FrooxEngine.IBounded> BlackList;
-public UnityEngine.ColorX Color;
-public global::FrooxEngine.PBS_RimMetallic _material;
-public global::FrooxEngine.BevelPlaneMesh _panelMesh;
-public global::FrooxEngine.IField<UnityEngine.Vector3> _panelPos;
-public global::FrooxEngine.IField<global::System.Boolean> _handleActive;
-public global::FrooxEngine.IField<global::System.Boolean> _headerActive;
-public global::FrooxEngine.BevelStripeMesh _handleMesh;
-public global::FrooxEngine.IField<UnityEngine.Vector3> _handlePos;
-public global::FrooxEngine.IField<UnityEngine.Vector3> _handleColliderSize;
-public global::FrooxEngine.BevelStripeMesh _headerTitleMesh;
-public global::FrooxEngine.BevelStripeMesh _headerButtonMesh;
-public global::FrooxEngine.IField<UnityEngine.Vector3> _headerCollider;
-public global::FrooxEngine.IField<UnityEngine.Vector3> _headerPos;
-public global::FrooxEngine.IField<UnityEngine.Vector3> _headerTitlePos;
-public global::System.String _title;
-public global::FrooxEngine.TextRenderer _titleText;
-public global::System.Boolean _indicatePrivate;
-public global::FrooxEngine.IField<UnityEngine.Vector3> _titlePos;
-public global::FrooxEngine.IField<UnityEngine.Vector2> _titleBounds;
-public global::FrooxEngine.Slot _contentSlot;
-public global::FrooxEngine.Slot _headerRoot;
-public global::FrooxEngine.Slot _handleAnchorPoint;
-public global::FrooxEngine.IField<UnityEngine.Vector3> _handleAnchorPointPosition;
-public global::FrooxEngine.UserRef _userspaceOwner;
-public System.Collections.Generic.List<global::FrooxEngine.LegacyPanel.TitleButton> _titleButtons;
-public global::FrooxEngine.LegacyPanel.TitleButton _highlightedButton;
-public global::FrooxEngine.LegacyPanel.TitleButton _pinButton;
+    public global::System.Boolean ShowHeader { get => ShowHeader_Element.Data; set => ShowHeader_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> ShowHeader_Element = new();
+public global::System.Boolean ShowHandle { get => ShowHandle_Element.Data; set => ShowHandle_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> ShowHandle_Element = new();
+public global::System.Single Padding { get => Padding_Element.Data; set => Padding_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> Padding_Element = new();
+public global::System.Single ZPadding { get => ZPadding_Element.Data; set => ZPadding_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> ZPadding_Element = new();
+public global::System.Single Thickness { get => Thickness_Element.Data; set => Thickness_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> Thickness_Element = new();
+public global::SyncFieldList<global::FrooxEngine.SyncRefList<global::FrooxEngine.IBounded>, global::FrooxEngine.IBounded, Field<global::FrooxEngine.SyncRef<global::FrooxEngine.IBounded>, global::FrooxEngine.IBounded>> WhiteList = new();
+public global::SyncFieldList<global::FrooxEngine.SyncRefList<global::FrooxEngine.IBounded>, global::FrooxEngine.IBounded, Field<global::FrooxEngine.SyncRef<global::FrooxEngine.IBounded>, global::FrooxEngine.IBounded>> BlackList = new();
+public UnityEngine.ColorX Color { get => Color_Element.Data; set => Color_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.ColorX>, UnityEngine.ColorX> Color_Element = new();
+public global::FrooxEngine.PBS_RimMetallic _material { get => _material_Element.Data; set => _material_Element.Data = value; }
+public Field<global::FrooxEngine.DriveRef<global::FrooxEngine.PBS_RimMetallic>, global::FrooxEngine.PBS_RimMetallic> _material_Element = new();
+public global::FrooxEngine.BevelPlaneMesh _panelMesh { get => _panelMesh_Element.Data; set => _panelMesh_Element.Data = value; }
+public Field<global::FrooxEngine.DriveRef<global::FrooxEngine.BevelPlaneMesh>, global::FrooxEngine.BevelPlaneMesh> _panelMesh_Element = new();
+public global::FrooxEngine.IField<UnityEngine.Vector3> _panelPos { get => _panelPos_Element.Data; set => _panelPos_Element.Data = value; }
+public Field<global::FrooxEngine.FieldDrive<UnityEngine.Vector3>, global::FrooxEngine.IField<UnityEngine.Vector3>> _panelPos_Element = new();
+public global::FrooxEngine.IField<global::System.Boolean> _handleActive { get => _handleActive_Element.Data; set => _handleActive_Element.Data = value; }
+public Field<global::FrooxEngine.FieldDrive<global::System.Boolean>, global::FrooxEngine.IField<global::System.Boolean>> _handleActive_Element = new();
+public global::FrooxEngine.IField<global::System.Boolean> _headerActive { get => _headerActive_Element.Data; set => _headerActive_Element.Data = value; }
+public Field<global::FrooxEngine.FieldDrive<global::System.Boolean>, global::FrooxEngine.IField<global::System.Boolean>> _headerActive_Element = new();
+public global::FrooxEngine.BevelStripeMesh _handleMesh { get => _handleMesh_Element.Data; set => _handleMesh_Element.Data = value; }
+public Field<global::FrooxEngine.DriveRef<global::FrooxEngine.BevelStripeMesh>, global::FrooxEngine.BevelStripeMesh> _handleMesh_Element = new();
+public global::FrooxEngine.IField<UnityEngine.Vector3> _handlePos { get => _handlePos_Element.Data; set => _handlePos_Element.Data = value; }
+public Field<global::FrooxEngine.FieldDrive<UnityEngine.Vector3>, global::FrooxEngine.IField<UnityEngine.Vector3>> _handlePos_Element = new();
+public global::FrooxEngine.IField<UnityEngine.Vector3> _handleColliderSize { get => _handleColliderSize_Element.Data; set => _handleColliderSize_Element.Data = value; }
+public Field<global::FrooxEngine.FieldDrive<UnityEngine.Vector3>, global::FrooxEngine.IField<UnityEngine.Vector3>> _handleColliderSize_Element = new();
+public global::FrooxEngine.BevelStripeMesh _headerTitleMesh { get => _headerTitleMesh_Element.Data; set => _headerTitleMesh_Element.Data = value; }
+public Field<global::FrooxEngine.DriveRef<global::FrooxEngine.BevelStripeMesh>, global::FrooxEngine.BevelStripeMesh> _headerTitleMesh_Element = new();
+public global::FrooxEngine.BevelStripeMesh _headerButtonMesh { get => _headerButtonMesh_Element.Data; set => _headerButtonMesh_Element.Data = value; }
+public Field<global::FrooxEngine.DriveRef<global::FrooxEngine.BevelStripeMesh>, global::FrooxEngine.BevelStripeMesh> _headerButtonMesh_Element = new();
+public global::FrooxEngine.IField<UnityEngine.Vector3> _headerCollider { get => _headerCollider_Element.Data; set => _headerCollider_Element.Data = value; }
+public Field<global::FrooxEngine.FieldDrive<UnityEngine.Vector3>, global::FrooxEngine.IField<UnityEngine.Vector3>> _headerCollider_Element = new();
+public global::FrooxEngine.IField<UnityEngine.Vector3> _headerPos { get => _headerPos_Element.Data; set => _headerPos_Element.Data = value; }
+public Field<global::FrooxEngine.FieldDrive<UnityEngine.Vector3>, global::FrooxEngine.IField<UnityEngine.Vector3>> _headerPos_Element = new();
+public global::FrooxEngine.IField<UnityEngine.Vector3> _headerTitlePos { get => _headerTitlePos_Element.Data; set => _headerTitlePos_Element.Data = value; }
+public Field<global::FrooxEngine.FieldDrive<UnityEngine.Vector3>, global::FrooxEngine.IField<UnityEngine.Vector3>> _headerTitlePos_Element = new();
+public global::System.String _title { get => _title_Element.Data; set => _title_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.String>, global::System.String> _title_Element = new();
+public global::FrooxEngine.TextRenderer _titleText { get => _titleText_Element.Data; set => _titleText_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.TextRenderer>, global::FrooxEngine.TextRenderer> _titleText_Element = new();
+public global::System.Boolean _indicatePrivate { get => _indicatePrivate_Element.Data; set => _indicatePrivate_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> _indicatePrivate_Element = new();
+public global::FrooxEngine.IField<UnityEngine.Vector3> _titlePos { get => _titlePos_Element.Data; set => _titlePos_Element.Data = value; }
+public Field<global::FrooxEngine.FieldDrive<UnityEngine.Vector3>, global::FrooxEngine.IField<UnityEngine.Vector3>> _titlePos_Element = new();
+public global::FrooxEngine.IField<UnityEngine.Vector2> _titleBounds { get => _titleBounds_Element.Data; set => _titleBounds_Element.Data = value; }
+public Field<global::FrooxEngine.FieldDrive<UnityEngine.Vector2>, global::FrooxEngine.IField<UnityEngine.Vector2>> _titleBounds_Element = new();
+public global::FrooxEngine.Slot _contentSlot { get => _contentSlot_Element.Data; set => _contentSlot_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> _contentSlot_Element = new();
+public global::FrooxEngine.Slot _headerRoot { get => _headerRoot_Element.Data; set => _headerRoot_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> _headerRoot_Element = new();
+public global::FrooxEngine.Slot _handleAnchorPoint { get => _handleAnchorPoint_Element.Data; set => _handleAnchorPoint_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> _handleAnchorPoint_Element = new();
+public global::FrooxEngine.IField<UnityEngine.Vector3> _handleAnchorPointPosition { get => _handleAnchorPointPosition_Element.Data; set => _handleAnchorPointPosition_Element.Data = value; }
+public Field<global::FrooxEngine.FieldDrive<UnityEngine.Vector3>, global::FrooxEngine.IField<UnityEngine.Vector3>> _handleAnchorPointPosition_Element = new();
+public global::FrooxEngine.UserRef _userspaceOwner = new();
+public global::SyncList<global::FrooxEngine.SyncList<global::FrooxEngine.LegacyPanel.TitleButton>, global::FrooxEngine.LegacyPanel.TitleButton> _titleButtons = new();
+public global::FrooxEngine.LegacyPanel.TitleButton _highlightedButton { get => _highlightedButton_Element.Data; set => _highlightedButton_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.LegacyPanel.TitleButton>, global::FrooxEngine.LegacyPanel.TitleButton> _highlightedButton_Element = new();
+public global::FrooxEngine.LegacyPanel.TitleButton _pinButton { get => _pinButton_Element.Data; set => _pinButton_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.LegacyPanel.TitleButton>, global::FrooxEngine.LegacyPanel.TitleButton> _pinButton_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("ShowHeader", ShowHeader.ToResoniteLinkField());
-members.Add("ShowHandle", ShowHandle.ToResoniteLinkField());
-members.Add("Padding", Padding.ToResoniteLinkField());
-members.Add("ZPadding", ZPadding.ToResoniteLinkField());
-members.Add("Thickness", Thickness.ToResoniteLinkField());
+members.Add("ShowHeader", ShowHeader_Element.Data.ToResoniteLinkField());
+members.Add("ShowHandle", ShowHandle_Element.Data.ToResoniteLinkField());
+members.Add("Padding", Padding_Element.Data.ToResoniteLinkField());
+members.Add("ZPadding", ZPadding_Element.Data.ToResoniteLinkField());
+members.Add("Thickness", Thickness_Element.Data.ToResoniteLinkField());
 members.Add("WhiteList", new ResoniteLink.SyncList()
 {
-    Elements = WhiteList.ConvertList(m => m.ToResoniteReference(context))
+    Elements = WhiteList.Data.ConvertList(m => m.Data.ToResoniteReference(context))
 });
 members.Add("BlackList", new ResoniteLink.SyncList()
 {
-    Elements = BlackList.ConvertList(m => m.ToResoniteReference(context))
+    Elements = BlackList.Data.ConvertList(m => m.Data.ToResoniteReference(context))
 });
-members.Add("Color", Color.ToResoniteLinkField());
-members.Add("_material", _material.ToResoniteReference(context));
-members.Add("_panelMesh", _panelMesh.ToResoniteReference(context));
-members.Add("_panelPos", _panelPos.ToResoniteReference(context));
-members.Add("_handleActive", _handleActive.ToResoniteReference(context));
-members.Add("_headerActive", _headerActive.ToResoniteReference(context));
-members.Add("_handleMesh", _handleMesh.ToResoniteReference(context));
-members.Add("_handlePos", _handlePos.ToResoniteReference(context));
-members.Add("_handleColliderSize", _handleColliderSize.ToResoniteReference(context));
-members.Add("_headerTitleMesh", _headerTitleMesh.ToResoniteReference(context));
-members.Add("_headerButtonMesh", _headerButtonMesh.ToResoniteReference(context));
-members.Add("_headerCollider", _headerCollider.ToResoniteReference(context));
-members.Add("_headerPos", _headerPos.ToResoniteReference(context));
-members.Add("_headerTitlePos", _headerTitlePos.ToResoniteReference(context));
-members.Add("_title", _title.ToResoniteLinkField());
-members.Add("_titleText", _titleText.ToResoniteReference(context));
-members.Add("_indicatePrivate", _indicatePrivate.ToResoniteLinkField());
-members.Add("_titlePos", _titlePos.ToResoniteReference(context));
-members.Add("_titleBounds", _titleBounds.ToResoniteReference(context));
-members.Add("_contentSlot", _contentSlot.ToResoniteReference(context));
-members.Add("_headerRoot", _headerRoot.ToResoniteReference(context));
-members.Add("_handleAnchorPoint", _handleAnchorPoint.ToResoniteReference(context));
-members.Add("_handleAnchorPointPosition", _handleAnchorPointPosition.ToResoniteReference(context));
+members.Add("Color", Color_Element.Data.ToResoniteLinkField());
+members.Add("_material", _material_Element.Data.ToResoniteReference(context));
+members.Add("_panelMesh", _panelMesh_Element.Data.ToResoniteReference(context));
+members.Add("_panelPos", _panelPos_Element.Data.ToResoniteReference(context));
+members.Add("_handleActive", _handleActive_Element.Data.ToResoniteReference(context));
+members.Add("_headerActive", _headerActive_Element.Data.ToResoniteReference(context));
+members.Add("_handleMesh", _handleMesh_Element.Data.ToResoniteReference(context));
+members.Add("_handlePos", _handlePos_Element.Data.ToResoniteReference(context));
+members.Add("_handleColliderSize", _handleColliderSize_Element.Data.ToResoniteReference(context));
+members.Add("_headerTitleMesh", _headerTitleMesh_Element.Data.ToResoniteReference(context));
+members.Add("_headerButtonMesh", _headerButtonMesh_Element.Data.ToResoniteReference(context));
+members.Add("_headerCollider", _headerCollider_Element.Data.ToResoniteReference(context));
+members.Add("_headerPos", _headerPos_Element.Data.ToResoniteReference(context));
+members.Add("_headerTitlePos", _headerTitlePos_Element.Data.ToResoniteReference(context));
+members.Add("_title", _title_Element.Data.ToResoniteLinkField());
+members.Add("_titleText", _titleText_Element.Data.ToResoniteReference(context));
+members.Add("_indicatePrivate", _indicatePrivate_Element.Data.ToResoniteLinkField());
+members.Add("_titlePos", _titlePos_Element.Data.ToResoniteReference(context));
+members.Add("_titleBounds", _titleBounds_Element.Data.ToResoniteReference(context));
+members.Add("_contentSlot", _contentSlot_Element.Data.ToResoniteReference(context));
+members.Add("_headerRoot", _headerRoot_Element.Data.ToResoniteReference(context));
+members.Add("_handleAnchorPoint", _handleAnchorPoint_Element.Data.ToResoniteReference(context));
+members.Add("_handleAnchorPointPosition", _handleAnchorPointPosition_Element.Data.ToResoniteReference(context));
 members.Add("_userspaceOwner", new ResoniteLink.SyncObject() { Members = _userspaceOwner.CollectMembers(context) });
 members.Add("_titleButtons", new ResoniteLink.SyncList()
 {
-    Elements = _titleButtons.ConvertList(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers(context) })
+    Elements = _titleButtons.Data.ConvertList(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers(context) })
 });
-members.Add("_highlightedButton", _highlightedButton.ToResoniteReference(context));
-members.Add("_pinButton", _pinButton.ToResoniteReference(context));
+members.Add("_highlightedButton", _highlightedButton_Element.Data.ToResoniteReference(context));
+members.Add("_pinButton", _pinButton_Element.Data.ToResoniteReference(context));
 }
 
 }

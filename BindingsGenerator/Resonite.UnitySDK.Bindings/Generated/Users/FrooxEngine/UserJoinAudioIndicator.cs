@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.UserJoinAudioIndicator
-// Generated on: středa 25. února 2026 16:14:44
+// Generated on: čtvrtek 26. února 2026 10:04:49
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,10 +20,12 @@ namespace FrooxEngine
 public partial class UserJoinAudioIndicator : global::FrooxEngine.Component
 
 {
-    public System.Collections.Generic.List<global::FrooxEngine.IAssetProvider<global::FrooxEngine.AudioClip>> JoinedClips;
-public System.Collections.Generic.List<global::FrooxEngine.IAssetProvider<global::FrooxEngine.AudioClip>> LeftClips;
-public global::System.Boolean Spatialize;
-public global::System.Single Volume;
+    public global::SyncFieldList<global::FrooxEngine.SyncList<global::FrooxEngine.AssetRef<global::FrooxEngine.AudioClip>>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.AudioClip>, Field<global::FrooxEngine.AssetRef<global::FrooxEngine.AudioClip>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.AudioClip>>> JoinedClips = new();
+public global::SyncFieldList<global::FrooxEngine.SyncList<global::FrooxEngine.AssetRef<global::FrooxEngine.AudioClip>>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.AudioClip>, Field<global::FrooxEngine.AssetRef<global::FrooxEngine.AudioClip>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.AudioClip>>> LeftClips = new();
+public global::System.Boolean Spatialize { get => Spatialize_Element.Data; set => Spatialize_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> Spatialize_Element = new();
+public global::System.Single Volume { get => Volume_Element.Data; set => Volume_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> Volume_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
@@ -31,14 +33,14 @@ public override void CollectMembers(
     base.CollectMembers(members, context);
 members.Add("JoinedClips", new ResoniteLink.SyncList()
 {
-    Elements = JoinedClips.ConvertList(m => m.ToResoniteReference(context))
+    Elements = JoinedClips.Data.ConvertList(m => m.Data.ToResoniteReference(context))
 });
 members.Add("LeftClips", new ResoniteLink.SyncList()
 {
-    Elements = LeftClips.ConvertList(m => m.ToResoniteReference(context))
+    Elements = LeftClips.Data.ConvertList(m => m.Data.ToResoniteReference(context))
 });
-members.Add("Spatialize", Spatialize.ToResoniteLinkField());
-members.Add("Volume", Volume.ToResoniteLinkField());
+members.Add("Spatialize", Spatialize_Element.Data.ToResoniteLinkField());
+members.Add("Volume", Volume_Element.Data.ToResoniteLinkField());
 }
 
 }

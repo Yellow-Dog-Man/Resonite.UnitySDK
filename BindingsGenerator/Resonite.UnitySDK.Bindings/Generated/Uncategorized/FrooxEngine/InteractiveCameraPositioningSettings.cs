@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.InteractiveCameraPositioningSettings
-// Generated on: středa 25. února 2026 16:14:40
+// Generated on: čtvrtek 26. února 2026 10:04:46
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,17 +20,20 @@ namespace FrooxEngine
 public partial class InteractiveCameraPositioningSettings : global::FrooxEngine.SettingComponent<global::FrooxEngine.InteractiveCameraPositioningSettings>
 
 {
-    public global::System.Boolean AvoidOcclusion;
-public global::System.Boolean KeepInWorldSpace;
-public global::System.Boolean MovementWobble;
+    public global::System.Boolean AvoidOcclusion { get => AvoidOcclusion_Element.Data; set => AvoidOcclusion_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> AvoidOcclusion_Element = new();
+public global::System.Boolean KeepInWorldSpace { get => KeepInWorldSpace_Element.Data; set => KeepInWorldSpace_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> KeepInWorldSpace_Element = new();
+public global::System.Boolean MovementWobble { get => MovementWobble_Element.Data; set => MovementWobble_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> MovementWobble_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("AvoidOcclusion", AvoidOcclusion.ToResoniteLinkField());
-members.Add("KeepInWorldSpace", KeepInWorldSpace.ToResoniteLinkField());
-members.Add("MovementWobble", MovementWobble.ToResoniteLinkField());
+members.Add("AvoidOcclusion", AvoidOcclusion_Element.Data.ToResoniteLinkField());
+members.Add("KeepInWorldSpace", KeepInWorldSpace_Element.Data.ToResoniteLinkField());
+members.Add("MovementWobble", MovementWobble_Element.Data.ToResoniteLinkField());
 }
 
 }

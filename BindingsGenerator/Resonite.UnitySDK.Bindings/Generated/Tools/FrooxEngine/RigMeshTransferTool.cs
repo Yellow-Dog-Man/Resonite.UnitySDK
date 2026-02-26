@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.RigMeshTransferTool
-// Generated on: středa 25. února 2026 16:14:25
+// Generated on: čtvrtek 26. února 2026 10:04:39
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,15 +20,17 @@ namespace FrooxEngine
 public partial class RigMeshTransferTool : global::FrooxEngine.Tool
 
 {
-    public global::FrooxEngine.Rig SourceRig;
-public global::FrooxEngine.TextRenderer _label;
+    public global::FrooxEngine.Rig SourceRig { get => SourceRig_Element.Data; set => SourceRig_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.Rig>, global::FrooxEngine.Rig> SourceRig_Element = new();
+public global::FrooxEngine.TextRenderer _label { get => _label_Element.Data; set => _label_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.TextRenderer>, global::FrooxEngine.TextRenderer> _label_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("SourceRig", SourceRig.ToResoniteReference(context));
-members.Add("_label", _label.ToResoniteReference(context));
+members.Add("SourceRig", SourceRig_Element.Data.ToResoniteReference(context));
+members.Add("_label", _label_Element.Data.ToResoniteReference(context));
 }
 
 }

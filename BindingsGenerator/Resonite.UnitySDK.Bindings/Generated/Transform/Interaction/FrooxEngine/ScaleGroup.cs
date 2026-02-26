@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.ScaleGroup
-// Generated on: středa 25. února 2026 16:14:32
+// Generated on: čtvrtek 26. února 2026 10:04:42
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,21 +20,26 @@ namespace FrooxEngine
 public partial class ScaleGroup : global::FrooxEngine.Component
 
 {
-    public global::FrooxEngine.ScaleElement SelectedElement;
-public UnityEngine.Vector3 IdleScale;
-public UnityEngine.Vector3 BackgroundScale;
-public UnityEngine.Vector3 SelectedScale;
-public global::System.Single SmoothSpeed;
+    public global::FrooxEngine.ScaleElement SelectedElement { get => SelectedElement_Element.Data; set => SelectedElement_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.ScaleElement>, global::FrooxEngine.ScaleElement> SelectedElement_Element = new();
+public UnityEngine.Vector3 IdleScale { get => IdleScale_Element.Data; set => IdleScale_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.Vector3>, UnityEngine.Vector3> IdleScale_Element = new();
+public UnityEngine.Vector3 BackgroundScale { get => BackgroundScale_Element.Data; set => BackgroundScale_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.Vector3>, UnityEngine.Vector3> BackgroundScale_Element = new();
+public UnityEngine.Vector3 SelectedScale { get => SelectedScale_Element.Data; set => SelectedScale_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.Vector3>, UnityEngine.Vector3> SelectedScale_Element = new();
+public global::System.Single SmoothSpeed { get => SmoothSpeed_Element.Data; set => SmoothSpeed_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> SmoothSpeed_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("SelectedElement", SelectedElement.ToResoniteReference(context));
-members.Add("IdleScale", IdleScale.ToResoniteLinkField());
-members.Add("BackgroundScale", BackgroundScale.ToResoniteLinkField());
-members.Add("SelectedScale", SelectedScale.ToResoniteLinkField());
-members.Add("SmoothSpeed", SmoothSpeed.ToResoniteLinkField());
+members.Add("SelectedElement", SelectedElement_Element.Data.ToResoniteReference(context));
+members.Add("IdleScale", IdleScale_Element.Data.ToResoniteLinkField());
+members.Add("BackgroundScale", BackgroundScale_Element.Data.ToResoniteLinkField());
+members.Add("SelectedScale", SelectedScale_Element.Data.ToResoniteLinkField());
+members.Add("SmoothSpeed", SmoothSpeed_Element.Data.ToResoniteLinkField());
 }
 
 }

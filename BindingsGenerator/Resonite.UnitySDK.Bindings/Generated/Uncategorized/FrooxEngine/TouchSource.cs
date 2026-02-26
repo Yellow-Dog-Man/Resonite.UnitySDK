@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.TouchSource
-// Generated on: středa 25. února 2026 16:13:09
+// Generated on: čtvrtek 26. února 2026 10:03:39
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,17 +20,20 @@ namespace FrooxEngine
 public abstract partial class TouchSource : global::FrooxEngine.Component
 
 {
-    public global::FrooxEngine.User AutoUpdateUser;
-public global::System.Single OutOfSightAngle;
-public global::System.Single MaxTouchPenetrationDistance;
+    public global::FrooxEngine.User AutoUpdateUser { get => AutoUpdateUser_Element.Data; set => AutoUpdateUser_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.User>, global::FrooxEngine.User> AutoUpdateUser_Element = new();
+public global::System.Single OutOfSightAngle { get => OutOfSightAngle_Element.Data; set => OutOfSightAngle_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> OutOfSightAngle_Element = new();
+public global::System.Single MaxTouchPenetrationDistance { get => MaxTouchPenetrationDistance_Element.Data; set => MaxTouchPenetrationDistance_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> MaxTouchPenetrationDistance_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("AutoUpdateUser", AutoUpdateUser.ToResoniteReference(context));
-members.Add("OutOfSightAngle", OutOfSightAngle.ToResoniteLinkField());
-members.Add("MaxTouchPenetrationDistance", MaxTouchPenetrationDistance.ToResoniteLinkField());
+members.Add("AutoUpdateUser", AutoUpdateUser_Element.Data.ToResoniteReference(context));
+members.Add("OutOfSightAngle", OutOfSightAngle_Element.Data.ToResoniteLinkField());
+members.Add("MaxTouchPenetrationDistance", MaxTouchPenetrationDistance_Element.Data.ToResoniteLinkField());
 }
 
 }

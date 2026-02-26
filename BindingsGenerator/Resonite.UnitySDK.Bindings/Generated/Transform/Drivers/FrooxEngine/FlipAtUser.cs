@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.FlipAtUser
-// Generated on: středa 25. února 2026 16:14:29
+// Generated on: čtvrtek 26. února 2026 10:04:41
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,15 +20,16 @@ namespace FrooxEngine
 public partial class FlipAtUser : global::FrooxEngine.Component
 
 {
-    public global::FrooxEngine.RootSpace UpSpace;
-public global::FrooxEngine.IField<UnityEngine.Quaternion> _rotation;
+    public global::FrooxEngine.RootSpace UpSpace = new();
+public global::FrooxEngine.IField<UnityEngine.Quaternion> _rotation { get => _rotation_Element.Data; set => _rotation_Element.Data = value; }
+public Field<global::FrooxEngine.FieldDrive<UnityEngine.Quaternion>, global::FrooxEngine.IField<UnityEngine.Quaternion>> _rotation_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
 members.Add("UpSpace", new ResoniteLink.SyncObject() { Members = UpSpace.CollectMembers(context) });
-members.Add("_rotation", _rotation.ToResoniteReference(context));
+members.Add("_rotation", _rotation_Element.Data.ToResoniteReference(context));
 }
 
 }

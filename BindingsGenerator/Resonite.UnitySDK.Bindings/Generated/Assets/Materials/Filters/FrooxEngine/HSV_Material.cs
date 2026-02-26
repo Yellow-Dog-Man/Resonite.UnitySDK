@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.HSV_Material
-// Generated on: středa 25. února 2026 16:13:03
+// Generated on: čtvrtek 26. února 2026 10:03:34
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,23 +20,29 @@ namespace FrooxEngine
 public partial class HSV_Material : global::FrooxEngine.SingleShaderUI_StencilMaterial
 
 {
-    public UnityEngine.Vector3 HSV_Offset;
-public UnityEngine.Vector3 HSV_Multiply;
-public global::FrooxEngine.BlendMode BlendMode;
-public global::FrooxEngine.Sidedness Sidedness;
-public global::FrooxEngine.ZWrite ZWrite;
-public global::FrooxEngine.ZTest ZTest;
+    public UnityEngine.Vector3 HSV_Offset { get => HSV_Offset_Element.Data; set => HSV_Offset_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.Vector3>, UnityEngine.Vector3> HSV_Offset_Element = new();
+public UnityEngine.Vector3 HSV_Multiply { get => HSV_Multiply_Element.Data; set => HSV_Multiply_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.Vector3>, UnityEngine.Vector3> HSV_Multiply_Element = new();
+public global::FrooxEngine.BlendMode BlendMode { get => BlendMode_Element.Data; set => BlendMode_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::FrooxEngine.BlendMode>, global::FrooxEngine.BlendMode> BlendMode_Element = new();
+public global::FrooxEngine.Sidedness Sidedness { get => Sidedness_Element.Data; set => Sidedness_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::FrooxEngine.Sidedness>, global::FrooxEngine.Sidedness> Sidedness_Element = new();
+public global::FrooxEngine.ZWrite ZWrite { get => ZWrite_Element.Data; set => ZWrite_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::FrooxEngine.ZWrite>, global::FrooxEngine.ZWrite> ZWrite_Element = new();
+public global::FrooxEngine.ZTest ZTest { get => ZTest_Element.Data; set => ZTest_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::FrooxEngine.ZTest>, global::FrooxEngine.ZTest> ZTest_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("HSV_Offset", HSV_Offset.ToResoniteLinkField());
-members.Add("HSV_Multiply", HSV_Multiply.ToResoniteLinkField());
-members.Add("BlendMode", BlendMode.ToResoniteLinkField());
-members.Add("Sidedness", Sidedness.ToResoniteLinkField());
-members.Add("ZWrite", ZWrite.ToResoniteLinkField());
-members.Add("ZTest", ZTest.ToResoniteLinkField());
+members.Add("HSV_Offset", HSV_Offset_Element.Data.ToResoniteLinkField());
+members.Add("HSV_Multiply", HSV_Multiply_Element.Data.ToResoniteLinkField());
+members.Add("BlendMode", BlendMode_Element.Data.ToResoniteLinkField());
+members.Add("Sidedness", Sidedness_Element.Data.ToResoniteLinkField());
+members.Add("ZWrite", ZWrite_Element.Data.ToResoniteLinkField());
+members.Add("ZTest", ZTest_Element.Data.ToResoniteLinkField());
 }
 
 }

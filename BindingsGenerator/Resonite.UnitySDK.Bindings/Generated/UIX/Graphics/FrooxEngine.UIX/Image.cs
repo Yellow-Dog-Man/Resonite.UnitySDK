@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.UIX.Image
-// Generated on: středa 25. února 2026 16:14:09
+// Generated on: čtvrtek 26. února 2026 10:04:32
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,13 +20,14 @@ namespace FrooxEngine.UIX
 public partial class Image : global::FrooxEngine.UIX.ImageBase
 
 {
-    public UnityEngine.ColorX Tint;
+    public UnityEngine.ColorX Tint { get => Tint_Element.Data; set => Tint_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.ColorX>, UnityEngine.ColorX> Tint_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Tint", Tint.ToResoniteLinkField());
+members.Add("Tint", Tint_Element.Data.ToResoniteLinkField());
 }
 
 }

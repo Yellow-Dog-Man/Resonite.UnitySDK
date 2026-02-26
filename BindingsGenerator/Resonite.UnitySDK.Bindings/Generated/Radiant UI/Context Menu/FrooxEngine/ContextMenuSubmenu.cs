@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.ContextMenuSubmenu
-// Generated on: středa 25. února 2026 16:14:14
+// Generated on: čtvrtek 26. února 2026 10:04:35
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,25 +20,32 @@ namespace FrooxEngine
 public partial class ContextMenuSubmenu : global::FrooxEngine.Component, global::FrooxEngine.IButtonPressReceiver
 
 {
-    public global::FrooxEngine.Slot ItemsRoot;
-public global::System.Boolean SearchWholeHierarchy;
-public global::System.Boolean DisableFlick;
-public global::System.Nullable<global::System.Single> SpeedOverride;
-public global::System.Boolean CounterClockwise;
-public global::System.Boolean KeepPosition;
-public global::System.Boolean Hidden;
+    public global::FrooxEngine.Slot ItemsRoot { get => ItemsRoot_Element.Data; set => ItemsRoot_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> ItemsRoot_Element = new();
+public global::System.Boolean SearchWholeHierarchy { get => SearchWholeHierarchy_Element.Data; set => SearchWholeHierarchy_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> SearchWholeHierarchy_Element = new();
+public global::System.Boolean DisableFlick { get => DisableFlick_Element.Data; set => DisableFlick_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> DisableFlick_Element = new();
+public global::System.Nullable<global::System.Single> SpeedOverride { get => SpeedOverride_Element.Data; set => SpeedOverride_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Nullable<global::System.Single>>, global::System.Nullable<global::System.Single>> SpeedOverride_Element = new();
+public global::System.Boolean CounterClockwise { get => CounterClockwise_Element.Data; set => CounterClockwise_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> CounterClockwise_Element = new();
+public global::System.Boolean KeepPosition { get => KeepPosition_Element.Data; set => KeepPosition_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> KeepPosition_Element = new();
+public global::System.Boolean Hidden { get => Hidden_Element.Data; set => Hidden_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> Hidden_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("ItemsRoot", ItemsRoot.ToResoniteReference(context));
-members.Add("SearchWholeHierarchy", SearchWholeHierarchy.ToResoniteLinkField());
-members.Add("DisableFlick", DisableFlick.ToResoniteLinkField());
-members.Add("SpeedOverride", SpeedOverride.ToResoniteLinkField());
-members.Add("CounterClockwise", CounterClockwise.ToResoniteLinkField());
-members.Add("KeepPosition", KeepPosition.ToResoniteLinkField());
-members.Add("Hidden", Hidden.ToResoniteLinkField());
+members.Add("ItemsRoot", ItemsRoot_Element.Data.ToResoniteReference(context));
+members.Add("SearchWholeHierarchy", SearchWholeHierarchy_Element.Data.ToResoniteLinkField());
+members.Add("DisableFlick", DisableFlick_Element.Data.ToResoniteLinkField());
+members.Add("SpeedOverride", SpeedOverride_Element.Data.ToResoniteLinkField());
+members.Add("CounterClockwise", CounterClockwise_Element.Data.ToResoniteLinkField());
+members.Add("KeepPosition", KeepPosition_Element.Data.ToResoniteLinkField());
+members.Add("Hidden", Hidden_Element.Data.ToResoniteLinkField());
 }
 
 }

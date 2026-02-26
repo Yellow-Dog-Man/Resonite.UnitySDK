@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.PhotonDust.ColorHSV_OverLifetimeStartEnd
-// Generated on: středa 25. února 2026 16:14:18
+// Generated on: čtvrtek 26. února 2026 10:04:38
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,23 +20,29 @@ namespace FrooxEngine.PhotonDust
 public partial class ColorHSV_OverLifetimeStartEnd : global::FrooxEngine.PhotonDust.ParticleSystemModule<global::System.Object>
 
 {
-    public global::System.Single StartHue;
-public global::System.Single StartSaturation;
-public global::System.Single StartValue;
-public global::System.Single EndHue;
-public global::System.Single EndSaturation;
-public global::System.Single EndValue;
+    public global::System.Single StartHue { get => StartHue_Element.Data; set => StartHue_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> StartHue_Element = new();
+public global::System.Single StartSaturation { get => StartSaturation_Element.Data; set => StartSaturation_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> StartSaturation_Element = new();
+public global::System.Single StartValue { get => StartValue_Element.Data; set => StartValue_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> StartValue_Element = new();
+public global::System.Single EndHue { get => EndHue_Element.Data; set => EndHue_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> EndHue_Element = new();
+public global::System.Single EndSaturation { get => EndSaturation_Element.Data; set => EndSaturation_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> EndSaturation_Element = new();
+public global::System.Single EndValue { get => EndValue_Element.Data; set => EndValue_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> EndValue_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("StartHue", StartHue.ToResoniteLinkField());
-members.Add("StartSaturation", StartSaturation.ToResoniteLinkField());
-members.Add("StartValue", StartValue.ToResoniteLinkField());
-members.Add("EndHue", EndHue.ToResoniteLinkField());
-members.Add("EndSaturation", EndSaturation.ToResoniteLinkField());
-members.Add("EndValue", EndValue.ToResoniteLinkField());
+members.Add("StartHue", StartHue_Element.Data.ToResoniteLinkField());
+members.Add("StartSaturation", StartSaturation_Element.Data.ToResoniteLinkField());
+members.Add("StartValue", StartValue_Element.Data.ToResoniteLinkField());
+members.Add("EndHue", EndHue_Element.Data.ToResoniteLinkField());
+members.Add("EndSaturation", EndSaturation_Element.Data.ToResoniteLinkField());
+members.Add("EndValue", EndValue_Element.Data.ToResoniteLinkField());
 }
 
 }

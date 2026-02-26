@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.FeedItemInterface+NestedItem
-// Generated on: středa 25. února 2026 16:14:14
+// Generated on: čtvrtek 26. února 2026 10:04:35
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -22,17 +22,20 @@ namespace FrooxEngine
 public partial class NestedItem : global::FrooxEngine.SyncObject
 
 {
-    public global::FrooxEngine.FeedItemInterface Interface;
-public global::FrooxEngine.Slot Container;
-public global::System.Boolean IgnoreParentContainer;
+    public global::FrooxEngine.FeedItemInterface Interface { get => Interface_Element.Data; set => Interface_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.FeedItemInterface>, global::FrooxEngine.FeedItemInterface> Interface_Element = new();
+public global::FrooxEngine.Slot Container { get => Container_Element.Data; set => Container_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> Container_Element = new();
+public global::System.Boolean IgnoreParentContainer { get => IgnoreParentContainer_Element.Data; set => IgnoreParentContainer_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> IgnoreParentContainer_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Interface", Interface.ToResoniteReference(context));
-members.Add("Container", Container.ToResoniteReference(context));
-members.Add("IgnoreParentContainer", IgnoreParentContainer.ToResoniteLinkField());
+members.Add("Interface", Interface_Element.Data.ToResoniteReference(context));
+members.Add("Container", Container_Element.Data.ToResoniteReference(context));
+members.Add("IgnoreParentContainer", IgnoreParentContainer_Element.Data.ToResoniteLinkField());
 }
 
 }

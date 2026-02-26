@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.InventoryBrowser
-// Generated on: středa 25. února 2026 16:14:40
+// Generated on: čtvrtek 26. února 2026 10:04:46
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,35 +20,46 @@ namespace FrooxEngine
 public partial class InventoryBrowser : global::FrooxEngine.BrowserDialog
 
 {
-    public global::FrooxEngine.UserRef _user;
-public global::System.Boolean _autoReinitialize;
-public global::System.String _currentPath;
-public global::System.String _currentOwnerId;
-public global::FrooxEngine.UIX.Button _addNewButton;
-public global::FrooxEngine.UIX.Button _deleteButton;
-public global::FrooxEngine.UIX.Button _inventoriesButton;
-public global::FrooxEngine.UIX.Button _shareButton;
-public global::FrooxEngine.UIX.Button _unshareButton;
-public global::FrooxEngine.UIX.Button _copyLink;
-public global::FrooxEngine.UIX.Button _addCurrentAvatar;
-public global::FrooxEngine.InventoryBrowser.SpecialItemType _lastSpecialItemType;
+    public global::FrooxEngine.UserRef _user = new();
+public global::System.Boolean _autoReinitialize { get => _autoReinitialize_Element.Data; set => _autoReinitialize_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> _autoReinitialize_Element = new();
+public global::System.String _currentPath { get => _currentPath_Element.Data; set => _currentPath_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.String>, global::System.String> _currentPath_Element = new();
+public global::System.String _currentOwnerId { get => _currentOwnerId_Element.Data; set => _currentOwnerId_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.String>, global::System.String> _currentOwnerId_Element = new();
+public global::FrooxEngine.UIX.Button _addNewButton { get => _addNewButton_Element.Data; set => _addNewButton_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.UIX.Button>, global::FrooxEngine.UIX.Button> _addNewButton_Element = new();
+public global::FrooxEngine.UIX.Button _deleteButton { get => _deleteButton_Element.Data; set => _deleteButton_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.UIX.Button>, global::FrooxEngine.UIX.Button> _deleteButton_Element = new();
+public global::FrooxEngine.UIX.Button _inventoriesButton { get => _inventoriesButton_Element.Data; set => _inventoriesButton_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.UIX.Button>, global::FrooxEngine.UIX.Button> _inventoriesButton_Element = new();
+public global::FrooxEngine.UIX.Button _shareButton { get => _shareButton_Element.Data; set => _shareButton_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.UIX.Button>, global::FrooxEngine.UIX.Button> _shareButton_Element = new();
+public global::FrooxEngine.UIX.Button _unshareButton { get => _unshareButton_Element.Data; set => _unshareButton_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.UIX.Button>, global::FrooxEngine.UIX.Button> _unshareButton_Element = new();
+public global::FrooxEngine.UIX.Button _copyLink { get => _copyLink_Element.Data; set => _copyLink_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.UIX.Button>, global::FrooxEngine.UIX.Button> _copyLink_Element = new();
+public global::FrooxEngine.UIX.Button _addCurrentAvatar { get => _addCurrentAvatar_Element.Data; set => _addCurrentAvatar_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.UIX.Button>, global::FrooxEngine.UIX.Button> _addCurrentAvatar_Element = new();
+public global::FrooxEngine.InventoryBrowser.SpecialItemType _lastSpecialItemType { get => _lastSpecialItemType_Element.Data; set => _lastSpecialItemType_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::FrooxEngine.InventoryBrowser.SpecialItemType>, global::FrooxEngine.InventoryBrowser.SpecialItemType> _lastSpecialItemType_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
 members.Add("_user", new ResoniteLink.SyncObject() { Members = _user.CollectMembers(context) });
-members.Add("_autoReinitialize", _autoReinitialize.ToResoniteLinkField());
-members.Add("_currentPath", _currentPath.ToResoniteLinkField());
-members.Add("_currentOwnerId", _currentOwnerId.ToResoniteLinkField());
-members.Add("_addNewButton", _addNewButton.ToResoniteReference(context));
-members.Add("_deleteButton", _deleteButton.ToResoniteReference(context));
-members.Add("_inventoriesButton", _inventoriesButton.ToResoniteReference(context));
-members.Add("_shareButton", _shareButton.ToResoniteReference(context));
-members.Add("_unshareButton", _unshareButton.ToResoniteReference(context));
-members.Add("_copyLink", _copyLink.ToResoniteReference(context));
-members.Add("_addCurrentAvatar", _addCurrentAvatar.ToResoniteReference(context));
-members.Add("_lastSpecialItemType", _lastSpecialItemType.ToResoniteLinkField());
+members.Add("_autoReinitialize", _autoReinitialize_Element.Data.ToResoniteLinkField());
+members.Add("_currentPath", _currentPath_Element.Data.ToResoniteLinkField());
+members.Add("_currentOwnerId", _currentOwnerId_Element.Data.ToResoniteLinkField());
+members.Add("_addNewButton", _addNewButton_Element.Data.ToResoniteReference(context));
+members.Add("_deleteButton", _deleteButton_Element.Data.ToResoniteReference(context));
+members.Add("_inventoriesButton", _inventoriesButton_Element.Data.ToResoniteReference(context));
+members.Add("_shareButton", _shareButton_Element.Data.ToResoniteReference(context));
+members.Add("_unshareButton", _unshareButton_Element.Data.ToResoniteReference(context));
+members.Add("_copyLink", _copyLink_Element.Data.ToResoniteReference(context));
+members.Add("_addCurrentAvatar", _addCurrentAvatar_Element.Data.ToResoniteReference(context));
+members.Add("_lastSpecialItemType", _lastSpecialItemType_Element.Data.ToResoniteLinkField());
 }
 
 }

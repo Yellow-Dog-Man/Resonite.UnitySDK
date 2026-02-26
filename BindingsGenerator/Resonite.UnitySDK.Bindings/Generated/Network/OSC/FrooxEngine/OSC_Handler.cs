@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.OSC_Handler
-// Generated on: středa 25. února 2026 16:13:11
+// Generated on: čtvrtek 26. února 2026 10:03:40
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,15 +20,16 @@ namespace FrooxEngine
 public abstract partial class OSC_Handler : global::FrooxEngine.Component
 
 {
-    public global::FrooxEngine.UserRef HandlingUser;
-public global::System.String AccessReason;
+    public global::FrooxEngine.UserRef HandlingUser = new();
+public global::System.String AccessReason { get => AccessReason_Element.Data; set => AccessReason_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.String>, global::System.String> AccessReason_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
 members.Add("HandlingUser", new ResoniteLink.SyncObject() { Members = HandlingUser.CollectMembers(context) });
-members.Add("AccessReason", AccessReason.ToResoniteLinkField());
+members.Add("AccessReason", AccessReason_Element.Data.ToResoniteLinkField());
 }
 
 }

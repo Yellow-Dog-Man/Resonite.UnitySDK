@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.FinalIK.VRIK
-// Generated on: středa 25. února 2026 16:14:38
+// Generated on: čtvrtek 26. února 2026 10:04:45
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,23 +20,26 @@ namespace FrooxEngine.FinalIK
 public partial class VRIK : global::FrooxEngine.Component
 
 {
-    public global::System.Boolean AutoUpdate;
-public global::System.Boolean FixTransformsEnabled;
-public global::FrooxEngine.FinalIK.IKSolverVR Solver;
-public global::System.Boolean componentInitiated;
-public System.Collections.Generic.List<global::FrooxEngine.FinalIK.VRIK.BoneDrive> _drives;
+    public global::System.Boolean AutoUpdate { get => AutoUpdate_Element.Data; set => AutoUpdate_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> AutoUpdate_Element = new();
+public global::System.Boolean FixTransformsEnabled { get => FixTransformsEnabled_Element.Data; set => FixTransformsEnabled_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> FixTransformsEnabled_Element = new();
+public global::FrooxEngine.FinalIK.IKSolverVR Solver = new();
+public global::System.Boolean componentInitiated { get => componentInitiated_Element.Data; set => componentInitiated_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> componentInitiated_Element = new();
+public global::SyncList<global::FrooxEngine.SyncList<global::FrooxEngine.FinalIK.VRIK.BoneDrive>, global::FrooxEngine.FinalIK.VRIK.BoneDrive> _drives = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("AutoUpdate", AutoUpdate.ToResoniteLinkField());
-members.Add("FixTransformsEnabled", FixTransformsEnabled.ToResoniteLinkField());
+members.Add("AutoUpdate", AutoUpdate_Element.Data.ToResoniteLinkField());
+members.Add("FixTransformsEnabled", FixTransformsEnabled_Element.Data.ToResoniteLinkField());
 members.Add("Solver", new ResoniteLink.SyncObject() { Members = Solver.CollectMembers(context) });
-members.Add("componentInitiated", componentInitiated.ToResoniteLinkField());
+members.Add("componentInitiated", componentInitiated_Element.Data.ToResoniteLinkField());
 members.Add("_drives", new ResoniteLink.SyncList()
 {
-    Elements = _drives.ConvertList(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers(context) })
+    Elements = _drives.Data.ConvertList(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers(context) })
 });
 }
 

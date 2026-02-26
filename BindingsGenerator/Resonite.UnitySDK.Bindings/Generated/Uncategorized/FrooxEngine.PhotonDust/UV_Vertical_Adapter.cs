@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.PhotonDust.UV_Vertical_Adapter
-// Generated on: středa 25. února 2026 16:14:44
+// Generated on: čtvrtek 26. února 2026 10:04:49
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,19 +20,23 @@ namespace FrooxEngine.PhotonDust
 public partial class UV_Vertical_Adapter : global::FrooxEngine.Component
 
 {
-    public UnityEngine.Vector2 OriginalUVOffset;
-public UnityEngine.Vector2 OriginalUVScale;
-public global::FrooxEngine.IField<UnityEngine.Vector2> UVOffset;
-public global::FrooxEngine.IField<UnityEngine.Vector2> UVScale;
+    public UnityEngine.Vector2 OriginalUVOffset { get => OriginalUVOffset_Element.Data; set => OriginalUVOffset_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.Vector2>, UnityEngine.Vector2> OriginalUVOffset_Element = new();
+public UnityEngine.Vector2 OriginalUVScale { get => OriginalUVScale_Element.Data; set => OriginalUVScale_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.Vector2>, UnityEngine.Vector2> OriginalUVScale_Element = new();
+public global::FrooxEngine.IField<UnityEngine.Vector2> UVOffset { get => UVOffset_Element.Data; set => UVOffset_Element.Data = value; }
+public Field<global::FrooxEngine.FieldDrive<UnityEngine.Vector2>, global::FrooxEngine.IField<UnityEngine.Vector2>> UVOffset_Element = new();
+public global::FrooxEngine.IField<UnityEngine.Vector2> UVScale { get => UVScale_Element.Data; set => UVScale_Element.Data = value; }
+public Field<global::FrooxEngine.FieldDrive<UnityEngine.Vector2>, global::FrooxEngine.IField<UnityEngine.Vector2>> UVScale_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("OriginalUVOffset", OriginalUVOffset.ToResoniteLinkField());
-members.Add("OriginalUVScale", OriginalUVScale.ToResoniteLinkField());
-members.Add("UVOffset", UVOffset.ToResoniteReference(context));
-members.Add("UVScale", UVScale.ToResoniteReference(context));
+members.Add("OriginalUVOffset", OriginalUVOffset_Element.Data.ToResoniteLinkField());
+members.Add("OriginalUVScale", OriginalUVScale_Element.Data.ToResoniteLinkField());
+members.Add("UVOffset", UVOffset_Element.Data.ToResoniteReference(context));
+members.Add("UVScale", UVScale_Element.Data.ToResoniteReference(context));
 }
 
 }

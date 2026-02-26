@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.FinalIK.IKSolverVR+Leg
-// Generated on: středa 25. února 2026 16:14:38
+// Generated on: čtvrtek 26. února 2026 10:04:45
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -22,31 +22,41 @@ namespace FrooxEngine.FinalIK
 public partial class Leg : global::FrooxEngine.FinalIK.IKSolverVR.BodyPart
 
 {
-    public global::FrooxEngine.Slot Target;
-public UnityEngine.Vector3 BendGoalPosition;
-public global::FrooxEngine.Slot BendGoal;
-public global::System.Single PositionWeight;
-public global::System.Single RotationWeight;
-public global::System.Single BendGoalWeight;
-public global::System.Single SwivelOffset;
-public UnityEngine.Vector3 CalfBendNormal;
-public UnityEngine.Vector3 IKPosition;
-public UnityEngine.Quaternion IKRotation;
+    public global::FrooxEngine.Slot Target { get => Target_Element.Data; set => Target_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> Target_Element = new();
+public UnityEngine.Vector3 BendGoalPosition { get => BendGoalPosition_Element.Data; set => BendGoalPosition_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.Vector3>, UnityEngine.Vector3> BendGoalPosition_Element = new();
+public global::FrooxEngine.Slot BendGoal { get => BendGoal_Element.Data; set => BendGoal_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> BendGoal_Element = new();
+public global::System.Single PositionWeight { get => PositionWeight_Element.Data; set => PositionWeight_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> PositionWeight_Element = new();
+public global::System.Single RotationWeight { get => RotationWeight_Element.Data; set => RotationWeight_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> RotationWeight_Element = new();
+public global::System.Single BendGoalWeight { get => BendGoalWeight_Element.Data; set => BendGoalWeight_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> BendGoalWeight_Element = new();
+public global::System.Single SwivelOffset { get => SwivelOffset_Element.Data; set => SwivelOffset_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> SwivelOffset_Element = new();
+public UnityEngine.Vector3 CalfBendNormal { get => CalfBendNormal_Element.Data; set => CalfBendNormal_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.Vector3>, UnityEngine.Vector3> CalfBendNormal_Element = new();
+public UnityEngine.Vector3 IKPosition { get => IKPosition_Element.Data; set => IKPosition_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.Vector3>, UnityEngine.Vector3> IKPosition_Element = new();
+public UnityEngine.Quaternion IKRotation { get => IKRotation_Element.Data; set => IKRotation_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.Quaternion>, UnityEngine.Quaternion> IKRotation_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Target", Target.ToResoniteReference(context));
-members.Add("BendGoalPosition", BendGoalPosition.ToResoniteLinkField());
-members.Add("BendGoal", BendGoal.ToResoniteReference(context));
-members.Add("PositionWeight", PositionWeight.ToResoniteLinkField());
-members.Add("RotationWeight", RotationWeight.ToResoniteLinkField());
-members.Add("BendGoalWeight", BendGoalWeight.ToResoniteLinkField());
-members.Add("SwivelOffset", SwivelOffset.ToResoniteLinkField());
-members.Add("CalfBendNormal", CalfBendNormal.ToResoniteLinkField());
-members.Add("IKPosition", IKPosition.ToResoniteLinkField());
-members.Add("IKRotation", IKRotation.ToResoniteLinkField());
+members.Add("Target", Target_Element.Data.ToResoniteReference(context));
+members.Add("BendGoalPosition", BendGoalPosition_Element.Data.ToResoniteLinkField());
+members.Add("BendGoal", BendGoal_Element.Data.ToResoniteReference(context));
+members.Add("PositionWeight", PositionWeight_Element.Data.ToResoniteLinkField());
+members.Add("RotationWeight", RotationWeight_Element.Data.ToResoniteLinkField());
+members.Add("BendGoalWeight", BendGoalWeight_Element.Data.ToResoniteLinkField());
+members.Add("SwivelOffset", SwivelOffset_Element.Data.ToResoniteLinkField());
+members.Add("CalfBendNormal", CalfBendNormal_Element.Data.ToResoniteLinkField());
+members.Add("IKPosition", IKPosition_Element.Data.ToResoniteLinkField());
+members.Add("IKRotation", IKRotation_Element.Data.ToResoniteLinkField());
 }
 
 }

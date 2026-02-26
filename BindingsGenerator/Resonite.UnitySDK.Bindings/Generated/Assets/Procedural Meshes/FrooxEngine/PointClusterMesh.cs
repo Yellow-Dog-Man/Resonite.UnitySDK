@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.PointClusterMesh
-// Generated on: středa 25. února 2026 16:13:04
+// Generated on: čtvrtek 26. února 2026 10:03:36
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,61 +20,86 @@ namespace FrooxEngine
 public partial class PointClusterMesh : global::FrooxEngine.ProceduralMesh
 
 {
-    public global::FrooxEngine.PointClusterMesh.DistributionType Distribution;
-public global::FrooxEngine.PointClusterMesh.ColorMode Colors;
-public global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture> TextureColorSource;
-public global::FrooxEngine.IAssetProvider<global::FrooxEngine.Texture2D> HeightScaleSource;
-public global::System.Single TextureIntensityClip;
-public global::System.Single TextureAlphaClip;
-public global::System.Int32 MaxClipAttempts;
-public global::System.Single HeightmapExp;
-public global::System.Int32 Seed;
-public global::System.Int32 Points;
-public global::FrooxEngine.AtlasInfo Atlas;
-public UnityEngine.Vector3 Scale;
-public global::System.Single RangeExp;
-public UnityEngine.Vector3 JitterRange;
-public UnityEngine.ColorX Color0;
-public UnityEngine.ColorX Color1;
-public global::System.Single ColorLerpScale;
-public global::System.Single ColorGap;
-public UnityEngine.Vector3 SimplexNoiseScale;
-public UnityEngine.Vector3 SimplexNoiseOffset;
-public global::System.Boolean UniformSize;
-public UnityEngine.Vector2 MinSize;
-public UnityEngine.Vector2 MaxSize;
-public global::System.Single MinRotation;
-public global::System.Single MaxRotation;
+    public global::FrooxEngine.PointClusterMesh.DistributionType Distribution { get => Distribution_Element.Data; set => Distribution_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::FrooxEngine.PointClusterMesh.DistributionType>, global::FrooxEngine.PointClusterMesh.DistributionType> Distribution_Element = new();
+public global::FrooxEngine.PointClusterMesh.ColorMode Colors { get => Colors_Element.Data; set => Colors_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::FrooxEngine.PointClusterMesh.ColorMode>, global::FrooxEngine.PointClusterMesh.ColorMode> Colors_Element = new();
+public global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture> TextureColorSource { get => TextureColorSource_Element.Data; set => TextureColorSource_Element.Data = value; }
+public Field<global::FrooxEngine.AssetRef<global::FrooxEngine.ITexture>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture>> TextureColorSource_Element = new();
+public global::FrooxEngine.IAssetProvider<global::FrooxEngine.Texture2D> HeightScaleSource { get => HeightScaleSource_Element.Data; set => HeightScaleSource_Element.Data = value; }
+public Field<global::FrooxEngine.AssetRef<global::FrooxEngine.Texture2D>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.Texture2D>> HeightScaleSource_Element = new();
+public global::System.Single TextureIntensityClip { get => TextureIntensityClip_Element.Data; set => TextureIntensityClip_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> TextureIntensityClip_Element = new();
+public global::System.Single TextureAlphaClip { get => TextureAlphaClip_Element.Data; set => TextureAlphaClip_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> TextureAlphaClip_Element = new();
+public global::System.Int32 MaxClipAttempts { get => MaxClipAttempts_Element.Data; set => MaxClipAttempts_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Int32>, global::System.Int32> MaxClipAttempts_Element = new();
+public global::System.Single HeightmapExp { get => HeightmapExp_Element.Data; set => HeightmapExp_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> HeightmapExp_Element = new();
+public global::System.Int32 Seed { get => Seed_Element.Data; set => Seed_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Int32>, global::System.Int32> Seed_Element = new();
+public global::System.Int32 Points { get => Points_Element.Data; set => Points_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Int32>, global::System.Int32> Points_Element = new();
+public global::FrooxEngine.AtlasInfo Atlas { get => Atlas_Element.Data; set => Atlas_Element.Data = value; }
+public Field<global::FrooxEngine.RelayRef<global::FrooxEngine.AtlasInfo>, global::FrooxEngine.AtlasInfo> Atlas_Element = new();
+public UnityEngine.Vector3 Scale { get => Scale_Element.Data; set => Scale_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.Vector3>, UnityEngine.Vector3> Scale_Element = new();
+public global::System.Single RangeExp { get => RangeExp_Element.Data; set => RangeExp_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> RangeExp_Element = new();
+public UnityEngine.Vector3 JitterRange { get => JitterRange_Element.Data; set => JitterRange_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.Vector3>, UnityEngine.Vector3> JitterRange_Element = new();
+public UnityEngine.ColorX Color0 { get => Color0_Element.Data; set => Color0_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.ColorX>, UnityEngine.ColorX> Color0_Element = new();
+public UnityEngine.ColorX Color1 { get => Color1_Element.Data; set => Color1_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.ColorX>, UnityEngine.ColorX> Color1_Element = new();
+public global::System.Single ColorLerpScale { get => ColorLerpScale_Element.Data; set => ColorLerpScale_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> ColorLerpScale_Element = new();
+public global::System.Single ColorGap { get => ColorGap_Element.Data; set => ColorGap_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> ColorGap_Element = new();
+public UnityEngine.Vector3 SimplexNoiseScale { get => SimplexNoiseScale_Element.Data; set => SimplexNoiseScale_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.Vector3>, UnityEngine.Vector3> SimplexNoiseScale_Element = new();
+public UnityEngine.Vector3 SimplexNoiseOffset { get => SimplexNoiseOffset_Element.Data; set => SimplexNoiseOffset_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.Vector3>, UnityEngine.Vector3> SimplexNoiseOffset_Element = new();
+public global::System.Boolean UniformSize { get => UniformSize_Element.Data; set => UniformSize_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> UniformSize_Element = new();
+public UnityEngine.Vector2 MinSize { get => MinSize_Element.Data; set => MinSize_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.Vector2>, UnityEngine.Vector2> MinSize_Element = new();
+public UnityEngine.Vector2 MaxSize { get => MaxSize_Element.Data; set => MaxSize_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.Vector2>, UnityEngine.Vector2> MaxSize_Element = new();
+public global::System.Single MinRotation { get => MinRotation_Element.Data; set => MinRotation_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> MinRotation_Element = new();
+public global::System.Single MaxRotation { get => MaxRotation_Element.Data; set => MaxRotation_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> MaxRotation_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Distribution", Distribution.ToResoniteLinkField());
-members.Add("Colors", Colors.ToResoniteLinkField());
-members.Add("TextureColorSource", TextureColorSource.ToResoniteReference(context));
-members.Add("HeightScaleSource", HeightScaleSource.ToResoniteReference(context));
-members.Add("TextureIntensityClip", TextureIntensityClip.ToResoniteLinkField());
-members.Add("TextureAlphaClip", TextureAlphaClip.ToResoniteLinkField());
-members.Add("MaxClipAttempts", MaxClipAttempts.ToResoniteLinkField());
-members.Add("HeightmapExp", HeightmapExp.ToResoniteLinkField());
-members.Add("Seed", Seed.ToResoniteLinkField());
-members.Add("Points", Points.ToResoniteLinkField());
-members.Add("Atlas", Atlas.ToResoniteReference(context));
-members.Add("Scale", Scale.ToResoniteLinkField());
-members.Add("RangeExp", RangeExp.ToResoniteLinkField());
-members.Add("JitterRange", JitterRange.ToResoniteLinkField());
-members.Add("Color0", Color0.ToResoniteLinkField());
-members.Add("Color1", Color1.ToResoniteLinkField());
-members.Add("ColorLerpScale", ColorLerpScale.ToResoniteLinkField());
-members.Add("ColorGap", ColorGap.ToResoniteLinkField());
-members.Add("SimplexNoiseScale", SimplexNoiseScale.ToResoniteLinkField());
-members.Add("SimplexNoiseOffset", SimplexNoiseOffset.ToResoniteLinkField());
-members.Add("UniformSize", UniformSize.ToResoniteLinkField());
-members.Add("MinSize", MinSize.ToResoniteLinkField());
-members.Add("MaxSize", MaxSize.ToResoniteLinkField());
-members.Add("MinRotation", MinRotation.ToResoniteLinkField());
-members.Add("MaxRotation", MaxRotation.ToResoniteLinkField());
+members.Add("Distribution", Distribution_Element.Data.ToResoniteLinkField());
+members.Add("Colors", Colors_Element.Data.ToResoniteLinkField());
+members.Add("TextureColorSource", TextureColorSource_Element.Data.ToResoniteReference(context));
+members.Add("HeightScaleSource", HeightScaleSource_Element.Data.ToResoniteReference(context));
+members.Add("TextureIntensityClip", TextureIntensityClip_Element.Data.ToResoniteLinkField());
+members.Add("TextureAlphaClip", TextureAlphaClip_Element.Data.ToResoniteLinkField());
+members.Add("MaxClipAttempts", MaxClipAttempts_Element.Data.ToResoniteLinkField());
+members.Add("HeightmapExp", HeightmapExp_Element.Data.ToResoniteLinkField());
+members.Add("Seed", Seed_Element.Data.ToResoniteLinkField());
+members.Add("Points", Points_Element.Data.ToResoniteLinkField());
+members.Add("Atlas", Atlas_Element.Data.ToResoniteReference(context));
+members.Add("Scale", Scale_Element.Data.ToResoniteLinkField());
+members.Add("RangeExp", RangeExp_Element.Data.ToResoniteLinkField());
+members.Add("JitterRange", JitterRange_Element.Data.ToResoniteLinkField());
+members.Add("Color0", Color0_Element.Data.ToResoniteLinkField());
+members.Add("Color1", Color1_Element.Data.ToResoniteLinkField());
+members.Add("ColorLerpScale", ColorLerpScale_Element.Data.ToResoniteLinkField());
+members.Add("ColorGap", ColorGap_Element.Data.ToResoniteLinkField());
+members.Add("SimplexNoiseScale", SimplexNoiseScale_Element.Data.ToResoniteLinkField());
+members.Add("SimplexNoiseOffset", SimplexNoiseOffset_Element.Data.ToResoniteLinkField());
+members.Add("UniformSize", UniformSize_Element.Data.ToResoniteLinkField());
+members.Add("MinSize", MinSize_Element.Data.ToResoniteLinkField());
+members.Add("MaxSize", MaxSize_Element.Data.ToResoniteLinkField());
+members.Add("MinRotation", MinRotation_Element.Data.ToResoniteLinkField());
+members.Add("MaxRotation", MaxRotation_Element.Data.ToResoniteLinkField());
 }
 
 }

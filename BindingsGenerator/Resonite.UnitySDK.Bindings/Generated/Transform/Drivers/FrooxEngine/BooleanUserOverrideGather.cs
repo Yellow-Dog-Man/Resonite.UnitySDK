@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.BooleanUserOverrideGather
-// Generated on: středa 25. února 2026 16:14:29
+// Generated on: čtvrtek 26. února 2026 10:04:41
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,23 +20,29 @@ namespace FrooxEngine
 public partial class BooleanUserOverrideGather : global::FrooxEngine.ValueUserOverride<global::System.Boolean>
 
 {
-    public global::System.Boolean Any;
-public global::System.Boolean All;
-public global::System.Boolean None;
-public global::System.Int32 TrueCount;
-public global::System.Int32 FalseCount;
-public global::System.Boolean ExcludeHeadless;
+    public global::System.Boolean Any { get => Any_Element.Data; set => Any_Element.Data = value; }
+public Field<global::FrooxEngine.RawOutput<global::System.Boolean>, global::System.Boolean> Any_Element = new();
+public global::System.Boolean All { get => All_Element.Data; set => All_Element.Data = value; }
+public Field<global::FrooxEngine.RawOutput<global::System.Boolean>, global::System.Boolean> All_Element = new();
+public global::System.Boolean None { get => None_Element.Data; set => None_Element.Data = value; }
+public Field<global::FrooxEngine.RawOutput<global::System.Boolean>, global::System.Boolean> None_Element = new();
+public global::System.Int32 TrueCount { get => TrueCount_Element.Data; set => TrueCount_Element.Data = value; }
+public Field<global::FrooxEngine.RawOutput<global::System.Int32>, global::System.Int32> TrueCount_Element = new();
+public global::System.Int32 FalseCount { get => FalseCount_Element.Data; set => FalseCount_Element.Data = value; }
+public Field<global::FrooxEngine.RawOutput<global::System.Int32>, global::System.Int32> FalseCount_Element = new();
+public global::System.Boolean ExcludeHeadless { get => ExcludeHeadless_Element.Data; set => ExcludeHeadless_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> ExcludeHeadless_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Any", Any.ToResoniteLinkField());
-members.Add("All", All.ToResoniteLinkField());
-members.Add("None", None.ToResoniteLinkField());
-members.Add("TrueCount", TrueCount.ToResoniteLinkField());
-members.Add("FalseCount", FalseCount.ToResoniteLinkField());
-members.Add("ExcludeHeadless", ExcludeHeadless.ToResoniteLinkField());
+members.Add("Any", Any_Element.Data.ToResoniteLinkField());
+members.Add("All", All_Element.Data.ToResoniteLinkField());
+members.Add("None", None_Element.Data.ToResoniteLinkField());
+members.Add("TrueCount", TrueCount_Element.Data.ToResoniteLinkField());
+members.Add("FalseCount", FalseCount_Element.Data.ToResoniteLinkField());
+members.Add("ExcludeHeadless", ExcludeHeadless_Element.Data.ToResoniteLinkField());
 }
 
 }

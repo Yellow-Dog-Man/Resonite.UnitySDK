@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.BrowserDialog
-// Generated on: středa 25. února 2026 16:14:35
+// Generated on: čtvrtek 26. února 2026 10:04:43
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,35 +20,47 @@ namespace FrooxEngine
 public abstract partial class BrowserDialog : global::FrooxEngine.Component
 
 {
-    public global::FrooxEngine.BrowserItem SelectedItem;
-public global::FrooxEngine.BrowserItem _previousSelectedItem;
-public global::System.Boolean AllowSelect;
-public global::System.Single ItemSize;
-public global::FrooxEngine.UIX.Text _selectedText;
-public global::FrooxEngine.Slot _pathRoot;
-public global::FrooxEngine.Slot _buttonsRoot;
-public global::FrooxEngine.UIX.GridLayout _folderGrid;
-public global::FrooxEngine.UIX.GridLayout _itemGrid;
-public global::FrooxEngine.SpriteProvider _tabSprite;
-public global::FrooxEngine.Slot _loadingIndicator;
-public global::FrooxEngine.UIX.SlideSwapRegion _swapper;
+    public global::FrooxEngine.BrowserItem SelectedItem { get => SelectedItem_Element.Data; set => SelectedItem_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.BrowserItem>, global::FrooxEngine.BrowserItem> SelectedItem_Element = new();
+public global::FrooxEngine.BrowserItem _previousSelectedItem { get => _previousSelectedItem_Element.Data; set => _previousSelectedItem_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.BrowserItem>, global::FrooxEngine.BrowserItem> _previousSelectedItem_Element = new();
+public global::System.Boolean AllowSelect { get => AllowSelect_Element.Data; set => AllowSelect_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> AllowSelect_Element = new();
+public global::System.Single ItemSize { get => ItemSize_Element.Data; set => ItemSize_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> ItemSize_Element = new();
+public global::FrooxEngine.UIX.Text _selectedText { get => _selectedText_Element.Data; set => _selectedText_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.UIX.Text>, global::FrooxEngine.UIX.Text> _selectedText_Element = new();
+public global::FrooxEngine.Slot _pathRoot { get => _pathRoot_Element.Data; set => _pathRoot_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> _pathRoot_Element = new();
+public global::FrooxEngine.Slot _buttonsRoot { get => _buttonsRoot_Element.Data; set => _buttonsRoot_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> _buttonsRoot_Element = new();
+public global::FrooxEngine.UIX.GridLayout _folderGrid { get => _folderGrid_Element.Data; set => _folderGrid_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.UIX.GridLayout>, global::FrooxEngine.UIX.GridLayout> _folderGrid_Element = new();
+public global::FrooxEngine.UIX.GridLayout _itemGrid { get => _itemGrid_Element.Data; set => _itemGrid_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.UIX.GridLayout>, global::FrooxEngine.UIX.GridLayout> _itemGrid_Element = new();
+public global::FrooxEngine.SpriteProvider _tabSprite { get => _tabSprite_Element.Data; set => _tabSprite_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.SpriteProvider>, global::FrooxEngine.SpriteProvider> _tabSprite_Element = new();
+public global::FrooxEngine.Slot _loadingIndicator { get => _loadingIndicator_Element.Data; set => _loadingIndicator_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> _loadingIndicator_Element = new();
+public global::FrooxEngine.UIX.SlideSwapRegion _swapper { get => _swapper_Element.Data; set => _swapper_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.UIX.SlideSwapRegion>, global::FrooxEngine.UIX.SlideSwapRegion> _swapper_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("SelectedItem", SelectedItem.ToResoniteReference(context));
-members.Add("_previousSelectedItem", _previousSelectedItem.ToResoniteReference(context));
-members.Add("AllowSelect", AllowSelect.ToResoniteLinkField());
-members.Add("ItemSize", ItemSize.ToResoniteLinkField());
-members.Add("_selectedText", _selectedText.ToResoniteReference(context));
-members.Add("_pathRoot", _pathRoot.ToResoniteReference(context));
-members.Add("_buttonsRoot", _buttonsRoot.ToResoniteReference(context));
-members.Add("_folderGrid", _folderGrid.ToResoniteReference(context));
-members.Add("_itemGrid", _itemGrid.ToResoniteReference(context));
-members.Add("_tabSprite", _tabSprite.ToResoniteReference(context));
-members.Add("_loadingIndicator", _loadingIndicator.ToResoniteReference(context));
-members.Add("_swapper", _swapper.ToResoniteReference(context));
+members.Add("SelectedItem", SelectedItem_Element.Data.ToResoniteReference(context));
+members.Add("_previousSelectedItem", _previousSelectedItem_Element.Data.ToResoniteReference(context));
+members.Add("AllowSelect", AllowSelect_Element.Data.ToResoniteLinkField());
+members.Add("ItemSize", ItemSize_Element.Data.ToResoniteLinkField());
+members.Add("_selectedText", _selectedText_Element.Data.ToResoniteReference(context));
+members.Add("_pathRoot", _pathRoot_Element.Data.ToResoniteReference(context));
+members.Add("_buttonsRoot", _buttonsRoot_Element.Data.ToResoniteReference(context));
+members.Add("_folderGrid", _folderGrid_Element.Data.ToResoniteReference(context));
+members.Add("_itemGrid", _itemGrid_Element.Data.ToResoniteReference(context));
+members.Add("_tabSprite", _tabSprite_Element.Data.ToResoniteReference(context));
+members.Add("_loadingIndicator", _loadingIndicator_Element.Data.ToResoniteReference(context));
+members.Add("_swapper", _swapper_Element.Data.ToResoniteReference(context));
 }
 
 }

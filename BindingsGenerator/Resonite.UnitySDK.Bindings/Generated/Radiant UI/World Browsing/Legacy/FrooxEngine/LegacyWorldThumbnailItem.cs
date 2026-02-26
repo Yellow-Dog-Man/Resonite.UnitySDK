@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.LegacyWorldThumbnailItem
-// Generated on: středa 25. února 2026 16:14:15
+// Generated on: čtvrtek 26. února 2026 10:04:36
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,37 +20,50 @@ namespace FrooxEngine
 public partial class LegacyWorldThumbnailItem : global::FrooxEngine.LegacyWorldItem, global::FrooxEngine.IButtonPressReceiver, global::FrooxEngine.IButtonHoverReceiver
 
 {
-    public global::FrooxEngine.UIX.RawGraphic _thumbnailGraphic;
-public global::FrooxEngine.StaticTexture2D _thumbnailTexture;
-public global::FrooxEngine.UIX.RectTransform _nameRoot;
-public global::FrooxEngine.UIX.RectTransform _detailRoot;
-public global::FrooxEngine.UIX.RectTransform _visitedRoot;
-public global::FrooxEngine.UIX.RectTransform _counterRoot;
-public global::FrooxEngine.UIX.RectTransform _iconsRoot;
-public global::FrooxEngine.UIX.RectTransform _closeButton;
-public global::FrooxEngine.UIX.Text _nameText;
-public global::FrooxEngine.UIX.Text _detailText;
-public global::FrooxEngine.UIX.Text _counterText;
-public global::FrooxEngine.UIX.Image _borderOverlay;
-public UnityEngine.ColorX _borderColor;
+    public global::FrooxEngine.UIX.RawGraphic _thumbnailGraphic { get => _thumbnailGraphic_Element.Data; set => _thumbnailGraphic_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.UIX.RawGraphic>, global::FrooxEngine.UIX.RawGraphic> _thumbnailGraphic_Element = new();
+public global::FrooxEngine.StaticTexture2D _thumbnailTexture { get => _thumbnailTexture_Element.Data; set => _thumbnailTexture_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.StaticTexture2D>, global::FrooxEngine.StaticTexture2D> _thumbnailTexture_Element = new();
+public global::FrooxEngine.UIX.RectTransform _nameRoot { get => _nameRoot_Element.Data; set => _nameRoot_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.UIX.RectTransform>, global::FrooxEngine.UIX.RectTransform> _nameRoot_Element = new();
+public global::FrooxEngine.UIX.RectTransform _detailRoot { get => _detailRoot_Element.Data; set => _detailRoot_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.UIX.RectTransform>, global::FrooxEngine.UIX.RectTransform> _detailRoot_Element = new();
+public global::FrooxEngine.UIX.RectTransform _visitedRoot { get => _visitedRoot_Element.Data; set => _visitedRoot_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.UIX.RectTransform>, global::FrooxEngine.UIX.RectTransform> _visitedRoot_Element = new();
+public global::FrooxEngine.UIX.RectTransform _counterRoot { get => _counterRoot_Element.Data; set => _counterRoot_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.UIX.RectTransform>, global::FrooxEngine.UIX.RectTransform> _counterRoot_Element = new();
+public global::FrooxEngine.UIX.RectTransform _iconsRoot { get => _iconsRoot_Element.Data; set => _iconsRoot_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.UIX.RectTransform>, global::FrooxEngine.UIX.RectTransform> _iconsRoot_Element = new();
+public global::FrooxEngine.UIX.RectTransform _closeButton { get => _closeButton_Element.Data; set => _closeButton_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.UIX.RectTransform>, global::FrooxEngine.UIX.RectTransform> _closeButton_Element = new();
+public global::FrooxEngine.UIX.Text _nameText { get => _nameText_Element.Data; set => _nameText_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.UIX.Text>, global::FrooxEngine.UIX.Text> _nameText_Element = new();
+public global::FrooxEngine.UIX.Text _detailText { get => _detailText_Element.Data; set => _detailText_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.UIX.Text>, global::FrooxEngine.UIX.Text> _detailText_Element = new();
+public global::FrooxEngine.UIX.Text _counterText { get => _counterText_Element.Data; set => _counterText_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.UIX.Text>, global::FrooxEngine.UIX.Text> _counterText_Element = new();
+public global::FrooxEngine.UIX.Image _borderOverlay { get => _borderOverlay_Element.Data; set => _borderOverlay_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.UIX.Image>, global::FrooxEngine.UIX.Image> _borderOverlay_Element = new();
+public UnityEngine.ColorX _borderColor { get => _borderColor_Element.Data; set => _borderColor_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.ColorX>, UnityEngine.ColorX> _borderColor_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("_thumbnailGraphic", _thumbnailGraphic.ToResoniteReference(context));
-members.Add("_thumbnailTexture", _thumbnailTexture.ToResoniteReference(context));
-members.Add("_nameRoot", _nameRoot.ToResoniteReference(context));
-members.Add("_detailRoot", _detailRoot.ToResoniteReference(context));
-members.Add("_visitedRoot", _visitedRoot.ToResoniteReference(context));
-members.Add("_counterRoot", _counterRoot.ToResoniteReference(context));
-members.Add("_iconsRoot", _iconsRoot.ToResoniteReference(context));
-members.Add("_closeButton", _closeButton.ToResoniteReference(context));
-members.Add("_nameText", _nameText.ToResoniteReference(context));
-members.Add("_detailText", _detailText.ToResoniteReference(context));
-members.Add("_counterText", _counterText.ToResoniteReference(context));
-members.Add("_borderOverlay", _borderOverlay.ToResoniteReference(context));
-members.Add("_borderColor", _borderColor.ToResoniteLinkField());
+members.Add("_thumbnailGraphic", _thumbnailGraphic_Element.Data.ToResoniteReference(context));
+members.Add("_thumbnailTexture", _thumbnailTexture_Element.Data.ToResoniteReference(context));
+members.Add("_nameRoot", _nameRoot_Element.Data.ToResoniteReference(context));
+members.Add("_detailRoot", _detailRoot_Element.Data.ToResoniteReference(context));
+members.Add("_visitedRoot", _visitedRoot_Element.Data.ToResoniteReference(context));
+members.Add("_counterRoot", _counterRoot_Element.Data.ToResoniteReference(context));
+members.Add("_iconsRoot", _iconsRoot_Element.Data.ToResoniteReference(context));
+members.Add("_closeButton", _closeButton_Element.Data.ToResoniteReference(context));
+members.Add("_nameText", _nameText_Element.Data.ToResoniteReference(context));
+members.Add("_detailText", _detailText_Element.Data.ToResoniteReference(context));
+members.Add("_counterText", _counterText_Element.Data.ToResoniteReference(context));
+members.Add("_borderOverlay", _borderOverlay_Element.Data.ToResoniteReference(context));
+members.Add("_borderColor", _borderColor_Element.Data.ToResoniteLinkField());
 }
 
 }

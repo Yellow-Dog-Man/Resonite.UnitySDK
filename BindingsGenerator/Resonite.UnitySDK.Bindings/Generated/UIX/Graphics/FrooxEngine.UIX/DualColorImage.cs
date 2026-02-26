@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.UIX.DualColorImage
-// Generated on: středa 25. února 2026 16:14:33
+// Generated on: čtvrtek 26. února 2026 10:04:42
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,13 +20,14 @@ namespace FrooxEngine.UIX
 public partial class DualColorImage : global::FrooxEngine.UIX.Image
 
 {
-    public UnityEngine.ColorX SecondaryTint;
+    public UnityEngine.ColorX SecondaryTint { get => SecondaryTint_Element.Data; set => SecondaryTint_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.ColorX>, UnityEngine.ColorX> SecondaryTint_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("SecondaryTint", SecondaryTint.ToResoniteLinkField());
+members.Add("SecondaryTint", SecondaryTint_Element.Data.ToResoniteLinkField());
 }
 
 }

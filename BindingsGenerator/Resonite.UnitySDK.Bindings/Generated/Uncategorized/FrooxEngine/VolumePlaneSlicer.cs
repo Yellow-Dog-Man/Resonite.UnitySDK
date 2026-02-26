@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.VolumePlaneSlicer
-// Generated on: středa 25. února 2026 16:14:43
+// Generated on: čtvrtek 26. února 2026 10:04:48
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,21 +20,26 @@ namespace FrooxEngine
 public partial class VolumePlaneSlicer : global::FrooxEngine.Component, global::FrooxEngine.ITouchable, global::FrooxEngine.IGrabEventReceiver
 
 {
-    public global::FrooxEngine.VolumePlaneMode Mode;
-public UnityEngine.ColorX HighlightColor;
-public global::System.Single HighlightRange;
-public global::FrooxEngine.ColorDialogInterface _colorDialog;
-public global::FrooxEngine.Slot _grabGrid;
+    public global::FrooxEngine.VolumePlaneMode Mode { get => Mode_Element.Data; set => Mode_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::FrooxEngine.VolumePlaneMode>, global::FrooxEngine.VolumePlaneMode> Mode_Element = new();
+public UnityEngine.ColorX HighlightColor { get => HighlightColor_Element.Data; set => HighlightColor_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.ColorX>, UnityEngine.ColorX> HighlightColor_Element = new();
+public global::System.Single HighlightRange { get => HighlightRange_Element.Data; set => HighlightRange_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> HighlightRange_Element = new();
+public global::FrooxEngine.ColorDialogInterface _colorDialog { get => _colorDialog_Element.Data; set => _colorDialog_Element.Data = value; }
+public Field<global::FrooxEngine.SlotCleanupRef<global::FrooxEngine.ColorDialogInterface>, global::FrooxEngine.ColorDialogInterface> _colorDialog_Element = new();
+public global::FrooxEngine.Slot _grabGrid { get => _grabGrid_Element.Data; set => _grabGrid_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> _grabGrid_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Mode", Mode.ToResoniteLinkField());
-members.Add("HighlightColor", HighlightColor.ToResoniteLinkField());
-members.Add("HighlightRange", HighlightRange.ToResoniteLinkField());
-members.Add("_colorDialog", _colorDialog.ToResoniteReference(context));
-members.Add("_grabGrid", _grabGrid.ToResoniteReference(context));
+members.Add("Mode", Mode_Element.Data.ToResoniteLinkField());
+members.Add("HighlightColor", HighlightColor_Element.Data.ToResoniteLinkField());
+members.Add("HighlightRange", HighlightRange_Element.Data.ToResoniteLinkField());
+members.Add("_colorDialog", _colorDialog_Element.Data.ToResoniteReference(context));
+members.Add("_grabGrid", _grabGrid_Element.Data.ToResoniteReference(context));
 }
 
 }

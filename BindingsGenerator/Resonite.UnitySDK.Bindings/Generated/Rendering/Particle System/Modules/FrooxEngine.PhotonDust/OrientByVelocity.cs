@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.PhotonDust.OrientByVelocity
-// Generated on: středa 25. února 2026 16:14:18
+// Generated on: čtvrtek 26. února 2026 10:04:38
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,17 +20,20 @@ namespace FrooxEngine.PhotonDust
 public partial class OrientByVelocity : global::FrooxEngine.PhotonDust.ParticleSystemModule<global::System.Object>
 
 {
-    public UnityEngine.Vector3 Up;
-public global::System.Single MinimumVelocity;
-public global::System.Single VelocityTransitionRange;
+    public UnityEngine.Vector3 Up { get => Up_Element.Data; set => Up_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.Vector3>, UnityEngine.Vector3> Up_Element = new();
+public global::System.Single MinimumVelocity { get => MinimumVelocity_Element.Data; set => MinimumVelocity_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> MinimumVelocity_Element = new();
+public global::System.Single VelocityTransitionRange { get => VelocityTransitionRange_Element.Data; set => VelocityTransitionRange_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> VelocityTransitionRange_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Up", Up.ToResoniteLinkField());
-members.Add("MinimumVelocity", MinimumVelocity.ToResoniteLinkField());
-members.Add("VelocityTransitionRange", VelocityTransitionRange.ToResoniteLinkField());
+members.Add("Up", Up_Element.Data.ToResoniteLinkField());
+members.Add("MinimumVelocity", MinimumVelocity_Element.Data.ToResoniteLinkField());
+members.Add("VelocityTransitionRange", VelocityTransitionRange_Element.Data.ToResoniteLinkField());
 }
 
 }

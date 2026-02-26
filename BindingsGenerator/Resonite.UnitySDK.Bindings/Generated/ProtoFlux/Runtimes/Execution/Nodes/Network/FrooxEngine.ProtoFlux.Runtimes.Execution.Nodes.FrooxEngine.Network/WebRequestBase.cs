@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [ProtoFluxBindings]FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Network.WebRequestBase
-// Generated on: středa 25. února 2026 16:13:55
+// Generated on: čtvrtek 26. února 2026 10:04:21
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,23 +20,28 @@ namespace FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Network
 public abstract partial class WebRequestBase : global::FrooxEngine.ProtoFlux.Runtimes.Execution.AsyncActionNode<global::FrooxEngine.ProtoFlux.FrooxEngineContext>
 
 {
-    public global::FrooxEngine.ProtoFlux.INodeObjectOutput<System.Uri> URL;
-public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Net.HttpStatusCode> StatusCode;
-public global::FrooxEngine.ProtoFlux.INodeOperation OnSent;
-public global::FrooxEngine.ProtoFlux.INodeOperation OnResponse;
-public global::FrooxEngine.ProtoFlux.INodeOperation OnError;
-public global::FrooxEngine.ProtoFlux.INodeOperation OnDenied;
+    public global::FrooxEngine.ProtoFlux.INodeObjectOutput<System.Uri> URL { get => URL_Element.Data; set => URL_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.ProtoFlux.INodeObjectOutput<System.Uri>>, global::FrooxEngine.ProtoFlux.INodeObjectOutput<System.Uri>> URL_Element = new();
+public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Net.HttpStatusCode> StatusCode = new();
+public global::FrooxEngine.ProtoFlux.INodeOperation OnSent { get => OnSent_Element.Data; set => OnSent_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.ProtoFlux.INodeOperation>, global::FrooxEngine.ProtoFlux.INodeOperation> OnSent_Element = new();
+public global::FrooxEngine.ProtoFlux.INodeOperation OnResponse { get => OnResponse_Element.Data; set => OnResponse_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.ProtoFlux.INodeOperation>, global::FrooxEngine.ProtoFlux.INodeOperation> OnResponse_Element = new();
+public global::FrooxEngine.ProtoFlux.INodeOperation OnError { get => OnError_Element.Data; set => OnError_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.ProtoFlux.INodeOperation>, global::FrooxEngine.ProtoFlux.INodeOperation> OnError_Element = new();
+public global::FrooxEngine.ProtoFlux.INodeOperation OnDenied { get => OnDenied_Element.Data; set => OnDenied_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.ProtoFlux.INodeOperation>, global::FrooxEngine.ProtoFlux.INodeOperation> OnDenied_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("URL", URL.ToResoniteReference(context));
+members.Add("URL", URL_Element.Data.ToResoniteReference(context));
 members.Add("StatusCode", new ResoniteLink.EmptyElement());
-members.Add("OnSent", OnSent.ToResoniteReference(context));
-members.Add("OnResponse", OnResponse.ToResoniteReference(context));
-members.Add("OnError", OnError.ToResoniteReference(context));
-members.Add("OnDenied", OnDenied.ToResoniteReference(context));
+members.Add("OnSent", OnSent_Element.Data.ToResoniteReference(context));
+members.Add("OnResponse", OnResponse_Element.Data.ToResoniteReference(context));
+members.Add("OnError", OnError_Element.Data.ToResoniteReference(context));
+members.Add("OnDenied", OnDenied_Element.Data.ToResoniteReference(context));
 }
 
 }

@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.MultiChannelSimplexTexture3D+ChannelConfiguration
-// Generated on: středa 25. února 2026 16:13:05
+// Generated on: čtvrtek 26. února 2026 10:03:36
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -22,25 +22,32 @@ namespace FrooxEngine
 public partial class ChannelConfiguration : global::FrooxEngine.SyncObject
 
 {
-    public UnityEngine.Vector3 Offset;
-public UnityEngine.Vector3 Scale;
-public global::System.Boolean Use4D;
-public global::System.Single WOffset;
-public global::System.Single Min;
-public global::System.Single Max;
-public global::System.Single Exp;
+    public UnityEngine.Vector3 Offset { get => Offset_Element.Data; set => Offset_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.Vector3>, UnityEngine.Vector3> Offset_Element = new();
+public UnityEngine.Vector3 Scale { get => Scale_Element.Data; set => Scale_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.Vector3>, UnityEngine.Vector3> Scale_Element = new();
+public global::System.Boolean Use4D { get => Use4D_Element.Data; set => Use4D_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> Use4D_Element = new();
+public global::System.Single WOffset { get => WOffset_Element.Data; set => WOffset_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> WOffset_Element = new();
+public global::System.Single Min { get => Min_Element.Data; set => Min_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> Min_Element = new();
+public global::System.Single Max { get => Max_Element.Data; set => Max_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> Max_Element = new();
+public global::System.Single Exp { get => Exp_Element.Data; set => Exp_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> Exp_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Offset", Offset.ToResoniteLinkField());
-members.Add("Scale", Scale.ToResoniteLinkField());
-members.Add("Use4D", Use4D.ToResoniteLinkField());
-members.Add("WOffset", WOffset.ToResoniteLinkField());
-members.Add("Min", Min.ToResoniteLinkField());
-members.Add("Max", Max.ToResoniteLinkField());
-members.Add("Exp", Exp.ToResoniteLinkField());
+members.Add("Offset", Offset_Element.Data.ToResoniteLinkField());
+members.Add("Scale", Scale_Element.Data.ToResoniteLinkField());
+members.Add("Use4D", Use4D_Element.Data.ToResoniteLinkField());
+members.Add("WOffset", WOffset_Element.Data.ToResoniteLinkField());
+members.Add("Min", Min_Element.Data.ToResoniteLinkField());
+members.Add("Max", Max_Element.Data.ToResoniteLinkField());
+members.Add("Exp", Exp_Element.Data.ToResoniteLinkField());
 }
 
 }

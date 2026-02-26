@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.LocaleSettings
-// Generated on: středa 25. února 2026 16:14:41
+// Generated on: čtvrtek 26. února 2026 10:04:46
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,17 +20,20 @@ namespace FrooxEngine
 public partial class LocaleSettings : global::FrooxEngine.SettingComponent<global::FrooxEngine.LocaleSettings>
 
 {
-    public global::System.String PrimaryInterfaceLocaleCode;
-public global::System.String CultureLocaleCode;
-public global::System.Boolean UseImperialUnits;
+    public global::System.String PrimaryInterfaceLocaleCode { get => PrimaryInterfaceLocaleCode_Element.Data; set => PrimaryInterfaceLocaleCode_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.String>, global::System.String> PrimaryInterfaceLocaleCode_Element = new();
+public global::System.String CultureLocaleCode { get => CultureLocaleCode_Element.Data; set => CultureLocaleCode_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.String>, global::System.String> CultureLocaleCode_Element = new();
+public global::System.Boolean UseImperialUnits { get => UseImperialUnits_Element.Data; set => UseImperialUnits_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> UseImperialUnits_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("PrimaryInterfaceLocaleCode", PrimaryInterfaceLocaleCode.ToResoniteLinkField());
-members.Add("CultureLocaleCode", CultureLocaleCode.ToResoniteLinkField());
-members.Add("UseImperialUnits", UseImperialUnits.ToResoniteLinkField());
+members.Add("PrimaryInterfaceLocaleCode", PrimaryInterfaceLocaleCode_Element.Data.ToResoniteLinkField());
+members.Add("CultureLocaleCode", CultureLocaleCode_Element.Data.ToResoniteLinkField());
+members.Add("UseImperialUnits", UseImperialUnits_Element.Data.ToResoniteLinkField());
 }
 
 }

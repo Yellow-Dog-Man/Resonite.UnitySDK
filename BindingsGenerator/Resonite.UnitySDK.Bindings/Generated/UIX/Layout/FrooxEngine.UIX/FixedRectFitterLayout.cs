@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.UIX.FixedRectFitterLayout
-// Generated on: středa 25. února 2026 16:14:34
+// Generated on: čtvrtek 26. února 2026 10:04:43
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,21 +20,26 @@ namespace FrooxEngine.UIX
 public partial class FixedRectFitterLayout : global::FrooxEngine.UIX.LayoutController
 
 {
-    public global::FrooxEngine.UIX.LayoutHorizontalAlignment HorizontalAlign;
-public global::FrooxEngine.UIX.LayoutVerticalAlignment VerticalAlign;
-public global::FrooxEngine.UIX.FixedRectFitterLayout.FitMode Mode;
-public global::System.Boolean AllowShrink;
-public global::System.Boolean AllowGrow;
+    public global::FrooxEngine.UIX.LayoutHorizontalAlignment HorizontalAlign { get => HorizontalAlign_Element.Data; set => HorizontalAlign_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::FrooxEngine.UIX.LayoutHorizontalAlignment>, global::FrooxEngine.UIX.LayoutHorizontalAlignment> HorizontalAlign_Element = new();
+public global::FrooxEngine.UIX.LayoutVerticalAlignment VerticalAlign { get => VerticalAlign_Element.Data; set => VerticalAlign_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::FrooxEngine.UIX.LayoutVerticalAlignment>, global::FrooxEngine.UIX.LayoutVerticalAlignment> VerticalAlign_Element = new();
+public global::FrooxEngine.UIX.FixedRectFitterLayout.FitMode Mode { get => Mode_Element.Data; set => Mode_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::FrooxEngine.UIX.FixedRectFitterLayout.FitMode>, global::FrooxEngine.UIX.FixedRectFitterLayout.FitMode> Mode_Element = new();
+public global::System.Boolean AllowShrink { get => AllowShrink_Element.Data; set => AllowShrink_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> AllowShrink_Element = new();
+public global::System.Boolean AllowGrow { get => AllowGrow_Element.Data; set => AllowGrow_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> AllowGrow_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("HorizontalAlign", HorizontalAlign.ToResoniteLinkField());
-members.Add("VerticalAlign", VerticalAlign.ToResoniteLinkField());
-members.Add("Mode", Mode.ToResoniteLinkField());
-members.Add("AllowShrink", AllowShrink.ToResoniteLinkField());
-members.Add("AllowGrow", AllowGrow.ToResoniteLinkField());
+members.Add("HorizontalAlign", HorizontalAlign_Element.Data.ToResoniteLinkField());
+members.Add("VerticalAlign", VerticalAlign_Element.Data.ToResoniteLinkField());
+members.Add("Mode", Mode_Element.Data.ToResoniteLinkField());
+members.Add("AllowShrink", AllowShrink_Element.Data.ToResoniteLinkField());
+members.Add("AllowGrow", AllowGrow_Element.Data.ToResoniteLinkField());
 }
 
 }

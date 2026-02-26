@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.ComponentSelector
-// Generated on: středa 25. února 2026 16:14:36
+// Generated on: čtvrtek 26. února 2026 10:04:44
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,25 +20,30 @@ namespace FrooxEngine
 public partial class ComponentSelector : global::FrooxEngine.Component, global::FrooxEngine.IDeveloperInterface
 
 {
-    public global::FrooxEngine.Slot _uiRoot;
-public global::System.String _rootPath;
-public System.String _genericType;
-public global::FrooxEngine.IField<global::System.String> _customGenericTypeLabel;
-public global::FrooxEngine.IField<UnityEngine.ColorX> _customGenericTypeColor;
-public System.Collections.Generic.List<global::FrooxEngine.UIX.TextField> _customGenericArguments;
+    public global::FrooxEngine.Slot _uiRoot { get => _uiRoot_Element.Data; set => _uiRoot_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> _uiRoot_Element = new();
+public global::System.String _rootPath { get => _rootPath_Element.Data; set => _rootPath_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.String>, global::System.String> _rootPath_Element = new();
+public System.String _genericType { get => _genericType_Element.Data; set => _genericType_Element.Data = value; }
+public Field<global::FrooxEngine.SyncType, System.String> _genericType_Element = new();
+public global::FrooxEngine.IField<global::System.String> _customGenericTypeLabel { get => _customGenericTypeLabel_Element.Data; set => _customGenericTypeLabel_Element.Data = value; }
+public Field<global::FrooxEngine.FieldDrive<global::System.String>, global::FrooxEngine.IField<global::System.String>> _customGenericTypeLabel_Element = new();
+public global::FrooxEngine.IField<UnityEngine.ColorX> _customGenericTypeColor { get => _customGenericTypeColor_Element.Data; set => _customGenericTypeColor_Element.Data = value; }
+public Field<global::FrooxEngine.FieldDrive<UnityEngine.ColorX>, global::FrooxEngine.IField<UnityEngine.ColorX>> _customGenericTypeColor_Element = new();
+public global::SyncFieldList<global::FrooxEngine.SyncRefList<global::FrooxEngine.UIX.TextField>, global::FrooxEngine.UIX.TextField, Field<global::FrooxEngine.SyncRef<global::FrooxEngine.UIX.TextField>, global::FrooxEngine.UIX.TextField>> _customGenericArguments = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("_uiRoot", _uiRoot.ToResoniteReference(context));
-members.Add("_rootPath", _rootPath.ToResoniteLinkField());
-members.Add("_genericType", _genericType.ToResoniteLinkField());
-members.Add("_customGenericTypeLabel", _customGenericTypeLabel.ToResoniteReference(context));
-members.Add("_customGenericTypeColor", _customGenericTypeColor.ToResoniteReference(context));
+members.Add("_uiRoot", _uiRoot_Element.Data.ToResoniteReference(context));
+members.Add("_rootPath", _rootPath_Element.Data.ToResoniteLinkField());
+members.Add("_genericType", _genericType_Element.Data.ToResoniteLinkField());
+members.Add("_customGenericTypeLabel", _customGenericTypeLabel_Element.Data.ToResoniteReference(context));
+members.Add("_customGenericTypeColor", _customGenericTypeColor_Element.Data.ToResoniteReference(context));
 members.Add("_customGenericArguments", new ResoniteLink.SyncList()
 {
-    Elements = _customGenericArguments.ConvertList(m => m.ToResoniteReference(context))
+    Elements = _customGenericArguments.Data.ConvertList(m => m.Data.ToResoniteReference(context))
 });
 }
 

@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.CircleThumbnailItem
-// Generated on: středa 25. února 2026 16:14:36
+// Generated on: čtvrtek 26. února 2026 10:04:44
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,19 +20,23 @@ namespace FrooxEngine
 public abstract partial class CircleThumbnailItem : global::FrooxEngine.Component
 
 {
-    public global::FrooxEngine.UIX.Image _background;
-public global::FrooxEngine.UIX.Image _statusIndicator;
-public global::FrooxEngine.UIX.Image _thumbnail;
-public global::FrooxEngine.StaticTexture2D _thumbnailTexture;
+    public global::FrooxEngine.UIX.Image _background { get => _background_Element.Data; set => _background_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.UIX.Image>, global::FrooxEngine.UIX.Image> _background_Element = new();
+public global::FrooxEngine.UIX.Image _statusIndicator { get => _statusIndicator_Element.Data; set => _statusIndicator_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.UIX.Image>, global::FrooxEngine.UIX.Image> _statusIndicator_Element = new();
+public global::FrooxEngine.UIX.Image _thumbnail { get => _thumbnail_Element.Data; set => _thumbnail_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.UIX.Image>, global::FrooxEngine.UIX.Image> _thumbnail_Element = new();
+public global::FrooxEngine.StaticTexture2D _thumbnailTexture { get => _thumbnailTexture_Element.Data; set => _thumbnailTexture_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.StaticTexture2D>, global::FrooxEngine.StaticTexture2D> _thumbnailTexture_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("_background", _background.ToResoniteReference(context));
-members.Add("_statusIndicator", _statusIndicator.ToResoniteReference(context));
-members.Add("_thumbnail", _thumbnail.ToResoniteReference(context));
-members.Add("_thumbnailTexture", _thumbnailTexture.ToResoniteReference(context));
+members.Add("_background", _background_Element.Data.ToResoniteReference(context));
+members.Add("_statusIndicator", _statusIndicator_Element.Data.ToResoniteReference(context));
+members.Add("_thumbnail", _thumbnail_Element.Data.ToResoniteReference(context));
+members.Add("_thumbnailTexture", _thumbnailTexture_Element.Data.ToResoniteReference(context));
 }
 
 }

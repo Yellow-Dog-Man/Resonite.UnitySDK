@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.KeyboardLookSettings
-// Generated on: středa 25. února 2026 16:14:40
+// Generated on: čtvrtek 26. února 2026 10:04:46
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,17 +20,20 @@ namespace FrooxEngine
 public partial class KeyboardLookSettings : global::FrooxEngine.SettingComponent<global::FrooxEngine.KeyboardLookSettings>
 
 {
-    public global::System.Boolean LookEnabled;
-public global::System.Single HorizontalSpeed;
-public global::System.Single VerticalSpeed;
+    public global::System.Boolean LookEnabled { get => LookEnabled_Element.Data; set => LookEnabled_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> LookEnabled_Element = new();
+public global::System.Single HorizontalSpeed { get => HorizontalSpeed_Element.Data; set => HorizontalSpeed_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> HorizontalSpeed_Element = new();
+public global::System.Single VerticalSpeed { get => VerticalSpeed_Element.Data; set => VerticalSpeed_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> VerticalSpeed_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("LookEnabled", LookEnabled.ToResoniteLinkField());
-members.Add("HorizontalSpeed", HorizontalSpeed.ToResoniteLinkField());
-members.Add("VerticalSpeed", VerticalSpeed.ToResoniteLinkField());
+members.Add("LookEnabled", LookEnabled_Element.Data.ToResoniteLinkField());
+members.Add("HorizontalSpeed", HorizontalSpeed_Element.Data.ToResoniteLinkField());
+members.Add("VerticalSpeed", VerticalSpeed_Element.Data.ToResoniteLinkField());
 }
 
 }

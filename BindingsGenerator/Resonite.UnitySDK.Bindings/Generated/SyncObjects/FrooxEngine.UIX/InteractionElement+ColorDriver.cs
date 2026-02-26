@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.UIX.InteractionElement+ColorDriver
-// Generated on: středa 25. února 2026 16:13:06
+// Generated on: čtvrtek 26. února 2026 10:03:37
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -22,23 +22,29 @@ namespace FrooxEngine.UIX
 public partial class ColorDriver : global::FrooxEngine.SyncObject
 
 {
-    public global::FrooxEngine.IField<UnityEngine.ColorX> ColorDrive;
-public global::FrooxEngine.UIX.InteractionElement.ColorMode TintColorMode;
-public UnityEngine.ColorX NormalColor;
-public UnityEngine.ColorX HighlightColor;
-public UnityEngine.ColorX PressColor;
-public UnityEngine.ColorX DisabledColor;
+    public global::FrooxEngine.IField<UnityEngine.ColorX> ColorDrive { get => ColorDrive_Element.Data; set => ColorDrive_Element.Data = value; }
+public Field<global::FrooxEngine.FieldDrive<UnityEngine.ColorX>, global::FrooxEngine.IField<UnityEngine.ColorX>> ColorDrive_Element = new();
+public global::FrooxEngine.UIX.InteractionElement.ColorMode TintColorMode { get => TintColorMode_Element.Data; set => TintColorMode_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::FrooxEngine.UIX.InteractionElement.ColorMode>, global::FrooxEngine.UIX.InteractionElement.ColorMode> TintColorMode_Element = new();
+public UnityEngine.ColorX NormalColor { get => NormalColor_Element.Data; set => NormalColor_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.ColorX>, UnityEngine.ColorX> NormalColor_Element = new();
+public UnityEngine.ColorX HighlightColor { get => HighlightColor_Element.Data; set => HighlightColor_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.ColorX>, UnityEngine.ColorX> HighlightColor_Element = new();
+public UnityEngine.ColorX PressColor { get => PressColor_Element.Data; set => PressColor_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.ColorX>, UnityEngine.ColorX> PressColor_Element = new();
+public UnityEngine.ColorX DisabledColor { get => DisabledColor_Element.Data; set => DisabledColor_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.ColorX>, UnityEngine.ColorX> DisabledColor_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("ColorDrive", ColorDrive.ToResoniteReference(context));
-members.Add("TintColorMode", TintColorMode.ToResoniteLinkField());
-members.Add("NormalColor", NormalColor.ToResoniteLinkField());
-members.Add("HighlightColor", HighlightColor.ToResoniteLinkField());
-members.Add("PressColor", PressColor.ToResoniteLinkField());
-members.Add("DisabledColor", DisabledColor.ToResoniteLinkField());
+members.Add("ColorDrive", ColorDrive_Element.Data.ToResoniteReference(context));
+members.Add("TintColorMode", TintColorMode_Element.Data.ToResoniteLinkField());
+members.Add("NormalColor", NormalColor_Element.Data.ToResoniteLinkField());
+members.Add("HighlightColor", HighlightColor_Element.Data.ToResoniteLinkField());
+members.Add("PressColor", PressColor_Element.Data.ToResoniteLinkField());
+members.Add("DisabledColor", DisabledColor_Element.Data.ToResoniteLinkField());
 }
 
 }

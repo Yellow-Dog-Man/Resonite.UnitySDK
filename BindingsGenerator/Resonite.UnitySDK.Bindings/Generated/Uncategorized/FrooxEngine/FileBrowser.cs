@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.FileBrowser
-// Generated on: středa 25. února 2026 16:14:38
+// Generated on: čtvrtek 26. února 2026 10:04:44
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,25 +20,31 @@ namespace FrooxEngine
 public partial class FileBrowser : global::FrooxEngine.BrowserDialog
 
 {
-    public global::System.String CurrentPath;
-public global::System.String _lastPath;
-public global::FrooxEngine.MachineUserRef _user;
-public global::FrooxEngine.UIX.Button _importButton;
-public global::FrooxEngine.UIX.Button _rawImportButton;
-public global::FrooxEngine.UIX.Button _createNewButton;
-public global::FrooxEngine.UIX.Button _reloadButton;
+    public global::System.String CurrentPath { get => CurrentPath_Element.Data; set => CurrentPath_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.String>, global::System.String> CurrentPath_Element = new();
+public global::System.String _lastPath { get => _lastPath_Element.Data; set => _lastPath_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.String>, global::System.String> _lastPath_Element = new();
+public global::FrooxEngine.MachineUserRef _user = new();
+public global::FrooxEngine.UIX.Button _importButton { get => _importButton_Element.Data; set => _importButton_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.UIX.Button>, global::FrooxEngine.UIX.Button> _importButton_Element = new();
+public global::FrooxEngine.UIX.Button _rawImportButton { get => _rawImportButton_Element.Data; set => _rawImportButton_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.UIX.Button>, global::FrooxEngine.UIX.Button> _rawImportButton_Element = new();
+public global::FrooxEngine.UIX.Button _createNewButton { get => _createNewButton_Element.Data; set => _createNewButton_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.UIX.Button>, global::FrooxEngine.UIX.Button> _createNewButton_Element = new();
+public global::FrooxEngine.UIX.Button _reloadButton { get => _reloadButton_Element.Data; set => _reloadButton_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.UIX.Button>, global::FrooxEngine.UIX.Button> _reloadButton_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("CurrentPath", CurrentPath.ToResoniteLinkField());
-members.Add("_lastPath", _lastPath.ToResoniteLinkField());
+members.Add("CurrentPath", CurrentPath_Element.Data.ToResoniteLinkField());
+members.Add("_lastPath", _lastPath_Element.Data.ToResoniteLinkField());
 members.Add("_user", new ResoniteLink.SyncObject() { Members = _user.CollectMembers(context) });
-members.Add("_importButton", _importButton.ToResoniteReference(context));
-members.Add("_rawImportButton", _rawImportButton.ToResoniteReference(context));
-members.Add("_createNewButton", _createNewButton.ToResoniteReference(context));
-members.Add("_reloadButton", _reloadButton.ToResoniteReference(context));
+members.Add("_importButton", _importButton_Element.Data.ToResoniteReference(context));
+members.Add("_rawImportButton", _rawImportButton_Element.Data.ToResoniteReference(context));
+members.Add("_createNewButton", _createNewButton_Element.Data.ToResoniteReference(context));
+members.Add("_reloadButton", _reloadButton_Element.Data.ToResoniteReference(context));
 }
 
 }

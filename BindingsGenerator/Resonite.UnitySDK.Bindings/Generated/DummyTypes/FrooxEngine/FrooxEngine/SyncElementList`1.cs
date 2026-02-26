@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.SyncElementList<>
-// Generated on: středa 25. února 2026 16:13:07
+// Generated on: čtvrtek 26. února 2026 10:03:33
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -22,6 +22,6 @@ public abstract partial class SyncElementList<T> : global::FrooxEngine.Conflicti
 
 {
     // Dummy class, there's no body
-// Generated as dependency for: [FrooxEngine]FrooxEngine.SyncFieldList<>
+// Generated as dependency for: [FrooxEngine]FrooxEngine.SyncList<>
 }
 }

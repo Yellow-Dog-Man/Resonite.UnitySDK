@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.CommonAvatar.AvatarUserPositioner
-// Generated on: středa 25. února 2026 16:14:35
+// Generated on: čtvrtek 26. února 2026 10:04:43
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,23 +20,29 @@ namespace FrooxEngine.CommonAvatar
 public partial class AvatarUserPositioner : global::FrooxEngine.Component, global::FrooxEngine.CommonAvatar.IAvatarObjectComponent
 
 {
-    public global::FrooxEngine.UserRoot.UserNode PositionNode;
-public global::FrooxEngine.UserRoot.UserNode RotationNode;
-public global::FrooxEngine.Slot PositionReference;
-public global::FrooxEngine.Slot RotationReference;
-public global::System.Boolean PreserveUp;
-public global::System.Boolean OnManualEquipOnly;
+    public global::FrooxEngine.UserRoot.UserNode PositionNode { get => PositionNode_Element.Data; set => PositionNode_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::FrooxEngine.UserRoot.UserNode>, global::FrooxEngine.UserRoot.UserNode> PositionNode_Element = new();
+public global::FrooxEngine.UserRoot.UserNode RotationNode { get => RotationNode_Element.Data; set => RotationNode_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::FrooxEngine.UserRoot.UserNode>, global::FrooxEngine.UserRoot.UserNode> RotationNode_Element = new();
+public global::FrooxEngine.Slot PositionReference { get => PositionReference_Element.Data; set => PositionReference_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> PositionReference_Element = new();
+public global::FrooxEngine.Slot RotationReference { get => RotationReference_Element.Data; set => RotationReference_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> RotationReference_Element = new();
+public global::System.Boolean PreserveUp { get => PreserveUp_Element.Data; set => PreserveUp_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> PreserveUp_Element = new();
+public global::System.Boolean OnManualEquipOnly { get => OnManualEquipOnly_Element.Data; set => OnManualEquipOnly_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> OnManualEquipOnly_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("PositionNode", PositionNode.ToResoniteLinkField());
-members.Add("RotationNode", RotationNode.ToResoniteLinkField());
-members.Add("PositionReference", PositionReference.ToResoniteReference(context));
-members.Add("RotationReference", RotationReference.ToResoniteReference(context));
-members.Add("PreserveUp", PreserveUp.ToResoniteLinkField());
-members.Add("OnManualEquipOnly", OnManualEquipOnly.ToResoniteLinkField());
+members.Add("PositionNode", PositionNode_Element.Data.ToResoniteLinkField());
+members.Add("RotationNode", RotationNode_Element.Data.ToResoniteLinkField());
+members.Add("PositionReference", PositionReference_Element.Data.ToResoniteReference(context));
+members.Add("RotationReference", RotationReference_Element.Data.ToResoniteReference(context));
+members.Add("PreserveUp", PreserveUp_Element.Data.ToResoniteLinkField());
+members.Add("OnManualEquipOnly", OnManualEquipOnly_Element.Data.ToResoniteLinkField());
 }
 
 }

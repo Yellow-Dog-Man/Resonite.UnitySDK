@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.SceneInspector
-// Generated on: středa 25. února 2026 16:14:43
+// Generated on: čtvrtek 26. února 2026 10:04:48
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,27 +20,35 @@ namespace FrooxEngine
 public partial class SceneInspector : global::FrooxEngine.InspectorPanel, global::FrooxEngine.Undo.INoDestroyUndo, global::FrooxEngine.IObjectRoot
 
 {
-    public global::FrooxEngine.Slot Root;
-public global::FrooxEngine.Slot ComponentView;
-public global::FrooxEngine.Sync<global::System.String> _rootText;
-public global::FrooxEngine.Sync<global::System.String> _componentText;
-public global::FrooxEngine.Slot _hierarchyContentRoot;
-public global::FrooxEngine.Slot _componentsContentRoot;
-public global::FrooxEngine.Slot _currentComponent;
-public global::FrooxEngine.Slot _currentRoot;
+    public global::FrooxEngine.Slot Root { get => Root_Element.Data; set => Root_Element.Data = value; }
+public Field<global::FrooxEngine.RelayRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> Root_Element = new();
+public global::FrooxEngine.Slot ComponentView { get => ComponentView_Element.Data; set => ComponentView_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> ComponentView_Element = new();
+public global::FrooxEngine.Sync<global::System.String> _rootText { get => _rootText_Element.Data; set => _rootText_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.Sync<global::System.String>>, global::FrooxEngine.Sync<global::System.String>> _rootText_Element = new();
+public global::FrooxEngine.Sync<global::System.String> _componentText { get => _componentText_Element.Data; set => _componentText_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.Sync<global::System.String>>, global::FrooxEngine.Sync<global::System.String>> _componentText_Element = new();
+public global::FrooxEngine.Slot _hierarchyContentRoot { get => _hierarchyContentRoot_Element.Data; set => _hierarchyContentRoot_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> _hierarchyContentRoot_Element = new();
+public global::FrooxEngine.Slot _componentsContentRoot { get => _componentsContentRoot_Element.Data; set => _componentsContentRoot_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> _componentsContentRoot_Element = new();
+public global::FrooxEngine.Slot _currentComponent { get => _currentComponent_Element.Data; set => _currentComponent_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> _currentComponent_Element = new();
+public global::FrooxEngine.Slot _currentRoot { get => _currentRoot_Element.Data; set => _currentRoot_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> _currentRoot_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Root", Root.ToResoniteReference(context));
-members.Add("ComponentView", ComponentView.ToResoniteReference(context));
-members.Add("_rootText", _rootText.ToResoniteReference(context));
-members.Add("_componentText", _componentText.ToResoniteReference(context));
-members.Add("_hierarchyContentRoot", _hierarchyContentRoot.ToResoniteReference(context));
-members.Add("_componentsContentRoot", _componentsContentRoot.ToResoniteReference(context));
-members.Add("_currentComponent", _currentComponent.ToResoniteReference(context));
-members.Add("_currentRoot", _currentRoot.ToResoniteReference(context));
+members.Add("Root", Root_Element.Data.ToResoniteReference(context));
+members.Add("ComponentView", ComponentView_Element.Data.ToResoniteReference(context));
+members.Add("_rootText", _rootText_Element.Data.ToResoniteReference(context));
+members.Add("_componentText", _componentText_Element.Data.ToResoniteReference(context));
+members.Add("_hierarchyContentRoot", _hierarchyContentRoot_Element.Data.ToResoniteReference(context));
+members.Add("_componentsContentRoot", _componentsContentRoot_Element.Data.ToResoniteReference(context));
+members.Add("_currentComponent", _currentComponent_Element.Data.ToResoniteReference(context));
+members.Add("_currentRoot", _currentRoot_Element.Data.ToResoniteReference(context));
 }
 
 }

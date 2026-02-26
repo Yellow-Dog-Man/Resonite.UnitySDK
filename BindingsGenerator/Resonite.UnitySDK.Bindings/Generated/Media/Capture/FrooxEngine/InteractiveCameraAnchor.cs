@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.InteractiveCameraAnchor
-// Generated on: středa 25. února 2026 16:13:10
+// Generated on: čtvrtek 26. února 2026 10:03:40
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,19 +20,23 @@ namespace FrooxEngine
 public partial class InteractiveCameraAnchor : global::FrooxEngine.Component, global::FrooxEngine.ITouchable
 
 {
-    public global::FrooxEngine.Slot OverrideRoot;
-public global::System.Single FieldOfView;
-public global::System.Boolean Highlighted;
-public global::System.Boolean InUse;
+    public global::FrooxEngine.Slot OverrideRoot { get => OverrideRoot_Element.Data; set => OverrideRoot_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> OverrideRoot_Element = new();
+public global::System.Single FieldOfView { get => FieldOfView_Element.Data; set => FieldOfView_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> FieldOfView_Element = new();
+public global::System.Boolean Highlighted { get => Highlighted_Element.Data; set => Highlighted_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> Highlighted_Element = new();
+public global::System.Boolean InUse { get => InUse_Element.Data; set => InUse_Element.Data = value; }
+public Field<global::FrooxEngine.RawOutput<global::System.Boolean>, global::System.Boolean> InUse_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("OverrideRoot", OverrideRoot.ToResoniteReference(context));
-members.Add("FieldOfView", FieldOfView.ToResoniteLinkField());
-members.Add("Highlighted", Highlighted.ToResoniteLinkField());
-members.Add("InUse", InUse.ToResoniteLinkField());
+members.Add("OverrideRoot", OverrideRoot_Element.Data.ToResoniteReference(context));
+members.Add("FieldOfView", FieldOfView_Element.Data.ToResoniteLinkField());
+members.Add("Highlighted", Highlighted_Element.Data.ToResoniteLinkField());
+members.Add("InUse", InUse_Element.Data.ToResoniteLinkField());
 }
 
 }

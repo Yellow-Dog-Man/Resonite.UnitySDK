@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.Panner2D
-// Generated on: středa 25. února 2026 16:14:30
+// Generated on: čtvrtek 26. února 2026 10:04:41
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,23 +20,29 @@ namespace FrooxEngine
 public partial class Panner2D : global::FrooxEngine.Component
 
 {
-    public global::FrooxEngine.IField<UnityEngine.Vector2> _target;
-public UnityEngine.Vector2 _offset;
-public UnityEngine.Vector2 _preOffset;
-public UnityEngine.Vector2 _speed;
-public UnityEngine.Vector2 _repeat;
-public global::System.Boolean PingPong;
+    public global::FrooxEngine.IField<UnityEngine.Vector2> _target { get => _target_Element.Data; set => _target_Element.Data = value; }
+public Field<global::FrooxEngine.FieldDrive<UnityEngine.Vector2>, global::FrooxEngine.IField<UnityEngine.Vector2>> _target_Element = new();
+public UnityEngine.Vector2 _offset { get => _offset_Element.Data; set => _offset_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.Vector2>, UnityEngine.Vector2> _offset_Element = new();
+public UnityEngine.Vector2 _preOffset { get => _preOffset_Element.Data; set => _preOffset_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.Vector2>, UnityEngine.Vector2> _preOffset_Element = new();
+public UnityEngine.Vector2 _speed { get => _speed_Element.Data; set => _speed_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.Vector2>, UnityEngine.Vector2> _speed_Element = new();
+public UnityEngine.Vector2 _repeat { get => _repeat_Element.Data; set => _repeat_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.Vector2>, UnityEngine.Vector2> _repeat_Element = new();
+public global::System.Boolean PingPong { get => PingPong_Element.Data; set => PingPong_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> PingPong_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("_target", _target.ToResoniteReference(context));
-members.Add("_offset", _offset.ToResoniteLinkField());
-members.Add("_preOffset", _preOffset.ToResoniteLinkField());
-members.Add("_speed", _speed.ToResoniteLinkField());
-members.Add("_repeat", _repeat.ToResoniteLinkField());
-members.Add("PingPong", PingPong.ToResoniteLinkField());
+members.Add("_target", _target_Element.Data.ToResoniteReference(context));
+members.Add("_offset", _offset_Element.Data.ToResoniteLinkField());
+members.Add("_preOffset", _preOffset_Element.Data.ToResoniteLinkField());
+members.Add("_speed", _speed_Element.Data.ToResoniteLinkField());
+members.Add("_repeat", _repeat_Element.Data.ToResoniteLinkField());
+members.Add("PingPong", PingPong_Element.Data.ToResoniteLinkField());
 }
 
 }

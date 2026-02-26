@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [ProtoFluxBindings]FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Async.StartAsyncTask
-// Generated on: středa 25. února 2026 16:13:47
+// Generated on: čtvrtek 26. února 2026 10:04:14
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,17 +20,20 @@ namespace FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Async
 public partial class StartAsyncTask : global::FrooxEngine.ProtoFlux.Runtimes.Execution.ActionNode<global::FrooxEngine.ProtoFlux.FrooxEngineContext>
 
 {
-    public global::FrooxEngine.ProtoFlux.INodeOperation TaskStart;
-public global::FrooxEngine.ProtoFlux.INodeOperation OnStarted;
-public global::FrooxEngine.ProtoFlux.INodeOperation OnFailed;
+    public global::FrooxEngine.ProtoFlux.INodeOperation TaskStart { get => TaskStart_Element.Data; set => TaskStart_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.ProtoFlux.INodeOperation>, global::FrooxEngine.ProtoFlux.INodeOperation> TaskStart_Element = new();
+public global::FrooxEngine.ProtoFlux.INodeOperation OnStarted { get => OnStarted_Element.Data; set => OnStarted_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.ProtoFlux.INodeOperation>, global::FrooxEngine.ProtoFlux.INodeOperation> OnStarted_Element = new();
+public global::FrooxEngine.ProtoFlux.INodeOperation OnFailed { get => OnFailed_Element.Data; set => OnFailed_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.ProtoFlux.INodeOperation>, global::FrooxEngine.ProtoFlux.INodeOperation> OnFailed_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("TaskStart", TaskStart.ToResoniteReference(context));
-members.Add("OnStarted", OnStarted.ToResoniteReference(context));
-members.Add("OnFailed", OnFailed.ToResoniteReference(context));
+members.Add("TaskStart", TaskStart_Element.Data.ToResoniteReference(context));
+members.Add("OnStarted", OnStarted_Element.Data.ToResoniteReference(context));
+members.Add("OnFailed", OnFailed_Element.Data.ToResoniteReference(context));
 }
 
 }

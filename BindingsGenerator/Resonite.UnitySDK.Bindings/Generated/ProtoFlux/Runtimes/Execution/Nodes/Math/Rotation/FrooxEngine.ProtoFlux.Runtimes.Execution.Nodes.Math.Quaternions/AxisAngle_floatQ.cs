@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [ProtoFluxBindings]FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.Math.Quaternions.AxisAngle_floatQ
-// Generated on: středa 25. února 2026 16:13:53
+// Generated on: čtvrtek 26. února 2026 10:04:20
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,15 +20,17 @@ namespace FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.Math.Quaternions
 public partial class AxisAngle_floatQ : global::FrooxEngine.ProtoFlux.Runtimes.Execution.ValueFunctionNode<global::ProtoFlux.Runtimes.Execution.ExecutionContext,UnityEngine.Quaternion>
 
 {
-    public global::FrooxEngine.ProtoFlux.INodeValueOutput<UnityEngine.Vector3> Axis;
-public global::FrooxEngine.ProtoFlux.INodeValueOutput<global::System.Single> Angle;
+    public global::FrooxEngine.ProtoFlux.INodeValueOutput<UnityEngine.Vector3> Axis { get => Axis_Element.Data; set => Axis_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.ProtoFlux.INodeValueOutput<UnityEngine.Vector3>>, global::FrooxEngine.ProtoFlux.INodeValueOutput<UnityEngine.Vector3>> Axis_Element = new();
+public global::FrooxEngine.ProtoFlux.INodeValueOutput<global::System.Single> Angle { get => Angle_Element.Data; set => Angle_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.ProtoFlux.INodeValueOutput<global::System.Single>>, global::FrooxEngine.ProtoFlux.INodeValueOutput<global::System.Single>> Angle_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Axis", Axis.ToResoniteReference(context));
-members.Add("Angle", Angle.ToResoniteReference(context));
+members.Add("Axis", Axis_Element.Data.ToResoniteReference(context));
+members.Add("Angle", Angle_Element.Data.ToResoniteReference(context));
 }
 
 }

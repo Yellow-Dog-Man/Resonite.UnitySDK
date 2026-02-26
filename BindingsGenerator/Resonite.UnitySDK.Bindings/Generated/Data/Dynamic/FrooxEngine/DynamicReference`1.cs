@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.DynamicReference<>
-// Generated on: středa 25. února 2026 16:13:07
+// Generated on: čtvrtek 26. února 2026 10:03:38
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -21,15 +21,17 @@ public partial class DynamicReference<T> : global::FrooxEngine.DynamicVariableBa
 	where T : class, global::FrooxEngine.IWorldElement
 
 {
-    public global::FrooxEngine.SyncRef<T> TargetReference;
-public global::System.Boolean OverrideOnLink;
+    public global::FrooxEngine.SyncRef<T> TargetReference { get => TargetReference_Element.Data; set => TargetReference_Element.Data = value; }
+public Field<global::FrooxEngine.RelayRef<global::FrooxEngine.SyncRef<T>>, global::FrooxEngine.SyncRef<T>> TargetReference_Element = new();
+public global::System.Boolean OverrideOnLink { get => OverrideOnLink_Element.Data; set => OverrideOnLink_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> OverrideOnLink_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("TargetReference", TargetReference.ToResoniteReference(context));
-members.Add("OverrideOnLink", OverrideOnLink.ToResoniteLinkField());
+members.Add("TargetReference", TargetReference_Element.Data.ToResoniteReference(context));
+members.Add("OverrideOnLink", OverrideOnLink_Element.Data.ToResoniteLinkField());
 }
 
 }

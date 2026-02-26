@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.PhotonDust.SimplexTurbulentForce
-// Generated on: středa 25. února 2026 16:14:18
+// Generated on: čtvrtek 26. února 2026 10:04:38
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,27 +20,35 @@ namespace FrooxEngine.PhotonDust
 public partial class SimplexTurbulentForce : global::FrooxEngine.PhotonDust.ParticleSystemModule<global::System.Object>
 
 {
-    public global::PhotonDust.ForceMode Mode;
-public global::System.Single Strength;
-public global::System.Single GlobalNoiseOffset;
-public UnityEngine.Vector3 Scale;
-public UnityEngine.Vector3 Offset;
-public global::System.Single X_NoiseOffset;
-public global::System.Single Y_NoiseOffset;
-public global::System.Single Z_NoiseOffset;
+    public global::PhotonDust.ForceMode Mode { get => Mode_Element.Data; set => Mode_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::PhotonDust.ForceMode>, global::PhotonDust.ForceMode> Mode_Element = new();
+public global::System.Single Strength { get => Strength_Element.Data; set => Strength_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> Strength_Element = new();
+public global::System.Single GlobalNoiseOffset { get => GlobalNoiseOffset_Element.Data; set => GlobalNoiseOffset_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> GlobalNoiseOffset_Element = new();
+public UnityEngine.Vector3 Scale { get => Scale_Element.Data; set => Scale_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.Vector3>, UnityEngine.Vector3> Scale_Element = new();
+public UnityEngine.Vector3 Offset { get => Offset_Element.Data; set => Offset_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.Vector3>, UnityEngine.Vector3> Offset_Element = new();
+public global::System.Single X_NoiseOffset { get => X_NoiseOffset_Element.Data; set => X_NoiseOffset_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> X_NoiseOffset_Element = new();
+public global::System.Single Y_NoiseOffset { get => Y_NoiseOffset_Element.Data; set => Y_NoiseOffset_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> Y_NoiseOffset_Element = new();
+public global::System.Single Z_NoiseOffset { get => Z_NoiseOffset_Element.Data; set => Z_NoiseOffset_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> Z_NoiseOffset_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Mode", Mode.ToResoniteLinkField());
-members.Add("Strength", Strength.ToResoniteLinkField());
-members.Add("GlobalNoiseOffset", GlobalNoiseOffset.ToResoniteLinkField());
-members.Add("Scale", Scale.ToResoniteLinkField());
-members.Add("Offset", Offset.ToResoniteLinkField());
-members.Add("X_NoiseOffset", X_NoiseOffset.ToResoniteLinkField());
-members.Add("Y_NoiseOffset", Y_NoiseOffset.ToResoniteLinkField());
-members.Add("Z_NoiseOffset", Z_NoiseOffset.ToResoniteLinkField());
+members.Add("Mode", Mode_Element.Data.ToResoniteLinkField());
+members.Add("Strength", Strength_Element.Data.ToResoniteLinkField());
+members.Add("GlobalNoiseOffset", GlobalNoiseOffset_Element.Data.ToResoniteLinkField());
+members.Add("Scale", Scale_Element.Data.ToResoniteLinkField());
+members.Add("Offset", Offset_Element.Data.ToResoniteLinkField());
+members.Add("X_NoiseOffset", X_NoiseOffset_Element.Data.ToResoniteLinkField());
+members.Add("Y_NoiseOffset", Y_NoiseOffset_Element.Data.ToResoniteLinkField());
+members.Add("Z_NoiseOffset", Z_NoiseOffset_Element.Data.ToResoniteLinkField());
 }
 
 }

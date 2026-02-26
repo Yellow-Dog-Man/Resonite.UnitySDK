@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [ProtoFluxBindings]FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Variables.ClearDynamicVariablesBase
-// Generated on: středa 25. února 2026 16:14:13
+// Generated on: čtvrtek 26. února 2026 10:04:34
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,20 +20,24 @@ namespace FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Variables
 public abstract partial class ClearDynamicVariablesBase : global::FrooxEngine.ProtoFlux.Runtimes.Execution.ActionNode<global::FrooxEngine.ProtoFlux.FrooxEngineContext>, global::FrooxEngine.FrooxEngine.ProtoFlux.IMappableNode, global::FrooxEngine.ProtoFlux.IProtoFluxNode<global::FrooxEngine.ProtoFlux.IMappableNode>
 
 {
-    public global::FrooxEngine.ProtoFlux.INodeObjectOutput<global::FrooxEngine.Slot> Target;
-public global::FrooxEngine.ProtoFlux.INodeObjectOutput<global::System.String> SpaceName;
-public global::FrooxEngine.ProtoFlux.INodeOperation OnNotFound;
-public global::FrooxEngine.ProtoFlux.INodeOperation OnCleared;
-public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Int32> ClearedCount;
+    public global::FrooxEngine.ProtoFlux.INodeObjectOutput<global::FrooxEngine.Slot> Target { get => Target_Element.Data; set => Target_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.ProtoFlux.INodeObjectOutput<global::FrooxEngine.Slot>>, global::FrooxEngine.ProtoFlux.INodeObjectOutput<global::FrooxEngine.Slot>> Target_Element = new();
+public global::FrooxEngine.ProtoFlux.INodeObjectOutput<global::System.String> SpaceName { get => SpaceName_Element.Data; set => SpaceName_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.ProtoFlux.INodeObjectOutput<global::System.String>>, global::FrooxEngine.ProtoFlux.INodeObjectOutput<global::System.String>> SpaceName_Element = new();
+public global::FrooxEngine.ProtoFlux.INodeOperation OnNotFound { get => OnNotFound_Element.Data; set => OnNotFound_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.ProtoFlux.INodeOperation>, global::FrooxEngine.ProtoFlux.INodeOperation> OnNotFound_Element = new();
+public global::FrooxEngine.ProtoFlux.INodeOperation OnCleared { get => OnCleared_Element.Data; set => OnCleared_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.ProtoFlux.INodeOperation>, global::FrooxEngine.ProtoFlux.INodeOperation> OnCleared_Element = new();
+public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Int32> ClearedCount = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Target", Target.ToResoniteReference(context));
-members.Add("SpaceName", SpaceName.ToResoniteReference(context));
-members.Add("OnNotFound", OnNotFound.ToResoniteReference(context));
-members.Add("OnCleared", OnCleared.ToResoniteReference(context));
+members.Add("Target", Target_Element.Data.ToResoniteReference(context));
+members.Add("SpaceName", SpaceName_Element.Data.ToResoniteReference(context));
+members.Add("OnNotFound", OnNotFound_Element.Data.ToResoniteReference(context));
+members.Add("OnCleared", OnCleared_Element.Data.ToResoniteReference(context));
 members.Add("ClearedCount", new ResoniteLink.EmptyElement());
 }
 

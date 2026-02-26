@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.LegacyRadio
-// Generated on: středa 25. února 2026 16:14:33
+// Generated on: čtvrtek 26. února 2026 10:04:42
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,29 +20,38 @@ namespace FrooxEngine
 public partial class LegacyRadio : global::FrooxEngine.LegacyUIElement, global::FrooxEngine.IRadio, global::FrooxEngine.ILegacyUIElement, global::FrooxEngine.ITouchable
 
 {
-    public global::System.Boolean IsEnabled;
-public global::System.Single Radius;
-public UnityEngine.ColorX Color;
-public global::System.Boolean Selected;
-public global::FrooxEngine.IField<global::System.Single> _colliderRadius;
-public global::FrooxEngine.IcoSphereMesh _icosphere;
-public global::FrooxEngine.PBS_RimMetallic _material;
-public global::FrooxEngine.LegacyRadioGroup _group;
-public global::System.Int32 _orderNumber;
+    public global::System.Boolean IsEnabled { get => IsEnabled_Element.Data; set => IsEnabled_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> IsEnabled_Element = new();
+public global::System.Single Radius { get => Radius_Element.Data; set => Radius_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> Radius_Element = new();
+public UnityEngine.ColorX Color { get => Color_Element.Data; set => Color_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.ColorX>, UnityEngine.ColorX> Color_Element = new();
+public global::System.Boolean Selected { get => Selected_Element.Data; set => Selected_Element.Data = value; }
+public Field<global::FrooxEngine.RawOutput<global::System.Boolean>, global::System.Boolean> Selected_Element = new();
+public global::FrooxEngine.IField<global::System.Single> _colliderRadius { get => _colliderRadius_Element.Data; set => _colliderRadius_Element.Data = value; }
+public Field<global::FrooxEngine.FieldDrive<global::System.Single>, global::FrooxEngine.IField<global::System.Single>> _colliderRadius_Element = new();
+public global::FrooxEngine.IcoSphereMesh _icosphere { get => _icosphere_Element.Data; set => _icosphere_Element.Data = value; }
+public Field<global::FrooxEngine.DriveRef<global::FrooxEngine.IcoSphereMesh>, global::FrooxEngine.IcoSphereMesh> _icosphere_Element = new();
+public global::FrooxEngine.PBS_RimMetallic _material { get => _material_Element.Data; set => _material_Element.Data = value; }
+public Field<global::FrooxEngine.DriveRef<global::FrooxEngine.PBS_RimMetallic>, global::FrooxEngine.PBS_RimMetallic> _material_Element = new();
+public global::FrooxEngine.LegacyRadioGroup _group { get => _group_Element.Data; set => _group_Element.Data = value; }
+public Field<global::FrooxEngine.RelayRef<global::FrooxEngine.LegacyRadioGroup>, global::FrooxEngine.LegacyRadioGroup> _group_Element = new();
+public global::System.Int32 _orderNumber { get => _orderNumber_Element.Data; set => _orderNumber_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Int32>, global::System.Int32> _orderNumber_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("IsEnabled", IsEnabled.ToResoniteLinkField());
-members.Add("Radius", Radius.ToResoniteLinkField());
-members.Add("Color", Color.ToResoniteLinkField());
-members.Add("Selected", Selected.ToResoniteLinkField());
-members.Add("_colliderRadius", _colliderRadius.ToResoniteReference(context));
-members.Add("_icosphere", _icosphere.ToResoniteReference(context));
-members.Add("_material", _material.ToResoniteReference(context));
-members.Add("_group", _group.ToResoniteReference(context));
-members.Add("_orderNumber", _orderNumber.ToResoniteLinkField());
+members.Add("IsEnabled", IsEnabled_Element.Data.ToResoniteLinkField());
+members.Add("Radius", Radius_Element.Data.ToResoniteLinkField());
+members.Add("Color", Color_Element.Data.ToResoniteLinkField());
+members.Add("Selected", Selected_Element.Data.ToResoniteLinkField());
+members.Add("_colliderRadius", _colliderRadius_Element.Data.ToResoniteReference(context));
+members.Add("_icosphere", _icosphere_Element.Data.ToResoniteReference(context));
+members.Add("_material", _material_Element.Data.ToResoniteReference(context));
+members.Add("_group", _group_Element.Data.ToResoniteReference(context));
+members.Add("_orderNumber", _orderNumber_Element.Data.ToResoniteLinkField());
 }
 
 }

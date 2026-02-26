@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [ProtoFluxBindings]FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.Utility.IndexOfFirstObjectMatch<>
-// Generated on: středa 25. února 2026 16:14:12
+// Generated on: čtvrtek 26. února 2026 10:04:34
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -21,19 +21,20 @@ public partial class IndexOfFirstObjectMatch<T> : global::FrooxEngine.ProtoFlux.
 	
 
 {
-    public global::FrooxEngine.ProtoFlux.INodeObjectOutput<T> Match;
-public System.Collections.Generic.List<global::FrooxEngine.ProtoFlux.INodeObjectOutput<T>> Values;
-public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Int32> Index;
-public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Boolean> FoundMatch;
+    public global::FrooxEngine.ProtoFlux.INodeObjectOutput<T> Match { get => Match_Element.Data; set => Match_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.ProtoFlux.INodeObjectOutput<T>>, global::FrooxEngine.ProtoFlux.INodeObjectOutput<T>> Match_Element = new();
+public global::SyncFieldList<global::FrooxEngine.SyncRefList<global::FrooxEngine.ProtoFlux.INodeObjectOutput<T>>, global::FrooxEngine.ProtoFlux.INodeObjectOutput<T>, Field<global::FrooxEngine.SyncRef<global::FrooxEngine.ProtoFlux.INodeObjectOutput<T>>, global::FrooxEngine.ProtoFlux.INodeObjectOutput<T>>> Values = new();
+public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Int32> Index = new();
+public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Boolean> FoundMatch = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Match", Match.ToResoniteReference(context));
+members.Add("Match", Match_Element.Data.ToResoniteReference(context));
 members.Add("Values", new ResoniteLink.SyncList()
 {
-    Elements = Values.ConvertList(m => m.ToResoniteReference(context))
+    Elements = Values.Data.ConvertList(m => m.Data.ToResoniteReference(context))
 });
 members.Add("Index", new ResoniteLink.EmptyElement());
 members.Add("FoundMatch", new ResoniteLink.EmptyElement());

@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.TextureCharacterControllerModifier
-// Generated on: středa 25. února 2026 16:13:10
+// Generated on: čtvrtek 26. února 2026 10:03:40
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,19 +20,23 @@ namespace FrooxEngine
 public partial class TextureCharacterControllerModifier : global::FrooxEngine.MeshColliderCharacterControllerModifier
 
 {
-    public global::System.Single MinValue;
-public global::System.Single MaxValue;
-public global::Elements.Core.ColorChannel Channel;
-public global::FrooxEngine.IAssetProvider<global::FrooxEngine.Texture2D> Texture;
+    public global::System.Single MinValue { get => MinValue_Element.Data; set => MinValue_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> MinValue_Element = new();
+public global::System.Single MaxValue { get => MaxValue_Element.Data; set => MaxValue_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> MaxValue_Element = new();
+public global::Elements.Core.ColorChannel Channel { get => Channel_Element.Data; set => Channel_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::Elements.Core.ColorChannel>, global::Elements.Core.ColorChannel> Channel_Element = new();
+public global::FrooxEngine.IAssetProvider<global::FrooxEngine.Texture2D> Texture { get => Texture_Element.Data; set => Texture_Element.Data = value; }
+public Field<global::FrooxEngine.AssetRef<global::FrooxEngine.Texture2D>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.Texture2D>> Texture_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("MinValue", MinValue.ToResoniteLinkField());
-members.Add("MaxValue", MaxValue.ToResoniteLinkField());
-members.Add("Channel", Channel.ToResoniteLinkField());
-members.Add("Texture", Texture.ToResoniteReference(context));
+members.Add("MinValue", MinValue_Element.Data.ToResoniteLinkField());
+members.Add("MaxValue", MaxValue_Element.Data.ToResoniteLinkField());
+members.Add("Channel", Channel_Element.Data.ToResoniteLinkField());
+members.Add("Texture", Texture_Element.Data.ToResoniteReference(context));
 }
 
 }

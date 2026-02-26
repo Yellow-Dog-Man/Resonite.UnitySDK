@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.BoxVertexValueSpatialVariable<>
-// Generated on: středa 25. února 2026 16:13:08
+// Generated on: čtvrtek 26. února 2026 10:03:38
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -21,27 +21,35 @@ public partial class BoxVertexValueSpatialVariable<T> : global::FrooxEngine.BoxS
 	
 
 {
-    public T Value0;
-public T Value1;
-public T Value2;
-public T Value3;
-public T Value4;
-public T Value5;
-public T Value6;
-public T Value7;
+    public T Value0 { get => Value0_Element.Data; set => Value0_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<T>, T> Value0_Element = new();
+public T Value1 { get => Value1_Element.Data; set => Value1_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<T>, T> Value1_Element = new();
+public T Value2 { get => Value2_Element.Data; set => Value2_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<T>, T> Value2_Element = new();
+public T Value3 { get => Value3_Element.Data; set => Value3_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<T>, T> Value3_Element = new();
+public T Value4 { get => Value4_Element.Data; set => Value4_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<T>, T> Value4_Element = new();
+public T Value5 { get => Value5_Element.Data; set => Value5_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<T>, T> Value5_Element = new();
+public T Value6 { get => Value6_Element.Data; set => Value6_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<T>, T> Value6_Element = new();
+public T Value7 { get => Value7_Element.Data; set => Value7_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<T>, T> Value7_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Value0", Value0.ToResoniteLinkField());
-members.Add("Value1", Value1.ToResoniteLinkField());
-members.Add("Value2", Value2.ToResoniteLinkField());
-members.Add("Value3", Value3.ToResoniteLinkField());
-members.Add("Value4", Value4.ToResoniteLinkField());
-members.Add("Value5", Value5.ToResoniteLinkField());
-members.Add("Value6", Value6.ToResoniteLinkField());
-members.Add("Value7", Value7.ToResoniteLinkField());
+members.Add("Value0", Value0_Element.Data.ToResoniteLinkField());
+members.Add("Value1", Value1_Element.Data.ToResoniteLinkField());
+members.Add("Value2", Value2_Element.Data.ToResoniteLinkField());
+members.Add("Value3", Value3_Element.Data.ToResoniteLinkField());
+members.Add("Value4", Value4_Element.Data.ToResoniteLinkField());
+members.Add("Value5", Value5_Element.Data.ToResoniteLinkField());
+members.Add("Value6", Value6_Element.Data.ToResoniteLinkField());
+members.Add("Value7", Value7_Element.Data.ToResoniteLinkField());
 }
 
 }

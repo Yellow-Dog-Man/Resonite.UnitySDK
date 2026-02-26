@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.HandPoser+FingerSegment
-// Generated on: středa 25. února 2026 16:14:46
+// Generated on: čtvrtek 26. února 2026 10:04:50
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -22,19 +22,23 @@ namespace FrooxEngine
 public partial class FingerSegment : global::FrooxEngine.SyncObject
 
 {
-    public UnityEngine.Quaternion CoordinateCompensation;
-public global::FrooxEngine.Slot Root;
-public UnityEngine.Quaternion OriginalRotation;
-public global::FrooxEngine.IField<UnityEngine.Quaternion> RotationDrive;
+    public UnityEngine.Quaternion CoordinateCompensation { get => CoordinateCompensation_Element.Data; set => CoordinateCompensation_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.Quaternion>, UnityEngine.Quaternion> CoordinateCompensation_Element = new();
+public global::FrooxEngine.Slot Root { get => Root_Element.Data; set => Root_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> Root_Element = new();
+public UnityEngine.Quaternion OriginalRotation { get => OriginalRotation_Element.Data; set => OriginalRotation_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.Quaternion>, UnityEngine.Quaternion> OriginalRotation_Element = new();
+public global::FrooxEngine.IField<UnityEngine.Quaternion> RotationDrive { get => RotationDrive_Element.Data; set => RotationDrive_Element.Data = value; }
+public Field<global::FrooxEngine.FieldDrive<UnityEngine.Quaternion>, global::FrooxEngine.IField<UnityEngine.Quaternion>> RotationDrive_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("CoordinateCompensation", CoordinateCompensation.ToResoniteLinkField());
-members.Add("Root", Root.ToResoniteReference(context));
-members.Add("OriginalRotation", OriginalRotation.ToResoniteLinkField());
-members.Add("RotationDrive", RotationDrive.ToResoniteReference(context));
+members.Add("CoordinateCompensation", CoordinateCompensation_Element.Data.ToResoniteLinkField());
+members.Add("Root", Root_Element.Data.ToResoniteReference(context));
+members.Add("OriginalRotation", OriginalRotation_Element.Data.ToResoniteLinkField());
+members.Add("RotationDrive", RotationDrive_Element.Data.ToResoniteReference(context));
 }
 
 }

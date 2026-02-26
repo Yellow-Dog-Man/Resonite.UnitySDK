@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.Undo.SpawnOrDestroy
-// Generated on: středa 25. února 2026 16:14:43
+// Generated on: čtvrtek 26. února 2026 10:04:48
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,33 +20,44 @@ namespace FrooxEngine.Undo
 public partial class SpawnOrDestroy : global::FrooxEngine.Component, global::FrooxEngine.Undo.IUndoable
 
 {
-    public global::FrooxEngine.Worker Target;
-public global::FrooxEngine.Slot TargetParent;
-public global::FrooxEngine.Undo.SpawnOrDestroy.Mode _mode;
-public global::System.Boolean _preserveAssets;
-public global::System.Boolean _sendDestroyingEvents;
-public System.Uri _savedObject;
-public global::System.Boolean _isComponent;
-public global::FrooxEngine.SavedReferenceTable _referenceTable;
-public global::System.Boolean _isSaving;
-public global::System.String _description;
-public global::System.Boolean _performed;
+    public global::FrooxEngine.Worker Target { get => Target_Element.Data; set => Target_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.Worker>, global::FrooxEngine.Worker> Target_Element = new();
+public global::FrooxEngine.Slot TargetParent { get => TargetParent_Element.Data; set => TargetParent_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> TargetParent_Element = new();
+public global::FrooxEngine.Undo.SpawnOrDestroy.Mode _mode { get => _mode_Element.Data; set => _mode_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::FrooxEngine.Undo.SpawnOrDestroy.Mode>, global::FrooxEngine.Undo.SpawnOrDestroy.Mode> _mode_Element = new();
+public global::System.Boolean _preserveAssets { get => _preserveAssets_Element.Data; set => _preserveAssets_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> _preserveAssets_Element = new();
+public global::System.Boolean _sendDestroyingEvents { get => _sendDestroyingEvents_Element.Data; set => _sendDestroyingEvents_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> _sendDestroyingEvents_Element = new();
+public System.Uri _savedObject { get => _savedObject_Element.Data; set => _savedObject_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<System.Uri>, System.Uri> _savedObject_Element = new();
+public global::System.Boolean _isComponent { get => _isComponent_Element.Data; set => _isComponent_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> _isComponent_Element = new();
+public global::FrooxEngine.SavedReferenceTable _referenceTable { get => _referenceTable_Element.Data; set => _referenceTable_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.SavedReferenceTable>, global::FrooxEngine.SavedReferenceTable> _referenceTable_Element = new();
+public global::System.Boolean _isSaving { get => _isSaving_Element.Data; set => _isSaving_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> _isSaving_Element = new();
+public global::System.String _description { get => _description_Element.Data; set => _description_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.String>, global::System.String> _description_Element = new();
+public global::System.Boolean _performed { get => _performed_Element.Data; set => _performed_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> _performed_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Target", Target.ToResoniteReference(context));
-members.Add("TargetParent", TargetParent.ToResoniteReference(context));
-members.Add("_mode", _mode.ToResoniteLinkField());
-members.Add("_preserveAssets", _preserveAssets.ToResoniteLinkField());
-members.Add("_sendDestroyingEvents", _sendDestroyingEvents.ToResoniteLinkField());
-members.Add("_savedObject", _savedObject.ToResoniteLinkField());
-members.Add("_isComponent", _isComponent.ToResoniteLinkField());
-members.Add("_referenceTable", _referenceTable.ToResoniteReference(context));
-members.Add("_isSaving", _isSaving.ToResoniteLinkField());
-members.Add("_description", _description.ToResoniteLinkField());
-members.Add("_performed", _performed.ToResoniteLinkField());
+members.Add("Target", Target_Element.Data.ToResoniteReference(context));
+members.Add("TargetParent", TargetParent_Element.Data.ToResoniteReference(context));
+members.Add("_mode", _mode_Element.Data.ToResoniteLinkField());
+members.Add("_preserveAssets", _preserveAssets_Element.Data.ToResoniteLinkField());
+members.Add("_sendDestroyingEvents", _sendDestroyingEvents_Element.Data.ToResoniteLinkField());
+members.Add("_savedObject", _savedObject_Element.Data.ToResoniteLinkField());
+members.Add("_isComponent", _isComponent_Element.Data.ToResoniteLinkField());
+members.Add("_referenceTable", _referenceTable_Element.Data.ToResoniteReference(context));
+members.Add("_isSaving", _isSaving_Element.Data.ToResoniteLinkField());
+members.Add("_description", _description_Element.Data.ToResoniteLinkField());
+members.Add("_performed", _performed_Element.Data.ToResoniteLinkField());
 }
 
 }

@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.PlaybackSynchronizer
-// Generated on: středa 25. února 2026 16:13:11
+// Generated on: čtvrtek 26. února 2026 10:03:40
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,21 +20,26 @@ namespace FrooxEngine
 public partial class PlaybackSynchronizer : global::FrooxEngine.Component
 
 {
-    public global::FrooxEngine.SyncPlayback Target;
-public global::FrooxEngine.IPlayable Source;
-public global::System.Boolean UseNormalizedPosition;
-public global::System.Single PositionOffset;
-public global::System.Single PositionRate;
+    public global::FrooxEngine.SyncPlayback Target { get => Target_Element.Data; set => Target_Element.Data = value; }
+public Field<global::FrooxEngine.DriveRef<global::FrooxEngine.SyncPlayback>, global::FrooxEngine.SyncPlayback> Target_Element = new();
+public global::FrooxEngine.IPlayable Source { get => Source_Element.Data; set => Source_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.IPlayable>, global::FrooxEngine.IPlayable> Source_Element = new();
+public global::System.Boolean UseNormalizedPosition { get => UseNormalizedPosition_Element.Data; set => UseNormalizedPosition_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> UseNormalizedPosition_Element = new();
+public global::System.Single PositionOffset { get => PositionOffset_Element.Data; set => PositionOffset_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> PositionOffset_Element = new();
+public global::System.Single PositionRate { get => PositionRate_Element.Data; set => PositionRate_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> PositionRate_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Target", Target.ToResoniteReference(context));
-members.Add("Source", Source.ToResoniteReference(context));
-members.Add("UseNormalizedPosition", UseNormalizedPosition.ToResoniteLinkField());
-members.Add("PositionOffset", PositionOffset.ToResoniteLinkField());
-members.Add("PositionRate", PositionRate.ToResoniteLinkField());
+members.Add("Target", Target_Element.Data.ToResoniteReference(context));
+members.Add("Source", Source_Element.Data.ToResoniteReference(context));
+members.Add("UseNormalizedPosition", UseNormalizedPosition_Element.Data.ToResoniteLinkField());
+members.Add("PositionOffset", PositionOffset_Element.Data.ToResoniteLinkField());
+members.Add("PositionRate", PositionRate_Element.Data.ToResoniteLinkField());
 }
 
 }

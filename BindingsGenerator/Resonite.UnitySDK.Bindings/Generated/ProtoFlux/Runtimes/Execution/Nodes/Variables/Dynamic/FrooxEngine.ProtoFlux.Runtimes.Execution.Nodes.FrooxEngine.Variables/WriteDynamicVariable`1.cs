@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [ProtoFluxBindings]FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Variables.WriteDynamicVariable<>
-// Generated on: středa 25. února 2026 16:14:13
+// Generated on: čtvrtek 26. února 2026 10:04:34
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -21,15 +21,17 @@ public abstract partial class WriteDynamicVariable<T> : global::FrooxEngine.Prot
 	
 
 {
-    public global::FrooxEngine.ProtoFlux.INodeOperation OnSuccess;
-public global::FrooxEngine.ProtoFlux.INodeOperation OnFailed;
+    public global::FrooxEngine.ProtoFlux.INodeOperation OnSuccess { get => OnSuccess_Element.Data; set => OnSuccess_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.ProtoFlux.INodeOperation>, global::FrooxEngine.ProtoFlux.INodeOperation> OnSuccess_Element = new();
+public global::FrooxEngine.ProtoFlux.INodeOperation OnFailed { get => OnFailed_Element.Data; set => OnFailed_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.ProtoFlux.INodeOperation>, global::FrooxEngine.ProtoFlux.INodeOperation> OnFailed_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("OnSuccess", OnSuccess.ToResoniteReference(context));
-members.Add("OnFailed", OnFailed.ToResoniteReference(context));
+members.Add("OnSuccess", OnSuccess_Element.Data.ToResoniteReference(context));
+members.Add("OnFailed", OnFailed_Element.Data.ToResoniteReference(context));
 }
 
 }

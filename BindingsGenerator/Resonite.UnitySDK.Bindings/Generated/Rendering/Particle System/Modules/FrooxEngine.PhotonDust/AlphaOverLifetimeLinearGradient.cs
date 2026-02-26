@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.PhotonDust.AlphaOverLifetimeLinearGradient
-// Generated on: středa 25. února 2026 16:14:17
+// Generated on: čtvrtek 26. února 2026 10:04:38
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,13 +20,13 @@ namespace FrooxEngine.PhotonDust
 public partial class AlphaOverLifetimeLinearGradient : global::FrooxEngine.PhotonDust.ParticleSystemModule<global::System.Object>, global::FrooxEngine.ICustomInspector
 
 {
-    public global::FrooxEngine.LinearKey<global::System.Single>[] AlphaOverLifetime;
+    public global::SyncArray<global::FrooxEngine.SyncLinear<global::System.Single>, global::FrooxEngine.LinearKey<global::System.Single>> AlphaOverLifetime = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("AlphaOverLifetime", AlphaOverLifetime.ToResoniteLinkArray());
+members.Add("AlphaOverLifetime", AlphaOverLifetime.Data.ToResoniteLinkArray());
 }
 
 }

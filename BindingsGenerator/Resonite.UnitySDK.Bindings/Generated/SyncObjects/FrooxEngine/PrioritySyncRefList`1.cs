@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.PrioritySyncRefList<>
-// Generated on: středa 25. února 2026 16:13:38
+// Generated on: čtvrtek 26. února 2026 10:04:06
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -21,7 +21,7 @@ public partial class PrioritySyncRefList<T> : global::FrooxEngine.SyncObject
 	where T : class, global::FrooxEngine.IWorldElement
 
 {
-    public System.Collections.Generic.List<global::FrooxEngine.PrioritySyncRefList<T>.ListItem> Items;
+    public global::SyncList<global::FrooxEngine.SyncList<global::FrooxEngine.PrioritySyncRefList<T>.ListItem>, global::FrooxEngine.PrioritySyncRefList<T>.ListItem> Items = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
@@ -29,7 +29,7 @@ public override void CollectMembers(
     base.CollectMembers(members, context);
 members.Add("Items", new ResoniteLink.SyncList()
 {
-    Elements = Items.ConvertList(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers(context) })
+    Elements = Items.Data.ConvertList(m => new ResoniteLink.SyncObject() { Members = m.CollectMembers(context) })
 });
 }
 

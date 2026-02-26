@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.VoiceModeSync
-// Generated on: středa 25. února 2026 16:14:47
+// Generated on: čtvrtek 26. února 2026 10:04:50
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,25 +20,32 @@ namespace FrooxEngine
 public partial class VoiceModeSync : global::FrooxEngine.Component
 
 {
-    public global::FrooxEngine.VoiceMode FocusedWorldVoiceMode;
-public global::System.Boolean GlobalMute;
-public global::FrooxEngine.VoiceMode FocusedWorldMaxAllowedVoiceMode;
-public global::System.Boolean BroadcastAllowed;
-public global::System.Boolean ShoutAllowed;
-public global::System.Boolean NormalAllowed;
-public global::System.Boolean WhisperAllowed;
+    public global::FrooxEngine.VoiceMode FocusedWorldVoiceMode { get => FocusedWorldVoiceMode_Element.Data; set => FocusedWorldVoiceMode_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::FrooxEngine.VoiceMode>, global::FrooxEngine.VoiceMode> FocusedWorldVoiceMode_Element = new();
+public global::System.Boolean GlobalMute { get => GlobalMute_Element.Data; set => GlobalMute_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> GlobalMute_Element = new();
+public global::FrooxEngine.VoiceMode FocusedWorldMaxAllowedVoiceMode { get => FocusedWorldMaxAllowedVoiceMode_Element.Data; set => FocusedWorldMaxAllowedVoiceMode_Element.Data = value; }
+public Field<global::FrooxEngine.RawOutput<global::FrooxEngine.VoiceMode>, global::FrooxEngine.VoiceMode> FocusedWorldMaxAllowedVoiceMode_Element = new();
+public global::System.Boolean BroadcastAllowed { get => BroadcastAllowed_Element.Data; set => BroadcastAllowed_Element.Data = value; }
+public Field<global::FrooxEngine.RawOutput<global::System.Boolean>, global::System.Boolean> BroadcastAllowed_Element = new();
+public global::System.Boolean ShoutAllowed { get => ShoutAllowed_Element.Data; set => ShoutAllowed_Element.Data = value; }
+public Field<global::FrooxEngine.RawOutput<global::System.Boolean>, global::System.Boolean> ShoutAllowed_Element = new();
+public global::System.Boolean NormalAllowed { get => NormalAllowed_Element.Data; set => NormalAllowed_Element.Data = value; }
+public Field<global::FrooxEngine.RawOutput<global::System.Boolean>, global::System.Boolean> NormalAllowed_Element = new();
+public global::System.Boolean WhisperAllowed { get => WhisperAllowed_Element.Data; set => WhisperAllowed_Element.Data = value; }
+public Field<global::FrooxEngine.RawOutput<global::System.Boolean>, global::System.Boolean> WhisperAllowed_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("FocusedWorldVoiceMode", FocusedWorldVoiceMode.ToResoniteLinkField());
-members.Add("GlobalMute", GlobalMute.ToResoniteLinkField());
-members.Add("FocusedWorldMaxAllowedVoiceMode", FocusedWorldMaxAllowedVoiceMode.ToResoniteLinkField());
-members.Add("BroadcastAllowed", BroadcastAllowed.ToResoniteLinkField());
-members.Add("ShoutAllowed", ShoutAllowed.ToResoniteLinkField());
-members.Add("NormalAllowed", NormalAllowed.ToResoniteLinkField());
-members.Add("WhisperAllowed", WhisperAllowed.ToResoniteLinkField());
+members.Add("FocusedWorldVoiceMode", FocusedWorldVoiceMode_Element.Data.ToResoniteLinkField());
+members.Add("GlobalMute", GlobalMute_Element.Data.ToResoniteLinkField());
+members.Add("FocusedWorldMaxAllowedVoiceMode", FocusedWorldMaxAllowedVoiceMode_Element.Data.ToResoniteLinkField());
+members.Add("BroadcastAllowed", BroadcastAllowed_Element.Data.ToResoniteLinkField());
+members.Add("ShoutAllowed", ShoutAllowed_Element.Data.ToResoniteLinkField());
+members.Add("NormalAllowed", NormalAllowed_Element.Data.ToResoniteLinkField());
+members.Add("WhisperAllowed", WhisperAllowed_Element.Data.ToResoniteLinkField());
 }
 
 }

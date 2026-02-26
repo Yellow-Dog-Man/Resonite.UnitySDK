@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.MirrorTransform
-// Generated on: středa 25. února 2026 16:14:30
+// Generated on: čtvrtek 26. února 2026 10:04:41
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,25 +20,32 @@ namespace FrooxEngine
 public partial class MirrorTransform : global::FrooxEngine.Component
 
 {
-    public global::FrooxEngine.Slot MirrorSource;
-public global::FrooxEngine.Slot MirrorPlane;
-public UnityEngine.Vector3 MirrorOffset;
-public UnityEngine.Vector3 MirrorNormal;
-public global::System.Boolean AllowWriteBack;
-public global::FrooxEngine.IField<UnityEngine.Vector3> _position;
-public global::FrooxEngine.IField<UnityEngine.Quaternion> _rotation;
+    public global::FrooxEngine.Slot MirrorSource { get => MirrorSource_Element.Data; set => MirrorSource_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> MirrorSource_Element = new();
+public global::FrooxEngine.Slot MirrorPlane { get => MirrorPlane_Element.Data; set => MirrorPlane_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> MirrorPlane_Element = new();
+public UnityEngine.Vector3 MirrorOffset { get => MirrorOffset_Element.Data; set => MirrorOffset_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.Vector3>, UnityEngine.Vector3> MirrorOffset_Element = new();
+public UnityEngine.Vector3 MirrorNormal { get => MirrorNormal_Element.Data; set => MirrorNormal_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.Vector3>, UnityEngine.Vector3> MirrorNormal_Element = new();
+public global::System.Boolean AllowWriteBack { get => AllowWriteBack_Element.Data; set => AllowWriteBack_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> AllowWriteBack_Element = new();
+public global::FrooxEngine.IField<UnityEngine.Vector3> _position { get => _position_Element.Data; set => _position_Element.Data = value; }
+public Field<global::FrooxEngine.FieldDrive<UnityEngine.Vector3>, global::FrooxEngine.IField<UnityEngine.Vector3>> _position_Element = new();
+public global::FrooxEngine.IField<UnityEngine.Quaternion> _rotation { get => _rotation_Element.Data; set => _rotation_Element.Data = value; }
+public Field<global::FrooxEngine.FieldDrive<UnityEngine.Quaternion>, global::FrooxEngine.IField<UnityEngine.Quaternion>> _rotation_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("MirrorSource", MirrorSource.ToResoniteReference(context));
-members.Add("MirrorPlane", MirrorPlane.ToResoniteReference(context));
-members.Add("MirrorOffset", MirrorOffset.ToResoniteLinkField());
-members.Add("MirrorNormal", MirrorNormal.ToResoniteLinkField());
-members.Add("AllowWriteBack", AllowWriteBack.ToResoniteLinkField());
-members.Add("_position", _position.ToResoniteReference(context));
-members.Add("_rotation", _rotation.ToResoniteReference(context));
+members.Add("MirrorSource", MirrorSource_Element.Data.ToResoniteReference(context));
+members.Add("MirrorPlane", MirrorPlane_Element.Data.ToResoniteReference(context));
+members.Add("MirrorOffset", MirrorOffset_Element.Data.ToResoniteLinkField());
+members.Add("MirrorNormal", MirrorNormal_Element.Data.ToResoniteLinkField());
+members.Add("AllowWriteBack", AllowWriteBack_Element.Data.ToResoniteLinkField());
+members.Add("_position", _position_Element.Data.ToResoniteReference(context));
+members.Add("_rotation", _rotation_Element.Data.ToResoniteReference(context));
 }
 
 }

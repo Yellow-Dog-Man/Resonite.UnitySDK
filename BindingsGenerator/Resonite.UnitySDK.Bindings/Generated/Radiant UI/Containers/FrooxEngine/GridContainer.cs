@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.GridContainer
-// Generated on: středa 25. února 2026 16:14:14
+// Generated on: čtvrtek 26. února 2026 10:04:35
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,25 +20,32 @@ namespace FrooxEngine
 public partial class GridContainer : global::FrooxEngine.FacetContainer, global::FrooxEngine.ICustomInspector
 
 {
-    public global::System.Boolean RecalculateOnSizeChange;
-public global::System.Nullable<UnityEngine.Vector2Int> CellCount;
-public global::System.Nullable<UnityEngine.Vector2> CellSize;
-public UnityEngine.Vector2 Padding;
-public global::System.Nullable<UnityEngine.Vector2> _lastCalculatedCenteringOffset;
-public global::System.Nullable<UnityEngine.Vector2> _lastCalculatedCellSize;
-public global::System.Nullable<UnityEngine.Vector2> _lastCalculatedPadding;
+    public global::System.Boolean RecalculateOnSizeChange { get => RecalculateOnSizeChange_Element.Data; set => RecalculateOnSizeChange_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> RecalculateOnSizeChange_Element = new();
+public global::System.Nullable<UnityEngine.Vector2Int> CellCount { get => CellCount_Element.Data; set => CellCount_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Nullable<UnityEngine.Vector2Int>>, global::System.Nullable<UnityEngine.Vector2Int>> CellCount_Element = new();
+public global::System.Nullable<UnityEngine.Vector2> CellSize { get => CellSize_Element.Data; set => CellSize_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Nullable<UnityEngine.Vector2>>, global::System.Nullable<UnityEngine.Vector2>> CellSize_Element = new();
+public UnityEngine.Vector2 Padding { get => Padding_Element.Data; set => Padding_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.Vector2>, UnityEngine.Vector2> Padding_Element = new();
+public global::System.Nullable<UnityEngine.Vector2> _lastCalculatedCenteringOffset { get => _lastCalculatedCenteringOffset_Element.Data; set => _lastCalculatedCenteringOffset_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Nullable<UnityEngine.Vector2>>, global::System.Nullable<UnityEngine.Vector2>> _lastCalculatedCenteringOffset_Element = new();
+public global::System.Nullable<UnityEngine.Vector2> _lastCalculatedCellSize { get => _lastCalculatedCellSize_Element.Data; set => _lastCalculatedCellSize_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Nullable<UnityEngine.Vector2>>, global::System.Nullable<UnityEngine.Vector2>> _lastCalculatedCellSize_Element = new();
+public global::System.Nullable<UnityEngine.Vector2> _lastCalculatedPadding { get => _lastCalculatedPadding_Element.Data; set => _lastCalculatedPadding_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Nullable<UnityEngine.Vector2>>, global::System.Nullable<UnityEngine.Vector2>> _lastCalculatedPadding_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("RecalculateOnSizeChange", RecalculateOnSizeChange.ToResoniteLinkField());
-members.Add("CellCount", CellCount.ToResoniteLinkField());
-members.Add("CellSize", CellSize.ToResoniteLinkField());
-members.Add("Padding", Padding.ToResoniteLinkField());
-members.Add("_lastCalculatedCenteringOffset", _lastCalculatedCenteringOffset.ToResoniteLinkField());
-members.Add("_lastCalculatedCellSize", _lastCalculatedCellSize.ToResoniteLinkField());
-members.Add("_lastCalculatedPadding", _lastCalculatedPadding.ToResoniteLinkField());
+members.Add("RecalculateOnSizeChange", RecalculateOnSizeChange_Element.Data.ToResoniteLinkField());
+members.Add("CellCount", CellCount_Element.Data.ToResoniteLinkField());
+members.Add("CellSize", CellSize_Element.Data.ToResoniteLinkField());
+members.Add("Padding", Padding_Element.Data.ToResoniteLinkField());
+members.Add("_lastCalculatedCenteringOffset", _lastCalculatedCenteringOffset_Element.Data.ToResoniteLinkField());
+members.Add("_lastCalculatedCellSize", _lastCalculatedCellSize_Element.Data.ToResoniteLinkField());
+members.Add("_lastCalculatedPadding", _lastCalculatedPadding_Element.Data.ToResoniteLinkField());
 }
 
 }

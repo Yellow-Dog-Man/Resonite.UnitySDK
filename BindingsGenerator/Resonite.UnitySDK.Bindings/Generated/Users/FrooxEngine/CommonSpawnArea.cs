@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.CommonSpawnArea
-// Generated on: středa 25. února 2026 16:14:44
+// Generated on: čtvrtek 26. února 2026 10:04:49
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,33 +20,44 @@ namespace FrooxEngine
 public partial class CommonSpawnArea : global::FrooxEngine.Component, global::FrooxEngine.IUserSpawnArea
 
 {
-    public global::FrooxEngine.IPointGenerator SpawnPointGenerator;
-public UnityEngine.Vector3 FloorPointRay;
-public global::System.Single OtherUserCheckRadius;
-public global::System.Boolean ParentUser;
-public global::System.Boolean OrientUser;
-public global::System.Boolean ScaleUser;
-public global::System.Int32 Capacity;
-public global::System.Single BaseWeight;
-public global::FrooxEngine.UserRoot.UserNode PositionNode;
-public global::FrooxEngine.UserRoot.UserNode RotationNode;
-public global::FrooxEngine.Slot ParentOverride;
+    public global::FrooxEngine.IPointGenerator SpawnPointGenerator { get => SpawnPointGenerator_Element.Data; set => SpawnPointGenerator_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.IPointGenerator>, global::FrooxEngine.IPointGenerator> SpawnPointGenerator_Element = new();
+public UnityEngine.Vector3 FloorPointRay { get => FloorPointRay_Element.Data; set => FloorPointRay_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.Vector3>, UnityEngine.Vector3> FloorPointRay_Element = new();
+public global::System.Single OtherUserCheckRadius { get => OtherUserCheckRadius_Element.Data; set => OtherUserCheckRadius_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> OtherUserCheckRadius_Element = new();
+public global::System.Boolean ParentUser { get => ParentUser_Element.Data; set => ParentUser_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> ParentUser_Element = new();
+public global::System.Boolean OrientUser { get => OrientUser_Element.Data; set => OrientUser_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> OrientUser_Element = new();
+public global::System.Boolean ScaleUser { get => ScaleUser_Element.Data; set => ScaleUser_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> ScaleUser_Element = new();
+public global::System.Int32 Capacity { get => Capacity_Element.Data; set => Capacity_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Int32>, global::System.Int32> Capacity_Element = new();
+public global::System.Single BaseWeight { get => BaseWeight_Element.Data; set => BaseWeight_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> BaseWeight_Element = new();
+public global::FrooxEngine.UserRoot.UserNode PositionNode { get => PositionNode_Element.Data; set => PositionNode_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::FrooxEngine.UserRoot.UserNode>, global::FrooxEngine.UserRoot.UserNode> PositionNode_Element = new();
+public global::FrooxEngine.UserRoot.UserNode RotationNode { get => RotationNode_Element.Data; set => RotationNode_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::FrooxEngine.UserRoot.UserNode>, global::FrooxEngine.UserRoot.UserNode> RotationNode_Element = new();
+public global::FrooxEngine.Slot ParentOverride { get => ParentOverride_Element.Data; set => ParentOverride_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot> ParentOverride_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("SpawnPointGenerator", SpawnPointGenerator.ToResoniteReference(context));
-members.Add("FloorPointRay", FloorPointRay.ToResoniteLinkField());
-members.Add("OtherUserCheckRadius", OtherUserCheckRadius.ToResoniteLinkField());
-members.Add("ParentUser", ParentUser.ToResoniteLinkField());
-members.Add("OrientUser", OrientUser.ToResoniteLinkField());
-members.Add("ScaleUser", ScaleUser.ToResoniteLinkField());
-members.Add("Capacity", Capacity.ToResoniteLinkField());
-members.Add("BaseWeight", BaseWeight.ToResoniteLinkField());
-members.Add("PositionNode", PositionNode.ToResoniteLinkField());
-members.Add("RotationNode", RotationNode.ToResoniteLinkField());
-members.Add("ParentOverride", ParentOverride.ToResoniteReference(context));
+members.Add("SpawnPointGenerator", SpawnPointGenerator_Element.Data.ToResoniteReference(context));
+members.Add("FloorPointRay", FloorPointRay_Element.Data.ToResoniteLinkField());
+members.Add("OtherUserCheckRadius", OtherUserCheckRadius_Element.Data.ToResoniteLinkField());
+members.Add("ParentUser", ParentUser_Element.Data.ToResoniteLinkField());
+members.Add("OrientUser", OrientUser_Element.Data.ToResoniteLinkField());
+members.Add("ScaleUser", ScaleUser_Element.Data.ToResoniteLinkField());
+members.Add("Capacity", Capacity_Element.Data.ToResoniteLinkField());
+members.Add("BaseWeight", BaseWeight_Element.Data.ToResoniteLinkField());
+members.Add("PositionNode", PositionNode_Element.Data.ToResoniteLinkField());
+members.Add("RotationNode", RotationNode_Element.Data.ToResoniteLinkField());
+members.Add("ParentOverride", ParentOverride_Element.Data.ToResoniteReference(context));
 }
 
 }

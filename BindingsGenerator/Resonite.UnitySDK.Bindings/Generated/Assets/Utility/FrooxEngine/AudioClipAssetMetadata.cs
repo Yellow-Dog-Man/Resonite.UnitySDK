@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.AudioClipAssetMetadata
-// Generated on: středa 25. února 2026 16:13:05
+// Generated on: čtvrtek 26. února 2026 10:03:36
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,29 +20,38 @@ namespace FrooxEngine
 public partial class AudioClipAssetMetadata : global::FrooxEngine.Component
 
 {
-    public global::FrooxEngine.IAssetProvider<global::FrooxEngine.AudioClip> AudioClip;
-public global::System.Int32 SampleRate;
-public global::Elements.Assets.ChannelConfiguration Channels;
-public global::System.Int32 ChannelCount;
-public global::System.Int32 SampleCount;
-public global::System.Double Duration;
-public global::System.String Extension;
-public global::System.String CodecInfo;
-public global::System.Boolean FullyDecoded;
+    public global::FrooxEngine.IAssetProvider<global::FrooxEngine.AudioClip> AudioClip { get => AudioClip_Element.Data; set => AudioClip_Element.Data = value; }
+public Field<global::FrooxEngine.AssetRef<global::FrooxEngine.AudioClip>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.AudioClip>> AudioClip_Element = new();
+public global::System.Int32 SampleRate { get => SampleRate_Element.Data; set => SampleRate_Element.Data = value; }
+public Field<global::FrooxEngine.RawOutput<global::System.Int32>, global::System.Int32> SampleRate_Element = new();
+public global::Elements.Assets.ChannelConfiguration Channels { get => Channels_Element.Data; set => Channels_Element.Data = value; }
+public Field<global::FrooxEngine.RawOutput<global::Elements.Assets.ChannelConfiguration>, global::Elements.Assets.ChannelConfiguration> Channels_Element = new();
+public global::System.Int32 ChannelCount { get => ChannelCount_Element.Data; set => ChannelCount_Element.Data = value; }
+public Field<global::FrooxEngine.RawOutput<global::System.Int32>, global::System.Int32> ChannelCount_Element = new();
+public global::System.Int32 SampleCount { get => SampleCount_Element.Data; set => SampleCount_Element.Data = value; }
+public Field<global::FrooxEngine.RawOutput<global::System.Int32>, global::System.Int32> SampleCount_Element = new();
+public global::System.Double Duration { get => Duration_Element.Data; set => Duration_Element.Data = value; }
+public Field<global::FrooxEngine.RawOutput<global::System.Double>, global::System.Double> Duration_Element = new();
+public global::System.String Extension { get => Extension_Element.Data; set => Extension_Element.Data = value; }
+public Field<global::FrooxEngine.RawOutput<global::System.String>, global::System.String> Extension_Element = new();
+public global::System.String CodecInfo { get => CodecInfo_Element.Data; set => CodecInfo_Element.Data = value; }
+public Field<global::FrooxEngine.RawOutput<global::System.String>, global::System.String> CodecInfo_Element = new();
+public global::System.Boolean FullyDecoded { get => FullyDecoded_Element.Data; set => FullyDecoded_Element.Data = value; }
+public Field<global::FrooxEngine.RawOutput<global::System.Boolean>, global::System.Boolean> FullyDecoded_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("AudioClip", AudioClip.ToResoniteReference(context));
-members.Add("SampleRate", SampleRate.ToResoniteLinkField());
-members.Add("Channels", Channels.ToResoniteLinkField());
-members.Add("ChannelCount", ChannelCount.ToResoniteLinkField());
-members.Add("SampleCount", SampleCount.ToResoniteLinkField());
-members.Add("Duration", Duration.ToResoniteLinkField());
-members.Add("Extension", Extension.ToResoniteLinkField());
-members.Add("CodecInfo", CodecInfo.ToResoniteLinkField());
-members.Add("FullyDecoded", FullyDecoded.ToResoniteLinkField());
+members.Add("AudioClip", AudioClip_Element.Data.ToResoniteReference(context));
+members.Add("SampleRate", SampleRate_Element.Data.ToResoniteLinkField());
+members.Add("Channels", Channels_Element.Data.ToResoniteLinkField());
+members.Add("ChannelCount", ChannelCount_Element.Data.ToResoniteLinkField());
+members.Add("SampleCount", SampleCount_Element.Data.ToResoniteLinkField());
+members.Add("Duration", Duration_Element.Data.ToResoniteLinkField());
+members.Add("Extension", Extension_Element.Data.ToResoniteLinkField());
+members.Add("CodecInfo", CodecInfo_Element.Data.ToResoniteLinkField());
+members.Add("FullyDecoded", FullyDecoded_Element.Data.ToResoniteLinkField());
 }
 
 }

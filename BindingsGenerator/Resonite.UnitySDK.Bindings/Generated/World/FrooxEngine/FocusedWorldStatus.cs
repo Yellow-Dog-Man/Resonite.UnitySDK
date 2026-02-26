@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.FocusedWorldStatus
-// Generated on: středa 25. února 2026 16:14:47
+// Generated on: čtvrtek 26. února 2026 10:04:51
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,43 +20,59 @@ namespace FrooxEngine
 public partial class FocusedWorldStatus : global::FrooxEngine.Component
 
 {
-    public global::System.String WorldName;
-public global::System.String RawWorldName;
-public global::System.String SessionId;
-public global::System.Boolean IsHost;
-public global::System.Boolean CanSave;
-public global::System.Boolean ShouldSave;
-public global::System.Boolean CanClose;
-public global::System.String RoleName;
-public global::System.Int32 UserCount;
-public global::System.Int32 ActiveUserCount;
-public global::System.Int32 MaxUserCount;
-public global::SkyFrost.Base.SessionAccessLevel AccessLevel;
-public global::System.Boolean HideFromListing;
-public global::System.Boolean AwayKickEnabled;
-public global::System.Single AwayKickMinutes;
-public global::System.Boolean UnsafeMode;
+    public global::System.String WorldName { get => WorldName_Element.Data; set => WorldName_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.String>, global::System.String> WorldName_Element = new();
+public global::System.String RawWorldName { get => RawWorldName_Element.Data; set => RawWorldName_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.String>, global::System.String> RawWorldName_Element = new();
+public global::System.String SessionId { get => SessionId_Element.Data; set => SessionId_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.String>, global::System.String> SessionId_Element = new();
+public global::System.Boolean IsHost { get => IsHost_Element.Data; set => IsHost_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> IsHost_Element = new();
+public global::System.Boolean CanSave { get => CanSave_Element.Data; set => CanSave_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> CanSave_Element = new();
+public global::System.Boolean ShouldSave { get => ShouldSave_Element.Data; set => ShouldSave_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> ShouldSave_Element = new();
+public global::System.Boolean CanClose { get => CanClose_Element.Data; set => CanClose_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> CanClose_Element = new();
+public global::System.String RoleName { get => RoleName_Element.Data; set => RoleName_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.String>, global::System.String> RoleName_Element = new();
+public global::System.Int32 UserCount { get => UserCount_Element.Data; set => UserCount_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Int32>, global::System.Int32> UserCount_Element = new();
+public global::System.Int32 ActiveUserCount { get => ActiveUserCount_Element.Data; set => ActiveUserCount_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Int32>, global::System.Int32> ActiveUserCount_Element = new();
+public global::System.Int32 MaxUserCount { get => MaxUserCount_Element.Data; set => MaxUserCount_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Int32>, global::System.Int32> MaxUserCount_Element = new();
+public global::SkyFrost.Base.SessionAccessLevel AccessLevel { get => AccessLevel_Element.Data; set => AccessLevel_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::SkyFrost.Base.SessionAccessLevel>, global::SkyFrost.Base.SessionAccessLevel> AccessLevel_Element = new();
+public global::System.Boolean HideFromListing { get => HideFromListing_Element.Data; set => HideFromListing_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> HideFromListing_Element = new();
+public global::System.Boolean AwayKickEnabled { get => AwayKickEnabled_Element.Data; set => AwayKickEnabled_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> AwayKickEnabled_Element = new();
+public global::System.Single AwayKickMinutes { get => AwayKickMinutes_Element.Data; set => AwayKickMinutes_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> AwayKickMinutes_Element = new();
+public global::System.Boolean UnsafeMode { get => UnsafeMode_Element.Data; set => UnsafeMode_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> UnsafeMode_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("WorldName", WorldName.ToResoniteLinkField());
-members.Add("RawWorldName", RawWorldName.ToResoniteLinkField());
-members.Add("SessionId", SessionId.ToResoniteLinkField());
-members.Add("IsHost", IsHost.ToResoniteLinkField());
-members.Add("CanSave", CanSave.ToResoniteLinkField());
-members.Add("ShouldSave", ShouldSave.ToResoniteLinkField());
-members.Add("CanClose", CanClose.ToResoniteLinkField());
-members.Add("RoleName", RoleName.ToResoniteLinkField());
-members.Add("UserCount", UserCount.ToResoniteLinkField());
-members.Add("ActiveUserCount", ActiveUserCount.ToResoniteLinkField());
-members.Add("MaxUserCount", MaxUserCount.ToResoniteLinkField());
-members.Add("AccessLevel", AccessLevel.ToResoniteLinkField());
-members.Add("HideFromListing", HideFromListing.ToResoniteLinkField());
-members.Add("AwayKickEnabled", AwayKickEnabled.ToResoniteLinkField());
-members.Add("AwayKickMinutes", AwayKickMinutes.ToResoniteLinkField());
-members.Add("UnsafeMode", UnsafeMode.ToResoniteLinkField());
+members.Add("WorldName", WorldName_Element.Data.ToResoniteLinkField());
+members.Add("RawWorldName", RawWorldName_Element.Data.ToResoniteLinkField());
+members.Add("SessionId", SessionId_Element.Data.ToResoniteLinkField());
+members.Add("IsHost", IsHost_Element.Data.ToResoniteLinkField());
+members.Add("CanSave", CanSave_Element.Data.ToResoniteLinkField());
+members.Add("ShouldSave", ShouldSave_Element.Data.ToResoniteLinkField());
+members.Add("CanClose", CanClose_Element.Data.ToResoniteLinkField());
+members.Add("RoleName", RoleName_Element.Data.ToResoniteLinkField());
+members.Add("UserCount", UserCount_Element.Data.ToResoniteLinkField());
+members.Add("ActiveUserCount", ActiveUserCount_Element.Data.ToResoniteLinkField());
+members.Add("MaxUserCount", MaxUserCount_Element.Data.ToResoniteLinkField());
+members.Add("AccessLevel", AccessLevel_Element.Data.ToResoniteLinkField());
+members.Add("HideFromListing", HideFromListing_Element.Data.ToResoniteLinkField());
+members.Add("AwayKickEnabled", AwayKickEnabled_Element.Data.ToResoniteLinkField());
+members.Add("AwayKickMinutes", AwayKickMinutes_Element.Data.ToResoniteLinkField());
+members.Add("UnsafeMode", UnsafeMode_Element.Data.ToResoniteLinkField());
 }
 
 }

@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.MeshVisibilityToggleTool
-// Generated on: středa 25. února 2026 16:14:24
+// Generated on: čtvrtek 26. února 2026 10:04:39
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,13 +20,14 @@ namespace FrooxEngine
 public partial class MeshVisibilityToggleTool : global::FrooxEngine.BuilderActionTool
 
 {
-    public global::System.Nullable<global::Renderite.Shared.ShadowCastMode> SetShadowCastMode;
+    public global::System.Nullable<global::Renderite.Shared.ShadowCastMode> SetShadowCastMode { get => SetShadowCastMode_Element.Data; set => SetShadowCastMode_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Nullable<global::Renderite.Shared.ShadowCastMode>>, global::System.Nullable<global::Renderite.Shared.ShadowCastMode>> SetShadowCastMode_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("SetShadowCastMode", SetShadowCastMode.ToResoniteLinkField());
+members.Add("SetShadowCastMode", SetShadowCastMode_Element.Data.ToResoniteLinkField());
 }
 
 }

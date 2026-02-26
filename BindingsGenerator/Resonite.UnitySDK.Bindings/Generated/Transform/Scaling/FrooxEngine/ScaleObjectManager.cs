@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.ScaleObjectManager
-// Generated on: středa 25. února 2026 16:14:32
+// Generated on: čtvrtek 26. února 2026 10:04:42
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,43 +20,59 @@ namespace FrooxEngine
 public partial class ScaleObjectManager : global::FrooxEngine.Component, global::FrooxEngine.ICustomInspector
 
 {
-    public global::System.Single ScalePower;
-public global::System.Single LowerBound;
-public global::System.Single UpperBound;
-public global::System.Single FarSizeTransitionRange;
-public global::System.Single FarSizeTransitionExp;
-public global::System.Single NearSizeTransitionRange;
-public global::System.Single NearSizeTransitionExp;
-public global::System.Single FarOffsetTransitionRange;
-public global::System.Single FarOffsetTransitionExp;
-public UnityEngine.Vector3 FarTransitionOffset;
-public global::System.Single NearOffsetTransitionRange;
-public global::System.Single NearOffsetTransitionExp;
-public UnityEngine.Vector3 NearTransitionOffset;
-public global::System.Single CenterOffsetRadius;
-public global::System.Single OptimalDistance;
-public UnityEngine.Vector3 CoordinatePowerBase;
+    public global::System.Single ScalePower { get => ScalePower_Element.Data; set => ScalePower_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> ScalePower_Element = new();
+public global::System.Single LowerBound { get => LowerBound_Element.Data; set => LowerBound_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> LowerBound_Element = new();
+public global::System.Single UpperBound { get => UpperBound_Element.Data; set => UpperBound_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> UpperBound_Element = new();
+public global::System.Single FarSizeTransitionRange { get => FarSizeTransitionRange_Element.Data; set => FarSizeTransitionRange_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> FarSizeTransitionRange_Element = new();
+public global::System.Single FarSizeTransitionExp { get => FarSizeTransitionExp_Element.Data; set => FarSizeTransitionExp_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> FarSizeTransitionExp_Element = new();
+public global::System.Single NearSizeTransitionRange { get => NearSizeTransitionRange_Element.Data; set => NearSizeTransitionRange_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> NearSizeTransitionRange_Element = new();
+public global::System.Single NearSizeTransitionExp { get => NearSizeTransitionExp_Element.Data; set => NearSizeTransitionExp_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> NearSizeTransitionExp_Element = new();
+public global::System.Single FarOffsetTransitionRange { get => FarOffsetTransitionRange_Element.Data; set => FarOffsetTransitionRange_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> FarOffsetTransitionRange_Element = new();
+public global::System.Single FarOffsetTransitionExp { get => FarOffsetTransitionExp_Element.Data; set => FarOffsetTransitionExp_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> FarOffsetTransitionExp_Element = new();
+public UnityEngine.Vector3 FarTransitionOffset { get => FarTransitionOffset_Element.Data; set => FarTransitionOffset_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.Vector3>, UnityEngine.Vector3> FarTransitionOffset_Element = new();
+public global::System.Single NearOffsetTransitionRange { get => NearOffsetTransitionRange_Element.Data; set => NearOffsetTransitionRange_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> NearOffsetTransitionRange_Element = new();
+public global::System.Single NearOffsetTransitionExp { get => NearOffsetTransitionExp_Element.Data; set => NearOffsetTransitionExp_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> NearOffsetTransitionExp_Element = new();
+public UnityEngine.Vector3 NearTransitionOffset { get => NearTransitionOffset_Element.Data; set => NearTransitionOffset_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.Vector3>, UnityEngine.Vector3> NearTransitionOffset_Element = new();
+public global::System.Single CenterOffsetRadius { get => CenterOffsetRadius_Element.Data; set => CenterOffsetRadius_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> CenterOffsetRadius_Element = new();
+public global::System.Single OptimalDistance { get => OptimalDistance_Element.Data; set => OptimalDistance_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> OptimalDistance_Element = new();
+public UnityEngine.Vector3 CoordinatePowerBase { get => CoordinatePowerBase_Element.Data; set => CoordinatePowerBase_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.Vector3>, UnityEngine.Vector3> CoordinatePowerBase_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("ScalePower", ScalePower.ToResoniteLinkField());
-members.Add("LowerBound", LowerBound.ToResoniteLinkField());
-members.Add("UpperBound", UpperBound.ToResoniteLinkField());
-members.Add("FarSizeTransitionRange", FarSizeTransitionRange.ToResoniteLinkField());
-members.Add("FarSizeTransitionExp", FarSizeTransitionExp.ToResoniteLinkField());
-members.Add("NearSizeTransitionRange", NearSizeTransitionRange.ToResoniteLinkField());
-members.Add("NearSizeTransitionExp", NearSizeTransitionExp.ToResoniteLinkField());
-members.Add("FarOffsetTransitionRange", FarOffsetTransitionRange.ToResoniteLinkField());
-members.Add("FarOffsetTransitionExp", FarOffsetTransitionExp.ToResoniteLinkField());
-members.Add("FarTransitionOffset", FarTransitionOffset.ToResoniteLinkField());
-members.Add("NearOffsetTransitionRange", NearOffsetTransitionRange.ToResoniteLinkField());
-members.Add("NearOffsetTransitionExp", NearOffsetTransitionExp.ToResoniteLinkField());
-members.Add("NearTransitionOffset", NearTransitionOffset.ToResoniteLinkField());
-members.Add("CenterOffsetRadius", CenterOffsetRadius.ToResoniteLinkField());
-members.Add("OptimalDistance", OptimalDistance.ToResoniteLinkField());
-members.Add("CoordinatePowerBase", CoordinatePowerBase.ToResoniteLinkField());
+members.Add("ScalePower", ScalePower_Element.Data.ToResoniteLinkField());
+members.Add("LowerBound", LowerBound_Element.Data.ToResoniteLinkField());
+members.Add("UpperBound", UpperBound_Element.Data.ToResoniteLinkField());
+members.Add("FarSizeTransitionRange", FarSizeTransitionRange_Element.Data.ToResoniteLinkField());
+members.Add("FarSizeTransitionExp", FarSizeTransitionExp_Element.Data.ToResoniteLinkField());
+members.Add("NearSizeTransitionRange", NearSizeTransitionRange_Element.Data.ToResoniteLinkField());
+members.Add("NearSizeTransitionExp", NearSizeTransitionExp_Element.Data.ToResoniteLinkField());
+members.Add("FarOffsetTransitionRange", FarOffsetTransitionRange_Element.Data.ToResoniteLinkField());
+members.Add("FarOffsetTransitionExp", FarOffsetTransitionExp_Element.Data.ToResoniteLinkField());
+members.Add("FarTransitionOffset", FarTransitionOffset_Element.Data.ToResoniteLinkField());
+members.Add("NearOffsetTransitionRange", NearOffsetTransitionRange_Element.Data.ToResoniteLinkField());
+members.Add("NearOffsetTransitionExp", NearOffsetTransitionExp_Element.Data.ToResoniteLinkField());
+members.Add("NearTransitionOffset", NearTransitionOffset_Element.Data.ToResoniteLinkField());
+members.Add("CenterOffsetRadius", CenterOffsetRadius_Element.Data.ToResoniteLinkField());
+members.Add("OptimalDistance", OptimalDistance_Element.Data.ToResoniteLinkField());
+members.Add("CoordinatePowerBase", CoordinatePowerBase_Element.Data.ToResoniteLinkField());
 }
 
 }

@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [ProtoFluxBindings]FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Cloud.Twitch.TwitchRewardRedeemEvent
-// Generated on: středa 25. února 2026 16:13:55
+// Generated on: čtvrtek 26. února 2026 10:04:21
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,21 +20,22 @@ namespace FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Cloud.Twitc
 public partial class TwitchRewardRedeemEvent : global::FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Cloud.Twitch.TwitchEventsNode
 
 {
-    public global::FrooxEngine.ProtoFlux.ISyncNodeOperation OnRedeem;
-public global::FrooxEngine.ProtoFlux.NodeObjectOutput<global::System.String> DisplayName;
-public global::FrooxEngine.ProtoFlux.NodeObjectOutput<global::System.String> Message;
-public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.DateTime> TimeStamp;
-public global::FrooxEngine.ProtoFlux.NodeObjectOutput<global::System.String> RewardId;
-public global::FrooxEngine.ProtoFlux.NodeObjectOutput<global::System.String> RewardTitle;
-public global::FrooxEngine.ProtoFlux.NodeObjectOutput<global::System.String> RewardPrompt;
-public global::FrooxEngine.ProtoFlux.NodeObjectOutput<global::System.String> Status;
-public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Int32> RewardCost;
+    public global::FrooxEngine.ProtoFlux.ISyncNodeOperation OnRedeem { get => OnRedeem_Element.Data; set => OnRedeem_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.ProtoFlux.ISyncNodeOperation>, global::FrooxEngine.ProtoFlux.ISyncNodeOperation> OnRedeem_Element = new();
+public global::FrooxEngine.ProtoFlux.NodeObjectOutput<global::System.String> DisplayName = new();
+public global::FrooxEngine.ProtoFlux.NodeObjectOutput<global::System.String> Message = new();
+public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.DateTime> TimeStamp = new();
+public global::FrooxEngine.ProtoFlux.NodeObjectOutput<global::System.String> RewardId = new();
+public global::FrooxEngine.ProtoFlux.NodeObjectOutput<global::System.String> RewardTitle = new();
+public global::FrooxEngine.ProtoFlux.NodeObjectOutput<global::System.String> RewardPrompt = new();
+public global::FrooxEngine.ProtoFlux.NodeObjectOutput<global::System.String> Status = new();
+public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Int32> RewardCost = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("OnRedeem", OnRedeem.ToResoniteReference(context));
+members.Add("OnRedeem", OnRedeem_Element.Data.ToResoniteReference(context));
 members.Add("DisplayName", new ResoniteLink.EmptyElement());
 members.Add("Message", new ResoniteLink.EmptyElement());
 members.Add("TimeStamp", new ResoniteLink.EmptyElement());

@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.WireMeshBase
-// Generated on: středa 25. února 2026 16:13:05
+// Generated on: čtvrtek 26. února 2026 10:03:36
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,35 +20,47 @@ namespace FrooxEngine
 public abstract partial class WireMeshBase : global::FrooxEngine.ProceduralMesh
 
 {
-    public UnityEngine.Vector3 Point0;
-public UnityEngine.Vector3 Point1;
-public UnityEngine.Vector3 Tangent0;
-public UnityEngine.Vector3 Tangent1;
-public UnityEngine.Quaternion Orientation0;
-public UnityEngine.Quaternion Orientation1;
-public global::System.Int32 Steps;
-public global::System.Single Exp;
-public UnityEngine.ColorX Color0;
-public UnityEngine.ColorX Color1;
-public UnityEngine.Vector2 UVScale;
-public UnityEngine.Vector2 UVOffset;
+    public UnityEngine.Vector3 Point0 { get => Point0_Element.Data; set => Point0_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.Vector3>, UnityEngine.Vector3> Point0_Element = new();
+public UnityEngine.Vector3 Point1 { get => Point1_Element.Data; set => Point1_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.Vector3>, UnityEngine.Vector3> Point1_Element = new();
+public UnityEngine.Vector3 Tangent0 { get => Tangent0_Element.Data; set => Tangent0_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.Vector3>, UnityEngine.Vector3> Tangent0_Element = new();
+public UnityEngine.Vector3 Tangent1 { get => Tangent1_Element.Data; set => Tangent1_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.Vector3>, UnityEngine.Vector3> Tangent1_Element = new();
+public UnityEngine.Quaternion Orientation0 { get => Orientation0_Element.Data; set => Orientation0_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.Quaternion>, UnityEngine.Quaternion> Orientation0_Element = new();
+public UnityEngine.Quaternion Orientation1 { get => Orientation1_Element.Data; set => Orientation1_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.Quaternion>, UnityEngine.Quaternion> Orientation1_Element = new();
+public global::System.Int32 Steps { get => Steps_Element.Data; set => Steps_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Int32>, global::System.Int32> Steps_Element = new();
+public global::System.Single Exp { get => Exp_Element.Data; set => Exp_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> Exp_Element = new();
+public UnityEngine.ColorX Color0 { get => Color0_Element.Data; set => Color0_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.ColorX>, UnityEngine.ColorX> Color0_Element = new();
+public UnityEngine.ColorX Color1 { get => Color1_Element.Data; set => Color1_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.ColorX>, UnityEngine.ColorX> Color1_Element = new();
+public UnityEngine.Vector2 UVScale { get => UVScale_Element.Data; set => UVScale_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.Vector2>, UnityEngine.Vector2> UVScale_Element = new();
+public UnityEngine.Vector2 UVOffset { get => UVOffset_Element.Data; set => UVOffset_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.Vector2>, UnityEngine.Vector2> UVOffset_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("Point0", Point0.ToResoniteLinkField());
-members.Add("Point1", Point1.ToResoniteLinkField());
-members.Add("Tangent0", Tangent0.ToResoniteLinkField());
-members.Add("Tangent1", Tangent1.ToResoniteLinkField());
-members.Add("Orientation0", Orientation0.ToResoniteLinkField());
-members.Add("Orientation1", Orientation1.ToResoniteLinkField());
-members.Add("Steps", Steps.ToResoniteLinkField());
-members.Add("Exp", Exp.ToResoniteLinkField());
-members.Add("Color0", Color0.ToResoniteLinkField());
-members.Add("Color1", Color1.ToResoniteLinkField());
-members.Add("UVScale", UVScale.ToResoniteLinkField());
-members.Add("UVOffset", UVOffset.ToResoniteLinkField());
+members.Add("Point0", Point0_Element.Data.ToResoniteLinkField());
+members.Add("Point1", Point1_Element.Data.ToResoniteLinkField());
+members.Add("Tangent0", Tangent0_Element.Data.ToResoniteLinkField());
+members.Add("Tangent1", Tangent1_Element.Data.ToResoniteLinkField());
+members.Add("Orientation0", Orientation0_Element.Data.ToResoniteLinkField());
+members.Add("Orientation1", Orientation1_Element.Data.ToResoniteLinkField());
+members.Add("Steps", Steps_Element.Data.ToResoniteLinkField());
+members.Add("Exp", Exp_Element.Data.ToResoniteLinkField());
+members.Add("Color0", Color0_Element.Data.ToResoniteLinkField());
+members.Add("Color1", Color1_Element.Data.ToResoniteLinkField());
+members.Add("UVScale", UVScale_Element.Data.ToResoniteLinkField());
+members.Add("UVOffset", UVOffset_Element.Data.ToResoniteLinkField());
 }
 
 }

@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.CameraPermissions
-// Generated on: středa 25. února 2026 16:13:11
+// Generated on: čtvrtek 26. února 2026 10:03:41
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,20 +20,22 @@ namespace FrooxEngine
 public partial class CameraPermissions : global::FrooxEngine.PermissionsComponent
 
 {
-    public global::FrooxEngine.ListFilterMode CameraModeFilterMode;
-public System.Collections.Generic.List<global::FrooxEngine.CameraPositioningMode> CameraModes;
-public global::System.Boolean AllowFramingOtherUsers;
+    public global::FrooxEngine.ListFilterMode CameraModeFilterMode { get => CameraModeFilterMode_Element.Data; set => CameraModeFilterMode_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::FrooxEngine.ListFilterMode>, global::FrooxEngine.ListFilterMode> CameraModeFilterMode_Element = new();
+public global::SyncFieldList<global::FrooxEngine.SyncFieldList<global::FrooxEngine.CameraPositioningMode>, global::FrooxEngine.CameraPositioningMode, Field<global::FrooxEngine.Sync<global::FrooxEngine.CameraPositioningMode>, global::FrooxEngine.CameraPositioningMode>> CameraModes = new();
+public global::System.Boolean AllowFramingOtherUsers { get => AllowFramingOtherUsers_Element.Data; set => AllowFramingOtherUsers_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> AllowFramingOtherUsers_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("CameraModeFilterMode", CameraModeFilterMode.ToResoniteLinkField());
+members.Add("CameraModeFilterMode", CameraModeFilterMode_Element.Data.ToResoniteLinkField());
 members.Add("CameraModes", new ResoniteLink.SyncList()
 {
-    Elements = CameraModes.ConvertList(m => m.ToResoniteLinkField())
+    Elements = CameraModes.Data.ConvertList(m => m.Data.ToResoniteLinkField())
 });
-members.Add("AllowFramingOtherUsers", AllowFramingOtherUsers.ToResoniteLinkField());
+members.Add("AllowFramingOtherUsers", AllowFramingOtherUsers_Element.Data.ToResoniteLinkField());
 }
 
 }

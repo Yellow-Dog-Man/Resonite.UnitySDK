@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.AudioStreamSpawner
-// Generated on: středa 25. února 2026 16:14:47
+// Generated on: čtvrtek 26. února 2026 10:04:51
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,17 +20,20 @@ namespace FrooxEngine
 public partial class AudioStreamSpawner : global::FrooxEngine.Component, global::FrooxEngine.IButtonPressReceiver
 
 {
-    public global::System.Single BitrateKbps;
-public global::System.String DeviceID;
-public global::System.String _bitrateString;
+    public global::System.Single BitrateKbps { get => BitrateKbps_Element.Data; set => BitrateKbps_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> BitrateKbps_Element = new();
+public global::System.String DeviceID { get => DeviceID_Element.Data; set => DeviceID_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.String>, global::System.String> DeviceID_Element = new();
+public global::System.String _bitrateString { get => _bitrateString_Element.Data; set => _bitrateString_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.String>, global::System.String> _bitrateString_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("BitrateKbps", BitrateKbps.ToResoniteLinkField());
-members.Add("DeviceID", DeviceID.ToResoniteLinkField());
-members.Add("_bitrateString", _bitrateString.ToResoniteLinkField());
+members.Add("BitrateKbps", BitrateKbps_Element.Data.ToResoniteLinkField());
+members.Add("DeviceID", DeviceID_Element.Data.ToResoniteLinkField());
+members.Add("_bitrateString", _bitrateString_Element.Data.ToResoniteLinkField());
 }
 
 }

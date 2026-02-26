@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.UVW_ProceduralTexture3D
-// Generated on: středa 25. února 2026 16:13:05
+// Generated on: čtvrtek 26. února 2026 10:03:36
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,15 +20,17 @@ namespace FrooxEngine
 public partial class UVW_ProceduralTexture3D : global::FrooxEngine.ProceduralTexture3D
 
 {
-    public UnityEngine.Vector3 ValueOffset;
-public UnityEngine.Vector3 ValueMultiplier;
+    public UnityEngine.Vector3 ValueOffset { get => ValueOffset_Element.Data; set => ValueOffset_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.Vector3>, UnityEngine.Vector3> ValueOffset_Element = new();
+public UnityEngine.Vector3 ValueMultiplier { get => ValueMultiplier_Element.Data; set => ValueMultiplier_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.Vector3>, UnityEngine.Vector3> ValueMultiplier_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("ValueOffset", ValueOffset.ToResoniteLinkField());
-members.Add("ValueMultiplier", ValueMultiplier.ToResoniteLinkField());
+members.Add("ValueOffset", ValueOffset_Element.Data.ToResoniteLinkField());
+members.Add("ValueMultiplier", ValueMultiplier_Element.Data.ToResoniteLinkField());
 }
 
 }

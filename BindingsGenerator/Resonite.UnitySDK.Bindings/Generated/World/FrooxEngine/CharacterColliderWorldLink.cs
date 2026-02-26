@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.CharacterColliderWorldLink
-// Generated on: středa 25. února 2026 16:14:47
+// Generated on: čtvrtek 26. února 2026 10:04:51
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,19 +20,23 @@ namespace FrooxEngine
 public partial class CharacterColliderWorldLink : global::FrooxEngine.CollisionListenerComponent
 
 {
-    public global::System.Boolean OpenOnContactStart;
-public global::System.Boolean OpenOnContactStay;
-public global::System.Boolean OpenOnContactEnd;
-public global::FrooxEngine.WorldLink WorldLink;
+    public global::System.Boolean OpenOnContactStart { get => OpenOnContactStart_Element.Data; set => OpenOnContactStart_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> OpenOnContactStart_Element = new();
+public global::System.Boolean OpenOnContactStay { get => OpenOnContactStay_Element.Data; set => OpenOnContactStay_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> OpenOnContactStay_Element = new();
+public global::System.Boolean OpenOnContactEnd { get => OpenOnContactEnd_Element.Data; set => OpenOnContactEnd_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> OpenOnContactEnd_Element = new();
+public global::FrooxEngine.WorldLink WorldLink { get => WorldLink_Element.Data; set => WorldLink_Element.Data = value; }
+public Field<global::FrooxEngine.SyncRef<global::FrooxEngine.WorldLink>, global::FrooxEngine.WorldLink> WorldLink_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("OpenOnContactStart", OpenOnContactStart.ToResoniteLinkField());
-members.Add("OpenOnContactStay", OpenOnContactStay.ToResoniteLinkField());
-members.Add("OpenOnContactEnd", OpenOnContactEnd.ToResoniteLinkField());
-members.Add("WorldLink", WorldLink.ToResoniteReference(context));
+members.Add("OpenOnContactStart", OpenOnContactStart_Element.Data.ToResoniteLinkField());
+members.Add("OpenOnContactStay", OpenOnContactStay_Element.Data.ToResoniteLinkField());
+members.Add("OpenOnContactEnd", OpenOnContactEnd_Element.Data.ToResoniteLinkField());
+members.Add("WorldLink", WorldLink_Element.Data.ToResoniteReference(context));
 }
 
 }

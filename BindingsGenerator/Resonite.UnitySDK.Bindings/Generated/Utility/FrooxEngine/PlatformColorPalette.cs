@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.PlatformColorPalette
-// Generated on: středa 25. února 2026 16:14:47
+// Generated on: čtvrtek 26. února 2026 10:04:50
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,11 +20,11 @@ namespace FrooxEngine
 public partial class PlatformColorPalette : global::FrooxEngine.Component
 
 {
-    public global::FrooxEngine.PlatformColorPalette.Grayscale Neutrals;
-public global::FrooxEngine.PlatformColorPalette.Colors Hero;
-public global::FrooxEngine.PlatformColorPalette.Colors Mid;
-public global::FrooxEngine.PlatformColorPalette.Colors Sub;
-public global::FrooxEngine.PlatformColorPalette.Colors Dark;
+    public global::FrooxEngine.PlatformColorPalette.Grayscale Neutrals = new();
+public global::FrooxEngine.PlatformColorPalette.Colors Hero = new();
+public global::FrooxEngine.PlatformColorPalette.Colors Mid = new();
+public global::FrooxEngine.PlatformColorPalette.Colors Sub = new();
+public global::FrooxEngine.PlatformColorPalette.Colors Dark = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)

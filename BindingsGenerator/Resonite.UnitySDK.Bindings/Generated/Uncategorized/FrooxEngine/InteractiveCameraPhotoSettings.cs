@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.InteractiveCameraPhotoSettings
-// Generated on: středa 25. února 2026 16:14:40
+// Generated on: čtvrtek 26. února 2026 10:04:46
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,13 +20,14 @@ namespace FrooxEngine
 public partial class InteractiveCameraPhotoSettings : global::FrooxEngine.SettingComponent<global::FrooxEngine.InteractiveCameraPhotoSettings>
 
 {
-    public global::System.Boolean SpawnPhotoInWorld;
+    public global::System.Boolean SpawnPhotoInWorld { get => SpawnPhotoInWorld_Element.Data; set => SpawnPhotoInWorld_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> SpawnPhotoInWorld_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("SpawnPhotoInWorld", SpawnPhotoInWorld.ToResoniteLinkField());
+members.Add("SpawnPhotoInWorld", SpawnPhotoInWorld_Element.Data.ToResoniteLinkField());
 }
 
 }

@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.LegacyRadiantScreenWrapper
-// Generated on: středa 25. února 2026 16:14:41
+// Generated on: čtvrtek 26. února 2026 10:04:46
 // Resonite version: 2026.2.25.455
 // Resonite Link Version: 0.9.2.0
 // -----------------------------------------------------------------------------
@@ -20,17 +20,20 @@ namespace FrooxEngine
 public abstract partial class LegacyRadiantScreenWrapper : global::FrooxEngine.RadiantDashScreen
 
 {
-    public global::System.Single ExtraSidePadding;
-public UnityEngine.ColorX Background;
-public global::System.Boolean _initialized;
+    public global::System.Single ExtraSidePadding { get => ExtraSidePadding_Element.Data; set => ExtraSidePadding_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> ExtraSidePadding_Element = new();
+public UnityEngine.ColorX Background { get => Background_Element.Data; set => Background_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.ColorX>, UnityEngine.ColorX> Background_Element = new();
+public global::System.Boolean _initialized { get => _initialized_Element.Data; set => _initialized_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> _initialized_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("ExtraSidePadding", ExtraSidePadding.ToResoniteLinkField());
-members.Add("Background", Background.ToResoniteLinkField());
-members.Add("_initialized", _initialized.ToResoniteLinkField());
+members.Add("ExtraSidePadding", ExtraSidePadding_Element.Data.ToResoniteLinkField());
+members.Add("Background", Background_Element.Data.ToResoniteLinkField());
+members.Add("_initialized", _initialized_Element.Data.ToResoniteLinkField());
 }
 
 }
