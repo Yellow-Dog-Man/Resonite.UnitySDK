@@ -248,10 +248,10 @@ public class SceneConverter : IConversionContext
                 try
                 {
                     // For quick debug purposes
-                    var operations = new DataModelOperationBatch();
+                    /*var operations = new DataModelOperationBatch();
                     operations.Operations = messages.ToList<Message>();
                     var json = System.Text.Json.JsonSerializer.Serialize(operations, ResoniteLink.LinkInterface.SerializationOptions);
-                    Debug.Log(json);
+                    Debug.Log(json);*/
 
                     var response = await Link.RunDataModelOperationBatch(messages);
 
