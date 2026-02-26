@@ -176,7 +176,7 @@ public partial class ResoniteBindingGenerator
 
         var memberTypeDec = await GenerateTypeDeclaration(reference.Type, containerType);
 
-        str.Append($"Field<{memberTypeDec}, {typeDec}>");
+        str.Append($"Reference<{memberTypeDec}, {typeDec}>");
     }
 
     async Task GenerateSyncObjectDeclaration(StringBuilder str, SyncObjectMemberDefinition syncObject, TypeDefinition containerType)

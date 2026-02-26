@@ -41,7 +41,7 @@ public class TestPanningConverter : ResoniteMaterialConverter
         pannerData.persistent = true;
 
         // The panner will drive the TextureOffset field on the PBS material
-        pannerData._target = data.TextureOffset_Element.Reference;
+        pannerData._target = data.TextureOffset_Element.Member;
 
         // Assign the panner speed from the material property
         pannerData._speed = panningSpeed;

@@ -13,7 +13,7 @@ public class SyncList<TReference, TElement>
     public List<TElement> Data = new List<TElement>();
 
     [NonSerialized]
-    public TReference Reference = new();
+    public TReference Member = new();
 
     public int Count => Data.Count;
 
@@ -40,7 +40,7 @@ public class SyncList<TReference, TElement>
                 linkList.Elements.Add(conversion(element));
 
         // Self reference
-        linkList.ID = context.GetIdOrAllocate(Reference);
+        linkList.ID = context.GetIdOrAllocate(Member);
 
         return linkList;
     }

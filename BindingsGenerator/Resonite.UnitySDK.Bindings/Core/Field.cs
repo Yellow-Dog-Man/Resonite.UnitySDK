@@ -18,7 +18,7 @@ public class Field<TReference, TData> : IField<TData>
     public TData Data;
 
     [NonSerialized]
-    public TReference Reference = new();
+    public TReference Member = new();
 
     TData IField<TData>.Data { get => Data; set => Data = value; }
 
@@ -27,22 +27,9 @@ public class Field<TReference, TData> : IField<TData>
         var linkField = Data.ToResoniteLinkField();
 
         // Self reference
-        linkField.ID = context.GetIdOrAllocate(Reference);
+        linkField.ID = context.GetIdOrAllocate(Member);
 
         return linkField;
-    }
-
-    public ResoniteLink.Reference ToLinkReference(IConversionContext context)
-    {
-        var linkReference = new Reference();
-
-        if (Data is IWorldElement targetElement)
-            linkReference.TargetID = context.GetIdOrAllocate(targetElement);
-
-        // Self reference
-        linkReference.ID = context.GetIdOrAllocate(Reference);
-
-        return linkReference;
     }
 
     public ResoniteLink.SyncPlayback ToLinkPlayback(IConversionContext context)
@@ -53,7 +40,7 @@ public class Field<TReference, TData> : IField<TData>
         var linkPlayback = playback.ToResoniteLink();
 
         // Self reference
-        linkPlayback.ID = context.GetIdOrAllocate(Reference);
+        linkPlayback.ID = context.GetIdOrAllocate(Member);
 
         return linkPlayback;
     }

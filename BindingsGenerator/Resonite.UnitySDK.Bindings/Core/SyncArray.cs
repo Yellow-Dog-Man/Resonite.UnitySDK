@@ -12,13 +12,13 @@ public class SyncArray<TReference, TData>
     public TData[] Data;
 
     [NonSerialized]
-    public TReference Reference = new();
+    public TReference Member = new();
 
     public ResoniteLink.SyncArray ToLinkArray(IConversionContext context)
     {
         var linkArray = Data.ToResoniteLinkArray();
 
-        linkArray.ID = context.GetIdOrAllocate(Reference);
+        linkArray.ID = context.GetIdOrAllocate(Member);
 
         return linkArray;
     }
