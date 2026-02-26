@@ -32,32 +32,44 @@ public class SceneConverter : IConversionContext
     HashSet<Transform> _existingSlots = new HashSet<Transform>();
 
     [SerializeField]
-    Dictionary<ResoniteObject, string> _idMap = new Dictionary<ResoniteObject, string>();
+    Dictionary<IWorldElement, string> _idMap = new Dictionary<IWorldElement, string>();
 
     AssetConversionManager _assetConverter;
 
     int _idPool;
     int _messageIndex;
 
-    public string AllocateId(ResoniteObject o = null)
+    public string AllocateId(IWorldElement o = null)
     {
         if (o is FrooxEngine.Slot)
             throw new ArgumentException($"Cannot allocate ID for a Slot object! This needs to be handled through transforms");
 
-        return $"Unity_{UniqueSessionId}_{o?.GetType().Name}_{_idPool++:X}";
+        var id = $"Unity_{UniqueSessionId}_{o?.GetType().Name}_{_idPool++:X}";
+
+        if (o != null)
+            Debug.Log($"AllocateId: {id} for {o.GetType().FullName} ({o.GetHashCode()})");
+
+        return id;
     }
 
-    public string GetId(ResoniteObject o)
+    public string GetId(IWorldElement o)
     {
         // We need to treat slots differently, because they map to transforms
         if (o is FrooxEngine.Slot slot)
             return GetTransformSlotId(slot.Wrapper.transform);
 
-        return _idMap[o];
+        var id = _idMap[o];
+
+        Debug.Log($"GetId: {id} for {o.GetType().FullName} ({o.GetHashCode()})");
+
+        return id;
     }
-    public string GetIdOrAllocate(ResoniteObject o) => GetIdOrAllocate(o, out _);
-    public string GetIdOrAllocate(ResoniteObject o, out bool allocated)
+    public string GetIdOrAllocate(IWorldElement o) => GetIdOrAllocate(o, out _);
+    public string GetIdOrAllocate(IWorldElement o, out bool allocated)
     {
+        if (o == null)
+            throw new ArgumentNullException();
+
         // We need to treat slots differently, because they map to transforms
         if (o is FrooxEngine.Slot slot)
         {
@@ -65,19 +77,25 @@ public class SceneConverter : IConversionContext
             return GetTransformSlotId(slot.Wrapper.transform);
         }
 
-        if(!_idMap.TryGetValue(o, out var id))
+        if (!_idMap.TryGetValue(o, out var id))
         {
             id = AllocateId(o);
             _idMap.Add(o, id);
 
+            Debug.Log($"AllocatedId: {id} for {o.GetType().FullName} ({o.GetHashCode()})");
+
             allocated = true;
         }
         else
+        {
+            Debug.Log($"GotId: {id} for {o.GetType().FullName} ({o.GetHashCode()})");
+
             allocated = false;
+        }
 
         return id;
     }
-    public void RemoveId(ResoniteObject o) => _idMap.Remove(o);
+    public void RemoveId(IWorldElement o) => _idMap.Remove(o);
 
     public string GetTransformSlotId(Transform transform) => GetLinkSlot(transform).ID;
 
@@ -230,10 +248,10 @@ public class SceneConverter : IConversionContext
                 try
                 {
                     // For quick debug purposes
-                    /*var operations = new DataModelOperationBatch();
+                    var operations = new DataModelOperationBatch();
                     operations.Operations = messages.ToList<Message>();
                     var json = System.Text.Json.JsonSerializer.Serialize(operations, ResoniteLink.LinkInterface.SerializationOptions);
-                    Debug.Log(json);*/
+                    Debug.Log(json);
 
                     var response = await Link.RunDataModelOperationBatch(messages);
 
