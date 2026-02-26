@@ -1,3 +1,4 @@
+using FrooxEngine;
 using ResoniteLink;
 using System;
 using System.Collections;
@@ -14,7 +15,7 @@ public abstract class ResoniteComponent : MonoBehaviour
 }
 
 public abstract class ResoniteComponent<C> : ResoniteComponent
-    where C  : ResoniteObject, new()
+    where C  : ResoniteObject, IWorldElement, new()
 {
     [SerializeField]
     public C Data = new C();

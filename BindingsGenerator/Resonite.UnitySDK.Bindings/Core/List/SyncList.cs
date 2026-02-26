@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FrooxEngine;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,7 +7,7 @@ using UnityEngine;
 [Serializable]
 public class SyncList<TReference, TElement>
     where TElement : new()
-    where TReference : new()
+    where TReference : IWorldElement, new()
 {
     [SerializeField]
     public List<TElement> Data { get; set; } = new List<TElement>();
@@ -27,4 +28,20 @@ public class SyncList<TReference, TElement>
     public void Clear() => Data.Clear();
 
     public TElement GetElement(int index) => Data[index];
+
+    public ResoniteLink.SyncList ToLinkList(IConversionContext context, Func<TElement, ResoniteLink.Member> conversion)
+    {
+        var linkList = new ResoniteLink.SyncList();
+
+        linkList.Elements = new List<ResoniteLink.Member>();
+
+        if (Data != null)
+            foreach (var element in Data)
+                linkList.Elements.Add(conversion(element));
+
+        // Self reference
+        linkList.ID = context.GetIdOrAllocate(Reference);
+
+        return linkList;
+    }
 }

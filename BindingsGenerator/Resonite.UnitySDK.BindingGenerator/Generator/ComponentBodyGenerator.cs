@@ -141,11 +141,11 @@ public partial class ResoniteBindingGenerator
                 break;
 
             case EmptyMemberDefinition emptyMember:
-                str.Append("new ResoniteLink.EmptyElement()");
+                str.Append($"{name}.ToLinkEmpty(context)");
                 break;
 
             case SyncPlaybackDefinition playback:
-                str.Append($"{name}.Data.ToResoniteLink()");
+                str.Append($"{name}.ToLinkPlayback(context)");
                 break;
 
             default:
@@ -271,35 +271,32 @@ public partial class ResoniteBindingGenerator
 
     async Task GenerateFieldCollection(StringBuilder str, string name, FieldDefinition field, TypeDefinition containerType)
     {
-        str.Append($"{name}.Data.ToResoniteLinkField()");
+        str.Append($"{name}.ToLinkField(context)");
     }
 
     async Task GenerateReferenceCollection(StringBuilder str, string name, ReferenceDefinition reference, TypeDefinition containerType)
     {
-        str.Append($"{name}.Data.ToResoniteReference(context)");
+        str.Append($"{name}.ToLinkReference(context)");
     }
 
     async Task GenerateListCollection(StringBuilder str, string name, ListDefinition list, TypeDefinition containerType)
     {
-        str.Append($@"new ResoniteLink.SyncList()
-{{
-    Elements = {name}.Data.ConvertList(m => ");
+        str.Append($@"{name}.ToLinkList(context, m => ");
 
         // Generate collection for the nested member 
         await GenerateMemberCollection(str, "m", list.ElementDefinition, containerType);
 
-        str.Append(@")
-}");
+        str.Append(@")");
     }
 
     async Task GenerateArrayCollection(StringBuilder str, string name, ArrayDefinition array, TypeDefinition containerType)
     {
-        str.Append($"{name}.Data.ToResoniteLinkArray()");
+        str.Append($"{name}.ToLinkArray(context)");
     }
 
     async Task GenerateSyncObjectCollection(StringBuilder str, string name, SyncObjectMemberDefinition syncObject, TypeDefinition containerType)
     {
-        str.Append(@$"new ResoniteLink.SyncObject() {{ Members = {name}.CollectMembers(context) }}");
+        str.Append(@$"{name}.ToLinkSyncObject(context)");
     }
 
     #endregion
