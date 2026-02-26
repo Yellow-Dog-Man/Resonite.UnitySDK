@@ -89,7 +89,8 @@ public abstract class AssetConverter<TWrapper, TProvider, TUnity, TResonite> : A
     {
         var assetPath = AssetDatabase.GetAssetPath(Source);
 
-        if (assetPath == "Library/unity default resources")
+        if (assetPath == "Library/unity default resources" || 
+            assetPath == "Resources/unity_builtin_extra")
             return 0;
 
         if (assetPath == null)
