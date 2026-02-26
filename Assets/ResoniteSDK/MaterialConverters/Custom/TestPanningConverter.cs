@@ -37,11 +37,20 @@ public class TestPanningConverter : ResoniteMaterialConverter
         // we convert this to a Panner component and set it up with panning speed and offset.
         var panningSpeed = material.GetVector("_PanningSpeed");
 
+        pannerData.Enabled = true;
+        pannerData.persistent = true;
+
+        // The panner will drive the TextureOffset field on the PBS material
+        pannerData._target = data.TextureOffset_Element.Reference;
+
         // Assign the panner speed from the material property
         pannerData._speed = panningSpeed;
 
-        // We add in the texture offset
+        // We add in the texture offset from the material
         pannerData._offset = material.mainTextureOffset;
+
+        // We don't need it to repeat & wrap around
+        pannerData._repeat = new Vector2(float.PositiveInfinity, float.PositiveInfinity);
 
         return data;
     }
