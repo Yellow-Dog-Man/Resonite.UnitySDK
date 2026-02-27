@@ -9,6 +9,58 @@ The code and structure is currently for quick prototyping & implementation phase
 
 We do **NOT** accept PR's / issues at this point.
 
+# Contributing
+Contributions to this SDK are welcome! Converting content is a complex task and there and big part of this tool is giving more power to you - the community, to create new workflows and bring more content to Resonite. 
+
+## Contributing component converters
+- Improving existing converters
+    - E.g. handling configurations / edge cases that aren't currently handled (or not handled well)
+- Adding new converters
+    - If there are components/behaviors that aren't converted at all - feel free to implement converters for them!
+    - This should avoid adding 3rd party SDK's / dependencies to this though - if you want to do that, please consult us first by creating an Issue
+    - At some point, we might suggest separating converters for 3rd party libraries into their own repo's and just linking them here
+ 
+### How to PR component converter
+If you want to contribute a new or improved comopnent converter, please ensure following:
+- Adds sample content to the TestScene to test conversion with
+- Make sure you test all other conversions in the TestScene that would be affected by your converter
+- Ideally create issue for the converter first (if it does not exist)
+    - You should be assigned to it first if your changes will be extensive to avoid clashes with other contributors 
+- Make PR with the converter changes, TestScene changes
+
+## Contributing material converters
+- Improving existing converters
+- Adding converters for new shaders
+   - These are a bit easier to contribute, as they don't technically require new C# code for the shader
+   - If possible, include the shader for testing in your PR
+ 
+### How to PR material converter
+- Ideally create issue for the shader, especially if it's a complex one
+    - This will allow coordination with other contributors
+- If possible, include the shader in the TestScene with various configurations (you can also add separate scene for it if it's extensive)
+- If you're modifying existing converter, please test existing content with it to ensure your conversion doesn't break any of it
+   - If needed, add more testing content for that shader please, so we can avoid regressions 
+- Make PR with the material converter
+
+## Other contributions
+You can also contribute in a number of other areas! Check the Issues page for those. In short there are:
+
+- UI / Workflow improvements
+- General conversion bugfixes
+- Quality of life improvements
+- Help review & test PR's from other contributors 
+
+For any larger reworks **please make sure there's an issue created first**. This will help prevent conflicts with changes from other contributors.
+
+If you're not sure what to contribute, check the "help wanted" issues: https://github.com/Yellow-Dog-Man/Resonite.UnitySDK/issues?q=is%3Aissue%20state%3Aopen%20label%3A%22help%20wanted%22
+
+## When to fork instead
+If you need to make changes to the SDK that would negatively affect general conversion, you should create a customized fork instead. This is for cases where you need to make some structural changes to help certain types of projects and content better, but that would break compatibility with other type of content.
+
+Forking this SDK is perfectly fine! If there are popular forks with altered functionality, we can add links to those as well for people to explore.
+
+You can also create private forks - e.g. if you want to use the SDK for your internal/private projects and use Resonite for prototyping/visualization. We have licensed this under MIT so you can use it for these use cases as well.
+
 # How it works
 
 ## ResoniteLink
