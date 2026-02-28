@@ -9,6 +9,24 @@ The code and structure is currently for quick prototyping & implementation phase
 
 We do **NOT** accept PR's / issues at this point.
 
+# What is this?
+Resonite is a free social VR sandbox platform, which allows for socialization and collaborative in-game building. While game content can be fully built in-game (either in desktop or VR modes), not every user prefers this workflow. Unity SDK opens a new away to build content for Resonite, by using the Unity Editor and more traditional workflow or existing tooling. 
+
+You can get Resonite free on Steam: https://store.steampowered.com/app/2519830/Resonite/
+
+You can:
+- Use this to build brand new content for Resonite
+- Bring over existing content you've already built to Resonite (e.g. content build for other platforms such as VRC)
+    - Worlds
+    - Avatars
+    - Props 
+- Expand the conversion system to handle more of your existing content or custom tailor conversion for your projects
+- Use Resonite to visualize and prototype your Unity projects in VR and take advatange of Resonite's realtime collaboration
+- Expand the SDk or use it as reference implementation for your own custom tooling for other engines
+
+## How to use
+TO DO!!!
+
 # Contributing
 Contributions to this SDK are welcome! Converting content is a complex task and there and big part of this tool is giving more power to you - the community, to create new workflows and bring more content to Resonite. 
 
