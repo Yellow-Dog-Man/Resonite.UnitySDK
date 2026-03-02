@@ -235,7 +235,7 @@ public partial class ResoniteBindingGenerator
         var source = await GenerateBindingSource(definition);
 
         // Figure out the file path for the file
-        var directoryPath = Path.Combine(TargetPath, definition.CategoryPath ?? "Uncategorized");
+        var directoryPath = Path.Combine(TargetPath, definition.CategoryPath?.Replace("Debug", "_Debug_") ?? "Uncategorized");
         var filePath = await GenerateFilePath(directoryPath, definition.Type);
 
         File.WriteAllText(filePath, source);
