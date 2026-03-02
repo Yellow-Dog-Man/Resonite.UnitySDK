@@ -2,9 +2,9 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.UserRestrictionsSettings+Entry
-// Generated on: čtvrtek 26. února 2026 15:09:15
-// Resonite version: 2026.2.26.828
-// Resonite Link Version: 0.9.3.0
+// Generated on: pondělí 2. března 2026 17:53:37
+// Resonite version: 2026.3.2.1000
+// Resonite Link Version: 1.0.0.0
 // -----------------------------------------------------------------------------
 
 using UnityEngine;
@@ -31,6 +31,7 @@ public Field<global::FrooxEngine.Sync<global::System.String>, global::System.Str
 public global::System.String UserId { get => UserId_Element.Data; set => UserId_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<global::System.String>, global::System.String> UserId_Element = new();
 public global::SyncFieldList<global::FrooxEngine.SyncFieldList<global::System.String>, global::System.String, Field<global::FrooxEngine.Sync<global::System.String>, global::System.String>> MachineIDs = new();
+public global::SyncDictionary<global::FrooxEngine.SyncFieldDictionary<global::System.String,global::System.String>, global::System.String, Field<global::FrooxEngine.Sync<global::System.String>, global::System.String>> ExtraIds = new();
 public global::SyncFieldList<global::FrooxEngine.SyncFieldList<global::System.String>, global::System.String, Field<global::FrooxEngine.Sync<global::System.String>, global::System.String>> BannedWorldList = new();
 
 public override void CollectMembers(
@@ -42,6 +43,7 @@ members.Add("IsFullyBanned", IsFullyBanned_Element.ToLinkField(context));
 members.Add("Username", Username_Element.ToLinkField(context));
 members.Add("UserId", UserId_Element.ToLinkField(context));
 members.Add("MachineIDs", MachineIDs.ToLinkList(context, m => m.ToLinkField(context)));
+members.Add("ExtraIds", ExtraIds.ToLinkDictionary(context, m => m.ToLinkField(context)));
 members.Add("BannedWorldList", BannedWorldList.ToLinkList(context, m => m.ToLinkField(context)));
 }
 

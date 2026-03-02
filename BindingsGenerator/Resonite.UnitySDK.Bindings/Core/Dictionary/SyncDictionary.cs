@@ -24,6 +24,14 @@ public class SyncDictionary<TReference, TKey, TElement>
         return element;
     }
 
+    public TElement GetOrAdd(TKey key)
+    {
+        if (Data.TryGetValue(key, out var element))
+            return element;
+
+        return Add(key);
+    }
+
     public bool Remove(TKey key) => Data.Remove(key);
     public void Clear() => Data.Clear();
 

@@ -1,0 +1,28 @@
+
+// -----------------------------------------------------------------------------
+// WARNING: This is auto-generated file! DO NOT MODIFY
+// Generated from type: [FrooxEngine]FrooxEngine.SyncFieldDictionary<,>
+// Generated on: pondělí 2. března 2026 17:53:37
+// Resonite version: 2026.3.2.1000
+// Resonite Link Version: 1.0.0.0
+// -----------------------------------------------------------------------------
+
+using UnityEngine;
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
+
+namespace FrooxEngine
+{
+    
+[ResoniteTypeName("[FrooxEngine]FrooxEngine.SyncFieldDictionary<,>")]
+public partial class SyncFieldDictionary<K,T> : global::FrooxEngine.SyncDictionary<K,global::FrooxEngine.Sync<T>>
+	
+	
+
+{
+    // Dummy class, there's no body
+// Generated as dependency for: [FrooxEngine]FrooxEngine.UserRestrictionsSettings+Entry
+}
+}

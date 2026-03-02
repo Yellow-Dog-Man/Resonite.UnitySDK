@@ -2,9 +2,9 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [Elements.Assets]Elements.Assets.SegmentedBuilder+Shading
-// Generated on: čtvrtek 26. února 2026 15:07:55
-// Resonite version: 2026.2.26.828
-// Resonite Link Version: 0.9.3.0
+// Generated on: pondělí 2. března 2026 17:52:25
+// Resonite version: 2026.3.2.1000
+// Resonite Link Version: 1.0.0.0
 // -----------------------------------------------------------------------------
 
 using UnityEngine;

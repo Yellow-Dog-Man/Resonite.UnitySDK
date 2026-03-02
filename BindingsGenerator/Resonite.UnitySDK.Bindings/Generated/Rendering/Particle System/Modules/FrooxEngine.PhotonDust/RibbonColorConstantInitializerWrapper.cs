@@ -2,9 +2,9 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.PhotonDust.RibbonColorConstantInitializer
-// Generated on: čtvrtek 26. února 2026 15:09:05
-// Resonite version: 2026.2.26.828
-// Resonite Link Version: 0.9.3.0
+// Generated on: pondělí 2. března 2026 17:53:29
+// Resonite version: 2026.3.2.1000
+// Resonite Link Version: 1.0.0.0
 // -----------------------------------------------------------------------------
 
 using UnityEngine;

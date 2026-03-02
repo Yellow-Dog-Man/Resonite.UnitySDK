@@ -19,6 +19,7 @@
   <ItemGroup>
     <Reference Include="UnityEngine">
       <HintPath>..\..\..\..\..\Program Files\Unity\Hub\Editor\2022.3.62f3\Editor\Data\Managed\UnityEngine.dll</HintPath>
+      <Private>False</Private>
     </Reference>
   </ItemGroup>
 
