@@ -2,9 +2,9 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [ProtoFluxBindings]FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Input.Mouse.MouseScrollDelta2D
-// Generated on: pondělí 2. března 2026 17:53:04
-// Resonite version: 2026.3.2.1000
-// Resonite Link Version: 1.0.0.0
+// Generated on: čtvrtek 5. března 2026 18:23:33
+// Resonite version: 2026.3.5.946
+// Resonite Link Version: 0.11.0.0
 // -----------------------------------------------------------------------------
 
 using UnityEngine;

@@ -2,9 +2,9 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.StaticTexture2D
-// Generated on: pondělí 2. března 2026 17:52:22
-// Resonite version: 2026.3.2.1000
-// Resonite Link Version: 1.0.0.0
+// Generated on: čtvrtek 5. března 2026 18:22:31
+// Resonite version: 2026.3.5.946
+// Resonite Link Version: 0.11.0.0
 // -----------------------------------------------------------------------------
 
 using UnityEngine;
@@ -59,6 +59,282 @@ members.Add("KeepOriginalMipMaps", KeepOriginalMipMaps_Element.ToLinkField(conte
 members.Add("MipMapFilter", MipMapFilter_Element.ToLinkField(context));
 members.Add("Readable", Readable_Element.ToLinkField(context));
 }
+public  async System.Threading.Tasks.Task<global::System.Boolean> BleedColorToAlpha(IConversionContext context)
+{
+        var __message = new ResoniteLink.CallSyncMethod();
+__message.TargetID = context.GetId(this);
+                if(__message.TargetID == null)
+                    throw new System.InvalidOperationException("Cannot call sync methods on objects that have not been synced to resonite yet.");
+var result = await context.CallMethod(__message);
+        if(!result.Success)
+            throw new Exception("Error running method: " + result.ErrorInfo);
+return ((ResoniteLink.Data_bool)result.Result).Value;
+}
+
+public  async System.Threading.Tasks.Task<global::System.Boolean> FlipHorizontal(IConversionContext context)
+{
+        var __message = new ResoniteLink.CallSyncMethod();
+__message.TargetID = context.GetId(this);
+                if(__message.TargetID == null)
+                    throw new System.InvalidOperationException("Cannot call sync methods on objects that have not been synced to resonite yet.");
+var result = await context.CallMethod(__message);
+        if(!result.Success)
+            throw new Exception("Error running method: " + result.ErrorInfo);
+return ((ResoniteLink.Data_bool)result.Result).Value;
+}
+
+public  async System.Threading.Tasks.Task<global::System.Boolean> FlipVertical(IConversionContext context)
+{
+        var __message = new ResoniteLink.CallSyncMethod();
+__message.TargetID = context.GetId(this);
+                if(__message.TargetID == null)
+                    throw new System.InvalidOperationException("Cannot call sync methods on objects that have not been synced to resonite yet.");
+var result = await context.CallMethod(__message);
+        if(!result.Success)
+            throw new Exception("Error running method: " + result.ErrorInfo);
+return ((ResoniteLink.Data_bool)result.Result).Value;
+}
+
+public  async System.Threading.Tasks.Task<global::System.Boolean> Rotate90CW(IConversionContext context)
+{
+        var __message = new ResoniteLink.CallSyncMethod();
+__message.TargetID = context.GetId(this);
+                if(__message.TargetID == null)
+                    throw new System.InvalidOperationException("Cannot call sync methods on objects that have not been synced to resonite yet.");
+var result = await context.CallMethod(__message);
+        if(!result.Success)
+            throw new Exception("Error running method: " + result.ErrorInfo);
+return ((ResoniteLink.Data_bool)result.Result).Value;
+}
+
+public  async System.Threading.Tasks.Task<global::System.Boolean> Rotate90CCW(IConversionContext context)
+{
+        var __message = new ResoniteLink.CallSyncMethod();
+__message.TargetID = context.GetId(this);
+                if(__message.TargetID == null)
+                    throw new System.InvalidOperationException("Cannot call sync methods on objects that have not been synced to resonite yet.");
+var result = await context.CallMethod(__message);
+        if(!result.Success)
+            throw new Exception("Error running method: " + result.ErrorInfo);
+return ((ResoniteLink.Data_bool)result.Result).Value;
+}
+
+public  async System.Threading.Tasks.Task<global::System.Boolean> Rotate180(IConversionContext context)
+{
+        var __message = new ResoniteLink.CallSyncMethod();
+__message.TargetID = context.GetId(this);
+                if(__message.TargetID == null)
+                    throw new System.InvalidOperationException("Cannot call sync methods on objects that have not been synced to resonite yet.");
+var result = await context.CallMethod(__message);
+        if(!result.Success)
+            throw new Exception("Error running method: " + result.ErrorInfo);
+return ((ResoniteLink.Data_bool)result.Result).Value;
+}
+
+public  async System.Threading.Tasks.Task<global::System.Boolean> MakeSquare(IConversionContext context)
+{
+        var __message = new ResoniteLink.CallSyncMethod();
+__message.TargetID = context.GetId(this);
+                if(__message.TargetID == null)
+                    throw new System.InvalidOperationException("Cannot call sync methods on objects that have not been synced to resonite yet.");
+var result = await context.CallMethod(__message);
+        if(!result.Success)
+            throw new Exception("Error running method: " + result.ErrorInfo);
+return ((ResoniteLink.Data_bool)result.Result).Value;
+}
+
+public  async System.Threading.Tasks.Task<global::System.Boolean> TileLoop(UnityEngine.Vector2 transition, IConversionContext context)
+{
+        var __message = new ResoniteLink.CallSyncMethod();
+__message.TargetID = context.GetId(this);
+                if(__message.TargetID == null)
+                    throw new System.InvalidOperationException("Cannot call sync methods on objects that have not been synced to resonite yet.");
+__message.Arguments.Add("transition", transition.ToData());
+var result = await context.CallMethod(__message);
+        if(!result.Success)
+            throw new Exception("Error running method: " + result.ErrorInfo);
+return ((ResoniteLink.Data_bool)result.Result).Value;
+}
+
+public  async System.Threading.Tasks.Task<global::System.Boolean> TileMirror(UnityEngine.Vector2 transition, IConversionContext context)
+{
+        var __message = new ResoniteLink.CallSyncMethod();
+__message.TargetID = context.GetId(this);
+                if(__message.TargetID == null)
+                    throw new System.InvalidOperationException("Cannot call sync methods on objects that have not been synced to resonite yet.");
+__message.Arguments.Add("transition", transition.ToData());
+var result = await context.CallMethod(__message);
+        if(!result.Success)
+            throw new Exception("Error running method: " + result.ErrorInfo);
+return ((ResoniteLink.Data_bool)result.Result).Value;
+}
+
+public  async System.Threading.Tasks.Task<global::System.Boolean> Rescale(global::System.Int32 size, global::Elements.Assets.Filtering filtering, IConversionContext context)
+{
+        var __message = new ResoniteLink.CallSyncMethod();
+__message.TargetID = context.GetId(this);
+                if(__message.TargetID == null)
+                    throw new System.InvalidOperationException("Cannot call sync methods on objects that have not been synced to resonite yet.");
+__message.Arguments.Add("size", size.ToData());
+__message.Arguments.Add("filtering", filtering.ToData());
+var result = await context.CallMethod(__message);
+        if(!result.Success)
+            throw new Exception("Error running method: " + result.ErrorInfo);
+return ((ResoniteLink.Data_bool)result.Result).Value;
+}
+
+public  async System.Threading.Tasks.Task<global::System.Boolean> Rescale(UnityEngine.Vector2Int size, global::Elements.Assets.Filtering filtering, IConversionContext context)
+{
+        var __message = new ResoniteLink.CallSyncMethod();
+__message.TargetID = context.GetId(this);
+                if(__message.TargetID == null)
+                    throw new System.InvalidOperationException("Cannot call sync methods on objects that have not been synced to resonite yet.");
+__message.Arguments.Add("size", size.ToData());
+__message.Arguments.Add("filtering", filtering.ToData());
+var result = await context.CallMethod(__message);
+        if(!result.Success)
+            throw new Exception("Error running method: " + result.ErrorInfo);
+return ((ResoniteLink.Data_bool)result.Result).Value;
+}
+
+public  async System.Threading.Tasks.Task<global::System.Boolean> Crop(UnityEngine.Vector2Int position, UnityEngine.Vector2Int size, IConversionContext context)
+{
+        var __message = new ResoniteLink.CallSyncMethod();
+__message.TargetID = context.GetId(this);
+                if(__message.TargetID == null)
+                    throw new System.InvalidOperationException("Cannot call sync methods on objects that have not been synced to resonite yet.");
+__message.Arguments.Add("position", position.ToData());
+__message.Arguments.Add("size", size.ToData());
+var result = await context.CallMethod(__message);
+        if(!result.Success)
+            throw new Exception("Error running method: " + result.ErrorInfo);
+return ((ResoniteLink.Data_bool)result.Result).Value;
+}
+
+public  async System.Threading.Tasks.Task<global::System.Boolean> Trim(UnityEngine.Color color, IConversionContext context)
+{
+        var __message = new ResoniteLink.CallSyncMethod();
+__message.TargetID = context.GetId(this);
+                if(__message.TargetID == null)
+                    throw new System.InvalidOperationException("Cannot call sync methods on objects that have not been synced to resonite yet.");
+__message.Arguments.Add("color", color.ToData());
+var result = await context.CallMethod(__message);
+        if(!result.Success)
+            throw new Exception("Error running method: " + result.ErrorInfo);
+return ((ResoniteLink.Data_bool)result.Result).Value;
+}
+
+public  async System.Threading.Tasks.Task<global::System.Boolean> Trim(UnityEngine.Color32 color, IConversionContext context)
+{
+        var __message = new ResoniteLink.CallSyncMethod();
+__message.TargetID = context.GetId(this);
+                if(__message.TargetID == null)
+                    throw new System.InvalidOperationException("Cannot call sync methods on objects that have not been synced to resonite yet.");
+__message.Arguments.Add("color", color.ToData());
+var result = await context.CallMethod(__message);
+        if(!result.Success)
+            throw new Exception("Error running method: " + result.ErrorInfo);
+return ((ResoniteLink.Data_bool)result.Result).Value;
+}
+
+public  async System.Threading.Tasks.Task<global::System.Boolean> TrimTransparent(IConversionContext context)
+{
+        var __message = new ResoniteLink.CallSyncMethod();
+__message.TargetID = context.GetId(this);
+                if(__message.TargetID == null)
+                    throw new System.InvalidOperationException("Cannot call sync methods on objects that have not been synced to resonite yet.");
+var result = await context.CallMethod(__message);
+        if(!result.Success)
+            throw new Exception("Error running method: " + result.ErrorInfo);
+return ((ResoniteLink.Data_bool)result.Result).Value;
+}
+
+public  async System.Threading.Tasks.Task<global::System.Boolean> TrimByCornerColor(IConversionContext context)
+{
+        var __message = new ResoniteLink.CallSyncMethod();
+__message.TargetID = context.GetId(this);
+                if(__message.TargetID == null)
+                    throw new System.InvalidOperationException("Cannot call sync methods on objects that have not been synced to resonite yet.");
+var result = await context.CallMethod(__message);
+        if(!result.Success)
+            throw new Exception("Error running method: " + result.ErrorInfo);
+return ((ResoniteLink.Data_bool)result.Result).Value;
+}
+
+public  async System.Threading.Tasks.Task<global::System.Boolean> LuminanceThreshold(global::System.Single threshold, IConversionContext context)
+{
+        var __message = new ResoniteLink.CallSyncMethod();
+__message.TargetID = context.GetId(this);
+                if(__message.TargetID == null)
+                    throw new System.InvalidOperationException("Cannot call sync methods on objects that have not been synced to resonite yet.");
+__message.Arguments.Add("threshold", threshold.ToData());
+var result = await context.CallMethod(__message);
+        if(!result.Success)
+            throw new Exception("Error running method: " + result.ErrorInfo);
+return ((ResoniteLink.Data_bool)result.Result).Value;
+}
+
+public  async System.Threading.Tasks.Task<global::System.Boolean> LuminanceThreshold(global::System.Single threshold, UnityEngine.Color above, UnityEngine.Color below, IConversionContext context)
+{
+        var __message = new ResoniteLink.CallSyncMethod();
+__message.TargetID = context.GetId(this);
+                if(__message.TargetID == null)
+                    throw new System.InvalidOperationException("Cannot call sync methods on objects that have not been synced to resonite yet.");
+__message.Arguments.Add("threshold", threshold.ToData());
+__message.Arguments.Add("above", above.ToData());
+__message.Arguments.Add("below", below.ToData());
+var result = await context.CallMethod(__message);
+        if(!result.Success)
+            throw new Exception("Error running method: " + result.ErrorInfo);
+return ((ResoniteLink.Data_bool)result.Result).Value;
+}
+
+public  async System.Threading.Tasks.Task<global::System.Boolean> LocalizedLuminanceThreshold(global::System.Single threshold, global::System.Int32 range, IConversionContext context)
+{
+        var __message = new ResoniteLink.CallSyncMethod();
+__message.TargetID = context.GetId(this);
+                if(__message.TargetID == null)
+                    throw new System.InvalidOperationException("Cannot call sync methods on objects that have not been synced to resonite yet.");
+__message.Arguments.Add("threshold", threshold.ToData());
+__message.Arguments.Add("range", range.ToData());
+var result = await context.CallMethod(__message);
+        if(!result.Success)
+            throw new Exception("Error running method: " + result.ErrorInfo);
+return ((ResoniteLink.Data_bool)result.Result).Value;
+}
+
+public  async System.Threading.Tasks.Task<global::System.Boolean> LocalizedLuminanceThreshold(global::System.Single threshold, global::System.Int32 range, UnityEngine.Color above, UnityEngine.Color below, IConversionContext context)
+{
+        var __message = new ResoniteLink.CallSyncMethod();
+__message.TargetID = context.GetId(this);
+                if(__message.TargetID == null)
+                    throw new System.InvalidOperationException("Cannot call sync methods on objects that have not been synced to resonite yet.");
+__message.Arguments.Add("threshold", threshold.ToData());
+__message.Arguments.Add("range", range.ToData());
+__message.Arguments.Add("above", above.ToData());
+__message.Arguments.Add("below", below.ToData());
+var result = await context.CallMethod(__message);
+        if(!result.Success)
+            throw new Exception("Error running method: " + result.ErrorInfo);
+return ((ResoniteLink.Data_bool)result.Result).Value;
+}
+
+public  async System.Threading.Tasks.Task<global::System.Boolean> KMeansCluster(global::System.Int32 k, global::System.Single positionWeight, global::System.Int32 batchSize, global::System.Single passesOverData, IConversionContext context)
+{
+        var __message = new ResoniteLink.CallSyncMethod();
+__message.TargetID = context.GetId(this);
+                if(__message.TargetID == null)
+                    throw new System.InvalidOperationException("Cannot call sync methods on objects that have not been synced to resonite yet.");
+__message.Arguments.Add("k", k.ToData());
+__message.Arguments.Add("positionWeight", positionWeight.ToData());
+__message.Arguments.Add("batchSize", batchSize.ToData());
+__message.Arguments.Add("passesOverData", passesOverData.ToData());
+var result = await context.CallMethod(__message);
+        if(!result.Success)
+            throw new Exception("Error running method: " + result.ErrorInfo);
+return ((ResoniteLink.Data_bool)result.Result).Value;
+}
+
 
 }
 }
