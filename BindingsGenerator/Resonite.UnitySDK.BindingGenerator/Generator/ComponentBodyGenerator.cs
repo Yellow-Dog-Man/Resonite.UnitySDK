@@ -418,7 +418,8 @@ public partial class ResoniteBindingGenerator
         // Generate body to collect the parameters
         // First initiate the message
         str.AppendLine(@$"{{
-        var __message = new ResoniteLink.Call{(method.IsStatic ? "Static" : "")}SyncMethod();");
+        var __message = new ResoniteLink.Call{(method.IsStatic ? "Static" : "")}SyncMethod();
+        __message.MethodName = ""{method.Name}"";");
 
         if (method.IsStatic)
             str.AppendLine($"__message.TargetType = \"{containerType.FullTypeName}\";");
