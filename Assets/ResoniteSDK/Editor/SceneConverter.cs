@@ -32,7 +32,10 @@ public class SceneConverter : IConversionContext
     HashSet<Transform> _existingSlots = new HashSet<Transform>();
 
     [SerializeField]
-    Dictionary<IWorldElement, string> _idMap = new Dictionary<IWorldElement, string>();
+    Dictionary<IWorldElement, string> _elementToId = new Dictionary<IWorldElement, string>();
+
+    [SerializeField]
+    Dictionary<string, IWorldElement> _idToElement = new Dictionary<string, IWorldElement>();
 
     AssetConversionManager _assetConverter;
 
@@ -53,7 +56,7 @@ public class SceneConverter : IConversionContext
         if (o is FrooxEngine.Slot slot)
             return GetTransformSlotId(slot.Wrapper.transform);
 
-        return _idMap[o];
+        return _elementToId[o];
     }
     public string GetIdOrAllocate(IWorldElement o) => GetIdOrAllocate(o, out _);
     public string GetIdOrAllocate(IWorldElement o, out bool allocated)
@@ -68,10 +71,11 @@ public class SceneConverter : IConversionContext
             return GetTransformSlotId(slot.Wrapper.transform);
         }
 
-        if (!_idMap.TryGetValue(o, out var id))
+        if (!_elementToId.TryGetValue(o, out var id))
         {
             id = AllocateId(o);
-            _idMap.Add(o, id);
+            _elementToId.Add(o, id);
+            _idToElement.Add(id, o);
 
             allocated = true;
         }
@@ -80,11 +84,23 @@ public class SceneConverter : IConversionContext
 
         return id;
     }
-    public void RemoveId(IWorldElement o) => _idMap.Remove(o);
+    public void RemoveId(IWorldElement o)
+    {
+        _idToElement.Remove(_elementToId[o]);
+        _elementToId.Remove(o);
+    }
 
     public string GetTransformSlotId(Transform transform) => GetLinkSlot(transform).ID;
 
     public string GetUniqueMessageId(string prefix) => $"{prefix}_{_messageIndex++}";
+
+    public IWorldElement TryResolveId(string id)
+    {
+        if (_idToElement.TryGetValue(id, out var worldElement))
+            return worldElement;
+
+        return null;
+    }
 
     #region ASSETS
 
@@ -665,4 +681,7 @@ public class SceneConverter : IConversionContext
 
         SendOperationBatch(messages);
     }
+
+    public Task<MethodResult> CallMethod(CallSyncMethod request) => Link.CallMethod(request);
+    public Task<MethodResult> CallMethod(CallStaticSyncMethod request) => Link.CallStaticMethod(request);
 }

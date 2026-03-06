@@ -11,7 +11,7 @@
         "dependencies": {
           "Resonite.UnitySDK.Core": "1.0.0",
           "Ultz.Bcl.Half": "1.0.0",
-          "YellowDogMan.ResoniteLink": "0.10.0"
+          "YellowDogMan.ResoniteLink": "0.11.0"
         },
         "runtime": {
           "Resonite.UnitySDK.Bindings.dll": {}
@@ -82,20 +82,20 @@
           }
         }
       },
-      "YellowDogMan.ResoniteLink/0.10.0": {
+      "YellowDogMan.ResoniteLink/0.11.0": {
         "dependencies": {
           "System.Text.Json": "10.0.1"
         },
         "runtime": {
           "lib/netstandard2.0/ResoniteLink.dll": {
-            "assemblyVersion": "0.10.0.0",
-            "fileVersion": "0.10.0.0"
+            "assemblyVersion": "0.11.0.0",
+            "fileVersion": "0.11.0.0"
           }
         }
       },
       "Resonite.UnitySDK.Core/1.0.0": {
         "dependencies": {
-          "YellowDogMan.ResoniteLink": "0.10.0"
+          "YellowDogMan.ResoniteLink": "0.11.0"
         },
         "runtime": {
           "Resonite.UnitySDK.Core.dll": {
@@ -161,12 +161,12 @@
       "path": "ultz.bcl.half.fallback/1.0.0",
       "hashPath": "ultz.bcl.half.fallback.1.0.0.nupkg.sha512"
     },
-    "YellowDogMan.ResoniteLink/0.10.0": {
+    "YellowDogMan.ResoniteLink/0.11.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-VYpksWVvWnAie6nTSVosEd83NW30vrlFSu3he+vFnqEG3kRF2Gc57IDxX7XdGLbnDZpFQYKXdk1nl51sbLfwOw==",
-      "path": "yellowdogman.resonitelink/0.10.0",
-      "hashPath": "yellowdogman.resonitelink.0.10.0.nupkg.sha512"
+      "sha512": "sha512-HH3DKzWkCYQyv8ZTQv1bmukrKjy89krYXYkDCyHHmqKbhfH/qD8Jv5/PWhCcLtTfDv7IN8Q/BM0RjhvR9xpK3g==",
+      "path": "yellowdogman.resonitelink/0.11.0",
+      "hashPath": "yellowdogman.resonitelink.0.11.0.nupkg.sha512"
     },
     "Resonite.UnitySDK.Core/1.0.0": {
       "type": "project",
