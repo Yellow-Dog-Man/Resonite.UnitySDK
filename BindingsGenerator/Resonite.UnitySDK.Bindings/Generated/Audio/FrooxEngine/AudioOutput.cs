@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.AudioOutput
-// Generated on: čtvrtek 5. března 2026 18:22:36
+// Generated on: pátek 6. března 2026 14:18:06
 // Resonite version: 2026.3.5.946
 // Resonite Link Version: 0.11.0.0
 // -----------------------------------------------------------------------------
@@ -87,6 +87,7 @@ members.Add("excludedUsers", excludedUsers.ToLinkList(context, m => m.ToLinkRefe
 public  async System.Threading.Tasks.Task ExludeUser(global::FrooxEngine.User user, IConversionContext context)
 {
         var __message = new ResoniteLink.CallSyncMethod();
+        __message.MethodName = "ExludeUser";
 __message.TargetID = context.GetId(this);
                 if(__message.TargetID == null)
                     throw new System.InvalidOperationException("Cannot call sync methods on objects that have not been synced to resonite yet.");
@@ -99,6 +100,7 @@ var result = await context.CallMethod(__message);
 public  async System.Threading.Tasks.Task ExludeLocalUser(IConversionContext context)
 {
         var __message = new ResoniteLink.CallSyncMethod();
+        __message.MethodName = "ExludeLocalUser";
 __message.TargetID = context.GetId(this);
                 if(__message.TargetID == null)
                     throw new System.InvalidOperationException("Cannot call sync methods on objects that have not been synced to resonite yet.");
@@ -110,6 +112,7 @@ var result = await context.CallMethod(__message);
 public  async System.Threading.Tasks.Task RemoveLocalExcludedUser(IConversionContext context)
 {
         var __message = new ResoniteLink.CallSyncMethod();
+        __message.MethodName = "RemoveLocalExcludedUser";
 __message.TargetID = context.GetId(this);
                 if(__message.TargetID == null)
                     throw new System.InvalidOperationException("Cannot call sync methods on objects that have not been synced to resonite yet.");
@@ -121,6 +124,7 @@ var result = await context.CallMethod(__message);
 public  async System.Threading.Tasks.Task RemoveExludedUser(global::FrooxEngine.User user, IConversionContext context)
 {
         var __message = new ResoniteLink.CallSyncMethod();
+        __message.MethodName = "RemoveExludedUser";
 __message.TargetID = context.GetId(this);
                 if(__message.TargetID == null)
                     throw new System.InvalidOperationException("Cannot call sync methods on objects that have not been synced to resonite yet.");
@@ -133,6 +137,7 @@ var result = await context.CallMethod(__message);
 public  async System.Threading.Tasks.Task ClearExludedUsers(IConversionContext context)
 {
         var __message = new ResoniteLink.CallSyncMethod();
+        __message.MethodName = "ClearExludedUsers";
 __message.TargetID = context.GetId(this);
                 if(__message.TargetID == null)
                     throw new System.InvalidOperationException("Cannot call sync methods on objects that have not been synced to resonite yet.");
@@ -144,6 +149,7 @@ var result = await context.CallMethod(__message);
 public  async System.Threading.Tasks.Task<global::System.Boolean> IsUserExluded(global::FrooxEngine.User user, IConversionContext context)
 {
         var __message = new ResoniteLink.CallSyncMethod();
+        __message.MethodName = "IsUserExluded";
 __message.TargetID = context.GetId(this);
                 if(__message.TargetID == null)
                     throw new System.InvalidOperationException("Cannot call sync methods on objects that have not been synced to resonite yet.");

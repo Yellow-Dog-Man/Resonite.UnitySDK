@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.UserspaceRadiantDash
-// Generated on: čtvrtek 5. března 2026 18:25:13
+// Generated on: pátek 6. března 2026 14:19:10
 // Resonite version: 2026.3.5.946
 // Resonite Link Version: 0.11.0.0
 // -----------------------------------------------------------------------------
@@ -80,6 +80,7 @@ members.Add("_notificationsHolder", _notificationsHolder_Element.ToLinkReference
 public static async System.Threading.Tasks.Task SetupDefaultScreens(global::FrooxEngine.Slot root, IConversionContext context)
 {
         var __message = new ResoniteLink.CallStaticSyncMethod();
+        __message.MethodName = "SetupDefaultScreens";
 __message.TargetType = "[FrooxEngine]FrooxEngine.UserspaceRadiantDash";
 __message.Arguments.Add("root", new ResoniteLink.Data_Reference() { TargetID = context.GetId(root) });
 var result = await context.CallMethod(__message);

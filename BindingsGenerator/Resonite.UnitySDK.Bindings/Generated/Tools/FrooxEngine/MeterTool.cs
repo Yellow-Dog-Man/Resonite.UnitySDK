@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.MeterTool
-// Generated on: čtvrtek 5. března 2026 18:24:46
+// Generated on: pátek 6. března 2026 14:19:05
 // Resonite version: 2026.3.5.946
 // Resonite Link Version: 0.11.0.0
 // -----------------------------------------------------------------------------
@@ -59,6 +59,7 @@ members.Add("FormatUnit", FormatUnit_Element.ToLinkField(context));
 public static async System.Threading.Tasks.Task<global::System.Boolean> FilterUsers(global::FrooxEngine.ICollider collider, IConversionContext context)
 {
         var __message = new ResoniteLink.CallStaticSyncMethod();
+        __message.MethodName = "FilterUsers";
 __message.TargetType = "[FrooxEngine]FrooxEngine.MeterTool";
 __message.Arguments.Add("collider", new ResoniteLink.Data_Reference() { TargetID = context.GetId(collider) });
 var result = await context.CallMethod(__message);

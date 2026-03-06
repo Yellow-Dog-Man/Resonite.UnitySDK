@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.AudioClipPlayerBase
-// Generated on: čtvrtek 5. března 2026 18:22:36
+// Generated on: pátek 6. března 2026 14:18:06
 // Resonite version: 2026.3.5.946
 // Resonite Link Version: 0.11.0.0
 // -----------------------------------------------------------------------------
@@ -32,6 +32,7 @@ members.Add("playback", playback_Element.ToLinkPlayback(context));
 public  async System.Threading.Tasks.Task Play(IConversionContext context)
 {
         var __message = new ResoniteLink.CallSyncMethod();
+        __message.MethodName = "Play";
 __message.TargetID = context.GetId(this);
                 if(__message.TargetID == null)
                     throw new System.InvalidOperationException("Cannot call sync methods on objects that have not been synced to resonite yet.");
@@ -43,6 +44,7 @@ var result = await context.CallMethod(__message);
 public  async System.Threading.Tasks.Task Stop(IConversionContext context)
 {
         var __message = new ResoniteLink.CallSyncMethod();
+        __message.MethodName = "Stop";
 __message.TargetID = context.GetId(this);
                 if(__message.TargetID == null)
                     throw new System.InvalidOperationException("Cannot call sync methods on objects that have not been synced to resonite yet.");
@@ -54,6 +56,7 @@ var result = await context.CallMethod(__message);
 public  async System.Threading.Tasks.Task Pause(IConversionContext context)
 {
         var __message = new ResoniteLink.CallSyncMethod();
+        __message.MethodName = "Pause";
 __message.TargetID = context.GetId(this);
                 if(__message.TargetID == null)
                     throw new System.InvalidOperationException("Cannot call sync methods on objects that have not been synced to resonite yet.");
@@ -65,6 +68,7 @@ var result = await context.CallMethod(__message);
 public  async System.Threading.Tasks.Task Resume(IConversionContext context)
 {
         var __message = new ResoniteLink.CallSyncMethod();
+        __message.MethodName = "Resume";
 __message.TargetID = context.GetId(this);
                 if(__message.TargetID == null)
                     throw new System.InvalidOperationException("Cannot call sync methods on objects that have not been synced to resonite yet.");

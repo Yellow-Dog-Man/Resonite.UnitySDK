@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.TrackerSettings
-// Generated on: čtvrtek 5. března 2026 18:25:18
+// Generated on: pátek 6. března 2026 14:19:11
 // Resonite version: 2026.3.5.946
 // Resonite Link Version: 0.11.0.0
 // -----------------------------------------------------------------------------
@@ -34,6 +34,7 @@ members.Add("Trackers", Trackers.ToLinkList(context, m => m.ToLinkSyncObject(con
 public  async System.Threading.Tasks.Task<global::FrooxEngine.SyncObject> GetTrackerForSubsetting(global::System.String key, IConversionContext context)
 {
         var __message = new ResoniteLink.CallSyncMethod();
+        __message.MethodName = "GetTrackerForSubsetting";
 __message.TargetID = context.GetId(this);
                 if(__message.TargetID == null)
                     throw new System.InvalidOperationException("Cannot call sync methods on objects that have not been synced to resonite yet.");

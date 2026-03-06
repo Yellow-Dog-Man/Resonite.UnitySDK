@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.SkinnedMeshRenderer
-// Generated on: čtvrtek 5. března 2026 18:24:27
+// Generated on: pátek 6. března 2026 14:19:03
 // Resonite version: 2026.3.5.946
 // Resonite Link Version: 0.11.0.0
 // -----------------------------------------------------------------------------
@@ -42,6 +42,7 @@ members.Add("BlendShapeWeights", BlendShapeWeights.ToLinkList(context, m => m.To
 public  async System.Threading.Tasks.Task<global::System.Boolean> SplitBlenshapeAlongAxis(global::System.Int32 blendshapeIndex, global::Elements.Axis3D axis, global::System.Single center, global::System.Single transition, global::System.String negativeSuffix, global::System.String positiveSuffix, IConversionContext context)
 {
         var __message = new ResoniteLink.CallSyncMethod();
+        __message.MethodName = "SplitBlenshapeAlongAxis";
 __message.TargetID = context.GetId(this);
                 if(__message.TargetID == null)
                     throw new System.InvalidOperationException("Cannot call sync methods on objects that have not been synced to resonite yet.");
@@ -60,6 +61,7 @@ return ((ResoniteLink.Data_bool)result.Result).Value;
 public  async System.Threading.Tasks.Task<global::System.Boolean> BakeBlendshape(global::System.Int32 blendshapeIndex, IConversionContext context)
 {
         var __message = new ResoniteLink.CallSyncMethod();
+        __message.MethodName = "BakeBlendshape";
 __message.TargetID = context.GetId(this);
                 if(__message.TargetID == null)
                     throw new System.InvalidOperationException("Cannot call sync methods on objects that have not been synced to resonite yet.");
@@ -73,6 +75,7 @@ return ((ResoniteLink.Data_bool)result.Result).Value;
 public  async System.Threading.Tasks.Task<global::System.Boolean> RemoveBlendshape(global::System.Int32 blendshapeIndex, IConversionContext context)
 {
         var __message = new ResoniteLink.CallSyncMethod();
+        __message.MethodName = "RemoveBlendshape";
 __message.TargetID = context.GetId(this);
                 if(__message.TargetID == null)
                     throw new System.InvalidOperationException("Cannot call sync methods on objects that have not been synced to resonite yet.");

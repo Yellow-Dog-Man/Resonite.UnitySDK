@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.RadiantModalOverlay
-// Generated on: čtvrtek 5. března 2026 18:24:55
+// Generated on: pátek 6. března 2026 14:19:07
 // Resonite version: 2026.3.5.946
 // Resonite Link Version: 0.11.0.0
 // -----------------------------------------------------------------------------
@@ -86,6 +86,7 @@ members.Add("_closeOffsetMax", _closeOffsetMax_Element.ToLinkReference(context))
 public static async System.Threading.Tasks.Task<global::FrooxEngine.UIX.ModalOverlay> Construct(global::FrooxEngine.Slot slot, IConversionContext context)
 {
         var __message = new ResoniteLink.CallStaticSyncMethod();
+        __message.MethodName = "Construct";
 __message.TargetType = "[FrooxEngine]FrooxEngine.RadiantModalOverlay";
 __message.Arguments.Add("slot", new ResoniteLink.Data_Reference() { TargetID = context.GetId(slot) });
 var result = await context.CallMethod(__message);

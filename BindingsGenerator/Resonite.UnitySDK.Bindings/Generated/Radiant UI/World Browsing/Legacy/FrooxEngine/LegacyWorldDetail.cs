@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.LegacyWorldDetail
-// Generated on: čtvrtek 5. března 2026 18:24:24
+// Generated on: pátek 6. března 2026 14:19:02
 // Resonite version: 2026.3.5.946
 // Resonite Link Version: 0.11.0.0
 // -----------------------------------------------------------------------------
@@ -164,6 +164,7 @@ members.Add("_newSessionItemRoot", _newSessionItemRoot_Element.ToLinkReference(c
 public static async System.Threading.Tasks.Task OpenWorldDetail(global::FrooxEngine.LegacyWorldItem item, IConversionContext context)
 {
         var __message = new ResoniteLink.CallStaticSyncMethod();
+        __message.MethodName = "OpenWorldDetail";
 __message.TargetType = "[FrooxEngine]FrooxEngine.LegacyWorldDetail";
 __message.Arguments.Add("item", new ResoniteLink.Data_Reference() { TargetID = context.GetId(item) });
 var result = await context.CallMethod(__message);

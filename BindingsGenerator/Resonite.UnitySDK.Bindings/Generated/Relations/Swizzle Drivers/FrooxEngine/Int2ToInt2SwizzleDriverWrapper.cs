@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.Int2ToInt2SwizzleDriver
-// Generated on: čtvrtek 5. března 2026 18:24:25
+// Generated on: pátek 6. března 2026 14:19:03
 // Resonite version: 2026.3.5.946
 // Resonite Link Version: 0.11.0.0
 // -----------------------------------------------------------------------------

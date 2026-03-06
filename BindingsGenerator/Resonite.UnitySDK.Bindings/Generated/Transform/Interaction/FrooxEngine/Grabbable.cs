@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.Grabbable
-// Generated on: čtvrtek 5. března 2026 18:24:51
+// Generated on: pátek 6. března 2026 14:19:06
 // Resonite version: 2026.3.5.946
 // Resonite Link Version: 0.11.0.0
 // -----------------------------------------------------------------------------
@@ -79,6 +79,7 @@ members.Add("__legacyActiveUserRootOnly", __legacyActiveUserRootOnly_Element.ToL
 public static async System.Threading.Tasks.Task<global::System.Boolean> UserRootGrabCheck(global::FrooxEngine.IGrabbable grabbable, global::FrooxEngine.Grabber grabber, IConversionContext context)
 {
         var __message = new ResoniteLink.CallStaticSyncMethod();
+        __message.MethodName = "UserRootGrabCheck";
 __message.TargetType = "[FrooxEngine]FrooxEngine.Grabbable";
 __message.Arguments.Add("grabbable", new ResoniteLink.Data_Reference() { TargetID = context.GetId(grabbable) });
 __message.Arguments.Add("grabber", new ResoniteLink.Data_Reference() { TargetID = context.GetId(grabber) });

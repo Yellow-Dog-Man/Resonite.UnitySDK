@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.DevTool
-// Generated on: čtvrtek 5. března 2026 18:24:40
+// Generated on: pátek 6. března 2026 14:19:05
 // Resonite version: 2026.3.5.946
 // Resonite Link Version: 0.11.0.0
 // -----------------------------------------------------------------------------
@@ -50,6 +50,7 @@ members.Add("_previousGizmo", _previousGizmo_Element.ToLinkReference(context));
 public  async System.Threading.Tasks.Task SelectParent(IConversionContext context)
 {
         var __message = new ResoniteLink.CallSyncMethod();
+        __message.MethodName = "SelectParent";
 __message.TargetID = context.GetId(this);
                 if(__message.TargetID == null)
                     throw new System.InvalidOperationException("Cannot call sync methods on objects that have not been synced to resonite yet.");
@@ -61,6 +62,7 @@ var result = await context.CallMethod(__message);
 public  async System.Threading.Tasks.Task ToggleSpace(IConversionContext context)
 {
         var __message = new ResoniteLink.CallSyncMethod();
+        __message.MethodName = "ToggleSpace";
 __message.TargetID = context.GetId(this);
                 if(__message.TargetID == null)
                     throw new System.InvalidOperationException("Cannot call sync methods on objects that have not been synced to resonite yet.");
@@ -72,6 +74,7 @@ var result = await context.CallMethod(__message);
 public  async System.Threading.Tasks.Task SetTranslation(IConversionContext context)
 {
         var __message = new ResoniteLink.CallSyncMethod();
+        __message.MethodName = "SetTranslation";
 __message.TargetID = context.GetId(this);
                 if(__message.TargetID == null)
                     throw new System.InvalidOperationException("Cannot call sync methods on objects that have not been synced to resonite yet.");
@@ -83,6 +86,7 @@ var result = await context.CallMethod(__message);
 public  async System.Threading.Tasks.Task SetRotation(IConversionContext context)
 {
         var __message = new ResoniteLink.CallSyncMethod();
+        __message.MethodName = "SetRotation";
 __message.TargetID = context.GetId(this);
                 if(__message.TargetID == null)
                     throw new System.InvalidOperationException("Cannot call sync methods on objects that have not been synced to resonite yet.");
@@ -94,6 +98,7 @@ var result = await context.CallMethod(__message);
 public  async System.Threading.Tasks.Task SetScale(IConversionContext context)
 {
         var __message = new ResoniteLink.CallSyncMethod();
+        __message.MethodName = "SetScale";
 __message.TargetID = context.GetId(this);
                 if(__message.TargetID == null)
                     throw new System.InvalidOperationException("Cannot call sync methods on objects that have not been synced to resonite yet.");

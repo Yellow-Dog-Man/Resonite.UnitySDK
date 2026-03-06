@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.PriorityEntry<>
-// Generated on: čtvrtek 5. března 2026 18:24:58
+// Generated on: pátek 6. března 2026 14:19:07
 // Resonite version: 2026.3.5.946
 // Resonite Link Version: 0.11.0.0
 // -----------------------------------------------------------------------------
@@ -33,6 +33,7 @@ members.Add("EntryID", EntryID_Element.ToLinkField(context));
 public  async System.Threading.Tasks.Task MoveUp(IConversionContext context)
 {
         var __message = new ResoniteLink.CallSyncMethod();
+        __message.MethodName = "MoveUp";
 __message.TargetID = context.GetId(this);
                 if(__message.TargetID == null)
                     throw new System.InvalidOperationException("Cannot call sync methods on objects that have not been synced to resonite yet.");
@@ -44,6 +45,7 @@ var result = await context.CallMethod(__message);
 public  async System.Threading.Tasks.Task MoveDown(IConversionContext context)
 {
         var __message = new ResoniteLink.CallSyncMethod();
+        __message.MethodName = "MoveDown";
 __message.TargetID = context.GetId(this);
                 if(__message.TargetID == null)
                     throw new System.InvalidOperationException("Cannot call sync methods on objects that have not been synced to resonite yet.");
@@ -55,6 +57,7 @@ var result = await context.CallMethod(__message);
 public  async System.Threading.Tasks.Task MakeFirst(IConversionContext context)
 {
         var __message = new ResoniteLink.CallSyncMethod();
+        __message.MethodName = "MakeFirst";
 __message.TargetID = context.GetId(this);
                 if(__message.TargetID == null)
                     throw new System.InvalidOperationException("Cannot call sync methods on objects that have not been synced to resonite yet.");
@@ -66,6 +69,7 @@ var result = await context.CallMethod(__message);
 public  async System.Threading.Tasks.Task MakeLast(IConversionContext context)
 {
         var __message = new ResoniteLink.CallSyncMethod();
+        __message.MethodName = "MakeLast";
 __message.TargetID = context.GetId(this);
                 if(__message.TargetID == null)
                     throw new System.InvalidOperationException("Cannot call sync methods on objects that have not been synced to resonite yet.");

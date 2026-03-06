@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.RelaySettings
-// Generated on: čtvrtek 5. března 2026 18:25:15
+// Generated on: pátek 6. března 2026 14:19:10
 // Resonite version: 2026.3.5.946
 // Resonite Link Version: 0.11.0.0
 // -----------------------------------------------------------------------------
@@ -40,6 +40,7 @@ members.Add("RelayPrioritiesEnabled", RelayPrioritiesEnabled_Element.ToLinkField
 public  async System.Threading.Tasks.Task<global::FrooxEngine.SyncObject> GetEntry(global::System.String key, IConversionContext context)
 {
         var __message = new ResoniteLink.CallSyncMethod();
+        __message.MethodName = "GetEntry";
 __message.TargetID = context.GetId(this);
                 if(__message.TargetID == null)
                     throw new System.InvalidOperationException("Cannot call sync methods on objects that have not been synced to resonite yet.");

@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.UIX.ScrollRect
-// Generated on: čtvrtek 5. března 2026 18:24:24
+// Generated on: pátek 6. března 2026 14:19:02
 // Resonite version: 2026.3.5.946
 // Resonite Link Version: 0.11.0.0
 // -----------------------------------------------------------------------------
@@ -44,6 +44,7 @@ members.Add("__legacyContent", __legacyContent_Element.ToLinkReference(context))
 public  async System.Threading.Tasks.Task MoveToTop(IConversionContext context)
 {
         var __message = new ResoniteLink.CallSyncMethod();
+        __message.MethodName = "MoveToTop";
 __message.TargetID = context.GetId(this);
                 if(__message.TargetID == null)
                     throw new System.InvalidOperationException("Cannot call sync methods on objects that have not been synced to resonite yet.");
@@ -55,6 +56,7 @@ var result = await context.CallMethod(__message);
 public  async System.Threading.Tasks.Task MoveToBottom(IConversionContext context)
 {
         var __message = new ResoniteLink.CallSyncMethod();
+        __message.MethodName = "MoveToBottom";
 __message.TargetID = context.GetId(this);
                 if(__message.TargetID == null)
                     throw new System.InvalidOperationException("Cannot call sync methods on objects that have not been synced to resonite yet.");
@@ -66,6 +68,7 @@ var result = await context.CallMethod(__message);
 public  async System.Threading.Tasks.Task MoveToLeft(IConversionContext context)
 {
         var __message = new ResoniteLink.CallSyncMethod();
+        __message.MethodName = "MoveToLeft";
 __message.TargetID = context.GetId(this);
                 if(__message.TargetID == null)
                     throw new System.InvalidOperationException("Cannot call sync methods on objects that have not been synced to resonite yet.");
@@ -77,6 +80,7 @@ var result = await context.CallMethod(__message);
 public  async System.Threading.Tasks.Task MoveToRight(IConversionContext context)
 {
         var __message = new ResoniteLink.CallSyncMethod();
+        __message.MethodName = "MoveToRight";
 __message.TargetID = context.GetId(this);
                 if(__message.TargetID == null)
                     throw new System.InvalidOperationException("Cannot call sync methods on objects that have not been synced to resonite yet.");

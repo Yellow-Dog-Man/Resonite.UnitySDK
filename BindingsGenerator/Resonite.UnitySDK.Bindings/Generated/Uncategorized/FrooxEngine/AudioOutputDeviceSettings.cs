@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.AudioOutputDeviceSettings
-// Generated on: čtvrtek 5. března 2026 18:24:58
+// Generated on: pátek 6. března 2026 14:19:07
 // Resonite version: 2026.3.5.946
 // Resonite Link Version: 0.11.0.0
 // -----------------------------------------------------------------------------
@@ -42,6 +42,7 @@ members.Add("StreamingCameraPriorities", StreamingCameraPriorities.ToLinkList(co
 public  async System.Threading.Tasks.Task<global::FrooxEngine.SyncObject> GetDevice(global::System.String key, IConversionContext context)
 {
         var __message = new ResoniteLink.CallSyncMethod();
+        __message.MethodName = "GetDevice";
 __message.TargetID = context.GetId(this);
                 if(__message.TargetID == null)
                     throw new System.InvalidOperationException("Cannot call sync methods on objects that have not been synced to resonite yet.");
@@ -56,6 +57,7 @@ return context.TryResolveId(resultId) as global::FrooxEngine.SyncObject;
 public  async System.Threading.Tasks.Task ForceRefreshDevices(IConversionContext context)
 {
         var __message = new ResoniteLink.CallSyncMethod();
+        __message.MethodName = "ForceRefreshDevices";
 __message.TargetID = context.GetId(this);
                 if(__message.TargetID == null)
                     throw new System.InvalidOperationException("Cannot call sync methods on objects that have not been synced to resonite yet.");
@@ -67,6 +69,7 @@ var result = await context.CallMethod(__message);
 public  async System.Threading.Tasks.Task<global::FrooxEngine.SyncObject> GetStreamingDevice(global::System.String key, IConversionContext context)
 {
         var __message = new ResoniteLink.CallSyncMethod();
+        __message.MethodName = "GetStreamingDevice";
 __message.TargetID = context.GetId(this);
                 if(__message.TargetID == null)
                     throw new System.InvalidOperationException("Cannot call sync methods on objects that have not been synced to resonite yet.");
@@ -81,6 +84,7 @@ return context.TryResolveId(resultId) as global::FrooxEngine.SyncObject;
 public  async System.Threading.Tasks.Task ResetToDefault(IConversionContext context)
 {
         var __message = new ResoniteLink.CallSyncMethod();
+        __message.MethodName = "ResetToDefault";
 __message.TargetID = context.GetId(this);
                 if(__message.TargetID == null)
                     throw new System.InvalidOperationException("Cannot call sync methods on objects that have not been synced to resonite yet.");
