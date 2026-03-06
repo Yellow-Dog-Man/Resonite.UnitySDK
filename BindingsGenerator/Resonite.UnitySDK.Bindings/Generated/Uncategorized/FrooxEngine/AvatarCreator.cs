@@ -2,8 +2,8 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.AvatarCreator
-// Generated on: pátek 6. března 2026 14:19:07
-// Resonite version: 2026.3.5.946
+// Generated on: pátek 6. března 2026 18:29:09
+// Resonite version: 2026.3.6.1071
 // Resonite Link Version: 0.11.0.0
 // -----------------------------------------------------------------------------
 
@@ -106,6 +106,27 @@ members.Add("_scale", _scale_Element.ToLinkField(context));
 members.Add("_protectAvatarEnabled", _protectAvatarEnabled_Element.ToLinkReference(context));
 members.Add("_createEnabled", _createEnabled_Element.ToLinkReference(context));
 }
+public static async System.Threading.Tasks.Task CreateBipedAvatar(global::FrooxEngine.BipedRig biped, global::FrooxEngine.Slot headReference, global::FrooxEngine.Slot leftHandReference, global::FrooxEngine.Slot rightHandReference, global::FrooxEngine.Slot leftFootReference, global::FrooxEngine.Slot rightFootReference, global::FrooxEngine.Slot hipsReference, global::System.Boolean setupEyes, global::System.Boolean setupProtection, global::System.Boolean setupVolumeMeter, global::System.Boolean setupFaceTracking, IConversionContext context)
+{
+        var __message = new ResoniteLink.CallStaticSyncMethod();
+        __message.MethodName = "CreateBipedAvatar";
+__message.TargetType = "[FrooxEngine]FrooxEngine.AvatarCreator";
+__message.Arguments.Add("biped", new ResoniteLink.Data_Reference() { TargetID = context.GetId(biped) });
+__message.Arguments.Add("headReference", new ResoniteLink.Data_Reference() { TargetID = context.GetId(headReference) });
+__message.Arguments.Add("leftHandReference", new ResoniteLink.Data_Reference() { TargetID = context.GetId(leftHandReference) });
+__message.Arguments.Add("rightHandReference", new ResoniteLink.Data_Reference() { TargetID = context.GetId(rightHandReference) });
+__message.Arguments.Add("leftFootReference", new ResoniteLink.Data_Reference() { TargetID = context.GetId(leftFootReference) });
+__message.Arguments.Add("rightFootReference", new ResoniteLink.Data_Reference() { TargetID = context.GetId(rightFootReference) });
+__message.Arguments.Add("hipsReference", new ResoniteLink.Data_Reference() { TargetID = context.GetId(hipsReference) });
+__message.Arguments.Add("setupEyes", setupEyes.ToData());
+__message.Arguments.Add("setupProtection", setupProtection.ToData());
+__message.Arguments.Add("setupVolumeMeter", setupVolumeMeter.ToData());
+__message.Arguments.Add("setupFaceTracking", setupFaceTracking.ToData());
+var result = await context.CallMethod(__message);
+        if(!result.Success)
+            throw new Exception("Error running method: " + result.ErrorInfo);
+}
+
 
 }
 }
