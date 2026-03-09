@@ -17,9 +17,9 @@ public class BipedAvatarDescriptor : MonoBehaviour, IResoniteLinkPostProcessor
     public Transform LeftHandReference;
     public Transform RightHandReference;
 
-    //public Transform LeftFootReference;
-    //public Transform RightFootReference;
-    //public Transform HipsReference;
+    public Transform LeftFootReference;
+    public Transform RightFootReference;
+    public Transform HipsReference;
 
     public bool SetupProtection = true;
     public bool SetupEyes = true;
@@ -48,19 +48,9 @@ public class BipedAvatarDescriptor : MonoBehaviour, IResoniteLinkPostProcessor
         var leftHandSlot = LeftHandReference.GetSlot();
         var rightHandSlot = RightHandReference.GetSlot();
 
-        // Because of Unity's fake null system we have to do it like this ;_;
-        FrooxEngine.Slot leftFootSlot = null;
-        FrooxEngine.Slot rightFootSlot = null;
-        FrooxEngine.Slot hipsSlot = null;
-
-        //if (!UnityEngine.Object.Equals(LeftFootReference, null))
-        //    leftFootSlot = LeftFootReference.GetSlot();
-
-        //if (!UnityEngine.Object.Equals(RightFootReference, null))
-        //    rightFootSlot = RightFootReference.GetSlot();
-
-        //if (!UnityEngine.Object.Equals(HipsReference, null))
-        //    hipsSlot = HipsReference.GetSlot();
+        var leftFootSlot = LeftFootReference.GetSlot();
+        var rightFootSlot = RightFootReference.GetSlot();
+        var hipsSlot = HipsReference.GetSlot();
 
         Task.Run(async () =>
         {

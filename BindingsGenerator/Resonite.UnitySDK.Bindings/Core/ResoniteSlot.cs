@@ -36,7 +36,7 @@ public static class SlotHelper
 {
     public static FrooxEngine.Slot GetSlot(this Transform transform)
     {
-        if (transform is null)
+        if (transform == null)
             return null;
 
         return transform.gameObject.GetSlot();
@@ -44,7 +44,7 @@ public static class SlotHelper
 
     public static FrooxEngine.Slot GetSlot(this GameObject gameObject)
     {
-        if (gameObject is null)
+        if (gameObject == null)
             return null;
 
         var wrapper = gameObject.GetComponent<ResoniteSlot>();
