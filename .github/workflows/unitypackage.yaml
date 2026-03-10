@@ -21,14 +21,14 @@ jobs:
           lfs: 'true'
 
       - name: 'setup Unity'
-        if: steps.cache.outputs.cache-hit != 'true'
         uses: buildalon/unity-setup@v2
+        id: unity-setup
         with:
           unity-version: '6000.3.10f1'
           cache-installation: 'true'
   
       - name: 'Build Package'
-        run: ${{ steps.unity-setup.outputs.unity-editor-path }}/Unity -quit -batchmode -nographics -projectPath $(pwd) -executeMethod ResoniteSDK_Builder.BuildUnityPackage
+        run: ${{ steps.unity-setup.outputs.unity-editor-path }} -quit -batchmode -nographics -projectPath $(pwd) -executeMethod ResoniteSDK_Builder.BuildUnityPackage
   
       - name: 'Upload packages'
         uses: actions/upload-artifact@v7
