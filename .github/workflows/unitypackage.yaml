@@ -13,6 +13,8 @@ jobs:
   make-unitypackage:
     runs-on: ubuntu-latest
 
+    name: 'Build UnityPackage.'
+
     steps:
       - name: 'Checkout repository'
         uses: actions/checkout@v6
