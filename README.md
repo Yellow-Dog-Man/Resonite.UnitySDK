@@ -27,8 +27,34 @@ You can:
 ## How to use
 TO DO!!!
 
+## What if something doesn't convert properly?
+If you run into content that doesn't convert at all or has conversion problems, best way is to make sure it's reported!
+
+1) First, determine determine what type of conversion problem did you run into:
+    - [Materials / Shaders](https://github.com/Yellow-Dog-Man/Resonite.UnitySDK/issues?q=is%3Aissue%20state%3Aopen%20label%3A%22Material%2FShader%20Conversion%22)
+    - [Scene Hierarchy / Components](https://github.com/Yellow-Dog-Man/Resonite.UnitySDK/issues?q=is%3Aissue%20state%3Aopen%20label%3A%22Component%20Conversion%22) (e.g. colliders, properties, behaviors and so on)
+    - [Assets](https://github.com/Yellow-Dog-Man/Resonite.UnitySDK/issues?q=is%3Aissue%20state%3Aopen%20label%3A%22Asset%20Conversion%22) (e.g. garbled/missing meshes, textures not transfering on even supported materials...)
+    - [Something else broke](https://github.com/Yellow-Dog-Man/Resonite.UnitySDK/issues?q=is%3Aissue%20state%3Aopen%20label%3Abug) (general bugs)
+2) Search if there's an existing issue first
+    - You can click the types of conversion problems above to search by type!
+    - It's better to collate conversion problems in one place than making multiple issues for the same one
+    - However even if you do end up making a duplicate, don't fret - we'll handle it
+3) Create new issue / Add information to the existing issue
+    - Give us as much info as you can on what didn't convert properly
+    - Describe what were you trying to convert
+    - Describe what you were expecting in the conversion
+    - Describe what happened instead (e.g. did nothing convert at all, or did something convert incorrectly)
+    - Screenshots / Videos help
+    - If you can share an item (e.g. UnityPackage) of the problematic content - **THIS HELPS TREMENDOUSLY**
+        - You can swap out any assets you don't want to share that are not important. E.g. if shader doesn't convert, provide it with a basic sphere mesh and some public textures
+4) If you're technical user and you have the will to look into the issue yourself and help improve conversion, feel free!
+    - If you manage to improve the conversions or add missing conversion systems, feel free to open a PR to merge your fixes
+    - Please read the "Contributing" section below for more info on how to contribute!
+
 # Contributing
 Contributions to this SDK are welcome! Converting content is a complex task and there and big part of this tool is giving more power to you - the community, to create new workflows and bring more content to Resonite. 
+
+We'll also give shoutouts to contributors in the Update nodes for Resonite itself!
 
 ## Contributing component converters
 - Improving existing converters
