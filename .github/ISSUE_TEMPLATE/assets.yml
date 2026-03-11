@@ -1,5 +1,5 @@
 name: 'Assets'
-description: 'In case an asset is mangled on conversion and other issues touching asset import.'
+description: 'In case an asset is mangled and other issues touching asset conversion.'
 
 labels: ["Asset Conversion"]
 type: bug
@@ -34,7 +34,7 @@ body:
     id: what
     attributes:
       label: 'What were you trying to import?'
-      description: 'Give us some details on which type of asset you were trying to send to Resonite, and how it is used in the scene (through which components, etc).'
+      description: 'Give us some details on which type of asset you were trying to convert, and how it is used in the scene (through which components, etc).'
     validations:
       required: true
 
@@ -50,7 +50,7 @@ body:
     id: issue
     attributes:
       label: 'What happened instead?'
-      description: 'Describe how the import ended up looking. Screenshots are recommended.'
+      description: 'Describe how the conversion ended up looking. Screenshots are recommended.'
     validations:
       required: true
 

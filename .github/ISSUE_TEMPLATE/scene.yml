@@ -33,8 +33,8 @@ body:
   - type: textarea
     id: what
     attributes:
-      label: 'What were you trying to import?'
-      description: 'Give us some details on which type of scene you were trying to import, the components used, if only your particular setup is affected or all other instances, etc.'
+      label: 'What were you trying to convert?'
+      description: 'Give us some details on which type of scene you were trying to convert, the components used, if only your particular setup is affected or all other instances, etc.'
     validations:
       required: true
 
@@ -50,7 +50,7 @@ body:
     id: issue
     attributes:
       label: 'What happened instead?'
-      description: 'Describe how the import ended up looking. Screenshots are recommended.'
+      description: 'Describe how the conversion ended up looking. Screenshots are recommended.'
     validations:
       required: true
 

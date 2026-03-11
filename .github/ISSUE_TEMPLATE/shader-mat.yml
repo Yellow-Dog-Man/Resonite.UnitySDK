@@ -1,5 +1,5 @@
 name: 'Material/Shaders issue'
-description: 'To report issues when importing shaders and/or materials.'
+description: 'To report issues when converting shaders and/or materials.'
 
 labels: ["Material/Shader Conversion"]
 type: bug
@@ -42,7 +42,7 @@ body:
     id: look
     attributes:
       label: 'Screenshots'
-      description: 'Describe how the import looked and how the object is supposed to look like. Screenshots are recommended.'
+      description: 'Describe how the conversion looked and how the object is supposed to look like. Screenshots are recommended.'
     validations:
       required: true
 
