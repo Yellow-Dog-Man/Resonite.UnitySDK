@@ -39,7 +39,7 @@ body:
       required: true
 
   - type: textarea
-    id: issue
+    id: expect
     attributes:
       label: 'What were you expecting?'
       description: 'Describe what you expected to happen. Reference screenshots are recommended.'
@@ -47,7 +47,7 @@ body:
       required: true
 
   - type: textarea
-    id: issue
+    id: instead
     attributes:
       label: 'What happened instead?'
       description: 'Describe how the conversion ended up looking. Screenshots are recommended.'

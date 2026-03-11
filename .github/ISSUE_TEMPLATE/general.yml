@@ -31,7 +31,7 @@ body:
       required: true
 
   - type: textarea
-    id: what
+    id: expect
     attributes:
       label: 'What happened?'
       description: 'Give us some details on what you were trying and what happened.'
@@ -39,7 +39,7 @@ body:
       required: true
 
   - type: textarea
-    id: issue
+    id: instead
     attributes:
       label: 'What were you expecting?'
       description: 'Describe what you expected to happen. Reference screenshots are recommended.'
