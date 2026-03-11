@@ -12,6 +12,9 @@ jobs:
 
     name: 'Build UnityPackage.'
 
+    permissions:
+      contents: write
+
     steps:
       - name: 'Checkout repository'
         uses: actions/checkout@v6

@@ -1,0 +1,63 @@
+name: 'Scene (Hierarchy/Components)'
+description: 'To report issues with the scene itself, EG colliders, properties, behaviours that are unexpected.'
+
+labels: ["Component Conversion"]
+type: bug
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report your issue.
+        Remember to keep the [reporting guidelines](https://github.com/Yellow-Dog-Man/Resonite.UnitySDK?tab=readme-ov-file#what-if-something-doesnt-convert-properly) in mind.
+        Remember to update to the [latest version](github.com/yellow-Dog-Man/resonite.UnitySDK/releases/latest) of the Resonite Unity SDK before reporting a bug.
+
+  - type: input
+    id: version
+    attributes:
+      label: 'SDK version'
+      description: 'Version of the Resonite SDK in use.'
+      placeholder: 'x.x.x'
+    validations:
+      required: true
+
+  - type: input
+    id: version-unity
+    attributes:
+      label: 'Unity version'
+      description: 'Version of Unity in use.'
+      placeholder: '2022.3.62f3'
+    validations:
+      required: true
+
+  - type: textarea
+    id: what
+    attributes:
+      label: 'What were you trying to convert?'
+      description: 'Give us some details on which type of scene you were trying to convert, the components used, if only your particular setup is affected or all other instances, etc.'
+    validations:
+      required: true
+
+  - type: textarea
+    id: issue
+    attributes:
+      label: 'What were you expecting?'
+      description: 'Describe what you expected to happen. Reference screenshots are recommended.'
+    validations:
+      required: true
+
+  - type: textarea
+    id: issue
+    attributes:
+      label: 'What happened instead?'
+      description: 'Describe how the conversion ended up looking. Screenshots are recommended.'
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: 'Reproduction items'
+      description: 'Share any links and/or items that can be used to reproduce the issue. If you cannot share a mesh, you can create a basic sphere or cube mesh and apply the material/shader to it. If you cannot upload the unitypackage as-is, compress it as a ZIP file.'
+    validations:
+      required: false

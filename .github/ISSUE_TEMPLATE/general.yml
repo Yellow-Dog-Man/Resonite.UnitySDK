@@ -1,0 +1,55 @@
+name: 'General'
+description: 'For any other kinds of bugs concerning the SDK itself. This includes, but not limited to, installation issues and general bug during use.'
+
+labels: ["bug"]
+type: bug
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report your issue.
+        Remember to keep the [reporting guidelines](https://github.com/Yellow-Dog-Man/Resonite.UnitySDK?tab=readme-ov-file#what-if-something-doesnt-convert-properly) in mind.
+        Remember to update to the [latest version](github.com/yellow-Dog-Man/resonite.UnitySDK/releases/latest) of the Resonite Unity SDK before reporting a bug.
+
+  - type: input
+    id: version
+    attributes:
+      label: 'SDK version'
+      description: 'Version of the Resonite SDK in use.'
+      placeholder: 'x.x.x'
+    validations:
+      required: true
+
+  - type: input
+    id: version-unity
+    attributes:
+      label: 'Unity version'
+      description: 'Version of Unity in use.'
+      placeholder: '2022.3.62f3'
+    validations:
+      required: true
+
+  - type: textarea
+    id: what
+    attributes:
+      label: 'What happened?'
+      description: 'Give us some details on what you were trying and what happened.'
+    validations:
+      required: true
+
+  - type: textarea
+    id: issue
+    attributes:
+      label: 'What were you expecting?'
+      description: 'Describe what you expected to happen. Reference screenshots are recommended.'
+    validations:
+      required: true
+
+  - type: textarea
+    id: issue
+    attributes:
+      label: 'Logs'
+      description: 'Attach any logs you have about the issue. You can click on the error at the bottom right of the Unity Editor window to obtain those.'
+    validations:
+      required: true
