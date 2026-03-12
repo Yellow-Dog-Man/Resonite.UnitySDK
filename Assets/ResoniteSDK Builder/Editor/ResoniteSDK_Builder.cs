@@ -1,9 +1,7 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEditor;
 using System.IO;
 using System.Linq;
+using UnityEditor;
+using UnityEngine;
 
 public class ResoniteSDK_Builder
 {
