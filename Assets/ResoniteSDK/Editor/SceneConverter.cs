@@ -387,7 +387,7 @@ public class SceneConverter : IConversionContext
         root.GetComponents<UnityEngine.Component>(components);
 
         // Filter out the converters or the converted components, those don't need to be converted!
-        components.RemoveAll(c => c is ResoniteComponentConverter || c is ResoniteComponent);
+        components.RemoveAll(c => c == null || c is ResoniteComponentConverter || c is ResoniteComponent);
 
         // Get converters for all the types we have
         var converters = new Dictionary<UnityEngine.Component, ConverterInfo>();
