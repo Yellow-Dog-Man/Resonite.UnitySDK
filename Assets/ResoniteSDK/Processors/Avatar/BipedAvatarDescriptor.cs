@@ -4,23 +4,27 @@ using UnityEngine;
 
 public class BipedAvatarDescriptor : MonoBehaviour, IConversionPostProcessor
 {
+    const float EYE_SEPARATION = 0.065f; // 65 mm
     const float AXIS_LENGTH = 0.25f;
 
-    public bool IsValid => Biped != null && HeadReference != null && LeftHandReference != null && RightHandReference != null;
+    public bool IsValid => Biped != null && ViewpointReference != null && LeftHandReference != null && RightHandReference != null;
 
     [NonSerialized]
     public bool AvatarConverted;
 
+    [Header("Required References")]
     public Animator Biped;
 
-    public Transform HeadReference;
+    public Transform ViewpointReference;
     public Transform LeftHandReference;
     public Transform RightHandReference;
 
+    [Header("Optional References")]
     public Transform LeftFootReference;
     public Transform RightFootReference;
     public Transform HipsReference;
 
+    [Header("Additional Setup Options")]
     public bool SetupProtection = true;
     public bool SetupEyes = true;
     public bool SetupFaceTracking = true;
@@ -44,7 +48,7 @@ public class BipedAvatarDescriptor : MonoBehaviour, IConversionPostProcessor
             return;
         }
 
-        var headSlot = HeadReference.GetSlot();
+        var headSlot = ViewpointReference.GetSlot();
         var leftHandSlot = LeftHandReference.GetSlot();
         var rightHandSlot = RightHandReference.GetSlot();
 
@@ -67,11 +71,31 @@ public class BipedAvatarDescriptor : MonoBehaviour, IConversionPostProcessor
 
     void OnDrawGizmos()
     {
-        if (HeadReference != null)
+        if (ViewpointReference != null)
         {
+            // We want to ignore the scale of this, so do the transformations
+            var viewPos = ViewpointReference.position;
+            var viewRot = ViewpointReference.rotation;
+
+            Vector3 ComputePoint(Vector3 offset) => viewPos + viewRot * offset;
+
+            // Eyes
+            Gizmos.color = Color.cyan;
+            Gizmos.DrawWireSphere(ComputePoint(Vector3.left * EYE_SEPARATION * 0.5f), 0.025f);
+
+            Gizmos.color = Color.red;
+            Gizmos.DrawWireSphere(ComputePoint(Vector3.right * EYE_SEPARATION * 0.5f), 0.025f);
+
+            // Head
             Gizmos.color = Color.yellow;
-            Gizmos.DrawWireSphere(HeadReference.position, 0.1f);
-            DrawAxes(HeadReference);
+            Gizmos.DrawWireSphere(ComputePoint((Vector3.back + Vector3.down) * 0.05f), 0.1f);
+
+            // View frustum
+            Gizmos.matrix = Matrix4x4.TRS(ViewpointReference.position, ViewpointReference.rotation, Vector3.one);
+            Gizmos.DrawFrustum(Vector3.zero, 90f, 1f, 0.05f, 1f);
+            Gizmos.matrix = Matrix4x4.identity;
+
+            DrawAxes(ViewpointReference);
         }
 
         if (LeftHandReference != null)
@@ -79,16 +103,43 @@ public class BipedAvatarDescriptor : MonoBehaviour, IConversionPostProcessor
 
         if (RightHandReference != null)
             DrawHand(RightHandReference, Color.red);
+
+        if (LeftFootReference != null)
+            DrawFoot(LeftFootReference, Color.cyan);
+
+        if (RightFootReference != null)
+            DrawFoot(RightFootReference, Color.red);
+
+        if(HipsReference != null)
+        {
+            Gizmos.color = Color.magenta;
+            Gizmos.DrawWireSphere(HipsReference.position, 0.1f);
+
+            DrawAxes(HipsReference);
+        }
     }
 
     void DrawHand(Transform transform, Color handColor)
     {
         Gizmos.color = handColor;
-        Gizmos.matrix = Matrix4x4.TRS(transform.position, transform.rotation, Vector3.one);
-        Gizmos.DrawWireCube(Vector3.zero, new Vector3(0.05f, 0.01f, 0.1f));
-        Gizmos.matrix = Matrix4x4.identity;
+        DrawCube(transform, new Vector3(0.05f, 0.02f, 0.1f));
 
         DrawAxes(transform);
+    }
+
+    void DrawFoot(Transform transform, Color footColor)
+    {
+        Gizmos.color = footColor;
+        DrawCube(transform, new Vector3(0.075f, 0.04f, 0.15f));
+
+        DrawAxes(transform);
+    }
+
+    void DrawCube(Transform transform, Vector3 size)
+    {
+        Gizmos.matrix = Matrix4x4.TRS(transform.position, transform.rotation, Vector3.one);
+        Gizmos.DrawWireCube(Vector3.zero, size);
+        Gizmos.matrix = Matrix4x4.identity;
     }
 
     void DrawAxes(Transform transform)

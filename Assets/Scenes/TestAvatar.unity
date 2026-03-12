@@ -147,7 +147,7 @@ Transform:
   m_GameObject: {fileID: 17939856}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 3.07, z: 0}
+  m_LocalPosition: {x: 1.59, y: 3.03, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -356,7 +356,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Biped: {fileID: 2012169808}
-  HeadReference: {fileID: 17939857}
+  ViewpointReference: {fileID: 17939857}
   LeftHandReference: {fileID: 1166925162}
   RightHandReference: {fileID: 588670852}
   LeftFootReference: {fileID: 0}
