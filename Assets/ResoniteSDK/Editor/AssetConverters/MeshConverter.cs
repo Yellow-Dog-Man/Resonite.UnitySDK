@@ -127,7 +127,9 @@ public class MeshConverter : AssetConverter<StaticMeshWrapper, StaticMesh, Unity
             data.BlendShapes.Add(blendshape);
         }
 
-        data.BoneWeightCount = mesh.HasVertexAttribute(UnityEngine.Rendering.VertexAttribute.BlendWeight) ? 4 : 0;
+        var hasBoneWeights = mesh.bindposeCount > 0;
+
+        data.BoneWeightCount = hasBoneWeights ? 4 : 0;
 
         // Convert the vertex data
         data.AllocateBuffer();
