@@ -1,6 +1,4 @@
 using FrooxEngine;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public abstract class StandardBaseConverter<TWrapper, TMaterial> : ResoniteMaterialConverter

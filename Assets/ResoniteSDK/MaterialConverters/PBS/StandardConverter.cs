@@ -1,7 +1,4 @@
 using FrooxEngine;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
 
 [MaterialConverter(false, "Standard")]
 public class StandardConverter : StandardBaseConverter<PBS_MetallicWrapper, PBS_Metallic>

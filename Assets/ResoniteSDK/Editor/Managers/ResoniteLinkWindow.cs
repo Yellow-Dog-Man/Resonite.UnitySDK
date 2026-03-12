@@ -1,13 +1,10 @@
-using System.Collections;
+using ResoniteLink;
+using System;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using UnityEditor;
 using UnityEngine;
-using UnityEngine.UIElements;
-using ResoniteLink;
-using System.Threading.Tasks;
 using UnityEngine.SceneManagement;
-using System.Linq;
-using System;
 
 public class ResoniteLinkWindow : EditorWindow
 {

@@ -1,14 +1,10 @@
 ﻿using FrooxEngine;
 using ResoniteLink;
 using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Runtime.InteropServices;
-using System.Threading.Tasks;
 using System.IO;
+using System.Threading.Tasks;
 using UnityEditor;
 using UnityEngine;
-using Elements.Assets;
 
 public class AudioClipConverter : AssetConverter<StaticAudioClipWrapper, StaticAudioClip, UnityEngine.AudioClip, FrooxEngine.AudioClip>
 {

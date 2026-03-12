@@ -1,6 +1,4 @@
 using FrooxEngine;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 // This converter is intended as an example of how a conversion of custom shaders can work for things that aren't directly

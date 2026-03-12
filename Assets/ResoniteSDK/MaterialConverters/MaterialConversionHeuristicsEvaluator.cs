@@ -1,6 +1,4 @@
-﻿using System;
-
-/// <summary>
+﻿/// <summary>
 /// Determines if given material converter can conver given material and how confident it is in the conversion.
 /// The system will use converter with the highest confidence rate.
 /// </summary>

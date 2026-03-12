@@ -1,14 +1,11 @@
-﻿using FrooxEngine;
+﻿using Elements.Assets;
+using FrooxEngine;
 using ResoniteLink;
 using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Runtime.InteropServices;
-using System.Threading.Tasks;
 using System.IO;
+using System.Threading.Tasks;
 using UnityEditor;
 using UnityEngine;
-using Elements.Assets;
 
 public class Texture2DConverter : AssetConverter<StaticTexture2DWrapper, StaticTexture2D, UnityEngine.Texture2D, FrooxEngine.Texture2D>
 {
