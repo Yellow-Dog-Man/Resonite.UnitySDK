@@ -2,6 +2,7 @@ using System;
 using System.Threading.Tasks;
 using UnityEngine;
 
+[ExecuteInEditMode]
 public class BipedAvatarDescriptor : MonoBehaviour, IConversionPostProcessor
 {
     const float EYE_SEPARATION = 0.065f; // 65 mm
@@ -29,6 +30,38 @@ public class BipedAvatarDescriptor : MonoBehaviour, IConversionPostProcessor
     public bool SetupEyes = true;
     public bool SetupFaceTracking = true;
     public bool SetupVolumeMeter = false;
+
+    [ExecuteInEditMode]
+    void Awake()
+    {
+        // If biped has already been assigned, do not run the auto setup
+        if (Biped != null)
+            return;
+
+        // Try to initialize the biped on attach
+        Biped = GetComponent<Animator>();
+
+        // Initialize references
+        if (ViewpointReference == null && LeftHandReference == null && RightHandReference == null)
+        {
+            var references = new GameObject("References");
+            references.transform.SetParent(transform, false);
+
+            var viewpoint = new GameObject("Viewpoint");
+            viewpoint.transform.SetParent(references.transform, false);
+            ViewpointReference = viewpoint.transform;
+
+            var leftHand = new GameObject("Left Hand");
+            leftHand.transform.SetParent(references.transform, false);
+            LeftHandReference = leftHand.transform;
+
+            var rightHand = new GameObject("Right Hand");
+            rightHand.transform.SetParent(references.transform, false);
+            RightHandReference = rightHand.transform;
+
+            // TODO!!! Try position the references automatically
+        }
+    }
 
     public void PostProcessConversion(IConversionContext context)
     {
