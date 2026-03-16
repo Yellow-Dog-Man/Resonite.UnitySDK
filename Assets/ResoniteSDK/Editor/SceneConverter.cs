@@ -14,9 +14,12 @@ public class SceneConverter : IConversionContext
     public string UniqueSessionId => _window.UniqueSessionId;
     public LinkInterface Link => _window.Link;
 
+    public bool IsCorrupted { get; private set; }
     public bool IsRealtimeModeActive { get; private set; }
 
+    public bool LogMessageJSON => _window.LogMessageJSON;
     public bool ConvertSkybox => _window.ConvertSkybox;
+
     // TODO!!! Move this to a dedicated connection manager so the Window is only managing the UI?
     ResoniteLinkWindow _window;
 
@@ -122,7 +125,7 @@ public class SceneConverter : IConversionContext
         if (texture == null)
             return null;
 
-        switch(texture)
+        switch (texture)
         {
             case UnityEngine.Texture2D texture2D:
                 return (FrooxEngine.IAssetProvider<FrooxEngine.ITexture2D>)GetTexture2D(texture2D);
@@ -238,30 +241,48 @@ public class SceneConverter : IConversionContext
 
     public void Convert(IEnumerable<Transform> roots)
     {
-        _assetConverter.BeginConversion();
+        try
+        {
+            _assetConverter.BeginConversion();
 
-        if (ConvertSkybox)
-            _skybox.ConvertCurrentSkybox(this);
+            if (ConvertSkybox)
+                _skybox.ConvertCurrentSkybox(this);
 
-        // First update all component conversions
-        foreach (var root in roots)
-            UpdateComponentConversions(root);
+            // First update all component conversions
+            foreach (var root in roots)
+                UpdateComponentConversions(root);
 
-        var messages = new List<DataModelOperation>();
+            var messages = new List<DataModelOperation>();
 
-        foreach(var root in roots)
-            ConvertHierarchy(root, messages);
+            foreach (var root in roots)
+                ConvertHierarchy(root, messages);
 
-        // Process any removals after all other stuff has been updated.
-        // This way any transform that were reparented will be in new safe locations
-        ProcessRemovals(messages);
+            // Process any removals after all other stuff has been updated.
+            // This way any transform that were reparented will be in new safe locations
+            ProcessRemovals(messages);
 
-        SendOperationBatch(messages);
+            SendOperationBatch(messages);
 
-        // Post processing
-        foreach (var root in roots)
-            foreach (var postprocessor in root.GetComponentsInChildren<IConversionPostProcessor>())
-                postprocessor.PostProcessConversion(this);
+            // Post processing
+            foreach (var root in roots)
+                foreach (var postprocessor in root.GetComponentsInChildren<IConversionPostProcessor>())
+                    postprocessor.PostProcessConversion(this);
+        }
+        catch (Exception ex)
+        {
+            Debug.LogError($"FATAL ERROR in conversion!" +
+                $"\nThis is likely due to a bug in the SDK, please report this at: https://github.com/Yellow-Dog-Man/Resonite.UnitySDK/issues\n" +
+                $"\n---------------------------------\n" +
+                $"TECHNICAL INFO:\n{ex}");
+
+            // Stop realtime mode if it's active
+            if(IsRealtimeModeActive)
+                StopRealtimeMode();
+
+            // This conversion is now in corrupted state, we can't continue.
+            // This will force reset
+            IsCorrupted = true;
+        }
     }
 
     void SendOperationBatch(List<DataModelOperation> messages)
@@ -302,13 +323,13 @@ public class SceneConverter : IConversionContext
     {
         List<Transform> transformsToRemove = null;
 
-        foreach(var pair in _transformMap)
+        foreach (var pair in _transformMap)
         {
             // I don't like that Unity does it this way, but this is how it checks if it's destroyed
             if (pair.Key != null)
                 continue;
 
-            if(transformsToRemove == null)
+            if (transformsToRemove == null)
                 transformsToRemove = new List<Transform>();
 
             // It's not actually null! It just pretends to be.
@@ -328,7 +349,7 @@ public class SceneConverter : IConversionContext
         List<ResoniteComponent> componentsToRemove = null;
 
         // Do the components next
-        foreach(var component in _existingComponents)
+        foreach (var component in _existingComponents)
         {
             if (component.Key != null)
                 continue;
@@ -353,8 +374,8 @@ public class SceneConverter : IConversionContext
             component.Key.RemoveIDs(this);
         }
 
-        if(componentsToRemove != null)
-            foreach(var remove in componentsToRemove)
+        if (componentsToRemove != null)
+            foreach (var remove in componentsToRemove)
                 _existingComponents.Remove(remove);
     }
 
@@ -366,8 +387,8 @@ public class SceneConverter : IConversionContext
         var converterMap = new Dictionary<UnityEngine.Component, ResoniteComponentConverter>();
 
         // First get all the converters
-        foreach(var component in components)
-            if(component is ResoniteComponentConverter converter)
+        foreach (var component in components)
+            if (component is ResoniteComponentConverter converter)
             {
                 // Check if the target still exists
                 if (converter.Target == null)
@@ -386,7 +407,7 @@ public class SceneConverter : IConversionContext
         // Get converters for all the types we have
         var converters = new Dictionary<UnityEngine.Component, ConverterInfo>();
 
-        foreach(var component in components)
+        foreach (var component in components)
         {
             var converter = ComponentConverterRepository.TryGetConverter(component.GetType());
 
@@ -401,14 +422,14 @@ public class SceneConverter : IConversionContext
             converter.SupressionHandler?.Invoke(root, components);
 
         // Update/instantiate converters for all the components that we should process
-        foreach(var component in components)
+        foreach (var component in components)
         {
             // We might've just destroyed some of the components in previous iterations - e.g. converters
             // can add/remove more components, so skip those just in case
             if (component == null)
-                continue;            
+                continue;
 
-            if(!converterMap.TryGetValue(component, out var converter))
+            if (!converterMap.TryGetValue(component, out var converter))
             {
                 // There's no existing converter for this. Check if one is supported. If not ignore it
                 if (!converters.TryGetValue(component, out var converterInfo))
@@ -421,7 +442,7 @@ public class SceneConverter : IConversionContext
                 converterMap.Add(component, converter);
 
                 // Check if there's defered actions
-                if(_deferedActions.TryGetValue(component, out var list))
+                if (_deferedActions.TryGetValue(component, out var list))
                 {
                     foreach (var action in list)
                         action();
@@ -462,7 +483,7 @@ public class SceneConverter : IConversionContext
 
         var slot = GetLinkSlot(transform);
 
-        if(_existingSlots.Add(transform))
+        if (_existingSlots.Add(transform))
         {
             message = new AddSlot();
             message.MessageID = GetUniqueMessageId($"AddSlot_{transform.name})");
@@ -474,7 +495,7 @@ public class SceneConverter : IConversionContext
         }
 
         GatherTransformData(transform, slot);
-        
+
         message.Data = slot;
 
         messages.Add(message);
@@ -532,7 +553,7 @@ public class SceneConverter : IConversionContext
         {
             var data = c.CollectData(this);
 
-            if(_existingComponents.TryAdd(c, c.transform))
+            if (_existingComponents.TryAdd(c, c.transform))
             {
                 // We just added this component, so we need to generate add component message
 
@@ -587,7 +608,7 @@ public class SceneConverter : IConversionContext
 
         void ObjectChanged(UnityEngine.Object o, bool forceComponentUpdate = false, bool recursive = false)
         {
-            switch(o)
+            switch (o)
             {
                 case Transform transform:
                     TransformUpdated(transform);
@@ -595,7 +616,7 @@ public class SceneConverter : IConversionContext
                     if (forceComponentUpdate)
                         transformsWithChangedComponents.Add(transform);
 
-                    if(recursive)
+                    if (recursive)
                         for (int i = 0; i < transform.childCount; i++)
                             ObjectChanged(transform.GetChild(i), forceComponentUpdate, recursive);
                     break;
@@ -606,7 +627,7 @@ public class SceneConverter : IConversionContext
 
                 case UnityEngine.Component component:
                     ComponentUpdated(component);
-                    break; 
+                    break;
 
                 default:
                     Debug.LogWarning($"Unsupported object changed: {o}");
@@ -654,7 +675,7 @@ public class SceneConverter : IConversionContext
                     // Force an asset update for any assets that have been converted
                     // Ignore everything else - it's not an asset we transferred over yet, so we don't need to bother with it
                     // Once it gets referenced by something, e.g. a component that will ensure conversion happens
-                    switch(changedAsset)
+                    switch (changedAsset)
                     {
                         case UnityEngine.Mesh mesh:
                             if (_assetConverter.HasMesh(mesh))
@@ -719,14 +740,14 @@ public class SceneConverter : IConversionContext
     public void RunOnConverted(UnityEngine.Component component, Action action)
     {
         // Check if it's already converted and run the action right away
-        if(component.GetComponents<ResoniteComponentConverter>().Any(c => c.Target == component))
+        if (component.GetComponents<ResoniteComponentConverter>().Any(c => c.Target == component))
         {
             action();
             return;
-        }    
+        }
 
         // This behavior hasn't been converted yet, so we need to defer this action
-        if(!_deferedActions.TryGetValue(component, out var list))
+        if (!_deferedActions.TryGetValue(component, out var list))
         {
             list = new List<Action>();
             _deferedActions.Add(component, list);

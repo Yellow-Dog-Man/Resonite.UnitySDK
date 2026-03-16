@@ -65,6 +65,9 @@ public class ResoniteLinkWindow : EditorWindow
     string _resoniteLinkVersion;
     string _uniqueSessionId;
 
+    string _lastUniqueSessionId;
+    int _lastPort;
+
     [MenuItem("Resonite SDK/Open Resonite SDK Manager")]
     public static void ShowWindow()
     {
@@ -174,10 +177,33 @@ public class ResoniteLinkWindow : EditorWindow
 
     void EnsureConverter()
     {
+        if(_converter != null)
+        {
+            if(_converter.IsCorrupted)
+            {
+                Debug.Log("Conversion state potentially corrupted due to erorrs. Resetting conversion state");
+                ResetConversionState();
+                return;
+            }
+
+            if (State == ConnectionState.Connected)
+            {
+                if (UniqueSessionId != _lastUniqueSessionId || _lastPort != Port)
+                {
+                    Debug.Log("Connected to a different ResoniteLink session. Resetting conversion state");
+                    ResetConversionState();
+                    return;
+                }
+            }
+        }
+
         if (_converter == null)
             _converter = new SceneConverter();
 
         _converter.EnsureInitialized(this);
+
+        _lastUniqueSessionId = UniqueSessionId;
+        _lastPort = Port;
     }
 
     void SendCurrentScene()
