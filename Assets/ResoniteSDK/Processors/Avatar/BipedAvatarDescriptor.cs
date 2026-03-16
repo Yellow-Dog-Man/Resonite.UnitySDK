@@ -1,3 +1,4 @@
+using ResoniteLink;
 using System;
 using System.Threading.Tasks;
 using UnityEngine;
@@ -59,8 +60,122 @@ public class BipedAvatarDescriptor : MonoBehaviour, IConversionPostProcessor
             rightHand.transform.SetParent(references.transform, false);
             RightHandReference = rightHand.transform;
 
-            // TODO!!! Try position the references automatically
+            TryPositionReferences();
         }
+    }
+
+    void TryPositionReferences()
+    {
+        var avatar = Biped?.avatar;
+
+        if (avatar == null || !avatar.isHuman)
+            return;
+
+        var head = Biped.GetBoneTransform(HumanBodyBones.Head);
+        var leftHand = Biped.GetBoneTransform(HumanBodyBones.LeftHand);
+        var rightHand = Biped.GetBoneTransform(HumanBodyBones.RightHand);
+
+        // Can't do positioning without the head or hands
+        if (head == null || leftHand == null || rightHand == null)
+            return;
+
+        // We can determine the right direction from the hands - going left to right
+        var rightDir = (rightHand.position - leftHand.position).normalized;
+
+        // Assuming the avatar isn't rotated weirdly, which should be relatively same assumption
+        var upDir = Vector3.up;
+
+        // Now we can compute forward direction from this
+        var forwardDir = Vector3.Cross(rightDir, upDir);
+
+        Vector3 centerPoint;
+
+        // Ideally try position based on the eyes
+        var leftEye = Biped.GetBoneTransform(HumanBodyBones.LeftEye);
+        var rightEye = Biped.GetBoneTransform(HumanBodyBones.RightEye);
+
+        if(leftEye != null && rightEye != null)
+        {
+            // Position where the center of the eyes is
+            centerPoint = (leftEye.position + rightEye.position) * 0.5f;
+
+            float forwardOffset = 0.025f;
+
+            // Check if the center point is behind the head - some avatars will have eye bones really far back
+            var eyeDir = centerPoint - head.position;
+            var eyeDot = Vector3.Dot(forwardDir, eyeDir);
+
+            if(eyeDot < 0)
+            {
+                Debug.Log("Eye bones are behind the head. Guesstimating face position");
+
+                // Get distance on XZ plane (ignoring any Y positioning)
+                var dist = Vector2.Distance(new Vector2(centerPoint.x, centerPoint.z), new Vector2(head.position.x, head.position.z));
+
+                // We want to offset the eye position forward by the distance from where eyes are backwards, to the head + a bit extra
+                // This is also a guesstimate to get it roughly where it needs to be
+                // If we did only "dist", then we'd position it at the where the head itself is, but it needs to go past that
+                // towards front of the face
+                forwardOffset += dist * 1.5f;
+            }
+
+            // Position it slightly forward out of the face
+            centerPoint += forwardDir * forwardOffset;
+        }
+        else
+        {
+            Debug.Log("Did not detect eyes. Using guesstimated eye position");
+
+            // Guesstimate the viewpoint position without the eyes
+            // It doesn't need to be perfect - user can adjust the positioning after
+            // We only want to get it roughly where the viewpoint would be
+
+            // This is technically top of the neck typically
+            centerPoint = head.position;
+
+            // Move it up a bit
+            centerPoint += upDir * 0.1f;
+
+            // And forwards a bit
+            centerPoint += forwardDir * 0.05f;
+        }
+
+        ViewpointReference.position = centerPoint;
+        ViewpointReference.rotation = Quaternion.LookRotation(forwardDir, upDir);
+
+        // Guess the arm direction
+        var leftArmBase = Biped.GetBoneTransform(HumanBodyBones.LeftShoulder);
+
+        if (leftArmBase == null)
+            leftArmBase = Biped.GetBoneTransform(HumanBodyBones.LeftUpperArm);
+
+        if (leftArmBase == null)
+            leftArmBase = Biped.GetBoneTransform(HumanBodyBones.Neck);
+
+        if (leftArmBase == null)
+            leftArmBase = head;
+
+        var leftArmForward = (leftHand.position - leftArmBase.position).normalized;
+
+        // Right arm
+        var rightArmBase = Biped.GetBoneTransform(HumanBodyBones.RightShoulder);
+
+        if (rightArmBase == null)
+            rightArmBase = Biped.GetBoneTransform(HumanBodyBones.RightUpperArm);
+
+        if (rightArmBase == null)
+            rightArmBase = Biped.GetBoneTransform(HumanBodyBones.Neck);
+
+        if (rightArmBase == null)
+            rightArmBase = head;
+
+        var rightArmForward = (rightHand.position - rightArmBase.position).normalized;
+
+        LeftHandReference.position = leftHand.position;
+        LeftHandReference.rotation = Quaternion.LookRotation(leftArmForward, Vector3.up);
+
+        RightHandReference.position = rightHand.position;
+        RightHandReference.rotation = Quaternion.LookRotation(rightArmForward, Vector3.up);
     }
 
     public void PostProcessConversion(IConversionContext context)
@@ -121,11 +236,11 @@ public class BipedAvatarDescriptor : MonoBehaviour, IConversionPostProcessor
 
             // Head
             Gizmos.color = Color.yellow;
-            Gizmos.DrawWireSphere(ComputePoint((Vector3.back + Vector3.down) * 0.05f), 0.1f);
+            Gizmos.DrawWireSphere(ComputePoint((Vector3.back + Vector3.down) * 0.035f), 0.075f);
 
             // View frustum
             Gizmos.matrix = Matrix4x4.TRS(ViewpointReference.position, ViewpointReference.rotation, Vector3.one);
-            Gizmos.DrawFrustum(Vector3.zero, 90f, 1f, 0.05f, 1f);
+            Gizmos.DrawFrustum(Vector3.zero, 90f, 1f, 0.01f, 1.25f);
             Gizmos.matrix = Matrix4x4.identity;
 
             DrawAxes(ViewpointReference);
