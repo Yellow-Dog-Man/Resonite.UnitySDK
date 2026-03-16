@@ -1,12 +1,19 @@
+using Codice.Client.BaseCommands;
 using FrooxEngine;
 using ResoniteLink;
 using System;
 using System.Collections.Generic;
+using System.Linq;
+using Unity.VisualScripting.FullSerializer;
 using UnityEditor;
+using UnityEditor.VersionControl;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class AssetConversionManager
 {
+    public const string ASSETS_ROOT_NAME = "__UnityAssets";
+
     public SceneConverter Converter { get; private set; }
     public Transform AssetsRoot { get; private set; }
 
@@ -30,7 +37,62 @@ public class AssetConversionManager
     public AssetConversionManager(SceneConverter converter)
     {
         Converter = converter;
-        AssetsRoot = (new GameObject("Unity Assets")).transform;
+
+        // Check if there's already assets root in the world
+        var roots = SceneManager.GetActiveScene().GetRootGameObjects();
+
+        AssetsRoot = roots.FirstOrDefault(r => r.name == ASSETS_ROOT_NAME)?.transform;
+
+        if(AssetsRoot != null)
+        {
+            // Scan all the existing converters
+            ScanConverters<StaticMesh, StaticMeshWrapper, UnityEngine.Mesh, FrooxEngine.Mesh, MeshConverter>(_meshes);
+            ScanConverters<StaticTexture2D, StaticTexture2DWrapper, UnityEngine.Texture2D, FrooxEngine.Texture2D, Texture2DConverter>(_textures);
+            ScanConverters<StaticCubemap, StaticCubemapWrapper, UnityEngine.Cubemap, FrooxEngine.Cubemap, CubemapConverter>(_cubemaps);
+            ScanConverters<StaticAudioClip, StaticAudioClipWrapper, UnityEngine.AudioClip, FrooxEngine.AudioClip, AudioClipConverter>(_audioClips);
+
+            // Materials are special!
+            ScanMaterials();
+        }
+        else
+            AssetsRoot = (new GameObject(ASSETS_ROOT_NAME)).transform; // Create new root
+    }
+
+    void ScanConverters<TProvider, TWrapper, TUnity, TResonite, TConverter>(Dictionary<TUnity, TConverter> map)
+        where TProvider : FrooxEngine.Component, IAssetProvider<TResonite>, new()
+        where TWrapper : ResoniteComponent<TProvider>
+        where TResonite : FrooxEngine.IAsset
+        where TConverter : AssetConverter<TWrapper, TProvider, TUnity, TResonite>
+        where TUnity : UnityEngine.Object
+    {
+        var converters = AssetsRoot.GetComponentsInChildren<TConverter>();
+
+        foreach (var converter in converters)
+        {
+            if (converter.Source == null || converter.Provider == null)
+            {
+                // TODO!!! Cleanup?
+                continue;
+            }
+
+            map.Add(converter.Source, converter);
+        }
+    }
+
+    void ScanMaterials()
+    {
+        var converters = AssetsRoot.GetComponentsInChildren<ResoniteMaterialConverter>();
+
+        foreach (var converter in converters)
+        {
+            if (converter.Source == null)
+            {
+                // TODO!!! Cleanup?
+                continue;
+            }
+
+            _materials.Add(converter.Source, converter);
+        }
     }
 
     public void BeginConversion()
@@ -139,6 +201,7 @@ public class AssetConversionManager
 
                 // Attach the converter itself
                 converter = (ResoniteMaterialConverter)root.AddComponent(converterType);
+                converter.Source = material;
 
                 // We do want to store the converter across conversions - they will update existing material
                 // in place in most cases, so we don't want to keep making new ones all the time
