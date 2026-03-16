@@ -1,10 +1,13 @@
 using System;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 [Serializable]
 public class SkyboxConverter
 {
+    public const string SKYBOX_ROOT_NAME = "__UnitySkybox";
+
     public GameObject SkyboxRoot;
 
     public FrooxEngine.SkyboxWrapper Skybox;
@@ -18,7 +21,19 @@ public class SkyboxConverter
         if (SkyboxRoot != null)
             return;
 
-        SkyboxRoot = Skybox?.gameObject ?? AmbientLight?.gameObject ?? ReflectionProbe?.gameObject ?? new GameObject("Unity Skybox");
+        // Try to get the root from the current components if they exist
+        SkyboxRoot = Skybox?.gameObject ?? AmbientLight?.gameObject ?? ReflectionProbe?.gameObject;
+
+        if(SkyboxRoot == null)
+        {
+            // Try to find it in the scene
+            var roots = SceneManager.GetActiveScene().GetRootGameObjects();
+            SkyboxRoot = roots.FirstOrDefault(r => r.name == SKYBOX_ROOT_NAME);
+        }
+
+        // All failed, make one
+        if(SkyboxRoot == null)
+            SkyboxRoot = new GameObject(SKYBOX_ROOT_NAME);
     }
 
     // TODO!!! Handle different types of ambient light for conversion
@@ -69,17 +84,7 @@ public class SkyboxConverter
         if (component != null)
             return;
 
-        // First ensure we have instantiated the skybox component
-        // Try to find skybox first and use that
-        var roots = SceneManager.GetActiveScene().GetRootGameObjects();
-
-        foreach (var root in roots)
-        {
-            component = root.GetComponentInChildren<T>();
-
-            if (component != null)
-                break;
-        }
+        component = SkyboxRoot.GetComponent<T>();
 
         if (component == null)
             component = SkyboxRoot.AddComponent<T>();
