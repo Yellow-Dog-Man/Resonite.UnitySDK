@@ -19,8 +19,8 @@ public static class MeshColliderHelper
 
     public static void SetFrom(this FrooxEngine.ConvexHullCollider resonite, UnityEngine.MeshCollider unity, IConversionContext context)
     {
-        if (unity.convex)
-            throw new System.InvalidOperationException($"Unity mesh collider is convex. You need to use ConvexHullCollider instead");
+        if (!unity.convex)
+            throw new System.InvalidOperationException($"Unity mesh collider is not convex. You need to use MeshCollider instead");
 
         // Set the base data
         resonite.SetFrom((UnityEngine.Collider)unity);
