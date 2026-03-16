@@ -18,6 +18,7 @@ public class ResoniteLinkWindow : EditorWindow
     {
         Disconnected,
         Connecting,
+        Initializing,
         Connected,
     }
 
@@ -32,7 +33,12 @@ public class ResoniteLinkWindow : EditorWindow
             if(_linkInterface != null)
             {
                 if (_linkInterface.IsConnected)
-                    return ConnectionState.Connected;
+                {
+                    if (_uniqueSessionId == null)
+                        return ConnectionState.Initializing;
+                    else
+                        return ConnectionState.Connected;
+                }
                 else if (_connecting)
                     return ConnectionState.Connecting;
             }
@@ -142,7 +148,7 @@ public class ResoniteLinkWindow : EditorWindow
 
         GUI.enabled = State == ConnectionState.Connected;
 
-        if (!_converter.IsRealtimeModeActive)
+        if (!(_converter?.IsRealtimeModeActive ?? false))
         {
             if (GUILayout.Button("Start Realtime Mode"))
                 StartRealtimeMode();
@@ -177,6 +183,9 @@ public class ResoniteLinkWindow : EditorWindow
 
     void EnsureConverter()
     {
+        if (State != ConnectionState.Connected)
+            return;
+
         if(_converter != null)
         {
             if(_converter.IsCorrupted)
@@ -186,16 +195,13 @@ public class ResoniteLinkWindow : EditorWindow
                 return;
             }
 
-            if (State == ConnectionState.Connected)
+            if (UniqueSessionId != _lastUniqueSessionId || _lastPort != Port)
             {
-                if (UniqueSessionId != _lastUniqueSessionId || _lastPort != Port)
-                {
-                    Debug.Log("Connected to a different ResoniteLink session. Resetting conversion state.\n" +
-                        $"PrevID: {_lastUniqueSessionId}, NewID: {UniqueSessionId}, PrevPort: {_lastPort}, NewPort: {Port}");
+                Debug.Log("Connected to a different ResoniteLink session. Resetting conversion state.\n" +
+                    $"PrevID: {_lastUniqueSessionId}, NewID: {UniqueSessionId}, PrevPort: {_lastPort}, NewPort: {Port}");
 
-                    ResetConversionState();
-                    return;
-                }
+                ResetConversionState();
+                return;
             }
         }
 
@@ -313,6 +319,7 @@ public class ResoniteLinkWindow : EditorWindow
     {
         ConnectionState.Disconnected => "Connect",
         ConnectionState.Connecting => "Connecting...",
+        ConnectionState.Initializing => "Initializing...",
         ConnectionState.Connected => "Disconnect",
     };
 
@@ -320,6 +327,7 @@ public class ResoniteLinkWindow : EditorWindow
     {
         ConnectionState.Disconnected => "Disconnected",
         ConnectionState.Connecting => $"Connecting to port {Port}...",
+        ConnectionState.Initializing => $"Initializing session...",
         ConnectionState.Connected => $"Connected on port {Port} (Resonite: {_resoniteVersion})"
     };
 }
