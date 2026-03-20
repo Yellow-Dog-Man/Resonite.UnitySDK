@@ -40,6 +40,11 @@ Video tutorial:
 
 [![Resonite SDK for Unity Editor](https://img.youtube.com/vi/lRGDnu9OeSs/0.jpg)](https://www.youtube.com/watch?v=lRGDnu9OeSs)
 
+> [!IMPORTANT]
+> If you are installing a new version of the Unity SDK to a project containing older version **delete the older version first!** Otherwise some old files can cause conflicts and errors.
+> 
+> In order words: **Delete old ResoniteSDK in your project before importing a new one**
+
 1) Go to [Releases](https://github.com/Yellow-Dog-Man/Resonite.UnitySDK/releases)
 2) Download ResoniteSDK.unitypackage for the latest release
     - Note: We'll likely switch to Unity Package Manager soon(ish)
