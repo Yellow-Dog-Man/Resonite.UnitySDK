@@ -1,4 +1,4 @@
-using ResoniteLink;
+﻿using ResoniteLink;
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
@@ -95,6 +95,11 @@ public class ResoniteLinkWindow : EditorWindow
         EnsureConverter();
 
         var connectionMethodNames = Enum.GetNames(typeof(ConnectionMethod));
+
+        GUILayout.Label($"⚠️ CAUTION!!! ⚠️\n\n" +
+            $"The SDK is currently in beta and missing a lot of converters.\n" +
+            $"If you want a smooth experience, consider giving it a few more weeks until we remove this notice.\n\n" +
+            $"Before installing a new version of the SDK, please delete the ResoniteSDK folder first!");
 
         GUI.enabled = State == ConnectionState.Disconnected;
 
