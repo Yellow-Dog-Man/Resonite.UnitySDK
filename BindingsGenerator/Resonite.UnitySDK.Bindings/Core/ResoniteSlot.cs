@@ -25,8 +25,13 @@ public class ResoniteSlot : MonoBehaviour
     public FrooxEngine.Slot Data = new FrooxEngine.Slot();
 
     [ExecuteInEditMode]
-    private void Awake()
+    private void Awake() => EnsureInitialized();
+
+    public void EnsureInitialized()
     {
+        if (Data.Wrapper != null)
+            return;
+
         Data.Wrapper = this;
         Data.Transform = this.transform;
     }
@@ -51,6 +56,8 @@ public static class SlotHelper
 
         if (wrapper == null)
             wrapper = gameObject.AddComponent<ResoniteSlot>();
+
+        wrapper.EnsureInitialized();
 
         return wrapper.Data;
     }
