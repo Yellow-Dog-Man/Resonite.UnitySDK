@@ -12,6 +12,19 @@ body:
         Remember to keep the [reporting guidelines](https://github.com/Yellow-Dog-Man/Resonite.UnitySDK?tab=readme-ov-file#what-if-something-doesnt-convert-properly) in mind.
         Remember to update to the [latest version](github.com/yellow-Dog-Man/resonite.UnitySDK/releases/latest) of the Resonite Unity SDK before reporting a bug.
 
+  - type: dropdown
+    id: asset-type
+    attributes:
+      label: 'Asset Type'
+      description: 'What asset type failed to convert? **IMPORTANT:** If what failed to convert is not in this list, then you're using wrong issue type. Please use a different issue!'
+      options:
+        - 'Mesh'
+        - 'Texture2D'
+        - 'Texture3D'
+        - 'Audio Clip'
+    validations:
+      required: true
+
   - type: input
     id: version
     attributes:
