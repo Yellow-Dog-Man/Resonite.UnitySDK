@@ -13,14 +13,14 @@ body:
         Remember to update to the [latest version](github.com/yellow-Dog-Man/resonite.UnitySDK/releases/latest) of the Resonite Unity SDK before reporting a bug.
 
   - type: dropdown
+    id: asset-type
     attributes:
-      label: 'Asset Type'
-      description: 'What asset type failed to convert? **IMPORTANT:** If what failed to convert is not in this list, then you're using wrong issue type. Please use a different issue!'
+      label: 'I tested the issue **without** mods.'
+      description: 'Did you test the issue without any mods to make sure it is not caused by those.'
       options:
-        - 'Mesh'
-        - 'Texture2D'
-        - 'Texture3D'
-        - 'Audio Clip'
+        - 'Yes'
+        - 'No'
+      default: 0
     validations:
       required: true
 
