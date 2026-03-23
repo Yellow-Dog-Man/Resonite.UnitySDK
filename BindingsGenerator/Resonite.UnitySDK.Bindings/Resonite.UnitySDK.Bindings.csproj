@@ -42,4 +42,8 @@
     </Compile>
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Extensions\StaticAssets\" />
+  </ItemGroup>
+
 </Project>
