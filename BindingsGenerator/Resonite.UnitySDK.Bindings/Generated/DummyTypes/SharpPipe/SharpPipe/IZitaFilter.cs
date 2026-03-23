@@ -2,9 +2,9 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [SharpPipe]SharpPipe.IZitaFilter
-// Generated on: pátek 6. března 2026 14:18:06
-// Resonite version: 2026.3.5.946
-// Resonite Link Version: 0.11.0.0
+// Generated on: pondělí 23. března 2026 19:22:59
+// Resonite version: 2026.3.17.21
+// Resonite Link Version: 0.13.0.0
 // -----------------------------------------------------------------------------
 
 using UnityEngine;
@@ -17,7 +17,7 @@ namespace SharpPipe
 {
     
 [ResoniteTypeName("[SharpPipe]SharpPipe.IZitaFilter")]
-public interface IZitaFilter 
+public partial interface IZitaFilter 
 
 {
     // Dummy class, there's no body
