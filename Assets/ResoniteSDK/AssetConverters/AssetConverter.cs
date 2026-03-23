@@ -84,6 +84,15 @@ public abstract class AssetConverter<TWrapper, TProvider, TUnity, TResonite> : A
         Provider.Data.persistent = true;
     }
 
+    public override bool HasAssetChanged()
+    {
+        // If the URL is missing, it needs to be converted again
+        if (Provider.Data is IStaticAssetProvider staticProvider && staticProvider.URL == null)
+            return true;
+
+        return base.HasAssetChanged();
+    }
+
     protected override ulong GetAssetTimestamp()
     {
         var assetPath = AssetDatabase.GetAssetPath(Source);
