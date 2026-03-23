@@ -17,7 +17,7 @@ namespace FrooxEngine
 {
     
 [ResoniteTypeName("[FrooxEngine]FrooxEngine.IStaticAssetProvider")]
-public interface IStaticAssetProvider : global::FrooxEngine.IAssetProvider, global::FrooxEngine.IComponent, global::FrooxEngine.IComponentBase, global::FrooxEngine.IDestroyable, global::FrooxEngine.IWorker, global::FrooxEngine.IWorldElement, global::FrooxEngine.IUpdatable, global::FrooxEngine.IChangeable, global::FrooxEngine.ILinkable
+public partial interface IStaticAssetProvider : global::FrooxEngine.IAssetProvider, global::FrooxEngine.IComponent, global::FrooxEngine.IComponentBase, global::FrooxEngine.IDestroyable, global::FrooxEngine.IWorker, global::FrooxEngine.IWorldElement, global::FrooxEngine.IUpdatable, global::FrooxEngine.IChangeable, global::FrooxEngine.ILinkable
 
 {
     // Dummy class, there's no body

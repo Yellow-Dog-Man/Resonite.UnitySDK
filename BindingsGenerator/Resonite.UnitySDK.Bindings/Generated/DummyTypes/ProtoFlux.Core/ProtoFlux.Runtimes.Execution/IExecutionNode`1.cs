@@ -2,9 +2,9 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [ProtoFlux.Core]ProtoFlux.Runtimes.Execution.IExecutionNode<>
-// Generated on: pátek 6. března 2026 14:18:10
-// Resonite version: 2026.3.5.946
-// Resonite Link Version: 0.11.0.0
+// Generated on: pondělí 23. března 2026 19:23:03
+// Resonite version: 2026.3.17.21
+// Resonite Link Version: 0.13.0.0
 // -----------------------------------------------------------------------------
 
 using UnityEngine;
@@ -17,7 +17,7 @@ namespace ProtoFlux.Runtimes.Execution
 {
     
 [ResoniteTypeName("[ProtoFlux.Core]ProtoFlux.Runtimes.Execution.IExecutionNode<>")]
-public interface IExecutionNode<C> : global::ProtoFlux.Runtimes.Execution.IExecutionNode, global::ProtoFlux.Core.INode
+public partial interface IExecutionNode<C> : global::ProtoFlux.Runtimes.Execution.IExecutionNode, global::ProtoFlux.Core.INode
 	where C : global::ProtoFlux.Runtimes.Execution.ExecutionContext
 
 {

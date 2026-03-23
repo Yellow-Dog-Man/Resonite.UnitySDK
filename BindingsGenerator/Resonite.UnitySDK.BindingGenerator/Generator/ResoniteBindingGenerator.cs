@@ -519,7 +519,7 @@ public partial class ResoniteBindingGenerator
         string declarationType;
 
         if (type.IsInterface)
-            declarationType = "interface";
+            declarationType = "partial interface";
         else if (type.IsEnum)
             declarationType = "enum";
         else if (type.IsValueType)

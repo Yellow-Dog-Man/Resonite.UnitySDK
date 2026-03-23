@@ -2,9 +2,9 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.IRenderSettingsSource
-// Generated on: pátek 6. března 2026 14:18:35
-// Resonite version: 2026.3.5.946
-// Resonite Link Version: 0.11.0.0
+// Generated on: pondělí 23. března 2026 19:23:17
+// Resonite version: 2026.3.17.21
+// Resonite Link Version: 0.13.0.0
 // -----------------------------------------------------------------------------
 
 using UnityEngine;
@@ -17,7 +17,7 @@ namespace FrooxEngine
 {
     
 [ResoniteTypeName("[FrooxEngine]FrooxEngine.IRenderSettingsSource")]
-public interface IRenderSettingsSource : global::FrooxEngine.IWorker, global::FrooxEngine.IWorldElement
+public partial interface IRenderSettingsSource : global::FrooxEngine.IWorker, global::FrooxEngine.IWorldElement
 
 {
     // Dummy class, there's no body

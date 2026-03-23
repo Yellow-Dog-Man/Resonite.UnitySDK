@@ -2,9 +2,9 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.ISkyboxMaterial
-// Generated on: pátek 6. března 2026 14:18:04
-// Resonite version: 2026.3.5.946
-// Resonite Link Version: 0.11.0.0
+// Generated on: pondělí 23. března 2026 19:22:56
+// Resonite version: 2026.3.17.21
+// Resonite Link Version: 0.13.0.0
 // -----------------------------------------------------------------------------
 
 using UnityEngine;
@@ -17,7 +17,7 @@ namespace FrooxEngine
 {
     
 [ResoniteTypeName("[FrooxEngine]FrooxEngine.ISkyboxMaterial")]
-public interface ISkyboxMaterial : global::FrooxEngine.IAssetProvider<global::FrooxEngine.Material>, global::FrooxEngine.IAssetProvider, global::FrooxEngine.IComponent, global::FrooxEngine.IComponentBase, global::FrooxEngine.IDestroyable, global::FrooxEngine.IWorker, global::FrooxEngine.IWorldElement, global::FrooxEngine.IUpdatable, global::FrooxEngine.IChangeable, global::FrooxEngine.ILinkable
+public partial interface ISkyboxMaterial : global::FrooxEngine.IAssetProvider<global::FrooxEngine.Material>, global::FrooxEngine.IAssetProvider, global::FrooxEngine.IComponent, global::FrooxEngine.IComponentBase, global::FrooxEngine.IDestroyable, global::FrooxEngine.IWorker, global::FrooxEngine.IWorldElement, global::FrooxEngine.IUpdatable, global::FrooxEngine.IChangeable, global::FrooxEngine.ILinkable
 
 {
     // Dummy class, there's no body

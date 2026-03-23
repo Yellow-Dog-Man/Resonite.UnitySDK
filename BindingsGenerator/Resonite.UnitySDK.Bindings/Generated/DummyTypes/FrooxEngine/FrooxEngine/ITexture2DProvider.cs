@@ -2,9 +2,9 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.ITexture2DProvider
-// Generated on: pátek 6. března 2026 14:18:02
-// Resonite version: 2026.3.5.946
-// Resonite Link Version: 0.11.0.0
+// Generated on: pondělí 23. března 2026 19:22:55
+// Resonite version: 2026.3.17.21
+// Resonite Link Version: 0.13.0.0
 // -----------------------------------------------------------------------------
 
 using UnityEngine;
@@ -17,7 +17,7 @@ namespace FrooxEngine
 {
     
 [ResoniteTypeName("[FrooxEngine]FrooxEngine.ITexture2DProvider")]
-public interface ITexture2DProvider : global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D>, global::FrooxEngine.IAssetProvider, global::FrooxEngine.IComponent, global::FrooxEngine.IComponentBase, global::FrooxEngine.IDestroyable, global::FrooxEngine.IWorker, global::FrooxEngine.IWorldElement, global::FrooxEngine.IUpdatable, global::FrooxEngine.IChangeable, global::FrooxEngine.ILinkable, global::FrooxEngine.ITextureProvider, global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture>
+public partial interface ITexture2DProvider : global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture2D>, global::FrooxEngine.IAssetProvider, global::FrooxEngine.IComponent, global::FrooxEngine.IComponentBase, global::FrooxEngine.IDestroyable, global::FrooxEngine.IWorker, global::FrooxEngine.IWorldElement, global::FrooxEngine.IUpdatable, global::FrooxEngine.IChangeable, global::FrooxEngine.ILinkable, global::FrooxEngine.ITextureProvider, global::FrooxEngine.IAssetProvider<global::FrooxEngine.ITexture>
 
 {
     // Dummy class, there's no body
