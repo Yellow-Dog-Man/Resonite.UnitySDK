@@ -22,7 +22,6 @@ body:
         - 'Texture2D'
         - 'Texture3D'
         - 'Audio Clip'
-      default: 0
     validations:
       required: true
 
