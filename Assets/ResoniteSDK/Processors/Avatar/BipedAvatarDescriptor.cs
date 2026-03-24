@@ -55,12 +55,31 @@ public class BipedAvatarDescriptor : MonoBehaviour, IConversionPostProcessor
             leftHand.transform.SetParent(references.transform, false);
             LeftHandReference = leftHand.transform;
 
+            SetupAnchors(LeftHandReference);
+
             var rightHand = new GameObject("Right Hand");
             rightHand.transform.SetParent(references.transform, false);
             RightHandReference = rightHand.transform;
 
+            SetupAnchors(RightHandReference);
+
             TryPositionReferences();
         }
+    }
+
+    void SetupAnchors(Transform root)
+    {
+        var tooltip = new GameObject("Tooltip");
+        tooltip.transform.SetParent(root, false);
+        tooltip.transform.localPosition = new Vector3(0, 0, 0.15f);
+
+        var grabber = new GameObject("Grabber");
+        grabber.transform.SetParent(root, false);
+        grabber.transform.localPosition = new Vector3(0, -0.02f, 0.05f);
+
+        var shelf = new GameObject("Shelf");
+        shelf.transform.SetParent(root, false);
+        shelf.transform.localPosition = new Vector3(0, 0.02f, 0.02f);
     }
 
     void TryPositionReferences()
@@ -285,6 +304,34 @@ public class BipedAvatarDescriptor : MonoBehaviour, IConversionPostProcessor
         DrawCube(transform, new Vector3(0.015f, 0.015f, 0.04f), new Vector3(-0.025f * sideMul, 0f, 0.01f), Quaternion.AngleAxis(-45f * sideMul, Vector3.up));
         
         DrawAxes(transform);
+
+        // Draw anchors
+        var tooltip = transform.Find("Tooltip");
+
+        if(tooltip != null)
+        {
+            Gizmos.color = new Color(1f, 0f, 1f);
+            Gizmos.DrawLine(tooltip.position, tooltip.position + tooltip.forward * 0.05f);
+            Gizmos.DrawSphere(tooltip.position, 0.01f);
+        }
+
+        var grabber = transform.Find("Grabber");
+
+        if(grabber != null)
+        {
+            Gizmos.color = new Color(0.5f, 0f, 1f);
+            Gizmos.DrawWireSphere(grabber.position, 0.05f);
+        }
+
+        var shelf = transform.Find("Shelf");
+
+        if(shelf != null)
+        {
+            Gizmos.color = new Color(0.75f, 0f, 1f);
+            Gizmos.matrix = Matrix4x4.TRS(shelf.position, shelf.rotation, Vector3.one);
+            Gizmos.DrawWireCube(Vector3.zero, new Vector3(0.02f, 0.0025f, 0.04f));
+            Gizmos.matrix = Matrix4x4.identity;
+        }
     }
 
     void DrawFoot(Transform transform, Color footColor)
