@@ -16,6 +16,14 @@ public class ResoniteAvatarSetupWizard : EditorWindow
     [SerializeField] Vector3 _viewpointOffset;
     [SerializeField] Vector2 _scrollPosition;
     [SerializeField] bool _showOptionalRefs;
+    [SerializeField] bool _showEditVisuals = true;
+    [SerializeField] bool _showViewpointVisual = true;
+    [SerializeField] bool _showLeftFootVisual = true;
+    [SerializeField] bool _showRightFootVisual = true;
+    [SerializeField] bool _showHipsVisual = true;
+    [SerializeField] bool _showTooltipVisual = true;
+    [SerializeField] bool _showGrabberVisual = true;
+    [SerializeField] bool _showShelfVisual = true;
 
     [MenuItem("Resonite SDK/Avatar Setup Wizard")]
     public static void ShowWindow()
@@ -56,6 +64,7 @@ public class ResoniteAvatarSetupWizard : EditorWindow
             DrawOptionalReferencesSection(humanoidAnimator);
             DrawSetupOptionsSection();
             DrawToolAnchorSection(avatarDescriptor);
+            DrawEditVisualsSection();
         }
 
         EditorGUILayout.Space(10);
@@ -70,11 +79,30 @@ public class ResoniteAvatarSetupWizard : EditorWindow
             return;
 
         var avatarDescriptor = _avatarRoot.GetComponent<BipedAvatarDescriptor>();
-        if (avatarDescriptor == null || avatarDescriptor.ViewpointReference == null)
+        if (avatarDescriptor == null)
             return;
 
-        var viewpointTransform = avatarDescriptor.ViewpointReference;
+        if (_showViewpointVisual && avatarDescriptor.ViewpointReference != null)
+            DrawViewpointGizmo(avatarDescriptor.ViewpointReference);
 
+        if (_showLeftFootVisual && avatarDescriptor.LeftFootReference != null)
+            DrawFootGizmo(avatarDescriptor.LeftFootReference, "Left Foot", Color.cyan);
+
+        if (_showRightFootVisual && avatarDescriptor.RightFootReference != null)
+            DrawFootGizmo(avatarDescriptor.RightFootReference, "Right Foot", new Color(1f, 0.4f, 0.4f));
+
+        if (_showHipsVisual && avatarDescriptor.HipsReference != null)
+            DrawHipsGizmo(avatarDescriptor.HipsReference);
+
+        if (avatarDescriptor.LeftHandReference != null)
+            DrawHandAnchorsGizmo(avatarDescriptor.LeftHandReference, "L");
+
+        if (avatarDescriptor.RightHandReference != null)
+            DrawHandAnchorsGizmo(avatarDescriptor.RightHandReference, "R");
+    }
+
+    void DrawViewpointGizmo(Transform viewpointTransform)
+    {
         EditorGUI.BeginChangeCheck();
         var draggedPosition = Handles.PositionHandle(viewpointTransform.position, viewpointTransform.rotation);
 
@@ -86,20 +114,96 @@ public class ResoniteAvatarSetupWizard : EditorWindow
             Repaint();
         }
 
-        var viewpointWorldPosition = viewpointTransform.position;
-        var viewpointWorldRotation = viewpointTransform.rotation;
-        float eyeSeparationMeters = 0.065f;
+        var pos = viewpointTransform.position;
+        var rot = viewpointTransform.rotation;
+        float eyeSeparation = 0.065f;
 
         Handles.color = Color.cyan;
-        Handles.SphereHandleCap(0, viewpointWorldPosition + viewpointWorldRotation * Vector3.left * eyeSeparationMeters * 0.5f, Quaternion.identity, 0.02f, EventType.Repaint);
+        Handles.SphereHandleCap(0, pos + rot * Vector3.left * eyeSeparation * 0.5f, Quaternion.identity, 0.02f, EventType.Repaint);
         Handles.color = Color.red;
-        Handles.SphereHandleCap(0, viewpointWorldPosition + viewpointWorldRotation * Vector3.right * eyeSeparationMeters * 0.5f, Quaternion.identity, 0.02f, EventType.Repaint);
+        Handles.SphereHandleCap(0, pos + rot * Vector3.right * eyeSeparation * 0.5f, Quaternion.identity, 0.02f, EventType.Repaint);
 
         Handles.color = Color.blue;
-        Handles.DrawLine(viewpointWorldPosition, viewpointWorldPosition + viewpointWorldRotation * Vector3.forward * 0.15f);
+        Handles.DrawLine(pos, pos + rot * Vector3.forward * 0.15f);
 
         Handles.color = Color.white;
-        Handles.Label(viewpointWorldPosition + Vector3.up * 0.05f, "Viewpoint");
+        Handles.Label(pos + Vector3.up * 0.05f, "Viewpoint");
+    }
+
+    void DrawFootGizmo(Transform footTransform, string label, Color color)
+    {
+        var pos = footTransform.position;
+        var rot = footTransform.rotation;
+
+        Handles.color = color;
+        Handles.matrix = Matrix4x4.TRS(pos + rot * Vector3.forward * 0.06f, rot, Vector3.one);
+        Handles.DrawWireCube(Vector3.zero, new Vector3(0.075f, 0.04f, 0.15f));
+        Handles.matrix = Matrix4x4.identity;
+
+        DrawAxisLines(pos, rot, 0.1f);
+
+        Handles.color = Color.white;
+        Handles.Label(pos + Vector3.up * 0.05f, label);
+    }
+
+    void DrawHipsGizmo(Transform hipsTransform)
+    {
+        var pos = hipsTransform.position;
+        var rot = hipsTransform.rotation;
+
+        Handles.color = Color.magenta;
+        Handles.DrawWireDisc(pos, rot * Vector3.up, 0.1f);
+        Handles.DrawWireDisc(pos, rot * Vector3.forward, 0.1f);
+
+        DrawAxisLines(pos, rot, 0.15f);
+
+        Handles.color = Color.white;
+        Handles.Label(pos + Vector3.up * 0.12f, "Hips");
+    }
+
+    void DrawHandAnchorsGizmo(Transform handReference, string side)
+    {
+        var tooltip = handReference.Find("Tooltip");
+        if (_showTooltipVisual && tooltip != null)
+        {
+            Handles.color = new Color(1f, 0f, 1f);
+            Handles.SphereHandleCap(0, tooltip.position, Quaternion.identity, 0.015f, EventType.Repaint);
+            Handles.DrawLine(tooltip.position, tooltip.position + tooltip.forward * 0.05f);
+            Handles.color = Color.white;
+            Handles.Label(tooltip.position + Vector3.up * 0.02f, side + " Tooltip");
+        }
+
+        var grabber = handReference.Find("Grabber");
+        if (_showGrabberVisual && grabber != null)
+        {
+            Handles.color = new Color(0.5f, 0f, 1f, 0.6f);
+            Handles.DrawWireDisc(grabber.position, grabber.up, 0.04f);
+            Handles.DrawWireDisc(grabber.position, grabber.forward, 0.04f);
+            Handles.DrawWireDisc(grabber.position, grabber.right, 0.04f);
+            Handles.color = Color.white;
+            Handles.Label(grabber.position + Vector3.up * 0.05f, side + " Grabber");
+        }
+
+        var shelf = handReference.Find("Shelf");
+        if (_showShelfVisual && shelf != null)
+        {
+            Handles.color = new Color(0.75f, 0f, 1f);
+            Handles.matrix = Matrix4x4.TRS(shelf.position, shelf.rotation, Vector3.one);
+            Handles.DrawWireCube(Vector3.zero, new Vector3(0.02f, 0.003f, 0.04f));
+            Handles.matrix = Matrix4x4.identity;
+            Handles.color = Color.white;
+            Handles.Label(shelf.position + Vector3.up * 0.02f, side + " Shelf");
+        }
+    }
+
+    void DrawAxisLines(Vector3 position, Quaternion rotation, float length)
+    {
+        Handles.color = Color.blue;
+        Handles.DrawLine(position, position + rotation * Vector3.forward * length);
+        Handles.color = Color.green;
+        Handles.DrawLine(position, position + rotation * Vector3.up * length);
+        Handles.color = Color.red;
+        Handles.DrawLine(position, position + rotation * Vector3.right * length);
     }
 
     void DrawAvatarRootSection()
@@ -225,14 +329,51 @@ public class ResoniteAvatarSetupWizard : EditorWindow
 
     void DrawToolAnchorSection(BipedAvatarDescriptor avatarDescriptor)
     {
-        var humanoidAnimator = GetValidHumanoidAnimator();
-        if (humanoidAnimator == null || avatarDescriptor == null) return;
+        if (avatarDescriptor == null) return;
         if (avatarDescriptor.LeftHandReference == null && avatarDescriptor.RightHandReference == null) return;
 
         EditorGUILayout.LabelField("Tool Anchors", EditorStyles.boldLabel);
 
         if (GUILayout.Button("Try Auto Setup Tool Anchors"))
-            PositionToolAnchorsFromFingerBones(humanoidAnimator, avatarDescriptor);
+        {
+            Undo.SetCurrentGroupName("Try Auto Setup Tool Anchors");
+            int undoGroup = Undo.GetCurrentGroup();
+
+            if (avatarDescriptor.LeftHandReference != null)
+                Undo.RecordObject(avatarDescriptor.LeftHandReference, "Position Left Tool Anchors");
+            if (avatarDescriptor.RightHandReference != null)
+                Undo.RecordObject(avatarDescriptor.RightHandReference, "Position Right Tool Anchors");
+
+            avatarDescriptor.TryAutoPositionToolAnchors();
+
+            Undo.CollapseUndoOperations(undoGroup);
+            EditorSceneManager.MarkSceneDirty(_avatarRoot.scene);
+            SceneView.RepaintAll();
+        }
+
+        EditorGUILayout.Space(4);
+    }
+
+    void DrawEditVisualsSection()
+    {
+        _showEditVisuals = EditorGUILayout.Foldout(_showEditVisuals, "Edit Visuals", true, EditorStyles.foldoutHeader);
+        if (!_showEditVisuals)
+            return;
+
+        EditorGUI.BeginChangeCheck();
+
+        EditorGUI.indentLevel++;
+        _showViewpointVisual = EditorGUILayout.Toggle("Viewpoint", _showViewpointVisual);
+        _showLeftFootVisual = EditorGUILayout.Toggle("Left Foot", _showLeftFootVisual);
+        _showRightFootVisual = EditorGUILayout.Toggle("Right Foot", _showRightFootVisual);
+        _showHipsVisual = EditorGUILayout.Toggle("Hips", _showHipsVisual);
+        _showTooltipVisual = EditorGUILayout.Toggle("Tooltip", _showTooltipVisual);
+        _showGrabberVisual = EditorGUILayout.Toggle("Grabber", _showGrabberVisual);
+        _showShelfVisual = EditorGUILayout.Toggle("Shelf", _showShelfVisual);
+        EditorGUI.indentLevel--;
+
+        if (EditorGUI.EndChangeCheck())
+            SceneView.RepaintAll();
 
         EditorGUILayout.Space(4);
     }
@@ -251,119 +392,6 @@ public class ResoniteAvatarSetupWizard : EditorWindow
 
         GUI.enabled = true;
         EditorGUILayout.EndHorizontal();
-    }
-
-    void PositionToolAnchorsFromFingerBones(Animator humanoidAnimator, BipedAvatarDescriptor avatarDescriptor)
-    {
-        Undo.SetCurrentGroupName("Try Auto Setup Tool Anchors");
-        int undoGroup = Undo.GetCurrentGroup();
-
-        if (avatarDescriptor.LeftHandReference != null)
-            PositionHandAnchors(humanoidAnimator, avatarDescriptor.LeftHandReference, isRightHand: false);
-
-        if (avatarDescriptor.RightHandReference != null)
-            PositionHandAnchors(humanoidAnimator, avatarDescriptor.RightHandReference, isRightHand: true);
-
-        Undo.CollapseUndoOperations(undoGroup);
-        EditorSceneManager.MarkSceneDirty(_avatarRoot.scene);
-        SceneView.RepaintAll();
-    }
-
-    void PositionHandAnchors(Animator humanoidAnimator, Transform handReferenceRoot, bool isRightHand)
-    {
-        var indexFingerTip = humanoidAnimator.GetBoneTransform(isRightHand ? HumanBodyBones.RightIndexDistal : HumanBodyBones.LeftIndexDistal);
-        var middleFingerTip = humanoidAnimator.GetBoneTransform(isRightHand ? HumanBodyBones.RightMiddleDistal : HumanBodyBones.LeftMiddleDistal);
-        var ringFingerTip = humanoidAnimator.GetBoneTransform(isRightHand ? HumanBodyBones.RightRingDistal : HumanBodyBones.LeftRingDistal);
-        var pinkyFingerTip = humanoidAnimator.GetBoneTransform(isRightHand ? HumanBodyBones.RightLittleDistal : HumanBodyBones.LeftLittleDistal);
-
-        var indexFingerBase = humanoidAnimator.GetBoneTransform(isRightHand ? HumanBodyBones.RightIndexProximal : HumanBodyBones.LeftIndexProximal);
-        var middleFingerBase = humanoidAnimator.GetBoneTransform(isRightHand ? HumanBodyBones.RightMiddleProximal : HumanBodyBones.LeftMiddleProximal);
-        var ringFingerBase = humanoidAnimator.GetBoneTransform(isRightHand ? HumanBodyBones.RightRingProximal : HumanBodyBones.LeftRingProximal);
-        var pinkyFingerBase = humanoidAnimator.GetBoneTransform(isRightHand ? HumanBodyBones.RightLittleProximal : HumanBodyBones.LeftLittleProximal);
-
-        var indexFingerMiddleJoint = humanoidAnimator.GetBoneTransform(isRightHand ? HumanBodyBones.RightIndexIntermediate : HumanBodyBones.LeftIndexIntermediate);
-        var handBone = humanoidAnimator.GetBoneTransform(isRightHand ? HumanBodyBones.RightHand : HumanBodyBones.LeftHand);
-
-        PositionTooltipAtIndexFingertip(handReferenceRoot, indexFingerTip, indexFingerMiddleJoint, indexFingerBase, handBone);
-        PositionGrabberAtPalmCenter(handReferenceRoot, handBone,
-            new[] { indexFingerTip, middleFingerTip, ringFingerTip, pinkyFingerTip },
-            new[] { indexFingerBase, middleFingerBase, ringFingerBase, pinkyFingerBase });
-        PositionShelfAboveGrabber(handReferenceRoot);
-    }
-
-    void PositionTooltipAtIndexFingertip(Transform handReferenceRoot, Transform indexDistalBone, Transform indexIntermediateBone, Transform indexProximalBone, Transform handBone)
-    {
-        var tooltipTransform = handReferenceRoot.Find("Tooltip");
-        if (tooltipTransform == null || indexDistalBone == null)
-            return;
-
-        Undo.RecordObject(tooltipTransform, "Position Tooltip");
-
-        Vector3 fingerForwardDirection;
-
-        if (indexIntermediateBone != null)
-        {
-            fingerForwardDirection = (indexDistalBone.position - indexIntermediateBone.position).normalized;
-            float distalBoneLength = Vector3.Distance(indexIntermediateBone.position, indexDistalBone.position);
-            tooltipTransform.position = indexDistalBone.position + fingerForwardDirection * distalBoneLength;
-        }
-        else if (indexProximalBone != null)
-        {
-            fingerForwardDirection = (indexDistalBone.position - indexProximalBone.position).normalized;
-            tooltipTransform.position = indexDistalBone.position;
-        }
-        else
-        {
-            fingerForwardDirection = indexDistalBone.forward;
-            tooltipTransform.position = indexDistalBone.position;
-        }
-
-        var tooltipUpDirection = handBone != null ? handBone.up : Vector3.up;
-        bool fingerPointsAlongUpAxis = Mathf.Abs(Vector3.Dot(fingerForwardDirection, tooltipUpDirection)) > 0.95f;
-        if (fingerPointsAlongUpAxis)
-            tooltipUpDirection = handBone != null ? handBone.forward : Vector3.forward;
-
-        tooltipTransform.rotation = Quaternion.LookRotation(fingerForwardDirection, tooltipUpDirection);
-    }
-
-    void PositionGrabberAtPalmCenter(Transform handReferenceRoot, Transform handBone, Transform[] fingerTipBones, Transform[] fingerBaseBones)
-    {
-        var grabberTransform = handReferenceRoot.Find("Grabber");
-        if (grabberTransform == null || handBone == null)
-            return;
-
-        Undo.RecordObject(grabberTransform, "Position Grabber");
-
-        var validFingerTips = fingerTipBones.Where(bone => bone != null).ToArray();
-        var validFingerBases = fingerBaseBones.Where(bone => bone != null).ToArray();
-
-        if (validFingerTips.Length > 0 && validFingerBases.Length > 0)
-        {
-            var averageFingerTipPosition = validFingerTips.Aggregate(Vector3.zero, (sum, bone) => sum + bone.position) / validFingerTips.Length;
-            var averageFingerBasePosition = validFingerBases.Aggregate(Vector3.zero, (sum, bone) => sum + bone.position) / validFingerBases.Length;
-
-            float palmBias = 0.65f;
-            grabberTransform.position = Vector3.Lerp(averageFingerTipPosition, averageFingerBasePosition, palmBias);
-
-            var palmToFingersDirection = (averageFingerTipPosition - averageFingerBasePosition).normalized;
-            grabberTransform.rotation = Quaternion.LookRotation(palmToFingersDirection, Vector3.up);
-        }
-        else
-        {
-            grabberTransform.position = handBone.position + handBone.forward * 0.05f;
-        }
-    }
-
-    void PositionShelfAboveGrabber(Transform handReferenceRoot)
-    {
-        var shelfTransform = handReferenceRoot.Find("Shelf");
-        var grabberTransform = handReferenceRoot.Find("Grabber");
-        if (shelfTransform == null || grabberTransform == null)
-            return;
-
-        Undo.RecordObject(shelfTransform, "Position Shelf");
-        shelfTransform.position = grabberTransform.position + Vector3.up * 0.04f - grabberTransform.forward * 0.03f;
-        shelfTransform.rotation = grabberTransform.rotation;
     }
 
     void PerformSetup()
@@ -395,9 +423,9 @@ public class ResoniteAvatarSetupWizard : EditorWindow
         avatarDescriptor.SetupFaceTracking = _setupFaceTracking;
         avatarDescriptor.SetupVolumeMeter = _setupVolumeMeter;
 
-        if (_leftFootOverride != null) avatarDescriptor.LeftFootReference = _leftFootOverride;
-        if (_rightFootOverride != null) avatarDescriptor.RightFootReference = _rightFootOverride;
-        if (_hipsOverride != null) avatarDescriptor.HipsReference = _hipsOverride;
+        avatarDescriptor.RepositionOptionalReference(avatarDescriptor.LeftFootReference, _leftFootOverride);
+        avatarDescriptor.RepositionOptionalReference(avatarDescriptor.RightFootReference, _rightFootOverride);
+        avatarDescriptor.RepositionOptionalReference(avatarDescriptor.HipsReference, _hipsOverride);
 
         if (isNewDescriptor)
             TrackCreatedReferenceHierarchy(setupTracker, avatarDescriptor);

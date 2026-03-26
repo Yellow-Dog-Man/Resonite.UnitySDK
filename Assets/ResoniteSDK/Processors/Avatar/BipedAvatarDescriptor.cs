@@ -1,4 +1,5 @@
 using System;
+using System.Linq;
 using System.Threading.Tasks;
 using UnityEngine;
 
@@ -63,8 +64,90 @@ public class BipedAvatarDescriptor : MonoBehaviour, IConversionPostProcessor
 
             SetupAnchors(RightHandReference);
 
+            CreateOptionalReferenceSlots(references.transform);
+
             TryPositionReferences();
         }
+    }
+
+    void CreateOptionalReferenceSlots(Transform referencesParent)
+    {
+        if (Biped == null || Biped.avatar == null || !Biped.avatar.isHuman)
+            return;
+
+        var skeletonUp = ComputeSkeletonUp();
+        var skeletonForward = ComputeSkeletonForward(skeletonUp);
+
+        if (LeftFootReference == null)
+        {
+            var leftFoot = new GameObject("Left Foot");
+            leftFoot.transform.SetParent(referencesParent, false);
+            LeftFootReference = leftFoot.transform;
+            AlignReferenceSlotToSkeleton(LeftFootReference, HumanBodyBones.LeftFoot, skeletonUp, skeletonForward);
+        }
+
+        if (RightFootReference == null)
+        {
+            var rightFoot = new GameObject("Right Foot");
+            rightFoot.transform.SetParent(referencesParent, false);
+            RightFootReference = rightFoot.transform;
+            AlignReferenceSlotToSkeleton(RightFootReference, HumanBodyBones.RightFoot, skeletonUp, skeletonForward);
+        }
+
+        if (HipsReference == null)
+        {
+            var hips = new GameObject("Hips");
+            hips.transform.SetParent(referencesParent, false);
+            HipsReference = hips.transform;
+            AlignReferenceSlotToSkeleton(HipsReference, HumanBodyBones.Hips, skeletonUp, skeletonForward);
+        }
+    }
+
+    Vector3 ComputeSkeletonUp()
+    {
+        var hipsBone = Biped.GetBoneTransform(HumanBodyBones.Hips);
+        var spineBone = Biped.GetBoneTransform(HumanBodyBones.Spine);
+
+        if (hipsBone != null && spineBone != null)
+            return (spineBone.position - hipsBone.position).normalized;
+
+        return Vector3.up;
+    }
+
+    Vector3 ComputeSkeletonForward(Vector3 skeletonUp)
+    {
+        var headBone = Biped.GetBoneTransform(HumanBodyBones.Head);
+        if (headBone == null)
+            return Vector3.forward;
+
+        var leftEye = Biped.GetBoneTransform(HumanBodyBones.LeftEye);
+        var rightEye = Biped.GetBoneTransform(HumanBodyBones.RightEye);
+
+        Vector3 headForward;
+        if (leftEye != null && rightEye != null)
+        {
+            var averageEyePosition = (leftEye.position + rightEye.position) * 0.5f;
+            headForward = averageEyePosition - headBone.position;
+        }
+        else
+        {
+            headForward = headBone.forward;
+        }
+
+        var flattenedForward = Vector3.ProjectOnPlane(headForward, skeletonUp).normalized;
+        if (flattenedForward.sqrMagnitude < 0.001f)
+            return Vector3.forward;
+
+        return flattenedForward;
+    }
+
+    void AlignReferenceSlotToSkeleton(Transform referenceSlot, HumanBodyBones bone, Vector3 skeletonUp, Vector3 skeletonForward)
+    {
+        var boneTransform = Biped.GetBoneTransform(bone);
+        if (boneTransform == null) return;
+
+        referenceSlot.position = boneTransform.position;
+        referenceSlot.rotation = Quaternion.LookRotation(skeletonForward, skeletonUp);
     }
 
     void SetupAnchors(Transform root)
@@ -194,6 +277,118 @@ public class BipedAvatarDescriptor : MonoBehaviour, IConversionPostProcessor
 
         RightHandReference.position = rightHand.position;
         RightHandReference.rotation = Quaternion.LookRotation(rightArmForward, Vector3.up);
+    }
+
+    public void RepositionOptionalReference(Transform generatedSlot, Transform targetBone)
+    {
+        if (generatedSlot == null || targetBone == null)
+            return;
+
+        if (generatedSlot == targetBone)
+            return;
+
+        generatedSlot.position = targetBone.position;
+    }
+
+    public void TryAutoPositionToolAnchors()
+    {
+        if (Biped == null || Biped.avatar == null || !Biped.avatar.isHuman)
+            return;
+
+        if (LeftHandReference != null)
+            PositionHandToolAnchors(LeftHandReference, isRightHand: false);
+
+        if (RightHandReference != null)
+            PositionHandToolAnchors(RightHandReference, isRightHand: true);
+    }
+
+    void PositionHandToolAnchors(Transform handReferenceRoot, bool isRightHand)
+    {
+        var indexDistal = Biped.GetBoneTransform(isRightHand ? HumanBodyBones.RightIndexDistal : HumanBodyBones.LeftIndexDistal);
+        var middleDistal = Biped.GetBoneTransform(isRightHand ? HumanBodyBones.RightMiddleDistal : HumanBodyBones.LeftMiddleDistal);
+        var ringDistal = Biped.GetBoneTransform(isRightHand ? HumanBodyBones.RightRingDistal : HumanBodyBones.LeftRingDistal);
+        var pinkyDistal = Biped.GetBoneTransform(isRightHand ? HumanBodyBones.RightLittleDistal : HumanBodyBones.LeftLittleDistal);
+
+        var indexProximal = Biped.GetBoneTransform(isRightHand ? HumanBodyBones.RightIndexProximal : HumanBodyBones.LeftIndexProximal);
+        var middleProximal = Biped.GetBoneTransform(isRightHand ? HumanBodyBones.RightMiddleProximal : HumanBodyBones.LeftMiddleProximal);
+        var ringProximal = Biped.GetBoneTransform(isRightHand ? HumanBodyBones.RightRingProximal : HumanBodyBones.LeftRingProximal);
+        var pinkyProximal = Biped.GetBoneTransform(isRightHand ? HumanBodyBones.RightLittleProximal : HumanBodyBones.LeftLittleProximal);
+
+        var indexIntermediate = Biped.GetBoneTransform(isRightHand ? HumanBodyBones.RightIndexIntermediate : HumanBodyBones.LeftIndexIntermediate);
+        var handBone = Biped.GetBoneTransform(isRightHand ? HumanBodyBones.RightHand : HumanBodyBones.LeftHand);
+
+        PositionTooltipAtIndexFingertip(handReferenceRoot, indexDistal, indexIntermediate, indexProximal, handBone);
+        PositionGrabberAtPalmCenter(handReferenceRoot, handBone,
+            new[] { indexDistal, middleDistal, ringDistal, pinkyDistal },
+            new[] { indexProximal, middleProximal, ringProximal, pinkyProximal });
+        PositionShelfAboveGrabber(handReferenceRoot);
+    }
+
+    void PositionTooltipAtIndexFingertip(Transform handReferenceRoot, Transform indexDistalBone, Transform indexIntermediateBone, Transform indexProximalBone, Transform handBone)
+    {
+        var tooltip = handReferenceRoot.Find("Tooltip");
+        if (tooltip == null || indexDistalBone == null)
+            return;
+
+        Vector3 fingerForward;
+
+        if (indexIntermediateBone != null)
+        {
+            fingerForward = (indexDistalBone.position - indexIntermediateBone.position).normalized;
+            float distalLength = Vector3.Distance(indexIntermediateBone.position, indexDistalBone.position);
+            tooltip.position = indexDistalBone.position + fingerForward * distalLength;
+        }
+        else if (indexProximalBone != null)
+        {
+            fingerForward = (indexDistalBone.position - indexProximalBone.position).normalized;
+            tooltip.position = indexDistalBone.position;
+        }
+        else
+        {
+            fingerForward = indexDistalBone.forward;
+            tooltip.position = indexDistalBone.position;
+        }
+
+        var upDirection = handBone != null ? handBone.up : Vector3.up;
+        if (Mathf.Abs(Vector3.Dot(fingerForward, upDirection)) > 0.95f)
+            upDirection = handBone != null ? handBone.forward : Vector3.forward;
+
+        tooltip.rotation = Quaternion.LookRotation(fingerForward, upDirection);
+    }
+
+    void PositionGrabberAtPalmCenter(Transform handReferenceRoot, Transform handBone, Transform[] fingerTips, Transform[] fingerBases)
+    {
+        var grabber = handReferenceRoot.Find("Grabber");
+        if (grabber == null || handBone == null)
+            return;
+
+        var validTips = fingerTips.Where(b => b != null).ToArray();
+        var validBases = fingerBases.Where(b => b != null).ToArray();
+
+        if (validTips.Length > 0 && validBases.Length > 0)
+        {
+            var averageTipPosition = validTips.Aggregate(Vector3.zero, (sum, b) => sum + b.position) / validTips.Length;
+            var averageBasePosition = validBases.Aggregate(Vector3.zero, (sum, b) => sum + b.position) / validBases.Length;
+
+            grabber.position = Vector3.Lerp(averageTipPosition, averageBasePosition, 0.65f);
+            var palmToFingers = (averageTipPosition - averageBasePosition).normalized;
+            grabber.rotation = Quaternion.LookRotation(palmToFingers, Vector3.up);
+        }
+        else
+        {
+            grabber.position = handBone.position + handBone.forward * 0.05f;
+        }
+    }
+
+    void PositionShelfAboveGrabber(Transform handReferenceRoot)
+    {
+        var shelf = handReferenceRoot.Find("Shelf");
+        var grabber = handReferenceRoot.Find("Grabber");
+        if (shelf == null || grabber == null)
+            return;
+
+        shelf.position = grabber.position + Vector3.up * 0.04f - grabber.forward * 0.03f;
+        shelf.rotation = grabber.rotation;
     }
 
     public void PostProcessConversion(IConversionContext context)
