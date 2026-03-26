@@ -64,8 +64,6 @@ public class BipedAvatarDescriptor : MonoBehaviour, IConversionPostProcessor
 
             SetupAnchors(RightHandReference);
 
-            CreateOptionalReferenceSlots(references.transform);
-
             TryPositionReferences();
         }
     }
@@ -74,6 +72,13 @@ public class BipedAvatarDescriptor : MonoBehaviour, IConversionPostProcessor
     {
         if (Biped == null || Biped.avatar == null || !Biped.avatar.isHuman)
             return;
+
+        // TODO!!! This is currently not used, because the computation is wrong for most avatars
+        // The references need to have the Z axis be actual forward, but they just take the transform of the bone
+        // which is not guaranteed to have Z be actual forward
+        // The purpose of the referecens is to tell the system what the actual alignment of the bone is, so using
+        // the bone alignment works if and only if the bone is already perfectly aligned
+        // This needs to be reworked to actually compute the directions and then compute proper alignment from that
 
         var skeletonUp = ComputeSkeletonUp();
         var skeletonForward = ComputeSkeletonForward(skeletonUp);
