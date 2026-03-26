@@ -507,6 +507,9 @@ public class ResoniteAvatarSetupWizard : EditorWindow
     {
         if (_avatarRoot == null)
             return;
+
+        // Reset the viewpoint offset, to prevent offset from previous avatar being applied
+        _viewpointOffset = Vector3.zero;
     }
 
     void DrawBoneField(Animator humanoidAnimator, string label, HumanBodyBones bone)
