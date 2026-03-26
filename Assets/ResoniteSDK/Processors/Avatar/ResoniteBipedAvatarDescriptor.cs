@@ -4,7 +4,7 @@ using System.Threading.Tasks;
 using UnityEngine;
 
 [ExecuteInEditMode]
-public class BipedAvatarDescriptor : MonoBehaviour, IConversionPostProcessor
+public class ResoniteBipedAvatarDescriptor : MonoBehaviour, IConversionPostProcessor
 {
     const float EYE_SEPARATION = 0.065f; // 65 mm
     const float AXIS_LENGTH = 0.25f;

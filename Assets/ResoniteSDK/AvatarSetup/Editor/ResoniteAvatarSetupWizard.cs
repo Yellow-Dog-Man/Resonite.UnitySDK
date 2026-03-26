@@ -53,7 +53,7 @@ public class ResoniteAvatarSetupWizard : EditorWindow
         var humanoidAnimator = GetValidHumanoidAnimator();
         bool hasValidAnimator = humanoidAnimator != null;
         var setupTracker = _avatarRoot != null ? _avatarRoot.GetComponent<AvatarSetupTracker>() : null;
-        var avatarDescriptor = _avatarRoot != null ? _avatarRoot.GetComponent<BipedAvatarDescriptor>() : null;
+        var avatarDescriptor = _avatarRoot != null ? _avatarRoot.GetComponent<ResoniteBipedAvatarDescriptor>() : null;
 
         DrawValidationSection(humanoidAnimator, avatarDescriptor, setupTracker);
 
@@ -78,7 +78,7 @@ public class ResoniteAvatarSetupWizard : EditorWindow
         if (_avatarRoot == null)
             return;
 
-        var avatarDescriptor = _avatarRoot.GetComponent<BipedAvatarDescriptor>();
+        var avatarDescriptor = _avatarRoot.GetComponent<ResoniteBipedAvatarDescriptor>();
         if (avatarDescriptor == null)
             return;
 
@@ -218,7 +218,7 @@ public class ResoniteAvatarSetupWizard : EditorWindow
         EditorGUILayout.Space(4);
     }
 
-    void DrawValidationSection(Animator humanoidAnimator, BipedAvatarDescriptor avatarDescriptor, AvatarSetupTracker setupTracker)
+    void DrawValidationSection(Animator humanoidAnimator, ResoniteBipedAvatarDescriptor avatarDescriptor, AvatarSetupTracker setupTracker)
     {
         if (_avatarRoot == null)
         {
@@ -264,7 +264,7 @@ public class ResoniteAvatarSetupWizard : EditorWindow
         EditorGUILayout.Space(4);
     }
 
-    void DrawViewpointSection(BipedAvatarDescriptor avatarDescriptor)
+    void DrawViewpointSection(ResoniteBipedAvatarDescriptor avatarDescriptor)
     {
         EditorGUILayout.LabelField("Viewpoint Position", EditorStyles.boldLabel);
 
@@ -327,7 +327,7 @@ public class ResoniteAvatarSetupWizard : EditorWindow
         EditorGUILayout.Space(4);
     }
 
-    void DrawToolAnchorSection(BipedAvatarDescriptor avatarDescriptor)
+    void DrawToolAnchorSection(ResoniteBipedAvatarDescriptor avatarDescriptor)
     {
         if (avatarDescriptor == null) return;
         if (avatarDescriptor.LeftHandReference == null && avatarDescriptor.RightHandReference == null) return;
@@ -378,7 +378,7 @@ public class ResoniteAvatarSetupWizard : EditorWindow
         EditorGUILayout.Space(4);
     }
 
-    void DrawActionButtons(bool hasValidAnimator, AvatarSetupTracker setupTracker, BipedAvatarDescriptor avatarDescriptor)
+    void DrawActionButtons(bool hasValidAnimator, AvatarSetupTracker setupTracker, ResoniteBipedAvatarDescriptor avatarDescriptor)
     {
         EditorGUILayout.BeginHorizontal();
 
@@ -405,12 +405,12 @@ public class ResoniteAvatarSetupWizard : EditorWindow
         else
             Undo.RecordObject(setupTracker, "Reconfigure Avatar Setup");
 
-        var avatarDescriptor = _avatarRoot.GetComponent<BipedAvatarDescriptor>();
+        var avatarDescriptor = _avatarRoot.GetComponent<ResoniteBipedAvatarDescriptor>();
         bool isNewDescriptor = avatarDescriptor == null;
 
         if (isNewDescriptor)
         {
-            avatarDescriptor = Undo.AddComponent<BipedAvatarDescriptor>(_avatarRoot);
+            avatarDescriptor = Undo.AddComponent<ResoniteBipedAvatarDescriptor>(_avatarRoot);
             setupTracker.TrackComponent(avatarDescriptor);
         }
         else
@@ -443,7 +443,7 @@ public class ResoniteAvatarSetupWizard : EditorWindow
         SceneView.RepaintAll();
     }
 
-    void TrackCreatedReferenceHierarchy(AvatarSetupTracker setupTracker, BipedAvatarDescriptor avatarDescriptor)
+    void TrackCreatedReferenceHierarchy(AvatarSetupTracker setupTracker, ResoniteBipedAvatarDescriptor avatarDescriptor)
     {
         if (avatarDescriptor.ViewpointReference == null)
             return;
