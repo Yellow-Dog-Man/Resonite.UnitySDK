@@ -508,20 +508,8 @@ public class ResoniteAvatarSetupWizard : EditorWindow
         if (_avatarRoot == null)
             return;
 
-        AutoFillOptionalReferences();
-    }
-
-    void AutoFillOptionalReferences()
-    {
-        var humanoidAnimator = GetValidHumanoidAnimator();
-        if (humanoidAnimator == null) return;
-
-        if (_leftFootOverride == null)
-            _leftFootOverride = humanoidAnimator.GetBoneTransform(HumanBodyBones.LeftFoot);
-        if (_rightFootOverride == null)
-            _rightFootOverride = humanoidAnimator.GetBoneTransform(HumanBodyBones.RightFoot);
-        if (_hipsOverride == null)
-            _hipsOverride = humanoidAnimator.GetBoneTransform(HumanBodyBones.Hips);
+        // Reset the viewpoint offset, to prevent offset from previous avatar being applied
+        _viewpointOffset = Vector3.zero;
     }
 
     void DrawBoneField(Animator humanoidAnimator, string label, HumanBodyBones bone)
