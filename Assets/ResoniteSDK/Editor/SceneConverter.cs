@@ -257,8 +257,17 @@ public class SceneConverter : IConversionContext
 
             var messages = new List<DataModelOperation>();
 
+            // Process asset root first so asset slots exist before anything references them
+            var assetsRoot = _assetConverter.AssetsRoot;
+            if (assetsRoot != null)
+                ConvertHierarchy(assetsRoot, messages);
+
             foreach (var root in roots)
+            {
+                if (root == assetsRoot)
+                    continue;
                 ConvertHierarchy(root, messages);
+            }
 
             // Process any removals after all other stuff has been updated.
             // This way any transform that were reparented will be in new safe locations
@@ -720,18 +729,19 @@ public class SceneConverter : IConversionContext
         foreach (var changedComponents in transformsWithChangedComponents)
             UpdateComponentConversions(changedComponents);
 
+        // Convert any updated asset providers FIRST so their slots exist
+        // before components that reference them
+        // We don't need to run the component conversion on these - this should be only the bindings
+        if (_assetConverter.HasPendingChanges)
+            foreach (var root in _assetConverter.UpdatedAssetProviderRoots)
+                ConvertHierarchy(root, messages);
+
         // Convert the actual components
         foreach (var changedComponents in transformsWithChangedComponents)
             ConvertComponents(changedComponents, messages);
 
         if (gameObjectsDestroyed)
             ProcessRemovals(messages);
-
-        // Convert any updated asset providers
-        // We don't need to run the component conversion on these - this should be only the bindings
-        if (_assetConverter.HasPendingChanges)
-            foreach (var root in _assetConverter.UpdatedAssetProviderRoots)
-                ConvertHierarchy(root, messages);
 
         // If nothing of relevance was changed, just skip
         if (messages.Count == 0 && !_assetConverter.HasPendingChanges)
