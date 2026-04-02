@@ -1,0 +1,21 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+	<PropertyGroup>
+		<BindingsOutputPath>$(OutDir)../../../../../Assets/ResoniteSDK/Plugins/</BindingsOutputPath>
+	</PropertyGroup>
+
+	<Target Name="CopyToBuilds" AfterTargets="PostBuildEvent">
+		<ItemGroup>
+			<CopyToOutput Include="$(OutDir)**/*.*" >
+				<Destination>$(BindingsOutputPath)</Destination>
+			</CopyToOutput>
+		</ItemGroup>
+
+		<Copy
+			SourceFiles="%(CopyToOutput.Identity)"
+			DestinationFiles="%(CopyToOutput.Destination)%(RecursiveDir)%(Filename)%(Extension)"
+			SkipUnchangedFiles="false"
+		/>
+
+	</Target>
+</Project>
