@@ -11,14 +11,14 @@ using UnityEngine;
 // So neither the Poiyomi Toon shaders nor its source code
 // need to be available in the Unity project for the converter to work.
 
-public class PoiyomiToonConverter
+public class PoiyomiXiexeConverter
 {
     private FrooxEngine.XiexeToonMaterial Xiexe;
 
     private UnityEngine.Material Material;
     private IConversionContext Context;
 
-    public PoiyomiToonConverter(FrooxEngine.XiexeToonMaterial Xiexe, UnityEngine.Material Material, IConversionContext Context)
+    public PoiyomiXiexeConverter(FrooxEngine.XiexeToonMaterial Xiexe, UnityEngine.Material Material, IConversionContext Context)
     {
         this.Xiexe = Xiexe;
         this.Material = Material;
@@ -101,12 +101,32 @@ public class PoiyomiToonConverter
 
     private void UpdateNormal()
     {
-        // TODO
+        Xiexe.NormalMap = Context.GetITexture2D(Material.GetTexture("_BumpMap"));
+        Xiexe.NormalMapOffset = Material.GetTextureOffset("_BumpMap");
+        Xiexe.NormalMapScale = Material.GetTextureScale("_BumpMap");
+        Xiexe.NormalScale = Material.GetFloat("_BumpScale");
+        Xiexe.NormalUV = (int)Material.GetFloat("_BumpMapUV");
     }
+
     private void UpdateMetallicGloss()
     {
-        // TODO
+        if (Material.GetFloat("_MochieBRDF") == 0)
+        {
+            if (Xiexe.MetallicGlossMap != null)
+            {
+                Xiexe.MetallicGlossMap = null;
+                Xiexe.Metallic = 0;
+                Xiexe.Glossiness = 0;
+                Xiexe.Reflectivity = 1;
+            }
+            return;
+        }
+        Xiexe.MetallicGlossMap = Context.GetITexture2D(Material.GetTexture("_MochieMetallicMaps"));
+        Xiexe.Metallic = Material.GetFloat("_MochieMetallicMultiplier");
+        Xiexe.Glossiness = Material.GetFloat("_MochieRoughnessMultiplier");
+        Xiexe.Reflectivity = Material.GetFloat("_MochieReflectionStrength");
     }
+
     private void UpdateEmission()
     {
         if (Material.GetFloat("_EnableEmission") > 0)
@@ -139,12 +159,78 @@ public class PoiyomiToonConverter
 
     private void UpdateRim()
     {
-        // TODO
+        if (Material.GetFloat("_EnableRimLighting") == 0)
+        {
+            Xiexe.RimColor = Color.black.ToColorX_sRGB();
+            Xiexe.RimIntensity = 0;
+            return;
+        }
+        if (Material.GetFloat("_RimStyle") == 0)
+        {
+            // Poiyomi style
+            Xiexe.RimColor = Material.GetColor("_RimLightColor").ToColorX_Auto();
+            Xiexe.RimAlbedoTint = Material.GetFloat("_RimBaseColorMix");
+            // TODO: Figure out what that does. For now, use Xiexe's default
+            Xiexe.RimAttenuationEffect = 1;
+            Xiexe.RimIntensity = Material.GetFloat("_RimBrightness");
+            // TODO: Figure out if that formula makes sense (it looks close enough)
+            Xiexe.RimRange = 1 - (Material.GetFloat("_RimWidth") * Material.GetFloat("_RimSharpness"));
+            // TODO: Figure out what that does. For now, use Xiexe's default
+            Xiexe.RimThreshold = 0.1f;
+            Xiexe.RimSharpness = 1 - Material.GetFloat("_RimSharpness");
+            return;
+        }
+        else if (Material.GetFloat("_RimStyle") == 1)
+        {
+            // UTS2 style
+            Xiexe.RimColor = Material.GetColor("_RimLightColor").ToColorX_Auto();
+            Xiexe.RimAlbedoTint = 0; // No setting
+            // TODO: Figure out what that does. For now, use Xiexe's default
+            Xiexe.RimAttenuationEffect = 1;
+            Xiexe.RimIntensity = 1; // No setting
+            // TODO: Figure out what that does. For now, use Xiexe's default
+            Xiexe.RimThreshold = 0.1f;
+            if (Material.GetFloat("_RimLight_FeatherOff") > 0)
+            {
+                Xiexe.RimSharpness = 0;
+                Xiexe.RimRange = 0.2f * (1 - Material.GetFloat("_RimLight_Power"));
+            }
+            else
+            {
+                Xiexe.RimSharpness = 0.5f;
+                Xiexe.RimRange = 1 - (0.8f * Material.GetFloat("_RimLight_Power"));
+            }
+            return;
+        }
+        else
+        {
+            // Liltoon style
+            Xiexe.RimColor = Material.GetColor("_RimColor").ToColorX_Auto();
+            Xiexe.RimAlbedoTint = Material.GetFloat("_RimMainStrength");
+            // TODO: Figure out what that does. For now, use Xiexe's default
+            Xiexe.RimAttenuationEffect = 1;
+            Xiexe.RimIntensity = 1; // No setting
+            // TODO: Figure out what that does. For now, use Xiexe's default
+            Xiexe.RimThreshold = 0.1f;
+            // TODO: Figure these two formulas out. For now, use Xiexe's default
+            Xiexe.RimSharpness = 0.1f;
+            Xiexe.RimRange = 0.7f;
+            return;
+        }
     }
+
     private void UpdateSpecular()
     {
-        // TODO
+        // TODO: No corresponding setting?
+        Xiexe.SpecularArea = 0.5f;
+        if (Material.GetFloat("_MochieBRDF") == 0)
+        {
+            Xiexe.SpecularIntensity = 0;
+            return;
+        }
+        Xiexe.SpecularIntensity = 100 * Material.GetFloat("_MochieSpecularStrength");
     }
+
     private void UpdateMatcap()
     {
         // TODO

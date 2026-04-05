@@ -71,7 +71,9 @@ public class PoiyomiConverter : ResoniteMaterialConverter
         if (XiexeComponent == null)
         {
             XiexeComponent = gameObject.AddComponent<FrooxEngine.XiexeToonMaterialWrapper>();
+            // A few properties should be initialized at non-default values to look right
+            XiexeComponent.Data.ShadowRim = Color.white.ToColorX_sRGB();
         }
-        return new PoiyomiToonConverter(XiexeComponent.Data, material, context).UpdateConversion();
+        return new PoiyomiXiexeConverter(XiexeComponent.Data, material, context).UpdateConversion();
     }
 }
