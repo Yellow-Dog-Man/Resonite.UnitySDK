@@ -88,7 +88,15 @@ public class PoiyomiToonConverter : ResoniteMaterialConverter
             Xiexe.MainTextureOffset = Material.mainTextureOffset;
             Xiexe.MainTextureScale = Material.mainTextureScale;
             Xiexe.AlbedoUV = (int)Material.GetFloat("_MainTexUV");
-            Xiexe.Saturation = Material.GetFloat("_Saturation");
+
+            if (Material.GetFloat("_MainColorAdjustToggle") > 0)
+            {
+                Xiexe.Saturation = 1 + Material.GetFloat("_Saturation");
+            } else
+            {
+                Xiexe.Saturation = 1;
+            }
+
             if (Material.GetFloat("_MainVertexColoringEnabled") > 0)
             {
                 // Poiyomi uses float weights 0-1 to indicate how much influence
@@ -179,6 +187,7 @@ public class PoiyomiToonConverter : ResoniteMaterialConverter
         private void UpdateShadowRim()
         {
             // TODO
+            Xiexe.ShadowRim = Color.white.ToColorX_sRGB();
         }
         private void UpdateThickness()
         {
