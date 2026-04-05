@@ -144,5 +144,10 @@ InitTestScene*.unity*
 
 # VRChat SDK files
 /[Pp]ackages/vpm-manifest.json
+/[Pp]ackages/com.vrchat*
+/[Aa]ssets/XR
+/[Aa]ssets/XR.meta
 /Thry
 /Thry*.csproj
+/UniTask*.csproj
+/VRC.*.csproj
