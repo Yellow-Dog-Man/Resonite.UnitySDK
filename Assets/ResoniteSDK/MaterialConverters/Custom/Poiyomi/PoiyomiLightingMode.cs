@@ -13,3 +13,13 @@ public enum PoiyomiLightingMode
     Cloth,
     SDF
 }
+
+public static class PoiyomiLightingModeMethods
+{
+    public static bool IsPhysicallyBased(this PoiyomiLightingMode lightingMode)
+    {
+        return (
+            lightingMode == PoiyomiLightingMode.Realistic ||
+            lightingMode == PoiyomiLightingMode.Cloth);
+    }
+}

@@ -10,192 +10,168 @@ using UnityEngine;
 // However, this converter only uses the material's named properties.
 // So neither the Poiyomi Toon shaders nor its source code
 // need to be available in the Unity project for the converter to work.
-[MaterialConverter(true)]
-public class PoiyomiToonConverter : ResoniteMaterialConverter
+
+public class PoiyomiToonConverter
 {
-    private FrooxEngine.XiexeToonMaterialWrapper XiexeComponent;
+    private FrooxEngine.XiexeToonMaterial Xiexe;
 
-    public static float? EvaluateHeuristicConversion(UnityEngine.Material material)
+    private UnityEngine.Material Material;
+    private IConversionContext Context;
+
+    public PoiyomiToonConverter(FrooxEngine.XiexeToonMaterial Xiexe, UnityEngine.Material Material, IConversionContext Context)
     {
-        if (!material.shader.name.StartsWith(".poiyomi/"))
-        {
-            return null;
-        }
-        // TODO: Maybe add more robusts checks, i.e. on the shader's version number or on its "variants"?
-        return 0;
+        this.Xiexe = Xiexe;
+        this.Material = Material;
+        this.Context = Context;
     }
 
-    public override IAssetProvider<FrooxEngine.Material> UpdateConversion(UnityEngine.Material material, IConversionContext context)
+    public IAssetProvider<FrooxEngine.Material> UpdateConversion()
     {
-        if (XiexeComponent == null)
-        {
-            XiexeComponent = gameObject.AddComponent<FrooxEngine.XiexeToonMaterialWrapper>();
-        }
-        return new Updater(XiexeComponent.Data, material, context).UpdateConversion();
+        UpdateRenderingSettings();
+        UpdateMainTexture();
+        UpdateNormal();
+        UpdateMetallicGloss();
+        UpdateEmission();
+        UpdateRim();
+        UpdateSpecular();
+        UpdateMatcap();
+        UpdateOcclusion();
+        UpdateOutline();
+        UpdateShadowRamp();
+        UpdateShadowRim();
+        UpdateThickness();
+        UpdateSubsurface();
+
+        return Xiexe;
     }
 
-
-    private class Updater
+    private void UpdateRenderingSettings()
     {
-        private FrooxEngine.XiexeToonMaterial Xiexe;
+        Xiexe.BlendMode = PoiyomiBlendModeComputer.FromPoiyomi(Material);
+        Xiexe.ZWrite = Material.GetFloat("_ZWrite") > 0 ? ZWrite.On : ZWrite.Off;
+        Xiexe.AlphaClip = Material.GetFloat("_Cutoff");
+        Xiexe.OffsetFactor = Material.GetFloat("_OffsetFactor");
+        Xiexe.OffsetUnits = Material.GetFloat("_OffsetUnits");
+        Xiexe.Culling = (Culling)(UnityEngine.Rendering.CullMode)Material.GetFloat("_Cull");
+        Xiexe.ColorMask = (ColorMask)Material.GetFloat("_ColorMask");
+        Xiexe.RenderQueue = Material.renderQueue;
+    }
 
-        private UnityEngine.Material Material;
-        private IConversionContext Context;
+    private void UpdateMainTexture()
+    {
+        Xiexe.Color = Material.color.ToColorX_sRGB();
+        Xiexe.MainTexture = Context.GetITexture2D(Material.mainTexture);
+        Xiexe.MainTextureOffset = Material.mainTextureOffset;
+        Xiexe.MainTextureScale = Material.mainTextureScale;
+        Xiexe.AlbedoUV = (int)Material.GetFloat("_MainTexUV");
 
-        public Updater(FrooxEngine.XiexeToonMaterial Xiexe, UnityEngine.Material Material, IConversionContext Context)
+        if (Material.GetFloat("_MainColorAdjustToggle") > 0)
         {
-            this.Xiexe = Xiexe;
-            this.Material = Material;
-            this.Context = Context;
+            Xiexe.Saturation = 1 + Material.GetFloat("_Saturation");
+        }
+        else
+        {
+            Xiexe.Saturation = 1;
         }
 
-        public IAssetProvider<FrooxEngine.Material> UpdateConversion()
+        if (Material.GetFloat("_MainVertexColoringEnabled") > 0)
         {
-            UpdateRenderingSettings();
-            UpdateMainTexture();
-            UpdateNormal();
-            UpdateMetallicGloss();
-            UpdateEmission();
-            UpdateRim();
-            UpdateSpecular();
-            UpdateMatcap();
-            UpdateOcclusion();
-            UpdateOutline();
-            UpdateShadowRamp();
-            UpdateShadowRim();
-            UpdateThickness();
-            UpdateSubsurface();
-
-            return Xiexe;
-        }
-
-        private void UpdateRenderingSettings()
-        {
-            Xiexe.BlendMode = PoiyomiBlendModeComputer.FromPoiyomi(Material);
-            Xiexe.ZWrite = Material.GetFloat("_ZWrite") > 0 ? ZWrite.On : ZWrite.Off;
-            Xiexe.AlphaClip = Material.GetFloat("_Cutoff");
-            Xiexe.OffsetFactor = Material.GetFloat("_OffsetFactor");
-            Xiexe.OffsetUnits = Material.GetFloat("_OffsetUnits");
-            Xiexe.Culling = (Culling)(UnityEngine.Rendering.CullMode)Material.GetFloat("_Cull");
-            Xiexe.ColorMask = (ColorMask)Material.GetFloat("_ColorMask");
-            Xiexe.RenderQueue = Material.renderQueue;
-        }
-
-        private void UpdateMainTexture()
-        {
-            Xiexe.Color = Material.color.ToColorX_sRGB();
-            Xiexe.MainTexture = Context.GetITexture2D(Material.mainTexture);
-            Xiexe.MainTextureOffset = Material.mainTextureOffset;
-            Xiexe.MainTextureScale = Material.mainTextureScale;
-            Xiexe.AlbedoUV = (int)Material.GetFloat("_MainTexUV");
-
-            if (Material.GetFloat("_MainColorAdjustToggle") > 0)
+            // Poiyomi uses float weights 0-1 to indicate how much influence
+            // the vertex colors have on the coloring of the final render.
+            // Xiexe only supports booleans here, so we use a cutoff at 0.5.
+            Xiexe.UseVertexColors = Material.GetFloat("_MainVertexColoring") >= 0.5;
+            if (Material.GetFloat("_MainVertexColoringLinearSpace") > 0)
             {
-                Xiexe.Saturation = 1 + Material.GetFloat("_Saturation");
-            } else
-            {
-                Xiexe.Saturation = 1;
+                Xiexe.VertexColorInterpolationSpace = Renderite.Shared.ColorProfile.Linear;
             }
-
-            if (Material.GetFloat("_MainVertexColoringEnabled") > 0)
+            else if (Material.GetFloat("_MainUseVertexColorAlpha") >= 0.5)
             {
-                // Poiyomi uses float weights 0-1 to indicate how much influence
-                // the vertex colors have on the coloring of the final render.
-                // Xiexe only supports booleans here, so we use a cutoff at 0.5.
-                Xiexe.UseVertexColors = Material.GetFloat("_MainVertexColoring") >= 0.5;
-                if (Material.GetFloat("_MainVertexColoringLinearSpace") > 0)
-                {
-                    Xiexe.VertexColorInterpolationSpace = Renderite.Shared.ColorProfile.Linear;
-                }
-                else if (Material.GetFloat("_MainUseVertexColorAlpha") >= 0.5)
-                {
-                    Xiexe.VertexColorInterpolationSpace = Renderite.Shared.ColorProfile.sRGBAlpha;
-                }
-                else
-                {
-                    Xiexe.VertexColorInterpolationSpace = Renderite.Shared.ColorProfile.sRGB;
-                }
+                Xiexe.VertexColorInterpolationSpace = Renderite.Shared.ColorProfile.sRGBAlpha;
             }
             else
             {
-                Xiexe.UseVertexColors = false;
+                Xiexe.VertexColorInterpolationSpace = Renderite.Shared.ColorProfile.sRGB;
             }
         }
+        else
+        {
+            Xiexe.UseVertexColors = false;
+        }
+    }
 
-        private void UpdateNormal()
+    private void UpdateNormal()
+    {
+        // TODO
+    }
+    private void UpdateMetallicGloss()
+    {
+        // TODO
+    }
+    private void UpdateEmission()
+    {
+        if (Material.GetFloat("_EnableEmission") > 0)
         {
-            // TODO
+            Xiexe.EmissionColor = Material.GetColor("_EmissionColor").ToColorX_Auto();
+            Xiexe.EmissionMap = Context.GetITexture2D(Material.GetTexture("_EmissionMap"));
+            Xiexe.EmissionMapOffset = Material.GetTextureOffset("_EmissionMap");
+            Xiexe.EmissionMapScale = Material.GetTextureScale("_EmissionMap");
+            Xiexe.EmissionUV = (int)Material.GetFloat("_EmissionMapUV");
+            return;
         }
-        private void UpdateMetallicGloss()
+        for (int i = 1; i <= 3; i++)
         {
-            // TODO
-        }
-        private void UpdateEmission()
-        {
-            if (Material.GetFloat("_EnableEmission") > 0)
+            if (Material.GetFloat($"_EnableEmission{i}") > 0)
             {
-                Xiexe.EmissionColor = Material.GetColor("_EmissionColor").ToColorX_Auto();
-                Xiexe.EmissionMap = Context.GetITexture2D(Material.GetTexture("_EmissionMap"));
-                Xiexe.EmissionMapOffset = Material.GetTextureOffset("_EmissionMap");
-                Xiexe.EmissionMapScale = Material.GetTextureScale("_EmissionMap");
-                Xiexe.EmissionUV = (int)Material.GetFloat("_EmissionMapUV");
+                Xiexe.EmissionColor = Material.GetColor($"_EmissionColor{i}").ToColorX_Auto();
+                Xiexe.EmissionMap = Context.GetITexture2D(Material.GetTexture($"_EmissionMap{i}"));
+                Xiexe.EmissionMapOffset = Material.GetTextureOffset($"_EmissionMap{i}");
+                Xiexe.EmissionMapScale = Material.GetTextureScale($"_EmissionMap{i}");
+                Xiexe.EmissionUV = (int)Material.GetFloat($"_EmissionMap{i}UV");
                 return;
             }
-            for (int i = 1; i <= 3; i++)
-            {
-                if (Material.GetFloat($"_EnableEmission{i}") > 0)
-                {
-                    Xiexe.EmissionColor = Material.GetColor($"_EmissionColor{i}").ToColorX_Auto();
-                    Xiexe.EmissionMap = Context.GetITexture2D(Material.GetTexture($"_EmissionMap{i}"));
-                    Xiexe.EmissionMapOffset = Material.GetTextureOffset($"_EmissionMap{i}");
-                    Xiexe.EmissionMapScale = Material.GetTextureScale($"_EmissionMap{i}");
-                    Xiexe.EmissionUV = (int)Material.GetFloat($"_EmissionMap{i}UV");
-                    return;
-                }
-            }
-            if (Xiexe.EmissionMap != null)
-            {
-                Xiexe.EmissionMap = null;
-                Xiexe.EmissionColor = Color.black.ToColorX_sRGB();
-            }
         }
+        if (Xiexe.EmissionMap != null)
+        {
+            Xiexe.EmissionMap = null;
+            Xiexe.EmissionColor = Color.black.ToColorX_sRGB();
+        }
+    }
 
-        private void UpdateRim()
-        {
-            // TODO
-        }
-        private void UpdateSpecular()
-        {
-            // TODO
-        }
-        private void UpdateMatcap()
-        {
-            // TODO
-        }
-        private void UpdateOcclusion()
-        {
-            // TODO
-        }
-        private void UpdateOutline()
-        {
-            // TODO
-        }
-        private void UpdateShadowRamp()
-        {
-            // TODO
-        }
-        private void UpdateShadowRim()
-        {
-            // TODO
-            Xiexe.ShadowRim = Color.white.ToColorX_sRGB();
-        }
-        private void UpdateThickness()
-        {
-            // TODO
-        }
-        private void UpdateSubsurface()
-        {
-            // TODO
-        }
+    private void UpdateRim()
+    {
+        // TODO
+    }
+    private void UpdateSpecular()
+    {
+        // TODO
+    }
+    private void UpdateMatcap()
+    {
+        // TODO
+    }
+    private void UpdateOcclusion()
+    {
+        // TODO
+    }
+    private void UpdateOutline()
+    {
+        // TODO
+    }
+    private void UpdateShadowRamp()
+    {
+        // TODO
+    }
+    private void UpdateShadowRim()
+    {
+        // TODO
+        Xiexe.ShadowRim = Color.white.ToColorX_sRGB();
+    }
+    private void UpdateThickness()
+    {
+        // TODO
+    }
+    private void UpdateSubsurface()
+    {
+        // TODO
     }
 }

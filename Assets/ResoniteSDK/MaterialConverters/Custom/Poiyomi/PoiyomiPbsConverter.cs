@@ -10,170 +10,131 @@ using UnityEngine;
 // However, this converter only uses the material's named properties.
 // So neither the Poiyomi Toon shaders nor its source code
 // need to be available in the Unity project for the converter to work.
-[MaterialConverter(true)]
-public class PoiyomiPbsConverter : ResoniteMaterialConverter
+
+public class PoiyomiPbsConverter
 {
-    private FrooxEngine.PBS_MetallicWrapper PbsComponent;
+    private FrooxEngine.PBS_Metallic Pbs;
 
-    public static float? EvaluateHeuristicConversion(UnityEngine.Material material)
+    private UnityEngine.Material Material;
+    private IConversionContext Context;
+
+    public PoiyomiPbsConverter(FrooxEngine.PBS_Metallic Pbs, UnityEngine.Material Material, IConversionContext Context)
     {
-        if (!material.shader.name.StartsWith(".poiyomi/"))
-        {
-            return null;
-        }
-
-        if (material.GetFloat("_ShadingEnabled") == 0)
-        {
-            // Flat shading, not PBS
-            return null;
-        }
-
-        PoiyomiLightingMode lightingMode = (PoiyomiLightingMode)material.GetFloat("_LightingMode");
-        if (lightingMode == PoiyomiLightingMode.Realistic || lightingMode == PoiyomiLightingMode.Cloth)
-        {
-            // Use Poiyomi PBS converter in priority
-            return 1;
-        }
-
-        // Fallback on Toon version
-        return null;
+        this.Pbs = Pbs;
+        this.Material = Material;
+        this.Context = Context;
     }
 
-    public override IAssetProvider<FrooxEngine.Material> UpdateConversion(UnityEngine.Material material, IConversionContext context)
+    public IAssetProvider<FrooxEngine.Material> UpdateConversion()
     {
-        if (PbsComponent == null)
-        {
-            PbsComponent = gameObject.AddComponent<FrooxEngine.PBS_MetallicWrapper>();
-        }
-        return new Updater(PbsComponent.Data, material, context).UpdateConversion();
+        UpdateRenderingSettings();
+        UpdateMainTexture();
+        UpdateEmission();
+        UpdateNormal();
+        UpdateHeight();
+        UpdateOcclusion();
+        UpdateDetail();
+        UpdateMetallicSmoothness();
+        return Pbs;
     }
 
-
-    private class Updater
+    private void UpdateRenderingSettings()
     {
-        private FrooxEngine.PBS_Metallic Pbs;
+        Pbs.BlendMode = PoiyomiBlendModeComputer.FromPoiyomi(Material);
+        Pbs.AlphaCutoff = Material.GetFloat("_Cutoff");
+        Pbs.OffsetFactor = Material.GetFloat("_OffsetFactor");
+        Pbs.OffsetUnits = Material.GetFloat("_OffsetUnits");
+        Pbs.RenderQueue = Material.renderQueue;
+    }
 
-        private UnityEngine.Material Material;
-        private IConversionContext Context;
+    private void UpdateMainTexture()
+    {
+        Pbs.AlbedoColor = Material.color.ToColorX_sRGB();
+        Pbs.AlbedoTexture = Context.GetITexture2D(Material.mainTexture);
+        Pbs.TextureOffset = Material.mainTextureOffset;
+        Pbs.TextureScale = Material.mainTextureScale;
+    }
 
-        public Updater(FrooxEngine.PBS_Metallic Pbs, UnityEngine.Material Material, IConversionContext Context)
+    private void UpdateEmission()
+    {
+        if (Material.GetFloat("_EnableEmission") > 0)
         {
-            this.Pbs = Pbs;
-            this.Material = Material;
-            this.Context = Context;
+            Pbs.EmissiveColor = Material.GetColor("_EmissionColor").ToColorX_Auto();
+            Pbs.EmissiveMap = Context.GetITexture2D(Material.GetTexture("_EmissionMap"));
+            return;
         }
-
-        public IAssetProvider<FrooxEngine.Material> UpdateConversion()
+        for (int i = 1; i <= 3; i++)
         {
-            UpdateRenderingSettings();
-            UpdateMainTexture();
-            UpdateEmission();
-            UpdateNormal();
-            UpdateHeight();
-            UpdateOcclusion();
-            UpdateDetail();
-            UpdateMetallicSmoothness();
-            return Pbs;
-        }
-
-        private void UpdateRenderingSettings()
-        {
-            Pbs.BlendMode = PoiyomiBlendModeComputer.FromPoiyomi(Material);
-            Pbs.AlphaCutoff = Material.GetFloat("_Cutoff");
-            Pbs.OffsetFactor = Material.GetFloat("_OffsetFactor");
-            Pbs.OffsetUnits = Material.GetFloat("_OffsetUnits");
-            Pbs.RenderQueue = Material.renderQueue;
-        }
-
-        private void UpdateMainTexture()
-        {
-            Pbs.AlbedoColor = Material.color.ToColorX_sRGB();
-            Pbs.AlbedoTexture = Context.GetITexture2D(Material.mainTexture);
-            Pbs.TextureOffset = Material.mainTextureOffset;
-            Pbs.TextureScale = Material.mainTextureScale;
-        }
-
-        private void UpdateEmission()
-        {
-            if (Material.GetFloat("_EnableEmission") > 0)
+            if (Material.GetFloat($"_EnableEmission{i}") > 0)
             {
-                Pbs.EmissiveColor = Material.GetColor("_EmissionColor").ToColorX_Auto();
-                Pbs.EmissiveMap = Context.GetITexture2D(Material.GetTexture("_EmissionMap"));
+                Pbs.EmissiveColor = Material.GetColor($"_EmissionColor{i}").ToColorX_Auto();
+                Pbs.EmissiveMap = Context.GetITexture2D(Material.GetTexture($"_EmissionMap{i}"));
                 return;
             }
-            for (int i = 1; i <= 3; i++)
-            {
-                if (Material.GetFloat($"_EnableEmission{i}") > 0)
-                {
-                    Pbs.EmissiveColor = Material.GetColor($"_EmissionColor{i}").ToColorX_Auto();
-                    Pbs.EmissiveMap = Context.GetITexture2D(Material.GetTexture($"_EmissionMap{i}"));
-                    return;
-                }
-            }
-            if (Pbs.EmissiveMap != null)
-            {
-                Pbs.EmissiveMap = null;                
-                Pbs.EmissiveColor = Color.black.ToColorX_sRGB();
-            }
         }
-
-        private void UpdateNormal()
+        if (Pbs.EmissiveMap != null)
         {
-            Pbs.NormalMap = Context.GetITexture2D(Material.GetTexture("_BumpMap"));
-            Pbs.NormalScale = Material.GetFloat("_BumpScale");
+            Pbs.EmissiveMap = null;
+            Pbs.EmissiveColor = Color.black.ToColorX_sRGB();
         }
+    }
 
-        private void UpdateHeight()
+    private void UpdateNormal()
+    {
+        Pbs.NormalMap = Context.GetITexture2D(Material.GetTexture("_BumpMap"));
+        Pbs.NormalScale = Material.GetFloat("_BumpScale");
+    }
+
+    private void UpdateHeight()
+    {
+        if (Material.GetFloat("_VertexManipulationsEnabled") == 0)
         {
-            if (Material.GetFloat("_VertexManipulationsEnabled") == 0)
+            if (Pbs.HeightMap != null)
             {
-                if (Pbs.HeightMap != null)
-                {
-                    Pbs.HeightMap = null;
-                    Pbs.HeightScale = 0;
-                }
-                return;
+                Pbs.HeightMap = null;
+                Pbs.HeightScale = 0;
             }
-
-            Pbs.HeightMap = Context.GetITexture2D(Material.GetTexture("_VertexManipulationHeightMask"));
-            Pbs.HeightScale = Material.GetFloat("_VertexManipulationHeight");
+            return;
         }
 
-        private void UpdateOcclusion()
-        {
-            Pbs.OcclusionMap = Context.GetITexture2D(Material.GetTexture("_LightingAOMaps"));
-        }
+        Pbs.HeightMap = Context.GetITexture2D(Material.GetTexture("_VertexManipulationHeightMask"));
+        Pbs.HeightScale = Material.GetFloat("_VertexManipulationHeight");
+    }
 
-        private void UpdateDetail()
+    private void UpdateOcclusion()
+    {
+        Pbs.OcclusionMap = Context.GetITexture2D(Material.GetTexture("_LightingAOMaps"));
+    }
+
+    private void UpdateDetail()
+    {
+        if (Material.GetFloat("_DetailEnabled") == 0)
         {
-            if (Material.GetFloat("_DetailEnabled") == 0)
+            Pbs.DetailAlbedoTexture = null;
+            Pbs.DetailNormalMap = null;
+            return;
+        }
+        Pbs.DetailAlbedoTexture = Context.GetITexture2D(Material.GetTexture("_DetailTex"));
+        Pbs.DetailTextureOffset = Material.GetTextureOffset("_DetailTex");
+        Pbs.DetailTextureScale = Material.GetTextureScale("_DetailTex");
+        Pbs.DetailNormalMap = Context.GetITexture2D(Material.GetTexture("_DetailNormalMap"));
+        Pbs.DetailNormalScale = Material.GetFloat("_DetailNormalMapScale");
+    }
+
+    private void UpdateMetallicSmoothness()
+    {
+        if (Material.GetFloat("_MochieBRDF") == 0)
+        {
+            if (Pbs.MetallicMap != null)
             {
-                Pbs.DetailAlbedoTexture = null;
-                Pbs.DetailNormalMap = null;
-                return;
+                Pbs.MetallicMap = null;
+                Pbs.Metallic = 0;
+                Pbs.Smoothness = 0;
             }
-            Pbs.DetailAlbedoTexture = Context.GetITexture2D(Material.GetTexture("_DetailTex"));
-            Pbs.DetailTextureOffset = Material.GetTextureOffset("_DetailTex");
-            Pbs.DetailTextureScale = Material.GetTextureScale("_DetailTex");
-            Pbs.DetailNormalMap = Context.GetITexture2D(Material.GetTexture("_DetailNormalMap"));
-            Pbs.DetailNormalScale = Material.GetFloat("_DetailNormalMapScale");
+            return;
         }
-
-        private void UpdateMetallicSmoothness()
-        {
-            if (Material.GetFloat("_MochieBRDF") == 0)
-            {
-                if (Pbs.MetallicMap != null)
-                {
-                    Pbs.MetallicMap = null;
-                    Pbs.Metallic = 0;
-                    Pbs.Smoothness = 0;
-                }
-                return;
-            }
-            Pbs.MetallicMap = Context.GetITexture2D(Material.GetTexture("_MochieMetallicMaps"));
-            Pbs.Metallic = Material.GetFloat("_MochieMetallicMultiplier");
-            Pbs.Smoothness = Material.GetFloat("_MochieRoughnessMultiplier");
-        }
+        Pbs.MetallicMap = Context.GetITexture2D(Material.GetTexture("_MochieMetallicMaps"));
+        Pbs.Metallic = Material.GetFloat("_MochieMetallicMultiplier");
+        Pbs.Smoothness = Material.GetFloat("_MochieRoughnessMultiplier");
     }
 }
