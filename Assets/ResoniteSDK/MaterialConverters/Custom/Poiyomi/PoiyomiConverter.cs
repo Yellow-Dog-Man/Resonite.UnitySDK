@@ -31,32 +31,22 @@ public class PoiyomiConverter : ResoniteMaterialConverter
     {
         if (material.GetFloat("_ShadingEnabled") == 0)
         {
-            // Flat shading, not PBS
-            return null;
-        }
-
-        if (IsPhysicallyBased(material))
-        {
-            // Use Poiyomi PBS converter in priority
-            return UpdatePbsConversion(material, context);
-        } else
-        {
+            // Flat shading
+            // TODO: see if there is a way to alert the mesh renderer
+            // that it should set its ShadowCastMode to Off
             return UpdateXiexeConversion(material, context);
-        }
-    }
-
-    private bool IsPhysicallyBased(UnityEngine.Material material)
-    {
-        if (material.GetFloat("_ShadingEnabled") == 0)
-        {
-            // Flat shading, not PBS
-            return false;
         }
 
         PoiyomiLightingMode lightingMode = (PoiyomiLightingMode)material.GetFloat("_LightingMode");
-        return lightingMode.IsPhysicallyBased();
+        if (lightingMode.IsPhysicallyBased())
+        {
+            // Use Poiyomi PBS converter in priority
+            return UpdatePbsConversion(material, context);
+        }
+
+        return UpdateXiexeConversion(material, context);
     }
- 
+
     private IAssetProvider<FrooxEngine.Material> UpdatePbsConversion(UnityEngine.Material material, IConversionContext context)
     {
         if (PbsComponent == null)
@@ -72,7 +62,9 @@ public class PoiyomiConverter : ResoniteMaterialConverter
         {
             XiexeComponent = gameObject.AddComponent<FrooxEngine.XiexeToonMaterialWrapper>();
             // A few properties should be initialized at non-default values to look right
-            XiexeComponent.Data.ShadowRim = Color.white.ToColorX_sRGB();
+            var Xiexe = XiexeComponent.Data;
+            Xiexe.ShadowSharpness = 0.5f;
+            Xiexe.SpecularArea = 0.5f; 
         }
         return new PoiyomiXiexeConverter(XiexeComponent.Data, material, context).UpdateConversion();
     }

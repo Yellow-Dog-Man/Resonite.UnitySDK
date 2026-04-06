@@ -18,8 +18,15 @@ public static class PoiyomiLightingModeMethods
 {
     public static bool IsPhysicallyBased(this PoiyomiLightingMode lightingMode)
     {
-        return (
-            lightingMode == PoiyomiLightingMode.Realistic ||
-            lightingMode == PoiyomiLightingMode.Cloth);
+        switch (lightingMode)
+        {
+            case PoiyomiLightingMode.Realistic:
+            case PoiyomiLightingMode.Cloth:
+            case PoiyomiLightingMode.Skin:
+            case PoiyomiLightingMode.SDF:
+                return true;
+            default:
+                return false;
+        }
     }
 }

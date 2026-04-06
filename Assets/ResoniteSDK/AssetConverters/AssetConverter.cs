@@ -104,6 +104,13 @@ public abstract class AssetConverter<TWrapper, TProvider, TUnity, TResonite> : A
         if (assetPath == null)
             throw new Exception($"Could not get asset path for asset: {Source}");
 
+        if (string.IsNullOrWhiteSpace(assetPath))
+        {
+            // Most likely a procedural asset
+            Debug.Log($"Re-converting procedural asset {Source}");
+            return (ulong) DateTime.UtcNow.Ticks;
+        }
+
         var importer = AssetImporter.GetAtPath(assetPath);
 
         if (importer == null)

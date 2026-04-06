@@ -159,24 +159,25 @@ public class PoiyomiXiexeConverter
 
     private void UpdateRim()
     {
+        // TODO: Figure out what these two do. For now, use Xiexe's default
+        Xiexe.RimAttenuationEffect = 1;
+        Xiexe.RimThreshold = 0.1f;
+
         if (Material.GetFloat("_EnableRimLighting") == 0)
         {
             Xiexe.RimColor = Color.black.ToColorX_sRGB();
             Xiexe.RimIntensity = 0;
             return;
         }
+
         if (Material.GetFloat("_RimStyle") == 0)
         {
             // Poiyomi style
             Xiexe.RimColor = Material.GetColor("_RimLightColor").ToColorX_Auto();
             Xiexe.RimAlbedoTint = Material.GetFloat("_RimBaseColorMix");
-            // TODO: Figure out what that does. For now, use Xiexe's default
-            Xiexe.RimAttenuationEffect = 1;
             Xiexe.RimIntensity = Material.GetFloat("_RimBrightness");
             // TODO: Figure out if that formula makes sense (it looks close enough)
             Xiexe.RimRange = 1 - (Material.GetFloat("_RimWidth") * Material.GetFloat("_RimSharpness"));
-            // TODO: Figure out what that does. For now, use Xiexe's default
-            Xiexe.RimThreshold = 0.1f;
             Xiexe.RimSharpness = 1 - Material.GetFloat("_RimSharpness");
             return;
         }
@@ -185,11 +186,7 @@ public class PoiyomiXiexeConverter
             // UTS2 style
             Xiexe.RimColor = Material.GetColor("_RimLightColor").ToColorX_Auto();
             Xiexe.RimAlbedoTint = 0; // No setting
-            // TODO: Figure out what that does. For now, use Xiexe's default
-            Xiexe.RimAttenuationEffect = 1;
             Xiexe.RimIntensity = 1; // No setting
-            // TODO: Figure out what that does. For now, use Xiexe's default
-            Xiexe.RimThreshold = 0.1f;
             if (Material.GetFloat("_RimLight_FeatherOff") > 0)
             {
                 Xiexe.RimSharpness = 0;
@@ -207,11 +204,7 @@ public class PoiyomiXiexeConverter
             // Liltoon style
             Xiexe.RimColor = Material.GetColor("_RimColor").ToColorX_Auto();
             Xiexe.RimAlbedoTint = Material.GetFloat("_RimMainStrength");
-            // TODO: Figure out what that does. For now, use Xiexe's default
-            Xiexe.RimAttenuationEffect = 1;
             Xiexe.RimIntensity = 1; // No setting
-            // TODO: Figure out what that does. For now, use Xiexe's default
-            Xiexe.RimThreshold = 0.1f;
             // TODO: Figure these two formulas out. For now, use Xiexe's default
             Xiexe.RimSharpness = 0.1f;
             Xiexe.RimRange = 0.7f;
@@ -221,8 +214,6 @@ public class PoiyomiXiexeConverter
 
     private void UpdateSpecular()
     {
-        // TODO: No corresponding setting?
-        Xiexe.SpecularArea = 0.5f;
         if (Material.GetFloat("_MochieBRDF") == 0)
         {
             Xiexe.SpecularIntensity = 0;
@@ -243,15 +234,79 @@ public class PoiyomiXiexeConverter
     {
         // TODO
     }
+
     private void UpdateShadowRamp()
     {
-        // TODO
+        if (Material.GetFloat("_ShadingEnabled") == 0)
+        {
+            Xiexe.ShadowRamp = null;
+            return;
+        }
+
+        switch ((PoiyomiLightingMode)Material.GetFloat("_LightingMode"))
+        {
+            case PoiyomiLightingMode.TextureRamp:
+                var ramp = Material.GetTexture("_ToonRamp");
+                Xiexe.ShadowRamp = Context.GetITexture2D(ramp);
+                if (ramp != null && ramp is UnityEngine.Texture2D originalRamp && ramp.isReadable)
+                {
+                    var color = Material.GetColor("_LightingShadowColor");
+                    if (color != Color.white)
+                    {
+                        var coloredRamp = UnityEngine.Texture2D.Instantiate(originalRamp);
+                        var pixels = originalRamp.GetPixels();
+                        for (int i = 0; i < pixels.Length; i++)
+                        {
+                            pixels[i] = pixels[i].grayscale * pixels[i] + (1 - pixels[i].grayscale) * pixels[i] * color;
+                        }
+                        coloredRamp.SetPixels(pixels);
+                        coloredRamp.Apply();
+                        Xiexe.ShadowRamp = Context.GetITexture2D(coloredRamp);
+                    }
+                }
+                break;
+            case PoiyomiLightingMode.MultilayerMath:
+            // TODO: Ramp or rim?
+            case PoiyomiLightingMode.Wrapped:
+            // TODO: Ramp or rim?
+            case PoiyomiLightingMode.ShadeMap:
+            // TODO: Ramp or rim?
+            default:
+                Xiexe.ShadowRamp = null;
+                break;
+        }
     }
+
     private void UpdateShadowRim()
     {
-        // TODO
-        Xiexe.ShadowRim = Color.white.ToColorX_sRGB();
+        if (Material.GetFloat("_ShadingEnabled") == 0)
+        {
+            // TODO: use actual values. For now, using default Xiexe values
+            Xiexe.ShadowRim = Color.white.ToColorX_sRGB();
+            Xiexe.ShadowRimThreshold = 1;
+            Xiexe.ShadowRimRange = 0.7f;
+            Xiexe.ShadowRimSharpness = 0.3f;
+            return;
+        }
+
+        switch ((PoiyomiLightingMode)Material.GetFloat("_LightingMode"))
+        {
+            case PoiyomiLightingMode.MultilayerMath:
+            // TODO
+            case PoiyomiLightingMode.Wrapped:
+            // TODO
+            case PoiyomiLightingMode.ShadeMap:
+            // TODO
+            default:
+                // TODO: use actual values. For now, using default Xiexe values
+                Xiexe.ShadowRim = Color.white.ToColorX_sRGB();
+                Xiexe.ShadowRimThreshold = 1;
+                Xiexe.ShadowRimRange = 0.7f;
+                Xiexe.ShadowRimSharpness = 0.3f;
+                break;
+        }
     }
+
     private void UpdateThickness()
     {
         // TODO
