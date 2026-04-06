@@ -290,24 +290,34 @@ public class PoiyomiXiexeConverter
             return matcap;
         }
 
-        if (AssetCache.MatcapTexture == null)
+        var opaqueMatcap = AssetCache.MatcapTexture;
+        if (opaqueMatcap == null || opaqueMatcap.width != originalMatcap.width || opaqueMatcap.height != originalMatcap.height)
         {
-            AssetCache.MatcapTexture = UnityEngine.Texture2D.Instantiate(originalMatcap);
-            AssetCache.MatcapTexture.name = "PoiyomiConverter opaque matcap texture";
+            if (opaqueMatcap != null)
+            {
+                UnityEngine.Texture2D.Destroy(opaqueMatcap);
+            }
+            opaqueMatcap = new(originalMatcap.width, originalMatcap.height, TextureFormat.RGBA32, false)
+            {
+                name = "PoiyomiConverter opaque matcap texture"
+            };
+            AssetCache.MatcapTexture = opaqueMatcap;
         }
 
-        var pixels = originalMatcap.GetPixels();
+        var alpha = Material.GetColor("_MatcapColor").a;
+        var pixels = originalMatcap.GetPixels32();
         for (int i = 0; i < pixels.Length; i++)
         {
             // Add black background inversely proportional to alpha
-            pixels[i] *= pixels[i].a;
-            pixels[i].a = 1;
+            Color p = pixels[i];
+            var pa = p.a;
+            p = p * pa * alpha;
+            p.a = pa;
+            pixels[i] = p;
         }
-        AssetCache.MatcapTexture.width = originalMatcap.width;
-        AssetCache.MatcapTexture.height = originalMatcap.height;
-        AssetCache.MatcapTexture.SetPixels(pixels);
-        AssetCache.MatcapTexture.Apply();
-        return AssetCache.MatcapTexture;
+        opaqueMatcap.SetPixels32(pixels);
+        opaqueMatcap.Apply();
+        return opaqueMatcap;
     }
 
     private void UpdateOcclusion()
@@ -391,23 +401,30 @@ public class PoiyomiXiexeConverter
             return ramp;
         }
 
-        if (AssetCache.ShadowRampTexture == null)
+        var colorizedRamp = AssetCache.ShadowRampTexture;
+        if (colorizedRamp == null || colorizedRamp.width != originalRamp.width || colorizedRamp.height != originalRamp.height)
         {
-            AssetCache.ShadowRampTexture = UnityEngine.Texture2D.Instantiate(originalRamp);
-            AssetCache.ShadowRampTexture.name = "PoiyomiConverter colorized shadow ramp";
+            if (colorizedRamp != null)
+            {
+                UnityEngine.Texture2D.Destroy(colorizedRamp);
+            }
+            colorizedRamp = new(originalRamp.width, originalRamp.height, TextureFormat.RGBA32, false)
+            {
+                name = "PoiyomiConverter colorized shadow ramp"
+            };
+            AssetCache.ShadowRampTexture = colorizedRamp;
         }
 
-        var pixels = originalRamp.GetPixels();
+        var pixels = originalRamp.GetPixels32();
         for (int i = 0; i < pixels.Length; i++)
         {
-            pixels[i] = pixels[i].grayscale * pixels[i] + (1 - pixels[i].grayscale) * pixels[i] * color;
-            pixels[i] = Color.white - strength * (Color.white - pixels[i]);
+            Color p = pixels[i];
+            p = p.grayscale * p + (1 - p.grayscale) * p * color;
+            pixels[i] = Color.white - strength * (Color.white - p);
         }
-        AssetCache.ShadowRampTexture.width = originalRamp.width;
-        AssetCache.ShadowRampTexture.height = originalRamp.height;
-        AssetCache.ShadowRampTexture.SetPixels(pixels);
-        AssetCache.ShadowRampTexture.Apply();
-        return AssetCache.ShadowRampTexture;
+        colorizedRamp.SetPixels32(pixels);
+        colorizedRamp.Apply();
+        return colorizedRamp;
     }
 
     private void UpdateShadowRim()
@@ -454,8 +471,8 @@ public class PoiyomiXiexeConverter
         Xiexe.ThicknessUV = (int)Material.GetFloat("_SSSThicknessMapUV");
 
         Xiexe.SubsurfaceColor = Material.GetColor("_SSSColor").ToColorX_Auto();
-        Xiexe.SubsurfaceDistortion = Material.GetFloat("_SSSDistortion");
-        Xiexe.SubsurfacePower = Material.GetFloat("_SSSStrength");
-        Xiexe.SubsurfaceScale = Material.GetFloat("_SSSSpread");
+        Xiexe.SubsurfaceDistortion = 3 * Material.GetFloat("_SSSDistortion");
+        Xiexe.SubsurfacePower = 3 * Material.GetFloat("_SSSStrength");
+        Xiexe.SubsurfaceScale = 3 / Material.GetFloat("_SSSSpread");
     }
 }
