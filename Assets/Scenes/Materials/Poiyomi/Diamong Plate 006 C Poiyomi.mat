@@ -3979,7 +3979,7 @@ Material:
     - _LightingAOMapsPan: {r: 0, g: 0, b: 0, a: 0}
     - _LightingDetailShadowMapsPan: {r: 0, g: 0, b: 0, a: 0}
     - _LightingForcedColor: {r: 1, g: 1, b: 1, a: 1}
-    - _LightingShadowColor: {r: 1, g: 1, b: 1, a: 1}
+    - _LightingShadowColor: {r: 0.6785013, g: 1, b: 0.36320752, a: 1}
     - _LightingShadowMasksPan: {r: 0, g: 0, b: 0, a: 0}
     - _LightingWrappedColor: {r: 1, g: 1, b: 1, a: 1}
     - _LightngForcedDirection: {r: 0, g: 0, b: 0, a: 1}
