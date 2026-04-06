@@ -39,7 +39,6 @@ public class PoiyomiXiexeConverter
         UpdateOutline();
         UpdateShadowRamp();
         UpdateShadowRim();
-        UpdateThickness();
         UpdateSubsurface();
 
         return Xiexe;
@@ -113,6 +112,9 @@ public class PoiyomiXiexeConverter
         if (Material.GetFloat("_MochieBRDF") > 0)
         {
             Xiexe.MetallicGlossMap = Context.GetITexture2D(Material.GetTexture("_MochieMetallicMaps"));
+            Xiexe.MetallicGlossMapOffset = Material.GetTextureOffset("_MochieMetallicMaps");
+            Xiexe.MetallicGlossMapScale = Material.GetTextureScale("_MochieMetallicMaps");
+            Xiexe.MetallicUV = (int)Material.GetFloat("_MochieMetallicMapsUV");
             Xiexe.Metallic = Material.GetFloat("_MochieMetallicMultiplier");
             Xiexe.Glossiness = Material.GetFloat("_MochieRoughnessMultiplier");
             Xiexe.Reflectivity = Material.GetFloat("_MochieReflectionStrength");
@@ -141,6 +143,9 @@ public class PoiyomiXiexeConverter
             {            
                 // LilToon-style reflections can replace the Poiyomi reflections
                 Xiexe.MetallicGlossMap = Context.GetITexture2D(Material.GetTexture("_MetallicGlossMap"));
+                Xiexe.MetallicGlossMapOffset = Material.GetTextureOffset("_MetallicGlossMap");
+                Xiexe.MetallicGlossMapScale = Material.GetTextureScale("_MetallicGlossMap");
+                Xiexe.MetallicUV = 0;
                 Xiexe.Metallic = Material.GetFloat("_Metallic");
                 Xiexe.Reflectivity = Material.GetFloat("_Reflectance");
                 if (Material.GetFloat("_ApplySpecular") > 0)
@@ -271,11 +276,36 @@ public class PoiyomiXiexeConverter
     }
     private void UpdateOcclusion()
     {
-        // TODO
+        Xiexe.OcclusionMap = Context.GetITexture2D(Material.GetTexture("_LightingAOMaps"));
+        Xiexe.OcclusionMapOffset = Material.GetTextureOffset("_LightingAOMaps");
+        Xiexe.OcclusionMapScale = Material.GetTextureScale("_LightingAOMaps");
+        Xiexe.OcclusionUV = (int)Material.GetFloat("_LightingAOMapsUV");
+        Xiexe.OcclusionColor = Color.black.ToColorX_sRGB();
     }
+
     private void UpdateOutline()
     {
-        // TODO
+        if (Material.GetFloat("_EnableOutlines") == 0)
+        {
+            Xiexe.Outline = XiexeToonMaterial.OutlineStyle.None;
+            return;
+        }
+
+        if (Material.GetFloat("_OutlineLit") > 0 && Material.GetFloat("_OutlineShadowStrength") >= 0.5)
+        {
+            Xiexe.Outline = XiexeToonMaterial.OutlineStyle.Lit;
+        } else if (Material.GetFloat("_OutlineExpansionMode") == 1) {
+            // Rim light
+            Xiexe.Outline = XiexeToonMaterial.OutlineStyle.Lit;
+        } else
+        {
+            Xiexe.Outline = XiexeToonMaterial.OutlineStyle.Emissive;
+        }
+
+        Xiexe.OutlineWidth = Material.GetFloat("_LineWidth");
+        Xiexe.OutlineColor = Material.GetColor("_LineColor").ToColorX_Auto();
+        Xiexe.OutlineAlbedoTint = (Material.GetFloat("_OutlineTintMix") >= 0.5);
+        Xiexe.OutlineMask = Context.GetITexture2D(Material.GetTexture("_OutlineMask"));
     }
 
     private void UpdateShadowRamp()
@@ -356,12 +386,22 @@ public class PoiyomiXiexeConverter
         }
     }
 
-    private void UpdateThickness()
-    {
-        // TODO
-    }
     private void UpdateSubsurface()
     {
-        // TODO
+        if (Material.GetFloat("_SubsurfaceScattering") == 0)
+        {
+            Xiexe.ThicknessMap = null;
+            Xiexe.SubsurfaceColor = Color.black.ToColorX_sRGB();
+        }
+
+        Xiexe.ThicknessMap = Context.GetITexture2D(Material.GetTexture("_SSSThicknessMap"));
+        Xiexe.ThicknessMapOffset = Material.GetTextureOffset("_SSSThicknessMap");
+        Xiexe.ThicknessMapScale = Material.GetTextureScale("_SSSThicknessMap");
+        Xiexe.ThicknessUV = (int)Material.GetFloat("_SSSThicknessMapUV");
+
+        Xiexe.SubsurfaceColor = Material.GetColor("_SSSColor").ToColorX_Auto();
+        Xiexe.SubsurfaceDistortion = Material.GetFloat("_SSSDistortion");
+        Xiexe.SubsurfacePower = Material.GetFloat("_SSSStrength");
+        Xiexe.SubsurfaceScale = Material.GetFloat("_SSSSpread");
     }
 }
