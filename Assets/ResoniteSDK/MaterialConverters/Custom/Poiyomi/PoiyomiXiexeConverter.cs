@@ -177,24 +177,16 @@ public class PoiyomiXiexeConverter
     {
         if (Material.GetFloat("_EnableEmission") > 0)
         {
-            Xiexe.EmissionColor = Material.GetColor("_EmissionColor").ToColorX_Auto();
+            var color = Material.GetColor("_EmissionColor");
+            var alpha = color.a;
+            color *= Material.GetFloat("_EmissionStrength");
+            color.a = alpha;
+            Xiexe.EmissionColor = color.ToColorX_Auto();
             Xiexe.EmissionMap = Context.GetITexture2D(Material.GetTexture("_EmissionMap"));
             Xiexe.EmissionMapOffset = Material.GetTextureOffset("_EmissionMap");
             Xiexe.EmissionMapScale = Material.GetTextureScale("_EmissionMap");
             Xiexe.EmissionUV = (int)Material.GetFloat("_EmissionMapUV");
             return;
-        }
-        for (int i = 1; i <= 3; i++)
-        {
-            if (Material.GetFloat($"_EnableEmission{i}") > 0)
-            {
-                Xiexe.EmissionColor = Material.GetColor($"_EmissionColor{i}").ToColorX_Auto();
-                Xiexe.EmissionMap = Context.GetITexture2D(Material.GetTexture($"_EmissionMap{i}"));
-                Xiexe.EmissionMapOffset = Material.GetTextureOffset($"_EmissionMap{i}");
-                Xiexe.EmissionMapScale = Material.GetTextureScale($"_EmissionMap{i}");
-                Xiexe.EmissionUV = (int)Material.GetFloat($"_EmissionMap{i}UV");
-                return;
-            }
         }
         if (Xiexe.EmissionMap != null)
         {
@@ -260,7 +252,22 @@ public class PoiyomiXiexeConverter
 
     private void UpdateMatcap()
     {
-        // TODO
+        if (Material.GetFloat("_MatcapEnable") > 0)
+        {
+            Xiexe.Matcap = Context.GetITexture2D(Material.GetTexture("_Matcap"));
+            var matcapColor = Material.GetColor("_MatcapColor");
+            var alpha = matcapColor.a;
+            matcapColor *= Material.GetFloat("_MatcapIntensity");
+            matcapColor.a = alpha;
+            Xiexe.MatcapTint = matcapColor.ToColorX_Auto();
+            return;
+        }
+
+        if (Xiexe.Matcap != null)
+        {
+            Xiexe.Matcap = null;
+            Xiexe.MatcapTint = Color.black.ToColorX_sRGB();
+        }
     }
     private void UpdateOcclusion()
     {
@@ -287,7 +294,8 @@ public class PoiyomiXiexeConverter
                 if (ramp != null && ramp is UnityEngine.Texture2D originalRamp && ramp.isReadable)
                 {
                     var color = Material.GetColor("_LightingShadowColor");
-                    if (color != Color.white)
+                    var strength = Material.GetFloat("_ShadowStrength");
+                    if (color != Color.white || strength < 1)
                     {
                         if (AssetCache.ShadowRampTexture == null)
                         {
@@ -298,7 +306,8 @@ public class PoiyomiXiexeConverter
                         for (int i = 0; i < pixels.Length; i++)
                         {
                             pixels[i] = pixels[i].grayscale * pixels[i] + (1 - pixels[i].grayscale) * pixels[i] * color;
-                        }
+                            pixels[i] = Color.white - strength * (Color.white - pixels[i]);
+                        } 
                         AssetCache.ShadowRampTexture.SetPixels(pixels);
                         AssetCache.ShadowRampTexture.Apply();
                         Xiexe.ShadowRamp = Context.GetITexture2D(AssetCache.ShadowRampTexture);
