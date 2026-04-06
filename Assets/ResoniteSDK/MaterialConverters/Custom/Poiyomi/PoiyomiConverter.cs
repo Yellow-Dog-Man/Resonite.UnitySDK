@@ -16,6 +16,7 @@ public class PoiyomiConverter : ResoniteMaterialConverter
 {
     private FrooxEngine.XiexeToonMaterialWrapper XiexeComponent;
     private FrooxEngine.PBS_MetallicWrapper PbsComponent;
+    private PoiyomiAssetCache AssetCache = new();
 
     public static float? EvaluateHeuristicConversion(UnityEngine.Material material)
     {
@@ -64,8 +65,8 @@ public class PoiyomiConverter : ResoniteMaterialConverter
             // A few properties should be initialized at non-default values to look right
             var Xiexe = XiexeComponent.Data;
             Xiexe.ShadowSharpness = 0.5f;
-            Xiexe.SpecularArea = 0.5f; 
+            Xiexe.SpecularArea = 0.5f;
         }
-        return new PoiyomiXiexeConverter(XiexeComponent.Data, material, context).UpdateConversion();
+        return new PoiyomiXiexeConverter(XiexeComponent.Data, material, context, AssetCache).UpdateConversion();
     }
 }

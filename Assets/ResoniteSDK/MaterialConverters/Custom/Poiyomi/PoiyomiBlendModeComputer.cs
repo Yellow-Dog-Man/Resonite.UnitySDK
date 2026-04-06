@@ -9,13 +9,13 @@ public class PoiyomiBlendModeComputer
         {
             return BlendMode.Opaque;
         }
-        
+
         if (material.GetFloat("_DstBlend") == 10)
         {
             // TransClipping, Fade, Transparent
-            return BlendMode.Transparent; 
+            return BlendMode.Transparent;
         }
-        
+
         if (material.GetFloat("_DstBlend") == 1)
         {
             // Additive, Soft Additive

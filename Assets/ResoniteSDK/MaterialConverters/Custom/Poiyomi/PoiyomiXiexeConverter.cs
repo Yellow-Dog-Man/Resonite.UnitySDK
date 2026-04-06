@@ -14,15 +14,16 @@ using UnityEngine;
 public class PoiyomiXiexeConverter
 {
     private FrooxEngine.XiexeToonMaterial Xiexe;
-
     private UnityEngine.Material Material;
     private IConversionContext Context;
+    private PoiyomiAssetCache AssetCache;
 
-    public PoiyomiXiexeConverter(FrooxEngine.XiexeToonMaterial Xiexe, UnityEngine.Material Material, IConversionContext Context)
+    public PoiyomiXiexeConverter(FrooxEngine.XiexeToonMaterial Xiexe, UnityEngine.Material Material, IConversionContext Context, PoiyomiAssetCache AssetCache)
     {
         this.Xiexe = Xiexe;
         this.Material = Material;
         this.Context = Context;
+        this.AssetCache = AssetCache;
     }
 
     public IAssetProvider<FrooxEngine.Material> UpdateConversion()
@@ -253,15 +254,19 @@ public class PoiyomiXiexeConverter
                     var color = Material.GetColor("_LightingShadowColor");
                     if (color != Color.white)
                     {
-                        var coloredRamp = UnityEngine.Texture2D.Instantiate(originalRamp);
+                        if (AssetCache.ShadowRampTexture == null)
+                        {
+                            AssetCache.ShadowRampTexture = UnityEngine.Texture2D.Instantiate(originalRamp);
+                            AssetCache.ShadowRampTexture.name = "PoiyomiConverter colorized shadow ramp";
+                        }
                         var pixels = originalRamp.GetPixels();
                         for (int i = 0; i < pixels.Length; i++)
                         {
                             pixels[i] = pixels[i].grayscale * pixels[i] + (1 - pixels[i].grayscale) * pixels[i] * color;
                         }
-                        coloredRamp.SetPixels(pixels);
-                        coloredRamp.Apply();
-                        Xiexe.ShadowRamp = Context.GetITexture2D(coloredRamp);
+                        AssetCache.ShadowRampTexture.SetPixels(pixels);
+                        AssetCache.ShadowRampTexture.Apply();
+                        Xiexe.ShadowRamp = Context.GetITexture2D(AssetCache.ShadowRampTexture);
                     }
                 }
                 break;
