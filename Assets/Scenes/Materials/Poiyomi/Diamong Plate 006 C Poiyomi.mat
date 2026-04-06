@@ -15,7 +15,7 @@ Material:
   - BSSBLOOMFOGTYPE_HEIGHT
   - MOCHIE_PBR
   - VIGNETTE_MASKED
-  - _LIGHTINGMODE_FLAT
+  - _LIGHTINGMODE_TEXTURERAMP
   - _RIM2STYLE_POIYOMI
   - _RIMSTYLE_POIYOMI
   - _STOCHASTICMODE_DELIOT_HEITZ
@@ -24,9 +24,9 @@ Material:
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
-  m_CustomRenderQueue: 2450
+  m_CustomRenderQueue: 2000
   stringTagMap:
-    RenderType: TransparentCutout
+    RenderType: Opaque
   disabledShaderPasses: []
   m_LockedProperties: _EnableOutlines
   m_SavedProperties:
@@ -545,7 +545,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _ToonRamp:
-        m_Texture: {fileID: 2800000, guid: 9bb77cf8c1bd8184680cdfdc7f7b4c46, type: 3}
+        m_Texture: {fileID: 2800000, guid: 7ff3cc732aae9734f85c697329ee371f, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _TruchetMask:
@@ -856,7 +856,7 @@ Material:
     - _BacklightReceiveShadow: 1
     - _BacklightViewStrength: 1
     - _BaseColor_Step: 0.5
-    - _BaseShade_Feather: 0.0001
+    - _BaseShade_Feather: 0.1
     - _BlackLightMasking0GlobalMaskBlendType: 0
     - _BlackLightMasking0GlobalMaskIndex: 0
     - _BlackLightMasking0Key: 1
@@ -959,7 +959,7 @@ Material:
     - _CurvatureU: 0
     - _CurvatureV: 0
     - _CustomColors: 0
-    - _Cutoff: 0.5
+    - _Cutoff: 0
     - _Decal0ApplyGlobalMaskBlendType: 0
     - _Decal0ApplyGlobalMaskIndex: 0
     - _Decal0ChannelSeparation: 0
@@ -1861,14 +1861,14 @@ Material:
     - _LightingEnableLightVolumes: 1
     - _LightingForceColorEnabled: 0
     - _LightingForcedColorThemeIndex: 0
-    - _LightingGradientEnd: 0.5
+    - _LightingGradientEnd: 0.149
     - _LightingGradientStart: 0
     - _LightingIgnoreAmbientColor: 1
     - _LightingIndirectUsesNormals: 0
     - _LightingMapMode: 0
     - _LightingMinLightBrightness: 0
     - _LightingMirrorVertexLightingEnabled: 1
-    - _LightingMode: 5
+    - _LightingMode: 0
     - _LightingMonochromatic: 0
     - _LightingMulitlayerNonLinear: 1
     - _LightingShadowMaskStrengthA: 0
@@ -1880,7 +1880,7 @@ Material:
     - _LightingViewDirOffsetPitch: 0
     - _LightingViewDirOffsetYaw: 0
     - _LightingWrappedNormalization: 0
-    - _LightingWrappedWrap: 0
+    - _LightingWrappedWrap: 1.064
     - _LineColorThemeIndex: 0
     - _LineWidth: 1
     - _LookAtAlphaAlpha: 1
@@ -2179,7 +2179,7 @@ Material:
     - _MochieSpecularStrengthGlobalMask: 0
     - _MochieSpecularStrengthGlobalMaskBlendType: 2
     - _MochieSpecularTintThemeIndex: 0
-    - _Mode: 1
+    - _Mode: 0
     - _ModelAngleMax: 90
     - _ModelAngleMin: 45
     - _MultilayerMathBlurMapUV: 0
@@ -2201,7 +2201,7 @@ Material:
     - _OutlineClipAtZeroWidth: 1
     - _OutlineCull: 1
     - _OutlineDstBlend: 0
-    - _OutlineDstBlendAlpha: 1
+    - _OutlineDstBlendAlpha: 0
     - _OutlineEmission: 0
     - _OutlineExpansionMode: 1
     - _OutlineFixWidth: 0.5
@@ -2529,11 +2529,11 @@ Material:
     - _RimBlendMode: 1
     - _RimBlendStrength: 1
     - _RimBlur: 0.65
-    - _RimBorder: 0.14
+    - _RimBorder: 0.5
     - _RimBrightness: 1
     - _RimColorTexUV: 0
     - _RimDirRange: 0
-    - _RimDirStrength: 0
+    - _RimDirStrength: 1
     - _RimEnableLighting: 1
     - _RimEnviroBlur: 0.7
     - _RimEnviroChannel: 0
@@ -2542,7 +2542,7 @@ Material:
     - _RimEnviroMinBrightness: 0
     - _RimEnviroSharpness: 0
     - _RimEnviroWidth: 0.45
-    - _RimFresnelPower: 3.5
+    - _RimFresnelPower: 0.1
     - _RimGlobalMask: 0
     - _RimGlobalMaskBlendType: 2
     - _RimHueSelectOrShift: 1
@@ -2556,7 +2556,7 @@ Material:
     - _RimLightColorThemeIndex: 0
     - _RimLight_FeatherOff: 0
     - _RimLight_InsideMask: 0.0001
-    - _RimLight_Power: 0
+    - _RimLight_Power: 0.63
     - _RimLightingInvert: 0
     - _RimMainStrength: 0
     - _RimMaskChannel: 0
@@ -2571,7 +2571,7 @@ Material:
     - _RimShadowMaskInvert: 0
     - _RimShadowMaskRampType: 0
     - _RimShadowMaskStrength: 1
-    - _RimShadowToggle: 1
+    - _RimShadowToggle: 0
     - _RimShadowWidth: 0
     - _RimSharpness: 0.25
     - _RimStrength: 0
@@ -2611,7 +2611,7 @@ Material:
     - _ShadingRampedLightMapApplyGlobalMaskIndex: 0
     - _ShadingRampedLightMapInverseApplyGlobalMaskBlendType: 2
     - _ShadingRampedLightMapInverseApplyGlobalMaskIndex: 0
-    - _ShadingShadeMapBlendType: 0
+    - _ShadingShadeMapBlendType: 1
     - _Shadow2ndBlur: 0.3
     - _Shadow2ndBorder: 0.5
     - _Shadow2ndColorTexAddition: 0
@@ -2946,7 +2946,7 @@ Material:
     - footer_website: 0
     - footer_youtube: 0
     - m_AudioLinkCategory: 0
-    - m_OutlineCategory: 1
+    - m_OutlineCategory: 0
     - m_end_ALDecalSpectrum: 0
     - m_end_ALVolumeColor: 0
     - m_end_Alpha: 0
@@ -3161,7 +3161,7 @@ Material:
     - m_start_PPAnimations: 1
     - m_start_PathAudioLink: 0
     - m_start_PoiGlobalCategory: 1
-    - m_start_PoiLightData: 1
+    - m_start_PoiLightData: 0
     - m_start_PoiPostProcessingCategory: 1
     - m_start_PoiShading: 1
     - m_start_PoiUVCategory: 1
@@ -3190,7 +3190,7 @@ Material:
     - m_start_backFace: 0
     - m_start_backlight: 0
     - m_start_blending: 1
-    - m_start_brdf: 1
+    - m_start_brdf: 0
     - m_start_clearCoat: 0
     - m_start_clearcoatadvanced: 0
     - m_start_clearcoatglobalmask: 0
@@ -3205,7 +3205,7 @@ Material:
     - m_start_flipBook: 0
     - m_start_glitter: 0
     - m_start_internalparallax: 0
-    - m_start_matcap: 1
+    - m_start_matcap: 0
     - m_start_mirrorOptions: 0
     - m_start_normalCorrect: 0
     - m_start_outlineAlphaBlending: 0
@@ -3607,15 +3607,15 @@ Material:
     - s_start_MatcapTPSMaskGroup: 0
     - s_start_MirrorTexture: 1
     - s_start_MultilayerMath1stLayer: 1
-    - s_start_MultilayerMath2ndLayer: 0
-    - s_start_MultilayerMath3rdLayer: 0
+    - s_start_MultilayerMath2ndLayer: 1
+    - s_start_MultilayerMath3rdLayer: 1
     - s_start_MultilayerMathBorder: 1
     - s_start_MultilayerMathBorderMap: 0
-    - s_start_MultilayerShadowMap: 0
+    - s_start_MultilayerShadowMap: 1
     - s_start_OutlineAlphaDistanceFade: 0
     - s_start_OutlineColorAdjust: 0
     - s_start_OutlineFixedSize: 0
-    - s_start_OutlineLighting: 0
+    - s_start_OutlineLighting: 1
     - s_start_OutlineRenderingOptions: 0
     - s_start_OutlineZOffset: 0
     - s_start_PBRSecondSpecular: 0
@@ -3637,7 +3637,7 @@ Material:
     - s_start_RimLight0Color: 1
     - s_start_RimLight0GlobalMasking: 1
     - s_start_RimLight0HueShift: 0
-    - s_start_RimLight0LightDirMask: 1
+    - s_start_RimLight0LightDirMask: 0
     - s_start_RimLight0ShapeControls: 1
     - s_start_RimLight1Color: 1
     - s_start_RimLight1GlobalMasking: 0
@@ -3700,7 +3700,7 @@ Material:
     - shader_locale: 0
     - shader_master_label: 0
     m_Colors:
-    - _1st_ShadeColor: {r: 0, g: 0, b: 0, a: 1}
+    - _1st_ShadeColor: {r: 0.69803923, g: 0.7490196, b: 0.8509804, a: 1}
     - _1st_ShadeMapPan: {r: 0, g: 0, b: 0, a: 0}
     - _2nd_ShadeColor: {r: 1, g: 1, b: 1, a: 1}
     - _2nd_ShadeMapPan: {r: 0, g: 0, b: 0, a: 0}
@@ -4117,7 +4117,7 @@ Material:
     - _RimColor: {r: 0, g: 0.574793, b: 0.8509804, a: 1}
     - _RimColorTexPan: {r: 0, g: 0, b: 0, a: 0}
     - _RimEnviroMaskPan: {r: 0, g: 0, b: 0, a: 0}
-    - _RimIndirColor: {r: 1, g: 1, b: 1, a: 1}
+    - _RimIndirColor: {r: 0, g: 0, b: 0, a: 1}
     - _RimLightColor: {r: 0.0039215684, g: 0.67847663, b: 1, a: 1}
     - _RimMaskPan: {r: 0, g: 0, b: 0, a: 0}
     - _RimShadowAlpha: {r: 0, g: 0, b: 0, a: 1}
