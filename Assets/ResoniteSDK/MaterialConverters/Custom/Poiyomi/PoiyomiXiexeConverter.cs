@@ -31,10 +31,9 @@ public class PoiyomiXiexeConverter
         UpdateRenderingSettings();
         UpdateMainTexture();
         UpdateNormal();
-        UpdateMetallicGloss();
+        UpdateReflections();
         UpdateEmission();
         UpdateRim();
-        UpdateSpecular();
         UpdateMatcap();
         UpdateOcclusion();
         UpdateOutline();
@@ -109,23 +108,69 @@ public class PoiyomiXiexeConverter
         Xiexe.NormalUV = (int)Material.GetFloat("_BumpMapUV");
     }
 
-    private void UpdateMetallicGloss()
+    private void UpdateReflections()
     {
-        if (Material.GetFloat("_MochieBRDF") == 0)
+        if (Material.GetFloat("_MochieBRDF") > 0)
         {
-            if (Xiexe.MetallicGlossMap != null)
-            {
-                Xiexe.MetallicGlossMap = null;
-                Xiexe.Metallic = 0;
-                Xiexe.Glossiness = 0;
-                Xiexe.Reflectivity = 1;
-            }
+            Xiexe.MetallicGlossMap = Context.GetITexture2D(Material.GetTexture("_MochieMetallicMaps"));
+            Xiexe.Metallic = Material.GetFloat("_MochieMetallicMultiplier");
+            Xiexe.Glossiness = Material.GetFloat("_MochieRoughnessMultiplier");
+            Xiexe.Reflectivity = Material.GetFloat("_MochieReflectionStrength");
+            Xiexe.SpecularIntensity = 100 * Material.GetFloat("_MochieSpecularStrength");
+            Xiexe.SpecularArea = 0.5f;
             return;
         }
-        Xiexe.MetallicGlossMap = Context.GetITexture2D(Material.GetTexture("_MochieMetallicMaps"));
-        Xiexe.Metallic = Material.GetFloat("_MochieMetallicMultiplier");
-        Xiexe.Glossiness = Material.GetFloat("_MochieRoughnessMultiplier");
-        Xiexe.Reflectivity = Material.GetFloat("_MochieReflectionStrength");
+
+        if (Material.GetFloat("_StylizedSpecular") > 0)
+        {
+            if (Material.GetFloat("_StylizedReflectionMode") == 0)
+            {
+                Xiexe.SpecularIntensity = 100 * Material.GetFloat("_StylizedSpecularStrength");
+                Xiexe.SpecularArea = 0.5f;
+                if (Xiexe.MetallicGlossMap != null)
+                {
+                    Xiexe.MetallicGlossMap = null;
+                    Xiexe.Metallic = 0;
+                    Xiexe.Glossiness = 0;
+                    Xiexe.Reflectivity = 1;
+                }
+                return;
+            } 
+            if (Material.GetFloat("_StylizedReflectionMode") == 1 &&
+                Material.GetFloat("_UseReflection") > 0)
+            {            
+                // LilToon-style reflections can replace the Poiyomi reflections
+                Xiexe.MetallicGlossMap = Context.GetITexture2D(Material.GetTexture("_MetallicGlossMap"));
+                Xiexe.Metallic = Material.GetFloat("_Metallic");
+                Xiexe.Reflectivity = Material.GetFloat("_Reflectance");
+                if (Material.GetFloat("_ApplySpecular") > 0)
+                {
+                    Xiexe.SpecularIntensity = 100 * Material.GetFloat("_Smoothness");
+                    Xiexe.SpecularArea = 1 - Material.GetFloat("_SpecularBorder");                    
+                } else
+                {
+                    Xiexe.SpecularIntensity = 0;
+                }
+
+                if (Material.GetFloat("_ApplyReflection") > 0)
+                {                
+                    Xiexe.Glossiness = Material.GetFloat("_Smoothness");
+                } else
+                {
+                    Xiexe.Glossiness = 0;
+                }
+                return;
+            }
+        }
+
+        Xiexe.SpecularIntensity = 0;
+        if (Xiexe.MetallicGlossMap != null)
+        {
+            Xiexe.MetallicGlossMap = null;
+            Xiexe.Metallic = 0;
+            Xiexe.Glossiness = 0;
+            Xiexe.Reflectivity = 1;
+        }
     }
 
     private void UpdateEmission()
@@ -211,16 +256,6 @@ public class PoiyomiXiexeConverter
             Xiexe.RimRange = 0.7f;
             return;
         }
-    }
-
-    private void UpdateSpecular()
-    {
-        if (Material.GetFloat("_MochieBRDF") == 0)
-        {
-            Xiexe.SpecularIntensity = 0;
-            return;
-        }
-        Xiexe.SpecularIntensity = 100 * Material.GetFloat("_MochieSpecularStrength");
     }
 
     private void UpdateMatcap()
