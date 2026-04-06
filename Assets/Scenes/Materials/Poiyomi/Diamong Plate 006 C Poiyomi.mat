@@ -568,7 +568,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _ToonRamp:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: 5cfa83c9a7e9977398807b26158480ef, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _TruchetMask:
@@ -2609,7 +2609,7 @@ Material:
     - _SSIgnoreCastedShadows: 0
     - _SSSBaseColorMix: 0
     - _SSSDistortion: 1
-    - _SSSSpread: 5
+    - _SSSSpread: 2
     - _SSSStrength: 0.25
     - _SSSThicknessMapChannel: 0
     - _SSSThicknessMapUV: 0
@@ -2669,7 +2669,7 @@ Material:
     - _SkinThicknessMapInvert: 0
     - _SkinThicknessMapUV: 0
     - _SkinThicknessPower: 1
-    - _Smoothness: 0.796
+    - _Smoothness: 0.8
     - _SmoothnessTextureChannel: 0
     - _Specular2ndLayer: 0
     - _SpecularBlur: 1
@@ -3240,7 +3240,7 @@ Material:
     - m_start_reflectionRim: 0
     - m_start_rim2LightOptions: 0
     - m_start_rimLight1Options: 1
-    - m_start_stylizedSpec: 0
+    - m_start_stylizedSpec: 1
     - m_start_subsurfaceScattering: 1
     - m_start_truchet: 0
     - m_start_udimdiscardOptions: 0
@@ -4148,7 +4148,7 @@ Material:
     - _SDFForward: {r: 0, g: 0, b: 1, a: 0}
     - _SDFLeft: {r: -1, g: 0, b: 0, a: 0}
     - _SDFShadingTexturePan: {r: 0, g: 0, b: 0, a: 0}
-    - _SSSColor: {r: 0.035793543, g: 1, b: 0, a: 1}
+    - _SSSColor: {r: 0.1452893, g: 1, b: 0, a: 1}
     - _SSSThicknessMapPan: {r: 0, g: 0, b: 0, a: 0}
     - _Set_HighColorMaskPan: {r: 0, g: 0, b: 0, a: 0}
     - _Set_Rim2LightMaskPan: {r: 0, g: 0, b: 0, a: 0}
