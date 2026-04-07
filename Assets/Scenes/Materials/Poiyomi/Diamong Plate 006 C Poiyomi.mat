@@ -20,7 +20,7 @@ Material:
   - VIGNETTE_MASKED
   - _EMISSION
   - _GLOSSYREFLECTIONS_OFF
-  - _LIGHTINGMODE_FLAT
+  - _LIGHTINGMODE_TEXTURERAMP
   - _RIM2STYLE_POIYOMI
   - _RIMSTYLE_POIYOMI
   - _STOCHASTICMODE_DELIOT_HEITZ
@@ -568,7 +568,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _ToonRamp:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: 5cfa83c9a7e9977398807b26158480ef, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _TruchetMask:
@@ -1891,7 +1891,7 @@ Material:
     - _LightingMapMode: 0
     - _LightingMinLightBrightness: 0
     - _LightingMirrorVertexLightingEnabled: 1
-    - _LightingMode: 5
+    - _LightingMode: 0
     - _LightingMonochromatic: 0
     - _LightingMulitlayerNonLinear: 1
     - _LightingShadowMaskStrengthA: 0
@@ -3114,7 +3114,7 @@ Material:
     - m_mainCategory: 1
     - m_modifierCategory: 0
     - m_renderingCategory: 0
-    - m_specialFXCategory: 0
+    - m_specialFXCategory: 1
     - m_start_ALDecalSpectrum: 0
     - m_start_ALVolumeColor: 0
     - m_start_Alpha: 0
