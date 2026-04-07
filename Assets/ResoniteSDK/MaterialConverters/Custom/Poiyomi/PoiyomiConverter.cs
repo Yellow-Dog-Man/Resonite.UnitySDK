@@ -65,6 +65,7 @@ public class PoiyomiConverter : ResoniteMaterialConverter
             // A few properties should be initialized at non-default values to look right
             var Xiexe = XiexeComponent.Data;
             Xiexe.ShadowSharpness = 0.5f;
+            Xiexe.ShadowRampMaskScale = new(1, 1);
         }
         return new PoiyomiXiexeConverter(XiexeComponent.Data, material, context, AssetCache).UpdateConversion();
     }

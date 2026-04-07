@@ -59,7 +59,9 @@ public class PoiyomiPbsConverter
     {
         if (Material.GetFloat("_EnableEmission") > 0)
         {
-            Pbs.EmissiveColor = Material.GetColor("_EmissionColor").ToColorX_Auto();
+            Color emissiveColor = Material.GetColor("_EmissionColor");
+            emissiveColor *= Material.GetFloat("_EmissionStrength");
+            Pbs.EmissiveColor = emissiveColor.ToColorX_Auto();
             Pbs.EmissiveMap = Context.GetITexture2D(Material.GetTexture("_EmissionMap"));
             return;
         }
