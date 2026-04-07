@@ -371,11 +371,11 @@ public class PoiyomiXiexeConverter
                 Xiexe.ShadowRamp = Context.GetITexture2D(TintColoredShadowRamp(Material.GetTexture("_ToonRamp")));
                 break;
             case PoiyomiLightingMode.MultilayerMath:
-            // TODO: Ramp or rim?
-            case PoiyomiLightingMode.Wrapped:
-            // TODO: Ramp or rim?
+                Xiexe.ShadowRamp = Context.GetITexture2D(MultilayerMathShadowRamp());
+                break;
             case PoiyomiLightingMode.ShadeMap:
-            // TODO: Ramp or rim?
+                Xiexe.ShadowRamp = Context.GetITexture2D(ShadeMapShadowRamp());
+                break;
             default:
                 Xiexe.ShadowRamp = null;
                 break;
@@ -419,12 +419,162 @@ public class PoiyomiXiexeConverter
         for (int i = 0; i < pixels.Length; i++)
         {
             Color p = pixels[i];
-            p = p.grayscale * p + (1 - p.grayscale) * p * color;
-            pixels[i] = Color.white - strength * (Color.white - p);
+            p = Color.Lerp(p * color, p, p.grayscale);
+            pixels[i] = Color.Lerp(Color.white, p, strength);
         }
         colorizedRamp.SetPixels32(pixels);
         colorizedRamp.Apply();
         return colorizedRamp;
+    }
+
+    private UnityEngine.Texture MultilayerMathShadowRamp()
+    {
+        var ramp = AssetCache.ShadowRampTexture;
+        if (ramp == null || ramp.width != 512 || ramp.height != 4)
+        {
+            if (ramp != null)
+            {
+                UnityEngine.Texture2D.Destroy(ramp);
+            }
+            ramp = new(512, 4, TextureFormat.RGBA32, false)
+            {
+                name = "PoiyomiConverter multilayer math ramp"
+            };
+            AssetCache.ShadowRampTexture = ramp;
+        }
+        Color32[] pixels = new Color32[512 * 4];
+        Color[] layers =
+        {
+            Material.GetColor("_ShadowColor"),
+            Material.GetColor("_Shadow2ndColor"),
+            Material.GetColor("_Shadow3rdColor"),
+            Material.GetColor("_ShadowBorderColor"),
+        };
+        float[] borders =
+        {
+            Material.GetFloat("_ShadowBorder"),
+            Material.GetFloat("_Shadow2ndBorder"),
+            Material.GetFloat("_Shadow3rdBorder"),
+            Material.GetFloat("_ShadowBorderRange"),
+        };
+        float[] blurs =
+        {
+            Material.GetFloat("_ShadowBlur"),
+            Material.GetFloat("_Shadow2ndBlur"),
+            Material.GetFloat("_Shadow3rdBlur"),
+        };
+        float strength = Material.GetFloat("_ShadowStrength");
+        for (int x = 0; x < 512; x++)
+        {
+            Color pixel = Color.white;
+            // =1 before (border - blur), decreases linearly to 0, =0 after (border + blur)
+            float influence = 1;
+            for (int i = 0; i < 2 && influence > 0; i++)
+            {
+                Color layer = layers[i];
+                float layerInfluence;
+                if (blurs[i] == 0)
+                {
+                    layerInfluence = (x / 511f <= borders[i]) ? 1 : 0;
+                }
+                else
+                {
+                    layerInfluence = Mathf.Clamp01((borders[i] + blurs[i] - (x / 511f)) / (2 * blurs[i]));
+                }
+                if (i == 0)
+                {
+                    influence = layerInfluence;
+                }
+                else
+                {
+                    layerInfluence *= influence;
+                }
+                if (layer.a > 0 && layerInfluence > 0)
+                {
+                    pixel = Color.Lerp(pixel, layer, layer.a * layerInfluence);
+                }
+            }
+            if (layers[3].a > 0 && influence > 0)
+            {
+                float layerInfluence = influence;
+                if (blurs[0] == 0)
+                {
+                    layerInfluence *= (x / 511f >= (1 - borders[3]) * borders[0]) ? 1 : 0;
+                }
+                else
+                {
+                    layerInfluence *= Mathf.Clamp01(((x / 511f) - (1 - borders[3]) * (borders[0] - blurs[0])) / (2 * (1 - borders[3]) * blurs[0]));
+                }
+                if (layerInfluence > 0)
+                {
+                    pixel = Color.Lerp(pixel, layers[3], layers[3].a * layerInfluence);
+                }
+            }
+            pixel = Color.Lerp(Color.white, pixel, strength);
+            pixel.a = 1;
+            for (int y = 0; y < 4; y++)
+            {
+                pixels[512 * y + x] = pixel;
+            }
+        }
+        ramp.SetPixels32(pixels);
+        ramp.Apply();
+        return ramp;
+    }
+
+    private UnityEngine.Texture ShadeMapShadowRamp()
+    {
+        var ramp = AssetCache.ShadowRampTexture;
+        if (ramp == null || ramp.width != 512 || ramp.height != 4)
+        {
+            if (ramp != null)
+            {
+                UnityEngine.Texture2D.Destroy(ramp);
+            }
+            ramp = new(512, 4, TextureFormat.RGBA32, false)
+            {
+                name = "PoiyomiConverter shade map math ramp"
+            };
+            AssetCache.ShadowRampTexture = ramp;
+        }
+        Color32[] pixels = new Color32[512 * 4];
+        Color[] layers =
+        {
+            Material.GetColor("_1st_ShadeColor"),
+            Material.GetColor("_2nd_ShadeColor"),
+        };
+        float[] borders =
+        {
+            Material.GetFloat("_BaseColor_Step"),
+            Material.GetFloat("_ShadeColor_Step")
+        };
+        float[] blurs =
+        {
+            Material.GetFloat("_BaseShade_Feather"),
+            Material.GetFloat("_1st2nd_Shades_Feather"),
+        };
+        float strength = Material.GetFloat("_ShadowStrength");
+        for (int x = 0; x < 512; x++)
+        {
+            Color pixel = Color.white;
+            // =1 before (border - blur), decreases linearly to 0, =0 after (border + blur)
+            float influence = Mathf.Clamp01((borders[0] + blurs[0] - (x / 511f)) / (2 * blurs[0]));
+            if (influence > 0)
+            {
+                pixel = Color.Lerp(pixel, layers[0], influence);
+                float influence2 = Mathf.Clamp01((borders[1] + blurs[1] - (x / 511f)) / (2 * blurs[1]));
+                pixel = Color.Lerp(pixel, layers[1], influence2);
+                pixel = Color.Lerp(Color.white, pixel, strength);
+                pixel.a = 1;
+            }
+            for (int y = 0; y < 4; y++)
+            {
+                pixels[512 * y + x] = pixel;
+            }
+        }
+        ramp.SetPixels32(pixels);
+        ramp.Apply();
+        return ramp;
     }
 
     private void UpdateShadowRim()
@@ -441,12 +591,8 @@ public class PoiyomiXiexeConverter
 
         switch ((PoiyomiLightingMode)Material.GetFloat("_LightingMode"))
         {
-            case PoiyomiLightingMode.MultilayerMath:
-            // TODO
-            case PoiyomiLightingMode.Wrapped:
-            // TODO
-            case PoiyomiLightingMode.ShadeMap:
-            // TODO
+            // We might not actually use shadow rim for Poiyomi, in the end.
+            // Leaving this around for now, just in case.
             default:
                 // TODO: use actual values. For now, using default Xiexe values
                 Xiexe.ShadowRim = Color.white.ToColorX_sRGB();

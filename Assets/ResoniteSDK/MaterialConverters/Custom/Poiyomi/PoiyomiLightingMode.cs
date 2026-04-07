@@ -23,6 +23,7 @@ public static class PoiyomiLightingModeMethods
             case PoiyomiLightingMode.Realistic:
             case PoiyomiLightingMode.Cloth:
             case PoiyomiLightingMode.Skin:
+            case PoiyomiLightingMode.Wrapped:
             case PoiyomiLightingMode.SDF:
                 return true;
             default:

@@ -89,7 +89,7 @@ public class PoiyomiPbsConverter
         }
 
         Pbs.HeightMap = Context.GetITexture2D(Material.GetTexture("_VertexManipulationHeightMask"));
-        Pbs.HeightScale = Material.GetFloat("_VertexManipulationHeight");
+        Pbs.HeightScale = - Material.GetFloat("_VertexManipulationHeight");
     }
 
     private void UpdateOcclusion()
@@ -114,18 +114,19 @@ public class PoiyomiPbsConverter
 
     private void UpdateMetallicSmoothness()
     {
-        if (Material.GetFloat("_MochieBRDF") == 0)
+        if (Material.GetFloat("_MochieBRDF") > 0)
         {
-            if (Pbs.MetallicMap != null)
-            {
-                Pbs.MetallicMap = null;
-                Pbs.Metallic = 0;
-                Pbs.Smoothness = 0;
-            }
+            Pbs.MetallicMap = Context.GetITexture2D(Material.GetTexture("_MochieMetallicMaps"));
+            Pbs.Metallic = Material.GetFloat("_MochieMetallicMultiplier");
+            Pbs.Smoothness = Material.GetFloat("_MochieRoughnessMultiplier");
             return;
         }
-        Pbs.MetallicMap = Context.GetITexture2D(Material.GetTexture("_MochieMetallicMaps"));
-        Pbs.Metallic = Material.GetFloat("_MochieMetallicMultiplier");
-        Pbs.Smoothness = Material.GetFloat("_MochieRoughnessMultiplier");
+
+        if (Pbs.MetallicMap != null)
+        {
+            Pbs.MetallicMap = null;
+            Pbs.Metallic = 0;
+            Pbs.Smoothness = 0;
+        }
     }
 }
