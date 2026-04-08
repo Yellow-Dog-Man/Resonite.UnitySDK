@@ -189,10 +189,24 @@ public class PoiyomiXiexeConverter
             color *= Material.GetFloat("_EmissionStrength");
             color.a = alpha;
             Xiexe.EmissionColor = color.ToColorX_Auto();
-            Xiexe.EmissionMap = Context.GetITexture2D(Material.GetTexture("_EmissionMap"));
-            Xiexe.EmissionMapOffset = Material.GetTextureOffset("_EmissionMap");
-            Xiexe.EmissionMapScale = Material.GetTextureScale("_EmissionMap");
-            Xiexe.EmissionUV = (int)Material.GetFloat("_EmissionMapUV");
+            var emissionMap = Material.GetTexture("_EmissionMap");
+            if (emissionMap != null)
+            {
+                Xiexe.EmissionMap = Context.GetITexture2D(emissionMap);
+                Xiexe.EmissionMapOffset = Material.GetTextureOffset("_EmissionMap");
+                Xiexe.EmissionMapScale = Material.GetTextureScale("_EmissionMap");
+                Xiexe.EmissionUV = (int)Material.GetFloat("_EmissionMapUV");
+            }
+            else
+            {
+                // Unlike PBS, Xiexe requires an emission map to have any emission happen,
+                // despite specifying a non-black emission color.
+                // So we create a procedural white SolidColorTexture to use here.
+                Xiexe.EmissionMap = AssetCache.SolidWhiteTexture.Data;
+                Xiexe.EmissionMapOffset = new(0, 0);
+                Xiexe.EmissionMapScale = new(1, 1);
+                Xiexe.EmissionUV = 0;
+            }
             return;
         }
         if (Xiexe.EmissionMap != null)

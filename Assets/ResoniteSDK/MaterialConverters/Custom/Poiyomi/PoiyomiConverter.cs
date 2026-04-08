@@ -15,8 +15,21 @@ using UnityEngine;
 public class PoiyomiConverter : ResoniteMaterialConverter
 {
     private FrooxEngine.XiexeToonMaterialWrapper XiexeComponent;
+
     private FrooxEngine.PBS_MetallicWrapper PbsComponent;
-    private PoiyomiAssetCache AssetCache = new();
+
+    private PoiyomiAssetCache _AssetCache;
+    private PoiyomiAssetCache AssetCache
+    {
+        get
+        {
+            if (_AssetCache == null)
+            {
+                _AssetCache = new(this);
+            }
+            return _AssetCache;
+        }
+    }
 
     public static float? EvaluateHeuristicConversion(UnityEngine.Material material)
     {
