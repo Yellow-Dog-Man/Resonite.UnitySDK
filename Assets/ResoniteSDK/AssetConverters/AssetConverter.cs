@@ -101,14 +101,22 @@ public abstract class AssetConverter<TWrapper, TProvider, TUnity, TResonite> : A
             assetPath == "Resources/unity_builtin_extra")
             return 0;
 
-        if (assetPath == null)
-            throw new Exception($"Could not get asset path for asset: {Source}");
+        if(!string.IsNullOrEmpty(assetPath))
+        {
+            var importer = AssetImporter.GetAtPath(assetPath);
 
-        var importer = AssetImporter.GetAtPath(assetPath);
+            if (importer == null)
+                throw new Exception($"Could not get importer for asset path: {assetPath}");
 
-        if (importer == null)
-            throw new Exception($"Could not get importer for asset path: {assetPath}");
-
-        return importer.assetTimeStamp;
+            return importer.assetTimeStamp;
+        }
+        else
+        {
+            // This is a procedural asset. There's not a nice general way to determine if the asset has changed or not
+            // So we just force it to be re-converted every single time
+            // TODO!!! Potential ways to determine if asset changed or not? Could be for specific assets, like
+            // for textures we could use the image hash potentially. But that might be more expensive.
+            return (ulong)DateTime.UtcNow.Ticks;
+        }
     }
 }
