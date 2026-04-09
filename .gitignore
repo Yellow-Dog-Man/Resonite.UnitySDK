@@ -136,3 +136,18 @@ InitTestScene*.unity*
 
 # Auto-generated scenes by play mode tests
 /[Aa]ssets/[Ii]nit[Tt]est[Ss]cene*.unity*
+
+# Custom material packages
+## Poiyomi
+/[Pp]ackages/com.poiyomi.toon
+/Poi.Tools.csproj
+
+# VRChat SDK files
+/[Pp]ackages/vpm-manifest.json
+/[Pp]ackages/com.vrchat*
+/[Aa]ssets/XR
+/[Aa]ssets/XR.meta
+/Thry
+/Thry*.csproj
+/UniTask*.csproj
+/VRC.*.csproj
