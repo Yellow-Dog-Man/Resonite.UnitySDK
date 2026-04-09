@@ -623,6 +623,7 @@ public class PoiyomiXiexeConverter
         {
             Xiexe.ThicknessMap = null;
             Xiexe.SubsurfaceColor = Color.black.ToColorX_sRGB();
+            return;
         }
 
         Xiexe.ThicknessMap = Context.GetITexture2D(Material.GetTexture("_SSSThicknessMap"));
