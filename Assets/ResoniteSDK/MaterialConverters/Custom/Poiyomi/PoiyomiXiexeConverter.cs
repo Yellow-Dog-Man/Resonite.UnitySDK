@@ -483,7 +483,7 @@ public class PoiyomiXiexeConverter
             Color pixel = Color.white;
             // =1 before (border - blur), decreases linearly to 0, =0 after (border + blur)
             float influence = 1;
-            for (int i = 0; i < 2 && influence > 0; i++)
+            for (int i = 0; i < 3 && influence > 0; i++)
             {
                 Color layer = layers[i];
                 float layerInfluence;
