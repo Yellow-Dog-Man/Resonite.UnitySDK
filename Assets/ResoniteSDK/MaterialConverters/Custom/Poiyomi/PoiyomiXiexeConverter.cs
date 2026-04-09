@@ -201,8 +201,8 @@ public class PoiyomiXiexeConverter
             {
                 // Unlike PBS, Xiexe requires an emission map to have any emission happen,
                 // despite specifying a non-black emission color.
-                // So we create a procedural white SolidColorTexture to use here.
-                Xiexe.EmissionMap = AssetCache.SolidWhiteTexture.Data;
+                // So we use a static white texture here.
+                Xiexe.EmissionMap = Context.GetITexture2D(UnityEngine.Texture2D.whiteTexture);
                 Xiexe.EmissionMapOffset = new(0, 0);
                 Xiexe.EmissionMapScale = new(1, 1);
                 Xiexe.EmissionUV = 0;

@@ -18,18 +18,7 @@ public class PoiyomiConverter : ResoniteMaterialConverter
 
     private FrooxEngine.PBS_MetallicWrapper PbsComponent;
 
-    private PoiyomiAssetCache _AssetCache;
-    private PoiyomiAssetCache AssetCache
-    {
-        get
-        {
-            if (_AssetCache == null)
-            {
-                _AssetCache = new(this);
-            }
-            return _AssetCache;
-        }
-    }
+    private PoiyomiAssetCache AssetCache = new();
 
     public static float? EvaluateHeuristicConversion(UnityEngine.Material material)
     {
