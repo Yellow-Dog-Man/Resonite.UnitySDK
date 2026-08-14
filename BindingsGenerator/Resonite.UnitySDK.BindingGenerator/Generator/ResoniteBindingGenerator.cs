@@ -294,14 +294,14 @@ public partial class ResoniteBindingGenerator
 
         WriteNewSource(filePath, source);
 
-        if (!definition.Type.IsAbstract)
+        /*if (!definition.Type.IsAbstract)
         {
             // Generate wrapper as well
             var wrapperPath = await GenerateFilePath(directoryPath, definition.Type, "Wrapper");
             var wrapperSource = await GenerateWrapperSource(definition);
 
             WriteNewSource(wrapperPath, wrapperSource);
-        }
+        }*/
 
         GeneratedComponents++;
 
