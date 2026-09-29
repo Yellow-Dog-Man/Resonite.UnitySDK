@@ -14,9 +14,9 @@ using UnityEngine;
 [MaterialConverter(true)]
 public class PoiyomiConverter : ResoniteMaterialConverter
 {
-    private FrooxEngine.XiexeToonMaterialWrapper XiexeComponent;
+    private ResRef<FrooxEngine.XiexeToonMaterial> XiexeComponent;
 
-    private FrooxEngine.PBS_MetallicWrapper PbsComponent;
+    private ResRef<FrooxEngine.PBS_Metallic> PbsComponent;
 
     private PoiyomiAssetCache AssetCache = new();
 
@@ -54,21 +54,21 @@ public class PoiyomiConverter : ResoniteMaterialConverter
     {
         if (PbsComponent == null)
         {
-            PbsComponent = gameObject.AddComponent<FrooxEngine.PBS_MetallicWrapper>();
+            PbsComponent = gameObject.AddResoniteComponent<FrooxEngine.PBS_Metallic>();
         }
-        return new PoiyomiPbsConverter(PbsComponent.Data, material, context, AssetCache).UpdateConversion();
+        return new PoiyomiPbsConverter(PbsComponent, material, context, AssetCache).UpdateConversion();
     }
 
     private IAssetProvider<FrooxEngine.Material> UpdateXiexeConversion(UnityEngine.Material material, IConversionContext context)
     {
         if (XiexeComponent == null)
         {
-            XiexeComponent = gameObject.AddComponent<FrooxEngine.XiexeToonMaterialWrapper>();
+            XiexeComponent = gameObject.AddResoniteComponent<FrooxEngine.XiexeToonMaterial>();
             // A few properties should be initialized at non-default values to look right
-            var Xiexe = XiexeComponent.Data;
+            var Xiexe = XiexeComponent.Binding;
             Xiexe.ShadowSharpness = 0.5f;
             Xiexe.ShadowRampMaskScale = new(1, 1);
         }
-        return new PoiyomiXiexeConverter(XiexeComponent.Data, material, context, AssetCache).UpdateConversion();
+        return new PoiyomiXiexeConverter(XiexeComponent, material, context, AssetCache).UpdateConversion();
     }
 }

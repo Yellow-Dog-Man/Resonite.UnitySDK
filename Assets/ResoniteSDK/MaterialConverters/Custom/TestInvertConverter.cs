@@ -8,14 +8,14 @@ using UnityEngine;
 [MaterialConverter(false, "Unlit/TestInvertShader")]
 public class TestInvertConverter : ResoniteMaterialConverter
 {
-    public FrooxEngine.UnlitMaterialWrapper Unlit;
+    public ResRef<FrooxEngine.UnlitMaterial> Unlit;
 
     public override IAssetProvider<FrooxEngine.Material> UpdateConversion(UnityEngine.Material material, IConversionContext context)
     {
         if (Unlit == null)
-            Unlit = gameObject.AddComponent<FrooxEngine.UnlitMaterialWrapper>();
+            Unlit = gameObject.AddResoniteComponent<FrooxEngine.UnlitMaterial>();
 
-        var data = Unlit.Data;
+        var data = Unlit.Binding;
 
         data.RenderQueue = material.renderQueue;
 
