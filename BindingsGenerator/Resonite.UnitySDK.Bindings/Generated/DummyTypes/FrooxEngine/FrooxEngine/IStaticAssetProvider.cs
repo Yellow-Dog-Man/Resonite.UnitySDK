@@ -2,9 +2,9 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.IStaticAssetProvider
-// Generated on: pátek 6. března 2026 14:18:02
-// Resonite version: 2026.3.5.946
-// Resonite Link Version: 0.11.0.0
+// Generated on: pátek 14. srpna 2026 21:53:47
+// Resonite version: 2026.8.12.1196
+// Resonite Link Version: 0.13.1.0
 // -----------------------------------------------------------------------------
 
 using UnityEngine;
@@ -17,7 +17,7 @@ namespace FrooxEngine
 {
     
 [ResoniteTypeName("[FrooxEngine]FrooxEngine.IStaticAssetProvider")]
-public partial interface IStaticAssetProvider : global::FrooxEngine.IAssetProvider, global::FrooxEngine.IComponent, global::FrooxEngine.IComponentBase, global::FrooxEngine.IDestroyable, global::FrooxEngine.IWorker, global::FrooxEngine.IWorldElement, global::FrooxEngine.IUpdatable, global::FrooxEngine.IChangeable, global::FrooxEngine.ILinkable
+public partial interface IStaticAssetProvider : global::FrooxEngine.IAssetProvider, global::FrooxEngine.IComponentBase, global::FrooxEngine.IDestroyable, global::FrooxEngine.IWorker, global::FrooxEngine.IWorldElement, global::FrooxEngine.IUpdatable, global::FrooxEngine.IChangeable, global::FrooxEngine.ILinkable
 
 {
     // Dummy class, there's no body

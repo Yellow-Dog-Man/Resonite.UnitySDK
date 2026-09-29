@@ -2,9 +2,9 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.CommonAvatar.AvatarNameTagAssigner
-// Generated on: pátek 6. března 2026 14:19:12
-// Resonite version: 2026.3.5.946
-// Resonite Link Version: 0.11.0.0
+// Generated on: pátek 14. srpna 2026 21:58:15
+// Resonite version: 2026.8.12.1196
+// Resonite Link Version: 0.13.1.0
 // -----------------------------------------------------------------------------
 
 using UnityEngine;
@@ -22,6 +22,8 @@ public partial class AvatarNameTagAssigner : global::FrooxEngine.Component, glob
 {
     public global::SyncFieldList<global::FrooxEngine.SyncRefList<global::FrooxEngine.IField<global::System.String>>, global::FrooxEngine.IField<global::System.String>, Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.IField<global::System.String>>, global::FrooxEngine.IField<global::System.String>>> LabelTargets = new();
 public global::SyncFieldList<global::FrooxEngine.SyncRefList<global::FrooxEngine.IField<global::System.String>>, global::FrooxEngine.IField<global::System.String>, Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.IField<global::System.String>>, global::FrooxEngine.IField<global::System.String>>> UserIdTargets = new();
+public global::SyncFieldList<global::FrooxEngine.SyncRefList<global::FrooxEngine.IField<global::System.String>>, global::FrooxEngine.IField<global::System.String>, Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.IField<global::System.String>>, global::FrooxEngine.IField<global::System.String>>> PronounsTargets = new();
+public global::SyncFieldList<global::FrooxEngine.SyncRefList<global::FrooxEngine.IField<global::System.String>>, global::FrooxEngine.IField<global::System.String>, Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.IField<global::System.String>>, global::FrooxEngine.IField<global::System.String>>> UsernameTargets = new();
 public global::SyncFieldList<global::FrooxEngine.SyncRefList<global::FrooxEngine.IField<UnityEngine.ColorX>>, global::FrooxEngine.IField<UnityEngine.ColorX>, Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.IField<UnityEngine.ColorX>>, global::FrooxEngine.IField<UnityEngine.ColorX>>> ColorTargets = new();
 public global::SyncFieldList<global::FrooxEngine.SyncRefList<global::FrooxEngine.IField<UnityEngine.ColorX>>, global::FrooxEngine.IField<UnityEngine.ColorX>, Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.IField<UnityEngine.ColorX>>, global::FrooxEngine.IField<UnityEngine.ColorX>>> OutlineTargets = new();
 public global::SyncFieldList<global::FrooxEngine.SyncRefList<global::FrooxEngine.IField<UnityEngine.ColorX>>, global::FrooxEngine.IField<UnityEngine.ColorX>, Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.IField<UnityEngine.ColorX>>, global::FrooxEngine.IField<UnityEngine.ColorX>>> BackgroundTargets = new();
@@ -34,6 +36,8 @@ public override void CollectMembers(
     base.CollectMembers(members, context);
 members.Add("LabelTargets", LabelTargets.ToLinkList(context, m => m.ToLinkReference(context)));
 members.Add("UserIdTargets", UserIdTargets.ToLinkList(context, m => m.ToLinkReference(context)));
+members.Add("PronounsTargets", PronounsTargets.ToLinkList(context, m => m.ToLinkReference(context)));
+members.Add("UsernameTargets", UsernameTargets.ToLinkList(context, m => m.ToLinkReference(context)));
 members.Add("ColorTargets", ColorTargets.ToLinkList(context, m => m.ToLinkReference(context)));
 members.Add("OutlineTargets", OutlineTargets.ToLinkList(context, m => m.ToLinkReference(context)));
 members.Add("BackgroundTargets", BackgroundTargets.ToLinkList(context, m => m.ToLinkReference(context)));

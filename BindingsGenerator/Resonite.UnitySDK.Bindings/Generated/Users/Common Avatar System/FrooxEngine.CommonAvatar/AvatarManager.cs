@@ -2,9 +2,9 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.CommonAvatar.AvatarManager
-// Generated on: pátek 6. března 2026 14:19:11
-// Resonite version: 2026.3.5.946
-// Resonite Link Version: 0.11.0.0
+// Generated on: pátek 14. srpna 2026 21:58:12
+// Resonite version: 2026.8.12.1196
+// Resonite Link Version: 0.13.1.0
 // -----------------------------------------------------------------------------
 
 using UnityEngine;
@@ -35,6 +35,8 @@ public global::System.Single DefaultScale { get => DefaultScale_Element.Data; se
 public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> DefaultScale_Element = new();
 public global::System.String NameTagText { get => NameTagText_Element.Data; set => NameTagText_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<global::System.String>, global::System.String> NameTagText_Element = new();
+public global::System.String NameTagPronouns { get => NameTagPronouns_Element.Data; set => NameTagPronouns_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.String>, global::System.String> NameTagPronouns_Element = new();
 public UnityEngine.ColorX NameTagColor { get => NameTagColor_Element.Data; set => NameTagColor_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<UnityEngine.ColorX>, UnityEngine.ColorX> NameTagColor_Element = new();
 public UnityEngine.ColorX NameTagOutline { get => NameTagOutline_Element.Data; set => NameTagOutline_Element.Data = value; }
@@ -64,6 +66,7 @@ members.Add("AutoAddLiveIndicator", AutoAddLiveIndicator_Element.ToLinkField(con
 members.Add("EmptySlotHandler", EmptySlotHandler_Element.ToLinkReference(context));
 members.Add("DefaultScale", DefaultScale_Element.ToLinkField(context));
 members.Add("NameTagText", NameTagText_Element.ToLinkField(context));
+members.Add("NameTagPronouns", NameTagPronouns_Element.ToLinkField(context));
 members.Add("NameTagColor", NameTagColor_Element.ToLinkField(context));
 members.Add("NameTagOutline", NameTagOutline_Element.ToLinkField(context));
 members.Add("NameTagBackground", NameTagBackground_Element.ToLinkField(context));

@@ -2,9 +2,9 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.BrushTool
-// Generated on: pátek 6. března 2026 14:19:05
-// Resonite version: 2026.3.5.946
-// Resonite Link Version: 0.11.0.0
+// Generated on: pátek 14. srpna 2026 21:57:42
+// Resonite version: 2026.8.12.1196
+// Resonite Link Version: 0.13.1.0
 // -----------------------------------------------------------------------------
 
 using UnityEngine;
@@ -74,6 +74,8 @@ public global::FrooxEngine.ColorDialogInterface _colorPicker { get => _colorPick
 public Reference<global::FrooxEngine.SlotCleanupRef<global::FrooxEngine.ColorDialogInterface>, global::FrooxEngine.ColorDialogInterface> _colorPicker_Element = new();
 public UnityEngine.ColorX _pickedColor { get => _pickedColor_Element.Data; set => _pickedColor_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<UnityEngine.ColorX>, UnityEngine.ColorX> _pickedColor_Element = new();
+public UnityEngine.ColorX _lastPickedColor { get => _lastPickedColor_Element.Data; set => _lastPickedColor_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<UnityEngine.ColorX>, UnityEngine.ColorX> _lastPickedColor_Element = new();
 public global::SyncFieldList<global::FrooxEngine.SyncRefList<global::FrooxEngine.Slot>, global::FrooxEngine.Slot, Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.Slot>, global::FrooxEngine.Slot>> _hideOnStroke = new();
 public global::FrooxEngine.IAssetProvider<global::FrooxEngine.Material> _lastUsedMaterial { get => _lastUsedMaterial_Element.Data; set => _lastUsedMaterial_Element.Data = value; }
 public Reference<global::FrooxEngine.AssetRef<global::FrooxEngine.Material>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.Material>> _lastUsedMaterial_Element = new();
@@ -138,6 +140,7 @@ members.Add("ParticleTemplateHandling", ParticleTemplateHandling_Element.ToLinkF
 members.Add("EmissionRatePerUnitLength", EmissionRatePerUnitLength_Element.ToLinkField(context));
 members.Add("_colorPicker", _colorPicker_Element.ToLinkReference(context));
 members.Add("_pickedColor", _pickedColor_Element.ToLinkField(context));
+members.Add("_lastPickedColor", _lastPickedColor_Element.ToLinkField(context));
 members.Add("_hideOnStroke", _hideOnStroke.ToLinkList(context, m => m.ToLinkReference(context)));
 members.Add("_lastUsedMaterial", _lastUsedMaterial_Element.ToLinkReference(context));
 members.Add("_lastCreatedMaterial", _lastCreatedMaterial_Element.ToLinkReference(context));

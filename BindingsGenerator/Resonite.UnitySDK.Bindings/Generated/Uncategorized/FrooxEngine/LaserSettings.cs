@@ -2,9 +2,9 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.LaserSettings
-// Generated on: pátek 6. března 2026 14:19:09
-// Resonite version: 2026.3.5.946
-// Resonite Link Version: 0.11.0.0
+// Generated on: pátek 14. srpna 2026 21:58:00
+// Resonite version: 2026.8.12.1196
+// Resonite Link Version: 0.13.1.0
 // -----------------------------------------------------------------------------
 
 using UnityEngine;
@@ -20,7 +20,9 @@ namespace FrooxEngine
 public partial class LaserSettings : global::FrooxEngine.SettingComponent<global::FrooxEngine.LaserSettings>
 
 {
-    public global::System.Single SmoothSpeed { get => SmoothSpeed_Element.Data; set => SmoothSpeed_Element.Data = value; }
+    public global::System.Boolean AlwaysPrioritizeUserspace { get => AlwaysPrioritizeUserspace_Element.Data; set => AlwaysPrioritizeUserspace_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> AlwaysPrioritizeUserspace_Element = new();
+public global::System.Single SmoothSpeed { get => SmoothSpeed_Element.Data; set => SmoothSpeed_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> SmoothSpeed_Element = new();
 public global::System.Single ModulateStartAngle { get => ModulateStartAngle_Element.Data; set => ModulateStartAngle_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> ModulateStartAngle_Element = new();
@@ -39,6 +41,7 @@ public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
+members.Add("AlwaysPrioritizeUserspace", AlwaysPrioritizeUserspace_Element.ToLinkField(context));
 members.Add("SmoothSpeed", SmoothSpeed_Element.ToLinkField(context));
 members.Add("ModulateStartAngle", ModulateStartAngle_Element.ToLinkField(context));
 members.Add("ModulateEndAngle", ModulateEndAngle_Element.ToLinkField(context));

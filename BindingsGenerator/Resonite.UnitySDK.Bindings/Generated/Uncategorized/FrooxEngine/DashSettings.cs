@@ -2,9 +2,9 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.DashSettings
-// Generated on: pátek 6. března 2026 14:19:08
-// Resonite version: 2026.3.5.946
-// Resonite Link Version: 0.11.0.0
+// Generated on: pátek 14. srpna 2026 21:57:55
+// Resonite version: 2026.8.12.1196
+// Resonite Link Version: 0.13.1.0
 // -----------------------------------------------------------------------------
 
 using UnityEngine;
@@ -24,6 +24,8 @@ public partial class DashSettings : global::FrooxEngine.SettingComponent<global:
 public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> DashCurvature_Element = new();
 public global::System.Single OpenCloseSpeed { get => OpenCloseSpeed_Element.Data; set => OpenCloseSpeed_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> OpenCloseSpeed_Element = new();
+public global::System.Single ScreenSwitchSpeed { get => ScreenSwitchSpeed_Element.Data; set => ScreenSwitchSpeed_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> ScreenSwitchSpeed_Element = new();
 public global::System.Boolean AllowReplacingSettings { get => AllowReplacingSettings_Element.Data; set => AllowReplacingSettings_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> AllowReplacingSettings_Element = new();
 
@@ -33,6 +35,7 @@ public override void CollectMembers(
     base.CollectMembers(members, context);
 members.Add("DashCurvature", DashCurvature_Element.ToLinkField(context));
 members.Add("OpenCloseSpeed", OpenCloseSpeed_Element.ToLinkField(context));
+members.Add("ScreenSwitchSpeed", ScreenSwitchSpeed_Element.ToLinkField(context));
 members.Add("AllowReplacingSettings", AllowReplacingSettings_Element.ToLinkField(context));
 }
 public  async System.Threading.Tasks.Task ResetToDefault(IConversionContext context)

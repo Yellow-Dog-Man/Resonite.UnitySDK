@@ -2,9 +2,9 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.PhotoCaptureManager
-// Generated on: pátek 6. března 2026 14:19:10
-// Resonite version: 2026.3.5.946
-// Resonite Link Version: 0.11.0.0
+// Generated on: pátek 14. srpna 2026 21:58:03
+// Resonite version: 2026.8.12.1196
+// Resonite Link Version: 0.13.1.0
 // -----------------------------------------------------------------------------
 
 using UnityEngine;
@@ -44,6 +44,8 @@ public global::System.Single TimerSeconds { get => TimerSeconds_Element.Data; se
 public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> TimerSeconds_Element = new();
 public global::System.Boolean HideAllNameplates { get => HideAllNameplates_Element.Data; set => HideAllNameplates_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> HideAllNameplates_Element = new();
+public global::System.Boolean HideAllGizmos { get => HideAllGizmos_Element.Data; set => HideAllGizmos_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> HideAllGizmos_Element = new();
 public global::FrooxEngine.PhotoEncodeFormat EncodeFormat { get => EncodeFormat_Element.Data; set => EncodeFormat_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<global::FrooxEngine.PhotoEncodeFormat>, global::FrooxEngine.PhotoEncodeFormat> EncodeFormat_Element = new();
 public global::System.Boolean DebugGesture { get => DebugGesture_Element.Data; set => DebugGesture_Element.Data = value; }
@@ -113,6 +115,7 @@ members.Add("CaptureStereo", CaptureStereo_Element.ToLinkField(context));
 members.Add("StereoSeparation", StereoSeparation_Element.ToLinkField(context));
 members.Add("TimerSeconds", TimerSeconds_Element.ToLinkField(context));
 members.Add("HideAllNameplates", HideAllNameplates_Element.ToLinkField(context));
+members.Add("HideAllGizmos", HideAllGizmos_Element.ToLinkField(context));
 members.Add("EncodeFormat", EncodeFormat_Element.ToLinkField(context));
 members.Add("DebugGesture", DebugGesture_Element.ToLinkField(context));
 members.Add("_timerActive", _timerActive_Element.ToLinkField(context));

@@ -2,9 +2,9 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.RadiantDash
-// Generated on: pátek 6. března 2026 14:19:08
-// Resonite version: 2026.3.5.946
-// Resonite Link Version: 0.11.0.0
+// Generated on: pátek 14. srpna 2026 21:57:55
+// Resonite version: 2026.8.12.1196
+// Resonite Link Version: 0.13.1.0
 // -----------------------------------------------------------------------------
 
 using UnityEngine;
@@ -24,8 +24,10 @@ public partial class RadiantDash : global::FrooxEngine.Component
 public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.RadiantDashScreen>, global::FrooxEngine.RadiantDashScreen> CurrentScreen_Element = new();
 public global::System.Boolean Open { get => Open_Element.Data; set => Open_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> Open_Element = new();
-public global::System.Single AnimationSpeed { get => AnimationSpeed_Element.Data; set => AnimationSpeed_Element.Data = value; }
-public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> AnimationSpeed_Element = new();
+public global::System.Single OpenCloseAnimationSpeed { get => OpenCloseAnimationSpeed_Element.Data; set => OpenCloseAnimationSpeed_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> OpenCloseAnimationSpeed_Element = new();
+public global::System.Single ScreenSwitchAnimationSpeed { get => ScreenSwitchAnimationSpeed_Element.Data; set => ScreenSwitchAnimationSpeed_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> ScreenSwitchAnimationSpeed_Element = new();
 public global::System.Boolean ScreenProjection { get => ScreenProjection_Element.Data; set => ScreenProjection_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> ScreenProjection_Element = new();
 public global::System.Single Curvature { get => Curvature_Element.Data; set => Curvature_Element.Data = value; }
@@ -99,7 +101,8 @@ public override void CollectMembers(
     base.CollectMembers(members, context);
 members.Add("CurrentScreen", CurrentScreen_Element.ToLinkReference(context));
 members.Add("Open", Open_Element.ToLinkField(context));
-members.Add("AnimationSpeed", AnimationSpeed_Element.ToLinkField(context));
+members.Add("OpenCloseAnimationSpeed", OpenCloseAnimationSpeed_Element.ToLinkField(context));
+members.Add("ScreenSwitchAnimationSpeed", ScreenSwitchAnimationSpeed_Element.ToLinkField(context));
 members.Add("ScreenProjection", ScreenProjection_Element.ToLinkField(context));
 members.Add("Curvature", Curvature_Element.ToLinkField(context));
 members.Add("AspectRatioCompensation", AspectRatioCompensation_Element.ToLinkField(context));

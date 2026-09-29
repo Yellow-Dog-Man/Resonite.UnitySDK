@@ -2,9 +2,9 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [Renderite.Shared]Renderite.Shared.AntiAliasingMethod
-// Generated on: pátek 6. března 2026 14:19:10
-// Resonite version: 2026.3.5.946
-// Resonite Link Version: 0.11.0.0
+// Generated on: pátek 14. srpna 2026 21:58:03
+// Resonite version: 2026.8.12.1196
+// Resonite Link Version: 0.13.1.0
 // -----------------------------------------------------------------------------
 
 using UnityEngine;
@@ -22,9 +22,8 @@ public enum AntiAliasingMethod : int
 {
     Off = 0,
 FXAA = 1,
-CTAA = 2,
-SMAA = 3,
-TAA = 4,
+SMAA = 2,
+TAA = 3,
 
 }
 }

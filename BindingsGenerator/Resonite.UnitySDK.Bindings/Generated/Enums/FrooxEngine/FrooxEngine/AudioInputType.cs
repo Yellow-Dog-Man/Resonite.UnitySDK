@@ -2,9 +2,9 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.AudioInputType
-// Generated on: pátek 6. března 2026 14:18:06
-// Resonite version: 2026.3.5.946
-// Resonite Link Version: 0.11.0.0
+// Generated on: pátek 14. srpna 2026 21:54:05
+// Resonite version: 2026.8.12.1196
+// Resonite Link Version: 0.13.1.0
 // -----------------------------------------------------------------------------
 
 using UnityEngine;
@@ -24,6 +24,7 @@ public enum AudioInputType : int
 CaptureDevice = 1,
 OutputDevice = 2,
 Loopback = 3,
+ApplicationLoopback = 4,
 
 }
 }

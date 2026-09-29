@@ -2,9 +2,9 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [ProtoFluxBindings]FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Debugging.DebugText
-// Generated on: pátek 6. března 2026 14:18:41
-// Resonite version: 2026.3.5.946
-// Resonite Link Version: 0.11.0.0
+// Generated on: pátek 14. srpna 2026 21:56:10
+// Resonite version: 2026.8.12.1196
+// Resonite Link Version: 0.13.1.0
 // -----------------------------------------------------------------------------
 
 using UnityEngine;
@@ -30,6 +30,8 @@ public global::FrooxEngine.ProtoFlux.INodeValueOutput<UnityEngine.ColorX> Color 
 public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.ProtoFlux.INodeValueOutput<UnityEngine.ColorX>>, global::FrooxEngine.ProtoFlux.INodeValueOutput<UnityEngine.ColorX>> Color_Element = new();
 public global::FrooxEngine.ProtoFlux.INodeValueOutput<global::System.Single> Duration { get => Duration_Element.Data; set => Duration_Element.Data = value; }
 public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.ProtoFlux.INodeValueOutput<global::System.Single>>, global::FrooxEngine.ProtoFlux.INodeValueOutput<global::System.Single>> Duration_Element = new();
+public global::FrooxEngine.ProtoFlux.INodeValueOutput<global::System.Boolean> Local { get => Local_Element.Data; set => Local_Element.Data = value; }
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.ProtoFlux.INodeValueOutput<global::System.Boolean>>, global::FrooxEngine.ProtoFlux.INodeValueOutput<global::System.Boolean>> Local_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
@@ -40,6 +42,7 @@ members.Add("Text", Text_Element.ToLinkReference(context));
 members.Add("Size", Size_Element.ToLinkReference(context));
 members.Add("Color", Color_Element.ToLinkReference(context));
 members.Add("Duration", Duration_Element.ToLinkReference(context));
+members.Add("Local", Local_Element.ToLinkReference(context));
 }
 
 }

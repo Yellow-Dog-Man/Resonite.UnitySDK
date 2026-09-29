@@ -2,9 +2,9 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.DebugWorld
-// Generated on: pátek 6. března 2026 14:19:08
-// Resonite version: 2026.3.5.946
-// Resonite Link Version: 0.11.0.0
+// Generated on: pátek 14. srpna 2026 21:57:55
+// Resonite version: 2026.8.12.1196
+// Resonite Link Version: 0.13.1.0
 // -----------------------------------------------------------------------------
 
 using UnityEngine;
@@ -20,14 +20,11 @@ namespace FrooxEngine
 public partial class DebugWorld : global::FrooxEngine.Component
 
 {
-    public global::FrooxEngine.Sync<global::System.String> text { get => text_Element.Data; set => text_Element.Data = value; }
-public Reference<global::FrooxEngine.DriveRef<global::FrooxEngine.Sync<global::System.String>>, global::FrooxEngine.Sync<global::System.String>> text_Element = new();
-
+    
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
 {
     base.CollectMembers(members, context);
-members.Add("text", text_Element.ToLinkReference(context));
 }
 
 }

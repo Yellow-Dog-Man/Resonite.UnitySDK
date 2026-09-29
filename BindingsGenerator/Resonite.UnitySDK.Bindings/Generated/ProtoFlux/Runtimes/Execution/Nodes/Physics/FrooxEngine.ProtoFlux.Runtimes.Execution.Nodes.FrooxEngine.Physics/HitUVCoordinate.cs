@@ -2,9 +2,9 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [ProtoFluxBindings]FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Physics.HitUVCoordinate
-// Generated on: pátek 6. března 2026 14:18:56
-// Resonite version: 2026.3.5.946
-// Resonite Link Version: 0.11.0.0
+// Generated on: pátek 14. srpna 2026 21:57:07
+// Resonite version: 2026.8.12.1196
+// Resonite Link Version: 0.13.1.0
 // -----------------------------------------------------------------------------
 
 using UnityEngine;
@@ -27,6 +27,7 @@ public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.ProtoFlux.INode
 public global::FrooxEngine.ProtoFlux.INodeValueOutput<UnityEngine.Vector3> HitPoint { get => HitPoint_Element.Data; set => HitPoint_Element.Data = value; }
 public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.ProtoFlux.INodeValueOutput<UnityEngine.Vector3>>, global::FrooxEngine.ProtoFlux.INodeValueOutput<UnityEngine.Vector3>> HitPoint_Element = new();
 public global::FrooxEngine.ProtoFlux.NodeValueOutput<UnityEngine.Vector2> UV = new();
+public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Int32> SubmeshIndex = new();
 public global::FrooxEngine.ProtoFlux.NodeValueOutput<global::System.Boolean> IsValidUV = new();
 
 public override void CollectMembers(
@@ -37,6 +38,7 @@ members.Add("HitCollider", HitCollider_Element.ToLinkReference(context));
 members.Add("HitTriangleIndex", HitTriangleIndex_Element.ToLinkReference(context));
 members.Add("HitPoint", HitPoint_Element.ToLinkReference(context));
 members.Add("UV", UV.ToLinkEmpty(context));
+members.Add("SubmeshIndex", SubmeshIndex.ToLinkEmpty(context));
 members.Add("IsValidUV", IsValidUV.ToLinkEmpty(context));
 }
 

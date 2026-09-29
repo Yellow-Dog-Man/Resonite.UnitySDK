@@ -2,9 +2,9 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.Joint
-// Generated on: pátek 6. března 2026 14:19:06
-// Resonite version: 2026.3.5.946
-// Resonite Link Version: 0.11.0.0
+// Generated on: pátek 14. srpna 2026 21:57:47
+// Resonite version: 2026.8.12.1196
+// Resonite Link Version: 0.13.1.0
 // -----------------------------------------------------------------------------
 
 using UnityEngine;
@@ -40,6 +40,8 @@ public global::System.Single SnapTime { get => SnapTime_Element.Data; set => Sna
 public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> SnapTime_Element = new();
 public global::System.Boolean SnapOnRelease { get => SnapOnRelease_Element.Data; set => SnapOnRelease_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> SnapOnRelease_Element = new();
+public global::FrooxEngine.CurvePreset SnapInterpolationCurve { get => SnapInterpolationCurve_Element.Data; set => SnapInterpolationCurve_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::FrooxEngine.CurvePreset>, global::FrooxEngine.CurvePreset> SnapInterpolationCurve_Element = new();
 public global::SyncList<global::FrooxEngine.SyncList<global::FrooxEngine.Joint.SnapOrientation>, global::FrooxEngine.Joint.SnapOrientation> SnapOrientations = new();
 public UnityEngine.Quaternion origRotation { get => origRotation_Element.Data; set => origRotation_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<UnityEngine.Quaternion>, UnityEngine.Quaternion> origRotation_Element = new();
@@ -66,6 +68,7 @@ members.Add("VibrationPreset", VibrationPreset_Element.ToLinkField(context));
 members.Add("SnapIncrement", SnapIncrement_Element.ToLinkField(context));
 members.Add("SnapTime", SnapTime_Element.ToLinkField(context));
 members.Add("SnapOnRelease", SnapOnRelease_Element.ToLinkField(context));
+members.Add("SnapInterpolationCurve", SnapInterpolationCurve_Element.ToLinkField(context));
 members.Add("SnapOrientations", SnapOrientations.ToLinkList(context, m => m.ToLinkSyncObject(context)));
 members.Add("origRotation", origRotation_Element.ToLinkField(context));
 members.Add("rotReference", rotReference_Element.ToLinkField(context));

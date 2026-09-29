@@ -2,9 +2,9 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.DynamicBoneSphereColliderGizmo
-// Generated on: pátek 6. března 2026 14:19:08
-// Resonite version: 2026.3.5.946
-// Resonite Link Version: 0.11.0.0
+// Generated on: pátek 14. srpna 2026 21:57:56
+// Resonite version: 2026.8.12.1196
+// Resonite Link Version: 0.13.1.0
 // -----------------------------------------------------------------------------
 
 using UnityEngine;
@@ -17,7 +17,7 @@ namespace FrooxEngine
 {
     [Serializable]
 [ResoniteTypeName("[FrooxEngine]FrooxEngine.DynamicBoneSphereColliderGizmo")]
-public partial class DynamicBoneSphereColliderGizmo : global::FrooxEngine.Component, global::FrooxEngine.IComponentGizmo
+public partial class DynamicBoneSphereColliderGizmo : global::FrooxEngine.Component, global::FrooxEngine.IComponentGizmo, global::FrooxEngine.IGizmo
 
 {
     public global::FrooxEngine.DynamicBoneSphereCollider _target { get => _target_Element.Data; set => _target_Element.Data = value; }
