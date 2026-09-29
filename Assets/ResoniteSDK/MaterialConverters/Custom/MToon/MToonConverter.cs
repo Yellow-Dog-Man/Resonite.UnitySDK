@@ -8,23 +8,23 @@ using UnityEngine;
 [MaterialConverter(false, "VRM/MToon")]
 public class MToonConverter : ResoniteMaterialConverter
 {
-    private FrooxEngine.XiexeToonMaterialWrapper XiexeComponent;
+    private ResRef<FrooxEngine.XiexeToonMaterial> XiexeComponent;
 
-    private FrooxEngine.Panner2DWrapper MainTexturePanner;
-    private FrooxEngine.Panner2DWrapper NormalMapPanner;
-    private FrooxEngine.Panner2DWrapper EmissionMapPanner;
-    private FrooxEngine.Panner2DWrapper OcclusionMapPanner;
-    private FrooxEngine.Panner2DWrapper ShadowRampMaskPanner;
+    private ResRef<FrooxEngine.Panner2D> MainTexturePanner;
+    private ResRef<FrooxEngine.Panner2D> NormalMapPanner;
+    private ResRef<FrooxEngine.Panner2D> EmissionMapPanner;
+    private ResRef<FrooxEngine.Panner2D> OcclusionMapPanner;
+    private ResRef<FrooxEngine.Panner2D> ShadowRampMaskPanner;
 
     public override IAssetProvider<FrooxEngine.Material> UpdateConversion(UnityEngine.Material material, IConversionContext context)
     {
         if (XiexeComponent == null)
         {
-            XiexeComponent = gameObject.AddComponent<FrooxEngine.XiexeToonMaterialWrapper>();
+            XiexeComponent = gameObject.AddResoniteComponent<FrooxEngine.XiexeToonMaterial>();
         }
 
-        var converted = MToonXiexeConverter.UpdateConversion(XiexeComponent.Data, material, context);
-        UpdateUvScrollPanners(material, XiexeComponent.Data);
+        var converted = MToonXiexeConverter.UpdateConversion(XiexeComponent, material, context);
+        UpdateUvScrollPanners(material, XiexeComponent);
         return converted;
     }
 
@@ -65,17 +65,17 @@ public class MToonConverter : ResoniteMaterialConverter
     }
 
     private void UpdatePanner(
-        ref FrooxEngine.Panner2DWrapper panner,
+        ref ResRef<FrooxEngine.Panner2D> panner,
         FrooxEngine.IField<Vector2> target,
         Vector2 speed,
         Vector2 offset)
     {
         if (panner == null)
         {
-            panner = gameObject.AddComponent<FrooxEngine.Panner2DWrapper>();
+            panner = gameObject.AddResoniteComponent<FrooxEngine.Panner2D>();
         }
 
-        var data = panner.Data;
+        var data = panner.Binding;
         data.Enabled = true;
         data.persistent = true;
         data._target = target;

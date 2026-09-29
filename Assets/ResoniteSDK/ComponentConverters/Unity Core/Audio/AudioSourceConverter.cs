@@ -67,21 +67,21 @@ public static class AudioSourceHelper
 
 public class AudioSourceConverter : ResoniteComponentConverter<AudioSource>
 {
-    public AudioOutputWrapper Output;
-    public AudioClipPlayerWrapper Player;
+    public ResRef<AudioOutput> Output;
+    public ResRef<AudioClipPlayer> Player;
 
     protected override void UpdateConversion(AudioSource target, IConversionContext context)
     {
         if (Output == null)
-            Output = gameObject.AddComponent<AudioOutputWrapper>();
+            Output = gameObject.AddResoniteComponent<AudioOutput>();
 
         if (Player == null)
-            Player = gameObject.AddComponent<AudioClipPlayerWrapper>();
+            Player = gameObject.AddResoniteComponent<AudioClipPlayer>();
 
-        Output.Data.SetFrom(target);
-        Output.Data.Source = Player.Data;
+        Output.Binding.SetFrom(target);
+        Output.Binding.Source = Player.Binding;
 
-        Player.Data.SetFrom(target, context);
+        Player.Binding.SetFrom(target, context);
     }
 
     protected override void Cleanup()
