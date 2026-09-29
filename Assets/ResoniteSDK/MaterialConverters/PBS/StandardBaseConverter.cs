@@ -2,11 +2,11 @@ using FrooxEngine;
 using System.Collections.Generic;
 using UnityEngine;
 
-public abstract class StandardBaseConverter<TWrapper, TMaterial> : ResoniteMaterialConverter
-    where TWrapper : ResoniteComponent<TMaterial>
+public abstract class StandardBaseConverter<TMaterial> : ResoniteMaterialConverter
     where TMaterial : FrooxEngine.PBS_Material, new()
 {
-    public TWrapper PBS;
+    public ResoniteComponent Container;
+    public TMaterial PBS => Container.Data as TMaterial;
 
     protected static readonly IEnumerable<string> BaseSupportedProperties = new List<string>()
     {
@@ -27,10 +27,10 @@ public abstract class StandardBaseConverter<TWrapper, TMaterial> : ResoniteMater
 
     public override IAssetProvider<FrooxEngine.Material> UpdateConversion(UnityEngine.Material material, IConversionContext context)
     {
-        if (PBS == null)
-            PBS = gameObject.AddComponent<TWrapper>();
+        if (Container == null)
+            gameObject.AddResoniteComponent<TMaterial>(out Container);
 
-        var data = PBS.Data;
+        var data = PBS;
 
         data.RenderQueue = material.renderQueue;
 
@@ -69,6 +69,6 @@ public abstract class StandardBaseConverter<TWrapper, TMaterial> : ResoniteMater
             data.EmissiveColor = Color.black.ToColorX_sRGB();
         }
 
-        return PBS.Data;
+        return data;
     }
 }

@@ -67,10 +67,10 @@ public static class ReflectionProbeHelper
 }
 
 
-public class ReflectionProbeConverter : ResoniteSingleComponentConverter<ReflectionProbe, FrooxEngine.ReflectionProbeWrapper>
+public class ReflectionProbeConverter : ResoniteSingleComponentConverter<ReflectionProbe, FrooxEngine.ReflectionProbe>
 {
     protected override void UpdateConversion(ReflectionProbe target, IConversionContext context)
     {
-        Binding.Data.SetFrom(target, context);
+        Binding.SetFrom(target, context);
     }
 }

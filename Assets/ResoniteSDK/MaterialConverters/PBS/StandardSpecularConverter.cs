@@ -4,7 +4,7 @@ using System.Linq;
 using UnityEngine;
 
 [MaterialConverter(false, "Standard (Specular setup)")]
-public class StandardSpecularConverter : StandardBaseConverter<PBS_SpecularWrapper, PBS_Specular>
+public class StandardSpecularConverter : StandardBaseConverter<PBS_Specular>
 {
     protected static readonly IEnumerable<string> SupportedProperties = new List<string>()
     {
@@ -17,7 +17,7 @@ public class StandardSpecularConverter : StandardBaseConverter<PBS_SpecularWrapp
     {
         var provider = base.UpdateConversion(material, context);
 
-        var data = PBS.Data;
+        var data = PBS;
 
         var specColor = material.GetColor("_SpecColor");
 

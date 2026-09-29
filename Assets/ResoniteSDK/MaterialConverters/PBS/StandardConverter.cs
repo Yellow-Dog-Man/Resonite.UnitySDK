@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 
 [MaterialConverter(true, "Standard")]
-public class StandardConverter : StandardBaseConverter<PBS_MetallicWrapper, PBS_Metallic>
+public class StandardConverter : StandardBaseConverter<PBS_Metallic>
 {
     protected static readonly IEnumerable<string> SupportedProperties = new List<string>()
     {
@@ -16,7 +16,7 @@ public class StandardConverter : StandardBaseConverter<PBS_MetallicWrapper, PBS_
     {
         var provider = base.UpdateConversion(material, context);
 
-        var data = PBS.Data;
+        var data = PBS;
 
         data.Smoothness = material.GetFloat("_Glossiness");
         data.Metallic = material.GetFloat("_Metallic");

@@ -12,10 +12,10 @@ public static class SphereColliderHelper
     }
 }
 
-public class SphereColliderConverter : ResoniteSingleComponentConverter<SphereCollider, FrooxEngine.SphereColliderWrapper>
+public class SphereColliderConverter : ResoniteSingleComponentConverter<SphereCollider, FrooxEngine.SphereCollider>
 {
     protected override void UpdateConversion(SphereCollider target, IConversionContext context)
     {
-        Binding.Data.SetFrom(target);
+        Binding.SetFrom(target);
     }
 }

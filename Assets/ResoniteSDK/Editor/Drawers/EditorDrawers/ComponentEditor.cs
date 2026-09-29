@@ -1,6 +1,7 @@
 ﻿using UnityEditor;
+using UnityEngine;
 
-[CustomEditor(typeof(ResoniteComponent<>), true)]
+[CustomEditor(typeof(ResoniteComponent), true)]
 public class ComponentEditor : Editor
 {
     public override void OnInspectorGUI()
@@ -10,6 +11,19 @@ public class ComponentEditor : Editor
 
         // Iterate the children of "Data"
         SerializedProperty iterator = serializedObject.FindProperty("Data");
+
+        if (iterator == null)
+            return;
+
+        // TODO!!! Make this nicer. Just quick and dirty header label
+        var headerStyle = new GUIStyle(EditorStyles.boldLabel)
+        {
+            fontSize = 16,
+            alignment = TextAnchor.MiddleLeft,
+            margin = new RectOffset(4, 4, 10, 4)
+        };
+
+        EditorGUILayout.LabelField(iterator.managedReferenceValue?.GetType().Name, headerStyle);
 
         // Start drawing the children properties of Data
         bool enterChildren = true;
