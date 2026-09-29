@@ -6,23 +6,24 @@ using UnityEngine;
 
 public static class ResoniteComponentExtensions
 {
-    public static C AddResoniteComponent<C>(this GameObject gameObject, out ResoniteComponent container)
+    public static ResRef<C> AddResoniteComponent<C>(this GameObject gameObject, out ResoniteComponent container)
         where C : ResoniteObject, IWorldElement, new()
     {
         container = gameObject.AddComponent<ResoniteComponent>();
-        return container.Initialize<C>();
+        container.Initialize<C>();
+        return new ResRef<C>(container);
     }
 
-    public static C AddResoniteComponent<C>(this GameObject gameObject)
+    public static ResRef<C> AddResoniteComponent<C>(this GameObject gameObject)
         where C : ResoniteObject, IWorldElement, new()
         => gameObject.AddResoniteComponent<C>(out _);
 
-    public static C GetResoniteComponent<C>(this GameObject gameObject)
+    public static ResRef<C> GetResoniteComponent<C>(this GameObject gameObject)
         where C : ResoniteObject, IWorldElement, new()
     {
         foreach (var c in gameObject.GetComponents<ResoniteComponent>())
-            if (c.Data is C component)
-                return component;
+            if (c.Data is C)
+                return new ResRef<C>(c);
 
         return null;
     }
