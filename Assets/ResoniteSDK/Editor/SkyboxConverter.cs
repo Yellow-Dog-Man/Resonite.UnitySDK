@@ -16,7 +16,7 @@ public class SkyboxConverter
     public ResRef<FrooxEngine.AmbientLightSH2> AmbientLight;
     public ResRef<FrooxEngine.ReflectionProbe> ReflectionProbe;
     public ResRef<FrooxEngine.ReflectionProbeSH2> ReflectionProbeSH2;
-    public ResRef<FrooxEngine.ValueCopy<SphericalHarmonicsL2>> ValueCopy;
+    public ResRef<FrooxEngine.ValueCopySH_L2> ValueCopy;
 
     public void EnsureRoot()
     {
