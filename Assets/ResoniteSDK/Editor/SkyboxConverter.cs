@@ -24,7 +24,7 @@ public class SkyboxConverter
             return;
 
         // Try to get the root from the current components if they exist
-        SkyboxRoot = Skybox?.Container?.gameObject ?? AmbientLight?.Container?.gameObject ?? ReflectionProbe?.Container?.gameObject;
+        SkyboxRoot = Skybox.Container?.gameObject ?? AmbientLight.Container?.gameObject ?? ReflectionProbe.Container?.gameObject;
 
         if(SkyboxRoot == null)
         {

@@ -27,7 +27,7 @@ public static class ResoniteComponentExtensions
             if (c.Data is C)
                 return new ResRef<C>(c);
 
-        return null;
+        return default;
     }
 
     public static void GetResoniteComponents<C>(this GameObject gameObject, List<C> results)

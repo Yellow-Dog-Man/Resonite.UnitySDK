@@ -36,7 +36,7 @@ public class ProceduralSkyboxConverter : ResoniteMaterialConverter
         {
             // We defer the conversion here for when the Light itself has been converted. The wrapper might not exist
             // yet, so we don't want to get the conversion too early, otherwise it might miss it
-            context.RunOnConverted(sun, () => data.Sun = sun.gameObject.GetResoniteComponent<FrooxEngine.Light>()?.Binding);
+            context.RunOnConverted(sun, () => data.Sun = sun.gameObject.GetResoniteComponent<FrooxEngine.Light>().Binding);
         }
 
         return data;
