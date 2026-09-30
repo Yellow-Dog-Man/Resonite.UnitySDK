@@ -62,14 +62,13 @@ public abstract class AssetConverter : MonoBehaviour
     protected abstract ResoniteLink.Component UpdateProvider(Uri assetUrl, IConversionContext context);
 }
 
-public abstract class AssetConverter<TWrapper, TProvider, TUnity, TResonite> : AssetConverter
-    where TWrapper : ResoniteComponent<TProvider>
+public abstract class AssetConverter<TProvider, TUnity, TResonite> : AssetConverter
     where TProvider : FrooxEngine.Component, IAssetProvider<TResonite>, new()
     where TResonite : FrooxEngine.IAsset
     where TUnity : UnityEngine.Object
 {
     public TUnity Source;
-    public TWrapper Provider;
+    public ResRef<TProvider> Provider;
 
     public void Initialize(TUnity source, AssetMessagePostProcessor postProcessor)
     {
@@ -84,16 +83,16 @@ public abstract class AssetConverter<TWrapper, TProvider, TUnity, TResonite> : A
 
         gameObject.name = $"{typeof(TResonite).Name} - {AssetName}";
 
-        Provider = gameObject.AddComponent<TWrapper>();
+        Provider = gameObject.AddResoniteComponent<TProvider>();
 
-        Provider.Data.Enabled = true;
-        Provider.Data.persistent = true;
+        Provider.Binding.Enabled = true;
+        Provider.Binding.persistent = true;
     }
 
     public override bool HasAssetChanged()
     {
         // If the URL is missing, it needs to be converted again
-        if (Provider.Data is IStaticAssetProvider staticProvider && staticProvider.URL == null)
+        if (Provider.Binding is IStaticAssetProvider staticProvider && staticProvider.URL == null)
             return true;
 
         if (PostProcessor != null && PostProcessor.HasChanged())
