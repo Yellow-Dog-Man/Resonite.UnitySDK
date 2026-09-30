@@ -1,5 +1,6 @@
 using FrooxEngine.PhotonDust;
 using UnityEngine;
+using ParticleSystem = FrooxEngine.PhotonDust.ParticleSystem;
 
 public static class EmitterHelper
 {
@@ -17,67 +18,65 @@ public static class EmitterHelper
 
 public class ParticleSystemConverter : ResoniteComponentConverter<UnityEngine.ParticleSystem>
 {
-    public ParticleSystemWrapper ParticleSystem;
-    public ParticleStyleWrapper ParticleStyle;
+    public ResRef<ParticleSystem> ParticleSystem;
+    public ResRef<ParticleStyle> ParticleStyle;
 
-    public PositionSimulatorModuleWrapper PositionSimulator;
-    public LifetimeRangeInitializerWrapper LifetimeInitializer;
-    public SizeRangeInitializerWrapper SizeRangeInitializer;
-    public ColorRangeInitializerWrapper ColorRangeInitializer;
-    public SpeedRangeInitializerWrapper SpeedRangeInitializer;
+    public ResRef<PositionSimulatorModule> PositionSimulator;
+    public ResRef<LifetimeRangeInitializer> LifetimeInitializer;
+    public ResRef<SizeRangeInitializer> SizeRangeInitializer;
+    public ResRef<ColorRangeInitializer> ColorRangeInitializer;
+    public ResRef<SpeedRangeInitializer> SpeedRangeInitializer;
 
-    public BillboardParticleRendererWrapper BillboardRenderer;
-    public MeshParticleRendererWrapper MeshRenderer;
+    public ResRef<BillboardParticleRenderer> BillboardRenderer;
+    public ResRef<MeshParticleRenderer> MeshRenderer;
 
     // Emitters
-    public BoxEmitterWrapper BoxEmitter;
-    public SphereEmitterWrapper SphereEmitter;
-    public ConeEmitterWrapper ConeEmitter;
-    public MeshEmitterWrapper MeshEmitter;
-    public SkinnedMeshEmitterWrapper SkinnedMeshEmitter;
-    public CircleEmitterWrapper CircleEmitter;
+    public ResRef<BoxEmitter> BoxEmitter;
+    public ResRef<SphereEmitter> SphereEmitter;
+    public ResRef<ConeEmitter> ConeEmitter;
+    public ResRef<MeshEmitter> MeshEmitter;
+    public ResRef<SkinnedMeshEmitter> SkinnedMeshEmitter;
+    public ResRef<CircleEmitter> CircleEmitter;
 
     // Modules
 
-    TModule EnsureModule<TModule, TWrapper>(ref TWrapper wrapper)
-        where TWrapper : ResoniteComponent<TModule>
+    TModule EnsureModule<TModule>(ref ResRef<TModule> wrapper)
         where TModule : ResoniteObject, IParticleSystemSubsystem, FrooxEngine.IWorldElement, new()
     {
-        var style = ParticleStyle.Data;
+        var style = ParticleStyle.Binding;
 
-        return EnsureComponent<TModule, TWrapper>(ref wrapper, module => style.Modules.Add(module));
+        return EnsureComponent<TModule>(ref wrapper, module => style.Modules.Add(module));
     }
 
-    TEmitter EnsureEmitter<TEmitter, TWrapper>(ref TWrapper wrapper)
-        where TWrapper : ResoniteComponent<TEmitter>
+    TEmitter EnsureEmitter<TEmitter>(ref ResRef<TEmitter> emitter)
         where TEmitter : ParticleEmitter, FrooxEngine.IWorldElement, new()
     {
-        if (wrapper == null)
+        if (emitter == null)
         {
             // Remove any previous emitters
             CleanupEmitters();
 
-            wrapper = gameObject.AddComponent<TWrapper>();
+            emitter = gameObject.AddResoniteComponent<TEmitter>();
 
             // Assign the system
-            wrapper.Data.System = ParticleSystem.Data;
+            emitter.Binding.System = ParticleSystem.Binding;
         }
 
-        return wrapper.Data;
+        return emitter.Binding;
     }
 
     protected override void UpdateConversion(UnityEngine.ParticleSystem target, IConversionContext context)
     {
-        var system = EnsureComponent<FrooxEngine.PhotonDust.ParticleSystem, ParticleSystemWrapper>(ref ParticleSystem);
-        var style = EnsureComponent<FrooxEngine.PhotonDust.ParticleStyle, ParticleStyleWrapper>(ref ParticleStyle,
+        var system = EnsureComponent<FrooxEngine.PhotonDust.ParticleSystem>(ref ParticleSystem);
+        var style = EnsureComponent<FrooxEngine.PhotonDust.ParticleStyle>(ref ParticleStyle,
             s => system.Style = s);
 
-        var lifetime = EnsureModule<LifetimeRangeInitializer, LifetimeRangeInitializerWrapper>(ref LifetimeInitializer);
-        var size = EnsureModule<SizeRangeInitializer, SizeRangeInitializerWrapper>(ref SizeRangeInitializer);
-        var color = EnsureModule<ColorRangeInitializer, ColorRangeInitializerWrapper>(ref ColorRangeInitializer);
-        var speed = EnsureModule<SpeedRangeInitializer, SpeedRangeInitializerWrapper>(ref SpeedRangeInitializer);
+        var lifetime = EnsureModule<LifetimeRangeInitializer>(ref LifetimeInitializer);
+        var size = EnsureModule<SizeRangeInitializer>(ref SizeRangeInitializer);
+        var color = EnsureModule<ColorRangeInitializer>(ref ColorRangeInitializer);
+        var speed = EnsureModule<SpeedRangeInitializer>(ref SpeedRangeInitializer);
 
-        var position = EnsureModule<PositionSimulatorModule, PositionSimulatorModuleWrapper>(ref PositionSimulator);
+        var position = EnsureModule<PositionSimulatorModule>(ref PositionSimulator);
 
         system.Enabled = true;
         system.persistent = true;
@@ -148,11 +147,11 @@ public class ParticleSystemConverter : ResoniteComponentConverter<UnityEngine.Pa
                 if (BillboardRenderer == null)
                 {
                     CleanupRenderers();
-                    BillboardRenderer = gameObject.AddComponent<BillboardParticleRendererWrapper>();
-                    system.Style.Renderer = BillboardRenderer.Data;
+                    BillboardRenderer = gameObject.AddResoniteComponent<BillboardParticleRenderer>();
+                    system.Style.Renderer = BillboardRenderer.Binding;
                 }
 
-                var billboard = BillboardRenderer.Data;
+                var billboard = BillboardRenderer.Binding;
                 var provider = context.GetMaterial(renderer.sharedMaterial);
 
                 billboard.Material = provider;
@@ -167,11 +166,11 @@ public class ParticleSystemConverter : ResoniteComponentConverter<UnityEngine.Pa
                 if (MeshRenderer == null)
                 {
                     CleanupRenderers();
-                    MeshRenderer = gameObject.AddComponent<MeshParticleRendererWrapper>();
-                    system.Style.Renderer = MeshRenderer.Data;
+                    MeshRenderer = gameObject.AddResoniteComponent<MeshParticleRenderer>();
+                    system.Style.Renderer = MeshRenderer.Binding;
                 }
 
-                var mesh = MeshRenderer.Data;
+                var mesh = MeshRenderer.Binding;
 
                 mesh.Material = context.GetMaterial(renderer.sharedMaterial);
                 mesh.Mesh = context.GetMesh(renderer.mesh);
@@ -182,7 +181,7 @@ public class ParticleSystemConverter : ResoniteComponentConverter<UnityEngine.Pa
         switch (shape.shapeType)
         {
             case ParticleSystemShapeType.Sphere:
-                var sphere = EnsureEmitter<SphereEmitter, SphereEmitterWrapper>(ref SphereEmitter);
+                var sphere = EnsureEmitter(ref SphereEmitter);
 
                 sphere.SetFrom(system, shape, emission);
 
@@ -190,7 +189,7 @@ public class ParticleSystemConverter : ResoniteComponentConverter<UnityEngine.Pa
                 break;
 
             case ParticleSystemShapeType.Box:
-                var box = EnsureEmitter<BoxEmitter, BoxEmitterWrapper>(ref BoxEmitter);
+                var box = EnsureEmitter(ref BoxEmitter);
 
                 box.SetFrom(system, shape, emission);
 
@@ -209,7 +208,7 @@ public class ParticleSystemConverter : ResoniteComponentConverter<UnityEngine.Pa
                 break;
 
             case ParticleSystemShapeType.Circle:
-                var circle = EnsureEmitter<CircleEmitter, CircleEmitterWrapper>(ref CircleEmitter);
+                var circle = EnsureEmitter(ref CircleEmitter);
 
                 circle.SetFrom(system, shape, emission);
 
@@ -218,7 +217,7 @@ public class ParticleSystemConverter : ResoniteComponentConverter<UnityEngine.Pa
                 break;
 
             case ParticleSystemShapeType.Cone:
-                var cone = EnsureEmitter<ConeEmitter, ConeEmitterWrapper>(ref ConeEmitter);
+                var cone = EnsureEmitter(ref ConeEmitter);
 
                 cone.SetFrom(system, shape, emission);
 
@@ -227,7 +226,7 @@ public class ParticleSystemConverter : ResoniteComponentConverter<UnityEngine.Pa
                 break;
 
             case ParticleSystemShapeType.Mesh:
-                var mesh = EnsureEmitter<MeshEmitter, MeshEmitterWrapper>(ref MeshEmitter);
+                var mesh = EnsureEmitter(ref MeshEmitter);
 
                 mesh.SetFrom(system, shape, emission);
 
@@ -243,7 +242,7 @@ public class ParticleSystemConverter : ResoniteComponentConverter<UnityEngine.Pa
                 break;
 
             case ParticleSystemShapeType.SkinnedMeshRenderer:
-                var skin = EnsureEmitter<SkinnedMeshEmitter, SkinnedMeshEmitterWrapper>(ref SkinnedMeshEmitter);
+                var skin = EnsureEmitter(ref SkinnedMeshEmitter);
 
                 skin.SetFrom(system, shape, emission);
 
@@ -264,7 +263,7 @@ public class ParticleSystemConverter : ResoniteComponentConverter<UnityEngine.Pa
 
     void CleanupRemovedModules()
     {
-        ParticleStyle.Data.Modules.Data.RemoveAll(m => m.Data == null);
+        ParticleStyle.Binding.Modules.Data.RemoveAll(m => m.Data == null);
     }
 
     void CleanupRenderers()
