@@ -104,16 +104,16 @@ public static class BipedRigHelper
 
 public class AnimatorConverter : ResoniteComponentConverter<UnityEngine.Animator>
 {
-    public BipedRigWrapper BipedRig;
+    public ResRef<BipedRig> BipedRig;
 
     protected override void UpdateConversion(UnityEngine.Animator target, IConversionContext context)
     {
         if (target.avatar != null && target.avatar.isValid && target.avatar.isHuman)
         {
             if (BipedRig == null)
-                BipedRig = gameObject.AddComponent<BipedRigWrapper>();
+                BipedRig = gameObject.AddResoniteComponent<BipedRig>();
 
-            BipedRig.Data.SetFrom(target);
+            BipedRig.Binding.SetFrom(target);
         }
         else if (BipedRig != null)
             DestroyImmediate(BipedRig);
