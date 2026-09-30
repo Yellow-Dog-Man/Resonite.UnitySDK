@@ -268,8 +268,13 @@ public class SceneConverter : IConversionContext
 
             // Post processing
             foreach (var root in roots)
+            {
                 foreach (var postprocessor in root.GetComponentsInChildren<IConversionPostProcessor>())
                     postprocessor.PostProcessConversion(this);
+
+                // Postprocess all components as well
+                PostProcessComponentsRecursively(root, new List<ResoniteComponent>());
+            }
         }
         catch (Exception ex)
         {
@@ -279,13 +284,30 @@ public class SceneConverter : IConversionContext
                 $"TECHNICAL INFO:\n{ex}");
 
             // Stop realtime mode if it's active
-            if(IsRealtimeModeActive)
+            if (IsRealtimeModeActive)
                 StopRealtimeMode();
 
             // This conversion is now in corrupted state, we can't continue.
             // This will force reset
             IsCorrupted = true;
         }
+    }
+
+    // Explicit method to allow sharing the same list, but avoid excessive allocations
+    // Most components will not have any post processing, so we want to avoid building a huge list
+    // of them, using a bunch of memory
+    void PostProcessComponentsRecursively(Transform root, List<ResoniteComponent> cacheList = null)
+    {
+        root.GetComponents(cacheList);
+
+        foreach (var component in cacheList)
+            if (component.Data is IComponentConversionPostProcessor postprocessor)
+                postprocessor.PostProcessConversion(component, this);
+
+        cacheList.Clear();
+
+        for (int i = 0; i < root.childCount; i++)
+            PostProcessComponentsRecursively(root.GetChild(i), cacheList);
     }
 
     void SendOperationBatch(List<DataModelOperation> messages)
@@ -297,7 +319,7 @@ public class SceneConverter : IConversionContext
             Task.Run(async () =>
             {
                 // For debugging purposes
-                if(LogMessageJSON)
+                if (LogMessageJSON)
                 {
                     var operations = new DataModelOperationBatch();
                     operations.Operations = messages.ToList<Message>();
