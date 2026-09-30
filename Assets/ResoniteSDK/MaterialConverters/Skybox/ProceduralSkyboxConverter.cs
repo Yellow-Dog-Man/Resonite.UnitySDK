@@ -5,14 +5,14 @@ using UnityEngine.SceneManagement;
 [MaterialConverter(false, "Skybox/Procedural")]
 public class ProceduralSkyboxConverter : ResoniteMaterialConverter
 {
-    public FrooxEngine.ProceduralSkyMaterialWrapper Sky;
+    public ResRef<FrooxEngine.ProceduralSkyMaterial> Sky;
 
     public override IAssetProvider<FrooxEngine.Material> UpdateConversion(UnityEngine.Material material, IConversionContext context)
     {
         if (Sky == null)
-            Sky = gameObject.AddComponent<FrooxEngine.ProceduralSkyMaterialWrapper>();
+            Sky = gameObject.AddResoniteComponent<FrooxEngine.ProceduralSkyMaterial>();
 
-        var data = Sky.Data;
+        var data = Sky.Binding;
 
         if (material.IsKeywordEnabled("_SUNDISK_HIGH_QUALITY"))
             data.SunQuality = ProceduralSkyMaterial.SunType.HighQuality;
@@ -36,7 +36,7 @@ public class ProceduralSkyboxConverter : ResoniteMaterialConverter
         {
             // We defer the conversion here for when the Light itself has been converted. The wrapper might not exist
             // yet, so we don't want to get the conversion too early, otherwise it might miss it
-            context.RunOnConverted(sun, () => data.Sun = sun.gameObject.GetComponent<LightWrapper>()?.Data);
+            context.RunOnConverted(sun, () => data.Sun = sun.gameObject.GetResoniteComponent<FrooxEngine.Light>()?.Binding);
         }
 
         return data;
