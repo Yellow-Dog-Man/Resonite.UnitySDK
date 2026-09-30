@@ -7,15 +7,15 @@ using System.Threading.Tasks;
 
 namespace FrooxEngine
 {
-    public partial class AmbientLightSH2Wrapper : IConversionPostProcessor
+    public partial class AmbientLightSH2 : IComponentConversionPostProcessor
     {
-        public void PostProcessConversion(IConversionContext context)
+        public void PostProcessConversion(ResoniteComponent container, IConversionContext context)
         {
-            if (!isActiveAndEnabled)
+            if (!container.isActiveAndEnabled)
                 return;
 
             // Wrapper is active, set it as the active skybox
-            Task.Run(async () => await Data.SetActive(context)).Wait();
+            Task.Run(async () => await SetActive(context)).Wait();
         }
     }
 }
