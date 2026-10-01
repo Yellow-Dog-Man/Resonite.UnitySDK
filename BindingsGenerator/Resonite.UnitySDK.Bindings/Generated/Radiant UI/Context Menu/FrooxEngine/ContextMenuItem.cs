@@ -2,9 +2,9 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.ContextMenuItem
-// Generated on: pátek 6. března 2026 14:18:59
-// Resonite version: 2026.3.5.946
-// Resonite Link Version: 0.11.0.0
+// Generated on: pátek 14. srpna 2026 21:57:16
+// Resonite version: 2026.8.12.1196
+// Resonite Link Version: 0.13.1.0
 // -----------------------------------------------------------------------------
 
 using UnityEngine;
@@ -25,11 +25,13 @@ public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Bo
 public global::FrooxEngine.UIX.Image Icon { get => Icon_Element.Data; set => Icon_Element.Data = value; }
 public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.UIX.Image>, global::FrooxEngine.UIX.Image> Icon_Element = new();
 public global::FrooxEngine.IAssetProvider<global::FrooxEngine.Sprite> Sprite { get => Sprite_Element.Data; set => Sprite_Element.Data = value; }
-public Reference<global::FrooxEngine.RelayRef<global::FrooxEngine.IAssetProvider<global::FrooxEngine.Sprite>>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.Sprite>> Sprite_Element = new();
+public Reference<global::FrooxEngine.AssetRef<global::FrooxEngine.Sprite>, global::FrooxEngine.IAssetProvider<global::FrooxEngine.Sprite>> Sprite_Element = new();
 public global::FrooxEngine.IField<global::System.String> Label { get => Label_Element.Data; set => Label_Element.Data = value; }
 public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.IField<global::System.String>>, global::FrooxEngine.IField<global::System.String>> Label_Element = new();
 public UnityEngine.ColorX Color { get => Color_Element.Data; set => Color_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<UnityEngine.ColorX>, UnityEngine.ColorX> Color_Element = new();
+public global::System.Boolean AutoClose { get => AutoClose_Element.Data; set => AutoClose_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> AutoClose_Element = new();
 public global::FrooxEngine.ContextMenu _menu { get => _menu_Element.Data; set => _menu_Element.Data = value; }
 public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.ContextMenu>, global::FrooxEngine.ContextMenu> _menu_Element = new();
 public global::System.Boolean _highlighted { get => _highlighted_Element.Data; set => _highlighted_Element.Data = value; }
@@ -50,6 +52,7 @@ members.Add("Icon", Icon_Element.ToLinkReference(context));
 members.Add("Sprite", Sprite_Element.ToLinkReference(context));
 members.Add("Label", Label_Element.ToLinkReference(context));
 members.Add("Color", Color_Element.ToLinkField(context));
+members.Add("AutoClose", AutoClose_Element.ToLinkField(context));
 members.Add("_menu", _menu_Element.ToLinkReference(context));
 members.Add("_highlighted", _highlighted_Element.ToLinkField(context));
 members.Add("_arc", _arc_Element.ToLinkReference(context));

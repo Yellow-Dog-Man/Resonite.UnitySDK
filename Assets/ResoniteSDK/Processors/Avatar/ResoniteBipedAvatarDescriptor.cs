@@ -582,7 +582,7 @@ public class ResoniteBipedAvatarDescriptor : MonoBehaviour, IConversionPostProce
         if (AvatarConverted)
             return;
 
-        var wrapper = Biped.transform.GetComponent<FrooxEngine.BipedRigWrapper>();
+        var wrapper = Biped.gameObject.GetResoniteComponent<FrooxEngine.BipedRig>();
 
         if(wrapper == null)
         {
@@ -604,7 +604,7 @@ public class ResoniteBipedAvatarDescriptor : MonoBehaviour, IConversionPostProce
 
         Task.Run(async () =>
         {
-            await FrooxEngine.AvatarCreator.CreateBipedAvatar(wrapper.Data,
+            await FrooxEngine.AvatarCreator.CreateBipedAvatar(wrapper.Binding,
             headSlot, leftHandSlot, rightHandSlot,
             leftFootSlot, rightFootSlot, hipsSlot,
 

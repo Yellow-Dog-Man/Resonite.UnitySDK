@@ -2,9 +2,9 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.CloudUserInfo
-// Generated on: pátek 6. března 2026 14:18:06
-// Resonite version: 2026.3.5.946
-// Resonite Link Version: 0.11.0.0
+// Generated on: pátek 14. srpna 2026 21:54:07
+// Resonite version: 2026.8.12.1196
+// Resonite Link Version: 0.13.1.0
 // -----------------------------------------------------------------------------
 
 using UnityEngine;
@@ -32,6 +32,8 @@ public global::System.DateTime OriginalRegistrationDate { get => OriginalRegistr
 public Field<global::FrooxEngine.Sync<global::System.DateTime>, global::System.DateTime> OriginalRegistrationDate_Element = new();
 public System.Uri IconURL { get => IconURL_Element.Data; set => IconURL_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<System.Uri>, System.Uri> IconURL_Element = new();
+public global::System.String Pronouns { get => Pronouns_Element.Data; set => Pronouns_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.String>, global::System.String> Pronouns_Element = new();
 public global::System.Boolean IsContact { get => IsContact_Element.Data; set => IsContact_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> IsContact_Element = new();
 public global::System.String _loadedUserId { get => _loadedUserId_Element.Data; set => _loadedUserId_Element.Data = value; }
@@ -47,6 +49,7 @@ members.Add("Username", Username_Element.ToLinkField(context));
 members.Add("RegistrationDate", RegistrationDate_Element.ToLinkField(context));
 members.Add("OriginalRegistrationDate", OriginalRegistrationDate_Element.ToLinkField(context));
 members.Add("IconURL", IconURL_Element.ToLinkField(context));
+members.Add("Pronouns", Pronouns_Element.ToLinkField(context));
 members.Add("IsContact", IsContact_Element.ToLinkField(context));
 members.Add("_loadedUserId", _loadedUserId_Element.ToLinkField(context));
 }

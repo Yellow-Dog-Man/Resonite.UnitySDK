@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using UnityEditor;
 using UnityEngine;
 
-public class AudioClipConverter : AssetConverter<StaticAudioClipWrapper, StaticAudioClip, UnityEngine.AudioClip, FrooxEngine.AudioClip>
+public class AudioClipConverter : AssetConverter<StaticAudioClip, UnityEngine.AudioClip, FrooxEngine.AudioClip>
 {
     public override string AssetClass => "AudioClip";
     public override string AssetName => Source.name;
@@ -30,9 +30,9 @@ public class AudioClipConverter : AssetConverter<StaticAudioClipWrapper, StaticA
 
     protected override ResoniteLink.Component UpdateProvider(Uri assetUrl, IConversionContext context)
     {
-        Provider.Data.URL = assetUrl;
+        Provider.Binding.URL = assetUrl;
 
-        return Provider.CollectData(context);
+        return Provider.Container.CollectData(context);
     }
 
     public static ResoniteLink.Message ConvertAudioClip(UnityEngine.AudioClip audioClip, bool requiresPostProcessing)

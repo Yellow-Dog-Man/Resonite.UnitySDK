@@ -54,10 +54,10 @@ public static class SkinnedMeshRendererHelper
     }
 }
 
-public class SkinnedMeshRendererConverter : ResoniteSingleComponentConverter<SkinnedMeshRenderer, FrooxEngine.SkinnedMeshRendererWrapper>
+public class SkinnedMeshRendererConverter : ResoniteSingleComponentConverter<SkinnedMeshRenderer, FrooxEngine.SkinnedMeshRenderer>
 {
     protected override void UpdateConversion(SkinnedMeshRenderer target, IConversionContext context)
     {
-        Binding.Data.SetFrom(target, context);
+        Binding.SetFrom(target, context);
     }
 }

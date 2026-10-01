@@ -2,9 +2,9 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.SphereMeshGizmo
-// Generated on: pátek 6. března 2026 14:19:11
-// Resonite version: 2026.3.5.946
-// Resonite Link Version: 0.11.0.0
+// Generated on: pátek 14. srpna 2026 21:58:06
+// Resonite version: 2026.8.12.1196
+// Resonite Link Version: 0.13.1.0
 // -----------------------------------------------------------------------------
 
 using UnityEngine;
@@ -17,7 +17,7 @@ namespace FrooxEngine
 {
     [Serializable]
 [ResoniteTypeName("[FrooxEngine]FrooxEngine.SphereMeshGizmo")]
-public partial class SphereMeshGizmo : global::FrooxEngine.Component, global::FrooxEngine.IComponentGizmo
+public partial class SphereMeshGizmo : global::FrooxEngine.Component, global::FrooxEngine.IComponentGizmo, global::FrooxEngine.IGizmo
 
 {
     public global::FrooxEngine.SphereMesh _target { get => _target_Element.Data; set => _target_Element.Data = value; }

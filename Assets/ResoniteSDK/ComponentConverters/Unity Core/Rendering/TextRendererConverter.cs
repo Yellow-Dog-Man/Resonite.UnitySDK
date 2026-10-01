@@ -47,11 +47,11 @@ public static class TextRendererHelper
     }
 }
 
-public class TextRendererConverter : ResoniteSingleComponentConverter<UnityEngine.TextMesh, FrooxEngine.TextRendererWrapper>
+public class TextRendererConverter : ResoniteSingleComponentConverter<UnityEngine.TextMesh, FrooxEngine.TextRenderer>
 {
     protected override void UpdateConversion(UnityEngine.TextMesh target, IConversionContext context)
     {
-        Binding.Data.SetFrom(target, context);
+        Binding.SetFrom(target, context);
     }
 
     [ConverterSupressionHandler]

@@ -37,19 +37,17 @@ public abstract class ResoniteComponentConverter<T> : ResoniteComponentConverter
     protected virtual void Initialize(T target) {  }
     protected abstract void UpdateConversion(T target, IConversionContext context);
 
-    protected TComponent EnsureComponent<TComponent, TWrapper>(ref TWrapper wrapper, 
+    protected TComponent EnsureComponent<TComponent>(ref ResRef<TComponent> container, 
         Action<TComponent> onAdded = null)
-        where TWrapper : ResoniteComponent<TComponent>
         where TComponent : ResoniteObject, FrooxEngine.IWorldElement, new()
     {
-        if (wrapper == null)
-            wrapper = gameObject.AddComponent<TWrapper>();
+        if (container == null)
+        {
+            container = gameObject.AddResoniteComponent<TComponent>();
+            onAdded?.Invoke(container.Binding);
+        }
 
-        var data = wrapper.Data;
-
-        onAdded?.Invoke(data);
-
-        return data;
+        return container.Binding;
     }
 }
 
@@ -58,26 +56,28 @@ public abstract class ResoniteComponentConverter<T> : ResoniteComponentConverter
 /// It automatically handles the instantiation and cleanup, so you only need to worry about providing the conversion update code.
 /// </summary>
 /// <typeparam name="TUnity"></typeparam>
-/// <typeparam name="TResoniteWrapper"></typeparam>
-public abstract class ResoniteSingleComponentConverter<TUnity, TResoniteWrapper> : ResoniteComponentConverter<TUnity>
+/// <typeparam name="TResonite"></typeparam>
+public abstract class ResoniteSingleComponentConverter<TUnity, TResonite> : ResoniteComponentConverter<TUnity>
     where TUnity : Component
-    where TResoniteWrapper : ResoniteComponent
+    where TResonite : ResoniteObject, FrooxEngine.IWorldElement, new()
 {
-    public TResoniteWrapper Binding;
+    public ResoniteComponent Container;
+
+    public TResonite Binding => Container?.Data as TResonite;
 
     protected override void Initialize(TUnity target)
     {
         base.Initialize(target);
 
-        Binding = gameObject.AddComponent<TResoniteWrapper>();
+        gameObject.AddResoniteComponent<TResonite>(out Container);
     }
 
     protected override void Cleanup()
     {
         // Cleanup the binding if it still exists
-        if (Binding == null)
+        if (Container == null)
             return;
 
-        DestroyImmediate(Binding);
+        DestroyImmediate(Container);
     }
 }

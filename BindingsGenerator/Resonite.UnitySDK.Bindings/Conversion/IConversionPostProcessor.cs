@@ -7,3 +7,8 @@ public interface IConversionPostProcessor
 {
     void PostProcessConversion(IConversionContext context);
 }
+
+public interface IComponentConversionPostProcessor
+{
+    void PostProcessConversion(ResoniteComponent component, IConversionContext context);
+}

@@ -2,9 +2,9 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.MeshRenderer
-// Generated on: pátek 6. března 2026 14:18:05
-// Resonite version: 2026.3.5.946
-// Resonite Link Version: 0.11.0.0
+// Generated on: pátek 14. srpna 2026 21:54:02
+// Resonite version: 2026.8.12.1196
+// Resonite Link Version: 0.13.1.0
 // -----------------------------------------------------------------------------
 
 using UnityEngine;
@@ -42,6 +42,19 @@ members.Add("ShadowCastMode", ShadowCastMode_Element.ToLinkField(context));
 members.Add("MotionVectorMode", MotionVectorMode_Element.ToLinkField(context));
 members.Add("SortingOrder", SortingOrder_Element.ToLinkField(context));
 }
+public  async System.Threading.Tasks.Task AutoRig(global::FrooxEngine.Rig rig, IConversionContext context)
+{
+        var __message = new ResoniteLink.CallSyncMethod();
+        __message.MethodName = "AutoRig";
+__message.TargetID = context.GetId(this);
+                if(__message.TargetID == null)
+                    throw new System.InvalidOperationException("Cannot call sync methods on objects that have not been synced to resonite yet.");
+__message.Arguments.Add("rig", new ResoniteLink.Data_Reference() { TargetID = context.GetId(rig) });
+var result = await context.CallMethod(__message);
+        if(!result.Success)
+            throw new Exception("Error running method: " + result.ErrorInfo);
+}
+
 public  async System.Threading.Tasks.Task SplitSubmeshes(IConversionContext context)
 {
         var __message = new ResoniteLink.CallSyncMethod();

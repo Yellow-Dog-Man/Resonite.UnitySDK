@@ -58,11 +58,11 @@ public static class LightHelper
     }
 }
 
-public class LightConverter : ResoniteSingleComponentConverter<Light, FrooxEngine.LightWrapper>
+public class LightConverter : ResoniteSingleComponentConverter<Light, FrooxEngine.Light>
 {
     protected override void UpdateConversion(Light target, IConversionContext context)
     {
         // We just assign the data
-        Binding.Data.SetFrom(target, context);
+        Binding.SetFrom(target, context);
     }
 }

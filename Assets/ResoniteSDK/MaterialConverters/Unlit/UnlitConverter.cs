@@ -11,7 +11,7 @@ using UnityEngine;
     )]
 public class UnlitTransparentConverter : ResoniteMaterialConverter
 {
-    public FrooxEngine.UnlitMaterialWrapper Unlit;
+    public ResRef<FrooxEngine.UnlitMaterial> Unlit;
 
     protected static readonly IEnumerable<string> SupportedProperties = new List<string>()
     {
@@ -23,9 +23,9 @@ public class UnlitTransparentConverter : ResoniteMaterialConverter
     public override IAssetProvider<FrooxEngine.Material> UpdateConversion(UnityEngine.Material material, IConversionContext context)
     {
         if (Unlit == null)
-            Unlit = gameObject.AddComponent<FrooxEngine.UnlitMaterialWrapper>();
+            Unlit = gameObject.AddResoniteComponent<FrooxEngine.UnlitMaterial>();
 
-        var data = Unlit.Data;
+        var data = Unlit.Binding;
 
         data.RenderQueue = material.renderQueue;
 

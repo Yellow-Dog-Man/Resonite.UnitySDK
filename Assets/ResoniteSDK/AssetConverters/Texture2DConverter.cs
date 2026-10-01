@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using UnityEditor;
 using UnityEngine;
 
-public class Texture2DConverter : AssetConverter<StaticTexture2DWrapper, StaticTexture2D, UnityEngine.Texture2D, FrooxEngine.Texture2D>
+public class Texture2DConverter : AssetConverter<StaticTexture2D, UnityEngine.Texture2D, FrooxEngine.Texture2D>
 {
     Renderite.Shared.TextureWrapMode _wrapModeU;
     Renderite.Shared.TextureWrapMode _wrapModeV;
@@ -87,27 +87,27 @@ public class Texture2DConverter : AssetConverter<StaticTexture2DWrapper, StaticT
     }
     protected override ResoniteLink.Component UpdateProvider(Uri assetUrl, IConversionContext context)
     {
-        Provider.Data.URL = assetUrl;
+        Provider.Binding.URL = assetUrl;
 
-        Provider.Data.WrapModeU = _wrapModeU;
-        Provider.Data.WrapModeV = _wrapModeV;
+        Provider.Binding.WrapModeU = _wrapModeU;
+        Provider.Binding.WrapModeV = _wrapModeV;
 
-        Provider.Data.AnisotropicLevel = _anisoLevel;
-        Provider.Data.FilterMode = _filterMode;
+        Provider.Binding.AnisotropicLevel = _anisoLevel;
+        Provider.Binding.FilterMode = _filterMode;
 
-        Provider.Data.MipMaps = _mipMaps;
-        Provider.Data.MipMapFilter = Filtering.Box;
+        Provider.Binding.MipMaps = _mipMaps;
+        Provider.Binding.MipMapFilter = Filtering.Box;
 
-        Provider.Data.PreferredProfile = _colorProfile;
+        Provider.Binding.PreferredProfile = _colorProfile;
 
-        Provider.Data.Uncompressed = _uncompressed;
-        Provider.Data.CrunchCompressed = _crunchCompressed;
+        Provider.Binding.Uncompressed = _uncompressed;
+        Provider.Binding.CrunchCompressed = _crunchCompressed;
 
-        Provider.Data.Readable = _readable;
+        Provider.Binding.Readable = _readable;
 
-        Provider.Data.MaxSize = _maxSize;
+        Provider.Binding.MaxSize = _maxSize;
 
-        return Provider.CollectData(context);
+        return Provider.Container.CollectData(context);
     }
 
     public static ResoniteLink.Message ConvertTexture2D(UnityEngine.Texture2D texture, bool requiresPostProcessing)

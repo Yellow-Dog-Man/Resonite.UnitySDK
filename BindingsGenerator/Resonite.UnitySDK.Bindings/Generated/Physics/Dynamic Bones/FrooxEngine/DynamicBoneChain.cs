@@ -2,9 +2,9 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.DynamicBoneChain
-// Generated on: pátek 6. března 2026 14:18:10
-// Resonite version: 2026.3.5.946
-// Resonite Link Version: 0.11.0.0
+// Generated on: pátek 14. srpna 2026 21:54:25
+// Resonite version: 2026.8.12.1196
+// Resonite Link Version: 0.13.1.0
 // -----------------------------------------------------------------------------
 
 using UnityEngine;
@@ -154,6 +154,45 @@ members.Add("EffectorBoneOffset", EffectorBoneOffset_Element.ToLinkField(context
 members.Add("_activeGrabber", _activeGrabber_Element.ToLinkReference(context));
 members.Add("Bones", Bones.ToLinkList(context, m => m.ToLinkSyncObject(context)));
 }
+public  async System.Threading.Tasks.Task SetupFromChildren(global::FrooxEngine.Slot root, global::System.Boolean forceLink, IConversionContext context)
+{
+        var __message = new ResoniteLink.CallSyncMethod();
+        __message.MethodName = "SetupFromChildren";
+__message.TargetID = context.GetId(this);
+                if(__message.TargetID == null)
+                    throw new System.InvalidOperationException("Cannot call sync methods on objects that have not been synced to resonite yet.");
+__message.Arguments.Add("root", new ResoniteLink.Data_Reference() { TargetID = context.GetId(root) });
+__message.Arguments.Add("forceLink", forceLink.ToData());
+var result = await context.CallMethod(__message);
+        if(!result.Success)
+            throw new Exception("Error running method: " + result.ErrorInfo);
+}
+
+public  async System.Threading.Tasks.Task SetupFromRigChildren(global::FrooxEngine.Rig rig, IConversionContext context)
+{
+        var __message = new ResoniteLink.CallSyncMethod();
+        __message.MethodName = "SetupFromRigChildren";
+__message.TargetID = context.GetId(this);
+                if(__message.TargetID == null)
+                    throw new System.InvalidOperationException("Cannot call sync methods on objects that have not been synced to resonite yet.");
+__message.Arguments.Add("rig", new ResoniteLink.Data_Reference() { TargetID = context.GetId(rig) });
+var result = await context.CallMethod(__message);
+        if(!result.Success)
+            throw new Exception("Error running method: " + result.ErrorInfo);
+}
+
+public  async System.Threading.Tasks.Task SetupFromRigChildren(IConversionContext context)
+{
+        var __message = new ResoniteLink.CallSyncMethod();
+        __message.MethodName = "SetupFromRigChildren";
+__message.TargetID = context.GetId(this);
+                if(__message.TargetID == null)
+                    throw new System.InvalidOperationException("Cannot call sync methods on objects that have not been synced to resonite yet.");
+var result = await context.CallMethod(__message);
+        if(!result.Success)
+            throw new Exception("Error running method: " + result.ErrorInfo);
+}
+
 
 }
 }

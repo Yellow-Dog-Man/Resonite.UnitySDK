@@ -2,9 +2,9 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.RandomAudioClipPlayerBase+ClipData
-// Generated on: pátek 6. března 2026 14:18:07
-// Resonite version: 2026.3.5.946
-// Resonite Link Version: 0.11.0.0
+// Generated on: pátek 14. srpna 2026 21:54:09
+// Resonite version: 2026.8.12.1196
+// Resonite Link Version: 0.13.1.0
 // -----------------------------------------------------------------------------
 
 using UnityEngine;
@@ -48,6 +48,8 @@ public global::System.Nullable<global::System.Single> MaxDistance { get => MaxDi
 public Field<global::FrooxEngine.Sync<global::System.Nullable<global::System.Single>>, global::System.Nullable<global::System.Single>> MaxDistance_Element = new();
 public global::System.Nullable<global::Awwdio.AudioRolloffCurve> RolloffMode { get => RolloffMode_Element.Data; set => RolloffMode_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<global::System.Nullable<global::Awwdio.AudioRolloffCurve>>, global::System.Nullable<global::Awwdio.AudioRolloffCurve>> RolloffMode_Element = new();
+public global::System.Nullable<global::System.Single> DopplerLevel { get => DopplerLevel_Element.Data; set => DopplerLevel_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Nullable<global::System.Single>>, global::System.Nullable<global::System.Single>> DopplerLevel_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
@@ -66,6 +68,7 @@ members.Add("Global", Global_Element.ToLinkField(context));
 members.Add("MinDistance", MinDistance_Element.ToLinkField(context));
 members.Add("MaxDistance", MaxDistance_Element.ToLinkField(context));
 members.Add("RolloffMode", RolloffMode_Element.ToLinkField(context));
+members.Add("DopplerLevel", DopplerLevel_Element.ToLinkField(context));
 }
 
 }

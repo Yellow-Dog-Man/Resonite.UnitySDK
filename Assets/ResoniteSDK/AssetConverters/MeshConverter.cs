@@ -6,7 +6,7 @@ using System.Runtime.InteropServices;
 using System.Threading.Tasks;
 using UnityEngine;
 
-public class MeshConverter : AssetConverter<StaticMeshWrapper, StaticMesh, UnityEngine.Mesh, FrooxEngine.Mesh>
+public class MeshConverter : AssetConverter<StaticMesh, UnityEngine.Mesh, FrooxEngine.Mesh>
 {
     public const int MAX_UV_CHANNEL_COUNT = 8;
 
@@ -26,9 +26,9 @@ public class MeshConverter : AssetConverter<StaticMeshWrapper, StaticMesh, Unity
     }
     protected override ResoniteLink.Component UpdateProvider(Uri assetUrl, IConversionContext context)
     {
-        Provider.Data.URL = assetUrl;
+        Provider.Binding.URL = assetUrl;
 
-        return Provider.CollectData(context);
+        return Provider.Container.CollectData(context);
     }
 
     public static ResoniteLink.ImportMeshRawData ConvertMesh(UnityEngine.Mesh mesh)

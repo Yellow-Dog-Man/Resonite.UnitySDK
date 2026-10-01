@@ -5,14 +5,14 @@ using UnityEngine.SceneManagement;
 [MaterialConverter(false, "Skybox/Panoramic")]
 public class PanoramicSkyboxConverter : ResoniteMaterialConverter
 {
-    public FrooxEngine.Projection360MaterialWrapper Sky;
+    public ResRef<FrooxEngine.Projection360Material> Sky;
 
     public override IAssetProvider<FrooxEngine.Material> UpdateConversion(UnityEngine.Material material, IConversionContext context)
     {
         if (Sky == null)
-            Sky = gameObject.AddComponent<FrooxEngine.Projection360MaterialWrapper>();
+            Sky = gameObject.AddResoniteComponent<FrooxEngine.Projection360Material>();
 
-        var data = Sky.Data;
+        var data = Sky.Binding;
 
         switch(material.mainTexture)
         {

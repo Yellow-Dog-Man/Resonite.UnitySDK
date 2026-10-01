@@ -2,9 +2,9 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.LoginDialog
-// Generated on: pátek 6. března 2026 14:19:09
-// Resonite version: 2026.3.5.946
-// Resonite Link Version: 0.11.0.0
+// Generated on: pátek 14. srpna 2026 21:58:02
+// Resonite version: 2026.8.12.1196
+// Resonite Link Version: 0.13.1.0
 // -----------------------------------------------------------------------------
 
 using UnityEngine;
@@ -38,6 +38,8 @@ public global::FrooxEngine.UIX.TextField _passwordRepeat { get => _passwordRepea
 public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.UIX.TextField>, global::FrooxEngine.UIX.TextField> _passwordRepeat_Element = new();
 public global::FrooxEngine.UIX.TextField _recoveryCode { get => _recoveryCode_Element.Data; set => _recoveryCode_Element.Data = value; }
 public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.UIX.TextField>, global::FrooxEngine.UIX.TextField> _recoveryCode_Element = new();
+public global::FrooxEngine.UIX.TextField _promoCode { get => _promoCode_Element.Data; set => _promoCode_Element.Data = value; }
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.UIX.TextField>, global::FrooxEngine.UIX.TextField> _promoCode_Element = new();
 public global::FrooxEngine.IntTextEditorParser _birthMonth { get => _birthMonth_Element.Data; set => _birthMonth_Element.Data = value; }
 public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.IntTextEditorParser>, global::FrooxEngine.IntTextEditorParser> _birthMonth_Element = new();
 public global::FrooxEngine.IntTextEditorParser _birthDay { get => _birthDay_Element.Data; set => _birthDay_Element.Data = value; }
@@ -46,8 +48,6 @@ public global::FrooxEngine.IntTextEditorParser _birthYear { get => _birthYear_El
 public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.IntTextEditorParser>, global::FrooxEngine.IntTextEditorParser> _birthYear_Element = new();
 public global::FrooxEngine.UIX.Checkbox _rememberLogin { get => _rememberLogin_Element.Data; set => _rememberLogin_Element.Data = value; }
 public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.UIX.Checkbox>, global::FrooxEngine.UIX.Checkbox> _rememberLogin_Element = new();
-public global::FrooxEngine.UIX.Checkbox _resetUserId { get => _resetUserId_Element.Data; set => _resetUserId_Element.Data = value; }
-public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.UIX.Checkbox>, global::FrooxEngine.UIX.Checkbox> _resetUserId_Element = new();
 public global::FrooxEngine.UIX.Checkbox _policies { get => _policies_Element.Data; set => _policies_Element.Data = value; }
 public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.UIX.Checkbox>, global::FrooxEngine.UIX.Checkbox> _policies_Element = new();
 public global::FrooxEngine.UIX.Button _registerButton { get => _registerButton_Element.Data; set => _registerButton_Element.Data = value; }
@@ -68,11 +68,11 @@ members.Add("_emailRepeat", _emailRepeat_Element.ToLinkReference(context));
 members.Add("_password", _password_Element.ToLinkReference(context));
 members.Add("_passwordRepeat", _passwordRepeat_Element.ToLinkReference(context));
 members.Add("_recoveryCode", _recoveryCode_Element.ToLinkReference(context));
+members.Add("_promoCode", _promoCode_Element.ToLinkReference(context));
 members.Add("_birthMonth", _birthMonth_Element.ToLinkReference(context));
 members.Add("_birthDay", _birthDay_Element.ToLinkReference(context));
 members.Add("_birthYear", _birthYear_Element.ToLinkReference(context));
 members.Add("_rememberLogin", _rememberLogin_Element.ToLinkReference(context));
-members.Add("_resetUserId", _resetUserId_Element.ToLinkReference(context));
 members.Add("_policies", _policies_Element.ToLinkReference(context));
 members.Add("_registerButton", _registerButton_Element.ToLinkReference(context));
 members.Add("_loginEmail", _loginEmail_Element.ToLinkField(context));

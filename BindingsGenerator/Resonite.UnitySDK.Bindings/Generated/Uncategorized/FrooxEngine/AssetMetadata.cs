@@ -2,9 +2,9 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.AssetMetadata
-// Generated on: pátek 6. března 2026 14:18:07
-// Resonite version: 2026.3.5.946
-// Resonite Link Version: 0.11.0.0
+// Generated on: pátek 14. srpna 2026 21:54:11
+// Resonite version: 2026.8.12.1196
+// Resonite Link Version: 0.13.1.0
 // -----------------------------------------------------------------------------
 
 using UnityEngine;
@@ -40,6 +40,8 @@ public UnityEngine.Vector3 TakenGlobalScale { get => TakenGlobalScale_Element.Da
 public Field<global::FrooxEngine.Sync<UnityEngine.Vector3>, UnityEngine.Vector3> TakenGlobalScale_Element = new();
 public global::System.String AppVersion { get => AppVersion_Element.Data; set => AppVersion_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<global::System.String>, global::System.String> AppVersion_Element = new();
+public global::System.String RendererName { get => RendererName_Element.Data; set => RendererName_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.String>, global::System.String> RendererName_Element = new();
 public global::SyncList<global::FrooxEngine.SyncList<global::FrooxEngine.AssetMetadata.UserInfo>, global::FrooxEngine.AssetMetadata.UserInfo> UserInfos = new();
 public global::SyncList<global::FrooxEngine.SyncList<global::FrooxEngine.UserRef>, global::FrooxEngine.UserRef> __legacyPresentUsers = new();
 
@@ -58,6 +60,7 @@ members.Add("TakenGlobalPosition", TakenGlobalPosition_Element.ToLinkField(conte
 members.Add("TakenGlobalRotation", TakenGlobalRotation_Element.ToLinkField(context));
 members.Add("TakenGlobalScale", TakenGlobalScale_Element.ToLinkField(context));
 members.Add("AppVersion", AppVersion_Element.ToLinkField(context));
+members.Add("RendererName", RendererName_Element.ToLinkField(context));
 members.Add("UserInfos", UserInfos.ToLinkList(context, m => m.ToLinkSyncObject(context)));
 members.Add("__legacyPresentUsers", __legacyPresentUsers.ToLinkList(context, m => m.ToLinkSyncObject(context)));
 }

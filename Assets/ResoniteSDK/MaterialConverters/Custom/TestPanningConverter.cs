@@ -7,19 +7,19 @@ using UnityEngine;
 [MaterialConverter(false, "Custom/TestPanningShader")]
 public class TestPanningConverter : ResoniteMaterialConverter
 {
-    public FrooxEngine.PBS_MetallicWrapper PBS;
-    public FrooxEngine.Panner2DWrapper Panner;
+    public ResRef<FrooxEngine.PBS_Metallic> PBS;
+    public ResRef<FrooxEngine.Panner2D> Panner;
 
     public override IAssetProvider<FrooxEngine.Material> UpdateConversion(UnityEngine.Material material, IConversionContext context)
     {
         if (PBS == null)
-            PBS = gameObject.AddComponent<FrooxEngine.PBS_MetallicWrapper>();
+            PBS = gameObject.AddResoniteComponent<FrooxEngine.PBS_Metallic>();
 
         if (Panner == null)
-            Panner = gameObject.AddComponent<FrooxEngine.Panner2DWrapper>();
+            Panner = gameObject.AddResoniteComponent<FrooxEngine.Panner2D>();
 
-        var data = PBS.Data;
-        var pannerData = Panner.Data;
+        var data = PBS.Binding;
+        var pannerData = Panner.Binding;
 
         data.RenderQueue = material.renderQueue;
 

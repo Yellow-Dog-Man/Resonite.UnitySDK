@@ -2,9 +2,9 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.DesktopController
-// Generated on: pátek 6. března 2026 14:18:08
-// Resonite version: 2026.3.5.946
-// Resonite Link Version: 0.11.0.0
+// Generated on: pátek 14. srpna 2026 21:54:15
+// Resonite version: 2026.8.12.1196
+// Resonite Link Version: 0.13.1.0
 // -----------------------------------------------------------------------------
 
 using UnityEngine;
@@ -28,6 +28,10 @@ public global::System.Single Brightness { get => Brightness_Element.Data; set =>
 public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> Brightness_Element = new();
 public global::System.Single Opacity { get => Opacity_Element.Data; set => Opacity_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<global::System.Single>, global::System.Single> Opacity_Element = new();
+public global::Elements.Core.Corner ButtonCorner { get => ButtonCorner_Element.Data; set => ButtonCorner_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::Elements.Core.Corner>, global::Elements.Core.Corner> ButtonCorner_Element = new();
+public global::System.Boolean HideMenuButtonInVR { get => HideMenuButtonInVR_Element.Data; set => HideMenuButtonInVR_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> HideMenuButtonInVR_Element = new();
 public global::FrooxEngine.IField<UnityEngine.ColorX> _displayColor { get => _displayColor_Element.Data; set => _displayColor_Element.Data = value; }
 public Reference<global::FrooxEngine.FieldDrive<UnityEngine.ColorX>, global::FrooxEngine.IField<UnityEngine.ColorX>> _displayColor_Element = new();
 public global::FrooxEngine.UIX.RectTransform _displayRect { get => _displayRect_Element.Data; set => _displayRect_Element.Data = value; }
@@ -38,6 +42,8 @@ public global::FrooxEngine.DesktopInteractionRelay _interactionRelay { get => _i
 public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.DesktopInteractionRelay>, global::FrooxEngine.DesktopInteractionRelay> _interactionRelay_Element = new();
 public global::FrooxEngine.DesktopControlDialog _currentControl { get => _currentControl_Element.Data; set => _currentControl_Element.Data = value; }
 public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.DesktopControlDialog>, global::FrooxEngine.DesktopControlDialog> _currentControl_Element = new();
+public global::FrooxEngine.UIX.RectTransform _buttonRect { get => _buttonRect_Element.Data; set => _buttonRect_Element.Data = value; }
+public Reference<global::FrooxEngine.SyncRef<global::FrooxEngine.UIX.RectTransform>, global::FrooxEngine.UIX.RectTransform> _buttonRect_Element = new();
 
 public override void CollectMembers(
     System.Collections.Generic.Dictionary<string, ResoniteLink.Member> members, IConversionContext context)
@@ -47,11 +53,14 @@ members.Add("FollowCursor", FollowCursor_Element.ToLinkField(context));
 members.Add("LegacyInputMode", LegacyInputMode_Element.ToLinkField(context));
 members.Add("Brightness", Brightness_Element.ToLinkField(context));
 members.Add("Opacity", Opacity_Element.ToLinkField(context));
+members.Add("ButtonCorner", ButtonCorner_Element.ToLinkField(context));
+members.Add("HideMenuButtonInVR", HideMenuButtonInVR_Element.ToLinkField(context));
 members.Add("_displayColor", _displayColor_Element.ToLinkReference(context));
 members.Add("_displayRect", _displayRect_Element.ToLinkReference(context));
 members.Add("_desktopTexture", _desktopTexture_Element.ToLinkReference(context));
 members.Add("_interactionRelay", _interactionRelay_Element.ToLinkReference(context));
 members.Add("_currentControl", _currentControl_Element.ToLinkReference(context));
+members.Add("_buttonRect", _buttonRect_Element.ToLinkReference(context));
 }
 
 }

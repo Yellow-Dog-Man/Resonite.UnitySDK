@@ -2,9 +2,9 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.LightGizmo
-// Generated on: pátek 6. března 2026 14:19:09
-// Resonite version: 2026.3.5.946
-// Resonite Link Version: 0.11.0.0
+// Generated on: pátek 14. srpna 2026 21:58:02
+// Resonite version: 2026.8.12.1196
+// Resonite Link Version: 0.13.1.0
 // -----------------------------------------------------------------------------
 
 using UnityEngine;
@@ -17,7 +17,7 @@ namespace FrooxEngine
 {
     [Serializable]
 [ResoniteTypeName("[FrooxEngine]FrooxEngine.LightGizmo")]
-public partial class LightGizmo : global::FrooxEngine.Component, global::FrooxEngine.IComponentGizmo
+public partial class LightGizmo : global::FrooxEngine.Component, global::FrooxEngine.IComponentGizmo, global::FrooxEngine.IGizmo
 
 {
     public global::System.Boolean Active { get => Active_Element.Data; set => Active_Element.Data = value; }

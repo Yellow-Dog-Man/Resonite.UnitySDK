@@ -2,9 +2,9 @@
 // -----------------------------------------------------------------------------
 // WARNING: This is auto-generated file! DO NOT MODIFY
 // Generated from type: [FrooxEngine]FrooxEngine.RealtimeNetworkingSettings
-// Generated on: pátek 6. března 2026 14:19:10
-// Resonite version: 2026.3.5.946
-// Resonite Link Version: 0.11.0.0
+// Generated on: pátek 14. srpna 2026 21:58:04
+// Resonite version: 2026.8.12.1196
+// Resonite Link Version: 0.13.1.0
 // -----------------------------------------------------------------------------
 
 using UnityEngine;
@@ -26,6 +26,8 @@ public global::System.Boolean PreferSteamNetworking { get => PreferSteamNetworki
 public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> PreferSteamNetworking_Element = new();
 public global::System.Boolean PreferTCP { get => PreferTCP_Element.Data; set => PreferTCP_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> PreferTCP_Element = new();
+public global::System.Boolean PreferQUIC { get => PreferQUIC_Element.Data; set => PreferQUIC_Element.Data = value; }
+public Field<global::FrooxEngine.Sync<global::System.Boolean>, global::System.Boolean> PreferQUIC_Element = new();
 public global::System.Int32 LNL_WindowSize { get => LNL_WindowSize_Element.Data; set => LNL_WindowSize_Element.Data = value; }
 public Field<global::FrooxEngine.Sync<global::System.Int32>, global::System.Int32> LNL_WindowSize_Element = new();
 
@@ -36,6 +38,7 @@ public override void CollectMembers(
 members.Add("DisableLAN", DisableLAN_Element.ToLinkField(context));
 members.Add("PreferSteamNetworking", PreferSteamNetworking_Element.ToLinkField(context));
 members.Add("PreferTCP", PreferTCP_Element.ToLinkField(context));
+members.Add("PreferQUIC", PreferQUIC_Element.ToLinkField(context));
 members.Add("LNL_WindowSize", LNL_WindowSize_Element.ToLinkField(context));
 }
 public  async System.Threading.Tasks.Task ResetToDefault(IConversionContext context)

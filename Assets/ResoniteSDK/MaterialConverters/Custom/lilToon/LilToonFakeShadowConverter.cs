@@ -7,7 +7,7 @@ using UnityEngine;
 [MaterialConverter(false, "_lil/[Optional] lilToonFakeShadow")]
 public class LilToonFakeShadowConverter : ResoniteMaterialConverter
 {
-    private UnlitMaterialWrapper Unlit;
+    private ResRef<UnlitMaterial> Unlit;
 
     public override IAssetProvider<FrooxEngine.Material> UpdateConversion(
         UnityEngine.Material material,
@@ -15,10 +15,10 @@ public class LilToonFakeShadowConverter : ResoniteMaterialConverter
     {
         if (Unlit == null)
         {
-            Unlit = gameObject.AddComponent<UnlitMaterialWrapper>();
+            Unlit = gameObject.AddResoniteComponent<UnlitMaterial>();
         }
 
-        var data = Unlit.Data;
+        var data = Unlit.Binding;
         data.TintColor = UnityEngine.Color.clear.ToColorX_sRGB();
         data.BlendMode = BlendMode.Cutout;
         data.AlphaCutoff = 1;

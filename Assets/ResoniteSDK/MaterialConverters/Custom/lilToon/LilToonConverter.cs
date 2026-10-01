@@ -6,7 +6,7 @@ using UnityEngine;
 [MaterialConverter(true, "lilToon")]
 public class LilToonConverter : ResoniteMaterialConverter
 {
-    private XiexeToonMaterialWrapper XiexeComponent;
+    private ResRef<XiexeToonMaterial> XiexeComponent;
     private readonly LilToonAssetCache AssetCache = new();
 
     public static float? EvaluateHeuristicConversion(UnityEngine.Material material)
@@ -22,9 +22,9 @@ public class LilToonConverter : ResoniteMaterialConverter
     {
         if (XiexeComponent == null)
         {
-            XiexeComponent = gameObject.AddComponent<XiexeToonMaterialWrapper>();
+            XiexeComponent = gameObject.AddResoniteComponent<XiexeToonMaterial>();
         }
 
-        return new LilToonXiexeConverter(XiexeComponent.Data, material, context, AssetCache).UpdateConversion();
+        return new LilToonXiexeConverter(XiexeComponent.Binding, material, context, AssetCache).UpdateConversion();
     }
 }

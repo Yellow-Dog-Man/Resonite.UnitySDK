@@ -13,10 +13,10 @@ public static class CapsuleColliderHelper
     }
 }
 
-public class CapsuleColliderConverter : ResoniteSingleComponentConverter<CapsuleCollider, FrooxEngine.CapsuleColliderWrapper>
+public class CapsuleColliderConverter : ResoniteSingleComponentConverter<CapsuleCollider, FrooxEngine.CapsuleCollider>
 {
     protected override void UpdateConversion(CapsuleCollider target, IConversionContext context)
     {
-        Binding.Data.SetFrom(target);
+        Binding.SetFrom(target);
     }
 }

@@ -12,10 +12,10 @@ public static class BoxColliderHelper
     }
 }
 
-public class BoxColliderConverter : ResoniteSingleComponentConverter<BoxCollider, FrooxEngine.BoxColliderWrapper>
+public class BoxColliderConverter : ResoniteSingleComponentConverter<BoxCollider, FrooxEngine.BoxCollider>
 {
     protected override void UpdateConversion(BoxCollider target, IConversionContext context)
     {
-        Binding.Data.SetFrom(target);
+        Binding.SetFrom(target);
     }
 }

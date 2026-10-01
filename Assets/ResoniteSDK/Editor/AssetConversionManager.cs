@@ -60,10 +60,10 @@ public class AssetConversionManager
         if(AssetsRoot != null)
         {
             // Scan all the existing converters
-            ScanConverters<StaticMesh, StaticMeshWrapper, UnityEngine.Mesh, FrooxEngine.Mesh, MeshConverter>(_meshes);
-            ScanConverters<StaticTexture2D, StaticTexture2DWrapper, UnityEngine.Texture2D, FrooxEngine.Texture2D, Texture2DConverter>(_textures);
-            ScanConverters<StaticCubemap, StaticCubemapWrapper, UnityEngine.Cubemap, FrooxEngine.Cubemap, CubemapConverter>(_cubemaps);
-            ScanConverters<StaticAudioClip, StaticAudioClipWrapper, UnityEngine.AudioClip, FrooxEngine.AudioClip, AudioClipConverter>(_audioClips);
+            ScanConverters<StaticMesh, UnityEngine.Mesh, FrooxEngine.Mesh, MeshConverter>(_meshes);
+            ScanConverters<StaticTexture2D, UnityEngine.Texture2D, FrooxEngine.Texture2D, Texture2DConverter>(_textures);
+            ScanConverters<StaticCubemap, UnityEngine.Cubemap, FrooxEngine.Cubemap, CubemapConverter>(_cubemaps);
+            ScanConverters<StaticAudioClip, UnityEngine.AudioClip, FrooxEngine.AudioClip, AudioClipConverter>(_audioClips);
 
             // Materials are special!
             ScanMaterials();
@@ -72,11 +72,10 @@ public class AssetConversionManager
             AssetsRoot = (new GameObject(ASSETS_ROOT_NAME)).transform; // Create new root
     }
 
-    void ScanConverters<TProvider, TWrapper, TUnity, TResonite, TConverter>(Dictionary<AssetMap<TUnity>, TConverter> map)
+    void ScanConverters<TProvider, TUnity, TResonite, TConverter>(Dictionary<AssetMap<TUnity>, TConverter> map)
         where TProvider : FrooxEngine.Component, IAssetProvider<TResonite>, new()
-        where TWrapper : ResoniteComponent<TProvider>
         where TResonite : FrooxEngine.IAsset
-        where TConverter : AssetConverter<TWrapper, TProvider, TUnity, TResonite>
+        where TConverter : AssetConverter<TProvider, TUnity, TResonite>
         where TUnity : UnityEngine.Object
     {
         var converters = AssetsRoot.GetComponentsInChildren<TConverter>();
@@ -133,27 +132,26 @@ public class AssetConversionManager
     public bool HasMaterial(UnityEngine.Material material, AssetMessagePostProcessor postProcessor = null) => _materials.ContainsKey(material);
 
     public IAssetProvider<FrooxEngine.Mesh> GetMesh(UnityEngine.Mesh mesh, AssetMessagePostProcessor postProcessor = null) =>
-        GetAsset<StaticMesh, StaticMeshWrapper, UnityEngine.Mesh, FrooxEngine.Mesh, MeshConverter>(
+        GetAsset<StaticMesh, UnityEngine.Mesh, FrooxEngine.Mesh, MeshConverter>(
             mesh, postProcessor, _meshes);
 
     public IAssetProvider<FrooxEngine.Texture2D> GetTexture2D(UnityEngine.Texture2D texture, AssetMessagePostProcessor postProcessor = null) =>
-        GetAsset<StaticTexture2D, StaticTexture2DWrapper, UnityEngine.Texture2D, FrooxEngine.Texture2D, Texture2DConverter>(
+        GetAsset<StaticTexture2D, UnityEngine.Texture2D, FrooxEngine.Texture2D, Texture2DConverter>(
             texture, postProcessor, _textures);
 
     public IAssetProvider<FrooxEngine.Cubemap> GetCubemap(UnityEngine.Cubemap cubemap, AssetMessagePostProcessor postProcessor = null) =>
-        GetAsset<StaticCubemap, StaticCubemapWrapper, UnityEngine.Cubemap, FrooxEngine.Cubemap, CubemapConverter>(
+        GetAsset<StaticCubemap, UnityEngine.Cubemap, FrooxEngine.Cubemap, CubemapConverter>(
             cubemap, postProcessor, _cubemaps);
 
     public IAssetProvider<FrooxEngine.AudioClip> GetAudioClip(UnityEngine.AudioClip audioClip, AssetMessagePostProcessor postProcessor = null) =>
-        GetAsset<StaticAudioClip, StaticAudioClipWrapper, UnityEngine.AudioClip, FrooxEngine.AudioClip, AudioClipConverter>(
+        GetAsset<StaticAudioClip, UnityEngine.AudioClip, FrooxEngine.AudioClip, AudioClipConverter>(
             audioClip, postProcessor, _audioClips);
 
-    TProvider GetAsset<TProvider, TWrapper, TUnity, TResonite, TConverter>(TUnity unity, AssetMessagePostProcessor postProcessor,
+    TProvider GetAsset<TProvider, TUnity, TResonite, TConverter>(TUnity unity, AssetMessagePostProcessor postProcessor,
         Dictionary<AssetMap<TUnity>, TConverter> converters)
         where TProvider : FrooxEngine.Component, IAssetProvider<TResonite>, new()
-        where TWrapper : ResoniteComponent<TProvider>
         where TResonite : FrooxEngine.IAsset
-        where TConverter : AssetConverter<TWrapper, TProvider, TUnity, TResonite>
+        where TConverter : AssetConverter<TProvider, TUnity, TResonite>
         where TUnity : UnityEngine.Object
     {
         if (unity == null)
@@ -188,10 +186,10 @@ public class AssetConversionManager
         {
             _scheduledConversions.Enqueue(converter);
 
-            _updatedAssetProviderRoots.Add(converter.Provider.transform);
+            _updatedAssetProviderRoots.Add(converter.Provider.Container.transform);
         }
 
-        return converter.Provider.Data;
+        return converter.Provider.Binding;
     }
 
     public IAssetProvider<FrooxEngine.Material> GetMaterial(UnityEngine.Material material)

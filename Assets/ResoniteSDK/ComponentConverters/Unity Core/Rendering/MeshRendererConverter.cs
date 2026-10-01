@@ -77,10 +77,10 @@ public static class MeshRendererHelper
     }
 }
 
-public class MeshRendererConverter : ResoniteSingleComponentConverter<MeshRenderer, FrooxEngine.MeshRendererWrapper>
+public class MeshRendererConverter : ResoniteSingleComponentConverter<MeshRenderer, FrooxEngine.MeshRenderer>
 {
     protected override void UpdateConversion(MeshRenderer target, IConversionContext context)
     {
-        Binding.Data.SetFrom(target, context);
+        Binding.SetFrom(target, context);
     }
 }
