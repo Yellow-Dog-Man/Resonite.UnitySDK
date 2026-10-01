@@ -1,0 +1,37 @@
+name: '⚙️💡 Request support for component conversion'
+description: 'If you would like the SDK to convert components that it currently does not support.'
+
+labels: ["Component Conversion"]
+type: enhancement
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to make the request!
+        Remember to keep the [reporting guidelines](https://github.com/Yellow-Dog-Man/Resonite.UnitySDK?tab=readme-ov-file#what-if-something-doesnt-convert-properly) in mind.
+        Remember to check the [latest version](github.com/yellow-Dog-Man/resonite.UnitySDK/releases/latest) of the Resonite Unity SDK before requesting a new feature.
+
+  - type: textarea
+    id: what
+    attributes:
+      label: 'What would you like the conversion to support?'
+      description: 'Give us some details on which type of scene you were trying to convert, the components used, if only your particular setup is affected or all other instances, etc.'
+    validations:
+      required: true
+
+  - type: textarea
+    id: expect
+    attributes:
+      label: 'How would you like these to be converted?'
+      description: 'Describe what do you expect the conversion to produce in Resonite. We might not be able to convert 100 % of the behavior, so letting us know what is most important to convert helps.'
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: 'Test items'
+      description: 'Share any links and/or items that can be used to test the conversion. If you cannot share a mesh, you can create a basic sphere or cube mesh and apply the material/shader to it. If you cannot upload the unitypackage as-is, compress it as a ZIP file.'
+    validations:
+      required: false

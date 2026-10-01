@@ -1,7 +1,7 @@
-name: 'Material/Shaders issue'
-description: 'To report issues when converting shaders and/or materials.'
+name: '⚙️🐞 Scene (Hierarchy/Components) conversion bug'
+description: 'To report issues with the scene itself, EG colliders, properties, behaviours that are unexpected.'
 
-labels: ["Material/Shader Conversion"]
+labels: ["Component Conversion"]
 type: bug
 
 body:
@@ -55,15 +55,23 @@ body:
     id: what
     attributes:
       label: 'What were you trying to convert?'
-      description: 'Which material or shader were you trying to convert using the SDK.'
+      description: 'Give us some details on which type of scene you were trying to convert, the components used, if only your particular setup is affected or all other instances, etc.'
     validations:
       required: true
 
   - type: textarea
-    id: look
+    id: expect
     attributes:
-      label: 'Screenshots'
-      description: 'Describe how the conversion looked and how the object is supposed to look like. Screenshots are recommended.'
+      label: 'What were you expecting?'
+      description: 'Describe what you expected to happen. Reference screenshots are recommended.'
+    validations:
+      required: true
+
+  - type: textarea
+    id: instead
+    attributes:
+      label: 'What happened instead?'
+      description: 'Describe how the conversion ended up looking. Screenshots are recommended.'
     validations:
       required: true
 
