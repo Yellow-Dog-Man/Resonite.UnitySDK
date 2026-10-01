@@ -1,7 +1,7 @@
-name: 'Scene (Hierarchy/Components)'
-description: 'To report issues with the scene itself, EG colliders, properties, behaviours that are unexpected.'
+name: '🎨🐞 Asset conversion bug'
+description: 'In case an asset is mangled and other issues touching asset conversion.'
 
-labels: ["Component Conversion"]
+labels: ["Asset Conversion"]
 type: bug
 
 body:
@@ -11,6 +11,19 @@ body:
         Thanks for taking the time to report your issue.
         Remember to keep the [reporting guidelines](https://github.com/Yellow-Dog-Man/Resonite.UnitySDK?tab=readme-ov-file#what-if-something-doesnt-convert-properly) in mind.
         Remember to update to the [latest version](github.com/yellow-Dog-Man/resonite.UnitySDK/releases/latest) of the Resonite Unity SDK before reporting a bug.
+
+  - type: dropdown
+    id: asset-type
+    attributes:
+      label: 'Which asset type failed to convert?'
+      description: '**IMPORTANT:** If what failed to convert **is not a singular asset and/or is not in this list**, then you are using wrong issue type. Please use a different issue template!'
+      options:
+        - 'Mesh'
+        - 'Texture2D'
+        - 'Texture3D'
+        - 'Audio Clip'
+    validations:
+      required: true
 
   - type: input
     id: version
@@ -54,8 +67,8 @@ body:
   - type: textarea
     id: what
     attributes:
-      label: 'What were you trying to convert?'
-      description: 'Give us some details on which type of scene you were trying to convert, the components used, if only your particular setup is affected or all other instances, etc.'
+      label: 'What were you trying to import?'
+      description: 'Give us some details on which type of asset you were trying to convert, and how it is used in the scene (through which components, etc).'
     validations:
       required: true
 

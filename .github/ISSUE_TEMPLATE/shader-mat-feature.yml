@@ -1,0 +1,37 @@
+name: '🟡💡 Request support for material/shader conversion'
+description: 'If you would like the SDK to convert material/shader it currently does not support.'
+
+labels: ["Material/Shader Conversion"]
+type: enhancement
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to make the request!
+        Remember to keep the [reporting guidelines](https://github.com/Yellow-Dog-Man/Resonite.UnitySDK?tab=readme-ov-file#what-if-something-doesnt-convert-properly) in mind.
+        Remember to check the [latest version](github.com/yellow-Dog-Man/resonite.UnitySDK/releases/latest) of the Resonite Unity SDK before requesting a new feature.
+        
+  - type: textarea
+    id: what
+    attributes:
+      label: 'What shader/material do you want us to add support for?'
+      description: 'Provide name and/or links to the shader you want us to support.'
+    validations:
+      required: true
+
+  - type: textarea
+    id: expect
+    attributes:
+      label: 'How would you like these to be converted?'
+      description: 'Describe what aspects of the shader/material are most important for you to convert properly. We might not be able to match its behavior 100 %, so telling us what to focus on can help get the best results.'
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: 'Test items'
+      description: 'Share any links and/or items that can be used to test the conversion. If you cannot share a mesh, you can create a basic sphere or cube mesh and apply the material/shader to it. If you cannot upload the unitypackage as-is, compress it as a ZIP file.'
+    validations:
+      required: false
