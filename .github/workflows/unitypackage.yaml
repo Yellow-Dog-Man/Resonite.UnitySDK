@@ -21,22 +21,39 @@ jobs:
         with:
           lfs: 'true'
 
-      - name: 'setup Unity'
-        uses: buildalon/unity-setup@30fcbcb56c10ea5d64298e970d952b8d29bc268b # v2.6.0
-        id: unity-setup
+      - name: 'Pull Unity from cache'
+        uses: actions/cache/restore@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
         with:
-          unity-version: '6000.3.10f1'
-          cache-installation: 'true'
+          key: unity-setup-linux-2019.4.19f1-windows-mono
+          path: /home/runner/Unity/Hub/Editor
 
-      - name: 'Activate Unity license'
-        uses: buildalon/activate-unity-license@e0d245d0787b7b9931b56ccbde3b508f6b70f1af # v2.2.2
-        with:
-          license: 'personal'
-          username: '${{ secrets.UNITY_CI_USERNAME }}'
-          password: '${{ secrets.UNITY_CI_PASSWORD }}'
+      - name: 'Install Unity'
+        continue-on-error: true
+        run: |
+          curl -sL https://hub.unity3d.com/linux/keys/public | sudo gpg --dearmor -o /usr/share/keyrings/Unity_Technologies_ApS.gpg
+          sudo tee /etc/apt/sources.list.d/unity-cli.sources <<'EOF'
+          Types: deb
+          URIs: https://hub.unity3d.com/linux/repos/deb
+          Suites: unstable
+          Components: main
+          Signed-By: /usr/share/keyrings/Unity_Technologies_ApS.gpg
+          EOF
+
+          sudo apt-get update && sudo apt-get install -y unity-cli
+
+          unity editors -i
+          unity install 6000.3.10f1 -a x86_64 -m windows-mono --cm
+
+      - name: 'Activate Unity editor'
+        env:
+          UNITY_NO_CLI_INVOKED_TELEMETRY: false
+        run: |
+          unity auth login --client-id ${{ secrets.UNITY_SERVICE_ACCOUNT_ID }} --client-secret ${{ secrets.UNITY_SERVICE_ACCOUNT_SECRET }}
+
+          /home/runner/Unity/Hub/Editor/6000.3.10f1/Editor/Unity -quit -batchmode -nographics -serial ${{ secrets.UNITY_CI_LICENSE_ID }} -username ${{ secrets.UNITY_CI_USERNAME }} -password ${{ secrets.UNITY_CI_PASSWORD }}
 
       - name: 'Build Package'
-        run: ${{ steps.unity-setup.outputs.unity-editor-path }} -quit -batchmode -nographics -projectPath $(pwd) -executeMethod ResoniteSDK_Builder.BuildUnityPackage
+        run: /home/runner/Unity/Hub/Editor/6000.3.10f1/Editor/Unity -quit -batchmode -nographics -projectPath $(pwd) -executeMethod ResoniteSDK_Builder.BuildUnityPackage
   
       - name: 'Upload packages'
         uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # V7.0.1
