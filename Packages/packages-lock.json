@@ -1,5 +1,11 @@
 {
   "dependencies": {
+    "com.resonite.sdk": {
+      "version": "file:ResoniteSDK",
+      "depth": 0,
+      "source": "embedded",
+      "dependencies": {}
+    },
     "com.unity.collab-proxy": {
       "version": "2.11.2",
       "depth": 0,
@@ -77,6 +83,13 @@
     "com.unity.settings-manager": {
       "version": "2.1.0",
       "depth": 2,
+      "source": "registry",
+      "dependencies": {},
+      "url": "https://packages.unity.com"
+    },
+    "com.unity.sysroot": {
+      "version": "2.0.10",
+      "depth": 1,
       "source": "registry",
       "dependencies": {},
       "url": "https://packages.unity.com"
