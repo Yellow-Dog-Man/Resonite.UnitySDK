@@ -1,0 +1,21 @@
+{
+  "name": "com.resonite.sdk",
+  "version": "1.1.2",
+  "displayName": "Resonite SDK",
+  "description": "Unity SDK for Resonite social VR sandbox, allowing real-time building through the Unity Editor",
+  "unity": "2022.3",
+  "documentationUrl": "https://wiki.resonite.com/UnitySDK",
+  "changelogUrl": "https://github.com/Yellow-Dog-Man/Resonite.UnitySDK/releases",
+  "license": "MIT",
+  "licensesUrl": "https://github.com/Yellow-Dog-Man/Resonite.UnitySDK/blob/main/LICENSE",
+  "dependencies": {},
+  "keywords": [
+    "resonite",
+    "socialvr"
+  ],
+  "author": {
+    "name": "Yellow Dog Man Studios",
+    "email": "business@yellowdogman.com",
+    "url": "https://resonite.com/"
+  }
+}
