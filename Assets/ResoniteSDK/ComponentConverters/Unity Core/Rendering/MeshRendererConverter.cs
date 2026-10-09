@@ -13,7 +13,19 @@ public static class MeshRendererHelper
         if (meshFilter == null)
             resonite.Mesh = null;
         else
-            resonite.Mesh = context.GetMesh(meshFilter.sharedMesh);
+        {
+            if(unity.isPartOfStaticBatch)
+            {
+                // If this is part of a static batch, this means that meshes have been combined
+                // This means this renderer isn't actually rendering the mesh itself, we just need to collect
+                // the material data and inform the conversion of the static mesh
+                resonite.Mesh = null;
+
+                context.NotifyOfStaticMesh(meshFilter.sharedMesh, unity.subMeshStartIndex, unity.sharedMaterials);
+            }
+            else
+                resonite.Mesh = context.GetMesh(meshFilter.sharedMesh);
+        }
     }
 
     public static void SetFrom(this FrooxEngine.MeshRenderer resonite, UnityEngine.Renderer unity, IConversionContext context)

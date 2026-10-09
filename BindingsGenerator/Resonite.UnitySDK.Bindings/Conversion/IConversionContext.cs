@@ -22,6 +22,8 @@ public interface IConversionContext
 
     #region ASSET CONVERSION
 
+    void NotifyOfStaticMesh(UnityEngine.Mesh combinedMesh, int materialStartIndex, UnityEngine.Material[] materials);
+
     void RunOnConverted(UnityEngine.Component component, System.Action action);
 
     IAssetProvider<FrooxEngine.Mesh> GetMesh(UnityEngine.Mesh mesh, AssetMessagePostProcessor postProcessor = null);

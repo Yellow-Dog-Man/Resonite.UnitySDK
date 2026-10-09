@@ -24,6 +24,7 @@ public class SceneConverter : IConversionContext
     ResoniteLinkWindow _window;
 
     SkyboxConverter _skybox = new SkyboxConverter();
+    StaticMeshManager _staticMeshes = new StaticMeshManager();
 
     [SerializeField]
     Dictionary<Transform, ResoniteLink.Slot> _transformMap = new Dictionary<Transform, ResoniteLink.Slot>();
@@ -236,6 +237,8 @@ public class SceneConverter : IConversionContext
 
         if (ConvertSkybox)
             _skybox.EnsureRoot();
+
+        _staticMeshes.EnsureRoot();
 
         var roots = SceneManager.GetActiveScene().GetRootGameObjects();
 
@@ -782,5 +785,10 @@ public class SceneConverter : IConversionContext
         }
 
         list.Add(action);
+    }
+
+    public void NotifyOfStaticMesh(UnityEngine.Mesh combinedMesh, int materialStartIndex, UnityEngine.Material[] materials)
+    {
+        _staticMeshes.NotifyOfStaticMesh(combinedMesh, materialStartIndex, materials, this);
     }
 }
