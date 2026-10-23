@@ -12,13 +12,15 @@
 /[Uu]ser[Ss]ettings/
 *.log
 
-# By default unity supports Blender asset imports, *.blend1 blender files do not need to be commited to version control.
+# By default unity supports Blender asset imports, *.blend1 blender files do not need to be committed to version control.
 *.blend1
 *.blend1.meta
 
 # Unity generated projects
 Assembly-CSharp-Editor.csproj
 Assembly-CSharp.csproj
+ResoniteSDK.Editor.csproj
+ResoniteSDK.csproj
 Resonite.UnitySDK.sln
 
 # MemoryCaptures can get excessive in size.
