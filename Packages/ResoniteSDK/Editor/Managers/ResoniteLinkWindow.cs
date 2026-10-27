@@ -99,8 +99,7 @@ namespace ResoniteSDK.Editor {
 
             GUILayout.Label($"⚠️ CAUTION!!! ⚠️\n\n" +
                 $"The SDK is currently in beta and missing a lot of converters.\n" +
-                $"If you want a smooth experience, consider giving it a few more weeks until we remove this notice.\n\n" +
-                $"Before installing a new version of the SDK, please delete the ResoniteSDK folder first!");
+                $"If things don't convert properly, please report an issue so we can improve.");
 
             GUI.enabled = State == ConnectionState.Disconnected;
 
