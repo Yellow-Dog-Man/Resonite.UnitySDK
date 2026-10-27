@@ -1,0 +1,16 @@
+{
+    "name": "ResoniteSDK.Editor",
+    "rootNamespace": "ResoniteSDK.Editor",
+    "references": [
+        "GUID:7654d8db8ad6b12d780cb686e9503398"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
