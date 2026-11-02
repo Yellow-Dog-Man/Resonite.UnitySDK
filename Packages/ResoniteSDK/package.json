@@ -1,6 +1,6 @@
 {
   "name": "com.resonite.sdk",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "displayName": "Resonite SDK",
   "description": "Unity SDK for Resonite social VR sandbox, allowing real-time building through the Unity Editor",
   "unity": "2022.3",
